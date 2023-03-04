@@ -15,7 +15,9 @@
     "commit": "git-cz",
     "yalc:push": "turbo run yalc:push",
     "watch": "turbo run watch",
-    "turbo": "turbo"
+    "turbo": "turbo",
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/config @gravis-os/theme @gravis-os/landing",
+    "local:unlink": "yalc remove --all"
   },
   "config": {
     "commitizen": {

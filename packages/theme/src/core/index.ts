@@ -8,3 +8,9 @@ export { default as ThemeProvider } from './ThemeProvider'
 export * from './ThemeProvider'
 
 export * from './fonts'
+
+export {
+  UserPreferencesProvider,
+  useUserPreferences,
+  createEmotionCache,
+} from '@gravis-os/theme'

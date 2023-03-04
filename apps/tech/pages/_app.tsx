@@ -1,10 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
-import { createEmotionCache, UserPreferencesProvider } from '@gravis-os/theme'
 import { EmotionCache } from '@emotion/react'
 import { GravisProvider } from '@gravis-os/config'
-import { theme, darkTheme, ThemeProvider } from '@onex/theme'
+import {
+  theme,
+  darkTheme,
+  ThemeProvider,
+  UserPreferencesProvider,
+  createEmotionCache,
+} from '@onex/theme'
 
 // Css
 import 'react-medium-image-zoom/dist/styles.css'

@@ -4,7 +4,7 @@ import {
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
 } from '@gravis-os/landing'
-import { useUserPreferences } from '@gravis-os/theme'
+import { useUserPreferences } from '@onex/theme'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {

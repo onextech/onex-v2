@@ -20,6 +20,8 @@
     "lint": {
       "dependsOn": ["^build"]
     },
-    "watch": {}
+    "watch": {},
+    "local": {},
+    "local:unlink": {}
   }
 }

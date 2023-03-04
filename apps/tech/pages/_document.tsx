@@ -1,8 +1,7 @@
 import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
-import { createEmotionCache } from '@gravis-os/theme'
-import { bodyFont, theme } from '@onex/theme'
+import { createEmotionCache, bodyFont, theme } from '@onex/theme'
 
 export default class MyDocument extends Document {
   render() {
