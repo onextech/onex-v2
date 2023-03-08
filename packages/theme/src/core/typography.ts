@@ -30,6 +30,13 @@ const typography = {
     letterSpacing: 0,
     lineHeight: 1.4,
   },
+  h7: {
+    fontSize: pxToRem(16),
+    fontFamily: headerFontFamily,
+    fontWeight: 400,
+    letterSpacing: 0,
+    lineHeight: 1.5,
+  },
   subtitle1: {
     fontSize: pxToRem(24),
     letterSpacing: 0,

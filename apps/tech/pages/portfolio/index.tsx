@@ -47,6 +47,7 @@ const PortfolioPage: React.FC<PortfolioPageProps> = () => {
                 subtitle:
                   'Promoting science by building the largest online conference platform.',
                 imageSrc: '/images/portfolio_cover_3.png',
+                slug: 'canon',
               }),
 
               renderPortfolioCardBlockItem({
@@ -57,6 +58,7 @@ const PortfolioPage: React.FC<PortfolioPageProps> = () => {
                   'Promoting science by building the largest online conference platform.',
                 imageSrc: '/images/portfolio_cover_4.png',
                 reverse: true,
+                slug: 'canon',
               }),
 
               renderPortfolioCardBlockItem({
@@ -66,6 +68,7 @@ const PortfolioPage: React.FC<PortfolioPageProps> = () => {
                 subtitle:
                   'Promoting science by building the largest online conference platform.',
                 imageSrc: '/images/portfolio_cover_2.jpg',
+                slug: 'canon',
               }),
 
               renderPortfolioCardBlockItem({

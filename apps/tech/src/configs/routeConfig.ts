@@ -1,9 +1,11 @@
 const routeConfig = {
+  HOME: '/',
   PORTFOLIO: '/portfolio',
-  ABOUT: '/about',
   SERVICES: '/services',
   TECHNOLOGIES: '/technologies',
-  INDUSTRIES: '/industries',
+  COMPANY: '/company',
+  ABOUT: '/about',
+  CAREERS: '/careers',
 }
 
 export default routeConfig

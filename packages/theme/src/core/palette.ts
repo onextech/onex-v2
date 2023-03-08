@@ -5,7 +5,7 @@ const palette = {
     main: '#121212',
   },
   secondary: {
-    main: green.A400,
+    main: green.A700,
   },
   background: {
     paper: '#fff',

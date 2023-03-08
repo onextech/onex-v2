@@ -5,24 +5,28 @@ import {
   LandingLayoutProps as GvsLandingLayoutProps,
 } from '@gravis-os/landing'
 import { useUserPreferences } from '@onex/theme'
+import { commonConfig } from '@onex/common'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
-  navConfig: GvsLandingLayoutProps['headerProps']['navItems']['left']
+  headerNavConfig: GvsLandingLayoutProps['headerProps']['navItems']['left']
+  footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
   logo: React.JSXElementConstructor<unknown>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { navConfig, logo: Logo, ...rest } = props
+  const { headerNavConfig, footerNavConfig, logo: Logo, ...rest } = props
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
 
   const defaultLandingLayoutProps = {
     disableGutters: true,
     headerProps: {
+      accordionProps: { titleProps: { variant: 'h5' } },
+      drawerWidth: '100vw',
       disableBoxShadow: true,
       navItems: {
-        left: navConfig,
+        left: headerNavConfig,
         right: [
           {
             key: 'toggle-dark-mode',
@@ -35,30 +39,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
     footerProps: {
       logo: <Logo />,
-      companyName: 'Acme Inc',
-      navItems: [
-        {
-          key: 'what-we-do',
-          title: 'What We Do',
-          items: [
-            { title: 'Product Design', href: '#' },
-            { title: 'Pricing', href: '#' },
-          ],
-        },
-        {
-          key: 'learn-more',
-          title: 'Learn more',
-          items: [
-            { title: 'Work', href: '#' },
-            { title: 'About', href: '#' },
-          ],
-        },
-        {
-          key: 'support',
-          title: 'Support',
-          items: [{ title: 'Contact', href: '#' }],
-        },
-      ],
+      companyName: commonConfig.companyTitle,
+      accordionProps: {
+        titleProps: { variant: 'h7' },
+        itemTitleProps: { variant: 'body2' },
+      },
+      navItems: footerNavConfig,
     },
   }
 

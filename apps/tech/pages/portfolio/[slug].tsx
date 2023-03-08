@@ -292,6 +292,68 @@ const PortfolioDetailPage: React.FC<PortfolioDetailPageProps> = () => {
               },
             ],
           },
+          {
+            key: 'faqs',
+            pt: 0,
+            sx: { backgroundColor: 'background.paper' },
+            items: [
+              {
+                type: 'grid',
+                gridItems: [
+                  {
+                    md: 4,
+                    items: [
+                      {
+                        type: 'h4',
+                        title: 'FAQs',
+                        titleProps: { gutterBottom: true },
+                      },
+                      {
+                        type: 'body1',
+                        title:
+                          'One X Tech delivers effective, value-driven technological innovations for leading enterprises.',
+                        titleProps: { color: 'text.secondary' },
+                      },
+                    ],
+                  },
+                  {
+                    md: 8,
+                    items: [
+                      {
+                        type: 'accordion',
+                        titleProps: {
+                          titleProps: { variant: 'h6' },
+                          subtitleProps: { color: 'text.secondary' },
+                        },
+                        title: [
+                          {
+                            key: 'faq-1',
+                            title:
+                              'What are the advantages of developing web apps with ReactJS?',
+                            content:
+                              'ReactJS components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+                          },
+                          {
+                            key: 'faq-2',
+                            title:
+                              'How can ReactJS development benefit my existing system?',
+                            content:
+                              "ReactJS's sophisticated algorithms will help to boost system performance and improve user experience.",
+                          },
+                          {
+                            key: 'faq-3',
+                            title: 'What is the future of React?',
+                            content:
+                              'ReactJS is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
         ]}
       />
     </LandingLayout>

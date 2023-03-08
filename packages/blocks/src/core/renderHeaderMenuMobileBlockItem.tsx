@@ -1,7 +1,7 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 
-export interface RenderHeaderMenuBlockItemProps {
+export interface RenderHeaderMenuMobileBlockItemProps {
   title: BlockItemProps['title']
   subtitle?: BlockItemProps['title']
   href?: BlockItemProps['boxProps']['href']
@@ -9,16 +9,19 @@ export interface RenderHeaderMenuBlockItemProps {
   items?: BlockItemProps[]
 }
 
-const renderHeaderMenuBlockItem = (props: RenderHeaderMenuBlockItemProps) => {
-  const { href, hrefProps, title, subtitle, items = [] } = props
+const renderHeaderMenuMobileBlockItem = (
+  props: RenderHeaderMenuMobileBlockItemProps
+) => {
+  const { href, hrefProps, title, items = [] } = props
   return {
+    py: 0,
+    reveal: false,
+    disableContainer: true,
+    sx: { backgroundColor: 'transparent' },
     boxProps: {
       href,
       hrefProps,
       sx: {
-        py: 1.5,
-        px: 2,
-        borderRadius: 1,
         ...(href && {
           '&:hover': {
             cursor: 'pointer',
@@ -32,20 +35,18 @@ const renderHeaderMenuBlockItem = (props: RenderHeaderMenuBlockItemProps) => {
     },
     items: [
       {
-        type: 'h6',
+        type: 'h7',
         title,
         titleProps: {
           mb: 0.5,
-          ...(!href && { sx: { color: 'text.disabled' } }),
-        },
-      },
-      {
-        type: 'caption',
-        title: subtitle,
-        titleProps: {
-          color: 'text.secondary',
-          maxLines: 2,
-          ...(!href && { sx: { color: 'text.disabled' } }),
+          href,
+          hrefProps: {
+            sx: { display: 'block' },
+            linkProps: { underline: 'hover' },
+          },
+          sx: {
+            ...(!href && { color: 'text.disabled' }),
+          },
         },
       },
       ...items,
@@ -53,4 +54,4 @@ const renderHeaderMenuBlockItem = (props: RenderHeaderMenuBlockItemProps) => {
   }
 }
 
-export default renderHeaderMenuBlockItem
+export default renderHeaderMenuMobileBlockItem

@@ -12,3 +12,6 @@ export * from './renderPortfolioCardBlockItem'
 
 export { default as renderPortfolioStickyGridBlockItem } from './renderPortfolioStickyGridBlockItem'
 export * from './renderPortfolioStickyGridBlockItem'
+
+export { default as renderHeaderMenuMobileBlockItem } from './renderHeaderMenuMobileBlockItem'
+export * from './renderHeaderMenuMobileBlockItem'
