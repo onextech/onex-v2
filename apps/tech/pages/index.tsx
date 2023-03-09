@@ -1,38 +1,92 @@
-import * as React from 'react'
-import { Box, Container, Link, Stack, Typography } from '@gravis-os/ui'
-import ProTip from '@app/components/ProTip'
-import Copyright from '@app/components/Copyright'
+import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import appConfig from '@app/configs/appConfig'
+import { Blocks } from '@gravis-os/landing'
+import { renderPortfolioCardBlockItem } from '@onex/blocks'
 
-export default function Home() {
+export interface HomePageProps {}
+
+const HomePage: React.FC<HomePageProps> = () => {
   return (
-    <LandingLayout seo={{ title: 'Home' }}>
-      <Stack spacing={10} sx={{ mt: 5 }}>
-        <Box>
-          <Container>
-            <Box
-              sx={{
-                my: 4,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <Typography variant="h1" gutterBottom>
-                {appConfig.title}
-              </Typography>
-              <Link href="/about" color="secondary">
-                Go to the about page
-              </Link>
-              <ProTip />
-              <Copyright />
-            </Box>
-          </Container>
-        </Box>
-      </Stack>
+    <LandingLayout seo={{ title: 'Portfolio' }}>
+      <Blocks
+        items={[
+          {
+            key: 'portfolio-hero',
+            maxWidth: 'xl',
+            sx: { pt: { xs: 3, md: 6 } },
+            pb: 0,
+            items: [
+              { type: 'overline', title: 'Portfolio' },
+              {
+                type: 'h1',
+                title: 'Invest in Digital Transformation with Confidence.',
+                titleProps: { mb: 2, maxWidth: true },
+              },
+              {
+                type: 'subtitle1',
+                title:
+                  'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+                titleProps: {
+                  color: 'text.secondary',
+                  maxWidth: '60%',
+                },
+              },
+            ],
+          },
+          {
+            key: 'portfolio-card-list',
+            center: true,
+            maxWidth: 'xl',
+            pt: 0,
+            items: [
+              // Cards
+              renderPortfolioCardBlockItem({
+                backgroundColor: '#c6dcc0',
+                mode: 'light',
+                title: 'Preparing the future of home-made meals with Phillips.',
+                subtitle:
+                  'Promoting science by building the largest online conference platform.',
+                imageSrc: '/images/portfolio_cover_3.png',
+                slug: 'canon',
+              }),
+
+              renderPortfolioCardBlockItem({
+                backgroundColor: '#202941',
+                mode: 'dark',
+                title: 'Preparing the future of home-made meals with Phillips.',
+                subtitle:
+                  'Promoting science by building the largest online conference platform.',
+                imageSrc: '/images/portfolio_cover_4.png',
+                reverse: true,
+                slug: 'canon',
+              }),
+
+              renderPortfolioCardBlockItem({
+                backgroundColor: '#2b698a',
+                mode: 'dark',
+                title: 'Preparing the future of home-made meals with Phillips.',
+                subtitle:
+                  'Promoting science by building the largest online conference platform.',
+                imageSrc: '/images/portfolio_cover_2.jpg',
+                slug: 'canon',
+              }),
+
+              renderPortfolioCardBlockItem({
+                mode: 'dark',
+                backgroundColor: '#111',
+                title: 'Preparing the future of home-made meals with Canon.',
+                subtitle:
+                  'Promoting science by building the largest online conference platform.',
+                imageSrc: '/images/portfolio_cover_1.png',
+                reverse: true,
+                slug: 'canon',
+              }),
+            ],
+          },
+        ]}
+      />
     </LandingLayout>
   )
 }
+
+export default HomePage

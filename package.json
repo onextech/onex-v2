@@ -17,7 +17,8 @@
     "watch": "turbo run watch",
     "turbo": "turbo",
     "local": "turbo run local",
-    "local:unlink": "turbo run local:unlink"
+    "local:unlink": "turbo run local:unlink",
+    "test": "turbo run test"
   },
   "config": {
     "commitizen": {

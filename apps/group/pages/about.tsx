@@ -4,11 +4,11 @@ import { Blocks } from '@gravis-os/landing'
 import { renderGhostButtonBlockItem } from '@onex/blocks'
 import appConfig from '@app/configs/appConfig'
 
-export interface CompanyPageProps {}
+export interface AboutPageProps {}
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
 
-const CompanyPage: React.FC<CompanyPageProps> = () => {
+const AboutPage: React.FC<AboutPageProps> = () => {
   return (
     <LandingLayout
       headerProps={{ translucent: true, position: 'fixed' }}
@@ -615,4 +615,4 @@ const CompanyPage: React.FC<CompanyPageProps> = () => {
   )
 }
 
-export default CompanyPage
+export default AboutPage
