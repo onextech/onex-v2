@@ -10,7 +10,7 @@ export interface PortfolioDetailPageProps {}
 
 const PortfolioDetailPage: React.FC<PortfolioDetailPageProps> = () => {
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }}>
+    <LandingLayout seo={{ title: 'Portfolio' }} autoBreadcrumbs>
       <Blocks
         items={[
           {

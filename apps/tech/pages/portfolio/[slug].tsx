@@ -9,8 +9,13 @@ import {
 export interface PortfolioDetailPageProps {}
 
 const PortfolioDetailPage: React.FC<PortfolioDetailPageProps> = () => {
+  const portfolioItem = {
+    title: 'Canon',
+    slug: 'canon',
+  }
+
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }}>
+    <LandingLayout seo={{ title: 'Portfolio' }} autoBreadcrumbs>
       <Blocks
         items={[
           {
@@ -19,10 +24,9 @@ const PortfolioDetailPage: React.FC<PortfolioDetailPageProps> = () => {
             sx: { pt: { xs: 3, md: 6 } },
             pb: 0,
             items: [
-              { type: 'overline', title: 'Portfolio' },
               {
                 type: 'h1',
-                title: 'Canon.',
+                title: `${portfolioItem.title}.`,
                 titleProps: { mb: 2, maxWidth: true },
               },
               {
