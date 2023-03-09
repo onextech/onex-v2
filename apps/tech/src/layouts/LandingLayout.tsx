@@ -6,6 +6,7 @@ import {
 import Logo from '@app/components/Logo'
 import headerNavConfig from '@app/configs/headerNavConfig'
 import footerNavConfig from '@app/configs/footerNavConfig'
+import socialMediaConfig from '@app/configs/socialMediaConfig'
 
 export interface LandingLayoutProps
   extends Omit<
@@ -21,6 +22,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       logo={Logo}
       headerNavConfig={headerNavConfig}
       footerNavConfig={footerNavConfig}
+      socialMediaConfig={socialMediaConfig}
       {...props}
     />
   )

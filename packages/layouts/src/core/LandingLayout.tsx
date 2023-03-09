@@ -12,11 +12,18 @@ export interface LandingLayoutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   headerNavConfig: GvsLandingLayoutProps['headerProps']['navItems']['left']
   footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
+  socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   logo: React.JSXElementConstructor<unknown>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { headerNavConfig, footerNavConfig, logo: Logo, ...rest } = props
+  const {
+    socialMediaConfig,
+    headerNavConfig,
+    footerNavConfig,
+    logo: Logo,
+    ...rest
+  } = props
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
 
   const defaultLandingLayoutProps = {
@@ -45,6 +52,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         itemTitleProps: { variant: 'body2' },
       },
       navItems: footerNavConfig,
+      legalItems: [
+        {
+          key: 'terms',
+          title: 'Terms',
+          href: `${commonConfig.absoluteUrl}/terms`,
+        },
+        {
+          key: 'privacy',
+          title: 'Privacy',
+          href: `${commonConfig.absoluteUrl}/privacy`,
+        },
+        {
+          key: 'cookies',
+          title: 'Cookies',
+          href: `${commonConfig.absoluteUrl}/cookies`,
+        },
+      ],
+      socialMediaItems: socialMediaConfig,
     },
   }
 
