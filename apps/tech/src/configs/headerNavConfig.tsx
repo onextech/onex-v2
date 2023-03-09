@@ -178,7 +178,7 @@ const headerNavConfig = [
   {
     key: 'company',
     title: 'Company',
-    href: routeConfig.COMPANY,
+    href: routeConfig.ABOUT,
     fullWidth: true,
     isOpenOnHover: true,
     items: pages.map((page) => ({
@@ -221,7 +221,7 @@ const headerNavConfig = [
                           title: 'View Company',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.COMPANY,
+                            href: routeConfig.ABOUT,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',

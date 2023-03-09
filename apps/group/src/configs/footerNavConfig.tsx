@@ -21,7 +21,7 @@ const footerNavConfig = [
   {
     key: 'company',
     title: 'Company',
-    href: routeConfig.COMPANY,
+    href: routeConfig.ABOUT,
     items: pages,
   },
 ]

@@ -1,10 +1,7 @@
+import { routeConfig as commonRouteConfig } from '@onex/common'
+
 const routeConfig = {
-  PORTFOLIO: '/portfolio',
-  ABOUT: '/about',
-  COMPANY: '/company',
-  SERVICES: '/services',
-  TECHNOLOGIES: '/technologies',
-  INDUSTRIES: '/industries',
+  ...commonRouteConfig,
 }
 
 export default routeConfig
