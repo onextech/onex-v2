@@ -14,6 +14,7 @@ export interface LandingLayoutProps
   footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   logo: React.JSXElementConstructor<unknown>
+  appConfig: { title: string }
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
@@ -21,13 +22,19 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     socialMediaConfig,
     headerNavConfig,
     footerNavConfig,
+    appConfig,
     logo: Logo,
+    seo,
     ...rest
   } = props
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
 
   const defaultLandingLayoutProps = {
     disableGutters: true,
+    seo: {
+      titleTemplate: `%s | ${appConfig.title}`,
+      ...seo,
+    },
     headerProps: {
       accordionProps: { titleProps: { variant: 'h5' } },
       drawerWidth: '100vw',

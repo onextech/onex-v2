@@ -7,11 +7,12 @@ import Logo from '@app/components/Logo'
 import headerNavConfig from '@app/configs/headerNavConfig'
 import footerNavConfig from '@app/configs/footerNavConfig'
 import socialMediaConfig from '@app/configs/socialMediaConfig'
+import appConfig from '@app/configs/appConfig'
 
 export interface LandingLayoutProps
   extends Omit<
     OneXLandingLayoutProps,
-    'headerProps' | 'headerNavConfig' | 'footerNavConfig' | 'logo'
+    'headerProps' | 'headerNavConfig' | 'footerNavConfig' | 'appConfig' | 'logo'
   > {
   headerProps?: Partial<OneXLandingLayoutProps['headerProps']>
 }
@@ -20,6 +21,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   return (
     <OneXLandingLayout
       logo={Logo}
+      appConfig={appConfig}
       headerNavConfig={headerNavConfig}
       footerNavConfig={footerNavConfig}
       socialMediaConfig={socialMediaConfig}

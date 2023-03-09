@@ -23,7 +23,7 @@
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
-    "@gravis-os/theme": "^0.0.6",
+    "@gravis-os/theme": "^0.0.7",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
   },

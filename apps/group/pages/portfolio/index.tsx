@@ -1,10 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { Blocks } from '@gravis-os/landing'
-import {
-  renderGhostButtonBlockItem,
-  renderPortfolioCardBlockItem,
-} from '@onex/blocks'
+import { renderPortfolioCardBlockItem } from '@onex/blocks'
 
 export interface PortfolioPageProps {}
 
