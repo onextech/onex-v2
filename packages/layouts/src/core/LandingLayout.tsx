@@ -49,7 +49,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       companyName: commonConfig.companyTitle,
       accordionProps: {
         titleProps: { variant: 'h7' },
-        itemTitleProps: { variant: 'body2' },
+        itemTitleProps: {
+          variant: 'body2',
+          color: 'text.secondary',
+          hoverColor: 'inherit',
+        },
       },
       navItems: footerNavConfig,
       legalItems: [

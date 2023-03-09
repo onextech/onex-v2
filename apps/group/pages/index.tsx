@@ -11,7 +11,11 @@ const commonBlockProps = { center: true, maxWidth: 'md' }
 const HomePage: React.FC<HomePageProps> = () => {
   return (
     <LandingLayout
-      headerProps={{ translucent: true, position: 'fixed' }}
+      headerProps={{
+        dark: true,
+        translucent: true,
+        position: 'fixed',
+      }}
       seo={{ title: 'Company' }}
     >
       <Blocks
