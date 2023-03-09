@@ -1,14 +1,20 @@
 import React from 'react'
-import { Typography } from '@gravis-os/ui'
-import appConfig from '@app/configs/appConfig'
+import { Box } from '@gravis-os/ui'
+import LogoSvg from '@public/logo.svg'
 
 export interface LogoProps {}
 
-const Logo: React.FC<LogoProps> = (props) => {
+const Logo: React.FC<LogoProps> = () => {
   return (
-    <Typography variant="button" sx={{ lineHeight: 1 }}>
-      {appConfig.title}
-    </Typography>
+    <Box
+      sx={{
+        width: 95,
+        height: 13,
+        '& svg': { fill: ({ palette }) => palette.text.primary },
+      }}
+    >
+      <LogoSvg />
+    </Box>
   )
 }
 
