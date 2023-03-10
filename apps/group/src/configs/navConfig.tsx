@@ -4,60 +4,63 @@ import routeConfig from './routeConfig'
 export const services = [
   {
     title: 'Applications',
+    slug: 'applications',
     items: [
       {
         title: 'Enterprise Applications',
-        href: routeConfig.ABOUT,
+        slug: 'enterprise-applications',
       },
-      { title: 'Managed Applications' },
-      { title: 'Application Modernization' },
+      { title: 'Managed Applications', slug: 'managed-applications' },
+      { title: 'Application Modernization', slug: 'application-modernization' },
     ],
-    slug: 'applications',
   },
   {
     title: 'Engineering',
-    items: [
-      { title: 'Research & Development' },
-      { title: 'API Development' },
-      { title: 'Microfrontend Development' },
-    ],
     slug: 'engineering',
+    items: [
+      { title: 'Research & Development', slug: 'research-development' },
+      { title: 'API Development', slug: 'api-development' },
+      { title: 'Microfrontend Development', slug: 'microfrontend-development' },
+    ],
   },
   {
     title: 'Infrastructure & Cloud',
-    items: [
-      { title: 'Managed DevOps' },
-      { title: 'Infrastructure Managed Services' },
-      { title: 'Cloud Strategy & Design' },
-    ],
     slug: 'infrastructure-cloud',
+    items: [
+      { title: 'Managed DevOps', slug: 'managed-devops' },
+      {
+        title: 'Infrastructure Managed Services',
+        slug: 'infrastructure-managed-services',
+      },
+      { title: 'Cloud Strategy & Design', slug: 'cloud-strategy-design' },
+    ],
   },
   {
+    slug: 'advisory',
     title: 'Advisory',
     items: [
-      { title: 'Digital Strategy' },
-      { title: 'Transformation & Delivery' },
-      { title: 'Architecture Design' },
+      { title: 'Digital Strategy', slug: 'digital-strategy' },
+      { title: 'Transformation & Delivery', slug: 'transformation-delivery' },
+      { title: 'Architecture Design', slug: 'architecture-design' },
     ],
-    slug: 'advisory',
   },
   {
+    slug: 'modern-workplace',
     title: 'Modern Workplace',
     items: [
-      { title: 'Staff Augmentation' },
-      { title: 'Managed Product Teams' },
-      { title: 'Service Automation' },
+      { title: 'Staff Augmentation', slug: 'staff-augmentation' },
+      { title: 'Managed Product Teams', slug: 'managed-product-teams' },
+      { title: 'Service Automation', slug: 'managed-product-teams' },
     ],
-    slug: 'modern-workplace',
   },
   {
     title: 'Quality Assurance',
-    items: [
-      { title: 'Performance Optimization' },
-      { title: 'Production Readiness' },
-      { title: 'Testing Automation' },
-    ],
     slug: 'quality-assurance',
+    items: [
+      { title: 'Performance Optimization', slug: 'performance-optimization' },
+      { title: 'Production Readiness', slug: 'production-readiness' },
+      { title: 'Testing Automation', slug: 'testing-automation' },
+    ],
   },
 ].map((service) => ({
   ...service,
@@ -101,78 +104,18 @@ export const pages = [
     slug: 'about',
   },
   {
-    title: 'Careers',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    slug: 'careers',
-  },
-  {
     title: 'Contact Us',
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
     slug: 'contact',
   },
+  {
+    title: 'Careers',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
+    slug: 'careers',
+  },
 ].map((page) => ({
   ...page,
   href: `/${page.slug}`,
-}))
-
-export const brands = [
-  {
-    title: 'One X Tech',
-    subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    href: 'https://onextech.com',
-  },
-  {
-    title: 'One X Design',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://onexdesign.com',
-  },
-  {
-    title: 'One X Data',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://onexdata.com',
-  },
-  {
-    title: 'One X Digital',
-    subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    href: 'https://onexdigital.com',
-  },
-  {
-    title: 'One X Studio',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://onexstudio.com',
-  },
-  {
-    title: 'One X Labs',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://onexlabs.com',
-  },
-  {
-    title: 'One X Ventures',
-    subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    href: 'https://onexventures.com',
-  },
-  {
-    title: 'Fin X',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://finx.com',
-  },
-  {
-    title: 'Gov X',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: 'https://govx.com',
-  },
-].map((brand) => ({
-  ...brand,
-  hrefProps: { targetBlank: true },
 }))

@@ -4,56 +4,56 @@ import routeConfig from './routeConfig'
 export const services = [
   {
     title: 'Digital Product Design',
+    slug: 'digital-product-design',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'digital-product-design',
   },
   {
     title: 'Agile Development Teams',
+    slug: 'agile-development-teams',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    slug: 'agile-development-teams',
   },
   {
     title: 'Cloud Engineering & DevOps',
-    subtitle: 'Let certified engineers kick-start your cloud operations',
     slug: 'cloud-engineering-devops',
+    subtitle: 'Let certified engineers kick-start your cloud operations',
   },
   {
     title: 'Web Development',
+    slug: 'web-development',
     subtitle:
       'Build or scale competitive products ready for future growth and millions of users.',
-    slug: 'web-development',
   },
   {
     title: 'Software Architecture',
+    slug: 'software-architecture',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
-    slug: 'software-architecture',
   },
   {
     title: 'Mobile Development',
+    slug: 'mobile-development',
     subtitle:
       'Offer your customers an iOS/Android hybride mobile app they will want to use.',
-    slug: 'mobile-development',
   },
   {
     title: 'Quality Assurance',
+    slug: 'quality-assurance',
     subtitle:
       'Secure the highest ratings for your product by running extensive QA tests.',
-    slug: 'quality-assurance',
   },
   {
     title: 'Project Management',
+    slug: 'project-management',
     subtitle:
       'Collect your data, filter it, and take out game-changing insights on your product and team productivity.',
-    slug: 'project-management',
   },
   {
     title: 'App Modernization',
+    slug: 'app-modernization',
     subtitle:
       'Make your systems fast, efficient, and scalable to prepare for further product growth.',
-    slug: 'app-modernization',
   },
 ].map((service) => ({
   ...service,
@@ -63,56 +63,56 @@ export const services = [
 export const technologies = [
   {
     title: 'JavaScript',
+    slug: 'javascript',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'javascript',
   },
   {
     title: 'TypeScript',
+    slug: 'typescript',
     subtitle:
       'Build or scale competitive products ready for future growth and millions of users.',
-    slug: 'typescript',
   },
   {
+    slug: 'nodejs',
     title: 'Node.js',
     subtitle: 'Let certified engineers kick-start your cloud operations',
-    slug: 'nodejs',
   },
   {
     title: 'React',
+    slug: 'react',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    slug: 'react',
   },
   {
     title: 'Next.js',
+    slug: 'nextjs',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
-    slug: 'nextjs',
   },
   {
     title: 'Express',
+    slug: 'express',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
-    slug: 'express',
   },
   {
     title: 'AWS',
+    slug: 'aws',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    slug: 'aws',
   },
   {
     title: 'Serverless',
+    slug: 'serverless',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
-    slug: 'serverless',
   },
   {
     title: 'Micro Services',
+    slug: 'micro-services',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
-    slug: 'micro-services',
   },
 ].map((technology) => ({
   ...technology,
@@ -121,22 +121,22 @@ export const technologies = [
 
 export const pages = [
   {
+    slug: 'about',
     title: 'About Us',
     subtitle:
       'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    slug: 'about',
-  },
-  {
-    title: 'Careers',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    slug: 'careers',
   },
   {
     title: 'Contact Us',
+    slug: 'contact',
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
-    slug: 'contact',
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
   },
 ].map((page) => ({
   ...page,

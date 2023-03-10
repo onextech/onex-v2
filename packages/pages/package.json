@@ -1,0 +1,43 @@
+{
+  "name": "@onex/pages",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "private": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "description": "Powered by One X Tech",
+  "author": "One X Tech",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "rm -rf dist && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "watch": "tsc-watch -p tsconfig.esm.json --onSuccess \"npm run yalc:push\"",
+    "reset": "rm -rf dist && rm -rf node_modules && npx yalc remove --all",
+    "yalc:push": "yalc push",
+    "lint": "lint-staged && next lint --quiet --fix",
+    "tslint": "tsc --noEmit --incremental",
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/config @gravis-os/theme @gravis-os/landing",
+    "local:unlink": "yalc remove --all"
+  },
+  "dependencies": {
+    "@gravis-os/landing": "^0.0.40",
+    "@gravis-os/ui": "^0.0.96",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run build"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --quiet --fix"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

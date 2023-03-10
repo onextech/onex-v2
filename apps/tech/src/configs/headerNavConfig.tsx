@@ -5,6 +5,7 @@ import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuMobileBlockItem,
 } from '@onex/blocks'
+import { headerNavConfig as commonHeaderNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
 import { technologies, pages, services } from './navConfig'
 
@@ -251,6 +252,7 @@ const headerNavConfig = [
       )
     },
   },
+  ...commonHeaderNavConfig,
 ]
 
 export default headerNavConfig

@@ -5,7 +5,6 @@ import {
   LandingLayoutProps as GvsLandingLayoutProps,
 } from '@gravis-os/landing'
 import { useUserPreferences } from '@onex/theme'
-import { commonConfig } from '@onex/common'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
@@ -13,12 +12,14 @@ export interface LandingLayoutProps
   headerNavConfig: GvsLandingLayoutProps['headerProps']['navItems']['left']
   footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
+  legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
   logo: React.JSXElementConstructor<unknown>
-  appConfig: { title: string }
+  appConfig: { title: string, companyTitle: string }
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const {
+    legalConfig,
     socialMediaConfig,
     headerNavConfig,
     footerNavConfig,
@@ -53,7 +54,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
     footerProps: {
       logo: <Logo />,
-      companyName: commonConfig.companyTitle,
+      companyName: appConfig.companyTitle,
       accordionProps: {
         titleProps: { variant: 'h7' },
         itemTitleProps: {
@@ -63,23 +64,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         },
       },
       navItems: footerNavConfig,
-      legalItems: [
-        {
-          key: 'terms',
-          title: 'Terms',
-          href: `${commonConfig.absoluteUrl}/terms`,
-        },
-        {
-          key: 'privacy',
-          title: 'Privacy',
-          href: `${commonConfig.absoluteUrl}/privacy`,
-        },
-        {
-          key: 'cookies',
-          title: 'Cookies',
-          href: `${commonConfig.absoluteUrl}/cookies`,
-        },
-      ],
+      legalItems: legalConfig,
       socialMediaItems: socialMediaConfig,
     },
   }

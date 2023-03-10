@@ -7,6 +7,7 @@ import Logo from '@app/components/Logo'
 import headerNavConfig from '@app/configs/headerNavConfig'
 import footerNavConfig from '@app/configs/footerNavConfig'
 import socialMediaConfig from '@app/configs/socialMediaConfig'
+import legalConfig from '@app/configs/legalConfig'
 import appConfig from '@app/configs/appConfig'
 
 export interface LandingLayoutProps
@@ -25,6 +26,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       headerNavConfig={headerNavConfig}
       footerNavConfig={footerNavConfig}
       socialMediaConfig={socialMediaConfig}
+      legalConfig={legalConfig}
       {...props}
     />
   )

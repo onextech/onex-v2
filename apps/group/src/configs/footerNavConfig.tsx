@@ -1,6 +1,7 @@
 import React from 'react'
+import { footerNavConfig as commonFooterNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
-import { brands, industries, pages, services } from './navConfig'
+import { industries, pages, services } from './navConfig'
 
 const footerNavConfig = [
   {
@@ -13,11 +14,7 @@ const footerNavConfig = [
     title: 'Industries',
     items: industries,
   },
-  {
-    key: 'ecosystem',
-    title: 'Ecosystem',
-    items: brands,
-  },
+  ...commonFooterNavConfig,
   {
     key: 'company',
     title: 'Company',

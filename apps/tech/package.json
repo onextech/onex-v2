@@ -28,6 +28,7 @@
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "latest",
     "@onex/blocks": "*",
+    "@onex/pages": "*",
     "@onex/common": "*",
     "@onex/layouts": "*",
     "@onex/theme": "*",
