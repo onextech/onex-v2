@@ -1,12 +1,8 @@
 import React from 'react'
 import { Blocks, Block } from '@gravis-os/landing'
-// TODO: This has to be import relatively or it'll break the tests due to some circular importing issue.
-import {
-  renderHeaderMenuBlockItem,
-  renderHeaderMenuMobileBlockItem,
-} from '../../blocks/src/core'
-import routeConfig from './routeConfig'
-import { brands } from './navConfig'
+import { brands, routeConfig } from '@onex/common'
+import renderHeaderMenuBlockItem from './renderHeaderMenuBlockItem'
+import renderHeaderMenuMobileBlockItem from './renderHeaderMenuMobileBlockItem'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }

@@ -1,3 +1,6 @@
+export { default as headerNavConfig } from './headerNavConfig'
+export * from './headerNavConfig'
+
 export { default as renderHeaderMenuMobileBlockItem } from './renderHeaderMenuMobileBlockItem'
 export * from './renderHeaderMenuMobileBlockItem'
 

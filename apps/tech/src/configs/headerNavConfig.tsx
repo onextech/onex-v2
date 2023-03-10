@@ -4,8 +4,8 @@ import { Block, Blocks } from '@gravis-os/landing'
 import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuMobileBlockItem,
+  headerNavConfig as commonHeaderNavConfig,
 } from '@onex/blocks'
-import { headerNavConfig as commonHeaderNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
 import { technologies, pages, services } from './navConfig'
 

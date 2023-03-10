@@ -1,7 +1,7 @@
 import React from 'react'
-import { renderGhostButtonBlockItem } from '@onex/blocks'
 import { BlockItemProps } from '@gravis-os/landing'
 import { routeConfig } from '@onex/common'
+import renderGhostButtonBlockItem from './renderGhostButtonBlockItem'
 
 export interface RenderPortfolioCardBlockItemProps {
   backgroundColor?: string

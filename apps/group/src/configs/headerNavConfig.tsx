@@ -5,8 +5,8 @@ import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
+  headerNavConfig as commonHeaderNavConfig,
 } from '@onex/blocks'
-import { headerNavConfig as commonHeaderNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
 import { services, industries, pages } from './navConfig'
 

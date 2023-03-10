@@ -6,9 +6,6 @@ export * from './routeConfig'
 
 export * from './navConfig'
 
-export { default as headerNavConfig } from './headerNavConfig'
-export * from './headerNavConfig'
-
 export { default as footerNavConfig } from './footerNavConfig'
 export * from './footerNavConfig'
 
