@@ -1,3 +1,6 @@
+export { default as renderHeaderMenuMobileBlockItem } from './renderHeaderMenuMobileBlockItem'
+export * from './renderHeaderMenuMobileBlockItem'
+
 export { default as renderGhostButtonBlockItem } from './renderGhostButtonBlockItem'
 export * from './renderGhostButtonBlockItem'
 
@@ -12,6 +15,3 @@ export * from './renderPortfolioCardBlockItem'
 
 export { default as renderPortfolioStickyGridBlockItem } from './renderPortfolioStickyGridBlockItem'
 export * from './renderPortfolioStickyGridBlockItem'
-
-export { default as renderHeaderMenuMobileBlockItem } from './renderHeaderMenuMobileBlockItem'
-export * from './renderHeaderMenuMobileBlockItem'

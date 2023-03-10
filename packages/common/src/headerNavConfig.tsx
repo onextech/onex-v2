@@ -1,9 +1,10 @@
 import React from 'react'
+import { Blocks, Block } from '@gravis-os/landing'
+// TODO: This has to be import relatively or it'll break the tests due to some circular importing issue.
 import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuMobileBlockItem,
-} from '@onex/blocks'
-import { Blocks, Block } from '@gravis-os/landing'
+} from '../../blocks/src/core'
 import routeConfig from './routeConfig'
 import { brands } from './navConfig'
 

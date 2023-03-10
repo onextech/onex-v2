@@ -1,9 +1,7 @@
-import { commonConfig } from '@onex/common'
+import { legalConfig as commonLegalConfig } from '@onex/common'
 
 const legalConfig = {
-  terms: `${commonConfig.absoluteUrl}/terms`,
-  privacy: `${commonConfig.absoluteUrl}/privacy`,
-  cookies: `${commonConfig.absoluteUrl}/cookies`,
+  ...commonLegalConfig,
 }
 
 export default legalConfig
