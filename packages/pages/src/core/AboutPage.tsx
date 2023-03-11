@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import { renderGhostButtonBlockItem } from '@onex/blocks'
+import { routeConfig } from '@onex/common'
 
 export interface AboutPageProps {}
 
@@ -600,6 +601,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               overline: 'Careers',
               title: 'Explore Careers',
               boxProps: { mt: 3 },
+              href: routeConfig.CAREERS,
             }),
           ],
         },

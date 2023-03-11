@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 import { createEmotionCache, bodyFont, theme } from '@onex/theme'
 import { renderGtmScriptTag, renderGtmNoScriptTag } from '@gravis-os/analytics'
+import { renderFontAwesomeKitScriptTag } from '@gravis-os/ui'
 
 export default class MyDocument extends Document {
   render() {
@@ -15,6 +16,7 @@ export default class MyDocument extends Document {
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
           {renderGtmScriptTag()}
+          {renderFontAwesomeKitScriptTag()}
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
         <body>

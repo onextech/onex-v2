@@ -65,6 +65,10 @@ export const services = [
 ].map((service) => ({
   ...service,
   href: `${routeConfig.SERVICES}/${service.slug}`,
+  items: service.items.map((item) => ({
+    ...item,
+    href: `${routeConfig.SERVICES}/${service.slug}`,
+  })),
 }))
 
 export const industries = [
@@ -114,6 +118,18 @@ export const pages = [
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
     slug: 'careers',
+  },
+].map((page) => ({
+  ...page,
+  href: `/${page.slug}`,
+}))
+
+export const jobs = [
+  {
+    title: 'Business Consultant',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    slug: 'business-consultant',
   },
 ].map((page) => ({
   ...page,
