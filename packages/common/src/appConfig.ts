@@ -3,7 +3,6 @@
  */
 const appConfig = {
   title: 'One X Group',
-  tagline: 'Power the new digital economy',
   companyTitle: 'One X Group Pte. Ltd.',
   companyAbsoluteUrl: process.env.NEXT_PUBLIC_COMPANY_ABSOLUTE_URL,
   absoluteUrl: 'https://onexgroup.co',

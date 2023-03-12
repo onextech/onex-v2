@@ -4,7 +4,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -31,6 +31,7 @@
     "@onex/blocks": "*",
     "@onex/pages": "*",
     "@onex/common": "*",
+    "@onex/components": "*",
     "@onex/layouts": "*",
     "@onex/theme": "*",
     "@onex/types": "*",

@@ -5,6 +5,8 @@ import {
   LandingLayoutProps as GvsLandingLayoutProps,
 } from '@gravis-os/landing'
 import { useUserPreferences } from '@onex/theme'
+import { ContactCallout } from '@onex/components'
+import { AppConfig } from '@onex/types'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
@@ -13,8 +15,9 @@ export interface LandingLayoutProps
   footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
+  callout?: GvsLandingLayoutProps['footerProps']['callout']
   logo: React.JSXElementConstructor<unknown>
-  appConfig: { title: string, companyTitle: string }
+  appConfig: AppConfig
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
@@ -53,6 +56,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     footerProps: {
+      callout: <ContactCallout appConfig={appConfig} />,
       logo: <Logo />,
       companyName: appConfig.companyTitle,
       accordionProps: {

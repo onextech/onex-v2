@@ -2,9 +2,9 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { AboutPage } from '@onex/pages'
 
-export interface NextAboutPageProps {}
+export interface NextHomePageProps {}
 
-const NextAboutPage: React.FC<NextAboutPageProps> = () => {
+const NextHomePage: React.FC<NextHomePageProps> = () => {
   return (
     <LandingLayout
       seo={{ title: 'Home' }}
@@ -15,4 +15,4 @@ const NextAboutPage: React.FC<NextAboutPageProps> = () => {
   )
 }
 
-export default NextAboutPage
+export default NextHomePage
