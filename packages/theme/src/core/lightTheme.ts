@@ -1,16 +1,16 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import typography from './typography'
-import palette from './palette'
+import lightPalette from './lightPalette'
 import components from './components'
 import breakpoints from './breakpoints'
 
-const theme = responsiveFontSizes(
+const lightTheme = responsiveFontSizes(
   createTheme({
-    palette,
+    palette: lightPalette,
     typography,
     components,
     breakpoints,
   })
 )
 
-export default theme
+export default lightTheme

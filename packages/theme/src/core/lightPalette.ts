@@ -1,6 +1,6 @@
 import { green } from '@mui/material/colors'
 
-const palette = {
+const lightPalette = {
   primary: {
     main: '#121212',
   },
@@ -16,4 +16,4 @@ const palette = {
   },
 }
 
-export default palette
+export default lightPalette

@@ -4,13 +4,21 @@ import {
   ThemeProviderProps as GvsThemeProviderProps,
   useUserPreferences,
 } from '@gravis-os/theme'
-import theme from './theme'
-import darkTheme from './darkTheme'
+import importedLightTheme from './lightTheme'
+import importedDarkTheme from './darkTheme'
 
-export interface ThemeProviderProps extends GvsThemeProviderProps {}
+export interface ThemeProviderProps extends GvsThemeProviderProps {
+  darkTheme?: GvsThemeProviderProps['theme']
+  lightTheme?: GvsThemeProviderProps['theme']
+}
 
 const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
-  const { children, emotionCache } = props
+  const {
+    darkTheme = importedDarkTheme,
+    lightTheme = importedLightTheme,
+    children,
+    emotionCache,
+  } = props
 
   // User Preferences
   const { isDarkMode } = useUserPreferences()
@@ -18,7 +26,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
   return (
     <GvsThemeProvider
       emotionCache={emotionCache}
-      theme={isDarkMode ? darkTheme : theme}
+      theme={isDarkMode ? darkTheme : lightTheme}
     >
       {children}
     </GvsThemeProvider>

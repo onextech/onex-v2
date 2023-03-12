@@ -4,12 +4,11 @@ import { AppProps } from 'next/app'
 import { EmotionCache } from '@emotion/react'
 import { GravisProvider } from '@gravis-os/config'
 import {
-  theme,
-  darkTheme,
   ThemeProvider,
   UserPreferencesProvider,
   createEmotionCache,
 } from '@onex/theme'
+import { darkTheme, lightTheme } from '@app/theme'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -30,7 +29,7 @@ const AppProvider = (props: AppProviderProps) => {
         },
         mui: {
           theme: {
-            light: theme,
+            light: lightTheme,
             dark: darkTheme,
           },
         },
@@ -41,7 +40,13 @@ const AppProvider = (props: AppProviderProps) => {
       </Head>
 
       <UserPreferencesProvider>
-        <ThemeProvider emotionCache={emotionCache}>{children}</ThemeProvider>
+        <ThemeProvider
+          lightTheme={lightTheme}
+          darkTheme={darkTheme}
+          emotionCache={emotionCache}
+        >
+          {children}
+        </ThemeProvider>
       </UserPreferencesProvider>
     </GravisProvider>
   )

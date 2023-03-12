@@ -1,4 +1,4 @@
-# @onex/theme
+# @onex/lightTheme
 
 ## License
 GPL-3.0

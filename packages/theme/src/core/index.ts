@@ -1,5 +1,5 @@
-export { default as theme } from './theme'
-export * from './theme'
+export { default as lightTheme } from './lightTheme'
+export * from './lightTheme'
 
 export { default as darkTheme } from './darkTheme'
 export * from './darkTheme'
