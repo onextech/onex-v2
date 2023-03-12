@@ -381,13 +381,14 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
                 md: 4,
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
-              gridItems: jobs.map((job) => {
+              gridItems: jobs.map((job, i) => {
                 const { title, subtitle } = job
+                const j = i + 1
                 return {
                   items: [
                     {
                       type: 'subtitle2',
-                      title: '01',
+                      title: j < 10 ? String(j).padStart(2, '0') : j,
                       titleProps: { color: 'text.secondary', sx: { mb: 3 } },
                     },
                     {

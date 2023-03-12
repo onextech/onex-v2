@@ -1,3 +1,6 @@
+import appConfig from './appConfig'
+import routeConfig from './routeConfig'
+
 export const brands = [
   {
     title: 'One X Tech',
@@ -54,6 +57,35 @@ export const brands = [
     href: 'https://govx.com',
   },
 ].map((brand) => ({
-  ...brand,
   hrefProps: { targetBlank: true },
+  ...brand,
+}))
+
+// Shared across pages
+export const pages = [
+  {
+    title: 'About Us',
+    slug: 'about',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    href: `${appConfig.companyAbsoluteUrl}${routeConfig.ABOUT}`,
+  },
+  {
+    title: 'Contact Us',
+    slug: 'contact',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
+    href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
+    href: `${appConfig.companyAbsoluteUrl}${routeConfig.CAREERS}`,
+  },
+].map((page) => ({
+  href: `/${page.slug}`,
+  ...(appConfig.companyAbsoluteUrl && { hrefProps: { targetBlank: true } }),
+  ...page,
 }))

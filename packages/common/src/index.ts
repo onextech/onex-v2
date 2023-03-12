@@ -1,5 +1,5 @@
-export { default as commonConfig } from './commonConfig'
-export * from './commonConfig'
+export { default as appConfig } from './appConfig'
+export * from './appConfig'
 
 export { default as routeConfig } from './routeConfig'
 export * from './routeConfig'

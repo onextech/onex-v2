@@ -1,7 +1,7 @@
-import { commonConfig } from '@onex/common'
+import { appConfig as commonAppConfig } from '@onex/common'
 
 const appConfig = {
-  ...commonConfig,
+  ...commonAppConfig,
   title: 'One X Group',
   absoluteUrl: process.env.NEXT_PUBLIC_ABSOLUTE_URL,
 }

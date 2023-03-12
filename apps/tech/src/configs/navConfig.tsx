@@ -1,4 +1,5 @@
 import React from 'react'
+import { pages as commonPages } from '@onex/common'
 import routeConfig from './routeConfig'
 
 export const services = [
@@ -119,29 +120,7 @@ export const technologies = [
   href: `${routeConfig.TECHNOLOGIES}/${technology.slug}`,
 }))
 
-export const pages = [
-  {
-    slug: 'about',
-    title: 'About Us',
-    subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-  },
-  {
-    title: 'Contact Us',
-    slug: 'contact',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-  },
-  {
-    title: 'Careers',
-    slug: 'careers',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-  },
-].map((page) => ({
-  ...page,
-  href: `/${page.slug}`,
-}))
+export const pages = commonPages
 
 export const jobs = [
   {

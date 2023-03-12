@@ -11,7 +11,7 @@
     "lint-staged": "lint-staged",
     "test": "jest",
     "e2e": "playwright test",
-    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics",
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics",
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {

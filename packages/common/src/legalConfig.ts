@@ -1,6 +1,6 @@
-import commonConfig from './commonConfig'
+import appConfig from './appConfig'
 
-const { absoluteUrl } = commonConfig
+const { absoluteUrl } = appConfig
 
 const legalConfig = {
   terms: `${absoluteUrl}/terms`,

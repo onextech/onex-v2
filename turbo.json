@@ -22,7 +22,11 @@
       "dependsOn": ["^build"]
     },
     "watch": {},
-    "local": {},
-    "local:unlink": {}
+    "local": {
+      "cache": false
+    },
+    "local:unlink": {
+      "cache": false
+    }
   }
 }

@@ -1,11 +1,12 @@
 /**
  * Common config across packages e.g. admin panel, dashboard, website.
  */
-const commonConfig = {
+const appConfig = {
   title: 'One X Group',
-  companyTitle: 'One X Group Pte. Ltd.',
   tagline: 'Power the new digital economy',
+  companyTitle: 'One X Group Pte. Ltd.',
+  companyAbsoluteUrl: process.env.NEXT_PUBLIC_COMPANY_ABSOLUTE_URL,
   absoluteUrl: 'https://onexgroup.co',
 }
 
-export default commonConfig
+export default appConfig

@@ -179,7 +179,6 @@ const headerNavConfig = [
   {
     key: 'company',
     title: 'Company',
-    href: routeConfig.ABOUT,
     fullWidth: true,
     isOpenOnHover: true,
     items: pages.map((page) => ({
