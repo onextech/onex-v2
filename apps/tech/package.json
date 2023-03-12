@@ -33,6 +33,7 @@
     "@onex/common": "*",
     "@onex/layouts": "*",
     "@onex/theme": "*",
+    "@onex/types": "*",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

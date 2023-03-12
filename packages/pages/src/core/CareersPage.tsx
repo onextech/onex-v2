@@ -1,8 +1,10 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
+import renderJobCardBlockItem from '@onex/blocks/src/core/renderJobCardBlockItem'
+import type { Job } from '@onex/types'
 
 export interface CareersPageProps {
-  jobs: Array<{ title: string; subtitle: string }>
+  jobs: Job[]
 }
 
 const commonBlockProps = { center: true, maxWidth: 'xl' }
@@ -382,27 +384,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
               gridItems: jobs.map((job, i) => {
-                const { title, subtitle } = job
-                const j = i + 1
-                return {
-                  items: [
-                    {
-                      type: 'subtitle2',
-                      title: j < 10 ? String(j).padStart(2, '0') : j,
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title,
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title: subtitle,
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                }
+                return renderJobCardBlockItem({ job, index: i + 1 })
               }),
             },
           ],

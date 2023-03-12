@@ -18,3 +18,6 @@ export * from './renderPortfolioCardBlockItem'
 
 export { default as renderPortfolioStickyGridBlockItem } from './renderPortfolioStickyGridBlockItem'
 export * from './renderPortfolioStickyGridBlockItem'
+
+export { default as renderJobCardBlockItem } from './renderJobCardBlockItem'
+export * from './renderJobCardBlockItem'

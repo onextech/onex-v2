@@ -5,7 +5,8 @@ module.exports = {
     '@onex/common',
     '@onex/blocks',
     '@onex/layouts',
-    '@onex/lightTheme',
+    '@onex/theme',
+    '@onex/types',
   ],
   webpack(config) {
     // Svg support

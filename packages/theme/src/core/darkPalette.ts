@@ -1,9 +1,13 @@
-import { green } from '@mui/material/colors'
+import { green, grey } from '@mui/material/colors'
 import lightPalette from './lightPalette'
 
 const darkPalette = {
   ...lightPalette,
   mode: 'dark' as const,
+  primary: {
+    main: grey.A100,
+    contrastText: grey['900'],
+  },
   secondary: {
     main: green.A400,
   },

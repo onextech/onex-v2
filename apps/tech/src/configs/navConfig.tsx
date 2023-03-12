@@ -121,15 +121,3 @@ export const technologies = [
 }))
 
 export const pages = commonPages
-
-export const jobs = [
-  {
-    title: 'Middle Software Engineer',
-    subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    slug: 'business-consultant',
-  },
-].map((page) => ({
-  ...page,
-  href: `/${page.slug}`,
-}))

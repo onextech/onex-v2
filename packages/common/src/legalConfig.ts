@@ -1,11 +1,12 @@
 import appConfig from './appConfig'
+import routeConfig from './routeConfig'
 
-const { absoluteUrl } = appConfig
+const { companyAbsoluteUrl } = appConfig
 
 const legalConfig = {
-  terms: `${absoluteUrl}/terms`,
-  privacy: `${absoluteUrl}/privacy`,
-  cookies: `${absoluteUrl}/cookies`,
+  terms: `${companyAbsoluteUrl}${routeConfig.TERMS}`,
+  privacy: `${companyAbsoluteUrl}${routeConfig.PRIVACY}`,
+  cookies: `${companyAbsoluteUrl}${routeConfig.COOKIES}`,
 }
 
 export default legalConfig
