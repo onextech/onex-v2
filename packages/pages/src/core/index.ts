@@ -12,3 +12,6 @@ export * from './ContactPage'
 
 export { default as CareersPage } from './CareersPage'
 export * from './CareersPage'
+
+export { default as LegalPage } from './LegalPage'
+export * from './LegalPage'

@@ -1,6 +1,8 @@
 import appConfig from './appConfig'
 import routeConfig from './routeConfig'
 
+const { companyAbsoluteUrl } = appConfig
+
 export const brands = [
   {
     title: 'One X Tech',
@@ -68,24 +70,50 @@ export const pages = [
     slug: 'about',
     subtitle:
       'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-    href: `${appConfig.companyAbsoluteUrl}${routeConfig.ABOUT}`,
+    href: `${companyAbsoluteUrl}${routeConfig.ABOUT}`,
   },
   {
     title: 'Contact Us',
     slug: 'contact',
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+    href: `${companyAbsoluteUrl}${routeConfig.CONTACT}`,
   },
   {
     title: 'Careers',
     slug: 'careers',
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: `${appConfig.companyAbsoluteUrl}${routeConfig.CAREERS}`,
+    href: `${companyAbsoluteUrl}${routeConfig.CAREERS}`,
   },
 ].map((page) => ({
   href: `/${page.slug}`,
   ...(appConfig.companyAbsoluteUrl && { hrefProps: { targetBlank: true } }),
   ...page,
+}))
+
+// Data shared across pages
+export const legalPages = [
+  {
+    title: 'Terms',
+    slug: routeConfig.TERMS,
+    href: `${companyAbsoluteUrl}${routeConfig.TERMS}`,
+    html: '<div>Terms</div>',
+  },
+  {
+    title: 'Privacy',
+    slug: routeConfig.PRIVACY,
+    href: `${companyAbsoluteUrl}${routeConfig.PRIVACY}`,
+    html: '<div>Privacy Policy</div>',
+  },
+  {
+    title: 'Cookies',
+    slug: routeConfig.COOKIES,
+    href: `${companyAbsoluteUrl}${routeConfig.COOKIES}`,
+    html: '<div>Cookie Policy</div>',
+  },
+].map((legalPage) => ({
+  ...(appConfig.companyAbsoluteUrl && { hrefProps: { targetBlank: true } }),
+  html: '<div>Hello world</div>',
+  ...legalPage,
 }))
