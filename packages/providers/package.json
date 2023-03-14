@@ -1,0 +1,14 @@
+{
+  "name": "@onex/providers",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/landing @gravis-os/analytics @gravis-os/theme",
+    "local:unlink": "yalc remove --all"
+  },
+  "dependencies": {
+    "@gravis-os/analytics": "^0.0.0",
+    "@gravis-os/landing": "^0.0.41",
+    "@gravis-os/ui": "^0.0.97"
+  }
+}

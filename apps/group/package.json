@@ -33,6 +33,7 @@
     "@onex/common": "*",
     "@onex/components": "*",
     "@onex/layouts": "*",
+    "@onex/providers": "*",
     "@onex/theme": "*",
     "@onex/types": "*",
     "next": "latest",

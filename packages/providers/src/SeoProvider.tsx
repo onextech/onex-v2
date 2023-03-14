@@ -1,7 +1,6 @@
 import React from 'react'
 import { DefaultSeo } from 'next-seo'
-import appConfig from '@app/configs/appConfig'
-import socialMediaConfig from '@app/configs/socialMediaConfig'
+import { useLayout } from './LayoutProvider'
 
 export interface SeoProviderProps {
   children?: React.ReactNode
@@ -9,6 +8,8 @@ export interface SeoProviderProps {
 
 const SeoProvider: React.FC<SeoProviderProps> = (props) => {
   const { children } = props
+
+  const { appConfig, socialMediaConfig } = useLayout()
 
   return (
     <>
@@ -25,6 +26,8 @@ const SeoProvider: React.FC<SeoProviderProps> = (props) => {
           cardType: 'summary_large_image',
         }}
       />
+
+      {/* Children */}
       {children}
     </>
   )

@@ -5,6 +5,7 @@
 // Used for __tests__/testing-library.js
 // Learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect'
+import nodeFetch from 'node-fetch'
 
 // Mock IntersectionObserver
 beforeEach(() => {
@@ -36,3 +37,10 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: jest.fn(),
   })),
 })
+
+// Mock Fetch
+if (typeof fetch === 'undefined') {
+  global.fetch = nodeFetch
+  global.Request = nodeFetch.Request
+  global.Response = nodeFetch.Response
+}

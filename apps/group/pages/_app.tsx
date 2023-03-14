@@ -1,7 +1,8 @@
 import React from 'react'
 import { AppProps } from 'next/app'
 import { EmotionCache } from '@emotion/react'
-import { AppProvider, AnalyticsProvider, SeoProvider } from '@app/providers'
+import { AppProvider, LayoutProvider } from '@app/providers'
+import { AnalyticsProvider, SeoProvider } from '@onex/providers'
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -13,13 +14,15 @@ const MyApp = (props: MyAppProps) => {
   const { Component, pageProps } = props
 
   return (
-    <AppProvider {...props}>
-      <SeoProvider>
-        <AnalyticsProvider>
-          <Component {...pageProps} />
-        </AnalyticsProvider>
-      </SeoProvider>
-    </AppProvider>
+    <LayoutProvider>
+      <AppProvider {...props}>
+        <SeoProvider>
+          <AnalyticsProvider>
+            <Component {...pageProps} />
+          </AnalyticsProvider>
+        </SeoProvider>
+      </AppProvider>
+    </LayoutProvider>
   )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 import { Blocks } from '@gravis-os/landing'
 import { ContactForm } from '@onex/components'
 import { Ratings } from '@gravis-os/ui'
-import { appConfig } from '@onex/common'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
+import { useLayout } from '@onex/providers'
 
 export interface ContactPageProps {
   fullScreen?: boolean
@@ -11,6 +11,9 @@ export interface ContactPageProps {
 
 const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
+
+  const { logo: Logo, appConfig } = useLayout()
+
   return (
     <Blocks
       items={[
@@ -40,6 +43,15 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                     },
                   },
                   items: [
+                    ...(Logo
+                      ? [
+                          {
+                            type: 'jsx',
+                            title: <Logo />,
+                            boxProps: { sx: { mb: 5 } },
+                          },
+                        ]
+                      : []),
                     { type: 'overline', title: 'Get Started' },
                     {
                       type: 'h2',

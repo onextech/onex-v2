@@ -1690,6 +1690,22 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
+"@gravis-os/landing@^0.0.41":
+  version "0.0.41"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.0.41.tgz#af7f92e5603ba1f7c2281fdc4ac2ec0852386cd6"
+  integrity sha512-blWP2cmQq+J37CCNzf6SQpR+HKcWkjH0b1PQvBAnQadETTSQQ2Xefzwh4b0yIpX+lm0pXoXZ1876S9N68lsy1w==
+  dependencies:
+    "@gravis-os/theme" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/ui" "*"
+    clsx "^1.1.1"
+    lodash "^4.17.21"
+    material-ui-popup-state "^3.1.1"
+    next-seo "^5.15.0"
+    nextjs-progressbar "^0.0.16"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
 "@gravis-os/rtl@*":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.2.tgz#9fb1fe32b6b223766c5af9c6bc52418e99d9d43e"
@@ -1736,6 +1752,32 @@
   version "0.0.96"
   resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.96.tgz#c50b5e5bbfce51bd7dcd3e806e425432e06b61e4"
   integrity sha512-rKKjN41r602DMz1XPpUd8Z446C1AQYVOLYbWCGA6vbIBQUeU2JNNOZvdQx6CYWBPWpOHw0vFnpTBupUBDE/LxQ==
+  dependencies:
+    "@dnd-kit/core" "^6.0.1"
+    "@dnd-kit/sortable" "^7.0.0"
+    "@dnd-kit/utilities" "^3.2.0"
+    "@gravis-os/config" "*"
+    "@gravis-os/rtl" "*"
+    "@gravis-os/theme" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/utils" "*"
+    clsx "^1.1.1"
+    keen-slider "^6.8.5"
+    lodash "^4.17.21"
+    material-ui-popup-state "^3.1.1"
+    react-awesome-reveal "4.0.1"
+    react-error-boundary "^3.1.4"
+    react-hot-toast ">=2.2.0"
+    react-inlinesvg "^3.0.1"
+    react-medium-image-zoom "4"
+    react-share "^4.4.1"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/ui@^0.0.97":
+  version "0.0.97"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.97.tgz#17bb615728ce17a51d24bfcf07be2539150752bd"
+  integrity sha512-sqwjFtqUF08gTzQ/BBGFYjNhmg7rQWlop5mxuvj+Gmhj4ZT1Zklucc06BMf4NCHTl4/1wTGmme8pwMAYelYsnA==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"

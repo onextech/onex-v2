@@ -1,14 +1,12 @@
 import React from 'react'
 import { Block } from '@gravis-os/landing'
 import { ContactPage } from '@onex/pages'
-import { AppConfig } from '@onex/types'
+import { useLayout } from '@onex/providers'
 
-export interface ContactCalloutProps {
-  appConfig: AppConfig
-}
+export interface ContactCalloutProps {}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
-  const { appConfig } = props
+  const { appConfig } = useLayout()
 
   const footerCalloutBlockProps = {
     py: 3,

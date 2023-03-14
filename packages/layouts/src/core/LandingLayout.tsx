@@ -6,32 +6,26 @@ import {
 } from '@gravis-os/landing'
 import { useUserPreferences } from '@onex/theme'
 import { ContactCallout } from '@onex/components'
-import { AppConfig } from '@onex/types'
+import { useLayout } from '@onex/providers'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
-  headerNavConfig: GvsLandingLayoutProps['headerProps']['navItems']['left']
-  footerNavConfig: GvsLandingLayoutProps['footerProps']['navItems']
-  socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
-  legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
-  callout?: GvsLandingLayoutProps['footerProps']['callout']
-  logo: React.JSXElementConstructor<unknown>
-  appConfig: AppConfig
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
+  const { seo, ...rest } = props
+
+  // Hooks
+  const { toggleDarkModeIconButtonJsx } = useUserPreferences()
   const {
+    logo: Logo,
+    appConfig,
     legalConfig,
     socialMediaConfig,
     headerNavConfig,
     footerNavConfig,
-    appConfig,
-    logo: Logo,
-    seo,
-    ...rest
-  } = props
-  const { toggleDarkModeIconButtonJsx } = useUserPreferences()
+  } = useLayout()
 
   const defaultLandingLayoutProps = {
     disableGutters: true,
@@ -56,7 +50,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     footerProps: {
-      callout: <ContactCallout appConfig={appConfig} />,
+      callout: <ContactCallout />,
       logo: <Logo />,
       companyName: appConfig.companyTitle,
       accordionProps: {
