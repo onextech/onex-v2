@@ -4,10 +4,16 @@ import {
   renderPortfolioCardBlockItem,
   renderPortfolioStickyGridBlockItem,
 } from '@onex/blocks'
+import type { Showcase } from '@onex/types'
 
-export interface ShowcasePageProps {}
+export interface ShowcasePageProps {
+  showcase: Showcase
+}
 
-const ShowcasePage: React.FC<ShowcasePageProps> = () => {
+const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
+  const { showcase } = props
+  const { title, subtitle } = showcase || {}
+
   return (
     <Blocks
       items={[
@@ -20,13 +26,12 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
             { type: 'overline', title: 'Portfolio' },
             {
               type: 'h1',
-              title: 'Canon.',
+              title,
               titleProps: { mb: 2, maxWidth: true },
             },
             {
               type: 'subtitle1',
-              title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+              title: subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '60%',
@@ -39,16 +44,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
           maxWidth: 'xl',
           pt: 0,
           pb: 0,
-          items: [
-            renderPortfolioCardBlockItem({
-              backgroundColor: '#c53333',
-              mode: 'dark',
-              title: 'Preparing the future of home-made meals with Canon.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
-              imageSrc: '/images/portfolio_cover_1.png',
-            }),
-          ],
+          items: [renderPortfolioCardBlockItem({ item: showcase })],
         },
         {
           key: 'portfolio-sticky-grid-left',
@@ -56,9 +52,8 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
           items: [
             renderPortfolioStickyGridBlockItem({
               reverse: true,
-              title: 'Preparing the future of home-made meals with Canon.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
+              title,
+              subtitle,
               imageSrc: '/images/portfolio_detail_sticky_1.jpg',
             }),
           ],
@@ -70,13 +65,12 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
             { type: 'overline', title: 'What we do' },
             {
               type: 'h4',
-              title: 'We Transform Businesses',
+              title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'subtitle1',
-              title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+              title: subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '50%',
@@ -126,9 +120,8 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
           key: 'portfolio-sticky-grid-right',
           items: [
             renderPortfolioStickyGridBlockItem({
-              title: 'Preparing the future of home-made meals with Canon.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
+              title,
+              subtitle,
               imageSrc: '/images/portfolio_detail_sticky_2.png',
             }),
           ],
@@ -137,16 +130,14 @@ const ShowcasePage: React.FC<ShowcasePageProps> = () => {
           key: 'portfolio-grid',
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'What we do' },
             {
               type: 'h4',
-              title: 'We Transform Businesses',
+              title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'subtitle1',
-              title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+              title: subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,

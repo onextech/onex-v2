@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { CareersPage } from '@onex/pages'
-import { jobs } from '@app/configs/navConfig'
+import { MOCK_JOBS } from '@onex/common'
 
 export interface NextCareersPageProps {}
 
@@ -16,7 +16,7 @@ const NextCareersPage: React.FC<NextCareersPageProps> = () => {
         position: 'fixed',
       }}
     >
-      <CareersPage jobs={jobs} />
+      <CareersPage jobs={MOCK_JOBS} />
     </LandingLayout>
   )
 }

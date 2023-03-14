@@ -1,23 +1,18 @@
 import React from 'react'
-import { BlockItemProps } from '@gravis-os/landing'
 import { routeConfig } from '@onex/common'
+import { Showcase } from '@onex/types'
 import renderGhostButtonBlockItem from './renderGhostButtonBlockItem'
 
 export interface RenderPortfolioCardBlockItemProps {
-  backgroundColor?: string
-  mode?: 'light' | 'dark'
-  title: BlockItemProps['title']
-  subtitle: BlockItemProps['title']
-  imageSrc: string
-  reverse?: boolean
-  slug?: string
+  item: Showcase
 }
 
 const renderPortfolioCardBlockItem = (
   props: RenderPortfolioCardBlockItemProps
 ) => {
+  const { item } = props
   const { slug, backgroundColor, mode, imageSrc, title, subtitle, reverse } =
-    props
+    item || {}
 
   const gridItems = [
     {

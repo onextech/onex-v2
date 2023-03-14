@@ -1,0 +1,13 @@
+export { default as appConfig } from './appConfig'
+export * from './appConfig'
+
+export { default as routeConfig } from './routeConfig'
+export * from './routeConfig'
+
+export * from './navConfig'
+
+export { default as footerNavConfig } from './footerNavConfig'
+export * from './footerNavConfig'
+
+export { default as legalConfig } from './legalConfig'
+export * from './legalConfig'

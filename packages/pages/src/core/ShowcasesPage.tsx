@@ -1,10 +1,14 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import { renderPortfolioCardBlockItem } from '@onex/blocks'
+import type { Showcase } from '@onex/types'
 
-export interface ShowcasesPageProps {}
+export interface ShowcasesPageProps {
+  showcases: Showcase[]
+}
 
 const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
+  const { showcases } = props
   return (
     <Blocks
       items={[
@@ -36,50 +40,9 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
           center: true,
           maxWidth: 'xl',
           pt: 0,
-          items: [
-            // Cards
-            renderPortfolioCardBlockItem({
-              backgroundColor: '#c6dcc0',
-              mode: 'light',
-              title: 'Preparing the future of home-made meals with Phillips.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
-              imageSrc: '/images/portfolio_cover_3.png',
-              slug: 'canon',
-            }),
-
-            renderPortfolioCardBlockItem({
-              backgroundColor: '#202941',
-              mode: 'dark',
-              title: 'Preparing the future of home-made meals with Phillips.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
-              imageSrc: '/images/portfolio_cover_4.png',
-              reverse: true,
-              slug: 'canon',
-            }),
-
-            renderPortfolioCardBlockItem({
-              backgroundColor: '#2b698a',
-              mode: 'dark',
-              title: 'Preparing the future of home-made meals with Phillips.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
-              imageSrc: '/images/portfolio_cover_2.jpg',
-              slug: 'canon',
-            }),
-
-            renderPortfolioCardBlockItem({
-              mode: 'dark',
-              backgroundColor: '#111',
-              title: 'Preparing the future of home-made meals with Canon.',
-              subtitle:
-                'Promoting science by building the largest online conference platform.',
-              imageSrc: '/images/portfolio_cover_1.png',
-              reverse: true,
-              slug: 'canon',
-            }),
-          ],
+          items: showcases.map((showcase) =>
+            renderPortfolioCardBlockItem({ item: showcase })
+          ),
         },
       ]}
     />
