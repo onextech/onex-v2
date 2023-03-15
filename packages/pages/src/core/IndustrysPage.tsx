@@ -1,6 +1,5 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { renderPortfolioCardBlockItem } from '@onex/blocks'
 import type { Industry } from '@onex/types'
 
 export interface IndustrysPageProps {
@@ -13,12 +12,12 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'portfolio-hero',
+          key: 'hero',
           maxWidth: 'xl',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
+            { type: 'overline', title: 'Industries' },
             {
               type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',
@@ -34,15 +33,6 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
               },
             },
           ],
-        },
-        {
-          key: 'portfolio-card-list',
-          center: true,
-          maxWidth: 'xl',
-          pt: 0,
-          items: industrys.map((industry) =>
-            renderPortfolioCardBlockItem({ item: industry })
-          ),
         },
       ]}
     />

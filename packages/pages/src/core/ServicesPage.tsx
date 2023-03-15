@@ -13,12 +13,10 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'portfolio-hero',
+          key: 'hero',
           maxWidth: 'xl',
-          sx: { pt: { xs: 3, md: 6 } },
-          pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
+            { type: 'overline', title: 'Services' },
             {
               type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',
@@ -34,15 +32,6 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
               },
             },
           ],
-        },
-        {
-          key: 'portfolio-card-list',
-          center: true,
-          maxWidth: 'xl',
-          pt: 0,
-          items: services.map((service) =>
-            renderPortfolioCardBlockItem({ item: service })
-          ),
         },
       ]}
     />

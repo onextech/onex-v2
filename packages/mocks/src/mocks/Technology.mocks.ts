@@ -1,44 +1,55 @@
-export const MOCK_TECHNOLOGYS = [
+export const MOCK_TECH_TECHNOLOGYS = [
   {
-    title: 'Preparing the future of home-made meals with Phillips.',
-    slug: 'phillips',
+    title: 'JavaScript',
+    slug: 'javascript',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_3.png',
-
-    mode: 'light',
-    backgroundColor: '#c6dcc0',
+      'Make your product the first choice for users with designers who built dozens of them.',
   },
   {
-    title: 'Preparing the future of home-made meals with Lazada.',
-    slug: 'lazada',
+    title: 'TypeScript',
+    slug: 'typescript',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_4.png',
-
-    mode: 'dark',
-    backgroundColor: '#202941',
-    reverse: true,
+      'Build or scale competitive products ready for future growth and millions of users.',
   },
   {
-    title: 'Preparing the future of home-made meals with Tefal.',
-    slug: 'tefal',
-    subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_2.jpg',
-
-    mode: 'dark',
-    backgroundColor: '#2b698a',
+    slug: 'nodejs',
+    title: 'Node.js',
+    subtitle: 'Let certified engineers kick-start your cloud operations',
   },
   {
-    title: 'Preparing the future of home-made meals with Canon.',
-    slug: 'canon',
+    title: 'React',
+    slug: 'react',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_1.png',
-
-    mode: 'dark',
-    backgroundColor: '#111',
-    reverse: true,
+      'Work with product experts with the know-how tested in 7+ industries.',
   },
-]
+  {
+    title: 'Next.js',
+    slug: 'nextjs',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+  {
+    title: 'Express',
+    slug: 'express',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+  {
+    title: 'AWS',
+    slug: 'aws',
+    subtitle:
+      'Work with product experts with the know-how tested in 7+ industries.',
+  },
+  {
+    title: 'Serverless',
+    slug: 'serverless',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+  {
+    title: 'Micro Services',
+    slug: 'micro-services',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+].map((item, i) => ({ id: i, ...item }))

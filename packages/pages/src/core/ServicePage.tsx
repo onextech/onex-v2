@@ -1,9 +1,5 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import {
-  renderPortfolioCardBlockItem,
-  renderPortfolioStickyGridBlockItem,
-} from '@onex/blocks'
 import type { Service } from '@onex/types'
 
 export interface ServicePageProps {
@@ -20,8 +16,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         {
           key: 'hero',
           maxWidth: 'xl',
-          sx: { pt: { xs: 3, md: 6 } },
-          pb: 0,
           items: [
             {
               type: 'h1',

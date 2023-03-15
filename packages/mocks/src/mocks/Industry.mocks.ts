@@ -1,44 +1,51 @@
-export const MOCK_INDUSTRYS = [
+export const MOCK_GROUP_INDUSTRYS = [
   {
-    title: 'Preparing the future of home-made meals with Phillips.',
-    slug: 'phillips',
+    title: 'Financial Services',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_3.png',
-
-    mode: 'light',
-    backgroundColor: '#c6dcc0',
+      'Support in cloud adoption and automation for startups and finance institutions.',
+    slug: 'financial-services',
   },
   {
-    title: 'Preparing the future of home-made meals with Lazada.',
-    slug: 'lazada',
+    title: 'Government',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_4.png',
-
-    mode: 'dark',
-    backgroundColor: '#202941',
-    reverse: true,
+      'Support in cloud adoption and automation for startups and finance institutions.',
+    slug: 'government-public-sectors',
   },
   {
-    title: 'Preparing the future of home-made meals with Tefal.',
-    slug: 'tefal',
+    title: 'Maritime',
     subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_2.jpg',
-
-    mode: 'dark',
-    backgroundColor: '#2b698a',
+      'Work with product experts with the know-how tested in 7+ industries.',
+    slug: 'maritime',
   },
   {
-    title: 'Preparing the future of home-made meals with Canon.',
-    slug: 'canon',
-    subtitle:
-      'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_1.png',
-
-    mode: 'dark',
-    backgroundColor: '#111',
-    reverse: true,
+    title: 'Real Estate',
+    subtitle: 'Let certified engineers kick-start your cloud operations',
+    slug: 'real-estate',
   },
-]
+].map((item, i) => ({ id: i, ...item }))
+
+export const MOCK_TECH_INDUSTRYS = [
+  {
+    title: 'Financial Services',
+    subtitle:
+      'Support in cloud adoption and automation for startups and finance institutions.',
+    slug: 'financial-services',
+  },
+  {
+    title: 'Government',
+    subtitle:
+      'Support in cloud adoption and automation for startups and finance institutions.',
+    slug: 'government-public-sectors',
+  },
+  {
+    title: 'Maritime',
+    subtitle:
+      'Work with product experts with the know-how tested in 7+ industries.',
+    slug: 'maritime',
+  },
+  {
+    title: 'Real Estate',
+    subtitle: 'Let certified engineers kick-start your cloud operations',
+    slug: 'real-estate',
+  },
+].map((item, i) => ({ id: i, ...item }))

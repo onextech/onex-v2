@@ -1,9 +1,5 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import {
-  renderPortfolioCardBlockItem,
-  renderPortfolioStickyGridBlockItem,
-} from '@onex/blocks'
 import type { Technology } from '@onex/types'
 
 export interface TechnologyPageProps {
@@ -18,12 +14,9 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'portfolio-hero',
+          key: 'hero',
           maxWidth: 'xl',
-          sx: { pt: { xs: 3, md: 6 } },
-          pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
             {
               type: 'h1',
               title,
@@ -40,94 +33,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
           ],
         },
         {
-          key: 'portfolio-card-list',
-          maxWidth: 'xl',
-          pt: 0,
-          pb: 0,
-          items: [renderPortfolioCardBlockItem({ item: technology })],
-        },
-        {
-          key: 'portfolio-sticky-grid-left',
-          pt: 10,
-          items: [
-            renderPortfolioStickyGridBlockItem({
-              reverse: true,
-              title,
-              subtitle,
-              imageSrc: '/images/portfolio_detail_sticky_1.jpg',
-            }),
-          ],
-        },
-        {
-          key: 'portfolio-grid',
-          py: 5,
-          items: [
-            { type: 'overline', title: 'What we do' },
-            {
-              type: 'h4',
-              title,
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: '50%',
-              },
-            },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 4, md: 8 } },
-              gridProps: { spacing: 6 },
-              gridItemProps: {
-                xs: 12,
-                md: 6,
-                sx: { textAlign: { xs: 'center', md: 'left' } },
-              },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/portfolio_detail_gallery_2.png',
-                      titleProps: {
-                        alt: 'portfolio_detail_gallery_2',
-                        fill: true,
-                        zoom: true,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/portfolio_detail_gallery_1.png',
-                      titleProps: {
-                        alt: 'portfolio_detail_gallery_1',
-                        fill: true,
-                        zoom: true,
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          key: 'portfolio-sticky-grid-right',
-          items: [
-            renderPortfolioStickyGridBlockItem({
-              title,
-              subtitle,
-              imageSrc: '/images/portfolio_detail_sticky_2.png',
-            }),
-          ],
-        },
-        {
-          key: 'portfolio-grid',
+          key: 'benefits',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {
