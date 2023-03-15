@@ -1,15 +1,9 @@
-import { BlockItemProps } from '@gravis-os/landing'
+import { CrudItem } from '@gravis-os/types'
+import ServiceCategory from './ServiceCategory'
 
-export interface Service {
-  title: BlockItemProps['title']
-  slug?: string
-  subtitle: BlockItemProps['title']
-  imageSrc: string
-
-  mode?: BlockItemProps['mode']
-  backgroundColor?: string
-
-  reverse?: boolean
+export interface Service extends CrudItem {
+  category_id?: number
+  category?: ServiceCategory
 }
 
 export default Service

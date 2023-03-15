@@ -23,7 +23,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
             {
               type: 'h1',
               title,
@@ -40,7 +39,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ],
         },
         {
-          key: 'other-grid',
+          key: 'benefits',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {
@@ -187,64 +186,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                       title:
                         "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
                       titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          key: 'benefits-grid',
-          py: 5,
-          items: [
-            { type: 'overline', title: 'What we do' },
-            {
-              type: 'h4',
-              title,
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: '50%',
-              },
-            },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 4, md: 8 } },
-              gridProps: { spacing: 6 },
-              gridItemProps: {
-                xs: 12,
-                md: 6,
-                sx: { textAlign: { xs: 'center', md: 'left' } },
-              },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/_detail_gallery_2.png',
-                      titleProps: {
-                        alt: '_detail_gallery_2',
-                        fill: true,
-                        zoom: true,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/_detail_gallery_1.png',
-                      titleProps: {
-                        alt: '_detail_gallery_1',
-                        fill: true,
-                        zoom: true,
-                      },
                     },
                   ],
                 },
