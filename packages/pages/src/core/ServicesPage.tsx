@@ -27,7 +27,7 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
             { type: 'overline', title: 'Services' },
             {
               type: 'h1',
-              title: 'Craft experiences that touch hearts and move markets.',
+              title: 'Services',
             },
             {
               type: 'subtitle1',
@@ -41,7 +41,7 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/about_nodes.png',
+              title: '/images/about_working_in_office.png',
               disableContainer: true,
               titleProps: {
                 alt: 'service-hero',
@@ -54,7 +54,7 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
               type: 'h4',
               title:
                 'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
-              titleProps: { maxWidth: true, sx: { mt: 10 } },
+              titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],
         },
