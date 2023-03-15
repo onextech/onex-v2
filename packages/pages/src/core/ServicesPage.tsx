@@ -1,6 +1,5 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { renderPortfolioCardBlockItem } from '@onex/blocks'
 import type { Service } from '@onex/types'
 
 export interface ServicesPageProps {
@@ -9,26 +8,40 @@ export interface ServicesPageProps {
 
 const ServicesPage: React.FC<ServicesPageProps> = (props) => {
   const { services } = props
+
   return (
     <Blocks
       items={[
         {
           key: 'hero',
-          maxWidth: 'xl',
+          pt: { xs: 5, md: 10 },
+          pb: 0,
+          sx: { backgroundColor: 'background.paper' },
           items: [
             { type: 'overline', title: 'Services' },
             {
               type: 'h1',
-              title: 'Invest in Digital Transformation with Confidence.',
-              titleProps: { mb: 2, maxWidth: true },
+              title: 'Craft experiences that touch hearts and move markets.',
             },
             {
               type: 'subtitle1',
               title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+                'Meet the moment with our services and capabilities that help you define your vision for the future and make it happen.',
               titleProps: {
                 color: 'text.secondary',
-                maxWidth: '60%',
+                maxWidth: true,
+                sx: { mt: 2 },
+              },
+            },
+            {
+              type: 'image',
+              title: '/images/about_nodes.png',
+              disableContainer: true,
+              titleProps: {
+                alt: 'service-hero',
+                background: true,
+                backgroundHeight: { xs: 240, md: 320 },
+                backgroundSx: { mt: 5 },
               },
             },
           ],

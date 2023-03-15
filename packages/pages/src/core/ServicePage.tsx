@@ -15,19 +15,31 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
       items={[
         {
           key: 'hero',
-          maxWidth: 'xl',
+          py: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
           items: [
             {
               type: 'h1',
               title,
-              titleProps: { mb: 2, maxWidth: true },
             },
             {
               type: 'subtitle1',
               title: subtitle,
               titleProps: {
                 color: 'text.secondary',
-                maxWidth: '60%',
+                maxWidth: true,
+                sx: { mt: 2 },
+              },
+            },
+            {
+              type: 'image',
+              title: '/images/about_nodes.png',
+              disableContainer: true,
+              titleProps: {
+                alt: 'service-hero',
+                background: true,
+                backgroundHeight: { xs: 240, md: 320 },
+                backgroundSx: { mt: 5 },
               },
             },
           ],
@@ -66,7 +78,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                       title: '/images/about_shape_circle_radial.svg',
                       titleProps: {
                         alt: 'about_shape_circle_radial',
-                        disableResponsive: true,
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -97,7 +108,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                       title: '/images/about_shape_squares.svg',
                       titleProps: {
                         alt: 'about_shape_squares',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -128,7 +139,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                       title: '/images/about_shape_square_with_circle.svg',
                       titleProps: {
                         alt: 'about_shape_square_with_circle',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -159,7 +170,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                       title: '/images/about_shape_circles.svg',
                       titleProps: {
                         alt: 'about_shape_circles',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },

@@ -16,6 +16,9 @@ export * from './CareersPage'
 export { default as LegalPage } from './LegalPage'
 export * from './LegalPage'
 
+export { default as ServiceCategorysPage } from './ServiceCategorysPage'
+export * from './ServiceCategorysPage'
+
 export { default as ServicesPage } from './ServicesPage'
 export * from './ServicesPage'
 

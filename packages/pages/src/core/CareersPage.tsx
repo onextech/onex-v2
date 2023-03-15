@@ -62,12 +62,11 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
               type: 'image',
               title: '/images/careers_office.jpg',
               maxWidth: false,
-              containerProps: { disableGutters: true },
+              disableContainer: true,
               titleProps: {
                 alt: 'about_working_in_office',
-                disableResponsive: true,
                 background: true,
-                containerSx: { minHeight: { xs: 300, md: 500 } },
+                backgroundHeight: { xs: 300, md: 500 },
                 sx: { my: 3 },
               },
             },
@@ -345,8 +344,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             {
               type: 'image',
               title: '/images/about_working_in_office.png',
-              maxWidth: false,
-              containerProps: { disableGutters: true },
+              disableContainer: true,
               titleProps: {
                 alt: 'about_working_in_office',
                 fill: true,

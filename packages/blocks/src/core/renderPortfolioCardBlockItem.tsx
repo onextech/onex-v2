@@ -32,8 +32,6 @@ const renderPortfolioCardBlockItem = (
             alt: 'image-src',
             background: true,
             fixedBackground: true,
-            disableResponsive: true,
-            disablePointerEvents: true,
             scaleOnHover: true,
             containerSx: {
               width: { xs: '60%', sm: '65%' },

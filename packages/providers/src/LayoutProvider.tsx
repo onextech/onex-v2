@@ -10,6 +10,7 @@ export interface LayoutContextValue {
   logo: React.JSXElementConstructor<unknown>
   // Layout configs
   appConfig?: AppConfig
+  routeConfig?: Record<string, string>
   headerNavConfig?: GvsLandingLayoutProps['headerProps']['navItems']['left']
   footerNavConfig?: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']

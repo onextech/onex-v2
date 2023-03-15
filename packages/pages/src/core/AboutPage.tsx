@@ -100,7 +100,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           pb: 0,
           backgroundImageProps: {
             src: '/images/about_nodes.png',
-            alt: 'nodes',
+            alt: 'about-nodes',
           },
           items: [],
         },
@@ -184,7 +184,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/images/about_shape_circle_radial.svg',
                       titleProps: {
                         alt: 'about_shape_circle_radial',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -215,7 +215,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/images/about_shape_squares.svg',
                       titleProps: {
                         alt: 'about_shape_squares',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -246,7 +246,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/images/about_shape_square_with_circle.svg',
                       titleProps: {
                         alt: 'about_shape_square_with_circle',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -277,7 +277,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/images/about_shape_circles.svg',
                       titleProps: {
                         alt: 'about_shape_circles',
-                        disableResponsive: true,
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -374,7 +374,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_canon.png',
                       titleProps: {
                         alt: 'logo_canon',
-                        disableResponsive: true,
+
                         width: 125,
                         height: 27,
                       },
@@ -388,7 +388,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_ssa.png',
                       titleProps: {
                         alt: 'logo_ssa',
-                        disableResponsive: true,
+
                         width: 130,
                         height: 30,
                       },
@@ -402,7 +402,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_uob.png',
                       titleProps: {
                         alt: 'logo_uob',
-                        disableResponsive: true,
+
                         width: 104,
                         height: 30,
                       },
@@ -416,7 +416,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_julius_bar.png',
                       titleProps: {
                         alt: 'logo_julius_bar',
-                        disableResponsive: true,
+
                         width: 144,
                         height: 28,
                       },
@@ -430,7 +430,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_dxd.png',
                       titleProps: {
                         alt: 'logo_dxd',
-                        disableResponsive: true,
+
                         width: 119,
                         height: 45,
                       },
@@ -444,7 +444,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_mtj.png',
                       titleProps: {
                         alt: 'logo_mtj',
-                        disableResponsive: true,
+
                         width: 155,
                         height: 30,
                       },
@@ -580,8 +580,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             {
               type: 'image',
               title: '/images/about_working_in_office.png',
-              maxWidth: false,
-              containerProps: { disableGutters: true },
+              disableContainer: true,
               titleProps: {
                 alt: 'about_working_in_office',
                 fill: true,

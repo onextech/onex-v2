@@ -52,15 +52,6 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Make your systems fast, efficient, and scalable to prepare for further product growth.',
   },
-]
-
-export const MOCK_GROUP_SERVICE_CATEGORYS = [
-  { id: 1, title: 'Applications', slug: 'applications' },
-  { id: 2, title: 'Engineering', slug: 'engineering' },
-  { id: 3, title: 'Infrastructure & Cloud', slug: 'infrastructure-cloud' },
-  { id: 4, title: 'Advisory', slug: 'advisory' },
-  { id: 5, title: 'Modern Workplace', slug: 'modern-workplace' },
-  { id: 6, title: 'Quality Assurance', slug: 'quality-assurance' },
 ].map((item, i) => ({ id: i, ...item }))
 
 export const MOCK_GROUP_SERVICES = [

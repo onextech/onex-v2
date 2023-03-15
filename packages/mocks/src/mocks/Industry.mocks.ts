@@ -1,6 +1,6 @@
 export const MOCK_GROUP_INDUSTRYS = [
   {
-    title: 'Financial Services',
+    title: 'Finance',
     subtitle:
       'Support in cloud adoption and automation for startups and finance institutions.',
     slug: 'financial-services',
@@ -26,7 +26,7 @@ export const MOCK_GROUP_INDUSTRYS = [
 
 export const MOCK_TECH_INDUSTRYS = [
   {
-    title: 'Financial Services',
+    title: 'Finance',
     subtitle:
       'Support in cloud adoption and automation for startups and finance institutions.',
     slug: 'financial-services',

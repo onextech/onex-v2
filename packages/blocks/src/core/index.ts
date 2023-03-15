@@ -21,3 +21,6 @@ export * from './renderPortfolioStickyGridBlockItem'
 
 export { default as renderJobCardBlockItem } from './renderJobCardBlockItem'
 export * from './renderJobCardBlockItem'
+
+export { default as renderServiceCategoryBlockItem } from './renderServiceCategoryBlockItem'
+export * from './renderServiceCategoryBlockItem'
