@@ -24,3 +24,12 @@ export * from './renderJobCardBlockItem'
 
 export { default as renderServiceCategoryBlockItem } from './renderServiceCategoryBlockItem'
 export * from './renderServiceCategoryBlockItem'
+
+export { default as renderServiceBlockItem } from './renderServiceBlockItem'
+export * from './renderServiceBlockItem'
+
+export { default as renderIndustryBlockItem } from './renderIndustryBlockItem'
+export * from './renderIndustryBlockItem'
+
+export { default as renderTechnologyBlockItem } from './renderTechnologyBlockItem'
+export * from './renderTechnologyBlockItem'
