@@ -68,7 +68,7 @@ export const services = [
   href: `${routeConfig.SERVICES}/${service.slug}`,
   items: service.items.map((item) => ({
     ...item,
-    href: `${routeConfig.SERVICES}/${service.slug}`,
+    href: `${routeConfig.SERVICES}/${item.slug}`,
   })),
 }))
 

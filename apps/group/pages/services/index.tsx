@@ -1,10 +1,16 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
+import { ServicesPage } from '@onex/pages'
+import { MOCK_SERVICES } from '@onex/mocks'
 
-export interface ServicesPageProps {}
+export interface NextServicesPageProps {}
 
-const ServicesPage: React.FC<ServicesPageProps> = () => {
-  return <LandingLayout seo={{ title: 'Services' }} />
+const NextServicesPage: React.FC<NextServicesPageProps> = () => {
+  return (
+    <LandingLayout seo={{ title: 'Services' }}>
+      <ServicesPage services={MOCK_SERVICES} />
+    </LandingLayout>
+  )
 }
 
-export default ServicesPage
+export default NextServicesPage

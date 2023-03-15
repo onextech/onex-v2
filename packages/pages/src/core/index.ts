@@ -15,3 +15,21 @@ export * from './CareersPage'
 
 export { default as LegalPage } from './LegalPage'
 export * from './LegalPage'
+
+export { default as ServicesPage } from './ServicesPage'
+export * from './ServicesPage'
+
+export { default as ServicePage } from './ServicePage'
+export * from './ServicePage'
+
+export { default as IndustrysPage } from './IndustrysPage'
+export * from './IndustrysPage'
+
+export { default as IndustryPage } from './IndustryPage'
+export * from './IndustryPage'
+
+export { default as TechnologysPage } from './TechnologysPage'
+export * from './TechnologysPage'
+
+export { default as TechnologyPage } from './TechnologyPage'
+export * from './TechnologyPage'

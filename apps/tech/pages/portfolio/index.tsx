@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ShowcasesPage } from '@onex/pages'
-import { MOCK_SHOWCASES } from '@onex/common'
+import { MOCK_SHOWCASES } from '@onex/mocks'
 
 export interface NextShowcasesPageProps {}
 

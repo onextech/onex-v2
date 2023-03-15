@@ -1,10 +1,16 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
+import { TechnologysPage } from '@onex/pages'
+import { MOCK_TECHNOLOGYS } from '@onex/mocks'
 
-export interface TechnologiesPageProps {}
+export interface NextTechnologysPageProps {}
 
-const TechnologiesPage: React.FC<TechnologiesPageProps> = () => {
-  return <LandingLayout seo={{ title: 'Technologies' }} />
+const NextTechnologysPage: React.FC<NextTechnologysPageProps> = () => {
+  return (
+    <LandingLayout seo={{ title: 'Technologies' }}>
+      <TechnologysPage technologys={MOCK_TECHNOLOGYS} />
+    </LandingLayout>
+  )
 }
 
-export default TechnologiesPage
+export default NextTechnologysPage

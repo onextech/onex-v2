@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { CareersPage } from '@onex/pages'
-import { MOCK_JOBS } from '@onex/common'
+import { MOCK_JOBS } from '@onex/mocks'
 
 export interface NextCareersPageProps {}
 

@@ -2,7 +2,7 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ShowcasePage } from '@onex/pages'
 import { useRouter } from 'next/router'
-import { MOCK_SHOWCASES } from '@onex/common'
+import { MOCK_SHOWCASES } from '@onex/mocks'
 
 export interface NextShowcasePageProps {}
 
