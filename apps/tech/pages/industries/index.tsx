@@ -7,7 +7,7 @@ export interface NextIndustrysPageProps {}
 
 const NextIndustrysPage: React.FC<NextIndustrysPageProps> = () => {
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }}>
+    <LandingLayout seo={{ title: 'Industries' }}>
       <IndustrysPage industrys={MOCK_TECH_INDUSTRYS} />
     </LandingLayout>
   )

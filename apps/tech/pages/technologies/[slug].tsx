@@ -8,10 +8,12 @@ export interface NextTechnologyPageProps {}
 
 const NextTechnologyPage: React.FC<NextTechnologyPageProps> = () => {
   const { query } = useRouter()
-  const technology = MOCK_TECH_TECHNOLOGYS.find(({ slug }) => slug === query.slug)
+  const technology = MOCK_TECH_TECHNOLOGYS.find(
+    ({ slug }) => slug === query.slug
+  )
 
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }} autoBreadcrumbs>
+    <LandingLayout seo={{ title: 'Technologies' }} autoBreadcrumbs>
       <TechnologyPage technology={technology} />
     </LandingLayout>
   )

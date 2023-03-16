@@ -1,6 +1,9 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import renderJobCardBlockItem from '@onex/blocks/src/core/renderJobCardBlockItem'
+import {
+  renderJobCardBlockItem,
+  renderLeftFourColumnGridBlockItem,
+} from '@onex/blocks'
 import type { Job } from '@onex/types'
 
 export interface CareersPageProps {
@@ -72,255 +75,61 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             },
           ],
         },
-        {
-          key: 'perks',
-          ...commonBlockProps,
-          center: false,
+        renderLeftFourColumnGridBlockItem({
+          title: 'Great Perks For Everyone.',
+          subtitle:
+            "The driven people who make up One X Tech's teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Ready to build software? Check out our job openings.",
           items: [
             {
-              type: 'h3',
-              title: 'Great Perks For Everyone.',
-              titleProps: { gutterBottom: true, textAlign: 'left' },
+              fa_icon: 'fa-cake-candles',
+              title: 'Collaborative',
+              subtitle:
+                'We create human-centred designs focused on driving conversions and achieving business goals.',
             },
             {
-              type: 'subtitle1',
-              title:
-                " The driven people who make up One X Tech's teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Ready to build software? Check out our job openings.",
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: '70%',
-              },
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Launch a new company',
+              subtitle:
+                'Launch your MVP at start-up speed with an expert team of designers and developers.',
             },
             {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              gridProps: { spacing: 6 },
-              gridItemProps: {
-                xs: 6,
-                md: 3,
-                sx: { textAlign: { xs: 'center', md: 'left' } },
-              },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-cake-candles',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '01',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Collaborative',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'We create human-centred designs focused on driving conversions and achieving business goals.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-gingerbread-man',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '02',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Launch a new company',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Launch your MVP at start-up speed with an expert team of designers and developers.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-watch',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '03',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Scale up development',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Our team works directly with you to boost your development speed and scale.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-hand-holding-seedling',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '04',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Improve a current system',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-mug-hot',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '05',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Food & Drinks',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'We create human-centred designs focused on driving conversions and achieving business goals.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-puzzle-piece',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '06',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Live It Up',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Launch your MVP at start-up speed with an expert team of designers and developers.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-guitar',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '07',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Rewards',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Our team works directly with you to boost your development speed and scale.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: 'fa-4x fa-thin fa-table-tennis',
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '08',
-                      titleProps: {
-                        color: 'text.secondary',
-                        sx: { mt: 4, mb: 3 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Convenience',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-              ],
+              fa_icon: 'fa-watch',
+              title: 'Scale up development',
+              subtitle:
+                'Our team works directly with you to boost your development speed and scale.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Improve a current system',
+              subtitle:
+                "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'We create human-centred designs focused on driving conversions and achieving business goals.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Launch your MVP at start-up speed with an expert team of designers and developers.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'Our team works directly with you to boost your development speed and scale.',
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenience',
+              subtitle:
+                "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
             },
           ],
-        },
+        }),
         {
           key: 'careers',
           ...commonBlockProps,

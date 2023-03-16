@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Service } from '@onex/types'
+import { renderHeroBlockItem } from '@onex/blocks'
 
 export interface ServicePageProps {
   service: Service
@@ -13,37 +14,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
   return (
     <Blocks
       items={[
-        {
-          key: 'hero',
-          py: { xs: 5, md: 10 },
-          sx: { backgroundColor: 'background.paper' },
-          items: [
-            {
-              type: 'h1',
-              title,
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: true,
-                sx: { mt: 2 },
-              },
-            },
-            {
-              type: 'image',
-              title: '/images/about_nodes.png',
-              disableContainer: true,
-              titleProps: {
-                alt: 'service-hero',
-                background: true,
-                backgroundHeight: { xs: 240, md: 320 },
-                backgroundSx: { mt: 5 },
-              },
-            },
-          ],
-        },
+        renderHeroBlockItem({ item: service }),
         {
           key: 'benefits',
           sx: { backgroundColor: 'background.paper' },

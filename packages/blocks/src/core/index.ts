@@ -33,3 +33,27 @@ export * from './renderIndustryBlockItem'
 
 export { default as renderTechnologyBlockItem } from './renderTechnologyBlockItem'
 export * from './renderTechnologyBlockItem'
+
+export { default as renderHeroBlockItem } from './renderHeroBlockItem'
+export * from './renderHeroBlockItem'
+
+export { default as renderThreeColumnGridBlockItem } from './renderThreeColumnGridBlockItem'
+export * from './renderThreeColumnGridBlockItem'
+
+export { default as renderLeftFourColumnGridBlockItem } from './renderLeftFourColumnGridBlockItem'
+export * from './renderLeftFourColumnGridBlockItem'
+
+export { default as renderFourColumnGridBlockItem } from './renderFourColumnGridBlockItem'
+export * from './renderFourColumnGridBlockItem'
+
+export { default as renderLeftThreeColumnGridBlockItem } from './renderLeftThreeColumnGridBlockItem'
+export * from './renderLeftThreeColumnGridBlockItem'
+
+export { default as renderFadeToBottomBackgroundImageBlockItem } from './renderFadeToBottomBackgroundImageBlockItem'
+export * from './renderFadeToBottomBackgroundImageBlockItem'
+
+export { default as renderFaqsAccordionBlockItem } from './renderFaqsAccordionBlockItem'
+export * from './renderFaqsAccordionBlockItem'
+
+export { default as renderRightChecklistBlockItem } from './renderRightChecklistBlockItem'
+export * from './renderRightChecklistBlockItem'

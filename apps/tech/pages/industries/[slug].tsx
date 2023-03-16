@@ -11,7 +11,7 @@ const NextIndustryPage: React.FC<NextIndustryPageProps> = () => {
   const industry = MOCK_TECH_INDUSTRYS.find(({ slug }) => slug === query.slug)
 
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }} autoBreadcrumbs>
+    <LandingLayout seo={{ title: 'Industry' }} autoBreadcrumbs>
       <IndustryPage industry={industry} />
     </LandingLayout>
   )

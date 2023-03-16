@@ -26,7 +26,12 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-cake-candles',
   },
-].map((item, i) => ({ id: i, ...item }))
+].map((item, i) => ({
+  id: i,
+  hero_src: '/images/about_working_in_office.png',
+  hero_alt: 'working in office',
+  ...item,
+}))
 
 export const MOCK_TECH_INDUSTRYS = [
   {
@@ -56,4 +61,9 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-cake-candles',
   },
-].map((item, i) => ({ id: i, ...item }))
+].map((item, i) => ({
+  id: i,
+  hero_src: '/images/about_working_in_office.png',
+  hero_alt: 'working in office',
+  ...item,
+}))

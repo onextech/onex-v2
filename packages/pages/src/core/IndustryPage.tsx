@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Industry } from '@onex/types'
+import { renderHeroBlockItem } from '@onex/blocks'
 
 export interface IndustryPageProps {
   industry: Industry
@@ -13,25 +14,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   return (
     <Blocks
       items={[
-        {
-          key: 'hero',
-          maxWidth: 'xl',
-          items: [
-            {
-              type: 'h1',
-              title,
-              titleProps: { mb: 2, maxWidth: true },
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: '60%',
-              },
-            },
-          ],
-        },
+        renderHeroBlockItem({ item: industry }),
         {
           key: 'benefits',
           sx: { backgroundColor: 'background.paper' },
@@ -66,7 +49,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
                       title: '/images/about_shape_circle_radial.svg',
                       titleProps: {
                         alt: 'about_shape_circle_radial',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -97,7 +80,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
                       title: '/images/about_shape_squares.svg',
                       titleProps: {
                         alt: 'about_shape_squares',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -128,7 +111,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
                       title: '/images/about_shape_square_with_circle.svg',
                       titleProps: {
                         alt: 'about_shape_square_with_circle',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -159,7 +142,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
                       title: '/images/about_shape_circles.svg',
                       titleProps: {
                         alt: 'about_shape_circles',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },

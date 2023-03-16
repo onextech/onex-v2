@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box } from '@gravis-os/ui'
 import { Block } from '@gravis-os/landing'
+import { printPaddedNumber } from '@gravis-os/utils'
 import type { Job } from '@onex/types'
 
 export interface RenderJobCardBlockItemProps {
@@ -92,7 +93,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
     items: [
       {
         type: 'subtitle2',
-        title: index < 10 ? String(index).padStart(2, '0') : index,
+        title: printPaddedNumber(index),
         titleProps: { color: 'text.secondary', sx: { mb: 3 } },
       },
       {

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { renderGhostButtonBlockItem } from '@onex/blocks'
+import {
+  renderFadeToBottomBackgroundImageBlockItem,
+  renderGhostButtonBlockItem,
+} from '@onex/blocks'
 import { routeConfig } from '@onex/common'
 
 export interface AboutPageProps {}
@@ -301,41 +304,13 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             },
           ],
         },
-        {
-          key: 'we-design-develop',
-          ...commonBlockProps,
-          dark: true,
-          pb: 46,
-          backgroundImageProps: {
-            src: '/images/about_nodes_above_city.png',
-            alt: 'about_nodes_above_city',
-          },
-          items: [
-            {
-              type: 'h4',
-              title: (
-                <span>
-                  We Design & Develop <br /> Custom Software for Businesses
-                </span>
-              ),
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'h6',
-              title:
-                'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: true,
-              },
-            },
-            renderGhostButtonBlockItem({
-              overline: 'Our Mission',
-              title: 'Enabling Smarter Businesses',
-              boxProps: { mt: 3 },
-            }),
-          ],
-        },
+        renderFadeToBottomBackgroundImageBlockItem({
+          hero_src: '/images/about_nodes_above_city.png',
+          hero_alt: 'about_nodes_above_city',
+          title: 'We Design & Develop Custom Software for Businesses',
+          subtitle:
+            'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        }),
         {
           key: 'our-clients',
           ...commonBlockProps,
@@ -370,7 +345,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_canon.png',
                       titleProps: {
                         alt: 'logo_canon',
-
                         width: 125,
                         height: 27,
                       },
@@ -384,7 +358,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_ssa.png',
                       titleProps: {
                         alt: 'logo_ssa',
-
                         width: 130,
                         height: 30,
                       },
@@ -398,7 +371,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_uob.png',
                       titleProps: {
                         alt: 'logo_uob',
-
                         width: 104,
                         height: 30,
                       },
@@ -412,7 +384,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_julius_bar.png',
                       titleProps: {
                         alt: 'logo_julius_bar',
-
                         width: 144,
                         height: 28,
                       },
@@ -426,7 +397,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_dxd.png',
                       titleProps: {
                         alt: 'logo_dxd',
-
                         width: 119,
                         height: 45,
                       },
@@ -440,7 +410,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       title: '/logos/logo_mtj.png',
                       titleProps: {
                         alt: 'logo_mtj',
-
                         width: 155,
                         height: 30,
                       },
