@@ -38,7 +38,7 @@ const renderFaqsAccordionBlockItem = (
                 maxWidth: 'md',
                 titleProps: {
                   color: 'text.secondary',
-                  maxWidth: true,
+                  maxWidth: '70%',
                 },
               },
             ],
@@ -56,6 +56,10 @@ const renderFaqsAccordionBlockItem = (
                     content,
                   }
                 }),
+                titleProps: {
+                  titleProps: { variant: 'subtitle2' as const },
+                  contentProps: { color: 'text.secondary' },
+                },
               },
             ],
           },

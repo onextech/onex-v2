@@ -7,6 +7,7 @@ import {
   headerNavConfig as commonHeaderNavConfig,
 } from '@onex/blocks'
 import routeConfig from './routeConfig'
+import appConfig from './appConfig'
 import { technologies, pages, services } from './navConfig'
 
 const commonGridProps = { spacing: 0 }
@@ -66,7 +67,7 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View All Services',
+                          title: 'View Services',
                           titleProps: {
                             rightCaret: true,
                             href: routeConfig.SERVICES,
@@ -143,7 +144,7 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View All Technologies',
+                          title: 'View Technologies',
                           titleProps: {
                             rightCaret: true,
                             href: routeConfig.TECHNOLOGIES,
@@ -218,10 +219,10 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View Company',
+                          title: 'Learn More',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.ABOUT,
+                            href: `${appConfig.companyAbsoluteUrl}${routeConfig.ABOUT}`,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',

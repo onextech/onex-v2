@@ -57,3 +57,9 @@ export * from './renderFaqsAccordionBlockItem'
 
 export { default as renderRightChecklistBlockItem } from './renderRightChecklistBlockItem'
 export * from './renderRightChecklistBlockItem'
+
+export { default as renderClientCardBlockItem } from './renderClientCardBlockItem'
+export * from './renderClientCardBlockItem'
+
+export { default as renderTestimonialBlockItem } from './renderTestimonialBlockItem'
+export * from './renderTestimonialBlockItem'

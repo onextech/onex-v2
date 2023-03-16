@@ -7,6 +7,7 @@ import {
   renderHeaderMenuMobileBlockItem,
   headerNavConfig as commonHeaderNavConfig,
 } from '@onex/blocks'
+import appConfig from './appConfig'
 import routeConfig from './routeConfig'
 import { services, industries, pages } from './navConfig'
 
@@ -65,7 +66,7 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View All Services',
+                          title: 'View Services',
                           titleProps: {
                             rightCaret: true,
                             href: routeConfig.SERVICES,
@@ -141,7 +142,7 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View All Industries',
+                          title: 'View Industries',
                           titleProps: {
                             rightCaret: true,
                             href: routeConfig.INDUSTRIES,
@@ -216,10 +217,10 @@ const headerNavConfig = [
                         },
                         {
                           type: 'link',
-                          title: 'View Company',
+                          title: 'Learn More',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.ABOUT,
+                            href: `${appConfig.companyAbsoluteUrl}${routeConfig.ABOUT}`,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',

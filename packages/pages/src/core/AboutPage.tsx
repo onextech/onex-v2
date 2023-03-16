@@ -3,8 +3,10 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderFadeToBottomBackgroundImageBlockItem,
   renderGhostButtonBlockItem,
+  renderClientCardBlockItem,
 } from '@onex/blocks'
 import { routeConfig } from '@onex/common'
+import { MOCK_GROUP_CLIENTS } from '@onex/mocks'
 
 export interface AboutPageProps {}
 
@@ -337,97 +339,18 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               maxWidth: 'lg',
               gridProps: { spacing: 1 },
               gridItemProps: { xs: 6, md: 4 },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_canon.png',
-                      titleProps: {
-                        alt: 'logo_canon',
-                        width: 125,
-                        height: 27,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_ssa.png',
-                      titleProps: {
-                        alt: 'logo_ssa',
-                        width: 130,
-                        height: 30,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_uob.png',
-                      titleProps: {
-                        alt: 'logo_uob',
-                        width: 104,
-                        height: 30,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_julius_bar.png',
-                      titleProps: {
-                        alt: 'logo_julius_bar',
-                        width: 144,
-                        height: 28,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_dxd.png',
-                      titleProps: {
-                        alt: 'logo_dxd',
-                        width: 119,
-                        height: 45,
-                      },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/logos/logo_mtj.png',
-                      titleProps: {
-                        alt: 'logo_mtj',
-                        width: 155,
-                        height: 30,
-                      },
-                    },
-                  ],
-                },
-              ].map((gridItem) => ({
-                ...gridItem,
-                boxProps: {
-                  sx: {
-                    backgroundColor: 'background.paper',
-                    p: 3,
-                    minHeight: { xs: 200, md: 260 },
-                    lineHeight: 1,
+              gridItems: MOCK_GROUP_CLIENTS.map((client) => {
+                const { avatar_src, avatar_alt, avatar_width, avatar_height } =
+                  client
+                return renderClientCardBlockItem({
+                  title: avatar_src,
+                  titleProps: {
+                    alt: avatar_alt,
+                    width: avatar_width,
+                    height: avatar_height,
                   },
-                  center: true,
-                },
-              })),
+                })
+              }),
             },
           ],
         },

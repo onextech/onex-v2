@@ -115,16 +115,22 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
             'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
           items: [
             {
-              title: 'How does it work?',
+              title: 'Full suite of services',
             },
             {
-              title: 'How does it work 2?',
+              title: 'Unrivaled ReactJS knowledge',
             },
             {
-              title: 'How does it work 3?',
+              title: 'Quality and best practices baked in',
             },
             {
-              title: 'How does it work 4?',
+              title: 'Deep ReactJS community involvement',
+            },
+            {
+              title: 'Support for ReactJS ongoing development',
+            },
+            {
+              title: 'Hired by Fortune 500 brands',
             },
           ],
         }),
@@ -133,23 +139,28 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
           items: [
             {
               key: 'how-it-works',
-              title: 'How does it work?',
-              content: 'Tell me more',
+              title:
+                'What are the advantages of developing web apps with ReactJS?',
+              content:
+                'ReactJS components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
             },
             {
               key: 'how-it-works-1',
-              title: 'How does it work?',
-              content: 'Tell me more',
+              title: 'How can ReactJS development benefit my existing system?',
+              content:
+                "ReactJS's sophisticated algorithms will help to boost system performance and improve user experience.",
             },
             {
               key: 'how-it-works-2',
-              title: 'How does it work?',
-              content: 'Tell me more',
+              title: 'What is the future of ReactJS?',
+              content:
+                'ReactJS is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
             },
             {
               key: 'how-it-works-3',
-              title: 'How does it work?',
-              content: 'Tell me more',
+              title: 'How much does it cost to hire ReactJS developers?',
+              content:
+                "ReactJS's sophisticated algorithms will help to boost system performance and improve user experience.",
             },
           ],
         }),

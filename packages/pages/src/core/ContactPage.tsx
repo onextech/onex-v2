@@ -1,9 +1,8 @@
 import React from 'react'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 import { Blocks } from '@gravis-os/landing'
 import { ContactForm } from '@onex/components'
-import { Ratings } from '@gravis-os/ui'
 import { useLayout } from '@onex/providers'
+import { renderTestimonialBlockItem } from '@onex/blocks'
 
 export interface ContactPageProps {
   fullScreen?: boolean
@@ -12,7 +11,7 @@ export interface ContactPageProps {
 const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
 
-  const { logo: Logo, appConfig } = useLayout()
+  const { logo: Logo, testimonials } = useLayout()
 
   return (
     <Blocks
@@ -88,20 +87,9 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                       height: { md: '100%' },
                     },
                   },
-                  items: [
-                    { type: 'icon', title: FormatQuoteIcon },
-                    {
-                      type: 'subtitle2',
-                      title: `We regard the ${appConfig.title} team as co-founders in our business. The entire team from ${appConfig.title} has invested an incredible amount of time to truly understand our business, our users and their needs.`,
-                      titleProps: { maxWidth: '70%' },
-                    },
-                    {
-                      type: 'jsx',
-                      title: <Ratings value={5} disableText sx={{ my: 2 }} />,
-                    },
-                    { type: 'subtitle3', title: 'Jared Palmer' },
-                    { type: 'body1', title: 'CEO of Pet Media Group' },
-                  ],
+                  items: renderTestimonialBlockItem({
+                    item: testimonials[0],
+                  }),
                 },
               ],
             },

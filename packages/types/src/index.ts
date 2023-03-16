@@ -17,3 +17,9 @@ export * from './Industry'
 
 export type { default as Technology } from './Technology'
 export * from './Technology'
+
+export type { default as Testimonial } from './Testimonial'
+export * from './Testimonial'
+
+export type { default as Client } from './Client'
+export * from './Client'

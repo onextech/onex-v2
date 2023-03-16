@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks, Block } from '@gravis-os/landing'
-import { brands, routeConfig } from '@onex/common'
+import { brands, routeConfig, appConfig } from '@onex/common'
 import renderHeaderMenuBlockItem from './renderHeaderMenuBlockItem'
 import renderHeaderMenuMobileBlockItem from './renderHeaderMenuMobileBlockItem'
 
@@ -47,17 +47,6 @@ const headerNavConfig = [
                           titleProps: {
                             color: 'text.secondary',
                             maxWidth: true,
-                          },
-                        },
-                        {
-                          type: 'link',
-                          title: 'View Company',
-                          titleProps: {
-                            rightCaret: true,
-                            href: routeConfig.ABOUT,
-                            color: 'secondary',
-                            sx: { mt: 2 },
-                            variant: 'body2',
                           },
                         },
                       ],

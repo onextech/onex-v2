@@ -6,7 +6,7 @@ import { useLayout } from '@onex/providers'
 export interface ContactCalloutProps {}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
-  const { appConfig } = useLayout()
+  const { appConfig, testimonials } = useLayout()
 
   const footerCalloutBlockProps = {
     py: 3,
@@ -48,7 +48,9 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
                     fullScreen: true,
                     disableTitle: true,
                     transitionVariant: 'fade' as const,
-                    children: <ContactPage fullScreen />,
+                    children: (
+                      <ContactPage testimonials={testimonials} fullScreen />
+                    ),
                   },
                 },
               },

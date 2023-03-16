@@ -1,5 +1,6 @@
 import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 
 export interface RenderRightChecklistBlockItemProps {
   blockProps?: BlockProps
@@ -48,12 +49,14 @@ const renderRightChecklistBlockItem = (
             md: 5,
             items: [
               {
-                type: 'accordion',
+                type: 'list',
                 title: items?.map((item) => {
                   const { title } = item
                   return {
                     key: title,
                     title,
+                    titleProps: { variant: 'subtitle2' },
+                    startIcon: <CheckCircleIcon />,
                   }
                 }),
               },

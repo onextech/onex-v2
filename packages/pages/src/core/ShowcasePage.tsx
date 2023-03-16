@@ -23,7 +23,6 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
             {
               type: 'h1',
               title,
@@ -160,7 +159,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                       title: '/images/about_shape_circle_radial.svg',
                       titleProps: {
                         alt: 'about_shape_circle_radial',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -191,7 +190,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                       title: '/images/about_shape_squares.svg',
                       titleProps: {
                         alt: 'about_shape_squares',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -222,7 +221,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                       title: '/images/about_shape_square_with_circle.svg',
                       titleProps: {
                         alt: 'about_shape_square_with_circle',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
@@ -253,7 +252,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                       title: '/images/about_shape_circles.svg',
                       titleProps: {
                         alt: 'about_shape_circles',
-                        
+
                         width: 101,
                         height: 101,
                         sx: { mb: 4 },
