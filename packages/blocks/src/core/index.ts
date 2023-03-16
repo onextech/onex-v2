@@ -63,3 +63,9 @@ export * from './renderClientCardBlockItem'
 
 export { default as renderTestimonialBlockItem } from './renderTestimonialBlockItem'
 export * from './renderTestimonialBlockItem'
+
+export { default as renderParagraphBlockItem } from './renderParagraphBlockItem'
+export * from './renderParagraphBlockItem'
+
+export { default as renderContactCalloutButtonBlockItem } from './renderContactCalloutButtonBlockItem'
+export * from './renderContactCalloutButtonBlockItem'

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Block } from '@gravis-os/landing'
-import { ContactPage } from '@onex/pages'
+import { renderContactCalloutButtonBlockItem } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
 export interface ContactCalloutProps {}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
-  const { appConfig, testimonials } = useLayout()
+  const { appConfig } = useLayout()
 
   const footerCalloutBlockProps = {
     py: 3,
@@ -37,24 +37,7 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
           {
             md: 4,
             boxProps: { sx: { textAlign: { xs: 'center', md: 'right' } } },
-            items: [
-              {
-                type: 'button',
-                title: 'Get Started',
-                titleProps: {
-                  variant: 'contained' as const,
-                  color: 'primary' as const,
-                  dialogProps: {
-                    fullScreen: true,
-                    disableTitle: true,
-                    transitionVariant: 'fade' as const,
-                    children: (
-                      <ContactPage testimonials={testimonials} fullScreen />
-                    ),
-                  },
-                },
-              },
-            ],
+            items: [renderContactCalloutButtonBlockItem()],
           },
         ],
       },

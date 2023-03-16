@@ -1,5 +1,7 @@
 import React from 'react'
 import merge from 'lodash/merge'
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
+import { Button } from '@gravis-os/ui'
 import {
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
@@ -7,6 +9,7 @@ import {
 import { useUserPreferences } from '@onex/theme'
 import { ContactCallout } from '@onex/components'
 import { useLayout } from '@onex/providers'
+import { ContactPage } from '@onex/pages'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
@@ -43,6 +46,29 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           {
             key: 'toggle-dark-mode',
             children: toggleDarkModeIconButtonJsx,
+            showOnMobileBar: true,
+            hideInMobileDrawer: true,
+          },
+          {
+            key: 'get-started',
+            children: (
+              <Button
+                {...{
+                  title: 'Get Started',
+                  variant: 'text' as const,
+                  color: 'primary' as const,
+                  size: 'small',
+                  endIcon: <KeyboardArrowRightOutlinedIcon />,
+                  sx: { ml: 1 },
+                  dialogProps: {
+                    fullScreen: true,
+                    disableTitle: true,
+                    transitionVariant: 'fade' as const,
+                    children: <ContactPage fullScreen />,
+                  },
+                }}
+              />
+            ),
             showOnMobileBar: true,
             hideInMobileDrawer: true,
           },

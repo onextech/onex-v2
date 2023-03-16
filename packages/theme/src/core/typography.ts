@@ -14,6 +14,7 @@ const typography = {
     fontFamily: headerFontFamily,
     fontWeight: 300,
     lineHeight: 1,
+    fontSize: pxToRem(72),
   },
   h2: { fontFamily: headerFontFamily, lineHeight: 1.1 },
   h3: { fontFamily: headerFontFamily, fontWeight: 300, lineHeight: 1.09 },
