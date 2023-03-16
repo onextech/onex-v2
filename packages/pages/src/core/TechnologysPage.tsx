@@ -64,7 +64,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
           items: [
             {
               type: 'grid',
-              gridProps: { spacing: 5, rowSpacing: 8 },
+              gridProps: { spacing: 5, rowSpacing: 10 },
               gridItems: technologys.map((technology) =>
                 renderTechnologyBlockItem({
                   item: {

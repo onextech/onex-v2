@@ -52,4 +52,9 @@ export const MOCK_TECH_TECHNOLOGYS = [
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
   },
-].map((item, i) => ({ id: i, ...item }))
+].map((item, i) => ({
+  id: i,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: item.title,
+  ...item,
+}))

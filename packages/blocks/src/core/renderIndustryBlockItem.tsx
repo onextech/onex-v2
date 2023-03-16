@@ -6,13 +6,18 @@ export interface RenderIndustryBlockItemProps {
 
 const renderIndustryBlockItem = (props: RenderIndustryBlockItemProps) => {
   const { item } = props
-  const { title, subtitle, href } = item || {}
+  const { title, subtitle, href, fa_icon } = item || {}
 
   return {
     sm: 6,
     md: 4,
     lg: 3,
     items: [
+      {
+        type: 'fa-icon',
+        title: `fa-3x fa-thin ${fa_icon}`,
+        titleProps: { sx: { mb: 3 } },
+      },
       { type: 'link', title, titleProps: { href, variant: 'h5' } },
       {
         type: 'body1',

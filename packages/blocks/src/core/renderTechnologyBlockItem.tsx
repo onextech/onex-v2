@@ -6,12 +6,22 @@ export interface RenderTechnologyBlockItemProps {
 
 const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
   const { item } = props
-  const { title, subtitle, href } = item || {}
+  const { title, subtitle, href, avatar_src, avatar_alt } = item || {}
 
   return {
     sm: 6,
     md: 4,
     items: [
+      {
+        type: 'image',
+        title: avatar_src,
+        titleProps: {
+          alt: avatar_alt,
+          width: 60,
+          height: 60,
+          sx: { mb: 3 },
+        },
+      },
       { type: 'link', title, titleProps: { href, variant: 'h5' } },
       {
         type: 'body1',
