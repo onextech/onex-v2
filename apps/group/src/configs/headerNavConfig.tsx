@@ -9,7 +9,7 @@ import {
 } from '@onex/blocks'
 import appConfig from './appConfig'
 import routeConfig from './routeConfig'
-import { services, industries, pages } from './navConfig'
+import { services, industries, pages, postCategorys } from './navConfig'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
@@ -161,6 +161,82 @@ const headerNavConfig = [
                           gridProps: { spacing: 2 },
                           gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
                           gridItems: industries.map((industry) =>
+                            renderHeaderMenuBlockItem(industry)
+                          ),
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
+      )
+    },
+  },
+  {
+    key: 'post-categorys',
+    title: 'Insights',
+    fullWidth: true,
+    isOpenOnHover: true,
+    items: postCategorys.map((postCategory) => ({
+      key: postCategory.title,
+      title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
+    })),
+    renderItems: ({ popupState }) => {
+      return (
+        <Blocks
+          items={[
+            {
+              key: 'post-categorys-grid',
+              pt: { xs: 10, md: 5 },
+              pb: 6,
+              reveal: false,
+              sx: { backgroundColor: 'background.paper' },
+              items: [
+                {
+                  type: 'grid',
+                  gridProps: commonGridProps,
+                  gridItems: [
+                    {
+                      ...commonLeftGridItemProps,
+                      items: [
+                        {
+                          type: 'h5',
+                          title: 'Insights',
+                          titleProps: { gutterBottom: true },
+                        },
+                        {
+                          type: 'body1',
+                          title:
+                            "Your new team's cross-industry knowledge will level up your project.",
+                          titleProps: {
+                            color: 'text.secondary',
+                            maxWidth: true,
+                          },
+                        },
+                        {
+                          type: 'link',
+                          title: 'View Insights',
+                          titleProps: {
+                            rightCaret: true,
+                            href: routeConfig.POSTS,
+                            color: 'secondary',
+                            sx: { mt: 2 },
+                            variant: 'body2',
+                          },
+                        },
+                      ],
+                    },
+                    {
+                      ...commonRightGridItemProps,
+                      items: [
+                        {
+                          type: 'grid',
+                          gridProps: { spacing: 2 },
+                          gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
+                          gridItems: postCategorys.map((industry) =>
                             renderHeaderMenuBlockItem(industry)
                           ),
                         },

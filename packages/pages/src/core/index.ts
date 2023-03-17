@@ -36,3 +36,12 @@ export * from './TechnologysPage'
 
 export { default as TechnologyPage } from './TechnologyPage'
 export * from './TechnologyPage'
+
+export { default as PostCategorysPage } from './PostCategorysPage'
+export * from './PostCategorysPage'
+
+export { default as PostsPage } from './PostsPage'
+export * from './PostsPage'
+
+export { default as PostPage } from './PostPage'
+export * from './PostPage'

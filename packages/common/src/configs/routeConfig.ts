@@ -10,6 +10,7 @@ const routeConfig = {
   TECHNOLOGIES: '/technologies',
   CAREERS: '/careers',
   INDUSTRIES: '/industries',
+  POSTS: '/insights',
 }
 
 export default routeConfig

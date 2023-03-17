@@ -69,3 +69,9 @@ export * from './renderParagraphBlockItem'
 
 export { default as renderContactCalloutButtonBlockItem } from './renderContactCalloutButtonBlockItem'
 export * from './renderContactCalloutButtonBlockItem'
+
+export { default as renderPostCategoryBlockItem } from './renderPostCategoryBlockItem'
+export * from './renderPostCategoryBlockItem'
+
+export { default as renderPostBlockItem } from './renderPostBlockItem'
+export * from './renderPostBlockItem'

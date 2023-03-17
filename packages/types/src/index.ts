@@ -23,3 +23,9 @@ export * from './Testimonial'
 
 export type { default as Client } from './Client'
 export * from './Client'
+
+export type { default as Post } from './Post'
+export * from './Post'
+
+export type { default as PostCategory } from './PostCategory'
+export * from './PostCategory'
