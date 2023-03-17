@@ -2,6 +2,7 @@ import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 
 export interface RenderHeroBlockItemProps extends BlockProps {
+  overline: string
   item: {
     title: string
     subtitle?: string
@@ -11,7 +12,7 @@ export interface RenderHeroBlockItemProps extends BlockProps {
 }
 
 const renderHeroBlockItem = (props: RenderHeroBlockItemProps) => {
-  const { item, ...rest } = props
+  const { overline, item, ...rest } = props
   const { title, subtitle, hero_src, hero_alt } = item || {}
   return {
     key: 'hero',
@@ -20,7 +21,7 @@ const renderHeroBlockItem = (props: RenderHeroBlockItemProps) => {
     sx: { backgroundColor: 'background.paper' },
     ...rest,
     items: [
-      { type: 'overline', title: 'Service', titleProps: { sx: { mb: 4 } } },
+      { type: 'overline', title: overline, titleProps: { sx: { mb: 4 } } },
       { type: 'h1', title },
       {
         type: 'subtitle1',

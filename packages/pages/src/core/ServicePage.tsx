@@ -27,7 +27,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({ item: service, ...commonBlockProps }),
+        renderHeroBlockItem({ item: service, overline: 'Service', ...commonBlockProps }),
         renderParagraphBlockItem({
           pt: { xs: 5, md: 10 },
           pb: 0,

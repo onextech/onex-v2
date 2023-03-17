@@ -1,31 +1,31 @@
-export * from './Configs'
+export * from './Config.types'
 
-export type { default as Job } from './Job'
-export * from './Job'
+export type { default as Job } from './Job.types'
+export * from './Job.types'
 
-export type { default as Showcase } from './Showcase'
-export * from './Showcase'
+export type { default as Showcase } from './Showcase.types'
+export * from './Showcase.types'
 
-export type { default as Service } from './Service'
-export * from './Service'
+export type { default as Service } from './Service.types'
+export * from './Service.types'
 
-export type { default as ServiceCategory } from './ServiceCategory'
-export * from './ServiceCategory'
+export type { default as ServiceCategory } from './ServiceCategory.types'
+export * from './ServiceCategory.types'
 
-export type { default as Industry } from './Industry'
-export * from './Industry'
+export type { default as Industry } from './Industry.types'
+export * from './Industry.types'
 
-export type { default as Technology } from './Technology'
-export * from './Technology'
+export type { default as Technology } from './Technology.types'
+export * from './Technology.types'
 
-export type { default as Testimonial } from './Testimonial'
-export * from './Testimonial'
+export type { default as Testimonial } from './Testimonial.types'
+export * from './Testimonial.types'
 
-export type { default as Client } from './Client'
-export * from './Client'
+export type { default as Client } from './Client.types'
+export * from './Client.types'
 
-export type { default as Post } from './Post'
-export * from './Post'
+export type { default as Post } from './Post.types'
+export * from './Post.types'
 
-export type { default as PostCategory } from './PostCategory'
-export * from './PostCategory'
+export type { default as PostCategory } from './PostCategory.types'
+export * from './PostCategory.types'

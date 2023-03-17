@@ -1,5 +1,5 @@
 import { CrudItem } from '@gravis-os/types'
-import ServiceCategory from './ServiceCategory'
+import ServiceCategory from './ServiceCategory.types'
 
 export interface Service extends CrudItem {
   category_id?: number

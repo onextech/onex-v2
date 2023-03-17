@@ -27,7 +27,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({ item: industry, ...commonBlockProps }),
+        renderHeroBlockItem({ item: industry, overline: 'Industry', ...commonBlockProps }),
         renderParagraphBlockItem({
           pt: { xs: 5, md: 10 },
           pb: 0,

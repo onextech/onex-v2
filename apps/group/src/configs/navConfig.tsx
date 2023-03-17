@@ -19,7 +19,7 @@ export const services = MOCK_GROUP_SERVICES_BY_CATEGORY.map((service) => ({
   href: `${routeConfig.SERVICES}/${service.slug}`,
   items: service.items.map((item) => ({
     ...item,
-    href: `${routeConfig.SERVICES}/${item.slug}`,
+    href: `${routeConfig.SERVICES}/${service.slug}/${item.slug}`,
   })),
 }))
 

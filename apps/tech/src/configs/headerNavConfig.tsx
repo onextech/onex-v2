@@ -237,7 +237,7 @@ const headerNavConfig = [
                         {
                           type: 'grid',
                           gridProps: { spacing: 2 },
-                          gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
+                          gridItemProps: { xs: 6, md: 6, lg: 4 },
                           gridItems: postCategorys.map((industry) =>
                             renderHeaderMenuBlockItem(industry)
                           ),

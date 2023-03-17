@@ -1,56 +1,129 @@
 export const MOCK_TECH_POSTS = [
   {
-    title: 'Digital Product Design',
-    slug: 'digital-product-design',
+    title: 'Enterprise Applications',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'enterprise-applications',
+    category_id: 1,
   },
   {
-    title: 'Agile Development Teams',
-    slug: 'agile-development-teams',
+    title: 'Managed Applications',
     subtitle:
-      'Work with product experts with the know-how tested in 7+ industries.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'managed-applications',
+    category_id: 1,
   },
   {
-    title: 'Cloud Engineering & DevOps',
-    slug: 'cloud-engineering-devops',
-    subtitle: 'Let certified engineers kick-start your cloud operations',
-  },
-  {
-    title: 'Web Development',
-    slug: 'web-development',
+    title: 'Application Modernization',
     subtitle:
-      'Build or scale competitive products ready for future growth and millions of users.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'application-modernization',
+    category_id: 1,
   },
   {
-    title: 'Software Architecture',
-    slug: 'software-architecture',
+    title: 'Research & Development',
     subtitle:
-      'Reach the software flexibility needed to scale by optimizing your architecture.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'research-development',
+    category_id: 2,
   },
   {
-    title: 'Mobile Development',
-    slug: 'mobile-development',
+    title: 'API Development',
     subtitle:
-      'Offer your customers an iOS/Android hybride mobile app they will want to use.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'api-development',
+    category_id: 2,
   },
   {
-    title: 'Quality Assurance',
-    slug: 'quality-assurance',
+    title: 'Microfrontend Development',
     subtitle:
-      'Secure the highest ratings for your product by running extensive QA tests.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'microfrontend-development',
+    category_id: 2,
   },
   {
-    title: 'Project Management',
-    slug: 'project-management',
+    title: 'Managed DevOps',
     subtitle:
-      'Collect your data, filter it, and take out game-changing insights on your product and team productivity.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'managed-devops',
+    category_id: 3,
   },
   {
-    title: 'App Modernization',
-    slug: 'app-modernization',
+    title: 'Infrastructure Managed Services',
     subtitle:
-      'Make your systems fast, efficient, and scalable to prepare for further product growth.',
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'infrastructure-managed-services',
+    category_id: 3,
+  },
+  {
+    title: 'Cloud Strategy & Design',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'cloud-strategy-design',
+    category_id: 3,
+  },
+  {
+    title: 'Digital Strategy',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'digital-strategy',
+    category_id: 4,
+  },
+  {
+    title: 'Transformation & Delivery',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'transformation-delivery',
+    category_id: 4,
+  },
+  {
+    title: 'Architecture Design',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'architecture-design',
+    category_id: 4,
+  },
+  {
+    title: 'Staff Augmentation',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'staff-augmentation',
+    category_id: 5,
+  },
+  {
+    title: 'Managed Product Teams',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'managed-product-teams',
+    category_id: 5,
+  },
+  {
+    title: 'Service Automation',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'managed-product-teams',
+    category_id: 5,
+  },
+  {
+    title: 'Performance Optimization',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'performance-optimization',
+    category_id: 6,
+  },
+  {
+    title: 'Production Readiness',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'production-readiness',
+    category_id: 6,
+  },
+  {
+    title: 'Testing Automation',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'testing-automation',
+    category_id: 6,
   },
 ].map((item, i) => ({
   id: i,

@@ -9,12 +9,12 @@ import {
 } from '@onex/blocks'
 import chunk from 'lodash/chunk'
 
-export interface ServiceCategorysProps {
+export interface ServiceCategorysPageProps {
   services: Service[]
   serviceCategorys: ServiceCategory[]
 }
 
-const ServiceCategorys: React.FC<ServiceCategorysProps> = (props) => {
+const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
   const { services, serviceCategorys } = props
 
   const { routeConfig } = useLayout()
@@ -90,4 +90,4 @@ const ServiceCategorys: React.FC<ServiceCategorysProps> = (props) => {
   )
 }
 
-export default ServiceCategorys
+export default ServiceCategorysPage

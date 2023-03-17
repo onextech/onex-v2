@@ -23,7 +23,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({ item: technology }),
+        renderHeroBlockItem({ item: technology, overline: 'Technology' }),
         renderFourColumnGridBlockItem({
           overline: 'What we do',
           title: `Our Suite of ${title} Services`,

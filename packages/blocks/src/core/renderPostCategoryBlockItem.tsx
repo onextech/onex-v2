@@ -13,7 +13,7 @@ const renderPostCategoryBlockItem = (
 
   return {
     sm: 12,
-    md: 6,
+    md: 12,
     items: [
       { type: 'overline', title },
       { type: 'h3', title: description },

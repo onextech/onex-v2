@@ -1,5 +1,5 @@
 import { CrudItem } from '@gravis-os/types'
-import PostCategory from './PostCategory'
+import PostCategory from './PostCategory.types'
 
 export interface Post extends CrudItem {
   category_id?: number

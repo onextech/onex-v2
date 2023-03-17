@@ -5,6 +5,7 @@ import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
+  RenderHeaderMenuMobileBlockItemProps,
   headerNavConfig as commonHeaderNavConfig,
 } from '@onex/blocks'
 import appConfig from './appConfig'
@@ -30,7 +31,13 @@ const headerNavConfig = [
     isOpenOnHover: true,
     items: services.map((service) => ({
       key: service.title,
-      title: <Block {...renderHeaderMenuMobileBlockItem(service)} />,
+      title: (
+        <Block
+          {...renderHeaderMenuMobileBlockItem(
+            service as RenderHeaderMenuMobileBlockItemProps
+          )}
+        />
+      ),
     })),
     renderItems: ({ popupState }) => {
       return (
@@ -235,7 +242,7 @@ const headerNavConfig = [
                         {
                           type: 'grid',
                           gridProps: { spacing: 2 },
-                          gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
+                          gridItemProps: { xs: 6, md: 6, lg: 4 },
                           gridItems: postCategorys.map((industry) =>
                             renderHeaderMenuBlockItem(industry)
                           ),

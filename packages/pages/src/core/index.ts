@@ -19,6 +19,9 @@ export * from './LegalPage'
 export { default as ServiceCategorysPage } from './ServiceCategorysPage'
 export * from './ServiceCategorysPage'
 
+export { default as ServiceCategoryPage } from './ServiceCategoryPage'
+export * from './ServiceCategoryPage'
+
 export { default as ServicesPage } from './ServicesPage'
 export * from './ServicesPage'
 
@@ -39,6 +42,9 @@ export * from './TechnologyPage'
 
 export { default as PostCategorysPage } from './PostCategorysPage'
 export * from './PostCategorysPage'
+
+export { default as PostCategoryPage } from './PostCategoryPage'
+export * from './PostCategoryPage'
 
 export { default as PostsPage } from './PostsPage'
 export * from './PostsPage'

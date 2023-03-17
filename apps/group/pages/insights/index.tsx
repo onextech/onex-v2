@@ -9,8 +9,8 @@ const NextPostsPage: React.FC<NextPostsPageProps> = () => {
   return (
     <LandingLayout seo={{ title: 'Posts' }}>
       <PostCategorysPage
-        services={MOCK_GROUP_POSTS}
-        serviceCategorys={MOCK_GROUP_POST_CATEGORYS}
+        posts={MOCK_GROUP_POSTS}
+        postCategorys={MOCK_GROUP_POST_CATEGORYS}
       />
     </LandingLayout>
   )
