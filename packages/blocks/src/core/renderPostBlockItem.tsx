@@ -6,13 +6,22 @@ export interface RenderPostBlockItemProps {
 
 const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
   const { item } = props
-  const { title, subtitle, href } = item || {}
+  const { title, subtitle, href, avatar_src, avatar_alt } = item || {}
 
   return {
     sm: 6,
     md: 4,
     items: [
-      { type: 'link', title, titleProps: { href, variant: 'h5' } },
+      {
+        type: 'image',
+        title: avatar_src,
+        titleProps: {
+          alt: avatar_alt,
+          ar: '16:9',
+          sx: { mb: 1 },
+        },
+      },
+      { type: 'link', title, titleProps: { href, variant: 'h6' } },
       {
         type: 'body1',
         title: subtitle,
@@ -25,7 +34,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
       },
       {
         type: 'link',
-        title: 'Learn more',
+        title: 'Read more',
         titleProps: { href, rightCaret: true },
       },
     ],

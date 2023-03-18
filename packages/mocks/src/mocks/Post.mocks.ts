@@ -127,6 +127,8 @@ export const MOCK_TECH_POSTS = [
   },
 ].map((item, i) => ({
   id: i,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'about_shape_circle_radial',
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
   ...item,
@@ -261,6 +263,8 @@ export const MOCK_GROUP_POSTS = [
   },
 ].map((item, i) => ({
   id: i,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'about_shape_circle_radial',
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
   ...item,

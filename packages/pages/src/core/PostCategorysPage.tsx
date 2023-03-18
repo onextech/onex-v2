@@ -35,10 +35,10 @@ const PostCategorys: React.FC<PostCategorysProps> = (props) => {
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Posts' },
+            { type: 'overline', title: 'Insights' },
             {
               type: 'h1',
-              title: 'Craft experiences that touch hearts and move markets.',
+              title: 'Our Insights.',
             },
             {
               type: 'subtitle1',

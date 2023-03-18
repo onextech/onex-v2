@@ -1,5 +1,6 @@
 import { BlockItemProps } from '@gravis-os/landing'
 import { PostCategory, Post } from '@onex/types'
+import { renderPostBlockItem, RenderPostBlockItemProps } from './index'
 
 export interface RenderPostCategoryBlockItemProps {
   item: PostCategory & { items: Array<Post & { href: string }> } & {
@@ -30,27 +31,17 @@ const renderPostCategoryBlockItem = (
           maxLines: 2,
           color: 'text.secondary',
           maxWidth: true,
-          sx: { mt: 1, mb: 2 },
+          sx: { mt: 1, mb: 4 },
         },
       },
-      ...(items.map((item) => ({
-        type: 'link',
-        title: item.title,
-        titleProps: {
-          href: item.href,
-          variant: 'h6',
-          rightCaretFullWidth: true,
-          underline: 'none',
-          sx: {
-            py: 2.5,
-            px: 2,
-            borderBottom: 1,
-            borderColor: 'divider',
-            '&:hover': { backgroundColor: 'action.hover' },
-          },
-        },
-        ...item,
-      })) as BlockItemProps[]),
+      {
+        type: 'grid',
+        gridItems: items.map((item) =>
+          renderPostBlockItem({
+            item,
+          })
+        ),
+      },
     ],
   }
 }

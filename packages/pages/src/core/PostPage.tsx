@@ -29,7 +29,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
       items={[
         renderHeroBlockItem({
           item: post,
-          overline: 'Post',
+          overline: 'Insight',
           ...commonBlockProps,
         }),
         renderParagraphBlockItem({

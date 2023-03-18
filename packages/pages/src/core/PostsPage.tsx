@@ -21,7 +21,7 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Posts' },
+            { type: 'overline', title: 'Insights' },
             {
               type: 'h1',
               title: 'Posts',

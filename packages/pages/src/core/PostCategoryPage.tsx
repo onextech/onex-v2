@@ -25,7 +25,7 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Post Category' },
+            { type: 'overline', title: 'Insight Category' },
             {
               type: 'h1',
               title,
