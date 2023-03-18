@@ -10,6 +10,6 @@ export const MOCK_GROUP_TESTIMONIALS = [
     rating_count: 5,
   },
 ].map((item, i) => ({
-  id: i,
+  id: i + 1,
   ...item,
 }))

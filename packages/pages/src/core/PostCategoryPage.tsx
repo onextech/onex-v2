@@ -22,7 +22,8 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
       items={[
         {
           key: 'hero',
-          py: { xs: 5, md: 10 },
+          pt: { xs: 5, md: 10 },
+          pb: 0,
           sx: { backgroundColor: 'background.paper' },
           items: [
             { type: 'overline', title: 'Insight Category' },
@@ -44,7 +45,7 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
         {
           key: 'post-categorys',
           sx: { backgroundColor: 'background.paper' },
-          pt: { xs: 5, md: 10 },
+          pt: { xs: 2, md: 5 },
           items: [
             {
               type: 'grid',

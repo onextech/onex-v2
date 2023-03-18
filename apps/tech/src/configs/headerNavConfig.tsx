@@ -11,13 +11,7 @@ import {
 import routeConfig from './routeConfig'
 import appConfig from './appConfig'
 import systemConfig from './systemConfig'
-import {
-  technologies,
-  pages,
-  services,
-  serviceCategorys,
-  postCategorys,
-} from './navConfig'
+import { technologies, pages, services, postCategorys } from './navConfig'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
@@ -35,16 +29,16 @@ const headerNavConfig = [
   },
   { key: 'portfolio', title: 'Portfolio', href: routeConfig.PORTFOLIO },
   {
-    key: 'advanced-services',
-    title: 'Advanced Services',
+    key: 'services',
+    title: 'Services',
     fullWidth: true,
     isOpenOnHover,
-    items: serviceCategorys.map((serviceCategory) => ({
-      key: serviceCategory.title,
+    items: services.map((service) => ({
+      key: service.title,
       title: (
         <Block
           {...renderHeaderMenuMobileBlockItem(
-            serviceCategory as RenderHeaderMenuMobileBlockItemProps
+            service as RenderHeaderMenuMobileBlockItemProps
           )}
         />
       ),
@@ -101,85 +95,8 @@ const headerNavConfig = [
                           type: 'grid',
                           gridProps: { spacing: 2, rowSpacing: 4 },
                           gridItemProps: { xs: 6, md: 4 },
-                          gridItems: serviceCategorys.map((serviceCategory) =>
-                            renderHeaderMenuListBlockItem(serviceCategory)
-                          ),
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
-      )
-    },
-  },
-  {
-    key: 'services',
-    title: 'Services',
-    href: routeConfig.SERVICES,
-    fullWidth: true,
-    isOpenOnHover,
-    items: services.map((service) => ({
-      key: service.title,
-      title: <Block {...renderHeaderMenuMobileBlockItem(service)} />,
-    })),
-    renderItems: () => {
-      return (
-        <Blocks
-          items={[
-            {
-              key: 'service-grid',
-              pt: { xs: 10, md: 5 },
-              pb: 6,
-              reveal: false,
-              sx: { backgroundColor: 'background.paper' },
-              items: [
-                {
-                  type: 'grid',
-                  gridProps: commonGridProps,
-                  gridItems: [
-                    {
-                      ...commonLeftGridItemProps,
-                      items: [
-                        {
-                          type: 'h5',
-                          title: 'Our Services',
-                          titleProps: { gutterBottom: true },
-                        },
-                        {
-                          type: 'body1',
-                          title:
-                            'We create human-centred designs focused on driving conversions and achieving business goals.',
-                          titleProps: {
-                            color: 'text.secondary',
-                            maxWidth: true,
-                          },
-                        },
-                        {
-                          type: 'link',
-                          title: 'View Services',
-                          titleProps: {
-                            rightCaret: true,
-                            href: routeConfig.SERVICES,
-                            color: 'secondary',
-                            sx: { mt: 2 },
-                            variant: 'body2',
-                          },
-                        },
-                      ],
-                    },
-                    {
-                      ...commonRightGridItemProps,
-                      items: [
-                        {
-                          type: 'grid',
-                          gridProps: { spacing: 2 },
-                          gridItemProps: { xs: 6, md: 6, lg: 4 },
                           gridItems: services.map((service) =>
-                            renderHeaderMenuBlockItem(service)
+                            renderHeaderMenuListBlockItem(service)
                           ),
                         },
                       ],

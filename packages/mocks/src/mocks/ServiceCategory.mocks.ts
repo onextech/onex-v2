@@ -53,7 +53,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
-].map((item, i) => ({ id: i, ...item }))
+].map((item, i) => ({ id: i + 1, ...item }))
 
 export const MOCK_GROUP_SERVICE_CATEGORYS = [
   {
@@ -110,4 +110,4 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
-].map((item, i) => ({ id: i, ...item }))
+].map((item, i) => ({ id: i + 1, ...item }))

@@ -1,16 +1,21 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Post, PostCategory } from '@onex/types'
-import { renderPostHeroBlockItem } from '@onex/blocks'
+import {
+  renderPostBlockItem,
+  RenderPostBlockItemProps,
+  renderPostHeroBlockItem,
+} from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
 export interface PostPageProps {
   post: Post
   postCategory: PostCategory
+  relatedPosts?: Post[]
 }
 
 const PostPage: React.FC<PostPageProps> = (props) => {
-  const { post, postCategory } = props
+  const { post, postCategory, relatedPosts } = props
   const { html } = post || {}
 
   const { routeConfig } = useLayout()
@@ -40,6 +45,28 @@ const PostPage: React.FC<PostPageProps> = (props) => {
                   },
                 },
               },
+            },
+          ],
+        },
+        {
+          key: 'related-by-category',
+          py: { xs: 5, md: 10 },
+          items: [
+            {
+              type: 'h4',
+              title: 'Related Insights',
+              titleProps: { sx: { mb: { xs: 3, md: 5 } } },
+            },
+            {
+              type: 'grid',
+              gridItems: relatedPosts?.map((relatedPost) =>
+                renderPostBlockItem({
+                  item: {
+                    href: `${routeConfig.POSTS}/${postCategory.slug}/${relatedPost.slug}`,
+                    ...(relatedPost as RenderPostBlockItemProps['item']),
+                  },
+                })
+              ),
             },
           ],
         },

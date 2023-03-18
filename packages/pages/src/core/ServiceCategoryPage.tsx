@@ -2,6 +2,7 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Service, ServiceCategory } from '@onex/types'
 import {
+  RenderPostBlockItemProps,
   renderServiceBlockItem,
   RenderServiceBlockItemProps,
 } from '@onex/blocks'
@@ -10,10 +11,11 @@ import { useLayout } from '@onex/providers'
 export interface ServiceCategoryPageProps {
   services: Service[]
   serviceCategory: ServiceCategory
+  otherServiceCategorys?: ServiceCategory[]
 }
 
 const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
-  const { services, serviceCategory } = props
+  const { services, serviceCategory, otherServiceCategorys } = props
   const { routeConfig } = useLayout()
 
   if (!serviceCategory) return null
@@ -54,7 +56,7 @@ const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
           },
         },
         {
-          key: 'service-categorys',
+          key: 'services',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 5, md: 10 },
           items: [
@@ -65,6 +67,28 @@ const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
                   item: {
                     href: `${routeConfig.SERVICES}/${serviceCategory.slug}/${service.slug}`,
                     ...(service as RenderServiceBlockItemProps['item']),
+                  },
+                })
+              ),
+            },
+          ],
+        },
+        {
+          key: 'related-by-category',
+          py: { xs: 5, md: 10 },
+          items: [
+            {
+              type: 'h4',
+              title: 'Other Service Categories',
+              titleProps: { sx: { mb: { xs: 3, md: 5 } } },
+            },
+            {
+              type: 'grid',
+              gridItems: otherServiceCategorys?.map((otherServiceCategory) =>
+                renderServiceBlockItem({
+                  item: {
+                    href: `${routeConfig.POSTS}/${otherServiceCategory.slug}`,
+                    ...(otherServiceCategory as RenderPostBlockItemProps['item']),
                   },
                 })
               ),

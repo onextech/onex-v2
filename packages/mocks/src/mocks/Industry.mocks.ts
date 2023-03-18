@@ -27,7 +27,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     fa_icon: 'fa-cake-candles',
   },
 ].map((item, i) => ({
-  id: i,
+  id: i + 1,
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
   ...item,
@@ -62,7 +62,7 @@ export const MOCK_TECH_INDUSTRYS = [
     fa_icon: 'fa-cake-candles',
   },
 ].map((item, i) => ({
-  id: i,
+  id: i + 1,
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
   ...item,
