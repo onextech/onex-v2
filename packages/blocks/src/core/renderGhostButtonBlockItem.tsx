@@ -1,10 +1,20 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
-import { Box, Typography } from '@gravis-os/ui'
+import { Box, Typography, ButtonProps } from '@gravis-os/ui'
 import TrendingFlatOutlinedIcon from '@mui/icons-material/TrendingFlatOutlined'
 
-const renderGhostButtonBlockItem = (props): BlockItemProps => {
-  const { overline, title, boxProps, size = 'md', sx, ...rest } = props
+export interface RenderGhostButtonBlockItemProps
+  extends Omit<ButtonProps, 'size'> {
+  overline?: React.ReactNode
+  title?: ButtonProps['title']
+  boxProps?: BlockItemProps['boxProps']
+  size?: 'sm' | 'md' | 'lg' | ButtonProps['size']
+}
+
+const renderGhostButtonBlockItem = (
+  props: RenderGhostButtonBlockItemProps
+): BlockItemProps => {
+  const { overline, title, boxProps, sx, size = 'md', ...rest } = props
 
   const isLarge = size === 'lg'
 

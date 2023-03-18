@@ -1,6 +1,8 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
-import { renderGhostButtonBlockItem } from './index'
+import renderGhostButtonBlockItem, {
+  RenderGhostButtonBlockItemProps,
+} from './renderGhostButtonBlockItem'
 
 export interface RenderFadeToBottomBackgroundImageBlockItemProps {
   overline?: string
@@ -10,11 +12,7 @@ export interface RenderFadeToBottomBackgroundImageBlockItemProps {
   subtitleProps?: BlockItemProps
   hero_src?: string
   hero_alt?: string
-  buttonProps?: {
-    href: string
-    overline: string
-    title: string
-  }
+  buttonProps?: RenderGhostButtonBlockItemProps
 }
 
 const renderFadeToBottomBackgroundImageBlockItem = (

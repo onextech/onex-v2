@@ -12,7 +12,7 @@ export interface AboutPageProps {}
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
 
-const AboutPage: React.FC<AboutPageProps> = (props) => {
+const AboutPage: React.FC<AboutPageProps> = () => {
   return (
     <Blocks
       items={[
@@ -51,6 +51,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       overline: 'What we do',
                       title: 'Smarter Businesses',
                       size: 'lg',
+                      href: routeConfig.SERVICES,
                     }),
                   ],
                 },
@@ -60,6 +61,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                       overline: 'Who we are',
                       title: 'Business Software Experts',
                       size: 'lg',
+                      href: routeConfig.CAREERS,
                     }),
                   ],
                 },
@@ -93,6 +95,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             renderGhostButtonBlockItem({
               overline: 'Who we are',
               title: 'Business Software Experts',
+              href: routeConfig.CAREERS,
               boxProps: { mt: 4 },
             }),
           ],
@@ -141,6 +144,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             renderGhostButtonBlockItem({
               overline: 'Our Mission',
               title: 'Enabling Smarter Businesses',
+              href: routeConfig.SERVICES,
               boxProps: { mt: 3 },
             }),
           ],
@@ -312,6 +316,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           title: 'We Design & Develop Custom Software for Businesses',
           subtitle:
             'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          buttonProps: { href: routeConfig.SERVICES },
         }),
         {
           key: 'our-clients',
@@ -443,6 +448,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               overline: 'Where we are',
               title: 'Locate an Office',
               boxProps: { mt: 16 },
+              href: routeConfig.CONTACT,
             }),
           ],
         },
