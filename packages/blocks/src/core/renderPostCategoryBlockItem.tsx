@@ -2,20 +2,26 @@ import { BlockItemProps } from '@gravis-os/landing'
 import { PostCategory, Post } from '@onex/types'
 
 export interface RenderPostCategoryBlockItemProps {
-  item: PostCategory & { items: Array<Post & { href: string }> }
+  item: PostCategory & { items: Array<Post & { href: string }> } & {
+    href: string
+  }
 }
 
 const renderPostCategoryBlockItem = (
   props: RenderPostCategoryBlockItemProps
 ) => {
   const { item } = props
-  const { title, subtitle, description, items } = item || {}
+  const { title, href, subtitle, description, items } = item || {}
 
   return {
     sm: 12,
     md: 12,
     items: [
-      { type: 'overline', title },
+      {
+        type: 'link',
+        title,
+        titleProps: { variant: 'overline' as const, href },
+      },
       { type: 'h3', title: description },
       {
         type: 'subtitle1',

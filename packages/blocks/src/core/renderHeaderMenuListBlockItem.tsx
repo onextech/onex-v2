@@ -3,6 +3,7 @@ import { BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderHeaderMenuListBlockItemProps {
   title: BlockItemProps['title']
+  href?: string
   items?: Array<{
     title: BlockItemProps['title']
     href?: BlockItemProps['boxProps']['href']
@@ -12,13 +13,18 @@ export interface RenderHeaderMenuListBlockItemProps {
 const renderHeaderMenuListBlockItem = (
   props: RenderHeaderMenuListBlockItemProps
 ) => {
-  const { title, items = [] } = props
+  const { title, href, items = [] } = props
   return {
     items: [
       {
-        type: 'h6',
+        type: 'link',
         title,
-        titleProps: { sx: { mb: 1.5 }, color: 'text.secondary' },
+        titleProps: {
+          variant: 'h6' as const,
+          href,
+          sx: { mb: 1.5 },
+          color: 'text.secondary',
+        },
       },
       ...(items.map((item) => ({
         type: 'link',

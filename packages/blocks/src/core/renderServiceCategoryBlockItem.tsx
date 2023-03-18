@@ -2,20 +2,26 @@ import { BlockItemProps } from '@gravis-os/landing'
 import { ServiceCategory, Service } from '@onex/types'
 
 export interface RenderServiceCategoryBlockItemProps {
-  item: ServiceCategory & { items: Array<Service & { href: string }> }
+  item: ServiceCategory & { items: Array<Service & { href: string }> } & {
+    href: string
+  }
 }
 
 const renderServiceCategoryBlockItem = (
   props: RenderServiceCategoryBlockItemProps
 ) => {
   const { item } = props
-  const { title, subtitle, description, items } = item || {}
+  const { title, subtitle, href, description, items } = item || {}
 
   return {
     sm: 12,
     md: 6,
     items: [
-      { type: 'overline', title },
+      {
+        type: 'link',
+        title,
+        titleProps: { variant: 'overline' as const, href },
+      },
       { type: 'h3', title: description },
       {
         type: 'subtitle1',

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { getCrudItemsByCategory } from '@gravis-os/utils'
+import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
 import type { Post, PostCategory } from '@onex/types'
 import { useLayout } from '@onex/providers'
 import {
@@ -18,12 +18,11 @@ const PostCategorys: React.FC<PostCategorysProps> = (props) => {
   const { posts, postCategorys } = props
 
   const { routeConfig } = useLayout()
-  const categoryWithPosts = getCrudItemsByCategory(
-    posts.map((post) => ({
-      ...post,
-      href: `${routeConfig.POSTS}/${post.slug}`,
-    })),
-    postCategorys
+
+  const categoryWithPosts = getCategoryWithItemsAndHref(
+    posts,
+    postCategorys,
+    routeConfig.POSTS
   )
 
   const categoryWithPostsChunks = chunk(categoryWithPosts, 2)

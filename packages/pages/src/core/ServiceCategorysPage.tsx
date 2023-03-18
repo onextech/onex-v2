@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { getCrudItemsByCategory } from '@gravis-os/utils'
+import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
 import type { Service, ServiceCategory } from '@onex/types'
 import { useLayout } from '@onex/providers'
 import {
@@ -18,12 +18,11 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
   const { services, serviceCategorys } = props
 
   const { routeConfig } = useLayout()
-  const categoryWithServices = getCrudItemsByCategory(
-    services.map((service) => ({
-      ...service,
-      href: `${routeConfig.SERVICES}/${service.slug}`,
-    })),
-    serviceCategorys
+
+  const categoryWithServices = getCategoryWithItemsAndHref(
+    services,
+    serviceCategorys,
+    routeConfig.SERVICES
   )
 
   const categoryWithServicesChunks = chunk(categoryWithServices, 2)
