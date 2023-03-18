@@ -17,10 +17,10 @@ export const MOCK_JOBS = [
       'Learn how we keep our employees happy and see our values, culture, and initiatives.',
     slug: 'middle-software-engineer',
   },
-].map((page, i) => ({
-  ...page,
+].map((item, i) => ({
+  ...item,
   id: i + 1,
-  href: `/${page.slug}`,
+  href: `/${item.slug}`,
   ctaUrl: 'https://www.linkedin.com/jobs/view/3511238718',
   html:
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">Roles and responsibilities:</span></strong></span></span></h4>\n' +

@@ -149,6 +149,12 @@ export const MOCK_TECH_POSTS = [
   avatar_alt: 'about_shape_circle_radial',
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
+  // Author
+  author_avatar_src: '/images/about_shape_circle_radial.svg',
+  author_avatar_alt: 'about_shape_circle_radial',
+  author_title: 'Jared Palmer',
+  author_job_title: 'CEO',
+  // Html
   html:
     '<h4>Innovation that drives real impact.</h4>\n' +
     '\n' +
