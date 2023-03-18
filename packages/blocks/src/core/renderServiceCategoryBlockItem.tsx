@@ -20,7 +20,13 @@ const renderServiceCategoryBlockItem = (
       {
         type: 'link',
         title,
-        titleProps: { variant: 'h3' as const, href, underline: 'none' },
+        titleProps: {
+          variant: 'h3' as const,
+          href,
+          underline: 'none',
+          color: 'text.secondary',
+          sx: { mb: 1 },
+        },
       },
       {
         type: 'subtitle1',
@@ -29,7 +35,7 @@ const renderServiceCategoryBlockItem = (
           maxLines: 2,
           color: 'text.secondary',
           maxWidth: true,
-          sx: { mt: 1, mb: 2 },
+          sx: { mb: 2 },
         },
       },
       ...(items.map((item) => ({

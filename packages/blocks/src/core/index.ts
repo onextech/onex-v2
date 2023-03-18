@@ -75,3 +75,6 @@ export * from './renderPostCategoryBlockItem'
 
 export { default as renderPostBlockItem } from './renderPostBlockItem'
 export * from './renderPostBlockItem'
+
+export { default as renderPostHeroBlockItem } from './renderPostHeroBlockItem'
+export * from './renderPostHeroBlockItem'

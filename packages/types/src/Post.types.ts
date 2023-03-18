@@ -8,6 +8,7 @@ export interface Post extends CrudItem {
   avatar_alt?: string
   hero_src?: string
   hero_alt?: string
+  html?: string
 }
 
 export default Post

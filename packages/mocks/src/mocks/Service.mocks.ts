@@ -258,8 +258,15 @@ export const MOCK_GROUP_SERVICES = [
     category_id: 4,
   },
   {
-    title: 'CX Strategy, Design & Performance',
-    slug: 'cx-strategy-design-performance',
+    title: 'Customer Research & Insights',
+    slug: 'customer-research-insights',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    category_id: 4,
+  },
+  {
+    title: 'CX Strategy',
+    slug: 'cx-strategy',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 5,
@@ -279,29 +286,8 @@ export const MOCK_GROUP_SERVICES = [
     category_id: 5,
   },
   {
-    title: 'Customer Research & Insights',
-    slug: 'customer-research-insights',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
-  },
-  {
-    title: 'Engage at the Edge',
-    slug: 'engage-at-the-edge',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
-  },
-  {
     title: 'Marketing Strategy & Performance',
     slug: 'marketing-strategy-performance',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Real-Time Marketing Activation',
-    slug: 'real-time-marketing-activation',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 6,

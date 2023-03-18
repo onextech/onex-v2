@@ -18,6 +18,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
         titleProps: {
           alt: avatar_alt,
           ar: '16:9',
+          scaleOnHover: true,
           boxProps: { sx: { mb: 2 }, href },
         },
       },
