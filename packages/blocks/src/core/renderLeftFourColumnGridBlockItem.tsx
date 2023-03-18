@@ -1,7 +1,7 @@
 import React from 'react'
 import { printPaddedNumber } from '@gravis-os/utils'
 
-export interface RenderFourColumnGridBlockItemProps {
+export interface RenderLeftFourColumnGridBlockItemProps {
   overline?: string
   title: string
   subtitle?: string
@@ -9,7 +9,7 @@ export interface RenderFourColumnGridBlockItemProps {
 }
 
 const renderLeftFourColumnGridBlockItem = (
-  props: RenderFourColumnGridBlockItemProps
+  props: RenderLeftFourColumnGridBlockItemProps
 ) => {
   const { overline, title, subtitle, items } = props
 

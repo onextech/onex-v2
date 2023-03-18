@@ -41,4 +41,4 @@ export const MOCK_SHOWCASES = [
     backgroundColor: '#111',
     reverse: true,
   },
-]
+].map((showcase, i) => ({ id: i + 1, ...showcase }))

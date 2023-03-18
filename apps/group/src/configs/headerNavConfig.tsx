@@ -118,7 +118,7 @@ const headerNavConfig = [
       key: industry.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(industry)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -194,7 +194,7 @@ const headerNavConfig = [
       key: postCategory.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[

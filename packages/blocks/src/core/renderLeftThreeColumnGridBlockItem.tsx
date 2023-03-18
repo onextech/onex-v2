@@ -1,15 +1,15 @@
 import React from 'react'
 import { printPaddedNumber } from '@gravis-os/utils'
 
-export interface RenderThreeColumnGridBlockItemProps {
+export interface RenderLeftThreeColumnGridBlockItemProps {
   overline?: string
   title: string
   subtitle?: string
   items: Array<{ fa_icon: string; title: string; subtitle: string }>
 }
 
-const renderThreeColumnGridBlockItem = (
-  props: RenderThreeColumnGridBlockItemProps
+const renderLeftThreeColumnGridBlockItem = (
+  props: RenderLeftThreeColumnGridBlockItemProps
 ) => {
   const { overline, title, subtitle, items } = props
 
@@ -74,4 +74,4 @@ const renderThreeColumnGridBlockItem = (
   }
 }
 
-export default renderThreeColumnGridBlockItem
+export default renderLeftThreeColumnGridBlockItem

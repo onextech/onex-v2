@@ -21,7 +21,7 @@
     "@emotion/styled": "latest",
     "@gravis-os/analytics": "^0.0.0",
     "@gravis-os/config": "^0.0.5",
-    "@gravis-os/landing": "^0.0.40",
+    "@gravis-os/landing": "^0.0.41",
     "@gravis-os/theme": "^0.0.7",
     "@gravis-os/ui": "^0.0.96",
     "@gravis-os/utils": "^0.0.41",

@@ -19,7 +19,7 @@ const PostCategorys: React.FC<PostCategorysProps> = (props) => {
 
   const { routeConfig } = useLayout()
 
-  const categoryWithPosts = getCategoryWithItemsAndHref(
+  const categoryWithPosts = getCategoryWithItemsAndHref<Post, PostCategory>(
     posts,
     postCategorys,
     routeConfig.POSTS

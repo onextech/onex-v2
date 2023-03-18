@@ -1,4 +1,3 @@
-import React from 'react'
 import { footerNavConfig as commonFooterNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
 import { industries, pages, services } from './navConfig'

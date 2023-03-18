@@ -19,11 +19,10 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
 
   const { routeConfig } = useLayout()
 
-  const categoryWithServices = getCategoryWithItemsAndHref(
-    services,
-    serviceCategorys,
-    routeConfig.SERVICES
-  )
+  const categoryWithServices = getCategoryWithItemsAndHref<
+    Service,
+    ServiceCategory
+  >(services, serviceCategorys, routeConfig.SERVICES)
 
   const categoryWithServicesChunks = chunk(categoryWithServices, 2)
 

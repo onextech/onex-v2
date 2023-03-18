@@ -49,7 +49,7 @@ const headerNavConfig = [
         />
       ),
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -126,7 +126,7 @@ const headerNavConfig = [
       key: service.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(service)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -203,7 +203,7 @@ const headerNavConfig = [
       key: technology.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(technology)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -279,7 +279,7 @@ const headerNavConfig = [
       key: postCategory.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -355,7 +355,7 @@ const headerNavConfig = [
       key: page.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[

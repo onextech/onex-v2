@@ -1,4 +1,3 @@
-import React from 'react'
 import { pages as commonPages } from '@onex/common'
 import {
   MOCK_GROUP_SERVICE_CATEGORYS,
