@@ -120,7 +120,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             src: '/images/about_man_with_laptop_in_city.png',
             alt: 'hero',
             fixedBackground: true,
-            containerSx: { width: '100%', bottom: -8 },
+            boxSx: { width: '100%', bottom: -8 },
           },
           items: [
             {
@@ -153,7 +153,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             src: '/images/about_binary.png',
             alt: 'about_binary',
             fixedBackground: true,
-            containerSx: { width: '100%', top: 0 },
+            boxSx: { width: '100%', top: 0 },
           },
           items: [
             { type: 'overline', title: 'What we do' },
@@ -362,7 +362,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             src: '/images/contact_world_map_in_dots.svg',
             alt: 'contact_world_map_in_dots',
             fixedBackground: true,
-            containerSx: { bottom: 24 },
+            boxSx: { bottom: 24 },
           },
           sx: { backgroundColor: 'background.paper' },
           items: [

@@ -3,16 +3,27 @@ import Logo from '@app/components/Logo'
 import { Block, Blocks } from '@gravis-os/landing'
 import {
   renderHeaderMenuBlockItem,
+  renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
   headerNavConfig as commonHeaderNavConfig,
+  RenderHeaderMenuMobileBlockItemProps,
 } from '@onex/blocks'
 import routeConfig from './routeConfig'
 import appConfig from './appConfig'
-import { technologies, pages, services, postCategorys } from './navConfig'
+import systemConfig from './systemConfig'
+import {
+  technologies,
+  pages,
+  services,
+  serviceCategorys,
+  postCategorys,
+} from './navConfig'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
+
+const { isOpenOnHover } = systemConfig
 
 const headerNavConfig = [
   {
@@ -24,11 +35,93 @@ const headerNavConfig = [
   },
   { key: 'portfolio', title: 'Portfolio', href: routeConfig.PORTFOLIO },
   {
+    key: 'advanced-services',
+    title: 'Advanced Services',
+    fullWidth: true,
+    isOpenOnHover,
+    items: serviceCategorys.map((serviceCategory) => ({
+      key: serviceCategory.title,
+      title: (
+        <Block
+          {...renderHeaderMenuMobileBlockItem(
+            serviceCategory as RenderHeaderMenuMobileBlockItemProps
+          )}
+        />
+      ),
+    })),
+    renderItems: ({ popupState }) => {
+      return (
+        <Blocks
+          items={[
+            {
+              key: 'service-categorys-grid',
+              pt: { xs: 10, md: 5 },
+              pb: 6,
+              reveal: false,
+              sx: { backgroundColor: 'background.paper' },
+              items: [
+                {
+                  type: 'grid',
+                  gridProps: { ...commonGridProps, spacing: 4 },
+                  gridItems: [
+                    {
+                      ...commonLeftGridItemProps,
+                      items: [
+                        {
+                          type: 'h5',
+                          title: 'Our Services',
+                          titleProps: { gutterBottom: true },
+                        },
+                        {
+                          type: 'body1',
+                          title:
+                            'We create human-centred designs focused on driving conversions and achieving business goals.',
+                          titleProps: {
+                            color: 'text.secondary',
+                            maxWidth: true,
+                          },
+                        },
+                        {
+                          type: 'link',
+                          title: 'View Services',
+                          titleProps: {
+                            rightCaret: true,
+                            href: routeConfig.SERVICES,
+                            color: 'secondary',
+                            sx: { mt: 2 },
+                            variant: 'body2',
+                          },
+                        },
+                      ],
+                    },
+                    {
+                      ...commonRightGridItemProps,
+                      items: [
+                        {
+                          type: 'grid',
+                          gridProps: { spacing: 2, rowSpacing: 4 },
+                          gridItemProps: { xs: 6, md: 4 },
+                          gridItems: serviceCategorys.map((serviceCategory) =>
+                            renderHeaderMenuListBlockItem(serviceCategory)
+                          ),
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
+      )
+    },
+  },
+  {
     key: 'services',
     title: 'Services',
     href: routeConfig.SERVICES,
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: services.map((service) => ({
       key: service.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(service)} />,
@@ -105,7 +198,7 @@ const headerNavConfig = [
     title: 'Technologies',
     href: routeConfig.TECHNOLOGIES,
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: technologies.map((technology) => ({
       key: technology.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(technology)} />,
@@ -178,10 +271,10 @@ const headerNavConfig = [
     },
   },
   {
-    key: 'post-categorys',
+    key: 'insights',
     title: 'Insights',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: postCategorys.map((postCategory) => ({
       key: postCategory.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
@@ -257,7 +350,7 @@ const headerNavConfig = [
     key: 'company',
     title: 'Company',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: pages.map((page) => ({
       key: page.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,

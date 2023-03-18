@@ -10,11 +10,14 @@ import {
 } from '@onex/blocks'
 import appConfig from './appConfig'
 import routeConfig from './routeConfig'
+import systemConfig from './systemConfig'
 import { services, industries, pages, postCategorys } from './navConfig'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
+
+const { isOpenOnHover } = systemConfig
 
 const headerNavConfig = [
   {
@@ -28,7 +31,7 @@ const headerNavConfig = [
     key: 'services',
     title: 'Services',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: services.map((service) => ({
       key: service.title,
       title: (
@@ -110,7 +113,7 @@ const headerNavConfig = [
     key: 'industries',
     title: 'Industries',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: industries.map((industry) => ({
       key: industry.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(industry)} />,
@@ -183,10 +186,10 @@ const headerNavConfig = [
     },
   },
   {
-    key: 'post-categorys',
+    key: 'insights',
     title: 'Insights',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: postCategorys.map((postCategory) => ({
       key: postCategory.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
@@ -262,7 +265,7 @@ const headerNavConfig = [
     key: 'company',
     title: 'Company',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: pages.map((page) => ({
       key: page.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,

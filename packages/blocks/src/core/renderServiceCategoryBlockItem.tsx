@@ -11,7 +11,7 @@ const renderServiceCategoryBlockItem = (
   props: RenderServiceCategoryBlockItemProps
 ) => {
   const { item } = props
-  const { title, subtitle, href, description, items } = item || {}
+  const { title, subtitle, href, items } = item || {}
 
   return {
     sm: 12,
@@ -20,9 +20,8 @@ const renderServiceCategoryBlockItem = (
       {
         type: 'link',
         title,
-        titleProps: { variant: 'overline' as const, href },
+        titleProps: { variant: 'h3' as const, href, underline: 'none' },
       },
-      { type: 'h3', title: description },
       {
         type: 'subtitle1',
         title: subtitle,

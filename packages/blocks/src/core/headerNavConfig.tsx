@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks, Block } from '@gravis-os/landing'
-import { brands, routeConfig, appConfig } from '@onex/common'
+import { brands, systemConfig } from '@onex/common'
 import renderHeaderMenuBlockItem from './renderHeaderMenuBlockItem'
 import renderHeaderMenuMobileBlockItem from './renderHeaderMenuMobileBlockItem'
 
@@ -8,12 +8,14 @@ const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
 
+const { isOpenOnHover } = systemConfig
+
 const headerNavConfig = [
   {
     key: 'ecosystem',
     title: 'Ecosystem',
     fullWidth: true,
-    isOpenOnHover: true,
+    isOpenOnHover,
     items: brands.map((brand) => ({
       key: brand.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(brand)} />,

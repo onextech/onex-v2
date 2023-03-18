@@ -1,6 +1,9 @@
 export { default as appConfig } from './appConfig'
 export * from './appConfig'
 
+export { default as systemConfig } from './systemConfig'
+export * from './systemConfig'
+
 export { default as routeConfig } from './routeConfig'
 export * from './routeConfig'
 

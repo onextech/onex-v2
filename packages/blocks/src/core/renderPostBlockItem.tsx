@@ -18,7 +18,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
         titleProps: {
           alt: avatar_alt,
           ar: '16:9',
-          sx: { mb: 1 },
+          boxProps: { sx: { mb: 2 }, href },
         },
       },
       { type: 'link', title, titleProps: { href, variant: 'h6' } },

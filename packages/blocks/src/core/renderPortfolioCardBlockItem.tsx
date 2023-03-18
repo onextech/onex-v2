@@ -33,7 +33,7 @@ const renderPortfolioCardBlockItem = (
             background: true,
             fixedBackground: true,
             scaleOnHover: true,
-            containerSx: {
+            boxSx: {
               width: { xs: '60%', sm: '65%' },
               bottom: -8,
             },

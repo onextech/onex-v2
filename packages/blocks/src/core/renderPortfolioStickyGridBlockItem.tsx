@@ -26,7 +26,7 @@ const renderPortfolioStickyGridBlockItem = (
           titleProps: {
             alt: 'image-src',
             fill: true,
-            containerSx: { width: '100%' },
+            boxSx: { width: '100%' },
           },
         },
       ],
