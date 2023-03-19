@@ -60,7 +60,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                   color: 'primary' as const,
                   size: 'small',
                   endIcon: <KeyboardArrowRightOutlinedIcon />,
-                  sx: { ml: 1 },
+                  sx: { ml: 1, color: 'text.primary' },
                   dialogProps: {
                     fullScreen: true,
                     disableTitle: true,

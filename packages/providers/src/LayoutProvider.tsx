@@ -7,7 +7,7 @@ import { LandingLayoutProps as GvsLandingLayoutProps } from '@gravis-os/landing'
 // Types
 // ==============================
 export interface LayoutContextValue {
-  logo: React.JSXElementConstructor<unknown>
+  logo: React.JSXElementConstructor<{ href?: string }>
   // Layout configs
   appConfig?: AppConfig
   routeConfig?: Record<string, string>

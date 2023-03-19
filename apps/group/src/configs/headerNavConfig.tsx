@@ -26,6 +26,7 @@ const headerNavConfig = [
     href: '/',
     offsetLeft: true,
     showOnMobileBar: true,
+    titleProps: { sx: { mb: { xs: 1, md: 0 } } },
   },
   {
     key: 'services',
