@@ -28,6 +28,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     socialMediaConfig,
     headerNavConfig,
     footerNavConfig,
+    routeConfig,
   } = useLayout()
 
   const defaultLandingLayoutProps = {
@@ -77,7 +78,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
     footerProps: {
       callout: <ContactCallout />,
-      logo: <Logo />,
+      logo: <Logo href={routeConfig.HOME} />,
       companyName: appConfig.companyTitle,
       accordionProps: {
         titleProps: { variant: 'h7' },
