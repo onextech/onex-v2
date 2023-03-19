@@ -2,6 +2,7 @@ import appConfig from './appConfig'
 import routeConfig from './routeConfig'
 
 const { companyAbsoluteUrl } = appConfig
+const isDev = process.env.NODE_ENV === 'development'
 
 export const brands = [
   {
@@ -58,9 +59,10 @@ export const brands = [
       'Discover the Agile process that makes 98% of tech executives recommend us',
     href: 'https://govx.com',
   },
-].map((brand) => ({
+].map((brand, i) => ({
   hrefProps: { targetBlank: true },
   ...brand,
+  href: isDev ? `http://localhost:${3000 + i + 1}` : brand.href,
 }))
 
 // Shared across pages
