@@ -1,7 +1,7 @@
 import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 
-export interface RenderHeroBlockItemProps extends BlockProps {
+export interface RenderHeroBlockProps extends BlockProps {
   overline: string
   item: {
     title: string
@@ -11,7 +11,7 @@ export interface RenderHeroBlockItemProps extends BlockProps {
   }
 }
 
-const renderHeroBlockItem = (props: RenderHeroBlockItemProps) => {
+const renderHeroBlock = (props: RenderHeroBlockProps) => {
   const { overline, item, ...rest } = props
   const { title, subtitle, hero_src, hero_alt } = item || {}
   return {
@@ -47,4 +47,4 @@ const renderHeroBlockItem = (props: RenderHeroBlockItemProps) => {
   }
 }
 
-export default renderHeroBlockItem
+export default renderHeroBlock

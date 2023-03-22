@@ -1,7 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
-  renderFadeToBottomBackgroundImageBlockItem,
+  renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
   renderClientCardBlockItem,
 } from '@onex/blocks'
@@ -310,7 +310,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             },
           ],
         },
-        renderFadeToBottomBackgroundImageBlockItem({
+        renderFadeToBottomBackgroundImageBlock({
           hero_src: '/images/about_nodes_above_city.png',
           hero_alt: 'about_nodes_above_city',
           title: 'We Design & Develop Custom Software for Businesses',

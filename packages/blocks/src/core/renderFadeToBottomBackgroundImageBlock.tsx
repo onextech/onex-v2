@@ -4,7 +4,7 @@ import renderGhostButtonBlockItem, {
   RenderGhostButtonBlockItemProps,
 } from './renderGhostButtonBlockItem'
 
-export interface RenderFadeToBottomBackgroundImageBlockItemProps {
+export interface RenderFadeToBottomBackgroundImageBlockProps {
   overline?: string
   title: string
   titleProps?: BlockItemProps
@@ -15,8 +15,8 @@ export interface RenderFadeToBottomBackgroundImageBlockItemProps {
   buttonProps?: RenderGhostButtonBlockItemProps
 }
 
-const renderFadeToBottomBackgroundImageBlockItem = (
-  props: RenderFadeToBottomBackgroundImageBlockItemProps
+const renderFadeToBottomBackgroundImageBlock = (
+  props: RenderFadeToBottomBackgroundImageBlockProps
 ) => {
   const {
     overline,
@@ -67,4 +67,4 @@ const renderFadeToBottomBackgroundImageBlockItem = (
   }
 }
 
-export default renderFadeToBottomBackgroundImageBlockItem
+export default renderFadeToBottomBackgroundImageBlock

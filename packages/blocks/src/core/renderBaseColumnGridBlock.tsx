@@ -1,16 +1,15 @@
 import React from 'react'
 
-export interface RenderFourColumnGridBlockItemProps {
+export interface RenderBaseColumnGridBlockProps {
   overline?: string
   title: string
   subtitle?: string
-  items: Array<{ fa_icon: string; title: string; subtitle: string }>
+  items?: Array<{ fa_icon?: string; title: string; subtitle?: string }>
+  columns: number
 }
 
-const renderFourColumnGridBlockItem = (
-  props: RenderFourColumnGridBlockItemProps
-) => {
-  const { overline, title, subtitle, items } = props
+const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
+  const { overline, title, subtitle, items, columns } = props
 
   return {
     key: title,
@@ -38,14 +37,14 @@ const renderFourColumnGridBlockItem = (
         gridProps: { spacing: 4, rowSpacing: 8 },
         gridItemProps: {
           xs: 6,
-          md: 3,
+          md: 12 / columns,
           sx: { textAlign: { xs: 'center', md: 'left' } },
         },
-        gridItems: items.map((item) => {
+        gridItems: items?.map((item) => {
           const { fa_icon, title, subtitle } = item
           return {
             items: [
-              {
+              fa_icon && {
                 type: 'fa-icon',
                 title: `fa-3x fa-thin ${fa_icon}`,
                 titleProps: { sx: { mb: 3 } },
@@ -55,7 +54,7 @@ const renderFourColumnGridBlockItem = (
                 title,
                 titleProps: { gutterBottom: true },
               },
-              {
+              subtitle && {
                 type: 'body1',
                 title: subtitle,
                 titleProps: { color: 'text.secondary' },
@@ -68,4 +67,4 @@ const renderFourColumnGridBlockItem = (
   }
 }
 
-export default renderFourColumnGridBlockItem
+export default renderBaseColumnGridBlock

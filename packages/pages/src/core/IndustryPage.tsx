@@ -2,12 +2,12 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Industry, Post } from '@onex/types'
 import {
-  renderFadeToBottomBackgroundImageBlockItem,
-  renderFaqsAccordionBlockItem,
-  renderHeroBlockItem,
+  renderFadeToBottomBackgroundImageBlock,
+  renderFaqsAccordionBlock,
+  renderHeroBlock,
   renderParagraphBlockItem,
   renderRelatedPostsBlock,
-  renderRightChecklistBlockItem,
+  renderRightChecklistBlock,
   renderThreeColumnGridBlockItem,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
@@ -29,7 +29,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({
+        renderHeroBlock({
           item: industry,
           overline: 'Industry',
           ...commonBlockProps,
@@ -106,7 +106,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
           ],
         },
         renderRelatedPostsBlock({ items: relatedPosts }),
-        renderRightChecklistBlockItem({
+        renderRightChecklistBlock({
           blockProps: { py: 0 },
           overline: 'What we do',
           title: `Why ${appConfig.title} for ${title}`,
@@ -133,7 +133,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
             },
           ],
         }),
-        renderFaqsAccordionBlockItem({
+        renderFaqsAccordionBlock({
           blockProps: { py: { xs: 5, md: 10 } },
           items: [
             {
@@ -163,7 +163,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
             },
           ],
         }),
-        renderFadeToBottomBackgroundImageBlockItem({
+        renderFadeToBottomBackgroundImageBlock({
           hero_src: '/images/about_nodes_above_city.png',
           hero_alt: 'about_nodes_above_city',
           overline: 'Built on Strategy',

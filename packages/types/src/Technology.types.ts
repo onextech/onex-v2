@@ -1,8 +1,10 @@
-import { CrudItem } from '@gravis-os/types'
+import Page from './Page.types'
 
-export interface Technology extends CrudItem {
+interface Technology extends Page {
   avatar_src?: string
   avatar_alt?: string
+  hero_src?: string
+  hero_alt?: string
 }
 
 export default Technology

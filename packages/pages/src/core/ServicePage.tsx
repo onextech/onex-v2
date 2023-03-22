@@ -2,12 +2,12 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Post, Service, ServiceCategory } from '@onex/types'
 import {
-  renderFadeToBottomBackgroundImageBlockItem,
-  renderFaqsAccordionBlockItem,
-  renderHeroBlockItem,
+  renderFadeToBottomBackgroundImageBlock,
+  renderFaqsAccordionBlock,
+  renderHeroBlock,
   renderParagraphBlockItem,
   renderThreeColumnGridBlockItem,
-  renderRightChecklistBlockItem,
+  renderRightChecklistBlock,
   RenderPostBlockItemProps,
   renderServiceBlockItem,
   renderRelatedPostsBlock,
@@ -35,7 +35,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({
+        renderHeroBlock({
           item: service,
           overline: 'Service',
           ...commonBlockProps,
@@ -112,7 +112,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ],
         },
         renderRelatedPostsBlock({ items: relatedPosts }),
-        renderRightChecklistBlockItem({
+        renderRightChecklistBlock({
           blockProps: { py: 0 },
           overline: 'What we do',
           title: `Why ${appConfig.title} for ${title}`,
@@ -139,7 +139,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             },
           ],
         }),
-        renderFaqsAccordionBlockItem({
+        renderFaqsAccordionBlock({
           blockProps: { py: { xs: 5, md: 10 } },
           items: [
             {
@@ -169,7 +169,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             },
           ],
         }),
-        renderFadeToBottomBackgroundImageBlockItem({
+        renderFadeToBottomBackgroundImageBlock({
           hero_src: '/images/about_nodes_above_city.png',
           hero_alt: 'about_nodes_above_city',
           overline: 'Built on Strategy',

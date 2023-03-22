@@ -29,3 +29,6 @@ export * from './Post.types'
 
 export type { default as PostCategory } from './PostCategory.types'
 export * from './PostCategory.types'
+
+export type { default as Page } from './Page.types'
+export * from './Page.types'

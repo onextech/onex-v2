@@ -2,22 +2,20 @@ import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 
-export interface RenderRightChecklistBlockItemProps {
-  blockProps?: BlockProps
+export interface RenderRightChecklistBlockProps
+  extends Omit<BlockProps, 'items'> {
   overline?: string
   title: string
   subtitle?: string
-  items: Array<{ title: string }>
+  items?: Array<{ title: string }>
 }
 
-const renderRightChecklistBlockItem = (
-  props: RenderRightChecklistBlockItemProps
-) => {
-  const { overline, title, subtitle, items, blockProps } = props
+const renderRightChecklistBlock = (props: RenderRightChecklistBlockProps) => {
+  const { overline, title, subtitle, items, ...rest } = props
 
   return {
     key: 'checklist',
-    ...blockProps,
+    ...rest,
     items: [
       {
         type: 'grid',
@@ -68,4 +66,4 @@ const renderRightChecklistBlockItem = (
   }
 }
 
-export default renderRightChecklistBlockItem
+export default renderRightChecklistBlock

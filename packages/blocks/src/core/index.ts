@@ -34,8 +34,8 @@ export * from './renderIndustryBlockItem'
 export { default as renderTechnologyBlockItem } from './renderTechnologyBlockItem'
 export * from './renderTechnologyBlockItem'
 
-export { default as renderHeroBlockItem } from './renderHeroBlockItem'
-export * from './renderHeroBlockItem'
+export { default as renderHeroBlock } from './renderHeroBlock'
+export * from './renderHeroBlock'
 
 export { default as renderThreeColumnGridBlockItem } from './renderThreeColumnGridBlockItem'
 export * from './renderThreeColumnGridBlockItem'
@@ -43,20 +43,26 @@ export * from './renderThreeColumnGridBlockItem'
 export { default as renderLeftFourColumnGridBlockItem } from './renderLeftFourColumnGridBlockItem'
 export * from './renderLeftFourColumnGridBlockItem'
 
-export { default as renderFourColumnGridBlockItem } from './renderFourColumnGridBlockItem'
-export * from './renderFourColumnGridBlockItem'
+export { default as renderFourColumnGridBlock } from './renderFourColumnGridBlock'
+export * from './renderFourColumnGridBlock'
+
+export { default as renderBaseColumnGridBlock } from './renderBaseColumnGridBlock'
+export * from './renderBaseColumnGridBlock'
+
+export { default as renderThreeColumnGridBlock } from './renderThreeColumnGridBlock'
+export * from './renderThreeColumnGridBlock'
 
 export { default as renderLeftThreeColumnGridBlockItem } from './renderLeftThreeColumnGridBlockItem'
 export * from './renderLeftThreeColumnGridBlockItem'
 
-export { default as renderFadeToBottomBackgroundImageBlockItem } from './renderFadeToBottomBackgroundImageBlockItem'
-export * from './renderFadeToBottomBackgroundImageBlockItem'
+export { default as renderFadeToBottomBackgroundImageBlock } from './renderFadeToBottomBackgroundImageBlock'
+export * from './renderFadeToBottomBackgroundImageBlock'
 
-export { default as renderFaqsAccordionBlockItem } from './renderFaqsAccordionBlockItem'
-export * from './renderFaqsAccordionBlockItem'
+export { default as renderFaqsAccordionBlock } from './renderFaqsAccordionBlock'
+export * from './renderFaqsAccordionBlock'
 
-export { default as renderRightChecklistBlockItem } from './renderRightChecklistBlockItem'
-export * from './renderRightChecklistBlockItem'
+export { default as renderRightChecklistBlock } from './renderRightChecklistBlock'
+export * from './renderRightChecklistBlock'
 
 export { default as renderClientCardBlockItem } from './renderClientCardBlockItem'
 export * from './renderClientCardBlockItem'

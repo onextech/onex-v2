@@ -1,19 +1,17 @@
 import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 
-export interface RenderFaqsAccordionBlockItemProps {
-  blockProps?: BlockProps
-  items: Array<{ key: string; title: string; content: string }>
+export interface RenderFaqsAccordionBlockProps
+  extends Omit<BlockProps, 'items'> {
+  items?: Array<{ key?: string; title: string; content?: string }>
 }
 
-const renderFaqsAccordionBlockItem = (
-  props: RenderFaqsAccordionBlockItemProps
-) => {
-  const { items, blockProps } = props
+const renderFaqsAccordionBlock = (props: RenderFaqsAccordionBlockProps) => {
+  const { items, ...rest } = props
 
   return {
     key: 'faqs',
-    ...blockProps,
+    ...rest,
     items: [
       {
         type: 'grid',
@@ -51,7 +49,7 @@ const renderFaqsAccordionBlockItem = (
                 title: items.map((item) => {
                   const { key, title, content } = item
                   return {
-                    key,
+                    key: key || title,
                     title,
                     content,
                   }
@@ -69,4 +67,4 @@ const renderFaqsAccordionBlockItem = (
   }
 }
 
-export default renderFaqsAccordionBlockItem
+export default renderFaqsAccordionBlock
