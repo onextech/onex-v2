@@ -9,7 +9,7 @@ import {
 import { useUserPreferences } from '@onex/theme'
 import { ContactCallout } from '@onex/components'
 import { useLayout } from '@onex/providers'
-import { ContactPage } from '@onex/pages'
+import { GetStartedPage } from '@onex/pages'
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
@@ -65,7 +65,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                     fullScreen: true,
                     disableTitle: true,
                     transitionVariant: 'fade' as const,
-                    children: <ContactPage fullScreen />,
+                    children: <GetStartedPage fullScreen />,
                   },
                 }}
               />

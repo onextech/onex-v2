@@ -13,3 +13,5 @@ export const MOCK_GROUP_TESTIMONIALS = [
   id: i + 1,
   ...item,
 }))
+
+export const MOCK_TECH_TESTIMONIALS = MOCK_GROUP_TESTIMONIALS

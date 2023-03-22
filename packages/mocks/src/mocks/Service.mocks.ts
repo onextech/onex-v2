@@ -1,3 +1,9 @@
+import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
+import {
+  MOCK_GROUP_SERVICE_CATEGORYS,
+  MOCK_TECH_SERVICE_CATEGORYS,
+} from './ServiceCategory.mocks'
+
 export const MOCK_TECH_SERVICES = [
   {
     title: 'Enterprise Applications',
@@ -7,10 +13,10 @@ export const MOCK_TECH_SERVICES = [
     category_id: 1,
   },
   {
-    title: 'Managed Applications',
+    title: 'Digital Product Design',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'managed-applications',
+    slug: 'digital-product-design',
     category_id: 1,
   },
   {
@@ -91,10 +97,10 @@ export const MOCK_TECH_SERVICES = [
     category_id: 5,
   },
   {
-    title: 'Managed Product Teams',
+    title: 'Agile Development Teams',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'managed-product-teams',
+    slug: 'agile-development-teams',
     category_id: 5,
   },
   {
@@ -129,6 +135,8 @@ export const MOCK_TECH_SERVICES = [
   id: i + 1,
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_TECH_SERVICE_CATEGORYS),
   ...item,
 }))
 
@@ -191,7 +199,7 @@ export const MOCK_GROUP_SERVICES = [
   },
   {
     title: 'Content & Communication Strategy',
-    slug: 'content-communnication-strategy',
+    slug: 'content-communication-strategy',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 4,
@@ -249,5 +257,7 @@ export const MOCK_GROUP_SERVICES = [
   id: i + 1,
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'working in office',
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_GROUP_SERVICE_CATEGORYS),
   ...item,
 }))

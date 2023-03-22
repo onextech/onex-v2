@@ -1,11 +1,12 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { Industry } from '@onex/types'
+import type { Industry, Post } from '@onex/types'
 import {
   renderFadeToBottomBackgroundImageBlockItem,
   renderFaqsAccordionBlockItem,
   renderHeroBlockItem,
   renderParagraphBlockItem,
+  renderRelatedPostsBlock,
   renderRightChecklistBlockItem,
   renderThreeColumnGridBlockItem,
 } from '@onex/blocks'
@@ -17,17 +18,22 @@ const commonBlockProps = {
 
 export interface IndustryPageProps {
   industry: Industry
+  relatedPosts?: Post[]
 }
 
 const IndustryPage: React.FC<IndustryPageProps> = (props) => {
-  const { industry } = props
+  const { industry, relatedPosts } = props
   const { title, subtitle } = industry || {}
   const { appConfig, routeConfig } = useLayout()
 
   return (
     <Blocks
       items={[
-        renderHeroBlockItem({ item: industry, overline: 'Industry', ...commonBlockProps }),
+        renderHeroBlockItem({
+          item: industry,
+          overline: 'Industry',
+          ...commonBlockProps,
+        }),
         renderParagraphBlockItem({
           pt: { xs: 5, md: 10 },
           pb: 0,
@@ -99,6 +105,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
             }),
           ],
         },
+        renderRelatedPostsBlock({ items: relatedPosts }),
         renderRightChecklistBlockItem({
           blockProps: { py: 0 },
           overline: 'What we do',

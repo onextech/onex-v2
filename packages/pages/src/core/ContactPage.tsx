@@ -2,7 +2,6 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import { ContactForm } from '@onex/components'
 import { useLayout } from '@onex/providers'
-import { renderTestimonialBlockItem } from '@onex/blocks'
 
 export interface ContactPageProps {
   fullScreen?: boolean
@@ -11,7 +10,16 @@ export interface ContactPageProps {
 const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
 
-  const { logo: Logo, testimonials } = useLayout()
+  const { logo: Logo, routeConfig, appConfig } = useLayout()
+  const {
+    generalEmail,
+    generalHotline,
+    generalWhatsappHotline,
+    officeTitle,
+    officeAddress,
+  } = appConfig
+
+  const py = fullScreen ? { xs: 5, md: 10 } : { xs: 3, md: 7 }
 
   return (
     <Blocks
@@ -37,24 +45,24 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                   lg: 8,
                   boxProps: {
                     sx: {
-                      py: { xs: 5, md: 10 },
-                      ...(fullScreen && { height: { md: '100vh' } }),
+                      py,
+                      ...(fullScreen && { minHeight: { md: '100vh' } }),
                     },
                   },
                   items: [
-                    ...(Logo
+                    ...(Logo && fullScreen
                       ? [
                           {
                             type: 'jsx',
-                            title: <Logo />,
+                            title: <Logo href={routeConfig.HOME} />,
                             boxProps: { sx: { mb: 5 } },
                           },
                         ]
                       : []),
-                    { type: 'overline', title: 'Get Started' },
+                    { type: 'overline', title: 'Contact' },
                     {
                       type: 'h2',
-                      title: 'Contact Us',
+                      title: 'Get in Touch',
                       titleProps: { mb: 1 },
                     },
                     {
@@ -79,17 +87,72 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
+                      width: '100%',
+                      height: { md: '100%' },
                       backgroundColor: 'background.default',
                       top: 0,
-                      px: 5,
-                      py: { xs: 5, md: 10 },
+                      px: { xs: 0, md: 5 },
+                      py,
                       position: { md: 'absolute' },
-                      height: { md: '100%' },
                     },
                   },
-                  items: renderTestimonialBlockItem({
-                    item: testimonials[0],
-                  }),
+                  items: [
+                    // Offices
+                    {
+                      type: 'h5',
+                      title: 'Offices',
+                      titleProps: { sx: { mb: 2 } },
+                    },
+                    { type: 'body1', title: officeTitle },
+                    {
+                      type: 'body1',
+                      title: officeAddress,
+                      titleProps: { color: 'text.secondary' },
+                    },
+                    // Support
+                    {
+                      type: 'h5',
+                      title: 'Support',
+                      titleProps: { sx: { mt: 8, mb: 2 } },
+                    },
+                    ...[
+                      {
+                        overline: 'Submit a general inquiry',
+                        title: generalEmail,
+                        href: `mailto:${generalEmail}`,
+                      },
+                      {
+                        overline: 'General hotline',
+                        title: generalHotline,
+                        href: `tel:${generalHotline}`,
+                      },
+                      {
+                        overline: 'WhatsApp',
+                        title: generalWhatsappHotline,
+                        href: `https://wa.me/${generalWhatsappHotline}`,
+                        titleProps: { targetBlank: true },
+                      },
+                    ]
+                      .map(({ title, titleProps, overline, href }) => {
+                        return [
+                          {
+                            type: 'body1',
+                            title: overline,
+                            titleProps: { mt: 2 },
+                          },
+                          {
+                            type: 'link',
+                            title,
+                            titleProps: {
+                              href,
+                              color: 'text.secondary',
+                              ...titleProps,
+                            },
+                          },
+                        ]
+                      })
+                      .flat(),
+                  ],
                 },
               ],
             },

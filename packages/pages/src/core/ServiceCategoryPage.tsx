@@ -5,6 +5,7 @@ import {
   RenderPostBlockItemProps,
   renderServiceBlockItem,
   RenderServiceBlockItemProps,
+  renderServicesBlockItem,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
@@ -59,22 +60,10 @@ const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
           key: 'services',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 5, md: 10 },
-          items: [
-            {
-              type: 'grid',
-              gridItems: services.map((service) =>
-                renderServiceBlockItem({
-                  item: {
-                    href: `${routeConfig.SERVICES}/${serviceCategory.slug}/${service.slug}`,
-                    ...(service as RenderServiceBlockItemProps['item']),
-                  },
-                })
-              ),
-            },
-          ],
+          items: [renderServicesBlockItem({ items: services })],
         },
         {
-          key: 'related-by-category',
+          key: 'related-service-categorys',
           py: { xs: 5, md: 10 },
           items: [
             {
@@ -87,7 +76,7 @@ const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
               gridItems: otherServiceCategorys?.map((otherServiceCategory) =>
                 renderServiceBlockItem({
                   item: {
-                    href: `${routeConfig.POSTS}/${otherServiceCategory.slug}`,
+                    href: `${routeConfig.SERVICES}/${otherServiceCategory.slug}`,
                     ...(otherServiceCategory as RenderPostBlockItemProps['item']),
                   },
                 })

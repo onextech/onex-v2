@@ -1,8 +1,8 @@
 export const MOCK_TECH_SERVICE_CATEGORYS = [
   {
     id: 1,
-    title: 'Applications',
-    slug: 'applications',
+    title: 'Application Development',
+    slug: 'application-development',
     subtitle:
       'Lead your business toward a long-term vision for holistic prosperity.',
     hero_src: '/images/about_nodes.png',
@@ -11,7 +11,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   {
     id: 2,
     title: 'API Integrations',
-    slug: 'engineering',
+    slug: 'api-integrations',
     subtitle:
       'Intrigue customers and capture the market with captivating brand narratives.',
     hero_src: '/images/about_nodes.png',
@@ -28,8 +28,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 4,
-    title: 'Advisory',
-    slug: 'advisory',
+    title: 'Software Advisory',
+    slug: 'software-advisory',
     subtitle:
       'Cultivate engagement through insightful content that speaks to customer needs.',
     hero_src: '/images/about_nodes.png',

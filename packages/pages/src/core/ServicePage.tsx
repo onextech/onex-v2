@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { Service, ServiceCategory } from '@onex/types'
+import type { Post, Service, ServiceCategory } from '@onex/types'
 import {
   renderFadeToBottomBackgroundImageBlockItem,
   renderFaqsAccordionBlockItem,
@@ -8,11 +8,13 @@ import {
   renderParagraphBlockItem,
   renderThreeColumnGridBlockItem,
   renderRightChecklistBlockItem,
-  renderPostBlockItem,
   RenderPostBlockItemProps,
   renderServiceBlockItem,
+  renderRelatedPostsBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
+import renderRelatedServicesBlock from '@onex/blocks/src/core/renderRelatedServicesBlock'
+import renderServicesBlockItem from '@onex/blocks/src/core/renderServicesBlockItem'
 
 const commonBlockProps = {
   maxWidth: 'xl',
@@ -22,10 +24,11 @@ export interface ServicePageProps {
   service: Service
   serviceCategory: ServiceCategory
   relatedServices?: Service[]
+  relatedPosts?: Post[]
 }
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
-  const { service, serviceCategory, relatedServices } = props
+  const { service, serviceCategory, relatedServices, relatedPosts } = props
   const { title, subtitle } = service || {}
   const { appConfig, routeConfig } = useLayout()
 
@@ -108,6 +111,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             }),
           ],
         },
+        renderRelatedPostsBlock({ items: relatedPosts }),
         renderRightChecklistBlockItem({
           blockProps: { py: 0 },
           overline: 'What we do',
@@ -337,28 +341,10 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             },
           ],
         },
-        {
-          key: 'related-by-category',
+        renderRelatedServicesBlock({
+          items: relatedServices,
           py: { xs: 5, md: 10 },
-          items: [
-            {
-              type: 'h4',
-              title: 'Related Services',
-              titleProps: { sx: { mb: { xs: 3, md: 5 } } },
-            },
-            {
-              type: 'grid',
-              gridItems: relatedServices?.map((relatedService) =>
-                renderServiceBlockItem({
-                  item: {
-                    href: `${routeConfig.SERVICES}/${serviceCategory.slug}/${relatedService.slug}`,
-                    ...(relatedService as RenderPostBlockItemProps['item']),
-                  },
-                })
-              ),
-            },
-          ],
-        },
+        }),
       ]}
     />
   )

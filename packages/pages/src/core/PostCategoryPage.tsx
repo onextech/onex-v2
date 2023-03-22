@@ -1,7 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Post, PostCategory } from '@onex/types'
-import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
+import { renderPostsBlockItem } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
 export interface PostCategoryPageProps {
@@ -11,7 +11,6 @@ export interface PostCategoryPageProps {
 
 const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
   const { posts, postCategory } = props
-  const { routeConfig } = useLayout()
 
   if (!postCategory) return null
 
@@ -46,19 +45,7 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
           key: 'post-categorys',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 2, md: 5 },
-          items: [
-            {
-              type: 'grid',
-              gridItems: posts.map((post) =>
-                renderPostBlockItem({
-                  item: {
-                    href: `${routeConfig.POSTS}/${postCategory.slug}/${post.slug}`,
-                    ...(post as RenderPostBlockItemProps['item']),
-                  },
-                })
-              ),
-            },
-          ],
+          items: [renderPostsBlockItem({ items: posts })],
         },
       ]}
     />

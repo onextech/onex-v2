@@ -76,5 +76,17 @@ export * from './renderPostCategoryBlockItem'
 export { default as renderPostBlockItem } from './renderPostBlockItem'
 export * from './renderPostBlockItem'
 
+export { default as renderPostsBlockItem } from './renderPostsBlockItem'
+export * from './renderPostsBlockItem'
+
 export { default as renderPostHeroBlockItem } from './renderPostHeroBlockItem'
 export * from './renderPostHeroBlockItem'
+
+export { default as renderRelatedPostsBlock } from './renderRelatedPostsBlock'
+export * from './renderRelatedPostsBlock'
+
+export { default as renderRelatedServicesBlock } from './renderRelatedServicesBlock'
+export * from './renderRelatedServicesBlock'
+
+export { default as renderServicesBlockItem } from './renderServicesBlockItem'
+export * from './renderServicesBlockItem'

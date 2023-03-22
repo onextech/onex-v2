@@ -3,4 +3,9 @@ export interface AppConfig {
   absoluteUrl: string
   companyTitle: string
   companyAbsoluteUrl: string
+  generalEmail: string
+  generalHotline: string
+  generalWhatsappHotline: string
+  officeTitle: string
+  officeAddress: string
 }

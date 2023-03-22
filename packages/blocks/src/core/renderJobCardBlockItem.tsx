@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@gravis-os/ui'
+import { Box, useOpen } from '@gravis-os/ui'
 import { Block } from '@gravis-os/landing'
 import { printPaddedNumber } from '@gravis-os/utils'
 import type { Job } from '@onex/types'
@@ -12,8 +12,12 @@ export interface RenderJobCardBlockItemProps {
 const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
   const { job, index } = props
   const { title, subtitle, html, ctaUrl } = job
+
+  const [isOpen, { open, close }] = useOpen()
+
   return {
     boxProps: {
+      onClick: open,
       sx: {
         backgroundColor: 'background.paper',
         p: 3,
@@ -27,6 +31,8 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
       },
     },
     dialogProps: {
+      open: isOpen,
+      onClose: close,
       maxWidth: 'xl',
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },

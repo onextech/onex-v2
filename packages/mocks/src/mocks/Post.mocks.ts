@@ -1,3 +1,11 @@
+import sampleSize from 'lodash/sampleSize'
+import {
+  MOCK_GROUP_POST_CATEGORYS,
+  MOCK_TECH_POST_CATEGORYS,
+} from './PostCategory.mocks'
+import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
+
 export const MOCK_TECH_POSTS = [
   {
     title:
@@ -145,6 +153,10 @@ export const MOCK_TECH_POSTS = [
   },
 ].map((item, i) => ({
   id: i + 1,
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_TECH_POST_CATEGORYS),
+
+  // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: 'about_shape_circle_radial',
   hero_src: '/images/about_working_in_office.png',
@@ -154,6 +166,8 @@ export const MOCK_TECH_POSTS = [
   author_avatar_alt: 'about_shape_circle_radial',
   author_title: 'Jared Palmer',
   author_job_title: 'CEO',
+  // Tags
+  tags: sampleSize(MOCK_TECH_TAGS, 3),
   // Html
   html:
     '<h4>Innovation that drives real impact.</h4>\n' +
@@ -164,4 +178,10 @@ export const MOCK_TECH_POSTS = [
   ...item,
 }))
 
-export const MOCK_GROUP_POSTS = MOCK_TECH_POSTS
+export const MOCK_GROUP_POSTS = MOCK_TECH_POSTS.map((item, i) => ({
+  ...item,
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_GROUP_POST_CATEGORYS),
+  // Tags
+  tags: sampleSize(MOCK_GROUP_TAGS, 3),
+}))

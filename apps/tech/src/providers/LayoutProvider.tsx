@@ -7,7 +7,10 @@ import headerNavConfig from '@app/configs/headerNavConfig'
 import footerNavConfig from '@app/configs/footerNavConfig'
 import socialMediaConfig from '@app/configs/socialMediaConfig'
 import legalConfig from '@app/configs/legalConfig'
-import { MOCK_GROUP_TESTIMONIALS } from '@onex/mocks'
+import {
+  MOCK_TECH_SERVICE_CATEGORYS,
+  MOCK_TECH_TESTIMONIALS,
+} from '@onex/mocks'
 
 export interface LayoutProviderProps {
   children?: React.ReactNode
@@ -25,7 +28,8 @@ const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
         footerNavConfig,
         socialMediaConfig,
         legalConfig,
-        testimonials: MOCK_GROUP_TESTIMONIALS,
+        testimonials: MOCK_TECH_TESTIMONIALS,
+        serviceCategorys: MOCK_TECH_SERVICE_CATEGORYS,
       }}
     >
       {children}

@@ -1,10 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Service } from '@onex/types'
-import {
-  renderServiceBlockItem,
-  RenderServiceBlockItemProps,
-} from '@onex/blocks'
+import { renderServicesBlockItem } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
 export interface ServicesPageProps {
@@ -62,18 +59,10 @@ const ServicesPage: React.FC<ServicesPageProps> = (props) => {
           key: 'services',
           sx: { backgroundColor: 'background.paper' },
           items: [
-            {
-              type: 'grid',
+            renderServicesBlockItem({
+              items: services,
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: services.map((service) =>
-                renderServiceBlockItem({
-                  item: {
-                    ...service,
-                    href: `${routeConfig.SERVICES}/${service.slug}`,
-                  } as RenderServiceBlockItemProps['item'],
-                })
-              ),
-            },
+            }),
           ],
         },
       ]}

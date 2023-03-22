@@ -1,22 +1,24 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { Technology } from '@onex/types'
+import type { Post, Technology } from '@onex/types'
 import {
   renderHeroBlockItem,
   renderFourColumnGridBlockItem,
   renderThreeColumnGridBlockItem,
   renderFadeToBottomBackgroundImageBlockItem,
   renderFaqsAccordionBlockItem,
+  renderRelatedPostsBlock,
+  renderRightChecklistBlockItem,
 } from '@onex/blocks'
-import renderRightChecklistBlockItem from '@onex/blocks/src/core/renderRightChecklistBlockItem'
 import { useLayout } from '@onex/providers'
 
 export interface TechnologyPageProps {
   technology: Technology
+  relatedPosts?: Post[]
 }
 
 const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
-  const { technology } = props
+  const { technology, relatedPosts } = props
   const { title } = technology || {}
   const { appConfig, routeConfig } = useLayout()
 
@@ -55,6 +57,10 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
                 "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
             },
           ],
+        }),
+        renderRelatedPostsBlock({
+          items: relatedPosts,
+          sx: { backgroundColor: 'background.paper' },
         }),
         renderFadeToBottomBackgroundImageBlockItem({
           hero_src: '/images/about_nodes_above_city.png',

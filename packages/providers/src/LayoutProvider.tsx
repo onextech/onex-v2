@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react'
 import merge from 'lodash/merge'
-import { AppConfig, Testimonial } from '@onex/types'
+import { AppConfig, ServiceCategory, Testimonial } from '@onex/types'
 import { LandingLayoutProps as GvsLandingLayoutProps } from '@gravis-os/landing'
 
 // ==============================
@@ -16,6 +16,7 @@ export interface LayoutContextValue {
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
   testimonials?: Testimonial[]
+  serviceCategorys?: ServiceCategory[]
 }
 
 // ==============================
@@ -24,6 +25,7 @@ export interface LayoutContextValue {
 export const layoutContextInitialState = {
   logo: null,
   testimonials: [],
+  serviceCategorys: [],
 }
 
 // ==============================

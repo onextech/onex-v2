@@ -51,3 +51,6 @@ export * from './PostsPage'
 
 export { default as PostPage } from './PostPage'
 export * from './PostPage'
+
+export { default as GetStartedPage } from './GetStartedPage'
+export * from './GetStartedPage'
