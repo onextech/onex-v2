@@ -13,6 +13,8 @@ export interface Post extends CrudItem {
   author_avatar_alt?: string
   author_title?: string
   author_job_title?: string
+  // Tags
+  tags?: CrudItem[]
   // Html
   html?: string
 }

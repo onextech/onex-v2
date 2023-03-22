@@ -6,6 +6,8 @@ export interface Service extends CrudItem {
   category?: ServiceCategory
   hero_src?: string
   hero_alt?: string
+  // Tags
+  tags?: CrudItem[]
 }
 
 export default Service
