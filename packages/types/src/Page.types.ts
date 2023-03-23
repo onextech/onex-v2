@@ -12,7 +12,7 @@ export type PageSection =
 
 interface Page extends CrudItem {
   // Seo
-  seo: {
+  seo?: {
     title?: string
     description?: string
   }

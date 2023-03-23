@@ -43,7 +43,7 @@ const headerNavConfig = [
         />
       ),
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
@@ -271,7 +271,7 @@ const headerNavConfig = [
       key: page.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[

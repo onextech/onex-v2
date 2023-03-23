@@ -4,7 +4,6 @@ import type { Service, ServiceCategory } from '@onex/types'
 import {
   RenderPostBlockItemProps,
   renderServiceBlockItem,
-  RenderServiceBlockItemProps,
   renderServicesBlockItem,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'

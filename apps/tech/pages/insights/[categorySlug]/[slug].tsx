@@ -10,9 +10,8 @@ import {
   MOCK_TECH_POSTS,
   MOCK_TECH_SERVICE_CATEGORYS,
 } from '@onex/mocks'
-
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { Post, PostCategory, Service, ServiceCategory } from '@onex/types'
+import { Post, PostCategory, Service } from '@onex/types'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {

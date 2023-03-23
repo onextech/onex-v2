@@ -20,7 +20,7 @@ const headerNavConfig = [
       key: brand.title,
       title: <Block {...renderHeaderMenuMobileBlockItem(brand)} />,
     })),
-    renderItems: ({ popupState }) => {
+    renderItems: () => {
       return (
         <Blocks
           items={[
