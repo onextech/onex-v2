@@ -1,6 +1,7 @@
 import { CrudItem } from '@gravis-os/types'
 
 export type PageSection =
+  | 'summary'
   | 'benefits'
   | 'features'
   | 'howItWorks'

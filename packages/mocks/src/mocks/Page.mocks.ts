@@ -10,6 +10,14 @@ export const MOCK_PAGE = {
   subtitle: '',
   // Sections
   sections: {
+    summary: {
+      hero_src: '',
+      hero_alt: '',
+      overline: '',
+      title: '',
+      subtitle: '',
+      items: [],
+    },
     benefits: {
       hero_src: '',
       hero_alt: '',

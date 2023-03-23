@@ -4,7 +4,7 @@ import { BlockProps } from '@gravis-os/landing'
 export interface RenderParagraphBlockItemProps
   extends Omit<BlockProps, 'items'> {
   title: string
-  items?: string[]
+  items?: Array<{ title: string }>
 }
 
 const renderParagraphBlockItem = (props: RenderParagraphBlockItemProps) => {
@@ -18,9 +18,9 @@ const renderParagraphBlockItem = (props: RenderParagraphBlockItemProps) => {
         title,
         titleProps: { sx: { mb: 4 } },
       },
-      ...items.map((item) => ({
+      ...items?.map(({ title }) => ({
         type: 'subtitle3',
-        title: item,
+        title,
         titleProps: { sx: { mb: 3 }, maxWidth: true },
       })),
     ],

@@ -1,6 +1,6 @@
-import { CrudItem } from '@gravis-os/types'
+import Page from './Page.types'
 
-export interface Industry extends CrudItem {
+interface Industry extends Page {
   fa_icon?: string
 }
 
