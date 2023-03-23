@@ -3,7 +3,7 @@ import merge from 'lodash/merge'
 export const MOCK_INDUSTRY_PAGE = {
   // Seo
   seo: {
-    title: 'Industry',
+    title: '{title} Industry',
     description: 'This page is all about the technology that we use',
   },
   // Hero

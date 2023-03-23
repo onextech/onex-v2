@@ -4,7 +4,7 @@ import merge from 'lodash/merge'
 export const MOCK_TECH_TECHNOLOGY_PAGE = {
   // Seo
   seo: {
-    title: 'Technology',
+    title: '{title} Technology',
     description: 'This page is all about the technology that we use',
   },
   // Hero

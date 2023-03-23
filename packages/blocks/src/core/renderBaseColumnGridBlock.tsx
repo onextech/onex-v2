@@ -14,30 +14,44 @@ export interface RenderBaseColumnGridBlockProps
     subtitle?: string
   }>
   columns: number
+  textAlign?: 'left' | 'center'
 }
 
 const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
-  const { overline, title, subtitle, items, columns, ...rest } = props
+  const {
+    overline,
+    title,
+    subtitle,
+    items,
+    columns,
+    textAlign = 'center',
+    ...rest
+  } = props
+
+  const isTextAlignCenter = textAlign === 'center'
 
   return {
     key: title,
-    center: true,
+    center: isTextAlignCenter,
     items: [
       { type: 'overline', title: overline },
       {
         type: 'h3',
         title,
-        maxWidth: 'md',
-        titleProps: { gutterBottom: true },
+        titleProps: {
+          gutterBottom: true,
+          ...(!isTextAlignCenter && { maxWidth: '50%' }),
+        },
+        ...(isTextAlignCenter && { maxWidth: 'md' }),
       },
       {
         type: 'body1',
         title: subtitle,
-        maxWidth: 'md',
         titleProps: {
           color: 'text.secondary',
-          maxWidth: true,
+          maxWidth: isTextAlignCenter ? true : '40%',
         },
+        ...(isTextAlignCenter && { maxWidth: 'md' }),
       },
       {
         type: 'grid',
