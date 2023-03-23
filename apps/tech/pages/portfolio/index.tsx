@@ -7,7 +7,7 @@ export interface NextShowcasesPageProps {}
 
 const NextShowcasesPage: React.FC<NextShowcasesPageProps> = () => {
   return (
-    <LandingLayout seo={{ title: 'Portfolio' }}>
+    <LandingLayout seo={{ title: 'Showcases' }}>
       <ShowcasesPage showcases={MOCK_SHOWCASES} />
     </LandingLayout>
   )

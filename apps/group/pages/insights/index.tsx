@@ -7,7 +7,7 @@ export interface NextPostsPageProps {}
 
 const NextPostsPage: React.FC<NextPostsPageProps> = () => {
   return (
-    <LandingLayout seo={{ title: 'Posts' }}>
+    <LandingLayout seo={{ title: 'Insights' }}>
       <PostCategorysPage
         posts={MOCK_GROUP_POSTS}
         postCategorys={MOCK_GROUP_POST_CATEGORYS}

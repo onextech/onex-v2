@@ -97,20 +97,23 @@ export const pages = [
 // Data shared across pages
 export const legalPages = [
   {
+    seo: { title: 'Terms' },
     title: 'Terms',
-    slug: routeConfig.TERMS,
+    slug: routeConfig.TERMS.slice(1),
     href: `${companyAbsoluteUrl}${routeConfig.TERMS}`,
     html: '<div>Terms</div>',
   },
   {
+    seo: { title: 'Privacy' },
     title: 'Privacy',
-    slug: routeConfig.PRIVACY,
+    slug: routeConfig.PRIVACY.slice(1),
     href: `${companyAbsoluteUrl}${routeConfig.PRIVACY}`,
     html: '<div>Privacy Policy</div>',
   },
   {
+    seo: { title: 'Cookies' },
     title: 'Cookies',
-    slug: routeConfig.COOKIES,
+    slug: routeConfig.COOKIES.slice(1),
     href: `${companyAbsoluteUrl}${routeConfig.COOKIES}`,
     html: '<div>Cookie Policy</div>',
   },

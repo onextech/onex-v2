@@ -71,7 +71,7 @@ const renderPortfolioCardBlockItem = (
           overline: 'Portfolio',
           title: 'Read more',
           boxProps: { mt: 5 },
-          href: `${routeConfig.PORTFOLIO}/${slug || ''}`,
+          href: `${routeConfig.SHOWCASES}/${slug || ''}`,
         }),
       ],
     },

@@ -2,18 +2,29 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { LegalPage } from '@onex/pages'
 import { legalPages } from '@onex/common'
-import { useRouter } from 'next/router'
+import routeConfig from '@app/configs/routeConfig'
+import { GetStaticProps } from 'next'
+import { Page } from '@onex/types'
+import getDynamicPage from '@app/utils/getDynamicPage'
 
-export interface NextCookiesPageProps {}
+export const getStaticProps: GetStaticProps = () => {
+  const { title, html } = legalPages.find(
+    ({ slug }) => slug === routeConfig.COOKIES.slice(1)
+  )
+  const legalPage = getDynamicPage({ title, html })
+  return { props: { legalPage } }
+}
 
-const NextCookiesPage: React.FC<NextCookiesPageProps> = () => {
-  const router = useRouter()
-  const { title, html } = legalPages.find(({ slug }) => slug === router.asPath)
-  const legalPageProps = { title, html }
+export interface NextCookiesPageProps {
+  legalPage: Page
+}
+
+const NextCookiesPage: React.FC<NextCookiesPageProps> = (props) => {
+  const { legalPage } = props
 
   return (
-    <LandingLayout seo={{ title: 'Cookies' }}>
-      <LegalPage {...legalPageProps} />
+    <LandingLayout seo={legalPage.seo}>
+      <LegalPage {...legalPage} />
     </LandingLayout>
   )
 }

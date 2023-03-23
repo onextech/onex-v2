@@ -4,12 +4,11 @@ import { useLayout } from '@onex/providers'
 
 export interface LegalPageProps {
   title: React.ReactNode
-  html: string
+  html?: string
 }
 
 const LegalPage: React.FC<LegalPageProps> = (props) => {
   const { title, html } = props
-
   const { appConfig } = useLayout()
   const { companyTitle } = appConfig
 
@@ -29,7 +28,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
               type: 'h2',
               title,
             },
-            {
+            html && {
               type: 'html',
               title: html,
               titleProps: { color: 'text.secondary', sx: { mt: 5 } },

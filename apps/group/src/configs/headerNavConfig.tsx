@@ -156,7 +156,7 @@ const headerNavConfig = [
                           title: 'View Industries',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.INDUSTRIES,
+                            href: routeConfig.INDUSTRYS,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',

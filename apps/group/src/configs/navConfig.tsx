@@ -29,7 +29,7 @@ export const postCategorys = MOCK_GROUP_POST_CATEGORYS.map((postCategory) => ({
 
 export const industries = MOCK_GROUP_INDUSTRYS.map((industry) => ({
   ...industry,
-  href: `${routeConfig.INDUSTRIES}/${industry.slug}`,
+  href: `${routeConfig.INDUSTRYS}/${industry.slug}`,
 }))
 
 export const pages = commonPages

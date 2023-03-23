@@ -24,7 +24,7 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
             { type: 'overline', title: 'Insights' },
             {
               type: 'h1',
-              title: 'Posts',
+              title: 'Insights',
             },
             {
               type: 'subtitle1',

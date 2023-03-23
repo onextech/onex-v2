@@ -2,23 +2,47 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { PostCategoryPage } from '@onex/pages'
 import { MOCK_TECH_POST_CATEGORYS, MOCK_TECH_POSTS } from '@onex/mocks'
-import { useRouter } from 'next/router'
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { Post, PostCategory } from '@onex/types'
 
-export interface NextPostsPageProps {}
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: MOCK_TECH_POST_CATEGORYS.map(({ slug }) => ({
+      params: { categorySlug: slug },
+    })),
+    fallback: false,
+  }
+}
 
-const NextPostsPage: React.FC<NextPostsPageProps> = () => {
-  const { query } = useRouter()
-
+export const getStaticProps: GetStaticProps = (context) => {
   const postCategory = MOCK_TECH_POST_CATEGORYS.find(
-    ({ slug }) => slug === query.categorySlug
+    ({ slug }) => slug === context.params.categorySlug
   )
-
   const posts = MOCK_TECH_POSTS.filter(
     ({ category_id }) => category_id === postCategory?.id
   )
 
+  return {
+    props: {
+      posts,
+      postCategory,
+    },
+  }
+}
+
+export interface NextPostsPageProps {
+  posts: Post[]
+  postCategory: PostCategory
+}
+
+const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
+  const { posts, postCategory } = props
+
   return (
-    <LandingLayout seo={{ title: 'Post Categorys' }} autoBreadcrumbs>
+    <LandingLayout
+      seo={{ title: postCategory.title, description: postCategory.subtitle }}
+      autoBreadcrumbs
+    >
       <PostCategoryPage postCategory={postCategory} posts={posts} />
     </LandingLayout>
   )

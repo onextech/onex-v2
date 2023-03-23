@@ -33,7 +33,7 @@ const headerNavConfig = [
     showOnMobileBar: true,
     titleProps: { sx: { mb: { xs: 1, md: 0 } } },
   },
-  { key: 'portfolio', title: 'Portfolio', href: routeConfig.PORTFOLIO },
+  { key: 'portfolio', title: 'Portfolio', href: routeConfig.SHOWCASES },
   {
     key: 'services',
     title: 'Services',
@@ -162,7 +162,7 @@ const headerNavConfig = [
                           title: 'View Industries',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.INDUSTRIES,
+                            href: routeConfig.INDUSTRYS,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',
@@ -195,7 +195,7 @@ const headerNavConfig = [
   {
     key: 'technologies',
     title: 'Technologies',
-    href: routeConfig.TECHNOLOGIES,
+    href: routeConfig.TECHNOLOGYS,
     fullWidth: true,
     isOpenOnHover,
     items: technologies.map((technology) => ({
@@ -239,7 +239,7 @@ const headerNavConfig = [
                           title: 'View Technologies',
                           titleProps: {
                             rightCaret: true,
-                            href: routeConfig.TECHNOLOGIES,
+                            href: routeConfig.TECHNOLOGYS,
                             color: 'secondary',
                             sx: { mt: 2 },
                             variant: 'body2',

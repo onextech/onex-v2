@@ -1,15 +1,16 @@
 const routeConfig = {
   HOME: '/',
   ABOUT: '/about',
+  CAREERS: '/careers',
+  CONTACT: '/contact',
   TERMS: '/terms',
   PRIVACY: '/privacy',
   COOKIES: '/cookies',
-  CONTACT: '/contact',
-  PORTFOLIO: '/portfolio',
+  // Models
+  SHOWCASES: '/portfolio',
   SERVICES: '/services',
-  TECHNOLOGIES: '/technologies',
-  CAREERS: '/careers',
-  INDUSTRIES: '/industries',
+  TECHNOLOGYS: '/technologies',
+  INDUSTRYS: '/industries',
   POSTS: '/insights',
 }
 

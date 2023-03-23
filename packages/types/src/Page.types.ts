@@ -22,6 +22,7 @@ interface Page extends CrudItem {
   subtitle?: string
   hero_src?: string
   hero_alt?: string
+  html?: string
   // Sections
   sections?: {
     [key in PageSection]: {

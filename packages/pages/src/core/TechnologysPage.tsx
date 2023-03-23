@@ -69,7 +69,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
                 renderTechnologyBlockItem({
                   item: {
                     ...technology,
-                    href: `${routeConfig.SERVICES}/${technology.slug}`,
+                    href: `${routeConfig.TECHNOLOGYS}/${technology.slug}`,
                   } as RenderTechnologyBlockItemProps['item'],
                 })
               ),

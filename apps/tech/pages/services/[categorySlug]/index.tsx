@@ -2,27 +2,55 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ServiceCategoryPage } from '@onex/pages'
 import { MOCK_TECH_SERVICE_CATEGORYS, MOCK_TECH_SERVICES } from '@onex/mocks'
-import { useRouter } from 'next/router'
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { Service, ServiceCategory } from '@onex/types'
 
-export interface NextServicesPageProps {}
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: MOCK_TECH_SERVICE_CATEGORYS.map(({ slug }) => ({
+      params: { categorySlug: slug },
+    })),
+    fallback: false,
+  }
+}
 
-const NextServicesPage: React.FC<NextServicesPageProps> = () => {
-  const { query } = useRouter()
-
+export const getStaticProps: GetStaticProps = (context) => {
   const serviceCategory = MOCK_TECH_SERVICE_CATEGORYS.find(
-    ({ slug }) => slug === query.categorySlug
+    ({ slug }) => slug === context.params.categorySlug
   )
-
   const services = MOCK_TECH_SERVICES.filter(
     ({ category_id }) => category_id === serviceCategory?.id
   )
-
   const otherServiceCategorys = MOCK_TECH_SERVICE_CATEGORYS.filter(
     ({ id }) => id !== serviceCategory?.id
   ).slice(0, 3)
 
+  return {
+    props: {
+      serviceCategory,
+      services,
+      otherServiceCategorys,
+    },
+  }
+}
+
+export interface NextServicesPageProps {
+  serviceCategory: ServiceCategory
+  otherServiceCategorys: ServiceCategory[]
+  services: Service[]
+}
+
+const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
+  const { serviceCategory, services, otherServiceCategorys } = props
+
   return (
-    <LandingLayout seo={{ title: 'Service Categorys' }} autoBreadcrumbs>
+    <LandingLayout
+      seo={{
+        title: serviceCategory.title,
+        description: serviceCategory.subtitle,
+      }}
+      autoBreadcrumbs
+    >
       <ServiceCategoryPage
         serviceCategory={serviceCategory}
         otherServiceCategorys={otherServiceCategorys}

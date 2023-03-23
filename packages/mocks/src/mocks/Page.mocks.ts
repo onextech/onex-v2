@@ -8,6 +8,7 @@ export const MOCK_PAGE = {
   overline: '',
   title: '',
   subtitle: '',
+  html: '',
   // Sections
   sections: {
     summary: {
