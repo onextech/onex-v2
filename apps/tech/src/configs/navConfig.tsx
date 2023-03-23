@@ -4,6 +4,7 @@ import {
   MOCK_TECH_POST_CATEGORYS,
   MOCK_TECH_SERVICES,
   MOCK_TECH_TECHNOLOGYS,
+  MOCK_TECH_INDUSTRYS,
 } from '@onex/mocks'
 import { getCrudItemsByCategory } from '@gravis-os/utils'
 import routeConfig from './routeConfig'
@@ -30,6 +31,11 @@ export const postCategorys = MOCK_TECH_POST_CATEGORYS.map((postCategory) => ({
 export const technologies = MOCK_TECH_TECHNOLOGYS.map((technology) => ({
   ...technology,
   href: `${routeConfig.TECHNOLOGIES}/${technology.slug}`,
+}))
+
+export const industries = MOCK_TECH_INDUSTRYS.map((industry) => ({
+  ...industry,
+  href: `${routeConfig.INDUSTRIES}/${industry.slug}`,
 }))
 
 export const pages = commonPages

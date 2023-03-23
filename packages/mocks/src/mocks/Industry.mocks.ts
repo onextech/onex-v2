@@ -194,7 +194,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     title: 'Government',
     subtitle:
       'Support in cloud adoption and automation for startups and finance institutions.',
-    slug: 'government-public-sectors',
+    slug: 'government',
     fa_icon: 'fa-cake-candles',
   },
   {
@@ -231,7 +231,7 @@ export const MOCK_TECH_INDUSTRYS = [
     title: 'Government',
     subtitle:
       'Support in cloud adoption and automation for startups and finance institutions.',
-    slug: 'government-public-sectors',
+    slug: 'government',
     fa_icon: 'fa-cake-candles',
   },
   {

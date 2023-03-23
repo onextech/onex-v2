@@ -10,7 +10,13 @@ import {
 import routeConfig from './routeConfig'
 import appConfig from './appConfig'
 import systemConfig from './systemConfig'
-import { technologies, pages, services, postCategorys } from './navConfig'
+import {
+  technologies,
+  industries,
+  pages,
+  services,
+  postCategorys,
+} from './navConfig'
 
 const commonGridProps = { spacing: 0 }
 const commonLeftGridItemProps = { md: 4, lg: 3 }
@@ -97,6 +103,82 @@ const headerNavConfig = [
                           gridItemProps: { xs: 6, md: 4 },
                           gridItems: services.map((service) =>
                             renderHeaderMenuListBlockItem(service)
+                          ),
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
+      )
+    },
+  },
+  {
+    key: 'industries',
+    title: 'Industries',
+    fullWidth: true,
+    isOpenOnHover,
+    items: industries.map((industry) => ({
+      key: industry.title,
+      title: <Block {...renderHeaderMenuMobileBlockItem(industry)} />,
+    })),
+    renderItems: () => {
+      return (
+        <Blocks
+          items={[
+            {
+              key: 'industries-grid',
+              pt: { xs: 10, md: 5 },
+              pb: 6,
+              reveal: false,
+              sx: { backgroundColor: 'background.paper' },
+              items: [
+                {
+                  type: 'grid',
+                  gridProps: commonGridProps,
+                  gridItems: [
+                    {
+                      ...commonLeftGridItemProps,
+                      items: [
+                        {
+                          type: 'h5',
+                          title: 'Industries We Serve',
+                          titleProps: { gutterBottom: true },
+                        },
+                        {
+                          type: 'body1',
+                          title:
+                            "Your new team's cross-industry knowledge will level up your project.",
+                          titleProps: {
+                            color: 'text.secondary',
+                            maxWidth: true,
+                          },
+                        },
+                        {
+                          type: 'link',
+                          title: 'View Industries',
+                          titleProps: {
+                            rightCaret: true,
+                            href: routeConfig.INDUSTRIES,
+                            color: 'secondary',
+                            sx: { mt: 2 },
+                            variant: 'body2',
+                          },
+                        },
+                      ],
+                    },
+                    {
+                      ...commonRightGridItemProps,
+                      items: [
+                        {
+                          type: 'grid',
+                          gridProps: { spacing: 2 },
+                          gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
+                          gridItems: industries.map((industry) =>
+                            renderHeaderMenuBlockItem(industry)
                           ),
                         },
                       ],

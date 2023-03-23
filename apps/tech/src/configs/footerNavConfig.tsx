@@ -1,12 +1,17 @@
 import { footerNavConfig as commonFooterNavConfig } from '@onex/common'
 import routeConfig from './routeConfig'
-import { technologies, pages, services } from './navConfig'
+import { industries, technologies, pages, services } from './navConfig'
 
 const footerNavConfig = [
   {
     key: 'services',
     title: 'Services',
     items: services,
+  },
+  {
+    key: 'industries',
+    title: 'Industries',
+    items: industries,
   },
   {
     key: 'technologies',
