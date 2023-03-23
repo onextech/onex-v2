@@ -88,6 +88,13 @@ export const pages = [
       'Discover the Agile process that makes 98% of tech executives recommend us',
     href: `${companyAbsoluteUrl}${routeConfig.CAREERS}`,
   },
+  {
+    title: 'News',
+    slug: 'news',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
+    href: `${companyAbsoluteUrl}${routeConfig.PRESS_RELEASES}`,
+  },
 ].map((page) => ({
   href: `/${page.slug}`,
   ...(appConfig.companyAbsoluteUrl && { hrefProps: { targetBlank: true } }),

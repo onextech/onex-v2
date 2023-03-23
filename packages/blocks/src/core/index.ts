@@ -96,3 +96,6 @@ export * from './renderRelatedServicesBlock'
 
 export { default as renderServicesBlockItem } from './renderServicesBlockItem'
 export * from './renderServicesBlockItem'
+
+export { default as renderOtherPressReleasesBlock } from './renderOtherPressReleasesBlock'
+export * from './renderOtherPressReleasesBlock'

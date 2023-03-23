@@ -27,6 +27,9 @@ export * from './Client.types'
 export type { default as Post } from './Post.types'
 export * from './Post.types'
 
+export type { default as PressRelease } from './PressRelease.types'
+export * from './PressRelease.types'
+
 export type { default as PostCategory } from './PostCategory.types'
 export * from './PostCategory.types'
 

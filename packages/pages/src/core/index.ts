@@ -52,5 +52,11 @@ export * from './PostsPage'
 export { default as PostPage } from './PostPage'
 export * from './PostPage'
 
+export { default as PressReleasesPage } from './PressReleasesPage'
+export * from './PressReleasesPage'
+
+export { default as PressReleasePage } from './PressReleasePage'
+export * from './PressReleasePage'
+
 export { default as GetStartedPage } from './GetStartedPage'
 export * from './GetStartedPage'
