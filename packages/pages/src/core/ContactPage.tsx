@@ -2,6 +2,7 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import { ContactForm } from '@onex/components'
 import { useLayout } from '@onex/providers'
+import { renderContactLinksBlockItems } from '@onex/blocks'
 
 export interface ContactPageProps {
   fullScreen?: boolean
@@ -11,13 +12,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
 
   const { logo: Logo, routeConfig, appConfig } = useLayout()
-  const {
-    generalEmail,
-    generalHotline,
-    generalWhatsappHotline,
-    officeTitle,
-    officeAddress,
-  } = appConfig
+  const { officeTitle, officeAddress } = appConfig
 
   const py = fullScreen ? { xs: 5, md: 10 } : { xs: 3, md: 7 }
 
@@ -109,49 +104,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                       title: officeAddress,
                       titleProps: { color: 'text.secondary' },
                     },
-                    // Support
-                    {
-                      type: 'h5',
-                      title: 'Support',
-                      titleProps: { sx: { mt: 8, mb: 2 } },
-                    },
-                    ...[
-                      {
-                        overline: 'Submit a general inquiry',
-                        title: generalEmail,
-                        href: `mailto:${generalEmail}`,
-                      },
-                      {
-                        overline: 'General hotline',
-                        title: generalHotline,
-                        href: `tel:${generalHotline}`,
-                      },
-                      {
-                        overline: 'WhatsApp',
-                        title: generalWhatsappHotline,
-                        href: `https://wa.me/${generalWhatsappHotline}`,
-                        titleProps: { targetBlank: true },
-                      },
-                    ]
-                      .map(({ title, titleProps, overline, href }) => {
-                        return [
-                          {
-                            type: 'body1',
-                            title: overline,
-                            titleProps: { mt: 2 },
-                          },
-                          {
-                            type: 'link',
-                            title,
-                            titleProps: {
-                              href,
-                              color: 'text.secondary',
-                              ...titleProps,
-                            },
-                          },
-                        ]
-                      })
-                      .flat(),
+                    ...renderContactLinksBlockItems(),
                   ],
                 },
               ],

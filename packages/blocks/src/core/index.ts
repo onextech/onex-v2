@@ -99,3 +99,6 @@ export * from './renderServicesBlockItem'
 
 export { default as renderOtherPressReleasesBlock } from './renderOtherPressReleasesBlock'
 export * from './renderOtherPressReleasesBlock'
+
+export { default as renderContactLinksBlockItems } from './renderContactLinksBlockItems'
+export * from './renderContactLinksBlockItems'

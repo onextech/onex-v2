@@ -2,7 +2,10 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import { GetStartedForm } from '@onex/components'
 import { useLayout } from '@onex/providers'
-import { renderTestimonialBlockItem } from '@onex/blocks'
+import {
+  renderContactLinksBlockItems,
+  renderTestimonialBlockItem,
+} from '@onex/blocks'
 
 export interface GetStartedPageProps {
   fullScreen?: boolean
@@ -94,9 +97,12 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                       position: { md: 'absolute' },
                     },
                   },
-                  items: renderTestimonialBlockItem({
-                    item: testimonials[0],
-                  }),
+                  items: [
+                    ...renderTestimonialBlockItem({
+                      item: testimonials[0],
+                    }),
+                    ...renderContactLinksBlockItems(),
+                  ],
                 },
               ],
             },
