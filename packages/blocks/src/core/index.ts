@@ -102,3 +102,9 @@ export * from './renderOtherPressReleasesBlock'
 
 export { default as renderContactLinksBlockItems } from './renderContactLinksBlockItems'
 export * from './renderContactLinksBlockItems'
+
+export { default as renderHtmlBlockItem } from './renderHtmlBlockItem'
+export * from './renderHtmlBlockItem'
+
+export { default as renderPostDetailBlock } from './renderPostDetailBlock'
+export * from './renderPostDetailBlock'
