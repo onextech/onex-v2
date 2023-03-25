@@ -17,7 +17,7 @@ const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
   } = item || {}
 
   return {
-    sm: 6,
+    xs: 6,
     md: 4,
     items: [
       {

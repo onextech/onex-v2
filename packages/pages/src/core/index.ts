@@ -63,3 +63,6 @@ export * from './GetStartedPage'
 
 export { default as MissionPage } from './MissionPage'
 export * from './MissionPage'
+
+export { default as DesignPage } from './DesignPage'
+export * from './DesignPage'

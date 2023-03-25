@@ -108,3 +108,6 @@ export * from './renderHtmlBlockItem'
 
 export { default as renderPostDetailBlock } from './renderPostDetailBlock'
 export * from './renderPostDetailBlock'
+
+export { default as renderHalfGridBlock } from './renderHalfGridBlock'
+export * from './renderHalfGridBlock'
