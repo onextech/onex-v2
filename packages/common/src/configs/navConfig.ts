@@ -75,6 +75,13 @@ export const pages = [
     href: `${companyAbsoluteUrl}${routeConfig.ABOUT}`,
   },
   {
+    title: 'Mission',
+    slug: 'mission',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    href: `${companyAbsoluteUrl}${routeConfig.MISSION}`,
+  },
+  {
     title: 'Contact Us',
     slug: 'contact',
     subtitle:

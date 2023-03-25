@@ -60,3 +60,6 @@ export * from './PressReleasePage'
 
 export { default as GetStartedPage } from './GetStartedPage'
 export * from './GetStartedPage'
+
+export { default as MissionPage } from './MissionPage'
+export * from './MissionPage'

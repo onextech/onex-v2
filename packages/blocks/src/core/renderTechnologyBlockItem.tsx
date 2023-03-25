@@ -6,7 +6,15 @@ export interface RenderTechnologyBlockItemProps {
 
 const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
   const { item } = props
-  const { title, subtitle, href, avatar_src, avatar_alt } = item || {}
+  const {
+    title,
+    subtitle,
+    href,
+    avatar_src,
+    avatar_alt,
+    avatar_width = 60,
+    avatar_height = 60,
+  } = item || {}
 
   return {
     sm: 6,
@@ -17,8 +25,8 @@ const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
         title: avatar_src,
         titleProps: {
           alt: avatar_alt,
-          width: 60,
-          height: 60,
+          width: avatar_width,
+          height: avatar_height,
           sx: { mb: 3 },
         },
       },

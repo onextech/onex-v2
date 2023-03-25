@@ -1,6 +1,7 @@
 const routeConfig = {
   HOME: '/',
   ABOUT: '/about',
+  MISSION: '/mission',
   CAREERS: '/careers',
   CONTACT: '/contact',
   TERMS: '/terms',

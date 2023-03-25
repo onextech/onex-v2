@@ -4,7 +4,7 @@ import { BlockProps } from '@gravis-os/landing'
 export interface RenderBaseColumnGridBlockProps
   extends Omit<BlockProps, 'items'> {
   overline?: string
-  title: string
+  title: React.ReactNode
   subtitle?: string
   items?: Array<{
     avatar_src?: string
@@ -31,7 +31,6 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
   const isTextAlignCenter = textAlign === 'center'
 
   return {
-    key: title,
     center: isTextAlignCenter,
     items: [
       { type: 'overline', title: overline },

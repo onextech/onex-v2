@@ -168,6 +168,8 @@ export const MOCK_TECH_TECHNOLOGY_PAGE = {
 
 export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   {
+    avatar_src: '/images/technology_javascript.png',
+    avatar_alt: 'JavaScript',
     title: 'JavaScript',
     slug: 'javascript',
     subtitle:
@@ -178,43 +180,17 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'typescript',
     subtitle:
       'Build or scale competitive products ready for future growth and millions of users.',
-    sections: {
-      benefits: {
-        items: [
-          {
-            fa_icon: 'fa-mug-hot',
-            title: 'Yummy Bros',
-            subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
-          },
-          {
-            fa_icon: 'fa-puzzle-piece',
-            title: 'Live It Up',
-            subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
-          },
-          {
-            fa_icon: 'fa-guitar',
-            title: 'Rewards',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
-          },
-          {
-            fa_icon: 'fa-table-tennis',
-            title: 'Convenience',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
-        ],
-      },
-    },
   },
   {
+    avatar_src: '/images/technology_node.png',
+    avatar_alt: 'Node.js',
     title: 'Node.js',
     slug: 'nodejs',
     subtitle: 'Let certified engineers kick-start your cloud operations',
   },
   {
+    avatar_src: '/images/technology_react.png',
+    avatar_alt: 'React',
     title: 'React',
     slug: 'react',
     subtitle:
@@ -227,6 +203,10 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       'Reach the software flexibility needed to scale by optimizing your architecture.',
   },
   {
+    avatar_src: '/images/technology_express.png',
+    avatar_alt: 'Express',
+    avatar_width: 126,
+    avatar_height: 37,
     title: 'Express',
     slug: 'express',
     subtitle:
@@ -239,8 +219,8 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       'Work with product experts with the know-how tested in 7+ industries.',
   },
   {
-    title: 'Serverless',
-    slug: 'serverless',
+    title: 'Webpack',
+    slug: 'webpack',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
   },
