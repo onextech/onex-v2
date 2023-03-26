@@ -66,3 +66,12 @@ export * from './MissionPage'
 
 export { default as DesignPage } from './DesignPage'
 export * from './DesignPage'
+
+export { default as EcosystemPage } from './EcosystemPage'
+export * from './EcosystemPage'
+
+export { default as DigitalPage } from './DigitalPage'
+export * from './DigitalPage'
+
+export { default as DataPage } from './DataPage'
+export * from './DataPage'

@@ -55,6 +55,7 @@ const renderFaqsAccordionBlock = (props: RenderFaqsAccordionBlockProps) => {
                   }
                 }),
                 titleProps: {
+                  sx: { textAlign: 'left' },
                   titleProps: { variant: 'subtitle2' as const },
                   contentProps: { color: 'text.secondary' },
                 },

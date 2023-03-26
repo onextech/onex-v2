@@ -1,7 +1,7 @@
 const components = {
   MuiContainer: {
     defaultProps: {
-      maxWidth: 'xl' as const,
+      maxWidth: 'lg' as const,
     },
   },
   MuiLink: {

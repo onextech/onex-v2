@@ -82,18 +82,39 @@ export const pages = [
     href: `${companyAbsoluteUrl}${routeConfig.MISSION}`,
   },
   {
-    title: 'Contact Us',
-    slug: 'contact',
-    subtitle:
-      'Discover the Agile process that makes 98% of tech executives recommend us',
-    href: `${companyAbsoluteUrl}${routeConfig.CONTACT}`,
-  },
-  {
     title: 'Careers',
     slug: 'careers',
     subtitle:
       'Discover the Agile process that makes 98% of tech executives recommend us',
     href: `${companyAbsoluteUrl}${routeConfig.CAREERS}`,
+  },
+  {
+    title: 'Design',
+    slug: 'design',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    href: `${companyAbsoluteUrl}${routeConfig.DESIGN}`,
+  },
+  {
+    title: 'Data',
+    slug: 'data',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    href: `${companyAbsoluteUrl}${routeConfig.DATA}`,
+  },
+  {
+    title: 'Digital',
+    slug: 'digital',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    href: `${companyAbsoluteUrl}${routeConfig.DIGITAL}`,
+  },
+  {
+    title: 'Contact Us',
+    slug: 'contact',
+    subtitle:
+      'Discover the Agile process that makes 98% of tech executives recommend us',
+    href: `${companyAbsoluteUrl}${routeConfig.CONTACT}`,
   },
   {
     title: 'News',
@@ -133,6 +154,5 @@ export const legalPages = [
   },
 ].map((legalPage) => ({
   ...(appConfig.companyAbsoluteUrl && { hrefProps: { targetBlank: true } }),
-  html: '<div>Hello world</div>',
   ...legalPage,
 }))

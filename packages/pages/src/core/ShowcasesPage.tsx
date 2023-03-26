@@ -14,7 +14,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
       items={[
         {
           key: 'portfolio-hero',
-          maxWidth: 'xl',
+          maxWidth: 'lg',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
@@ -38,7 +38,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
         {
           key: 'portfolio-card-list',
           center: true,
-          maxWidth: 'xl',
+          maxWidth: 'lg',
           pt: 0,
           items: showcases.map((showcase) =>
             renderPortfolioCardBlockItem({ item: showcase })

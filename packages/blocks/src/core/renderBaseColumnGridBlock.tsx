@@ -2,7 +2,7 @@ import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 
 export interface RenderBaseColumnGridBlockProps
-  extends Omit<BlockProps, 'items'> {
+  extends Omit<BlockProps, 'items' | 'title'> {
   overline?: string
   title: React.ReactNode
   subtitle?: string

@@ -7,6 +7,10 @@ const routeConfig = {
   TERMS: '/terms',
   PRIVACY: '/privacy',
   COOKIES: '/cookies',
+  ECOSYSTEM: '/ecosystem',
+  DESIGN: '/design',
+  DIGITAL: '/digital',
+  DATA: '/data',
   // Models
   SHOWCASES: '/portfolio',
   SERVICES: '/services',

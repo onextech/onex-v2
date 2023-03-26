@@ -81,7 +81,7 @@ const renderPortfolioCardBlockItem = (
 
   return {
     type: 'grid',
-    maxWidth: 'xl',
+    maxWidth: 'lg',
     sx: { mt: { xs: 6, md: 10 } },
     mode,
     boxProps: { sx: { backgroundColor, borderRadius: 1 } },

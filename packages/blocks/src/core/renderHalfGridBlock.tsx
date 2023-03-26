@@ -1,9 +1,12 @@
 import React from 'react'
+import { useLayout } from '@onex/providers'
 import renderGhostButtonBlockItem, {
   RenderGhostButtonBlockItemProps,
 } from './renderGhostButtonBlockItem'
 
 export interface RenderHalfGridBlockProps {
+  hero_src?: string
+  hero_alt?: string
   overline?: string
   title: string
   subtitle?: string
@@ -13,11 +16,22 @@ export interface RenderHalfGridBlockProps {
 }
 
 const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
-  const { overline, title, subtitle, fullHeight, reverse, buttonProps } = props
+  const {
+    hero_src,
+    hero_alt,
+    overline,
+    title,
+    subtitle,
+    fullHeight,
+    reverse,
+    buttonProps,
+  } = props
+  const { routeConfig } = useLayout()
 
   return {
     key: title,
     py: 0,
+    disableContainerOnMobile: true,
     items: [
       {
         type: 'grid',
@@ -36,8 +50,8 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
           // Text
           {
             sx: {
-              my: { xs: 5, md: 20 },
-              ...(reverse && { pl: { xs: 3, md: 6, lg: 8, xl: 10 } }),
+              my: { xs: 5, md: 15, xl: 20 },
+              ...(reverse && { pl: { md: 6, lg: 8, xl: 10 } }),
             },
             items: [
               { type: 'overline', title: overline },
@@ -57,6 +71,7 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
               renderGhostButtonBlockItem({
                 overline: 'Our Mission',
                 title: 'Enabling Smarter Businesses',
+                href: routeConfig.MISSION,
                 boxProps: { mt: 3 },
                 ...buttonProps,
               }),
@@ -67,7 +82,9 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
             sx: {
               ...(fullHeight && {
                 // Breakout image out of container
-                margin: { md: '0 calc(50% - 50vw + 8px)' },
+                margin: {
+                  md: '0 calc(50% - 50vw + 8px)',
+                },
                 width: '100%',
                 height: '100%',
                 position: { md: 'absolute' },
@@ -79,8 +96,8 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
             items: [
               {
                 type: 'image',
-                title: '/images/about_hero.png',
-                titleProps: { alt: 'hero', fill: true },
+                title: hero_src,
+                titleProps: { alt: hero_alt, fill: true },
               },
             ],
           },

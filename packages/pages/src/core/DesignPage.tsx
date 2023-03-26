@@ -1,7 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
-  renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
@@ -10,9 +9,10 @@ import {
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
+import { Page } from '@onex/types'
 
 export interface DesignPageProps {
-  design: any
+  design: Page
 }
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
@@ -27,13 +27,14 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         // Hero
         {
           dark: true,
-          py: 30,
-          center: true,
-          key: 'growth-company',
-          maxWidth: 'md',
+          key: 'design-impact',
+          centerOnMobile: true,
+          pt: { xs: 20, xl: 20 },
+          pb: { xs: 20, xl: 70 },
           backgroundImageProps: {
-            src: '/images/about_hero.png',
+            src: '/images/design_hero.png',
             alt: 'hero',
+            sx: { opacity: 0.2 },
           },
           items: [
             { type: 'overline', title: 'Design' },
@@ -46,14 +47,13 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
               type: 'subtitle1',
               title:
                 'Maximise business growth through insight driven web design. We put business first in everything we do.',
-              titleProps: { color: 'text.secondary', maxWidth: true },
+              titleProps: { color: 'text.secondary', maxWidth: '50%' },
             },
             {
               type: 'stack',
               sx: { mt: 3 },
               stackProps: {
                 spacing: 0,
-                center: true,
                 direction: 'row',
                 reverseDirectionOnMobile: true,
               },
@@ -82,33 +82,20 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             },
           ],
         },
+        // Benefits
+        renderFourColumnGridBlock({
+          ...benefits,
+          sx: { backgroundColor: 'background.paper' },
+        }),
         // HalfGrid
         renderHalfGridBlock({
+          hero_src: '/images/design_collage.png',
+          hero_alt: 'Design UI Collage',
           fullHeight: true,
           overline: 'What we do',
           title: 'We Design for Impact 1',
           subtitle:
             'Maximise business growth through insight driven web design. We put business first in everything we do.',
-        }),
-        renderHalfGridBlock({
-          reverse: true,
-          fullHeight: true,
-          overline: 'What we do',
-          title: 'We Design for Impact 2',
-          subtitle:
-            'Maximise business growth through insight driven web design. We put business first in everything we do.',
-        }),
-        renderHalfGridBlock({
-          fullHeight: true,
-          overline: 'What we do',
-          title: 'We Design for Impact 3',
-          subtitle:
-            'Maximise business growth through insight driven web design. We put business first in everything we do.',
-        }),
-        // Benefits
-        renderFourColumnGridBlock({
-          ...benefits,
-          sx: { backgroundColor: 'background.paper' },
         }),
         // Features
         renderThreeColumnGridBlock(features),
@@ -123,20 +110,45 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           ...faqs,
         }),
         // Cta
-        renderFadeToBottomBackgroundImageBlock({
-          titleProps: { type: 'h3', maxWidth: 'lg' },
-          subtitleProps: {
-            type: 'body1',
-            maxWidth: 'lg',
-            titleProps: { maxWidth: '72%' },
-          },
-          buttonProps: {
-            overline: 'Contact Us',
-            title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
-          },
-          ...cta,
-        }),
+        {
+          key: cta.title,
+          center: true,
+          maxWidth: 'md',
+          pt: { xs: 5, md: 10 },
+          pb: 0,
+          items: [
+            { type: 'overline', title: overline },
+            {
+              type: 'h3',
+              title: cta.title,
+              titleProps: { type: 'h3', maxWidth: 'lg', gutterBottom: true },
+            },
+            {
+              type: 'body1',
+              title: cta.subtitle,
+              titleProps: {
+                color: 'text.secondary',
+              },
+            },
+            renderGhostButtonBlockItem({
+              boxProps: { mt: 3 },
+              overline: 'Contact Us',
+              title: 'Get in Touch',
+              href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            }),
+            {
+              type: 'image',
+              title: '/images/design_men.png',
+              disableContainer: true,
+              titleProps: {
+                alt: 'design men',
+                background: true,
+                backgroundHeight: { xs: 480, md: 640 },
+                backgroundSx: { mt: { xs: 5, md: 10 } },
+              },
+            },
+          ],
+        },
       ]}
     />
   )
