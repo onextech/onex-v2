@@ -9,12 +9,12 @@ import {
 } from '@onex/blocks'
 import chunk from 'lodash/chunk'
 
-export interface PostCategorysProps {
+export interface PostCategorysPageProps {
   posts: Post[]
   postCategorys: PostCategory[]
 }
 
-const PostCategorys: React.FC<PostCategorysProps> = (props) => {
+const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
   const { posts, postCategorys } = props
 
   const { routeConfig } = useLayout()
@@ -88,4 +88,4 @@ const PostCategorys: React.FC<PostCategorysProps> = (props) => {
   )
 }
 
-export default PostCategorys
+export default PostCategorysPage

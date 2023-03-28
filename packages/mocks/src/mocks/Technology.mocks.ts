@@ -236,3 +236,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     ...item,
   })
 })
+
+export const MOCK_TECHNOLOGYS = {
+  TECH: MOCK_TECH_TECHNOLOGYS,
+}

@@ -1,28 +1,13 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { ShowcasePage } from '@onex/pages'
-import { MOCK_SHOWCASES } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { Showcase } from '@onex/types'
+import { ShowcasePage, ShowcasePageProps } from '@onex/pages'
+import { ShowcaseDetail } from '@onex/modules'
+import configs from '@app/configs'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: MOCK_SHOWCASES.map(({ slug }) => ({ params: { slug } })),
-    fallback: false,
-  }
-}
+export const getStaticProps = ShowcaseDetail.getStaticProps({ configs })
+export const getStaticPaths = ShowcaseDetail.getStaticPaths()
 
-export const getStaticProps: GetStaticProps = (context) => {
-  const showcase = MOCK_SHOWCASES.find(
-    ({ slug }) => slug === context.params.slug
-  )
-
-  return { props: { showcase } }
-}
-
-export interface NextShowcasePageProps {
-  showcase: Showcase
-}
+export interface NextShowcasePageProps extends ShowcasePageProps {}
 
 const NextShowcasePage: React.FC<NextShowcasePageProps> = (props) => {
   const { showcase } = props

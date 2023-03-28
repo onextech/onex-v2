@@ -1,14 +1,18 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { ShowcasesPage } from '@onex/pages'
-import { MOCK_SHOWCASES } from '@onex/mocks'
+import { ShowcasesPage, ShowcasesPageProps } from '@onex/pages'
+import configs from '@app/configs'
+import { ShowcaseList } from '@onex/modules'
 
-export interface NextHomePageProps {}
+export const getStaticProps = ShowcaseList.getStaticProps({ configs })
 
-const NextHomePage: React.FC<NextHomePageProps> = () => {
+export interface NextHomePageProps extends ShowcasesPageProps {}
+
+const NextHomePage: React.FC<NextHomePageProps> = (props) => {
+  const { showcases } = props
   return (
     <LandingLayout seo={{ title: 'Home' }}>
-      <ShowcasesPage showcases={MOCK_SHOWCASES} />
+      <ShowcasesPage showcases={showcases} />
     </LandingLayout>
   )
 }

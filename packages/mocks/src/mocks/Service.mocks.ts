@@ -448,3 +448,8 @@ export const MOCK_GROUP_SERVICES = [
     ...item,
   })
 })
+
+export const MOCK_SERVICES = {
+  GROUP: MOCK_GROUP_SERVICES,
+  TECH: MOCK_TECH_SERVICES,
+}

@@ -1,39 +1,13 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { PostCategoryPage } from '@onex/pages'
-import { MOCK_TECH_POST_CATEGORYS, MOCK_TECH_POSTS } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { Post, PostCategory } from '@onex/types'
+import { PostCategoryPage, PostCategoryPageProps } from '@onex/pages'
+import { PostCategoryDetail } from '@onex/modules'
+import configs from '@app/configs'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: MOCK_TECH_POST_CATEGORYS.map(({ slug }) => ({
-      params: { categorySlug: slug },
-    })),
-    fallback: false,
-  }
-}
+export const getStaticProps = PostCategoryDetail.getStaticProps({ configs })
+export const getStaticPaths = PostCategoryDetail.getStaticPaths()
 
-export const getStaticProps: GetStaticProps = (context) => {
-  const postCategory = MOCK_TECH_POST_CATEGORYS.find(
-    ({ slug }) => slug === context.params.categorySlug
-  )
-  const posts = MOCK_TECH_POSTS.filter(
-    ({ category_id }) => category_id === postCategory?.id
-  )
-
-  return {
-    props: {
-      posts,
-      postCategory,
-    },
-  }
-}
-
-export interface NextPostsPageProps {
-  posts: Post[]
-  postCategory: PostCategory
-}
+export interface NextPostsPageProps extends PostCategoryPageProps {}
 
 const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
   const { posts, postCategory } = props

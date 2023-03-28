@@ -1,26 +1,18 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { PressReleasesPage } from '@onex/pages'
-import { MOCK_TECH_PRESS_RELEASES } from '@onex/mocks'
-import { GetStaticProps } from 'next'
+import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
 import { PressRelease } from '@onex/types'
+import { PressReleaseList } from '@onex/modules'
+import configs from '@app/configs'
 
-export const getStaticProps: GetStaticProps = () => {
-  const pressReleases = MOCK_TECH_PRESS_RELEASES
-  return {
-    props: {
-      pressReleases,
-    },
-  }
-}
+export const getStaticProps = PressReleaseList.getStaticProps({ configs })
 
-export interface NextPressReleasesPageProps {
+export interface NextPressReleasesPageProps extends PressReleasesPageProps {
   pressReleases: PressRelease[]
 }
 
 const NextPressReleasesPage: React.FC<NextPressReleasesPageProps> = (props) => {
   const { pressReleases } = props
-
   return (
     <LandingLayout seo={{ title: 'News' }} autoBreadcrumbs>
       <PressReleasesPage pressReleases={pressReleases} />

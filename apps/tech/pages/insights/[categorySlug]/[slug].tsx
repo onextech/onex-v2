@@ -1,57 +1,13 @@
 import React from 'react'
-import {
-  getCategoryFromCrudItem,
-  getRelatedCrudItemsByTagTitle,
-} from '@gravis-os/utils'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { PostPage } from '@onex/pages'
-import {
-  MOCK_TECH_SERVICES,
-  MOCK_TECH_POSTS,
-  MOCK_TECH_SERVICE_CATEGORYS,
-} from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { Post, PostCategory, Service } from '@onex/types'
+import { PostPage, PostPageProps } from '@onex/pages'
+import { PostDetail } from '@onex/modules'
+import configs from '@app/configs'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: MOCK_TECH_POSTS.map(({ slug, category }) => ({
-      params: { slug, categorySlug: category.slug },
-    })),
-    fallback: false,
-  }
-}
+export const getStaticProps = PostDetail.getStaticProps({ configs })
+export const getStaticPaths = PostDetail.getStaticPaths()
 
-export const getStaticProps: GetStaticProps = (context) => {
-  const post = MOCK_TECH_POSTS.find(({ slug }) => slug === context.params.slug)
-  const postCategory = getCategoryFromCrudItem(
-    post,
-    MOCK_TECH_SERVICE_CATEGORYS
-  )
-  const relatedServices = MOCK_TECH_SERVICES.filter(
-    ({ category_id }) => category_id === post?.category_id
-  )
-  const relatedPosts = getRelatedCrudItemsByTagTitle(
-    MOCK_TECH_POSTS,
-    post?.title
-  ).slice(0, 3)
-
-  return {
-    props: {
-      post,
-      postCategory,
-      relatedServices,
-      relatedPosts,
-    },
-  }
-}
-
-export interface NextPostPageProps {
-  post: Post
-  postCategory: PostCategory
-  relatedPosts: Post[]
-  relatedServices: Service[]
-}
+export interface NextPostPageProps extends PostPageProps {}
 
 const NextPostPage: React.FC<NextPostPageProps> = (props) => {
   const { post, postCategory, relatedPosts, relatedServices } = props

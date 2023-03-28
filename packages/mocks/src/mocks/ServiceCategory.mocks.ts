@@ -111,3 +111,8 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     hero_alt: 'about_nodes',
   },
 ].map((item, i) => ({ id: i + 1, ...item }))
+
+export const MOCK_SERVICE_CATEGORYS = {
+  GROUP: MOCK_GROUP_SERVICE_CATEGORYS,
+  TECH: MOCK_TECH_SERVICE_CATEGORYS,
+}

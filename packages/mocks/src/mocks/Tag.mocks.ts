@@ -24,3 +24,8 @@ export const MOCK_TECH_TAGS = [
   ...item,
   id: i + 1,
 }))
+
+export const MOCK_TAGS = {
+  GROUP: MOCK_GROUP_TAGS,
+  TECH: MOCK_TECH_TAGS,
+}

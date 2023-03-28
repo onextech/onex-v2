@@ -1,44 +1,13 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { ServiceCategoryPage } from '@onex/pages'
-import { MOCK_TECH_SERVICE_CATEGORYS, MOCK_TECH_SERVICES } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { Service, ServiceCategory } from '@onex/types'
+import { ServiceCategoryPage, ServiceCategoryPageProps } from '@onex/pages'
+import { ServiceCategoryDetail } from '@onex/modules'
+import configs from '@app/configs'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: MOCK_TECH_SERVICE_CATEGORYS.map(({ slug }) => ({
-      params: { categorySlug: slug },
-    })),
-    fallback: false,
-  }
-}
+export const getStaticProps = ServiceCategoryDetail.getStaticProps({ configs })
+export const getStaticPaths = ServiceCategoryDetail.getStaticPaths()
 
-export const getStaticProps: GetStaticProps = (context) => {
-  const serviceCategory = MOCK_TECH_SERVICE_CATEGORYS.find(
-    ({ slug }) => slug === context.params.categorySlug
-  )
-  const services = MOCK_TECH_SERVICES.filter(
-    ({ category_id }) => category_id === serviceCategory?.id
-  )
-  const otherServiceCategorys = MOCK_TECH_SERVICE_CATEGORYS.filter(
-    ({ id }) => id !== serviceCategory?.id
-  ).slice(0, 3)
-
-  return {
-    props: {
-      serviceCategory,
-      services,
-      otherServiceCategorys,
-    },
-  }
-}
-
-export interface NextServicesPageProps {
-  serviceCategory: ServiceCategory
-  otherServiceCategorys: ServiceCategory[]
-  services: Service[]
-}
+export interface NextServicesPageProps extends ServiceCategoryPageProps {}
 
 const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
   const { serviceCategory, services, otherServiceCategorys } = props

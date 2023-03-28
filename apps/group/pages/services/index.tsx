@@ -1,16 +1,20 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { ServiceCategorysPage } from '@onex/pages'
-import { MOCK_GROUP_SERVICES, MOCK_GROUP_SERVICE_CATEGORYS } from '@onex/mocks'
+import { ServiceCategorysPage, ServiceCategorysPageProps } from '@onex/pages'
+import { ServiceCategoryList } from '@onex/modules'
+import configs from '@app/configs'
 
-export interface NextServicesPageProps {}
+export const getStaticProps = ServiceCategoryList.getStaticProps({ configs })
 
-const NextServicesPage: React.FC<NextServicesPageProps> = () => {
+export interface NextServicesPageProps extends ServiceCategorysPageProps {}
+
+const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
+  const { services, serviceCategorys } = props
   return (
     <LandingLayout seo={{ title: 'Services' }}>
       <ServiceCategorysPage
-        services={MOCK_GROUP_SERVICES}
-        serviceCategorys={MOCK_GROUP_SERVICE_CATEGORYS}
+        services={services}
+        serviceCategorys={serviceCategorys}
       />
     </LandingLayout>
   )

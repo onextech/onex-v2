@@ -1,17 +1,18 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { PostCategorysPage } from '@onex/pages'
-import { MOCK_TECH_POSTS, MOCK_TECH_POST_CATEGORYS } from '@onex/mocks'
+import { PostCategorysPage, PostCategorysPageProps } from '@onex/pages'
+import { PostCategoryList } from '@onex/modules'
+import configs from '@app/configs'
 
-export interface NextPostsPageProps {}
+export const getStaticProps = PostCategoryList.getStaticProps({ configs })
 
-const NextPostsPage: React.FC<NextPostsPageProps> = () => {
+export interface NextPostsPageProps extends PostCategorysPageProps {}
+
+const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
+  const { posts, postCategorys } = props
   return (
     <LandingLayout seo={{ title: 'Insights' }}>
-      <PostCategorysPage
-        posts={MOCK_TECH_POSTS}
-        postCategorys={MOCK_TECH_POST_CATEGORYS}
-      />
+      <PostCategorysPage posts={posts} postCategorys={postCategorys} />
     </LandingLayout>
   )
 }

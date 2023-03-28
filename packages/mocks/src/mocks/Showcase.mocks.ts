@@ -1,4 +1,4 @@
-export const MOCK_SHOWCASES = [
+export const MOCK_TECH_SHOWCASES = [
   {
     title: 'Preparing the future of home-made meals with Phillips.',
     slug: 'phillips',
@@ -42,3 +42,7 @@ export const MOCK_SHOWCASES = [
     reverse: true,
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
+
+export const MOCK_SHOWCASES = {
+  TECH: MOCK_TECH_SHOWCASES,
+}
