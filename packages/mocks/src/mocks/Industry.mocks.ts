@@ -255,3 +255,8 @@ export const MOCK_TECH_INDUSTRYS = [
     ...item,
   })
 })
+
+export const MOCK_INDUSTRYS = {
+  GROUP: MOCK_GROUP_INDUSTRYS,
+  TECH: MOCK_TECH_INDUSTRYS,
+}

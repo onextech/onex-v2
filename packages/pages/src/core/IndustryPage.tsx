@@ -54,10 +54,10 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
         }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
-          titleProps: { type: 'h3', maxWidth: 'lg' },
+          titleProps: { type: 'h3', maxWidth: 'xl' },
           subtitleProps: {
             type: 'body1',
-            maxWidth: 'lg',
+            maxWidth: 'xl',
             titleProps: { maxWidth: '72%' },
           },
           buttonProps: {

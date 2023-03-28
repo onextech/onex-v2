@@ -1,16 +1,13 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { DigitalPage } from '@onex/pages'
-import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
+import { MOCK_DIGITAL_PAGE } from '@onex/mocks'
 import { GetStaticProps } from 'next'
 import { Page } from '@onex/types'
 import getDynamicPage from '../src/utils/getDynamicPage'
 
 export const getStaticProps: GetStaticProps = () => {
-  const digital = getDynamicPage({
-    ...MOCK_GROUP_INDUSTRYS[0],
-    title: 'Digital',
-  })
+  const digital = getDynamicPage(MOCK_DIGITAL_PAGE)
   return { props: { digital } }
 }
 
@@ -22,7 +19,7 @@ const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
   const { digital } = props
   return (
     <LandingLayout
-      seo={{ title: 'Digital' }}
+      seo={digital.seo}
       headerProps={{ dark: true, translucent: true, position: 'fixed' }}
     >
       <DigitalPage digital={digital} />

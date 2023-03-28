@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLayout } from '@onex/providers'
+import { BlockProps } from '@gravis-os/landing'
 import renderGhostButtonBlockItem, {
   RenderGhostButtonBlockItemProps,
 } from './renderGhostButtonBlockItem'
@@ -13,6 +14,7 @@ export interface RenderHalfGridBlockProps {
   fullHeight?: boolean
   reverse?: boolean
   buttonProps?: RenderGhostButtonBlockItemProps
+  items?: BlockProps['items']
 }
 
 const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
@@ -25,6 +27,7 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
     fullHeight,
     reverse,
     buttonProps,
+    items = [],
   } = props
   const { routeConfig } = useLayout()
 
@@ -35,7 +38,7 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
     items: [
       {
         type: 'grid',
-        gridProps: { spacing: 0, reverse, overflowX: 'hidden' },
+        gridProps: { spacing: 0, rowReverse: reverse, overflowX: 'hidden' },
         gridItemProps: {
           xs: 12,
           md: 6,
@@ -68,13 +71,15 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
                   maxWidth: !reverse,
                 },
               },
-              renderGhostButtonBlockItem({
-                overline: 'Our Mission',
-                title: 'Enabling Smarter Businesses',
-                href: routeConfig.MISSION,
-                boxProps: { mt: 3 },
-                ...buttonProps,
-              }),
+              buttonProps &&
+                renderGhostButtonBlockItem({
+                  overline: 'Our Mission',
+                  title: 'Enabling Smarter Businesses',
+                  href: routeConfig.MISSION,
+                  boxProps: { mt: 3 },
+                  ...buttonProps,
+                }),
+              ...items,
             ],
           },
           // Image
@@ -83,7 +88,8 @@ const renderHalfGridBlock = (props: RenderHalfGridBlockProps) => {
               ...(fullHeight && {
                 // Breakout image out of container
                 margin: {
-                  md: '0 calc(50% - 50vw + 8px)',
+                  md: '0 calc(50% - 50vw)',
+                  xxl: '0 calc(50% - 50vw + 8px)',
                 },
                 width: '100%',
                 height: '100%',

@@ -12,7 +12,7 @@ const routeConfig = {
   DIGITAL: '/digital',
   DATA: '/data',
   // Models
-  SHOWCASES: '/portfolio',
+  SHOWCASES: '/showcase',
   SERVICES: '/services',
   TECHNOLOGYS: '/technologies',
   INDUSTRYS: '/industries',

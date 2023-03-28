@@ -1,38 +1,13 @@
 import React from 'react'
+import { IndustryDetail } from '@onex/modules'
+import { IndustryPage, IndustryPageProps } from '@onex/pages'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { IndustryPage } from '@onex/pages'
-import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
-import { MOCK_TECH_POSTS, MOCK_TECH_INDUSTRYS } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { Post, Industry } from '@onex/types'
-import getDynamicPage from '@app/utils/getDynamicPage'
+import configs from '@app/configs'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: MOCK_TECH_INDUSTRYS.map(({ slug }) => ({ params: { slug } })),
-    fallback: false,
-  }
-}
+export const getStaticProps = IndustryDetail.getStaticProps({ configs })
+export const getStaticPaths = IndustryDetail.getStaticPaths()
 
-export const getStaticProps: GetStaticProps = (context) => {
-  const industry = MOCK_TECH_INDUSTRYS.find(
-    ({ slug }) => slug === context.params.slug
-  )
-
-  const industryPage = getDynamicPage(industry)
-
-  const relatedPosts = getRelatedCrudItemsByTagTitle(
-    MOCK_TECH_POSTS,
-    industry?.title
-  ).slice(0, 3)
-
-  return { props: { industry: industryPage, relatedPosts } }
-}
-
-export interface NextIndustryPageProps {
-  industry: Industry
-  relatedPosts: Post[]
-}
+export interface NextIndustryPageProps extends IndustryPageProps {}
 
 const NextIndustryPage: React.FC<NextIndustryPageProps> = (props) => {
   const { industry, relatedPosts } = props

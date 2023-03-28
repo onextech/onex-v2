@@ -1,7 +1,7 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 
-export interface RenderPortfolioStickyGridBlockItemProps {
+export interface RenderShowcaseStickyGridBlockItemProps {
   mode?: 'light' | 'dark'
   title: BlockItemProps['title']
   subtitle: BlockItemProps['title']
@@ -9,8 +9,8 @@ export interface RenderPortfolioStickyGridBlockItemProps {
   reverse?: boolean
 }
 
-const renderPortfolioStickyGridBlockItem = (
-  props: RenderPortfolioStickyGridBlockItemProps
+const renderShowcaseStickyGridBlockItem = (
+  props: RenderShowcaseStickyGridBlockItemProps
 ) => {
   const { mode, imageSrc, title, subtitle, reverse } = props
 
@@ -77,4 +77,4 @@ const renderPortfolioStickyGridBlockItem = (
   }
 }
 
-export default renderPortfolioStickyGridBlockItem
+export default renderShowcaseStickyGridBlockItem

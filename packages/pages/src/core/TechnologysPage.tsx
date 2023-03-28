@@ -128,7 +128,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
               },
             },
             {
-              maxWidth: 'lg',
+              maxWidth: 'xl',
               type: 'grid',
               sx: { mt: { xs: 5, md: 10 } },
               gridProps: { spacing: 5, rowSpacing: 10 },

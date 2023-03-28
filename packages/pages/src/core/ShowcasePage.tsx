@@ -1,8 +1,8 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
-  renderPortfolioCardBlockItem,
-  renderPortfolioStickyGridBlockItem,
+  renderShowcaseCardBlockItem,
+  renderShowcaseStickyGridBlockItem,
 } from '@onex/blocks'
 import type { Showcase } from '@onex/types'
 
@@ -18,8 +18,8 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'portfolio-hero',
-          maxWidth: 'lg',
+          key: 'showcase-hero',
+          maxWidth: 'xl',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
@@ -39,26 +39,26 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           ],
         },
         {
-          key: 'portfolio-card-list',
-          maxWidth: 'lg',
+          key: 'showcase-card-list',
+          maxWidth: 'xl',
           pt: 0,
           pb: 0,
-          items: [renderPortfolioCardBlockItem({ item: showcase })],
+          items: [renderShowcaseCardBlockItem({ item: showcase })],
         },
         {
-          key: 'portfolio-sticky-grid-left',
+          key: 'showcase-sticky-grid-left',
           pt: 10,
           items: [
-            renderPortfolioStickyGridBlockItem({
+            renderShowcaseStickyGridBlockItem({
               reverse: true,
               title,
               subtitle,
-              imageSrc: '/images/portfolio_detail_sticky_1.jpg',
+              imageSrc: '/images/showcase_detail_sticky_1.jpg',
             }),
           ],
         },
         {
-          key: 'portfolio-grid',
+          key: 'showcase-grid',
           py: 5,
           items: [
             { type: 'overline', title: 'What we do' },
@@ -89,9 +89,9 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                   items: [
                     {
                       type: 'image',
-                      title: '/images/portfolio_detail_gallery_2.png',
+                      title: '/images/showcase_detail_gallery_2.png',
                       titleProps: {
-                        alt: 'portfolio_detail_gallery_2',
+                        alt: 'showcase_detail_gallery_2',
                         fill: true,
                         zoom: true,
                       },
@@ -102,9 +102,9 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                   items: [
                     {
                       type: 'image',
-                      title: '/images/portfolio_detail_gallery_1.png',
+                      title: '/images/showcase_detail_gallery_1.png',
                       titleProps: {
-                        alt: 'portfolio_detail_gallery_1',
+                        alt: 'showcase_detail_gallery_1',
                         fill: true,
                         zoom: true,
                       },
@@ -116,17 +116,17 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           ],
         },
         {
-          key: 'portfolio-sticky-grid-right',
+          key: 'showcase-sticky-grid-right',
           items: [
-            renderPortfolioStickyGridBlockItem({
+            renderShowcaseStickyGridBlockItem({
               title,
               subtitle,
-              imageSrc: '/images/portfolio_detail_sticky_2.png',
+              imageSrc: '/images/showcase_detail_sticky_2.png',
             }),
           ],
         },
         {
-          key: 'portfolio-grid',
+          key: 'showcase-grid',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {

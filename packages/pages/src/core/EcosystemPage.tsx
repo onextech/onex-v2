@@ -94,6 +94,10 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
           title: 'One X Tech',
           subtitle:
             'Maximise business growth through insight driven web ecosystem. We put business first in everything we do.',
+          buttonProps: {
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.MISSION,
+          },
         }),
         renderHalfGridBlock({
           reverse: true,
@@ -104,6 +108,10 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
           title: 'One X Design',
           subtitle:
             'Maximise business growth through insight driven web ecosystem. We put business first in everything we do.',
+          buttonProps: {
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.MISSION,
+          },
         }),
         renderHalfGridBlock({
           hero_src: '/images/ecosystem_data.png',
@@ -113,6 +121,10 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
           title: 'One X Data',
           subtitle:
             'Maximise business growth through insight driven web ecosystem. We put business first in everything we do.',
+          buttonProps: {
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.MISSION,
+          },
         }),
         renderHalfGridBlock({
           reverse: true,
@@ -123,14 +135,18 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
           title: 'One X Digital',
           subtitle:
             'Maximise business growth through insight driven web ecosystem. We put business first in everything we do.',
+          buttonProps: {
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.MISSION,
+          },
         }),
         renderFadeToBottomBackgroundImageBlock({
           hero_src: '/images/ecosystem_men.png',
           hero_alt: 'Two men working',
-          titleProps: { type: 'h3', maxWidth: 'lg' },
+          titleProps: { type: 'h3', maxWidth: 'xl' },
           subtitleProps: {
             type: 'body1',
-            maxWidth: 'lg',
+            maxWidth: 'xl',
             titleProps: { maxWidth: '72%' },
           },
           buttonProps: {

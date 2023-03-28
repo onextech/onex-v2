@@ -24,7 +24,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           pb: { xs: 50, xl: 70 },
           key: 'mission-hero',
           ...commonBlockProps,
-          maxWidth: 'lg',
+          maxWidth: 'xl',
           backgroundImageProps: {
             src: '/images/mission_earth.png',
             alt: 'mission-earth',

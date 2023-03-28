@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { renderPortfolioCardBlockItem } from '@onex/blocks'
+import { renderShowcaseCardBlockItem } from '@onex/blocks'
 import type { Showcase } from '@onex/types'
 
 export interface ShowcasesPageProps {
@@ -13,12 +13,12 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'portfolio-hero',
-          maxWidth: 'lg',
+          key: 'showcase-hero',
+          maxWidth: 'xl',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
-            { type: 'overline', title: 'Portfolio' },
+            { type: 'overline', title: 'Showcase' },
             {
               type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',
@@ -36,12 +36,12 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
           ],
         },
         {
-          key: 'portfolio-card-list',
+          key: 'showcase-card-list',
           center: true,
-          maxWidth: 'lg',
+          maxWidth: 'xl',
           pt: 0,
           items: showcases.map((showcase) =>
-            renderPortfolioCardBlockItem({ item: showcase })
+            renderShowcaseCardBlockItem({ item: showcase })
           ),
         },
       ]}

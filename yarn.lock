@@ -1643,7 +1643,7 @@
     eslint-plugin-testing-library "^5.6.4"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*":
+"@gravis-os/fields@*", "@gravis-os/fields@^0.0.15":
   version "0.0.15"
   resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.0.15.tgz#0736977c6cc206156b1da2e5b5cfd07a06d478b2"
   integrity sha512-YBN6yerpO6n+ZAG5jurnQxa8QY892nXut1rhtgo4knnTG49TSjAKF/W2Nscvo9OlA2BQjLoiQw5WYxFg4mP6ig==

@@ -13,11 +13,11 @@ export * from './renderHeaderMenuBlockItem'
 export { default as renderHeaderMenuListBlockItem } from './renderHeaderMenuListBlockItem'
 export * from './renderHeaderMenuListBlockItem'
 
-export { default as renderPortfolioCardBlockItem } from './renderPortfolioCardBlockItem'
-export * from './renderPortfolioCardBlockItem'
+export { default as renderShowcaseCardBlockItem } from './renderShowcaseCardBlockItem'
+export * from './renderShowcaseCardBlockItem'
 
-export { default as renderPortfolioStickyGridBlockItem } from './renderPortfolioStickyGridBlockItem'
-export * from './renderPortfolioStickyGridBlockItem'
+export { default as renderShowcaseStickyGridBlockItem } from './renderShowcaseStickyGridBlockItem'
+export * from './renderShowcaseStickyGridBlockItem'
 
 export { default as renderJobCardBlockItem } from './renderJobCardBlockItem'
 export * from './renderJobCardBlockItem'
@@ -111,3 +111,6 @@ export * from './renderPostDetailBlock'
 
 export { default as renderHalfGridBlock } from './renderHalfGridBlock'
 export * from './renderHalfGridBlock'
+
+export { default as renderHeroWithBackgroundBlock } from './renderHeroWithBackgroundBlock'
+export * from './renderHeroWithBackgroundBlock'

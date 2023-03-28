@@ -10,7 +10,7 @@ export interface CareersPageProps {
   jobs: Job[]
 }
 
-const commonBlockProps = { center: true, maxWidth: 'lg' }
+const commonBlockProps = { center: true, maxWidth: 'xl' }
 
 const CareersPage: React.FC<CareersPageProps> = (props) => {
   const { jobs } = props

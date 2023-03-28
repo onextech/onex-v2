@@ -4,7 +4,7 @@ export const MOCK_SHOWCASES = [
     slug: 'phillips',
     subtitle:
       'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_3.png',
+    imageSrc: '/images/showcase_cover_3.png',
 
     mode: 'light',
     backgroundColor: '#c6dcc0',
@@ -14,7 +14,7 @@ export const MOCK_SHOWCASES = [
     slug: 'lazada',
     subtitle:
       'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_4.png',
+    imageSrc: '/images/showcase_cover_4.png',
 
     mode: 'dark',
     backgroundColor: '#202941',
@@ -25,7 +25,7 @@ export const MOCK_SHOWCASES = [
     slug: 'tefal',
     subtitle:
       'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_2.jpg',
+    imageSrc: '/images/showcase_cover_2.jpg',
 
     mode: 'dark',
     backgroundColor: '#2b698a',
@@ -35,7 +35,7 @@ export const MOCK_SHOWCASES = [
     slug: 'canon',
     subtitle:
       'Promoting science by building the largest online conference platform.',
-    imageSrc: '/images/portfolio_cover_1.png',
+    imageSrc: '/images/showcase_cover_1.png',
 
     mode: 'dark',
     backgroundColor: '#111',

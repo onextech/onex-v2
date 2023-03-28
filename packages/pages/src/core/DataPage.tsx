@@ -127,10 +127,10 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         renderFadeToBottomBackgroundImageBlock({
           hero_src: '/images/data_men.png',
           hero_alt: 'Two men working',
-          titleProps: { type: 'h3', maxWidth: 'lg' },
+          titleProps: { type: 'h3', maxWidth: 'xl' },
           subtitleProps: {
             type: 'body1',
-            maxWidth: 'lg',
+            maxWidth: 'xl',
             titleProps: { maxWidth: '72%' },
           },
           buttonProps: {

@@ -178,7 +178,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             {
               type: 'grid',
               sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'lg',
+              maxWidth: 'xl',
               gridProps: { spacing: 3 },
               gridItemProps: {
                 xs: 6,
@@ -341,7 +341,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             {
               type: 'grid',
               sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'lg',
+              maxWidth: 'xl',
               gridProps: { spacing: 1 },
               gridItemProps: { xs: 6, md: 4 },
               gridItems: MOCK_GROUP_CLIENTS.map((client) => {

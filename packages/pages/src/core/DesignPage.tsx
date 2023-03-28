@@ -121,7 +121,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             {
               type: 'h3',
               title: cta.title,
-              titleProps: { type: 'h3', maxWidth: 'lg', gutterBottom: true },
+              titleProps: { type: 'h3', maxWidth: 'xl', gutterBottom: true },
             },
             {
               type: 'body1',

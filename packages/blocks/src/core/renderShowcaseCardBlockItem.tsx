@@ -3,12 +3,12 @@ import { routeConfig } from '@onex/common'
 import { Showcase } from '@onex/types'
 import renderGhostButtonBlockItem from './renderGhostButtonBlockItem'
 
-export interface RenderPortfolioCardBlockItemProps {
+export interface RenderShowcaseCardBlockItemProps {
   item: Showcase
 }
 
-const renderPortfolioCardBlockItem = (
-  props: RenderPortfolioCardBlockItemProps
+const renderShowcaseCardBlockItem = (
+  props: RenderShowcaseCardBlockItemProps
 ) => {
   const { item } = props
   const { slug, backgroundColor, mode, imageSrc, title, subtitle, reverse } =
@@ -68,7 +68,7 @@ const renderPortfolioCardBlockItem = (
           },
         },
         renderGhostButtonBlockItem({
-          overline: 'Portfolio',
+          overline: 'Showcase',
           title: 'Read more',
           boxProps: { mt: 5 },
           href: `${routeConfig.SHOWCASES}/${slug || ''}`,
@@ -81,7 +81,7 @@ const renderPortfolioCardBlockItem = (
 
   return {
     type: 'grid',
-    maxWidth: 'lg',
+    maxWidth: 'xl',
     sx: { mt: { xs: 6, md: 10 } },
     mode,
     boxProps: { sx: { backgroundColor, borderRadius: 1 } },
@@ -94,4 +94,4 @@ const renderPortfolioCardBlockItem = (
   }
 }
 
-export default renderPortfolioCardBlockItem
+export default renderShowcaseCardBlockItem

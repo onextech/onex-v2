@@ -185,3 +185,8 @@ export const MOCK_GROUP_POSTS = MOCK_TECH_POSTS.map((item, i) => ({
   // Tags
   tags: sampleSize(MOCK_GROUP_TAGS, 3),
 }))
+
+export const MOCK_POSTS = {
+  GROUP: MOCK_GROUP_POSTS,
+  TECH: MOCK_TECH_POSTS,
+}

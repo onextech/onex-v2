@@ -33,7 +33,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
     dialogProps: {
       open: isOpen,
       onClose: close,
-      maxWidth: 'lg',
+      maxWidth: 'xl',
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },
       children: (

@@ -1,6 +1,7 @@
 import { CrudItem } from '@gravis-os/types'
 
 export type PageSection =
+  | 'hero'
   | 'summary'
   | 'benefits'
   | 'features'
@@ -9,6 +10,7 @@ export type PageSection =
   | 'checklist'
   | 'callout'
   | 'cta'
+  | 'halfGrids'
 
 interface Page extends CrudItem {
   // Seo

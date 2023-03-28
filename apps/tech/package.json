@@ -38,6 +38,7 @@
     "@onex/types": "*",
     "@onex/tests": "*",
     "@onex/mocks": "*",
+    "@onex/modules": "*",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

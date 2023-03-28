@@ -1,14 +1,18 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { IndustrysPage } from '@onex/pages'
-import { MOCK_TECH_INDUSTRYS } from '@onex/mocks'
+import { IndustrysPageProps, IndustrysPage } from '@onex/pages'
+import { IndustryList } from '@onex/modules'
+import configs from '@app/configs'
 
-export interface NextIndustrysPageProps {}
+export const getStaticProps = IndustryList.getStaticProps({ configs })
 
-const NextIndustrysPage: React.FC<NextIndustrysPageProps> = () => {
+export interface NextIndustrysPageProps extends IndustrysPageProps {}
+
+const NextIndustrysPage: React.FC<NextIndustrysPageProps> = (props) => {
+  const { industrys } = props
   return (
     <LandingLayout seo={{ title: 'Industries' }}>
-      <IndustrysPage industrys={MOCK_TECH_INDUSTRYS} />
+      <IndustrysPage industrys={industrys} />
     </LandingLayout>
   )
 }

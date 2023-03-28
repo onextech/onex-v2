@@ -27,6 +27,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
     textAlign = 'center',
     ...rest
   } = props
+  const { center } = rest
 
   const isTextAlignCenter = textAlign === 'center'
 
@@ -57,9 +58,9 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
         sx: { mt: { xs: 5, md: 10 } },
         gridProps: { spacing: 4, rowSpacing: 8 },
         gridItemProps: {
-          xs: 6,
+          xs: columns <= 3 ? 12 : 6,
           md: 12 / columns,
-          sx: { textAlign: { xs: 'center', md: 'left' } },
+          sx: { textAlign: { xs: 'center', md: center ? 'center' : 'left' } },
         },
         gridItems: items?.map((item) => {
           const { fa_icon, overline, title, subtitle, avatar_src } = item

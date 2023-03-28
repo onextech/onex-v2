@@ -33,7 +33,7 @@ const headerNavConfig = [
     showOnMobileBar: true,
     titleProps: { sx: { mb: { xs: 1, md: 0 } } },
   },
-  { key: 'portfolio', title: 'Portfolio', href: routeConfig.SHOWCASES },
+  { key: 'showcase', title: 'Showcase', href: routeConfig.SHOWCASES },
   {
     key: 'services',
     title: 'Services',
