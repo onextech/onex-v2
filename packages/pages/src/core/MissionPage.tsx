@@ -6,7 +6,6 @@ import {
   renderClientCardBlockItem,
 } from '@onex/blocks'
 import { routeConfig } from '@onex/common'
-import { MOCK_GROUP_CLIENTS } from '@onex/mocks'
 import { useLayout } from '@onex/providers'
 
 export interface MissionPageProps {}

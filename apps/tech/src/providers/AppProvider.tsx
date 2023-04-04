@@ -9,6 +9,7 @@ import {
   createEmotionCache,
 } from '@onex/theme'
 import { darkTheme, lightTheme } from '@app/theme'
+import { Toaster } from 'react-hot-toast'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -38,6 +39,9 @@ const AppProvider = (props: AppProviderProps) => {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+
+      {/* Toast */}
+      <Toaster position="top-right" reverseOrder={false} />
 
       <UserPreferencesProvider>
         <ThemeProvider

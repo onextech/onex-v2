@@ -9,17 +9,18 @@ import {
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
+import { Page, Showcase } from '@onex/types'
 
 export interface DesignPageProps {
   design: Page
+  showcases?: Showcase[]
 }
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { design } = props
   const { appConfig, routeConfig } = useLayout()
   const { overline, sections } = design || {}
-  const { summary, benefits, features, checklist, faqs, cta } = sections || {}
+  const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (
     <Blocks
@@ -37,16 +38,15 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             sx: { opacity: 0.2 },
           },
           items: [
-            { type: 'overline', title: 'Design' },
+            { type: 'overline', title: hero.overline },
             {
               type: 'h2',
-              title: 'We Design for Impact',
+              title: hero.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'subtitle1',
-              title:
-                'Maximise business growth through insight driven web design. We put business first in everything we do.',
+              title: hero.subtitle,
               titleProps: { color: 'text.secondary', maxWidth: '50%' },
             },
             {

@@ -4,82 +4,41 @@ import {
   renderFadeToBottomBackgroundImageBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
-  renderHalfGridBlock,
+  renderHalfGridBlock, renderHeroWithBackgroundBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
+import { Page, Showcase } from '@onex/types'
 
 export interface DataPageProps {
   data: Page
+  showcases?: Showcase[]
 }
 
 const DataPage: React.FC<DataPageProps> = (props) => {
   const { data } = props
   const { appConfig, routeConfig } = useLayout()
   const { overline, sections } = data || {}
-  const { summary, benefits, features, checklist, faqs, cta } = sections || {}
+  const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (
     <Blocks
       items={[
         // Hero
-        {
-          key: 'data-hero',
-          dark: true,
-          py: 30,
-          center: true,
-          maxWidth: 'md',
-          backgroundImageProps: {
-            src: '/images/data_nightsky.png',
-            alt: 'hero',
+        renderHeroWithBackgroundBlock({
+          ...hero,
+          buttonProps: {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            size: 'lg',
+            href: routeConfig.SERVICES,
           },
-          items: [
-            { type: 'overline', title: 'Data' },
-            {
-              type: 'h2',
-              title: 'Get to know our Data',
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'subtitle1',
-              title:
-                'Maximise business growth through insight driven web data. We put business first in everything we do.',
-              titleProps: { color: 'text.secondary', maxWidth: true },
-            },
-            {
-              type: 'stack',
-              sx: { mt: 3 },
-              stackProps: {
-                spacing: 0,
-                center: true,
-                direction: 'row',
-                reverseDirectionOnMobile: true,
-              },
-              stackItems: [
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'What we do',
-                      title: 'Smarter Businesses',
-                      size: 'lg',
-                      href: routeConfig.SERVICES,
-                    }),
-                  ],
-                },
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'Who we are',
-                      title: 'Business Software Experts',
-                      size: 'lg',
-                      href: routeConfig.CAREERS,
-                    }),
-                  ],
-                },
-              ],
-            },
-          ],
-        },
+          secondaryButtonProps: {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            size: 'lg',
+            href: routeConfig.CAREERS,
+          },
+        }),
         // Benefits
         renderFourColumnGridBlock({
           ...benefits,

@@ -1,9 +1,8 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { DigitalPage } from '@onex/pages'
+import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import { MOCK_DIGITAL_PAGE } from '@onex/mocks'
 import { GetStaticProps } from 'next'
-import { Page } from '@onex/types'
 import getDynamicPage from '../src/utils/getDynamicPage'
 
 export const getStaticProps: GetStaticProps = () => {
@@ -11,9 +10,7 @@ export const getStaticProps: GetStaticProps = () => {
   return { props: { digital } }
 }
 
-export interface NextDigitalPageProps {
-  digital: Page
-}
+export interface NextDigitalPageProps extends DigitalPageProps {}
 
 const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
   const { digital } = props

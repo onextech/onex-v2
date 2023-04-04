@@ -35,3 +35,6 @@ export * from './PostCategory.types'
 
 export type { default as Page } from './Page.types'
 export * from './Page.types'
+
+export type { default as Resource } from './Resource.types'
+export * from './Resource.types'

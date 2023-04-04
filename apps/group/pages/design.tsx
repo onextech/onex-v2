@@ -1,31 +1,26 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
-import { DesignPage } from '@onex/pages'
-import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
+import { DesignPage, DesignPageProps } from '@onex/pages'
+import { MOCK_DESIGN_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
 import { GetStaticProps } from 'next'
-import { Page } from '@onex/types'
-import getDynamicPage from '../src/utils/getDynamicPage'
+import getDynamicPage from '@app/utils/getDynamicPage'
 
 export const getStaticProps: GetStaticProps = () => {
-  const design = getDynamicPage({
-    ...MOCK_GROUP_INDUSTRYS[0],
-    title: 'Design',
-  })
-  return { props: { design } }
+  const design = getDynamicPage(MOCK_DESIGN_PAGE)
+  const showcases = MOCK_TECH_SHOWCASES
+  return { props: { design, showcases } }
 }
 
-export interface NextDesignPageProps {
-  design: Page
-}
+export interface NextDesignPageProps extends DesignPageProps {}
 
 const NextDesignPage: React.FC<NextDesignPageProps> = (props) => {
-  const { design } = props
+  const { design, showcases } = props
   return (
     <LandingLayout
-      seo={{ title: 'Design' }}
+      seo={design.seo}
       headerProps={{ dark: true, translucent: true, position: 'fixed' }}
     >
-      <DesignPage design={design} />
+      <DesignPage design={design} showcases={showcases} />
     </LandingLayout>
   )
 }

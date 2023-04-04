@@ -114,3 +114,6 @@ export * from './renderHalfGridBlock'
 
 export { default as renderHeroWithBackgroundBlock } from './renderHeroWithBackgroundBlock'
 export * from './renderHeroWithBackgroundBlock'
+
+export { default as renderShowcasesBlock } from './renderShowcasesBlock'
+export * from './renderShowcasesBlock'

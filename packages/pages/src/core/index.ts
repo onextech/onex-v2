@@ -75,3 +75,12 @@ export * from './DigitalPage'
 
 export { default as DataPage } from './DataPage'
 export * from './DataPage'
+
+export { default as TechPage } from './TechPage'
+export * from './TechPage'
+
+export { default as NewsletterPage } from './NewsletterPage'
+export * from './NewsletterPage'
+
+export { default as ResourcePage } from './ResourcePage'
+export * from './ResourcePage'

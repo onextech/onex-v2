@@ -23,7 +23,7 @@ const typography = {
     fontFamily: headerFontFamily,
     fontWeight: 400,
     letterSpacing: 0,
-    lineHeight: 1.5,
+    lineHeight: 1.3,
   },
   h6: {
     fontFamily: headerFontFamily,

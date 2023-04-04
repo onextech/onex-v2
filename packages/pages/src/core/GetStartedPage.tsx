@@ -1,6 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { GetStartedForm } from '@onex/components'
+import { LeadForm } from '@onex/components'
 import { useLayout } from '@onex/providers'
 import {
   renderContactLinksBlockItems,
@@ -35,9 +35,6 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
           items: [
             {
               type: 'grid',
-              boxProps: {
-                sx: { backgroundColor: 'background.paper' },
-              },
               gridProps: { spacing: { xs: 0, md: 5 } },
               gridItems: [
                 {
@@ -77,9 +74,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     },
                     {
                       type: 'jsx',
-                      title: (
-                        <GetStartedForm serviceCategorys={serviceCategorys} />
-                      ),
+                      title: <LeadForm serviceCategorys={serviceCategorys} />,
                     },
                   ],
                 },
