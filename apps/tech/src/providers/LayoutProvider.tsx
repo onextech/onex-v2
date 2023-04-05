@@ -10,6 +10,8 @@ import legalConfig from '@app/configs/legalConfig'
 import {
   MOCK_TECH_SERVICE_CATEGORYS,
   MOCK_TECH_TESTIMONIALS,
+  MOCK_TECH_CLIENT_LOGOS,
+  MOCK_TECH_CLIENT_HIGHLIGHTS,
 } from '@onex/mocks'
 
 export interface LayoutProviderProps {
@@ -30,6 +32,8 @@ const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
         legalConfig,
         testimonials: MOCK_TECH_TESTIMONIALS,
         serviceCategorys: MOCK_TECH_SERVICE_CATEGORYS,
+        clientLogos: MOCK_TECH_CLIENT_LOGOS,
+        clientHighlights: MOCK_TECH_CLIENT_HIGHLIGHTS,
       }}
     >
       {children}

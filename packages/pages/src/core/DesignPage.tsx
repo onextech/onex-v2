@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
+  renderClientLogosImageMarqueeBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
@@ -18,7 +19,7 @@ export interface DesignPageProps {
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { design } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { appConfig, routeConfig, clientLogos } = useLayout()
   const { overline, sections } = design || {}
   const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -82,6 +83,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             },
           ],
         },
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
         // Benefits
         renderFourColumnGridBlock({
           ...benefits,

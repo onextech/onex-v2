@@ -2,7 +2,12 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Resource } from '@onex/types'
 import { ResourceForm } from '@onex/components'
-import { renderFourColumnGridBlock } from '@onex/blocks'
+import {
+  renderThreeColumnGridBlock,
+  renderFourColumnGridBlock,
+  renderClientLogosImageMarqueeBlock,
+} from '@onex/blocks'
+import { useLayout } from '@onex/providers'
 
 export interface ResourcePageProps {
   resource: Resource
@@ -10,8 +15,9 @@ export interface ResourcePageProps {
 
 const ResourcePage: React.FC<ResourcePageProps> = (props) => {
   const { resource } = props
+  const { clientLogos } = useLayout()
   const { title, subtitle, avatar_src, avatar_alt, sections } = resource
-  const { benefits } = sections || {}
+  const { benefits, features } = sections || {}
 
   return (
     <Blocks
@@ -57,7 +63,11 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                     {
                       type: 'image',
                       title: avatar_src,
-                      titleProps: { alt: avatar_alt, ar: '4:3', scaleOnHover:true },
+                      titleProps: {
+                        alt: avatar_alt,
+                        ar: '4:3',
+                        scaleOnHover: true,
+                      },
                       boxProps: { maxWidth: { md: '70%' } },
                     },
                   ],
@@ -103,15 +113,22 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
         // Benefits
         renderFourColumnGridBlock({
           ...benefits,
-          textAlign: 'left',
-          pt: 5,
-          title: 'In this guide, we cover:',
+          py: 0,
           sx: {
             backgroundColor: 'background.paper',
             borderTop: 1,
             borderColor: 'divider',
           },
         }),
+        // Features
+        renderThreeColumnGridBlock({
+          ...features,
+          textAlign: 'left',
+          sx: { backgroundColor: 'background.paper' },
+          title: 'In this guide, we cover:',
+        }),
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
       ]}
     />
   )

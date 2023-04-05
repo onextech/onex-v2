@@ -112,7 +112,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                       'Project Manager',
                       'Business Analyst',
                       'Software Engineer',
-                      'Data Analyst',
+                      'Data Scientist',
                       'UI/UX Designer',
                       'Others',
                     ],

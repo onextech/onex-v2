@@ -7,6 +7,8 @@ import {
   renderHeroWithBackgroundBlock,
   renderRightChecklistBlock,
   renderFaqsAccordionBlock,
+  renderClientLogosImageMarqueeBlock,
+  renderClientHighlightsImageMarqueeBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page } from '@onex/types'
@@ -17,7 +19,7 @@ export interface DigitalPageProps {
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
   const { digital } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { appConfig, routeConfig, clientLogos, clientHighlights } = useLayout()
   const { sections } = digital || {}
   const { cta, callout, halfGrids, hero, benefits, features, faqs, checklist } =
     sections || {}
@@ -41,6 +43,8 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
             href: routeConfig.CAREERS,
           },
         }),
+        // Marquee
+        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,
@@ -48,6 +52,8 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         }),
         // HalfGrid
         ...halfGrids?.items?.map((halfGrid) => renderHalfGridBlock(halfGrid)),
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
         // Callout
         renderFadeToBottomBackgroundImageBlock(callout),
         // Features

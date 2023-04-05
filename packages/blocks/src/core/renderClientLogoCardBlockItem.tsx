@@ -1,12 +1,12 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 
-export interface RenderClientCardBlockItemProps {
+export interface RenderClientLogoCardBlockItemProps {
   title: BlockItemProps['title']
   titleProps?: BlockItemProps['titleProps']
 }
 
-const renderClientCardBlockItem = (props: RenderClientCardBlockItemProps) => {
+const renderClientLogoCardBlockItem = (props: RenderClientLogoCardBlockItemProps) => {
   const { title, titleProps } = props
 
   return {
@@ -29,4 +29,4 @@ const renderClientCardBlockItem = (props: RenderClientCardBlockItemProps) => {
   }
 }
 
-export default renderClientCardBlockItem
+export default renderClientLogoCardBlockItem

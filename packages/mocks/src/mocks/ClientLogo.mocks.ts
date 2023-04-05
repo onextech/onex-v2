@@ -1,4 +1,4 @@
-export const MOCK_GROUP_CLIENTS = [
+export const MOCK_GROUP_CLIENT_LOGOS = [
   {
     avatar_src: '/logos/logo_gic.svg',
     avatar_alt: 'logo_gic',
@@ -30,12 +30,6 @@ export const MOCK_GROUP_CLIENTS = [
     avatar_height: 38,
   },
   {
-    avatar_src: '/logos/logo_pa.svg',
-    avatar_alt: 'logo_pa',
-    avatar_width: 71,
-    avatar_height: 84.8,
-  },
-  {
     avatar_src: '/logos/logo_ssa.png',
     avatar_alt: 'logo_ssa',
     avatar_width: 130,
@@ -52,6 +46,12 @@ export const MOCK_GROUP_CLIENTS = [
     avatar_alt: 'logo_mpa',
     avatar_width: 70,
     avatar_height: 73,
+  },
+  {
+    avatar_src: '/logos/logo_pa.svg',
+    avatar_alt: 'logo_pa',
+    avatar_width: 71,
+    avatar_height: 84.8,
   },
   {
     avatar_src: '/logos/logo_suntec.svg',
@@ -107,4 +107,6 @@ export const MOCK_GROUP_CLIENTS = [
     avatar_width: 89,
     avatar_height: 39,
   },
-]
+].map((item, i) => ({ ...item, id: i }))
+
+export const MOCK_TECH_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS

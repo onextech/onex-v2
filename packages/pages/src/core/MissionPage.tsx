@@ -3,7 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
-  renderClientCardBlockItem,
+  renderClientLogoCardBlockItem,
 } from '@onex/blocks'
 import { routeConfig } from '@onex/common'
 import { useLayout } from '@onex/providers'

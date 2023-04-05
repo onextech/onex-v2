@@ -3,16 +3,18 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
-  renderClientCardBlockItem,
+  renderClientLogoCardBlockItem,
 } from '@onex/blocks'
 import { routeConfig } from '@onex/common'
-import { MOCK_GROUP_CLIENTS } from '@onex/mocks'
+import { useLayout } from '@onex/providers'
 
 export interface AboutPageProps {}
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
 
 const AboutPage: React.FC<AboutPageProps> = () => {
+  const { clientLogos } = useLayout()
+
   return (
     <Blocks
       items={[
@@ -344,10 +346,10 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               maxWidth: 'xl',
               gridProps: { spacing: 1 },
               gridItemProps: { xs: 6, md: 4 },
-              gridItems: MOCK_GROUP_CLIENTS.map((client) => {
+              gridItems: clientLogos.map((clientLogo) => {
                 const { avatar_src, avatar_alt, avatar_width, avatar_height } =
-                  client
-                return renderClientCardBlockItem({
+                  clientLogo
+                return renderClientLogoCardBlockItem({
                   title: avatar_src,
                   titleProps: {
                     alt: avatar_alt,

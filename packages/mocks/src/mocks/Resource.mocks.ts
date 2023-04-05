@@ -15,125 +15,6 @@ export const MOCK_TECH_RESOURCES = [
     subtitle:
       'Learn how OKRs can turn your company strategy into a success. This guide breaks down the OKR framework and gives you access to templates, examples, and more to run OKRs at your business.',
   },
-  {
-    title:
-      'Designing for Impact: How Frontend Development Can Boost Conversions and Revenue',
-    slug: 'designing-for-impact: how-frontend-development-can-boost-conversions-and-revenue',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Product Management in the Age of AI: Strategies for Incorporating Machine Learning into Your Roadmap',
-    slug: 'product-management-in-the-age-of-ai-strategies-for-incorporating-machine-learning-into-your-roadmap',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Accessibility in the Spotlight: Best Practices for Building Inclusive Products and Experiences',
-    slug: 'accessibility-in-the-spotlight-best-practices-for-building-inclusive-products-and-experiences',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The Future of Frontend Development: Trends, Challenges, and Opportunities for Enterprise Product Managers in 2023',
-    slug: 'the-future-of-frontend-development-trends-challenges-and-opportunities-for-enterprise-product-managers-in-2023',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Building Scalable Frontends: Best Practices for Managing Complex Enterprise Products',
-    slug: 'building-scalable-frontends-best-practices-for-managing-complex-enterprise-products',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Digital Transformation in Government: Modernising Public Services for the 21st Century',
-    slug: 'digital-transformation-in-government-modernising-public-services-for-the-21-st-century',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The New Era of Real Estate: How Technology Is Reshaping Buying, Selling, and Property Management',
-    slug: 'the-new-era-of-real-estate-how-technology-is-reshaping-buying, selling, and-property-management',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The Future of Finance: Embracing Automation and Analytics for Better Customer Experience',
-    slug: 'the-future-of-finance-embracing-automation-and-analytics-for-better-customer-experience',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Maritime Logistics in the Digital Age: Unlocking New Opportunities with Technology',
-    slug: 'maritime-logistics-in-the-digital-age-unlocking-new-opportunities-with-technology',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Government Data Analytics: Turning Insights into Actionable Solutions for the Public Good',
-    slug: 'government-data-analytics-turning-insights-into-actionable-solutions-for-the-public-good',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Innovation in Maritime: Emerging Trends and Technologies for Efficiency and Profitability',
-    slug: 'innovation-in-maritime-emerging-trends-and-technologies-for-efficiency-and-profitability',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Real Estate Investment in the Digital Age: How to Capitalize on the Latest Trends and Technologies',
-    slug: 'real-estate-investment-in-the-digital-age-how-to-capitalize-on-the-latest-trends-and-technologies',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The Future of Work in the Digital Age: Navigating the Challenges of a Remote Workforce',
-    slug: 'the-future-of-work-in-the-digital-age-navigating-the-challenges-of-a-remote-workforce',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The Impact of Fintech on Traditional Banking: Preparing the Workforce for Digital Disruption',
-    slug: 'the-impact-of-fintech-on-traditional-banking-preparing-the-workforce-for-digital-disruption',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'The Role of DevOps in Enterprise Software Development: Best Practices and Emerging Trends',
-    slug: 'the-role-of-dev-ops-in-enterprise-software-development-best-practices-and-emerging-trends',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'How to Build High-Performance Teams for Enterprise Product Management',
-    slug: 'how-to-build-high-performance-teams-for-enterprise-product-management',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
-  {
-    title:
-      'Cybersecurity in the Digital Age: Protecting Your Enterprise Products and Customers from Emerging Threats',
-    slug: 'cybersecurity-in-the-digital-age-protecting-your-enterprise-products-and-customers-from-emerging-threats',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-  },
 ].map((item, i) => ({
   id: i + 1,
   // Seo
@@ -144,58 +25,30 @@ export const MOCK_TECH_RESOURCES = [
   // Sections
   sections: {
     benefits: {
-      overline: 'What we do',
-      title: 'Our Suite of {title} Services',
-      subtitle:
-        "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
       items: [
         {
-          fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-        {
           fa_icon: 'fa-guitar',
-          title: 'Rewards',
+          title: 'Achieve strategic team alignment',
           subtitle:
             'Our team works directly with you to boost your development speed and scale.',
         },
         {
           fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
+          title: 'Create transparency in business',
           subtitle:
             "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
         },
         {
           fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks 2',
+          title: 'Overcome lack of organizational focus',
           subtitle:
             'We create human-centred designs focused on driving conversions and achieving business goals.',
         },
         {
           fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up 2',
+          title: 'Empower employee engagement',
           subtitle:
             'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-        {
-          fa_icon: 'fa-guitar',
-          title: 'Rewards 2',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-table-tennis',
-          title: 'Convenience 2',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
         },
       ],
     },
@@ -214,40 +67,40 @@ export const MOCK_TECH_RESOURCES = [
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
         {
-          fa_icon: 'fa-watch',
-          title: 'Scale up development',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-hand-holding-seedling',
-          title: 'Improve a current system',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-        {
           fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
+          title: 'What is an OKR?',
           subtitle:
             'We create human-centred designs focused on driving conversions and achieving business goals.',
         },
         {
           fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
+          title: 'Why the OKR methodology?',
           subtitle:
             'Launch your MVP at start-up speed with an expert team of designers and developers.',
         },
         {
           fa_icon: 'fa-guitar',
-          title: 'Rewards',
+          title: 'Achieve strategic team alignment',
           subtitle:
             'Our team works directly with you to boost your development speed and scale.',
         },
         {
           fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
+          title: 'Create transparency in business',
           subtitle:
             "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+        },
+        {
+          fa_icon: 'fa-mug-hot',
+          title: 'Overcome lack of organizational focus',
+          subtitle:
+            'We create human-centred designs focused on driving conversions and achieving business goals.',
+        },
+        {
+          fa_icon: 'fa-puzzle-piece',
+          title: 'Empower employee engagement',
+          subtitle:
+            'Launch your MVP at start-up speed with an expert team of designers and developers.',
         },
       ],
     },

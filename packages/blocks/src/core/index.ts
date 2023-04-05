@@ -64,8 +64,17 @@ export * from './renderFaqsAccordionBlock'
 export { default as renderRightChecklistBlock } from './renderRightChecklistBlock'
 export * from './renderRightChecklistBlock'
 
-export { default as renderClientCardBlockItem } from './renderClientCardBlockItem'
-export * from './renderClientCardBlockItem'
+export { default as renderClientLogoCardBlockItem } from './renderClientLogoCardBlockItem'
+export * from './renderClientLogoCardBlockItem'
+
+export { default as renderClientLogosGridBlock } from './renderClientLogosGridBlock'
+export * from './renderClientLogosGridBlock'
+
+export { default as renderClientLogosImageMarqueeBlock } from './renderClientLogosImageMarqueeBlock'
+export * from './renderClientLogosImageMarqueeBlock'
+
+export { default as renderClientHighlightsImageMarqueeBlock } from './renderClientHighlightsImageMarqueeBlock'
+export * from './renderClientHighlightsImageMarqueeBlock'
 
 export { default as renderTestimonialBlockItem } from './renderTestimonialBlockItem'
 export * from './renderTestimonialBlockItem'

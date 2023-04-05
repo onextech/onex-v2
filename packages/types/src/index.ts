@@ -21,8 +21,11 @@ export * from './Technology.types'
 export type { default as Testimonial } from './Testimonial.types'
 export * from './Testimonial.types'
 
-export type { default as Client } from './Client.types'
-export * from './Client.types'
+export type { default as ClientLogo } from './ClientLogo.types'
+export * from './ClientLogo.types'
+
+export type { default as ClientHighlight } from './ClientHighlight.types'
+export * from './ClientHighlight.types'
 
 export type { default as Post } from './Post.types'
 export * from './Post.types'
