@@ -34,6 +34,7 @@
     "@onex/layouts": "*",
     "@onex/mocks": "*",
     "@onex/modules": "*",
+    "@onex/server": "*",
     "@onex/pages": "*",
     "@onex/providers": "*",
     "@onex/tests": "*",

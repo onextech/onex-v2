@@ -3,10 +3,11 @@ import LandingLayout from '@app/layouts/LandingLayout'
 import { DataPage, DataPageProps } from '@onex/pages'
 import { MOCK_DATA_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
 import { GetStaticProps } from 'next'
-import getDynamicPage from '@app/utils/getDynamicPage'
+import { getDynamicPage } from '@onex/server'
+import configs from '@app/configs'
 
 export const getStaticProps: GetStaticProps = () => {
-  const data = getDynamicPage(MOCK_DATA_PAGE)
+  const data = getDynamicPage(MOCK_DATA_PAGE, configs)
   const showcases = MOCK_TECH_SHOWCASES
   return { props: { data, showcases } }
 }
@@ -18,7 +19,7 @@ const NextDataPage: React.FC<NextDataPageProps> = (props) => {
   return (
     <LandingLayout
       seo={data.seo}
-      headerProps={{ dark: true, translucent: true, position: 'fixed' }}
+      darkHeader
     >
       <DataPage data={data} showcases={showcases} />
     </LandingLayout>

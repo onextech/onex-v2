@@ -1,8 +1,6 @@
 import React from 'react'
 import { Blocks, Block } from '@gravis-os/landing'
-import { brands, systemConfig } from '@onex/common'
-import appConfig from '@onex/group/src/configs/appConfig'
-import routeConfig from '@onex/group/src/configs/routeConfig'
+import { brands, systemConfig, appConfig, routeConfig } from '@onex/common'
 import renderHeaderMenuBlockItem from './renderHeaderMenuBlockItem'
 import renderHeaderMenuMobileBlockItem from './renderHeaderMenuMobileBlockItem'
 

@@ -2,7 +2,7 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ResourcePage, ResourcePageProps } from '@onex/pages'
 import configs from '@app/configs'
-import { ResourceDetail } from '@onex/modules'
+import { ResourceDetail } from '@onex/server'
 
 export const getStaticProps = ResourceDetail.getStaticProps({ configs })
 export const getStaticPaths = ResourceDetail.getStaticPaths()

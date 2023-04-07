@@ -1,5 +1,5 @@
 import React from 'react'
-import { IndustryDetail } from '@onex/modules'
+import { IndustryDetail } from '@onex/server'
 import { IndustryPage, IndustryPageProps } from '@onex/pages'
 import LandingLayout from '@app/layouts/LandingLayout'
 import configs from '@app/configs'

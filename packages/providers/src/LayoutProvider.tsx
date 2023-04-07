@@ -21,6 +21,9 @@ export interface LayoutContextValue {
   footerNavConfig?: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
+  localeConfig?: {
+    locales?: Array<{ key: string; isoAlpha2: string; title: string }>
+  }
   testimonials?: Testimonial[]
   serviceCategorys?: ServiceCategory[]
   clientLogos?: ClientLogo[]

@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { PostCategorysPage, PostCategorysPageProps } from '@onex/pages'
-import { PostCategoryList } from '@onex/modules'
+import { PostCategoryList } from '@onex/server'
 import configs from '@app/configs'
 
 export const getStaticProps = PostCategoryList.getStaticProps({ configs })

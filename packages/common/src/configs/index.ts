@@ -14,3 +14,6 @@ export * from './footerNavConfig'
 
 export { default as legalConfig } from './legalConfig'
 export * from './legalConfig'
+
+export { default as localeConfig } from './localeConfig'
+export * from './localeConfig'

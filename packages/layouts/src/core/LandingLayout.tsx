@@ -1,7 +1,7 @@
 import React from 'react'
 import merge from 'lodash/merge'
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
-import { Button } from '@gravis-os/ui'
+import { Button, LocalePicker } from '@gravis-os/ui'
 import {
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
@@ -14,10 +14,11 @@ import { GetStartedPage } from '@onex/pages'
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
+  darkHeader?: boolean
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { seo, ...rest } = props
+  const { seo, darkHeader, ...rest } = props
 
   // Hooks
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
@@ -29,6 +30,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     headerNavConfig,
     footerNavConfig,
     routeConfig,
+    localeConfig,
   } = useLayout()
 
   const defaultLandingLayoutProps = {
@@ -44,6 +46,19 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       navItems: {
         left: headerNavConfig,
         right: [
+          {
+            name: 'locale-picker',
+            title: 'Locale',
+            showOnMobileBar: true,
+            hideInMobileDrawer: true,
+            children: (
+              <LocalePicker
+                locales={localeConfig.locales}
+                disableBackdrop
+                isOpenOnHover
+              />
+            ),
+          },
           {
             key: 'toggle-dark-mode',
             children: toggleDarkModeIconButtonJsx,
@@ -75,6 +90,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           },
         ],
       },
+      ...(darkHeader && { dark: true, translucent: true, position: 'fixed' }),
     },
     footerProps: {
       callout: <ContactCallout />,

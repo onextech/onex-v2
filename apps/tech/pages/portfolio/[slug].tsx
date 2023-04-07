@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ShowcasePage, ShowcasePageProps } from '@onex/pages'
-import { ShowcaseDetail } from '@onex/modules'
+import { ShowcaseDetail } from '@onex/server'
 import configs from '@app/configs'
 
 export const getStaticProps = ShowcaseDetail.getStaticProps({ configs })

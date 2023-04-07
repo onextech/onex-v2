@@ -9,9 +9,8 @@ import i18nextConfig from '../next-i18next.config'
 export default class MyDocument extends Document {
   render() {
     const currentLocale = String(
-      this.props.__NEXT_DATA__.query.locale ||
-      i18nextConfig.i18n.defaultLocale ||
-      'en'
+      // eslint-disable-next-line no-underscore-dangle
+      this.props.__NEXT_DATA__.query.locale || i18nextConfig.i18n.defaultLocale
     )
     return (
       <Html lang={currentLocale} className={bodyFont.className}>

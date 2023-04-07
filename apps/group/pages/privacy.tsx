@@ -5,13 +5,14 @@ import { legalPages } from '@onex/common'
 import routeConfig from '@app/configs/routeConfig'
 import { GetStaticProps } from 'next'
 import { Page } from '@onex/types'
-import getDynamicPage from '@app/utils/getDynamicPage'
+import { getDynamicPage } from '@onex/server'
+import configs from '@app/configs'
 
 export const getStaticProps: GetStaticProps = () => {
   const { title, html } = legalPages.find(
     ({ slug }) => slug === routeConfig.PRIVACY.slice(1)
   )
-  const legalPage = getDynamicPage({ title, html })
+  const legalPage = getDynamicPage({ title, html }, configs)
   return { props: { legalPage } }
 }
 

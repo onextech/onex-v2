@@ -2,7 +2,7 @@ import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
 import { PressRelease } from '@onex/types'
-import { PressReleaseList } from '@onex/modules'
+import { PressReleaseList } from '@onex/server'
 import configs from '@app/configs'
 
 export const getStaticProps = PressReleaseList.getStaticProps({ configs })

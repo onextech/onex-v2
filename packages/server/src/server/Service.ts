@@ -4,8 +4,7 @@ import {
   getCategoryFromCrudItem,
   getRelatedCrudItemsByTagTitle,
 } from '@gravis-os/utils'
-import getDynamicPage from '@onex/group/src/utils/getDynamicPage'
-import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 
 const { MOCK_KEY } = process.env
 
@@ -25,7 +24,7 @@ export const ServiceDetail = {
     (context) => {
       const service = fetchServiceBySlug(context.params.slug)
 
-      const servicePage = getDynamicPage(service)
+      const servicePage = getDynamicPage(service, configs)
 
       const serviceCategory = getCategoryFromCrudItem(
         service,

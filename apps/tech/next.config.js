@@ -15,6 +15,7 @@ module.exports = {
     '@onex/mocks',
     '@onex/tests',
     '@onex/modules',
+    '@onex/server',
   ],
   webpack(config) {
     // Svg support

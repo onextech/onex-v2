@@ -4,13 +4,17 @@ import { EcosystemPage } from '@onex/pages'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
 import { GetStaticProps } from 'next'
 import { Page } from '@onex/types'
-import getDynamicPage from '../src/utils/getDynamicPage'
+import { getDynamicPage } from '@onex/server'
+import configs from '@app/configs'
 
 export const getStaticProps: GetStaticProps = () => {
-  const ecosystem = getDynamicPage({
-    ...MOCK_GROUP_INDUSTRYS[0],
-    title: 'Ecosystem',
-  })
+  const ecosystem = getDynamicPage(
+    {
+      ...MOCK_GROUP_INDUSTRYS[0],
+      title: 'Ecosystem',
+    },
+    configs
+  )
   return { props: { ecosystem } }
 }
 
@@ -23,7 +27,7 @@ const NextEcosystemPage: React.FC<NextEcosystemPageProps> = (props) => {
   return (
     <LandingLayout
       seo={{ title: 'Ecosystem' }}
-      headerProps={{ dark: true, translucent: true, position: 'fixed' }}
+      darkHeader
     >
       <EcosystemPage ecosystem={ecosystem} />
     </LandingLayout>

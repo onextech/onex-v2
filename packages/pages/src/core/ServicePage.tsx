@@ -10,10 +10,9 @@ import {
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
-  renderThreeColumnGridBlockItem,
+  renderRelatedServicesBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import renderRelatedServicesBlock from '@onex/blocks/src/core/renderRelatedServicesBlock'
 
 export interface ServicePageProps {
   service: Service

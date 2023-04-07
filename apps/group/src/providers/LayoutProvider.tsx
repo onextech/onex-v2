@@ -7,6 +7,7 @@ import headerNavConfig from '@app/configs/headerNavConfig'
 import footerNavConfig from '@app/configs/footerNavConfig'
 import socialMediaConfig from '@app/configs/socialMediaConfig'
 import legalConfig from '@app/configs/legalConfig'
+import localeConfig from '@app/configs/localeConfig'
 import {
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_GROUP_TESTIMONIALS,
@@ -30,6 +31,7 @@ const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
         footerNavConfig,
         socialMediaConfig,
         legalConfig,
+        localeConfig,
         testimonials: MOCK_GROUP_TESTIMONIALS,
         serviceCategorys: MOCK_GROUP_SERVICE_CATEGORYS,
         clientLogos: MOCK_GROUP_CLIENT_LOGOS,

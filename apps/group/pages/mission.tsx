@@ -8,7 +8,7 @@ const NextMissionPage: React.FC<NextMissionPageProps> = () => {
   return (
     <LandingLayout
       seo={{ title: 'Mission' }}
-      headerProps={{ dark: true, translucent: true, position: 'fixed' }}
+      darkHeader
     >
       <MissionPage />
     </LandingLayout>

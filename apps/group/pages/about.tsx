@@ -8,7 +8,7 @@ const NextAboutPage: React.FC<NextAboutPageProps> = () => {
   return (
     <LandingLayout
       seo={{ title: 'About Us' }}
-      headerProps={{ dark: true, translucent: true, position: 'fixed' }}
+      darkHeader
     >
       <AboutPage />
     </LandingLayout>

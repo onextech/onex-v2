@@ -1,5 +1,6 @@
 import { MOCK_SERVICE_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 
 const { MOCK_KEY } = process.env
@@ -19,10 +20,19 @@ export const fetchServiceCategoryBySlug = (injectedSlug) => {
 export const ServiceCategoryList = {
   getStaticProps:
     ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
+    async (context) => {
       const services = MOCK_SERVICES[MOCK_KEY]
       const serviceCategorys = MOCK_SERVICE_CATEGORYS[MOCK_KEY]
-      return { props: { services, serviceCategorys } }
+      return {
+        props: {
+          services,
+          serviceCategorys,
+          ...(await serverSideTranslations(context.locale, [
+            'common',
+            'footer',
+          ])),
+        },
+      }
     },
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { TechnologyPage, TechnologyPageProps } from '@onex/pages'
-import { TechnologyDetail } from '@onex/modules'
+import { TechnologyDetail } from '@onex/server'
 import configs from '@app/configs'
 
 export const getStaticProps = TechnologyDetail.getStaticProps({ configs })

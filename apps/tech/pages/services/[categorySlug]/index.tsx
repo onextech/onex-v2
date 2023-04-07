@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingLayout from '@app/layouts/LandingLayout'
 import { ServiceCategoryPage, ServiceCategoryPageProps } from '@onex/pages'
-import { ServiceCategoryDetail } from '@onex/modules'
+import { ServiceCategoryDetail } from '@onex/server'
 import configs from '@app/configs'
 
 export const getStaticProps = ServiceCategoryDetail.getStaticProps({ configs })
