@@ -1,5 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
+import { appWithTranslation } from 'next-i18next'
 import { EmotionCache } from '@emotion/react'
 import { AppProvider, LayoutProvider } from '@app/providers'
 import { AnalyticsProvider, SeoProvider } from '@onex/providers'
@@ -26,4 +27,4 @@ const MyApp = (props: MyAppProps) => {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

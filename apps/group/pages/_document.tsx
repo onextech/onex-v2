@@ -4,11 +4,17 @@ import createEmotionServer from '@emotion/server/create-instance'
 import { createEmotionCache, bodyFont, lightTheme } from '@onex/theme'
 import { renderGtmScriptTag, renderGtmNoScriptTag } from '@gravis-os/analytics'
 import { renderFontAwesomeKitScriptTag } from '@gravis-os/ui'
+import i18nextConfig from '../next-i18next.config'
 
 export default class MyDocument extends Document {
   render() {
+    const currentLocale = String(
+      this.props.__NEXT_DATA__.query.locale ||
+        i18nextConfig.i18n.defaultLocale ||
+        'en'
+    )
     return (
-      <Html lang="en" className={bodyFont.className}>
+      <Html lang={currentLocale} className={bodyFont.className}>
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={lightTheme.palette.primary.main} />
