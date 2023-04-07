@@ -6,10 +6,7 @@ export interface NextMissionPageProps {}
 
 const NextMissionPage: React.FC<NextMissionPageProps> = () => {
   return (
-    <LandingLayout
-      seo={{ title: 'Mission' }}
-      darkHeader
-    >
+    <LandingLayout seo={{ title: 'Mission' }} darkHeader>
       <MissionPage />
     </LandingLayout>
   )

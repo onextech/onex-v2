@@ -6,10 +6,7 @@ export interface NextAboutPageProps {}
 
 const NextAboutPage: React.FC<NextAboutPageProps> = () => {
   return (
-    <LandingLayout
-      seo={{ title: 'About Us' }}
-      darkHeader
-    >
+    <LandingLayout seo={{ title: 'About Us' }} darkHeader>
       <AboutPage />
     </LandingLayout>
   )

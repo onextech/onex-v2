@@ -16,10 +16,7 @@ export interface NextDigitalPageProps extends DigitalPageProps {}
 const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
   const { digital } = props
   return (
-    <LandingLayout
-      seo={digital.seo}
-      darkHeader
-    >
+    <LandingLayout seo={digital.seo} darkHeader>
       <DigitalPage digital={digital} />
     </LandingLayout>
   )

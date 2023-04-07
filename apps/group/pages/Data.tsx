@@ -17,10 +17,7 @@ export interface NextDataPageProps extends DataPageProps {}
 const NextDataPage: React.FC<NextDataPageProps> = (props) => {
   const { data, showcases } = props
   return (
-    <LandingLayout
-      seo={data.seo}
-      darkHeader
-    >
+    <LandingLayout seo={data.seo} darkHeader>
       <DataPage data={data} showcases={showcases} />
     </LandingLayout>
   )

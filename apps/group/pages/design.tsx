@@ -17,10 +17,7 @@ export interface NextDesignPageProps extends DesignPageProps {}
 const NextDesignPage: React.FC<NextDesignPageProps> = (props) => {
   const { design, showcases } = props
   return (
-    <LandingLayout
-      seo={design.seo}
-      darkHeader
-    >
+    <LandingLayout seo={design.seo} darkHeader>
       <DesignPage design={design} showcases={showcases} />
     </LandingLayout>
   )

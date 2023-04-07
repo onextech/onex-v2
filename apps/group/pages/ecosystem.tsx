@@ -25,10 +25,7 @@ export interface NextEcosystemPageProps {
 const NextEcosystemPage: React.FC<NextEcosystemPageProps> = (props) => {
   const { ecosystem } = props
   return (
-    <LandingLayout
-      seo={{ title: 'Ecosystem' }}
-      darkHeader
-    >
+    <LandingLayout seo={{ title: 'Ecosystem' }} darkHeader>
       <EcosystemPage ecosystem={ecosystem} />
     </LandingLayout>
   )

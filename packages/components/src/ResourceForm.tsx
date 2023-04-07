@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useState } from 'react'
 import { Form, FormSections } from '@gravis-os/form'
 import toast from 'react-hot-toast'
@@ -79,7 +80,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                     key: 'job_department',
                     name: 'job_department',
                     required: true,
-                    disableFirstOptionAsDefaultValue: true,
+                    props: { disableFirstOptionAsDefaultValue: true },
                     options: [
                       'IT',
                       'HR',
@@ -96,7 +97,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                     key: 'job_role',
                     name: 'job_role',
                     required: true,
-                    disableFirstOptionAsDefaultValue: true,
+                    props: { disableFirstOptionAsDefaultValue: true },
                     options: [
                       {
                         key: 'partner-director-founder',
@@ -121,7 +122,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                     key: 'company_size',
                     name: 'company_size',
                     required: true,
-                    disableFirstOptionAsDefaultValue: true,
+                    props: { disableFirstOptionAsDefaultValue: true },
                     options: [
                       { key: '1-10', value: '1-10', label: '1-10' },
                       { key: '11-50', value: '11-50', label: '11-50' },
