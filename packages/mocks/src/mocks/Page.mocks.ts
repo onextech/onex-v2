@@ -111,7 +111,7 @@ export const MOCK_DIGITAL_PAGE = {
     },
     benefits: {
       overline: 'What we do',
-      title: 'Our Suite of {title} Services',
+      title: 'Our Suite of Services',
       subtitle:
         "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
       maxWidth: 'lg',
@@ -298,7 +298,7 @@ export const MOCK_TECH_PAGE = {
     },
     benefits: {
       overline: 'What we do',
-      title: 'Our Suite of {title} Services',
+      title: 'Our Suite of Services',
       subtitle:
         "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
       maxWidth: 'lg',
@@ -485,9 +485,8 @@ export const MOCK_DATA_PAGE = {
   sections: {
     hero: {
       overline: 'Data',
-      title: 'Data is the New Gold',
-      subtitle:
-        'Maximise business growth through insight driven web digital. We put business first in everything we do.',
+      title: 'Data empowering the world’s decision makers.',
+      subtitle: 'Drive better business and policy decisions.',
     },
     summary: {
       title: 'Innovation that drives real impact.',
@@ -504,7 +503,7 @@ export const MOCK_DATA_PAGE = {
     },
     benefits: {
       overline: 'What we do',
-      title: 'Our Suite of {title} Services',
+      title: 'Our Suite of Services',
       subtitle:
         "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
       maxWidth: 'lg',
@@ -515,6 +514,11 @@ export const MOCK_DATA_PAGE = {
           title: 'Web Design',
           subtitle:
             'A conversion centred approach to creating web and product designs that drive action.',
+        },
+        {
+          fa_icon: 'fa-mug-hot',
+          title: 'Web Development',
+          subtitle: 'Build tailor-made websites that drive leads and sales.',
         },
         {
           fa_icon: 'fa-mug-hot',

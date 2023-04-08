@@ -3,8 +3,8 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderFadeToBottomBackgroundImageBlock,
   renderFourColumnGridBlock,
-  renderGhostButtonBlockItem,
-  renderHalfGridBlock, renderHeroWithBackgroundBlock,
+  renderHalfGridBlock,
+  renderHeroWithBackgroundBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Showcase } from '@onex/types'
@@ -46,7 +46,7 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         }),
         // HalfGrid
         renderHalfGridBlock({
-          hero_src: '/images/data_tech.png',
+          hero_src: '/images/ecosystem_tech.png',
           hero_alt: 'Data UI Collage',
           fullHeight: true,
           overline: 'What we do',
@@ -56,7 +56,7 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         }),
         renderHalfGridBlock({
           reverse: true,
-          hero_src: '/images/data_design.png',
+          hero_src: '/images/ecosystem_design.png',
           hero_alt: 'Data UI Collage',
           fullHeight: true,
           overline: 'What we do',
@@ -65,7 +65,7 @@ const DataPage: React.FC<DataPageProps> = (props) => {
             'Maximise business growth through insight driven web data. We put business first in everything we do.',
         }),
         renderHalfGridBlock({
-          hero_src: '/images/data_data.png',
+          hero_src: '/images/ecosystem_data.png',
           hero_alt: 'Data UI Collage',
           fullHeight: true,
           overline: 'What we do',
@@ -75,16 +75,16 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         }),
         renderHalfGridBlock({
           reverse: true,
-          hero_src: '/images/data_data.png',
+          hero_src: '/images/ecosystem_data.png',
           hero_alt: 'Data UI Collage',
           fullHeight: true,
           overline: 'What we do',
-          title: 'One X Data',
+          title: 'One X Digital',
           subtitle:
             'Maximise business growth through insight driven web data. We put business first in everything we do.',
         }),
         renderFadeToBottomBackgroundImageBlock({
-          hero_src: '/images/data_men.png',
+          hero_src: '/images/design_men.png',
           hero_alt: 'Two men working',
           titleProps: { type: 'h3', maxWidth: 'xl' },
           subtitleProps: {

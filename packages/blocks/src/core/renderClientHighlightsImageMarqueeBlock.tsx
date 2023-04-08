@@ -27,7 +27,6 @@ const renderClientHighlightsImageMarqueeBlock = (
         title: (
           <Stack spacing={2}>
             <ImageMarquee
-              gradient
               imageProps={{ rounded: true }}
               items={firstRowItems?.map(({ src, alt }) => ({
                 src,
@@ -36,7 +35,6 @@ const renderClientHighlightsImageMarqueeBlock = (
             />
             <ImageMarquee
               reverse
-              gradient
               imageProps={{ rounded: true }}
               items={secondRowItems?.map(({ src, alt }) => ({
                 src,

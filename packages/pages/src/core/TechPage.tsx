@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
+  renderClientHighlightsImageMarqueeBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
@@ -20,7 +21,7 @@ export interface TechPageProps {
 
 const TechPage: React.FC<TechPageProps> = (props) => {
   const { tech, showcases } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { appConfig, routeConfig, clientHighlights } = useLayout()
   const { overline, sections } = tech || {}
   const { hero, benefits, features, cta } = sections || {}
 
@@ -43,6 +44,8 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             href: routeConfig.CAREERS,
           },
         }),
+        // Marquee
+        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,

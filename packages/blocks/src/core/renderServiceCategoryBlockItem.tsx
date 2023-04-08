@@ -24,7 +24,6 @@ const renderServiceCategoryBlockItem = (
           variant: 'h3' as const,
           href,
           underline: 'none',
-          color: 'text.secondary',
           sx: { mb: 1 },
         },
       },
