@@ -7,9 +7,9 @@ import configs from '@app/configs'
 export const getStaticProps = PostCategoryDetail.getStaticProps({ configs })
 export const getStaticPaths = PostCategoryDetail.getStaticPaths()
 
-export interface NextPostsPageProps extends PostCategoryPageProps {}
+export interface NextPostCategoryPageProps extends PostCategoryPageProps {}
 
-const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
+const NextPostCategoryPage: React.FC<NextPostCategoryPageProps> = (props) => {
   const { posts, postCategory } = props
 
   return (
@@ -22,4 +22,4 @@ const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
   )
 }
 
-export default NextPostsPage
+export default NextPostCategoryPage

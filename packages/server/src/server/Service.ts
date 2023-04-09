@@ -5,6 +5,7 @@ import {
   getRelatedCrudItemsByTagTitle,
 } from '@gravis-os/utils'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -48,12 +49,10 @@ export const ServiceDetail = {
         },
       }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_SERVICES[MOCK_KEY].map(({ slug, category }) => ({
         params: { slug, categorySlug: category.slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

@@ -2,6 +2,7 @@ import { MOCK_SERVICE_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -58,12 +59,10 @@ export const ServiceCategoryDetail = {
         },
       }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_SERVICE_CATEGORYS[MOCK_KEY].map(({ slug }) => ({
         params: { categorySlug: slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

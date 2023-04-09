@@ -1,6 +1,7 @@
 import { MOCK_PRESS_RELEASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -38,12 +39,10 @@ export const PressReleaseDetail = {
         },
       }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_PRESS_RELEASES[MOCK_KEY].map(({ slug }) => ({
         params: { slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

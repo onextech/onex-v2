@@ -1,6 +1,7 @@
 import { MOCK_RESOURCES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -34,12 +35,10 @@ export const ResourceDetail = {
         },
       }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_RESOURCES[MOCK_KEY].map(({ slug }) => ({
         params: { slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

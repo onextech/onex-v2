@@ -2,6 +2,7 @@ import { MOCK_POSTS, MOCK_INDUSTRYS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -36,12 +37,10 @@ export const IndustryDetail = {
       ).slice(0, 3)
       return { props: { industry: industryPage, relatedPosts } }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_INDUSTRYS[MOCK_KEY].map(({ slug }) => ({
         params: { slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

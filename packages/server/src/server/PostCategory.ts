@@ -1,6 +1,7 @@
 import { MOCK_POST_CATEGORYS, MOCK_POSTS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 
 const { MOCK_KEY } = process.env
 
@@ -32,7 +33,6 @@ export const PostCategoryDetail = {
       const posts = MOCK_POSTS[MOCK_KEY].filter(
         ({ category_id }) => category_id === postCategory?.id
       )
-
       return {
         props: {
           posts,
@@ -40,12 +40,10 @@ export const PostCategoryDetail = {
         },
       }
     },
-  getStaticPaths: (): GetStaticPaths => async () => {
-    return {
+  getStaticPaths: (): GetStaticPaths =>
+    makeGetStaticPaths({
       paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(({ slug }) => ({
         params: { categorySlug: slug },
       })),
-      fallback: false,
-    }
-  },
+    }),
 }

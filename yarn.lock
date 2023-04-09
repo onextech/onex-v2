@@ -1697,6 +1697,17 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
+"@gravis-os/query@^0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.23.tgz#b234ad9301ad11f088fab8ad2f3e95918a84e084"
+  integrity sha512-yHGndCqWdxZ/kOzA4GQmXpgBpl/DHS4I270T28LzpAK//0W2/cRHovv1ZXHX5oqngG4lPGV2yjbVtAPj/UsZGw==
+  dependencies:
+    "@gravis-os/types" "*"
+    lodash "^4.17.21"
+    qs "^6.11.0"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
 "@gravis-os/rtl@*":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.2.tgz#9fb1fe32b6b223766c5af9c6bc52418e99d9d43e"
@@ -3977,6 +3988,11 @@ dayjs@^1.11.3:
   version "1.11.7"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.7.tgz#4b296922642f70999544d1144a2c25730fce63e2"
   integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
+
+debounce@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
 
 debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.4"
@@ -7706,7 +7722,7 @@ react-inlinesvg@^3.0.1:
     exenv "^1.2.2"
     react-from-dom "^0.6.2"
 
-react-intersection-observer@^9.4.0:
+react-intersection-observer@^9.4.0, react-intersection-observer@^9.4.3:
   version "9.4.3"
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.4.3.tgz#ec84ce0c25cad548075130ea045ac5c7adf908f3"
   integrity sha512-WNRqMQvKpupr6MzecAQI0Pj0+JQong307knLP4g/nBex7kYfIaZsPpXaIhKHR+oV8z+goUbH9e10j6lGRnTzlQ==
@@ -7772,6 +7788,13 @@ react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-use-measure@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-use-measure/-/react-use-measure-2.1.1.tgz#5824537f4ee01c9469c45d5f7a8446177c6cc4ba"
+  integrity sha512-nocZhN26cproIiIduswYpV5y5lQpSQS1y/4KuvUCjSKmw7ZWIS/+g3aFnX3WdBkyuGUtTLif3UTqnLLhbDoQig==
+  dependencies:
+    debounce "^1.2.1"
 
 react@^18.2.0:
   version "18.2.0"
