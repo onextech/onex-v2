@@ -327,6 +327,14 @@ export const MOCK_TECH_SERVICES = [
 
 export const MOCK_GROUP_SERVICES = [
   {
+    title: 'Chirashi Don Making',
+    slug: 'chirashi-don-making',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    category_id: 1,
+    exclusive_locales: ['jp'],
+  },
+  {
     title: 'Growth Strategy',
     slug: 'growth-strategy',
     subtitle:

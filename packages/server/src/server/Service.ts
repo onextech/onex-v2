@@ -6,6 +6,7 @@ import {
 } from '@gravis-os/utils'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -22,11 +23,9 @@ export const fetchServiceBySlug = (injectedSlug) => {
 export const ServiceDetail = {
   getStaticProps:
     ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
+    async (context) => {
       const service = fetchServiceBySlug(context.params.slug)
-
       const servicePage = getDynamicPage(service, configs)
-
       const serviceCategory = getCategoryFromCrudItem(
         service,
         MOCK_SERVICE_CATEGORYS[MOCK_KEY]
@@ -34,25 +33,31 @@ export const ServiceDetail = {
       const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
         ({ category_id }) => category_id === service?.category_id
       )
-
       const relatedPosts = getRelatedCrudItemsByTagTitle(
         MOCK_POSTS[MOCK_KEY],
         service?.title
       ).slice(0, 3)
 
-      return {
+      return makeGetStaticProps({
         props: {
           service: servicePage,
           serviceCategory,
           relatedServices,
           relatedPosts,
         },
-      }
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_SERVICES[MOCK_KEY].map(({ slug, category }) => ({
-        params: { slug, categorySlug: category.slug },
-      })),
+      paths: MOCK_SERVICES[MOCK_KEY].map(
+        ({ slug, category, exclusive_locales, blocked_locales }) => ({
+          params: {
+            slug,
+            categorySlug: category.slug,
+            exclusive_locales,
+            blocked_locales,
+          },
+        })
+      ),
     }),
 }
