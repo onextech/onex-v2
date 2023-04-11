@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -21,7 +22,7 @@ export const TechnologyList = {
     ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
     (context) => {
       const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]
-      return { props: { technologys } }
+      return makeGetStaticProps({ props: { technologys } })(context)
     },
 }
 
@@ -35,12 +36,16 @@ export const TechnologyDetail = {
         MOCK_POSTS[MOCK_KEY],
         technology?.title
       ).slice(0, 3)
-      return { props: { technology: technologyPage, relatedPosts } }
+      return makeGetStaticProps({
+        props: { technology: technologyPage, relatedPosts },
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_TECHNOLOGYS[MOCK_KEY].map(({ slug }) => ({
-        params: { slug },
-      })),
+      paths: MOCK_TECHNOLOGYS[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }

@@ -39,18 +39,20 @@ export const ServiceCategoryDetail = {
       ({ id }) => id !== serviceCategory?.id
     ).slice(0, 3)
 
-    return {
+    return makeGetStaticProps({
       props: {
         serviceCategory,
         services,
         otherServiceCategorys,
       },
-    }
+    })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_SERVICE_CATEGORYS[MOCK_KEY].map(({ slug }) => ({
-        params: { categorySlug: slug },
-      })),
+      paths: MOCK_SERVICE_CATEGORYS[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { categorySlug: slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }

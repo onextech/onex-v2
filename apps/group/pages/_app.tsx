@@ -14,6 +14,7 @@ export interface MyAppProps extends AppProps {
 const MyApp = (props: MyAppProps) => {
   const { Component, pageProps } = props
 
+  // TODO@Joel: Move layout to page level to fetch navConfig via getStaticProps
   return (
     <LayoutProvider>
       <AppProvider {...props}>

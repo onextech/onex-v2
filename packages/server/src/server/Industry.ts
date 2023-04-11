@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -17,12 +18,14 @@ export const fetchIndustryBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const IndustryList = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const industrys = MOCK_INDUSTRYS[MOCK_KEY]
-      return { props: { industrys } }
-    },
+  getStaticProps: ({
+    configs,
+  }: {
+    configs: GetDynamicPageConfigs
+  }): GetStaticProps =>
+    makeGetStaticProps({
+      props: { industrys: MOCK_INDUSTRYS[MOCK_KEY] },
+    }),
 }
 
 export const IndustryDetail = {
@@ -35,12 +38,17 @@ export const IndustryDetail = {
         MOCK_POSTS[MOCK_KEY],
         industry?.title
       ).slice(0, 3)
-      return { props: { industry: industryPage, relatedPosts } }
+
+      return makeGetStaticProps({
+        props: { industry: industryPage, relatedPosts },
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_INDUSTRYS[MOCK_KEY].map(({ slug }) => ({
-        params: { slug },
-      })),
+      paths: MOCK_INDUSTRYS[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }

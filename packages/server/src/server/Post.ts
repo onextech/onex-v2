@@ -6,6 +6,7 @@ import {
 } from '@gravis-os/utils'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -36,19 +37,26 @@ export const PostDetail = {
         post?.title
       ).slice(0, 3)
 
-      return {
+      return makeGetStaticProps({
         props: {
           post,
           postCategory,
           relatedServices,
           relatedPosts,
         },
-      }
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POSTS[MOCK_KEY].map(({ slug, category }) => ({
-        params: { slug, categorySlug: category.slug },
-      })),
+      paths: MOCK_POSTS[MOCK_KEY].map(
+        ({ slug, category, exclusive_locales, blocked_locales }) => ({
+          params: {
+            slug,
+            categorySlug: category.slug,
+            exclusive_locales,
+            blocked_locales,
+          },
+        })
+      ),
     }),
 }

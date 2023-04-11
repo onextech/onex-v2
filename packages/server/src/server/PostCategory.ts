@@ -2,6 +2,7 @@ import { MOCK_POST_CATEGORYS, MOCK_POSTS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -16,13 +17,17 @@ export const fetchPostCategoryBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const PostCategoryList = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const posts = MOCK_POSTS[MOCK_KEY]
-      const postCategorys = MOCK_POST_CATEGORYS[MOCK_KEY]
-      return { props: { posts, postCategorys } }
-    },
+  getStaticProps: ({
+    configs,
+  }: {
+    configs: GetDynamicPageConfigs
+  }): GetStaticProps =>
+    makeGetStaticProps({
+      props: {
+        posts: MOCK_POSTS[MOCK_KEY],
+        postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
+      },
+    }),
 }
 
 export const PostCategoryDetail = {
@@ -33,17 +38,19 @@ export const PostCategoryDetail = {
       const posts = MOCK_POSTS[MOCK_KEY].filter(
         ({ category_id }) => category_id === postCategory?.id
       )
-      return {
+      return makeGetStaticProps({
         props: {
           posts,
           postCategory,
         },
-      }
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(({ slug }) => ({
-        params: { categorySlug: slug },
-      })),
+      paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { categorySlug: slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }

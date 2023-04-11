@@ -2,6 +2,7 @@ import { MOCK_PRESS_RELEASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -16,33 +17,36 @@ export const fetchPressReleaseBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const PressReleaseList = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const pressReleases = MOCK_PRESS_RELEASES[MOCK_KEY]
-      return { props: { pressReleases } }
-    },
+  getStaticProps: ({
+    configs,
+  }: {
+    configs: GetDynamicPageConfigs
+  }): GetStaticProps =>
+    makeGetStaticProps({
+      props: { pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY] },
+    }),
 }
 
 export const PressReleaseDetail = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const pressRelease = fetchPressReleaseBySlug(context.params.slug)
-      const otherPressReleases = MOCK_PRESS_RELEASES[MOCK_KEY].filter(
-        ({ slug }) => slug !== context.params.slug
-      ).slice(0, 3)
-      return {
-        props: {
-          pressRelease,
-          otherPressReleases,
-        },
-      }
-    },
+  getStaticProps: (): GetStaticProps => (context) => {
+    const pressRelease = fetchPressReleaseBySlug(context.params.slug)
+    const otherPressReleases = MOCK_PRESS_RELEASES[MOCK_KEY].filter(
+      ({ slug }) => slug !== context.params.slug
+    ).slice(0, 3)
+
+    return makeGetStaticProps({
+      props: {
+        pressRelease,
+        otherPressReleases,
+      },
+    })(context)
+  },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_PRESS_RELEASES[MOCK_KEY].map(({ slug }) => ({
-        params: { slug },
-      })),
+      paths: MOCK_PRESS_RELEASES[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }

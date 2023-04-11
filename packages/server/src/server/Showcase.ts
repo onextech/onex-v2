@@ -2,6 +2,7 @@ import { MOCK_SHOWCASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -20,7 +21,7 @@ export const ShowcaseList = {
     ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
     (context) => {
       const showcases = MOCK_SHOWCASES[MOCK_KEY]
-      return { props: { showcases } }
+      return makeGetStaticProps({ props: { showcases } })(context)
     },
 }
 
@@ -30,7 +31,7 @@ export const ShowcaseDetail = {
     (context) => {
       const showcase = fetchShowcaseBySlug(context.params.slug)
       const showcasePage = getDynamicPage(showcase, configs)
-      return { props: { showcase: showcasePage } }
+      return makeGetStaticProps({ props: { showcase: showcasePage } })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({

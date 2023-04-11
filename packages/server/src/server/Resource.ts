@@ -2,6 +2,7 @@ import { MOCK_RESOURCES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
+import makeGetStaticProps from '../utils/makeGetStaticProps'
 
 const { MOCK_KEY } = process.env
 
@@ -16,12 +17,12 @@ export const fetchResourceBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const ResourceList = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const resources = MOCK_RESOURCES[MOCK_KEY]
-      return { props: { resources } }
-    },
+  getStaticProps: ({
+    configs,
+  }: {
+    configs: GetDynamicPageConfigs
+  }): GetStaticProps =>
+    makeGetStaticProps({ props: { resources: MOCK_RESOURCES[MOCK_KEY] } }),
 }
 
 export const ResourceDetail = {
@@ -29,16 +30,18 @@ export const ResourceDetail = {
     ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
     (context) => {
       const resource = fetchResourceBySlug(context.params.slug)
-      return {
+      return makeGetStaticProps({
         props: {
           resource,
         },
-      }
+      })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_RESOURCES[MOCK_KEY].map(({ slug }) => ({
-        params: { slug },
-      })),
+      paths: MOCK_RESOURCES[MOCK_KEY].map(
+        ({ slug, exclusive_locales, blocked_locales }) => ({
+          params: { slug, exclusive_locales, blocked_locales },
+        })
+      ),
     }),
 }
