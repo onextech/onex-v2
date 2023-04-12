@@ -1,25 +1,30 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { DataPage, DataPageProps } from '@onex/pages'
 import { MOCK_DATA_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
-import { GetStaticProps } from 'next'
-import { getDynamicPage } from '@onex/server'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { getDynamicPage, makeGetStaticProps } from '@onex/server'
 import configs from '@app/configs'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = (context) => {
   const data = getDynamicPage(MOCK_DATA_PAGE, configs)
   const showcases = MOCK_TECH_SHOWCASES
-  return { props: { data, showcases } }
+  return makeGetStaticProps({ props: { data, showcases } })(context)
 }
 
-export interface NextDataPageProps extends DataPageProps {}
+export interface NextDataPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps>,
+    DataPageProps {}
 
 const NextDataPage: React.FC<NextDataPageProps> = (props) => {
-  const { data, showcases } = props
+  const { data, showcases, pageProviderProps } = props
   return (
-    <LandingLayout seo={data.seo} darkHeader>
-      <DataPage data={data} showcases={showcases} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={data.seo} darkHeader>
+        <DataPage data={data} showcases={showcases} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

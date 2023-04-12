@@ -1,6 +1,6 @@
 import { CrudItem } from '@gravis-os/types'
 
-export interface Testimonial extends CrudItem {
+export interface ClientTestimonial extends CrudItem {
   avatar_src?: string
   avatar_alt?: string
   author_title?: string
@@ -9,4 +9,4 @@ export interface Testimonial extends CrudItem {
   rating_count?: number
 }
 
-export default Testimonial
+export default ClientTestimonial

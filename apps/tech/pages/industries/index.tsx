@@ -1,19 +1,24 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
-import { IndustrysPageProps, IndustrysPage } from '@onex/pages'
+import { LandingLayout } from '@onex/layouts'
+import { IndustrysPage, IndustrysPageProps } from '@onex/pages'
 import { IndustryList } from '@onex/server'
-import configs from '@app/configs'
+import { InferGetStaticPropsType } from 'next'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps = IndustryList.getStaticProps({ configs })
+export const getStaticProps = IndustryList.getStaticProps()
 
-export interface NextIndustrysPageProps extends IndustrysPageProps {}
+export interface NextIndustrysPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps>,
+    IndustrysPageProps {}
 
 const NextIndustrysPage: React.FC<NextIndustrysPageProps> = (props) => {
-  const { industrys } = props
+  const { industrys, pageProviderProps } = props
   return (
-    <LandingLayout seo={{ title: 'Industries' }}>
-      <IndustrysPage industrys={industrys} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Industries' }}>
+        <IndustrysPage industrys={industrys} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

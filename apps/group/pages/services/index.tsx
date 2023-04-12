@@ -1,22 +1,27 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { ServiceCategorysPage, ServiceCategorysPageProps } from '@onex/pages'
 import { ServiceCategoryList } from '@onex/server'
-import configs from '@app/configs'
+import { InferGetStaticPropsType } from 'next'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps = ServiceCategoryList.getStaticProps({ configs })
+export const getStaticProps = ServiceCategoryList.getStaticProps()
 
-export interface NextServicesPageProps extends ServiceCategorysPageProps {}
+export interface NextServicesPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps>,
+    ServiceCategorysPageProps {}
 
 const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
-  const { services, serviceCategorys } = props
+  const { services, serviceCategorys, pageProviderProps } = props
   return (
-    <LandingLayout seo={{ title: 'Services' }}>
-      <ServiceCategorysPage
-        services={services}
-        serviceCategorys={serviceCategorys}
-      />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Services' }}>
+        <ServiceCategorysPage
+          services={services}
+          serviceCategorys={serviceCategorys}
+        />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

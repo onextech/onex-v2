@@ -18,8 +18,8 @@ export * from './Industry.types'
 export type { default as Technology } from './Technology.types'
 export * from './Technology.types'
 
-export type { default as Testimonial } from './Testimonial.types'
-export * from './Testimonial.types'
+export type { default as ClientTestimonial } from './ClientTestimonial.types'
+export * from './ClientTestimonial.types'
 
 export type { default as ClientLogo } from './ClientLogo.types'
 export * from './ClientLogo.types'

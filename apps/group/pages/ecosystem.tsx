@@ -1,13 +1,14 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { EcosystemPage } from '@onex/pages'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
-import { GetStaticProps } from 'next'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Page } from '@onex/types'
-import { getDynamicPage } from '@onex/server'
+import { getDynamicPage, makeGetStaticProps } from '@onex/server'
 import configs from '@app/configs'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = (context) => {
   const ecosystem = getDynamicPage(
     {
       ...MOCK_GROUP_INDUSTRYS[0],
@@ -15,19 +16,22 @@ export const getStaticProps: GetStaticProps = () => {
     },
     configs
   )
-  return { props: { ecosystem } }
+  return makeGetStaticProps({ props: { ecosystem } })(context)
 }
 
-export interface NextEcosystemPageProps {
+export interface NextEcosystemPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps> {
   ecosystem: Page
 }
 
 const NextEcosystemPage: React.FC<NextEcosystemPageProps> = (props) => {
-  const { ecosystem } = props
+  const { ecosystem, pageProviderProps } = props
   return (
-    <LandingLayout seo={{ title: 'Ecosystem' }} darkHeader>
-      <EcosystemPage ecosystem={ecosystem} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Ecosystem' }} darkHeader>
+        <EcosystemPage ecosystem={ecosystem} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

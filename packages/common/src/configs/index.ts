@@ -9,9 +9,6 @@ export * from './routeConfig'
 
 export * from './navConfig'
 
-export { default as footerNavConfig } from './footerNavConfig'
-export * from './footerNavConfig'
-
 export { default as legalConfig } from './legalConfig'
 export * from './legalConfig'
 

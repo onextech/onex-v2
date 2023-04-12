@@ -6,3 +6,6 @@ export * from './AnalyticsProvider'
 
 export { default as SeoProvider } from './SeoProvider'
 export * from './SeoProvider'
+
+export { default as PageProvider } from './PageProvider'
+export * from './PageProvider'

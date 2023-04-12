@@ -1,23 +1,24 @@
 import React from 'react'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { AboutPage } from '@onex/pages'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { makeGetStaticProps } from '@onex/server'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common', 'footer'])),
-  },
-})
+export const getStaticProps: GetStaticProps = makeGetStaticProps()
 
 export interface NextHomePageProps
   extends InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextHomePage: React.FC<NextHomePageProps> = () => {
+const NextHomePage: React.FC<NextHomePageProps> = (props) => {
+  const { pageProviderProps } = props
+
   return (
-    <LandingLayout seo={{ title: 'Home' }} darkHeader>
-      <AboutPage />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Home' }} darkHeader>
+        <AboutPage />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

@@ -1,19 +1,25 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { ShowcasesPage, ShowcasesPageProps } from '@onex/pages'
 import { ShowcaseList } from '@onex/server'
 import configs from '@app/configs'
+import { PageProvider } from '@onex/providers'
+import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ShowcaseList.getStaticProps({ configs })
 
-export interface NextShowcasesPageProps extends ShowcasesPageProps {}
+export interface NextShowcasesPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps>,
+    ShowcasesPageProps {}
 
 const NextShowcasesPage: React.FC<NextShowcasesPageProps> = (props) => {
-  const { showcases } = props
+  const { showcases, pageProviderProps } = props
   return (
-    <LandingLayout seo={{ title: 'Showcases' }}>
-      <ShowcasesPage showcases={showcases} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Showcases' }}>
+        <ShowcasesPage showcases={showcases} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

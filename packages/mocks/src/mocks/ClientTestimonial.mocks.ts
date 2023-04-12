@@ -1,4 +1,4 @@
-export const MOCK_GROUP_TESTIMONIALS = [
+export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   {
     title:
       'We regard the team as co-founders in our business. The entire team from team has invested an incredible amount of time to truly understand our business, our users and their needs.',
@@ -14,9 +14,9 @@ export const MOCK_GROUP_TESTIMONIALS = [
   ...item,
 }))
 
-export const MOCK_TECH_TESTIMONIALS = MOCK_GROUP_TESTIMONIALS
+export const MOCK_TECH_CLIENT_TESTIMONIALS = MOCK_GROUP_CLIENT_TESTIMONIALS
 
-export const MOCK_TESTIMONIALS = {
-  GROUP: MOCK_GROUP_TESTIMONIALS,
-  TECH: MOCK_TECH_TESTIMONIALS,
+export const MOCK_CLIENT_TESTIMONIALS = {
+  GROUP: MOCK_GROUP_CLIENT_TESTIMONIALS,
+  TECH: MOCK_TECH_CLIENT_TESTIMONIALS,
 }

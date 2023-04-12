@@ -110,3 +110,8 @@ export const MOCK_GROUP_CLIENT_LOGOS = [
 ].map((item, i) => ({ ...item, id: i }))
 
 export const MOCK_TECH_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
+
+export const MOCK_CLIENT_LOGOS = {
+  GROUP: MOCK_GROUP_CLIENT_LOGOS,
+  TECH: MOCK_TECH_CLIENT_LOGOS,
+}

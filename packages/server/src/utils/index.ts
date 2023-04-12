@@ -3,3 +3,9 @@ export * from './getDynamicPage'
 
 export { default as makeGetStaticPaths } from './makeGetStaticPaths'
 export * from './makeGetStaticPaths'
+
+export { default as makeGetStaticProps } from './makeGetStaticProps'
+export * from './makeGetStaticProps'
+
+export { default as withLayoutProviderPropsToStaticProps } from './withLayoutProviderPropsToStaticProps'
+export * from './withLayoutProviderPropsToStaticProps'

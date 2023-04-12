@@ -16,7 +16,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
 
   const {
     logo: Logo,
-    testimonials,
+    clientTestimonials,
     routeConfig,
     serviceCategorys,
   } = useLayout()
@@ -94,7 +94,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                   },
                   items: [
                     ...renderTestimonialBlockItem({
-                      item: testimonials[0],
+                      item: clientTestimonials[0],
                     }),
                     ...renderContactLinksBlockItems(),
                   ],

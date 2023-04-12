@@ -1,19 +1,8 @@
 import { GetStaticPropsResult } from 'next/types'
 import { withLocalesToStaticProps } from '@gravis-os/utils'
 import flowRight from 'lodash/flowRight'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-const withServerSideTranslationsToStaticProps =
-  (context) => async (staticPropsResult) => {
-    const { locale } = context
-    return {
-      ...staticPropsResult,
-      props: {
-        ...staticPropsResult?.props,
-        ...(await serverSideTranslations(locale, ['common', 'footer'])),
-      },
-    }
-  }
+import withLayoutProviderPropsToStaticProps from './withLayoutProviderPropsToStaticProps'
+import withServerSideTranslationsToStaticProps from './withServerSideTranslationsToStaticProps'
 
 /**
  * An abstracted getStaticProps function to set default parameters
@@ -22,9 +11,15 @@ const withServerSideTranslationsToStaticProps =
  * @param staticPropsResult
  */
 const makeGetStaticProps =
-  (staticPropsResult: GetStaticPropsResult<unknown>) => async (context) => {
+  (
+    staticPropsResult:
+      | GetStaticPropsResult<unknown>
+      | Record<string, never> = {}
+  ) =>
+  async (context) => {
     return flowRight([
-      await withServerSideTranslationsToStaticProps(context),
+      withServerSideTranslationsToStaticProps(context),
+      withLayoutProviderPropsToStaticProps(context),
       withLocalesToStaticProps(context),
     ])(staticPropsResult)
   }

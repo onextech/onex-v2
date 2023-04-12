@@ -1,22 +1,21 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { TechPage, TechPageProps } from '@onex/pages'
 import { MOCK_TECH_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { getDynamicPage } from '@onex/server'
+import { getDynamicPage, makeGetStaticProps } from '@onex/server'
 import configs from '@app/configs'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const tech = getDynamicPage(MOCK_TECH_PAGE, configs)
   const showcases = MOCK_TECH_SHOWCASES
-  return {
+  return makeGetStaticProps({
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'footer'])),
       tech,
       showcases,
     },
-  }
+  })(context)
 }
 
 export interface NextTechPageProps
@@ -24,12 +23,14 @@ export interface NextTechPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextTechPage: React.FC<NextTechPageProps> = (props) => {
-  const { tech, showcases } = props
+  const { tech, showcases, pageProviderProps } = props
 
   return (
-    <LandingLayout seo={tech.seo} darkHeader>
-      <TechPage tech={tech} showcases={showcases || MOCK_TECH_SHOWCASES} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={tech.seo} darkHeader>
+        <TechPage tech={tech} showcases={showcases || MOCK_TECH_SHOWCASES} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

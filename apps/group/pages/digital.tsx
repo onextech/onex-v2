@@ -1,24 +1,29 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import { MOCK_DIGITAL_PAGE } from '@onex/mocks'
-import { GetStaticProps } from 'next'
-import { getDynamicPage } from '@onex/server'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { getDynamicPage, makeGetStaticProps } from '@onex/server'
 import configs from '@app/configs'
+import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = () => {
+export const getStaticProps: GetStaticProps = (context) => {
   const digital = getDynamicPage(MOCK_DIGITAL_PAGE, configs)
-  return { props: { digital } }
+  return makeGetStaticProps({ props: { digital } })(context)
 }
 
-export interface NextDigitalPageProps extends DigitalPageProps {}
+export interface NextDigitalPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps>,
+    DigitalPageProps {}
 
 const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
-  const { digital } = props
+  const { digital, pageProviderProps } = props
   return (
-    <LandingLayout seo={digital.seo} darkHeader>
-      <DigitalPage digital={digital} />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={digital.seo} darkHeader>
+        <DigitalPage digital={digital} />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

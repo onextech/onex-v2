@@ -4,8 +4,13 @@ import {
   AppConfig,
   ClientHighlight,
   ClientLogo,
+  Industry,
+  Page,
+  PostCategory,
+  Service,
   ServiceCategory,
-  Testimonial,
+  Technology,
+  ClientTestimonial,
 } from '@onex/types'
 import { LandingLayoutProps as GvsLandingLayoutProps } from '@gravis-os/landing'
 
@@ -13,19 +18,27 @@ import { LandingLayoutProps as GvsLandingLayoutProps } from '@gravis-os/landing'
 // Types
 // ==============================
 export interface LayoutContextValue {
-  logo: React.JSXElementConstructor<{ href?: string }>
-  // Layout configs
+  // TODO@Joel: Fix this type, we will no longer use an import
+  logo?: React.JSXElementConstructor<{ href?: string }>
+
+  // Configs
   appConfig?: AppConfig
   routeConfig?: Record<string, string>
-  headerNavConfig?: GvsLandingLayoutProps['headerProps']['navItems']['left']
-  footerNavConfig?: GvsLandingLayoutProps['footerProps']['navItems']
   socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
   legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
   localeConfig?: {
     locales?: Array<{ key: string; isoAlpha2: string; title: string }>
   }
-  testimonials?: Testimonial[]
+  systemConfig?: { isOpenOnHover?: boolean }
+
+  // Modules
+  services?: Service[]
+  industrys?: Industry[]
+  postCategorys?: PostCategory[]
+  pages?: Page[]
+  technologys?: Technology[]
   serviceCategorys?: ServiceCategory[]
+  clientTestimonials?: ClientTestimonial[]
   clientLogos?: ClientLogo[]
   clientHighlights?: ClientHighlight[]
 }
@@ -35,8 +48,13 @@ export interface LayoutContextValue {
 // ==============================
 export const layoutContextInitialState = {
   logo: null,
-  testimonials: [],
+  services: [],
+  industrys: [],
+  postCategorys: [],
+  pages: [],
+  technologys: [],
   serviceCategorys: [],
+  clientTestimonials: [],
   clientLogos: [],
   clientHighlights: [],
 }

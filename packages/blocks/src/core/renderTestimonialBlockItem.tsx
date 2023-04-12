@@ -1,10 +1,10 @@
 import React from 'react'
 import { Ratings } from '@gravis-os/ui'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
-import { Testimonial } from '@onex/types'
+import { ClientTestimonial } from '@onex/types'
 
 export interface RenderTestimonialBlockItemProps {
-  item: Testimonial
+  item: ClientTestimonial
 }
 
 const renderTestimonialBlockItem = (props: RenderTestimonialBlockItemProps) => {

@@ -1,14 +1,23 @@
 import React from 'react'
-import LandingLayout from '@app/layouts/LandingLayout'
+import { LandingLayout } from '@onex/layouts'
 import { MissionPage } from '@onex/pages'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { PageProvider } from '@onex/providers'
+import { makeGetStaticProps } from '@onex/server'
 
-export interface NextMissionPageProps {}
+export const getStaticProps: GetStaticProps = makeGetStaticProps()
 
-const NextMissionPage: React.FC<NextMissionPageProps> = () => {
+export interface NextMissionPageProps
+  extends InferGetStaticPropsType<typeof getStaticProps> {}
+
+const NextMissionPage: React.FC<NextMissionPageProps> = (props) => {
+  const { pageProviderProps } = props
   return (
-    <LandingLayout seo={{ title: 'Mission' }} darkHeader>
-      <MissionPage />
-    </LandingLayout>
+    <PageProvider {...pageProviderProps}>
+      <LandingLayout seo={{ title: 'Mission' }} darkHeader>
+        <MissionPage />
+      </LandingLayout>
+    </PageProvider>
   )
 }
 

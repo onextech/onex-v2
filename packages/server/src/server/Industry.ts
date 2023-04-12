@@ -18,11 +18,7 @@ export const fetchIndustryBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const IndustryList = {
-  getStaticProps: ({
-    configs,
-  }: {
-    configs: GetDynamicPageConfigs
-  }): GetStaticProps =>
+  getStaticProps: (): GetStaticProps =>
     makeGetStaticProps({
       props: { industrys: MOCK_INDUSTRYS[MOCK_KEY] },
     }),
