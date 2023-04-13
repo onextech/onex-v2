@@ -7,7 +7,7 @@ const withServerSideTranslationsToStaticProps =
       ...staticPropsResult,
       props: {
         ...staticPropsResult?.props,
-        ...(await serverSideTranslations(locale, ['common', 'footer'])),
+        ...(await serverSideTranslations(locale, ['common'])),
       },
     }
   }

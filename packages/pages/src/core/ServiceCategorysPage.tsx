@@ -7,7 +7,6 @@ import {
   renderServiceCategoryBlockItem,
   RenderServiceCategoryBlockItemProps,
 } from '@onex/blocks'
-import { useTranslation } from 'next-i18next'
 import chunk from 'lodash/chunk'
 
 export interface ServiceCategorysPageProps {
@@ -17,8 +16,6 @@ export interface ServiceCategorysPageProps {
 
 const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
   const { services, serviceCategorys } = props
-
-  const { t } = useTranslation('common')
   const { routeConfig } = useLayout()
 
   const categoryWithServices = getCategoryWithItemsAndHref<
@@ -39,9 +36,7 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
             { type: 'overline', title: 'Services' },
             {
               type: 'h1',
-              title:
-                t('blog.appDir.question') ||
-                'Craft experiences that touch hearts and move markets.',
+              title: 'Craft experiences that touch hearts and move markets.',
             },
             {
               type: 'subtitle1',
