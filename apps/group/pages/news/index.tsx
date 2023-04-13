@@ -3,7 +3,6 @@ import { LandingLayout } from '@onex/layouts'
 import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
 import { PressRelease } from '@onex/types'
 import { PressReleaseList } from '@onex/server'
-
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 

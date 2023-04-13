@@ -8,7 +8,7 @@ import {
   MOCK_PAGES,
   MOCK_POST_CATEGORYS,
   MOCK_SERVICE_CATEGORYS,
-  MOCK_SERVICES,
+  MOCK_SERVICES, MOCK_SHOWCASES,
   MOCK_SITE,
   MOCK_TECHNOLOGYS,
   MOCK_WORKSPACES,
@@ -55,6 +55,7 @@ const getLayoutProviderProps = ({ context }) => {
       ...technology,
       href: `${routeConfig.TECHNOLOGYS}/${technology.slug}`,
     })),
+    showcases: MOCK_SHOWCASES[MOCK_KEY],
     workspaces: MOCK_WORKSPACES,
   }
 }

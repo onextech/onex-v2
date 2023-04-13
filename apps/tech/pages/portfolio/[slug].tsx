@@ -2,7 +2,6 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ShowcasePage, ShowcasePageProps } from '@onex/pages'
 import { ShowcaseDetail } from '@onex/server'
-
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 

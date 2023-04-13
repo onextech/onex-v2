@@ -9,6 +9,7 @@ import {
   PostCategory,
   Service,
   ServiceCategory,
+  Showcase,
   Site,
   Technology,
   Workspace,
@@ -34,6 +35,7 @@ export interface LayoutContextValue {
   postCategorys?: PostCategory[]
   pages?: Page[]
   technologys?: Technology[]
+  showcases?: Showcase[]
   serviceCategorys?: ServiceCategory[]
   clientTestimonials?: ClientTestimonial[]
   clientLogos?: ClientLogo[]
@@ -50,6 +52,7 @@ export const layoutContextInitialState = {
   postCategorys: [],
   pages: [],
   technologys: [],
+  showcases: [],
   serviceCategorys: [],
   clientTestimonials: [],
   clientLogos: [],

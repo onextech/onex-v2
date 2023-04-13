@@ -2,7 +2,6 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ServicePage, ServicePageProps } from '@onex/pages'
 import { ServiceDetail } from '@onex/server'
-
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 

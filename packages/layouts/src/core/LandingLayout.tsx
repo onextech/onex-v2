@@ -51,6 +51,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     postCategorys,
     technologys,
     pages,
+    showcases,
     workspaces,
   } = useLayout()
 
@@ -149,7 +150,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    { key: 'showcase', title: 'Showcase', href: routeConfig.SHOWCASES },
+    showcases?.length && {
+      key: 'showcase',
+      title: 'Showcase',
+      href: routeConfig.SHOWCASES,
+    },
     technologys?.length && {
       key: 'technologys',
       title: 'Technologies',
@@ -499,7 +504,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                             title: 'Learn More',
                             titleProps: {
                               rightCaret: true,
-                              href: `${site.company_absolute_url}${routeConfig.ECOSYSTEM}`,
+                              href: `${site.company_absolute_url}${routeConfig.WORKSPACES}`,
                               color: 'secondary',
                               sx: { mt: 2 },
                               variant: 'body2',

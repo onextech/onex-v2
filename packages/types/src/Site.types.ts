@@ -6,8 +6,8 @@ export interface SiteLocale {
 
 interface Site {
   // Seo
-  meta_title?: string
-  meta_description?: string
+  seo_meta_title?: string
+  seo_meta_description?: string
   google_tag_manager_id?: string
 
   // Logo
@@ -32,11 +32,6 @@ interface Site {
   // Address
   office_title?: string
   office_address?: string
-
-  // Legal
-  terms_absolute_url?: string
-  privacy_absolute_url?: string
-  cookies_absolute_url?: string
 
   // Locale
   locales?: SiteLocale[]

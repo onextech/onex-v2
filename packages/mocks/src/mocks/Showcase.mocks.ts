@@ -44,5 +44,6 @@ export const MOCK_TECH_SHOWCASES = [
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
 export const MOCK_SHOWCASES = {
+  GROUP: [],
   TECH: MOCK_TECH_SHOWCASES,
 }
