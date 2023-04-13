@@ -12,7 +12,7 @@ const routeConfig = {
   DATA: '/data',
   // Models
   WORKSPACES: '/ecosystem',
-  SHOWCASES: '/showcase',
+  SHOWCASES: '/portfolio',
   SERVICES: '/services',
   TECHNOLOGYS: '/technologies',
   INDUSTRYS: '/industries',
