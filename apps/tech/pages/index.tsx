@@ -7,8 +7,11 @@ import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = async (context) => {
+  // supabaseClient.from('site').select('*').single().where('workspace_id', 1)
   const site = fetchSite()
+  // supabaseClient.from('page').select('*').single().where('slug', 'tech').where('workspace_id', 1)
   const tech = getDynamicPage(MOCK_TECH_PAGE, site)
+  // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_TECH_SHOWCASES
   return makeGetStaticProps({
     props: {
