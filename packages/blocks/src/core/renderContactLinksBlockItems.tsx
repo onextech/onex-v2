@@ -7,8 +7,8 @@ import { useLayout } from '@onex/providers'
 export interface RenderContactLinksBlockItemsProps {}
 
 const renderContactLinksBlockItems = () => {
-  const { appConfig } = useLayout()
-  const { generalEmail, generalHotline, generalWhatsappHotline } = appConfig
+  const { site } = useLayout()
+  const { general_email, general_phone, general_whatsapp } = site
 
   return [
     {
@@ -20,20 +20,20 @@ const renderContactLinksBlockItems = () => {
       {
         startIcon: <EmailOutlinedIcon />,
         overline: 'Submit a general inquiry',
-        title: generalEmail,
-        href: `mailto:${generalEmail}`,
+        title: general_email,
+        href: `mailto:${general_email}`,
       },
       {
         startIcon: <LocalPhoneOutlinedIcon sx={{ fill: 'green' }} />,
         overline: 'General hotline',
-        title: generalHotline,
-        href: `tel:${generalHotline.replaceAll(' ', '')}`,
+        title: general_phone,
+        href: `tel:${general_phone.replaceAll(' ', '')}`,
       },
       {
         startIcon: <WhatsAppIcon style={{ fill: 'green' }} />,
         overline: 'WhatsApp',
-        title: generalWhatsappHotline,
-        href: `https://wa.me/${generalWhatsappHotline.replaceAll(' ', '')}`,
+        title: general_whatsapp,
+        href: `https://wa.me/${general_whatsapp.replaceAll(' ', '')}`,
         titleProps: { targetBlank: true },
       },
     ]

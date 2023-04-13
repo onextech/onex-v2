@@ -1,8 +1,9 @@
 import { MOCK_SHOWCASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import getDynamicPage from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { fetchSite } from './Site'
 
 const { MOCK_KEY } = process.env
 
@@ -17,22 +18,19 @@ export const fetchShowcaseBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const ShowcaseList = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const showcases = MOCK_SHOWCASES[MOCK_KEY]
-      return makeGetStaticProps({ props: { showcases } })(context)
-    },
+  getStaticProps: (): GetStaticProps => (context) => {
+    const showcases = MOCK_SHOWCASES[MOCK_KEY]
+    return makeGetStaticProps({ props: { showcases } })(context)
+  },
 }
 
 export const ShowcaseDetail = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const showcase = fetchShowcaseBySlug(context.params.slug)
-      const showcasePage = getDynamicPage(showcase, configs)
-      return makeGetStaticProps({ props: { showcase: showcasePage } })(context)
-    },
+  getStaticProps: (): GetStaticProps => (context) => {
+    const showcase = fetchShowcaseBySlug(context.params.slug)
+    const site = fetchSite()
+    const showcasePage = getDynamicPage(showcase, site)
+    return makeGetStaticProps({ props: { showcase: showcasePage } })(context)
+  },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
       paths: MOCK_SHOWCASES[MOCK_KEY].map(({ slug }) => ({

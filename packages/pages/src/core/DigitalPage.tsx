@@ -19,7 +19,7 @@ export interface DigitalPageProps {
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
   const { digital } = props
-  const { appConfig, routeConfig, clientLogos, clientHighlights } = useLayout()
+  const { site, routeConfig, clientLogos, clientHighlights } = useLayout()
   const { sections } = digital || {}
   const { cta, callout, halfGrids, hero, benefits, features, faqs, checklist } =
     sections || {}
@@ -81,7 +81,7 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

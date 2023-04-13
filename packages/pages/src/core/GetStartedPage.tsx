@@ -6,6 +6,7 @@ import {
   renderContactLinksBlockItems,
   renderTestimonialBlockItem,
 } from '@onex/blocks'
+import { Image } from '@gravis-os/ui'
 
 export interface GetStartedPageProps {
   fullScreen?: boolean
@@ -14,12 +15,7 @@ export interface GetStartedPageProps {
 const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
   const { fullScreen } = props
 
-  const {
-    logo: Logo,
-    clientTestimonials,
-    routeConfig,
-    serviceCategorys,
-  } = useLayout()
+  const { logoProps, clientTestimonials, serviceCategorys } = useLayout()
 
   return (
     <Blocks
@@ -47,11 +43,11 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     },
                   },
                   items: [
-                    ...(Logo
+                    ...(logoProps
                       ? [
                           {
                             type: 'jsx',
-                            title: <Logo href={routeConfig.HOME} />,
+                            title: <Image {...logoProps} />,
                             boxProps: { sx: { mb: 5 } },
                           },
                         ]

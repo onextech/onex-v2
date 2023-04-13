@@ -1,9 +1,10 @@
 import { MOCK_POSTS, MOCK_INDUSTRYS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
-import getDynamicPage, { GetDynamicPageConfigs } from '../utils/getDynamicPage'
+import getDynamicPage from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { fetchSite } from './Site'
 
 const { MOCK_KEY } = process.env
 
@@ -25,20 +26,19 @@ export const IndustryList = {
 }
 
 export const IndustryDetail = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const industry = fetchIndustryBySlug(context.params.slug)
-      const industryPage = getDynamicPage(industry, configs)
-      const relatedPosts = getRelatedCrudItemsByTagTitle(
-        MOCK_POSTS[MOCK_KEY],
-        industry?.title
-      ).slice(0, 3)
+  getStaticProps: (): GetStaticProps => (context) => {
+    const industry = fetchIndustryBySlug(context.params.slug)
+    const site = fetchSite()
+    const industryPage = getDynamicPage(industry, site)
+    const relatedPosts = getRelatedCrudItemsByTagTitle(
+      MOCK_POSTS[MOCK_KEY],
+      industry?.title
+    ).slice(0, 3)
 
-      return makeGetStaticProps({
-        props: { industry: industryPage, relatedPosts },
-      })(context)
-    },
+    return makeGetStaticProps({
+      props: { industry: industryPage, relatedPosts },
+    })(context)
+  },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
       paths: MOCK_INDUSTRYS[MOCK_KEY].map(

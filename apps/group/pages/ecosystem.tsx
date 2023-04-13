@@ -4,17 +4,17 @@ import { EcosystemPage } from '@onex/pages'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Page } from '@onex/types'
-import { getDynamicPage, makeGetStaticProps } from '@onex/server'
-import configs from '@app/configs'
+import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = (context) => {
+  const site = fetchSite()
   const ecosystem = getDynamicPage(
     {
       ...MOCK_GROUP_INDUSTRYS[0],
       title: 'Ecosystem',
     },
-    configs
+    site
   )
   return makeGetStaticProps({ props: { ecosystem } })(context)
 }

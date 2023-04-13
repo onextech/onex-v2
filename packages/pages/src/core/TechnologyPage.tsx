@@ -19,7 +19,7 @@ export interface TechnologyPageProps {
 
 const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
   const { technology, relatedPosts } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { site, routeConfig } = useLayout()
   const { overline, sections } = technology || {}
   const { benefits, callout, features, checklist, faqs, cta } = sections || {}
 
@@ -63,7 +63,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

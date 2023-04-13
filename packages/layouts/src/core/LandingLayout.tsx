@@ -1,7 +1,7 @@
 import React from 'react'
 import merge from 'lodash/merge'
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
-import { Button, LocalePicker } from '@gravis-os/ui'
+import { Button, Image, LocalePicker } from '@gravis-os/ui'
 import {
   Block,
   Blocks,
@@ -12,15 +12,12 @@ import { useUserPreferences } from '@onex/theme'
 import { ContactCallout } from '@onex/components'
 import { useLayout } from '@onex/providers'
 import { GetStartedPage } from '@onex/pages'
-import Logo from '@onex/group/src/components/Logo'
 import {
-  headerNavConfig as commonHeaderNavConfig,
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
   RenderHeaderMenuMobileBlockItemProps,
 } from '@onex/blocks'
-import { brands } from '@onex/common'
 
 // Style Constants
 const commonGridProps = { spacing: 0 }
@@ -40,12 +37,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
   const {
     // Configs
-    appConfig,
-    legalConfig,
-    socialMediaConfig,
+    site,
     routeConfig,
-    localeConfig,
-    systemConfig,
+
+    // Calculated
+    logoProps,
+    socialMediaItems,
+    legalItems,
 
     // Modules
     services,
@@ -53,14 +51,17 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     postCategorys,
     technologys,
     pages,
+    workspaces,
   } = useLayout()
-  const { isOpenOnHover } = systemConfig
 
+  // Logo
+  const logoJsx = <Image {...logoProps} />
+
+  // Navs
   const headerNavConfig = [
     {
       key: 'logo',
-      // TODO@Joel: This logo needs to be dynamically imported
-      title: <Logo />,
+      title: logoJsx,
       href: '/',
       offsetLeft: true,
       showOnMobileBar: true,
@@ -70,7 +71,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'services',
       title: 'Services',
       fullWidth: true,
-      isOpenOnHover,
+      isOpenOnHover: site.nav_is_open_on_hover,
       items: services.map((service) => ({
         key: service.title,
         title: (
@@ -154,7 +155,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       title: 'Technologies',
       href: routeConfig.TECHNOLOGYS,
       fullWidth: true,
-      isOpenOnHover,
+      isOpenOnHover: site.nav_is_open_on_hover,
       items: technologys.map((technology) => ({
         key: technology.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(technology)} />,
@@ -230,7 +231,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'industrys',
       title: 'Industries',
       fullWidth: true,
-      isOpenOnHover,
+      isOpenOnHover: site.nav_is_open_on_hover,
       items: industrys.map((industry) => ({
         key: industry.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(industry)} />,
@@ -306,7 +307,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'insights',
       title: 'Insights',
       fullWidth: true,
-      isOpenOnHover,
+      isOpenOnHover: site.nav_is_open_on_hover,
       items: postCategorys.map((postCategory) => ({
         key: postCategory.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
@@ -382,7 +383,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'company',
       title: 'Company',
       fullWidth: true,
-      isOpenOnHover,
+      isOpenOnHover: site.nav_is_open_on_hover,
       items: pages.map((page) => ({
         key: page.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,
@@ -423,7 +424,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                             title: 'Learn More',
                             titleProps: {
                               rightCaret: true,
-                              href: `${appConfig.companyAbsoluteUrl}${routeConfig.ABOUT}`,
+                              href: `${site.company_absolute_url}${routeConfig.ABOUT}`,
                               color: 'secondary',
                               sx: { mt: 2 },
                               variant: 'body2',
@@ -453,7 +454,81 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    ...commonHeaderNavConfig,
+    {
+      key: 'ecosystem',
+      title: 'Ecosystem',
+      fullWidth: true,
+      isOpenOnHover: site.nav_is_open_on_hover,
+      items: workspaces.map((workspace) => ({
+        key: workspace.title,
+        title: <Block {...renderHeaderMenuMobileBlockItem(workspace)} />,
+      })),
+      renderItems: () => {
+        return (
+          <Blocks
+            items={[
+              {
+                key: 'grid',
+                pt: { xs: 10, md: 5 },
+                pb: 6,
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
+                items: [
+                  {
+                    type: 'grid',
+                    gridProps: commonGridProps,
+                    gridItems: [
+                      {
+                        ...commonLeftGridItemProps,
+                        items: [
+                          {
+                            type: 'h5',
+                            title: 'Our Ecosystem',
+                            titleProps: { gutterBottom: true },
+                          },
+                          {
+                            type: 'body1',
+                            title: 'Learn more about how we function.',
+                            titleProps: {
+                              color: 'text.secondary',
+                              maxWidth: true,
+                            },
+                          },
+                          {
+                            type: 'link',
+                            title: 'Learn More',
+                            titleProps: {
+                              rightCaret: true,
+                              href: `${site.company_absolute_url}${routeConfig.ECOSYSTEM}`,
+                              color: 'secondary',
+                              sx: { mt: 2 },
+                              variant: 'body2',
+                            },
+                          },
+                        ],
+                      },
+                      {
+                        ...commonRightGridItemProps,
+                        items: [
+                          {
+                            type: 'grid',
+                            gridProps: { spacing: 2 },
+                            gridItemProps: { xs: 6, md: 6, lg: 4 },
+                            gridItems: workspaces.map((workspace) =>
+                              renderHeaderMenuBlockItem(workspace)
+                            ),
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        )
+      },
+    },
   ]
   const footerNavConfig = [
     {
@@ -474,7 +549,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     {
       key: 'ecosystem',
       title: 'Ecosystem',
-      items: brands,
+      items: workspaces,
     },
     {
       key: 'company',
@@ -482,12 +557,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       href: routeConfig.ABOUT,
       items: pages,
     },
-  ]
+  ].filter(Boolean)
 
   const defaultLandingLayoutProps = {
     disableGutters: true,
     seo: {
-      titleTemplate: `%s | ${appConfig.title}`,
+      titleTemplate: `%s | ${site.title}`,
       ...seo,
     },
     headerProps: {
@@ -504,7 +579,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             hideInMobileDrawer: true,
             children: (
               <LocalePicker
-                locales={localeConfig.locales}
+                locales={site.locales.map(({ iso_alpha_2, ...rest }) => ({
+                  ...rest,
+                  isoAlpha2: iso_alpha_2,
+                }))}
                 disableBackdrop
                 isOpenOnHover
               />
@@ -545,8 +623,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
     footerProps: {
       callout: <ContactCallout />,
-      logo: <Logo href={routeConfig.HOME} />,
-      companyName: appConfig.companyTitle,
+      logo: logoJsx,
+      companyName: site.company_title,
       accordionProps: {
         titleProps: { variant: 'h7' },
         itemTitleProps: {
@@ -556,8 +634,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         },
       },
       navItems: footerNavConfig,
-      legalItems: legalConfig,
-      socialMediaItems: socialMediaConfig,
+      legalItems,
+      socialMediaItems,
     },
   }
   const landingLayoutProps = merge({}, defaultLandingLayoutProps, rest)

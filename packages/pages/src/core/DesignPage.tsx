@@ -19,7 +19,7 @@ export interface DesignPageProps {
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { design } = props
-  const { appConfig, routeConfig, clientLogos } = useLayout()
+  const { site, routeConfig, clientLogos } = useLayout()
   const { overline, sections } = design || {}
   const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -137,7 +137,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
               boxProps: { mt: 3 },
               overline: 'Contact Us',
               title: 'Get in Touch',
-              href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+              href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
             }),
             {
               type: 'image',

@@ -2,11 +2,10 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { PostCategorysPage, PostCategorysPageProps } from '@onex/pages'
 import { PostCategoryList } from '@onex/server'
-import configs from '@app/configs'
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps = PostCategoryList.getStaticProps({ configs })
+export const getStaticProps = PostCategoryList.getStaticProps()
 
 export interface NextPostsPageProps
   extends InferGetStaticPropsType<typeof getStaticProps>,

@@ -3,12 +3,12 @@ import { LandingLayout } from '@onex/layouts'
 import { DataPage, DataPageProps } from '@onex/pages'
 import { MOCK_DATA_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { getDynamicPage, makeGetStaticProps } from '@onex/server'
-import configs from '@app/configs'
+import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = (context) => {
-  const data = getDynamicPage(MOCK_DATA_PAGE, configs)
+  const site = fetchSite()
+  const data = getDynamicPage(MOCK_DATA_PAGE, site)
   const showcases = MOCK_TECH_SHOWCASES
   return makeGetStaticProps({ props: { data, showcases } })(context)
 }

@@ -3,12 +3,12 @@ import { LandingLayout } from '@onex/layouts'
 import { TechPage, TechPageProps } from '@onex/pages'
 import { MOCK_TECH_PAGE, MOCK_TECH_SHOWCASES } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { getDynamicPage, makeGetStaticProps } from '@onex/server'
-import configs from '@app/configs'
+import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const tech = getDynamicPage(MOCK_TECH_PAGE, configs)
+  const site = fetchSite()
+  const tech = getDynamicPage(MOCK_TECH_PAGE, site)
   const showcases = MOCK_TECH_SHOWCASES
   return makeGetStaticProps({
     props: {

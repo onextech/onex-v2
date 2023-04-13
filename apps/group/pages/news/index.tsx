@@ -3,11 +3,11 @@ import { LandingLayout } from '@onex/layouts'
 import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
 import { PressRelease } from '@onex/types'
 import { PressReleaseList } from '@onex/server'
-import configs from '@app/configs'
+
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps = PressReleaseList.getStaticProps({ configs })
+export const getStaticProps = PressReleaseList.getStaticProps()
 
 export interface NextPressReleasesPageProps
   extends InferGetStaticPropsType<typeof getStaticProps>,
@@ -19,7 +19,7 @@ const NextPressReleasesPage: React.FC<NextPressReleasesPageProps> = (props) => {
   const { pressReleases, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'News' }} autoBreadcrumbs>
+      <LandingLayout seo={{ title: 'News' }}>
         <PressReleasesPage pressReleases={pressReleases} />
       </LandingLayout>
     </PageProvider>

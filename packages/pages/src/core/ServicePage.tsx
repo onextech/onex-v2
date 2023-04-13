@@ -23,7 +23,7 @@ export interface ServicePageProps {
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { service, relatedServices, relatedPosts } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { site, routeConfig } = useLayout()
   const { overline, sections } = service || {}
   const { summary, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -69,7 +69,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

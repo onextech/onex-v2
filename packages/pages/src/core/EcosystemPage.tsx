@@ -15,7 +15,7 @@ export interface EcosystemPageProps {
 
 const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
   const { ecosystem } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { site, routeConfig } = useLayout()
   const { overline, sections } = ecosystem || {}
   const { summary, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -152,7 +152,7 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

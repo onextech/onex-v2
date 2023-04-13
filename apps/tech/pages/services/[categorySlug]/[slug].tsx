@@ -2,13 +2,11 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ServicePage, ServicePageProps } from '@onex/pages'
 import { ServiceDetail } from '@onex/server'
-import configs from '@app/configs'
+
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps = ServiceDetail.getStaticProps({
-  configs,
-})
+export const getStaticProps = ServiceDetail.getStaticProps()
 export const getStaticPaths = ServiceDetail.getStaticPaths()
 
 export interface NextServicePageProps

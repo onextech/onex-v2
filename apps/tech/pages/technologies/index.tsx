@@ -2,11 +2,11 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { TechnologysPage, TechnologysPageProps } from '@onex/pages'
 import { TechnologyList } from '@onex/server'
-import configs from '@app/configs'
+
 import { InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@onex/providers'
 
-export const getStaticProps = TechnologyList.getStaticProps({ configs })
+export const getStaticProps = TechnologyList.getStaticProps()
 
 export interface NextTechnologysPageProps
   extends InferGetStaticPropsType<typeof getStaticProps>,

@@ -13,6 +13,9 @@ export type PageSection =
   | 'halfGrids'
 
 interface Page extends CrudItem {
+  seo_meta_title?: string
+  seo_meta_description?: string
+
   // Seo
   seo?: {
     title?: string

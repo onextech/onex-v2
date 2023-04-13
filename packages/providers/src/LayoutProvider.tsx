@@ -1,35 +1,32 @@
 import React, { createContext, useContext } from 'react'
 import merge from 'lodash/merge'
 import {
-  AppConfig,
   ClientHighlight,
   ClientLogo,
+  ClientTestimonial,
   Industry,
   Page,
   PostCategory,
   Service,
   ServiceCategory,
+  Site,
   Technology,
-  ClientTestimonial,
+  Workspace,
 } from '@onex/types'
-import { LandingLayoutProps as GvsLandingLayoutProps } from '@gravis-os/landing'
+import { FooterProps, ImageProps } from '@gravis-os/ui'
+import { routeConfig } from '@onex/common'
 
 // ==============================
 // Types
 // ==============================
 export interface LayoutContextValue {
-  // TODO@Joel: Fix this type, we will no longer use an import
-  logo?: React.JSXElementConstructor<{ href?: string }>
-
-  // Configs
-  appConfig?: AppConfig
+  site?: Site
   routeConfig?: Record<string, string>
-  socialMediaConfig?: GvsLandingLayoutProps['footerProps']['socialMediaItems']
-  legalConfig?: GvsLandingLayoutProps['footerProps']['legalItems']
-  localeConfig?: {
-    locales?: Array<{ key: string; isoAlpha2: string; title: string }>
-  }
-  systemConfig?: { isOpenOnHover?: boolean }
+
+  // Calculated
+  logoProps?: ImageProps
+  socialMediaItems?: FooterProps['socialMediaItems']
+  legalItems?: FooterProps['legalItems']
 
   // Modules
   services?: Service[]
@@ -41,13 +38,13 @@ export interface LayoutContextValue {
   clientTestimonials?: ClientTestimonial[]
   clientLogos?: ClientLogo[]
   clientHighlights?: ClientHighlight[]
+  workspaces?: Workspace[]
 }
 
 // ==============================
 // Initial State
 // ==============================
 export const layoutContextInitialState = {
-  logo: null,
   services: [],
   industrys: [],
   postCategorys: [],
@@ -57,6 +54,7 @@ export const layoutContextInitialState = {
   clientTestimonials: [],
   clientLogos: [],
   clientHighlights: [],
+  workspaces: [],
 }
 
 // ==============================
@@ -89,7 +87,35 @@ export interface LayoutProviderProps {
 const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
   const { children, value: injectedValue } = props
 
-  const value = merge({}, layoutContextInitialState, injectedValue)
+  // Calculated state
+  const { site } = injectedValue
+  const calculatedValues = {
+    logoProps: {
+      src: site.logo_src,
+      alt: site.logo_alt,
+      width: site.logo_width,
+      height: site.logo_height,
+      invertImageOnMode: 'dark' as const,
+    },
+    legalItems: {
+      terms: `${site.company_absolute_url}${routeConfig.TERMS}`,
+      privacy: `${site.company_absolute_url}${routeConfig.PRIVACY}`,
+      cookies: `${site.company_absolute_url}${routeConfig.COOKIES}`,
+    },
+    socialMediaItems: Object.entries(site).reduce((acc, [key, value]) => {
+      if (!key.startsWith('social_media_')) return acc
+      // Rename 'social_media_github_url' to 'github'
+      const nextValue = value.replace('social_media_', '').replace('_url', '')
+      return { ...acc, [key]: nextValue }
+    }, {}),
+  }
+
+  const value = merge(
+    {},
+    layoutContextInitialState,
+    injectedValue,
+    calculatedValues
+  )
 
   return (
     <LayoutContext.Provider value={value}>{children}</LayoutContext.Provider>

@@ -9,8 +9,7 @@ export interface LegalPageProps {
 
 const LegalPage: React.FC<LegalPageProps> = (props) => {
   const { title, html } = props
-  const { appConfig } = useLayout()
-  const { companyTitle } = appConfig
+  const { site } = useLayout()
 
   return (
     <Blocks
@@ -21,7 +20,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
           items: [
             {
               type: 'overline',
-              title: `${companyTitle}`,
+              title: `${site.company_title}`,
               titleProps: { color: 'text.secondary' },
             },
             {

@@ -20,7 +20,7 @@ export interface IndustryPageProps {
 
 const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   const { industry, relatedPosts } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { site, routeConfig } = useLayout()
   const { overline, sections } = industry || {}
   const { summary, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -63,7 +63,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

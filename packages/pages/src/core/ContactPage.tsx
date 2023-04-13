@@ -3,6 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import { ContactForm } from '@onex/components'
 import { useLayout } from '@onex/providers'
 import { renderContactLinksBlockItems } from '@onex/blocks'
+import { Image } from '@gravis-os/ui'
 
 export interface ContactPageProps {
   fullScreen?: boolean
@@ -11,8 +12,8 @@ export interface ContactPageProps {
 const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
 
-  const { logo: Logo, routeConfig, appConfig } = useLayout()
-  const { officeTitle, officeAddress } = appConfig
+  const { logoProps, site } = useLayout()
+  const { office_title, office_address } = site
 
   const py = fullScreen ? { xs: 5, md: 10 } : { xs: 3, md: 7 }
 
@@ -45,11 +46,11 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                     },
                   },
                   items: [
-                    ...(Logo && fullScreen
+                    ...(logoProps && fullScreen
                       ? [
                           {
                             type: 'jsx',
-                            title: <Logo href={routeConfig.HOME} />,
+                            title: <Image {...logoProps} />,
                             boxProps: { sx: { mb: 5 } },
                           },
                         ]
@@ -98,10 +99,10 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                       title: 'Offices',
                       titleProps: { sx: { mb: 2 } },
                     },
-                    { type: 'body1', title: officeTitle },
+                    { type: 'body1', title: office_title },
                     {
                       type: 'body1',
-                      title: officeAddress,
+                      title: office_address,
                       titleProps: { color: 'text.secondary' },
                     },
                     ...renderContactLinksBlockItems(),

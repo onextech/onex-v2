@@ -1,12 +1,12 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ResourcePage, ResourcePageProps } from '@onex/pages'
-import configs from '@app/configs'
+
 import { ResourceDetail } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps = ResourceDetail.getStaticProps({ configs })
+export const getStaticProps = ResourceDetail.getStaticProps()
 export const getStaticPaths = ResourceDetail.getStaticPaths()
 
 export interface NextResourcePageProps

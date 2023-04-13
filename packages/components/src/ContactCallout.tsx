@@ -6,7 +6,7 @@ import { useLayout } from '@onex/providers'
 export interface ContactCalloutProps {}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
-  const { appConfig } = useLayout()
+  const { site } = useLayout()
 
   const footerCalloutBlockProps = {
     py: 3,
@@ -27,7 +27,7 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
             items: [
               {
                 type: 'h5',
-                title: `Build the future with ${appConfig.title}.`,
+                title: `Build the future with ${site.title}.`,
                 titleProps: {
                   sx: { textAlign: { xs: 'center', md: 'left' } },
                 },

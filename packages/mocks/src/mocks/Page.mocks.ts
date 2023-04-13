@@ -1,7 +1,14 @@
-export const MOCK_PAGE = {
+import { Page } from '@onex/types'
+
+export const MOCK_PAGE: Page = {
   // Seo
-  meta_title: '',
-  meta_description: '',
+  id: 0,
+  seo_meta_title: '',
+  seo_meta_description: '',
+  seo: {
+    title: '',
+    description: '',
+  },
   // Hero
   hero_src: '',
   hero_alt: '',
@@ -43,6 +50,14 @@ export const MOCK_PAGE = {
       subtitle: '',
     },
     features: {
+      hero_src: '',
+      hero_alt: '',
+      overline: '',
+      title: '',
+      subtitle: '',
+      items: [],
+    },
+    halfGrids: {
       hero_src: '',
       hero_alt: '',
       overline: '',
@@ -264,7 +279,6 @@ export const MOCK_DIGITAL_PAGE = {
     },
   },
 }
-
 export const MOCK_TECH_PAGE = {
   id: 1,
   // Seo
@@ -470,7 +484,6 @@ export const MOCK_TECH_PAGE = {
     },
   },
 }
-
 export const MOCK_DATA_PAGE = {
   id: 1,
   // Seo
@@ -680,7 +693,6 @@ export const MOCK_DATA_PAGE = {
     },
   },
 }
-
 export const MOCK_DESIGN_PAGE = {
   id: 1,
   // Seo
@@ -891,4 +903,32 @@ export const MOCK_DESIGN_PAGE = {
         '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
+}
+
+const MOCK_GROUP_PAGES = [
+  { title: 'About Us', slug: 'about' },
+  { title: 'Mission', slug: 'mission' },
+  { title: 'Careers', slug: 'careers' },
+  { title: 'Terms', slug: 'terms', html: '<div>Terms</div>' },
+  { title: 'Privacy', slug: 'privacy', html: '<div>Privacy</div>' },
+  { title: 'Cookies', slug: 'cookies', html: '<div>Cookies</div>' },
+  { title: 'Design', slug: 'design' },
+  { title: 'Data', slug: 'data' },
+  { title: 'Digital', slug: 'digital' },
+  { title: 'Contact Us', slug: 'contact' },
+  { title: 'News', slug: 'news' },
+  { title: 'Newsletter', slug: 'newsletter' },
+].map((page) => ({
+  ...MOCK_PAGE,
+  href: `/${page.slug}`,
+  subtitle:
+    'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+  ...page,
+}))
+
+const MOCK_TECH_PAGES = MOCK_GROUP_PAGES
+
+export const MOCK_PAGES = {
+  GROUP: MOCK_GROUP_PAGES,
+  TECH: MOCK_TECH_PAGES,
 }

@@ -2,11 +2,11 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { PostCategoryPage, PostCategoryPageProps } from '@onex/pages'
 import { PostCategoryDetail } from '@onex/server'
-import configs from '@app/configs'
+
 import { InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@onex/providers'
 
-export const getStaticProps = PostCategoryDetail.getStaticProps({ configs })
+export const getStaticProps = PostCategoryDetail.getStaticProps()
 export const getStaticPaths = PostCategoryDetail.getStaticPaths()
 
 export interface NextPostCategoryPageProps

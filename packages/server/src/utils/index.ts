@@ -9,3 +9,6 @@ export * from './makeGetStaticProps'
 
 export { default as withLayoutProviderPropsToStaticProps } from './withLayoutProviderPropsToStaticProps'
 export * from './withLayoutProviderPropsToStaticProps'
+
+export { default as getLayoutProviderProps } from './getLayoutProviderProps'
+export * from './getLayoutProviderProps'

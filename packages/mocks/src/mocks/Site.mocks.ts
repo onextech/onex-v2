@@ -1,0 +1,84 @@
+import { Site } from '@onex/types'
+
+const MOCK_COMMON_SITE = {
+  // Company
+  company_title: 'One X Group Pte. Ltd.',
+  company_absolute_url:
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000'
+      : 'https://onexgroup.co',
+
+  // Logo
+  logo_src: '/logo.svg',
+  logo_alt: 'logo',
+
+  // Locale
+  locales: [
+    { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
+    { key: 'my', iso_alpha_2: 'my', title: 'Malaysia' },
+    { key: 'id', iso_alpha_2: 'id', title: 'Indonesia' },
+    { key: 'ph', iso_alpha_2: 'ph', title: 'Philippines' },
+    { key: 'vn', iso_alpha_2: 'vn', title: 'Vietnam' },
+    { key: 'th', iso_alpha_2: 'th', title: 'Thailand' },
+    { key: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
+    { key: 'hk', iso_alpha_2: 'hk', title: 'Hong Kong SAR' },
+    { key: 'tw', iso_alpha_2: 'tw', title: 'Taiwan' },
+    { key: 'cn', iso_alpha_2: 'cn', title: 'Mainland China' },
+    { key: 'us', iso_alpha_2: 'us', title: 'United States' },
+  ],
+
+  // System
+  nav_is_open_on_hover: true,
+
+  // Social Media
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Address
+  office_title: 'Singapore (Asia Pacific)',
+  office_address: '71 Robinson Road WeWork #13-159 Singapore 068895',
+}
+
+export const MOCK_GROUP_SITE: Site = {
+  ...MOCK_COMMON_SITE,
+
+  // Seo
+  google_tag_manager_id: '',
+
+  // Logo
+  logo_width: 110,
+  logo_height: 13,
+
+  // App
+  title: 'One X Group',
+  absolute_url: 'https://onexgroup.co',
+
+  // Contact
+  general_email: 'info@onextech.com',
+  general_phone: '+65 8922 8242',
+  general_whatsapp: '+65 8922 8242',
+}
+
+export const MOCK_TECH_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  // App
+  title: 'One X Tech',
+  absolute_url: 'https://onextech.com.sg',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+}
+
+export const MOCK_SITE = {
+  GROUP: MOCK_GROUP_SITE,
+  TECH: MOCK_TECH_SITE,
+}

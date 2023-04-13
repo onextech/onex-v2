@@ -10,7 +10,7 @@ export interface NewsletterPageProps {
 
 const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
   const { title, subtitle } = props
-  const { appConfig } = useLayout()
+  const { site } = useLayout()
 
   return (
     <Blocks
@@ -31,7 +31,7 @@ const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
             alt: 'hero',
           },
           items: [
-            { type: 'overline', title: `${appConfig.title} Newsletter` },
+            { type: 'overline', title: `${site.title} Newsletter` },
             {
               type: 'h2',
               title,

@@ -8,8 +8,7 @@ export interface SeoProviderProps {
 
 const SeoProvider: React.FC<SeoProviderProps> = (props) => {
   const { children } = props
-
-  const { appConfig, socialMediaConfig } = useLayout()
+  const { site } = useLayout()
 
   return (
     <>
@@ -17,14 +16,16 @@ const SeoProvider: React.FC<SeoProviderProps> = (props) => {
         openGraph={{
           type: 'website',
           locale: 'en_SG',
-          url: appConfig.absoluteUrl,
-          siteName: appConfig.title,
+          url: site.absolute_url,
+          siteName: site.title,
         }}
-        twitter={{
-          handle: `@${socialMediaConfig.twitter.split('/').pop()}`,
-          site: `@${socialMediaConfig.twitter.split('/').pop()}`,
-          cardType: 'summary_large_image',
-        }}
+        {...(site.social_media_twitter_url && {
+          twitter: {
+            handle: `@${site.social_media_twitter_url.split('/').pop()}`,
+            site: `@${site.social_media_twitter_url.split('/').pop()}`,
+            cardType: 'summary_large_image',
+          },
+        })}
       />
 
       {/* Children */}

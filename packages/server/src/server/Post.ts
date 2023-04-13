@@ -4,7 +4,6 @@ import {
   getCategoryFromCrudItem,
   getRelatedCrudItemsByTagTitle,
 } from '@gravis-os/utils'
-import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 
@@ -21,31 +20,29 @@ export const fetchPostBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const PostDetail = {
-  getStaticProps:
-    ({ configs }: { configs: GetDynamicPageConfigs }): GetStaticProps =>
-    (context) => {
-      const post = fetchPostBySlug(context.params.slug)
-      const postCategory = getCategoryFromCrudItem(
-        post,
-        MOCK_SERVICE_CATEGORYS[MOCK_KEY]
-      )
-      const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
-        ({ category_id }) => category_id === post?.category_id
-      )
-      const relatedPosts = getRelatedCrudItemsByTagTitle(
-        MOCK_POSTS[MOCK_KEY],
-        post?.title
-      ).slice(0, 3)
+  getStaticProps: (): GetStaticProps => (context) => {
+    const post = fetchPostBySlug(context.params.slug)
+    const postCategory = getCategoryFromCrudItem(
+      post,
+      MOCK_SERVICE_CATEGORYS[MOCK_KEY]
+    )
+    const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
+      ({ category_id }) => category_id === post?.category_id
+    )
+    const relatedPosts = getRelatedCrudItemsByTagTitle(
+      MOCK_POSTS[MOCK_KEY],
+      post?.title
+    ).slice(0, 3)
 
-      return makeGetStaticProps({
-        props: {
-          post,
-          postCategory,
-          relatedServices,
-          relatedPosts,
-        },
-      })(context)
-    },
+    return makeGetStaticProps({
+      props: {
+        post,
+        postCategory,
+        relatedServices,
+        relatedPosts,
+      },
+    })(context)
+  },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
       paths: MOCK_POSTS[MOCK_KEY].map(

@@ -3,12 +3,12 @@ import { LandingLayout } from '@onex/layouts'
 import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import { MOCK_DIGITAL_PAGE } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { getDynamicPage, makeGetStaticProps } from '@onex/server'
-import configs from '@app/configs'
+import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = (context) => {
-  const digital = getDynamicPage(MOCK_DIGITAL_PAGE, configs)
+  const site = fetchSite()
+  const digital = getDynamicPage(MOCK_DIGITAL_PAGE, site)
   return makeGetStaticProps({ props: { digital } })(context)
 }
 

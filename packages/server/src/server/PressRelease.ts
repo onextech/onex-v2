@@ -1,6 +1,5 @@
 import { MOCK_PRESS_RELEASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { GetDynamicPageConfigs } from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 
@@ -17,11 +16,7 @@ export const fetchPressReleaseBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const PressReleaseList = {
-  getStaticProps: ({
-    configs,
-  }: {
-    configs: GetDynamicPageConfigs
-  }): GetStaticProps =>
+  getStaticProps: (): GetStaticProps =>
     makeGetStaticProps({
       props: { pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY] },
     }),

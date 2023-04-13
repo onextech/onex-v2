@@ -21,7 +21,7 @@ export interface TechPageProps {
 
 const TechPage: React.FC<TechPageProps> = (props) => {
   const { tech, showcases } = props
-  const { appConfig, routeConfig, clientHighlights } = useLayout()
+  const { site, routeConfig, clientHighlights } = useLayout()
   const { overline, sections } = tech || {}
   const { hero, benefits, features, cta } = sections || {}
 
@@ -80,7 +80,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
               boxProps: { mt: 3 },
               overline: 'Contact Us',
               title: 'Get in Touch',
-              href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+              href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
             }),
             {
               type: 'image',

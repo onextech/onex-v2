@@ -1,10 +1,6 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import {
-  renderFadeToBottomBackgroundImageBlock,
-  renderGhostButtonBlockItem,
-  renderClientLogoCardBlockItem,
-} from '@onex/blocks'
+import { renderGhostButtonBlockItem } from '@onex/blocks'
 import { routeConfig } from '@onex/common'
 import { useLayout } from '@onex/providers'
 
@@ -13,7 +9,7 @@ export interface MissionPageProps {}
 const commonBlockProps = { center: true, maxWidth: 'md' }
 
 const MissionPage: React.FC<MissionPageProps> = () => {
-  const { appConfig } = useLayout()
+  const { site } = useLayout()
   return (
     <Blocks
       items={[
@@ -38,7 +34,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             {
               type: 'h5',
               maxWidth: 'md',
-              title: `${appConfig.title} delivers effective, value-driven technological innovations for leading enterprises`,
+              title: `${site.title} delivers effective, value-driven technological innovations for leading enterprises`,
               titleProps: {
                 color: 'text.secondary',
                 gutterBottom: true,
@@ -145,7 +141,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
               type: 'body1',
               title: (
                 <span>
-                  {appConfig.title} is a business technology partner, focused on
+                  {site.title} is a business technology partner, focused on
                   building technological innovations for leading enterprises.
                   <br />
                   <br />

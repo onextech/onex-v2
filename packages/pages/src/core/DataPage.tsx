@@ -16,7 +16,7 @@ export interface DataPageProps {
 
 const DataPage: React.FC<DataPageProps> = (props) => {
   const { data } = props
-  const { appConfig, routeConfig } = useLayout()
+  const { site, routeConfig } = useLayout()
   const { overline, sections } = data || {}
   const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
@@ -95,7 +95,7 @@ const DataPage: React.FC<DataPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${appConfig.companyAbsoluteUrl}${routeConfig.CONTACT}`,
+            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

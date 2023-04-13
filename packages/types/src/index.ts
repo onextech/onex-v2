@@ -1,5 +1,3 @@
-export * from './Config.types'
-
 export type { default as Job } from './Job.types'
 export * from './Job.types'
 
@@ -41,3 +39,9 @@ export * from './Page.types'
 
 export type { default as Resource } from './Resource.types'
 export * from './Resource.types'
+
+export type { default as Site } from './Site.types'
+export * from './Site.types'
+
+export type { default as Workspace } from './Workspace.types'
+export * from './Workspace.types'
