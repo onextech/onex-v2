@@ -108,8 +108,8 @@ const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
     socialMediaItems: Object.entries(site).reduce((acc, [key, value]) => {
       if (!key.startsWith('social_media_')) return acc
       // Rename 'social_media_github_url' to 'github'
-      const nextValue = value.replace('social_media_', '').replace('_url', '')
-      return { ...acc, [key]: nextValue }
+      const nextKey = key.replace('social_media_', '').replace('_url', '')
+      return { ...acc, [nextKey]: value }
     }, {}),
   }
 

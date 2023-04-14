@@ -3,8 +3,8 @@ import { Page } from '@onex/types'
 export const MOCK_PAGE: Page = {
   // Seo
   id: 0,
-  seo_meta_title: '',
-  seo_meta_description: '',
+  seo_title: '',
+  seo_description: '',
   seo: {
     title: '',
     description: '',
@@ -907,7 +907,7 @@ export const MOCK_DESIGN_PAGE = {
 
 const MOCK_GROUP_PAGES = [
   { title: 'About Us', slug: 'about' },
-  { title: 'Mission', slug: 'mission' },
+  { title: 'Mission', slug: 'mission', seo_title: 'Our Mission' },
   { title: 'Careers', slug: 'careers' },
   { title: 'Terms', slug: 'terms', html: '<div>Terms</div>' },
   { title: 'Privacy', slug: 'privacy', html: '<div>Privacy</div>' },

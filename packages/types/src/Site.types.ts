@@ -6,8 +6,8 @@ export interface SiteLocale {
 
 interface Site {
   // Seo
-  seo_meta_title?: string
-  seo_meta_description?: string
+  seo_title?: string
+  seo_description?: string
   google_tag_manager_id?: string
 
   // Logo

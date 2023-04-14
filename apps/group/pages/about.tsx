@@ -2,20 +2,22 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { AboutPage } from '@onex/pages'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { makeGetStaticProps } from '@onex/server'
+import { PageDetail } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 
-export const getStaticProps: GetStaticProps = makeGetStaticProps()
+export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
+  slug: 'about',
+})
 
 export interface NextAboutPageProps
   extends InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextAboutPage: React.FC<NextAboutPageProps> = (props) => {
-  const { pageProviderProps } = props
+  const { page, pageProviderProps } = props
 
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'About Us' }} darkHeader>
+      <LandingLayout seo={page.seo} darkHeader>
         <AboutPage />
       </LandingLayout>
     </PageProvider>
