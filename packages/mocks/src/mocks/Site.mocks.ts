@@ -1,6 +1,6 @@
 import { Site } from '@onex/types'
 
-const MOCK_COMMON_SITE = {
+export const MOCK_COMMON_SITE = {
   // Company
   company_title: 'One X Group Pte. Ltd.',
   company_absolute_url:

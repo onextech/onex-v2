@@ -1,4 +1,5 @@
 import { Page } from '@onex/types'
+import { MOCK_COMMON_SITE } from './Site.mocks'
 
 export const MOCK_PAGE: Page = {
   // Seo
@@ -925,8 +926,11 @@ const MOCK_GROUP_PAGES = [
     'Learn how we keep our employees happy and see our values, culture, and initiatives.',
   ...page,
 }))
-
-const MOCK_TECH_PAGES = MOCK_GROUP_PAGES
+const MOCK_TECH_PAGES = MOCK_GROUP_PAGES.map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+  href: `${MOCK_COMMON_SITE.company_absolute_url}/${page.slug}`,
+}))
 
 export const MOCK_PAGES = {
   GROUP: MOCK_GROUP_PAGES,
