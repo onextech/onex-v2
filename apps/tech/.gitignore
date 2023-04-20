@@ -41,3 +41,7 @@ next-env.d.ts
 # Custom
 .yalc
 yalc.lock
+
+# Sitemap
+robots.txt
+sitemap*.xml

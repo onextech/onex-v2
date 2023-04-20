@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "sideEffects": false,
   "scripts": {
-    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/landing @gravis-os/analytics @gravis-os/theme @gravis-os/query",
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics @gravis-os/query @gravis-os/form @gravis-os/fields",
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
     "@gravis-os/analytics": "^0.0.0",
-    "@gravis-os/landing": "^0.0.41",
-    "@gravis-os/query": "^0.0.23",
-    "@gravis-os/ui": "^0.0.97",
-    "@gravis-os/utils": "^0.0.41"
+    "@gravis-os/landing": "^0.0.42",
+    "@gravis-os/query": "^0.0.25",
+    "@gravis-os/ui": "^0.0.100",
+    "@gravis-os/utils": "^0.0.42"
   }
 }

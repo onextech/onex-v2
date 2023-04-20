@@ -19,12 +19,12 @@
     "yalc:push": "yalc push",
     "lint": "lint-staged && next lint --quiet --fix",
     "tslint": "tsc --noEmit --incremental",
-    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/config @gravis-os/theme @gravis-os/landing",
+    "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics @gravis-os/query @gravis-os/form @gravis-os/fields",
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
-    "@gravis-os/landing": "^0.0.41",
-    "@gravis-os/theme": "^0.0.7",
+    "@gravis-os/landing": "^0.0.42",
+    "@gravis-os/theme": "^0.0.8",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
   },

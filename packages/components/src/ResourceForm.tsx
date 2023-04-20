@@ -1,4 +1,3 @@
-// @ts-ignore
 import React, { useState } from 'react'
 import { Form, FormSections } from '@gravis-os/form'
 import toast from 'react-hot-toast'
