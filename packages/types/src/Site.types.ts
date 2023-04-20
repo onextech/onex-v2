@@ -38,6 +38,7 @@ interface Site {
 
   // System
   nav_is_open_on_hover?: boolean
+  nav_is_ecosystem_visible?: boolean
 
   // Social Media
   social_media_github_url?: string

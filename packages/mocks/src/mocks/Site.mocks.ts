@@ -29,6 +29,7 @@ export const MOCK_COMMON_SITE = {
 
   // System
   nav_is_open_on_hover: true,
+  nav_is_ecosystem_visible: false,
 
   // Social Media
   social_media_github_url: 'https://github.com/onextech',
@@ -49,6 +50,9 @@ export const MOCK_COMMON_SITE = {
 export const MOCK_GROUP_SITE: Site = {
   ...MOCK_COMMON_SITE,
 
+  // System
+  nav_is_ecosystem_visible: true,
+
   // Seo
   google_tag_manager_id: '',
 
@@ -68,6 +72,9 @@ export const MOCK_GROUP_SITE: Site = {
 
 export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
+
+  // System
+  nav_is_ecosystem_visible: false,
 
   // App
   title: 'One X Tech',

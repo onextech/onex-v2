@@ -232,7 +232,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    {
+    industrys?.length && {
       key: 'industrys',
       title: 'Industries',
       fullWidth: true,
@@ -459,7 +459,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    {
+    site.nav_is_ecosystem_visible && {
       key: 'ecosystem',
       title: 'Ecosystem',
       fullWidth: true,
@@ -551,7 +551,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       title: 'Technologies',
       items: technologys,
     },
-    {
+    site.nav_is_ecosystem_visible && {
       key: 'ecosystem',
       title: 'Ecosystem',
       items: workspaces,
@@ -562,7 +562,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       href: routeConfig.ABOUT,
       items: pages,
     },
-  ].filter(Boolean)
+  ]
 
   const defaultLandingLayoutProps = {
     disableGutters: true,
