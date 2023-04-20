@@ -1,17 +1,21 @@
-import { getObjectWithReplacedValues } from '@gravis-os/utils'
+import {
+  getObjectWithGroupedKeyFromPrefix,
+  getObjectWithReplacedValues,
+} from '@gravis-os/utils'
+import flowRight from 'lodash/flowRight'
 import { routeConfig } from '@onex/common'
-import { Site } from '@onex/types'
+import { Page } from '@onex/types'
+import { fetchSite } from '../server'
 
-/**
- * Replace values in pageItem with values from site
- * For example replace 'My App Name is {appTitle}' with 'My App Name is Foo'
- * @param pageItem
- * @param site
- */
-const getDynamicPage = (pageItem, site: Site) => {
-  return getObjectWithReplacedValues(pageItem, {
-    // Replace `{title}` with pageItem.title
-    title: pageItem.title,
+// ==============================
+// Plugins
+// ==============================
+const withSiteVariablesReplacement = () => (page: Page) => {
+  const site = fetchSite()
+
+  return getObjectWithReplacedValues(page, {
+    // Replace `{title}` with page.title
+    title: page.title,
     // Replace `{appTitle}` with site.title
     appTitle: site.title,
     // Replace routes e.g. `{routes.SERVICES}` to `/services`
@@ -20,5 +24,34 @@ const getDynamicPage = (pageItem, site: Site) => {
     }, {}),
   })
 }
+
+const withSeoTitleFromPageTitle = () => (page: Page) => {
+  if (page.seo?.title) return page
+  return {
+    ...page,
+    seo: {
+      title: page.title,
+    },
+  }
+}
+
+const withSeoGrouping = () => (page: Page) => {
+  return getObjectWithGroupedKeyFromPrefix(page, 'seo')
+}
+
+// ==============================
+// Main
+// ==============================
+/**
+ * Replace values in pageItem with values from site
+ * For example replace 'My App Name is {appTitle}' with 'My App Name is Foo'
+ * @param pageItem
+ * @param site
+ */
+const getDynamicPage = flowRight(
+  withSiteVariablesReplacement(),
+  withSeoTitleFromPageTitle(),
+  withSeoGrouping()
+)
 
 export default getDynamicPage

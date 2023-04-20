@@ -4,19 +4,19 @@ import {
   renderClientHighlightsImageMarqueeBlock,
   renderGhostButtonBlockItem,
   renderHeroWithBackgroundBlock,
-  renderShowcasesBlock,
+  renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page, Showcase } from '@onex/types'
+import { Page, Post } from '@onex/types'
 
-export interface TechPageProps {
+export interface GroupPageProps {
   page: Page
-  showcases: Showcase[]
+  posts: Post[]
 }
 
-const TechPage: React.FC<TechPageProps> = (props) => {
-  const { page, showcases } = props
+const GroupPage: React.FC<GroupPageProps> = (props) => {
+  const { page, posts } = props
   const { site, routeConfig, clientHighlights } = useLayout()
   const { overline, sections } = page || {}
   const { hero, benefits, features, cta } = sections || {}
@@ -48,7 +48,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Showcases
-        renderShowcasesBlock({ items: showcases }),
+        renderFeaturedPostsBlock({ items: posts }),
         // Features
         renderThreeColumnGridBlock(features),
         // Cta
@@ -80,7 +80,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             }),
             {
               type: 'image',
-              title: '/images/tech_men.png',
+              title: '/images/design_men.png',
               disableContainer: true,
               titleProps: {
                 alt: 'tech men',
@@ -96,4 +96,4 @@ const TechPage: React.FC<TechPageProps> = (props) => {
   )
 }
 
-export default TechPage
+export default GroupPage

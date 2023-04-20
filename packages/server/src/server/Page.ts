@@ -1,12 +1,9 @@
 import { MOCK_PAGES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import flowRight from 'lodash/flowRight'
-import { getObjectWithGroupedKeyFromPrefix } from '@gravis-os/utils'
-import { Page } from '@onex/types'
-import getDynamicPage from '../utils/getDynamicPage'
+
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
-import { fetchSite } from './Site'
+import getDynamicPage from '../utils/getDynamicPage'
 
 const { MOCK_KEY } = process.env
 
@@ -30,35 +27,17 @@ export const PageList = {
 // ==============================
 // Plugins
 // ==============================
-const withSiteVariablesReplacement = () => (page: Page) => {
-  const site = fetchSite()
-  return getDynamicPage(page, site)
-}
 
-const withSeoTitleFromPageTitle = () => (page: Page) => {
-  return {
-    ...page,
-    seo: {
-      title: page.title,
-    },
-  }
-}
-
-const withSeoGrouping = () => (page: Page) => {
-  return getObjectWithGroupedKeyFromPrefix(page, 'seo')
-}
-
+// ==============================
+// Class
+// ==============================
 export const PageDetail = {
   getStaticProps:
     ({ slug }): GetStaticProps =>
     (context) => {
       const page = fetchPageBySlug(slug || context?.params?.slug)
-      const nextPage = flowRight(
-        withSiteVariablesReplacement(),
-        withSeoTitleFromPageTitle(),
-        withSeoGrouping()
-      )(page)
-      return makeGetStaticProps({ props: { page: nextPage } })(context)
+      const dynamicPage = getDynamicPage(page)
+      return makeGetStaticProps({ props: { page: dynamicPage } })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({

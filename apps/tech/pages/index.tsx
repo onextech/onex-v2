@@ -10,12 +10,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // supabaseClient.from('site').select('*').single().where('workspace_id', 1)
   const site = fetchSite()
   // supabaseClient.from('page').select('*').single().where('slug', 'tech').where('workspace_id', 1)
-  const tech = getDynamicPage(MOCK_TECH_PAGE, site)
+  const page = getDynamicPage(MOCK_TECH_PAGE, site)
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_TECH_SHOWCASES
   return makeGetStaticProps({
     props: {
-      tech,
+      page,
       showcases,
     },
   })(context)
@@ -26,12 +26,12 @@ export interface NextTechPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextTechPage: React.FC<NextTechPageProps> = (props) => {
-  const { tech, showcases, pageProviderProps } = props
+  const { page, showcases, pageProviderProps } = props
 
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={tech.seo} darkHeader>
-        <TechPage tech={tech} showcases={showcases || MOCK_TECH_SHOWCASES} />
+      <LandingLayout seo={page.seo} darkHeader>
+        <TechPage page={page} showcases={showcases || MOCK_TECH_SHOWCASES} />
       </LandingLayout>
     </PageProvider>
   )

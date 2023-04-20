@@ -97,6 +97,9 @@ export * from './renderPostHeroBlockItem'
 export { default as renderRelatedPostsBlock } from './renderRelatedPostsBlock'
 export * from './renderRelatedPostsBlock'
 
+export { default as renderFeaturedPostsBlock } from './renderFeaturedPostsBlock'
+export * from './renderFeaturedPostsBlock'
+
 export { default as renderRelatedServicesBlock } from './renderRelatedServicesBlock'
 export * from './renderRelatedServicesBlock'
 

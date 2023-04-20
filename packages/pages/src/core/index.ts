@@ -70,6 +70,9 @@ export * from './DesignPage'
 export { default as EcosystemPage } from './EcosystemPage'
 export * from './EcosystemPage'
 
+export { default as GroupPage } from './GroupPage'
+export * from './GroupPage'
+
 export { default as DigitalPage } from './DigitalPage'
 export * from './DigitalPage'
 
