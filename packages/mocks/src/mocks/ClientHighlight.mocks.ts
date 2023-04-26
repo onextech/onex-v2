@@ -26,6 +26,21 @@ export const MOCK_GROUP_CLIENT_HIGHLIGHTS = [
     src: '/images/marquee_image_6.png',
     alt: 'marquee_image_6',
   },
+  {
+    key: '7',
+    src: '/images/marquee_image_1.png',
+    alt: 'marquee_image_7',
+  },
+  {
+    key: '8',
+    src: '/images/marquee_image_2.png',
+    alt: 'marquee_image_8',
+  },
+  {
+    key: '9',
+    src: '/images/marquee_image_3.png',
+    alt: 'marquee_image_9',
+  },
 ].map((item, i) => ({ ...item, id: i }))
 
 export const MOCK_TECH_CLIENT_HIGHLIGHTS = MOCK_GROUP_CLIENT_HIGHLIGHTS

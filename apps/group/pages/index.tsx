@@ -4,11 +4,14 @@ import { LandingLayout } from '@onex/layouts'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
-import { MOCK_GROUP_PAGE, MOCK_GROUP_POSTS } from '@onex/mocks'
+import { MOCK_PAGES, MOCK_GROUP_POSTS } from '@onex/mocks'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const site = fetchSite()
-  const page = getDynamicPage(MOCK_GROUP_PAGE, site)
+  const page = getDynamicPage(
+    MOCK_PAGES[process.env.MOCK_KEY].find(({ slug }) => slug === 'home'),
+    site
+  )
   const posts = MOCK_GROUP_POSTS.slice(0, 3)
   return makeGetStaticProps({
     props: {
