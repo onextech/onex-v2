@@ -15,6 +15,7 @@ export const MOCK_COMMON_SITE = {
   // Locale
   locales: [
     { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
+    { key: 'au', iso_alpha_2: 'au', title: 'Australia' },
     { key: 'my', iso_alpha_2: 'my', title: 'Malaysia' },
     { key: 'id', iso_alpha_2: 'id', title: 'Indonesia' },
     { key: 'ph', iso_alpha_2: 'ph', title: 'Philippines' },
