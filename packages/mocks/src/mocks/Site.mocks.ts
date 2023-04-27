@@ -33,7 +33,7 @@ export const MOCK_COMMON_SITE = {
   nav_is_ecosystem_visible: false,
 
   // Cta
-  cta_title: 'Build the future with {appTitle}',
+  cta_title: 'Build the future with One X Group',
   cta_button_title: 'Get Started',
 
   // Social Media
