@@ -23,7 +23,6 @@ const renderHeaderMenuListBlockItem = (
           variant: 'h6' as const,
           href,
           sx: { mb: 1.5 },
-          color: 'text.secondary',
         },
       },
       ...(items.map((item) => ({

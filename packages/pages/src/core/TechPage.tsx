@@ -26,7 +26,7 @@ export interface TechPageProps {
 const TechPage: React.FC<TechPageProps> = (props) => {
   const { page, showcases, technologys, posts, industrys } = props
   const router = useRouter()
-  const { site, routeConfig, clientLogos, clientTestimonials } = useLayout()
+  const { site, clientLogos, clientTestimonials } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale

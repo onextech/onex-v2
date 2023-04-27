@@ -10,35 +10,35 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 2,
-    title: 'API Integrations',
-    slug: 'api-integrations',
-    subtitle:
-      'Intrigue customers and capture the market with captivating brand narratives.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
-  },
-  {
-    id: 3,
-    title: 'User Experience',
-    slug: 'user-experience',
+    title: 'User Interface Development',
+    slug: 'user-interface-development',
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
     hero_src: '/images/about_working_in_office.png',
     hero_alt: 'about_nodes',
   },
   {
-    id: 4,
-    title: 'Software Advisory',
-    slug: 'software-advisory',
+    id: 3,
+    title: 'Modern Frontend Engineering',
+    slug: 'modern-frontend-engineering',
     subtitle:
       'Cultivate engagement through insightful content that speaks to customer needs.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
   {
+    id: 4,
+    title: 'Software Architecture R&D',
+    slug: 'software-advisory-r-d',
+    subtitle:
+      'Design and build customer-focused organizations, processes and platforms for the future.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'about_nodes',
+  },
+  {
     id: 5,
-    title: 'Staff Augmentation',
-    slug: 'staff-augmentation',
+    title: 'Product Team Augmentation',
+    slug: 'product-team-augmentation',
     subtitle:
       'Grow critical design capabilities and a culture of innovation from within your organization.',
     hero_src: '/images/about_nodes.png',
@@ -46,10 +46,10 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 6,
-    title: 'Frontend Development',
-    slug: 'front-end-development',
+    title: 'API Integration',
+    slug: 'api-integration',
     subtitle:
-      'Design and build customer-focused organizations, processes and platforms for the future.',
+      'Intrigue customers and capture the market with captivating brand narratives.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },

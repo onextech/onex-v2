@@ -288,30 +288,30 @@ export const MOCK_TECH_SERVICES = [
   },
   {
     title: 'Technical Leadership',
+    slug: 'managed-product-teams',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'managed-product-teams',
     category_id: 5,
   },
   {
     title: 'Performance Optimization',
+    slug: 'performance-optimization',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'performance-optimization',
     category_id: 6,
   },
   {
     title: 'Production Readiness',
+    slug: 'production-readiness',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'production-readiness',
     category_id: 6,
   },
   {
-    title: 'Testing Automation',
+    title: 'Analytics & Tracking',
+    slug: 'analytics-tracking',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'testing-automation',
     category_id: 6,
   },
 ].map((item, i) => {
