@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles'
-import { Roboto, IBM_Plex_Mono, Inter } from 'next/font/google'
+import { Roboto, Inter } from 'next/font/google'
 
 export const headerFont = Inter({
   weight: ['600', '700', '800', '900'],
@@ -13,12 +13,7 @@ export const bodyFont = Roboto({
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
 })
-export const overlineFont = IBM_Plex_Mono({
-  weight: ['500', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
-})
+export const overlineFont = headerFont
 
 const headerFontFamily = headerFont.style.fontFamily
 const bodyFontFamily = bodyFont.style.fontFamily
