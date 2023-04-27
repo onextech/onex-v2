@@ -1,14 +1,14 @@
 import { Industry } from '@onex/types'
 
 export interface RenderFeaturedIndustryBlockItemProps {
-  item: Industry
+  item: Industry & { href: string }
 }
 
 const renderFeaturedIndustryBlockItem = (
   props: RenderFeaturedIndustryBlockItemProps
 ) => {
   const { item } = props
-  const { title, subtitle, fa_icon } = item || {}
+  const { title, href, subtitle, fa_icon } = item || {}
 
   return [
     {
@@ -16,7 +16,7 @@ const renderFeaturedIndustryBlockItem = (
       title: `fa-3x fa-thin ${fa_icon}`,
       titleProps: { sx: { mb: 3 } },
     },
-    { type: 'link', title, titleProps: { variant: 'h5' } },
+    { type: 'link', title, titleProps: { href, variant: 'h5' } },
     {
       type: 'body1',
       title: subtitle,
@@ -28,7 +28,7 @@ const renderFeaturedIndustryBlockItem = (
     {
       type: 'link',
       title: 'Learn more',
-      titleProps: { rightCaret: true },
+      titleProps: { href, rightCaret: true },
     },
   ]
 }

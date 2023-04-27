@@ -1,5 +1,6 @@
 import { ClientTestimonial } from '@onex/types'
 import { BlockProps } from '@gravis-os/landing'
+import { useLayout } from '@onex/providers'
 import renderFeaturedIndustryBlockItem from './renderFeaturedIndustryBlockItem'
 
 export interface RenderFeaturedIndustrysBlockProps
@@ -12,6 +13,7 @@ const renderFeaturedIndustrysBlock = (
   props: RenderFeaturedIndustrysBlockProps
 ) => {
   const { title = 'Featured Industries', items, ...rest } = props
+  const { routeConfig } = useLayout()
 
   return {
     key: 'featured-industrys',
@@ -34,12 +36,16 @@ const renderFeaturedIndustrysBlock = (
       {
         type: 'grid',
         sx: { mt: { xs: 4, md: 8 } },
-        // gridProps: { spacing: 3 },
         gridItems: items.map((item) => {
           return {
             xs: 12,
             md: 6,
-            items: renderFeaturedIndustryBlockItem({ item }),
+            items: renderFeaturedIndustryBlockItem({
+              item: {
+                href: `${routeConfig.INDUSTRYS}/${item.slug}`,
+                ...item,
+              },
+            }),
           }
         }),
       },
