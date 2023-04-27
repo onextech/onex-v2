@@ -970,7 +970,7 @@ const MOCK_TECH_PAGES = [
         overline: 'What we do',
         title: 'Speed Up Product Delivery',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams that are likable.',
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
         maxWidth: 'xl',
         center: true,
         items: [
@@ -1118,23 +1118,69 @@ const MOCK_TECH_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'how-it-works-1',
+            key: 'faq-1',
             title:
-              'What are the advantages of developing web apps with {title}?',
+              'What experience and expertise do you have in frontend development?',
             content:
-              '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
           },
           {
-            key: 'how-it-works-2',
-            title: 'How can {title} development benefit my existing system?',
+            key: 'faq-2',
+            title:
+              'How do you ensure that the software you build meets our specific requirements?',
             content:
-              "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
+              'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
           },
           {
-            key: 'how-it-works-3',
-            title: 'What is the future of {title}?',
+            key: 'faq-3',
+            title:
+              'How do you ensure the quality of the software you develop?',
             content:
-              '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
+              'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
+          },
+          {
+            key: 'faq-4',
+            title: 'What industries do you have experience working with?',
+            content:
+              'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
+          },
+          {
+            key: 'faq-5',
+            title: 'How do you handle project management and communication?',
+            content:
+              'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
+          },
+          {
+            key: 'faq-6',
+            title: 'How do you ensure the security and privacy of our data?',
+            content:
+              'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
+          },
+          {
+            key: 'faq-7',
+            title: 'What is your approach to project pricing and timelines?',
+            content:
+              'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
+          },
+          {
+            key: 'faq-8',
+            title:
+              'What’s your experience in enterprise software development?',
+            content:
+              'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
+          },
+          {
+            key: 'faq-9',
+            title: 'What is your approach to project management?',
+            content:
+              'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
+          },
+          {
+            key: 'faq-10',
+            title:
+              'What is your pricing model for frontend development services?',
+            content:
+              'Our pricing model is flexible and depends on the specific needs and requirements of each project. We offer both fixed-price and time-and-materials pricing options, and we work closely with our clients to determine the most cost-effective and efficient approach for their project.',
           },
         ],
       },

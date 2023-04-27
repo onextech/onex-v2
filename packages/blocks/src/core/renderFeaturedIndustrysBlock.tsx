@@ -6,13 +6,14 @@ import renderFeaturedIndustryBlockItem from './renderFeaturedIndustryBlockItem'
 export interface RenderFeaturedIndustrysBlockProps
   extends Omit<BlockProps, 'items'> {
   items: ClientTestimonial[]
-  title?: string
+  title?: React.ReactNode
+  subtitle?: React.ReactNode
 }
 
 const renderFeaturedIndustrysBlock = (
   props: RenderFeaturedIndustrysBlockProps
 ) => {
-  const { title = 'Featured Industries', items, ...rest } = props
+  const { title = 'Featured Industries', subtitle = '', items, ...rest } = props
   const { routeConfig } = useLayout()
 
   return {
@@ -26,11 +27,10 @@ const renderFeaturedIndustrysBlock = (
       },
       {
         type: 'body1',
-        title:
-          'We stay at the forefront of the latest technology by investing heavily and constantly evaluating the newest emerging technologies and frameworks that enable us to build robust solutions that scale and last.',
+        title: subtitle,
         titleProps: {
           color: 'text.secondary',
-          maxWidth: true,
+          maxWidth: '50%',
         },
       },
       {

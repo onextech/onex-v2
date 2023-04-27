@@ -70,6 +70,8 @@ const TechPage: React.FC<TechPageProps> = (props) => {
               Build World-Class <br /> Dashboard User Interfaces
             </>
           ),
+          subtitle:
+            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces. With optimized performance and a focus on user experience, our dashboards provide powerful insights that enable business units to make informed decisions and stay ahead of the competition.',
           items: showcases,
         }),
         // Technologys
@@ -77,11 +79,15 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         // Client Testimonials
         renderClientTestimonialCardsBlock({
           title: 'Trusted by Frontend Development Teams',
+          subtitle:
+            "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
           items: clientTestimonials,
         }),
         // Industry
         renderFeaturedIndustrysBlock({
           title: 'Access Industry Expertise & Best Practices',
+          subtitle:
+            'We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective development solutions in their industry.',
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
         }),

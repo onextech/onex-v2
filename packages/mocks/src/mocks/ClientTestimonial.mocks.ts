@@ -1,7 +1,7 @@
 export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   {
     title:
-      'We regard the team as co-founders in our business. The entire team from team has invested an incredible amount of time to truly understand our business, our users and their needs.',
+      "Their team of experts helped us navigate complex technical challenges and provided invaluable guidance throughout the development process. We're so grateful to have them on our side.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'about_shape_circle_radial',
     author_title: 'Paul Sherwin',
@@ -11,7 +11,7 @@ export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   },
   {
     title:
-      'We regard the team as co-founders in our business. The entire team from team has invested an incredible amount of time to truly understand our business, our users and their needs.',
+      "Working with One X Tech was a game-changer for our company. Their engineering skills are top-notch and they helped us deliver our product on time and within budget. We couldn't be happier with the results.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'about_shape_circle_radial',
     author_title: 'Sally Ong',
@@ -21,7 +21,7 @@ export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   },
   {
     title:
-      'We regard the team as co-founders in our business. The entire team from team has invested an incredible amount of time to truly understand our business, our users and their needs.',
+      "They have a deep understanding of the latest technologies and trends and are always up for a challenge. We're so happy we found them and look forward to continuing to work with them in the future.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'about_shape_circle_radial',
     author_title: 'Minerva Lee',
