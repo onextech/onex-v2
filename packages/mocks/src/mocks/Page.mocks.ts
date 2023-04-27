@@ -736,8 +736,8 @@ const MOCK_COMMON_PAGES = [
 const MOCK_GROUP_PAGES = [
   ...MOCK_COMMON_PAGES,
   {
+    title: 'Home',
     slug: 'home',
-    title: 'One X Tech',
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle}',
     seo_description: 'This page is all about the technology that we use',
