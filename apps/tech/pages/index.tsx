@@ -31,6 +31,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 2)
+
   return makeGetStaticProps({
     props: {
       page,

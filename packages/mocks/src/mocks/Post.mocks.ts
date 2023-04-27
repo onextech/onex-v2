@@ -9,6 +9,15 @@ import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 export const MOCK_TECH_POSTS = [
   {
     title:
+      'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
+    slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    category_id: 1,
+    exclusive_locales: ['jp'],
+  },
+  {
+    title:
       'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
     slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',
     subtitle:
