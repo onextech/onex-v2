@@ -50,7 +50,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             overline: 'Get Started',
             title: cta_button_title,
             size: 'lg',
-            href: routeConfig.SERVICES,
+            isCta: true,
           },
         }),
         // ClientLogosImageMarquee

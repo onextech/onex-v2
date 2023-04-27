@@ -2,6 +2,7 @@ import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 import { Box, Typography, ButtonProps } from '@gravis-os/ui'
 import TrendingFlatOutlinedIcon from '@mui/icons-material/TrendingFlatOutlined'
+import { GetStartedPage } from '@onex/pages'
 
 export interface RenderGhostButtonBlockItemProps
   extends Omit<ButtonProps, 'size'> {
@@ -9,12 +10,13 @@ export interface RenderGhostButtonBlockItemProps
   title?: ButtonProps['title']
   boxProps?: BlockItemProps['boxProps']
   size?: 'sm' | 'md' | 'lg' | ButtonProps['size']
+  isCta?: boolean
 }
 
 const renderGhostButtonBlockItem = (
   props: RenderGhostButtonBlockItemProps
 ): BlockItemProps => {
-  const { overline, title, boxProps, sx, size = 'md', ...rest } = props
+  const { isCta, overline, title, boxProps, sx, size = 'md', ...rest } = props
 
   const isLarge = size === 'lg'
 
@@ -50,6 +52,14 @@ const renderGhostButtonBlockItem = (
         },
         ...sx,
       },
+      ...(isCta && {
+        dialogProps: {
+          fullScreen: true,
+          disableTitle: true,
+          transitionVariant: 'fade' as const,
+          children: <GetStartedPage fullScreen />,
+        },
+      }),
       ...rest,
     },
     boxProps,
