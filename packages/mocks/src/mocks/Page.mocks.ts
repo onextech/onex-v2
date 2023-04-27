@@ -941,9 +941,9 @@ const MOCK_GROUP_PAGES = [
 const MOCK_TECH_PAGES = [
   ...MOCK_COMMON_PAGES,
   {
-    title: 'One X Group',
-    subtitle: 'Discover the agile process we use to build digital products',
+    title: 'Home',
     slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle}',
     seo_description: 'This page is all about the technology that we use',
     sections: {
