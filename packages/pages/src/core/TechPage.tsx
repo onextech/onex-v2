@@ -43,7 +43,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           center: false,
           dark: false,
           centerOnMobile: true,
-          py: 20,
+          py: { xs: 15, md: 18 },
           maxWidth: 'xl',
           sx: { backgroundColor: 'background.paper' },
           buttonProps: {
