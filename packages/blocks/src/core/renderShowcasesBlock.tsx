@@ -1,20 +1,40 @@
-import React from 'react'
 import { Showcase } from '@onex/types'
 import { BlockProps } from '@gravis-os/landing'
-import { renderShowcaseCardBlockItem } from './index'
+import renderShowcaseCardBlockItem from './renderShowcaseCardBlockItem'
 
-export interface RenderShowcasesBlockProps extends Omit<BlockProps, 'items'> {
+export interface RenderShowcasesBlockProps
+  extends Omit<BlockProps, 'items' | 'title'> {
   items: Showcase[]
+  title?: React.ReactNode
 }
 
 const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
-  const { items } = props
+  const { title = 'Showcase', items } = props
   return {
     key: 'showcases',
-    center: true,
     maxWidth: 'xl',
-    pt: 0,
-    items: items.map((item) => renderShowcaseCardBlockItem({ item })),
+    pt: { xs: 5, md: 10 },
+    items: [
+      {
+        type: 'overline',
+        title: 'Our Work',
+      },
+      {
+        type: 'h3',
+        title,
+        titleProps: { gutterBottom: true, maxWidth: '60%' },
+      },
+      {
+        type: 'body1',
+        title:
+          'We stay at the forefront of the latest technology by investing heavily and constantly evaluating the newest emerging technologies and frameworks that enable us to build robust solutions that scale and last.',
+        titleProps: {
+          color: 'text.secondary',
+          maxWidth: '45%',
+        },
+      },
+      ...items.map((item) => renderShowcaseCardBlockItem({ item })),
+    ],
   }
 }
 

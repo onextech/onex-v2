@@ -28,8 +28,14 @@ export * from './renderServiceBlockItem'
 export { default as renderIndustryBlockItem } from './renderIndustryBlockItem'
 export * from './renderIndustryBlockItem'
 
+export { default as renderFeaturedIndustrysBlock } from './renderFeaturedIndustrysBlock'
+export * from './renderFeaturedIndustrysBlock'
+
 export { default as renderTechnologyBlockItem } from './renderTechnologyBlockItem'
 export * from './renderTechnologyBlockItem'
+
+export { default as renderTechnologysBlock } from './renderTechnologysBlock'
+export * from './renderTechnologysBlock'
 
 export { default as renderHeroBlock } from './renderHeroBlock'
 export * from './renderHeroBlock'
@@ -75,6 +81,12 @@ export * from './renderClientHighlightsImageMarqueeBlock'
 
 export { default as renderTestimonialBlockItem } from './renderTestimonialBlockItem'
 export * from './renderTestimonialBlockItem'
+
+export { default as renderClientTestimonialCardBlockItem } from './renderClientTestimonialCardBlockItem'
+export * from './renderClientTestimonialCardBlockItem'
+
+export { default as renderClientTestimonialCardsBlock } from './renderClientTestimonialCardsBlock'
+export * from './renderClientTestimonialCardsBlock'
 
 export { default as renderParagraphBlockItem } from './renderParagraphBlockItem'
 export * from './renderParagraphBlockItem'

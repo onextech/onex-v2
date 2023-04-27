@@ -3,10 +3,8 @@ import { Blocks } from '@gravis-os/landing'
 import type { Technology } from '@onex/types'
 import {
   renderFourColumnGridBlock,
-  renderTechnologyBlockItem,
-  RenderTechnologyBlockItemProps,
+  renderTechnologysBlock,
 } from '@onex/blocks'
-import { useLayout } from '@onex/providers'
 
 export interface TechnologysPageProps {
   technologys: Technology[]
@@ -14,7 +12,6 @@ export interface TechnologysPageProps {
 
 const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
   const { technologys } = props
-  const { routeConfig } = useLayout()
 
   return (
     <Blocks
@@ -95,54 +92,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
           ],
         }),
-        {
-          key: 'technologys',
-          sx: { backgroundColor: 'background.paper' },
-          items: [
-            {
-              type: 'overline',
-              title: 'Our Technologies',
-              titleProps: { textAlign: 'center' },
-            },
-            {
-              type: 'h3',
-              title: (
-                <span>
-                  Learn More About Our
-                  <br />
-                  Key Technology Services
-                </span>
-              ),
-              titleProps: { gutterBottom: true, textAlign: 'center' },
-            },
-            {
-              type: 'body1',
-              maxWidth: 'md',
-              title:
-                'We stay at the forefront of the latest technology by investing heavily and constantly evaluating the newest emerging technologies and frameworks that enable us to build robust solutions that scale and last.',
-              boxProps: { textAlign: 'center' },
-              titleProps: {
-                color: 'text.secondary',
-                textAlign: 'center',
-                maxWidth: true,
-              },
-            },
-            {
-              maxWidth: 'xl',
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              gridProps: { spacing: 5, rowSpacing: 10 },
-              gridItems: technologys.map((technology) =>
-                renderTechnologyBlockItem({
-                  item: {
-                    ...technology,
-                    href: `${routeConfig.TECHNOLOGYS}/${technology.slug}`,
-                  } as RenderTechnologyBlockItemProps['item'],
-                })
-              ),
-            },
-          ],
-        },
+        renderTechnologysBlock({ items: technologys }),
       ]}
     />
   )

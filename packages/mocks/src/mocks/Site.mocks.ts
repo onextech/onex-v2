@@ -31,6 +31,10 @@ export const MOCK_COMMON_SITE = {
   nav_is_open_on_hover: true,
   nav_is_ecosystem_visible: false,
 
+  // Cta
+  cta_title: 'Build the future with {appTitle}',
+  cta_button_title: 'Get Started',
+
   // Social Media
   social_media_github_url: 'https://github.com/onextech',
   social_media_medium_url: 'https://medium.com/one-x-tech',
@@ -79,6 +83,10 @@ export const MOCK_TECH_SITE = {
   // App
   title: 'One X Tech',
   absolute_url: 'https://onextech.com.sg',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with One X Tech.',
+  cta_button_title: 'Schedule a Call',
 
   // Logo
   logo_width: 95,

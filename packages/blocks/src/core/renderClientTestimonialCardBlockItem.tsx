@@ -2,11 +2,13 @@ import React from 'react'
 import { Ratings } from '@gravis-os/ui'
 import { ClientTestimonial } from '@onex/types'
 
-export interface RenderTestimonialBlockItemProps {
+export interface RenderClientTestimonialCardBlockItemProps {
   item: ClientTestimonial
 }
 
-const renderTestimonialBlockItem = (props: RenderTestimonialBlockItemProps) => {
+const renderClientTestimonialCardBlockItem = (
+  props: RenderClientTestimonialCardBlockItemProps
+) => {
   const { item } = props
   const {
     title,
@@ -15,19 +17,19 @@ const renderTestimonialBlockItem = (props: RenderTestimonialBlockItemProps) => {
     author_company_title,
     rating_count,
   } = item || {}
+
   return [
     {
       type: 'subtitle2',
       title: `"${title}"`,
-      titleProps: { maxWidth: '70%' },
     },
     {
       type: 'jsx',
-      title: <Ratings value={rating_count} disableText sx={{ my: 1 }} />,
+      title: <Ratings value={rating_count} disableText sx={{ my: 2 }} />,
     },
     { type: 'body1', title: author_title },
     { type: 'body1', title: `${author_job_title}, ${author_company_title}` },
   ]
 }
 
-export default renderTestimonialBlockItem
+export default renderClientTestimonialCardBlockItem

@@ -29,7 +29,7 @@ export const IndustryDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const industry = fetchIndustryBySlug(context.params.slug)
     const site = fetchSite()
-    const industryPage = getDynamicPage(industry, site)
+    const industryPage = getDynamicPage({ context, page: industry, site })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
       MOCK_POSTS[MOCK_KEY],
       industry?.title

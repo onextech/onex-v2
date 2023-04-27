@@ -7,6 +7,7 @@ export interface ContactCalloutProps {}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
   const { site } = useLayout()
+  const { cta_title, cta_button_title } = site
 
   const footerCalloutBlockProps = {
     py: 3,
@@ -24,10 +25,18 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
         gridItems: [
           {
             md: 8,
+            boxProps: {
+              sx: {
+                height: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: { xs: 'center', md: 'flex-start' },
+              },
+            },
             items: [
               {
                 type: 'h5',
-                title: `Build the future with ${site.title}.`,
+                title: cta_title,
                 titleProps: {
                   sx: { textAlign: { xs: 'center', md: 'left' } },
                 },
@@ -37,7 +46,9 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
           {
             md: 4,
             boxProps: { sx: { textAlign: { xs: 'center', md: 'right' } } },
-            items: [renderContactCalloutButtonBlockItem()],
+            items: [
+              renderContactCalloutButtonBlockItem({ title: cta_button_title }),
+            ],
           },
         ],
       },

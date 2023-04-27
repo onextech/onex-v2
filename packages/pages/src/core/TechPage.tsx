@@ -1,25 +1,38 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
-  renderClientHighlightsImageMarqueeBlock,
-  renderGhostButtonBlockItem,
+  renderClientLogosImageMarqueeBlock,
   renderHeroWithBackgroundBlock,
   renderShowcasesBlock,
-  renderThreeColumnGridBlock,
+  renderFourColumnGridBlock,
+  renderTechnologysBlock,
+  renderFeaturedPostsBlock,
+  renderFeaturedIndustrysBlock,
+  renderClientTestimonialCardsBlock,
+  renderFaqsAccordionBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page, Showcase } from '@onex/types'
+import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
+import { useRouter } from 'next/router'
 
 export interface TechPageProps {
   page: Page
   showcases: Showcase[]
+  technologys: Technology[]
+  posts: Post[]
+  industrys: Industry[]
 }
 
 const TechPage: React.FC<TechPageProps> = (props) => {
-  const { page, showcases } = props
-  const { site, routeConfig, clientHighlights } = useLayout()
-  const { overline, sections } = page || {}
-  const { hero, benefits, features, cta } = sections || {}
+  const { page, showcases, technologys, posts, industrys } = props
+  const router = useRouter()
+  const { site, routeConfig, clientLogos, clientTestimonials } = useLayout()
+  const { locales, cta_button_title } = site
+  const localeTitle = locales?.find(
+    ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
+  )?.title
+  const { sections } = page || {}
+  const { hero, benefits, faqs } = sections || {}
 
   return (
     <Blocks
@@ -27,70 +40,63 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         // Hero
         renderHeroWithBackgroundBlock({
           ...hero,
+          center: false,
+          dark: false,
+          centerOnMobile: true,
+          py: 20,
+          maxWidth: 'xl',
+          sx: { backgroundColor: 'background.paper' },
           buttonProps: {
-            overline: 'What we do',
-            title: 'Smarter Businesses',
+            overline: 'Get Started',
+            title: cta_button_title,
             size: 'lg',
             href: routeConfig.SERVICES,
           },
-          secondaryButtonProps: {
-            overline: 'Who we are',
-            title: 'Business Software Experts',
-            size: 'lg',
-            href: routeConfig.CAREERS,
-          },
         }),
-        // Marquee
-        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({
+          items: clientLogos.slice(0, 8),
+          sx: { backgroundColor: 'background.paper' },
+        }),
         // Benefits
-        renderThreeColumnGridBlock({
+        renderFourColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
         // Showcases
-        renderShowcasesBlock({ items: showcases }),
-        // Features
-        renderThreeColumnGridBlock(features),
-        // Cta
-        {
-          key: cta.title,
-          center: true,
-          maxWidth: 'md',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          items: [
-            { type: 'overline', title: overline },
-            {
-              type: 'h3',
-              title: cta.title,
-              titleProps: { type: 'h3', maxWidth: 'xl', gutterBottom: true },
-            },
-            {
-              type: 'body1',
-              title: cta.subtitle,
-              titleProps: {
-                color: 'text.secondary',
-              },
-            },
-            renderGhostButtonBlockItem({
-              boxProps: { mt: 3 },
-              overline: 'Contact Us',
-              title: 'Get in Touch',
-              href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
-            }),
-            {
-              type: 'image',
-              title: '/images/tech_men.png',
-              disableContainer: true,
-              titleProps: {
-                alt: 'tech men',
-                background: true,
-                backgroundHeight: { xs: 480, md: 640 },
-                backgroundSx: { mt: { xs: 5, md: 10 } },
-              },
-            },
-          ],
-        },
+        renderShowcasesBlock({
+          title: (
+            <>
+              Build World-Class <br /> Dashboard User Interfaces
+            </>
+          ),
+          items: showcases,
+        }),
+        // Technologys
+        renderTechnologysBlock({ items: technologys }),
+        // Client Testimonials
+        renderClientTestimonialCardsBlock({
+          title: 'Trusted by Frontend Development Teams',
+          items: clientTestimonials,
+        }),
+        // Industry
+        renderFeaturedIndustrysBlock({
+          title: 'Access Industry Expertise & Best Practices',
+          items: industrys,
+          sx: { backgroundColor: 'background.paper' },
+        }),
+        // Posts
+        renderFeaturedPostsBlock({
+          title: localeTitle
+            ? `Read our Latest Insights in ${localeTitle}`
+            : `Read our Latest Insights`,
+          items: posts,
+        }),
+        // Faqs
+        renderFaqsAccordionBlock({
+          py: { xs: 5, md: 10 },
+          ...faqs,
+        }),
       ]}
     />
   )

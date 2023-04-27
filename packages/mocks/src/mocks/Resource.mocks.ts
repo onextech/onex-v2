@@ -25,6 +25,10 @@ export const MOCK_TECH_RESOURCES = [
   // Sections
   sections: {
     benefits: {
+      overline: 'What we do',
+      title: 'Our Approach to {title}',
+      subtitle:
+        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
         {
           fa_icon: 'fa-guitar',
@@ -64,7 +68,7 @@ export const MOCK_TECH_RESOURCES = [
       overline: 'What we do',
       title: 'Our Approach to {title}',
       subtitle:
-        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        'How to deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
         {
           fa_icon: 'fa-mug-hot',

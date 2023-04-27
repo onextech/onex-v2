@@ -110,22 +110,28 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
             },
           ],
         },
-        // Benefits
-        renderFourColumnGridBlock({
-          ...benefits,
-          py: 0,
+        // Features
+        renderThreeColumnGridBlock({
+          ...features,
+          textAlign: 'left',
+          py: { xs: 5, md: 10 },
           sx: {
             backgroundColor: 'background.paper',
             borderTop: 1,
             borderColor: 'divider',
           },
-        }),
-        // Features
-        renderThreeColumnGridBlock({
-          ...features,
-          textAlign: 'left',
-          sx: { backgroundColor: 'background.paper' },
           title: 'In this guide, we cover:',
+        }),
+        // Benefits
+        renderFourColumnGridBlock({
+          ...benefits,
+          pt: { xs: 5, md: 10 },
+          sx: {
+            backgroundColor: 'background.paper',
+            borderTop: 1,
+            borderColor: 'divider',
+          },
+          title: 'What you will learn',
         }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),

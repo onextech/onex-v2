@@ -9,6 +9,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
   const { title, subtitle, href, avatar_src, avatar_alt } = item || {}
 
   return {
+    xs: 12,
     sm: 6,
     md: 4,
     items: [

@@ -25,7 +25,7 @@ export const ServiceDetail = {
   getStaticProps: (): GetStaticProps => async (context) => {
     const service = fetchServiceBySlug(context.params.slug)
     const site = fetchSite()
-    const servicePage = getDynamicPage(service, site)
+    const servicePage = getDynamicPage({ page: service, context, site })
     const serviceCategory = getCategoryFromCrudItem(
       service,
       MOCK_SERVICE_CATEGORYS[MOCK_KEY]

@@ -1,8 +1,8 @@
 export const MOCK_TECH_SERVICE_CATEGORYS = [
   {
     id: 1,
-    title: 'Application Development',
-    slug: 'application-development',
+    title: 'Accelerate Development',
+    slug: 'accelerate-development',
     subtitle:
       'Lead your business toward a long-term vision for holistic prosperity.',
     hero_src: '/images/about_nodes.png',
@@ -19,8 +19,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 3,
-    title: 'Infrastructure & Cloud',
-    slug: 'infrastructure-cloud',
+    title: 'User Experience',
+    slug: 'user-experience',
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
     hero_src: '/images/about_working_in_office.png',
@@ -37,8 +37,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 5,
-    title: 'Modern Workplace',
-    slug: 'modern-workplace',
+    title: 'Staff Augmentation',
+    slug: 'staff-augmentation',
     subtitle:
       'Grow critical design capabilities and a culture of innovation from within your organization.',
     hero_src: '/images/about_nodes.png',
@@ -46,8 +46,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 6,
-    title: 'Quality Assurance',
-    slug: 'quality-assurance',
+    title: 'Frontend Development',
+    slug: 'front-end-development',
     subtitle:
       'Design and build customer-focused organizations, processes and platforms for the future.',
     hero_src: '/images/about_nodes.png',

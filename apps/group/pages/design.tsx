@@ -8,7 +8,7 @@ import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()
-  const design = getDynamicPage(MOCK_DESIGN_PAGE, site)
+  const design = getDynamicPage({ context, page: MOCK_DESIGN_PAGE, site })
   const showcases = MOCK_TECH_SHOWCASES
   return makeGetStaticProps({ props: { design, showcases } })(context)
 }

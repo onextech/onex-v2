@@ -4,6 +4,7 @@ import { ServiceCategory } from '@onex/types'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
+import { useLayout } from '@onex/providers'
 
 export interface LeadFormProps {
   serviceCategorys: ServiceCategory[]
@@ -12,6 +13,9 @@ export interface LeadFormProps {
 
 const LeadForm: React.FC<LeadFormProps> = (props) => {
   const { serviceCategorys, onSubmit } = props
+
+  const { site } = useLayout()
+  const { cta_button_title } = site
 
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
 
@@ -46,7 +50,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
         }}
         onSubmit={handleSubmit}
         submitButtonProps={{
-          title: 'Get Started',
+          title: cta_button_title,
           variant: 'contained',
           size: 'large',
           sx: { mt: 2 },

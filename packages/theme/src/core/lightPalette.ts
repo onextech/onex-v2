@@ -1,4 +1,4 @@
-import { green } from '@mui/material/colors'
+import { green, yellow } from '@mui/material/colors'
 
 const lightPalette = {
   primary: {
@@ -7,6 +7,7 @@ const lightPalette = {
   secondary: {
     main: green.A700,
   },
+  warning: { main: yellow['600'] },
   background: {
     paper: '#fff',
     default: '#f8f9fa',

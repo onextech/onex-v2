@@ -24,6 +24,10 @@ interface Site {
   company_title?: string
   company_absolute_url?: string
 
+  // Cta
+  cta_title?: string
+  cta_button_title?: string
+
   // Contact
   general_email?: string
   general_phone?: string

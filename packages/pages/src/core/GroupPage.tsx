@@ -47,7 +47,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        // Showcases
+        // Posts
         renderFeaturedPostsBlock({ items: posts }),
         // Features
         renderThreeColumnGridBlock(features),

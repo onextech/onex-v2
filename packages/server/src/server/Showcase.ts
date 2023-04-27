@@ -28,7 +28,7 @@ export const ShowcaseDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const showcase = fetchShowcaseBySlug(context.params.slug)
     const site = fetchSite()
-    const showcasePage = getDynamicPage(showcase, site)
+    const showcasePage = getDynamicPage({ context, page: showcase, site })
     return makeGetStaticProps({ props: { showcase: showcasePage } })(context)
   },
   getStaticPaths: (): GetStaticPaths =>

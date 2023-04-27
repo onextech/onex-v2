@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 import renderGhostButtonBlockItem, {
   RenderGhostButtonBlockItemProps,
@@ -25,6 +24,7 @@ const renderHeroWithBackgroundBlock = (
     hero_src,
     hero_alt,
     buttonProps,
+    center = true,
     secondaryButtonProps,
     ...rest
   } = props
@@ -34,23 +34,27 @@ const renderHeroWithBackgroundBlock = (
     pt: 30,
     pb: 30,
     dark: true,
-    center: true,
+    center,
     maxWidth: 'md',
     ...(hero_src && { backgroundImageProps: { src: hero_src, alt: hero_alt } }),
     items: [
       { type: 'overline', title: overline },
-      { type: 'h2', title, titleProps: { gutterBottom: true } },
+      {
+        type: 'h1',
+        title,
+        titleProps: { gutterBottom: true, maxWidth: !center && '60%' },
+      },
       {
         type: 'subtitle1',
         title: subtitle,
-        titleProps: { color: 'text.secondary', maxWidth: true },
+        titleProps: { color: 'text.secondary', maxWidth: center || '45%' },
       },
       {
         type: 'stack',
-        sx: { mt: 3 },
+        sx: { mt: 4 },
         stackProps: {
           spacing: 0,
-          center: true,
+          center,
           direction: 'row' as const,
           reverseDirectionOnMobile: true,
         },
@@ -58,7 +62,7 @@ const renderHeroWithBackgroundBlock = (
           {
             items: [renderGhostButtonBlockItem(buttonProps)],
           },
-          {
+          secondaryButtonProps && {
             items: [renderGhostButtonBlockItem(secondaryButtonProps)],
           },
         ],

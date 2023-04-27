@@ -4,20 +4,25 @@ import {
 } from '@gravis-os/utils'
 import flowRight from 'lodash/flowRight'
 import { routeConfig } from '@onex/common'
-import { Page } from '@onex/types'
-import { fetchSite } from '../server'
 
 // ==============================
 // Plugins
 // ==============================
-const withSiteVariablesReplacement = () => (page: Page) => {
-  const site = fetchSite()
+const withSiteVariablesReplacement = () => (props) => {
+  const { page, site, context } = props
+  const { locale } = context
+
+  const localeTitle = site.locales?.find(
+    ({ iso_alpha_2 }) => iso_alpha_2 === locale
+  )?.title
 
   return getObjectWithReplacedValues(page, {
     // Replace `{title}` with page.title
     title: page.title,
     // Replace `{appTitle}` with site.title
     appTitle: site.title,
+    // Replace `{localeTitle}` with site.title
+    localeTitle,
     // Replace routes e.g. `{routes.SERVICES}` to `/services`
     ...Object.entries(routeConfig).reduce((acc, [key, value]) => {
       return { ...acc, [`routes.${key}`]: value }
@@ -25,18 +30,26 @@ const withSiteVariablesReplacement = () => (page: Page) => {
   })
 }
 
-const withSeoTitleFromPageTitle = () => (page: Page) => {
-  if (page.seo?.title) return page
+const withSeoTitleFromPageTitle = () => (props) => {
+  const { page } = props
+  if (page.seo?.title) return props
   return {
-    ...page,
-    seo: {
-      title: page.title,
+    ...props,
+    page: {
+      ...page,
+      seo: {
+        title: page.title,
+      },
     },
   }
 }
 
-const withSeoGrouping = () => (page: Page) => {
-  return getObjectWithGroupedKeyFromPrefix(page, 'seo')
+const withSeoGrouping = () => (props) => {
+  const { page } = props
+  return {
+    ...props,
+    ...getObjectWithGroupedKeyFromPrefix(page, 'seo'),
+  }
 }
 
 // ==============================

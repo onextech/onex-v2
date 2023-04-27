@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import getDynamicPage from '../utils/getDynamicPage'
+import { fetchSite } from './Site'
 
 const { MOCK_KEY } = process.env
 
@@ -35,8 +36,9 @@ export const PageDetail = {
   getStaticProps:
     ({ slug }): GetStaticProps =>
     (context) => {
+      const site = fetchSite()
       const page = fetchPageBySlug(slug || context?.params?.slug)
-      const dynamicPage = getDynamicPage(page)
+      const dynamicPage = getDynamicPage({ context, page, site })
       return makeGetStaticProps({ props: { page: dynamicPage } })(context)
     },
   getStaticPaths: (): GetStaticPaths =>

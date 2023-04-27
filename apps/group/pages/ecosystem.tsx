@@ -9,13 +9,11 @@ import { PageProvider } from '@onex/providers'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()
-  const ecosystem = getDynamicPage(
-    {
-      ...MOCK_GROUP_INDUSTRYS[0],
-      title: 'Ecosystem',
-    },
-    site
-  )
+  const ecosystem = getDynamicPage({
+    page: { ...MOCK_GROUP_INDUSTRYS[0], title: 'Ecosystem' },
+    site,
+    context,
+  })
   return makeGetStaticProps({ props: { ecosystem } })(context)
 }
 

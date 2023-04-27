@@ -12,13 +12,14 @@ const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
     href,
     avatar_src,
     avatar_alt,
-    avatar_width = 60,
-    avatar_height = 60,
+    avatar_width = 56,
+    avatar_height = 56,
   } = item || {}
 
   return {
     xs: 6,
     md: 4,
+    lg: 3,
     items: [
       {
         type: 'image',
@@ -27,10 +28,10 @@ const renderTechnologyBlockItem = (props: RenderTechnologyBlockItemProps) => {
           alt: avatar_alt,
           width: avatar_width,
           height: avatar_height,
-          sx: { mb: 3 },
+          sx: { mb: 1 },
         },
       },
-      { type: 'link', title, titleProps: { href, variant: 'h5' } },
+      { type: 'link', title, titleProps: { href, variant: 'subtitle2' } },
       {
         type: 'body1',
         title: subtitle,

@@ -106,7 +106,7 @@ export const MOCK_DIGITAL_PAGE = {
   sections: {
     hero: {
       overline: 'Digital',
-      title: 'Grow Your Online Presence',
+      title: 'We Design & Develop Custom Software for Businesses',
       subtitle:
         'Maximise business growth through insight driven web digital. We put business first in everything we do.',
     },
@@ -707,7 +707,9 @@ const MOCK_COMMON_PAGES = [
   { title: 'Digital', slug: 'digital' },
   { title: 'Contact Us', slug: 'contact' },
   { title: 'News', slug: 'news' },
+  { title: 'Resources', slug: 'resources' },
   { title: 'Newsletter', slug: 'newsletter' },
+  { title: 'Ecosystem', slug: 'ecosystem' },
 ].map((page) => ({
   ...MOCK_PAGE,
   href: `/${page.slug}`,
@@ -931,10 +933,10 @@ const MOCK_TECH_PAGES = [
     seo_description: 'This page is all about the technology that we use',
     sections: {
       hero: {
-        overline: 'Tech',
-        title: 'We Design & Develop Custom Software for Businesses',
+        overline: 'One X Tech',
+        title: 'Modernizing Enterprise User Experiences',
         subtitle:
-          'Maximise business growth through insight driven web digital. We put business first in everything we do.',
+          "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -951,28 +953,35 @@ const MOCK_TECH_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Our Suite of Services',
+        title: 'Speed Up Product Delivery',
         subtitle:
-          "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
-        maxWidth: 'lg',
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams that are likable.',
+        maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Design',
+            fa_icon: 'fa-pen-paintbrush',
+            title: 'User Interface Development',
             subtitle:
-              'A conversion centred approach to creating web and product designs that drive action.',
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Development',
-            subtitle: 'Build tailor-made websites that drive leads and sales.',
+            fa_icon: 'fa-code',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Application Development',
+            fa_icon: 'fa-users',
+            title: 'Product Team Augmentation',
             subtitle:
-              'Accelerate business agility across your organisation with scalable enterprise apps.',
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          },
+          {
+            fa_icon: 'fa-object-group',
+            title: 'Software Architecture R&D',
+            subtitle:
+              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
           },
         ],
       },

@@ -446,6 +446,13 @@ export const MOCK_GROUP_SERVICES = [
       'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 6,
   },
+  {
+    title: 'Modern Workplace',
+    slug: 'modern workplace',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    category_id: 6,
+  },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
     id: i + 1,

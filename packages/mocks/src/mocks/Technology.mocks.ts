@@ -176,17 +176,12 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       'Make your product the first choice for users with designers who built dozens of them.',
   },
   {
+    avatar_src: '/images/technology_typescript.png',
+    avatar_alt: 'Typescript',
     title: 'TypeScript',
     slug: 'typescript',
     subtitle:
       'Build or scale competitive products ready for future growth and millions of users.',
-  },
-  {
-    avatar_src: '/images/technology_node.png',
-    avatar_alt: 'Node.js',
-    title: 'Node.js',
-    slug: 'nodejs',
-    subtitle: 'Let certified engineers kick-start your cloud operations',
   },
   {
     avatar_src: '/images/technology_react.png',
@@ -197,18 +192,45 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       'Work with product experts with the know-how tested in 7+ industries.',
   },
   {
+    avatar_src: '/images/technology_nextjs.png',
+    avatar_alt: 'Next.js',
+    avatar_width: 104,
+    avatar_height: 62,
     title: 'Next.js',
     slug: 'nextjs',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
   },
   {
-    avatar_src: '/images/technology_express.png',
-    avatar_alt: 'Express',
-    avatar_width: 126,
-    avatar_height: 37,
-    title: 'Express',
-    slug: 'express',
+    avatar_src: '/images/technology_node.png',
+    avatar_alt: 'Node.js',
+    avatar_width: 50,
+    avatar_height: 55,
+    title: 'Node.js',
+    slug: 'nodejs',
+    subtitle: 'Let certified engineers kick-start your cloud operations',
+  },
+  {
+    avatar_src: '/images/technology_webpack.png',
+    avatar_alt: 'Webpack',
+    title: 'Webpack',
+    slug: 'webpack',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+  {
+    avatar_src: '/images/technology_module_federation.png',
+    avatar_alt: 'Module Federation',
+    title: 'Module Federation',
+    slug: 'module-federation',
+    subtitle:
+      'Reach the software flexibility needed to scale by optimizing your architecture.',
+  },
+  {
+    avatar_src: '/images/technology_nx.png',
+    avatar_alt: 'Nx',
+    title: 'Nx Monorepo',
+    slug: 'nx-monorepo',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
   },
@@ -219,16 +241,34 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       'Work with product experts with the know-how tested in 7+ industries.',
   },
   {
-    title: 'Webpack',
-    slug: 'webpack',
+    title: 'Ant Design',
+    slug: 'ant-design',
     subtitle:
-      'Reach the software flexibility needed to scale by optimizing your architecture.',
+      'Work with product experts with the know-how tested in 7+ industries.',
   },
   {
-    title: 'Micro Services',
-    slug: 'micro-services',
+    title: 'MUI',
+    slug: 'mui',
     subtitle:
-      'Reach the software flexibility needed to scale by optimizing your architecture.',
+      'Work with product experts with the know-how tested in 7+ industries.',
+  },
+  {
+    title: 'Sass',
+    slug: 'saas',
+    subtitle:
+      'Work with product experts with the know-how tested in 7+ industries.',
+  },
+  {
+    title: 'Vue',
+    slug: 'vue',
+    subtitle:
+      'Work with product experts with the know-how tested in 7+ industries.',
+  },
+  {
+    title: 'Storybook',
+    slug: 'storybook',
+    subtitle:
+      'Work with product experts with the know-how tested in 7+ industries.',
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECH_TECHNOLOGY_PAGE, {
