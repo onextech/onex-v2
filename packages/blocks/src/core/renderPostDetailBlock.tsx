@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 import { PressRelease, Post } from '@onex/types'
 import renderHtmlBlockItem from './renderHtmlBlockItem'
@@ -38,8 +37,12 @@ const renderPostDetailBlock = (props: RenderPostDetailBlockItemProps) => {
                   height: 40,
                 },
               },
-              { type: 'subtitle3', title: author_title },
-              { type: 'body1', title: author_job_title },
+              { type: 'body1', title: author_title },
+              {
+                type: 'body1',
+                title: author_job_title,
+                titleProps: { color: 'text.secondary' },
+              },
             ],
           },
           renderHtmlBlockItem({ html }),

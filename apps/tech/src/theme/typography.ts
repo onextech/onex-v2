@@ -1,20 +1,18 @@
 import { createTheme } from '@mui/material/styles'
 import { Roboto, IBM_Plex_Mono, Inter } from 'next/font/google'
 
+export const headerFont = Inter({
+  weight: ['600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
+})
 export const bodyFont = Roboto({
   weight: ['300', '400', '500'],
   subsets: ['latin'],
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
 })
-
-const headerFont = Inter({
-  weight: ['600', '700', '800', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
-})
-
 export const overlineFont = IBM_Plex_Mono({
   weight: ['500', '600', '700'],
   subsets: ['latin'],
@@ -32,7 +30,7 @@ const { pxToRem } = defaultTheme.typography
 const typography = {
   fontFamily: bodyFontFamily,
   h1: {
-    fontFamily: 'SF Pro Display',
+    fontFamily: headerFontFamily,
     fontSize: pxToRem(56),
     [defaultTheme.breakpoints.up('md')]: {
       fontSize: pxToRem(72),
@@ -76,13 +74,13 @@ const typography = {
     lineHeight: 1.5,
   },
   subtitle1: {
-    fontSize: pxToRem(24),
+    fontSize: pxToRem(20),
     letterSpacing: 0,
     lineHeight: 1.35,
     fontWeight: 300,
   },
   subtitle2: {
-    fontSize: pxToRem(20),
+    fontSize: pxToRem(18),
     letterSpacing: 0,
     lineHeight: 1.4,
     fontWeight: 500,

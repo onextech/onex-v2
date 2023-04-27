@@ -1133,8 +1133,7 @@ const MOCK_TECH_PAGES = [
           },
           {
             key: 'faq-3',
-            title:
-              'How do you ensure the quality of the software you develop?',
+            title: 'How do you ensure the quality of the software you develop?',
             content:
               'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
           },
@@ -1164,8 +1163,7 @@ const MOCK_TECH_PAGES = [
           },
           {
             key: 'faq-8',
-            title:
-              'What’s your experience in enterprise software development?',
+            title: 'What’s your experience in enterprise software development?',
             content:
               'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
           },

@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlockProps, BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderPostHeroBlockItemProps extends BlockProps {
@@ -33,7 +32,7 @@ const renderPostHeroBlockItem = (props: RenderPostHeroBlockItemProps) => {
           ...overlineProps,
         },
       },
-      { type: 'h1', title },
+      { type: 'h3', title, titleProps: { component: 'h1' } },
       {
         type: 'subtitle1',
         title: subtitle,

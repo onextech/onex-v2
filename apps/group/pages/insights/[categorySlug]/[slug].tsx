@@ -26,6 +26,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
       <LandingLayout
         seo={{ title: post.title, description: post.subtitle }}
         autoBreadcrumbs
+        breadcrumbsProps={{ hideLastItem: true }}
       >
         <PostPage
           post={post}

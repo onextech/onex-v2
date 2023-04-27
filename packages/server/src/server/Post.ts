@@ -1,4 +1,4 @@
-import { MOCK_POSTS, MOCK_SERVICE_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
+import { MOCK_POSTS, MOCK_POST_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import {
   getCategoryFromCrudItem,
@@ -24,7 +24,7 @@ export const PostDetail = {
     const post = fetchPostBySlug(context.params.slug)
     const postCategory = getCategoryFromCrudItem(
       post,
-      MOCK_SERVICE_CATEGORYS[MOCK_KEY]
+      MOCK_POST_CATEGORYS[MOCK_KEY]
     )
     const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
       ({ category_id }) => category_id === post?.category_id
