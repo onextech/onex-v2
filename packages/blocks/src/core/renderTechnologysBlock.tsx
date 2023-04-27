@@ -1,10 +1,7 @@
 import { useLayout } from '@onex/providers'
 import { Technology } from '@onex/types'
-import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
-import renderTechnologyBlockItem, {
-  RenderTechnologyBlockItemProps,
-} from './renderTechnologyBlockItem'
+import renderTechnologyBlockItem from './renderTechnologyBlockItem'
 
 export interface RenderTechnologysBlockProps extends Omit<BlockProps, 'items'> {
   items: Technology[]
@@ -51,11 +48,11 @@ const renderTechnologysBlock = (props: RenderTechnologysBlockProps) => {
             item: {
               ...item,
               href: `${routeConfig.TECHNOLOGYS}/${item.slug}`,
-            } as RenderTechnologyBlockItemProps['item'],
+            },
           })
         ),
       },
-    ],
+    ] as BlockProps['items'],
     ...rest,
   }
 }

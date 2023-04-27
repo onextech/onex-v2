@@ -4,7 +4,7 @@ import { useLayout } from '@onex/providers'
 import renderFeaturedIndustryBlockItem from './renderFeaturedIndustryBlockItem'
 
 export interface RenderFeaturedIndustrysBlockProps
-  extends Omit<BlockProps, 'items'> {
+  extends Omit<BlockProps, 'items' | 'title'> {
   items: ClientTestimonial[]
   title?: React.ReactNode
   subtitle?: React.ReactNode

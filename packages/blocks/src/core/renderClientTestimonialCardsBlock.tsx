@@ -3,7 +3,7 @@ import { BlockProps } from '@gravis-os/landing'
 import renderClientTestimonialCardBlockItem from './renderClientTestimonialCardBlockItem'
 
 export interface RenderClientTestimonialCardsBlockProps
-  extends Omit<BlockProps, 'items'> {
+  extends Omit<BlockProps, 'items' | 'title'> {
   items: ClientTestimonial[]
   title?: React.ReactNode
   subtitle?: React.ReactNode

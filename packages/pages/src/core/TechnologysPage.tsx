@@ -1,10 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import type { Technology } from '@onex/types'
-import {
-  renderFourColumnGridBlock,
-  renderTechnologysBlock,
-} from '@onex/blocks'
+import { renderFourColumnGridBlock, renderTechnologysBlock } from '@onex/blocks'
 
 export interface TechnologysPageProps {
   technologys: Technology[]
