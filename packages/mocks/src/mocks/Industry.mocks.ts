@@ -226,6 +226,7 @@ export const MOCK_TECH_INDUSTRYS = [
     subtitle:
       'We help investment banks, wealth and asset management firms, and other market infrastructure firms prepare for tomorrow.',
     fa_icon: 'fa-chart-mixed-up-circle-dollar',
+    is_featured: true,
   },
   {
     title: 'Government',
@@ -233,6 +234,7 @@ export const MOCK_TECH_INDUSTRYS = [
       'We combine technology and a delivery-focused culture to enable leaders across public sector organizations to turn ambition into action.',
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
+    is_featured: true,
   },
   {
     title: 'Maritime',

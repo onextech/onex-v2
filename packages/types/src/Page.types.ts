@@ -28,6 +28,11 @@ interface Page extends CrudItem {
   hero_src?: string
   hero_alt?: string
   html?: string
+
+  // Display
+  is_featured?: boolean
+  is_hidden_from_nav?: boolean
+
   // Sections
   sections?: {
     [key in PageSection]: {

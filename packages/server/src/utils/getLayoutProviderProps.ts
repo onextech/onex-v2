@@ -29,11 +29,15 @@ const getLayoutProviderProps = ({ context }) => {
     clientLogos: MOCK_CLIENT_LOGOS[MOCK_KEY],
     clientHighlights: MOCK_CLIENT_HIGHLIGHTS[MOCK_KEY],
     clientTestimonials: MOCK_CLIENT_TESTIMONIALS[MOCK_KEY],
-    industrys: MOCK_INDUSTRYS[MOCK_KEY].map((industry) => ({
+    industrys: MOCK_INDUSTRYS[MOCK_KEY].filter(
+      ({ is_hidden_from_nav }) => !is_hidden_from_nav
+    ).map((industry) => ({
       ...industry,
       href: `${routeConfig.INDUSTRYS}/${industry.slug}`,
     })),
-    pages: MOCK_PAGES[MOCK_KEY],
+    pages: MOCK_PAGES[MOCK_KEY].filter(
+      ({ is_hidden_from_nav }) => !is_hidden_from_nav
+    ),
     postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY].map((postCategory) => ({
       ...postCategory,
       href: `${routeConfig.POSTS}/${postCategory.slug}`,
@@ -52,7 +56,9 @@ const getLayoutProviderProps = ({ context }) => {
         }))
       ),
     })),
-    technologys: MOCK_TECHNOLOGYS[MOCK_KEY].map((technology) => ({
+    technologys: MOCK_TECHNOLOGYS[MOCK_KEY].filter(
+      ({ is_hidden_from_nav }) => !is_hidden_from_nav
+    ).map((technology) => ({
       ...technology,
       href: `${routeConfig.TECHNOLOGYS}/${technology.slug}`,
     })),

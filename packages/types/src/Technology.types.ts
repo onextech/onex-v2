@@ -7,6 +7,8 @@ interface Technology extends Page {
   avatar_height?: number
   hero_src?: string
   hero_alt?: string
+  is_featured?: boolean
+  is_hidden_from_nav?: boolean
 }
 
 export default Technology

@@ -174,6 +174,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_typescript.png',
@@ -182,6 +183,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'typescript',
     subtitle:
       'Build or scale competitive products ready for future growth and millions of users.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_react.png',
@@ -190,6 +192,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'react',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_nextjs.png',
@@ -200,6 +203,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'nextjs',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_node.png',
@@ -209,6 +213,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Node.js',
     slug: 'nodejs',
     subtitle: 'Let certified engineers kick-start your cloud operations',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_webpack.png',
@@ -217,6 +222,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'webpack',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_module_federation.png',
@@ -225,6 +231,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'module-federation',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
+    is_featured: true,
   },
   {
     avatar_src: '/images/technology_nx.png',
@@ -233,6 +240,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'nx-monorepo',
     subtitle:
       'Reach the software flexibility needed to scale by optimizing your architecture.',
+    is_featured: true,
   },
   {
     title: 'AWS',
@@ -245,30 +253,35 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'ant-design',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_hidden_from_nav: true,
   },
   {
     title: 'MUI',
     slug: 'mui',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_hidden_from_nav: true,
   },
   {
     title: 'Sass',
     slug: 'saas',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_hidden_from_nav: true,
   },
   {
     title: 'Vue',
     slug: 'vue',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_hidden_from_nav: true,
   },
   {
     title: 'Storybook',
     slug: 'storybook',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
+    is_hidden_from_nav: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECH_TECHNOLOGY_PAGE, {

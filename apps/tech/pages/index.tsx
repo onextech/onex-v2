@@ -22,11 +22,15 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
-  const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].slice(0, 8)
+  const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].filter(
+    ({ is_featured }) => is_featured
+  ).slice(0, 8)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
   const posts = MOCK_POSTS[MOCK_KEY].slice(0, 3)
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
-  const industrys = MOCK_INDUSTRYS[MOCK_KEY].slice(0, 2)
+  const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
+    ({ is_featured }) => is_featured
+  ).slice(0, 2)
   return makeGetStaticProps({
     props: {
       page,
