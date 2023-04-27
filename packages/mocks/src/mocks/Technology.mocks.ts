@@ -243,12 +243,18 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_featured: true,
   },
   {
+    avatar_src: '/images/technology_aws.png',
+    avatar_alt: 'Aws',
+    avatar_width: 90,
+    avatar_height: 60,
     title: 'AWS',
     slug: 'aws',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
   },
   {
+    avatar_src: '/images/technology_antd.png',
+    avatar_alt: 'Ant Design',
     title: 'Ant Design',
     slug: 'ant-design',
     subtitle:
@@ -256,6 +262,8 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_hidden_from_nav: true,
   },
   {
+    avatar_src: '/images/technology_mui.png',
+    avatar_alt: 'Mui',
     title: 'MUI',
     slug: 'mui',
     subtitle:
@@ -263,6 +271,8 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_hidden_from_nav: true,
   },
   {
+    avatar_src: '/images/technology_sass.png',
+    avatar_alt: 'Sass',
     title: 'Sass',
     slug: 'saas',
     subtitle:
@@ -270,6 +280,8 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_hidden_from_nav: true,
   },
   {
+    avatar_src: '/images/technology_vue.png',
+    avatar_alt: 'Vue',
     title: 'Vue',
     slug: 'vue',
     subtitle:
@@ -277,6 +289,9 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_hidden_from_nav: true,
   },
   {
+    avatar_src: '/images/technology_storybook.png',
+    avatar_alt: 'Storybook',
+    avatar_width: 50,
     title: 'Storybook',
     slug: 'storybook',
     subtitle:
