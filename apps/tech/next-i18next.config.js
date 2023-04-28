@@ -14,7 +14,7 @@ module.exports = {
       'my',
       'id',
       'ph',
-      'vn',
+      'kr',
       'th',
       'jp',
       'hk',

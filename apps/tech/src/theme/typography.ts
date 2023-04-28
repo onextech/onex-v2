@@ -27,13 +27,16 @@ const typography = {
   h1: {
     fontFamily: headerFontFamily,
     fontSize: pxToRem(56),
-    [defaultTheme.breakpoints.up('md')]: {
+    [defaultTheme.breakpoints.up('sm')]: {
       fontSize: pxToRem(60),
+    },
+    [defaultTheme.breakpoints.up('md')]: {
+      fontSize: pxToRem(64),
     },
     [defaultTheme.breakpoints.up('lg')]: {
       fontSize: pxToRem(72),
     },
-    fontWeight: 700,
+    fontWeight: 800,
     lineHeight: 1.1,
     letterSpacing: -1,
   },

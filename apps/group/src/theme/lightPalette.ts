@@ -7,6 +7,9 @@ const lightPalette = {
   secondary: {
     main: blue.A700,
   },
+  text: {
+    primary: 'rgba(0, 0, 0, 0.8)',
+  },
 }
 
 export default lightPalette
