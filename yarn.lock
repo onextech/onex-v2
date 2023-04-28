@@ -1662,10 +1662,10 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@^0.0.105":
-  version "0.0.105"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.105.tgz#a5927466d51366a69d7be691d837d85a21b65f32"
-  integrity sha512-OlpilmRDVuaIMIpM/lgvDB/8OvNW9ZVcPIPd0BmyAzXl8J6CopB910NA2/ilWJQ1R6rzmCzxUxfCezt2cVWX0g==
+"@gravis-os/form@^0.0.107":
+  version "0.0.107"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.107.tgz#88c20a395f584b3675f7f407d2197fb49523ba1e"
+  integrity sha512-oT9fE7KcVy7/2i5saHFHYXziLmfG+9eqr9DeJElYBNbCA2aAchImizpGJwbXNmOsw6UR6NlqtVVUPPjMq0i1kg==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1682,10 +1682,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.0.42":
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.0.42.tgz#bbb3646dfe6b35a060238d2b5d43445b18b871df"
-  integrity sha512-Y1PGx8HtM/N+YfwqSjFfCxJhWD4V9j956Edo5vH2yaZ5t0E+z7SRCNBbVCC6m0a1VoBLgfS4IktVpkuTPFAxwg==
+"@gravis-os/landing@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.0.45.tgz#f94364f56d2b4fff839a1da4c2f189eacf885062"
+  integrity sha512-fC0YRX/wGBjeKTCmLJuJGD7XQh8nWi2UJrYQsR51u8fMPx8S9kyF5Zu7p44vswvaALu1fLmPE0x15E0hqjA6iA==
   dependencies:
     "@gravis-os/theme" "*"
     "@gravis-os/types" "*"
@@ -1753,10 +1753,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.0.100":
-  version "0.0.100"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.100.tgz#baacda6228c3e29b67f0bf178cd5a09d7db4cfe7"
-  integrity sha512-rZZU8BYOIfgB4c33B6YzqUOKNpyP9eYyLVWlm3Sz8DwHFsH3yJ2nHSl3tAEdvBMBHY1x5HLgbOwbFLzNcBOr1g==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.0.103":
+  version "0.0.103"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.103.tgz#772e2e3385036e8bb8816b7f2a63af1a79377c31"
+  integrity sha512-xtMI0zFYXu5RYrn/Nzy6ygkwOOHAUfUQQBPzf/2b99irXmEea+/lMAiac/sw/c7IaYLzWPgH7x78EoicZjKJJQ==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"

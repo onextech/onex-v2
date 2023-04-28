@@ -46,6 +46,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           hero_alt: 'Hero Background',
           image_src: '/images/hero_glass_window_ui_blue.png',
           image_alt: 'glass window ui',
+          // image_src dimensions
           imageProps: { ar: '643:572' } as any,
           buttonProps: {
             overline: 'Get Started',
