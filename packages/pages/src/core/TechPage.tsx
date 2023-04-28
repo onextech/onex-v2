@@ -43,9 +43,9 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           pt: { xs: 10, md: 18 },
           pb: { xs: 5, md: 15 },
           hero_src: '/images/hero_blue_background.svg',
-          hero_alt: 'hero_blue_background',
-          image_src: '/images/hero_glass_window_ui.png',
-          image_alt: 'technology react',
+          hero_alt: 'Hero Background',
+          image_src: '/images/hero_glass_window_ui_blue.png',
+          image_alt: 'glass window ui',
           imageProps: { ar: '643:572' } as any,
           buttonProps: {
             overline: 'Get Started',

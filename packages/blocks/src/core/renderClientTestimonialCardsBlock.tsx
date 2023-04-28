@@ -38,7 +38,8 @@ const renderClientTestimonialCardsBlock = (
       },
       {
         type: 'grid',
-        sx: { mt: { xs: 4, md: 8 } },
+        sx: { mt: { xs: 3, md: 6 } },
+        gridProps: { spacing: 3 },
         gridItems: items.map((item) => {
           return {
             xs: 12,
