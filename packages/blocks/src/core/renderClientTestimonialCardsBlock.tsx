@@ -44,6 +44,14 @@ const renderClientTestimonialCardsBlock = (
             xs: 12,
             sm: 6,
             md: 4,
+            boxProps: {
+              sx: {
+                py: 4,
+                px: 3,
+                backgroundColor: 'background.paper',
+                borderRadius: 1,
+              },
+            },
             items: renderClientTestimonialCardBlockItem({ item }),
           }
         }),

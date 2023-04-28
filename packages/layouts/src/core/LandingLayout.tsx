@@ -28,10 +28,11 @@ export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   darkHeader?: boolean
+  whiteHeaderText?: boolean
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { seo, darkHeader, ...rest } = props
+  const { seo, darkHeader, whiteHeaderText, ...rest } = props
 
   // Hooks
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
@@ -56,7 +57,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   } = useLayout()
 
   // Logo
-  const logoJsx = <Image {...logoProps} />
+  const nextLogoProps = {
+    ...logoProps,
+    ...(whiteHeaderText && { invertImage: true }),
+  }
+  const logoJsx = <Image {...nextLogoProps} />
 
   // Navs
   const headerNavConfig = [
@@ -606,10 +611,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                 {...{
                   title: 'Get Started',
                   variant: 'text' as const,
-                  color: 'primary' as const,
+                  color: 'inherit' as const,
                   size: 'small',
                   endIcon: <KeyboardArrowRightOutlinedIcon />,
-                  sx: { ml: 1, color: 'text.primary' },
+                  sx: { ml: 1 },
                   dialogProps: {
                     fullScreen: true,
                     disableTitle: true,
@@ -625,6 +630,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         ],
       },
       ...(darkHeader && { dark: true, translucent: true, position: 'fixed' }),
+      ...(whiteHeaderText && { textColor: 'common.white' }),
     },
     footerProps: {
       callout: <ContactCallout />,

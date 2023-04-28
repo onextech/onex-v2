@@ -1,8 +1,8 @@
-import { red } from '@mui/material/colors'
+import { blue } from '@mui/material/colors'
 
 const darkPalette = {
   secondary: {
-    main: red.A400,
+    main: blue.A400,
   },
 }
 

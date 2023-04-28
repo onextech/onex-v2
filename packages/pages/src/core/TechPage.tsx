@@ -2,7 +2,7 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
   renderClientLogosImageMarqueeBlock,
-  renderHeroWithBackgroundBlock,
+  renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
   renderFourColumnGridBlock,
   renderTechnologysBlock,
@@ -38,25 +38,25 @@ const TechPage: React.FC<TechPageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderHeroWithBackgroundBlock({
+        renderLeftHeroWithBackgroundBlock({
           ...hero,
-          center: false,
-          dark: false,
-          centerOnMobile: true,
-          py: { xs: 15, md: 18 },
-          maxWidth: 'xl',
-          sx: { backgroundColor: 'background.paper' },
+          pt: { xs: 10, md: 18 },
+          pb: { xs: 5, md: 15 },
+          hero_src: '/images/hero_blue_background.svg',
+          hero_alt: 'hero_blue_background',
+          image_src: '/images/hero_glass_window_ui.png',
+          image_alt: 'technology react',
+          imageProps: { ar: '643:572' } as any,
           buttonProps: {
             overline: 'Get Started',
             title: cta_button_title,
-            size: 'lg',
             isCta: true,
           },
         }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
-          sx: { backgroundColor: 'background.paper' },
+          sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
         // Benefits
         renderFourColumnGridBlock({

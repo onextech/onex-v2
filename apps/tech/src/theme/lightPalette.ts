@@ -1,11 +1,11 @@
-import { green } from '@mui/material/colors'
+import { blue } from '@mui/material/colors'
 
 const lightPalette = {
   primary: {
     main: '#121212',
   },
   secondary: {
-    main: green.A700,
+    main: blue.A700,
   },
 }
 

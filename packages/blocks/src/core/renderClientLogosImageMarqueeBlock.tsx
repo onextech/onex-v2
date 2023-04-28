@@ -16,7 +16,7 @@ export interface RenderClientLogosImageMarqueeBlockProps
 const renderClientLogosImageMarqueeBlock = (
   props: RenderClientLogosImageMarqueeBlockProps
 ) => {
-  const { items, opacity = 0.6, imageSizeMultiplier = 0.9, ...rest } = props
+  const { items, opacity = 0.3, imageSizeMultiplier = 0.8, ...rest } = props
 
   return {
     py: 0,
@@ -30,7 +30,7 @@ const renderClientLogosImageMarqueeBlock = (
             gradient
             py={2}
             // Spacing and speed
-            spacing={{ xs: 10, md: 15 }}
+            spacing={{ xs: 10, md: 15, lg: 20 }}
             speed={15}
             items={items?.map((item) => ({
               key: item.avatar_src,

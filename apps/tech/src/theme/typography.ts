@@ -28,6 +28,9 @@ const typography = {
     fontFamily: headerFontFamily,
     fontSize: pxToRem(56),
     [defaultTheme.breakpoints.up('md')]: {
+      fontSize: pxToRem(60),
+    },
+    [defaultTheme.breakpoints.up('lg')]: {
       fontSize: pxToRem(72),
     },
     fontWeight: 700,
@@ -101,6 +104,7 @@ const typography = {
     display: 'block',
   },
   button: {
+    fontSize: pxToRem(12),
     fontFamily: overlineFontFamily,
     fontWeight: 700,
     letterSpacing: 1,
