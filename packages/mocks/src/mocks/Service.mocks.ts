@@ -189,17 +189,10 @@ export const MOCK_SERVICE_PAGE = {
 
 export const MOCK_TECH_SERVICES = [
   {
-    title: 'Enterprise Applications',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'enterprise-applications',
-    category_id: 1,
-  },
-  {
-    title: 'Digital Product Design',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    title: 'User Interface Development',
     slug: 'digital-product-design',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 1,
   },
   {
@@ -207,70 +200,35 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'application-modernization',
-    category_id: 1,
+    category_id: 3,
   },
   {
-    title: 'Research & Development',
+    title: 'Performance Optimization',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'research-development',
-    category_id: 2,
-  },
-  {
-    title: 'API Development',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'api-development',
-    category_id: 2,
+    slug: 'performance-optimization',
+    category_id: 3,
   },
   {
     title: 'Microfrontend Development',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'microfrontend-development',
-    category_id: 2,
-  },
-  {
-    title: 'Managed DevOps',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'managed-devops',
     category_id: 3,
   },
   {
-    title: 'Infrastructure Managed Services',
+    title: 'API Integration Development',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'infrastructure-managed-services',
-    category_id: 3,
+    slug: 'api-development',
+    category_id: 1,
   },
   {
-    title: 'Cloud Strategy & Design',
+    title: 'Design Library Development',
+    slug: 'design-library-development',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'cloud-strategy-design',
-    category_id: 3,
-  },
-  {
-    title: 'Digital Strategy',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'digital-strategy',
-    category_id: 4,
-  },
-  {
-    title: 'Transformation & Delivery',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'transformation-delivery',
-    category_id: 4,
-  },
-  {
-    title: 'Architecture Design',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'architecture-design',
-    category_id: 4,
+    category_id: 1,
   },
   {
     title: 'Staff Augmentation',
@@ -292,27 +250,6 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 5,
-  },
-  {
-    title: 'Performance Optimization',
-    slug: 'performance-optimization',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Production Readiness',
-    slug: 'production-readiness',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Analytics & Tracking',
-    slug: 'analytics-tracking',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {

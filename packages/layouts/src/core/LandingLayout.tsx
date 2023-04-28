@@ -114,7 +114,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'body1',
                             title:
-                              'We create human-centred designs focused on driving conversions and achieving business goals.',
+                              'We empower enterprises with leading-edge frontend development and best practices.',
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
