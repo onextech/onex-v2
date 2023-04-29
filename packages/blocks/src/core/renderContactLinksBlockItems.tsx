@@ -18,13 +18,13 @@ const renderContactLinksBlockItems = () => {
     },
     ...[
       {
-        startIcon: <EmailOutlinedIcon />,
+        startIcon: <EmailOutlinedIcon color="action" />,
         overline: 'Submit a general inquiry',
         title: general_email,
         href: `mailto:${general_email}`,
       },
       {
-        startIcon: <LocalPhoneOutlinedIcon sx={{ fill: 'green' }} />,
+        startIcon: <LocalPhoneOutlinedIcon color="action" />,
         overline: 'General hotline',
         title: general_phone,
         href: `tel:${general_phone.replaceAll(' ', '')}`,
@@ -50,8 +50,7 @@ const renderContactLinksBlockItems = () => {
             titleProps: {
               startIcon,
               href,
-              color: 'text.secondary',
-              underline: 'none',
+              underline: 'hover',
               ...titleProps,
             },
           },

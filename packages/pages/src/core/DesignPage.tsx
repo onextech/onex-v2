@@ -137,7 +137,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
               boxProps: { mt: 3 },
               overline: 'Contact Us',
               title: 'Get in Touch',
-              href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
+              href: `/${routeConfig.CONTACT}`,
             }),
             {
               type: 'image',

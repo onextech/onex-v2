@@ -63,7 +63,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
+            isCta: true,
           },
           ...cta,
         }),

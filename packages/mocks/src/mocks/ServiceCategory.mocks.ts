@@ -26,34 +26,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
-  {
-    id: 4,
-    title: 'Software Architecture R&D',
-    slug: 'software-advisory-r-d',
-    subtitle:
-      'Design and build customer-focused organizations, processes and platforms for the future.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
-  },
-  {
-    id: 5,
-    title: 'Product Team Augmentation',
-    slug: 'product-team-augmentation',
-    subtitle:
-      'Grow critical design capabilities and a culture of innovation from within your organization.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
-  },
-  {
-    id: 6,
-    title: 'API Integration',
-    slug: 'api-integration',
-    subtitle:
-      'Intrigue customers and capture the market with captivating brand narratives.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
-  },
-].map((item, i) => ({ id: i + 1, ...item }))
+]
 
 export const MOCK_GROUP_SERVICE_CATEGORYS = [
   {

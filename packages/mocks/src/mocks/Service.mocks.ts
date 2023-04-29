@@ -196,27 +196,6 @@ export const MOCK_TECH_SERVICES = [
     category_id: 1,
   },
   {
-    title: 'Application Modernization',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'application-modernization',
-    category_id: 3,
-  },
-  {
-    title: 'Performance Optimization',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'performance-optimization',
-    category_id: 3,
-  },
-  {
-    title: 'Microfrontend Development',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'microfrontend-development',
-    category_id: 3,
-  },
-  {
     title: 'API Integration Development',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
@@ -231,25 +210,46 @@ export const MOCK_TECH_SERVICES = [
     category_id: 1,
   },
   {
+    title: 'Application Modernization',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'application-modernization',
+    category_id: 2,
+  },
+  {
+    title: 'Performance Optimization',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'performance-optimization',
+    category_id: 2,
+  },
+  {
+    title: 'Microfrontend Development',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    slug: 'microfrontend-development',
+    category_id: 2,
+  },
+  {
     title: 'Staff Augmentation',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'staff-augmentation',
-    category_id: 5,
+    category_id: 3,
   },
   {
     title: 'Agile Development Teams',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'agile-development-teams',
-    category_id: 5,
+    category_id: 3,
   },
   {
     title: 'Technical Leadership',
     slug: 'managed-product-teams',
     subtitle:
       'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
+    category_id: 3,
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {

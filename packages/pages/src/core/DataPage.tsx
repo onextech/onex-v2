@@ -95,7 +95,7 @@ const DataPage: React.FC<DataPageProps> = (props) => {
           buttonProps: {
             overline: 'Contact Us',
             title: 'Get in Touch',
-            href: `${site.company_absolute_url}${routeConfig.CONTACT}`,
+            href: `/${routeConfig.CONTACT}`,
           },
           ...cta,
         }),

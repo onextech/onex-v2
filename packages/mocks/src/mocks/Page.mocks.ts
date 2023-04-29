@@ -1,5 +1,4 @@
 import { Page } from '@onex/types'
-import { MOCK_COMMON_SITE } from './Site.mocks'
 
 export const MOCK_PAGE: Page = {
   // Seo
@@ -696,10 +695,9 @@ export const MOCK_DESIGN_PAGE = {
 }
 
 const MOCK_COMMON_PAGES = [
-  { title: 'About Us', slug: 'about' },
-  { title: 'Contact Us', slug: 'contact' },
+  { title: 'About', slug: 'about' },
+  { title: 'Contact', slug: 'contact' },
   { title: 'Careers', slug: 'careers' },
-  { title: 'Mission', slug: 'mission', seo_title: 'Our Mission' },
   {
     title: 'Terms',
     slug: 'terms',
@@ -718,13 +716,6 @@ const MOCK_COMMON_PAGES = [
     is_hidden_from_nav: true,
     html: '<div>Cookies</div>',
   },
-  { title: 'Design', slug: 'design' },
-  { title: 'Data', slug: 'data' },
-  { title: 'Digital', slug: 'digital' },
-  { title: 'News', slug: 'news' },
-  { title: 'Resources', slug: 'resources' },
-  { title: 'Newsletter', slug: 'newsletter' },
-  { title: 'Ecosystem', slug: 'ecosystem' },
 ].map((page) => ({
   ...MOCK_PAGE,
   href: `/${page.slug}`,
@@ -736,6 +727,7 @@ const MOCK_COMMON_PAGES = [
 const MOCK_GROUP_PAGES = [
   ...MOCK_COMMON_PAGES,
   {
+    is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to build digital products',
@@ -936,11 +928,20 @@ const MOCK_GROUP_PAGES = [
       },
     },
   },
+  { title: 'Mission', slug: 'mission', seo_title: 'Our Mission' },
+  { title: 'Design', slug: 'design' },
+  { title: 'Data', slug: 'data' },
+  { title: 'Digital', slug: 'digital' },
+  { title: 'News', slug: 'news' },
+  { title: 'Resources', slug: 'resources' },
+  { title: 'Newsletter', slug: 'newsletter' },
+  { title: 'Ecosystem', slug: 'ecosystem' },
 ]
 
 const MOCK_TECH_PAGES = [
   ...MOCK_COMMON_PAGES,
   {
+    is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to build digital products',
@@ -1195,7 +1196,6 @@ const MOCK_TECH_PAGES = [
 ].map((page) => ({
   ...MOCK_PAGE,
   ...page,
-  href: `${MOCK_COMMON_SITE.company_absolute_url}/${page.slug}`,
 }))
 
 export const MOCK_PAGES = {

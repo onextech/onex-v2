@@ -14,7 +14,6 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
       items={[
         {
           key: 'showcase-hero',
-          maxWidth: 'xl',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
@@ -22,7 +21,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
             {
               type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',
-              titleProps: { mb: 2, maxWidth: true },
+              titleProps: { mb: 2, maxWidth: '50%' },
             },
             {
               type: 'subtitle1',

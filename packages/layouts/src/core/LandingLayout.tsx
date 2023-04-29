@@ -434,7 +434,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                             title: 'Learn More',
                             titleProps: {
                               rightCaret: true,
-                              href: `${site.company_absolute_url}${routeConfig.ABOUT}`,
+                              href: `/${routeConfig.ABOUT}`,
                               color: 'secondary',
                               sx: { mt: 2 },
                               variant: 'body2',
