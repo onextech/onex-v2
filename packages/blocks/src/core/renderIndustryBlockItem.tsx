@@ -32,7 +32,7 @@ const renderIndustryBlockItem = (props: RenderIndustryBlockItemProps) => {
       {
         type: 'link',
         title: 'Learn more',
-        titleProps: { href, rightCaret: true },
+        titleProps: { href, rightCaret: true, variant: 'body2' },
       },
     ],
   }

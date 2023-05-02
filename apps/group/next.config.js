@@ -3,6 +3,14 @@ const { i18n } = require('./next-i18next.config')
 /** @type {import('next').NextConfig} */
 module.exports = {
   i18n,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+    ],
+  },
   reactStrictMode: true,
   transpilePackages: [
     '@onex/common',

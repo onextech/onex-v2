@@ -696,8 +696,8 @@ export const MOCK_DESIGN_PAGE = {
 
 const MOCK_COMMON_PAGES = [
   { title: 'About', slug: 'about' },
-  { title: 'Contact', slug: 'contact' },
   { title: 'Careers', slug: 'careers' },
+  { title: 'Contact', slug: 'contact' },
   {
     title: 'Terms',
     slug: 'terms',
@@ -969,7 +969,7 @@ const MOCK_TECH_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Speed Up Product Delivery',
+        title: 'Accelerate Product Delivery',
         subtitle:
           '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
         maxWidth: 'xl',

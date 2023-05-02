@@ -10,11 +10,7 @@ export interface RenderShowcasesBlockProps
 }
 
 const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
-  const {
-    title = 'Showcase',
-    subtitle = 'We stay at the forefront of the latest technology by investing heavily and constantly evaluating the newest emerging technologies and frameworks that enable us to build robust solutions that scale and last.',
-    items,
-  } = props
+  const { title = 'Showcase', subtitle, items } = props
   return {
     key: 'showcases',
     maxWidth: 'xl',
@@ -22,14 +18,14 @@ const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
     items: [
       {
         type: 'overline',
-        title: 'Our Work',
+        title: 'Showcase',
       },
       {
         type: 'h3',
         title,
         titleProps: { gutterBottom: true, maxWidth: '60%' },
       },
-      {
+      subtitle && {
         type: 'body1',
         title: subtitle,
         titleProps: {

@@ -29,7 +29,6 @@ const renderHeroBlock = (props: RenderHeroBlockProps) => {
         titleProps: {
           maxWidth: true,
           sx: { mt: 3 },
-          color: 'text.secondary',
         },
       },
       {

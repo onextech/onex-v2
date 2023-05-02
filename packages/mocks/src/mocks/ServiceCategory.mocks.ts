@@ -10,8 +10,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 2,
-    title: 'User Interface Development',
-    slug: 'user-interface-development',
+    title: 'Modern Frontend Engineering',
+    slug: 'modern-frontend-engineering',
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
     hero_src: '/images/about_working_in_office.png',
@@ -19,8 +19,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   },
   {
     id: 3,
-    title: 'Modern Frontend Engineering',
-    slug: 'modern-frontend-engineering',
+    title: 'Product Teams',
+    slug: 'Product Teams',
     subtitle:
       'Cultivate engagement through insightful content that speaks to customer needs.',
     hero_src: '/images/about_nodes.png',

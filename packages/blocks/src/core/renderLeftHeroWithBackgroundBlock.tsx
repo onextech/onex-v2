@@ -67,6 +67,7 @@ const renderLeftHeroWithBackgroundBlock = (
                 titleProps: {
                   color: 'text.secondary',
                   sx: { mb: 4 },
+                  maxWidth: '90%',
                 },
               },
               renderGhostButtonBlockItem(buttonProps),
@@ -76,15 +77,15 @@ const renderLeftHeroWithBackgroundBlock = (
             xs: 12,
             md: 6,
             sx: {
+              width: '100%',
               display: 'flex',
-              justifyContent: { xs: 'flex-start', md: 'center' },
+              justifyContent: { xs: 'center', md: 'flex-end' },
               position: { lg: 'absolute' },
               bottom: -16,
               right: 0,
-              width: '100%',
               mb: { xs: -2, md: 0 },
             },
-            boxProps: { width: '100%' },
+            boxProps: { width: { xs: '95%', md: '100%' } },
             items: [
               {
                 type: 'image',

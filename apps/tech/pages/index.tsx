@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
-  ).slice(0, 2)
+  ).slice(0, 3)
 
   return makeGetStaticProps({
     props: {
@@ -56,7 +56,7 @@ const NextTechPage: React.FC<NextTechPageProps> = (props) => {
       <LandingLayout
         seo={page.seo}
         whiteHeaderText
-        headerProps={{ transparent: true, position: 'absolute' }}
+        headerProps={{ transparent: true, position: 'fixed' }}
       >
         <TechPage
           page={page}

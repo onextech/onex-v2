@@ -1,4 +1,3 @@
-import React from 'react'
 import { routeConfig } from '@onex/common'
 import { Showcase } from '@onex/types'
 import renderGhostButtonBlockItem from './renderGhostButtonBlockItem'
@@ -35,6 +34,7 @@ const renderShowcaseCardBlockItem = (
             scaleOnHover: true,
             boxSx: {
               width: { xs: '60%', sm: '65%' },
+              height: '100%',
               bottom: -8,
             },
           },
@@ -70,7 +70,7 @@ const renderShowcaseCardBlockItem = (
         renderGhostButtonBlockItem({
           overline: 'Showcase',
           title: 'Read more',
-          boxProps: { mt: 5 },
+          boxProps: { mt: 5, mb: { xs: 5, md: 0 } },
           href: `${routeConfig.SHOWCASES}/${slug || ''}`,
         }),
       ],

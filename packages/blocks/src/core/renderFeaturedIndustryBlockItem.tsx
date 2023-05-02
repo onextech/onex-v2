@@ -23,12 +23,13 @@ const renderFeaturedIndustryBlockItem = (
       titleProps: {
         maxLines: 3,
         sx: { mt: 1, mb: 2 },
+        color: 'text.secondary',
       },
     },
     {
       type: 'link',
       title: 'Learn more',
-      titleProps: { href, rightCaret: true },
+      titleProps: { href, rightCaret: true, variant: 'body2' },
     },
   ]
 }

@@ -39,7 +39,7 @@ const renderFeaturedIndustrysBlock = (
         gridItems: items.map((item) => {
           return {
             xs: 12,
-            md: 6,
+            md: 4,
             items: renderFeaturedIndustryBlockItem({
               item: {
                 href: `${routeConfig.INDUSTRYS}/${item.slug}`,

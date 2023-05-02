@@ -24,12 +24,6 @@ export const MOCK_GROUP_CLIENT_LOGOS = [
     avatar_height: 27,
   },
   {
-    avatar_src: '/logos/logo_sri.svg',
-    avatar_alt: 'logo_sri',
-    avatar_width: 90,
-    avatar_height: 38,
-  },
-  {
     avatar_src: '/logos/logo_ssa.png',
     avatar_alt: 'logo_ssa',
     avatar_width: 130,
@@ -50,8 +44,14 @@ export const MOCK_GROUP_CLIENT_LOGOS = [
   {
     avatar_src: '/logos/logo_pa.svg',
     avatar_alt: 'logo_pa',
-    avatar_width: 71,
-    avatar_height: 84.8,
+    avatar_width: 64,
+    avatar_height: 76,
+  },
+  {
+    avatar_src: '/logos/logo_sri.svg',
+    avatar_alt: 'logo_sri',
+    avatar_width: 90,
+    avatar_height: 38,
   },
   {
     avatar_src: '/logos/logo_suntec.svg',

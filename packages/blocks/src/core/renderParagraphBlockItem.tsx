@@ -21,7 +21,7 @@ const renderParagraphBlockItem = (props: RenderParagraphBlockItemProps) => {
       ...items?.map(({ title }) => ({
         type: 'subtitle3',
         title,
-        titleProps: { sx: { mb: 3 }, maxWidth: true },
+        titleProps: { sx: { mb: 3 }, maxWidth: '70%' },
       })),
     ],
   }

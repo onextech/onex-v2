@@ -189,71 +189,880 @@ export const MOCK_SERVICE_PAGE = {
 
 export const MOCK_TECH_SERVICES = [
   {
+    category_id: 1,
+    // Hero
     title: 'User Interface Development',
-    slug: 'digital-product-design',
+    slug: 'user-interface-development',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 1,
+      'Work with design and development experts to create beautiful, intuitive user interfaces for your business.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'This page is all about creating high-quality user interfaces for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Creating user interfaces that leave a lasting impression.',
+        items: [
+          {
+            title:
+              "In today's digital age, user experience is everything. A high-quality user interface can make or break a product, and it can have a significant impact on your business's success. At our User Interface Development Service, we specialize in creating beautiful, intuitive interfaces that leave a lasting impression on your customers.",
+          },
+          {
+            title:
+              'We believe that a great user interface is more than just good looks. It should be designed with your customers in mind, making it easy for them to find what they need and complete their tasks efficiently. Our team of experts takes a user-centric approach to every project, ensuring that your interface is not only visually stunning but also functional and effective.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'To create user interfaces of the highest quality, we follow the best practices that include user research, prototyping, usability testing, and accessibility testing.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Custom design',
+            subtitle:
+              'We create custom designs tailored to your brand and target audience, ensuring that your interface stands out from the competition.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Responsive development',
+            subtitle:
+              'We develop interfaces that work seamlessly across all devices, from desktop to mobile, to ensure that your customers can access your product from anywhere.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Usability testing',
+            subtitle:
+              'We conduct rigorous usability testing to ensure that your interface is easy to use and meets the needs of your customers.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility testing',
+            subtitle:
+              'We ensure that your interface is accessible to all users, regardless of their abilities or disabilities, by conducting thorough accessibility testing.',
+          },
+          {
+            fa_icon: 'fa-search',
+            title: 'SEO optimization',
+            subtitle:
+              'We optimize your interface for search engines, making it easier for your customers to find your product.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to ensure that your interface meets your business objectives and delivers value to your customers.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our User Interface Development Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is a high-quality user interface important for my business?',
+            content:
+              "A high-quality user interface can have a significant impact on your business's success. It can improve customer satisfaction, increase engagement, and even drive conversions.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of working with your User Interface Development Service?',
+            content:
+              "At our User Interface Development Service, we specialize in creating beautiful, intuitive interfaces that are tailored to your business's unique needs. Our team of experts takes a user-centric approach to every project, ensuring that your interface not only looks great but also functions effectively and meets the needs of your customers. We also follow best practices for usability testing, accessibility testing, and SEO optimization, to ensure that your interface is easy to use, accessible to all users, and optimized for search engines.",
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach user interface design?',
+            content:
+              'We take a user-centric approach to user interface design, starting with user research to understand your target audience and their needs. From there, we create wireframes and prototypes to test and refine our design concepts. We also prioritize accessibility and usability testing throughout the development process, to ensure that your interface is easy to use and accessible to all users.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 1,
+    // Hero
     title: 'API Integration Development',
+    slug: 'api-integration-development',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    slug: 'api-development',
-    category_id: 1,
+      'Connect and streamline your systems with seamless API integration solutions.',
+    hero_src:
+      'https://source.unsplash.com/1600x900/?api,integration,development',
+    hero_alt: 'API Integration Development',
+    // Seo
+    seo: {
+      title: 'API Integration Development',
+      description:
+        'This page is all about providing top-notch API integration solutions for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Efficient API integration for seamless connectivity.',
+        items: [
+          {
+            title:
+              'In an increasingly connected world, the ability to integrate different systems and platforms is essential. API integration allows your business to streamline processes, reduce manual work, and improve data accuracy. Our API Integration Development Service helps you connect your systems seamlessly, improving efficiency and enabling data-driven decision-making.',
+          },
+          {
+            title:
+              'Our team of experienced developers specializes in creating custom API integrations tailored to your specific requirements. We work closely with your team to understand your business goals and deliver an integration solution that meets your needs and exceeds your expectations.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide end-to-end API integration services, from design and development to testing and deployment.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom API integration',
+            subtitle:
+              'We develop custom API integrations tailored to your specific requirements, ensuring seamless connectivity between your systems.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Third-party API integration',
+            subtitle:
+              'We help you integrate third-party APIs into your existing systems, enabling you to leverage the power of external services and tools.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'API design and development',
+            subtitle:
+              'Our team of experts designs and develops APIs that are secure, efficient, and easy to use.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'API security',
+            subtitle:
+              'We ensure the security of your API integrations, implementing best practices to protect your data and systems.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'API maintenance',
+            subtitle:
+              'We provide ongoing maintenance and support for your API integrations, ensuring they remain up-to-date and perform optimally.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Scalable solutions',
+            subtitle:
+              'We design API integration solutions that can scale with your business, ensuring that your systems can grow with your needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our API Integration Development Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'What is API integration and why is it important for my business?',
+            content:
+              'API (Application Programming Interface) integration is the process of connecting different software systems, applications, or platforms to enable seamless communication and data exchange between them. API integration is crucial for businesses as it helps streamline processes, reduce manual work, improve data accuracy, and facilitate better decision-making. By integrating different systems, your business can achieve better efficiency, increased productivity, and enhanced collaboration.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of working with your API Integration Development Service?',
+            content:
+              'At our API Integration Development Service, we specialize in creating custom API integrations tailored to your specific needs. Our team of experienced developers ensures seamless connectivity between your systems, allowing you to streamline processes and improve efficiency. We also work closely with your team to understand your business goals and deliver an integration solution that meets your requirements and exceeds your expectations. In addition, we provide end-to-end services, including API design, development, testing, deployment, and maintenance, making the integration process as smooth as possible.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach API integration?',
+            content:
+              'Our approach to API integration starts with understanding your business requirements and goals. We then analyze your existing systems and identify the best way to integrate them to achieve the desired outcomes. Next, our team of experts designs and develops the APIs, ensuring they are secure, efficient, and easy to use. We also conduct thorough testing to ensure the integration works seamlessly and meets your needs. Finally, we provide ongoing maintenance and support to keep your API integrations up-to-date and performing optimally.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 1,
+    // Hero
     title: 'Design Library Development',
     slug: 'design-library-development',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 1,
+      'Partner with our experts to develop a comprehensive design library for your digital products.',
+    hero_src: 'https://source.unsplash.com/1600x900/?design-library',
+    hero_alt: 'Design Library',
+    // Seo
+    seo: {
+      title: 'Design Library Development',
+      description:
+        'This page is all about creating a design library that streamlines the design and development process for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Streamline your design process with a unified design library.',
+        items: [
+          {
+            title:
+              'A design library is a valuable asset for any business looking to create consistent, high-quality digital products. It serves as a centralized repository of design elements, components, and guidelines that can be easily accessed and reused across projects. At our Design Library Development Service, we specialize in creating comprehensive design libraries that streamline your design process, improve collaboration, and ensure brand consistency.',
+          },
+          {
+            title:
+              'Our team of experts works closely with you to understand your brand, design principles, and product requirements. We then develop a custom design library tailored to your needs, complete with reusable components, design patterns, and documentation. This enables your team to quickly and efficiently create new digital products while maintaining consistency and quality across your brand.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide end-to-end design library development services, including component design, documentation, and implementation.',
+        items: [
+          {
+            fa_icon: 'fa-palette',
+            title: 'Component design',
+            subtitle:
+              'We design reusable components that adhere to your brand guidelines and are optimized for usability and accessibility.',
+          },
+          {
+            fa_icon: 'fa-book',
+            title: 'Documentation',
+            subtitle:
+              'We create comprehensive documentation for your design library, ensuring your team can quickly understand and implement the components and guidelines.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Implementation',
+            subtitle:
+              'We assist in implementing your design library across your digital products, ensuring seamless integration and consistency.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to develop a design library that meets your business objectives and enhances your design process.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Design Library Development Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a design library important for my business?',
+            content:
+              'A design library streamlines the design and development process by providing a centralized repository of reusable components, design patterns, and guidelines. This helps your team create consistent, high-quality digital products faster and more efficiently. A design library also improves collaboration and ensures brand consistency across your digital products.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of working with your Design Library Development Service?',
+            content:
+              'Our Design Library Development Service specializes in creating comprehensive design libraries tailored to your business needs. We work closely with you to understand your brand, design principles, and product requirements, and then develop a custom design library complete with reusable components, design patterns, and documentation. This enables your team to quickly and efficiently create new digital products while maintaining consistency and quality across your brand. We also assist in implementing your design library across your digital products, ensuring seamless integration and consistency.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the design library is aligned with my brand guidelines?',
+            content:
+              'Our team of experts works closely with you to understand your brand guidelines, design principles, and product requirements. We then create reusable components and design patterns that adhere to your brand guidelines and are optimized for usability and accessibility. This ensures that your design library is aligned with your brand and helps maintain brand consistency across your digital products.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 2,
+    // Hero
     title: 'Application Modernization',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'application-modernization',
-    category_id: 2,
+    subtitle:
+      'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
+    hero_src: 'https://source.unsplash.com/1600x900/?application-modernization',
+    hero_alt: 'Application Modernization',
+    // Seo
+    seo: {
+      title: 'Application Modernization',
+      description:
+        'This page is all about modernizing legacy systems and applications for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transform your business with application modernization.',
+        items: [
+          {
+            title:
+              'Legacy systems and applications can hold your business back, making it difficult to innovate and scale. Our Application Modernization service helps you upgrade outdated systems and applications to modern, scalable architectures that can drive business growth and fuel innovation.',
+          },
+          {
+            title:
+              'We take a comprehensive approach to application modernization, working closely with your team to assess your existing systems, identify opportunities for improvement, and develop a detailed roadmap for modernization. Our team of experts uses the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our application modernization services include system assessment, roadmap development, application re-architecture, and cloud migration.',
+        items: [
+          {
+            fa_icon: 'fa-search',
+            title: 'System assessment',
+            subtitle:
+              'We evaluate your existing systems and applications to identify opportunities for modernization and establish priorities based on your business goals.',
+          },
+          {
+            fa_icon: 'fa-road',
+            title: 'Roadmap development',
+            subtitle:
+              'We develop a detailed roadmap for modernization, outlining the steps needed to achieve your goals and setting milestones to track progress.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Application re-architecture',
+            subtitle:
+              'We re-architect your applications to leverage modern, scalable architectures, improving performance, security, and maintainability.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud migration',
+            subtitle:
+              'We migrate your applications to the cloud, enabling you to take advantage of flexible, scalable, and cost-effective infrastructure.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Application Modernization service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is application modernization important for my business?',
+            content:
+              "Application modernization is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. Modernized applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of working with your Application Modernization service?',
+            content:
+              'Our Application Modernization service offers a comprehensive approach to modernizing your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+          },
+          {
+            key: 'how-it-works-3',
+            title: 'How do you approach application modernization?',
+            content:
+              'We begin by assessing your existing systems and applications to identify opportunities for modernization and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 2,
+    // Hero
     title: 'Performance Optimization',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'performance-optimization',
-    category_id: 2,
+    subtitle:
+      'Improve your website speed, user experience, and search engine rankings with our performance optimization services.',
+    hero_src: 'https://source.unsplash.com/1600x900/?performance-optimization',
+    hero_alt: 'Performance Optimization',
+    // Seo
+    seo: {
+      title: 'Performance Optimization',
+      description:
+        'This page is all about optimizing your website for better performance, user experience, and search engine rankings.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Optimizing your website for better performance and user experience.',
+        items: [
+          {
+            title:
+              "In today's competitive digital landscape, website performance is crucial to your online success. Slow-loading pages, unresponsive elements, and poor user experience can drive away potential customers and harm your search engine rankings. Our Performance Optimization Service is designed to help you improve your website speed, user experience, and overall performance.",
+          },
+          {
+            title:
+              'Our team of experts will analyze your website, identify performance bottlenecks, and implement optimizations to ensure that your site loads quickly, runs smoothly, and provides a seamless experience for your users. With our performance optimization services, you can enjoy increased user satisfaction, higher engagement, and improved search engine rankings.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We use a combination of cutting-edge tools and best practices to optimize your website for performance, including code optimization, image optimization, and server configuration.',
+        items: [
+          {
+            fa_icon: 'fa-clock',
+            title: 'Page speed optimization',
+            subtitle:
+              'We optimize your website to load faster, ensuring a smooth user experience and improved search engine rankings.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Code optimization',
+            subtitle:
+              'We analyze and optimize your website code, reducing file sizes and improving overall performance.',
+          },
+          {
+            fa_icon: 'fa-images',
+            title: 'Image optimization',
+            subtitle:
+              'We optimize your images to reduce file sizes without sacrificing quality, improving your website load times.',
+          },
+          {
+            fa_icon: 'fa-server',
+            title: 'Server configuration',
+            subtitle:
+              'We optimize your server configuration to ensure that your website runs smoothly and efficiently.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance monitoring',
+            subtitle:
+              'We monitor your website performance to identify and address any issues that may arise, ensuring a consistently fast and smooth user experience.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Ongoing optimization',
+            subtitle:
+              'We provide ongoing optimization services to ensure that your website remains fast and efficient as it grows and evolves.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Performance Optimization Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is website performance important for my business?',
+            content:
+              'Website performance is crucial for user experience, engagement, and search engine rankings. Slow-loading pages can drive away potential customers, while poor performance can negatively impact your search engine rankings, making it harder for users to find your website.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of working with your Performance Optimization Service?',
+            content:
+              'Our Performance Optimization Service helps you improve your website speed, user experience, and search engine rankings by identifying and addressing performance bottlenecks. We use a combination of cutting-edge tools and best practices to optimize your website, including code optimization, image optimization, and server configuration. With our performance optimization services, you can enjoy increased user satisfaction, higher engagement, and improved search engine rankings.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you optimize website performance?',
+            content:
+              'We optimize website performance by analyzing your website, identifying performance bottlenecks, and implementing optimizations to improve speed and user experience. This includes optimizing your code, images, and server configuration, as well as monitoring your website performance and providing ongoing optimization services to ensure that your site remains fast and efficient as it grows and evolves.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 2,
+    // Hero
     title: 'Microfrontend Development',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'microfrontend-development',
-    category_id: 2,
+    subtitle:
+      'Empower your enterprise applications with scalable, maintainable, and efficient microfrontend architecture.',
+    hero_src: 'https://source.unsplash.com/1600x900/?software-engineering',
+    hero_alt: 'Microfrontend Development',
+    // Seo
+    seo: {
+      title: 'Microfrontend Development',
+      description:
+        'This page is all about building enterprise-grade microfrontend applications for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Elevate your enterprise applications with microfrontends.',
+        items: [
+          {
+            title:
+              'Microfrontend architecture is revolutionizing the way enterprise applications are built and maintained. By breaking down large, monolithic frontend applications into smaller, more manageable pieces, microfrontends make it easier for development teams to collaborate, iterate, and scale their applications over time.',
+          },
+          {
+            title:
+              'Our Microfrontend Development Service specializes in helping enterprise clients leverage this powerful architecture to create modular, maintainable, and high-performing applications. With our deep expertise in frontend software engineering and dashboard development, we can help you transform your application landscape and drive business success.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer end-to-end microfrontend development services, from architecture design and implementation to testing, deployment, and ongoing support.',
+        items: [
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'Architecture design',
+            subtitle:
+              'We help you design a microfrontend architecture tailored to your specific application needs and business goals, ensuring optimal performance and maintainability.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Implementation',
+            subtitle:
+              'Our expert engineers build modular, scalable, and efficient microfrontends using the latest technologies and best practices in frontend software engineering.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Dashboard development',
+            subtitle:
+              'We specialize in creating powerful, data-driven dashboards that enable you to monitor and manage your applications with ease.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration',
+            subtitle:
+              'We seamlessly integrate microfrontends with your existing backend systems and APIs, ensuring a smooth, end-to-end user experience.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Support & maintenance',
+            subtitle:
+              'We provide ongoing support and maintenance to ensure your microfrontend applications continue to perform optimally and meet your evolving business needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Microfrontend Development Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'What are the benefits of using microfrontends for my enterprise applications?',
+            content:
+              'Microfrontends offer several benefits for enterprise applications, including improved scalability, maintainability, and development efficiency. By breaking down large frontend applications into smaller, more manageable pieces, microfrontends enable development teams to work independently, iterate faster, and deploy updates with minimal risk. They also promote the use of best practices in software engineering, leading to more modular, maintainable, and high-performing applications.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your Microfrontend Development Service work?',
+            content:
+              'Our Microfrontend Development Service offers end-to-end support for building enterprise-grade microfrontend applications. We start by helping you design a microfrontend architecture tailored to your specific needs and business goals. Our expert engineers then build modular, scalable, and efficient microfrontends using the latest technologies and best practices in frontend software engineering. We also specialize in dashboard development, integration with backend systems and APIs, and ongoing support and maintenance.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'What technologies and frameworks do you use for microfrontend development?',
+            content:
+              'Our team is well-versed in a wide range of frontend technologies and frameworks, including React, Angular, Vue, and Web Components. We also have experience with various microfrontend-specific tools and libraries, such as single-spa, Module Federation, and Bit. We work closely with you to choose the best technologies and frameworks for your specific application needs and business goals.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 3,
+    // Hero
     title: 'Staff Augmentation',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'staff-augmentation',
-    category_id: 3,
+    subtitle:
+      'Expand your team with top-tier frontend software engineering and dashboard development experts, tailored to your enterprise needs.',
+    hero_src: 'https://source.unsplash.com/1600x900/?staff-augmentation',
+    hero_alt: 'Staff Augmentation',
+    // Seo
+    seo: {
+      title: 'Staff Augmentation',
+      description:
+        'This page is all about enhancing your team with skilled frontend software engineers and dashboard developers for your enterprise projects.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empower your team with the right expertise.',
+        items: [
+          {
+            title:
+              'In the competitive world of enterprise software development, having the right team is crucial. Our Staff Augmentation service provides you with top-tier frontend software engineering and dashboard development experts to help you tackle your most complex projects with ease.',
+          },
+          {
+            title:
+              "We understand that every enterprise has unique needs, and we work closely with you to ensure that our staff augmentation services are tailored to your specific requirements. Whether it's a short-term project or a long-term engagement, our skilled professionals are ready to join your team and contribute to your success.",
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We specialize in frontend software engineering and dashboard development, ensuring that your team has the expertise it needs to excel.',
+        items: [
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Tailored team augmentation',
+            subtitle:
+              'We carefully assess your project requirements and provide you with the right professionals to complement your team and meet your goals.',
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Frontend software engineering',
+            subtitle:
+              'Our experts are skilled in the latest frontend technologies and best practices, ensuring that your software is both visually stunning and highly functional.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard development',
+            subtitle:
+              ' intuitive, data-driven dashboards that help you monitor and analyze your business performance in real-time.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to ensure seamless integration and collaboration, helping you achieve your project objectives efficiently.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Staff Augmentation service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is staff augmentation?',
+            content:
+              'Staff augmentation is a flexible outsourcing strategy that allows you to add skilled professionals to your existing team on a short-term or long-term basis. It enables you to access specialized expertise and scale your team quickly, without the overhead of hiring full-time employees.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of staff augmentation?',
+            content:
+              'Staff augmentation offers several benefits, including cost savings, flexibility, access to specialized expertise, and reduced time-to-market. By augmenting your team with skilled professionals, you can quickly adapt to changing project requirements and ensure that your projects are completed on time and within budget.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Why should I choose your Staff Augmentation service?',
+            content:
+              'Our Staff Augmentation service provides you with top-tier frontend software engineering and dashboard development experts who are skilled in the latest technologies and best practices. We work closely with you to understand your unique our services accordingly, ensuring that you have the right professionals to help you achieve your project objectives.',
+          },
+        ],
+      },
+    },
   },
   {
+    category_id: 3,
+    // Hero
     title: 'Agile Development Teams',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     slug: 'agile-development-teams',
-    category_id: 3,
+    subtitle:
+      'Empower your business with our expert agile development teams, specializing in frontend software engineering and dashboard development.',
+    hero_src: 'https://source.unsplash.com/1600x900/?agile-development',
+    hero_alt: 'Agile Development Team',
+    // Seo
+    seo: {
+      title: 'Agile Development Teams',
+      description:
+        'Discover how our agile development teams can help your enterprise business succeed with frontend software engineering and dashboard development.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Expert agile teams for your enterprise projects.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of enterprise software development, having an agile team is essential for staying ahead of the competition. Our Agile Development Teams are skilled in frontend software engineering and dashboard development, ensuring your projects are delivered on time and with the highest quality.',
+          },
+          {
+            title:
+              'Our teams work closely with your business to understand your unique requirements and deliver tailored solutions that drive success. With a focus on collaboration, communication, and adaptability, our agile development teams ensure your projects are always on track and aligned with your business goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our agile development teams bring expertise in frontend software engineering, dashboard development, and project management to deliver exceptional results for your enterprise projects.',
+        items: [
+          {
+            fa_icon: 'fa-users',
+            title: 'Dedicated teams',
+            subtitle:
+              'Our dedicated teams work exclusively on your projects, ensuring full focus and commitment to your business objectives.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend software engineering',
+            subtitle:
+              'We specialize in developing high-quality frontend software solutions, using the latest technologies and best practices.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard development',
+            subtitle:
+              'Our teams excel in creating intuitive, data-driven dashboards that help you make informed decisions and drive business growth.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Agile methodologies',
+            subtitle:
+              'We follow agile methodologies, ensuring adaptability and flexibility to meet the changing needs of your enterprise projects.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Project management',
+            subtitle:
+              'Our expert project managers oversee every aspect of your projects, ensuring seamless communication and timely delivery.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team, fostering collaboration and knowledge-sharing to ensure the success of your projects.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Agile Development Teams service and how we can help your enterprise business succeed.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are agile development teams important for my enterprise business content: development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What makes your Agile Development Teams stand out?',
+            content:
+              'Our Agile Development Teams stand out due to their expertise in frontend software engineering and dashboard development, dedication to your projects, and commitment to collaboration and communication. We work closely with your business to understand your unique requirements and deliver tailored solutions that drive success.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the success of my enterprise projects?',
+            content:
+              'We ensure the success of your enterprise projects by providing dedicated agile teams that specialize in frontend software engineering and dashboard development. Our expert project managers oversee every aspect of your projects, ensuring seamless communication, timely delivery, and alignment with your business goals.',
+          },
+        ],
+      },
+    },
   },
   {
-    title: 'Technical Leadership',
-    slug: 'managed-product-teams',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
     category_id: 3,
+    // Hero
+    title: 'Technical Leadership',
+    slug: 'technical-leadership',
+    subtitle:
+      'Empower your software development projects with our experienced technical leaders and ensure success.',
+    hero_src: 'https://source.unsplash.com/1600x900/?technical-leadership',
+    hero_alt: 'Technical Leadership',
+    // Seo
+    seo: {
+      title: 'Technical Leadership',
+      description:
+        'This page is all about providing technical leadership for your software development projects.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving success through technical expertise and leadership.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of software development, having strong technical leadership is crucial to the success of your projects. Our Technical Leadership service provides experienced leaders who can guide your team through the complexities of frontend software engineering and dashboard development, ensuring that your projects are delivered on time and within budget.',
+          },
+          {
+            title:
+              'Our technical leaders have a deep understanding of the latest technologies, best practices, and industry trends. They work closely with your team to ensure that your projects are built to the highest standards, while also fostering a culture of collaboration, innovation, and continuous improvement.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our technical leaders are skilled in a range of areas, including project management, team building, and software architecture.',
+        items: [
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Project management',
+            subtitle:
+              'We ensure that your projects are well-planned, organized, and executed, keeping them on track and within budget.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Team building',
+            subtitle:
+              'We help you build high-performing teams by fostering a culture of collaboration, innovation, and continuous improvement.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Software architecture',
+            subtitle:
+              'We provide guidance on software architecture and best practices, ensuring that your projects are built to the highest standards.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance optimization',
+            subtitle:
+              'We help you optimize the performance of your frontend software and dashboards, ensuring a seamless user experience.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'aboration',
+            subtitle:
+              'We work closely with your team to ensure that your projects meet your business objectives and deliver value to your customers.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Technical Leadership service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is technical leadership important for my software development projects?',
+            content:
+              'Technical leadership is crucial for the success of your software development projects, as it ensures that your projects are well-planned, organized, and executed. Technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and can guide your team through the complexities of frontend software engineering and dashboard development. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Technical Leadership service?',
+            content:
+              'Our Technical Leadership service provides experienced leaders who can guide your team through the complexities of frontend software engineering and dashboard development, ensuring that your projects are delivered on time and within budget. Our technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and work closely with your team to ensure that your projects are built to the highest standards. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do your technical leaders work with my team?',
+            content:
+              'Our technical leaders work closely with your team, providing guidance on software architecture, best practices, and industry trends. They also help you plan, organize, and execute your projects, ensuring that they are delivered on time and within budget. Additionally, they foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
+          },
+        ],
+      },
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
     id: i + 1,
+    overline: 'Service',
     hero_src: '/images/about_working_in_office.png',
     hero_alt: 'working in office',
     // Category

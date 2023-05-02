@@ -41,10 +41,10 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         renderLeftHeroWithBackgroundBlock({
           ...hero,
           pt: { xs: 10, md: 18 },
-          pb: { xs: 5, md: 15 },
-          hero_src: '/images/hero_blue_background.svg',
-          hero_alt: 'Hero Background',
-          image_src: '/images/hero_glass_window_ui_blue.png',
+          pb: { xs: 3, md: 15 },
+          hero_src: '/images/hero_background_black_minimal.svg',
+          hero_alt: 'hero background',
+          image_src: '/images/hero_glass_window_ui_grey.png',
           image_alt: 'glass window ui',
           // image_src dimensions
           imageProps: { ar: '643:572' } as any,
@@ -72,7 +72,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             </>
           ),
           subtitle:
-            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces. With optimized performance and a focus on user experience, our dashboards provide powerful insights that enable business units to make informed decisions and stay ahead of the competition.',
+            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
           items: showcases,
         }),
         // Technologys

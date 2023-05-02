@@ -23,13 +23,12 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
           boxProps: { sx: { mb: 2 }, href },
         },
       },
-      { type: 'link', title, titleProps: { href, variant: 'h6' } },
+      { type: 'link', title, titleProps: { href, variant: 'h5' } },
       {
         type: 'body1',
         title: subtitle,
         titleProps: {
           maxLines: 2,
-          maxWidth: true,
           color: 'text.secondary',
           sx: { mt: 1, mb: 2 },
         },
@@ -37,7 +36,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
       {
         type: 'link',
         title: 'Read more',
-        titleProps: { href, rightCaret: true },
+        titleProps: { href, rightCaret: true, variant: 'body2' },
       },
     ],
   }

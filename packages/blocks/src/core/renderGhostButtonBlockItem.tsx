@@ -38,9 +38,7 @@ const renderGhostButtonBlockItem = (
         >
           {overline}
         </Typography>
-        <Typography variant="h6" sx={{ textTransform: 'none' }}>
-          {title}
-        </Typography>
+        <Typography variant="button2">{title}</Typography>
       </Box>
     ),
     titleProps: {
@@ -52,9 +50,12 @@ const renderGhostButtonBlockItem = (
       endIcon: <TrendingFlatOutlinedIcon sx={{ color: 'text.secondary' }} />,
       sx: {
         textAlign: 'left',
-        padding: isLarge ? '1.5em 2.5em' : '1.125em 2.5em',
+        padding: {
+          xs: isLarge ? '1.5em 2.5em' : '0.95em 2em',
+          sm: isLarge ? '1.5em 2.5em' : '1.125em 2.5em',
+        },
         minWidth: {
-          xs: isLarge ? '25em' : '24em',
+          xs: isLarge ? '25em' : '20em',
           sm: isLarge ? '25em' : '27em',
         },
         ...sx,

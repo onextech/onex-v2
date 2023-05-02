@@ -184,31 +184,48 @@ export const MOCK_INDUSTRY_PAGE = {
 
 export const MOCK_GROUP_INDUSTRYS = [
   {
-    title: 'Finance',
-    subtitle:
-      'Support in cloud adoption and automation for startups and finance institutions.',
-    slug: 'financial-services',
-    fa_icon: 'fa-cake-candles',
-  },
-  {
     title: 'Government',
     subtitle:
-      'Support in cloud adoption and automation for startups and finance institutions.',
+      'We combine technology and a delivery-focused culture to enable leaders across public sector organizations to turn ambition into action.',
     slug: 'government',
-    fa_icon: 'fa-cake-candles',
+    fa_icon: 'fa-landmark-flag',
+    is_featured: true,
   },
   {
     title: 'Maritime',
     subtitle:
-      'Work with product experts with the know-how tested in 7+ industries.',
+      'We help maritime product teams drive efficiencies, unlock new value, and create new business models.',
     slug: 'maritime',
-    fa_icon: 'fa-cake-candles',
+    fa_icon: 'fa-ship',
   },
   {
     title: 'Real Estate',
-    subtitle: 'Let certified engineers kick-start your cloud operations',
+    subtitle:
+      'Unlock the value in every dimension of your real estate with integrated, data-led services that support your overall product strategy.',
     slug: 'real-estate',
-    fa_icon: 'fa-cake-candles',
+    fa_icon: 'fa-map',
+    is_featured: true,
+  },
+  {
+    title: 'Capital Markets',
+    slug: 'capital-markets',
+    subtitle:
+      'We help investment banks, wealth and asset management firms, and other market infrastructure firms prepare for tomorrow.',
+    fa_icon: 'fa-chart-mixed-up-circle-dollar',
+  },
+  {
+    title: 'Banking',
+    slug: 'banking',
+    subtitle:
+      'We help banks challenge their conventions; capitalize on the full potential of technology, and become better at change.',
+    fa_icon: 'fa-coins',
+  },
+  {
+    title: 'Insurance',
+    slug: 'insurance',
+    subtitle:
+      "Insurance is going digital. Whether it's streamlining business processes or enabling new models, we're helping our clients transform.",
+    fa_icon: 'fa-shield-cross',
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
@@ -249,27 +266,7 @@ export const MOCK_TECH_INDUSTRYS = [
       'Unlock the value in every dimension of your real estate with integrated, data-led services that support your overall product strategy.',
     slug: 'real-estate',
     fa_icon: 'fa-map',
-  },
-  {
-    title: 'Capital Markets',
-    slug: 'capital-markets',
-    subtitle:
-      'We help investment banks, wealth and asset management firms, and other market infrastructure firms prepare for tomorrow.',
-    fa_icon: 'fa-chart-mixed-up-circle-dollar',
-  },
-  {
-    title: 'Banking',
-    slug: 'banking',
-    subtitle:
-      'We help banks challenge their conventions; capitalize on the full potential of technology, and become better at change.',
-    fa_icon: 'fa-coins',
-  },
-  {
-    title: 'Insurance',
-    slug: 'insurance',
-    subtitle:
-      "Insurance is going digital. Whether it's streamlining business processes or enabling new models, we're helping our clients transform.",
-    fa_icon: 'fa-shield-cross',
+    is_featured: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
