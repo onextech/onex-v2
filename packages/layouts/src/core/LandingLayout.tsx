@@ -27,12 +27,10 @@ const commonRightGridItemProps = { md: 8, lg: 9 }
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
-  darkHeader?: boolean
-  whiteHeaderText?: boolean
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { seo, darkHeader, whiteHeaderText, ...rest } = props
+  const { seo, ...rest } = props
 
   // Hooks
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
@@ -56,22 +54,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     workspaces,
   } = useLayout()
 
-  // Logo
-  const nextLogoProps = {
-    ...logoProps,
-    ...(whiteHeaderText && { invertImage: true }),
-  }
-  const logoJsx = <Image {...nextLogoProps} />
-
   // Navs
   const headerNavConfig = [
     {
       key: 'logo',
-      title: logoJsx,
-      href: '/',
-      offsetLeft: true,
-      showOnMobileBar: true,
-      titleProps: { sx: { mb: { xs: 1, md: 0 } } },
+      preset: { type: 'logo', logoProps },
     },
     {
       key: 'services',
@@ -569,6 +556,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
 
+  // LandingLayoutProps
   const defaultLandingLayoutProps = {
     disableGutters: true,
     seo: {
@@ -601,8 +589,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           {
             key: 'toggle-dark-mode',
             children: toggleDarkModeIconButtonJsx,
-            showOnMobileBar: true,
-            hideInMobileDrawer: true,
           },
           {
             key: 'get-started',
@@ -614,7 +600,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                   color: 'inherit' as const,
                   size: 'small',
                   endIcon: <KeyboardArrowRightOutlinedIcon />,
-                  sx: { ml: 1 },
+                  sx: { ml: 1, minWidth: { xs: 115, md: 123 } },
                   dialogProps: {
                     fullScreen: true,
                     disableTitle: true,
@@ -629,12 +615,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           },
         ],
       },
-      ...(darkHeader && { dark: true, translucent: true, position: 'fixed' }),
-      ...(whiteHeaderText && { textColor: 'common.white' }),
     },
     footerProps: {
       callout: <ContactCallout />,
-      logo: logoJsx,
+      logo: <Image {...logoProps} />,
       companyName: site.company_title,
       accordionProps: {
         titleProps: { variant: 'h7' },

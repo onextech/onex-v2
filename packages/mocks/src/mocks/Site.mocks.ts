@@ -15,17 +15,11 @@ export const MOCK_COMMON_SITE = {
   // Locale
   locales: [
     { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
-    { key: 'au', iso_alpha_2: 'au', title: 'Australia' },
-    { key: 'my', iso_alpha_2: 'my', title: 'Malaysia' },
-    { key: 'id', iso_alpha_2: 'id', title: 'Indonesia' },
-    { key: 'ph', iso_alpha_2: 'ph', title: 'Philippines' },
-    { key: 'kr', iso_alpha_2: 'kr', title: 'S. Korea' },
-    { key: 'th', iso_alpha_2: 'th', title: 'Thailand' },
-    { key: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
-    { key: 'hk', iso_alpha_2: 'hk', title: 'Hong Kong SAR' },
-    { key: 'tw', iso_alpha_2: 'tw', title: 'Taiwan' },
-    { key: 'cn', iso_alpha_2: 'cn', title: 'China' },
     { key: 'us', iso_alpha_2: 'us', title: 'United States' },
+    { key: 'au', iso_alpha_2: 'au', title: 'Australia' },
+    { key: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
+    { key: 'id', iso_alpha_2: 'id', title: 'Indonesia' },
+    { key: 'th', iso_alpha_2: 'th', title: 'Thailand' },
   ],
 
   // System

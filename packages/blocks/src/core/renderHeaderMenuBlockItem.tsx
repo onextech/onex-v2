@@ -18,6 +18,7 @@ const renderHeaderMenuBlockItem = (props: RenderHeaderMenuBlockItemProps) => {
       sx: {
         py: 1.5,
         px: 2,
+        mt: -1.5,
         borderRadius: 1,
         ...(href && {
           '&:hover': {

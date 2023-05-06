@@ -51,11 +51,11 @@ const renderGhostButtonBlockItem = (
       sx: {
         textAlign: 'left',
         padding: {
-          xs: isLarge ? '1.5em 2.5em' : '0.95em 2em',
+          xs: isLarge ? '1.125em 1.75em' : '0.95em 2em',
           sm: isLarge ? '1.5em 2.5em' : '1.125em 2.5em',
         },
         minWidth: {
-          xs: isLarge ? '25em' : '20em',
+          xs: isLarge ? '22em' : '20em',
           sm: isLarge ? '25em' : '27em',
         },
         ...sx,

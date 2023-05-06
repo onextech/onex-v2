@@ -55,8 +55,8 @@ const NextTechPage: React.FC<NextTechPageProps> = (props) => {
     <PageProvider {...pageProviderProps}>
       <LandingLayout
         seo={page.seo}
-        whiteHeaderText
-        headerProps={{ transparent: true, position: 'fixed' }}
+        transparentHeader
+        headerProps={{ translucentAtScrollY: 755 }}
       >
         <TechPage
           page={page}
