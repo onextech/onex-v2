@@ -43,6 +43,9 @@ export * from './renderHeroBlock'
 export { default as renderLeftHeroWithBackgroundBlock } from './renderLeftHeroWithBackgroundBlock'
 export * from './renderLeftHeroWithBackgroundBlock'
 
+export { default as renderHeroWithVideoBackgroundBlock } from './renderHeroWithVideoBackgroundBlock'
+export * from './renderHeroWithVideoBackgroundBlock'
+
 export { default as renderThreeColumnGridBlockItem } from './renderThreeColumnGridBlockItem'
 export * from './renderThreeColumnGridBlockItem'
 

@@ -3,7 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderClientHighlightsImageMarqueeBlock,
   renderGhostButtonBlockItem,
-  renderHeroWithBackgroundBlock,
+  renderHeroWithVideoBackgroundBlock,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
@@ -25,8 +25,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderHeroWithBackgroundBlock({
+        renderHeroWithVideoBackgroundBlock({
           ...hero,
+          video_src: '/videos/home_video.mp4',
+          video_poster_src: '/videos/home_video_poster.jpg',
           buttonProps: {
             overline: 'What we do',
             title: 'Smarter Businesses',
