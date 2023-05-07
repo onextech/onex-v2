@@ -41,6 +41,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
               title: (
                 <Slider
                   autoplay
+                  progress
                   disableCenter
                   middle
                   loop
