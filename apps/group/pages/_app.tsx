@@ -6,6 +6,7 @@ import { AppProvider } from '@app/providers'
 import { AnalyticsProvider } from '@onex/providers'
 
 import 'react-medium-image-zoom/dist/styles.css'
+import 'keen-slider/keen-slider.min.css'
 
 export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache

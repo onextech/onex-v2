@@ -49,7 +49,7 @@ const renderHeroWithBackgroundBlock = (
         title: subtitle,
         titleProps: { color: 'text.secondary', maxWidth: center || '45%' },
       },
-      {
+      (buttonProps || secondaryButtonProps) && {
         type: 'stack',
         sx: { mt: 4 },
         stackProps: {

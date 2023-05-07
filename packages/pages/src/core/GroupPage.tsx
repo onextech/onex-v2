@@ -1,8 +1,10 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
+import { Box, Slider, Typography } from '@gravis-os/ui'
+import { Blocks, Block, BlockItem } from '@gravis-os/landing'
 import {
   renderClientHighlightsImageMarqueeBlock,
   renderGhostButtonBlockItem,
+  renderHeroWithBackgroundBlock,
   renderHeroWithVideoBackgroundBlock,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
@@ -17,13 +19,168 @@ export interface GroupPageProps {
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, posts } = props
-  const { site, routeConfig, clientHighlights } = useLayout()
+  const { routeConfig, clientHighlights } = useLayout()
   const { overline, sections } = page || {}
   const { hero, benefits, features, cta } = sections || {}
 
   return (
     <Blocks
       items={[
+        {
+          key: 'hero-with-video-slider',
+          dark: true,
+          py: 0,
+          backgroundVideoProps: {
+            src: '/videos/home_video.mp4',
+            poster: '/videos/home_video_poster.jpg',
+          },
+          backgroundOverlayOpacity: 0.5,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  disableCenter
+                  middle
+                  loop
+                  height={{ xs: 600, sm: 700, md: 800, xl: 900 }}
+                  tabs={[
+                    'Enterprise Applications',
+                    'Climate Change',
+                    'Technology',
+                  ]}
+                  tabsProps={{ fullWidthOnDesktop: true }}
+                  tabProps={{ sx: { p: 3 } }}
+                  items={[
+                    <Box sx={{ maxWidth: { md: '50%' } }}>
+                      <Typography
+                        variant="overline"
+                        gutterBottom
+                        color="text.secondary"
+                      >
+                        Finance
+                      </Typography>
+                      <Typography variant="h1">
+                        Singapore Market Outlook 2023
+                      </Typography>
+                      <BlockItem
+                        disableContainer
+                        {...renderGhostButtonBlockItem({
+                          overline: 'What we do',
+                          title: 'Smarter Businesses',
+                          size: 'lg',
+                          href: routeConfig.SERVICES,
+                          sx: { mt: { xs: 2, md: 4 } },
+                        })}
+                      />
+                    </Box>,
+                    <Box sx={{ maxWidth: { md: '50%' } }}>
+                      <Typography
+                        variant="overline"
+                        gutterBottom
+                        color="text.secondary"
+                      >
+                        Real Estate
+                      </Typography>
+                      <Typography variant="h1">Singapore Figures Q1</Typography>
+                      <BlockItem
+                        disableContainer
+                        {...renderGhostButtonBlockItem({
+                          overline: 'What we do',
+                          title: 'Smarter Businesses',
+                          size: 'lg',
+                          href: routeConfig.SERVICES,
+                          sx: { mt: { xs: 2, md: 4 } },
+                        })}
+                      />
+                    </Box>,
+                    <Box sx={{ maxWidth: { md: '50%' } }}>
+                      <Typography
+                        variant="overline"
+                        gutterBottom
+                        color="text.secondary"
+                      >
+                        Healthcare
+                      </Typography>
+                      <Typography variant="h1">
+                        Singapore Luxury Residential Report H2
+                      </Typography>
+                      <BlockItem
+                        disableContainer
+                        {...renderGhostButtonBlockItem({
+                          overline: 'What we do',
+                          title: 'Smarter Businesses',
+                          size: 'lg',
+                          href: routeConfig.SERVICES,
+                          sx: { mt: { xs: 2, md: 4 } },
+                        })}
+                      />
+                    </Box>,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
+        {
+          key: 'hero-with-background-fade-slider',
+          dark: true,
+          center: true,
+          disableContainer: true,
+          py: 0,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  loop
+                  arrows
+                  fade
+                  dots
+                  dotProps={{ color: 'secondary.main' }}
+                  height={{ xs: 500, md: 800 }}
+                  items={[
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: 'We are the Growth Company',
+                        backgroundImageProps: {
+                          src: '/images/about_hero.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: 'Unleash your X Factor',
+                        backgroundImageProps: {
+                          src: '/images/about_nodes_above_city.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: "Deliver Tomorrow's Innovation Today",
+                        backgroundImageProps: {
+                          src: '/images/mission_earth.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
         // Hero
         renderHeroWithVideoBackgroundBlock({
           ...hero,
