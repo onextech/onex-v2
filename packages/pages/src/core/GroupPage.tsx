@@ -45,7 +45,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   disableCenter
                   middle
                   loop
-                  height={{ xs: 600, sm: 700, md: 800, xl: 900 }}
+                  height={{ xs: 600, sm: 700, md: 800, xxl: 900 }}
                   tabs={[
                     'Enterprise Applications',
                     'Climate Change',
