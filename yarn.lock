@@ -1649,10 +1649,10 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*", "@gravis-os/fields@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.0.18.tgz#270f4906ce4bf498069c21bae3dc092d6f368f86"
-  integrity sha512-h5lquona4+WwWT6G6gFh1Lp0wqv53poSx7LAltcBqZXFO6Z+I8nXZnvY19zs5a75Nb36oZ6NjOE4OzgdBzmgzA==
+"@gravis-os/fields@*", "@gravis-os/fields@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.0.19.tgz#84862ded8d9b016b2f8aef25e4708a9d4afb7a3f"
+  integrity sha512-emqY7dfL1GSw27u4xsgYqL9qLRn8MdnWKCtPCvHclbUBCRjUt/BwGrKiBJGBuV9MN2En10dRNrwJgwXo8oljCQ==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1682,10 +1682,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.0.45":
-  version "0.0.45"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.0.45.tgz#f94364f56d2b4fff839a1da4c2f189eacf885062"
-  integrity sha512-fC0YRX/wGBjeKTCmLJuJGD7XQh8nWi2UJrYQsR51u8fMPx8S9kyF5Zu7p44vswvaALu1fLmPE0x15E0hqjA6iA==
+"@gravis-os/landing@^0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.0.46.tgz#b522a09d397e1bfc73f747680cc8b07b70713ee7"
+  integrity sha512-hobynRVR9EX/bkhBMhUZ3j6nLyzaUEZ5D/jCsKFX9Z0HYrvJkbBhbs8jYEEavDMVD512FT7cRUJtOMEVXZP47g==
   dependencies:
     "@gravis-os/theme" "*"
     "@gravis-os/types" "*"
@@ -1717,9 +1717,9 @@
   integrity sha512-72Ki8bBWvuvGo09gzPz0HKh+J0GGXo2joR6N44r0murVkewPr1G2hIVZkBiaaOXZQQcdcIg9gaumX6kE99kQog==
 
 "@gravis-os/storage@*":
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.0.38.tgz#f271f9e9ba5be0fc4e9acc676ee3931f91c5ab7d"
-  integrity sha512-hDFvdESWIeOL/iY2sLiLEymA0ZnC31ueXMcmMz7VOVGWVMpuMnJBi7unpvyzxUsVBk3Fp9Rb9ar8RzGC8+/KpQ==
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.0.39.tgz#4325c9db595701f21a7f5542ca1f5b3486ccf20a"
+  integrity sha512-KczZPybvYycxS9EgxbCu2dZ1bU00i1+Gv36N+y0y9xKqXUVrRM27OjkephtHThaBOEeureDEX+1Z6+R4S8NxpQ==
   dependencies:
     "@gravis-os/types" "*"
     "@gravis-os/ui" "*"
@@ -1753,10 +1753,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.0.104":
-  version "0.0.104"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.104.tgz#477ad35b6ba6d67615e76a295ec24622e7bbc791"
-  integrity sha512-SBmM7wRiMajHCOps6UazUBi50xk7WKrMKIUEDasecXZqqiNf9nnb2TWkKtQY00htxVXEys7Ui90PBc+Up2VIZQ==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.0.106":
+  version "0.0.106"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.106.tgz#bfc7eabde32c164411634ed0947f828517971661"
+  integrity sha512-K0EiTesqaz/JksP6at3eq1Qz5+s7qLc6KljhFLsIY5K8/LjOEg9jHBAhgq3KmUpDbJUbzc7j83p6jpO6Vpa+gA==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"
@@ -1766,6 +1766,7 @@
     "@gravis-os/theme" "*"
     "@gravis-os/types" "*"
     "@gravis-os/utils" "*"
+    "@react-hook/window-scroll" "^1.3.0"
     clsx "^1.1.1"
     keen-slider "^6.8.5"
     lodash "^4.17.21"

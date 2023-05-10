@@ -1,11 +1,9 @@
 import React from 'react'
 import { Box, Slider, Typography } from '@gravis-os/ui'
-import { Blocks, Block, BlockItem } from '@gravis-os/landing'
+import { Blocks, BlockItem } from '@gravis-os/landing'
 import {
   renderClientHighlightsImageMarqueeBlock,
   renderGhostButtonBlockItem,
-  renderHeroWithBackgroundBlock,
-  renderHeroWithVideoBackgroundBlock,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
@@ -124,82 +122,82 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             },
           ],
         },
-        {
-          key: 'hero-with-background-fade-slider',
-          dark: true,
-          center: true,
-          disableContainer: true,
-          py: 0,
-          items: [
-            {
-              type: 'jsx',
-              title: (
-                <Slider
-                  autoplay
-                  loop
-                  arrows
-                  fade
-                  dots
-                  dotProps={{ color: 'secondary.main' }}
-                  height={{ xs: 500, md: 800 }}
-                  items={[
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        ...hero,
-                        title: 'We are the Growth Company',
-                        backgroundImageProps: {
-                          src: '/images/about_hero.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        ...hero,
-                        title: 'Unleash your X Factor',
-                        backgroundImageProps: {
-                          src: '/images/about_nodes_above_city.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        ...hero,
-                        title: "Deliver Tomorrow's Innovation Today",
-                        backgroundImageProps: {
-                          src: '/images/mission_earth.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                  ]}
-                />
-              ),
-            },
-          ],
-        },
+        // {
+        //   key: 'hero-with-background-fade-slider',
+        //   dark: true,
+        //   center: true,
+        //   disableContainer: true,
+        //   py: 0,
+        //   items: [
+        //     {
+        //       type: 'jsx',
+        //       title: (
+        //         <Slider
+        //           autoplay
+        //           loop
+        //           arrows
+        //           fade
+        //           dots
+        //           dotProps={{ color: 'secondary.main' }}
+        //           height={{ xs: 500, md: 800 }}
+        //           items={[
+        //             <Block
+        //               fill
+        //               {...renderHeroWithBackgroundBlock({
+        //                 ...hero,
+        //                 title: 'We are the Growth Company',
+        //                 backgroundImageProps: {
+        //                   src: '/images/about_hero.png',
+        //                   alt: 'hero',
+        //                 },
+        //               })}
+        //             />,
+        //             <Block
+        //               fill
+        //               {...renderHeroWithBackgroundBlock({
+        //                 ...hero,
+        //                 title: 'Unleash your X Factor',
+        //                 backgroundImageProps: {
+        //                   src: '/images/about_nodes_above_city.png',
+        //                   alt: 'hero',
+        //                 },
+        //               })}
+        //             />,
+        //             <Block
+        //               fill
+        //               {...renderHeroWithBackgroundBlock({
+        //                 ...hero,
+        //                 title: "Deliver Tomorrow's Innovation Today",
+        //                 backgroundImageProps: {
+        //                   src: '/images/mission_earth.png',
+        //                   alt: 'hero',
+        //                 },
+        //               })}
+        //             />,
+        //           ]}
+        //         />
+        //       ),
+        //     },
+        //   ],
+        // },
         // Hero
-        renderHeroWithVideoBackgroundBlock({
-          ...hero,
-          video_src: '/videos/home_video.mp4',
-          video_poster_src: '/videos/home_video_poster.jpg',
-          buttonProps: {
-            overline: 'What we do',
-            title: 'Smarter Businesses',
-            size: 'lg',
-            href: routeConfig.SERVICES,
-          },
-          secondaryButtonProps: {
-            overline: 'Who we are',
-            title: 'Business Software Experts',
-            size: 'lg',
-            href: routeConfig.CAREERS,
-          },
-        }),
+        // renderHeroWithVideoBackgroundBlock({
+        //   ...hero,
+        //   video_src: '/videos/home_video.mp4',
+        //   video_poster_src: '/videos/home_video_poster.jpg',
+        //   buttonProps: {
+        //     overline: 'What we do',
+        //     title: 'Smarter Businesses',
+        //     size: 'lg',
+        //     href: routeConfig.SERVICES,
+        //   },
+        //   secondaryButtonProps: {
+        //     overline: 'Who we are',
+        //     title: 'Business Software Experts',
+        //     size: 'lg',
+        //     href: routeConfig.CAREERS,
+        //   },
+        // }),
         // Marquee
         renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Benefits
