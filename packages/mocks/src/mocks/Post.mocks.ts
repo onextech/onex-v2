@@ -17,6 +17,42 @@ export const MOCK_TECH_POSTS = [
     exclusive_locales: ['jp'],
   },
   {
+    category_id: 2,
+    title: 'Advanced React Development Techniques to Enhance Your Web Apps.',
+    slug: 'advanced-react-development-techniques-to-enhance-your-web-apps',
+    subtitle:
+      "Unleash React's potential with advanced techniques for faster, user-friendly, and scalable web apps.",
+    hero_src: 'https://source.unsplash.com/tzFVsg6nWtM/1600x900',
+    hero_alt: 'city',
+    html:
+      '<blockquote>\n' +
+      "<p><em><strong>Summary:</strong> React is a well-known front-end framework for building web applications. Developers must learn advanced development strategies to improve the speed, usability, and functionality of their web applications in order to fully realize React's potential. This article looks at a few cutting-edge React development initiatives that can help to strengthen online applications and improve user experience. React Hooks, Context API, React Router, Redux, React Native, Server-Side Rendering, Code Splitting, React Animations, React Performance Optimization, and Accessibility are some of the features available. Developers can use these techniques to create strong, scalable, and resilient applications that meet the needs of users and businesses. Integrating these techniques with cloud infrastructure and best practices can improve the applications even further.</em></p>\n" +
+      '</blockquote>\n' +
+      "<p>One of the most popular&nbsp;and extensively used front-end frameworks for creating web applications is React. It is the best option for creating cutting-edge, dynamic web applications that can be deployed to the cloud because to its flexibility, scalability, and component-based architecture. To maximise React's potential, developers must learn cutting-edge development strategies&nbsp;that will enhance the speed, usability, and functionality of their web applications.</p>\n" +
+      "<p>In this article, we'll explore a few cutting-edge React development initiatives that can reinforce your online applications and enhance the user experience you provide.</p>\n" +
+      '<h3>1. <strong>React Hooks:</strong></h3>\n' +
+      '<p>React Hooks is a powerful new feature that enables developers to access and utilise state and other React features in functional components. By removing the requirement for class components, hooks can streamline and increase the readability of code while also enhancing performance.</p>\n' +
+      '<h3>2. <strong>Context API:</strong></h3>\n' +
+      '<p>The Context API is an effective tool for controlling state and properties across several components. Without the requirement for prop drilling, it enables developers to establish a global state that can be accessed and modified from any component.</p>\n' +
+      '<h3>3. <strong>React Router:</strong></h3>\n' +
+      '<p>React Router is a popular library for routing and navigation in React applications. It may be used to build intricate navigational structures and nested routes and offers a straightforward, declarative API for managing routes.</p>\n' +
+      '<h3>4. <strong>Redux:</strong></h3>\n' +
+      '<p>Redux is a popular state management library for React applications. Data flow and application design can be greatly simplified, and it enables developers to consolidate and regulate the state of their program in a consistent and predictable way.</p>\n' +
+      '<h3>5. <strong>React Native:</strong></h3>\n' +
+      '<p>React Native is is a framework for building native mobile apps using React. It provides a means for developers to centralise and control the state of their program in a reliable and predictable manner. Data flows and application design are made simpler.</p>\n' +
+      '<h3>6. <strong>Server-Side Rendering:</strong></h3>\n' +
+      '<p>Server-Side Rendering is a technique that allows React components to be rendered on the server instead of through the browser&nbsp;enhancing&nbsp;functionality and SEO. As such, users with&nbsp;sluggish or unreliable connections are also provided with better user experience.</p>\n' +
+      '<h3>7. <strong>Code Splitting:</strong></h3>\n' +
+      '<p>Code splitting is a method for breaking down big codebases into smaller, more manageable portions. It can enhance performance by reducing the amount of code that the browser must load, and it can also make complex applications easier to manage and debug.</p>\n' +
+      '<h3>8. <strong>React Animations:</strong></h3>\n' +
+      '<p>React Animations is a potent tool for designing dynamic and captivating user interfaces. It can be used to generate a wide range of effects, from straightforward hover animations to intricate 3D animations, and it enables developers to construct complicated animations and transitions using simple, declarative syntax.</p>\n' +
+      '<h3>9. <strong>React Performance Optimisation:</strong></h3>\n' +
+      '<p>React Performance Optimisation is a set of techniques used to make React applications run faster. This may include optimising rendering, reducing the application bundle, and minimising the quantity of network queries needed to load the application.</p>\n' +
+      '<h3>10. <strong>Accessibility</strong></h3>\n' +
+      '<p>Accessibility is an important determinant for any modern web application. It ensures that users with physical or mental limitations can access and use your application successfully. React provides a variety of tools and techniques for improving reach to a larger group of audience, including ARIA attributes, keyboard navigation, and semantic HTML.</p>\n' +
+      "<p>In conclusion, by enhancing performance, usability, and functionality, advanced React development techniques can elevate your web applications to a new level. Learning these techniques can help you provide a more interesting and satisfying user experience whether you're using React for web or mobile development. You can build strong, scalable, and resilient applications that satisfy the requirements of your users and your business by integrating these techniques with cloud infrastructure and best practices.</p>",
+  },
+  {
     title:
       'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
     slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',

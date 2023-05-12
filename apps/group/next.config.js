@@ -5,10 +5,8 @@ module.exports = {
   i18n,
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-      },
+      { protocol: 'https', hostname: 'source.unsplash.com' },
+      { protocol: 'https', hostname: 'unsplash.com' },
     ],
   },
   reactStrictMode: true,

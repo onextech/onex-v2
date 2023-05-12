@@ -7,20 +7,20 @@ export interface RenderShowcasesBlockProps
   items: Showcase[]
   title?: React.ReactNode
   subtitle?: React.ReactNode
+  overline?: React.ReactNode
 }
 
 const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
-  const { title = 'Showcase', subtitle, items } = props
+  const { overline, title, subtitle, items, ...rest } = props
   return {
     key: 'showcases',
     maxWidth: 'xl',
-    pt: { xs: 5, md: 10 },
     items: [
-      {
+      overline && {
         type: 'overline',
-        title: 'Showcase',
+        title: overline,
       },
-      {
+      title && {
         type: 'h3',
         title,
         titleProps: { gutterBottom: true, maxWidth: '60%' },
@@ -35,6 +35,7 @@ const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
       },
       ...items.map((item) => renderShowcaseCardBlockItem({ item })),
     ],
+    ...rest,
   }
 }
 

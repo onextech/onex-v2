@@ -1,8 +1,8 @@
 import { BlockItemProps } from '@gravis-os/landing'
-import { CrudItem } from '@gravis-os/types'
+import Page from './Page.types'
 
-export interface Showcase extends CrudItem {
-  imageSrc: string
+export interface Showcase extends Page {
+  hero_src: string
   mode?: BlockItemProps['mode']
   backgroundColor?: string
   reverse?: boolean

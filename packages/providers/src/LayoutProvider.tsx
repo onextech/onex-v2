@@ -101,9 +101,9 @@ const LayoutProvider: React.FC<LayoutProviderProps> = (props) => {
       invertImageOnMode: 'dark' as const,
     },
     legalItems: {
-      terms: `${site.company_absolute_url}${routeConfig.TERMS}`,
-      privacy: `${site.company_absolute_url}${routeConfig.PRIVACY}`,
-      cookies: `${site.company_absolute_url}${routeConfig.COOKIES}`,
+      terms: routeConfig.TERMS,
+      privacy: routeConfig.PRIVACY,
+      cookies: routeConfig.COOKIES,
     },
     socialMediaItems: Object.entries(site).reduce((acc, [key, value]) => {
       if (!key.startsWith('social_media_')) return acc

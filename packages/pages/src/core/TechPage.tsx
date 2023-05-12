@@ -74,6 +74,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           subtitle:
             'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
           items: showcases,
+          pt: { xs: 5, md: 10 },
         }),
         // Technologys
         renderTechnologysBlock({ items: technologys }),

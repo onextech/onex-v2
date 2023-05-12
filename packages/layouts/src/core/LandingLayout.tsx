@@ -12,6 +12,7 @@ import { useUserPreferences } from '@onex/theme'
 import { ContactCallout } from '@onex/components'
 import { useLayout } from '@onex/providers'
 import { GetStartedPage } from '@onex/pages'
+import { useRouter } from 'next/router'
 import {
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
@@ -556,11 +557,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
 
+  const router = useRouter()
+  const isHomeRoute = router.pathname === routeConfig.HOME
+
   // LandingLayoutProps
   const defaultLandingLayoutProps = {
     disableGutters: true,
     seo: {
-      titleTemplate: `%s | ${site.title}`,
+      ...(!isHomeRoute && { titleTemplate: `%s | ${site.title}` }),
       ...seo,
     },
     headerProps: {

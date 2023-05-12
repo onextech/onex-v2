@@ -20,7 +20,9 @@ export const fetchTechnologyBySlug = (injectedSlug) => {
 // ==============================
 export const TechnologyList = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]
+    const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]?.filter(
+      ({ is_draft }) => !is_draft
+    )
     return makeGetStaticProps({ props: { technologys } })(context)
   },
 }

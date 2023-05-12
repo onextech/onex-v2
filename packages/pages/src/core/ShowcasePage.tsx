@@ -12,38 +12,19 @@ export interface ShowcasePageProps {
 
 const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
   const { showcase } = props
-  const { title, subtitle } = showcase || {}
+  const { backgroundColor, sections } = showcase || {}
+  const { leftGridSticky, rightGridSticky, gallery } = sections || {}
 
   return (
     <Blocks
       items={[
         {
           key: 'showcase-hero',
-          maxWidth: 'xl',
-          sx: { pt: { xs: 3, md: 6 } },
-          pb: 0,
+          py: 0,
+          sx: { backgroundColor },
           items: [
-            {
-              type: 'h1',
-              title,
-              titleProps: { mb: 2, maxWidth: true },
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: '60%',
-              },
-            },
+            renderShowcaseCardBlockItem({ item: showcase, isHero: true }),
           ],
-        },
-        {
-          key: 'showcase-card-list',
-          maxWidth: 'xl',
-          pt: 0,
-          pb: 0,
-          items: [renderShowcaseCardBlockItem({ item: showcase })],
         },
         {
           key: 'showcase-sticky-grid-left',
@@ -51,25 +32,23 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           items: [
             renderShowcaseStickyGridBlockItem({
               reverse: true,
-              title,
-              subtitle,
-              imageSrc: '/images/showcase_detail_sticky_1.jpg',
+              ...leftGridSticky,
             }),
           ],
         },
         {
-          key: 'showcase-grid',
+          key: 'showcase-gallery',
           py: 5,
           items: [
-            { type: 'overline', title: 'What we do' },
+            gallery.overline && { type: 'overline', title: gallery.overline },
             {
-              type: 'h4',
-              title,
+              type: 'h3',
+              title: gallery.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'subtitle1',
-              title: subtitle,
+              title: gallery.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '50%',
@@ -84,34 +63,19 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                 md: 6,
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/showcase_detail_gallery_2.png',
-                      titleProps: {
-                        alt: 'showcase_detail_gallery_2',
-                        fill: true,
-                        zoom: true,
-                      },
+              gridItems: gallery.items.map((item) => ({
+                items: [
+                  {
+                    ...item,
+                    type: 'image',
+                    titleProps: {
+                      ...item?.titleProps,
+                      fill: true,
+                      zoom: true,
                     },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/showcase_detail_gallery_1.png',
-                      titleProps: {
-                        alt: 'showcase_detail_gallery_1',
-                        fill: true,
-                        zoom: true,
-                      },
-                    },
-                  ],
-                },
-              ],
+                  },
+                ],
+              })),
             },
           ],
         },
@@ -119,165 +83,8 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           key: 'showcase-sticky-grid-right',
           items: [
             renderShowcaseStickyGridBlockItem({
-              title,
-              subtitle,
-              imageSrc: '/images/showcase_detail_sticky_2.png',
+              ...rightGridSticky,
             }),
-          ],
-        },
-        {
-          key: 'showcase-grid',
-          sx: { backgroundColor: 'background.paper' },
-          items: [
-            {
-              type: 'h4',
-              title,
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'subtitle1',
-              title: subtitle,
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: true,
-              },
-            },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 4, md: 8 } },
-              gridProps: { spacing: 3 },
-              gridItemProps: {
-                xs: 6,
-                md: 3,
-                sx: { textAlign: { xs: 'center', md: 'left' } },
-              },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_circle_radial.svg',
-                      titleProps: {
-                        alt: 'about_shape_circle_radial',
-
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '01',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Design a new product',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'We create human-centred designs focused on driving conversions and achieving business goals.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_squares.svg',
-                      titleProps: {
-                        alt: 'about_shape_squares',
-
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '02',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Launch a new company',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Launch your MVP at start-up speed with an expert team of designers and developers.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_square_with_circle.svg',
-                      titleProps: {
-                        alt: 'about_shape_square_with_circle',
-
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '03',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Scale up development',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Our team works directly with you to boost your development speed and scale.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_circles.svg',
-                      titleProps: {
-                        alt: 'about_shape_circles',
-
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '04',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Improve a current system',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-              ],
-            },
           ],
         },
       ]}

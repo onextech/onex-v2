@@ -38,7 +38,8 @@ const withSeoTitleFromPageTitle = () => (props) => {
     page: {
       ...page,
       seo: {
-        title: page.title,
+        title: page.seo_title || page.title,
+        description: page.seo_description,
       },
     },
   }

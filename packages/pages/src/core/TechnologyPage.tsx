@@ -29,7 +29,6 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
         // Hero
         renderHeroBlock({
           item: technology,
-          overline: overline || 'Technology',
         }),
         // Benefits
         renderFourColumnGridBlock(benefits),

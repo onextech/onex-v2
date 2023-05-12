@@ -11,7 +11,6 @@ import {
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
 } from '@onex/blocks'
-import { useLayout } from '@onex/providers'
 
 export interface IndustryPageProps {
   industry: Industry
@@ -20,8 +19,7 @@ export interface IndustryPageProps {
 
 const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   const { industry, relatedPosts } = props
-  const { site, routeConfig } = useLayout()
-  const { overline, sections } = industry || {}
+  const { sections } = industry || {}
   const { summary, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (
@@ -29,7 +27,6 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
       items={[
         // Hero
         renderHeroBlock({
-          overline,
           item: industry,
         }),
         // Summary

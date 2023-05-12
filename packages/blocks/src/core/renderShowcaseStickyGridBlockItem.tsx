@@ -1,30 +1,30 @@
-import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderShowcaseStickyGridBlockItemProps {
   mode?: 'light' | 'dark'
   title: BlockItemProps['title']
-  subtitle: BlockItemProps['title']
-  imageSrc: string
+  subtitle?: BlockItemProps['title']
+  hero_src?: string
+  hero_alt?: string
   reverse?: boolean
 }
 
 const renderShowcaseStickyGridBlockItem = (
   props: RenderShowcaseStickyGridBlockItemProps
 ) => {
-  const { mode, imageSrc, title, subtitle, reverse } = props
+  const { mode, hero_src, hero_alt, title, subtitle, reverse } = props
 
   const gridItems = [
     {
       md: 6,
       lg: 7,
       items: [
-        {
+        hero_src && {
           type: 'image',
-          title: imageSrc,
+          title: hero_src,
           boxProps: { sx: { display: 'flex', justifyContent: 'center' } },
           titleProps: {
-            alt: 'image-src',
+            alt: hero_alt,
             fill: true,
             boxSx: { width: '100%' },
           },
@@ -50,7 +50,7 @@ const renderShowcaseStickyGridBlockItem = (
             mb: 1,
           },
         },
-        {
+        subtitle && {
           type: 'subtitle1',
           title: subtitle,
           titleProps: {

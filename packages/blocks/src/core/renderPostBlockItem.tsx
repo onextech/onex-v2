@@ -6,7 +6,8 @@ export interface RenderPostBlockItemProps {
 
 const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
   const { item } = props
-  const { title, subtitle, href, avatar_src, avatar_alt } = item || {}
+  const { title, subtitle, href, avatar_src, avatar_alt, hero_src, hero_alt } =
+    item || {}
 
   return {
     xs: 12,
@@ -15,9 +16,9 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
     items: [
       {
         type: 'image',
-        title: avatar_src,
+        title: hero_src || avatar_src,
         titleProps: {
-          alt: avatar_alt,
+          alt: hero_alt || avatar_alt,
           ar: '16:9',
           scaleOnHover: true,
           boxProps: { sx: { mb: 2 }, href },

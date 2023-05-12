@@ -11,6 +11,9 @@ export type PageSection =
   | 'callout'
   | 'cta'
   | 'halfGrids'
+  | 'leftGridSticky'
+  | 'rightGridSticky'
+  | 'gallery'
 
 interface Page extends CrudItem {
   // Seo
@@ -32,10 +35,11 @@ interface Page extends CrudItem {
   // Display
   is_featured?: boolean
   is_hidden_from_nav?: boolean
+  is_draft?: boolean
 
   // Sections
   sections?: {
-    [key in PageSection]: {
+    [key in PageSection]?: {
       overline?: string
       title: string
       subtitle?: string
@@ -44,6 +48,7 @@ interface Page extends CrudItem {
       items?: Array<{
         fa_icon?: string
         title: string
+        titleProps?: any
         subtitle?: string
         content?: string
       }>

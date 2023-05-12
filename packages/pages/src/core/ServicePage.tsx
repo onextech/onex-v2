@@ -33,7 +33,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Hero
         renderHeroBlock({
           item: service,
-          overline,
         }),
         // Summary
         renderParagraphBlockItem({
