@@ -8,15 +8,6 @@ import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 
 export const MOCK_TECH_POSTS = [
   {
-    title:
-      'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
-    slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 1,
-    exclusive_locales: ['jp'],
-  },
-  {
     is_active: true,
     category_id: 2,
     title: 'Advanced React Development Techniques to Enhance Your Web Apps.',
@@ -224,7 +215,17 @@ export const MOCK_TECH_POSTS = [
   ...item,
 }))
 
-export const MOCK_GROUP_POSTS = MOCK_TECH_POSTS.map((item, i) => ({
+export const MOCK_GROUP_POSTS = [
+  {
+    title:
+      'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
+    slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',
+    subtitle:
+      'Make your product the first choice for users with designers who built dozens of them.',
+    category_id: 1,
+    exclusive_locales: ['jp'],
+  },
+].map((item, i) => ({
   ...item,
   // Category
   category: getCategoryFromCrudItem(item, MOCK_GROUP_POST_CATEGORYS),

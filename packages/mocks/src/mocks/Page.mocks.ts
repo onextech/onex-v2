@@ -1117,7 +1117,7 @@ const MOCK_GROUP_PAGES = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our Approach',
         subtitle:
           'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
         items: [
@@ -1508,7 +1508,7 @@ const MOCK_TECH_PAGES = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our Approach',
         subtitle:
           'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
         items: [
