@@ -14,6 +14,8 @@ export type PageSection =
   | 'leftGridSticky'
   | 'rightGridSticky'
   | 'gallery'
+  | 'stats'
+  | 'secondaryHero'
 
 interface Page extends CrudItem {
   // Seo
@@ -35,7 +37,7 @@ interface Page extends CrudItem {
   // Display
   is_featured?: boolean
   is_hidden_from_nav?: boolean
-  is_draft?: boolean
+  is_active?: boolean
 
   // Sections
   sections?: {
@@ -45,11 +47,20 @@ interface Page extends CrudItem {
       subtitle?: string
       hero_src?: string
       hero_alt?: string
+      buttons?: Array<{
+        overline?: string
+        title?: string
+        href?: string
+      }>
       items?: Array<{
+        avatar_src?: string
+        avatar_alt?: string
         fa_icon?: string
         title: string
         titleProps?: any
         subtitle?: string
+        overline?: string
+        href?: string
         content?: string
       }>
     }

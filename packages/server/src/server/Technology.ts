@@ -21,7 +21,7 @@ export const fetchTechnologyBySlug = (injectedSlug) => {
 export const TechnologyList = {
   getStaticProps: (): GetStaticProps => (context) => {
     const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]?.filter(
-      ({ is_draft }) => !is_draft
+      ({ is_active }) => is_active
     )
     return makeGetStaticProps({ props: { technologys } })(context)
   },
@@ -33,7 +33,7 @@ export const TechnologyDetail = {
     const site = fetchSite()
     const technologyPage = getDynamicPage({ context, page: technology, site })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY],
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
       technology?.title
     ).slice(0, 3)
     return makeGetStaticProps({

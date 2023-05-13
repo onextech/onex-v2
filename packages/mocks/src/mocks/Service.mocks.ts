@@ -191,6 +191,8 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 1,
     // Hero
+    hero_src: 'https://source.unsplash.com/Nzmyp6LsgNM/1600x900',
+    hero_alt: 'user interface development',
     title: 'User Interface Development',
     slug: 'user-interface-development',
     subtitle:
@@ -292,13 +294,12 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 1,
     // Hero
+    hero_src: 'https://source.unsplash.com/pREq0ns_p_E/1600x900',
+    hero_alt: 'api integration development',
     title: 'API Integration Development',
     slug: 'api-integration-development',
     subtitle:
       'Connect and streamline your systems with seamless API integration solutions.',
-    hero_src:
-      'https://source.unsplash.com/1600x900/?api,integration,development',
-    hero_alt: 'API Integration Development',
     // Seo
     seo: {
       title: 'API Integration Development',
@@ -400,7 +401,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'design-library-development',
     subtitle:
       'Partner with our experts to develop a comprehensive design library for your digital products.',
-    hero_src: 'https://source.unsplash.com/1600x900/?design-library',
+    hero_src: 'https://source.unsplash.com/PkbZahEG2Ng/1600x900',
     hero_alt: 'Design Library',
     // Seo
     seo: {
@@ -427,31 +428,43 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We provide end-to-end design library development services, including component design, documentation, and implementation.',
+          'Our Design Library Development service encompasses a range of activities aimed at establishing and maintaining a robust design system for your organization.',
         items: [
           {
-            fa_icon: 'fa-palette',
-            title: 'Component design',
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Design research',
             subtitle:
-              'We design reusable components that adhere to your brand guidelines and are optimized for usability and accessibility.',
+              'We conduct in-depth research to understand your brand, target audience, and user interface requirements, ensuring that the design library reflects your unique identity and user needs.',
           },
           {
-            fa_icon: 'fa-book',
-            title: 'Documentation',
+            fa_icon: 'fa-layer-group',
+            title: 'Design system setup',
             subtitle:
-              'We create comprehensive documentation for your design library, ensuring your team can quickly understand and implement the components and guidelines.',
+              'We set up a comprehensive design system, including a library of reusable UI components, color palettes, typography guidelines, and design tokens.',
           },
           {
-            fa_icon: 'fa-cogs',
-            title: 'Implementation',
+            fa_icon: 'fa-code',
+            title: 'Component development',
             subtitle:
-              'We assist in implementing your design library across your digital products, ensuring seamless integration and consistency.',
+              'Our team develops reusable design components with clean and maintainable code, ensuring consistency and efficiency in frontend development workflows.',
+          },
+          {
+            fa_icon: 'fa-clone',
+            title: 'Pattern documentation',
+            subtitle:
+              'We document design patterns and guidelines to provide clear instructions and examples for implementing consistent UI elements and interactions.',
+          },
+          {
+            fa_icon: 'fa-paint-brush',
+            title: 'Visual style definition',
+            subtitle:
+              'We define a cohesive visual style for your organization, including color schemes, typography choices, iconography, and spacing guidelines.',
           },
           {
             fa_icon: 'fa-users',
-            title: 'Collaboration',
+            title: 'Collaboration and training',
             subtitle:
-              'We work closely with your team to develop a design library that meets your business objectives and enhances your design process.',
+              'We collaborate with your frontend development teams, providing training and support to ensure successful adoption and utilization of the design library.',
           },
         ],
       },
@@ -491,7 +504,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'application-modernization',
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
-    hero_src: 'https://source.unsplash.com/1600x900/?application-modernization',
+    hero_src: 'https://source.unsplash.com/jJT2r2n7lYA/1600x900',
     hero_alt: 'Application Modernization',
     // Seo
     seo: {
@@ -518,31 +531,43 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our application modernization services include system assessment, roadmap development, application re-architecture, and cloud migration.',
+          'To modernize your applications, we follow a comprehensive set of practices that include application assessment, architecture redesign, migration, and ongoing support.',
         items: [
           {
-            fa_icon: 'fa-search',
-            title: 'System assessment',
-            subtitle:
-              'We evaluate your existing systems and applications to identify opportunities for modernization and establish priorities based on your business goals.',
-          },
-          {
-            fa_icon: 'fa-road',
-            title: 'Roadmap development',
-            subtitle:
-              'We develop a detailed roadmap for modernization, outlining the steps needed to achieve your goals and setting milestones to track progress.',
-          },
-          {
             fa_icon: 'fa-cogs',
-            title: 'Application re-architecture',
+            title: 'Application assessment',
             subtitle:
-              'We re-architect your applications to leverage modern, scalable architectures, improving performance, security, and maintainability.',
+              'We assess your legacy applications to identify areas for improvement, evaluate technical debt, and prioritize modernization efforts.',
           },
           {
-            fa_icon: 'fa-cloud',
-            title: 'Cloud migration',
+            fa_icon: 'fa-layer-group',
+            title: 'Architecture redesign',
             subtitle:
-              'We migrate your applications to the cloud, enabling you to take advantage of flexible, scalable, and cost-effective infrastructure.',
+              'We redesign the application architecture to enhance scalability, modularity, and maintainability, ensuring it aligns with modern development practices.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Migration',
+            subtitle:
+              'We plan and execute a smooth migration process, including data migration, code refactoring, and integration with modern systems.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize application performance by identifying and resolving bottlenecks, improving response times, and implementing caching strategies.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Continuous improvement',
+            subtitle:
+              'We establish DevOps practices and implement automated testing, deployment, and monitoring to ensure ongoing improvement and stability of your modernized applications.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team, including business stakeholders and IT personnel, to ensure the modernization process aligns with your business goals and requirements.',
           },
         ],
       },
@@ -582,7 +607,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'performance-optimization',
     subtitle:
       'Improve your website speed, user experience, and search engine rankings with our performance optimization services.',
-    hero_src: 'https://source.unsplash.com/1600x900/?performance-optimization',
+    hero_src: 'https://source.unsplash.com/M5tzZtFCOfs/1600x900',
     hero_alt: 'Performance Optimization',
     // Seo
     seo: {
@@ -712,37 +737,43 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We offer end-to-end microfrontend development services, from architecture design and implementation to testing, deployment, and ongoing support.',
+          'To build robust microfrontend applications, we follow a comprehensive set of practices that include module composition, independent deployment, shared libraries, and cross-team collaboration.',
         items: [
           {
-            fa_icon: 'fa-layer-group',
-            title: 'Architecture design',
+            fa_icon: 'fa-cube',
+            title: 'Module composition',
             subtitle:
-              'We help you design a microfrontend architecture tailored to your specific application needs and business goals, ensuring optimal performance and maintainability.',
+              'We decompose your frontend application into modular microfrontend components, allowing independent development, testing, and deployment of each module.',
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Implementation',
+            fa_icon: 'fa-rocket',
+            title: 'Independent deployment',
             subtitle:
-              'Our expert engineers build modular, scalable, and efficient microfrontends using the latest technologies and best practices in frontend software engineering.',
+              'We enable independent deployment of microfrontends, allowing teams to release updates and features without impacting the entire application.',
           },
           {
-            fa_icon: 'fa-chart-line',
-            title: 'Dashboard development',
+            fa_icon: 'fa-share-alt',
+            title: 'Shared libraries',
             subtitle:
-              'We specialize in creating powerful, data-driven dashboards that enable you to monitor and manage your applications with ease.',
+              'We develop shared libraries and design patterns to ensure consistency and code reuse across microfrontends, reducing duplication and improving development efficiency.',
           },
           {
             fa_icon: 'fa-cogs',
-            title: 'Integration',
+            title: 'Integration and orchestration',
             subtitle:
-              'We seamlessly integrate microfrontends with your existing backend systems and APIs, ensuring a smooth, end-to-end user experience.',
+              'We integrate and orchestrate microfrontends into a unified frontend application, providing seamless navigation, state management, and intercommunication between modules.',
           },
           {
-            fa_icon: 'fa-wrench',
-            title: 'Support & maintenance',
+            fa_icon: 'fa-code',
+            title: 'Cross-team collaboration',
             subtitle:
-              'We provide ongoing support and maintenance to ensure your microfrontend applications continue to perform optimally and meet your evolving business needs.',
+              'We facilitate collaboration between frontend development teams, ensuring alignment of architecture, standards, and best practices in building microfrontend applications.',
+          },
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'Scalability and performance',
+            subtitle:
+              'We optimize the performance and scalability of microfrontend applications, leveraging caching, lazy loading, and dynamic module loading techniques.',
           },
         ],
       },
@@ -809,31 +840,43 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We specialize in frontend software engineering and dashboard development, ensuring that your team has the expertise it needs to excel.',
+          'To augment your team effectively, we follow a comprehensive set of practices that include skill assessment, team integration, project management, and knowledge transfer.',
         items: [
           {
+            fa_icon: 'fa-users',
+            title: 'Skill assessment',
+            subtitle:
+              'We assess the skills and expertise required for your project to ensure the perfect match between your needs and our frontend engineers.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Team integration',
+            subtitle:
+              'Our frontend engineers seamlessly integrate into your existing team, aligning with your development processes, communication channels, and project workflows.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Project management',
+            subtitle:
+              'We collaborate closely with your project managers and stakeholders to ensure clear requirements, timely delivery, and effective project coordination.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Flexible engagement',
+            subtitle:
+              'We offer flexible engagement models, whether you need additional resources for a specific project or ongoing support for long-term collaboration.',
+          },
+          {
             fa_icon: 'fa-users-cog',
-            title: 'Tailored team augmentation',
+            title: 'Skills expertise',
             subtitle:
-              'We carefully assess your project requirements and provide you with the right professionals to complement your team and meet your goals.',
+              'Our frontend engineers possess expertise in various frontend technologies, including modern frameworks, libraries, and tools, ensuring the successful execution of your projects.',
           },
           {
-            fa_icon: 'fa-laptop-code',
-            title: 'Frontend software engineering',
+            fa_icon: 'fa-graduation-cap',
+            title: 'Knowledge transfer',
             subtitle:
-              'Our experts are skilled in the latest frontend technologies and best practices, ensuring that your software is both visually stunning and highly functional.',
-          },
-          {
-            fa_icon: 'fa-chart-bar',
-            title: 'Dashboard development',
-            subtitle:
-              ' intuitive, data-driven dashboards that help you monitor and analyze your business performance in real-time.',
-          },
-          {
-            fa_icon: 'fa-code-branch',
-            title: 'Collaboration',
-            subtitle:
-              'We work closely with your team to ensure seamless integration and collaboration, helping you achieve your project objectives efficiently.',
+              'We encourage knowledge sharing and provide documentation and training sessions to ensure the transfer of skills and expertise to your internal team.',
           },
         ],
       },
@@ -871,7 +914,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'agile-development-teams',
     subtitle:
       'Empower your business with our expert agile development teams, specializing in frontend software engineering and dashboard development.',
-    hero_src: 'https://source.unsplash.com/1600x900/?agile-development',
+    hero_src: 'https://source.unsplash.com/Oalh2MojUuk/1600x900',
     hero_alt: 'Agile Development Team',
     // Seo
     seo: {
@@ -971,7 +1014,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'technical-leadership',
     subtitle:
       'Empower your software development projects with our experienced technical leaders and ensure success.',
-    hero_src: 'https://source.unsplash.com/1600x900/?technical-leadership',
+    hero_src: 'https://source.unsplash.com/rxpThOwuVgE/1600x900',
     hero_alt: 'Technical Leadership',
     // Seo
     seo: {
@@ -998,37 +1041,43 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our technical leaders are skilled in a range of areas, including project management, team building, and software architecture.',
+          'With our technical leadership services, we offer a range of capabilities that include architectural guidance, code reviews, performance optimization, team collaboration, and technical mentoring.',
         items: [
           {
-            fa_icon: 'fa-tasks',
-            title: 'Project management',
+            fa_icon: 'fa-layer-group',
+            title: 'Architectural guidance',
             subtitle:
-              'We ensure that your projects are well-planned, organized, and executed, keeping them on track and within budget.',
+              'Our technical leaders provide architectural guidance to ensure the scalability, maintainability, and extensibility of your software projects.',
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Team building',
+            fa_icon: 'fa-search-dollar',
+            title: 'Code reviews',
             subtitle:
-              'We help you build high-performing teams by fostering a culture of collaboration, innovation, and continuous improvement.',
+              'We conduct thorough code reviews to identify potential issues, ensure code quality, and promote best practices within your development team.',
           },
           {
-            fa_icon: 'fa-cogs',
-            title: 'Software architecture',
-            subtitle:
-              'We provide guidance on software architecture and best practices, ensuring that your projects are built to the highest standards.',
-          },
-          {
-            fa_icon: 'fa-chart-line',
+            fa_icon: 'fa-tachometer-alt',
             title: 'Performance optimization',
             subtitle:
-              'We help you optimize the performance of your frontend software and dashboards, ensuring a seamless user experience.',
+              'Our technical leaders optimize the performance of your software applications, ensuring fast response times, efficient resource utilization, and scalability.',
           },
           {
-            fa_icon: 'fa-code-branch',
-            title: 'aboration',
+            fa_icon: 'fa-hands-helping',
+            title: 'Team collaboration',
             subtitle:
-              'We work closely with your team to ensure that your projects meet your business objectives and deliver value to your customers.',
+              'We foster effective collaboration within your development team, promoting communication, knowledge sharing, and alignment towards project goals.',
+          },
+          {
+            fa_icon: 'fa-chalkboard-teacher',
+            title: 'Technical mentoring',
+            subtitle:
+              'Our technical leaders provide guidance, mentorship, and support to your developers, helping them enhance their technical skills and grow professionally.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Quality assurance',
+            subtitle:
+              'We ensure the quality of your software development projects by implementing best practices, testing strategies, and quality assurance processes.',
           },
         ],
       },
@@ -1039,13 +1088,15 @@ export const MOCK_TECH_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is technical leadership important for my software development projects?',
+            title:
+              'Why is technical leadership important for my software development projects?',
             content:
               'Technical leadership is crucial for the success of your software development projects, as it ensures that your projects are well-planned, organized, and executed. Technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and can guide your team through the complexities of frontend software engineering and dashboard development. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Technical Leadership service?',
+            title:
+              'What are the benefits of working with your Technical Leadership service?',
             content:
               'Our Technical Leadership service provides experienced leaders who can guide your team through the complexities of frontend software engineering and dashboard development, ensuring that your projects are delivered on time and within budget. Our technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and work closely with your team to ensure that your projects are built to the highest standards. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
           },

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Box, Slider, Typography } from '@gravis-os/ui'
-import { Blocks, BlockItem } from '@gravis-os/landing'
+import { Block, Blocks, BlockItem } from '@gravis-os/landing'
 import {
   renderClientHighlightsImageMarqueeBlock,
   renderGhostButtonBlockItem,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
+  renderHeroWithBackgroundBlock,
+  renderHeroWithVideoBackgroundBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post } from '@onex/types'
@@ -122,82 +124,81 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             },
           ],
         },
-        // {
-        //   key: 'hero-with-background-fade-slider',
-        //   dark: true,
-        //   center: true,
-        //   disableContainer: true,
-        //   py: 0,
-        //   items: [
-        //     {
-        //       type: 'jsx',
-        //       title: (
-        //         <Slider
-        //           autoplay
-        //           loop
-        //           arrows
-        //           fade
-        //           dots
-        //           dotProps={{ color: 'secondary.main' }}
-        //           height={{ xs: 500, md: 800 }}
-        //           items={[
-        //             <Block
-        //               fill
-        //               {...renderHeroWithBackgroundBlock({
-        //                 ...hero,
-        //                 title: 'We are the Growth Company',
-        //                 backgroundImageProps: {
-        //                   src: '/images/about_hero.png',
-        //                   alt: 'hero',
-        //                 },
-        //               })}
-        //             />,
-        //             <Block
-        //               fill
-        //               {...renderHeroWithBackgroundBlock({
-        //                 ...hero,
-        //                 title: 'Unleash your X Factor',
-        //                 backgroundImageProps: {
-        //                   src: '/images/about_nodes_above_city.png',
-        //                   alt: 'hero',
-        //                 },
-        //               })}
-        //             />,
-        //             <Block
-        //               fill
-        //               {...renderHeroWithBackgroundBlock({
-        //                 ...hero,
-        //                 title: "Deliver Tomorrow's Innovation Today",
-        //                 backgroundImageProps: {
-        //                   src: '/images/mission_earth.png',
-        //                   alt: 'hero',
-        //                 },
-        //               })}
-        //             />,
-        //           ]}
-        //         />
-        //       ),
-        //     },
-        //   ],
-        // },
-        // Hero
-        // renderHeroWithVideoBackgroundBlock({
-        //   ...hero,
-        //   video_src: '/videos/home_video.mp4',
-        //   video_poster_src: '/videos/home_video_poster.jpg',
-        //   buttonProps: {
-        //     overline: 'What we do',
-        //     title: 'Smarter Businesses',
-        //     size: 'lg',
-        //     href: routeConfig.SERVICES,
-        //   },
-        //   secondaryButtonProps: {
-        //     overline: 'Who we are',
-        //     title: 'Business Software Experts',
-        //     size: 'lg',
-        //     href: routeConfig.CAREERS,
-        //   },
-        // }),
+        {
+          key: 'hero-with-background-fade-slider',
+          dark: true,
+          center: true,
+          disableContainer: true,
+          py: 0,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  loop
+                  arrows
+                  fade
+                  dots
+                  dotProps={{ color: 'secondary.main' }}
+                  height={{ xs: 500, md: 800 }}
+                  items={[
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: 'We are the Growth Company',
+                        backgroundImageProps: {
+                          src: '/images/about_hero.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: 'Unleash your X Factor',
+                        backgroundImageProps: {
+                          src: '/images/about_nodes_above_city.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: "Deliver Tomorrow's Innovation Today",
+                        backgroundImageProps: {
+                          src: '/images/mission_earth.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
+        renderHeroWithVideoBackgroundBlock({
+          ...hero,
+          video_src: '/videos/home_video.mp4',
+          video_poster_src: '/videos/home_video_poster.jpg',
+          buttonProps: {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            size: 'lg',
+            href: routeConfig.SERVICES,
+          },
+          secondaryButtonProps: {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            size: 'lg',
+            href: routeConfig.CAREERS,
+          },
+        }),
         // Marquee
         renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Benefits
@@ -238,10 +239,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             }),
             {
               type: 'image',
-              title: '/images/design_men.png',
+              title: '/images/two_men_pointing_at_screen.png',
               disableContainer: true,
               titleProps: {
-                alt: 'tech men',
+                alt: 'two men point at screen',
                 background: true,
                 backgroundHeight: { xs: 480, md: 640 },
                 backgroundSx: { mt: { xs: 5, md: 10 } },

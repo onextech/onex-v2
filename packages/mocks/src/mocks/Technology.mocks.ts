@@ -173,9 +173,10 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_src: '/images/technology_javascript.png',
     avatar_alt: 'JavaScript',
     is_featured: true,
+    is_active: true,
     subtitle:
       'Leverage the power of JavaScript to build interactive and dynamic web applications.',
-    hero_src: 'https://source.unsplash.com/1600x900/?javascript',
+    hero_src: 'https://source.unsplash.com/1IW4HQuauSU/1600x900',
     hero_alt: 'JavaScript',
     // Seo
     seo: {
@@ -185,6 +186,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our JavaScript development services, we offer a range of capabilities that include frontend development, framework-based development, performance optimization, code refactoring, and third-party integration.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Framework-based development',
+            subtitle:
+              'We specialize in popular JavaScript frameworks like React, Angular, and Vue.js to build scalable and modular web applications.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize the performance of your JavaScript applications, ensuring fast load times, smooth animations, and efficient resource utilization.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Code refactoring',
+            subtitle:
+              'We refactor and optimize existing JavaScript codebases to improve maintainability, readability, and performance.',
+          },
+          {
+            fa_icon: 'fa-plug',
+            title: 'Third-party integration',
+            subtitle:
+              'We integrate various third-party services and APIs into your JavaScript applications to extend functionality and improve user experience.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Security and data protection',
+            subtitle:
+              'We implement robust security measures and best practices to protect your JavaScript applications and sensitive user data.',
+          },
+        ],
+      },
       summary: {
         title:
           'Harness the power of JavaScript for web application development.',
@@ -278,6 +323,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_src: '/images/technology_typescript.png',
     avatar_alt: 'Typescript',
     is_featured: true,
+    is_active: true,
     subtitle: 'Enhance your frontend development with TypeScript.',
     hero_src: 'https://source.unsplash.com/xrVDYZRGdw4/1600x900',
     hero_alt: 'TypeScript',
@@ -289,6 +335,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our TypeScript development services, we offer a range of capabilities that include frontend development, framework-based development, type safety, code scalability, and improved maintainability.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using TypeScript, JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize the performance of your TypeScript applications, ensuring fast load times, smooth animations, and efficient resource utilization.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Code refactoring',
+            subtitle:
+              'We refactor and optimize existing TypeScript codebases to improve maintainability, readability, and performance.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Type safety',
+            subtitle:
+              'We utilize TypeScript to enforce type safety and catch potential errors during development, leading to more reliable and bug-free code.',
+          },
+          {
+            fa_icon: 'fa-expand',
+            title: 'Code scalability',
+            subtitle:
+              'We leverage TypeScript features such as interfaces, classes, and modules to build scalable codebases that can evolve with your application needs.',
+          },
+          {
+            fa_icon: 'fa-heart',
+            title: 'Improved maintainability',
+            subtitle:
+              'With TypeScript, we ensure cleaner, more structured code that is easier to understand, maintain, and extend in the long run.',
+          },
+        ],
+      },
       summary: {
         title: 'Why Choose TypeScript for Frontend Development?',
         items: [
@@ -379,6 +469,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'React',
     slug: 'react',
     is_featured: true,
+    is_active: true,
     avatar_src: '/images/technology_react.png',
     avatar_alt: 'React',
     subtitle:
@@ -393,6 +484,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our React development services, we offer a range of capabilities that include frontend development, component-based development, state management, code reusability, and responsive design.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using React, JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Component-based development',
+            subtitle:
+              'We specialize in building web applications using React, utilizing the power of reusable components to create scalable and maintainable codebases.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'State management',
+            subtitle:
+              'We employ state management libraries such as Redux or React Context API to manage complex application state and ensure seamless data flow throughout your React application.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Code refactoring',
+            subtitle:
+              'We refactor and optimize existing React codebases to improve maintainability, readability, and performance, ensuring clean and efficient code.',
+          },
+          {
+            fa_icon: 'fa-cube',
+            title: 'Code reusability',
+            subtitle:
+              'We leverage React’s component-based architecture and best practices to develop reusable code modules, reducing development time and effort for future enhancements and features.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Responsive design',
+            subtitle:
+              'We design and develop React applications with a mobile-first approach, ensuring a seamless user experience across various devices and screen sizes.',
+          },
+        ],
+      },
       summary: {
         title: 'Building dynamic and interactive user interfaces with React.',
         items: [
@@ -488,6 +623,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_width: 104,
     avatar_height: 62,
     is_featured: true,
+    is_active: true,
     subtitle:
       'Take your frontend software engineering to the next level with Next.js.',
     hero_src: 'https://source.unsplash.com/EUzk9BIEq6M/1600x900',
@@ -500,6 +636,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our Next.js development services, we offer a range of capabilities that include server-side rendering, static site generation, API integration, code optimization, and seamless navigation.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using Next.js, React, JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Server-side rendering (SSR)',
+            subtitle:
+              'We leverage Next.js to implement server-side rendering, enhancing performance and providing optimized initial page load times for improved user experience.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Static site generation (SSG)',
+            subtitle:
+              'We utilize Next.js static site generation to generate static HTML files for dynamic websites, improving performance, scalability, and SEO friendliness.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Code optimization',
+            subtitle:
+              'We optimize the Next.js codebase to ensure clean, efficient, and scalable code, improving maintainability and reducing loading times.',
+          },
+          {
+            fa_icon: 'fa-cube',
+            title: 'API integration',
+            subtitle:
+              'We seamlessly integrate APIs into your Next.js applications to fetch and display dynamic data, enabling powerful and interactive web experiences.',
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless navigation',
+            subtitle:
+              'We implement client-side navigation using Next.js routing, providing smooth transitions and enhanced user experience within your web application.',
+          },
+        ],
+      },
       summary: {
         title: 'Unlocking the power of Next.js for frontend development.',
         items: [
@@ -588,6 +768,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     avatar_height: 55,
     is_featured: true,
+    is_active: true,
     subtitle:
       'Leverage the power of Node.js to build scalable and efficient backend solutions for your enterprise applications.',
     hero_src: 'https://source.unsplash.com/0qvBNep1Y04/1600x900',
@@ -600,6 +781,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our Node.js development services, we offer a range of capabilities that leverage the power of JavaScript on the server-side, including server-side rendering, API development, database integration, scalability, and real-time applications.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Backend development',
+            subtitle:
+              'We specialize in Node.js to build scalable and efficient backend applications, handling server-side logic, API development, and database integration.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Framework-based development',
+            subtitle:
+              'We utilize popular Node.js frameworks like Express, Nest.js, and Koa to build robust and modular web applications, ensuring scalability and maintainability.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize the performance of your Node.js applications, employing best practices like caching, asynchronous programming, and efficient resource utilization.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Code refactoring',
+            subtitle:
+              'We refactor and improve existing Node.js codebases to enhance maintainability, readability, and performance, ensuring clean and scalable code.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Database integration',
+            subtitle:
+              'We seamlessly integrate databases like MongoDB, MySQL, or PostgreSQL with your Node.js applications, ensuring efficient data storage and retrieval.',
+          },
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Scalability and real-time applications',
+            subtitle:
+              'We architect Node.js applications to handle high traffic, ensuring scalability and building real-time features using technologies like WebSockets or Socket.IO.',
+          },
+        ],
+      },
       summary: {
         title: 'Unlocking the potential of backend development with Node.js.',
         items: [
@@ -691,6 +916,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_src: '/images/technology_webpack.png',
     avatar_alt: 'Webpack',
     is_featured: true,
+    is_active: true,
     subtitle: 'Optimize your frontend development workflow with Webpack.',
     hero_src: 'https://source.unsplash.com/EJSaEnVvZcg/1600x900',
     hero_alt: 'Webpack',
@@ -702,6 +928,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our Webpack development services, we offer a range of capabilities that optimize the build process and enhance the performance of your JavaScript applications. We specialize in frontend development, module bundling, code splitting, performance optimization, and seamless integration with modern frameworks.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Module bundling',
+            subtitle:
+              'We utilize Webpack to efficiently bundle your application code, manage dependencies, and optimize the overall build process.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Code splitting',
+            subtitle:
+              'We implement code splitting techniques to optimize performance by loading only the necessary code for each page or component, reducing initial load times.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize your JavaScript applications using Webpack plugins and optimizations, ensuring fast load times, efficient resource utilization, and smooth user experiences.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Seamless framework integration',
+            subtitle:
+              'We seamlessly integrate Webpack with popular JavaScript frameworks like React, Angular, and Vue.js, harnessing their full potential and optimizing the development workflow.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Build process automation',
+            subtitle:
+              'We automate the build process using Webpack configuration, allowing for easy development and production builds, code transpilation, minification, and asset optimization.',
+          },
+        ],
+      },
       summary: {
         title: 'Optimize your frontend development workflow.',
         items: [
@@ -787,6 +1057,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_src: '/images/technology_module_federation.png',
     avatar_alt: 'Module Federation',
     is_featured: true,
+    is_active: true,
     subtitle:
       'Enhance your frontend architecture with Module Federation and build scalable, modular applications.',
     hero_src: 'https://source.unsplash.com/26MJGnCM0Wc/1600x900',
@@ -799,6 +1070,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our Module Federation services, we offer a range of capabilities that empower you to build scalable and collaborative web applications. Leveraging the power of Module Federation, we enable seamless integration of micro-frontends, enhance code reuse, and optimize performance across distributed systems.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Micro-frontend architecture',
+            subtitle:
+              'We specialize in building scalable and modular web applications using the Micro-frontend architecture enabled by Module Federation. This allows for independent development and deployment of isolated frontend modules.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Code reuse and composition',
+            subtitle:
+              'We leverage Module Federation to enable code sharing and composition across multiple projects, maximizing code reuse and reducing redundancy, resulting in efficient development and easier maintenance.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Collaborative development',
+            subtitle:
+              'Module Federation allows teams to work independently on different frontend modules, promoting collaboration and parallel development while ensuring seamless integration of these modules into a unified application.',
+          },
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize performance by dynamically loading frontend modules on-demand, reducing initial load times and improving overall application performance.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Scalable and distributed systems',
+            subtitle:
+              'Module Federation enables the creation of scalable and distributed systems, where individual modules can be developed and deployed independently, allowing for greater flexibility and scalability.',
+          },
+        ],
+      },
       summary: {
         title:
           'Unlock the power of scalable and modular frontend architecture.',
@@ -885,6 +1200,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_src: '/images/technology_nx.png',
     avatar_alt: 'Nx',
     is_featured: true,
+    is_active: true,
     subtitle:
       'Build scalable and efficient frontend applications using Nx Monorepo.',
     hero_src: 'https://source.unsplash.com/m_HRfLhgABo/1600x900',
@@ -897,6 +1213,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our Nx Monorepo services, we offer a range of capabilities that enable efficient development, code sharing, and scalability. By leveraging the power of Nx Monorepo, we streamline frontend development, optimize performance, ensure code consistency, and facilitate collaborative workflows.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend development',
+            subtitle:
+              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Monorepo architecture',
+            subtitle:
+              'We specialize in leveraging the Nx Monorepo architecture to manage multiple frontend applications, libraries, and shared code within a single repository. This allows for better code organization, improved collaboration, and efficient development workflows.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Code sharing and reuse',
+            subtitle:
+              'With Nx Monorepo, we enable efficient code sharing and reuse across multiple projects. This reduces redundancy, improves maintainability, and accelerates development by leveraging shared libraries and components.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize the performance of your applications by leveraging Nx Monorepo tools and best practices. This includes efficient dependency management, build optimization, and code splitting to achieve fast load times and improved user experience.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Code consistency and standards',
+            subtitle:
+              'Using Nx Monorepo, we enforce code consistency, linting rules, and standardized configurations across projects. This ensures a high level of code quality, readability, and maintainability throughout your applications.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaborative development',
+            subtitle:
+              'Nx Monorepo enables seamless collaboration among developers by providing tools for managing shared code, facilitating efficient workflows, and enabling parallel development across multiple projects within the monorepo.',
+          },
+        ],
+      },
       summary: {
         title: 'Scalable and efficient frontend development with Nx Monorepo.',
         items: [
@@ -995,6 +1355,50 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     },
     // Sections
     sections: {
+      benefits: {
+        overline: 'Benefits',
+        title: '{title} Development Services',
+        subtitle:
+          'With our AWS Services, we offer a range of capabilities that empower your business with scalable and reliable cloud solutions. By leveraging the power of Amazon Web Services (AWS), we enable secure and cost-effective development, efficient resource management, and seamless integration with AWS services.',
+        items: [
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Scalable cloud solutions',
+            subtitle:
+              'We leverage AWS services to build scalable and elastic cloud solutions that can handle varying workloads and accommodate business growth. This ensures your applications can scale seamlessly and handle increased user demand.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Secure infrastructure',
+            subtitle:
+              'With AWS security best practices, we ensure robust security measures to protect your applications and data. We implement identity and access management, encryption, monitoring, and other security features to safeguard your infrastructure.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Cost optimization',
+            subtitle:
+              'We optimize your AWS infrastructure to maximize cost efficiency. By leveraging AWS services like auto-scaling, serverless computing, and cost monitoring tools, we ensure you only pay for the resources you need and minimize unnecessary expenses.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Seamless integration',
+            subtitle:
+              'We seamlessly integrate your applications with various AWS services such as Amazon S3, DynamoDB, Lambda, and more. This allows for efficient data storage, real-time processing, and enables you to leverage the full power of the AWS ecosystem.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Global infrastructure',
+            subtitle:
+              'With AWS global infrastructure, we ensure low latency and high availability for your applications by leveraging AWS regions and content delivery networks (CDNs). This enables you to reach a global audience and deliver exceptional user experiences.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Managed databases',
+            subtitle:
+              'We leverage AWS managed database services like Amazon RDS, DynamoDB, and Aurora to ensure efficient data storage, high availability, and automatic backups. This allows you to focus on your application logic while leaving database management to AWS.',
+          },
+        ],
+      },
       summary: {
         title:
           'Why choose AWS for frontend software engineering and dashboard development?',
@@ -1084,7 +1488,6 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
     is_hidden_from_nav: true,
-    is_draft: true,
   },
   {
     avatar_src: '/images/technology_mui.png',
@@ -1094,7 +1497,6 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
     is_hidden_from_nav: true,
-    is_draft: true,
   },
   {
     avatar_src: '/images/technology_sass.png',
@@ -1104,7 +1506,6 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
     is_hidden_from_nav: true,
-    is_draft: true,
   },
   {
     avatar_src: '/images/technology_storybook.png',
@@ -1115,7 +1516,6 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
     is_hidden_from_nav: true,
-    is_draft: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECH_TECHNOLOGY_PAGE, {

@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
     site,
   })
-  const posts = MOCK_POSTS[MOCK_KEY].slice(0, 3)
+  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(0, 3)
   return makeGetStaticProps({
     props: {
       page,

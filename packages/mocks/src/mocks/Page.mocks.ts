@@ -1,4 +1,5 @@
 import { Page } from '@onex/types'
+import { routeConfig } from '@onex/common'
 
 export const MOCK_PAGE: Page = {
   // Seo
@@ -749,7 +750,176 @@ export const MOCK_DESIGN_PAGE = {
 }
 
 const MOCK_COMMON_PAGES = [
-  { title: 'About', slug: 'about' },
+  {
+    title: 'About',
+    slug: 'about',
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'hero',
+        overline: 'Greetings',
+        title: 'We are {appTitle}, the Growth Company.',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_nodes.png',
+        hero_alt: 'about-nodes',
+        title:
+          'We believe technology is the superpower that changes everything about business.',
+        subtitle:
+          'One X Tech is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_alt: 'hero',
+        title:
+          'We are here to awaken the potential of a supercharged digital economy.',
+        subtitle:
+          'We deliver transformational outcomes for a demanding new digital world.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'We Transform Businesses',
+        subtitle:
+          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'shape_circle_radial',
+            overline: '01',
+            title: 'Design a new product',
+            subtitle:
+              'We create human-centred designs focused on driving conversions and achieving business goals.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'shape_circle_squares',
+            overline: '02',
+            title: 'Launch a new company',
+            subtitle:
+              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'shape_square_with_circle',
+            overline: '03',
+            title: 'Scale up development',
+            subtitle:
+              'Our team works directly with you to boost your development speed and scale.',
+          },
+          {
+            avatar_src: '/images/about_shape_circles.svg',
+            avatar_alt: 'shape_circle',
+            overline: '04',
+            title: 'Improve a current system',
+            subtitle:
+              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'about_nodes_above_city',
+        title: 'We Design & Develop Custom Software for Businesses',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Let your customers take the reign',
+        subtitle:
+          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Accelerating Asia',
+        subtitle:
+          'One X Tech is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'about_working_in_office',
+        overline: 'Careers',
+        title: 'Thinkers & Tinkerers Coming Together',
+        subtitle:
+          'We’ve assembled some of the brightest minds in business, technology and design. With our diversity of expertise, we’re able to deliver the highest quality software that our industry has seen.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
   { title: 'Careers', slug: 'careers' },
   { title: 'Contact', slug: 'contact' },
   {

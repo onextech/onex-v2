@@ -5,15 +5,30 @@ import {
   renderGhostButtonBlockItem,
   renderClientLogoCardBlockItem,
 } from '@onex/blocks'
-import { routeConfig } from '@onex/common'
 import { useLayout } from '@onex/providers'
+import { Page } from '@onex/types'
 
-export interface AboutPageProps {}
+export interface AboutPageProps {
+  page: Page
+}
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
 
-const AboutPage: React.FC<AboutPageProps> = () => {
+const AboutPage: React.FC<AboutPageProps> = (props) => {
+  const { page } = props
   const { clientLogos } = useLayout()
+
+  const { sections } = page || {}
+  const {
+    hero,
+    summary,
+    callout,
+    features,
+    cta,
+    gallery,
+    stats,
+    secondaryHero,
+  } = sections || {}
 
   return (
     <Blocks
@@ -21,22 +36,15 @@ const AboutPage: React.FC<AboutPageProps> = () => {
         {
           dark: true,
           py: 30,
-          key: 'growth-company',
+          key: 'hero',
           ...commonBlockProps,
           backgroundImageProps: {
-            src: '/images/about_hero.png',
-            alt: 'hero',
+            src: hero.hero_src,
+            alt: hero.hero_alt,
           },
           items: [
-            { type: 'overline', title: 'Greetings' },
-            {
-              type: 'h2',
-              title: (
-                <span>
-                  We are One X Group, <br /> the Growth Company.
-                </span>
-              ),
-            },
+            { type: 'overline', title: hero.overline },
+            { type: 'h2', title: hero.title },
             {
               type: 'stack',
               sx: { mt: 3 },
@@ -46,33 +54,19 @@ const AboutPage: React.FC<AboutPageProps> = () => {
                 direction: 'row',
                 reverseDirectionOnMobile: true,
               },
-              stackItems: [
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'What we do',
-                      title: 'Smarter Businesses',
-                      size: 'lg',
-                      href: routeConfig.SERVICES,
-                    }),
-                  ],
-                },
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'Who we are',
-                      title: 'Business Software Experts',
-                      size: 'lg',
-                      href: routeConfig.CAREERS,
-                    }),
-                  ],
-                },
-              ],
+              stackItems: hero.buttons?.map((item) => ({
+                items: [
+                  renderGhostButtonBlockItem({
+                    size: 'lg',
+                    ...item,
+                  }),
+                ],
+              })),
             },
           ],
         },
         {
-          key: 'technology-is-the-superpower',
+          key: 'summary',
           ...commonBlockProps,
           sx: { backgroundColor: 'background.paper' },
           dark: true,
@@ -81,97 +75,87 @@ const AboutPage: React.FC<AboutPageProps> = () => {
           items: [
             {
               type: 'h4',
-              title:
-                'We believe technology is the superpower that changes everything about business.',
+              title: summary.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'body1',
-              title:
-                'One X Tech is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
+              title: summary.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
             },
             renderGhostButtonBlockItem({
-              overline: 'Who we are',
-              title: 'Business Software Experts',
-              href: routeConfig.CAREERS,
+              ...summary.buttons?.[0],
               boxProps: { mt: 4 },
             }),
           ],
         },
         {
-          key: 'background-nodes',
+          key: 'summary-image',
           ...commonBlockProps,
           dark: true,
           pt: 45,
           pb: 0,
           backgroundImageProps: {
-            src: '/images/about_nodes.png',
-            alt: 'about-nodes',
+            src: summary.hero_src,
+            alt: summary.hero_alt,
           },
-          items: [],
         },
         {
-          key: 'awaken-digital-economy',
+          key: 'callout',
           ...commonBlockProps,
           dark: true,
           sx: { backgroundColor: 'background.paper' },
           pt: 12,
           pb: 26,
           backgroundImageProps: {
-            src: '/images/about_man_with_laptop_in_city.png',
-            alt: 'hero',
+            src: callout.hero_src,
+            alt: callout.hero_alt,
             fixedBackground: true,
             boxSx: { width: '100%', bottom: -8 },
           },
           items: [
             {
               type: 'h4',
-              title:
-                'We are here to awaken the potential of a supercharged digital economy.',
+              title: callout.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'h6',
-              title:
-                'We deliver transformational outcomes for a demanding new digital world.',
+              title: callout.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
             },
             renderGhostButtonBlockItem({
-              overline: 'Our Mission',
-              title: 'Enabling Smarter Businesses',
-              href: routeConfig.SERVICES,
               boxProps: { mt: 3 },
+              ...callout.buttons?.[0],
             }),
           ],
         },
         {
-          key: 'we-transform-businesses',
+          key: 'features',
           ...commonBlockProps,
           dark: true,
           backgroundImageProps: {
-            src: '/images/about_binary.png',
-            alt: 'about_binary',
+            src: features.hero_src,
+            alt: features.hero_alt,
             fixedBackground: true,
             boxSx: { width: '100%', top: 0 },
           },
           items: [
-            { type: 'overline', title: 'What we do' },
+            { type: 'overline', title: features.overline },
             {
               type: 'h4',
-              title: 'We Transform Businesses',
+              title: features.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'body1',
-              title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+              title: features.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -187,154 +171,59 @@ const AboutPage: React.FC<AboutPageProps> = () => {
                 md: 3,
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_circle_radial.svg',
-                      titleProps: {
-                        alt: 'about_shape_circle_radial',
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
+              gridItems: features.items?.map((item) => ({
+                items: [
+                  {
+                    type: 'image',
+                    title: item.avatar_src,
+                    titleProps: {
+                      alt: item.avatar_alt,
+                      width: 101,
+                      height: 101,
+                      sx: { mb: 4 },
                     },
-                    {
-                      type: 'subtitle2',
-                      title: '01',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Design a new product',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'We create human-centred designs focused on driving conversions and achieving business goals.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_squares.svg',
-                      titleProps: {
-                        alt: 'about_shape_squares',
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '02',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Launch a new company',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Launch your MVP at start-up speed with an expert team of designers and developers.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_square_with_circle.svg',
-                      titleProps: {
-                        alt: 'about_shape_square_with_circle',
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '03',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Scale up development',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        'Our team works directly with you to boost your development speed and scale.',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'image',
-                      title: '/images/about_shape_circles.svg',
-                      titleProps: {
-                        alt: 'about_shape_circles',
-                        width: 101,
-                        height: 101,
-                        sx: { mb: 4 },
-                      },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: '04',
-                      titleProps: { color: 'text.secondary', sx: { mb: 3 } },
-                    },
-                    {
-                      type: 'subtitle2',
-                      title: 'Improve a current system',
-                      titleProps: { gutterBottom: true },
-                    },
-                    {
-                      type: 'body1',
-                      title:
-                        "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-              ],
+                  },
+                  {
+                    type: 'subtitle2',
+                    title: item.overline,
+                    titleProps: { color: 'text.secondary', sx: { mb: 3 } },
+                  },
+                  {
+                    type: 'subtitle2',
+                    title: item.title,
+                    titleProps: { gutterBottom: true },
+                  },
+                  {
+                    type: 'body1',
+                    title: item.subtitle,
+                    titleProps: { color: 'text.secondary' },
+                  },
+                ],
+              })),
             },
           ],
         },
         renderFadeToBottomBackgroundImageBlock({
-          hero_src: '/images/about_nodes_above_city.png',
-          hero_alt: 'about_nodes_above_city',
-          title: 'We Design & Develop Custom Software for Businesses',
-          subtitle:
-            'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
-          buttonProps: { href: routeConfig.SERVICES },
+          hero_src: cta.hero_src,
+          hero_alt: cta.hero_alt,
+          title: cta.title,
+          subtitle: cta.subtitle,
+          buttonProps: cta.buttons?.[0],
         }),
         {
-          key: 'our-clients',
+          key: 'gallery',
           ...commonBlockProps,
           dark: true,
           items: [
-            { type: 'overline', title: 'Our Clients' },
+            { type: 'overline', title: gallery.overline },
             {
               type: 'h4',
-              title: 'Our Clients',
+              title: gallery.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'body1',
-              title:
-                'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+              title: gallery.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -362,27 +251,26 @@ const AboutPage: React.FC<AboutPageProps> = () => {
           ],
         },
         {
-          key: 'our-locations',
+          key: 'stats',
           ...commonBlockProps,
           dark: true,
           backgroundImageProps: {
-            src: '/images/contact_world_map_in_dots.svg',
-            alt: 'contact_world_map_in_dots',
+            src: stats.hero_src,
+            alt: stats.hero_alt,
             fixedBackground: true,
             boxSx: { bottom: 24 },
           },
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Our Locations' },
+            { type: 'overline', title: stats.overline },
             {
               type: 'h4',
-              title: 'Accelerating Asia',
+              title: stats.title,
               titleProps: { gutterBottom: true },
             },
             {
               type: 'body1',
-              title:
-                'One X Tech is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
+              title: stats.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -394,109 +282,63 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               maxWidth: 'sm',
               gridProps: { spacing: 2 },
               gridItemProps: { xs: 4 },
-              gridItems: [
-                {
-                  items: [
-                    {
-                      type: 'subtitle1',
-                      title: '100+',
-                    },
-                    {
-                      type: 'overline',
-                      title: 'Projects',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'subtitle1',
-                      title: '6+',
-                    },
-                    {
-                      type: 'overline',
-                      title: 'Years',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-                {
-                  items: [
-                    {
-                      type: 'subtitle1',
-                      title: '∞',
-                      titleProps: {
-                        sx: {
-                          '&&': { fontSize: 'h2.fontSize' },
-                          width: '100%',
-                          height: 24,
-                          position: 'relative',
-                          top: -8,
-                          lineHeight: '1',
-                        },
-                      },
-                    },
-                    {
-                      type: 'overline',
-                      title: 'Possibilities',
-                      titleProps: { color: 'text.secondary' },
-                    },
-                  ],
-                },
-              ],
+              gridItems: stats.items?.map((stat) => ({
+                items: [
+                  {
+                    type: 'subtitle1',
+                    title: stat.title,
+                    titleProps: stat.titleProps,
+                  },
+                  {
+                    type: 'overline',
+                    title: stat.overline,
+                    titleProps: { color: 'text.secondary' },
+                  },
+                ],
+              })),
             },
             renderGhostButtonBlockItem({
-              overline: 'Where we are',
-              title: 'Locate an Office',
               boxProps: { mt: 16 },
-              href: routeConfig.CONTACT,
+              ...stats.buttons?.[0],
             }),
           ],
         },
         {
-          key: 'careers',
+          key: 'secondaryHero',
           ...commonBlockProps,
           sx: { backgroundColor: 'background.paper' },
           pt: 5,
           items: [
             {
               type: 'overline',
-              title: 'Careers',
+              title: secondaryHero.overline,
               titleProps: { color: 'text.secondary' },
             },
             {
               type: 'h3',
-              title: (
-                <span>
-                  Thinkers & Tinkerers <br /> Coming Together
-                </span>
-              ),
+              title: secondaryHero.title,
             },
             {
               type: 'image',
-              title: '/images/about_working_in_office.png',
+              title: secondaryHero.hero_src,
               disableContainer: true,
               titleProps: {
-                alt: 'about_working_in_office',
+                alt: secondaryHero.hero_alt,
                 fill: true,
                 sx: { my: 3 },
               },
             },
             {
               type: 'body1',
-              title:
-                'We’ve assembled some of the brightest minds in business, technology and design. With our diversity of expertise, we’re able to deliver the highest quality software that our industry has seen.',
+              title: secondaryHero.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
             },
             renderGhostButtonBlockItem({
-              overline: 'Careers',
-              title: 'Explore Careers',
               boxProps: { mt: 3 },
-              href: routeConfig.CAREERS,
+              ...secondaryHero.buttons?.[0],
             }),
           ],
         },

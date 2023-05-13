@@ -17,6 +17,7 @@ export const MOCK_TECH_POSTS = [
     exclusive_locales: ['jp'],
   },
   {
+    is_active: true,
     category_id: 2,
     title: 'Advanced React Development Techniques to Enhance Your Web Apps.',
     slug: 'advanced-react-development-techniques-to-enhance-your-web-apps',

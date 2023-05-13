@@ -34,7 +34,7 @@ export const ServiceDetail = {
       ({ category_id }) => category_id === service?.category_id
     )
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY],
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
       service?.title
     ).slice(0, 3)
 

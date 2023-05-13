@@ -13,7 +13,7 @@ const { MOCK_KEY } = process.env
 // Methods
 // ==============================
 export const fetchPostBySlug = (injectedSlug) => {
-  return MOCK_POSTS[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -30,7 +30,7 @@ export const PostDetail = {
       ({ category_id }) => category_id === post?.category_id
     )
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY],
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
       post?.title
     ).slice(0, 3)
 
@@ -45,7 +45,7 @@ export const PostDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POSTS[MOCK_KEY].map(
+      paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).map(
         ({ slug, category, exclusive_locales, blocked_locales }) => ({
           params: {
             slug,

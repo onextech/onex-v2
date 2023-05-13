@@ -19,7 +19,7 @@ export const PostCategoryList = {
   getStaticProps: (): GetStaticProps =>
     makeGetStaticProps({
       props: {
-        posts: MOCK_POSTS[MOCK_KEY],
+        posts: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
         postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
       },
     }),
@@ -28,7 +28,7 @@ export const PostCategoryList = {
 export const PostCategoryDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const postCategory = fetchPostCategoryBySlug(context.params.categorySlug)
-    const posts = MOCK_POSTS[MOCK_KEY].filter(
+    const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(({ is_active }) => is_active).filter(
       ({ category_id }) => category_id === postCategory?.id
     )
     return makeGetStaticProps({

@@ -18,7 +18,7 @@ const NextAboutPage: React.FC<NextAboutPageProps> = (props) => {
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout seo={page.seo} darkHeader>
-        <AboutPage />
+        <AboutPage page={page} />
       </LandingLayout>
     </PageProvider>
   )
