@@ -4,12 +4,13 @@ import {
   renderClientLogosImageMarqueeBlock,
   renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
-  renderFourColumnGridBlock,
+  renderThreeColumnGridBlock,
   renderTechnologysBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
   renderClientTestimonialCardsBlock,
   renderFaqsAccordionBlock,
+  renderCtaBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
@@ -32,7 +33,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, faqs } = sections || {}
+  const { hero, benefits, faqs, cta } = sections || {}
 
   return (
     <Blocks
@@ -60,7 +61,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
         // Benefits
-        renderFourColumnGridBlock({
+        renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
@@ -104,6 +105,14 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },
           ...faqs,
+          sx: { backgroundColor: 'background.paper' },
+        }),
+        // Cta
+        renderCtaBlock({
+          item: cta,
+          pt: { xs: 5, md: 10 },
+          pb: 0,
+          sx: { backgroundColor: 'background.paper' },
         }),
       ]}
     />

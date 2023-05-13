@@ -12,6 +12,7 @@ export interface RenderBaseColumnGridBlockProps
     overline?: string
     title: string
     subtitle?: string
+    href?: string
   }>
   columns: number
   textAlign?: 'left' | 'center'
@@ -63,7 +64,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
           sx: { textAlign: { xs: 'center', md: center ? 'center' : 'left' } },
         },
         gridItems: items?.map((item) => {
-          const { fa_icon, overline, title, subtitle, avatar_src } = item
+          const { fa_icon, overline, title, subtitle, avatar_src, href } = item
           return {
             items: [
               avatar_src && {
@@ -87,9 +88,12 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
                 titleProps: { gutterBottom: true },
               },
               {
-                type: 'subtitle2',
+                type: href ? 'link' : 'subtitle2',
                 title,
-                titleProps: { gutterBottom: true },
+                titleProps: {
+                  ...(href && { href, variant: 'subtitle2' }),
+                  gutterBottom: true,
+                },
               },
               subtitle && {
                 type: 'body1',

@@ -295,10 +295,10 @@ export const MOCK_DIGITAL_PAGE = {
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'about_nodes_above_city',
-      overline: 'Built on Strategy',
+      overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
     leftGridSticky: {
       hero_src: '/images/showcase_detail_sticky_1.jpg',
@@ -315,10 +315,10 @@ export const MOCK_DIGITAL_PAGE = {
       subtitle: 'subtitle',
     },
     gallery: {
-      overline: 'Built on Strategy',
+      overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       items: [
         {
           title: '/images/showcase_detail_gallery_1.png',
@@ -411,7 +411,7 @@ export const MOCK_DATA_PAGE = {
           overline: 'What we do',
           title: 'We Develop Modern Technologies',
           subtitle:
-            'At the core of One X Tech is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+            'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
         },
         {
           hero_src: '/images/digital_dashboard.png',
@@ -532,10 +532,10 @@ export const MOCK_DATA_PAGE = {
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'about_nodes_above_city',
-      overline: 'Built on Strategy',
+      overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
@@ -620,7 +620,7 @@ export const MOCK_DESIGN_PAGE = {
           overline: 'What we do',
           title: 'We Develop Modern Technologies',
           subtitle:
-            'At the core of One X Tech is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+            'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
         },
         {
           hero_src: '/images/digital_dashboard.png',
@@ -741,18 +741,117 @@ export const MOCK_DESIGN_PAGE = {
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'about_nodes_above_city',
-      overline: 'Built on Strategy',
+      overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
 
 const MOCK_COMMON_PAGES = [
   {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+  },
+  {
+    title: 'Contact',
+    slug: 'contact',
+    subtitle:
+      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+  },
+  {
+    title: 'Terms',
+    slug: 'terms',
+    is_hidden_from_nav: true,
+    html:
+      '<h3>Overview</h3>\n' +
+      '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
+      '<h3>Use License</h3>\n' +
+      '<ol type="a">\n' +
+      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on One X Group Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
+      '<ul>\n' +
+      '<li>modify or copy the materials;</li>\n' +
+      '<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n' +
+      "<li>attempt to decompile or reverse engineer any software contained on One X Group Pte Ltd's website;</li>\n" +
+      '<li>remove any copyright or other proprietary notations from the materials; or</li>\n' +
+      '<li>transfer the materials to another person or "mirror" the materials on any other server.</li>\n' +
+      '</ul>\n' +
+      '</li>\n' +
+      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by One X Group Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
+      '</ol>\n' +
+      '<h3>Disclaimer</h3>\n' +
+      '<ol type="a">\n' +
+      "<li>The materials on One X Group Pte Ltd's website are provided on an 'as is' basis. One X Group Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
+      '<li>Further, One X Group Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
+      '</ol>\n' +
+      '<h3>Limitations</h3>\n' +
+      "<p>In no event shall One X Group Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on One X Group Pte Ltd's website, even if One X Group Pte Ltd or a One X Group Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
+      '<h3>Accuracy of materials</h3>\n' +
+      "<p>The materials appearing on One X Group Pte Ltd's website could include technical, typographical, or photographic errors. One X Group Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. One X Group Pte Ltd may make changes to the materials contained on its website at any time without notice. However One X Group Pte Ltd does not make ay commitment to update the materials.</p>\n" +
+      '<h3>Links</h3>\n' +
+      "<p>One X Group Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by One X Group Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
+      '<h3>Modifications</h3>\n' +
+      '<p>One X Group Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
+      '<h3>Governing Law</h3>\n' +
+      '<p>These terms and conditions are governed by and construed in accordance with the laws of Singapore and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
+  },
+  {
+    title: 'Privacy',
+    slug: 'privacy',
+    is_hidden_from_nav: true,
+    html:
+      '<h3>Overview</h3>\n' +
+      "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
+      '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
+      '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
+      '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
+      '<p>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>\n' +
+      '<h3>Rights</h3>\n' +
+      '<p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>\n' +
+      '<p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>',
+  },
+  {
+    title: 'Cookies',
+    slug: 'cookies',
+    is_hidden_from_nav: true,
+    html:
+      '<p>This website uses cookies. By continuing to use this website, you consent to the use of cookies in accordance with this Cookie Policy.</p>\n' +
+      '<h3>What are cookies?</h3>\n' +
+      "<p>Cookies are small files stored on your computer or mobile device by a website when you visit it. They enable the website to remember your actions and preferences (such as login, language, font size, and other display preferences) over a period of time, so you don't have to keep re-entering them whenever you come back to the site or browse from one page to another.</p>\n" +
+      '<h3>How do we use cookies?</h3>\n' +
+      '<p>We use cookies to:</p>\n' +
+      '<ul>\n' +
+      '<li>Personalize your experience on our website;</li>\n' +
+      '<li>Remember your preferences and settings;</li>\n' +
+      '<li>Improve the performance and security of our website;</li>\n' +
+      '<li>Analyze how you use our website and gather anonymous statistical data.</li>\n' +
+      '</ul>\n' +
+      '<h3>Types of cookies we use</h3>\n' +
+      '<p>There are several types of cookies we use on this website:</p>\n' +
+      '<ul>\n' +
+      '<li><strong>Essential cookies:</strong> These cookies are necessary for the website to function properly. They are usually set in response to your actions, such as setting your privacy preferences, logging in, or filling out forms.</li>\n' +
+      '<li><strong>Analytics cookies:</strong> These cookies help us analyze and understand how our website is being used, including which pages are visited the most, how long users spend on each page, and other statistical data. This information helps us improve the performance and relevance of our website.</li>\n' +
+      '<li><strong>Marketing cookies:</strong> These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third-party advertisers.</li>\n' +
+      '</ul>\n' +
+      '<h3>Managing cookies</h3>\n' +
+      '<p>You can control and/or delete cookies as you wish. For more information, you can visit the <a href="https://www.allaboutcookies.org/">All About Cookies</a> website. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site, and some services and functionalities may not work.</p>\n' +
+      '<p>For further details about our use of cookies and your choices regarding cookies, please refer to our <a href="/privacy">Privacy Policy</a>.</p>',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  href: `/${page.slug}`,
+  ...page,
+}))
+
+const MOCK_GROUP_PAGES = [
+  {
     title: 'About',
     slug: 'about',
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -778,7 +877,7 @@ const MOCK_COMMON_PAGES = [
         title:
           'We believe technology is the superpower that changes everything about business.',
         subtitle:
-          'One X Tech is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
+          '{appTitle} is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
         buttons: [
           {
             overline: 'Who we are',
@@ -870,7 +969,7 @@ const MOCK_COMMON_PAGES = [
         overline: 'Our Locations',
         title: 'Accelerating Asia',
         subtitle:
-          'One X Tech is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
+          '{appTitle} is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
         items: [
           {
             title: '100+',
@@ -920,95 +1019,6 @@ const MOCK_COMMON_PAGES = [
       },
     },
   },
-  { title: 'Careers', slug: 'careers' },
-  { title: 'Contact', slug: 'contact' },
-  {
-    title: 'Terms',
-    slug: 'terms',
-    is_hidden_from_nav: true,
-    html:
-      '<h3>Overview</h3>\n' +
-      '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
-      '<h3>Use License</h3>\n' +
-      '<ol type="a">\n' +
-      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on One X Group Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
-      '<ul>\n' +
-      '<li>modify or copy the materials;</li>\n' +
-      '<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n' +
-      "<li>attempt to decompile or reverse engineer any software contained on One X Group Pte Ltd's website;</li>\n" +
-      '<li>remove any copyright or other proprietary notations from the materials; or</li>\n' +
-      '<li>transfer the materials to another person or "mirror" the materials on any other server.</li>\n' +
-      '</ul>\n' +
-      '</li>\n' +
-      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by One X Group Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
-      '</ol>\n' +
-      '<h3>Disclaimer</h3>\n' +
-      '<ol type="a">\n' +
-      "<li>The materials on One X Group Pte Ltd's website are provided on an 'as is' basis. One X Group Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
-      '<li>Further, One X Group Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
-      '</ol>\n' +
-      '<h3>Limitations</h3>\n' +
-      "<p>In no event shall One X Group Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on One X Group Pte Ltd's website, even if One X Group Pte Ltd or a One X Group Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
-      '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on One X Group Pte Ltd's website could include technical, typographical, or photographic errors. One X Group Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. One X Group Pte Ltd may make changes to the materials contained on its website at any time without notice. However One X Group Pte Ltd does not make ay commitment to update the materials.</p>\n" +
-      '<h3>Links</h3>\n' +
-      "<p>One X Group Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by One X Group Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
-      '<h3>Modifications</h3>\n' +
-      '<p>One X Group Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
-      '<h3>Governing Law</h3>\n' +
-      '<p>These terms and conditions are governed by and construed in accordance with the laws of Singapore and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
-  },
-  {
-    title: 'Privacy',
-    slug: 'privacy',
-    is_hidden_from_nav: true,
-    html:
-      '<h3>Overview</h3>\n' +
-      "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
-      '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
-      '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
-      '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
-      '<p>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>\n' +
-      '<h3>Rights</h3>\n' +
-      '<p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>\n' +
-      '<p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>',
-  },
-  {
-    title: 'Cookies',
-    slug: 'cookies',
-    is_hidden_from_nav: true,
-    html:
-      '<p>This website uses cookies. By continuing to use this website, you consent to the use of cookies in accordance with this Cookie Policy.</p>\n' +
-      '<h3>What are cookies?</h3>\n' +
-      "<p>Cookies are small files stored on your computer or mobile device by a website when you visit it. They enable the website to remember your actions and preferences (such as login, language, font size, and other display preferences) over a period of time, so you don't have to keep re-entering them whenever you come back to the site or browse from one page to another.</p>\n" +
-      '<h3>How do we use cookies?</h3>\n' +
-      '<p>We use cookies to:</p>\n' +
-      '<ul>\n' +
-      '<li>Personalize your experience on our website;</li>\n' +
-      '<li>Remember your preferences and settings;</li>\n' +
-      '<li>Improve the performance and security of our website;</li>\n' +
-      '<li>Analyze how you use our website and gather anonymous statistical data.</li>\n' +
-      '</ul>\n' +
-      '<h3>Types of cookies we use</h3>\n' +
-      '<p>There are several types of cookies we use on this website:</p>\n' +
-      '<ul>\n' +
-      '<li><strong>Essential cookies:</strong> These cookies are necessary for the website to function properly. They are usually set in response to your actions, such as setting your privacy preferences, logging in, or filling out forms.</li>\n' +
-      '<li><strong>Analytics cookies:</strong> These cookies help us analyze and understand how our website is being used, including which pages are visited the most, how long users spend on each page, and other statistical data. This information helps us improve the performance and relevance of our website.</li>\n' +
-      '<li><strong>Marketing cookies:</strong> These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third-party advertisers.</li>\n' +
-      '</ul>\n' +
-      '<h3>Managing cookies</h3>\n' +
-      '<p>You can control and/or delete cookies as you wish. For more information, you can visit the <a href="https://www.allaboutcookies.org/">All About Cookies</a> website. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site, and some services and functionalities may not work.</p>\n' +
-      '<p>For further details about our use of cookies and your choices regarding cookies, please refer to our <a href="/privacy">Privacy Policy</a>.</p>',
-  },
-].map((page) => ({
-  ...MOCK_PAGE,
-  href: `/${page.slug}`,
-  subtitle:
-    'Learn how we keep our employees happy and see our values, culture, and initiatives.',
-  ...page,
-}))
-
-const MOCK_GROUP_PAGES = [
   ...MOCK_COMMON_PAGES,
   {
     is_hidden_from_nav: true,
@@ -1084,7 +1094,7 @@ const MOCK_GROUP_PAGES = [
             overline: 'What we do',
             title: 'We Develop Modern Technologies',
             subtitle:
-              'At the core of One X Tech is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
           },
           {
             hero_src: '/images/digital_dashboard.png',
@@ -1204,12 +1214,12 @@ const MOCK_GROUP_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
-        hero_alt: 'about_nodes_above_city',
-        overline: 'Built on Strategy',
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'software developers working on a laptop',
+        overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       },
     },
   },
@@ -1224,6 +1234,178 @@ const MOCK_GROUP_PAGES = [
 ]
 
 const MOCK_TECH_PAGES = [
+  {
+    title: 'About',
+    slug: 'about',
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'hero',
+        overline: '{appTitle}',
+        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_nodes.png',
+        hero_alt: 'about-nodes',
+        title:
+          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+        subtitle:
+          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_alt: 'hero',
+        title:
+          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+        subtitle:
+          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Modernizing the Enterprise User Experience',
+        subtitle:
+          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'shape_circle_radial',
+            overline: '01',
+            title: 'User Interface Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'shape_circle_squares',
+            overline: '02',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'shape_square_with_circle',
+            overline: '03',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          },
+          {
+            avatar_src: '/images/about_shape_circles.svg',
+            avatar_alt: 'shape_circle',
+            overline: '04',
+            title: 'Software Architecture R&D',
+            subtitle:
+              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'about_nodes_above_city',
+        title: 'We Design & Develop Custom Software for Businesses',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Global Frontend Delivery Services',
+        subtitle:
+          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'about_working_in_office',
+        overline: 'Careers',
+        title: 'Empower Enterprises with Extraordinary Experiences',
+        subtitle:
+          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
   ...MOCK_COMMON_PAGES,
   {
     is_hidden_from_nav: true,
@@ -1235,7 +1417,7 @@ const MOCK_TECH_PAGES = [
       "Experience exceptional Enterprise Frontend Development Services for your business. Our expert team delivers scalable, efficient, and visually stunning frontend solutions tailored to meet your enterprise's unique needs. Harnessing the latest technologies and frameworks, we create high-performance, user-friendly applications that enhance your digital presence and drive business growth.",
     sections: {
       hero: {
-        overline: 'One X Tech',
+        overline: '{appTitle}',
         title: 'Modernizing Enterprise User Experiences',
         subtitle:
           "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
@@ -1262,28 +1444,25 @@ const MOCK_TECH_PAGES = [
         center: true,
         items: [
           {
-            fa_icon: 'fa-pen-paintbrush',
-            title: 'User Interface Development',
+            fa_icon: 'fa-bolt',
+            title: 'Accelerate Development',
             subtitle:
               'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
           },
           {
             fa_icon: 'fa-code',
             title: 'Modern Frontend Engineering',
             subtitle:
               'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
           },
           {
             fa_icon: 'fa-users',
             title: 'Product Team Augmentation',
             subtitle:
               'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-          },
-          {
-            fa_icon: 'fa-object-group',
-            title: 'Software Architecture R&D',
-            subtitle:
-              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
           },
         ],
       },
@@ -1306,7 +1485,7 @@ const MOCK_TECH_PAGES = [
             overline: 'What we do',
             title: 'We Develop Modern Technologies',
             subtitle:
-              'At the core of One X Tech is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
           },
           {
             hero_src: '/images/digital_dashboard.png',
@@ -1470,12 +1649,12 @@ const MOCK_TECH_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
-        hero_alt: 'about_nodes_above_city',
-        overline: 'Built on Strategy',
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'software developers working on a laptop',
+        overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       },
     },
   },

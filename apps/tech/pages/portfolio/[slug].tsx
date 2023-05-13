@@ -13,7 +13,7 @@ export interface NextShowcasePageProps
     ShowcasePageProps {}
 
 const NextShowcasePage: React.FC<NextShowcasePageProps> = (props) => {
-  const { showcase, pageProviderProps } = props
+  const { showcase, otherShowcases, pageProviderProps } = props
 
   return (
     <PageProvider {...pageProviderProps}>
@@ -21,7 +21,7 @@ const NextShowcasePage: React.FC<NextShowcasePageProps> = (props) => {
         seo={{ title: showcase.title, description: showcase.subtitle }}
         autoBreadcrumbs
       >
-        <ShowcasePage showcase={showcase} />
+        <ShowcasePage showcase={showcase} otherShowcases={otherShowcases} />
       </LandingLayout>
     </PageProvider>
   )

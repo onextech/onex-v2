@@ -1,8 +1,8 @@
-import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderHeaderMenuBlockItemProps {
   title: BlockItemProps['title']
+  slug?: string
   subtitle?: BlockItemProps['title']
   href?: BlockItemProps['boxProps']['href']
   hrefProps?: BlockItemProps['boxProps']['hrefProps']
@@ -10,7 +10,17 @@ export interface RenderHeaderMenuBlockItemProps {
 }
 
 const renderHeaderMenuBlockItem = (props: RenderHeaderMenuBlockItemProps) => {
-  const { href, hrefProps, title, subtitle, items = [] } = props
+  const {
+    slug,
+    href: injectedHref,
+    hrefProps,
+    title,
+    subtitle,
+    items = [],
+  } = props
+
+  const href = injectedHref || (slug && `/${slug}`)
+
   return {
     boxProps: {
       href,

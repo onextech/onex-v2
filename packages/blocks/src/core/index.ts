@@ -127,6 +127,9 @@ export * from './renderServicesBlockItem'
 export { default as renderOtherPressReleasesBlock } from './renderOtherPressReleasesBlock'
 export * from './renderOtherPressReleasesBlock'
 
+export { default as renderOtherShowcasesBlock } from './renderOtherShowcasesBlock'
+export * from './renderOtherShowcasesBlock'
+
 export { default as renderContactLinksBlockItems } from './renderContactLinksBlockItems'
 export * from './renderContactLinksBlockItems'
 
@@ -144,3 +147,6 @@ export * from './renderHeroWithBackgroundBlock'
 
 export { default as renderShowcasesBlock } from './renderShowcasesBlock'
 export * from './renderShowcasesBlock'
+
+export { default as renderCtaBlock } from './renderCtaBlock'
+export * from './renderCtaBlock'

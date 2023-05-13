@@ -4,7 +4,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     title: 'Accelerate Development',
     slug: 'accelerate-development',
     subtitle:
-      'Lead your business toward a long-term vision for holistic prosperity.',
+      'Seamlessly streamline your development workflow and accelerate time-to-market.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
@@ -13,16 +13,15 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     title: 'Modern Frontend Engineering',
     slug: 'modern-frontend-engineering',
     subtitle:
-      'Design and build products, services and experiences that your customers will love.',
+      'Develop rich user interfaces using modern technologies and frameworks.',
     hero_src: '/images/about_working_in_office.png',
     hero_alt: 'about_nodes',
   },
   {
     id: 3,
-    title: 'Product Teams',
-    slug: 'Product Teams',
-    subtitle:
-      'Cultivate engagement through insightful content that speaks to customer needs.',
+    title: 'Product Team Augmentation',
+    slug: 'product-teams',
+    subtitle: 'Reach product goals with engaged software development experts.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },

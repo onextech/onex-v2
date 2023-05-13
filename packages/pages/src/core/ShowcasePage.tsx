@@ -3,15 +3,17 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderShowcaseCardBlockItem,
   renderShowcaseStickyGridBlockItem,
+  renderOtherShowcasesBlock,
 } from '@onex/blocks'
 import type { Showcase } from '@onex/types'
 
 export interface ShowcasePageProps {
   showcase: Showcase
+  otherShowcases?: Showcase[]
 }
 
 const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
-  const { showcase } = props
+  const { showcase, otherShowcases } = props
   const { backgroundColor, sections } = showcase || {}
   const { leftGridSticky, rightGridSticky, gallery } = sections || {}
 
@@ -87,6 +89,10 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
             }),
           ],
         },
+        renderOtherShowcasesBlock({
+          items: otherShowcases,
+          py: { xs: 5, md: 10 },
+        }),
       ]}
     />
   )

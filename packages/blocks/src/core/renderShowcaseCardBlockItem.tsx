@@ -90,7 +90,7 @@ const renderShowcaseCardBlockItem = (
   return {
     type: 'grid',
     maxWidth: 'xl',
-    sx: { mt: { xs: isHero ? 4 : 6, md: isHero ? 6 : 10 } },
+    sx: { mt: { xs: isHero ? 4 : 6, md: isHero ? 6 : 8 } },
     mode,
     boxProps: { sx: { backgroundColor, borderRadius: 1 } },
     gridProps: {

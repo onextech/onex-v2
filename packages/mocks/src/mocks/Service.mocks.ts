@@ -1,4 +1,5 @@
 import merge from 'lodash/merge'
+import { routeConfig } from '@onex/common'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 import {
   MOCK_GROUP_SERVICE_CATEGORYS,
@@ -37,37 +38,32 @@ export const MOCK_SERVICE_PAGE = {
     },
     benefits: {
       overline: 'What we do',
-      title: 'Our Suite of {title} Services',
+      title: 'Accelerate Product Delivery',
       subtitle:
-        "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
+        '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+      maxWidth: 'xl',
+      center: true,
       items: [
         {
-          avatar_src: '/images/about_shape_circle_radial.svg',
-          overline: '01',
-          title: 'Design a new product',
+          fa_icon: 'fa-bolt',
+          title: 'Accelerate Development',
           subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
+            'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+          href: `${routeConfig.SERVICES}/accelerate-development`,
         },
         {
-          avatar_src: '/images/about_shape_squares.svg',
-          overline: '02',
-          title: 'Launch a new company',
+          fa_icon: 'fa-code',
+          title: 'Modern Frontend Engineering',
           subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
+            'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+          href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
         },
         {
-          avatar_src: '/images/about_shape_square_with_circle.svg',
-          overline: '03',
-          title: 'Scale up development',
+          fa_icon: 'fa-users',
+          title: 'Product Team Augmentation',
           subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          avatar_src: '/images/about_shape_circles.svg',
-          overline: '04',
-          title: 'Improve a current system',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
+            'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          href: `${routeConfig.SERVICES}/product-team-augmentation`,
         },
       ],
     },
@@ -179,22 +175,22 @@ export const MOCK_SERVICE_PAGE = {
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'about_nodes_above_city',
-      overline: 'Built on Strategy',
+      overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with clients from startups to global MNCs to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
 
 export const MOCK_TECH_SERVICES = [
   {
+    title: 'User Interface Development',
+    slug: 'user-interface-development',
     category_id: 1,
     // Hero
     hero_src: 'https://source.unsplash.com/Nzmyp6LsgNM/1600x900',
     hero_alt: 'user interface development',
-    title: 'User Interface Development',
-    slug: 'user-interface-development',
     subtitle:
       'Work with design and development experts to create beautiful, intuitive user interfaces for your business.',
     // Seo
@@ -292,12 +288,12 @@ export const MOCK_TECH_SERVICES = [
     },
   },
   {
+    title: 'API Integration Development',
+    slug: 'api-integration-development',
     category_id: 1,
     // Hero
     hero_src: 'https://source.unsplash.com/pREq0ns_p_E/1600x900',
     hero_alt: 'api integration development',
-    title: 'API Integration Development',
-    slug: 'api-integration-development',
     subtitle:
       'Connect and streamline your systems with seamless API integration solutions.',
     // Seo

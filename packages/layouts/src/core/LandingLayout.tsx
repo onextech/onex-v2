@@ -336,7 +336,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'body1',
                             title:
-                              "Your new team's cross-industry knowledge will level up your project.",
+                              'Discover the key to frontend development success with the latest best practices and techniques.',
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -411,7 +411,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           },
                           {
                             type: 'body1',
-                            title: 'Learn more about how we function.',
+                            title: 'Learn more about our company.',
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,

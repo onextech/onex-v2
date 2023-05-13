@@ -29,7 +29,12 @@ export const ShowcaseDetail = {
     const showcase = fetchShowcaseBySlug(context.params.slug)
     const site = fetchSite()
     const showcasePage = getDynamicPage({ context, page: showcase, site })
-    return makeGetStaticProps({ props: { showcase: showcasePage } })(context)
+    const otherShowcases = MOCK_SHOWCASES[MOCK_KEY].filter(
+      ({ slug }) => slug !== context.params.slug
+    ).slice(0, 1)
+    return makeGetStaticProps({
+      props: { showcase: showcasePage, otherShowcases },
+    })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({

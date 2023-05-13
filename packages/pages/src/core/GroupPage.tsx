@@ -8,6 +8,7 @@ import {
   renderThreeColumnGridBlock,
   renderHeroWithBackgroundBlock,
   renderHeroWithVideoBackgroundBlock,
+  renderCtaBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post } from '@onex/types'
@@ -20,7 +21,7 @@ export interface GroupPageProps {
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, posts } = props
   const { routeConfig, clientHighlights } = useLayout()
-  const { overline, sections } = page || {}
+  const { sections } = page || {}
   const { hero, benefits, features, cta } = sections || {}
 
   return (
@@ -211,45 +212,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Features
         renderThreeColumnGridBlock(features),
         // Cta
-        {
-          key: cta.title,
-          center: true,
-          maxWidth: 'md',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          items: [
-            { type: 'overline', title: overline },
-            {
-              type: 'h3',
-              title: cta.title,
-              titleProps: { type: 'h3', maxWidth: 'xl', gutterBottom: true },
-            },
-            {
-              type: 'body1',
-              title: cta.subtitle,
-              titleProps: {
-                color: 'text.secondary',
-              },
-            },
-            renderGhostButtonBlockItem({
-              boxProps: { mt: 3 },
-              overline: 'Contact Us',
-              title: 'Get in Touch',
-              href: `/${routeConfig.CONTACT}`,
-            }),
-            {
-              type: 'image',
-              title: '/images/two_men_pointing_at_screen.png',
-              disableContainer: true,
-              titleProps: {
-                alt: 'two men point at screen',
-                background: true,
-                backgroundHeight: { xs: 480, md: 640 },
-                backgroundSx: { mt: { xs: 5, md: 10 } },
-              },
-            },
-          ],
-        },
+        renderCtaBlock({ item: cta, pt: { xs: 5, md: 10 }, pb: 0 }),
       ]}
     />
   )

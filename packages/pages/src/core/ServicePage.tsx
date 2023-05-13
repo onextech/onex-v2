@@ -4,7 +4,6 @@ import type { Post, Service, ServiceCategory } from '@onex/types'
 import {
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
-  renderFourColumnGridBlock,
   renderHeroBlock,
   renderParagraphBlockItem,
   renderRelatedPostsBlock,
@@ -24,7 +23,7 @@ export interface ServicePageProps {
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { service, relatedServices, relatedPosts } = props
   const { routeConfig } = useLayout()
-  const { overline, sections } = service || {}
+  const { sections } = service || {}
   const { summary, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (
@@ -73,7 +72,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ...cta,
         }),
         // Benefits
-        renderFourColumnGridBlock({
+        renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
