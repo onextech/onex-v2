@@ -59,7 +59,17 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
-].map((item, i) => ({ id: i + 1, ...item }))
+  {
+    id: 7,
+    title: 'Product Development',
+    slug: 'product-development',
+    description: 'Design. Innovate. Conquer.',
+    subtitle:
+      'Inspire innovation, drive growth, and exceed customer expectations.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'about_nodes',
+  },
+]
 
 export const MOCK_TECH_POST_CATEGORYS = [
   {
@@ -122,7 +132,17 @@ export const MOCK_TECH_POST_CATEGORYS = [
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
-].map((item, i) => ({ id: i + 1, ...item }))
+  {
+    id: 7,
+    title: 'Product Development',
+    slug: 'product-development',
+    description: 'Design. Innovate. Conquer.',
+    subtitle:
+      'Inspire innovation, drive growth, and exceed customer expectations.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'about_nodes',
+  },
+]
 
 export const MOCK_POST_CATEGORYS = {
   GROUP: MOCK_GROUP_POST_CATEGORYS,
