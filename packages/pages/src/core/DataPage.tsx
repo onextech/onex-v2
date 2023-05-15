@@ -10,14 +10,14 @@ import { useLayout } from '@onex/providers'
 import { Page, Showcase } from '@onex/types'
 
 export interface DataPageProps {
-  data: Page
+  page: Page
   showcases?: Showcase[]
 }
 
 const DataPage: React.FC<DataPageProps> = (props) => {
-  const { data } = props
+  const { page } = props
   const { site, routeConfig } = useLayout()
-  const { overline, sections } = data || {}
+  const { overline, sections } = page || {}
   const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (

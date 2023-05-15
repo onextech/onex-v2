@@ -6,7 +6,7 @@ export const MOCK_WORKSPACES = [
   { title: 'One X Data', href: 'https://onexdata.com' },
   { title: 'One X Digital', href: 'https://onexdigital.com' },
   { title: 'One X Studio', href: 'https://onexstudio.com' },
-  { title: 'One X Ventures', href: 'https://onexventures.com' },
+  { title: 'One X Labs', href: 'https://onexlabs.com' },
   { title: 'One X Labs', href: 'https://onexlabs.com' },
   { title: 'Fin X', href: 'https://finx.com' },
   { title: 'Gov X', href: 'https://govx.com' },

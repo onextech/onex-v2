@@ -10,9 +10,9 @@ const { MOCK_KEY } = process.env
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()
-  const design = getDynamicPage({ context, page: MOCK_DESIGN_PAGE, site })
+  const page = getDynamicPage({ context, page: MOCK_DESIGN_PAGE, site })
   const showcases = MOCK_SHOWCASES[MOCK_KEY]
-  return makeGetStaticProps({ props: { design, showcases } })(context)
+  return makeGetStaticProps({ props: { page, showcases } })(context)
 }
 
 export interface NextDesignPageProps
@@ -20,11 +20,12 @@ export interface NextDesignPageProps
     DesignPageProps {}
 
 const NextDesignPage: React.FC<NextDesignPageProps> = (props) => {
-  const { design, showcases, pageProviderProps } = props
+  const { page, showcases, pageProviderProps } = props
+
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={design.seo} darkHeader>
-        <DesignPage design={design} showcases={showcases} />
+      <LandingLayout seo={page.seo} darkHeader>
+        <DesignPage page={page} showcases={showcases} />
       </LandingLayout>
     </PageProvider>
   )

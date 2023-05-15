@@ -1,6 +1,7 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
+  renderClientHighlightsImageMarqueeBlock,
   renderClientLogosImageMarqueeBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
@@ -13,14 +14,14 @@ import { useLayout } from '@onex/providers'
 import { Page, Showcase } from '@onex/types'
 
 export interface DesignPageProps {
-  design: Page
+  page: Page
   showcases?: Showcase[]
 }
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
-  const { design } = props
-  const { site, routeConfig, clientLogos } = useLayout()
-  const { overline, sections } = design || {}
+  const { page } = props
+  const { routeConfig, clientLogos, clientHighlights } = useLayout()
+  const { overline, sections } = page || {}
   const { hero, benefits, features, checklist, faqs, cta } = sections || {}
 
   return (
@@ -90,6 +91,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        // Marquee
+        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // HalfGrid
         renderHalfGridBlock({
           hero_src: '/images/design_collage.png',

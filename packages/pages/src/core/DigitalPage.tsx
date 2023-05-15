@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
+import { Block, Blocks } from '@gravis-os/landing'
 import {
   renderFadeToBottomBackgroundImageBlock,
   renderThreeColumnGridBlock,
@@ -12,39 +12,80 @@ import {
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page } from '@onex/types'
+import { Slider } from '@gravis-os/ui'
 
 export interface DigitalPageProps {
-  digital: Page
+  page: Page
 }
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
-  const { digital } = props
+  const { page } = props
   const { site, routeConfig, clientLogos, clientHighlights } = useLayout()
-  const { sections } = digital || {}
+  const { sections } = page || {}
   const { cta, callout, halfGrids, hero, benefits, features, faqs, checklist } =
     sections || {}
 
   return (
     <Blocks
       items={[
-        // Hero
-        renderHeroWithBackgroundBlock({
-          ...hero,
-          buttonProps: {
-            overline: 'What we do',
-            title: 'Smarter Businesses',
-            size: 'lg',
-            href: routeConfig.SERVICES,
-          },
-          secondaryButtonProps: {
-            overline: 'Who we are',
-            title: 'Business Software Experts',
-            size: 'lg',
-            href: routeConfig.CAREERS,
-          },
-        }),
-        // Marquee
-        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
+        {
+          key: 'hero-with-background-fade-slider',
+          dark: true,
+          center: true,
+          disableContainer: true,
+          py: 0,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  loop
+                  arrows
+                  fade
+                  dots
+                  dotProps={{ color: 'secondary.main' }}
+                  height={{ xs: 500, md: 800 }}
+                  items={[
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        title: 'We are the Growth Company',
+                        ...hero,
+                        backgroundImageProps: {
+                          src: '/images/about_hero.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: 'Unleash your X Factor',
+                        backgroundImageProps: {
+                          src: '/images/about_nodes_above_city.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title: "Deliver Tomorrow's Innovation Today",
+                        backgroundImageProps: {
+                          src: '/images/mission_earth.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,
