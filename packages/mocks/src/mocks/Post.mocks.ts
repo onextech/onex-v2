@@ -217,12 +217,14 @@ export const MOCK_TECH_POSTS = [
 
 export const MOCK_GROUP_POSTS = [
   {
-    title:
-      'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
+    is_active: true,
+    category_id: 1,
+    title: 'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
     slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 1,
+      "Make your product the first choice for users with designers who built dozens of them.",
+    hero_src: 'https://source.unsplash.com/i9TGriScRD8/1600x900',
+    hero_alt: 'chirashi',
     exclusive_locales: ['jp'],
   },
 ].map((item, i) => ({
