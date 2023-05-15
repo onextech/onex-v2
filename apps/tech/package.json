@@ -25,7 +25,7 @@
     "@gravis-os/landing": "^0.0.46",
     "@gravis-os/query": "^0.0.25",
     "@gravis-os/theme": "^0.0.8",
-    "@gravis-os/ui": "^0.0.106",
+    "@gravis-os/ui": "^0.0.107",
     "@gravis-os/utils": "^0.0.42",
     "@mui/icons-material": "latest",
     "@mui/lab": "^5.0.0-alpha.118",

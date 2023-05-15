@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@gravis-os/fields": "^0.0.19",
-    "@gravis-os/form": "^0.0.107",
+    "@gravis-os/form": "^0.0.109",
     "@gravis-os/landing": "^0.0.46",
-    "@gravis-os/ui": "^0.0.106",
+    "@gravis-os/ui": "^0.0.107",
     "@gravis-os/utils": "^0.0.42",
     "@supabase/auth-helpers-nextjs": "^0.5.6",
     "@supabase/supabase-js": "^2.10.0",

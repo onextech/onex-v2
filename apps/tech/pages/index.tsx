@@ -26,7 +26,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     ({ is_featured }) => is_featured
   ).slice(0, 8)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
-  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(0, 4)
+  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(
+    0,
+    4
+  )
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured

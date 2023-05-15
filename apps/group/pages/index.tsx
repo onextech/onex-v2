@@ -4,7 +4,12 @@ import { LandingLayout } from '@onex/layouts'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
-import { MOCK_INDUSTRYS, MOCK_PAGES, MOCK_POSTS, MOCK_SHOWCASES } from '@onex/mocks'
+import {
+  MOCK_INDUSTRYS,
+  MOCK_PAGES,
+  MOCK_POSTS,
+  MOCK_SHOWCASES,
+} from '@onex/mocks'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY } = process.env
@@ -16,7 +21,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     site,
   })
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
-  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(0, 4)
+  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(
+    0,
+    4
+  )
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
