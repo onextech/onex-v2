@@ -20,7 +20,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
   {
     id: 3,
     title: 'Product Team Augmentation',
-    slug: 'product-teams',
+    slug: 'product-team-augmentation',
     subtitle: 'Reach product goals with engaged software development experts.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
