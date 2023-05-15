@@ -17,6 +17,7 @@ export interface Post extends CrudItem {
   tags?: CrudItem[]
   // Html
   html?: string
+  published_at?: string
 }
 
 export default Post

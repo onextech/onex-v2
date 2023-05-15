@@ -8,6 +8,7 @@ import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 
 export const MOCK_TECH_POSTS = [
   {
+    published_at: "2023-05-15T08:00:00+0000",
     is_active: true,
     category_id: 7,
     title: 'What Does It Take To Make a Successful Product and Stand Out From The Crowd?',
@@ -42,6 +43,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
+    published_at: "2023-05-15T10:00:00+0000",
     is_active: true,
     category_id: 7,
     title: 'The Most Costly Risks in Product Development and How To Mitigate Them',
@@ -80,6 +82,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
+    published_at: "2023-05-15T11:00:00+0000",
     is_active: true,
     category_id: 7,
     title: 'Are you building the right product for your customers? Tips on evaluating customers’ wants and needs',
@@ -112,6 +115,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
+    published_at: "2023-05-15T12:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'Beyond the Cloud: The Latest Innovations and Trends for Cloud Computing in 2023',
@@ -138,6 +142,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
+    published_at: "2023-05-15T13:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'Navigating the Cloud Landscape: Key Considerations for Enterprise Product Managers in 2023',
@@ -167,6 +172,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
+    published_at: "2023-05-15T14:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'The Future of Cloud Infrastructure Management: Automation, AI, and DevOps.',
@@ -194,7 +200,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>\n' +
     '</blockquote>'
   },
-  
+
 ].map((item, i) => ({
   id: i + 1,
   // Category
@@ -214,6 +220,7 @@ export const MOCK_TECH_POSTS = [
 
 export const MOCK_GROUP_POSTS = [
   {
+    published_at: "2023-05-15T08:00:00+0000",
     title:
       'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
     slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',

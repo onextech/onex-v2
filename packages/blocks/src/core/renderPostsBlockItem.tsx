@@ -14,7 +14,7 @@ const renderPostsBlockItem = (props: RenderPostsBlockItemProps) => {
   const { routeConfig } = useLayout()
   return {
     type: 'grid',
-    gridItems: items.map((item) => {
+    gridItems: items.sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at)).map((item) => {
       return renderPostBlockItem({
         item: {
           href: `${routeConfig.POSTS}/${item.category.slug}/${item.slug}`,
