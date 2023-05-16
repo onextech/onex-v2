@@ -211,8 +211,8 @@ export const MOCK_TECH_POSTS = [
   // Author
   author_avatar_src: '/images/about_shape_circle_radial.svg',
   author_avatar_alt: 'about_shape_circle_radial',
-  author_title: 'Jared Palmer',
-  author_job_title: 'CEO',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
   // Tags
   tags: sampleSize(MOCK_TECH_TAGS, 3),
   ...item,
