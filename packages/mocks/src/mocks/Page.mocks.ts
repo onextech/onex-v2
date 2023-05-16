@@ -969,17 +969,20 @@ const MOCK_COMMON_PAGES = [
     slug: 'careers',
     subtitle:
       'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    seo_description: 'Join our team of thinkers and tinkerers to build tomorrow\'s technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.'
   },
   {
     title: 'Contact',
     slug: 'contact',
     subtitle:
       'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+    seo_description: 'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.'
   },
   {
     title: 'Terms',
     slug: 'terms',
     is_hidden_from_nav: true,
+    seo_description: 'Explore One X Group\'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.',
     html:
       '<h3>Overview</h3>\n' +
       '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
@@ -1016,6 +1019,7 @@ const MOCK_COMMON_PAGES = [
     title: 'Privacy',
     slug: 'privacy',
     is_hidden_from_nav: true,
+    seo_description: 'We value your privacy. Discover how One X Group respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
       "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
@@ -1031,6 +1035,7 @@ const MOCK_COMMON_PAGES = [
     title: 'Cookies',
     slug: 'cookies',
     is_hidden_from_nav: true,
+    seo_description: 'Discover more about our website\'s cookie policy and personalize, analyze and manage cookies to enhance your website experience',
     html:
       '<p>This website uses cookies. By continuing to use this website, you consent to the use of cookies in accordance with this Cookie Policy.</p>\n' +
       '<h3>What are cookies?</h3>\n' +
