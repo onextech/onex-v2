@@ -1,6 +1,7 @@
 import { BlockProps } from '@gravis-os/landing'
 import { PressRelease, Post } from '@onex/types'
 import renderHtmlBlockItem from './renderHtmlBlockItem'
+import dayjs from 'dayjs'
 
 export interface RenderPostDetailBlockItemProps
   extends Omit<BlockProps, 'items'> {
@@ -14,6 +15,7 @@ const renderPostDetailBlock = (props: RenderPostDetailBlockItemProps) => {
     author_avatar_alt,
     author_title,
     author_job_title,
+    published_at,
     html,
   } = item
 
@@ -42,6 +44,12 @@ const renderPostDetailBlock = (props: RenderPostDetailBlockItemProps) => {
                 type: 'body1',
                 title: author_job_title,
                 titleProps: { color: 'text.secondary' },
+              },
+              {
+                type: 'body1',
+                title: published_at ? dayjs(published_at).format("ddd, DD MMM YYYY") : '',
+                titleProps: { color: 'text.secondary', sx: { marginTop: 1 } },
+
               },
             ],
           },

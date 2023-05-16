@@ -4,6 +4,7 @@ import { useLayout } from '@onex/providers'
 import renderPostBlockItem, {
   RenderPostBlockItemProps,
 } from './renderPostBlockItem'
+import orderBy from 'lodash/orderBy'
 
 export interface RenderPostsBlockItemProps {
   items: Post[]
@@ -14,7 +15,7 @@ const renderPostsBlockItem = (props: RenderPostsBlockItemProps) => {
   const { routeConfig } = useLayout()
   return {
     type: 'grid',
-    gridItems: items.map((item) => {
+    gridItems: orderBy(items, 'published_at', 'desc').map((item) => {
       return renderPostBlockItem({
         item: {
           href: `${routeConfig.POSTS}/${item.category.slug}/${item.slug}`,

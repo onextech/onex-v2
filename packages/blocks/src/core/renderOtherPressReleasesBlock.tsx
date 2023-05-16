@@ -5,6 +5,7 @@ import { useLayout } from '@onex/providers'
 import renderPostBlockItem, {
   RenderPostBlockItemProps,
 } from './renderPostBlockItem'
+import orderBy from 'lodash/orderBy'
 
 export interface RenderOtherPressReleasesBlockProps
   extends Omit<BlockProps, 'items'> {
@@ -27,7 +28,7 @@ const renderOtherPressReleasesBlock = (
       },
       {
         type: 'grid',
-        gridItems: items.map((item) => {
+        gridItems: orderBy(items, 'published_at', 'desc').map((item) => {
           return renderPostBlockItem({
             item: {
               href: `${routeConfig.PRESS_RELEASES}/${item.slug}`,

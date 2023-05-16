@@ -4,6 +4,7 @@ import { LandingLayout } from '@onex/layouts'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
+import dayjs from 'dayjs'
 import {
   MOCK_INDUSTRYS,
   MOCK_PAGES,
@@ -20,11 +21,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
     site,
   })
+  const posts = MOCK_POSTS[MOCK_KEY]
+    .filter(({ is_active }) => is_active)
+    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+    .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
-  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).slice(
-    0,
-    4
-  )
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
