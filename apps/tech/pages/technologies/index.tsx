@@ -5,7 +5,6 @@ import { TechnologyList } from '@onex/server'
 
 import { InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@onex/providers'
-import Head from 'next/head'
 
 export const getStaticProps = TechnologyList.getStaticProps()
 
@@ -17,10 +16,13 @@ const NextTechnologysPage: React.FC<NextTechnologysPageProps> = (props) => {
   const { technologys, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{
-        title: 'Technologies',
-        description: 'This page showcases the cutting-edge technologies we use for future-proof solutions, including JavaScript, TypeScript, React and Node.js'
-        }}>
+      <LandingLayout
+        seo={{
+          title: 'Technologies',
+          description:
+            'This page showcases the cutting-edge technologies we use for future-proof solutions, including JavaScript, TypeScript, React and Node.js',
+        }}
+      >
         <TechnologysPage technologys={technologys} />
       </LandingLayout>
     </PageProvider>

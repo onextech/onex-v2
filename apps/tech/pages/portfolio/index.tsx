@@ -15,7 +15,13 @@ const NextShowcasesPage: React.FC<NextShowcasesPageProps> = (props) => {
   const { showcases, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'Showcases', description: 'Explore our portfolio of successful digital transformation projcets. Invest with confidence in emerging technologies.' }}>
+      <LandingLayout
+        seo={{
+          title: 'Showcases',
+          description:
+            'Explore our portfolio of successful digital transformation projcets. Invest with confidence in emerging technologies.',
+        }}
+      >
         <ShowcasesPage showcases={showcases} />
       </LandingLayout>
     </PageProvider>

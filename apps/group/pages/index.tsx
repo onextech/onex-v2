@@ -21,9 +21,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
     site,
   })
-  const posts = MOCK_POSTS[MOCK_KEY]
-    .filter(({ is_active }) => is_active)
-    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
     .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
