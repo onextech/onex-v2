@@ -1662,10 +1662,10 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@^0.0.107":
-  version "0.0.107"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.107.tgz#88c20a395f584b3675f7f407d2197fb49523ba1e"
-  integrity sha512-oT9fE7KcVy7/2i5saHFHYXziLmfG+9eqr9DeJElYBNbCA2aAchImizpGJwbXNmOsw6UR6NlqtVVUPPjMq0i1kg==
+"@gravis-os/form@^0.0.109":
+  version "0.0.109"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.109.tgz#3a860e26fe953689320e43906d0240f8487eccb3"
+  integrity sha512-GImyJbIo7QvhRUxWXh7VjPBELkhXFf0iTTkE+Bk5ZigB2Y/j67F9tLbye1osgxEFNccE/59CbgEj5IDPRKYTuA==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1753,10 +1753,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.0.106":
-  version "0.0.106"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.106.tgz#bfc7eabde32c164411634ed0947f828517971661"
-  integrity sha512-K0EiTesqaz/JksP6at3eq1Qz5+s7qLc6KljhFLsIY5K8/LjOEg9jHBAhgq3KmUpDbJUbzc7j83p6jpO6Vpa+gA==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.0.107":
+  version "0.0.107"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.107.tgz#7f7d21d18f5240dd11dc86a61767d41d2e6874bc"
+  integrity sha512-FN0+YGZFZBrGsC1y0wdOAq+wc8iv4rhxTs9riMZC8YE6xCvTf0xIBRPLumpLFcz04qg/fs4Xzh+yQs9Qmf/z6A==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"

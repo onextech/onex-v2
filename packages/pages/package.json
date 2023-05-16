@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@gravis-os/landing": "^0.0.46",
-    "@gravis-os/ui": "^0.0.106",
+    "@gravis-os/ui": "^0.0.107",
     "@gravis-os/utils": "^0.0.42",
     "lodash": "^4.17.21",
     "tslib": "^2.4.0",

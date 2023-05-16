@@ -31,6 +31,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     .filter(({ is_active }) => is_active)
     .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
     .slice(0, 3)
+
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
