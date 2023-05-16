@@ -35,7 +35,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
                   Help Bring Great <br /> Software to More People.
                 </span>
               ),
-              titleProps: { mb: { xs: 12, md: 19 } },
+              titleProps: { mb: { xs: 12, md: 19 }, component: 'h1' },
             },
           ],
         },

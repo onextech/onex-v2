@@ -65,6 +65,7 @@ const renderShowcaseCardBlockItem = (
           titleProps: {
             color: 'text.primary',
             gutterBottom: true,
+            component: isHero ? 'h1' : 'h3'
           },
         },
         {

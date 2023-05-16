@@ -59,7 +59,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                     {
                       type: 'h2',
                       title: 'Get in Touch',
-                      titleProps: { mb: 1 },
+                      titleProps: { mb: 1, component: 'h1' },
                     },
                     {
                       type: 'body1',
