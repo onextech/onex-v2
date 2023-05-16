@@ -18,6 +18,11 @@ const SeoProvider: React.FC<SeoProviderProps> = (props) => {
           locale: 'en_SG',
           url: site.absolute_url,
           siteName: site.title,
+          images: [
+            {
+              url: `${site?.absolute_url || ''}/images/meta_image.png`
+            }
+          ]
         }}
         {...(site.social_media_twitter_url && {
           twitter: {
