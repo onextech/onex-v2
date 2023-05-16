@@ -2368,7 +2368,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 3
+    category_id: 2
   },
   {
     // Hero
