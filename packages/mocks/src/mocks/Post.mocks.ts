@@ -519,21 +519,220 @@ export const MOCK_TECH_POSTS = [
 
 export const MOCK_GROUP_POSTS = [
   {
-    published_at: "2023-05-15T08:00:00+0000",
-    title:
-      'All You Need to Know About Chirashi Don Making and How to Make the Best Chirashi Don',
-    slug: 'all-you-need-to-know-about-chirashi-don-making-and-how-to-make-the-best-chirashi-don',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    published_at: "2023-05-15T14:00:00+0000",
+    is_active: true,
     category_id: 1,
-    exclusive_locales: ['jp'],
+    title: 'Future-Proofing Your Business: Strategies for Long-Term Growth and Success',
+    slug: 'future-proofing-business-strategies-long-term-growth-success',
+    subtitle: "Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth",
+    hero_src: 'https://source.unsplash.com/UU69D-_nwPI/1600x900',
+    hero_alt: 'compass',
+    html: '<blockquote>\n' +
+    '<blockquote>\n' +
+    '<p><em><strong>Summary: </strong>Organisations in today\'s business world are seeking to attain long-term success and sustainable growth. Growth strategies are essential for any organization that wants to compete in an increasingly competitive marketplace. However, developing a successful, cost-effective growth strategy is not easy, as it involves making choices on resources, technology, marketing and customer acquisition.</em></p>\n' +
+    '</blockquote>\n' +
+    '<blockquote>\n' +
+    '<p><em>To build a successful growth strategy that will enable your company to realise its potential, it is crucial to identify areas of opportunity within the current market. By researching customer trends, we can evaluate how such trends can be leveraged to boost profitability or create new revenue streams. Moreover, focusing on what our competitors are doing and considering ways in which we could differentiate yourself to gain an edge over them is also important. Advances in technology could also help to improve efficiency and productivity.</em></p>\n' +
+    '</blockquote>\n' +
+    '<h2>Clear Vision and Mission</h2>\n' +
+    '<p>Another important component of a successful growth strategy is creating a clear vision and mission for the firm. Business leaders that clearly articulate quantified business objectives and goals to successive levels of subordinates creates a framework that aligns decisions and actions to the achievement of the top level business objectives. Having such well-defined plan in place will allow for easy measure of progress and to make adjustments if necessary. Decisions and actions should align so that individuals so that they can be measured against the goal components for which they are responsible.</p>\n' +
+    '<h2>Openness to New Ideas and Collaboration</h2>\n' +
+    '<p>Leading a team that cultivates openness to new ideas and collaborative work is pivotal. Achieving this openness requires structural mechanisms to enable ideas to flow to decision makers from anywhere within the organization. Businesses should redefine how they respond to constantly evolving requirements as it is also important for employees to embrace innovation. Collaboration, on the other hand, increases knowledge sharing. Having a teamwork environment encourages others to share their success and ideas. The purpose of employees in the organisation should be reiterated. When people feel that their work matter and that they are able to make an impact, they&rsquo;re more invested in it.</p>\n' +
+    '<h2>Creating a Brand</h2>\n' +
+    '<p>Finally, the significance of analytics for branding cannot be further emphasised. Returning customers dictate sustainability and new customers dictate growth. One of the biggest strategy is customer engagement as well as internal customer relationship management. Reaching out to customers personally, focusing continuously on customer problem-solving and improving of service to them is the quickest and most reliable form of return of investment. Their positive experience with what you offer encourages continued trust, value creation and growth.</p>\n' +
+    '<p>Embarking on the aforementioned steps allows for organisations to develop strategies that will assist them in achieving sustainable growth for the future. Growth strategies can be complex, may require a significant investment of time and resources-intensive, but with careful planning and execution, organisations can position themselves for success. When implemented appropriately, growth strategies are advantageous for both the organization and its customers as they foster value creation, solidify bonds and build on customer loyalty. For businesses looking to increase their competitive advantage in today\'s world, it is essential to invest in long-term growth initiatives that will support their future success.</p>\n' +
+    '<p>In conclusion, growth strategies are an essential part of any business. Organisations that take the time to develop effective and comprehensive plans can set themselves up for long-term success.</p>\n' +
+    '</blockquote>\n' +
+    '</blockquote>'
+  },
+  {
+    published_at: "2023-05-22T14:00:00+0000",
+    is_active: true,
+    category_id: 2,
+    title: 'Guide to Implementing New Technologies to Level Up Your Business',
+    slug: 'guide-implementing-new-technologies-level-up-business',
+    subtitle: "Unlocking Growth and Success: A Comprehensive Guide to Implementing New Technologies for Business Advancement",
+    hero_src: 'https://source.unsplash.com/PhYq704ffdA/1600x900',
+    hero_alt: 'building',
+    html: '<p><strong>Want to unlock the full potential of your business through new technology? We\'ve got you covered.</strong></p>\n' +
+    '<p>In today&rsquo;s competitive business world, staying ahead of the game means having access to the latest technologies and being able to successfully implement them. Implementing new technology can be a daunting task and success requires meticulous preparation and execution. So, we&rsquo;ve done the hard lifting for you. This guide will provide you with all the information you need to successfully implement new technologies within your organization and level up your business.</p>\n' +
+    '<h1><strong>Conduct a Needs Assessment</strong></h1>\n' +
+    '<p>Before&nbsp;implementing new technologies, it is essential that you identify the particular requirements and pain points that your company is facing. This can help you decide which technologies will provide the greatest value and ensuring that your investment is targeted on tackling the most pressing business challenges.</p>\n' +
+    '<p>If your company has chosen to adopt a new technology, there is most likely a compelling factor, or a combination of factors, that led to that decision.</p>\n' +
+    '<p>Establish your implementation rationale; <em><strong>why</strong></em> is your company implementing this new software?</p>\n' +
+    '<p><em><strong>Is your company implementing this technology to:</strong></em></p>\n' +
+    '<ul>\n' +
+    '<li><em>Lower your expenses?</em></li>\n' +
+    '<li><em>Monitor general progress?</em></li>\n' +
+    '<li><em>Boost output and efficiency?</em></li>\n' +
+    '<li><em>Substitute obsolete processes and technology?</em></li>\n' +
+    '<li><em>Make it easier for team members to communicate?</em></li>\n' +
+    '<li><em>Start a company transformation which your present technology is insufficient to support?</em></li>\n' +
+    '</ul>\n' +
+    '<p>Establishing which aspects of new technology will provide the quickest and most effective solutions will provide accurate insights on what should be your top priorities. Otherwise, introducing technology into a workforce too quickly or with too many moving components at once may leave your team overwhelmed with too much knowledge.</p>\n' +
+    '<p>Discuss your team\'s pain points and promote an open discussion with workers, leaders, and managers in each area. It is important to note that the difficulties that one department encounters may be completely different from the difficulties that another department have. As a result, we need to include everyone in these discussions in order to have a full picture.</p>\n' +
+    '<p>When you observe what is not working, you can find where the gaps or inconsistencies are in the process. These gaps assist you in determining the areas that need to be filled first and the particular technologies that are most effective.</p>\n' +
+    '<h1><strong>Establish Clear Goals and Objectives</strong></h1>\n' +
+    '<p>When implementing new technologies, it is crucial to establish defined aims and targets, such as increasing output, lowering expenses, or improving customer experiences. Having clear goals in sight can help guarantee that technology is implemented in a manner that supports the overall growth of the company.</p>\n' +
+    '<ul>\n' +
+    '<li><em>Clearly describe what success would look like in terms of results.</em></li>\n' +
+    '<li><em>Establish short- and long-term aims and aspirations, as well as general completion deadlines for each stage.</em></li>\n' +
+    '<li><em>A clear strategy will simplify the process to track performance and ensure that everyone is on the same page about what needs to be done.</em></li>\n' +
+    '</ul>\n' +
+    '<h1><strong>Create a Cross-Functional Team</strong></h1>\n' +
+    '<p>Implementing new technologies demands a joint effort from various divisions and individuals within the company. This group should include anyone who will be immediately affected by the implementation, such as IT experts and customer support representatives, as well as chief executives or other decision makers. Creating a cross-functional team can help ensure that everyone is on the same page and that technology is used to support the overall company goals.</p>\n' +
+    '<h1><strong>Develop a Comprehensive Implementation Plan</strong></h1>\n' +
+    '<p>After you\'ve assembled your cross-functional team, you\'ll need to create a thorough implementation plan that outlines all of the steps needed to set up the technology. This should include everything from choosing the appropriate technology and training workers to tracking progress and measuring effectiveness.</p>\n' +
+    '<p><em><strong>Your Implementation Plan should Include:</strong></em></p>\n' +
+    '<ul>\n' +
+    '<li><em>Timelines</em></li>\n' +
+    '<li><em>Budgets</em></li>\n' +
+    '<li><em>Milestones</em></li>\n' +
+    '<li><em>Contingencies for any problems that may emerge during the implementation phase</em></li>\n' +
+    '</ul>\n' +
+    '<h1><strong>Train Employees</strong></h1>\n' +
+    '<p>New technologies means the inevitable development of new capabilities and workflows. Without adequate training, your team will be unable to discover the maximum potential of the new software and will not be able to implement it effectively to improve current systems.</p>\n' +
+    '<p>A mentoring system combined with an implementation training program can assist employees in grasping the newly introduced processes and operations that come with the new technology. Designated mentors can receive intensive training with the new technology or software first so that they will have an authentic, first-hand understanding of how to successfully communicate that information to other workers. Then, the comprehensive training strategy can enables these selected leaders and managers to share their expertise with workers.</p>\n' +
+    '<p>New training implementation technology is perfect for developing an effective and efficient training process.</p>\n' +
+    '<ul>\n' +
+    '<li><em>Rather than using paper manuals or monotonous lectures to teach employees, use a training program or software to keep them involved and alert.</em></li>\n' +
+    '<li><em>Choose interactive training programs that encourage workers to participate in their training sessions.</em></li>\n' +
+    '</ul>\n' +
+    '<p>While learning the features of a new technology, employees may have queries or face difficulties. Software training programs are ideal for providing workers with answers and real-time assistance throughout the process.</p>\n' +
+    '<p><em><strong>Your training plan should include:</strong></em></p>\n' +
+    '<ul>\n' +
+    '<li><em>In-depth instruction on how to use the system</em></li>\n' +
+    '<li><em>How employees can troubleshoot any issues</em></li>\n' +
+    '<li><em>How everyone can ensure they are up-to-date with changes or updates made to the system</em></li>\n' +
+    '</ul>\n' +
+    '<h1><strong>Monitor and Evaluate Progress</strong></h1>\n' +
+    '<p>It is imperative to frequently monitor and evaluate progress to ensure that the new technology is producing the anticipated outcomes. Set up frequent milestones as part of your general execution plan to evaluate progress and assess how well the system is functioning. This could include gathering input from team members and customers, as well as using analytics tools to monitor key performance metrics. This will assist you in identifying areas for improvement and ensuring that your new technology is applied as efficiently as possible.</p>\n' +
+    '<h1>Continuously Adapt and Improve</h1>\n' +
+    '<p>Last but not least, consider implementing new technology as a continuous process, not a one-time affair. Even after the original implementation, you should continue to assess the system\'s functionality and find areas for improvement. This can include analysing and revising the implementation plan on a frequent basis, as well as constantly looking for new ways to utilise the new technology to grow your company.</p>\n' +
+    '<p>To stay up with the latest trends and advancements, it is critical to adjust and enhance your execution strategy. You can ensure that your organization stays relevant in today\'s rapid evolving marketplace by remaining on top of industry changes and adjusting effectively.</p>\n' +
+    '<p><strong>Choosing the right technology to meet organisational objectives does not have to be a guessing game.</strong></p>\n' +
+    '<p>You can ensure that the adoption of novel technologies works in your advantage by conducting thorough evaluation, establishing clear goals, and diligent execution planning.</p>'
+  },
+  {
+    published_at: "2023-05-29T14:00:00+0000",
+    is_active: true,
+    category_id: 2,
+    title: 'Harness the Power of Intelligent Process Automation to Unlock Your Business Growth',
+    slug: 'harness-power-intelligent-process-automation-unlock-business-growth',
+    subtitle: "Streamline operations, boost efficiency, and meet customer needs with Intelligent Process Automation.",
+    hero_src: 'https://source.unsplash.com/lZ_4nPFKcV8/1600x900',
+    hero_alt: 'sprout',
+    html: '<p>In today&rsquo;s digital world, Intelligent Process Automation (IPA) is becoming increasingly important to spur business growth and building that unique competitive advantage. By eliminating repetitive, replicable and routine tasks, IPA is a suite of business-process improvements and next-generation tools that benefits the knowledge worker. It can also radically enhance customer journeys by streamlining interactions and accelerating procedures.</p>\n' +
+    '<p>According to a McKinsey report in 2017 conducted on numerous businesses from various industries experimenting with IPA have seen promising outcomes for themselves. Automation of 50 to 70 percent of processes effectively translated into cost savings of 20 to 35 percent annually, a 50 to 60 percent reduction in straight-through process time and a significant return on investments were frequently in triple-digit percentages. Evidently, IPA will be a core part of companies&rsquo; next-generation operating models.</p>\n' +
+    '<h2>Perks of Using IPA</h2>\n' +
+    '<p>With IPA, businesses can automate many manual operations that take up valuable time and resources. By employing IPA successfully, companies can better allocate their people and resources for more meaningful tasks and drive efficiency across the organization suggesting that focus can be shifted heavily on growing their operations - providing better service to customers. Additionally, IPA provides businesses with access to analytics that enable them to gain insight into how their processes are performing, identify any bottlenecks or potential areas of improvement, and design more efficient workflows. While IPA takes over rote tasks, employers can focus on delighting customers and considering about how new troves of data outside the organization&mdash;from news, events, social media, embedded sensors, and elsewhere&mdash;will aid in achieving business objectives.</p>\n' +
+    '<h3>Scalability</h3>\n' +
+    '<p>Scalability can be easily addressed with the use of IPA. Combining the power of artificial intelligence and robotic process to automate routine, rule-based operations enables companies to scale their operations quickly and efficiently while reducing costs associated with manual labor. IPA\'s sophisticated algorithms is capable of identifying patterns in data, self-correcting errors, improving accuracy and efficiency, and detecting any potential problems before they become costly. Additionally, IPA reduces the workload on employees and frees up time for more complex or creative work. Now, organisations are able to scale their operations faster than ever before.</p>\n' +
+    '<h3>Adaptability</h3>\n' +
+    '<p>Furthermore, IPA can help companies stay ahead of their competitors by providing them with ways to quickly adjust to evolving customer demands and market dynamics. Businesses can swiftly respond to customer needs and seize any new market opportunities that present themselves by utilising automated processes. Consequently, organisations are more capable of delivering more individualised services and experiences while boosting general customer satisfaction.</p>\n' +
+    '<p>By leveraging the power of implementing IPA, businesses can meet customer demands while saving time, resources, and money. Investing in Intelligent Process Automation is the key for streamlining operations and optimising work processes which leads to increased efficiency and better customer experiences.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>Although the full range of benefits comes from implementing the complete IPA suite, companies can unlock significant value quickly through individual elements. Whether you are a large enterprise or a small business, the benefits of intelligent automation alone cannot be ignored. Automation can help organisations make informed decisions. With automated solutions, companies can make informed decisions and respond to customer demands, allowing them to stay ahead of the competition. So don&rsquo;t delay, start taking advantage of IPA today and begin unlocking your business growth!</p>'
+  },
+  {
+    published_at: "2023-06-05T14:00:00+0000",
+    is_active: true,
+    category_id: 3,
+    title: 'The Hybrid Workforce: Balancing Flexibility and Productivity in the Post-Pandemic Era',
+    slug: 'hybrid-workforce-flexibility-productivity-post-pandemic-era',
+    subtitle: "Achieving efficiency, inclusivity, and equal opportunities in the evolving work landscape.",
+    hero_src: 'https://source.unsplash.com/VWcPlbHglYc/1600x900',
+    hero_alt: 'office',
+    html: '<p><em>The COVID-19 epidemic has changed the way we work, driving companies to seek remote work approaches in order to keep operations functioning during lockdowns and constraints. Companies are currently examining how to implement a hybrid work paradigm that balances flexibility and productivity in the following the pandemic&nbsp;with&nbsp;the progressive lifting of restrictions.</em></p>\n' +
+    '<h2>Hybrid Workforces</h2>\n' +
+    '<p>A hybrid workforce combines the benefits of in-person and remote work to create a flexible working environment that accommodates employee preferences and business needs. In this model, employees can work from home or the office, depending on their roles, responsibilities, and personal circumstances. For example, employees who require more collaboration or have roles that are better suited to in-person work may come to the office, while others who prefer working from home or have roles that require minimal interaction with others can work remotely.</p>\n' +
+    '<p>By merging the advantages of in-person and remote work to offer a fluid working environment that caters to employee preferences as well as corporate needs, employees can work from home or the office in this approach, depending on their roles, tasks, and personal situations. Employees who demand more communication or have responsibilities that are better suited to work in person, for example, may come to the office, but others who enjoy working from home or have roles that require fewer interactions with others may work remotely.</p>\n' +
+    '<h3>Addressing the Psychological Challenges of Hybrid Working</h3>\n' +
+    '<p>However, in order to reap the benefits of a team that is working&nbsp;hybrid, businesses have to address the issues that it brings. Managing efficiency and teamwork in a remote work environment is one of its most difficult issues. While remote work can boost productivity by eliminating distractions and allowing people to work at their own pace, it can also lead to working in&nbsp;solitude, decreased social engagement, and fatigue. Furthermore, remote workers may face technical problems such as poor internet connectivity, insufficient equipment, and security issues.</p>\n' +
+    '<p>Companies must establish clear communication and collaboration protocols that encourage trust, transparency, and accountability among team members as a means to overcome such issues. Establishing expectations for work hours, communication channels, and response times, as well as offering training and support for remote work tools and technology should be done. Furthermore, businesses ought to promote a culture of inclusion and belonging that acknowledges and encourages the specific requirements of both remote and in-person workers.</p>\n' +
+    '<h3>Combatting Potential Workplace Inequality</h3>\n' +
+    '<p>Another problem of a hybrid workforce is ensuring that all employees have equal opportunity and are treated fairly. Face-to-face interactions, informal conversations, and potential possibilities&nbsp;for job development and progress may be forfeited for remote workers. They may also feel&nbsp;excluded from decision-making, team-building, and business culture events.</p>\n' +
+    '<p>To address such concerns, organisations should give equitable access to training, mentoring, and networking opportunities for remote workers, as well as engage them in team meetings and decision-making processes. Furthermore, businesses should ensure that their regulations and procedures are inclusive and equal, taking into account the demands of all employees, regardless of their working conditions or personal situations. This includes&nbsp;addressing mental health and well-being concerns.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>Overall, the hybrid workforce continues to be a promising option for businesses seeking to balance flexibility and productivity in the post-pandemic period. Companies may establish a flexible working environment that supports the different requirements and preferences of their employees while also fostering productivity, collaboration, and inclusivity by combining the benefits of in-person and remote work. However, in order to fully&nbsp;take advantage of these benefits, businesses must also address the associated challenges, such as maintaining productivity and collaboration in a remote work environment, ensuring equal opportunities and fair treatment for all employees, and developing a culture of inclusivity and belonging that supports both remote and in-person workers.</p>\n' +
+    '<p>As businesses continue to navigate&nbsp;the post-pandemic age, it is apparent that the hybrid workforce will be crucial in creating the future of employment. By implementing this paradigm, businesses may adapt to changing workforce needs, remain competitive in the global economy, and build a more robust and sustainable business model.</p>'
+  },
+  {
+    published_at: "2023-06-12T14:00:00+0000",
+    is_active: true,
+    category_id: 4,
+    title: 'Beyond the Logo: Developing a Comprehensive Brand Identity',
+    slug: 'beyond-logo-developing-comprehensive-brand-identity',
+    subtitle: "Crafting a Memorable and Cohesive Brand Identity for Lasting Connections",
+    hero_src: 'https://source.unsplash.com/mxIGWk111u0/1600x900',
+    hero_alt: 'paint',
+    html: '<p>Creating an extensive brand identity is an essential phase in developing a strong and recognisable brand. A brand identity is more than a logo or a snappy phrase; it is a brand\'s visual, verbal, and emotional representation that distinguishes it from competitors and connects with its intended consumer base.</p>\n' +
+    '<p>A brand identity includes components such as the brand\'s voice and tone, colour palette, typography, imagery, and messaging alongside with the&nbsp;logo. Each of these components contributes to the creation of a unified and distinctive brand identity that reflects the brand\'s values, personality, and mission.</p>\n' +
+    '<p>To start off, comprehending its intended audience, competitors, and distinctive selling point in order to establish a comprehensive brand identity. Performing market research, reviewing client feedback, and developing the brand\'s positioning statement are all part of the&nbsp;process. A positioning statement is a brief statement that describes the brand\'s distinct selling proposition and what it represents.</p>\n' +
+    '<p>Once the brand has a firm grasp on its target demographic and positioning, it can work on developing the visual and verbal&nbsp;components of the brand\'s identity. The initial phase is to develop a brand style guide that defines the brand\'s visual and verbal&nbsp;identities. A brand style guide includes colour palette, font, imagery, and messaging requirements in ensuring&nbsp;consistency across all encounters.</p>\n' +
+    '<h2>Colour Palette</h2>\n' +
+    '<p>The colour palette of the company is a vital component of its visual identity. Colours have the ability to elicit emotions, form associations, and affect purchasing decisions. As a result, it\'s critical to use colours that fit the brand\'s personality and ideals. Blue, for example, is frequently connected with trust and dependability, whereas green is associated with growth and sustainability.</p>\n' +
+    '<h2>Typography</h2>\n' +
+    '<p>The fonts utilised should be in tune with the brand\'s personality and legible across all platforms. The style of font used by the business should be consistent throughout every point of contact, such as website design, social media posts, and marketing materials.</p>\n' +
+    '<h2>Imagery</h2>\n' +
+    '<p>The brand should choose visuals that are consistent with its values and messaging. Photographs, illustrations, and graphics are examples of such&nbsp;visuals. The imagery used by the brand should be consistent across all touch points, resulting in a unified and identifiable visual identity.</p>\n' +
+    '<h2>Brand Message</h2>\n' +
+    '<p>The brand\'s messaging is a key component of its spoken identity. At&nbsp;various points of contact ranging from&nbsp;website writing, social media posts to&nbsp;marketing materials, should have a unified message. The messaging should be consistent with the brand\'s values, personality, and mission creating a cohesive and authentic brand voice.</p>\n' +
+    '<h2>Brand Tone</h2>\n' +
+    '<p>The tone of the brand is also an important aspect of its verbal identity. The tone&nbsp;should be in line with its personality and values, prompting an emotional response from its target audience. A brand with a playful personality, for example, would employ a lighthearted and humorous tone, whereas a brand with a more serious attitude might use a formal and authoritative tone.</p>\n' +
+    '<h2>Brand Identity</h2>\n' +
+    '<p>Brand identity&nbsp;features its values, mission, and purpose. The principles and beliefs that influence a brand\'s activities and decisions are represented by its values. A brand\'s mission statement explains why it exists and what it stands for. These components are critical in developing a strong and authentic brand identity that resonates with its target audience.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>In conclusion, creating a holistic brand identity entails more than just a logo or a great phrase. A brand identity is made up of many visual and linguistic aspects that work together to form a unified and memorable portrayal of the brand. A powerful and authentic brand identity reflects the personality, values, and mission of the brand, distinguishing it from competitors and resonating with its target audience. A brand may design a comprehensive brand identity that develops an emotional connection with its customers and promotes financial success by analysing its target demographic, competition, and unique value offer.</p>'
+  },
+  {
+    published_at: "2023-06-19T14:00:00+0000",
+    is_active: true,
+    category_id: 5,
+    title: 'Building Better Teams: The Role of Organisational Design in Talent Management',
+    slug: 'building-better-teams-role-organisational-design-talent-management',
+    subtitle: "Maximizing team success through strategic talent management and effective organizational design.",
+    hero_src: 'https://source.unsplash.com/FHnnjk1Yj7Y/1600x900',
+    hero_alt: 'desk',
+    html: '<p>In today\'s fast-paced business world, attracting and retaining top talent is more important than ever. However, simply hiring the best people is not enough to ensure success. Building effective teams requires a thoughtful approach to talent management, including a focus on organizational design.</p>\n' +
+    '<p>Organisational design refers to the process of structuring and aligning an organization\'s systems, processes, and people to achieve its goals. In the realm of talent management, organisational design is crucial in establishing the ideal atmosphere for employees to thrive and contribute to the organization\'s success.</p>\n' +
+    '<p>Here are some key ways that organizational design can help build better teams:</p>\n' +
+    '<h3>Clarifying Roles and Responsibilities</h3>\n' +
+    '<p>One of the primary functions of organisational design is to clarify roles and responsibilities. Organisation can minimise confusion and increase accountability by clearly outlining each team member\'s role and responsibilities. This, in turn, can help in the development of trust and improve communication among team members.</p>\n' +
+    '<h3>Creating Efficient Workflows</h3>\n' +
+    '<p>Organisational design can also aid in process optimisation by detecting bottlenecks and inefficiencies. Teams can work more efficiently and effectively by streamlining processes and eliminating unnecessary phases. Employees are less likely to be frustrated by bureaucratic processes, which can contribute to higher job satisfaction.</p>\n' +
+    '<h3>Encouraging Collaboration</h3>\n' +
+    '<p>By breaking down silos and creating cross-functional teams, effective organisational design may also promote cooperation. Organisations can benefit from their employees\' cumulative knowledge and experience by establishing a collaborative culture, that contributes to better decision-making and problem-solving.</p>\n' +
+    '<h3>Facilitating Learning and Development</h3>\n' +
+    '<p>Organisational design is another way to facilitate learning and development. Organisations can assist employees acquire new skills and stay relevant with the latest trends and technologies by providing opportunities for training and professional development. As a result, work satisfaction and retention may improve.</p>\n' +
+    '<h3>Promoting Diversity and Inclusion</h3>\n' +
+    '<p>By fostering a culture that celebrates and respects differences, organisational design can also serve to promote diversity and inclusion. This can include initiatives such as&nbsp;promoting inclusive communication and decision-making processes, as well as hiring policies that prioritise diversity.</p>\n' +
+    '<p>In order to reap the benefits of organisational design, organisations must take a deliberate and strategic approach to talent management. This includes:</p>\n' +
+    '<h3>Defining the Organization\'s Goals and Objectives</h3>\n' +
+    '<p>The aims and objectives of the organization must be aligned&nbsp;with the organisational design. This entails taking the effort to clearly define the organization\'s goals and identifying the skills and competencies required to attain them.</p>\n' +
+    '<h3>Identifying Key Roles and Skills</h3>\n' +
+    '<p>Determining the critical responsibilities and talents required to meet the organization\'s goals and objectives involves performing a detailed examination of the organization\'s current staff in order to identify any skill shortfalls or areas where additional expertise is required.</p>\n' +
+    '<h3>Developing Talent Management Strategies</h3>\n' +
+    '<p>The next crucial step is to develop talent management strategies after having an in-depth understanding of the company\'s objectives and the talents essential to accomplish them. This involves recruitment, training and development, performance management, and career progression initiatives.</p>\n' +
+    '<h3>Implementing and Evaluating Organisational Design</h3>\n' +
+    '<p>At last, companies needs to put their organisational design concepts into action and monitor their efficacy over time. Regular performance assessments, staff surveys, and other techniques of obtaining feedback and data to identify areas for development may be used.</p>\n' +
+    '<p>In conclusion, developing better teams requires a strategic approach to talent management that focuses on organisational design. Organisations may establish a setting where employees can thrive and contribute to the organization\'s success by clarifying roles and responsibilities, developing efficient processes, fostering cooperation, facilitating learning and development, and promoting diversity and inclusion.</p>'
   },
 ].map((item, i) => ({
-  ...item,
+  id: i + 1,
   // Category
   category: getCategoryFromCrudItem(item, MOCK_GROUP_POST_CATEGORYS),
+  // Images
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'about_shape_circle_radial',
+  // Author
+  author_avatar_src: '/images/about_shape_circle_radial.svg',
+  author_avatar_alt: 'about_shape_circle_radial',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
   // Tags
   tags: sampleSize(MOCK_GROUP_TAGS, 3),
+  ...item,
 }))
 
 export const MOCK_POSTS = {
