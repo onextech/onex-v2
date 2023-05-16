@@ -201,7 +201,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-06-05T14:00:00+0000",
+    published_at: "2023-05-15T08:00:00+0000",
     is_active: true,
     category_id: 8,
     title: 'Digital Transformation in Government: Modernising Public Services for the 21st Century',
@@ -321,7 +321,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-06-19T14:00:00+0000",
+    published_at: "2023-05-15T08:00:00+0000",
     is_active: true,
     category_id: 1,
     title: 'Best Practices When Developing Scalable Applications',
@@ -406,7 +406,7 @@ export const MOCK_TECH_POSTS = [
     '<p>Businesses wishing to integrate their web and mobile presence can find a compelling answer in progressive web apps. With the growth of cloud computing, PWAs have gained popularity as a means of delivering a unified user experience across several platforms.</p>'
   },
   {
-    published_at: "2023-06-26T14:00:00+0000",
+    published_at: "2023-05-15T08:00:00+0000",
     is_active: true,
     category_id: 2,
     title: 'Advanced React Development Techniques to Enhance Your Web Apps.',
