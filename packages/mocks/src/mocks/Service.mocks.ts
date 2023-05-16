@@ -284,7 +284,7 @@ export const MOCK_TECH_SERVICES = [
     slug: 'user-interface-development',
     category_id: 1,
     // Hero
-    hero_src: 'https://source.unsplash.com/Nzmyp6LsgNM/1600x900',
+    hero_src: 'https://source.unsplash.com/qC2n6RQU4Vw/1600x900',
     hero_alt: 'user interface development',
     subtitle:
       'Work with design and development experts to create beautiful, intuitive user interfaces for your business.',
@@ -1079,8 +1079,9 @@ export const MOCK_TECH_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title:
-              'Why are agile development teams important for my enterprise business content: development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
+            title: 'Why are agile development teams important for my enterprise business?',
+            content:
+              'Development teams are crucial for enterprise businesses because they ensure faster delivery, adapatability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
           },
           {
             key: 'faqs-2',

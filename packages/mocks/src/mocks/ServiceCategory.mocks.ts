@@ -14,7 +14,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'modern-frontend-engineering',
     subtitle:
       'Develop rich user interfaces using modern technologies and frameworks.',
-    hero_src: '/images/about_working_in_office.png',
+    hero_src: '/images/about_nodes.png',
     hero_alt: 'about_nodes',
   },
   {

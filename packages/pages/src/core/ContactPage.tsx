@@ -64,7 +64,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                     {
                       type: 'body1',
                       title:
-                        'Thank you for your interest. So we can help serve you better, please complete the form below. Please note, due to the volume of inquiries, we cannot respond to everyone. Where we can, we will respond as soon as possible.',
+                        'Thank you for your interest in working with us. Please complete the form below to help us better understand the services you require and we will get back to you as soon as possible. We look forward to embarking on an exciting and fruitful collaboration with you! ',
                       titleProps: {
                         color: 'text.secondary',
                         maxWidth: true,
