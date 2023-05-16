@@ -42,6 +42,7 @@
     "@onex/tests": "*",
     "@onex/theme": "*",
     "@onex/types": "*",
+    "dayjs": "^1.11.7",
     "i18next": "22.4.13",
     "next": "^13.2.4",
     "next-i18next": "13.2.2",

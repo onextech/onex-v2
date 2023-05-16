@@ -15,8 +15,8 @@
   "dependencies": {
     "@gravis-os/landing": "^0.0.46",
     "@gravis-os/ui": "^0.0.106",
+    "dayjs": "^1.11.7",
     "lodash": "^4.17.21",
-    "moment": "^2.29.4",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
   },

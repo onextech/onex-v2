@@ -5,6 +5,7 @@ import getDynamicPage from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import { fetchSite } from './Site'
+import dayjs from 'dayjs'
 
 const { MOCK_KEY } = process.env
 
@@ -31,7 +32,9 @@ export const IndustryDetail = {
     const site = fetchSite()
     const industryPage = getDynamicPage({ context, page: industry, site })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
+      MOCK_POSTS[MOCK_KEY]
+        .filter(({ is_active }) => is_active)
+        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
       industry?.title
     ).slice(0, 3)
 

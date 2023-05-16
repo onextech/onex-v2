@@ -5,6 +5,7 @@ import { GroupPage, GroupPageProps } from '@onex/pages'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 import { MOCK_PAGES, MOCK_POSTS } from '@onex/mocks'
+import dayjs from 'dayjs'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY } = process.env
@@ -16,7 +17,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     site,
   })
   const posts = MOCK_POSTS[MOCK_KEY]
-    .filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime())
+    .filter(({ is_active }) => is_active)
+    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
     .slice(0, 3)
   return makeGetStaticProps({
     props: {

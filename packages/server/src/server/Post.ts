@@ -6,6 +6,7 @@ import {
 } from '@gravis-os/utils'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
+import dayjs from 'dayjs'
 
 const { MOCK_KEY } = process.env
 
@@ -13,7 +14,10 @@ const { MOCK_KEY } = process.env
 // Methods
 // ==============================
 export const fetchPostBySlug = (injectedSlug) => {
-  return MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).find(({ slug }) => slug === injectedSlug)
+  return MOCK_POSTS[MOCK_KEY]
+    .filter(({ is_active }) => is_active)
+    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+    .find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -30,7 +34,9 @@ export const PostDetail = {
       ({ category_id }) => category_id === post?.category_id
     )
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
+      MOCK_POSTS[MOCK_KEY]
+        .filter(({ is_active }) => is_active)
+        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
       post?.title
     ).slice(0, 3)
 
@@ -45,7 +51,10 @@ export const PostDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()).map(
+      paths: MOCK_POSTS[MOCK_KEY]
+        .filter(({ is_active }) => is_active)
+        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+        .map(
         ({ slug, category, exclusive_locales, blocked_locales }) => ({
           params: {
             slug,
