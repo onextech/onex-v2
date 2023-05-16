@@ -33,7 +33,7 @@ export const TechnologyDetail = {
     const site = fetchSite()
     const technologyPage = getDynamicPage({ context, page: technology, site })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
       technology?.title
     ).slice(0, 3)
     return makeGetStaticProps({

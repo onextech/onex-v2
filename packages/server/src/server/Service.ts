@@ -34,7 +34,7 @@ export const ServiceDetail = {
       ({ category_id }) => category_id === service?.category_id
     )
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
       service?.title
     ).slice(0, 3)
 

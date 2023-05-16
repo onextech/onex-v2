@@ -31,7 +31,7 @@ export const IndustryDetail = {
     const site = fetchSite()
     const industryPage = getDynamicPage({ context, page: industry, site })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
       industry?.title
     ).slice(0, 3)
 

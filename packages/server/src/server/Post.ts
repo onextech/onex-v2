@@ -30,7 +30,7 @@ export const PostDetail = {
       ({ category_id }) => category_id === post?.category_id
     )
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()),
       post?.title
     ).slice(0, 3)
 
@@ -45,7 +45,7 @@ export const PostDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).map(
+      paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active, published_at }) => is_active && published_at && Date.parse(published_at) <= new Date().getTime()).map(
         ({ slug, category, exclusive_locales, blocked_locales }) => ({
           params: {
             slug,
