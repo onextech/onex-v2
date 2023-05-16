@@ -3,6 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import type { PressRelease } from '@onex/types'
 import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
+import orderBy from 'lodash/orderBy'
 
 export interface PressReleasesPageProps {
   pressReleases: PressRelease[]
@@ -62,7 +63,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: pressReleases.map((pressRelease) =>
+              gridItems: orderBy(pressReleases, 'published_at', 'desc').map((pressRelease) =>
                 renderPostBlockItem({
                   item: {
                     ...pressRelease,

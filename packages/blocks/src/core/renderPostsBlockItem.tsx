@@ -4,7 +4,7 @@ import { useLayout } from '@onex/providers'
 import renderPostBlockItem, {
   RenderPostBlockItemProps,
 } from './renderPostBlockItem'
-import { orderBy } from 'lodash'
+import orderBy from 'lodash/orderBy'
 
 export interface RenderPostsBlockItemProps {
   items: Post[]

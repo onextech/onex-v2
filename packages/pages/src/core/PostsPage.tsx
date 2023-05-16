@@ -3,6 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import type { Post } from '@onex/types'
 import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
+import orderBy from 'lodash/orderBy'
 
 export interface PostsPageProps {
   posts: Post[]
@@ -62,7 +63,7 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: posts.map((post) =>
+              gridItems: orderBy(posts, 'published_at', 'desc').map((post) =>
                 renderPostBlockItem({
                   item: {
                     ...post,

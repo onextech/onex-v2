@@ -1,5 +1,6 @@
 import { Post, PostCategory } from '@onex/types'
 import { renderPostBlockItem } from './index'
+import orderBy from 'lodash/orderBy'
 
 export interface RenderPostCategoryBlockItemProps {
   item: PostCategory & { items: Array<Post & { href: string }> } & {
@@ -40,7 +41,7 @@ const renderPostCategoryBlockItem = (
       },
       {
         type: 'grid',
-        gridItems: items.map((item) =>
+        gridItems: orderBy(items, 'published_at', 'desc').map((item) =>
           renderPostBlockItem({
             item,
           })
