@@ -3,6 +3,7 @@ import { BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderHeaderMenuMobileBlockItemProps {
   title: BlockItemProps['title']
+  slug?: string
   subtitle?: BlockItemProps['title']
   href?: BlockItemProps['boxProps']['href']
   hrefProps?: BlockItemProps['boxProps']['hrefProps']
@@ -12,7 +13,8 @@ export interface RenderHeaderMenuMobileBlockItemProps {
 const renderHeaderMenuMobileBlockItem = (
   props: RenderHeaderMenuMobileBlockItemProps
 ) => {
-  const { href, hrefProps, title, items = [] } = props
+  const { slug, href: injectedHref, hrefProps, title, items = [] } = props
+  const href = injectedHref || (slug && `/${slug}`)
   return {
     py: 0,
     reveal: false,
