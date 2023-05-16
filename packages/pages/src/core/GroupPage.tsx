@@ -5,15 +5,15 @@ import {
   renderGhostButtonBlockItem,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
-  renderCtaBlock,
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
   renderClientTestimonialCardsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
-} from "@onex/blocks"
-import { useLayout } from "@onex/providers"
-import { Industry, Page, Post, Showcase } from "@onex/types"
+  renderFadeToBottomBackgroundImageBlock,
+} from '@onex/blocks'
+import { useLayout } from '@onex/providers'
+import { Industry, Page, Post, Showcase } from '@onex/types'
 
 export interface GroupPageProps {
   page: Page
@@ -51,79 +51,41 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   disableCenter
                   middle
                   loop
-                  height={{ xs: 600, sm: 700, md: 800, xxl: 900 }}
+                  height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
                   tabs={[
-                    'Enterprise Applications',
-                    'Climate Change',
-                    'Technology',
+                    ...posts.map((post) => {
+                      const { category } = post
+                      return category.title
+                    }),
                   ]}
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
                   items={[
-                    <Box sx={{ maxWidth: { md: '50%' } }}>
-                      <Typography
-                        variant="overline"
-                        gutterBottom
-                        color="text.secondary"
-                      >
-                        Finance
-                      </Typography>
-                      <Typography variant="h1">
-                        Singapore Market Outlook 2023
-                      </Typography>
-                      <BlockItem
-                        disableContainer
-                        {...renderGhostButtonBlockItem({
-                          overline: 'What we do',
-                          title: 'Smarter Businesses',
-                          size: 'lg',
-                          href: routeConfig.SERVICES,
-                          sx: { mt: { xs: 2, md: 4 } },
-                        })}
-                      />
-                    </Box>,
-                    <Box sx={{ maxWidth: { md: '50%' } }}>
-                      <Typography
-                        variant="overline"
-                        gutterBottom
-                        color="text.secondary"
-                      >
-                        Real Estate
-                      </Typography>
-                      <Typography variant="h1">Singapore Figures Q1</Typography>
-                      <BlockItem
-                        disableContainer
-                        {...renderGhostButtonBlockItem({
-                          overline: "What we do",
-                          title: "Smarter Businesses",
-                          size: "lg",
-                          href: routeConfig.SERVICES,
-                          sx: { mt: { xs: 2, md: 4 } },
-                        })}
-                      />
-                    </Box>,
-                    <Box sx={{ maxWidth: { md: "50%" } }}>
-                      <Typography
-                        variant="overline"
-                        gutterBottom
-                        color="text.secondary"
-                      >
-                        Healthcare
-                      </Typography>
-                      <Typography variant="h1">
-                        Singapore Luxury Residential Report H2
-                      </Typography>
-                      <BlockItem
-                        disableContainer
-                        {...renderGhostButtonBlockItem({
-                          overline: "What we do",
-                          title: "Smarter Businesses",
-                          size: "lg",
-                          href: routeConfig.SERVICES,
-                          sx: { mt: { xs: 2, md: 4 } },
-                        })}
-                      />
-                    </Box>,
+                    ...posts.map((post) => {
+                      const { title, category } = post
+                      return (
+                        <Box sx={{ maxWidth: { md: '50%' } }}>
+                          <Typography
+                            variant="overline"
+                            gutterBottom
+                            color="text.secondary"
+                          >
+                            {category.title}
+                          </Typography>
+                          <Typography variant="h1">{title}</Typography>
+                          <BlockItem
+                            disableContainer
+                            {...renderGhostButtonBlockItem({
+                              overline: 'What we do',
+                              title: 'Smarter Businesses',
+                              size: 'lg',
+                              href: routeConfig.SERVICES,
+                              sx: { mt: { xs: 2, md: 4 } },
+                            })}
+                          />
+                        </Box>
+                      )
+                    }),
                   ]}
                 />
               ),
@@ -133,12 +95,12 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
-          sx: { backgroundColor: "background.paper", position: "relative" },
+          sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,
-          sx: { backgroundColor: "background.paper" },
+          sx: { backgroundColor: 'background.paper' },
         }),
         // Showcases
         renderShowcasesBlock({
@@ -148,24 +110,24 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             </>
           ),
           subtitle:
-            "Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.",
+            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),
         // Client Testimonials
         renderClientTestimonialCardsBlock({
-          title: "Trusted by Frontend Development Teams",
+          title: 'Trusted by Frontend Development Teams',
           subtitle:
             "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
           items: clientTestimonials,
         }),
         // Industry
         renderFeaturedIndustrysBlock({
-          title: "Access Industry Expertise & Best Practices",
+          title: 'Access Industry Expertise & Best Practices',
           subtitle:
-            "We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective development solutions in their industry.",
+            'We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective development solutions in their industry.',
           items: industrys,
-          sx: { backgroundColor: "background.paper" },
+          sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
         renderFeaturedPostsBlock({ items: posts }),
@@ -175,10 +137,16 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },
           ...faqs,
-          sx: { backgroundColor: "background.paper" },
+          sx: { backgroundColor: 'background.paper' },
         }),
         // Cta
-        renderCtaBlock({ item: cta, pt: { xs: 5, md: 10 }, pb: 0 }),
+        renderFadeToBottomBackgroundImageBlock({
+          hero_src: cta.hero_src,
+          hero_alt: cta.hero_alt,
+          title: cta.title,
+          subtitle: cta.subtitle,
+          buttonProps: cta.buttons?.[0],
+        }),
       ]}
     />
   )

@@ -321,7 +321,7 @@ export const MOCK_DATA_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
@@ -530,7 +530,7 @@ export const MOCK_DESIGN_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
@@ -714,7 +714,7 @@ export const MOCK_DIGITAL_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
     leftGridSticky: {
       hero_src: '/images/showcase_detail_sticky_1.jpg',
@@ -734,7 +734,7 @@ export const MOCK_DIGITAL_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       items: [
         {
           title: '/images/showcase_detail_gallery_1.png',
@@ -928,7 +928,7 @@ export const MOCK_VENTURES_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
     leftGridSticky: {
       hero_src: '/images/showcase_detail_sticky_1.jpg',
@@ -948,7 +948,7 @@ export const MOCK_VENTURES_PAGE = {
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       items: [
         {
           title: '/images/showcase_detail_gallery_1.png',
@@ -969,20 +969,23 @@ const MOCK_COMMON_PAGES = [
     slug: 'careers',
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
-    seo_description: 'Join our team of thinkers and tinkerers to build tomorrow\'s technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.'
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
   },
   {
     title: 'Contact',
     slug: 'contact',
     subtitle:
       'Get in touch with us to learn how we can help unlock new possibilities for your business',
-    seo_description: 'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.'
+    seo_description:
+      'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.',
   },
   {
     title: 'Terms',
     slug: 'terms',
     is_hidden_from_nav: true,
-    seo_description: 'Explore One X Group\'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.',
+    seo_description:
+      "Explore One X Group's Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
     html:
       '<h3>Overview</h3>\n' +
       '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
@@ -1019,7 +1022,8 @@ const MOCK_COMMON_PAGES = [
     title: 'Privacy',
     slug: 'privacy',
     is_hidden_from_nav: true,
-    seo_description: 'We value your privacy. Discover how One X Group respects your personal information through data protection, consent and protecting your rights.',
+    seo_description:
+      'We value your privacy. Discover how One X Group respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
       "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
@@ -1035,7 +1039,8 @@ const MOCK_COMMON_PAGES = [
     title: 'Cookies',
     slug: 'cookies',
     is_hidden_from_nav: true,
-    seo_description: 'Discover more about our website\'s cookie policy and personalize, analyze and manage cookies to enhance your website experience',
+    seo_description:
+      "Discover more about our website's cookie policy and personalize, analyze and manage cookies to enhance your website experience",
     html:
       '<p>This website uses cookies. By continuing to use this website, you consent to the use of cookies in accordance with this Cookie Policy.</p>\n' +
       '<h3>What are cookies?</h3>\n' +
@@ -1269,7 +1274,7 @@ const MOCK_GROUP_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Our Suite of Services',
+        title: 'Custom Software Development',
         subtitle:
           "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
         maxWidth: 'lg',
@@ -1433,12 +1438,18 @@ const MOCK_GROUP_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/two_men_pointing_at_screen.png',
-        hero_alt: 'software developers working on a laptop',
-        overline: 'Get Started',
-        title: 'Partnering with {appTitle}',
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'about_nodes_above_city',
+        title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
-          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
       },
     },
   },
@@ -1870,7 +1881,7 @@ const MOCK_TECH_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize {title}, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
       },
     },
   },
