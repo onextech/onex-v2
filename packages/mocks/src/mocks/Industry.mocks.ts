@@ -243,8 +243,6 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'finance',
     subtitle:
       'Partner with finance experts to optimize your business processes and make data-driven decisions.',
-    fa_icon: 'fa-chart-mixed-up-circle-dollar',
-    is_featured: true,
     hero_src: 'https://source.unsplash.com/amLfrL8LGls/1600x900',
     hero_alt: 'Finance',
     // Seo
@@ -319,22 +317,21 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is finance expertise important for my business?',
+            title: 'Why is a high-quality user interface important for my finance business?',
             content:
-              'Finance expertise is crucial for businesses as it helps optimize processes, manage financial risks, and make data-driven decisions. It enables businesses to allocate resources effectively, plan for future growth, and ensure compliance with financial regulations.',
+              'A high-quality user interface is crucial for finance businesses as it enhances user experience, improves productivity, and enables users to make informed financial decisions. It helps streamline complex workflows, visualize financial data effectively, and ensure data accuracy and security.',
           },
           {
             key: 'faqs-2',
-            title:
-              'What are the benefits of working with your Finance Service?',
+            title: 'What are the benefits of working with your company for the finance industry?',
             content:
-              'By partnering with our Finance Service, you gain access to a team of finance experts who have extensive knowledge and experience in the finance industry. Here are some of the benefits of working with us:\n\n- Expert guidance: Our team of finance experts will provide you with valuable insights and guidance to optimize your business processes and financial strategies.\n- Data-driven decisions: We help you make informed decisions by providing comprehensive financial analysis and performance measurement.\n- Risk management: We assist in identifying and mitigating financial risks, ensuring the stability and security of your business.\n- Compliance assurance: We ensure that your business adheres to financial regulations and compliance standards, giving you peace of mind.\n- Strategic planning: We help you develop strategic financial plans that align with your business goals and drive sustainable growth.\n\nPartnering with our Finance Service can empower your business with the financial expertise and support it needs to thrive in the competitive finance industry.',
+              'By partnering with our software development company, you can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the finance industry. We prioritize data security, performance optimization, and scalability to meet the unique demands of finance applications. Our solutions empower your enterprise to make data-driven decisions, enhance operational efficiency, and deliver a superior user experience.',
           },
           {
             key: 'faqs-3',
-            title: 'How can you help with budgeting and forecasting?',
+            title: 'How do we approach frontend software engineering and dashboard development for finance applications?',
             content:
-              "We provide assistance in developing effective budgeting and forecasting strategies that optimize your financial resources and enable you to plan for future growth. Our finance experts will work closely with you to analyze your business's financial data, identify trends, and create accurate projections. By leveraging our expertise, you can make informed financial decisions, allocate resources efficiently, and stay on track towards achieving your financial goals.",
+              'Our approach involves a deep understanding of finance domain knowledge, collaboration with stakeholders, and leveraging the latest frontend technologies. We conduct thorough user research to identify user needs and pain points, develop intuitive interfaces with seamless navigation and responsive design, implement robust data visualization techniques, and ensure compliance with industry standards and regulations. Throughout the development process, we prioritize user testing and feedback to deliver user interfaces that align with your business objectives and drive financial success.',
           },
         ],
       },
@@ -346,8 +343,6 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'government',
     subtitle:
       'Partner with software development experts to create efficient solutions for government agencies.',
-    fa_icon: 'fa-landmark-flag',
-    is_featured: true,
     hero_src: 'https://source.unsplash.com/o0kbc907i20/1600x900',
     hero_alt: 'Government',
     // Seo
@@ -422,24 +417,21 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title:
-              'Why is software development important for government agencies?',
+            title: 'Why is a high-quality user interface important for government organizations?',
             content:
-              'Software development plays a crucial role in enabling government agencies to enhance their operations, improve service delivery, and leverage technology for citizen engagement. It allows for efficient data management, automation of processes, and the development of tailored solutions to address specific challenges faced by government agencies.',
+              'A high-quality user interface is crucial for government organizations as it enhances citizen experience, promotes transparency, and facilitates access to government services. It improves engagement, fosters trust, and enables efficient interaction with government systems and platforms.',
           },
           {
             key: 'faqs-2',
-            title:
-              'What are the benefits of working with your Software Development Service for Government?',
+            title: 'What are the benefits of working with your company for government organizations?',
             content:
-              'By partnering with our Software Development Service for Government, government agencies gain access to a team of experts who understand the unique needs and challenges of the public sector. Here are some of the benefits of working with us:\n\n- Domain expertise: Our team has extensive experience in developing software solutions for government agencies, allowing us to understand the specific challenges and requirements of the public sector.\n- Customized solutions: We develop tailored software solutions that address the unique needs of government agencies, ensuring optimal efficiency and effectiveness.\n- Data-driven decision-making: Our data management and analytics capabilities enable government agencies to make informed decisions based on reliable and accurate data.\n- Enhanced citizen engagement: Our citizen engagement platforms facilitate seamless communication and collaboration between government agencies and citizens, promoting transparency and participation.\n- Security and compliance: We prioritize the security of sensitive government data and ensure compliance with regulations to maintain data integrity and protect privacy.\n\nPartnering with our Software Development Service for Government empowers government agencies to leverage technology and enhance their capabilities in serving the public and achieving their missions.',
+              'By partnering with our software development company, government organizations can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the public sector. We prioritize security, compliance, and accessibility to meet government standards and regulations. Our solutions empower government entities to deliver citizen-centric services, leverage data-driven insights, and enhance overall governance.',
           },
           {
             key: 'faqs-3',
-            title:
-              'How do you ensure the security of government data in your software solutions?',
+            title: 'How do we approach frontend software engineering and dashboard development for government organizations?',
             content:
-              'We prioritize security in our software solutions for government agencies. We employ industry-standard security practices and protocols to protect sensitive government data from unauthorized access, breaches, and data loss. This includes implementing robust encryption, access controls, and multi-factor authentication. We also conduct regular security audits and stay up-to-date with the latest security measures and compliance requirements to ensure that our solutions adhere to the highest standards of security and data protection.',
+              'Our approach involves in-depth collaboration with government stakeholders to understand their unique requirements and objectives. We prioritize usability, accessibility, and data visualization to create user interfaces and dashboards that cater to diverse user groups. We follow industry best practices, adhere to government standards, conduct thorough security assessments, and ensure compliance with relevant regulations. Our solutions focus on enhancing service delivery, promoting open data initiatives, and driving digital transformation in the government sector.',
           },
         ],
       },
@@ -449,7 +441,6 @@ export const MOCK_TECH_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
-    fa_icon: 'fa-ship',
     subtitle:
       'Partner with software development experts to optimize maritime operations and enhance efficiency.',
     hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
@@ -526,35 +517,29 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title:
-              'Why is software development important for the maritime industry?',
+            title: 'Why is software development important for the maritime industry?',
             content:
               'Software development plays a crucial role in optimizing maritime operations, enhancing safety, efficiency, and decision-making. It allows for streamlined processes, data analysis, and real-time monitoring, resulting in improved productivity and cost-effectiveness in the maritime industry.',
           },
           {
             key: 'faqs-2',
-            title:
-              'What are the benefits of working with your Software Development Service for Maritime?',
+            title: 'What are the benefits of working with your company for the maritime industry?',
             content:
-              'By partnering with our Software Development Service for Maritime, you gain access to the following benefits:\\n\\n- Industry expertise: Our team has deep knowledge and experience in developing software solutions for the maritime industry, allowing us to understand the specific challenges and requirements.\\n- Customized solutions: We tailor our software solutions to address the unique needs and processes of maritime operations, optimizing efficiency and effectiveness.\\n- Enhanced decision-making: Our data analytics and visualization tools provide valuable insights for informed decision-making, improving operational strategies and resource allocation.\\n- Improved safety and compliance: We prioritize security, risk management, and compliance with industry regulations to ensure the safety of maritime assets and adherence to standards.\\n- Streamlined logistics and supply chain: Our software solutions optimize logistics and supply chain management, reducing costs and improving inventory control.\\n- Performance measurement: We offer comprehensive performance measurement and reporting tools to track and assess operational performance, facilitating continuous improvement.\\n\\nPartnering with our Software Development Service for Maritime empowers maritime organizations to leverage technology and optimize their operations for enhanced efficiency, safety, and success.',
+              'By partnering with our software development company, maritime businesses can leverage our expertise in frontend software engineering and dashboard development to drive digital transformation. Our solutions enable real-time data visualization, predictive analytics, and process automation, resulting in improved operational efficiency, enhanced safety measures, better fleet management, and increased profitability.',
           },
-          {
-            key: 'faqs-3',
-            title:
-              'How do you ensure the security of maritime data in your software solutions?',
-            content:
-              'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organizations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
-          },
-        ],
-      },
+        {
+          key: 'faqs-3',
+          title: 'How do you ensure the security of maritime data in your software solutions?',
+          content:
+            'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organizations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
+        },
+      ],
     },
-  },
+  },},
   {
     // Hero
     title: 'Real Estate',
     slug: 'real-estate',
-    fa_icon: 'fa-map',
-    is_featured: true,
     subtitle:
       'Transform your real estate business with innovative software solutions and intuitive user interfaces.',
     hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900',
@@ -631,29 +616,25 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title:
-              'Why is software development important for the real estate industry?',
+            title: 'Why is software development important for the real estate industry?',
             content:
               'Software development plays a vital role in the real estate industry by enabling automation, improving efficiency, and enhancing customer experiences. It allows real estate businesses to streamline processes, manage data effectively, and leverage technology to gain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
-            title:
-              'What are the benefits of working with your Software Development Service for Real Estate?',
+            title: 'What are the benefits of working with your company for the real estate industry?',
             content:
-              'By partnering with our Software Development Service for Real Estate, you can benefit from our expertise in developing innovative software solutions tailored to the specific needs of the real estate industry. We focus on creating intuitive user interfaces, automating tasks, improving operational efficiency, and providing valuable insights through data analytics. Our goal is to transform your real estate business and help you stay ahead in this competitive market.',
+              'By partnering with our company, real estate businesses can leverage our expertise in frontend software engineering and dashboard development to unlock the full potential of their operations. Our solutions enable seamless property management, automated workflows, real-time analytics, and personalized tenant experiences. This results in improved operational efficiency, better tenant engagement, optimized resource allocation, and increased profitability.',
           },
-          {
-            key: 'faqs-3',
-            title:
-              'How do you ensure the security of sensitive real estate data?',
-            content:
-              'We prioritize the security of sensitive real estate data throughout our software development process. We implement robust security measures, including encryption, access controls, and regular security audits. Additionally, we adhere to industry best practices and comply with relevant data protection regulations to ensure the confidentiality, integrity, and availability of your data.',
-          },
-        ],
-      },
-    },
-  },
+        {
+          key: 'faqs-3',
+          title: 'How do you ensure the security of sensitive real estate data?',
+          content:
+            'We prioritize the security of sensitive real estate data throughout our software development process. We implement robust security measures, including encryption, access controls, and regular security audits. Additionally, we adhere to industry best practices and comply with relevant data protection regulations to ensure the confidentiality, integrity, and availability of your data.',
+        },
+      ],
+    },},
+  }
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,

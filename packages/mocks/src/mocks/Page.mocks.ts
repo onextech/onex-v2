@@ -968,14 +968,14 @@ const MOCK_COMMON_PAGES = [
     title: 'Careers',
     slug: 'careers',
     subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description: 'Join our team of thinkers and tinkerers to build tomorrow\'s technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.'
   },
   {
     title: 'Contact',
     slug: 'contact',
     subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+      'Get in touch with us to learn how we can help unlock new possibilities for your business',
     seo_description: 'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.'
   },
   {
@@ -1081,12 +1081,12 @@ const MOCK_GROUP_PAGES = [
           {
             overline: 'What we do',
             title: 'Smarter Businesses',
-            href: routeConfig.SERVICES,
+            href: routeConfig.SHOWCASES,
           },
           {
             overline: 'Who we are',
             title: 'Business Software Experts',
-            href: routeConfig.CAREERS,
+            href: routeConfig.HOME,
           },
         ],
       },

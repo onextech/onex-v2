@@ -2,19 +2,19 @@ export const MOCK_JOBS = [
   {
     title: 'Business Consultant',
     subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     slug: 'business-consultant',
   },
   {
     title: 'Middle Software Engineer',
     subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     slug: 'middle-software-engineer',
   },
   {
     title: 'Project Manager',
     subtitle:
-      'Learn how we keep our employees happy and see our values, culture, and initiatives.',
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     slug: 'middle-software-engineer',
   },
 ].map((item, i) => ({

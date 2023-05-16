@@ -69,7 +69,7 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
                 renderIndustryBlockItem({
                   item: {
                     ...industry,
-                    href: `${routeConfig.SERVICES}/${industry.slug}`,
+                    href: `${routeConfig.INDUSTRYS}/${industry.slug}`,
                   } as RenderIndustryBlockItemProps['item'],
                 })
               ),

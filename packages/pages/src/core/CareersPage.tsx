@@ -3,6 +3,7 @@ import { Blocks } from '@gravis-os/landing'
 import {
   renderJobCardBlockItem,
   renderLeftFourColumnGridBlockItem,
+  renderLeftThreeColumnGridBlockItem,
 } from '@onex/blocks'
 import type { Job } from '@onex/types'
 
@@ -75,60 +76,48 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             },
           ],
         },
-        renderLeftFourColumnGridBlockItem({
+        renderLeftThreeColumnGridBlockItem({
           title: 'Great Perks For Everyone.',
           subtitle:
-            "The driven people who make up One X Tech's teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Ready to build software? Check out our job openings.",
-          items: [
-            {
-              fa_icon: 'fa-cake-candles',
-              title: 'Collaborative',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Launch a new company',
-              subtitle:
-                'Launch your MVP at start-up speed with an expert team of designers and developers.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Scale up development',
-              subtitle:
-                'Our team works directly with you to boost your development speed and scale.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Improve a current system',
-              subtitle:
-                "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Launch your MVP at start-up speed with an expert team of designers and developers.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'Our team works directly with you to boost your development speed and scale.',
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenience',
-              subtitle:
-                "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-            },
-          ],
+            "The driven people who make up One X Tech\'s teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+            items: [
+              {
+                fa_icon: 'fa-dollar-sign',
+                title: 'Competitive Compensation',
+                subtitle:
+                  'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+              },
+              {
+                fa_icon: 'fa-graduation-cap',
+                title: 'Professional Development',
+                subtitle:
+                  'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+              },
+              {
+                fa_icon: 'fa-briefcase',
+                title: 'Flexible Work Arrangements',
+                subtitle:
+                  'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+              },
+              {
+                fa_icon: 'fa-users',
+                title: 'Collaborative Culture',
+                subtitle:
+                  'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+              },
+              {
+                fa_icon: 'fa-cogs',
+                title: 'Cutting-Edge Technology',
+                subtitle:
+                  'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+              },
+              {
+                fa_icon: 'fa-holiday',
+                title: 'Paid Time Off',
+                subtitle:
+                  'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+              },
+            ],
         }),
         {
           key: 'careers',
