@@ -508,8 +508,8 @@ export const MOCK_TECH_POSTS = [
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: 'about_shape_circle_radial',
   // Author
-  author_avatar_src: '/images/about_shape_circle_radial.svg',
-  author_avatar_alt: 'about_shape_circle_radial',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'author_joel_koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
@@ -726,8 +726,8 @@ export const MOCK_GROUP_POSTS = [
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: 'about_shape_circle_radial',
   // Author
-  author_avatar_src: '/images/about_shape_circle_radial.svg',
-  author_avatar_alt: 'about_shape_circle_radial',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'author_joel_koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
