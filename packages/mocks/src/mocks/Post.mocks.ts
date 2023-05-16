@@ -82,7 +82,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-05-15T11:00:00+0000",
+    published_at: "2023-05-22T11:00:00+0000",
     is_active: true,
     category_id: 7,
     title: 'Are you building the right product for your customers? Tips on evaluating customers’ wants and needs',
@@ -115,7 +115,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-05-15T12:00:00+0000",
+    published_at: "2023-05-22T12:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'Beyond the Cloud: The Latest Innovations and Trends for Cloud Computing in 2023',
@@ -142,7 +142,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-05-15T13:00:00+0000",
+    published_at: "2023-05-29T13:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'Navigating the Cloud Landscape: Key Considerations for Enterprise Product Managers in 2023',
@@ -172,7 +172,7 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>'
   },
   {
-    published_at: "2023-05-15T14:00:00+0000",
+    published_at: "2023-05-29T14:00:00+0000",
     is_active: true,
     category_id: 3,
     title: 'The Future of Cloud Infrastructure Management: Automation, AI, and DevOps.',
@@ -200,7 +200,306 @@ export const MOCK_TECH_POSTS = [
     '</blockquote>\n' +
     '</blockquote>'
   },
-
+  {
+    published_at: "2023-06-05T14:00:00+0000",
+    is_active: true,
+    category_id: 8,
+    title: 'Digital Transformation in Government: Modernising Public Services for the 21st Century',
+    slug: 'digital-transformation-government-modernising-public-services-21st-century',
+    subtitle: "Embracing the digital revolution for efficient and citizen-centric governance",
+    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_alt: 'singapore',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong></em></p>\n' +
+    '<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we\'ll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we\'ll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n' +
+    '<h1>Benefits of Digital Transformation in Government</h1>\n' +
+    '<h2>Improved efficiency and cost savings</h2>\n' +
+    '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
+    '<h2>Increased citizen engagement</h2>\n' +
+    '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
+    '<h2>Enhanced transparency and accountability</h2>\n' +
+    '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
+    '<h1>Challenges of Digital Transformation in Government Sector</h1>\n' +
+    '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
+    '<h2>Resistance to change</h2>\n' +
+    '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
+    '<h2>Skill gaps</h2>\n' +
+    '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
+    '<h3>Security and privacy concerns</h3>\n' +
+    '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>'
+  },
+  {
+    published_at: "2023-06-05T14:00:00+0000",
+    is_active: true,
+    category_id: 8,
+    title: 'Innovation in Maritime: Emerging Trends and Technologies for Efficiency and Profitability',
+    slug: 'innovation-maritime-emerging-trends-technologies-efficiency-profitability',
+    subtitle: "Exploring the transformative power of innovation in the maritime industry for increased efficiency and profitability",
+    hero_src: 'https://source.unsplash.com/BLxxUrvAIn4/1600x900',
+    hero_alt: 'ships',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> The global demand for commodities and raw resources is driving a rapid transformation in the maritime industry. Robotics, AI, and machine learning are enabling automation, which is reducing the need for human staff, increasing productivity, minimizing human error, and boosting safety. To improve shipping routes and make more informed judgments, big data and analytics are being leveraged. Secure and transparent product and transaction tracking is made possible by blockchain technology. Ships are being powered by renewable energy sources including wind turbines, solar panels, and fuel cells, which lessens their carbon footprint. Spare parts and ship components are being produced on demand using 3D printing, which reduces the time and cost associated with maintaining and repairing vessels. These developments may increase output, lower expenses, and improve sustainability and safety.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>For hundreds of years, the maritime industry has been an important part of worldwide trade and commerce, and its significance grows with each passing day. With rising global demand for goods and raw materials, maritime transport is more important than ever, and the industry is experiencing significant changes to meet modern-day trade demands. One of the most essential aspects of this transformation is innovation, which is propelling the industry toward greater efficiency and revenue. We will look at some of the new trends and technologies that are influencing the maritime sector and making it more effective and successful in this article.</p>\n' +
+    '<h3>Automation</h3>\n' +
+    '<p>The shift toward automation is one of the most vital in the maritime business. This has been made feasible by technological developments such as artificial intelligence, machine learning, and robotics. Many of the duties typically done by people, such as navigation, cargo handling, and maintenance, are becoming automated thanks to these technologies. This not only reduces the need for human personnel and improves efficiency but also lowers the chance of human error and enhances safety. The use of remote-controlled cranes to transfer and unload goods from ships is one illustration of automation in the maritime business. Rolls-Royce, for example, has created an idea for an autonomous cargo ship fuelled by renewable energy sources such as wind and sun. The ship would be operated from a remote operations center on land, and sensors and cameras would be used to steer and avoid other boats. Another example is the use of autonomous underwater vehicles (AUVs) to examine ships and port infrastructure underwater. AUVs can be built with cameras and sensors to gather data and spot possible problems, such as hull damage or port infrastructure damage.</p>\n' +
+    '<h3>Big Data and Analytics</h3>\n' +
+    '<p>The use of big data and analytics to boost decision-making is another new trend. With the growing amount of data produced by ships, ports, and transportation companies, there is an avenue to gain insights into how the industry operates and find areas for development. Companies can make more educated choices about everything from fuel usage to pricing and capacity planning by analysing data on everything from shipping routes to weather trends. Maersk, one of the world\'s biggest shipping firms, optimises shipping routes and reduces fuel usage by using data from its vessels. Maersk can determine the optimum route for each vessel by analysing data on variables such as wind speed and ocean currents.</p>\n' +
+    '<h3>Blockchain Technology</h3>\n' +
+    '<p>Blockchain technology is also becoming more widely used in the maritime sector. Blockchain allows for the secure and open tracking of products and transactions, making it simpler to ensure regulatory adherence and reduce the risk of theft. This is particularly essential in sectors such as maritime transport, where there are numerous stakeholders engaged in the supply chain.</p>\n' +
+    '<h3>Renewable Energy</h3>\n' +
+    '<p>The use of renewable energy sources to propel ships is another developing technology. Concerns about climate change and the environmental effect of transportation are driving a surge in demand for greener, more sustainable energy sources. As a result, innovations such as wind turbines, solar panels, and fuel cells have been developed to power ships while reducing their carbon impact. Maersk has committed to using carbon-neutral fuel in its vessels by 2030. Biofuels, hydrogen, and ammonia are among the options currently being studied by the business. Another example is the use of kite sails to boost a ship\'s motor power. Wind power is used to propel the ship forward, decreasing the quantity of fuel required to keep up the speed.</p>\n' +
+    '<h3>3D Printing</h3>\n' +
+    '<p>Finally, 3D printing technology is being used to make spare parts and ship components. Because components can be printed on demand rather than having to be acquired and transported from elsewhere, this can greatly decrease the time and expense involved in maintaining and repairing vessels. This reduces the need for ships to transport huge inventories of spare parts, increasing efficiency and lowering expenses even further. W&auml;rtsil&auml;, a shipping company, has created a 3D printing solution for making ship spare parts. Customers can use the service to submit a design for a component, which is then manufactured on demand and delivered to the user.</p>\n' +
+    '<h3>Final Word</h3>\n' +
+    '<p>Ultimately, rising trends and technologies such as automation, big data, blockchain, autonomous shipping, green energy, and 3D printing are all playing a part in causing major changes in the maritime industry. These developments have the potential to dramatically boost industry productivity and revenue while also lowering costs and increasing safety and sustainability. It will be exciting to see how these trends and technologies develop and how they affect the way products are moved around the globe as the maritime sector keeps evolving.</p>\n' +
+    '</blockquote>'
+  },
+  {
+    published_at: "2023-06-12T14:00:00+0000",
+    is_active: true,
+    category_id: 8,
+    title: 'The New Era of Real Estate: How Technology Is Reshaping Buying, Selling, and Property Management',
+    slug: 'new-era-real-estate-technology-reshaping-buying-selling-property-management',
+    subtitle: "Exploring the transformative impact of technology on real estate transactions, property management, and the future of the industry.",
+    hero_src: 'https://source.unsplash.com/r3WAWU5Fi5Q/1600x900',
+    hero_alt: 'houses',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> The real estate market has been significantly impacted by technology, which now allows buyers, sellers, and property management to trade online via a variety of channels. Also, these systems offer useful data and analytics to aid with decision-making. Property management has now become easier with&nbsp;smart home devices that&nbsp;allow for&nbsp;remote monitoring of many aspects of a structure. The sector has also been altered by virtual and augmented reality, which has improved the experiences of both buyers and sellers and allowed for virtual property tours. Data analysis and the automation of real estate administration are being performed via artificial intelligence and machine learning. Further innovations and developments in the real estate industry might be anticipated as technology develops further.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>The effect that technology has on the real estate market is causing a massive shift. The ease of buying, selling, and managing properties has been facilitated by technological advancements, and this is projected to continue. We\'ll address the forthcoming real estate era and how technology is changing the sector in this article.</p>\n' +
+    '<h3>Online Real Estate Platforms</h3>\n' +
+    '<p>The emergence of online property platforms became one of the most&nbsp;phenomenal changes&nbsp;in the real estate sector. Linking&nbsp;buyers, sellers, and property managers has been simplified attributable to these platforms. They offer a central hub for real estate transactions and allow individuals to search&nbsp;for properties, get in touch with buyers and sellers, and complete the&nbsp;entirety of&nbsp;their business online.</p>\n' +
+    '<p>Additionally, these platforms offer insightful data and analytics to support buyers\' and sellers\' decision-making. For instance, they can provide details on a property\'s worth, market trends, and other pertinent information that can influence pricing choices.</p>\n' +
+    '<h3>Smart Home Technology</h3>\n' +
+    '<p>Likewise, smart home technologies are transforming the real estate industry. With their smartphones or other devices, homeowners may use these technologies to automate and control a number of features of their homes, including the lighting, temperature, security, and entertainment.</p>\n' +
+    '<p>Property management has become simpler thanks to smart house technologies, especially for landlords and property managers. They may operate and keep an eye on various components of the building remotely to make sure the renters are secure and at ease. By automatically identifying and alerting property managers to possible difficulties, this technology also makes it simpler to manage maintenance and repair problems.</p>\n' +
+    '<h3>Virtual Reality and Augmented Reality</h3>\n' +
+    '<p>Virtual reality and augmented reality are also making waves in the real estate industry. Buyers and sellers may examine and engage with homes in new ways owing to these technology. Buyers can virtually tour a property from anywhere in the world using virtual reality, which can be used to make 3D tours of homes. A property\'s qualities and possibilities can be further explained by the use of augmented reality, which can overlay digital information on a physical environment.</p>\n' +
+    '<p>As such, buyers and sellers can do virtual tours and transactions despite constraints on in-person interactions these technologies have been especially helpful during the pandemic.</p>\n' +
+    '<h3>Artificial Intelligence and Machine Learning</h3>\n' +
+    '<p>The application of artificial intelligence and machine learning are also being used to reshape the real estate industry. With the help of these technologies, it is possible to analyse enormous amounts of data and gain insightful knowledge about market trends, property valuations, and other important aspects that might affect real estate transactions.</p>\n' +
+    '<p>Furthermore, they can aid in automating a number of elements of real estate administration, including customer service, leasing, and property upkeep. Real estate management will become more accessible and inexpensive for everyone with the technology\'s potential to increase efficiency and lower costs.</p>\n' +
+    '<h2>Entering a new era</h2>\n' +
+    '<p>Real estate is entering a new era characterised by technology innovation and change. We may anticipate even more changes and advancements in the real estate sector as technology continues to develop.</p>'
+  },
+  {
+    published_at: "2023-06-12T14:00:00+0000",
+    is_active: true,
+    category_id: 8,
+    title: 'The Impact of Fintech on Traditional Banking: Preparing the Workforce for Digital Disruption',
+    slug: 'impact-fintech-traditional-banking-preparing-workforce-digital-disruption',
+    subtitle: "Riding the Fintech Wave: Empowering Traditional Banks for Digital Transformation",
+    hero_src: 'https://source.unsplash.com/EMPZ7yRZoGw/1600x900',
+    hero_alt: 'stocks',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> Traditional banking has been disrupted by the advent of fintech, which has forced banks to adapt to novel digital business models and satisfy rising client expectations for seamless and convenient services. Traditional banks are being pressured to embrace digital transformation and make investments in their workforce\'s digital training as a result of fintech\'s capability to innovate swiftly and react to new market opportunities. To obtain access to new markets and cutting-edge technologies, banks must foster a creative culture and work in partnership with fintech firms. Banks must hire fresh talent and invest in the training of current staff in order to succeed in the digital environment. Traditional banks can maintain its competitiveness and satisfy the changing needs and preferences of their customers by adjusting to the effect of fintech.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>The emergence of fintech has altered traditional banking in numerous ways. Fintech businesses leverage technology to deliver financial services in novel ways, frequently competing with established banking institutions. The banking industry has seen tremendous change as result of the digital disruption, including changes to the workforce. Traditional banking institutions need to give their staff the abilities to perform in the digital world in order to be ready for the effects of fintech.</p>\n' +
+    '<h2>The Impact of Fintech on Traditional Banking</h2>\n' +
+    '<p>By providing quicker, more practical, and more readily accessible financial services, fintech companies have revolutionised the way financial services are supplied. These businesses employ technology to offer a variety of services, including mobile banking, payment processing, lending, and wealth management. Fintech has&nbsp;greatly&nbsp;influences&nbsp;since it has compelled established&nbsp;banking institutions to compete with fresh digital competitors.</p>\n' +
+    '<p>One of the primary impacts of fintech on traditional banking is the shift in customer expectations. Fintech businesses have raised the standard when it comes to providing seamless, individualised, and convenient services that are available around-the-clock. Traditional banks are now expected to provide the same degree of customer service, which has compelled these organisations to make significant investments in digital channels and customer support.</p>\n' +
+    '<p>With the emergence of new business models, fintech companies are often more adaptable and can act fast to seize new market possibilities. They are not constrained by outdated systems and procedures, they can innovate more quickly than traditional banking organisations. Traditional banks must modify their business strategies in order to compete in the digital market.</p>\n' +
+    '<h2>Preparing the Workforce for Digital Disruption</h2>\n' +
+    '<p>The workforce is significantly impacted by how fintech affects traditional banking. To remain competitive, traditional banks must equip their staff with the skills and knowledge required to operate in the digital landscape. Here are some strategies that traditional banks can consider to prepare their workforce for digital disruption:</p>\n' +
+    '<h3>Invest in Digital Training</h3>\n' +
+    '<p>Traditional banks must make investments digital training to ensure that their employees has the abilities and knowledge required to navigate the digital landscape. Digital channels, digital marketing, data analytics, and cybersecurity should be covered in this training. Traditional banks can ensure that their employees are knowledgeable about the newest trends and technologies by investing in digital training.</p>\n' +
+    '<h3>Embrace Digital Transformation</h3>\n' +
+    '<p>To be competitive in the digital environment, traditional banks must embrace digital transformation to remain competitive in the digital landscape. . In order to increase efficiency, this entails making investments in digital channels, creating fresh goods and services, and optimising internal operations. Traditional banks may expand their potential for growth and innovation while also enhancing the client experience by embracing digital transformation.</p>\n' +
+    '<h3>Foster a Culture of Innovation</h3>\n' +
+    '<p>Conventional banks must promote an innovative culture to motivate staff to think critically and take chances. This can be done by fostering an atmosphere that values experimentation and promotes employee idea sharing. Traditional banks can develop fresh goods and services to cater to clients\' shifting wants by developing an innovative culture.</p>\n' +
+    '<h3>Collaborate with Fintech Companies</h3>\n' +
+    '<p>Traditional banks can collaborate with fintech companies to leverage their expertise and keep on top of the latest trends. With collaboration, traditional banks can gain access to new markets and consumer groups while also learning about cutting-edge technologies and business models. By embracing such emerging technologies and services, these partnerships can also aid traditional banks in enhancing the client experience.</p>\n' +
+    '<h3>Develop a Talent Pipeline</h3>\n' +
+    '<p>To successfully navigate the digital landscape, traditional banks must build a talent pipeline. This can be achieved by hiring new and fresh talent with digital know-how and expertise, while also investing in the training of current employees. Traditional banks must also ensure that they have a diversified workforce that reflects the evolving demands and tastes of customers.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>In conclusion, the impact of fintech on traditional banking has been significant, as traditional banks are obliged to adapt to new business models and shifting client expectations. By doing so, traditional banks can position themselves to compete with fintech companies and accommodate the changing needs of customers.</p>\n' +
+    '</blockquote>'
+  },
+  {
+    published_at: "2023-06-19T14:00:00+0000",
+    is_active: true,
+    category_id: 1,
+    title: 'Best Practices When Developing Scalable Applications',
+    slug: 'best-practices-when-developing-scalable-applications',
+    subtitle: "Prioritizing Performance and Flexibility: Building Scalable Applications for Competitive Advantage.",
+    hero_src: 'https://source.unsplash.com/YfCVCPMNd38/1600x900',
+    hero_alt: 'spiral staircase',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong></em> <em>Developing scalable applications is crucial for businesses to remain competitive and meet customer demands. Scalable applications have three key attributes: they can scale globally, respond to demand, and scale based on specific needs. Businesses must prioritise&nbsp;the end-user experience, have a modular codebase, and guarantee lag-free application performance in to build scalable apps. Developers must also be diligent about system maintenance, data backups, and utilise automated testing tools. Furthermore,&nbsp;in order to remain competitive and relevant, developers must follow up with industry news. By adhering to best practices and making a commitment to system maintenance, businesses can develop reliable solutions that satisfy customers\' expectations both now and in the future.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>Today, to scale up your businesses, you must be able to build scalable applications which generally have three key attributes.</p>\n' +
+    '<ul>\n' +
+    '<li>They can scale to different servers worldwide to offer more capacity, lower latency, and resilience.</li>\n' +
+    '<li>They can scale in response to demand as traffic goes up or down.</li>\n' +
+    '<li>They can scale granularly based on specific needs, for example, at certain times of the day or year, in certain locations, or in certain parts of the application that are in demand.</li>\n' +
+    '</ul>\n' +
+    '<p>Building reliable, scalable applications is incredibly crucial for companies looking to maintain their competitive edge in the digital age, as it ensures that their data remains secure, performant, and resilient when things get hectic or shifts occur. When creating their next-generation applications, businesses must adopt best practices in order to retain performance and efficiency while growing and satisfying client demands. Scalable applications require more than the code&mdash;they need strategy, forethought, and careful planning.</p>\n' +
+    '<h2>User-friendly Experience</h2>\n' +
+    '<p>When developing scalable applications, it is essential to consider the end-user experience. User interfaces should be designed with scalability in mind will ensure that they are responsive and user-friendly as application functionality and data expand. Not to mention, it is as important to fully understand the application requirements and the purpose of it so as to allow for a clearer vision of the final product.</p>\n' +
+    '<h2>Modular Codebase</h2>\n' +
+    '<p>Developers must make sure the codebase is modular so new components can be added or removed quickly and easily. Modular code also allows for better testing of individual components since each component can be tested independently instead of having to test the entire system if a change occurs. Appropriate choice of language is also key so as to allow for easy maintenance of the program as well as for an upgrade in technology when needed. Codes should also be designed for reusability so that changes can be made easily without having to start from scratch; integration of new features and updating of existing ones hence optimising performance as a whole.</p>\n' +
+    '<h2>Smooth Application Performance</h2>\n' +
+    '<p>Application performance is another pivotal factor when developing scalable applications. Poor performance can lead to long load times, slow response times, and other user frustrations which can ultimately erode customer confidence. When designing applications for scalability, developers must keep performance in mind from the start. This entails choosing suitable servers and databases, as well as setting them up correctly for optimal performance. Additionally, developers should ensure that their code is optimised for speed and memory utilisation to ensure a smooth user experience.</p>\n' +
+    '<h2>Diligent Developers</h2>\n' +
+    '<p>Furthermore, scalability also requires developers to be vigilant about system maintenance and data backups to ensure the application remains reliable over time. By implementing tactics like caching systems, load balancing approaches, and automated backup processes into their applications, developers need to plan for future growth so that they can handle increasing workloads without any issues. Besides, utilising Automated Testing Tools can also greatly reduce development time by cutting down on manual testing tasks and providing feedback on errors quickly and accurately, helping developers identify issues early on in the production cycle before they reach end users&rsquo; hands. Finally, scalability requires developers to keep an eye on current trends in technology and user experience as these may influence how applications need to evolve over time. Developers must stay stay up-to-date with industry news in order to maintain competitiveness and relevancy.</p>\n' +
+    '<p>Developers can create robust solutions that will meet customer needs now and in the future by taking these best practices into account when developing scalable applications. With careful planning, deliberate design, and a commitment to system maintenance, developers can ensure their applications are reliable and performant for years to come.</p>'
+  },
+  {
+    published_at: "2023-06-19T14:00:00+0000",
+    is_active: true,
+    category_id: 1,
+    title: 'Designing for the Future: How to Build Applications That Will Stand the Test of Time',
+    slug: 'designing-for-the-future-how-to-build-applications-that-will-stand-the-test-of-time',
+    subtitle: "Embracing Trends and Prioritizing User Experience for Long-Lasting Apps.",
+    hero_src: 'https://source.unsplash.com/BXOXnQ26B7o/1600x900',
+    hero_alt: 'hourglass',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> Developing an application that can stand the test of time requires long-term perspective and knowledge with current software development trends. In order to create long-lasting apps, developers should prioritise user experience (UX), use scalable architecture, accept evolving technologies, use Continuous Integration and Continuous Deployment (CI/CD), and anticipate prospective alterations. A application that is easy to use is more probable to stay useful and relevant over time. The program must be scalable. By&nbsp;leveraging open-source frameworks and libraries is an affordable solution to increase the stability of the application, the program must be scalable. In order to create emerging&nbsp;apps, developers can benefit from embracing emerging technologies like blockchain, machine learning, and artificial intelligence (AI). Application developers must keep up with the most recent trends and technology in software development and plan for changes in the future.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>Building an application that can stand the test of time&nbsp;is tricky in the present fast-paced technological world. It takes not just an awareness of the newest trends in software development but also a foresight to forecast future changes. As a result, developers should keep themselves up-to-date with the most recent advances in the field to ensure their implementations remain relevant in the years to come. Here are some tips&nbsp;on how to build long-lasting applications.</p>\n' +
+    '<h3>Focus on User Experience (UX)</h3>\n' +
+    '<p>The user experience (UX) is one of the most crucial elements of an application. A user-friendly program has a higher chance of sustaining popularity and relevance over time. Thus, designers should concentrate on creating intuitive, user-friendly, and aesthetically pleasing applications. The user interface of the application should be simple to use, with succinct and clear instructions, and a minimalistic design to reduce clutter.</p>\n' +
+    '<h3>Adopt Scalable Architecture</h3>\n' +
+    '<p>Scalability is an essential aspect of an application that will stand the test of time. An application\'s architecture must be able to handle the increased traffic and data as it expands. A scalable architecture allows for the addition of new users, features, and modifications without compromising the functionality of the application. The use of cloud-native technologies, containerization, and microservices are a few strategies for creating scalable architecture.</p>\n' +
+    '<h3>Use Open Source Frameworks and Libraries</h3>\n' +
+    '<p>Using open-source libraries and frameworks is&nbsp;a cost effective way that allows&nbsp;developers&nbsp;utilise&nbsp;pre-built&nbsp;solutions . Using open-source frameworks and libraries can expedite development and enhance&nbsp;the stability of the application.</p>\n' +
+    '<h3>Embrace Emerging Technologies</h3>\n' +
+    '<p>Emerging technologies that have the potential to transform the software business&nbsp;should be embraced by developers. Blockchain, machine learning, and artificial intelligence (AI) are some of the cutting-edge technologies that can assist programmers in creating long-lasting apps. AI, for instance, can improve user experience by customising the content of the program and upgrading its functionality.</p>\n' +
+    '<h3>Implement Continuous Integration and Continuous Deployment (CI/CD)</h3>\n' +
+    '<p>Software development methodologies known as Continuous Integration and Continuous Deployment (CI/CD) seek to increase the effectiveness of the development cycle. Developers can test and deploy code changes more rapidly and effectively with&nbsp;CI/CD, which minimises&nbsp;the time needed to fix bugs and add new features. To ensure&nbsp;that the application keeps up with the most recent trends and advancements in the software industry, developers should incorporate CI/CD into their development process.</p>\n' +
+    '<h3>Plan for Future Changes</h3>\n' +
+    '<p>When creating applications, developers must take future changes into account. The architecture and design of the application should be versatile enough to accommodate new additions and modifications without compromising its functionality. In order to foresee and be prepared for changes in the future, developers must also remain informed with the most relevant trends and technologies in software development.</p>\n' +
+    '<h3>Conclusion</h3>\n' +
+    '<p>Building applications that will withstand the test of time requires a long-term perspective and a willingness to adapt to future changes. Developers should focus on creating user-friendly applications that will remain relevant and popular for years to come with the aforementioned tips.</p>'
+  },
+  {
+    published_at: "2023-06-26T14:00:00+0000",
+    is_active: true,
+    category_id: 1,
+    title: 'Progressive Web Apps: Bridging the Gap Between Web and Mobile',
+    slug: 'progressive-web-apps-bridging-the-gap-between-web-and-mobile',
+    subtitle: "The Rise of Offline Capabilities and Mobile-like Experiences",
+    hero_src: 'https://source.unsplash.com/4V8uMZx8FYA/1600x900',
+    hero_alt: 'discussion',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> Progressive web apps (PWAs) are web applications that operate offline and provide users&nbsp;mobile-like experiences. They can be deployed on a user\'s device just like any other&nbsp;native apps. By employing contemporary web technologies, they provide features like push notifications, home screen shortcuts, and full-screen mode. PWAs provide a consistent user experience across a variety of platforms and devices, making them the best choice for businesses that want to communicate with users on both desktop and mobile devices. The conventional method of developing mobile apps is changing in light to the popularity of PWAs. Adhering to optimal development and design practices allows for a successful progressive web app.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>Progressive web apps (PWAs) are rapidly changing the mobile app development landscape. They provide a more seamless user experience by integrating the capability of the web with the convenience of native mobile apps. With the expansion of cloud computing, PWAs have gained traction as a method for companies to connect their web and mobile presence. In this article, we\'ll explore what progressive web apps are, their benefits, and how they are influencing the mobile app development industry.</p>\n' +
+    '<h3>What Are Progressive Web Apps?</h3>\n' +
+    '<p>Progressive web apps are web applications that offer users mobile-like experiences. They are created to function offline, in contrast to conventional web apps, and can be launched on a user\'s device similarly to a native app. PWAs offer features like push notifications, home screen shortcuts, and full-screen mode by utilising modern web technologies like service workers and web app manifests.</p>\n' +
+    '<h3>Benefits of Progressive Web Apps</h3>\n' +
+    '<p>Offering a uniform experience across many devices and platforms is one of their main advantages. They are therefore the appropriate option for companies that wish to connect with users on both desktop and mobile devices. In addition to being quicker and lighter, PWAs are also more space-efficient than native mobile apps, which might be large on a user\'s device. Additionally, PWAs are more discoverable than traditional web apps, as they can be shared via URLs and found through search engines.</p>\n' +
+    '<h3>How PWAs Are Changing the Mobile App Development Industry</h3>\n' +
+    '<p>In response to the rise of PWAs, the traditional approach to mobile app development is evolving. Instead of building separate native apps for iOS and Android, Developers no longer need to create separate native apps for iOS and Android; instead, they can create a single PWA that functions on all devices. This ensures a uniform user experience across all devices in addition to saving time and resources.</p>\n' +
+    '<p>PWAs can also be updated more quickly than native apps. Updates for conventional apps must be downloaded via the app store, which is a hassle. PWAs guarantee that users always have the&nbsp;latest version of the app because updates take place automatically in the background.</p>\n' +
+    '<p>Finally, PWAs are more accessible than native apps. Smaller businesses often are unable to afford native apps due to the considerable investment in development resources they frequently demand. Any company can give its customers a mobile app-like experience with PWAs without spending a fortune.</p>\n' +
+    '<h3>Best Practices for Building PWAs</h3>\n' +
+    '<p>To build a successful progressive web app, it is crucial to adhere to optimal development and design practices Performance is a key factor to take into account because PWAs must be quick and light to offer a seamless user experience. To reduce load times, this entails optimising images, cutting back on JavaScript and CSS, and using caching strategies.</p>\n' +
+    '<p>We should make sure PWAs function offline whereby&nbsp;the use of service workers to cache data and offer rudimentary functionality even while the user is not online.</p>\n' +
+    '<p>Finally, PWAs should be designed with mobile in mind. With the use of reponsive design principles, we can ensure that the app appears and functions well across a range of screen sizes and device kinds.</p>\n' +
+    '<h3>Conclusion</h3>\n' +
+    '<p>Businesses wishing to integrate their web and mobile presence can find a compelling answer in progressive web apps. With the growth of cloud computing, PWAs have gained popularity as a means of delivering a unified user experience across several platforms.</p>'
+  },
+  {
+    published_at: "2023-06-26T14:00:00+0000",
+    is_active: true,
+    category_id: 2,
+    title: 'Advanced React Development Techniques to Enhance Your Web Apps.',
+    slug: 'advanced-react-development-techniques-to-enhance-your-web-apps',
+    subtitle: "Unleash React's potential with advanced techniques for faster, user-friendly, and scalable web apps.",
+    hero_src: 'https://source.unsplash.com/tzFVsg6nWtM/1600x900',
+    hero_alt: 'city',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> React is a well-known front-end framework for building web applications. Developers must learn advanced development strategies to improve the speed, usability, and functionality of their web applications in order to fully realize React\'s potential. This article looks at a few cutting-edge React development initiatives that can help to strengthen online applications and improve user experience. React Hooks, Context API, React Router, Redux, React Native, Server-Side Rendering, Code Splitting, React Animations, React Performance Optimization, and Accessibility are some of the features available. Developers can use these techniques to create strong, scalable, and resilient applications that meet the needs of users and businesses. Integrating these techniques with cloud infrastructure and best practices can improve the applications even further.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>One of the most popular&nbsp;and extensively used front-end frameworks for creating web applications is React. It is the best option for creating cutting-edge, dynamic web applications that can be deployed to the cloud because to its flexibility, scalability, and component-based architecture. To maximise React\'s potential, developers must learn cutting-edge development strategies&nbsp;that will enhance the speed, usability, and functionality of their web applications.</p>\n' +
+    '<p>In this article, we\'ll explore a few cutting-edge React development initiatives that can reinforce your online applications and enhance the user experience you provide.</p>\n' +
+    '<h3>1. <strong>React Hooks:</strong></h3>\n' +
+    '<p>React Hooks is a powerful new feature that enables developers to access and utilise state and other React features in functional components. By removing the requirement for class components, hooks can streamline and increase the readability of code while also enhancing performance.</p>\n' +
+    '<h3>2. <strong>Context API:</strong></h3>\n' +
+    '<p>The Context API is an effective tool for controlling state and properties across several components. Without the requirement for prop drilling, it enables developers to establish a global state that can be accessed and modified from any component.</p>\n' +
+    '<h3>3. <strong>React Router:</strong></h3>\n' +
+    '<p>React Router is a popular library for routing and navigation in React applications. It may be used to build intricate navigational structures and nested routes and offers a straightforward, declarative API for managing routes.</p>\n' +
+    '<h3>4. <strong>Redux:</strong></h3>\n' +
+    '<p>Redux is a popular state management library for React applications. Data flow and application design can be greatly simplified, and it enables developers to consolidate and regulate the state of their program in a consistent and predictable way.</p>\n' +
+    '<h3>5. <strong>React Native:</strong></h3>\n' +
+    '<p>React Native is is a framework for building native mobile apps using React. It provides a means for developers to centralise and control the state of their program in a reliable and predictable manner. Data flows and application design are made simpler.</p>\n' +
+    '<h3>6. <strong>Server-Side Rendering:</strong></h3>\n' +
+    '<p>Server-Side Rendering is a technique that allows React components to be rendered on the server instead of through the browser&nbsp;enhancing&nbsp;functionality and SEO. As such, users with&nbsp;sluggish or unreliable connections are also provided with better user experience.</p>\n' +
+    '<h3>7. <strong>Code Splitting:</strong></h3>\n' +
+    '<p>Code splitting is a method for breaking down big codebases into smaller, more manageable portions. It can enhance performance by reducing the amount of code that the browser must load, and it can also make complex applications easier to manage and debug.</p>\n' +
+    '<h3>8. <strong>React Animations:</strong></h3>\n' +
+    '<p>React Animations is a potent tool for designing dynamic and captivating user interfaces. It can be used to generate a wide range of effects, from straightforward hover animations to intricate 3D animations, and it enables developers to construct complicated animations and transitions using simple, declarative syntax.</p>\n' +
+    '<h3>9. <strong>React Performance Optimisation:</strong></h3>\n' +
+    '<p>React Performance Optimisation is a set of techniques used to make React applications run faster. This may include optimising rendering, reducing the application bundle, and minimising the quantity of network queries needed to load the application.</p>\n' +
+    '<h3>10. <strong>Accessibility</strong></h3>\n' +
+    '<p>Accessibility is an important determinant for any modern web application. It ensures that users with physical or mental limitations can access and use your application successfully. React provides a variety of tools and techniques for improving reach to a larger group of audience, including ARIA attributes, keyboard navigation, and semantic HTML.</p>\n' +
+    '<p>In conclusion, by enhancing performance, usability, and functionality, advanced React development techniques can elevate your web applications to a new level. Learning these techniques can help you provide a more interesting and satisfying user experience whether you\'re using React for web or mobile development. You can build strong, scalable, and resilient applications that satisfy the requirements of your users and your business by integrating these techniques with cloud infrastructure and best practices.</p>'
+  },
+  {
+    published_at: "2023-07-03T14:00:00+0000",
+    is_active: true,
+    category_id: 2,
+    title: 'Revolutionize Your Application Development: Embrace Serverless Architecture with AWS Lambd',
+    subtitle: "Unlock the Power of Scalability and Cost-Efficiency: Accelerate Application Development with AWS Lambda's Serverless Architecture",
+    slug: 'revolutionize-your-application-development-embrace-serverless-architecture-with-aws-lambda',
+    hero_src: 'https://source.unsplash.com/p0j-mE6mGo4/1600x900',
+    hero_alt: 'tech set-up',
+    html: '<blockquote>\n' +
+    '<p><em><strong>Summary:</strong> AWS Lambda is Amazon\'s serverless compute technology that provides developers with an adaptable, scalable, and cost-effective method of designing and delivering applications. AWS Lambda dynamically scales an application based on demand and executes the code in response to events, lowering operational costs, increasing scalability, boosting developer productivity, and faster time-to-market. Developers can easily design and deploy applications using AWS Lambda without having to worry about managing infrastructure. They can configure a Lambda function that runs in response to an event, and to run in response to different various messages in an Amazon SQS queue. AWS Lambda supports a wide range of programming languages, and developers can employ third-party libraries and frameworks in conjunction with their Lambda function to speed up development.</em></p>\n' +
+    '</blockquote>\n' +
+    '<p>Given its capacity to provide developers with an adaptable, scalable, and cost-effective method of designing and delivering applications, serverless architecture has grown increasingly well-liked among developers. Developers frequently use AWS Lambda, Amazon\'s serverless compute technology, while creating serverless apps. You may use Amazon Lambda to dynamically scale your application based on demand and run your code in response to events. In this post, we\'ll examine the benefits of employing AWS Lambda to create serverless applications and how it can change the way you create software.</p>\n' +
+    '<h2>What is AWS Lambda?</h2>\n' +
+    '<p>With Amazon Lambda, your code is automatically managed and executed in response to events. Programming languages supported by Lambda include Node.js, Python, Java, C#, and Go. A file will be uploaded to Amazon S3 after running your code in response to an event. AWS Lambda then shuts off the computational resources. Without having to maintain servers or infrastructure, you can easily design and deploy applications with this serverless technique.</p>\n' +
+    '<h2>Benefits of Using AWS Lambda</h2>\n' +
+    '<h3>Reduced operational costs</h3>\n' +
+    '<p>There are no startup costs or minimum charges when using Amazon Lambda; you just pay for the compute time used to execute your code. You can save money by only paying for the resources that you actually utilise rather than purchasing extra server resources.</p>\n' +
+    '<h3>Scalability</h3>\n' +
+    '<p>In response to demand, your application is dynamically scaled using Amazon Lambda. This shows that your application can sustain significant traffic spikes without requiring additional infrastructure management.</p>\n' +
+    '<h3>Increased developer productivity</h3>\n' +
+    '<p>Developers can devote themselves to creating code rather than maintaining infrastructure with AWS Lambda, which boosts developer productivity. Programmers may well be able to work more efficiently and concentrate on introducing fresh capabilities to their apps as a result.</p>\n' +
+    '<h3>Faster time-to-market</h3>\n' +
+    '<p>Using AWS Lambda, you can quickly build and run applications without having to worry about managing infrastructure. This speeds up the rollout of new features, giving you the upper hand over rivals.</p>\n' +
+    '<h2>How to Use AWS Lambda</h2>\n' +
+    '<p>Firstly, in order to use AWS Lamda, create a Lambda function. A Lambda function is a program that you want to run in response to an event. You can create Lambda functions using the AWS CLI, AWS SDKs, or the Amazon Management Console. Lambda function can be configured to run in response to a variety of different events, such as changes to an Amazon S3 bucket or new messages in an Amazon SQS queue, after it has been established.</p>\n' +
+    '<p>AWS Lambda supports a broad variety of programming languages, so you can write your function in whichever language you like. Also, you can use third-party libraries and frameworks in conjunction with your Lambda function to gain the advantages of already written code and hasten development.</p>\n' +
+    '<p>You can test your Lambda function using the Amazon Management Console, AWS CLI, or AWS SDKs once it has been created and configured. The functionality of your Lambda function can also be tracked using Amazon CloudWatch, which offers real-time metrics and logs.</p>\n' +
+    '<h2>Conclusion</h2>\n' +
+    '<p>AWS Lambda is a potent tool for creating serverless apps that can transform the way you create applications. AWS Lambda is swiftly gaining popularity among developers because to its capacity to offer a flexible, scalable, and economical approach to design and deploy applications. With AWS Lambda, you can embrace serverless architecture and cut operational expenses while boosting developer productivity and accelerating the release of new features. Hence, if you haven\'t already, consider utilising AWS Lambda for your subsequent projects!</p>'
+  },
+  {
+    published_at: "2023-07-03T14:00:00+0000",
+    is_active: true,
+    category_id: 2,
+    title: 'Advanced JavaScript Techniques for Writing Cleaner and More Maintainable Code',
+    subtitle: "Building scalable and maintainable JavaScript: Harnessing modularity, functional programming, and testing for cleaner and efficient code.",
+    slug: 'advanced-javascript-techniques-for-writing-cleaner-and-more-maintainable-code',
+    hero_src: 'https://source.unsplash.com/vpOeXr5wmR4/1600x900', 
+    hero_alt: 'computer screen',
+    html: '<p><em><strong>Summary:</strong> JavaScript is a widely used programming language for modern web applications, and it\'s critical to make sure your code is scalable and maintainable as the application grows. Modular programming, functional programming, asynchronous programming, error handling, object-oriented programming, testing, and optimisation are advanced JavaScript approaches that can help create cleaner, simpler, and more efficient code. Modular programming entails breaking down software design into independent and interchangeable modules, whereas functional programming emphasises pure functions and immutable data structures. Asynchronous programming is useful for tasks that require I/O, and error handling is essential when developing robust systems. Classes and objects are used to represent entities in object-oriented programming, and testing and optimisation are critical for ensuring code quality and performance. Developers can write simple code by employing such methods for ease of understanding, testing, and modifying over time.</em></p>\n' +
+    '<p>For creating modern web applications, JavaScript is one of the most frequently used programming languages. Even when your application grows in size and complexity, I t is vital to make sure that your code is still maintainable and scalable. We\'ll look at some advanced JavaScript approaches in this article in order for you to create cleaner, simpler code that\'s also easier to maintain.</p>\n' +
+    '<h3>Modular Programming</h3>\n' +
+    '<p>Software design technique can be&nbsp;divided into independent and interchangeable&nbsp;modules using the approach of modular programming. As such,&nbsp;you can create complicated systems by dissembling them into simpler, easier-to-manage parts. In JavaScript, modules can be used to group together related functionality and lessen the coupling between various sections of your code.</p>\n' +
+    '<h3>Functional Programming</h3>\n' +
+    '<p>Pure functions and immutable data are prioritized while using the functional programming paradigm. Pure functions have no side effects and consistently return the same result for a given input. You can write code that is simpler to understand, test, and maintain by using pure functions. Moreover, immutable data structures, which help to prevent unforeseen modifications to your data, are encouraged by functional programming.</p>\n' +
+    '<h3>Asynchronous Programming</h3>\n' +
+    '<p>With the help of the asynchronous programming model, you can run code without impeding the main thread of operation. This technique is extremely useful for tasks that require I/O, such as&nbsp;sending HTTP requests or working with a database. To develop asynchronous code in JavaScript, you can use callbacks, promises, or the async/await syntax.</p>\n' +
+    '<h3>Error Handling</h3>\n' +
+    '<p>Building robust systems requires careful error handling. Consider utilising&nbsp;try/catch blocks&nbsp;in JavaScript for handling runtime issues or tools like linters and static analysis tools to pick out&nbsp;mistakes before your code is even run.</p>\n' +
+    '<h3>Object-Oriented Programming</h3>\n' +
+    '<p>A programming paradigm known as object-oriented programming employs objects to represent entities in the actual world. Classes and objects can be used in JavaScript to group together relevant data and behavior. Inheritance can also be used to reuse code and encourage code reuse.</p>\n' +
+    '<h3>Testing</h3>\n' +
+    '<p>The process of creating high-quality software must include testing. You can create and execute tests for your JavaScript code using frameworks like Jest or Mocha. Writing tests ensure that&nbsp;that your code is operating according to plan&nbsp;and avoid regressions.</p>\n' +
+    '<h3>Optimization</h3>\n' +
+    '<p>Optimization is the process of making your code run faster and more efficiently. Performance can be increased in JavaScript by employing strategies like lazy loading, memoization, and caching. In addition, you can find performance bottlenecks in your code by using techniques like profiling and tracing.</p>\n' +
+    '<h3>Final Word</h3>\n' +
+    '<p>In conclusion, by utilising these advanced JavaScript approaches, you can write cleaner, more maintainable, and more efficient code. Whether you\'re building a small application or a large-scale system, these techniques will assist you in writing code that are simple to comprehend, test, and modify over time. Always keep in mind that producing a great code involves more than simply finding solutions to issues, it also involves making sure that your code is simple for ease of comprehension and maintenance.</p>'
+  }
 ].map((item, i) => ({
   id: i + 1,
   // Category
