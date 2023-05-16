@@ -77,7 +77,7 @@ export const MOCK_TECH_SITE = {
 
   // App
   title: 'One X Tech',
-  absolute_url: 'https://onextech.com.sg',
+  absolute_url: 'https://www.onextech.com',
 
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Tech.',
