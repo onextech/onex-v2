@@ -183,6 +183,101 @@ export const MOCK_SERVICE_PAGE = {
   },
 }
 
+export const PRODUCT_AND_SERVICE_DESIGN_SERVICE_PAGE = {
+  // Hero
+  title: 'Product and Service Design',
+  slug: 'product-and-service-design',
+  subtitle:
+    'Create exceptional digital experiences for your enterprise clients with our expertise in frontend software engineering and dashboard development.',
+  hero_src: 'https://source.unsplash.com/1600x900/?product-design',
+  hero_alt: 'Product Design',
+  // Seo
+  seo: {
+    title: 'Product and Service Design',
+    description:
+      'This page is all about providing top-notch product and service design solutions for your enterprise clients.',
+  },
+  // Sections
+  sections: {
+    summary: {
+      title: 'Crafting digital experiences that delight your customers.',
+      items: [
+        {
+          title:
+            'In the highly competitive world of enterprise software, creating digital experiences that truly stand out is crucial. Our Product and Service Design team specializes in frontend software engineering and dashboard development to ensure your clients get the best possible user experience.',
+        },
+        {
+          title:
+            'Our focus is on building intuitive and efficient digital solutions that cater to the unique needs of your enterprise clients. We work closely with you to understand your clients\' business objectives and deliver tailored solutions that drive growth and enhance customer satisfaction.',
+        },
+      ],
+    },
+    features: {
+      overline: 'What we do',
+      title: 'Our {title} Capabilities',
+      subtitle:
+        'Our team of experts is well-versed in the latest frontend technologies and design principles, ensuring that your digital products are both visually stunning and highly functional.',
+      items: [
+        {
+          fa_icon: 'fa-pencil-ruler',
+          title: 'Bespoke dashboard design',
+          subtitle:
+            'Our team creates custom dashboard designs that deliver vital information to your clients in a visually appealing and easily digestible format.',
+        },
+        {
+          fa_icon: 'fa-desktop',
+          title: 'Responsive frontend development',
+          subtitle:
+            "We develop user interfaces that work seamlessly across all devices, ensuring that your clients' users can access the digital products from anywhere.",
+        },
+        {
+          fa_icon: 'fa-chart-line',
+          title: 'Data visualization',
+          subtitle:
+            'We employ cutting-edge data visualization techniques to present complex data in an easily understandable manner, allowing your clients to make informed decisions.',
+        },
+        {
+          fa_icon: 'fa-cogs',
+          title: 'Efficient performance',
+          subtitle:
+            'We optimize the performance of your digital products, ensuring that they run smoothly and efficiently, even with large amounts of data.',
+        },
+        {
+          fa_icon: 'fa-code-branch',
+          title: 'Collaboration',
+          subtitle:
+            'We work closely with your team to ensure that our digital solutions align with your clients\' business objectives and deliver the desired outcomes.',
+        },
+      ],
+    },
+    faqs: {
+      title: 'FAQs',
+      subtitle:
+        'Learn more about our Product and Service Design service and how we can help your enterprise clients.',
+      items: [
+        {
+          key: 'faqs-1',
+          title: 'What makes your Product and Service Design solutions stand out from the competition?',
+          content:
+            'Our Product and Service Design solutions stand out from the competition because of our specialization in frontend software engineering and dashboard development. We focus on creating digital experiences that are visually stunning, highly functional, and tailored to the unique needs of your enterprise clients. Our team of experts stays up-to-date with the latest frontend technologies and design principles, ensuring that your digital products are built to the highest standards.',
+        },
+        {
+          key: 'faqs-2',
+          title: 'What kind of clients do you work with?',
+          content:
+            'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organizations across various industries.',
+        },
+        {
+          key: 'faqs-3',
+          title: 'How do you ensure the quality of your digital products?',
+          content:
+            'To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients\' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.',
+        },
+      ],
+    },
+  },
+}
+
 export const MOCK_TECH_SERVICES = [
   {
     title: 'User Interface Development',
@@ -1110,8 +1205,6 @@ export const MOCK_TECH_SERVICES = [
   return merge({}, MOCK_SERVICE_PAGE, {
     id: i + 1,
     overline: 'Service',
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
     // Category
     category: getCategoryFromCrudItem(item, MOCK_TECH_SERVICE_CATEGORYS),
     ...item,
@@ -1120,137 +1213,1368 @@ export const MOCK_TECH_SERVICES = [
 
 export const MOCK_GROUP_SERVICES = [
   {
-    title: 'Chirashi Don Making',
-    slug: 'chirashi-don-making',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    // Hero
+    title: 'Product and Service Design',
+    slug: 'product-and-service-design',
     category_id: 1,
-    exclusive_locales: ['jp'],
+    subtitle:
+      'Create exceptional digital experiences for your enterprise clients with our expertise in frontend software engineering and dashboard development.',
+    hero_src: 'https://source.unsplash.com/1600x900/?product-design',
+    hero_alt: 'Product Design',
+    // Seo
+    seo: {
+      title: 'Product and Service Design',
+      description:
+        'This page is all about providing top-notch product and service design solutions for your enterprise clients.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Crafting digital experiences that delight your customers.',
+        items: [
+          {
+            title:
+              'In the highly competitive world of enterprise software, creating digital experiences that truly stand out is crucial. Our Product and Service Design team specializes in frontend software engineering and dashboard development to ensure your clients get the best possible user experience.',
+          },
+          {
+            title:
+              'Our focus is on building intuitive and efficient digital solutions that cater to the unique needs of your enterprise clients. We work closely with you to understand your clients\' business objectives and deliver tailored solutions that drive growth and enhance customer satisfaction.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our team of experts is well-versed in the latest frontend technologies and design principles, ensuring that your digital products are both visually stunning and highly functional.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Bespoke dashboard design',
+            subtitle:
+              'Our team creates custom dashboard designs that deliver vital information to your clients in a visually appealing and easily digestible format.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Responsive frontend development',
+            subtitle:
+              "We develop user interfaces that work seamlessly across all devices, ensuring that your clients' users can access the digital products from anywhere.",
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data visualization',
+            subtitle:
+              'We employ cutting-edge data visualization techniques to present complex data in an easily understandable manner, allowing your clients to make informed decisions.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Efficient performance',
+            subtitle:
+              'We optimize the performance of your digital products, ensuring that they run smoothly and efficiently, even with large amounts of data.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to ensure that our digital solutions align with your clients\' business objectives and deliver the desired outcomes.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Product and Service Design service and how we can help your enterprise clients.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What makes your Product and Service Design solutions stand out from the competition?',
+            content:
+              'Our Product and Service Design solutions stand out from the competition because of our specialization in frontend software engineering and dashboard development. We focus on creating digital experiences that are visually stunning, highly functional, and tailored to the unique needs of your enterprise clients. Our team of experts stays up-to-date with the latest frontend technologies and design principles, ensuring that your digital products are built to the highest standards.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of clients do you work with?',
+            content:
+              'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organizations across various industries.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the quality of your digital products?',
+            content:
+              'To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients\' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.',
+          },
+        ],
+      },
+    },
   },
   {
-    title: 'Growth Strategy',
-    slug: 'growth-strategy',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    // Hero
+    title: 'Cyber Security',
+    slug: 'cyber-security',
     category_id: 1,
+    subtitle:
+      'Secure your digital assets with cutting-edge cyber security solutions tailored for your business.',
+    hero_src: 'https://source.unsplash.com/1600x900/?cyber-security',
+    hero_alt: 'Cyber Security',
+    // Seo
+    seo: {
+      title: 'Cyber Security Services',
+      description:
+        'This page is all about providing cyber security solutions to protect your business from cyber threats.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Protecting your business from cyber threats.',
+        items: [
+          {
+            title:
+              'In today\'s interconnected world, cyber threats pose a significant risk to businesses of all sizes. Our Cyber Security service provides comprehensive protection for your digital assets, ensuring that your business remains secure and resilient against potential cyber attacks.',
+          },
+          {
+            title:
+              'Our team of experienced cyber security experts works closely with your organization to develop a custom security strategy that meets your unique needs. From vulnerability assessments to incident response planning, we offer a full suite of services to help you safeguard your business against cyber threats.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of cyber security services to help protect your business from cyber threats.',
+        items: [
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Vulnerability assessments',
+            subtitle:
+              'We identify potential vulnerabilities in your digital infrastructure and provide recommendations for mitigating risks.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Security strategy',
+            subtitle:
+              'We develop a custom security strategy tailored to your business, ensuring that your digital assets are protected against potential threats.',
+          },
+          {
+            fa_icon: 'fa-user-secret',
+            title: 'Incident response planning',
+            subtitle:
+              'We help you create a comprehensive incident response plan, allowing your business to respond effectively to cyber attacks and minimize potential damage.',
+          },
+          {
+            fa_icon: 'fa-network-wired',
+            title: 'Network security',
+            subtitle:
+              'We implement robust network security measures to protect your organization from unauthorized access and data breaches.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud security',
+            subtitle:
+              'We ensure that your cloud-based assets are secure and compliant with industry standards and regulations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Security awareness training',
+            subtitle:
+              'We provide security awareness training for your employees, ensuring that they understand their role in maintaining a secure digital environment.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Cyber Security services and how we can help protect your business from cyber threats.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is cyber security important for my business?',
+            content:
+              'Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organization\'s reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Cyber Security Service?',
+            content:
+              'Working with our Cyber Security Service offers several benefits, including access to experienced cyber security experts, a custom security strategy tailored to your business, and comprehensive protection for your digital assets. We offer a wide range of services, from vulnerability assessments to incident response planning, ensuring that your organization is well-prepared to defend against potential cyber threats.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach cyber security?',
+            content:
+              'We take a proactive approach to cyber security, working closely with your organization to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team\'s extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.',
+          },
+        ],
+      },
+    },
   },
   {
-    title: 'Innovation Strategy',
-    slug: 'innovation-strategy',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    // Hero
+    title: 'Technical Feasibility Study',
+    slug: 'technical-feasibility-study',
     category_id: 1,
+    subtitle:
+      'Our experts conduct in-depth technical assessments to evaluate the viability of your software projects and help you make informed decisions.',
+    hero_src: 'https://source.unsplash.com/1600x900/?feasibility-study',
+    hero_alt: 'Feasibility Study',
+    // Seo
+    seo: {
+      title: 'Technical Feasibility Study',
+      description:
+        'This page is about our Technical Feasibility Study services for evaluating the viability of your software projects.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Making informed decisions with confidence.',
+        items: [
+          {
+            title:
+              'A Technical Feasibility Study is a crucial step in the software development process, allowing you to evaluate the practicality and potential success of your projects. Our team of experts specializes in conducting comprehensive technical assessments that provide valuable insights into the feasibility, risks, and opportunities associated with your software projects.',
+          },
+          {
+            title:
+              'We understand the importance of making well-informed decisions in today\'s competitive landscape. Our in-depth evaluations empower you with the knowledge needed to navigate complex software projects and invest your resources wisely.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Technical Feasibility Study services cover a wide range of aspects, including technology assessments, risk analysis, cost estimations, and more.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Technology assessments',
+            subtitle:
+              'We evaluate the most suitable technologies and frameworks for your project, ensuring that it aligns with your technical requirements and objectives.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Risk analysis',
+            subtitle:
+              'We identify and assess potential risks associated with your project, including technical, financial, and operational risks, to help you mitigate them effectively.',
+          },
+          {
+            fa_icon: 'fa-dollar-sign',
+            title: 'Cost estimations',
+            subtitle:
+              'We provide detailed cost estimations for your software projects, taking into account factors such as development time, resources, and technology choices.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Timeline projections',
+            subtitle:
+              'We establish realistic project timelines by evaluating development phases, resource allocation, and potential roadblocks.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Resource planning',
+            subtitle:
+              'We help you determine the optimal team structure and skillset required to successfully execute your software projects.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Strategic recommendations',
+            subtitle:
+              'Based on our comprehensive assessments, we provide strategic recommendations to help you make informed decisions about your software projects.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Technical Feasibility Study services and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a technical feasibility study important for my business?',
+            content:
+              'A technical feasibility study helps you identify potential challenges and risks associated with your software project before you invest significant resources. This enables you to make informed decisions, optimize your project plan, and ultimately improve the likelihood of success. It also helps you identify any gaps in your team capabilities or technology stack, allowing you to address these issues proactively.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Technical Feasibility Study Service?',
+            content:
+              'Our team of experts has extensive experience in frontend software engineering and dashboard development, giving us the knowledge and insights needed to evaluate the technical feasibility of your project effectively. We provide in-depth analysis, risk assessment, technology evaluation, team capabilities assessment, and comprehensive documentation and reporting, ensuring that you have all the information you need to make informed decisions about your project. We also work closely with your team throughout the process, ensuring a seamless and effective collaboration.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you conduct a technical feasibility study?',
+            content:
+              'We start by gaining a deep understanding of your project requirements and objectives. We then analyze the potential challenges and risks associated with your project, evaluating the technical feasibility of your proposed solution. This involves assessing the technology stack and tools required, as well as your team capabilities and skills. Throughout the process, we provide insights and recommendations to help you optimize your project plan and mitigate potential risks. Finally, we deliver comprehensive documentation and reports on our findings, giving you the information you need to make informed decisions about your project.',
+          },
+        ],
+      },
+    },
   },
   {
-    title: 'Commerce in a Digital World',
-    slug: 'commerce-in-a-digital-world',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
+    // Hero
+    title: 'Sustainability Consulting',
+    slug: 'sustainability-consulting',
     category_id: 1,
+    subtitle:
+      'Helping you create environmentally responsible software solutions for your business.',
+    hero_src: 'https://source.unsplash.com/1600x900/?sustainability,consulting',
+    hero_alt: 'Sustainability Consulting',
+    // Seo
+    seo: {
+      title: 'Sustainability Consulting',
+      description:
+        'This page is all about helping businesses create environmentally responsible software solutions.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Creating sustainable software solutions for a better future.',
+        items: [
+          {
+            title:
+              'In today\'s world, businesses are becoming increasingly aware of their environmental impact and the importance of sustainability. At our Sustainability Consulting Service, we help you create environmentally responsible software solutions that not only contribute to a greener planet but also benefit your bottom line.',
+          },
+          {
+            title:
+              'Our team of experts is highly skilled in frontend software engineering and dashboard development, with a deep understanding of the latest sustainable technologies and practices. We work closely with your team to develop software solutions that are both eco-friendly and highly effective, helping you achieve your sustainability goals while also driving your business forward.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our sustainability consulting services help you make informed decisions about the technologies and strategies needed to create eco-friendly software solutions.',
+        items: [
+          {
+            fa_icon: 'fa-leaf',
+            title: 'Sustainable technologies',
+            subtitle:
+              'We help you identify and implement the latest sustainable technologies and practices, ensuring that your software solutions are as eco-friendly as possible.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard development',
+            subtitle:
+              'We specialize in creating intuitive, data-driven dashboards that help you monitor and track your sustainability performance, making it easy for you to stay on target and make informed decisions.',
+          },
+          {
+            fa_icon: 'fa-hands-helping',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to ensure that our sustainability consulting services align with your business objectives and help you achieve your sustainability goals.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Innovation',
+            subtitle:
+              'We stay up-to-date with the latest advancements in sustainable software development, ensuring that your solutions are cutting-edge and future-proof.',
+          },
+          {
+            fa_icon: 'fa-balance-scale',
+            title: 'Balancing sustainability and performance',
+            subtitle:
+              'We understand the importance of balancing sustainability with the need for high-performing software solutions. Our team will help you find the right balance to meet both your environmental and business objectives.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Sustainability Consulting services and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is sustainability important in software development?',
+            content:
+              'Sustainability in software development is crucial as it helps reduce the environmental impact of digital products and services. By adopting eco-friendly practices, businesses can decrease energy consumption, minimize waste, and reduce carbon emissions, ultimately contributing to a greener planet. Additionally, sustainable software development can lead to cost savings, improved brand reputation, and increased customer loyalty.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Sustainability Consulting Service?',
+            content:
+              'By working with our Sustainability Consulting Service, you can expect to receive expert guidance in creating environmentally responsible software solutions. Our team specializes in frontend software engineering and dashboard development, with a strong focus on sustainable technologies and practices. We help you identify the right technologies, develop data-driven dashboards, and provide ongoing support to ensure your solutions are both eco-friendly and effective. This collaboration will enable your business to achieve its sustainability goals while also driving growth and innovation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure that the software solutions you develop are sustainable?',
+            content:
+              'We take a comprehensive approach to sustainability in software development. Our team stays up-to-date with the latest advancements in sustainable technology and follows best practices to ensure eco-friendliness. We collaborate with your team to identify the most appropriate technologies and strategies for your specific needs, develop data-driven dashboards to track sustainability performance, and balance environmental considerations with performance requirements. This approach ensures that the solutions we develop meet your sustainability goals without sacrificing effectiveness or user experience.',
+          },
+        ],
+      },
+    },
   },
   {
-    title: 'Startup Growth',
-    slug: 'startup-growth',
+    // Hero
+    title: 'PoC Development',
+    slug: 'poc-development',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 2,
+      'Accelerate innovation and minimize risk with our Proof of Concept Development Service for enterprise clients.',
+    hero_src: 'https://source.unsplash.com/1600x900/?proof-of-concept',
+    hero_alt: 'Proof of Concept Development',
+    // Seo
+    seo: {
+      title: 'PoC Development',
+      description:
+        'This page is all about our PoC Development Service, which specializes in frontend software engineering and dashboard development for enterprise clients.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Validate ideas and drive innovation with Proof of Concept Development.',
+        items: [
+          {
+            title:
+              'In an ever-changing digital landscape, validating ideas quickly and effectively is essential for any organization. Our Proof of Concept (PoC) Development Service helps enterprise clients bring their ideas to life, providing a comprehensive approach to frontend software engineering and dashboard development.',
+          },
+          {
+            title:
+              'We work closely with your team to understand your business goals and create tailored solutions that address your unique challenges. By developing PoCs, we help you minimize risk and accelerate innovation, allowing you to make data-driven decisions and adapt to evolving market demands.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leverage our expertise in frontend software engineering and dashboard development to create innovative PoCs and validate your ideas.',
+        items: [
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Idea validation',
+            subtitle:
+              'We collaborate with your team to assess and validate your ideas, ensuring that they align with your business goals and target audience needs.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend software engineering',
+            subtitle:
+              'Our team specializes in frontend software engineering, developing visually appealing and user-friendly solutions for a seamless user experience.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Dashboard development',
+            subtitle:
+              'We create intuitive and data-driven dashboards that enable you to track performance metrics and make informed decisions about your projects.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Iterative approach',
+            subtitle:
+              'We follow an iterative approach to PoC development, incorporating feedback and making improvements at every stage to ensure the best possible outcomes.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team throughout the PoC development process, fostering collaboration and communication for a successful partnership.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our PoC Development Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the purpose of developing a Proof of Concept (PoC)?',
+            content:
+              'Developing a Proof of Concept (PoC) allows organizations to validate their ideas and ensure they are feasible, cost-effective, and viable in the marketplace. A well-executed PoC can help minimize risks, accelerate innovation, and provide valuable insights that inform decision-making and future development.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your PoC Development Service?',
+            content:
+              'Our PoC Development Service specializes in frontend software engineering and dashboard development for enterprise clients. By working with us, you gain access to a team of experts dedicated to validating your ideas and creating tailored solutions that align with your business goals. Our collaborative approach ensures open communication and fosters a successful partnership, while our iterative development process allows for continuous improvement and adaptation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How long does it typically take to develop a Proof of Concept?',
+            content:
+              'The time required to develop a Proof of Concept can vary depending on the complexity of the project, the availability of resources, and the specific needs of your organization. In general, a PoC can take anywhere from a few weeks to several months to complete. Our team works closely with you to establish a realistic timeline that aligns with your goals and expectations.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Corporate Venture Building',
-    slug: 'corporate-venture-building',
+    // Hero
+    title: 'Application Development',
+    slug: 'application-development',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 2,
+      'Leverage our expertise in frontend software engineering and dashboard development to create powerful applications for your enterprise.',
+    hero_src: 'https://source.unsplash.com/1600x900/?application-development',
+    hero_alt: 'Application Development',
+    // Seo
+    seo: {
+      title: 'Application Development',
+      description:
+        'This page showcases our capabilities in developing high-quality applications for enterprise clients, with a focus on frontend software engineering and dashboard development.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving business innovation through tailored application development.',
+        items: [
+          {
+            title:
+              'In a rapidly evolving digital landscape, applications play a crucial role in driving business growth and innovation. Our Application Development service focuses on creating robust, scalable applications for enterprise clients, specializing in frontend software engineering and dashboard development.',
+          },
+          {
+            title:
+              'We understand the unique needs and challenges of enterprise-level applications and work closely with your team to develop custom solutions that align with your business goals. Our expertise in frontend technologies and dashboard development ensures your applications are visually appealing, highly functional, and deliver value to your users.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our team of skilled developers follows best practices and stays up-to-date with the latest technologies to provide you with top-notch application development services.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom application development',
+            subtitle:
+              'We build custom applications tailored to your business needs, ensuring a perfect fit with your existing processes and systems.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard development',
+            subtitle:
+              'We create visually appealing, interactive dashboards that provide insights and drive data-driven decision-making within your organization.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Frontend software engineering',
+            subtitle:
+              'Our team specializes in frontend development, using modern technologies and best practices to create user-friendly, responsive applications.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative approach',
+            subtitle:
+              'We work closely with your team, ensuring seamless communication and collaboration throughout the development process.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Scalable solutions',
+            subtitle:
+              'Our applications are built with scalability in mind, allowing your business to grow and adapt to changing needs without compromising performance.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our Application Development service and how we can support your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What industries do you serve with your Application Development service?',
+            content:
+              'We serve a wide range of industries with our Application Development service, including finance, healthcare, retail, manufacturing, and more. Our team has the expertise and experience to create tailored solutions that address the unique challenges and requirements of your industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What frontend technologies do you use for application development?',
+            content:
+              'Our team stays up-to-date with the latest frontend technologies and best practices. We primarily use popular and modern frameworks and libraries, such as React, Angular, and Vue.js, to develop high-quality, maintainable, and performant applications.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your development process?',
+            content:
+              'Our development process typically involves several stages: requirement gathering, planning, design, development, testing, and deployment. We work closely with your team throughout the process to ensure that the application meets your needs and expectations. Additionally, we follow an agile methodology, which allows us to iterate and improve the application based on feedback and changing requirements.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Bring Purpose to Life',
-    slug: 'bring-purpose-to-life',
+    // Hero
+    title: 'Enterprise Applications',
+    slug: 'enterprise-applications',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 3,
+      'Developing powerful frontend applications and dashboards for enterprise clients.',
+    hero_src: 'https://source.unsplash.com/1600x900/?enterprise-application',
+    hero_alt: 'Enterprise Application',
+    // Seo
+    seo: {
+      title: 'Enterprise Applications',
+      description:
+        'This page is all about creating high-quality frontend applications and dashboards for enterprise clients.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empower your business with cutting-edge frontend applications.',
+        items: [
+          {
+            title:
+              'In the era of digital transformation, enterprises require powerful and scalable applications to streamline their processes and deliver the best possible user experience. Our Enterprise Applications service focuses on frontend software engineering and dashboard development for enterprise clients, ensuring that your business has the tools it needs to thrive.',
+          },
+          {
+            title:
+              'Our team of experts is skilled in modern frontend technologies and frameworks, and we are committed to delivering robust, maintainable, and high-performing applications tailored to the unique needs of your enterprise.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We specialize in frontend software engineering and dashboard development, delivering powerful applications that meet the demands of your enterprise.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend software engineering',
+            subtitle:
+              'Our team of skilled engineers uses modern frontend technologies and best practices to develop robust, maintainable, and high-performing applications.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard development',
+            subtitle:
+              'We create custom dashboards that provide actionable insights and help you monitor the performance of your business processes and applications.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Responsive design',
+            subtitle:
+              'We ensure that your applications and dashboards work seamlessly across all devices, providing an optimal user experience regardless of screen size.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration',
+            subtitle:
+              'Our team can integrate your frontend applications with your existing backend systems, ensuring seamless communication and data exchange.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team throughout the development process, ensuring that your applications meet your business objectives and deliver value to your users.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Enterprise Applications service and how we can support your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What types of enterprises can benefit from your services?',
+            content:
+              'Our Enterprise Applications service is suitable for businesses in various industries, including finance, healthcare, retail, manufacturing, and more. We have the expertise and experience to create tailored applications that address the unique challenges and requirements of your industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What technologies and frameworks do you use for frontend development?',
+            content:
+              'Our team of engineers is proficient in a variety of modern frontend technologies and frameworks, including but not limited to React, Angular, Vue.js, and TypeScript. We choose the most suitable technology stack based on your project requirements and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the quality and performance of the applications you develop?',
+            content:
+              'We follow industry best practices and adhere to strict coding standards to ensure the quality and performance of our applications. We also conduct thorough testing, including unit testing, integration testing, and performance testing, to ensure that your applications function flawlessly and meet the demands of your enterprise.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Sustainability',
-    slug: 'sustainability',
+    // Hero
+    title: 'ERP Consulting',
+    slug: 'erp-consulting',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 3,
+      'Maximize the potential of your enterprise software with our expert ERP consulting services.',
+    hero_src: 'https://source.unsplash.com/1600x900/?erp,consulting',
+    hero_alt: 'ERP Consulting',
+    // Seo
+    seo: {
+      title: 'ERP Consulting',
+      description:
+        'Our ERP Consulting services help businesses optimize their enterprise software and streamline operations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the full potential of your enterprise software.',
+        items: [
+          {
+            title:
+              'Enterprise Resource Planning (ERP) systems are critical to the success of modern businesses. However, implementing and managing these complex systems can be challenging. Our ERP Consulting services help businesses like yours optimize their ERP software, streamline operations, and maximize efficiency.',
+          },
+          {
+            title:
+              'Our team of experts specializes in frontend software engineering and dashboard development, ensuring that your ERP system is not only powerful but also user-friendly. We work closely with your team to understand your unique needs and tailor our services to your specific requirements.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our ERP Consulting services cover a wide range of areas, including system assessment, implementation support, and custom development.',
+        items: [
+          {
+            fa_icon: 'fa-check',
+            title: 'System assessment',
+            subtitle:
+              'We evaluate your existing ERP system to identify areas for improvement and provide recommendations to optimize its performance.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Implementation support',
+            subtitle:
+              'Our team provides expert guidance and support throughout the ERP implementation process, helping you minimize risks and maximize results.',
+          },
+          {
+            fa_icon: 'fa-desktop',
+            title: 'Custom development',
+            subtitle:
+              'We develop custom frontend solutions and dashboards tailored to your business needs, ensuring a seamless and user-friendly ERP experience.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'System integration',
+            subtitle:
+              'We help you integrate your ERP system with other enterprise applications to streamline operations and improve data flow across your organization.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Change management',
+            subtitle:
+              'We assist your team in adopting new processes and workflows related to your ERP system, ensuring a smooth transition and maximizing user adoption.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our ERP Consulting Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is ERP consulting important for my business?',
+            content:
+              'ERP consulting is essential for businesses that want to optimize their ERP systems, streamline operations, and improve overall efficiency. Our expert consultants can help you identify areas for improvement, provide implementation support, develop custom frontend solutions, and guide your team through change management processes.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What industries can benefit from your ERP Consulting services?',
+            content:
+              'Our ERP Consulting services are suitable for businesses across a wide range of industries, including manufacturing, retail, healthcare, finance, and more. We have experience working with various ERP systems and can tailor our services to meet the unique needs of your business.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the success of an ERP implementation?',
+            content:
+              'We follow a structured approach to ERP implementation that involves assessing your current system, providing expert guidance and support throughout the implementation process, and assisting with change management. This approach helps minimize risks, maximize results, and ensure a smooth transition for your business.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Brand Strategy, Design & Performance',
-    slug: 'brand-strategy-design-performance',
+    // Hero
+    title: 'CRM Consulting',
+    slug: 'crm-consulting',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 4,
+      'Maximize the potential of your CRM system with our expert consulting services.',
+    hero_src: 'https://source.unsplash.com/1600x900/?crm-consulting',
+    hero_alt: 'CRM Consulting',
+    // Seo
+    seo: {
+      title: 'CRM Consulting',
+      description:
+        'This page is all about maximizing the potential of your CRM system with our expert consulting services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the full power of your CRM system.',
+        items: [
+          {
+            title:
+              'A well-implemented CRM system can be a game-changer for your business, improving customer relationships, increasing sales, and streamlining operations. Our CRM Consulting Service can help you unlock the full potential of your CRM system, ensuring it aligns with your unique business needs and objectives.',
+          },
+          {
+            title:
+              'Our team of experts specializes in frontend software engineering and dashboard development for enterprise clients. We can help you optimize your CRM system, develop custom solutions, and train your team to make the most of your CRM investment.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our CRM Consulting services encompass a range of capabilities, from strategy and implementation to custom development and ongoing support.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'CRM strategy',
+            subtitle:
+              'We help you develop a CRM strategy tailored to your business needs and objectives, ensuring your system supports your growth and success.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Implementation support',
+            subtitle:
+              'Our team provides expert guidance and support throughout the CRM implementation process, minimizing risks and ensuring a smooth transition.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom development',
+            subtitle:
+              'We specialize in frontend software engineering and dashboard development, creating custom solutions that enhance your CRM system and improve user experience.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance optimization',
+            subtitle:
+              'We help you optimize your CRM system, ensuring it delivers maximum value to your business and drives continuous improvement.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Training and support',
+            subtitle:
+              'Our team provides comprehensive training and ongoing support, empowering your team to make the most of your CRM investment.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our CRM Consulting Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is CRM consulting important for my business?',
+            content:
+              'CRM consulting is crucial for businesses looking to maximize the potential of their CRM system. Our expert consultants can help you develop a tailored CRM strategy, implement the system effectively, optimize its performance, and provide ongoing support and training for your team. This ensures your CRM investment supports your business objectives and delivers maximum value, driving growth and improving customer relationships.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of CRM systems do you specialize in?',
+            content:
+              'Our team of CRM consultants has extensive experience with a wide range of CRM systems and platforms. We specialize in frontend software engineering and dashboard development, which allows us to create custom solutions for various CRM systems, ensuring they align with your business needs and objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the success of a CRM implementation?',
+            content:
+              'We follow a structured approach to CRM implementation, starting with the development of a tailored CRM strategy that aligns with your business goals. Our team provides expert guidance and support throughout the implementation process, minimizing risks and ensuring a smooth transition. We also offer custom development, performance optimization, training, and ongoing support to ensure the continued success of your CRM system.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Content & Communication Strategy',
-    slug: 'content-communication-strategy',
+    // Hero
+    title: 'Application Re-engineering',
+    slug: 'application-re-engineering',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 4,
+      'Revitalize your software applications with our expert re-engineering services to enhance performance and user experience.',
+    hero_src: 'https://source.unsplash.com/1600x900/?software-reengineering',
+    hero_alt: 'Software Re-engineering',
+    // Seo
+    seo: {
+      title: 'Application Re-engineering',
+      description:
+        'Discover our Application Re-engineering services designed to optimize, modernize, and revamp your existing software applications.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Breathing new life into your software applications.',
+        items: [
+          {
+            title:
+              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernize, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
+          },
+          {
+            title:
+              'Our team of experts specializes in frontend software engineering and dashboard development, focusing on enterprise clients. We work closely with you to identify bottlenecks, areas for improvement, and opportunities for innovation in your existing software applications, ultimately creating a more powerful and user-friendly solution.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We leverage our expertise in frontend software engineering and dashboard development to deliver top-notch Application Re-engineering services.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Code refactoring',
+            subtitle:
+              'We analyze and restructure your existing code to improve its readability, maintainability, and overall performance.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Performance optimization',
+            subtitle:
+              'We identify and eliminate performance bottlenecks, ensuring your applications run faster and more efficiently.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Dashboard development',
+            subtitle:
+              'We create custom dashboards that provide valuable insights and enhance the user experience of your applications.',
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'User interface improvements',
+            subtitle:
+              'We apply best practices in user interface design to improve the usability and accessibility of your applications.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Integration & migration',
+            subtitle:
+              'We seamlessly integrate your re-engineered applications with other systems and migrate them to modern platforms, if needed.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Application Re-engineering services and how they can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Application Re-engineering important for my business?',
+            content:
+              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernizing, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Application Re-engineering service?',
+            content:
+              'Our Application Re-engineering service focuses on frontend software engineering and dashboard development for enterprise clients. We work closely with you to analyze your existing applications, identify bottlenecks and areas for improvement, and provide innovative solutions to enhance their performance and user experience. By leveraging our expertise, your business can benefit from improved efficiency, reduced costs, and a more competitive position in the market.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach Application Re-engineering?',
+            content:
+              'We begin by analyzing your existing software applications to understand their current state and identify areas for improvement. We then work closely with your team to develop a plan for re-engineering, including code refactoring, performance optimization, user interface improvements, and dashboard development. Throughout the process, we prioritize communication and collaboration to ensure the re-engineered applications align with your business objectives and deliver value to your users.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'Customer Research & Insights',
-    slug: 'customer-research-insights',
+    // Hero
+    title: 'Cloud Migration',
+    slug: 'cloud-migration',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 4,
+      'Simplify and streamline your transition to the cloud with our expert guidance and support.',
+    hero_src: 'https://source.unsplash.com/1600x900/?cloud-migration',
+    hero_alt: 'Cloud Migration',
+    // Seo
+    seo: {
+      title: 'Cloud Migration',
+      description:
+        'This page is all about helping your business transition to the cloud with ease and efficiency.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the power of the cloud with our Cloud Migration services.',
+        items: [
+          {
+            title:
+              'The cloud offers a myriad of benefits, including cost savings, improved scalability, and increased agility. Our Cloud Migration service is designed to help your business transition to the cloud seamlessly, minimizing downtime and maximizing the return on your investment.',
+          },
+          {
+            title:
+              'Our team of experts has extensive experience in cloud migration, and we work closely with your organization to develop a tailored migration plan that meets your unique needs. From assessing your existing infrastructure to planning and executing the migration, we provide comprehensive support every step of the way.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our cloud migration services cover every aspect of the process, from planning and strategy to implementation and post-migration support.',
+        items: [
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud assessment',
+            subtitle:
+              'We assess your existing infrastructure and applications to identify the best cloud solutions for your business needs.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Migration planning',
+            subtitle:
+              'We develop a tailored migration plan, outlining the steps, timeline, and resources needed to ensure a seamless transition to the cloud.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Implementation',
+            subtitle:
+              'Our team executes the migration plan, ensuring minimal disruption to your business operations during the transition.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Post-migration support',
+            subtitle:
+              'We provide ongoing support and optimization to help you fully leverage the benefits of the cloud and maintain optimal performance.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and compliance',
+            subtitle:
+              'We ensure your cloud infrastructure adheres to industry best practices for security and compliance, safeguarding your data and applications.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team, fostering collaboration and knowledge transfer to ensure your organization is fully prepared to manage your new cloud environment.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Cloud Migration services and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should my business consider migrating to the cloud?',
+            content:
+              'Migrating to the cloud can provide your business with numerous benefits, such as cost savings, increased agility, improved scalability, and enhanced security. It also enables your organization to leverage the latest technologies and innovations, making it easier to stay competitive in the digital landscape.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the main challenges of cloud migration?',
+            content:
+              'Some of the main challenges of cloud migration include selecting the right cloud provider and service, ensuring data security and compliance, minimizing downtime during the transition, and effectively managing the new cloud environment. Our Cloud Migration service is designed to help you navigate these challenges and ensure a seamless, successful migration.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How long does a typical cloud migration process take?',
+            content:
+              'The duration of a cloud migration process varies depending on the size and complexity of your organization\'s infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organization to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.',
+          },
+        ],
+      },
+    },
+    category_id: 2
   },
   {
-    title: 'CX Strategy',
-    slug: 'cx-strategy',
+    // Hero
+    title: 'Smart Team',
+    slug: 'smart-team',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
+      'Enhance your software development process with our experienced team of frontend engineers and dashboard developers.',
+    hero_src: 'https://source.unsplash.com/1600x900/?teamwork',
+    hero_alt: 'Teamwork',
+    // Seo
+    seo: {
+      title: 'Smart Team',
+      description:
+        'This page is all about our Smart Team service, providing enterprise clients with expert frontend engineering and dashboard development.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering your development process with our expertise.',
+        items: [
+          {
+            title:
+              'In today\'s fast-paced digital landscape, having a skilled and experienced development team is crucial for success. Our Smart Team service provides enterprise clients with top-notch frontend engineers and dashboard developers, ensuring your projects are completed efficiently and effectively.',
+          },
+          {
+            title:
+              'Our team of experts is well-versed in the latest frontend technologies and dashboard development practices, enabling them to tackle even the most complex projects with ease. We work closely with your organization to understand your specific needs and goals, delivering tailor-made solutions that drive results.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Smart Team service offers a range of capabilities, including frontend engineering, dashboard development, and more.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Frontend Engineering',
+            subtitle:
+              'Our frontend engineers are proficient in modern technologies and frameworks, ensuring your user interfaces are responsive, performant, and visually stunning.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Dashboard Development',
+            subtitle:
+              'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Dedicated Team',
+            subtitle:
+              'Our dedicated team works closely with your organization to ensure seamless collaboration, clear communication, and a deep understanding of your project requirements.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Project Management',
+            subtitle:
+              'We provide expert project management to keep your development process on track, ensuring that deadlines are met and goals are achieved.',
+          },
+          {
+            fa_icon: 'fa-graduation-cap',
+            title: 'Continual Learning',
+            subtitle:
+              'Our team is committed to staying up-to-date with the latest industry trends and best practices, ensuring that your projects benefit from cutting-edge technologies and techniques.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Smart Team service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should I choose your Smart Team service for my business?',
+            content:
+              'Our Smart Team service provides your business with highly skilled frontend engineers and dashboard developers who are experienced in working with enterprise clients. We are dedicated to understanding your unique needs and goals, delivering tailor-made solutions that drive results. Our team stays up-to-date with the latest industry trends and best practices, ensuring that your projects benefit from cutting-edge technologies and techniques.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What frontend technologies and frameworks do your engineers specialize in?',
+            content:
+              'Our frontend engineers are proficient in a wide range of modern technologies and frameworks, including React, Angular, Vue.js, and more. They are experienced in working with HTML, CSS, JavaScript, and other frontend languages, ensuring that your user interfaces are responsive, performant, and visually stunning.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does your team approach dashboard development?',
+            content:
+              'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business. We work closely with your organization to understand your data needs and goals, and we use the latest dashboard development tools and best practices to create custom solutions that meet your specific requirements.',
+          },
+        ],
+      },
+    },
+    category_id: 3
   },
   {
-    title: 'Product Design & Build',
-    slug: 'product-design-build',
+    // Hero
+    title: 'Data Science',
+    slug: 'data-science',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
+      'Leverage the power of data to drive better decision-making, optimize processes, and gain actionable insights for your business.',
+    hero_src: 'https://source.unsplash.com/1600x900/?data-science',
+    hero_alt: 'Data Science',
+    // Seo
+    seo: {
+      title: 'Data Science',
+      description:
+        'This page is all about harnessing the power of data to drive better decision-making and optimize processes for your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empower your business with data-driven insights.',
+        items: [
+          {
+            title:
+              'In a world driven by data, harnessing the power of data can be the key to unlocking new opportunities and driving growth for your business. Our Data Science services help you make sense of your data and turn it into actionable insights, enabling better decision-making, optimized processes, and improved customer experiences.',
+          },
+          {
+            title:
+              'Our team of experienced data scientists and analysts work closely with your organization to understand your business needs and develop custom solutions that address those needs. From predictive analytics to data visualization and dashboard development, we provide a comprehensive suite of services designed to help you make the most of your data.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'To deliver data-driven insights, we offer a range of services, including data analytics, machine learning, and dashboard development.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics',
+            subtitle:
+              'We analyze your data to identify patterns, trends, and opportunities, helping you make informed decisions and drive growth.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Machine learning',
+            subtitle:
+              'We apply advanced machine learning techniques to your data, enabling you to predict outcomes, automate processes, and uncover hidden insights.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Dashboard development',
+            subtitle:
+              'We design and develop custom dashboards that provide you with a real-time view of your business metrics, enabling you to monitor performance and make data-driven decisions.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data management',
+            subtitle:
+              'We help you manage your data effectively by implementing best practices for data storage, processing, and security.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process optimization',
+            subtitle:
+              'We use data-driven insights to optimize your business processes, improving efficiency and reducing costs.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your team to ensure that our data science solutions align with your business objectives and deliver maximum value.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Science services and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data science important for my business?',
+            content:
+              'Data science enables you to make better decisions, optimize processes, and uncover new opportunities by analyzing and interpreting the data your business generates. By leveraging data science, you can gain actionable insights, improve customer experiences, and drive growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Data Science service?',
+            content:
+              'Our team of experienced data scientists and analysts work closely with your organization to understand your business needs and develop custom solutions that address those needs. We offer a comprehensive suite of data science services, including data analytics, machine learning, dashboard development, data management, and process optimization. By working with us, you can unlock the full potential of your data and drive better decision-making, optimized processes, and improved customer experiences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data science projects?',
+            content:
+              'We take a collaborative approach to data science projects, working closely with your team to understand your business objectives and tailor our solutions to your needs. Our process typically begins with data exploration and analysis, followed by the development and deployment of custom data models or dashboards. Throughout the project, we prioritize clear communication, knowledge sharing, and the integration of our solutions with your existing systems and processes.',
+          },
+        ],
+      },
+    },
+    category_id: 3
   },
   {
-    title: 'Service Design',
-    slug: 'service-design',
+    // Hero
+    title: 'Data Strategy',
+    slug: 'data-strategy',
     subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 5,
-  },
-  {
-    title: 'Marketing Strategy & Performance',
-    slug: 'marketing-strategy-performance',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Content & Asset Management',
-    slug: 'content-asset-management',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Membership & Loyalty',
-    slug: 'membership-loyalty',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
-  {
-    title: 'Modern Workplace',
-    slug: 'modern workplace',
-    subtitle:
-      'Make your product the first choice for users with designers who built dozens of them.',
-    category_id: 6,
-  },
+      'Unlock the potential of your data with our expert data strategy services.',
+    hero_src: 'https://source.unsplash.com/1600x900/?data-analytics',
+    hero_alt: 'Data Analytics',
+    // Seo
+    seo: {
+      title: 'Data Strategy',
+      description:
+        'Discover the power of data strategy and how it can transform your business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlocking the power of data for your business.',
+        items: [
+          {
+            title:
+              'In today\'s data-driven world, businesses that harness the power of data have a competitive edge. At our Data Strategy service, we specialize in helping enterprises unlock the potential of their data and develop data-driven strategies that drive growth and innovation.',
+          },
+          {
+            title:
+              'We believe that data is more than just numbers and statistics. It holds valuable insights that can guide strategic decision-making, optimize processes, and improve customer experiences. Our team of experts combines technical expertise with business acumen to develop tailored data strategies that align with your organizational goals and deliver tangible results.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We follow industry best practices to develop comprehensive data strategies that include data governance, data integration, data quality management, and data analytics.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data governance',
+            subtitle:
+              'We help establish data governance frameworks to ensure data integrity, privacy, and compliance across your organization.',
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Data integration',
+            subtitle:
+              'We integrate data from various sources and systems, enabling a unified view of your data for enhanced insights and decision-making.',
+          },
+          {
+            fa_icon: 'fa-check-double',
+            title: 'Data quality management',
+            subtitle:
+              'We implement data quality processes and tools to cleanse, validate, and enhance the accuracy and reliability of your data.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data analytics',
+            subtitle:
+              'We leverage advanced analytics techniques and tools to extract actionable insights from your data and drive data-informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data infrastructure',
+            subtitle:
+              'We design and implement scalable and robust data infrastructure that supports your data strategy and enables efficient data processing and storage.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Data-driven culture',
+            subtitle:
+              'We help foster a data-driven culture within your organization, empowering teams to leverage data in their day-to-day operations and decision-making.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Strategy service and how it can transform your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data strategy important for my business?',
+            content:
+              'Data strategy is crucial for businesses because it enables them to unlock the potential of their data and use it strategically to gain insights, make informed decisions, improve operational efficiency, and drive innovation. A well-defined data strategy aligns data initiatives with business goals and ensures data quality, governance, and security.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Data Strategy service?',
+            content:
+              'By working with our Data Strategy service, you will benefit from our expertise in developing comprehensive data strategies tailored to your business needs. We have a deep understanding of data governance, integration, quality management, and analytics, and we can help you establish a data-driven culture within your organization. Our goal is to empower you to leverage data effectively, optimize processes, and drive growth and innovation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data strategy development?',
+            content:
+              'We take a holistic approach to data strategy development, starting with a thorough assessment of your current data landscape, business goals, and challenges. Based on this analysis, we collaborate with your team to define a data strategy that aligns with your objectives. Our approach includes establishing data governance frameworks, designing data integration solutions, implementing data quality management processes, leveraging advanced analytics techniques, and creating a data-driven culture within your organization.',
+          },
+        ],
+      },
+    },
+    category_id: 3
+  }  
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
     id: i + 1,
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
     // Category
     category: getCategoryFromCrudItem(item, MOCK_GROUP_SERVICE_CATEGORYS),
     ...item,
