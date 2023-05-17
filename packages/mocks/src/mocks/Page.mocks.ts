@@ -1281,21 +1281,23 @@ const MOCK_GROUP_PAGES = [
         center: true,
         items: [
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Design',
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
             subtitle:
-              'A conversion centred approach to creating web and product designs that drive action.',
+              'Partnering for Progress and Growth.',
+            href: `${routeConfig.SERVICES}/advisory`,
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Development',
-            subtitle: 'Build tailor-made websites that drive leads and sales.',
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle: 'Innovating the Future with Precision and Creativity.',
+            href: `${routeConfig.SERVICES}/engineering`,
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Application Development',
-            subtitle:
-              'Accelerate business agility across your organisation with scalable enterprise apps.',
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle: 'Transforming data into value.',
+            href: `${routeConfig.SERVICES}/data`,
           },
         ],
       },
@@ -1456,8 +1458,8 @@ const MOCK_GROUP_PAGES = [
   { title: 'Mission', slug: 'mission' },
   { title: 'News', slug: 'news' },
   { title: 'Resources', slug: 'resources' },
-  { title: 'Newsletter', slug: 'newsletter' },
-  { title: 'Ecosystem', slug: 'ecosystem' },
+  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true, },
+  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true, },
 ]
 
 const MOCK_TECH_PAGES = [

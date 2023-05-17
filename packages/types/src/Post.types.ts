@@ -18,6 +18,7 @@ export interface Post extends CrudItem {
   // Html
   html?: string
   published_at?: string
+  is_featured?: boolean
 }
 
 export default Post

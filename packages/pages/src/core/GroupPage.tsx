@@ -27,6 +27,8 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { clientLogos, clientTestimonials, routeConfig } = useLayout()
   const { sections } = page || {}
   const { benefits, features, faqs, cta } = sections || {}
+  const featuredPosts = posts.filter(post => post.is_featured )
+  const nonfeaturedPosts = posts.filter(post => !post.is_featured )
 
   return (
     <Blocks
@@ -53,7 +55,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   loop
                   height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
                   tabs={[
-                    ...posts.map((post) => {
+                    ...featuredPosts.map((post) => {
                       const { category } = post
                       return category.title
                     }),
@@ -61,7 +63,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
                   items={[
-                    ...posts.map((post) => {
+                    ...featuredPosts.map((post) => {
                       const { title, category } = post
                       return (
                         <Box sx={{ maxWidth: { md: '50%' } }}>
@@ -76,10 +78,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                           <BlockItem
                             disableContainer
                             {...renderGhostButtonBlockItem({
-                              overline: 'What we do',
-                              title: 'Smarter Businesses',
+                              overline: 'Our Insights',
+                              title: 'Read More',
                               size: 'lg',
-                              href: routeConfig.SERVICES,
+                              href: `/insights/${post.category.slug}/${post.slug}`,
                               sx: { mt: { xs: 2, md: 4 } },
                             })}
                           />
@@ -130,7 +132,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
-        renderFeaturedPostsBlock({ items: posts }),
+        renderFeaturedPostsBlock({ items: nonfeaturedPosts }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs
