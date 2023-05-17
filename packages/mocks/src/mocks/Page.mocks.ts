@@ -546,7 +546,7 @@ export const MOCK_DIGITAL_PAGE = {
   sections: {
     hero: {
       overline: 'Digital',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
         'Maximise business growth through insight driven web digital. We put business first in everything we do.',
     },
@@ -1170,9 +1170,9 @@ const MOCK_GROUP_PAGES = [
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
         hero_alt: 'about_nodes_above_city',
-        title: 'We Design & Develop Custom Software for Businesses',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1440,9 +1440,9 @@ const MOCK_GROUP_PAGES = [
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
         hero_alt: 'about_nodes_above_city',
-        title: 'We Design & Develop Custom Software for Businesses',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1560,9 +1560,9 @@ const MOCK_TECH_PAGES = [
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
         hero_alt: 'about_nodes_above_city',
-        title: 'We Design & Develop Custom Software for Businesses',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',

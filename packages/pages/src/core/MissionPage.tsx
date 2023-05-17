@@ -66,7 +66,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             {
               type: 'body1',
               title:
-                'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+                'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
               titleProps: {
                 color: 'text.secondary',
               },
