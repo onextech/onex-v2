@@ -32,7 +32,7 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Explore how our expertise caters to the unique needs of various industries, enabling enterprises to thrive in today\'s digital landscape.',
+                'Our software development expertise and knowledge allow us to cater to a diverse range of industries, addressing their unique challenges and requirements.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -41,10 +41,10 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: 'https://source.unsplash.com/nxZDMUQhN4o/1600x900',
+              title: 'https://source.unsplash.com/XYb82y90NhU/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'industry-hero',
+                alt: 'Low angle shot of buildings',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
