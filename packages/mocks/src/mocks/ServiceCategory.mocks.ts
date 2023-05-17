@@ -33,7 +33,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Advisory',
     slug: 'advisory',
     subtitle:
-      'Partnering for Progress and Growth.',
+      'Unlock growth and success with One X Group\'s business advisory services.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'Laser net with nodes',
   },
@@ -42,7 +42,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Engineering',
     slug: 'engineering',
     subtitle:
-      'Innovating the Future with Precision and Creativity.',
+      'Engage our engineering services for insights, innovation, and data-driven decisions.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'Laser net with nodes',
   },
@@ -51,7 +51,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Data',
     slug: 'data',
     subtitle:
-      'Transforming data into value.',
+      'Data services that drive growth. Gain insights, make informed decisions.',
     hero_src: '/images/about_working_in_office.png',
     hero_alt: 'Laser net with nodes',
   },

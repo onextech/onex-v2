@@ -970,7 +970,7 @@ const MOCK_COMMON_PAGES = [
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
-      "Join us to build tomorrow\'s technology today. Make an impact and bring great software to more people. Exciting career opportunities available.",
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
   },
   {
     title: 'Contact',
@@ -1251,7 +1251,7 @@ const MOCK_GROUP_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle} - Custom Software Development',
     seo_description:
-      'We empower our clients to build a future ready business by combining strategy, technology and design. Partner with us to define your strategy, create exceptional experiences and digitally reinvent your business.',
+      'Empower your business with strategic technology and design solutions. Define strategy, create exceptional experiences, and reinvent digitally.',
     sections: {
       hero: {
         overline: 'Greetings',
