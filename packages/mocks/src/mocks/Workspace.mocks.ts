@@ -1,16 +1,14 @@
 const isDev = process.env.NODE_ENV === 'development'
 
 export const MOCK_WORKSPACES = [
-  { title: 'One X Tech', href: 'https://onextech.com' },
-  { title: 'One X Design', href: 'https://onexdesign.com' },
-  { title: 'One X Data', href: 'https://onexdata.com' },
-  { title: 'One X Labs', href: 'https://onexlabs.com' },
-  { title: 'Fin X', href: 'https://finx.com' },
-  { title: 'Gov X', href: 'https://govx.com' },
+  { title: 'One X Tech', href: 'https://onextech.com', subtitle: 'Discover how we modernize enterprise user experiences.' },
+  { title: 'One X Design', href: 'https://onexdesign.com', subtitle: 'Discover how we build custom, user-centric enterprise designs.' },
+  { title: 'One X Data', href: 'https://onexdata.com', subtitle: 'Discover how we utilize enterprise-scale AI to build digital solutions.' },
+  { title: 'One X Labs', href: 'https://onexlabs.com', subtitle: 'Discover how we research & transform the future of web-driven applications.' },
+  { title: 'Fin X', href: 'https://finx.com', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
+  { title: 'Gov X', href: 'https://govx.com', subtitle: 'Discover how we help public enterprises digitalize effectively.' },
 ].map((workspace, i) => ({
   id: i + 1,
-  subtitle:
-    'Discover the Agile process that makes 98% of tech executives recommend us',
   hrefProps: { targetBlank: true },
   ...workspace,
   href: isDev ? `http://localhost:${3000 + i + 1}` : workspace.href,
