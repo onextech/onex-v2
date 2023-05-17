@@ -34,8 +34,8 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'advisory',
     subtitle:
       'Partnering for Progress and Growth.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
+    hero_alt: 'Group working on a laptop together',
   },
   {
     id: 2,
@@ -43,8 +43,8 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'engineering',
     subtitle:
       'Innovating the Future with Precision and Creativity.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_src: 'https://source.unsplash.com/EUsVwEOsblE/1600x900',
+    hero_alt: 'Lit up electronics diagram',
   },
   {
     id: 3,
@@ -52,10 +52,10 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'data',
     subtitle:
       'Transforming data into value.',
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'about_nodes',
+    hero_src: 'https://source.unsplash.com/FXFz-sW0uwo/1600x900',
+    hero_alt: 'Laptop with source code',
   },
-].map((item, i) => ({ id: i + 1, ...item }))
+]
 
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,
