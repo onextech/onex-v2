@@ -30,6 +30,7 @@
     "@mui/icons-material": "latest",
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "latest",
+    "@next/bundle-analyzer": "^13.4.2",
     "@onex/blocks": "*",
     "@onex/common": "*",
     "@onex/components": "*",
