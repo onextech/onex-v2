@@ -53,7 +53,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     subtitle:
       'Data services that drive growth. Gain insights, make informed decisions.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'Laser net with nodes',
+    hero_alt: 'People working in office',
   },
 ].map((item, i) => ({ id: i + 1, ...item }))
 

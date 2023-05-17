@@ -10,7 +10,7 @@ export const MOCK_INDUSTRY_PAGE = {
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: '{title}',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   overline: 'Industry',
   title: 'React',
   subtitle:
@@ -233,7 +233,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
+    hero_alt: 'People working in office',
     ...item,
   })
 })

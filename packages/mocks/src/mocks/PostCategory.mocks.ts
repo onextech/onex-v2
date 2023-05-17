@@ -27,7 +27,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Building Resilience and Agility to Navigate the Shifting Landscape of Work.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'Laser net with nodes',
+    hero_alt: 'People working in office',
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'Laser net with nodes',
+    hero_alt: 'People working in office',
   },
   {
     id: 7,

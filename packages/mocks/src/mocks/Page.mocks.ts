@@ -1097,7 +1097,7 @@ const MOCK_GROUP_PAGES = [
       },
       summary: {
         hero_src: '/images/about_nodes.png',
-        hero_alt: 'about-nodes',
+        hero_alt: 'Laser net',
         title:
           'We believe technology is the superpower that changes everything about business.',
         subtitle:
@@ -1487,7 +1487,7 @@ const MOCK_TECH_PAGES = [
       },
       summary: {
         hero_src: '/images/about_nodes.png',
-        hero_alt: 'about-nodes',
+        hero_alt: 'Laser net',
         title:
           'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
         subtitle:

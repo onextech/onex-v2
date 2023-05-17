@@ -174,7 +174,7 @@ export const MOCK_TECH_RESOURCES = [
   avatar_src: '/images/resource_book.png',
   avatar_alt: 'resource_book',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   // Author
   author_avatar_src: '/images/about_shape_circle_radial.svg',
   author_avatar_alt: 'Three circles',

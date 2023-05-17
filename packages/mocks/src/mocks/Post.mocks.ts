@@ -551,7 +551,7 @@ export const MOCK_TECH_POSTS = [
   avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
@@ -785,7 +785,7 @@ export const MOCK_GROUP_POSTS = [
   avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags

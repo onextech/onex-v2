@@ -11,7 +11,7 @@ export const MOCK_TECH_TECHNOLOGY_PAGE = {
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: '{title}',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   overline: 'Technology',
   title: 'React',
   subtitle:
