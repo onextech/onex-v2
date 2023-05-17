@@ -58,7 +58,7 @@ export const MOCK_TECH_RESOURCES = [
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
       title: 'We Design & Develop Custom Software for Businesses',
       subtitle:
@@ -163,7 +163,7 @@ export const MOCK_TECH_RESOURCES = [
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -177,7 +177,7 @@ export const MOCK_TECH_RESOURCES = [
   hero_alt: 'working in office',
   // Author
   author_avatar_src: '/images/about_shape_circle_radial.svg',
-  author_avatar_alt: 'about_shape_circle_radial',
+  author_avatar_alt: 'Three circles',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags

@@ -69,7 +69,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
       title: 'We Design & Develop Custom Software for Businesses',
       subtitle:
@@ -174,7 +174,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -388,7 +388,7 @@ export const MOCK_TECH_SERVICES = [
     category_id: 1,
     // Hero
     hero_src: 'https://source.unsplash.com/pREq0ns_p_E/1600x900',
-    hero_alt: 'api integration development',
+    hero_alt: 'Lights intertwined into a rope',
     subtitle:
       'Connect and streamline your systems with seamless API integration solutions.',
     // Seo
@@ -493,7 +493,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Partner with our experts to develop a comprehensive design library for your digital products.',
     hero_src: 'https://source.unsplash.com/PkbZahEG2Ng/1600x900',
-    hero_alt: 'Design Library',
+    hero_alt: 'Library with stairs',
     // Seo
     seo: {
       title: 'Design Library Development',
@@ -596,7 +596,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
     hero_src: 'https://source.unsplash.com/jJT2r2n7lYA/1600x900',
-    hero_alt: 'Application Modernization',
+    hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
       title: 'Application Modernization',
@@ -699,7 +699,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Improve your website speed, user experience, and search engine rankings with our performance optimization services.',
     hero_src: 'https://source.unsplash.com/M5tzZtFCOfs/1600x900',
-    hero_alt: 'Performance Optimization',
+    hero_alt: 'Collection of network cables',
     // Seo
     seo: {
       title: 'Performance Optimization',
@@ -802,7 +802,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Empower your enterprise applications with scalable, maintainable, and efficient microfrontend architecture.',
     hero_src: 'https://source.unsplash.com/1600x900/?software-engineering',
-    hero_alt: 'Microfrontend Development',
+    hero_alt: 'Zoomed in image of codes',
     // Seo
     seo: {
       title: 'Microfrontend Development',
@@ -905,7 +905,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Expand your team with top-tier frontend software engineering and dashboard development experts, tailored to your enterprise needs.',
     hero_src: 'https://source.unsplash.com/1600x900/?staff-augmentation',
-    hero_alt: 'Staff Augmentation',
+    hero_alt: 'Group discussion with laptops',
     // Seo
     seo: {
       title: 'Staff Augmentation',
@@ -1107,7 +1107,7 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Empower your software development projects with our experienced technical leaders and ensure success.',
     hero_src: 'https://source.unsplash.com/rxpThOwuVgE/1600x900',
-    hero_alt: 'Technical Leadership',
+    hero_alt: 'Man presenting to a group',
     // Seo
     seo: {
       title: 'Technical Leadership',

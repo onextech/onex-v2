@@ -147,7 +147,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
               title: '/images/two_men_pointing_at_screen.png',
               disableContainer: true,
               titleProps: {
-                alt: 'two men point at screen',
+                alt: 'Software developers working on a laptop',
                 background: true,
                 backgroundHeight: { xs: 480, md: 640 },
                 backgroundSx: { mt: { xs: 5, md: 10 } },

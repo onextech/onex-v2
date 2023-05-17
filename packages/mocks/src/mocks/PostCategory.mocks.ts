@@ -7,7 +7,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Empowering change for a greener and cleaner future.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Navigating Growth Challenges with Agile Strategies and Bold Vision.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Building Resilience and Agility to Navigate the Shifting Landscape of Work.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Crafting a Compelling Brand Story for Lasting Impact.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     subtitle:
       'Maximizing Talent and Resources through Optimal Organizational Design.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
 ]
 
@@ -60,7 +60,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Lead your business toward a long-term vision for holistic prosperity.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Intrigue customers and capture the market with captivating brand narratives.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
@@ -80,7 +80,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Inspire innovation, drive growth, and exceed customer expectations.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 8,
@@ -100,7 +100,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     subtitle:
       'Harnessing digital solutions to propel your organization forward.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
 ]
 

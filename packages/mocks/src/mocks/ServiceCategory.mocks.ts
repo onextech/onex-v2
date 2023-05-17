@@ -6,7 +6,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     subtitle:
       'Seamlessly streamline your development workflow and accelerate time-to-market.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     subtitle:
       'Develop rich user interfaces using modern technologies and frameworks.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'product-team-augmentation',
     subtitle: 'Reach product goals with engaged software development experts.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
 ]
 
@@ -35,7 +35,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     subtitle:
       'Partnering for Progress and Growth.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     subtitle:
       'Innovating the Future with Precision and Creativity.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     subtitle:
       'Transforming data into value.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
 ].map((item, i) => ({ id: i + 1, ...item }))
 
