@@ -43,7 +43,7 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our posts and capabilities that help you define your vision for the future and make it happen.',
+                'Gleam into key insights that empower enterprises with knowledge to enhance digital strategies.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
