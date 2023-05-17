@@ -1170,7 +1170,7 @@ const MOCK_GROUP_PAGES = [
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
         hero_alt: 'about_nodes_above_city',
-        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        title: 'We Design & Develop Custom Software for Enterprises',
         subtitle:
           'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
@@ -1442,7 +1442,7 @@ const MOCK_GROUP_PAGES = [
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
         hero_alt: 'about_nodes_above_city',
-        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        title: 'We Design & Develop Custom Software for Enterprises',
         subtitle:
           'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
