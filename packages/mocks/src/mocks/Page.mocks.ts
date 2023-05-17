@@ -970,7 +970,7 @@ const MOCK_COMMON_PAGES = [
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
-      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+      "Join us to build tomorrow\'s technology today. Make an impact and bring great software to more people. Exciting career opportunities available.",
   },
   {
     title: 'Contact',
@@ -1641,7 +1641,7 @@ const MOCK_TECH_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle} - Enterprise Frontend Development Services',
     seo_description:
-      "Experience exceptional Enterprise Frontend Development Services for your business. Our expert team delivers scalable, efficient, and visually stunning frontend solutions tailored to meet your enterprise's unique needs. Harnessing the latest technologies and frameworks, we create high-performance, user-friendly applications that enhance your digital presence and drive business growth.",
+      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
     sections: {
       hero: {
         overline: '{appTitle}',

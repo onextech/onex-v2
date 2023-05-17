@@ -292,7 +292,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'User Interface Development',
       description:
-        'This page is all about creating high-quality user interfaces for your business.',
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
     },
     // Sections
     sections: {
@@ -395,7 +395,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'API Integration Development',
       description:
-        'This page is all about providing top-notch API integration solutions for your business.',
+        'Accelerate your development with expert API integration services. Seamlessly connect and enhance your applications with robust API solutions.',
     },
     // Sections
     sections: {
@@ -498,7 +498,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Design Library Development',
       description:
-        'This page is all about creating a design library that streamlines the design and development process for your business.',
+        'Accelerate your development process with our design library development services. Create consistent and efficient user interfaces for your applications.',
     },
     // Sections
     sections: {
@@ -601,7 +601,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Application Modernization',
       description:
-        'This page is all about modernizing legacy systems and applications for your business.',
+        'Modernize your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
     // Sections
     sections: {
@@ -704,7 +704,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Performance Optimization',
       description:
-        'This page is all about optimizing your website for better performance, user experience, and search engine rankings.',
+        'Supercharge your frontend with microfrontend development. Build modular web apps for enhanced user experiences and faster development cycles.',
     },
     // Sections
     sections: {
@@ -807,7 +807,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Microfrontend Development',
       description:
-        'This page is all about building enterprise-grade microfrontend applications for your business.',
+        'Boost your frontend with microfrontend development. Scale applications, increase agility, and enhance user experiences with our expert services.',
     },
     // Sections
     sections: {
@@ -910,7 +910,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Staff Augmentation',
       description:
-        'This page is all about enhancing your team with skilled frontend software engineers and dashboard developers for your enterprise projects.',
+        'Enhance your product team with our staff augmentation services. Access top talent to scale your development efforts and accelerate project delivery.',
     },
     // Sections
     sections: {
@@ -1112,7 +1112,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'Technical Leadership',
       description:
-        'This page is all about providing technical leadership for your software development projects.',
+        'Enhance your product team with technical leadership. Leverage our expertise to drive innovation, streamline development, and achieve project success.',
     },
     // Sections
     sections: {

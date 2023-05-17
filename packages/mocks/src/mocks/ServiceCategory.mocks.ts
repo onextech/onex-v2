@@ -21,7 +21,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     id: 3,
     title: 'Product Team Augmentation',
     slug: 'product-team-augmentation',
-    subtitle: 'Reach product goals with engaged software development experts.',
+    subtitle: 'Accelerate your product goals with top-tier frontend software engineering experts. Enhance your team with staff augmentation and technical leadership.',
     hero_src: '/images/about_nodes.png',
     hero_alt: 'Laser net with nodes',
   },

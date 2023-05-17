@@ -251,7 +251,7 @@ export const MOCK_TECH_INDUSTRYS = [
     seo: {
       title: 'Finance',
       description:
-        'This page is all about partnering with finance experts to optimize your business processes and make data-driven decisions.',
+        'Optimize your business processes with expert finance solutions. Streamline operations, make data-driven decisions, and drive sustainable growth.',
     },
     // Sections
     sections: {
@@ -351,7 +351,7 @@ export const MOCK_TECH_INDUSTRYS = [
     seo: {
       title: 'Government',
       description:
-        'This page is all about partnering with software development experts to create efficient solutions for government agencies.',
+        'Discover innovative technology solutions for the government sector. One X Tech offers expertise in delivering impactful software solutions.',
     },
     // Sections
     sections: {
@@ -451,7 +451,7 @@ export const MOCK_TECH_INDUSTRYS = [
     seo: {
       title: 'Maritime',
       description:
-        'This page is all about partnering with software development experts to optimize maritime operations and enhance efficiency.',
+        'Optimize maritime operations with tailored software solutions. Streamline processes, improve decision-making, and ensure compliance with our expert team.',
     },
     // Sections
     sections: {
@@ -550,7 +550,7 @@ export const MOCK_TECH_INDUSTRYS = [
     seo: {
       title: 'Real Estate',
       description:
-        'This page is all about transforming your real estate business with innovative software solutions and intuitive user interfaces.',
+        'Empower your real estate business with innovative software solutions operations streamlined for success.',
     },
     // Sections
     sections: {

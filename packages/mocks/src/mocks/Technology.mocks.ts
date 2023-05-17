@@ -183,7 +183,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     seo: {
       title: 'JavaScript Development',
       description:
-        'This page is all about leveraging the power of JavaScript to build interactive and dynamic web applications.',
+        'Leverage the power of JavaScript to build interactive and dynamic web applications by working with our expert team.',
     },
     // Sections
     sections: {
@@ -479,7 +479,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     seo: {
       title: 'React Development',
       description:
-        'This page is all about leveraging React to build powerful and responsive user interfaces for your enterprise applications.',
+        'Harness the power of React for dynamic and interactive UIs. Our expert React development services offer frontend expertise, responsive design and more.',
     },
     // Sections
     sections: {
@@ -779,7 +779,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     seo: {
       title: 'Node.js Development',
       description:
-        'This page is all about building scalable and efficient backend solutions using Node.js.',
+        'Experience business transformation with Node.js development services. Harness the power of this versatile technology for high-performance web applications.',
     },
     // Sections
     sections: {
@@ -927,7 +927,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     seo: {
       title: 'Webpack',
       description:
-        'This page is all about optimizing your frontend development workflow with Webpack.',
+        'Discover the power of webpack for efficient and optimized web development. Enhance performance and streamline your workflows with our expert solutions.',
     },
     // Sections
     sections: {

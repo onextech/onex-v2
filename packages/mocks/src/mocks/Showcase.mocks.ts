@@ -48,7 +48,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
   {
     title: 'Preparing the future of payments with SG Pay.',
     slug: 'sg-pay',
-    subtitle: 'Effortless mobile payments made possible with SG Pay.',
+    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
     hero_src: '/showcases/sg-pay/hero.png',
     hero_alt: 'Temperature adjustment app',
     mode: 'light',
@@ -150,7 +150,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
   {
     title: 'Wealthscale: Reinventing financial advisory.',
     slug: 'wealthscale',
-    subtitle: 'Showcasing a tailored approach to every single investor.',
+    subtitle: 'Learn about WealthScale\'s impressive portfolio of innovative wealth management solutions. Harness cutting-edge technology to elevate financial success.',
     hero_src: '/showcases/wealthscale/hero.png',
     hero_alt: 'App with surgery dates',
     mode: 'dark',
