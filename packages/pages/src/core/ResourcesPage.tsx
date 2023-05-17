@@ -1,12 +1,12 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { PressRelease } from '@onex/types'
+import type { Resource } from '@onex/types'
 import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import orderBy from 'lodash/orderBy'
 
 export interface ResourcesPageProps {
-  resources: PressRelease[]
+  resources: Resource[]
 }
 
 const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
@@ -57,7 +57,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
           ],
         },
         {
-          key: 'pressRelease',
+          key: 'resource',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {
