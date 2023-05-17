@@ -24,7 +24,13 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
-        seo={{ title: post.title, description: post.subtitle }}
+        seo={{ 
+          title: post.title,
+          description: post.subtitle,
+          openGraph: {
+            images: [{ url: post.hero_src }]
+          }
+        }}
         autoBreadcrumbs
         breadcrumbsProps={{ hideLastItem: true }}
       >
