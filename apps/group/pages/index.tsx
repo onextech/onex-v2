@@ -27,7 +27,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
         published_at && dayjs(published_at).isBefore(dayjs())
     )
     .reduce((result, post) => {
-      const currCatSize = result.filter(res => res.is_featured === post.is_featured).length
+      const currCatSize = result.filter(
+        (res) => res.is_featured === post.is_featured
+      ).length
       return currCatSize < 3 ? [...result, post] : result
     }, [])
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)

@@ -173,10 +173,10 @@ export const MOCK_TECH_RESOURCES = [
   // Images
   avatar_src: '/images/resource_book.png',
   avatar_alt: 'resource_book',
-  hero_src: '/images/about_working_in_office.png',
+  hero_src: '/images/resource_book.png',
   hero_alt: 'working in office',
   // Author
-  author_avatar_src: '/images/about_shape_circle_radial.svg',
+  author_avatar_src: '/images/author_joel_koh.png',
   author_avatar_alt: 'about_shape_circle_radial',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
