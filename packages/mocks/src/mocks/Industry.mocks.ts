@@ -598,8 +598,6 @@ export const MOCK_GROUP_INDUSTRYS = [
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
     ...item,
   })
 })
