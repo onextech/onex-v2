@@ -1223,37 +1223,6 @@ export const MOCK_GROUP_SERVICES = [
           },
         ],
       },
-      benefits: {
-        overline: 'What we do',
-        title: 'Empowering Digital Transformation',
-        subtitle:
-          '{appTitle} drives enterprise success through strategic technology consulting and bespoke software solutions that unlock growth and efficiency.',
-        maxWidth: 'xl',
-        center: true,
-        items: [
-          {
-            fa_icon: 'fa-people-group',
-            title: 'Advisory',
-            subtitle:
-              'Unlock growth and success with One X Group\'s business advisory services.',
-            href: `${routeConfig.SERVICES}/advisory`,
-          },
-          {
-            fa_icon: 'fa-cloud-binary',
-            title: 'Engineering',
-            subtitle:
-              'Engage our engineering services for insights, innovation, and data-driven decisions.',
-            href: `${routeConfig.SERVICES}/engineering`,
-          },
-          {
-            fa_icon: 'fa-chart-mixed',
-            title: 'Data',
-            subtitle:
-              'Data services that drive growth. Gain insights, make informed decisions.',
-            href: `${routeConfig.SERVICES}/data`,
-          },
-        ],
-      },
       faqs: {
         title: 'FAQs',
         subtitle:
@@ -2602,6 +2571,37 @@ export const MOCK_GROUP_SERVICES = [
     ...item,
     sections: {
       ...item.sections,
+      benefits: {
+        overline: 'What we do',
+        title: 'Empowering Digital Transformation',
+        subtitle:
+          '{appTitle} drives enterprise success through strategic technology consulting and bespoke software solutions that unlock growth and efficiency.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
+            subtitle:
+              'Unlock growth and success with One X Group\'s business advisory services.',
+            href: `${routeConfig.SERVICES}/advisory`,
+          },
+          {
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle:
+              'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            href: `${routeConfig.SERVICES}/engineering`,
+          },
+          {
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle:
+              'Data services that drive growth. Gain insights, make informed decisions.',
+            href: `${routeConfig.SERVICES}/data`,
+          },
+        ],
+      },
       checklist: {
         overline: 'What we do',
         title: `Why {appTitle} for {title}`,
