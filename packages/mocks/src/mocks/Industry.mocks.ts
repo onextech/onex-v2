@@ -278,10 +278,6 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'At our Government Solutions, we specialize in providing technology consulting services and enterprise software development solutions tailored to meet the unique challenges and requirements of government agencies.',
-          },
-          {
-            title:
               'We understand the critical role of technology in improving public services, increasing efficiency, and enhancing transparency in government operations. Our expertise in enterprise software development enables us to deliver innovative solutions that drive digital transformation and empower government agencies to better serve their constituents.',
           },
         ],
@@ -719,6 +715,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
+    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.' }}
   })
 })
 
