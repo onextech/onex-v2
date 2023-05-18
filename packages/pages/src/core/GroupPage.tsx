@@ -17,18 +17,17 @@ import { Industry, Page, Post, Showcase } from '@onex/types'
 
 export interface GroupPageProps {
   page: Page
-  posts: Post[]
+  featuredPosts: Post[]
+  heroPosts: Post[]
   showcases: Showcase[]
   industrys: Industry[]
 }
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
-  const { page, showcases, posts, industrys } = props
+  const { page, showcases, featuredPosts, heroPosts, industrys } = props
   const { clientLogos, clientTestimonials, routeConfig } = useLayout()
   const { sections } = page || {}
   const { benefits, features, faqs, cta } = sections || {}
-  const featuredPosts = posts.filter(post => post.is_featured )
-  const nonfeaturedPosts = posts.filter(post => !post.is_featured )
 
   return (
     <Blocks
@@ -55,7 +54,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   loop
                   height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
                   tabs={[
-                    ...featuredPosts.map((post) => {
+                    ...heroPosts.map((post) => {
                       const { category } = post
                       return category.title
                     }),
@@ -63,7 +62,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
                   items={[
-                    ...featuredPosts.map((post) => {
+                    ...heroPosts.map((post) => {
                       const { title, category } = post
                       return (
                         <Box sx={{ maxWidth: { md: '50%' } }}>
@@ -132,7 +131,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
-        renderFeaturedPostsBlock({ items: nonfeaturedPosts }),
+        renderFeaturedPostsBlock({ items: featuredPosts }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs

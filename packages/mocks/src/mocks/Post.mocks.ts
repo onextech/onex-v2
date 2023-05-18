@@ -84,7 +84,6 @@ export const MOCK_TECH_POSTS = [
   {
     published_at: '2023-05-22T11:00:00+0000',
     is_active: true,
-    is_featured: true,
     category_id: 7,
     title:
       'Are you building the right product for your customers? Tips on evaluating customers’ wants and needs',
@@ -207,6 +206,7 @@ export const MOCK_TECH_POSTS = [
   {
     published_at: '2023-05-15T08:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 8,
     title:
       'Digital Transformation in Government: Modernising Public Services for the 21st Century',
@@ -549,7 +549,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
-    is_featured: true,
+    is_hero: true,
     category_id: 1,
     title:
       'Future-Proofing Your Business: Strategies for Long-Term Growth and Success',
@@ -575,7 +575,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
-    is_featured: true,
+    is_hero: true,
     category_id: 2,
     title: 'Guide to Implementing New Technologies to Level Up Your Business',
     slug: 'guide-implementing-new-technologies-level-up-business',
@@ -646,7 +646,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15:00:00+0000',
     is_active: true,
-    is_featured: true,
+    is_hero: true,
     category_id: 3,
     title:
       'The Hybrid Workforce: Balancing Flexibility and Productivity in the Post-Pandemic Era',
@@ -673,6 +673,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 2,
     title:
       'Harness the Power of Intelligent Process Automation to Unlock Your Business Growth',
@@ -697,6 +698,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 4,
     title: 'Beyond the Logo: Developing a Comprehensive Brand Identity',
     slug: 'beyond-logo-developing-comprehensive-brand-identity',

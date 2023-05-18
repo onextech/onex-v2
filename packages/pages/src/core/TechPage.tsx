@@ -20,12 +20,12 @@ export interface TechPageProps {
   page: Page
   showcases: Showcase[]
   technologys: Technology[]
-  posts: Post[]
+  featuredPosts: Post[]
   industrys: Industry[]
 }
 
 const TechPage: React.FC<TechPageProps> = (props) => {
-  const { page, showcases, technologys, posts, industrys } = props
+  const { page, showcases, technologys, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
   const { locales, cta_button_title } = site
@@ -99,7 +99,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           title: localeTitle
             ? `Read our Latest Insights in ${localeTitle}`
             : `Read our Latest Insights`,
-          items: posts,
+          items: featuredPosts,
         }),
         // Faqs
         renderFaqsAccordionBlock({
