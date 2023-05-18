@@ -133,12 +133,12 @@ export const MOCK_TECH_PRESS_RELEASES = [
 
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: 'about_shape_circle_radial',
+  avatar_alt: 'Three circles',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   // Author
   author_avatar_src: '/images/about_shape_circle_radial.svg',
-  author_avatar_alt: 'about_shape_circle_radial',
+  author_avatar_alt: 'Three circles',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags

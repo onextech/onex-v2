@@ -6,7 +6,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     subtitle:
       'Seamlessly streamline your development workflow and accelerate time-to-market.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
@@ -15,15 +15,15 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     subtitle:
       'Develop rich user interfaces using modern technologies and frameworks.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
     title: 'Product Team Augmentation',
     slug: 'product-team-augmentation',
-    subtitle: 'Reach product goals with engaged software development experts.',
+    subtitle: 'Accelerate your product goals with top-tier frontend software engineering experts. Enhance your team with staff augmentation and technical leadership.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
 ]
 
@@ -33,27 +33,27 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Advisory',
     slug: 'advisory',
     subtitle:
-      'Partnering for Progress and Growth.',
+      'Unlock growth and success with One X Group\'s business advisory services.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 2,
     title: 'Engineering',
     slug: 'engineering',
     subtitle:
-      'Innovating the Future with Precision and Creativity.',
+      'Engage our engineering services for insights, innovation, and data-driven decisions.',
     hero_src: '/images/about_nodes.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'Laser net with nodes',
   },
   {
     id: 3,
     title: 'Data',
     slug: 'data',
     subtitle:
-      'Transforming data into value.',
+      'Data services that drive growth. Gain insights, make informed decisions.',
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'about_nodes',
+    hero_alt: 'People working in office',
   },
 ].map((item, i) => ({ id: i + 1, ...item }))
 

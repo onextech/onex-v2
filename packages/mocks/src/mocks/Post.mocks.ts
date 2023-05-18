@@ -448,7 +448,7 @@ export const MOCK_TECH_POSTS = [
     subtitle:
       "Unleash React's potential with advanced techniques for faster, user-friendly, and scalable web apps.",
     hero_src: 'https://source.unsplash.com/tzFVsg6nWtM/1600x900',
-    hero_alt: 'city',
+    hero_alt: 'Singapore city view',
     html:
       '<blockquote>\n' +
       "<p><em><strong>Summary:</strong> React is a well-known front-end framework for building web applications. Developers must learn advanced development strategies to improve the speed, usability, and functionality of their web applications in order to fully realize React's potential. This article looks at a few cutting-edge React development initiatives that can help to strengthen online applications and improve user experience. React Hooks, Context API, React Router, Redux, React Native, Server-Side Rendering, Code Splitting, React Animations, React Performance Optimization, and Accessibility are some of the features available. Developers can use these techniques to create strong, scalable, and resilient applications that meet the needs of users and businesses. Integrating these techniques with cloud infrastructure and best practices can improve the applications even further.</em></p>\n" +
@@ -548,10 +548,10 @@ export const MOCK_TECH_POSTS = [
   category: getCategoryFromCrudItem(item, MOCK_TECH_POST_CATEGORYS),
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: 'about_shape_circle_radial',
+  avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
@@ -782,10 +782,10 @@ export const MOCK_GROUP_POSTS = [
   category: getCategoryFromCrudItem(item, MOCK_GROUP_POST_CATEGORYS),
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: 'about_shape_circle_radial',
+  avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags

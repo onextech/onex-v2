@@ -39,7 +39,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
               title: '/images/about_working_in_office.png',
               disableContainer: true,
               titleProps: {
-                alt: 'technology-hero',
+                alt: 'People working in office',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },

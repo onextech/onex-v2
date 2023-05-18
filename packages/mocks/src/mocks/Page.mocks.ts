@@ -212,7 +212,7 @@ export const MOCK_DATA_PAGE = {
     },
     callout: {
       hero_src: '/images/digital_phone_prototyping.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       title: 'Custom Business Software Made for Market Leaders',
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -317,7 +317,7 @@ export const MOCK_DATA_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -421,7 +421,7 @@ export const MOCK_DESIGN_PAGE = {
     },
     callout: {
       hero_src: '/images/digital_phone_prototyping.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       title: 'Custom Business Software Made for Market Leaders',
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -526,7 +526,7 @@ export const MOCK_DESIGN_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -605,7 +605,7 @@ export const MOCK_DIGITAL_PAGE = {
     },
     callout: {
       hero_src: '/images/digital_phone_prototyping.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       title: 'Custom Business Software Made for Market Leaders',
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -710,7 +710,7 @@ export const MOCK_DIGITAL_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -819,7 +819,7 @@ export const MOCK_VENTURES_PAGE = {
     },
     callout: {
       hero_src: '/images/digital_phone_prototyping.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       title: 'Custom Business Software Made for Market Leaders',
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -924,7 +924,7 @@ export const MOCK_VENTURES_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -1097,7 +1097,7 @@ const MOCK_GROUP_PAGES = [
       },
       summary: {
         hero_src: '/images/about_nodes.png',
-        hero_alt: 'about-nodes',
+        hero_alt: 'Laser net',
         title:
           'We believe technology is the superpower that changes everything about business.',
         subtitle:
@@ -1143,7 +1143,7 @@ const MOCK_GROUP_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
-            avatar_alt: 'shape_circle_squares',
+            avatar_alt: 'Three squares',
             overline: '02',
             title: 'Launch a new company',
             subtitle:
@@ -1151,7 +1151,7 @@ const MOCK_GROUP_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
-            avatar_alt: 'shape_square_with_circle',
+            avatar_alt: 'Square with two circles',
             overline: '03',
             title: 'Scale up development',
             subtitle:
@@ -1159,7 +1159,7 @@ const MOCK_GROUP_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
-            avatar_alt: 'shape_circle',
+            avatar_alt: 'Three overlapping circles',
             overline: '04',
             title: 'Improve a current system',
             subtitle:
@@ -1169,7 +1169,7 @@ const MOCK_GROUP_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
-        hero_alt: 'about_nodes_above_city',
+        hero_alt: 'Laser net over city',
         title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
           'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
@@ -1228,7 +1228,7 @@ const MOCK_GROUP_PAGES = [
       },
       secondaryHero: {
         hero_src: '/images/about_working_in_office.png',
-        hero_alt: 'about_working_in_office',
+        hero_alt: 'People working in an office',
         overline: 'Careers',
         title: 'Thinkers & Tinkerers Coming Together',
         subtitle:
@@ -1251,7 +1251,7 @@ const MOCK_GROUP_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle} - Custom Software Development',
     seo_description:
-      'We empower our clients to build a future ready business by combining strategy, technology and design. Partner with us to define your strategy, create exceptional experiences and digitally reinvent your business.',
+      'Empower your business with strategic technology and design solutions. Define strategy, create exceptional experiences, and reinvent digitally.',
     sections: {
       hero: {
         overline: 'Greetings',
@@ -1333,7 +1333,7 @@ const MOCK_GROUP_PAGES = [
       },
       callout: {
         hero_src: '/images/digital_phone_prototyping.png',
-        hero_alt: 'about_nodes_above_city',
+        hero_alt: 'Laser net over city',
         title: 'Custom Business Software Made for Market Leaders',
         subtitle:
           'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -1439,7 +1439,7 @@ const MOCK_GROUP_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
-        hero_alt: 'about_nodes_above_city',
+        hero_alt: 'Laser net over city',
         title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
           'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
@@ -1487,7 +1487,7 @@ const MOCK_TECH_PAGES = [
       },
       summary: {
         hero_src: '/images/about_nodes.png',
-        hero_alt: 'about-nodes',
+        hero_alt: 'Laser net',
         title:
           'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
         subtitle:
@@ -1533,7 +1533,7 @@ const MOCK_TECH_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
-            avatar_alt: 'shape_circle_squares',
+            avatar_alt: 'Three squares',
             overline: '02',
             title: 'Modern Frontend Engineering',
             subtitle:
@@ -1541,7 +1541,7 @@ const MOCK_TECH_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
-            avatar_alt: 'shape_square_with_circle',
+            avatar_alt: 'Square with two circles',
             overline: '03',
             title: 'Product Team Augmentation',
             subtitle:
@@ -1549,7 +1549,7 @@ const MOCK_TECH_PAGES = [
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
-            avatar_alt: 'shape_circle',
+            avatar_alt: 'Three overlapping circles',
             overline: '04',
             title: 'Software Architecture R&D',
             subtitle:
@@ -1559,7 +1559,7 @@ const MOCK_TECH_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
-        hero_alt: 'about_nodes_above_city',
+        hero_alt: 'Laser net over city',
         title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
           'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
@@ -1618,7 +1618,7 @@ const MOCK_TECH_PAGES = [
       },
       secondaryHero: {
         hero_src: '/images/about_working_in_office.png',
-        hero_alt: 'about_working_in_office',
+        hero_alt: 'People working in an office',
         overline: 'Careers',
         title: 'Empower Enterprises with Extraordinary Experiences',
         subtitle:
@@ -1641,7 +1641,7 @@ const MOCK_TECH_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle} - Enterprise Frontend Development Services',
     seo_description:
-      "Experience exceptional Enterprise Frontend Development Services for your business. Our expert team delivers scalable, efficient, and visually stunning frontend solutions tailored to meet your enterprise's unique needs. Harnessing the latest technologies and frameworks, we create high-performance, user-friendly applications that enhance your digital presence and drive business growth.",
+      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
     sections: {
       hero: {
         overline: '{appTitle}',
@@ -1727,7 +1727,7 @@ const MOCK_TECH_PAGES = [
       },
       callout: {
         hero_src: '/images/digital_phone_prototyping.png',
-        hero_alt: 'about_nodes_above_city',
+        hero_alt: 'Laser net over city',
         title: 'Custom Business Software Made for Market Leaders',
         subtitle:
           'We build modern system architectures and scalable applications that radically transform business performance.',
@@ -1877,7 +1877,7 @@ const MOCK_TECH_PAGES = [
       },
       cta: {
         hero_src: '/images/two_men_pointing_at_screen.png',
-        hero_alt: 'software developers working on a laptop',
+        hero_alt: 'Software developers working on a laptop',
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:

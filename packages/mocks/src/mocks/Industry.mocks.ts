@@ -10,7 +10,7 @@ export const MOCK_INDUSTRY_PAGE = {
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: '{title}',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   overline: 'Industry',
   title: 'React',
   subtitle:
@@ -68,7 +68,7 @@ export const MOCK_INDUSTRY_PAGE = {
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
       title: 'We Design & Develop Custom Software for Businesses',
       subtitle:
@@ -173,7 +173,7 @@ export const MOCK_INDUSTRY_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -233,7 +233,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
+    hero_alt: 'People working in office',
     ...item,
   })
 })
@@ -246,12 +246,12 @@ export const MOCK_TECH_INDUSTRYS = [
     subtitle:
       'Partner with finance experts to optimize your business processes and make data-driven decisions.',
     hero_src: 'https://source.unsplash.com/amLfrL8LGls/1600x900',
-    hero_alt: 'Finance',
+    hero_alt: 'Finance laptop',
     // Seo
     seo: {
       title: 'Finance',
       description:
-        'This page is all about partnering with finance experts to optimize your business processes and make data-driven decisions.',
+        'Optimize your business processes with expert finance solutions. Streamline operations, make data-driven decisions, and drive sustainable growth.',
     },
     // Sections
     sections: {
@@ -346,12 +346,12 @@ export const MOCK_TECH_INDUSTRYS = [
     subtitle:
       'Partner with software development experts to create efficient solutions for government agencies.',
     hero_src: 'https://source.unsplash.com/o0kbc907i20/1600x900',
-    hero_alt: 'Government',
+    hero_alt: 'Greek temple',
     // Seo
     seo: {
       title: 'Government',
       description:
-        'This page is all about partnering with software development experts to create efficient solutions for government agencies.',
+        'Discover innovative technology solutions for the government sector. One X Tech offers expertise in delivering impactful software solutions.',
     },
     // Sections
     sections: {
@@ -446,12 +446,12 @@ export const MOCK_TECH_INDUSTRYS = [
     subtitle:
       'Partner with software development experts to optimize maritime operations and enhance efficiency.',
     hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
-    hero_alt: 'Maritime',
+    hero_alt: 'Port with shipping containers',
     // Seo
     seo: {
       title: 'Maritime',
       description:
-        'This page is all about partnering with software development experts to optimize maritime operations and enhance efficiency.',
+        'Optimize maritime operations with tailored software solutions. Streamline processes, improve decision-making, and ensure compliance with our expert team.',
     },
     // Sections
     sections: {
@@ -545,12 +545,12 @@ export const MOCK_TECH_INDUSTRYS = [
     subtitle:
       'Transform your real estate business with innovative software solutions and intuitive user interfaces.',
     hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900',
-    hero_alt: 'Real Estate',
+    hero_alt: 'Glass buildings',
     // Seo
     seo: {
       title: 'Real Estate',
       description:
-        'This page is all about transforming your real estate business with innovative software solutions and intuitive user interfaces.',
+        'Empower your real estate business with innovative software solutions operations streamlined for success.',
     },
     // Sections
     sections: {
@@ -640,8 +640,6 @@ export const MOCK_TECH_INDUSTRYS = [
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'working in office',
     ...item,
   })
 })

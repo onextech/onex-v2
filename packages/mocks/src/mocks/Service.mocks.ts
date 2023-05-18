@@ -16,7 +16,7 @@ export const MOCK_SERVICE_PAGE = {
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: '{title}',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   overline: 'Service',
   title: 'React',
   subtitle:
@@ -69,7 +69,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
       title: 'We Design & Develop Custom Software for Businesses',
       subtitle:
@@ -174,7 +174,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -292,7 +292,7 @@ export const MOCK_TECH_SERVICES = [
     seo: {
       title: 'User Interface Development',
       description:
-        'This page is all about creating high-quality user interfaces for your business.',
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
     },
     // Sections
     sections: {
@@ -388,14 +388,14 @@ export const MOCK_TECH_SERVICES = [
     category_id: 1,
     // Hero
     hero_src: 'https://source.unsplash.com/pREq0ns_p_E/1600x900',
-    hero_alt: 'api integration development',
+    hero_alt: 'Lights intertwined into a rope',
     subtitle:
       'Connect and streamline your systems with seamless API integration solutions.',
     // Seo
     seo: {
       title: 'API Integration Development',
       description:
-        'This page is all about providing top-notch API integration solutions for your business.',
+        'Accelerate your development with expert API integration services. Seamlessly connect and enhance your applications with robust API solutions.',
     },
     // Sections
     sections: {
@@ -493,12 +493,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Partner with our experts to develop a comprehensive design library for your digital products.',
     hero_src: 'https://source.unsplash.com/PkbZahEG2Ng/1600x900',
-    hero_alt: 'Design Library',
+    hero_alt: 'Library with stairs',
     // Seo
     seo: {
       title: 'Design Library Development',
       description:
-        'This page is all about creating a design library that streamlines the design and development process for your business.',
+        'Accelerate your development process with our design library development services. Create consistent and efficient user interfaces for your applications.',
     },
     // Sections
     sections: {
@@ -596,12 +596,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
     hero_src: 'https://source.unsplash.com/jJT2r2n7lYA/1600x900',
-    hero_alt: 'Application Modernization',
+    hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
       title: 'Application Modernization',
       description:
-        'This page is all about modernizing legacy systems and applications for your business.',
+        'Modernize your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
     // Sections
     sections: {
@@ -699,12 +699,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Improve your website speed, user experience, and search engine rankings with our performance optimization services.',
     hero_src: 'https://source.unsplash.com/M5tzZtFCOfs/1600x900',
-    hero_alt: 'Performance Optimization',
+    hero_alt: 'Collection of network cables',
     // Seo
     seo: {
       title: 'Performance Optimization',
       description:
-        'This page is all about optimizing your website for better performance, user experience, and search engine rankings.',
+        'Supercharge your frontend with microfrontend development. Build modular web apps for enhanced user experiences and faster development cycles.',
     },
     // Sections
     sections: {
@@ -802,12 +802,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Empower your enterprise applications with scalable, maintainable, and efficient microfrontend architecture.',
     hero_src: 'https://source.unsplash.com/1600x900/?software-engineering',
-    hero_alt: 'Microfrontend Development',
+    hero_alt: 'Zoomed in image of codes',
     // Seo
     seo: {
       title: 'Microfrontend Development',
       description:
-        'This page is all about building enterprise-grade microfrontend applications for your business.',
+        'Boost your frontend with microfrontend development. Scale applications, increase agility, and enhance user experiences with our expert services.',
     },
     // Sections
     sections: {
@@ -905,12 +905,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Expand your team with top-tier frontend software engineering and dashboard development experts, tailored to your enterprise needs.',
     hero_src: 'https://source.unsplash.com/1600x900/?staff-augmentation',
-    hero_alt: 'Staff Augmentation',
+    hero_alt: 'Group discussion with laptops',
     // Seo
     seo: {
       title: 'Staff Augmentation',
       description:
-        'This page is all about enhancing your team with skilled frontend software engineers and dashboard developers for your enterprise projects.',
+        'Enhance your product team with our staff augmentation services. Access top talent to scale your development efforts and accelerate project delivery.',
     },
     // Sections
     sections: {
@@ -1107,12 +1107,12 @@ export const MOCK_TECH_SERVICES = [
     subtitle:
       'Empower your software development projects with our experienced technical leaders and ensure success.',
     hero_src: 'https://source.unsplash.com/rxpThOwuVgE/1600x900',
-    hero_alt: 'Technical Leadership',
+    hero_alt: 'Man presenting to a group',
     // Seo
     seo: {
       title: 'Technical Leadership',
       description:
-        'This page is all about providing technical leadership for your software development projects.',
+        'Enhance your product team with technical leadership. Leverage our expertise to drive innovation, streamline development, and achieve project success.',
     },
     // Sections
     sections: {
