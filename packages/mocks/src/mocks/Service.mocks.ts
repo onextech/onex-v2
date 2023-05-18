@@ -1800,25 +1800,25 @@ export const MOCK_GROUP_SERVICES = [
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Enterprise Applications service and how we can support your business.',
+          'Learn more about our Enterprise Application Development services and how we can help your business thrive.',
         items: [
           {
             key: 'faqs-1',
-            title: 'What types of enterprises can benefit from your services?',
+            title: 'Why should I invest in custom enterprise applications?',
             content:
-              'Our Enterprise Applications service is suitable for businesses in various industries, including finance, healthcare, retail, manufacturing, and more. We have the expertise and experience to create tailored applications that address the unique challenges and requirements of your industry.',
+              'Custom enterprise applications provide several benefits, including increased efficiency, improved collaboration, enhanced data security, scalability, and the ability to adapt to your specific business needs. By investing in custom software solutions, you can gain a competitive edge, streamline processes, and drive innovation within your organization.',
           },
           {
             key: 'faqs-2',
-            title: 'What technologies and frameworks do you use for frontend development?',
+            title: 'What industries do you serve with your Enterprise Application Development services?',
             content:
-              'Our team of engineers is proficient in a variety of modern frontend technologies and frameworks, including but not limited to React, Angular, Vue.js, and TypeScript. We choose the most suitable technology stack based on your project requirements and preferences.',
+              'Our Enterprise Application Development services cater to a wide range of industries, including but not limited to finance, healthcare, manufacturing, logistics, retail, and telecommunications. We have experience working with diverse enterprises and can adapt our solutions to meet the unique requirements of your industry.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the quality and performance of the applications you develop?',
+            title: 'How do you ensure the security and scalability of enterprise applications?',
             content:
-              'We follow industry best practices and adhere to strict coding standards to ensure the quality and performance of our applications. We also conduct thorough testing, including unit testing, integration testing, and performance testing, to ensure that your applications function flawlessly and meet the demands of your enterprise.',
+              'Security and scalability are paramount in enterprise applications. We follow industry best practices and employ robust security measures to protect your sensitive data and ensure compliance with relevant regulations. Our development approach focuses on scalability, allowing your software to accommodate future growth and evolving business needs.',
           },
         ],
       },

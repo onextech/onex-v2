@@ -102,7 +102,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'body1',
                             title:
-                              'We empower enterprises with leading-edge frontend development and best practices.',
+                              'Explore our comprehensive services focused on empowering enterprises through custom software development',
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,

@@ -27,9 +27,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
     ({ is_featured }) => is_featured
   ).slice(0, 8)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
-  const featuredPosts = MOCK_POSTS[MOCK_KEY]
-    .filter(({ is_active }) => is_active)
-    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+  const featuredPosts = MOCK_POSTS[MOCK_KEY].filter(
+    ({ is_active }) => is_active
+  )
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
     .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
     .slice(0, 3)
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
@@ -53,8 +57,14 @@ export interface NextTechPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextTechPage: React.FC<NextTechPageProps> = (props) => {
-  const { page, showcases, technologys, featuredPosts, industrys, pageProviderProps } =
-    props
+  const {
+    page,
+    showcases,
+    technologys,
+    featuredPosts,
+    industrys,
+    pageProviderProps,
+  } = props
 
   return (
     <PageProvider {...pageProviderProps}>
