@@ -2600,6 +2600,15 @@ export const MOCK_GROUP_SERVICES = [
     // Category
     category: getCategoryFromCrudItem(item, MOCK_GROUP_SERVICE_CATEGORYS),
     ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
+      },
+    }
   })
 })
 

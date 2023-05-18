@@ -107,19 +107,19 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Build World-Class <br /> Dashboard User Interfaces
+              Elevate Your Business with Our Dedicated Technology Consulting Services
             </>
           ),
           subtitle:
-            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
+            'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),
         // Client Testimonials
         renderClientTestimonialCardsBlock({
-          title: 'Trusted by Frontend Development Teams',
+          title: 'Technology Consulting with Proven Results',
           subtitle:
-            "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
+            "Recognized for our unwavering commitment to excellence, One X Group stands as the trusted partner of choice for business leaders seeking quality software development services to drive their enterprise software solutions forward.",
           items: clientTestimonials,
         }),
         // Industry

@@ -1274,9 +1274,9 @@ const MOCK_GROUP_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Custom Software Development',
+        title: 'Enterprise Technology Consulting',
         subtitle:
-          "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
+          "From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ",
         maxWidth: 'lg',
         center: true,
         items: [
@@ -1284,19 +1284,19 @@ const MOCK_GROUP_PAGES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              'Partnering for Progress and Growth.',
+              'Unlock growth and success with One X Group\'s business advisory services.',
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
             fa_icon: 'fa-cloud-binary',
             title: 'Engineering',
-            subtitle: 'Innovating the Future with Precision and Creativity.',
+            subtitle: 'Engage our engineering services for insights, innovation, and data-driven decisions.',
             href: `${routeConfig.SERVICES}/engineering`,
           },
           {
             fa_icon: 'fa-chart-mixed',
             title: 'Data',
-            subtitle: 'Transforming data into value.',
+            subtitle: 'Data services that drive growth. Gain insights, make informed decisions.',
             href: `${routeConfig.SERVICES}/data`,
           },
         ],
@@ -1345,37 +1345,37 @@ const MOCK_GROUP_PAGES = [
         overline: 'What we do',
         title: 'Our Approach',
         subtitle:
-          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
         items: [
           {
-            fa_icon: 'fa-search',
-            title: 'Code Review',
-            subtitle: 'Our team conducts thorough code reviews to ensure the quality, efficiency, and adherence to industry standards of every software solution we develop.'
+            fa_icon: 'fa-check',
+            title: 'Agile Development Methodology',
+            subtitle: 'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.'
           },
           {
-            fa_icon: 'fa-handshake',
-            title: 'Pair Programming',
-            subtitle: 'By leveraging collaborative efforts through pair programming, we enhance code quality, knowledge sharing, and problem-solving capabilities, resulting in robust and scalable enterprise software.'
+            fa_icon: 'fa-cogs',
+            title: 'Cutting-Edge Technologies',
+            subtitle: 'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.'
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle: 'We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization\'s goals and processes.'
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Streamlined Project Management',
+            subtitle: 'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.'
           },
           {
             fa_icon: 'fa-check-circle',
-            title: 'Test-Driven Development',
-            subtitle: 'Our approach emphasizes writing automated tests before writing code, ensuring that the software meets requirements, remains maintainable, and reduces the risk of bugs.'
+            title: 'Quality Assurance and Testing',
+            subtitle: 'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.'
           },
           {
-            fa_icon: 'fa-code-branch',
-            title: 'Continuous Integration',
-            subtitle: 'We integrate code changes frequently into a shared repository, allowing for early detection of integration issues and promoting a seamless development workflow for efficient and error-free software delivery.'
-          },
-          {
-            fa_icon: 'fa-check-square',
-            title: 'Automated Testing',
-            subtitle: 'Through the implementation of automated testing frameworks, we validate the functionality, performance, and stability of software solutions, enabling faster feedback and ensuring reliable and bug-free applications.'
-          },
-          {
-            fa_icon: 'fa-shield-alt',
-            title: 'Quality Assurance',
-            subtitle: 'We prioritize quality at every stage, employing rigorous testing methodologies, quality control measures, and continuous monitoring to deliver enterprise software solutions that meet the highest standards of excellence.'
+            fa_icon: 'fa-chart-line',
+            title: 'Scalability and Future-Proofing',
+            subtitle: 'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.'
           }
         ],
       },

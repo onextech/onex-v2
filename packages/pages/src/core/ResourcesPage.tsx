@@ -30,7 +30,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our resources and capabilities that help you define your vision for the future and make it happen.',
+                'Unlock the key to business success with One X Group\'s comprehensive collection of resources.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -39,7 +39,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/about_working_in_office.png',
+              title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
               disableContainer: true,
               titleProps: {
                 alt: 'People working in an office',
@@ -51,7 +51,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             {
               type: 'h4',
               title:
-                'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
+                'We offer expert guides and valuable insights on leveraging technology to turn your strategic vision into a resounding success. Discover innovative strategies, best practices, and industry trends to optimize your enterprise software development and propel your business forward.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],

@@ -250,7 +250,32 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
         ],
       },
-    }
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Capital Markets Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in capital markets operations?',
+            content:
+              'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your software solutions improve trading processes?',
+            content:
+              'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do you offer customization options for capital markets solutions?',
+            content:
+              'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Government',
@@ -316,6 +341,31 @@ export const MOCK_GROUP_INDUSTRYS = [
             title: 'Legacy Systems Modernization',
             subtitle:
               'We assist in modernizing legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Government Solutions and how they can benefit your agency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can technology solutions benefit government agencies?',
+            content:
+              'Technology solutions can help government agencies streamline operations, enhance citizen services, improve data management and security, enable data-driven decision-making, and drive digital transformation to meet the evolving needs of citizens.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of software solutions do you offer for government agencies?',
+            content:
+              'We offer a range of software solutions tailored to the specific needs of government agencies, including citizen engagement platforms, e-governance systems, data management and analytics solutions, workflow automation tools, and secure government portals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do you have experience working with government compliance and regulations?',
+            content:
+              'Yes, we have extensive experience working with government compliance and regulations. We understand the unique requirements and standards that government agencies must adhere to, and we ensure that our solutions meet the necessary compliance and security standards.',
           },
         ],
       },
@@ -387,7 +437,32 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
         ],
       },
-    }
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Maritime Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the maritime industry?',
+            content:
+              'The maritime industry faces challenges such as regulatory compliance, operational inefficiencies, security threats, environmental sustainability, and optimizing logistics across complex supply chains.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology improve operations in the maritime sector?',
+            content:
+              'Technology can help improve maritime operations by automating manual processes, enhancing vessel performance monitoring, optimizing route planning, enabling real-time data sharing and collaboration, and providing data-driven insights for better decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the maritime industry?',
+            content:
+              'We offer a range of software solutions tailored to the maritime industry, including fleet management systems, vessel tracking and monitoring solutions, port management software, maritime analytics platforms, supply chain optimization tools, and compliance management systems.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Real Estate',
@@ -456,6 +531,31 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
         ],
       },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Real Estate Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the real estate industry?',
+            content:
+              'The real estate industry faces challenges such as property management, lease administration, tenant relationship management, investment analysis, regulatory compliance, and adapting to changing market conditions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology improve operations in the real estate sector?',
+            content:
+              'Technology can improve real estate operations by automating manual processes, centralizing property and tenant data, streamlining lease administration, enabling online property listings and transactions, facilitating customer self-service, and providing data-driven insights for better decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the real estate industry?',
+            content:
+              'We offer a range of software solutions tailored to the real estate industry, including real estate management systems, property analytics platforms, transaction management software, customer relationship management (CRM) tools, property listing portals, and investment analysis platforms.',
+          },
+        ],
+      }
     }
   },
   {
@@ -525,7 +625,32 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
         ],
       },
-    }
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Banking Solutions and how they can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the banking industry?',
+            content:
+              'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology drive innovation in the banking sector?',
+            content:
+              'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the banking industry?',
+            content:
+              'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Insurance',
@@ -593,7 +718,32 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
         ],
       },
-    }
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Insurance Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the insurance industry?',
+            content:
+              'The insurance industry faces challenges such as digital disruption, legacy system integration, regulatory compliance, customer experience enhancement, fraud detection, risk assessment, and leveraging data insights.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology drive innovation in the insurance sector?',
+            content:
+              'Technology can drive innovation in the insurance sector by enabling digital insurance platforms, enhancing underwriting processes, automating claims management, improving customer engagement through self-service portals, leveraging data analytics for risk assessment and personalized offerings, and facilitating seamless integration with partner ecosystems.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the insurance industry?',
+            content:
+              'We offer a range of software solutions tailored to the insurance industry, including policy management systems, claims processing platforms, customer portals, fraud detection systems, data analytics tools, underwriting automation, and digital transformation consulting services.',
+          },
+        ],
+      }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
