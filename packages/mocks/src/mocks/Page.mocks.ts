@@ -1348,41 +1348,35 @@ const MOCK_GROUP_PAGES = [
           'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
         items: [
           {
-            fa_icon: 'fa-watch',
-            title: 'Scale up development',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+            fa_icon: 'fa-search',
+            title: 'Code Review',
+            subtitle: 'Our team conducts thorough code reviews to ensure the quality, efficiency, and adherence to industry standards of every software solution we develop.'
           },
           {
-            fa_icon: 'fa-hand-holding-seedling',
-            title: 'Improve a current system',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+            fa_icon: 'fa-handshake',
+            title: 'Pair Programming',
+            subtitle: 'By leveraging collaborative efforts through pair programming, we enhance code quality, knowledge sharing, and problem-solving capabilities, resulting in robust and scalable enterprise software.'
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Food & Drinks',
-            subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
+            fa_icon: 'fa-check-circle',
+            title: 'Test-Driven Development',
+            subtitle: 'Our approach emphasizes writing automated tests before writing code, ensuring that the software meets requirements, remains maintainable, and reduces the risk of bugs.'
           },
           {
-            fa_icon: 'fa-puzzle-piece',
-            title: 'Live It Up',
-            subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+            fa_icon: 'fa-code-branch',
+            title: 'Continuous Integration',
+            subtitle: 'We integrate code changes frequently into a shared repository, allowing for early detection of integration issues and promoting a seamless development workflow for efficient and error-free software delivery.'
           },
           {
-            fa_icon: 'fa-guitar',
-            title: 'Rewards',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+            fa_icon: 'fa-check-square',
+            title: 'Automated Testing',
+            subtitle: 'Through the implementation of automated testing frameworks, we validate the functionality, performance, and stability of software solutions, enabling faster feedback and ensuring reliable and bug-free applications.'
           },
           {
-            fa_icon: 'fa-table-tennis',
-            title: 'Convenience',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
+            fa_icon: 'fa-shield-alt',
+            title: 'Quality Assurance',
+            subtitle: 'We prioritize quality at every stage, employing rigorous testing methodologies, quality control measures, and continuous monitoring to deliver enterprise software solutions that meet the highest standards of excellence.'
+          }
         ],
       },
       howItWorks: { overline: '', title: '', subtitle: '', items: [] },
@@ -1421,21 +1415,21 @@ const MOCK_GROUP_PAGES = [
           {
             key: 'how-it-works-1',
             title:
-              'What are the advantages of developing web apps with {title}?',
+              'What industries do you cater to with your technology consulting services?',
             content:
-              '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'We serve a wide range of industries, including finance, healthcare, retail, manufacturing, and more. Our expertise in enterprise software development allows us to tailor solutions to meet the unique needs of each industry.',
           },
           {
             key: 'how-it-works-2',
-            title: 'How can {title} development benefit my existing system?',
+            title: 'What is the typical timeline for developing an enterprise software solution?',
             content:
-              "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
+              "The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.",
           },
           {
             key: 'how-it-works-3',
-            title: 'What is the future of {title}?',
+            title: 'Can you help us integrate our existing systems with the new software solutions?',
             content:
-              '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
+              'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
         ],
       },
