@@ -19,16 +19,6 @@ export const MOCK_INDUSTRY_PAGE = {
   sections: {
     summary: {
       title: 'Innovation that drives real impact.',
-      items: [
-        {
-          title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
-        },
-        {
-          title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
-        },
-      ],
     },
     benefits: {
       overline: 'What we do',
@@ -198,11 +188,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'At our Capital Markets Solutions, we understand the unique challenges and opportunities that businesses in the Capital Markets industry face. Our technology consulting services and enterprise software development expertise are tailored to meet the specific needs of Capital Markets companies.',
-          },
-          {
-            title:
-              'We believe that technology plays a crucial role in unlocking growth and competitive advantage in the Capital Markets sector. With our deep understanding of the Capital Markets industry and our commitment to delivering innovative solutions, we can help your Capital Markets business thrive.',
+              'We understand the critical role that technology plays in driving success for enterprises in the capital markets industry. With our specialized technology consulting services and expertise in enterprise software development, we are dedicated to helping businesses in the capital markets sector achieve their goals and gain a competitive edge.',
           },
         ],
       },
@@ -385,11 +371,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'At our Maritime Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the maritime industry.',
-          },
-          {
-            title:
-              'We understand the unique challenges and requirements of the maritime industry, and our expertise in enterprise software development enables us to deliver innovative solutions that drive efficiency, safety, and sustainability in maritime operations.',
+              'We understand the intricate workings of maritime operations, including vessel management, logistics, supply chain, port operations, and regulatory compliance. Leveraging our expertise, we work closely with maritime enterprises to identify their pain points and develop strategic technology solutions that address their specific needs.',
           },
         ],
       },
@@ -479,11 +461,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'At our Real Estate Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the real estate industry.',
-          },
-          {
-            title:
-              'We understand the unique challenges and requirements of the real estate industry, and our expertise in enterprise software development enables us to deliver innovative solutions that streamline operations, enhance customer experiences, and drive business growth.',
+              'The real estate industry relies heavily on effective management, streamlined processes, and the ability to adapt to changing market conditions. Our team of experienced professionals combines industry knowledge with technical excellence to deliver innovative solutions tailored specifically for the real estate industry.',
           },
         ],
       },
@@ -571,10 +549,6 @@ export const MOCK_GROUP_INDUSTRYS = [
       summary: {
         title: 'Driving innovation in the banking industry.',
         items: [
-          {
-            title:
-              'At our Banking Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the banking industry.',
-          },
           {
             title:
               'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
@@ -666,11 +640,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'At our Insurance Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the insurance industry.',
-          },
-          {
-            title:
-              'We understand the unique challenges faced by insurance companies, and our expertise in enterprise software development enables us to deliver tailored solutions that streamline operations, enhance customer experiences, and facilitate digital transformation.',
+              'The insurance industry is undergoing rapid digital transformation, driven by changing customer expectations, regulatory requirements, and emerging technologies. At One X Group, we help insurance enterprises navigate these challenges and unlock the full potential of technology to achieve their business goals.',
           },
         ],
       },
@@ -872,10 +842,6 @@ export const MOCK_TECH_INDUSTRYS = [
       summary: {
         title: 'Efficient solutions for government agencies.',
         items: [
-          {
-            title:
-              'In the fast-paced and ever-evolving world of government agencies, efficiency and effectiveness are crucial. At our Software Development Service for Government, we specialize in creating innovative and efficient solutions that empower government agencies to better serve their constituents.',
-          },
           {
             title:
               'We understand the unique challenges faced by government agencies, from complex data management to citizen engagement. Our team of experts is equipped with the knowledge and experience to develop custom software solutions that streamline processes, enhance transparency, and enable data-driven decision-making.',

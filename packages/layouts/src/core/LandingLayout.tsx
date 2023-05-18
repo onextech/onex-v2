@@ -486,7 +486,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           },
                           {
                             type: 'body1',
-                            title: 'Learn more about how we function.',
+                            title: 'Learn more about our other functions.',
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -497,7 +497,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                             title: 'Learn More',
                             titleProps: {
                               rightCaret: true,
-                              href: `${site.company_absolute_url}${routeConfig.WORKSPACES}`,
+                              href: `/${routeConfig.WORKSPACES}`,
                               color: 'secondary',
                               sx: { mt: 2 },
                               variant: 'body2',
