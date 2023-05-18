@@ -25,7 +25,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
           ...commonBlockProps,
           backgroundImageProps: {
             src: '/images/careers_hero.png',
-            alt: 'hero',
+            alt: 'People discussing in white office',
           },
           items: [
             { type: 'overline', title: 'Careers' },
@@ -68,7 +68,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
               maxWidth: false,
               disableContainer: true,
               titleProps: {
-                alt: 'about_working_in_office',
+                alt: 'Office with plants',
                 background: true,
                 backgroundHeight: { xs: 300, md: 500 },
                 sx: { my: 3 },
@@ -144,7 +144,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
               title: '/images/about_working_in_office.png',
               disableContainer: true,
               titleProps: {
-                alt: 'about_working_in_office',
+                alt: 'People working in office',
                 fill: true,
                 sx: { mt: 7 },
               },

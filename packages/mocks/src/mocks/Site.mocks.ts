@@ -10,7 +10,7 @@ export const MOCK_COMMON_SITE = {
 
   // Logo
   logo_src: '/logo.svg',
-  logo_alt: 'logo',
+  logo_alt: 'One X Tech logo',
 
   // Locale
   locales: [

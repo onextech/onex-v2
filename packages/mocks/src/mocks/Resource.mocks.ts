@@ -58,7 +58,7 @@ export const MOCK_TECH_RESOURCES = [
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
       title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
@@ -163,7 +163,7 @@ export const MOCK_TECH_RESOURCES = [
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -174,7 +174,7 @@ export const MOCK_TECH_RESOURCES = [
   avatar_src: '/images/resource_book.png',
   avatar_alt: 'resource_book',
   hero_src: '/images/resource_book.png',
-  hero_alt: 'working in office',
+  hero_alt: 'OKR Resource Book',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
   author_avatar_alt: 'about_shape_circle_radial',

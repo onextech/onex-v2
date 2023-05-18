@@ -19,7 +19,10 @@ const NextPostCategoryPage: React.FC<NextPostCategoryPageProps> = (props) => {
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
-        seo={{ title: postCategory.title, description: postCategory.subtitle }}
+        seo={{
+          title: postCategory.title,
+          description: `Gain valuable insights about ${postCategory.title.toLowerCase()} on One X Tech. Discover trends, strategies, and innovations for today's dynamic business landscape.`,
+        }}
         autoBreadcrumbs
       >
         <PostCategoryPage postCategory={postCategory} posts={posts} />

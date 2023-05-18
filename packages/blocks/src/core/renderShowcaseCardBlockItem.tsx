@@ -11,7 +11,7 @@ const renderShowcaseCardBlockItem = (
   props: RenderShowcaseCardBlockItemProps
 ) => {
   const { item, isHero } = props
-  const { slug, backgroundColor, mode, hero_src, title, subtitle, reverse } =
+  const { slug, backgroundColor, mode, hero_src, title, subtitle, reverse, hero_alt } =
     item || {}
 
   const gridItems = [
@@ -30,7 +30,7 @@ const renderShowcaseCardBlockItem = (
           title: hero_src,
           boxProps: { sx: { display: 'flex', justifyContent: 'center' } },
           titleProps: {
-            alt: 'image-src',
+            alt: hero_alt || 'image-src',
             background: true,
             fixedBackground: true,
             scaleOnHover: true,

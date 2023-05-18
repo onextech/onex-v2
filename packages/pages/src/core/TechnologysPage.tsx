@@ -39,7 +39,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
               title: 'https://source.unsplash.com/Q1p7bh3SHj8/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'technology-hero',
+                alt: 'People working in office',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
