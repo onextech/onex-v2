@@ -1455,9 +1455,9 @@ const MOCK_GROUP_PAGES = [
       },
     },
   },
-  { title: 'Mission', slug: 'mission' },
-  { title: 'News', slug: 'news' },
-  { title: 'Resources', slug: 'resources' },
+  { title: 'Mission', slug: 'mission', subtitle: 'Find out how we seek to create change that matters.' },
+  { title: 'News', slug: 'news', subtitle: 'Stay up to date with the latest trends in the digital landscape.' },
+  { title: 'Resources', slug: 'resources', subtitle: 'Access our curated resource list for tips and tricks on how you can grow your business.' },
   { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true, },
   { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true, },
 ]

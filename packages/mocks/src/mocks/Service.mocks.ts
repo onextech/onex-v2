@@ -258,6 +258,37 @@ export const MOCK_TECH_SERVICES = [
           },
         ],
       },
+      benefits: {
+        overline: 'What we do',
+        title: 'Accelerate Product Delivery',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Accelerate Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+          },
+        ],
+      },
       faqs: {
         title: 'FAQs',
         subtitle:
@@ -1189,6 +1220,37 @@ export const MOCK_GROUP_SERVICES = [
             title: 'Data-driven insights',
             subtitle:
               'We leverage data analytics and user feedback to gain valuable insights that inform iterative design decisions, optimizing the performance and effectiveness of your product or service.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Empowering Digital Transformation',
+        subtitle:
+          '{appTitle} drives enterprise success through strategic technology consulting and bespoke software solutions that unlock growth and efficiency.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
+            subtitle:
+              'Unlock growth and success with One X Group\'s business advisory services.',
+            href: `${routeConfig.SERVICES}/advisory`,
+          },
+          {
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle:
+              'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            href: `${routeConfig.SERVICES}/engineering`,
+          },
+          {
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle:
+              'Data services that drive growth. Gain insights, make informed decisions.',
+            href: `${routeConfig.SERVICES}/data`,
           },
         ],
       },
