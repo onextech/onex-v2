@@ -1888,11 +1888,15 @@ const MOCK_TECH_PAGES = [
 }))
 
 export const MOCK_DATA_PAGES = [
-  MOCK_DATA_PAGE
+  {
+    slug: 'home'
+  }
 ].map((page) => merge({}, MOCK_DATA_PAGE, page))
 
 export const MOCK_DESIGN_PAGES = [
-  MOCK_DESIGN_PAGE
+  {
+    slug: 'home'
+  }
 ].map((page) => merge({}, MOCK_DESIGN_PAGE, page))
 
 export const MOCK_PAGES = {
