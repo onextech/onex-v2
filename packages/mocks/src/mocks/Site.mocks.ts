@@ -88,7 +88,47 @@ export const MOCK_TECH_SITE = {
   logo_height: 13,
 }
 
+export const MOCK_DESIGN_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  // App
+  title: 'One X Design',
+  absolute_url: 'https://www.onexdesign.com',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with One X Design.',
+  cta_button_title: 'Schedule a Call',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+}
+
+export const MOCK_DATA_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  // App
+  title: 'One X Data',
+  absolute_url: 'https://www.onexdata.com',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with One X Data.',
+  cta_button_title: 'Schedule a Call',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+}
+
 export const MOCK_SITE = {
   GROUP: MOCK_GROUP_SITE,
   TECH: MOCK_TECH_SITE,
+  DATA: MOCK_DATA_SITE,
+  DESIGN: MOCK_DESIGN_SITE
 }
