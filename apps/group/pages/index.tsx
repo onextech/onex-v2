@@ -21,17 +21,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
     site,
   })
-  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
-    .filter(
-      ({ published_at }) =>
-        published_at && dayjs(published_at).isBefore(dayjs())
-    )
-    .reduce((result, post) => {
-      const currCatSize = result.filter(
-        (res) => res.is_featured === post.is_featured
-      ).length
-      return currCatSize < 3 ? [...result, post] : result
-    }, [])
   const heroPosts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
     .filter(
       ({ published_at }) =>
