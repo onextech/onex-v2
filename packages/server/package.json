@@ -9,9 +9,9 @@
   "dependencies": {
     "@gravis-os/analytics": "^0.0.0",
     "@gravis-os/landing": "^0.0.46",
-    "@gravis-os/query": "^0.0.25",
+    "@gravis-os/query": "^0.0.26",
     "@gravis-os/ui": "^0.0.107",
-    "@gravis-os/utils": "^0.0.42",
+    "@gravis-os/utils": "^0.1.1",
     "dayjs": "^1.11.7"
   }
 }

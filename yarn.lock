@@ -1662,10 +1662,10 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@^0.0.109":
-  version "0.0.109"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.109.tgz#3a860e26fe953689320e43906d0240f8487eccb3"
-  integrity sha512-GImyJbIo7QvhRUxWXh7VjPBELkhXFf0iTTkE+Bk5ZigB2Y/j67F9tLbye1osgxEFNccE/59CbgEj5IDPRKYTuA==
+"@gravis-os/form@^0.0.110":
+  version "0.0.110"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.110.tgz#643264af0903ee7d5b320f778e9868b8a659c8c2"
+  integrity sha512-4GzouqjjMg1gMtIHzDhdhkvvw4I6VdMM9kpzvBbbERNuOOAQuZt8otdQKRJSB6s7VB7YY8uKEHgGQ/Va/6mbgg==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1698,10 +1698,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/query@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.25.tgz#4a8707f7d7bbf38dfa3b044d65090db9c710bf49"
-  integrity sha512-rM8Vs9AeAVKJCoYHspS3OHB3uqc0Fj4HyYUpoGwrel8N5G8jh6ofKFvNUYJWvtmkxlkyPvxWzNMSpm8ddyrP1g==
+"@gravis-os/query@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.26.tgz#da4666b6a6954a88bda5ec22bfbfc6bbf00b5bca"
+  integrity sha512-yOoi5jpmnQRuqDYBoVxN3kzRZp3Er0MnDcwanwZBuY4wmUnq3l8Ny9OyLTHtxzkxFXoBplK7e6wORfS0gbfNKg==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1740,10 +1740,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/tsconfig@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.6.tgz#188b4a438337c9b0ae28b07f7aaf070995f390d5"
-  integrity sha512-0FCV/wbr1X7NnubKMbMh2Q9gKnf4RLRInHJdTv8zWbO7y408dLMGbUi5HEtiiX3DxnjfkjaItzfReAx+t0adIw==
+"@gravis-os/tsconfig@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.7.tgz#bf49b44586df5518c9d0427cf3a91765f0fd857a"
+  integrity sha512-B6zS8UXcMPztbrbltjJPaORpDgWp6I7FLS86DdmvUy/RxFUBVBt2LrYvkd5g6JUgohhu5rDZ64gCjX+O4uf5MA==
 
 "@gravis-os/types@*":
   version "0.0.41"
@@ -1781,10 +1781,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/utils@*", "@gravis-os/utils@^0.0.42":
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.0.42.tgz#53b7690bc45ccd079a8523086bdf54fedb2317d1"
-  integrity sha512-hfrjkJDaACYkZqdqg+I1G9EsO676Wf25/b6BkySydFLpSY/xVehfJmWcL4VSij6vJOfcHOP9Ck1ixxsKG4J1IA==
+"@gravis-os/utils@*", "@gravis-os/utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.1.tgz#4b7eb8139bd87156c49727dba0c0d7a64d8de3e1"
+  integrity sha512-f6UOIMnMzoJsfaEyqTayq0SDf9c5KAUii6IoqAFMp8hUQEfvTDWrNPWxhOcQ0HNOF+nf4UK7uI49fGVqsQwcdw==
   dependencies:
     "@gravis-os/types" "*"
     dayjs "^1.11.3"
