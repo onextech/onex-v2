@@ -71,9 +71,9 @@ export const MOCK_SERVICE_PAGE = {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'Laser net over city',
       overline: '',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
-        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
     },
     features: {
       overline: 'What we do',
@@ -183,101 +183,6 @@ export const MOCK_SERVICE_PAGE = {
   },
 }
 
-export const PRODUCT_AND_SERVICE_DESIGN_SERVICE_PAGE = {
-  // Hero
-  title: 'Product and Service Design',
-  slug: 'product-and-service-design',
-  subtitle:
-    'Create exceptional digital experiences for your enterprise clients with our expertise in frontend software engineering and dashboard development.',
-  hero_src: 'https://source.unsplash.com/1600x900/?product-design',
-  hero_alt: 'Product Design',
-  // Seo
-  seo: {
-    title: 'Product and Service Design',
-    description:
-      'This page is all about providing top-notch product and service design solutions for your enterprise clients.',
-  },
-  // Sections
-  sections: {
-    summary: {
-      title: 'Crafting digital experiences that delight your customers.',
-      items: [
-        {
-          title:
-            'In the highly competitive world of enterprise software, creating digital experiences that truly stand out is crucial. Our Product and Service Design team specializes in frontend software engineering and dashboard development to ensure your clients get the best possible user experience.',
-        },
-        {
-          title:
-            'Our focus is on building intuitive and efficient digital solutions that cater to the unique needs of your enterprise clients. We work closely with you to understand your clients\' business objectives and deliver tailored solutions that drive growth and enhance customer satisfaction.',
-        },
-      ],
-    },
-    features: {
-      overline: 'What we do',
-      title: 'Our {title} Capabilities',
-      subtitle:
-        'Our team of experts is well-versed in the latest frontend technologies and design principles, ensuring that your digital products are both visually stunning and highly functional.',
-      items: [
-        {
-          fa_icon: 'fa-pencil-ruler',
-          title: 'Bespoke dashboard design',
-          subtitle:
-            'Our team creates custom dashboard designs that deliver vital information to your clients in a visually appealing and easily digestible format.',
-        },
-        {
-          fa_icon: 'fa-desktop',
-          title: 'Responsive frontend development',
-          subtitle:
-            "We develop user interfaces that work seamlessly across all devices, ensuring that your clients' users can access the digital products from anywhere.",
-        },
-        {
-          fa_icon: 'fa-chart-line',
-          title: 'Data visualization',
-          subtitle:
-            'We employ cutting-edge data visualization techniques to present complex data in an easily understandable manner, allowing your clients to make informed decisions.',
-        },
-        {
-          fa_icon: 'fa-cogs',
-          title: 'Efficient performance',
-          subtitle:
-            'We optimize the performance of your digital products, ensuring that they run smoothly and efficiently, even with large amounts of data.',
-        },
-        {
-          fa_icon: 'fa-code-branch',
-          title: 'Collaboration',
-          subtitle:
-            'We work closely with your team to ensure that our digital solutions align with your clients\' business objectives and deliver the desired outcomes.',
-        },
-      ],
-    },
-    faqs: {
-      title: 'FAQs',
-      subtitle:
-        'Learn more about our Product and Service Design service and how we can help your enterprise clients.',
-      items: [
-        {
-          key: 'faqs-1',
-          title: 'What makes your Product and Service Design solutions stand out from the competition?',
-          content:
-            'Our Product and Service Design solutions stand out from the competition because of our specialization in frontend software engineering and dashboard development. We focus on creating digital experiences that are visually stunning, highly functional, and tailored to the unique needs of your enterprise clients. Our team of experts stays up-to-date with the latest frontend technologies and design principles, ensuring that your digital products are built to the highest standards.',
-        },
-        {
-          key: 'faqs-2',
-          title: 'What kind of clients do you work with?',
-          content:
-            'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organizations across various industries.',
-        },
-        {
-          key: 'faqs-3',
-          title: 'How do you ensure the quality of your digital products?',
-          content:
-            'To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients\' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.',
-        },
-      ],
-    },
-  },
-}
-
 export const MOCK_TECH_SERVICES = [
   {
     title: 'User Interface Development',
@@ -350,6 +255,37 @@ export const MOCK_TECH_SERVICES = [
             title: 'Collaboration',
             subtitle:
               'We work closely with your team to ensure that your interface meets your business objectives and delivers value to your customers.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Accelerate Product Delivery',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Accelerate Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
           },
         ],
       },
@@ -1220,8 +1156,8 @@ export const MOCK_GROUP_SERVICES = [
     category_id: 1,
     subtitle:
       'Create exceptional digital experiences for your enterprise clients with our expertise in frontend software engineering and dashboard development.',
-    hero_src: 'https://source.unsplash.com/1600x900/?product-design',
-    hero_alt: 'Product Design',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
     // Seo
     seo: {
       title: 'Product and Service Design',
@@ -1247,37 +1183,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our team of experts is well-versed in the latest frontend technologies and design principles, ensuring that your digital products are both visually stunning and highly functional.',
+          'To design innovative products and services, we follow a comprehensive process that includes user research, ideation, prototyping, testing, and refinement.',
         items: [
           {
-            fa_icon: 'fa-pencil-ruler',
-            title: 'Bespoke dashboard design',
+            fa_icon: 'fa-lightbulb',
+            title: 'Creative ideation',
             subtitle:
-              'Our team creates custom dashboard designs that deliver vital information to your clients in a visually appealing and easily digestible format.',
-          },
-          {
-            fa_icon: 'fa-desktop',
-            title: 'Responsive frontend development',
-            subtitle:
-              "We develop user interfaces that work seamlessly across all devices, ensuring that your clients' users can access the digital products from anywhere.",
-          },
-          {
-            fa_icon: 'fa-chart-line',
-            title: 'Data visualization',
-            subtitle:
-              'We employ cutting-edge data visualization techniques to present complex data in an easily understandable manner, allowing your clients to make informed decisions.',
+              'We generate unique and creative ideas that align with your business objectives and user needs, setting the foundation for successful product and service design.',
           },
           {
             fa_icon: 'fa-cogs',
-            title: 'Efficient performance',
+            title: 'Strategic planning',
             subtitle:
-              'We optimize the performance of your digital products, ensuring that they run smoothly and efficiently, even with large amounts of data.',
+              'We develop a strategic roadmap that outlines the steps and considerations needed to bring your product or service to life, ensuring alignment with your overall business strategy.',
           },
           {
-            fa_icon: 'fa-code-branch',
-            title: 'Collaboration',
+            fa_icon: 'fa-pen-nib',
+            title: 'Concept prototyping',
             subtitle:
-              'We work closely with your team to ensure that our digital solutions align with your clients\' business objectives and deliver the desired outcomes.',
+              'We create interactive prototypes to visualize and validate the concepts, allowing for early feedback and iteration before moving into the development phase.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'User research',
+            subtitle:
+              'We conduct in-depth user research to understand the needs, preferences, and pain points of your target audience, informing the design process and ensuring user-centric solutions.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Usability testing',
+            subtitle:
+              'We conduct rigorous usability testing to evaluate the user experience and identify areas for improvement, ensuring a seamless and intuitive interaction with your product or service.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data-driven insights',
+            subtitle:
+              'We leverage data analytics and user feedback to gain valuable insights that inform iterative design decisions, optimizing the performance and effectiveness of your product or service.',
           },
         ],
       },
@@ -1544,37 +1486,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our sustainability consulting services help you make informed decisions about the technologies and strategies needed to create eco-friendly software solutions.',
+          'To drive sustainable change, we employ a range of strategies and practices, including assessment, goal-setting, implementation, and measurement.',
         items: [
           {
-            fa_icon: 'fa-leaf',
-            title: 'Sustainable technologies',
+            fa_icon: 'fa-chart-line',
+            title: 'Sustainability assessment',
             subtitle:
-              'We help you identify and implement the latest sustainable technologies and practices, ensuring that your software solutions are as eco-friendly as possible.',
+              'We conduct comprehensive assessments of your enterprise to identify areas for improvement and opportunities for sustainability integration.',
           },
           {
-            fa_icon: 'fa-chart-bar',
-            title: 'Dashboard development',
+            fa_icon: 'fa-seedling',
+            title: 'Environmental impact reduction',
             subtitle:
-              'We specialize in creating intuitive, data-driven dashboards that help you monitor and track your sustainability performance, making it easy for you to stay on target and make informed decisions.',
+              'We develop strategies and initiatives to minimize your enterprise\'s environmental footprint, including energy conservation, waste reduction, and resource optimization.',
           },
           {
-            fa_icon: 'fa-hands-helping',
-            title: 'Collaboration',
+            fa_icon: 'fa-globe',
+            title: 'Sustainable sourcing and supply chain management',
             subtitle:
-              'We work closely with your team to ensure that our sustainability consulting services align with your business objectives and help you achieve your sustainability goals.',
+              'We help optimize your supply chain to promote sustainable sourcing, responsible procurement, and ethical practices throughout the value chain.',
           },
           {
-            fa_icon: 'fa-lightbulb',
-            title: 'Innovation',
+            fa_icon: 'fa-people-arrows',
+            title: 'Stakeholder engagement',
             subtitle:
-              'We stay up-to-date with the latest advancements in sustainable software development, ensuring that your solutions are cutting-edge and future-proof.',
+              'We facilitate dialogue and engagement with stakeholders, including employees, customers, and communities, to foster a culture of sustainability and collective action.',
           },
           {
             fa_icon: 'fa-balance-scale',
-            title: 'Balancing sustainability and performance',
+            title: 'Social impact initiatives',
             subtitle:
-              'We understand the importance of balancing sustainability with the need for high-performing software solutions. Our team will help you find the right balance to meet both your environmental and business objectives.',
+              'We support the development of social impact initiatives that contribute to the well-being of communities and address social inequalities.',
+          },
+          {
+            fa_icon: 'fa-flag-checkered',
+            title: 'Measurement and reporting',
+            subtitle:
+              'We establish performance metrics and reporting frameworks to track progress, measure impact, and communicate sustainability achievements to stakeholders.',
           },
         ],
       },
@@ -1611,8 +1559,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'poc-development',
     subtitle:
       'Accelerate innovation and minimize risk with our Proof of Concept Development Service for enterprise clients.',
-    hero_src: 'https://source.unsplash.com/1600x900/?proof-of-concept',
-    hero_alt: 'Proof of Concept Development',
+    hero_src: 'https://source.unsplash.com/RX_0vwSPiWs/1600x900',
+    hero_alt: 'Open book',
     // Seo
     seo: {
       title: 'PoC Development',
@@ -1638,37 +1586,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Leverage our expertise in frontend software engineering and dashboard development to create innovative PoCs and validate your ideas.',
+          'We employ industry best practices to develop proof-of-concepts that showcase the potential and viability of your ideas.',
         items: [
           {
             fa_icon: 'fa-lightbulb',
             title: 'Idea validation',
             subtitle:
-              'We collaborate with your team to assess and validate your ideas, ensuring that they align with your business goals and target audience needs.',
-          },
-          {
-            fa_icon: 'fa-code',
-            title: 'Frontend software engineering',
-            subtitle:
-              'Our team specializes in frontend software engineering, developing visually appealing and user-friendly solutions for a seamless user experience.',
-          },
-          {
-            fa_icon: 'fa-tachometer-alt',
-            title: 'Dashboard development',
-            subtitle:
-              'We create intuitive and data-driven dashboards that enable you to track performance metrics and make informed decisions about your projects.',
+              'We help you validate your ideas and assess their feasibility through the development of proof-of-concepts.',
           },
           {
             fa_icon: 'fa-cogs',
-            title: 'Iterative approach',
+            title: 'Rapid prototyping',
             subtitle:
-              'We follow an iterative approach to PoC development, incorporating feedback and making improvements at every stage to ensure the best possible outcomes.',
+              'We utilize rapid prototyping techniques to quickly create functional prototypes that bring your ideas to life.',
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Collaboration',
+            fa_icon: 'fa-check-circle',
+            title: 'Proof-of-concept development',
             subtitle:
-              'We work closely with your team throughout the PoC development process, fostering collaboration and communication for a successful partnership.',
+              'We develop proof-of-concepts that demonstrate the core features and functionalities of your ideas.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Technical feasibility assessment',
+            subtitle:
+              'We assess the technical feasibility and potential challenges of implementing your ideas through the development of proof-of-concepts.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Innovation acceleration',
+            subtitle:
+              'We help accelerate innovation by providing tangible prototypes that can be presented to stakeholders and investors.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Collaborative approach',
+            subtitle:
+              'We collaborate closely with your team, incorporating feedback and iterating on the proof-of-concept to align with your vision and goals.',
           },
         ],
       },
@@ -1706,8 +1660,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'application-development',
     subtitle:
       'Leverage our expertise in frontend software engineering and dashboard development to create powerful applications for your enterprise.',
-    hero_src: 'https://source.unsplash.com/1600x900/?application-development',
-    hero_alt: 'Application Development',
+    hero_src: 'https://source.unsplash.com/9e9PD9blAto/1600x900',
+    hero_alt: 'Phone homescreen with applications',
     // Seo
     seo: {
       title: 'Application Development',
@@ -1733,37 +1687,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our team of skilled developers follows best practices and stays up-to-date with the latest technologies to provide you with top-notch application development services.',
+          'We leverage cutting-edge technologies and industry best practices to develop robust and scalable applications.',
         items: [
           {
             fa_icon: 'fa-cogs',
             title: 'Custom application development',
             subtitle:
-              'We build custom applications tailored to your business needs, ensuring a perfect fit with your existing processes and systems.',
+              'We develop custom enterprise applications tailored to your specific business requirements and goals.',
           },
           {
-            fa_icon: 'fa-chart-bar',
-            title: 'Dashboard development',
+            fa_icon: 'fa-code',
+            title: 'Full-stack development',
             subtitle:
-              'We create visually appealing, interactive dashboards that provide insights and drive data-driven decision-making within your organization.',
-          },
-          {
-            fa_icon: 'fa-desktop',
-            title: 'Frontend software engineering',
-            subtitle:
-              'Our team specializes in frontend development, using modern technologies and best practices to create user-friendly, responsive applications.',
+              'We have expertise in both frontend and backend development, allowing us to deliver end-to-end solutions.',
           },
           {
             fa_icon: 'fa-users-cog',
-            title: 'Collaborative approach',
+            title: 'Enterprise integration',
             subtitle:
-              'We work closely with your team, ensuring seamless communication and collaboration throughout the development process.',
+              'We seamlessly integrate your applications with existing systems to ensure data consistency and workflow optimization.',
           },
           {
             fa_icon: 'fa-cloud',
-            title: 'Scalable solutions',
+            title: 'Cloud deployment',
             subtitle:
-              'Our applications are built with scalability in mind, allowing your business to grow and adapt to changing needs without compromising performance.',
+              'We deploy applications on secure and scalable cloud platforms to ensure high performance and availability.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and compliance',
+            subtitle:
+              'We prioritize the security of your applications and ensure compliance with industry standards and regulations.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Agile development',
+            subtitle:
+              'We follow agile development methodologies to deliver iterative and high-quality solutions within defined timelines.',
           },
         ],
       },
@@ -1801,8 +1761,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'enterprise-applications',
     subtitle:
       'Developing powerful frontend applications and dashboards for enterprise clients.',
-    hero_src: 'https://source.unsplash.com/1600x900/?enterprise-application',
-    hero_alt: 'Enterprise Application',
+    hero_src: 'https://source.unsplash.com/744oGeqpxPQ/1600x900',
+    hero_alt: 'Laptop screen monitoring finances',
     // Seo
     seo: {
       title: 'Enterprise Applications',
@@ -1860,30 +1820,36 @@ export const MOCK_GROUP_SERVICES = [
             subtitle:
               'We work closely with your team throughout the development process, ensuring that your applications meet your business objectives and deliver value to your users.',
           },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Agile development',
+            subtitle:
+              'We follow agile development methodologies to deliver iterative and high-quality solutions within defined timelines.',
+          },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Enterprise Applications service and how we can support your business.',
+          'Learn more about our Enterprise Application Development services and how we can help your business thrive.',
         items: [
           {
             key: 'faqs-1',
-            title: 'What types of enterprises can benefit from your services?',
+            title: 'Why should I invest in custom enterprise applications?',
             content:
-              'Our Enterprise Applications service is suitable for businesses in various industries, including finance, healthcare, retail, manufacturing, and more. We have the expertise and experience to create tailored applications that address the unique challenges and requirements of your industry.',
+              'Custom enterprise applications provide several benefits, including increased efficiency, improved collaboration, enhanced data security, scalability, and the ability to adapt to your specific business needs. By investing in custom software solutions, you can gain a competitive edge, streamline processes, and drive innovation within your organization.',
           },
           {
             key: 'faqs-2',
-            title: 'What technologies and frameworks do you use for frontend development?',
+            title: 'What industries do you serve with your Enterprise Application Development services?',
             content:
-              'Our team of engineers is proficient in a variety of modern frontend technologies and frameworks, including but not limited to React, Angular, Vue.js, and TypeScript. We choose the most suitable technology stack based on your project requirements and preferences.',
+              'Our Enterprise Application Development services cater to a wide range of industries, including but not limited to finance, healthcare, manufacturing, logistics, retail, and telecommunications. We have experience working with diverse enterprises and can adapt our solutions to meet the unique requirements of your industry.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the quality and performance of the applications you develop?',
+            title: 'How do you ensure the security and scalability of enterprise applications?',
             content:
-              'We follow industry best practices and adhere to strict coding standards to ensure the quality and performance of our applications. We also conduct thorough testing, including unit testing, integration testing, and performance testing, to ensure that your applications function flawlessly and meet the demands of your enterprise.',
+              'Security and scalability are paramount in enterprise applications. We follow industry best practices and employ robust security measures to protect your sensitive data and ensure compliance with relevant regulations. Our development approach focuses on scalability, allowing your software to accommodate future growth and evolving business needs.',
           },
         ],
       },
@@ -1896,8 +1862,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'erp-consulting',
     subtitle:
       'Maximize the potential of your enterprise software with our expert ERP consulting services.',
-    hero_src: 'https://source.unsplash.com/1600x900/?erp,consulting',
-    hero_alt: 'ERP Consulting',
+    hero_src: 'https://source.unsplash.com/g1Kr4Ozfoac/1600x900',
+    hero_alt: 'Group of people working together',
     // Seo
     seo: {
       title: 'ERP Consulting',
@@ -1923,37 +1889,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our ERP Consulting services cover a wide range of areas, including system assessment, implementation support, and custom development.',
+          'We offer end-to-end ERP consulting services to enhance your business processes and drive digital transformation.',
         items: [
           {
-            fa_icon: 'fa-check',
-            title: 'System assessment',
+            fa_icon: 'fa-lightbulb',
+            title: 'ERP strategy development',
             subtitle:
-              'We evaluate your existing ERP system to identify areas for improvement and provide recommendations to optimize its performance.',
+              'We help you define a comprehensive ERP strategy that aligns with your business objectives and supports future growth.',
           },
           {
             fa_icon: 'fa-cogs',
-            title: 'Implementation support',
+            title: 'ERP selection and implementation',
             subtitle:
-              'Our team provides expert guidance and support throughout the ERP implementation process, helping you minimize risks and maximize results.',
+              'We assist you in selecting the right ERP solution for your business and ensure seamless implementation for maximum efficiency.',
           },
           {
-            fa_icon: 'fa-desktop',
-            title: 'Custom development',
+            fa_icon: 'fa-users',
+            title: 'Business process optimization',
             subtitle:
-              'We develop custom frontend solutions and dashboards tailored to your business needs, ensuring a seamless and user-friendly ERP experience.',
+              'We analyze and optimize your business processes to maximize the benefits of your ERP system and drive operational excellence.',
           },
           {
-            fa_icon: 'fa-sync',
-            title: 'System integration',
+            fa_icon: 'fa-cloud',
+            title: 'Cloud ERP integration',
             subtitle:
-              'We help you integrate your ERP system with other enterprise applications to streamline operations and improve data flow across your organization.',
+              'We help you leverage cloud-based ERP solutions to improve scalability, accessibility, and cost-effectiveness.',
           },
           {
-            fa_icon: 'fa-users-cog',
-            title: 'Change management',
+            fa_icon: 'fa-chart-pie',
+            title: 'Data analytics and reporting',
             subtitle:
-              'We assist your team in adopting new processes and workflows related to your ERP system, ensuring a smooth transition and maximizing user adoption.',
+              'We enable data-driven decision-making by implementing robust analytics and reporting capabilities within your ERP system.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and compliance',
+            subtitle:
+              'We ensure the security and compliance of your ERP system, protecting sensitive data and adhering to industry regulations.',
           },
         ],
       },
@@ -1991,8 +1963,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'crm-consulting',
     subtitle:
       'Maximize the potential of your CRM system with our expert consulting services.',
-    hero_src: 'https://source.unsplash.com/1600x900/?crm-consulting',
-    hero_alt: 'CRM Consulting',
+    hero_src: 'https://source.unsplash.com/OtHEYbQXLFU/1600x900',
+    hero_alt: 'Open laptop',
     // Seo
     seo: {
       title: 'CRM Consulting',
@@ -2018,37 +1990,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our CRM Consulting services encompass a range of capabilities, from strategy and implementation to custom development and ongoing support.',
+          'We offer end-to-end CRM consulting services to help you build and maintain strong customer relationships.',
         items: [
           {
+            fa_icon: 'fa-users',
+            title: 'CRM strategy development',
+            subtitle:
+              'We help you define a comprehensive CRM strategy that aligns with your business objectives and supports your customer-centric approach.',
+          },
+          {
             fa_icon: 'fa-cogs',
-            title: 'CRM strategy',
+            title: 'CRM system selection and implementation',
             subtitle:
-              'We help you develop a CRM strategy tailored to your business needs and objectives, ensuring your system supports your growth and success.',
-          },
-          {
-            fa_icon: 'fa-wrench',
-            title: 'Implementation support',
-            subtitle:
-              'Our team provides expert guidance and support throughout the CRM implementation process, minimizing risks and ensuring a smooth transition.',
-          },
-          {
-            fa_icon: 'fa-code',
-            title: 'Custom development',
-            subtitle:
-              'We specialize in frontend software engineering and dashboard development, creating custom solutions that enhance your CRM system and improve user experience.',
+              'We assist you in selecting the right CRM solution for your business and ensure seamless implementation for maximum effectiveness.',
           },
           {
             fa_icon: 'fa-chart-line',
-            title: 'Performance optimization',
+            title: 'Sales and marketing automation',
             subtitle:
-              'We help you optimize your CRM system, ensuring it delivers maximum value to your business and drives continuous improvement.',
+              'We optimize your sales and marketing processes by implementing CRM automation features, enabling efficient lead management and targeted campaigns.',
           },
           {
-            fa_icon: 'fa-users-cog',
-            title: 'Training and support',
+            fa_icon: 'fa-cloud',
+            title: 'CRM integration',
             subtitle:
-              'Our team provides comprehensive training and ongoing support, empowering your team to make the most of your CRM investment.',
+              'We integrate your CRM system with other business tools and platforms to streamline data flow and enhance cross-functional collaboration.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data management and analytics',
+            subtitle:
+              'We help you manage and leverage customer data effectively, enabling data-driven decision-making and personalized customer experiences.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and privacy',
+            subtitle:
+              'We ensure the security and privacy of your customer data, implementing robust measures to protect sensitive information.',
           },
         ],
       },
@@ -2086,8 +2064,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'application-re-engineering',
     subtitle:
       'Revitalize your software applications with our expert re-engineering services to enhance performance and user experience.',
-    hero_src: 'https://source.unsplash.com/1600x900/?software-reengineering',
-    hero_alt: 'Software Re-engineering',
+    hero_src: 'https://source.unsplash.com/uOhBxB23Wao/1600x900',
+    hero_alt: 'Two people discussing',
     // Seo
     seo: {
       title: 'Application Re-engineering',
@@ -2113,37 +2091,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We leverage our expertise in frontend software engineering and dashboard development to deliver top-notch Application Re-engineering services.',
+          'We offer end-to-end application re-engineering services to modernize and optimize your legacy applications.',
         items: [
           {
-            fa_icon: 'fa-code',
-            title: 'Code refactoring',
+            fa_icon: 'fa-code-branch',
+            title: 'Legacy application assessment',
             subtitle:
-              'We analyze and restructure your existing code to improve its readability, maintainability, and overall performance.',
+              'We assess your existing applications to identify technological gaps, performance bottlenecks, and areas for improvement.',
           },
           {
-            fa_icon: 'fa-cogs',
-            title: 'Performance optimization',
+            fa_icon: 'fa-refresh',
+            title: 'Application migration and modernization',
             subtitle:
-              'We identify and eliminate performance bottlenecks, ensuring your applications run faster and more efficiently.',
+              'We migrate your legacy applications to modern platforms and architectures, ensuring compatibility, scalability, and improved performance.',
           },
           {
-            fa_icon: 'fa-chart-line',
-            title: 'Dashboard development',
+            fa_icon: 'fa-tools',
+            title: 'Functionality enhancement',
             subtitle:
-              'We create custom dashboards that provide valuable insights and enhance the user experience of your applications.',
+              'We enhance the functionality of your legacy applications by introducing new features, improving workflows, and streamlining processes.',
           },
           {
-            fa_icon: 'fa-laptop-code',
-            title: 'User interface improvements',
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and performance optimization',
             subtitle:
-              'We apply best practices in user interface design to improve the usability and accessibility of your applications.',
+              'We optimize the performance and scalability of your applications to handle increased workloads and accommodate future growth.',
           },
           {
-            fa_icon: 'fa-sync-alt',
-            title: 'Integration & migration',
+            fa_icon: 'fa-user',
+            title: 'User experience improvement',
             subtitle:
-              'We seamlessly integrate your re-engineered applications with other systems and migrate them to modern platforms, if needed.',
+              'We revamp the user interface and experience of your applications, making them more intuitive, user-friendly, and engaging.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data migration and integration',
+            subtitle:
+              'We migrate and integrate data from legacy systems into modern databases and applications, ensuring data integrity and accessibility.',
           },
         ],
       },
@@ -2181,8 +2165,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'cloud-migration',
     subtitle:
       'Simplify and streamline your transition to the cloud with our expert guidance and support.',
-    hero_src: 'https://source.unsplash.com/1600x900/?cloud-migration',
-    hero_alt: 'Cloud Migration',
+    hero_src: 'https://source.unsplash.com/sb7RUrRMaC4/1600x900',
+    hero_alt: 'Motion blur tunnel',
     // Seo
     seo: {
       title: 'Cloud Migration',
@@ -2282,8 +2266,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'smart-team',
     subtitle:
       'Enhance your software development process with our experienced team of frontend engineers and dashboard developers.',
-    hero_src: 'https://source.unsplash.com/1600x900/?teamwork',
-    hero_alt: 'Teamwork',
+    hero_src: 'https://source.unsplash.com/mpN7xjKQ_Ns/1600x900',
+    hero_alt: 'Group discussion in an office',
     // Seo
     seo: {
       title: 'Smart Team',
@@ -2309,37 +2293,43 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our Smart Team service offers a range of capabilities, including frontend engineering, dashboard development, and more.',
+          'Our smart team solutions cover a wide range of capabilities to ensure successful enterprise software development.',
         items: [
           {
+            fa_icon: 'fa-users',
+            title: 'Talent acquisition',
+            subtitle:
+              'We acquire top talent with the right skills and expertise to complement your existing team or form a dedicated development team.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Innovation-driven development',
+            subtitle:
+              'We foster an innovation-driven development culture to generate creative ideas and deliver software solutions that drive business growth.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Agile methodologies',
+            subtitle:
+              'We embrace agile methodologies such as Scrum and Kanban to ensure flexibility, collaboration, and iterative development.',
+          },
+          {
             fa_icon: 'fa-code',
-            title: 'Frontend Engineering',
+            title: 'Full-stack development',
             subtitle:
-              'Our frontend engineers are proficient in modern technologies and frameworks, ensuring your user interfaces are responsive, performant, and visually stunning.',
+              'Our smart team covers full-stack development, from frontend to backend, ensuring comprehensive and efficient software solutions.',
           },
           {
-            fa_icon: 'fa-chart-bar',
-            title: 'Dashboard Development',
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and quality assurance',
             subtitle:
-              'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business.',
+              'We prioritize security and quality assurance throughout the software development lifecycle to deliver robust and reliable solutions.',
           },
           {
-            fa_icon: 'fa-users-cog',
-            title: 'Dedicated Team',
+            fa_icon: 'fa-handshake',
+            title: 'Partnership and collaboration',
             subtitle:
-              'Our dedicated team works closely with your organization to ensure seamless collaboration, clear communication, and a deep understanding of your project requirements.',
-          },
-          {
-            fa_icon: 'fa-tools',
-            title: 'Project Management',
-            subtitle:
-              'We provide expert project management to keep your development process on track, ensuring that deadlines are met and goals are achieved.',
-          },
-          {
-            fa_icon: 'fa-graduation-cap',
-            title: 'Continual Learning',
-            subtitle:
-              'Our team is committed to staying up-to-date with the latest industry trends and best practices, ensuring that your projects benefit from cutting-edge technologies and techniques.',
+              'We foster a strong partnership and collaboration with your team, aligning our efforts to your business goals and ensuring a seamless development process.',
           },
         ],
       },
@@ -2478,8 +2468,8 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'data-strategy',
     subtitle:
       'Unlock the potential of your data with our expert data strategy services.',
-    hero_src: 'https://source.unsplash.com/1600x900/?data-analytics',
-    hero_alt: 'Data Analytics',
+    hero_src: 'https://source.unsplash.com/qWwpHwip31M/1600x900',
+    hero_alt: 'Map with strings and pins',
     // Seo
     seo: {
       title: 'Data Strategy',
@@ -2579,6 +2569,46 @@ export const MOCK_GROUP_SERVICES = [
     // Category
     category: getCategoryFromCrudItem(item, MOCK_GROUP_SERVICE_CATEGORYS),
     ...item,
+    sections: {
+      ...item.sections,
+      benefits: {
+        overline: 'What we do',
+        title: 'Empowering Digital Transformation',
+        subtitle:
+          '{appTitle} drives enterprise success through strategic technology consulting and bespoke software solutions that unlock growth and efficiency.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
+            subtitle:
+              'Unlock growth and success with One X Group\'s business advisory services.',
+            href: `${routeConfig.SERVICES}/advisory`,
+          },
+          {
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle:
+              'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            href: `${routeConfig.SERVICES}/engineering`,
+          },
+          {
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle:
+              'Data services that drive growth. Gain insights, make informed decisions.',
+            href: `${routeConfig.SERVICES}/data`,
+          },
+        ],
+      },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
+      },
+    }
   })
 })
 

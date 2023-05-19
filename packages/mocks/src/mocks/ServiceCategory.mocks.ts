@@ -5,8 +5,8 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'accelerate-development',
     subtitle:
       'Seamlessly streamline your development workflow and accelerate time-to-market.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'Laser net with nodes',
+    hero_src: 'https://source.unsplash.com/NqOInJ-ttqM/1600x900',
+    hero_alt: 'Light streaks from a fast car',
   },
   {
     id: 2,
@@ -14,16 +14,16 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'modern-frontend-engineering',
     subtitle:
       'Develop rich user interfaces using modern technologies and frameworks.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'Laser net with nodes',
+    hero_src: 'https://source.unsplash.com/LJ9KY8pIH3E/1600x900',
+    hero_alt: 'Two monitors in the dark',
   },
   {
     id: 3,
     title: 'Product Team Augmentation',
     slug: 'product-team-augmentation',
-    subtitle: 'Accelerate your product goals with top-tier frontend software engineering experts. Enhance your team with staff augmentation and technical leadership.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'Laser net with nodes',
+    subtitle: 'Reach product goals with engaged software development experts.',
+    hero_src: 'https://source.unsplash.com/XkKCui44iM0/1600x900',
+    hero_alt: 'Group working on a laptop together',
   },
 ]
 
@@ -34,8 +34,8 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'advisory',
     subtitle:
       'Unlock growth and success with One X Group\'s business advisory services.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'Laser net with nodes',
+    hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
+    hero_alt: 'Group working on a laptop together',
   },
   {
     id: 2,
@@ -43,8 +43,8 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'engineering',
     subtitle:
       'Engage our engineering services for insights, innovation, and data-driven decisions.',
-    hero_src: '/images/about_nodes.png',
-    hero_alt: 'Laser net with nodes',
+    hero_src: 'https://source.unsplash.com/EUsVwEOsblE/1600x900',
+    hero_alt: 'Lit up electronics diagram',
   },
   {
     id: 3,
@@ -52,10 +52,10 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'data',
     subtitle:
       'Data services that drive growth. Gain insights, make informed decisions.',
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'People working in office',
+    hero_src: 'https://source.unsplash.com/FXFz-sW0uwo/1600x900',
+    hero_alt: 'Laptop with source code',
   },
-].map((item, i) => ({ id: i + 1, ...item }))
+]
 
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,

@@ -88,5 +88,8 @@ export * from './NewsletterPage'
 export { default as ResourcePage } from './ResourcePage'
 export * from './ResourcePage'
 
+export { default as ResourcesPage } from './ResourcesPage'
+export * from './ResourcesPage'
+
 export { default as LabsPage } from './LabsPage'
 export * from './LabsPage'

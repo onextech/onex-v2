@@ -28,7 +28,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             { type: 'overline', title: 'Our Mission' },
             {
               type: 'h2',
-              title: 'Software that Means Business',
+              title: 'Software that Matters',
               titleProps: { gutterBottom: true },
             },
             {
@@ -45,7 +45,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
               type: 'body1',
               maxWidth: 'md',
               title:
-                'We assist enterprise clients in their digital transformation and we deliver cutting- edge solutions by applying established and emerging technologies into their core business models.',
+                'We revolutionize enterprise software solutions, enabling businesses to thrive in the digital era through strategic technology consulting and cutting-edge software development.',
               titleProps: { color: 'text.secondary', maxWidth: true },
             },
           ],
@@ -66,7 +66,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             {
               type: 'body1',
               title:
-                'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+                'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
               titleProps: {
                 color: 'text.secondary',
               },

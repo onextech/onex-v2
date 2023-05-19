@@ -46,7 +46,7 @@ const renderPostDetailBlock = (props: RenderPostDetailBlockItemProps) => {
                 titleProps: { color: 'text.secondary' },
               },
               {
-                type: 'body1',
+                type: 'body2',
                 title: published_at ? dayjs(published_at).format("ddd, DD MMM YYYY") : '',
                 titleProps: { color: 'text.secondary', sx: { marginTop: 1 } },
 
