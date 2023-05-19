@@ -19,16 +19,6 @@ export const MOCK_INDUSTRY_PAGE = {
   sections: {
     summary: {
       title: 'Innovation that drives real impact.',
-      items: [
-        {
-          title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
-        },
-        {
-          title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
-        },
-      ],
     },
     benefits: {
       overline: 'What we do',
@@ -70,9 +60,9 @@ export const MOCK_INDUSTRY_PAGE = {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'Laser net over city',
       overline: '',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
-        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
     },
     features: {
       overline: 'What we do',
@@ -190,6 +180,88 @@ export const MOCK_GROUP_INDUSTRYS = [
       'We help investment banks, wealth and asset management firms, and other market infrastructure firms prepare for tomorrow.',
     fa_icon: 'fa-chart-mixed-up-circle-dollar',
     is_featured: true,
+    hero_src: 'https://source.unsplash.com/NDfqqq_7QWM/1600x900',
+    hero_alt: 'Man monitoring graph',
+    sections: {
+      summary: {
+        title: 'Driving success in the Capital Markets industry.',
+        items: [
+          {
+            title:
+              'We understand the critical role that technology plays in driving success for enterprises in the capital markets industry. With our specialized technology consulting services and expertise in enterprise software development, we are dedicated to helping businesses in the capital markets sector achieve their goals and gain a competitive edge.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our expertise in enterprise software development, we offer a range of solutions tailored to address the specific needs and challenges of the Capital Markets industry.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Software Development',
+            subtitle:
+              'We develop custom software solutions that are designed to streamline your Capital Markets business processes and drive efficiency.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'Our data analytics services enable you to gain valuable insights from your Capital Markets business data, empowering you to make informed decisions.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'CRM Solutions',
+            subtitle:
+              'We provide CRM (Customer Relationship Management) solutions that help you effectively manage customer relationships and enhance customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Our expertise in security and compliance ensures that your Capital Markets business is protected against potential threats and meets industry regulations.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Integration and Scalability',
+            subtitle:
+              'We offer integration services to connect and streamline your Capital Markets business systems, as well as scalable solutions to support your growth.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Legacy Systems Modernization',
+            subtitle:
+              'We assist in modernizing and upgrading your legacy systems, enabling your Capital Markets business to leverage the latest technologies and stay competitive.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Capital Markets Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in capital markets operations?',
+            content:
+              'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your software solutions improve trading processes?',
+            content:
+              'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do you offer customization options for capital markets solutions?',
+            content:
+              'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Government',
@@ -198,6 +270,88 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     is_featured: true,
+    hero_src: 'https://source.unsplash.com/x_0hW-KaCgI/1600x900',
+    hero_alt: 'Circular seating area',
+    sections: {
+      summary: {
+        title: 'Driving digital transformation in government agencies.',
+        items: [
+          {
+            title:
+              'We understand the critical role of technology in improving public services, increasing efficiency, and enhancing transparency in government operations. Our expertise in enterprise software development enables us to deliver innovative solutions that drive digital transformation and empower government agencies to better serve their constituents.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep understanding of government operations and regulations, we offer a range of solutions that help government agencies achieve their goals and deliver exceptional services.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Software Development',
+            subtitle:
+              'We develop custom software solutions that address the unique needs and processes of government agencies, streamlining operations and improving efficiency.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management and Analytics',
+            subtitle:
+              'Our data management and analytics solutions enable government agencies to leverage data effectively, gain insights, and make data-driven decisions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Cybersecurity and Compliance',
+            subtitle:
+              'We provide robust cybersecurity solutions and ensure compliance with regulations to protect sensitive government data and systems.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Citizen Engagement Platforms',
+            subtitle:
+              'Our citizen engagement platforms facilitate seamless communication and interaction between government agencies and citizens, enhancing public participation and satisfaction.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Transformation Strategy',
+            subtitle:
+              'We help government agencies develop and implement comprehensive digital transformation strategies to modernize operations and deliver citizen-centric services.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Legacy Systems Modernization',
+            subtitle:
+              'We assist in modernizing legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Government Solutions and how they can benefit your agency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can technology solutions benefit government agencies?',
+            content:
+              'Technology solutions can help government agencies streamline operations, enhance citizen services, improve data management and security, enable data-driven decision-making, and drive digital transformation to meet the evolving needs of citizens.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of software solutions do you offer for government agencies?',
+            content:
+              'We offer a range of software solutions tailored to the specific needs of government agencies, including citizen engagement platforms, e-governance systems, data management and analytics solutions, workflow automation tools, and secure government portals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do you have experience working with government compliance and regulations?',
+            content:
+              'Yes, we have extensive experience working with government compliance and regulations. We understand the unique requirements and standards that government agencies must adhere to, and we ensure that our solutions meet the necessary compliance and security standards.',
+          },
+        ],
+      },
+    }
   },
   {
     title: 'Maritime',
@@ -205,6 +359,88 @@ export const MOCK_GROUP_INDUSTRYS = [
       'We help maritime product teams drive efficiencies, unlock new value, and create new business models.',
     slug: 'maritime',
     fa_icon: 'fa-ship',
+    hero_src: 'https://source.unsplash.com/sfjS-FglvU4/1600x900',
+    hero_alt: 'Ship in the ocean',
+    sections: {
+      summary: {
+        title: 'Driving innovation in the maritime industry.',
+        items: [
+          {
+            title:
+              'We understand the intricate workings of maritime operations, including vessel management, logistics, supply chain, port operations, and regulatory compliance. Leveraging our expertise, we work closely with maritime enterprises to identify their pain points and develop strategic technology solutions that address their specific needs.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organizations stay ahead in a rapidly evolving digital landscape.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Vessel Management Systems',
+            subtitle:
+              'We develop advanced vessel management systems that optimize operations, improve vessel performance, and enhance crew efficiency.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analytics for Maritime',
+            subtitle:
+              'Our data analytics solutions provide actionable insights for vessel performance, fuel efficiency, predictive maintenance, and more.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Maritime Cybersecurity',
+            subtitle:
+              'We implement robust cybersecurity measures to protect maritime systems, data, and infrastructure from cyber threats.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Crew Management Systems',
+            subtitle:
+              'Our crew management systems streamline crew operations, rostering, training management, and compliance with regulatory requirements.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Maritime Digital Platforms',
+            subtitle:
+              'We develop digital platforms that connect various stakeholders in the maritime ecosystem, enabling collaboration, data sharing, and improved decision-making.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Legacy Systems Modernization',
+            subtitle:
+              'We assist in modernizing legacy systems in the maritime industry, leveraging emerging technologies to enhance efficiency and reduce costs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Maritime Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the maritime industry?',
+            content:
+              'The maritime industry faces challenges such as regulatory compliance, operational inefficiencies, security threats, environmental sustainability, and optimizing logistics across complex supply chains.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology improve operations in the maritime sector?',
+            content:
+              'Technology can help improve maritime operations by automating manual processes, enhancing vessel performance monitoring, optimizing route planning, enabling real-time data sharing and collaboration, and providing data-driven insights for better decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the maritime industry?',
+            content:
+              'We offer a range of software solutions tailored to the maritime industry, including fleet management systems, vessel tracking and monitoring solutions, port management software, maritime analytics platforms, supply chain optimization tools, and compliance management systems.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Real Estate',
@@ -213,6 +449,88 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     is_featured: true,
+    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_alt: 'Buildings being constructed',
+    sections: {
+      summary: {
+        title: 'Driving innovation in the real estate industry.',
+        items: [
+          {
+            title:
+              'The real estate industry relies heavily on effective management, streamlined processes, and the ability to adapt to changing market conditions. Our team of experienced professionals combines industry knowledge with technical excellence to deliver innovative solutions tailored specifically for the real estate industry.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organizations thrive in a digital-first era.',
+        items: [
+          {
+            fa_icon: 'fa-building',
+            title: 'Property Management Systems',
+            subtitle:
+              'We develop comprehensive property management systems that automate and optimize property leasing, maintenance, tenant management, and financial processes.',
+          },
+          {
+            fa_icon: 'fa-money-bill-wave',
+            title: 'Real Estate Financial Software',
+            subtitle:
+              'Our real estate financial software solutions simplify complex financial calculations, reporting, budgeting, and forecasting for real estate portfolios.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Customer Relationship Management (CRM)',
+            subtitle:
+              'We implement CRM systems tailored for real estate businesses, enabling efficient lead management, sales tracking, and customer engagement.',
+          },
+          {
+            fa_icon: 'fa-map-marked-alt',
+            title: 'Geospatial Analytics',
+            subtitle:
+              'Our geospatial analytics solutions provide valuable insights for site selection, market analysis, spatial planning, and property valuation.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-Based Document Management',
+            subtitle:
+              'We develop secure cloud-based document management systems that streamline document storage, retrieval, collaboration, and compliance for real estate companies.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Workflow Automation',
+            subtitle:
+              'We automate real estate workflows, reducing manual tasks and improving efficiency in processes such as property transactions, approvals, and document generation.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Real Estate Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the real estate industry?',
+            content:
+              'The real estate industry faces challenges such as property management, lease administration, tenant relationship management, investment analysis, regulatory compliance, and adapting to changing market conditions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology improve operations in the real estate sector?',
+            content:
+              'Technology can improve real estate operations by automating manual processes, centralizing property and tenant data, streamlining lease administration, enabling online property listings and transactions, facilitating customer self-service, and providing data-driven insights for better decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the real estate industry?',
+            content:
+              'We offer a range of software solutions tailored to the real estate industry, including real estate management systems, property analytics platforms, transaction management software, customer relationship management (CRM) tools, property listing portals, and investment analysis platforms.',
+          },
+        ],
+      }
+    }
   },
   {
     title: 'Banking',
@@ -221,6 +539,88 @@ export const MOCK_GROUP_INDUSTRYS = [
       'We help banks challenge their conventions; capitalize on the full potential of technology, and become better at change.',
     fa_icon: 'fa-coins',
     is_featured: true,
+    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900',
+    hero_alt: 'G Pay being used',
+    sections: {
+      summary: {
+        title: 'Driving innovation in the banking industry.',
+        items: [
+          {
+            title:
+              'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower banks to thrive in a digital banking era.',
+        items: [
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Core Banking Systems',
+            subtitle:
+              'We develop robust and scalable core banking systems that streamline banking processes, including account management, transaction processing, and customer data management.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Applications',
+            subtitle:
+              'Our mobile banking applications enable customers to conveniently perform banking transactions, manage accounts, and access personalized financial services on their mobile devices.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Fraud Prevention',
+            subtitle:
+              'We implement advanced security measures and fraud prevention solutions to safeguard banking systems, customer data, and financial transactions from cyber threats.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'Our data analytics solutions leverage big data technologies to provide banks with valuable insights, enabling data-driven decision-making, risk management, and personalized customer experiences.',
+          },
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Corporate Banking Solutions',
+            subtitle:
+              'We develop comprehensive corporate banking solutions that facilitate corporate account management, treasury services, trade finance, and cash management for corporate clients.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration and Middleware',
+            subtitle:
+              'We provide integration and middleware solutions that enable seamless connectivity between banking systems, third-party applications, and external APIs, enhancing operational efficiency and enabling innovation.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Banking Solutions and how they can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the banking industry?',
+            content:
+              'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology drive innovation in the banking sector?',
+            content:
+              'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the banking industry?',
+            content:
+              'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
+          },
+        ],
+      }
+    },
   },
   {
     title: 'Insurance',
@@ -228,13 +628,94 @@ export const MOCK_GROUP_INDUSTRYS = [
     subtitle:
       "Insurance is going digital. Whether it's streamlining business processes or enabling new models, we're helping our clients transform.",
     fa_icon: 'fa-shield-cross',
+    hero_src: 'https://source.unsplash.com/OQMZwNd3ThU/1600x900',
+    hero_alt: 'Person writing on paper',
+    sections: {
+      summary: {
+        title: 'Driving innovation in the insurance industry.',
+        items: [
+          {
+            title:
+              'The insurance industry is undergoing rapid digital transformation, driven by changing customer expectations, regulatory requirements, and emerging technologies. At One X Group, we help insurance enterprises navigate these challenges and unlock the full potential of technology to achieve their business goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower insurance companies to thrive in a digital era.',
+        items: [
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Policy Management Systems',
+            subtitle:
+              'We develop comprehensive policy management systems that automate policy administration, underwriting, claims processing, and policyholder management.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Claims Applications',
+            subtitle:
+              'Our mobile claims applications enable policyholders to conveniently submit and track insurance claims, upload documents, and communicate with claims adjusters.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'We leverage advanced analytics and big data technologies to help insurance companies extract valuable insights from data, enhance risk assessment, optimize pricing strategies, and improve fraud detection.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration and Interoperability',
+            subtitle:
+              'We provide integration and interoperability solutions that enable seamless connectivity between insurance systems, external data sources, and third-party services, facilitating data exchange, process automation, and collaboration.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Customer Relationship Management (CRM)',
+            subtitle:
+              'Our CRM solutions help insurance companies effectively manage customer relationships, improve customer service, and enable personalized engagement through targeted marketing campaigns.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Cybersecurity and Data Protection',
+            subtitle:
+              'We implement robust cybersecurity measures and data protection solutions to safeguard sensitive insurance data, prevent data breaches, and ensure compliance with regulatory requirements.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Insurance Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the key challenges in the insurance industry?',
+            content:
+              'The insurance industry faces challenges such as digital disruption, legacy system integration, regulatory compliance, customer experience enhancement, fraud detection, risk assessment, and leveraging data insights.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can technology drive innovation in the insurance sector?',
+            content:
+              'Technology can drive innovation in the insurance sector by enabling digital insurance platforms, enhancing underwriting processes, automating claims management, improving customer engagement through self-service portals, leveraging data analytics for risk assessment and personalized offerings, and facilitating seamless integration with partner ecosystems.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What software solutions do you offer for the insurance industry?',
+            content:
+              'We offer a range of software solutions tailored to the insurance industry, including policy management systems, claims processing platforms, customer portals, fraud detection systems, data analytics tools, underwriting automation, and digital transformation consulting services.',
+          },
+        ],
+      }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
-    hero_src: '/images/about_working_in_office.png',
-    hero_alt: 'People working in office',
     ...item,
+    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.' }}
   })
 })
 
@@ -358,10 +839,6 @@ export const MOCK_TECH_INDUSTRYS = [
       summary: {
         title: 'Efficient solutions for government agencies.',
         items: [
-          {
-            title:
-              'In the fast-paced and ever-evolving world of government agencies, efficiency and effectiveness are crucial. At our Software Development Service for Government, we specialize in creating innovative and efficient solutions that empower government agencies to better serve their constituents.',
-          },
           {
             title:
               'We understand the unique challenges faced by government agencies, from complex data management to citizen engagement. Our team of experts is equipped with the knowledge and experience to develop custom software solutions that streamline processes, enhance transparency, and enable data-driven decision-making.',

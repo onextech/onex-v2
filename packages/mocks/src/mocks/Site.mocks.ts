@@ -24,7 +24,7 @@ export const MOCK_COMMON_SITE = {
 
   // System
   nav_is_open_on_hover: true,
-  nav_is_ecosystem_visible: false,
+  nav_is_ecosystem_visible: true,
 
   // Cta
   cta_title: 'Build the future with One X Group',

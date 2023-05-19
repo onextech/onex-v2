@@ -1,16 +1,16 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { PressRelease } from '@onex/types'
+import type { Resource } from '@onex/types'
 import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import orderBy from 'lodash/orderBy'
 
-export interface PressReleasesPageProps {
-  pressReleases: PressRelease[]
+export interface ResourcesPageProps {
+  resources: Resource[]
 }
 
-const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
-  const { pressReleases } = props
+const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
+  const { resources } = props
   const { routeConfig } = useLayout()
 
   return (
@@ -22,15 +22,15 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'News' },
+            { type: 'overline', title: 'Resources' },
             {
               type: 'h1',
-              title: 'News',
+              title: 'Resources',
             },
             {
               type: 'subtitle1',
               title:
-                'Explore our featured articles and discover how our innovative solutions are making waves in the business world.',
+                'Unlock the key to business success with One X Group\'s comprehensive collection of resources.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -39,10 +39,10 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: 'https://source.unsplash.com/c5QdMcuFlgY/1600x900',
+              title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'Person looking at a wall of newspapers',
+                alt: 'People working in an office',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
@@ -51,23 +51,23 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'h4',
               title:
-                'We strive to make impactful change and help enterprises successfully grow in today\'s digital era. Read on to find out more about our work and collaborations with businesses.',
+                'We offer expert guides and valuable insights on leveraging technology to turn your strategic vision into a resounding success. Discover innovative strategies, best practices, and industry trends to optimize your enterprise software development and propel your business forward.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],
         },
         {
-          key: 'pressRelease',
+          key: 'resource',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: orderBy(pressReleases, 'published_at', 'desc').map((pressRelease) =>
+              gridItems: orderBy(resources, 'published_at', 'desc').map((resource) =>
                 renderPostBlockItem({
                   item: {
-                    ...pressRelease,
-                    href: `${routeConfig.PRESS_RELEASES}/${pressRelease.slug}`,
+                    ...resource,
+                    href: `${routeConfig.RESOURCES}/${resource.slug}`,
                   } as RenderPostBlockItemProps['item'],
                 })
               ),
@@ -79,4 +79,4 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
   )
 }
 
-export default PressReleasesPage
+export default ResourcesPage

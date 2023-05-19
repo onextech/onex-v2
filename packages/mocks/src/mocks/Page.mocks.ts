@@ -546,7 +546,7 @@ export const MOCK_DIGITAL_PAGE = {
   sections: {
     hero: {
       overline: 'Digital',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
         'Maximise business growth through insight driven web digital. We put business first in everything we do.',
     },
@@ -1169,10 +1169,10 @@ const MOCK_GROUP_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
+        title: 'We Design & Develop Custom Software for Enterprises',
         hero_alt: 'Laser net over city',
-        title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1274,28 +1274,30 @@ const MOCK_GROUP_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Custom Software Development',
+        title: 'Enterprise Technology Consulting',
         subtitle:
-          "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
+          "From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ",
         maxWidth: 'lg',
         center: true,
         items: [
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Design',
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
             subtitle:
-              'A conversion centred approach to creating web and product designs that drive action.',
+              'Unlock growth and success with One X Group\'s business advisory services.',
+            href: `${routeConfig.SERVICES}/advisory`,
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Web Development',
-            subtitle: 'Build tailor-made websites that drive leads and sales.',
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle: 'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            href: `${routeConfig.SERVICES}/engineering`,
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Application Development',
-            subtitle:
-              'Accelerate business agility across your organisation with scalable enterprise apps.',
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle: 'Data services that drive growth. Gain insights, make informed decisions.',
+            href: `${routeConfig.SERVICES}/data`,
           },
         ],
       },
@@ -1343,44 +1345,38 @@ const MOCK_GROUP_PAGES = [
         overline: 'What we do',
         title: 'Our Approach',
         subtitle:
-          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
         items: [
           {
-            fa_icon: 'fa-watch',
-            title: 'Scale up development',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+            fa_icon: 'fa-check',
+            title: 'Agile Development Methodology',
+            subtitle: 'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.'
           },
           {
-            fa_icon: 'fa-hand-holding-seedling',
-            title: 'Improve a current system',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+            fa_icon: 'fa-cogs',
+            title: 'Cutting-Edge Technologies',
+            subtitle: 'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.'
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Food & Drinks',
-            subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle: 'We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization\'s goals and processes.'
           },
           {
-            fa_icon: 'fa-puzzle-piece',
-            title: 'Live It Up',
-            subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+            fa_icon: 'fa-tasks',
+            title: 'Streamlined Project Management',
+            subtitle: 'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.'
           },
           {
-            fa_icon: 'fa-guitar',
-            title: 'Rewards',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+            fa_icon: 'fa-check-circle',
+            title: 'Quality Assurance and Testing',
+            subtitle: 'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.'
           },
           {
-            fa_icon: 'fa-table-tennis',
-            title: 'Convenience',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
+            fa_icon: 'fa-chart-line',
+            title: 'Scalability and Future-Proofing',
+            subtitle: 'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.'
+          }
         ],
       },
       howItWorks: { overline: '', title: '', subtitle: '', items: [] },
@@ -1419,30 +1415,30 @@ const MOCK_GROUP_PAGES = [
           {
             key: 'how-it-works-1',
             title:
-              'What are the advantages of developing web apps with {title}?',
+              'What industries do you cater to with your technology consulting services?',
             content:
-              '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'We serve a wide range of industries, including finance, healthcare, retail, manufacturing, and more. Our expertise in enterprise software development allows us to tailor solutions to meet the unique needs of each industry.',
           },
           {
             key: 'how-it-works-2',
-            title: 'How can {title} development benefit my existing system?',
+            title: 'What is the typical timeline for developing an enterprise software solution?',
             content:
-              "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
+              "The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.",
           },
           {
             key: 'how-it-works-3',
-            title: 'What is the future of {title}?',
+            title: 'Can you help us integrate our existing systems with the new software solutions?',
             content:
-              '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
+              'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
         ],
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
+        title: 'We Design & Develop Custom Software for Enterprises',
         hero_alt: 'Laser net over city',
-        title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1453,11 +1449,11 @@ const MOCK_GROUP_PAGES = [
       },
     },
   },
-  { title: 'Mission', slug: 'mission' },
-  { title: 'News', slug: 'news' },
-  { title: 'Resources', slug: 'resources' },
-  { title: 'Newsletter', slug: 'newsletter' },
-  { title: 'Ecosystem', slug: 'ecosystem' },
+  { title: 'Mission', slug: 'mission', subtitle: 'Find out how we seek to create change that matters.' },
+  { title: 'News', slug: 'news', subtitle: 'Stay up to date with the latest trends in the digital landscape.' },
+  { title: 'Resources', slug: 'resources', subtitle: 'Access our curated resource list for tips and tricks on how you can grow your business.' },
+  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true, },
+  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true, },
 ]
 
 const MOCK_TECH_PAGES = [
@@ -1559,10 +1555,10 @@ const MOCK_TECH_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         hero_alt: 'Laser net over city',
-        title: 'We Design & Develop Custom Software for Businesses',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',

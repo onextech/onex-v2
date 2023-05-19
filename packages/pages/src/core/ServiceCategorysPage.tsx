@@ -36,12 +36,12 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
             { type: 'overline', title: 'Services' },
             {
               type: 'h1',
-              title: 'Craft experiences that touch hearts and move markets.',
+              title: 'Empowering Innovation, Driving Transformation',
             },
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our services and capabilities that help you define your vision for the future and make it happen.',
+                'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,

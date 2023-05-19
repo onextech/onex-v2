@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlockProps } from '@gravis-os/landing'
 
 export interface RenderHtmlBlockItemProps extends Omit<BlockProps, 'items'> {
@@ -18,6 +17,7 @@ const renderHtmlBlockItem = (props: RenderHtmlBlockItemProps) => {
               mt: 0,
             },
             '& p': { mb: 3 },
+            '& blockquote': { borderLeft: 4, pl: 4, ml: 0, opacity: 0.8 },
             fontSize: {
               xs: 'subtitle2.fontSize',
               md: 'subtitle1.fontSize',
