@@ -20,7 +20,7 @@ const NextTechnologysPage: React.FC<NextTechnologysPageProps> = (props) => {
         seo={{
           title: 'Technologies',
           description:
-            'This page showcases the cutting-edge technologies we use for future-proof solutions, including JavaScript, TypeScript, React and Node.js',
+            'Unlock enterprise potential with cutting-edge technologies like JavaScript, React, and Node.js for scalable, dynamic, user-friendly frontend solutions.',
         }}
       >
         <TechnologysPage technologys={technologys} />

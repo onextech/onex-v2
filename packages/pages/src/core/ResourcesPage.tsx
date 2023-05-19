@@ -1,16 +1,16 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import type { Post } from '@onex/types'
+import type { Resource } from '@onex/types'
 import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import orderBy from 'lodash/orderBy'
 
-export interface PostsPageProps {
-  posts: Post[]
+export interface ResourcesPageProps {
+  resources: Resource[]
 }
 
-const PostsPage: React.FC<PostsPageProps> = (props) => {
-  const { posts } = props
+const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
+  const { resources } = props
   const { routeConfig } = useLayout()
 
   return (
@@ -22,15 +22,15 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Insights' },
+            { type: 'overline', title: 'Resources' },
             {
               type: 'h1',
-              title: 'Insights',
+              title: 'Resources',
             },
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our posts and capabilities that help you define your vision for the future and make it happen.',
+                'Unlock the key to business success with One X Group\'s comprehensive collection of resources.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -39,10 +39,10 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/about_working_in_office.png',
+              title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'People working in office',
+                alt: 'People working in an office',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
@@ -51,23 +51,23 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
             {
               type: 'h4',
               title:
-                'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
+                'We offer expert guides and valuable insights on leveraging technology to turn your strategic vision into a resounding success. Discover innovative strategies, best practices, and industry trends to optimize your enterprise software development and propel your business forward.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],
         },
         {
-          key: 'posts',
+          key: 'resource',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: orderBy(posts, 'published_at', 'desc').map((post) =>
+              gridItems: orderBy(resources, 'published_at', 'desc').map((resource) =>
                 renderPostBlockItem({
                   item: {
-                    ...post,
-                    href: `${routeConfig.POSTS}/${post.slug}`,
+                    ...resource,
+                    href: `${routeConfig.RESOURCES}/${resource.slug}`,
                   } as RenderPostBlockItemProps['item'],
                 })
               ),
@@ -79,4 +79,4 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
   )
 }
 
-export default PostsPage
+export default ResourcesPage

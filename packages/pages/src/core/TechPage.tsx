@@ -20,12 +20,12 @@ export interface TechPageProps {
   page: Page
   showcases: Showcase[]
   technologys: Technology[]
-  posts: Post[]
+  featuredPosts: Post[]
   industrys: Industry[]
 }
 
 const TechPage: React.FC<TechPageProps> = (props) => {
-  const { page, showcases, technologys, posts, industrys } = props
+  const { page, showcases, technologys, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
   const { locales, cta_button_title } = site
@@ -44,9 +44,9 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           pt: { xs: 10, md: 18 },
           pb: { xs: 3, md: 15 },
           hero_src: '/images/hero_background_black_minimal.svg',
-          hero_alt: 'hero background',
+          hero_alt: 'Black minimalistic background',
           image_src: '/images/hero_glass_window_ui_grey.png',
-          image_alt: 'glass window ui',
+          image_alt: 'Website with trend analysis',
           // image_src dimensions
           imageProps: { ar: '643:572' } as any,
           buttonProps: {
@@ -99,7 +99,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           title: localeTitle
             ? `Read our Latest Insights in ${localeTitle}`
             : `Read our Latest Insights`,
-          items: posts,
+          items: featuredPosts,
         }),
         // Faqs
         renderFaqsAccordionBlock({

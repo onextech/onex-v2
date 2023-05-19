@@ -17,7 +17,13 @@ const NextIndustryPage: React.FC<NextIndustryPageProps> = (props) => {
   const { industry, relatedPosts, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={industry.seo} autoBreadcrumbs>
+      <LandingLayout
+        seo={{
+          title: industry.title,
+          description: `Discover innovative ${industry.title.toLowerCase()} solutions with One X Group. We draw on strategic expertise and cutting-edge technology to drive growth in the industry.`,
+        }}
+        autoBreadcrumbs
+      >
         <IndustryPage industry={industry} relatedPosts={relatedPosts} />
       </LandingLayout>
     </PageProvider>

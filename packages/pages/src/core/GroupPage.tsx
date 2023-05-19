@@ -17,13 +17,14 @@ import { Industry, Page, Post, Showcase } from '@onex/types'
 
 export interface GroupPageProps {
   page: Page
-  posts: Post[]
+  featuredPosts: Post[]
+  heroPosts: Post[]
   showcases: Showcase[]
   industrys: Industry[]
 }
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
-  const { page, showcases, posts, industrys } = props
+  const { page, showcases, featuredPosts, heroPosts, industrys } = props
   const { clientLogos, clientTestimonials, routeConfig } = useLayout()
   const { sections } = page || {}
   const { benefits, features, faqs, cta } = sections || {}
@@ -53,7 +54,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   loop
                   height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
                   tabs={[
-                    ...posts.map((post) => {
+                    ...heroPosts.map((post) => {
                       const { category } = post
                       return category.title
                     }),
@@ -61,7 +62,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
                   items={[
-                    ...posts.map((post) => {
+                    ...heroPosts.map((post) => {
                       const { title, category } = post
                       return (
                         <Box sx={{ maxWidth: { md: '50%' } }}>
@@ -76,10 +77,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                           <BlockItem
                             disableContainer
                             {...renderGhostButtonBlockItem({
-                              overline: 'What we do',
-                              title: 'Smarter Businesses',
+                              overline: 'Our Insights',
+                              title: 'Read More',
                               size: 'lg',
-                              href: routeConfig.SERVICES,
+                              href: `/insights/${post.category.slug}/${post.slug}`,
                               sx: { mt: { xs: 2, md: 4 } },
                             })}
                           />
@@ -106,19 +107,19 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Build World-Class <br /> Dashboard User Interfaces
+              Elevate Your Business with Our Dedicated Technology Consulting Services
             </>
           ),
           subtitle:
-            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
+            'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),
         // Client Testimonials
         renderClientTestimonialCardsBlock({
-          title: 'Trusted by Frontend Development Teams',
+          title: 'Technology Consulting with Proven Results',
           subtitle:
-            "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
+            "Recognized for our unwavering commitment to excellence, One X Group stands as the trusted partner of choice for business leaders seeking quality software development services to drive their enterprise software solutions forward.",
           items: clientTestimonials,
         }),
         // Industry
@@ -130,7 +131,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
-        renderFeaturedPostsBlock({ items: posts }),
+        renderFeaturedPostsBlock({ items: featuredPosts }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs

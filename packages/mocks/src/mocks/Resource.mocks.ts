@@ -58,11 +58,11 @@ export const MOCK_TECH_RESOURCES = [
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
-        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
     },
     features: {
       overline: 'What we do',
@@ -163,7 +163,7 @@ export const MOCK_TECH_RESOURCES = [
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -173,10 +173,10 @@ export const MOCK_TECH_RESOURCES = [
   // Images
   avatar_src: '/images/resource_book.png',
   avatar_alt: 'resource_book',
-  hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_src: '/images/resource_book.png',
+  hero_alt: 'OKR Resource Book',
   // Author
-  author_avatar_src: '/images/about_shape_circle_radial.svg',
+  author_avatar_src: '/images/author_joel_koh.png',
   author_avatar_alt: 'about_shape_circle_radial',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',

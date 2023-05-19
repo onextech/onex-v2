@@ -21,11 +21,21 @@ export const getStaticProps: GetStaticProps = async (context) => {
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
     site,
   })
-  const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+  const heroPosts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
     .filter(
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
+    .filter(({ is_hero }) => is_hero)
+    .slice(0, 3)
+  const featuredPosts = MOCK_POSTS[MOCK_KEY].filter(
+    ({ is_active }) => is_active
+  )
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
+    .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
     .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
@@ -34,7 +44,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return makeGetStaticProps({
     props: {
       page,
-      posts,
+      heroPosts,
+      featuredPosts,
       showcases,
       industrys,
     },
@@ -46,7 +57,14 @@ export interface NextHomePageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextHomePage: React.FC<NextHomePageProps> = (props) => {
-  const { page, showcases, posts, industrys, pageProviderProps } = props
+  const {
+    page,
+    showcases,
+    featuredPosts,
+    heroPosts,
+    industrys,
+    pageProviderProps,
+  } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout seo={page.seo} darkHeader>
@@ -54,7 +72,8 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
           industrys={industrys}
           showcases={showcases}
           page={page}
-          posts={posts}
+          featuredPosts={featuredPosts}
+          heroPosts={heroPosts}
         />
       </LandingLayout>
     </PageProvider>

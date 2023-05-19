@@ -30,7 +30,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our pressRelease and capabilities that help you define your vision for the future and make it happen.',
+                'Explore our featured articles and discover how our innovative solutions are making waves in the business world.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -39,10 +39,10 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/about_working_in_office.png',
+              title: 'https://source.unsplash.com/c5QdMcuFlgY/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'post-hero',
+                alt: 'Person looking at a wall of newspapers',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
@@ -51,7 +51,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'h4',
               title:
-                'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
+                'We strive to make impactful change and help enterprises successfully grow in today\'s digital era. Read on to find out more about our work and collaborations with businesses.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],

@@ -27,7 +27,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Meet the moment with our technologys and capabilities that help you define your vision for the future and make it happen.',
+                'Explore the innovative technologies and frameworks we leverage to deliver modern and seamless digital experiences.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '50%',
@@ -36,10 +36,10 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/about_working_in_office.png',
+              title: 'https://source.unsplash.com/Q1p7bh3SHj8/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'technology-hero',
+                alt: 'People working in office',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },

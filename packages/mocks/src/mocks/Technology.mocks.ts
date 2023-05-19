@@ -11,7 +11,7 @@ export const MOCK_TECH_TECHNOLOGY_PAGE = {
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: '{title}',
   hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'working in office',
+  hero_alt: 'People working in office',
   overline: 'Technology',
   title: 'React',
   subtitle:
@@ -52,11 +52,11 @@ export const MOCK_TECH_TECHNOLOGY_PAGE = {
     },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: '',
-      title: 'We Design & Develop Custom Software for Businesses',
+      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
       subtitle:
-        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions.',
+        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
     },
     features: {
       overline: 'What we do',
@@ -157,7 +157,7 @@ export const MOCK_TECH_TECHNOLOGY_PAGE = {
     },
     cta: {
       hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'about_nodes_above_city',
+      hero_alt: 'Laser net over city',
       overline: 'Get Started',
       title: 'Partnering with {appTitle}',
       subtitle:
@@ -172,18 +172,18 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'JavaScript Development',
     slug: 'javascript-development',
     avatar_src: '/images/technology_javascript.png',
-    avatar_alt: 'JavaScript',
+    avatar_alt: 'JavaScript logo',
     is_featured: true,
     is_active: true,
     subtitle:
       'Leverage the power of JavaScript to build interactive and dynamic web applications.',
     hero_src: 'https://source.unsplash.com/1IW4HQuauSU/1600x900',
-    hero_alt: 'JavaScript',
+    hero_alt: 'JavaScript codes',
     // Seo
     seo: {
       title: 'JavaScript Development',
       description:
-        'This page is all about leveraging the power of JavaScript to build interactive and dynamic web applications.',
+        'Leverage the power of JavaScript to build interactive and dynamic web applications by working with our expert team.',
     },
     // Sections
     sections: {
@@ -320,13 +320,13 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'TypeScript',
     slug: 'typescript',
     avatar_src: '/images/technology_typescript.png',
-    avatar_alt: 'Typescript',
+    avatar_alt: 'Typescript logo',
     is_featured: true,
     is_active: true,
     subtitle:
       'Enhance your frontend development with TypeScript.',
     hero_src: 'https://source.unsplash.com/xrVDYZRGdw4/1600x900',
-    hero_alt: 'TypeScript',
+    hero_alt: 'Laptop with codes on a desk',
     // Seo
     seo: {
       title: 'TypeScript',
@@ -470,16 +470,16 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_featured: true,
     is_active: true,
     avatar_src: '/images/technology_react.png',
-    avatar_alt: 'React',
+    avatar_alt: 'React logo',
     subtitle:
       'Harness the power of React to build dynamic and interactive user interfaces for your enterprise applications.',
     hero_src: 'https://source.unsplash.com/xkBaqlcqeb4/1600x900',
-    hero_alt: 'React Development',
+    hero_alt: 'React Development coding screen',
     // Seo
     seo: {
       title: 'React Development',
       description:
-        'This page is all about leveraging React to build powerful and responsive user interfaces for your enterprise applications.',
+        'Harness the power of React for dynamic and interactive UIs. Our expert React development services offer frontend expertise, responsive design and more.',
     },
     // Sections
     sections: {
@@ -616,7 +616,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Next.js Development',
     slug: 'next-js-development',
     avatar_src: '/images/technology_nextjs.png',
-    avatar_alt: 'Next.js',
+    avatar_alt: 'Next.js logo',
     avatar_width: 104,
     avatar_height: 62,
     is_featured: true,
@@ -766,7 +766,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Node.js Development',
     slug: 'node-js-development',
     avatar_src: '/images/technology_node.png',
-    avatar_alt: 'Node.js',
+    avatar_alt: 'Node.js logo',
     avatar_width: 50,
     avatar_height: 55,
     is_featured: true,
@@ -774,12 +774,12 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Leverage the power of Node.js to build scalable and efficient backend solutions for your enterprise applications.',
     hero_src: 'https://source.unsplash.com/0qvBNep1Y04/1600x900',
-    hero_alt: 'Node.js Development',
+    hero_alt: 'Desk setup with monitor showing codes',
     // Seo
     seo: {
       title: 'Node.js Development',
       description:
-        'This page is all about building scalable and efficient backend solutions using Node.js.',
+        'Experience business transformation with Node.js development services. Harness the power of this versatile technology for high-performance web applications.',
     },
     // Sections
     sections: {
@@ -916,18 +916,18 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Webpack',
     slug: 'webpack',
     avatar_src: '/images/technology_webpack.png',
-    avatar_alt: 'Webpack',
+    avatar_alt: 'Webpack logo',
     is_featured: true,
     is_active: true,
     subtitle:
       'Optimize your frontend development workflow with Webpack.',
     hero_src: 'https://source.unsplash.com/EJSaEnVvZcg/1600x900',
-    hero_alt: 'Webpack',
+    hero_alt: 'Webpack codes',
     // Seo
     seo: {
       title: 'Webpack',
       description:
-        'This page is all about optimizing your frontend development workflow with Webpack.',
+        'Discover the power of webpack for efficient and optimized web development. Enhance performance and streamline your workflows with our expert solutions.',
     },
     // Sections
     sections: {
@@ -1064,13 +1064,13 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Module Federation',
     slug: 'module-federation',
     avatar_src: '/images/technology_module_federation.png',
-    avatar_alt: 'Module Federation',
+    avatar_alt: 'Module Federation logo',
     is_featured: true,
     is_active: true,
     subtitle:
       'Enhance your frontend architecture with Module Federation and build scalable, modular applications.',
     hero_src: 'https://source.unsplash.com/26MJGnCM0Wc/1600x900',
-    hero_alt: 'Module Federation',
+    hero_alt: 'People writing on a whiteboard',
     // Seo
     seo: {
       title: 'Module Federation',
@@ -1212,7 +1212,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'Nx Monorepo',
     slug: 'nx-monorepo',
     avatar_src: '/images/technology_nx.png',
-    avatar_alt: 'Nx',
+    avatar_alt: 'Nx logo',
     is_featured: true,
     is_active: true,
     subtitle:
@@ -1360,13 +1360,13 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     title: 'AWS',
     slug: 'aws',
     avatar_src: '/images/technology_aws.png',
-    avatar_alt: 'Aws',
+    avatar_alt: 'AWS logo',
     avatar_width: 90,
     avatar_height: 60,
     subtitle:
       'Reliable infrastructure for building frontend software engineering and dashboard development projects.',
     hero_src: 'https://source.unsplash.com/HIctpU2PA8E/1600x900',
-    hero_alt: 'AWS',
+    hero_alt: 'Amazon logo with desk setup',
     // Seo
     seo: {
       title: 'AWS',
@@ -1505,7 +1505,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     avatar_src: '/images/technology_antd.png',
-    avatar_alt: 'Ant Design',
+    avatar_alt: 'Ant Design logo',
     title: 'Ant Design',
     slug: 'ant-design',
     subtitle:
@@ -1514,7 +1514,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     avatar_src: '/images/technology_mui.png',
-    avatar_alt: 'Mui',
+    avatar_alt: 'Mui logo',
     title: 'MUI',
     slug: 'mui',
     subtitle:
@@ -1523,7 +1523,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     avatar_src: '/images/technology_sass.png',
-    avatar_alt: 'Sass',
+    avatar_alt: 'Sass logo',
     title: 'Sass',
     slug: 'saas',
     subtitle:
@@ -1532,7 +1532,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     avatar_src: '/images/technology_storybook.png',
-    avatar_alt: 'Storybook',
+    avatar_alt: 'Storybook logo',
     avatar_width: 50,
     title: 'Storybook',
     slug: 'storybook',

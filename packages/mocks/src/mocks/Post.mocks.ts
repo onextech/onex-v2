@@ -10,6 +10,7 @@ export const MOCK_TECH_POSTS = [
   {
     published_at: '2023-05-15T08:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 7,
     title:
       'What Does It Take To Make a Successful Product and Stand Out From The Crowd?',
@@ -39,14 +40,12 @@ export const MOCK_TECH_POSTS = [
       '<h3>Commitment to Success</h3>\n' +
       "<p>The fifth and final fundamental factor, commitment to success, requires making sure that everyone engaged in the project is dedicated to producing a successful result. This involves not only the project team but also crucial stakeholders like clients and suppliers. For instance, you must make sure that everyone involved in the development of a cloud-based software application is in alignment with the product's goal and the benefits it offers.</p>\n" +
       '<h2>Conclusion</h2>\n' +
-      '<p>In conclusion, developing a successful technological product calls for thorough planning, tailored goals, efficient management, a skilled project team, and a dedication to success. These components are essential for creating goods that stand out from the competition and offer your clients genuine value. You must make sure that these things are in place and that the project is handled well as a product owner in order to produce the best results. You can produce technical products that satisfy customer standards and do well on the market by concentrating on these factors.</p>\n' +
-      '</blockquote>\n' +
-      '</blockquote>\n' +
-      '</blockquote>',
+      '<p>In conclusion, developing a successful technological product calls for thorough planning, tailored goals, efficient management, a skilled project team, and a dedication to success. These components are essential for creating goods that stand out from the competition and offer your clients genuine value. You must make sure that these things are in place and that the project is handled well as a product owner in order to produce the best results. You can produce technical products that satisfy customer standards and do well on the market by concentrating on these factors.</p>\n',
   },
   {
     published_at: '2023-05-15T10:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 7,
     title:
       'The Most Costly Risks in Product Development and How To Mitigate Them',
@@ -56,7 +55,6 @@ export const MOCK_TECH_POSTS = [
     hero_src: 'https://source.unsplash.com/UU69D-_nwPI/1600x900',
     hero_alt: 'compass',
     html:
-      '<blockquote>\n' +
       '<blockquote>\n' +
       '<p><em><strong>Summary:</strong> Product development is a costly and complex process that involves many risks, including a small or nonexistent market, insufficient budgeting, technical difficulties, intellectual property infringement, and supplier and manufacturing issues. To mitigate these risks, it is essential to conduct sufficient market research, establish a reasonable budget, have a team with the necessary expertise, conduct a thorough patent search, and open lines of communication with suppliers and manufacturers. In addition, broader risk management strategies can also be applied, for instance developing a clear development process, carrying out comprehensive testing and validation, incorporating flexibility, tracking progress, and building a culture of continuous improvement. By recognising the most significant risks and employing effective risk management practices, it is feasible to maximise the likelihood of success and launch the product effectively.</em></p>\n' +
       '</blockquote>\n' +
@@ -81,9 +79,7 @@ export const MOCK_TECH_POSTS = [
       '<li>Building a culture of continuous improvement and risk management</li>\n' +
       '</ul>\n' +
       '<h2>Final Word</h2>\n' +
-      '<p>In conclusion, creating a new product can be expensive, challenging and risky undertaking. Nonetheless, it is feasible to raise the likelihood of success and effectively launch the product by recognising the most important risks and taking efforts to mitigate while putting into practice effective risk management practices.</p>\n' +
-      '</blockquote>\n' +
-      '</blockquote>',
+      '<p>In conclusion, creating a new product can be expensive, challenging and risky undertaking. Nonetheless, it is feasible to raise the likelihood of success and effectively launch the product by recognising the most important risks and taking efforts to mitigate while putting into practice effective risk management practices.</p>\n',
   },
   {
     published_at: '2023-05-22T11:00:00+0000',
@@ -97,7 +93,6 @@ export const MOCK_TECH_POSTS = [
     hero_src: 'https://source.unsplash.com/7tXA8xwe4W4/1600x900',
     hero_alt: 'sticky notes',
     html:
-      '<blockquote>\n' +
       '<blockquote>\n' +
       "<p><em><strong>Summary:</strong> Developing the right product for customers is essential for a business to succeed. To achieve this, business owners and product developers should conduct market research, customer feedback analysis, user persona creation, test assumptions, flexibility, customer experience focused and success measurement. Market research involves compiling data about target audiences&rsquo; demographics, tastes, behaviours, and pain points. Prioritising product features and creating user personas can help provide a more specialised experience. Keeping an open mind and testing hypotheses through user testing and prototyping, and to be adaptable. The product will continue to match the target market's changing needs and wants if success is measured using criteria like customer happiness, retention rates, and revenue growth.</em></p>\n" +
       '</blockquote>\n' +
@@ -117,9 +112,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>Measure success</h3>\n' +
       '<p>To gauge how well your product satisfies the demands and wants of your target market is also a key step. Establishing clear goals and metrics for success such as customer satisfaction levels, retention rates and revenue expansion. Keep an eye over these indicators over time and change product accordingly to make sure its providing the value your customers are looking for.</p>\n' +
       '<h2>Final Words</h2>\n' +
-      "<p>In summary, developing the ideal product for your customers demands a thorough comprehension of their needs and goals. Keep in mind that creating a successful product that is a continuous process that necessitates constant input and it requires continuous feedback and iteration to stay relevant and competitive in today's rapidly evolving marketplace.</p>\n" +
-      '</blockquote>\n' +
-      '</blockquote>',
+      "<p>In summary, developing the ideal product for your customers demands a thorough comprehension of their needs and goals. Keep in mind that creating a successful product that is a continuous process that necessitates constant input and it requires continuous feedback and iteration to stay relevant and competitive in today's rapidly evolving marketplace.</p>\n",
   },
   {
     published_at: '2023-05-22T12:00:00+0000',
@@ -148,8 +141,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>Cloud-Native Applications</h3>\n' +
       '<p>Using cloud-native technologies like containers, microservices, and APIs, cloud-native applications are created expressly to run on the cloud. Agile development approaches were used to create these applications, facilitating speedy development and deployment. Cloud-native applications are the best option for enterprises with a big user base since they are highly scalable, resilient, and secure.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      '<p>Cloud computing is still developing and adapting to the shifting demands of the IT sector. More flexibility, scalability, and cost-effectiveness are priorities for the newest innovations and trends in business. Cloud computing will keep developing as technology progresses, giving businesses additional alternatives and chances to be innovative.</p>\n' +
-      '</blockquote>',
+      '<p>Cloud computing is still developing and adapting to the shifting demands of the IT sector. More flexibility, scalability, and cost-effectiveness are priorities for the newest innovations and trends in business. Cloud computing will keep developing as technology progresses, giving businesses additional alternatives and chances to be innovative.</p>\n',
   },
   {
     published_at: '2023-05-29T13:00:00+0000',
@@ -163,7 +155,6 @@ export const MOCK_TECH_POSTS = [
     hero_src: 'https://source.unsplash.com/_K-QKkbn7Ds/1600x900',
     hero_alt: 'building',
     html:
-      '<blockquote>\n' +
       '<blockquote>\n' +
       '<p><em><strong>Summary:</strong> Enterprise product management has grown increasingly essential as a result of the way firms presently function after&nbsp;being altered by cloud-based solutions. Enterprise product managers should take important considerations into account, such as choosing an appropriate cloud provider based on standards like cost, dependability, security, scalability, and support. In order to be sure that their infrastructure and cloud provider can accommodate their expanding business needs, they must also plan for expansion. Another crucial element is cost optimisation, and product managers must assess cloud usage and cut costs where they can without sacrificing performance or reliability. Finally, investing in cutting-edge technology and researching concepts like serverless computing and microservices are crucial.</em></p>\n' +
       '</blockquote>\n' +
@@ -181,8 +172,7 @@ export const MOCK_TECH_POSTS = [
       '<p>Finally, when managing the cloud ecosystem, enterprise product managers should embrace innovation. Product managers have to keep up with the most recent trends and technology in the continuously evolving sector of cloud computing. This entails making investments in cutting-edge technology like artificial intelligence and machine learning as well as exploring fresh ideas like serverless computing and microservices.</p>\n' +
       '<p>Product managers can acquire a competitive edge and ensure their company is prepared to make the most of opportunities in the cloud computing market by embracing innovation.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      '<p>In conclusion, enterprise product managers may find it difficult to navigate the cloud ecosystem. Product managers may, however, harness the advantages of cloud-based solutions and maintain&nbsp;the lead by carefully considering factors like selecting the most suitable cloud provider, planning for expansion, optimising costs, ensuring security and compliance, and embracing innovation.</p>\n' +
-      '</blockquote>',
+      '<p>In conclusion, enterprise product managers may find it difficult to navigate the cloud ecosystem. Product managers may, however, harness the advantages of cloud-based solutions and maintain&nbsp;the lead by carefully considering factors like selecting the most suitable cloud provider, planning for expansion, optimising costs, ensuring security and compliance, and embracing innovation.</p>\n',
   },
   {
     published_at: '2023-05-29T14:00:00+0000',
@@ -196,7 +186,6 @@ export const MOCK_TECH_POSTS = [
     hero_src: 'https://source.unsplash.com/-8ttvM3Ca94/1600x900',
     hero_alt: 'road',
     html:
-      '<blockquote>\n' +
       '<blockquote>\n' +
       "<p><em><strong>Summary:</strong> The usage of cloud infrastructure in present organisational operations is growing, and cloud infrastructure management practices like automation, artificial intelligence (AI), and DevOps are becoming increasingly common. The demand for better efficiency, scalability, and dependability in managing complex cloud infrastructures is what's causing this shift toward automation and AI. By 2025, it's anticipated that 70% of businesses will use multi-cloud or hybrid cloud strategies, with many of them managing their cloud infrastructure with automation and AI. Investing in the appropriate tools and technologies, alongside providing IT team training and development, can help businesses utilise cloud infrastructure effectively and encourage innovation and growth in this digital age&nbsp;despite the challenges associated with adopting these trends.</em></p>\n" +
       '</blockquote>\n' +
@@ -212,13 +201,12 @@ export const MOCK_TECH_POSTS = [
       '<p>The adoption of automation, AI, and DevOps is not without its challenges, however. The requirement for qualified IT specialists who can develop, implement, and maintain these systems is one of the key barriers to implementing these solutions. Concerns exist over the potential effects on security of growing automation and AI in cloud infrastructure management. Security is a significant concern for businesses as more crucial business activities are automated, increasing the danger of cyberattacks and data breaches.</p>\n' +
       '<p>To successfully manage their cloud infrastructure, businesses ought to invest in the appropriate tools, technologies, and talent. To accomplish their business goals, they must have a well-defined strategy in place that explains how they will use automation, AI, and DevOps. Additionally, they must emphasise IT team training and development to give them the knowledge and abilities they need to operate the increasingly complex cloud systems.</p>\n' +
       '<h2>Final Word</h2>\n' +
-      '<p>In conclusion, the future of cloud infrastructure management is one that is increasingly automated, AI-driven, and DevOps-oriented. These trends are driven by the need for greater efficiency, scalability, and reliability in managing complex cloud environments. Businesses may fully utilise cloud infrastructure, spurring innovation and growth in the digital era, by embracing automation, AI, and DevOps.</p>\n' +
-      '</blockquote>\n' +
-      '</blockquote>',
+      '<p>In conclusion, the future of cloud infrastructure management is one that is increasingly automated, AI-driven, and DevOps-oriented. These trends are driven by the need for greater efficiency, scalability, and reliability in managing complex cloud environments. Businesses may fully utilise cloud infrastructure, spurring innovation and growth in the digital era, by embracing automation, AI, and DevOps.</p>\n',
   },
   {
     published_at: '2023-05-15T08:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 8,
     title:
       'Digital Transformation in Government: Modernising Public Services for the 21st Century',
@@ -278,8 +266,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>3D Printing</h3>\n' +
       '<p>Finally, 3D printing technology is being used to make spare parts and ship components. Because components can be printed on demand rather than having to be acquired and transported from elsewhere, this can greatly decrease the time and expense involved in maintaining and repairing vessels. This reduces the need for ships to transport huge inventories of spare parts, increasing efficiency and lowering expenses even further. W&auml;rtsil&auml;, a shipping company, has created a 3D printing solution for making ship spare parts. Customers can use the service to submit a design for a component, which is then manufactured on demand and delivered to the user.</p>\n' +
       '<h3>Final Word</h3>\n' +
-      '<p>Ultimately, rising trends and technologies such as automation, big data, blockchain, autonomous shipping, green energy, and 3D printing are all playing a part in causing major changes in the maritime industry. These developments have the potential to dramatically boost industry productivity and revenue while also lowering costs and increasing safety and sustainability. It will be exciting to see how these trends and technologies develop and how they affect the way products are moved around the globe as the maritime sector keeps evolving.</p>\n' +
-      '</blockquote>',
+      '<p>Ultimately, rising trends and technologies such as automation, big data, blockchain, autonomous shipping, green energy, and 3D printing are all playing a part in causing major changes in the maritime industry. These developments have the potential to dramatically boost industry productivity and revenue while also lowering costs and increasing safety and sustainability. It will be exciting to see how these trends and technologies develop and how they affect the way products are moved around the globe as the maritime sector keeps evolving.</p>\n'
   },
   {
     published_at: '2023-06-12T14:00:00+0000',
@@ -345,8 +332,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>Develop a Talent Pipeline</h3>\n' +
       '<p>To successfully navigate the digital landscape, traditional banks must build a talent pipeline. This can be achieved by hiring new and fresh talent with digital know-how and expertise, while also investing in the training of current employees. Traditional banks must also ensure that they have a diversified workforce that reflects the evolving demands and tastes of customers.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      '<p>In conclusion, the impact of fintech on traditional banking has been significant, as traditional banks are obliged to adapt to new business models and shifting client expectations. By doing so, traditional banks can position themselves to compete with fintech companies and accommodate the changing needs of customers.</p>\n' +
-      '</blockquote>',
+      '<p>In conclusion, the impact of fintech on traditional banking has been significant, as traditional banks are obliged to adapt to new business models and shifting client expectations. By doing so, traditional banks can position themselves to compete with fintech companies and accommodate the changing needs of customers.</p>\n',
   },
   {
     published_at: '2023-05-15T08:00:00+0000',
@@ -448,7 +434,7 @@ export const MOCK_TECH_POSTS = [
     subtitle:
       "Unleash React's potential with advanced techniques for faster, user-friendly, and scalable web apps.",
     hero_src: 'https://source.unsplash.com/tzFVsg6nWtM/1600x900',
-    hero_alt: 'city',
+    hero_alt: 'Singapore city view',
     html:
       '<blockquote>\n' +
       "<p><em><strong>Summary:</strong> React is a well-known front-end framework for building web applications. Developers must learn advanced development strategies to improve the speed, usability, and functionality of their web applications in order to fully realize React's potential. This article looks at a few cutting-edge React development initiatives that can help to strengthen online applications and improve user experience. React Hooks, Context API, React Router, Redux, React Native, Server-Side Rendering, Code Splitting, React Animations, React Performance Optimization, and Accessibility are some of the features available. Developers can use these techniques to create strong, scalable, and resilient applications that meet the needs of users and businesses. Integrating these techniques with cloud infrastructure and best practices can improve the applications even further.</em></p>\n" +
@@ -548,10 +534,10 @@ export const MOCK_TECH_POSTS = [
   category: getCategoryFromCrudItem(item, MOCK_TECH_POST_CATEGORYS),
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: 'about_shape_circle_radial',
+  avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
@@ -563,6 +549,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_hero: true,
     category_id: 1,
     title:
       'Future-Proofing Your Business: Strategies for Long-Term Growth and Success',
@@ -573,10 +560,7 @@ export const MOCK_GROUP_POSTS = [
     hero_alt: 'compass',
     html:
       '<blockquote>\n' +
-      '<blockquote>\n' +
       "<p><em><strong>Summary: </strong>Organisations in today's business world are seeking to attain long-term success and sustainable growth. Growth strategies are essential for any organization that wants to compete in an increasingly competitive marketplace. However, developing a successful, cost-effective growth strategy is not easy, as it involves making choices on resources, technology, marketing and customer acquisition.</em></p>\n" +
-      '</blockquote>\n' +
-      '<blockquote>\n' +
       '<p><em>To build a successful growth strategy that will enable your company to realise its potential, it is crucial to identify areas of opportunity within the current market. By researching customer trends, we can evaluate how such trends can be leveraged to boost profitability or create new revenue streams. Moreover, focusing on what our competitors are doing and considering ways in which we could differentiate yourself to gain an edge over them is also important. Advances in technology could also help to improve efficiency and productivity.</em></p>\n' +
       '</blockquote>\n' +
       '<h2>Clear Vision and Mission</h2>\n' +
@@ -586,13 +570,12 @@ export const MOCK_GROUP_POSTS = [
       '<h2>Creating a Brand</h2>\n' +
       '<p>Finally, the significance of analytics for branding cannot be further emphasised. Returning customers dictate sustainability and new customers dictate growth. One of the biggest strategy is customer engagement as well as internal customer relationship management. Reaching out to customers personally, focusing continuously on customer problem-solving and improving of service to them is the quickest and most reliable form of return of investment. Their positive experience with what you offer encourages continued trust, value creation and growth.</p>\n' +
       "<p>Embarking on the aforementioned steps allows for organisations to develop strategies that will assist them in achieving sustainable growth for the future. Growth strategies can be complex, may require a significant investment of time and resources-intensive, but with careful planning and execution, organisations can position themselves for success. When implemented appropriately, growth strategies are advantageous for both the organization and its customers as they foster value creation, solidify bonds and build on customer loyalty. For businesses looking to increase their competitive advantage in today's world, it is essential to invest in long-term growth initiatives that will support their future success.</p>\n" +
-      '<p>In conclusion, growth strategies are an essential part of any business. Organisations that take the time to develop effective and comprehensive plans can set themselves up for long-term success.</p>\n' +
-      '</blockquote>\n' +
-      '</blockquote>',
+      '<p>In conclusion, growth strategies are an essential part of any business. Organisations that take the time to develop effective and comprehensive plans can set themselves up for long-term success.</p>\n'
   },
   {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_hero: true,
     category_id: 2,
     title: 'Guide to Implementing New Technologies to Level Up Your Business',
     slug: 'guide-implementing-new-technologies-level-up-business',
@@ -663,6 +646,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-15:00:00+0000',
     is_active: true,
+    is_hero: true,
     category_id: 3,
     title:
       'The Hybrid Workforce: Balancing Flexibility and Productivity in the Post-Pandemic Era',
@@ -687,8 +671,9 @@ export const MOCK_GROUP_POSTS = [
       '<p>As businesses continue to navigate&nbsp;the post-pandemic age, it is apparent that the hybrid workforce will be crucial in creating the future of employment. By implementing this paradigm, businesses may adapt to changing workforce needs, remain competitive in the global economy, and build a more robust and sustainable business model.</p>',
   },
   {
-    published_at: '2023-06-05T14:00:00+0000',
+    published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 2,
     title:
       'Harness the Power of Intelligent Process Automation to Unlock Your Business Growth',
@@ -711,8 +696,9 @@ export const MOCK_GROUP_POSTS = [
       '<p>Although the full range of benefits comes from implementing the complete IPA suite, companies can unlock significant value quickly through individual elements. Whether you are a large enterprise or a small business, the benefits of intelligent automation alone cannot be ignored. Automation can help organisations make informed decisions. With automated solutions, companies can make informed decisions and respond to customer demands, allowing them to stay ahead of the competition. So don&rsquo;t delay, start taking advantage of IPA today and begin unlocking your business growth!</p>',
   },
   {
-    published_at: '2023-06-12T14:00:00+0000',
+    published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 4,
     title: 'Beyond the Logo: Developing a Comprehensive Brand Identity',
     slug: 'beyond-logo-developing-comprehensive-brand-identity',
@@ -741,7 +727,7 @@ export const MOCK_GROUP_POSTS = [
       '<p>In conclusion, creating a holistic brand identity entails more than just a logo or a great phrase. A brand identity is made up of many visual and linguistic aspects that work together to form a unified and memorable portrayal of the brand. A powerful and authentic brand identity reflects the personality, values, and mission of the brand, distinguishing it from competitors and resonating with its target audience. A brand may design a comprehensive brand identity that develops an emotional connection with its customers and promotes financial success by analysing its target demographic, competition, and unique value offer.</p>',
   },
   {
-    published_at: '2023-06-19T14:00:00+0000',
+    published_at: '2023-05-22T14:00:00+0000',
     is_active: true,
     category_id: 5,
     title:
@@ -782,10 +768,10 @@ export const MOCK_GROUP_POSTS = [
   category: getCategoryFromCrudItem(item, MOCK_GROUP_POST_CATEGORYS),
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: 'about_shape_circle_radial',
+  avatar_alt: 'Three circles',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
-  author_avatar_alt: 'author_joel_koh',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags
