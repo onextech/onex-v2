@@ -24,6 +24,7 @@ export const fetchPostBySlug = (injectedSlug) => {
 // Export
 // ==============================
 
+
 export const PostDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const post = fetchPostBySlug(context.params.slug)
