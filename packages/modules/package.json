@@ -9,7 +9,7 @@
   "dependencies": {
     "@gravis-os/analytics": "^0.0.0",
     "@gravis-os/landing": "^0.0.46",
-    "@gravis-os/ui": "^0.0.107",
+    "@gravis-os/ui": "^0.0.108",
     "@gravis-os/utils": "^0.1.1"
   }
 }

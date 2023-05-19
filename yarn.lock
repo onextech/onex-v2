@@ -1649,12 +1649,13 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*", "@gravis-os/fields@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.0.19.tgz#84862ded8d9b016b2f8aef25e4708a9d4afb7a3f"
-  integrity sha512-emqY7dfL1GSw27u4xsgYqL9qLRn8MdnWKCtPCvHclbUBCRjUt/BwGrKiBJGBuV9MN2En10dRNrwJgwXo8oljCQ==
+"@gravis-os/fields@*", "@gravis-os/fields@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.1.0.tgz#44e2cac458ca3dde1db0955a039bf150f0072ab9"
+  integrity sha512-pkpiEl1S/BR86wdreOG0P4QMsVXZ/Kh41XMDgFfzUMjzodUc2n7lsCId3dQ146jsEcGpn0sykZA1/dxgP1n4gg==
   dependencies:
     "@gravis-os/types" "*"
+    country-calling-code "^0.0.3"
     lodash "^4.17.21"
     qs "^6.11.0"
     react-number-format "^4.9.3"
@@ -1662,10 +1663,10 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@^0.0.110":
-  version "0.0.110"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.110.tgz#643264af0903ee7d5b320f778e9868b8a659c8c2"
-  integrity sha512-4GzouqjjMg1gMtIHzDhdhkvvw4I6VdMM9kpzvBbbERNuOOAQuZt8otdQKRJSB6s7VB7YY8uKEHgGQ/Va/6mbgg==
+"@gravis-os/form@^0.0.111":
+  version "0.0.111"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.111.tgz#8ed05a7b39aca556a1b46e506284ba49a95250b6"
+  integrity sha512-p57Iaj4oTpDAyG0Ifh66DSAWyTEwixC/fMPZLfURmgLcJw33MJYtZKXBUi4j4Yk4E/ZOIswryufhG+jAxx0FNQ==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1673,8 +1674,6 @@
     "@gravis-os/ui" "*"
     "@mui/x-date-pickers" "^5.0.2"
     downloadjs "^1.4.7"
-    google-libphonenumber "^3.2.31"
-    i18n-iso-countries "^7.5.0"
     lodash "^4.17.21"
     quill ">=1.3.7"
     react-hook-form "^7.30.0"
@@ -1753,10 +1752,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.0.107":
-  version "0.0.107"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.107.tgz#7f7d21d18f5240dd11dc86a61767d41d2e6874bc"
-  integrity sha512-FN0+YGZFZBrGsC1y0wdOAq+wc8iv4rhxTs9riMZC8YE6xCvTf0xIBRPLumpLFcz04qg/fs4Xzh+yQs9Qmf/z6A==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.0.108":
+  version "0.0.108"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.108.tgz#dc8f6341dee05df30ff94c10bf24e52588948a9b"
+  integrity sha512-81nDW7cYNtLdN6lJehw3Yku4pV4pyAKgUvIcF0YVdV+rc9yjnEWUu4aQsBCBoqaT/e+xm1n8cvLXtTotl+G/rg==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"
@@ -2109,6 +2108,13 @@
   version "5.11.11"
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.11.tgz#eb5b3f0900ad96a72a37f85fca11545d47a7bc10"
   integrity sha512-0YK0K9GfW1ysw9z4ztWAjLW+bktf+nExMyn2+EQe1Ijb0kF2kz1kIOmb4+di0/PsXG70uCuw4DhEIdNd+JQkRA==
+
+"@mui/icons-material@5.11.16":
+  version "5.11.16"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.16.tgz#417fa773c56672e39d6ccfed9ac55591985f0d38"
+  integrity sha512-oKkx9z9Kwg40NtcIajF9uOXhxiyTZrrm9nmIJ4UjkU2IdHpd4QVLbCc/5hZN/y0C6qzi2Zlxyr9TGddQx2vx2A==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 "@mui/icons-material@latest":
   version "5.11.11"
@@ -3829,6 +3835,11 @@ cosmiconfig@^8.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
 
+country-calling-code@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/country-calling-code/-/country-calling-code-0.0.3.tgz#d4401da11b7cfcda35ba8f05a325cab55a3b7b66"
+  integrity sha512-DNLyidwJPrEZyDkILYFbgPRlg/tFkpP+uk6JWG+du41l7qoH5guePxSA2YlIjl6wUfp7vWdjCUJeMRuAQPKpRg==
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
@@ -4148,11 +4159,6 @@ detect-node@^2.0.4, detect-node@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
-
-diacritics@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/diacritics/-/diacritics-1.3.0.tgz#3efa87323ebb863e6696cebb0082d48ff3d6f7a1"
-  integrity sha512-wlwEkqcsaxvPJML+rDh/2iS824jbREk6DUMUKkEaSlxdYHeS43cClJtsWglvw2RfeXGm6ohKDqsXteJ5sP5enA==
 
 diff-sequences@^29.4.3:
   version "29.4.3"
@@ -5334,11 +5340,6 @@ goober@^2.1.10:
   resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.12.tgz#6c1645314ac9a68fe76408e1f502c63df8a39042"
   integrity sha512-yXHAvO08FU1JgTXX6Zn6sYCUFfB/OJSX8HHjDSgerZHZmFKAb08cykp5LBw5QnmyMcZyPRMqkdyHUSSzge788Q==
 
-google-libphonenumber@^3.2.31:
-  version "3.2.32"
-  resolved "https://registry.yarnpkg.com/google-libphonenumber/-/google-libphonenumber-3.2.32.tgz#63c48a9c247b64a3bc2eec21bdf3fcfbf2e148c0"
-  integrity sha512-mcNgakausov/B/eTgVeX8qc8IwWjRrupk9UzZZ/QDEvdh5fAjE7Aa211bkZpZj42zKkeS6MTT8avHUwjcLxuGQ==
-
 gopd@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
@@ -5509,13 +5510,6 @@ husky@^8.0.0, husky@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/husky/-/husky-8.0.3.tgz#4936d7212e46d1dea28fef29bb3a108872cd9184"
   integrity sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==
-
-i18n-iso-countries@^7.5.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/i18n-iso-countries/-/i18n-iso-countries-7.5.0.tgz#74fedd72619526a195cfb2e768fe1d82eed2123f"
-  integrity sha512-PtfKJNWLVhhU0KBX/8asmywjAcuyQk07mmmMwxFJcddTNBJJ1yvpY2qxVmyxbtVF+9+6eg9phgpv83XPUKU5CA==
-  dependencies:
-    diacritics "1.3.0"
 
 i18next-fs-backend@^2.1.1:
   version "2.1.1"
