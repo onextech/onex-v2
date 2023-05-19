@@ -21,7 +21,7 @@ const NextPostCategoryPage: React.FC<NextPostCategoryPageProps> = (props) => {
       <LandingLayout
         seo={{
           title: postCategory.title,
-          description: `Gain valuable insights about ${postCategory.title.toLowerCase()} on One X Tech. Discover trends, strategies, and innovations for today's dynamic business landscape.`,
+          description: `Gain valuable insights about ${postCategory.title.toLowerCase()} on One X Data. Discover trends, strategies, and innovations for today's dynamic business landscape.`,
         }}
         autoBreadcrumbs
       >
