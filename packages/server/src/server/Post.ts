@@ -1,7 +1,7 @@
 import { MOCK_POSTS, MOCK_POST_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import {
-  getCategoryFromCrudItem,
+  getCategoryFromCrudItem, getRelatedCrudItemsByCategoryId,
 } from '@gravis-os/utils'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
@@ -23,11 +23,6 @@ export const fetchPostBySlug = (injectedSlug) => {
 // ==============================
 // Export
 // ==============================
-
-// TO MOVE TO GRAVIS-OS AFTER QA FOR THIS METHOD IS PASSED
-export function getRelatedCrudItemsByCategoryId(items: Post[], category_id: number) {
-  return items.filter(item => item.category_id === category_id)
-}
 
 export const PostDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
