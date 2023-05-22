@@ -88,9 +88,10 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
                 titleProps: { gutterBottom: true },
               },
               {
-                type: 'subtitle2',
+                type: href ? 'link' : 'subtitle2',
                 title,
                 titleProps: {
+                  ...(href && { href, variant: 'subtitle2' }),
                   gutterBottom: true,
                 },
               },
