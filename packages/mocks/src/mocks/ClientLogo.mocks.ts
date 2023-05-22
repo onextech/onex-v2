@@ -129,7 +129,13 @@ export const MOCK_TECH_CLIENT_LOGOS = Object.values(
   ])
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 
+export const MOCK_DESIGN_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
+
+export const MOCK_DATA_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
+
 export const MOCK_CLIENT_LOGOS = {
   GROUP: MOCK_GROUP_CLIENT_LOGOS,
   TECH: MOCK_TECH_CLIENT_LOGOS,
+  DATA: MOCK_DATA_CLIENT_LOGOS,
+  DESIGN: MOCK_DESIGN_CLIENT_LOGOS
 }

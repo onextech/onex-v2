@@ -779,7 +779,13 @@ export const MOCK_GROUP_POSTS = [
   ...item,
 }))
 
+export const MOCK_DATA_POSTS = []
+
+export const MOCK_DESIGN_POSTS = []
+
 export const MOCK_POSTS = {
   GROUP: MOCK_GROUP_POSTS,
   TECH: MOCK_TECH_POSTS,
+  DATA: MOCK_DATA_POSTS,
+  DESIGN: MOCK_DESIGN_POSTS
 }

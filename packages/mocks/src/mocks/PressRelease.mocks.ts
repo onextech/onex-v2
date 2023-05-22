@@ -164,4 +164,6 @@ export const MOCK_GROUP_PRESS_RELEASES = MOCK_TECH_PRESS_RELEASES.map(
 export const MOCK_PRESS_RELEASES = {
   GROUP: [],
   TECH: [],
+  DATA: [],
+  DESIGN: []
 }

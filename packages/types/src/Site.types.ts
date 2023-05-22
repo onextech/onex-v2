@@ -4,6 +4,12 @@ export interface SiteLocale {
   title: string
 }
 
+export interface SiteNavItem {
+  key: string
+  title: string
+  subtitle?: string
+}
+
 interface Site {
   // Seo
   seo_title?: string
@@ -43,6 +49,7 @@ interface Site {
   // System
   nav_is_open_on_hover?: boolean
   nav_is_ecosystem_visible?: boolean
+  nav_items?: SiteNavItem[]
 
   // Social Media
   social_media_github_url?: string
@@ -54,6 +61,7 @@ interface Site {
   social_media_linkedin_url?: string
   social_media_instagram_url?: string
   social_media_youtube_url?: string
+
 }
 
 export default Site

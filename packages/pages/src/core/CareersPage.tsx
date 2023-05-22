@@ -112,7 +112,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
                   'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
               },
               {
-                fa_icon: 'fa-holiday',
+                fa_icon: 'fa-gift',
                 title: 'Paid Time Off',
                 subtitle:
                   'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
