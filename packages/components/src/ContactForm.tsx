@@ -15,12 +15,14 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
+    toast.loading('Sending...')
     await postEnquiry({
       type: EnquiryTypeEnum.ENQUIRY,
       origin: window.location.href,
       ...values,
     })
     setIsSubmitSuccess(true)
+    toast.remove()
     toast.success('Successfully sent')
   }
 

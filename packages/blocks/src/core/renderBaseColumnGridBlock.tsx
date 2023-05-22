@@ -100,6 +100,11 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
                 title: subtitle,
                 titleProps: { color: 'text.secondary' },
               },
+              href && {
+                type: 'link',
+                title: 'Learn More',
+                titleProps: { ...{ href, mt: 2, rightCaret: true } }
+              },
             ],
           }
         }),
