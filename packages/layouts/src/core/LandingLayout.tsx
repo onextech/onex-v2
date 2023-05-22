@@ -96,12 +96,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'services').title,
+                            title: site.nav_items?.find(({ key }) => key === 'services')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items.find(({ key }) => key === 'services').subtitle,
+                            title: site.nav_items?.find(({ key }) => key === 'services')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -177,12 +177,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'technologies').title,
+                            title: site.nav_items?.find(({ key }) => key === 'technologies')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items.find(({ key }) => key === 'technologies').subtitle,
+                            title: site.nav_items?.find(({ key }) => key === 'technologies')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -252,13 +252,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'industries').title,
+                            title: site.nav_items?.find(({ key }) => key === 'industries')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title:
-                              site.nav_items.find(({ key }) => key === 'industries').subtitle,
+                              site.nav_items?.find(({ key }) => key === 'industries')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -328,13 +328,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'insights').title,
+                            title: site.nav_items?.find(({ key }) => key === 'insights')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title:
-                              site.nav_items.find(({ key }) => key === 'insights').subtitle,
+                              site.nav_items?.find(({ key }) => key === 'insights')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -404,12 +404,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'company').title,
+                            title: site.nav_items?.find(({ key }) => key === 'company')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items.find(({ key }) => key === 'company').subtitle,
+                            title: site.nav_items?.find(({ key }) => key === 'company')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -479,12 +479,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items.find(({ key }) => key === 'ecosystem').title,
+                            title: site.nav_items?.find(({ key }) => key === 'ecosystem')?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items.find(({ key }) => key === 'ecosystem').subtitle,
+                            title: site.nav_items?.find(({ key }) => key === 'ecosystem')?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
