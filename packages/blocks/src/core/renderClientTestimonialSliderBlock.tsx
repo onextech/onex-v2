@@ -4,6 +4,7 @@ import { Slider } from '@gravis-os/ui'
 import React from 'react'
 import renderClientTestimonialSliderBlockItem from './renderClientTestimonialSliderBlockItem'
 import 'keen-slider/keen-slider.min.css'
+import { useMediaQuery, useTheme } from '@mui/material'
 
 export interface RenderClientTestimonialSliderBlockProps
   extends Omit<BlockProps, 'items' | 'title'> {
@@ -21,6 +22,9 @@ const renderClientTestimonialSliderBlock = (
     items,
     ...rest
   } = props
+
+  const theme = useTheme()
+  const isDesktop = useMediaQuery(theme.breakpoints.up('md'), { noSsr: true })
 
   return {
     key: 'client-testimonials',
@@ -43,14 +47,16 @@ const renderClientTestimonialSliderBlock = (
         type: 'jsx',
         title: (
           <Slider
-          autoplay
-          loop
-          arrows
+            autoplay={!isDesktop}
+            loop={!isDesktop}
+            arrows={!isDesktop}
+            sx={{ mt: 4 }}
+            options={{ slides: { perView: isDesktop ? 3 : 1, spacing: 12 }}}
             dotProps={{ color: 'secondary.main' }}
             height={{ xs: 450, md: 400 }}
             items={items.map(item => {
               return (
-                <Block sx={ { px: {xs: 4, md: 12 } } } items={renderClientTestimonialSliderBlockItem({ item })}/>
+                <Block sx={ { padding: 4, backgroundColor: 'background.paper' } } items={renderClientTestimonialSliderBlockItem({ item })}/>
               )
             })}
           />
