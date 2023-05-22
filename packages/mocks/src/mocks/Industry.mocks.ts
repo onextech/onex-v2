@@ -819,6 +819,8 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
     },
+    fa_icon: 'fa-coins',
+    is_featured: true,
   },
   {
     // Hero
@@ -828,6 +830,8 @@ export const MOCK_TECH_INDUSTRYS = [
       'Partner with software development experts to create efficient solutions for government agencies.',
     hero_src: 'https://source.unsplash.com/o0kbc907i20/1600x900',
     hero_alt: 'Greek temple',
+    fa_icon: 'fa-landmark-flag',
+    is_featured: true,
     // Seo
     seo: {
       title: 'Government',
@@ -924,6 +928,7 @@ export const MOCK_TECH_INDUSTRYS = [
       'Partner with software development experts to optimize maritime operations and enhance efficiency.',
     hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
     hero_alt: 'Port with shipping containers',
+    fa_icon: 'fa-ship',
     // Seo
     seo: {
       title: 'Maritime',
@@ -1021,6 +1026,8 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'real-estate',
     subtitle:
       'Transform your real estate business with innovative software solutions and intuitive user interfaces.',
+    fa_icon: 'fa-map',
+    is_featured: true,
     hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900',
     hero_alt: 'Glass buildings',
     // Seo
