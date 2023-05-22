@@ -1550,4 +1550,6 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
 export const MOCK_TECHNOLOGYS = {
   TECH: MOCK_TECH_TECHNOLOGYS,
   GROUP: [],
+  DATA: [],
+  DESIGN: []
 }

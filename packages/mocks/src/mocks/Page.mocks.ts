@@ -1,5 +1,6 @@
 import { Page } from '@onex/types'
 import { routeConfig } from '@onex/common'
+import merge from 'lodash/merge'
 
 export const MOCK_PAGE: Page = {
   // Seo
@@ -1886,7 +1887,23 @@ const MOCK_TECH_PAGES = [
   ...page,
 }))
 
+export const MOCK_DATA_PAGES = [
+  {
+    slug: 'home',
+    is_hidden_from_nav: true
+  }
+].map((page) => merge({}, MOCK_DATA_PAGE, page))
+
+export const MOCK_DESIGN_PAGES = [
+  {
+    slug: 'home',
+    is_hidden_from_nav: true
+  }
+].map((page) => merge({}, MOCK_DESIGN_PAGE, page))
+
 export const MOCK_PAGES = {
   GROUP: MOCK_GROUP_PAGES,
   TECH: MOCK_TECH_PAGES,
+  DATA: MOCK_DATA_PAGES,
+  DESIGN: MOCK_DESIGN_PAGES
 }
