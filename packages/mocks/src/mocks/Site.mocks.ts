@@ -67,6 +67,12 @@ export const MOCK_GROUP_SITE: Site = {
   general_email: 'info@onextech.com',
   general_phone: '+65 8922 8242',
   general_whatsapp: '+65 8922 8242',
+
+  nav_subtitles: {
+    services: 'Explore our comprehensive services focused on empowering enterprises through custom software development',
+    insights: 'Discover the key to software development success with the latest best practices and techniques.'
+  }
+
 }
 
 export const MOCK_TECH_SITE = {
@@ -86,6 +92,12 @@ export const MOCK_TECH_SITE = {
   // Logo
   logo_width: 95,
   logo_height: 13,
+
+  nav_subtitles: {
+    services: 'Explore our comprehensive services focused on empowering enterprises through frontend development',
+    insights: 'Discover the key to frontend development success with the latest best practices and techniques.'
+  }
+
 }
 
 export const MOCK_SITE = {

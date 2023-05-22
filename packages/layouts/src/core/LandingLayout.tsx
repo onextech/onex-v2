@@ -101,8 +101,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           },
                           {
                             type: 'body1',
-                            title:
-                              'Explore our comprehensive services focused on empowering enterprises through custom software development',
+                            title: site.nav_subtitles.services,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -336,7 +335,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'body1',
                             title:
-                              'Discover the key to frontend development success with the latest best practices and techniques.',
+                              site.nav_subtitles.insights,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
