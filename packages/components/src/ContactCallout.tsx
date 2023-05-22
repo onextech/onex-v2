@@ -10,7 +10,7 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
   const { cta_title, cta_button_title } = site
 
   const footerCalloutBlockProps = {
-    py: 3,
+    py: 8,
     sx: {
       backgroundColor: 'background.paper',
       borderTop: 1,
@@ -21,31 +21,32 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
     items: [
       {
         type: 'grid',
-        gridProps: { spacing: { xs: 1, md: 2 } },
+        gridProps: { spacing: 3 },
         gridItems: [
           {
-            md: 8,
+            md: 12,
             boxProps: {
               sx: {
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: { xs: 'center', md: 'flex-start' },
+                justifyContent: 'center',
               },
             },
             items: [
               {
-                type: 'h5',
+                type: 'h4',
                 title: cta_title,
                 titleProps: {
-                  sx: { textAlign: { xs: 'center', md: 'left' } },
+                  sx: { textAlign: 'center' },
+                  component: 'h5'
                 },
               },
             ],
           },
           {
-            md: 4,
-            boxProps: { sx: { textAlign: { xs: 'center', md: 'right' } } },
+            md: 12,
+            boxProps: { sx: { textAlign: 'center' } },
             items: [
               renderContactCalloutButtonBlockItem({ title: cta_button_title }),
             ],
