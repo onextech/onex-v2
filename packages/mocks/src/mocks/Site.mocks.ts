@@ -67,6 +67,15 @@ export const MOCK_GROUP_SITE: Site = {
   general_email: 'info@onextech.com',
   general_phone: '+65 8922 8242',
   general_whatsapp: '+65 8922 8242',
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through custom software development' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to software development success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
+    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
+  ]
+
 }
 
 export const MOCK_TECH_SITE = {
@@ -86,6 +95,15 @@ export const MOCK_TECH_SITE = {
   // Logo
   logo_width: 95,
   logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
+    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
+  ]
+
 }
 
 export const MOCK_DESIGN_SITE = {
