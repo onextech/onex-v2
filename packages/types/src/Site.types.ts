@@ -4,9 +4,10 @@ export interface SiteLocale {
   title: string
 }
 
-export interface NavSubtitles {
-  services?: string
-  insights?: string
+export interface SiteNavItem {
+  key: string
+  title: string
+  subtitle?: string
 }
 
 interface Site {
@@ -48,7 +49,7 @@ interface Site {
   // System
   nav_is_open_on_hover?: boolean
   nav_is_ecosystem_visible?: boolean
-  nav_subtitles?: NavSubtitles
+  nav_items?: SiteNavItem[]
 
   // Social Media
   social_media_github_url?: string
