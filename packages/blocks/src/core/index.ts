@@ -79,6 +79,9 @@ export * from './renderClientLogoCardBlockItem'
 export { default as renderClientLogosGridBlock } from './renderClientLogosGridBlock'
 export * from './renderClientLogosGridBlock'
 
+export { default as renderClientTestimonialSliderBlock } from './renderClientTestimonialSliderBlock'
+export * from './renderClientTestimonialSliderBlock'
+
 export { default as renderClientLogosImageMarqueeBlock } from './renderClientLogosImageMarqueeBlock'
 export * from './renderClientLogosImageMarqueeBlock'
 
@@ -90,6 +93,9 @@ export * from './renderTestimonialBlockItem'
 
 export { default as renderClientTestimonialCardBlockItem } from './renderClientTestimonialCardBlockItem'
 export * from './renderClientTestimonialCardBlockItem'
+
+export { default as renderClientTestimonialSliderBlockItem } from './renderClientTestimonialSliderBlockItem'
+export * from './renderClientTestimonialSliderBlockItem'
 
 export { default as renderClientTestimonialCardsBlock } from './renderClientTestimonialCardsBlock'
 export * from './renderClientTestimonialCardsBlock'

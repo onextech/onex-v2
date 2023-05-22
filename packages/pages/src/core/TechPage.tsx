@@ -8,9 +8,9 @@ import {
   renderTechnologysBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
-  renderClientTestimonialCardsBlock,
   renderFaqsAccordionBlock,
   renderCtaBlock,
+  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
@@ -80,7 +80,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         // Technologys
         renderTechnologysBlock({ items: technologys }),
         // Client Testimonials
-        renderClientTestimonialCardsBlock({
+        renderClientTestimonialSliderBlock({
           title: 'Trusted by Frontend Development Teams',
           subtitle:
             "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",

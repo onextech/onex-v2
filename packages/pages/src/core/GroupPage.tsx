@@ -7,10 +7,10 @@ import {
   renderThreeColumnGridBlock,
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
-  renderClientTestimonialCardsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
+  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Industry, Page, Post, Showcase } from '@onex/types'
@@ -116,7 +116,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           pt: { xs: 5, md: 10 },
         }),
         // Client Testimonials
-        renderClientTestimonialCardsBlock({
+        renderClientTestimonialSliderBlock({
           title: 'Technology Consulting with Proven Results',
           subtitle:
             "Recognized for our unwavering commitment to excellence, One X Group stands as the trusted partner of choice for business leaders seeking quality software development services to drive their enterprise software solutions forward.",
