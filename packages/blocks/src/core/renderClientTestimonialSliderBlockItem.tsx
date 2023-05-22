@@ -26,10 +26,10 @@ const renderClientTestimonialSliderBlockItem = (
     {
       type: 'subtitle2',
       title: `"${title}"`,
-      titleProps: { sx: { mb: 4}}
+      titleProps: { sx: { mb: 4 }}
     },
-    { type: 'body1', title: author_title, titleProps: { sx: { fontWeight: 'bold'} } },
-    { type: 'body1', title: `${author_job_title}, ${author_company_title}`, titleProps: { sx: { opacity: 0.5} } },
+    { type: 'body1', title: author_title, titleProps: { sx: { fontWeight: 'bold' } } },
+    { type: 'body1', title: `${author_job_title}, ${author_company_title}`, titleProps: { sx: { opacity: 0.5 } } },
   ]
 }
 

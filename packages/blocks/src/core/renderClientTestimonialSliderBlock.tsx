@@ -16,7 +16,7 @@ const renderClientTestimonialSliderBlock = (
   props: RenderClientTestimonialSliderBlockProps
 ) => {
   const {
-    title = 'Trusted by Frontend Development Teams',
+    title = '',
     subtitle = '',
     items,
     ...rest
@@ -26,12 +26,12 @@ const renderClientTestimonialSliderBlock = (
     key: 'client-testimonials',
     items: [
       { type: 'overline', title: 'Client Testimonials' },
-      {
+      title && {
         type: 'h3',
         title,
         titleProps: { gutterBottom: true },
       },
-      {
+      subtitle && {
         type: 'body1',
         title: subtitle,
         titleProps: {
@@ -43,14 +43,14 @@ const renderClientTestimonialSliderBlock = (
         type: 'jsx',
         title: (
           <Slider
-            autoplay
-            loop
-            arrows
+          autoplay
+          loop
+          arrows
             dotProps={{ color: 'secondary.main' }}
             height={{ xs: 450, md: 400 }}
             items={items.map(item => {
               return (
-                <Block sx={{ px: {xs: 4, md: 12 }, width: '100%', maxWidth: 1000 }} items={renderClientTestimonialSliderBlockItem({ item })}/>
+                <Block sx={ { px: {xs: 4, md: 12 } } } items={renderClientTestimonialSliderBlockItem({ item })}/>
               )
             })}
           />
