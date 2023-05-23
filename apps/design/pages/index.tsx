@@ -1,6 +1,6 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
-import { TechPage, TechPageProps } from '@onex/pages'
+import { DesignPage, TechPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,
   MOCK_SHOWCASES,
@@ -73,10 +73,9 @@ const NextTechPage: React.FC<NextTechPageProps> = (props) => {
         transparentHeader
         headerProps={{ translucentAtScrollY: 755 }}
       >
-        <TechPage
+        <DesignPage
           page={page}
           showcases={showcases}
-          technologys={technologys}
           featuredPosts={featuredPosts}
           industrys={industrys}
         />
