@@ -16,14 +16,14 @@ import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry } from '@onex/types'
 import { useRouter } from 'next/router'
 
-export interface TechPageProps {
+export interface DesignPageProps {
   page: Page
   showcases: Showcase[]
   featuredPosts: Post[]
   industrys: Industry[]
 }
 
-const DesignPage: React.FC<TechPageProps> = (props) => {
+const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
