@@ -10,7 +10,7 @@ export interface ContactCalloutProps {
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
   const { site } = useLayout()
   const { cta_title, cta_button_title } = site
-  const { size } = props
+  const { size = 'large' } = props
 
   const footerCalloutBlockProps = {
     py: size === 'medium' ? 3 : 8,
