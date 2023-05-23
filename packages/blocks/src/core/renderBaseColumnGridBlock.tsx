@@ -103,7 +103,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
               href && {
                 type: 'link',
                 title: 'Learn More',
-                titleProps: { ...{ href, mt: 2, rightCaret: true } }
+                titleProps: { ...{ href, mt: 2, rightCaret: true, variant: 'body2' } }
               },
             ],
           }
