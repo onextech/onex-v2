@@ -222,22 +222,22 @@ export const MOCK_TECH_POSTS = [
       "<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n" +
       '</blockquote>\n' +
       "<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n" +
-      '<h2>Benefits of Digital Transformation in Government</h1>\n' +
-      '<h3>Improved efficiency and cost savings</h2>\n' +
+      '<h2>Benefits of Digital Transformation in Government</h2>\n' +
+      '<h3>Improved efficiency and cost savings</h3>\n' +
       '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
-      '<h3>Increased citizen engagement</h2>\n' +
+      '<h3>Increased citizen engagement</h3>\n' +
       '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
-      '<h3>Enhanced transparency and accountability</h2>\n' +
+      '<h3>Enhanced transparency and accountability</h3>\n' +
       '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
-      '<h2>Challenges of Digital Transformation in Government Sector</h1>\n' +
+      '<h2>Challenges of Digital Transformation in Government Sector</h2>\n' +
       '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
-      '<h3>Resistance to change</h2>\n' +
+      '<h3>Resistance to change</h3>\n' +
       '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
-      '<h3>Skill gaps</h2>\n' +
+      '<h3>Skill gaps</h3>\n' +
       '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
-      '<h4>Security and privacy concerns</h3>\n' +
+      '<h4>Security and privacy concerns</h4>\n' +
       '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
-      '<h3>Conclusion</h2>\n' +
+      '<h3>Conclusion</h3>\n' +
       '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>',
   },
   {
@@ -587,7 +587,7 @@ export const MOCK_GROUP_POSTS = [
     html:
       "<p><strong>Want to unlock the full potential of your business through new technology? We've got you covered.</strong></p>\n" +
       '<p>In today&rsquo;s competitive business world, staying ahead of the game means having access to the latest technologies and being able to successfully implement them. Implementing new technology can be a daunting task and success requires meticulous preparation and execution. So, we&rsquo;ve done the hard lifting for you. This guide will provide you with all the information you need to successfully implement new technologies within your organization and level up your business.</p>\n' +
-      '<h1><strong>Conduct a Needs Assessment</strong></h1>\n' +
+      '<h2><strong>Conduct a Needs Assessment</strong></h2>\n' +
       '<p>Before&nbsp;implementing new technologies, it is essential that you identify the particular requirements and pain points that your company is facing. This can help you decide which technologies will provide the greatest value and ensuring that your investment is targeted on tackling the most pressing business challenges.</p>\n' +
       '<p>If your company has chosen to adopt a new technology, there is most likely a compelling factor, or a combination of factors, that led to that decision.</p>\n' +
       '<p>Establish your implementation rationale; <em><strong>why</strong></em> is your company implementing this new software?</p>\n' +
@@ -603,16 +603,16 @@ export const MOCK_GROUP_POSTS = [
       '<p>Establishing which aspects of new technology will provide the quickest and most effective solutions will provide accurate insights on what should be your top priorities. Otherwise, introducing technology into a workforce too quickly or with too many moving components at once may leave your team overwhelmed with too much knowledge.</p>\n' +
       "<p>Discuss your team's pain points and promote an open discussion with workers, leaders, and managers in each area. It is important to note that the difficulties that one department encounters may be completely different from the difficulties that another department have. As a result, we need to include everyone in these discussions in order to have a full picture.</p>\n" +
       '<p>When you observe what is not working, you can find where the gaps or inconsistencies are in the process. These gaps assist you in determining the areas that need to be filled first and the particular technologies that are most effective.</p>\n' +
-      '<h1><strong>Establish Clear Goals and Objectives</strong></h1>\n' +
+      '<h2><strong>Establish Clear Goals and Objectives</strong></h2>\n' +
       '<p>When implementing new technologies, it is crucial to establish defined aims and targets, such as increasing output, lowering expenses, or improving customer experiences. Having clear goals in sight can help guarantee that technology is implemented in a manner that supports the overall growth of the company.</p>\n' +
       '<ul>\n' +
       '<li><em>Clearly describe what success would look like in terms of results.</em></li>\n' +
       '<li><em>Establish short- and long-term aims and aspirations, as well as general completion deadlines for each stage.</em></li>\n' +
       '<li><em>A clear strategy will simplify the process to track performance and ensure that everyone is on the same page about what needs to be done.</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Create a Cross-Functional Team</strong></h1>\n' +
+      '<h2><strong>Create a Cross-Functional Team</strong></h2>\n' +
       '<p>Implementing new technologies demands a joint effort from various divisions and individuals within the company. This group should include anyone who will be immediately affected by the implementation, such as IT experts and customer support representatives, as well as chief executives or other decision makers. Creating a cross-functional team can help ensure that everyone is on the same page and that technology is used to support the overall company goals.</p>\n' +
-      '<h1><strong>Develop a Comprehensive Implementation Plan</strong></h1>\n' +
+      '<h2><strong>Develop a Comprehensive Implementation Plan</strong></h2>\n' +
       "<p>After you've assembled your cross-functional team, you'll need to create a thorough implementation plan that outlines all of the steps needed to set up the technology. This should include everything from choosing the appropriate technology and training workers to tracking progress and measuring effectiveness.</p>\n" +
       '<p><em><strong>Your Implementation Plan should Include:</strong></em></p>\n' +
       '<ul>\n' +
@@ -621,7 +621,7 @@ export const MOCK_GROUP_POSTS = [
       '<li><em>Milestones</em></li>\n' +
       '<li><em>Contingencies for any problems that may emerge during the implementation phase</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Train Employees</strong></h1>\n' +
+      '<h2><strong>Train Employees</strong></h2>\n' +
       '<p>New technologies means the inevitable development of new capabilities and workflows. Without adequate training, your team will be unable to discover the maximum potential of the new software and will not be able to implement it effectively to improve current systems.</p>\n' +
       '<p>A mentoring system combined with an implementation training program can assist employees in grasping the newly introduced processes and operations that come with the new technology. Designated mentors can receive intensive training with the new technology or software first so that they will have an authentic, first-hand understanding of how to successfully communicate that information to other workers. Then, the comprehensive training strategy can enables these selected leaders and managers to share their expertise with workers.</p>\n' +
       '<p>New training implementation technology is perfect for developing an effective and efficient training process.</p>\n' +
@@ -636,9 +636,9 @@ export const MOCK_GROUP_POSTS = [
       '<li><em>How employees can troubleshoot any issues</em></li>\n' +
       '<li><em>How everyone can ensure they are up-to-date with changes or updates made to the system</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Monitor and Evaluate Progress</strong></h1>\n' +
+      '<h2><strong>Monitor and Evaluate Progress</strong></h2>\n' +
       '<p>It is imperative to frequently monitor and evaluate progress to ensure that the new technology is producing the anticipated outcomes. Set up frequent milestones as part of your general execution plan to evaluate progress and assess how well the system is functioning. This could include gathering input from team members and customers, as well as using analytics tools to monitor key performance metrics. This will assist you in identifying areas for improvement and ensuring that your new technology is applied as efficiently as possible.</p>\n' +
-      '<h1>Continuously Adapt and Improve</h1>\n' +
+      '<h2>Continuously Adapt and Improve</h2>\n' +
       "<p>Last but not least, consider implementing new technology as a continuous process, not a one-time affair. Even after the original implementation, you should continue to assess the system's functionality and find areas for improvement. This can include analysing and revising the implementation plan on a frequent basis, as well as constantly looking for new ways to utilise the new technology to grow your company.</p>\n" +
       "<p>To stay up with the latest trends and advancements, it is critical to adjust and enhance your execution strategy. You can ensure that your organization stays relevant in today's rapid evolving marketplace by remaining on top of industry changes and adjusting effectively.</p>\n" +
       '<p><strong>Choosing the right technology to meet organisational objectives does not have to be a guessing game.</strong></p>\n' +
