@@ -2172,25 +2172,25 @@ export const MOCK_DESIGN_PAGES = [
         center: true,
         items: [
           {
-            fa_icon: 'fa-swatchbook',
-            title: 'Enterprise Design Library',
+            fa_icon: 'fa-briefcase',
+            title: 'Business',
             subtitle:
-              'Designing targeted and scalable solutions that drives growth for enterprises. From comprehensive dashboards to seamless workflows, we carefully design every element to ensure maximum usability, productivity, and satisfaction.',
-            href: `${routeConfig.SERVICES}/enterprise-design-library`,
+              'Providing user-centric solutions at enterprise scale and speed.',
+            href: `${routeConfig.SERVICES}/business`,
           },
           {
-            fa_icon: 'fa-laptop-code',
-            title: 'Enterprise Design System',
+            fa_icon: 'fa-gem',
+            title: 'Brand',
             subtitle:
-              'Crafting visually captivating and intuitive designs that elevate user experiences and leave a lasting impression. We are committed to building solutions that stick and offer long-term value to enterprises.',
-            href: `${routeConfig.SERVICES}/enterprise-design-system`,
+              'Delivering consistent and unique branding solutions for enterprises.',
+            href: `${routeConfig.SERVICES}/brand`,
           },
           {
-            fa_icon: 'fa-people-group',
-            title: 'Enterprise Design Workshop',
+            fa_icon: 'fa-lightbulb',
+            title: 'Experience',
             subtitle:
-              'Providing a collaborative environment where designs are not just made for enterprises, but with enterprises. Our team of dedicated experts guide clients in understanding user needs, conducting effective research, and designing impactful interfaces.',
-            href: `${routeConfig.SERVICES}/enterprise-design-workshop`,
+              'Crafting compelling brand experiences that resonate with users and drive engagement.',
+            href: `${routeConfig.SERVICES}/experience`,
           },
         ],
       },

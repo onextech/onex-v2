@@ -59,7 +59,35 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
 
 export const MOCK_DATA_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
 
-export const MOCK_DESIGN_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_DESIGN_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Business',
+    slug: 'business',
+    subtitle:
+      'Providing user-centric solutions at enterprise scale and speed.',
+    hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
+    hero_alt: 'Group working on a laptop together',
+  },
+  {
+    id: 2,
+    title: 'Brand',
+    slug: 'brand',
+    subtitle:
+      'Delivering consistent and unique branding solutions for enterprises.',
+    hero_src: 'https://source.unsplash.com/EUsVwEOsblE/1600x900',
+    hero_alt: 'Lit up electronics diagram',
+  },
+  {
+    id: 3,
+    title: 'Experience',
+    slug: 'experience',
+    subtitle:
+      'Emphasizing human-centered outcomes, creating relationship-driven experiences.',
+    hero_src: 'https://source.unsplash.com/FXFz-sW0uwo/1600x900',
+    hero_alt: 'Laptop with source code',
+  },
+]
 
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,
