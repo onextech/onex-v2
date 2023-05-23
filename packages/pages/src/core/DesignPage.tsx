@@ -1,160 +1,118 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
-  renderClientHighlightsImageMarqueeBlock,
   renderClientLogosImageMarqueeBlock,
-  renderFaqsAccordionBlock,
-  renderFourColumnGridBlock,
-  renderGhostButtonBlockItem,
-  renderHalfGridBlock,
-  renderRightChecklistBlock,
+  renderLeftHeroWithBackgroundBlock,
+  renderShowcasesBlock,
   renderThreeColumnGridBlock,
+  renderTechnologysBlock,
+  renderFeaturedPostsBlock,
+  renderFeaturedIndustrysBlock,
+  renderFaqsAccordionBlock,
+  renderCtaBlock,
+  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page, Showcase } from '@onex/types'
+import { Page, Post, Showcase, Industry } from '@onex/types'
+import { useRouter } from 'next/router'
 
 export interface DesignPageProps {
   page: Page
-  showcases?: Showcase[]
+  showcases: Showcase[]
+  featuredPosts: Post[]
+  industrys: Industry[]
 }
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
-  const { page } = props
-  const { routeConfig, clientLogos, clientHighlights } = useLayout()
-  const { overline, sections } = page || {}
-  const { hero, benefits, features, checklist, faqs, cta } = sections || {}
+  const { page, showcases, featuredPosts, industrys } = props
+  const router = useRouter()
+  const { site, clientLogos, clientTestimonials } = useLayout()
+  const { locales, cta_button_title } = site
+  const localeTitle = locales?.find(
+    ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
+  )?.title
+  const { sections } = page || {}
+  const { hero, benefits, features, faqs, cta } = sections || {}
 
   return (
     <Blocks
       items={[
         // Hero
-        {
-          dark: true,
-          key: 'design-impact',
-          centerOnMobile: true,
-          pt: { xs: 20, xl: 20 },
-          pb: { xs: 20, xl: 70 },
-          backgroundImageProps: {
-            src: '/images/design_hero.png',
-            alt: 'hero',
-            sx: { opacity: 0.2 },
+        renderLeftHeroWithBackgroundBlock({
+          ...hero,
+          pt: { xs: 10, md: 18 },
+          pb: { xs: 3, md: 15 },
+          hero_src: '/images/hero_background_black_minimal.svg',
+          hero_alt: 'Black minimalistic background',
+          image_src: '/images/hero_glass_window_ui_grey.png',
+          image_alt: 'Website with trend analysis',
+          // image_src dimensions
+          imageProps: { ar: '643:572' } as any,
+          buttonProps: {
+            overline: 'Get Started',
+            title: cta_button_title,
+            isCta: true,
           },
-          items: [
-            { type: 'overline', title: hero.overline },
-            {
-              type: 'h2',
-              title: hero.title,
-              titleProps: { gutterBottom: true },
-            },
-            {
-              type: 'subtitle1',
-              title: hero.subtitle,
-              titleProps: { color: 'text.secondary', maxWidth: '50%' },
-            },
-            {
-              type: 'stack',
-              sx: { mt: 3 },
-              stackProps: {
-                spacing: 0,
-                direction: 'row',
-                reverseDirectionOnMobile: true,
-              },
-              stackItems: [
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'What we do',
-                      title: 'Smarter Businesses',
-                      size: 'lg',
-                      href: routeConfig.SERVICES,
-                    }),
-                  ],
-                },
-                {
-                  items: [
-                    renderGhostButtonBlockItem({
-                      overline: 'Who we are',
-                      title: 'Business Software Experts',
-                      size: 'lg',
-                      href: routeConfig.CAREERS,
-                    }),
-                  ],
-                },
-              ],
-            },
-          ],
-        },
+        }),
         // ClientLogosImageMarquee
-        renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
+        renderClientLogosImageMarqueeBlock({
+          items: clientLogos.slice(0, 8),
+          sx: { backgroundColor: 'background.paper', position: 'relative' },
+        }),
         // Benefits
-        renderFourColumnGridBlock({
+        renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        // Marquee
-        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
-        // HalfGrid
-        renderHalfGridBlock({
-          hero_src: '/images/design_collage.png',
-          hero_alt: 'Design UI Collage',
-          fullHeight: true,
-          overline: 'What we do',
-          title: 'We Design for Impact 1',
+        // Showcases
+        renderShowcasesBlock({
+          title: (
+            <>
+              Crafting Engaging User Experiences
+            </>
+          ),
           subtitle:
-            'Maximise business growth through insight driven web design. We put business first in everything we do.',
+            'Transforming digital products through intuitive design and user-centric experiences: Our expertise in UI/UX services and enterprise product designs empowers businesses with captivating interfaces, made with a human-centered mindset.',
+          items: showcases,
+          pt: { xs: 5, md: 10 },
+        }),
+        // Client Testimonials
+        renderClientTestimonialSliderBlock({
+          title: 'Empowering Design Excellence',
+          subtitle:
+            "One X Design is the trusted partner for enterprise-level organizations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.",
+          items: clientTestimonials,
+        }),
+        // Industry
+        renderFeaturedIndustrysBlock({
+          title: 'Access Industry Expertise & Best Practices',
+          subtitle:
+            'We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective and transformative design solutions.',
+          items: industrys,
+          sx: { backgroundColor: 'background.paper' },
+        }),
+        // Posts
+        renderFeaturedPostsBlock({
+          title: localeTitle
+            ? `Read our Latest Insights in ${localeTitle}`
+            : `Read our Latest Insights`,
+          items: featuredPosts,
         }),
         // Features
         renderThreeColumnGridBlock(features),
-        // Checklist
-        renderRightChecklistBlock({
-          py: 0,
-          ...checklist,
-        }),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },
           ...faqs,
+          sx: { backgroundColor: 'background.paper' },
         }),
         // Cta
-        {
-          key: cta.title,
-          center: true,
-          maxWidth: 'md',
+        renderCtaBlock({
+          item: cta,
           pt: { xs: 5, md: 10 },
           pb: 0,
-          items: [
-            { type: 'overline', title: overline },
-            {
-              type: 'h3',
-              title: cta.title,
-              titleProps: { type: 'h3', maxWidth: 'xl', gutterBottom: true },
-            },
-            {
-              type: 'body1',
-              title: cta.subtitle,
-              titleProps: {
-                color: 'text.secondary',
-              },
-            },
-            renderGhostButtonBlockItem({
-              boxProps: { mt: 3 },
-              overline: 'Contact Us',
-              title: 'Get in Touch',
-              href: `/${routeConfig.CONTACT}`,
-            }),
-            {
-              type: 'image',
-              title: '/images/two_men_pointing_at_screen.png',
-              disableContainer: true,
-              titleProps: {
-                alt: 'Software developers working on a laptop',
-                background: true,
-                backgroundHeight: { xs: 480, md: 640 },
-                backgroundSx: { mt: { xs: 5, md: 10 } },
-              },
-            },
-          ],
-        },
+          sx: { backgroundColor: 'background.paper' },
+        }),
       ]}
     />
   )

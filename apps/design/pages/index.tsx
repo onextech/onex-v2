@@ -1,6 +1,6 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
-import { TechPage, TechPageProps } from '@onex/pages'
+import { DesignPage, DesignPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,
   MOCK_SHOWCASES,
@@ -52,19 +52,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
   })(context)
 }
 
-export interface NextTechPageProps
-  extends TechPageProps,
+export interface NextDesignPageProps
+  extends DesignPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextTechPage: React.FC<NextTechPageProps> = (props) => {
-  const {
-    page,
-    showcases,
-    technologys,
-    featuredPosts,
-    industrys,
-    pageProviderProps,
-  } = props
+const NextTechPage: React.FC<NextDesignPageProps> = (props) => {
+  const { page, showcases, featuredPosts, industrys, pageProviderProps } = props
 
   return (
     <PageProvider {...pageProviderProps}>
@@ -73,10 +66,9 @@ const NextTechPage: React.FC<NextTechPageProps> = (props) => {
         transparentHeader
         headerProps={{ translucentAtScrollY: 755 }}
       >
-        <TechPage
+        <DesignPage
           page={page}
           showcases={showcases}
-          technologys={technologys}
           featuredPosts={featuredPosts}
           industrys={industrys}
         />

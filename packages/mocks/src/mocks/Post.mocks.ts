@@ -1,9 +1,10 @@
 import sampleSize from 'lodash/sampleSize'
 import {
+  MOCK_DESIGN_POST_CATEGORYS,
   MOCK_GROUP_POST_CATEGORYS,
   MOCK_TECH_POST_CATEGORYS,
 } from './PostCategory.mocks'
-import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import { MOCK_DESIGN_TAGS, MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 
 export const MOCK_TECH_POSTS = [
@@ -221,22 +222,22 @@ export const MOCK_TECH_POSTS = [
       "<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n" +
       '</blockquote>\n' +
       "<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n" +
-      '<h1>Benefits of Digital Transformation in Government</h1>\n' +
-      '<h2>Improved efficiency and cost savings</h2>\n' +
+      '<h2>Benefits of Digital Transformation in Government</h2>\n' +
+      '<h3>Improved efficiency and cost savings</h3>\n' +
       '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
-      '<h2>Increased citizen engagement</h2>\n' +
+      '<h3>Increased citizen engagement</h3>\n' +
       '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
-      '<h2>Enhanced transparency and accountability</h2>\n' +
+      '<h3>Enhanced transparency and accountability</h3>\n' +
       '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
-      '<h1>Challenges of Digital Transformation in Government Sector</h1>\n' +
+      '<h2>Challenges of Digital Transformation in Government Sector</h2>\n' +
       '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
-      '<h2>Resistance to change</h2>\n' +
+      '<h3>Resistance to change</h3>\n' +
       '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
-      '<h2>Skill gaps</h2>\n' +
+      '<h3>Skill gaps</h3>\n' +
       '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
-      '<h3>Security and privacy concerns</h3>\n' +
+      '<h4>Security and privacy concerns</h4>\n' +
       '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
-      '<h2>Conclusion</h2>\n' +
+      '<h3>Conclusion</h3>\n' +
       '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>',
   },
   {
@@ -586,7 +587,7 @@ export const MOCK_GROUP_POSTS = [
     html:
       "<p><strong>Want to unlock the full potential of your business through new technology? We've got you covered.</strong></p>\n" +
       '<p>In today&rsquo;s competitive business world, staying ahead of the game means having access to the latest technologies and being able to successfully implement them. Implementing new technology can be a daunting task and success requires meticulous preparation and execution. So, we&rsquo;ve done the hard lifting for you. This guide will provide you with all the information you need to successfully implement new technologies within your organization and level up your business.</p>\n' +
-      '<h1><strong>Conduct a Needs Assessment</strong></h1>\n' +
+      '<h2><strong>Conduct a Needs Assessment</strong></h2>\n' +
       '<p>Before&nbsp;implementing new technologies, it is essential that you identify the particular requirements and pain points that your company is facing. This can help you decide which technologies will provide the greatest value and ensuring that your investment is targeted on tackling the most pressing business challenges.</p>\n' +
       '<p>If your company has chosen to adopt a new technology, there is most likely a compelling factor, or a combination of factors, that led to that decision.</p>\n' +
       '<p>Establish your implementation rationale; <em><strong>why</strong></em> is your company implementing this new software?</p>\n' +
@@ -602,16 +603,16 @@ export const MOCK_GROUP_POSTS = [
       '<p>Establishing which aspects of new technology will provide the quickest and most effective solutions will provide accurate insights on what should be your top priorities. Otherwise, introducing technology into a workforce too quickly or with too many moving components at once may leave your team overwhelmed with too much knowledge.</p>\n' +
       "<p>Discuss your team's pain points and promote an open discussion with workers, leaders, and managers in each area. It is important to note that the difficulties that one department encounters may be completely different from the difficulties that another department have. As a result, we need to include everyone in these discussions in order to have a full picture.</p>\n" +
       '<p>When you observe what is not working, you can find where the gaps or inconsistencies are in the process. These gaps assist you in determining the areas that need to be filled first and the particular technologies that are most effective.</p>\n' +
-      '<h1><strong>Establish Clear Goals and Objectives</strong></h1>\n' +
+      '<h2><strong>Establish Clear Goals and Objectives</strong></h2>\n' +
       '<p>When implementing new technologies, it is crucial to establish defined aims and targets, such as increasing output, lowering expenses, or improving customer experiences. Having clear goals in sight can help guarantee that technology is implemented in a manner that supports the overall growth of the company.</p>\n' +
       '<ul>\n' +
       '<li><em>Clearly describe what success would look like in terms of results.</em></li>\n' +
       '<li><em>Establish short- and long-term aims and aspirations, as well as general completion deadlines for each stage.</em></li>\n' +
       '<li><em>A clear strategy will simplify the process to track performance and ensure that everyone is on the same page about what needs to be done.</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Create a Cross-Functional Team</strong></h1>\n' +
+      '<h2><strong>Create a Cross-Functional Team</strong></h2>\n' +
       '<p>Implementing new technologies demands a joint effort from various divisions and individuals within the company. This group should include anyone who will be immediately affected by the implementation, such as IT experts and customer support representatives, as well as chief executives or other decision makers. Creating a cross-functional team can help ensure that everyone is on the same page and that technology is used to support the overall company goals.</p>\n' +
-      '<h1><strong>Develop a Comprehensive Implementation Plan</strong></h1>\n' +
+      '<h2><strong>Develop a Comprehensive Implementation Plan</strong></h2>\n' +
       "<p>After you've assembled your cross-functional team, you'll need to create a thorough implementation plan that outlines all of the steps needed to set up the technology. This should include everything from choosing the appropriate technology and training workers to tracking progress and measuring effectiveness.</p>\n" +
       '<p><em><strong>Your Implementation Plan should Include:</strong></em></p>\n' +
       '<ul>\n' +
@@ -620,7 +621,7 @@ export const MOCK_GROUP_POSTS = [
       '<li><em>Milestones</em></li>\n' +
       '<li><em>Contingencies for any problems that may emerge during the implementation phase</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Train Employees</strong></h1>\n' +
+      '<h2><strong>Train Employees</strong></h2>\n' +
       '<p>New technologies means the inevitable development of new capabilities and workflows. Without adequate training, your team will be unable to discover the maximum potential of the new software and will not be able to implement it effectively to improve current systems.</p>\n' +
       '<p>A mentoring system combined with an implementation training program can assist employees in grasping the newly introduced processes and operations that come with the new technology. Designated mentors can receive intensive training with the new technology or software first so that they will have an authentic, first-hand understanding of how to successfully communicate that information to other workers. Then, the comprehensive training strategy can enables these selected leaders and managers to share their expertise with workers.</p>\n' +
       '<p>New training implementation technology is perfect for developing an effective and efficient training process.</p>\n' +
@@ -635,9 +636,9 @@ export const MOCK_GROUP_POSTS = [
       '<li><em>How employees can troubleshoot any issues</em></li>\n' +
       '<li><em>How everyone can ensure they are up-to-date with changes or updates made to the system</em></li>\n' +
       '</ul>\n' +
-      '<h1><strong>Monitor and Evaluate Progress</strong></h1>\n' +
+      '<h2><strong>Monitor and Evaluate Progress</strong></h2>\n' +
       '<p>It is imperative to frequently monitor and evaluate progress to ensure that the new technology is producing the anticipated outcomes. Set up frequent milestones as part of your general execution plan to evaluate progress and assess how well the system is functioning. This could include gathering input from team members and customers, as well as using analytics tools to monitor key performance metrics. This will assist you in identifying areas for improvement and ensuring that your new technology is applied as efficiently as possible.</p>\n' +
-      '<h1>Continuously Adapt and Improve</h1>\n' +
+      '<h2>Continuously Adapt and Improve</h2>\n' +
       "<p>Last but not least, consider implementing new technology as a continuous process, not a one-time affair. Even after the original implementation, you should continue to assess the system's functionality and find areas for improvement. This can include analysing and revising the implementation plan on a frequent basis, as well as constantly looking for new ways to utilise the new technology to grow your company.</p>\n" +
       "<p>To stay up with the latest trends and advancements, it is critical to adjust and enhance your execution strategy. You can ensure that your organization stays relevant in today's rapid evolving marketplace by remaining on top of industry changes and adjusting effectively.</p>\n" +
       '<p><strong>Choosing the right technology to meet organisational objectives does not have to be a guessing game.</strong></p>\n' +
@@ -781,7 +782,181 @@ export const MOCK_GROUP_POSTS = [
 
 export const MOCK_DATA_POSTS = []
 
-export const MOCK_DESIGN_POSTS = []
+export const MOCK_DESIGN_POSTS = [
+  {
+    published_at: '2023-05-22T13:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 1,
+    title: 'The Psychology of Colour in UI/UX Design: How to Use Colour to Create Emotion and Increase Engagement',
+    slug: 'psychology-of-colour-in-ui-ux-design',
+    subtitle: "Understanding the Impact of Colour in UI/UX Design: Leveraging Emotion and Engagement through Strategic Colour Use",
+    hero_src: 'https://source.unsplash.com/dx2xcwgn5ps/1600x900',
+    hero_alt: 'tulip field',
+    html:
+    '<p>Colour has the greatest ability of all design components for user interface (UI) and user experience (UX) to evoke emotions, communicate value, and impact user behaviour. Colour is a non-verbal language that, from a psychological point of view, has the ability to stir up powerful associations and influence mood, feelings, and behaviour. Designers who want to create engaging and significant experiences for their users must understand how colour functions within the framework of UI/UX design. We\'ll look at the psychology of colour in UI/UX design in this post and discover how colour is used to boost&nbsp;engagement and leave an impression of users.</p>' +
+    '<h2>Colour Theory: A Brief Overview</h2>' +
+    '<p>Before we delve into the psychology of colour, it is indeed crucial to comprehend the fundamentals of colour theory before delving into the psychology of colour. The framework of colour theory explains how colours interact with one another and how they mix to create new colours. Red, blue, and yellow are the three primary colours, and other colours cannot be combined to make them. Two primary colours can then be combined to make a secondary colour, and two primary colours can be combined to make a tertiary colour.</p>' +
+    '<p>Colours can be characterised by hue, saturation, and brightness. The actual colour, for example red, blue, or green, is referred to as hue. The term "saturation" measures the colour&rsquo;s intensity, which can range from brilliant and vibrant to drab and subdued. Brightness refers to how light or dark the colour is, with white being the lightest colour, and black being the darkest.</p>' +
+    '<h2>The Psychology of Colour in UI/UX Design</h2>' +
+    '<p>With the basic understanding of colour theory, let\'s explore the psychology of colour in UI/UX design. Each colour has a unique set of associations and can cause users to experience various feelings. Here are some typical connections between various colours:</p>' +
+    '<ul>' +
+    '<li>Red: Passion, love, anger, danger, urgency</li>' +
+    '<li>Orange: Creativity, warmth, enthusiasm, energy</li>' +
+    '<li>Yellow: Optimism, happiness, caution, warning</li>' +
+    '<li>Green: Growth, nature, harmony, calmness</li>' +
+    '<li>Blue: Trust, security, serenity, intelligence</li>' +
+    '<li>Purple: Luxury, creativity, spirituality, mystery</li>' +
+    '<li>Pink: Femininity, playfulness, love, compassion</li>' +
+    '<li>Brown: Earthiness, warmth, stability, reliability</li>' +
+    '<li>Black: Elegance, sophistication, power, mystery</li>' +
+    '<li>White: Purity, simplicity, cleanliness, innocence</li>' +
+    '</ul>' +
+    '<p>Such associations could serve as a starting point for designers who want to utilise colour to evoke a particular feeling or meaning even if they are not universal and can change depending on cultural and individual circumstances.</p>' +
+    '<h2>Using Colour in UI/UX Design</h2>' +
+    '<p>Let&rsquo;s dive into how we can use colours effectively in UI/UX design. Here are a few insights to enhance your designs:</p>' +
+    '<ol>' +
+    '<li>Consider the context and objective of your design. The same colour that works well for a fun and amusing app may not be appropriate for a serious, professional website. Colours should be chosen with consideration for your design\'s objectives and target market.</li>' +
+    '<li>Create contrast and hierarchy with colours. By using different colours for headings, subheadings, body text, and other elements, you may subconsciously establish a visual hierarchy and direct the user\'s attention to the most crucial information.</li>' +
+    '<li>Use colour to boost branding. Consider employing the brand colours of the company or brand whose design you are creating if you want to maintain a unified aesthetic in all of their documents.</li>' +
+    '<li>Make emotional connections. Use colours that are representative of the mood or emotion you want to evoke. For instance, using warm colours like orange and yellow can create a sense of enthusiasm, while cool colours like blue and green can create a sense of peace.</li>' +
+    '<li>Use colour sparingly. Using too many colours or using them without careful thought can lead to a confusing and overwhelming design. Choose a small range of colours and employ them consistently throughout your design.</li>' +
+    '</ol>' +
+    '<h2>Examples of Colour in UI/UX Design</h2>' +
+    '<p>Colours have been utilised many times in UI/UX design. Some prominent examples include:</p>' +
+    '<ol>' +
+    '<li>Dropbox: The colour scheme of Dropbox\'s website comprises of blue and white colour palette creating a sense of confidence and reliability, while the usage of green in their illustrations and icons conveys growth and innovation.</li>' +
+    '<li>Duolingo: To provide a lively and exciting atmosphere, the language learning app uses a bright and cheerful colour scheme to create a sense of fun and excitement. The use of distinct colours for various languages makes it easy for users to recognise which language they are learning.</li>' +
+    '<li>Headspace: Headspace\'s meditation app uses a relaxing blue and green colour palette to evoke a sense of relaxation and mindfulness. Important elements like buttons and calls-to-action are highlighted with vivid, contrasting colours to assist direct the user\'s attention.</li>' +
+    '</ol>' +
+    '<h2>Conclusion</h2>' +
+    '<p>Colour is a potent tool in UI/UX design that may arouse feelings which will possibly influence user behaviour. Designers are able to give their users compelling and meaningful experiences by successfully utilising colour psychology. Yet, it\'s crucial to use colour purposefully and consciously, keeping in mind the context and goals of the design to make sure the desired effect is realised.</p>'
+  },
+  {
+    published_at: '2023-05-22T13:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 2,
+    title: 'The Art and Science of UI Design: Combining Aesthetics and Functionality for Optimal Results',
+    slug: 'ui-design-aesthetics-functionality-optimal-results',
+    subtitle: "Mastering the Intersection of Beauty and Usability: Achieving Optimal Results in UI Design",
+    hero_src: 'https://source.unsplash.com/IyjhDTTQitM/1600x900',
+    hero_alt: 'hills',
+    html: '<p>The art of UI design entails producing interfaces that are aesthetically attractive, emotions driven and and memorable. It mainly focuses on producing designs that inspire and excite users while make them feel good about the products that they use. On the other hand, the science of UI design focuses on comprehending how consumers interact with things and creating interfaces that are intuitive and simple to use.</p>' +
+    '<p>The process of developing user interfaces (UI) that let consumers engage with digital products is known as user interface design. UI design combines aesthetics and usefulness for the best outcomes. It is both an art and a science. Because aesthetics foster an emotional bond between people and the items they use, they are crucial. Functionality ensures that items are simple to use and produce the desired results, which is why it is crucial.</p>' +
+    '<p>Combining these two key aspects &mdash; aesthetics and functionality in UI design, here are some tips:</p>' +
+    '<h2>Understand Your Users</h2>' +
+    '<p>It is crucial to comprehend your users. What are they seeking to achieve? What frustrates and causes them pain? What do they consider important? Understanding your users will allow you to develop interfaces that fulfil demands and go above and beyond what they anticipate.</p>' +
+    '<h2>Use a Consistent Design Language</h2>' +
+    '<p>In UI Design, consistency is crucial. Users can better understand how to interact with your products when you adopt a similar design language across all of your items. Moreover, a consistent design language fosters a sense of familiarity, which facilitates the learning and utilisation of new products by users.</p>' +
+    '<h2>Prioritise Functionality</h2>' +
+    '<p>While it is vital to consider aesthetics, functionality should always come first. Even for customers who have never used your products before, your designs should be simple and intuitive. Be sure that the tasks and objectives that your users are attempting to accomplish are supported by your designs.</p>' +
+    '<h2>Keep It Simple</h2>' +
+    '<p>Simplicity is the pinnacle of sophistication. Designs that are more straightforward sometimes are more appealing and are simpler to use and comprehend. are easier to use and understand, and they often have a more timeless appeal. Avoid clutter and complexity in your designs, and focus on creating interfaces that are elegant and easy to use.</p>' +
+    '<h2>Use Visual Hierarchy</h2>' +
+    '<p>Visual hierarchy is the arrangement of design elements in a way that communicates their importance. By using visual hierarchy, you can guide users through your interfaces and help them understand which elements are most important. Use size, color, and typography to create visual hierarchy in your designs.</p>' +
+    '<h2>Pay Attention to Detail</h2>' +
+    '<p>The details matter in UI design. Small design decisions can have a big impact on how users perceive your products. Pay attention to things like spacing, alignment, and typography to create designs that are visually balanced and polished.</p>' +
+    '<h2>Test and Iterate</h2>' +
+    '<p>Finally, testing and iteration are key to creating great UI designs. Test your designs with real users to see how they perform in the real world. Use their feedback to make improvements and iterate on your designs until they are optimised for both aesthetics and functionality.</p>' +
+    '<h2>Final Word</h2>' +
+    '<p>In conclusion, UI design is both an art and a science. Combining aesthetics and functionality is essential for creating products that are both visually appealing and easy to use. By understanding your users, using a consistent design language, prioritising functionality, keeping it simple, using visual hierarchy, paying attention to detail, and testing and iterating, you can create UI designs that inspire and delight users.</p>'
+  },
+  {
+    published_at: '2023-05-22T13:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 3,
+    title: 'Unleashing the Power of Design: Boosting Conversions for Landing Pages',
+    slug: 'unleashing-power-design-boosting-conversions-landing-pages',
+    subtitle: "Maximizing Conversions: The Impact of Effective Design on Landing Pages",
+    hero_src: 'https://source.unsplash.com/KdeqA3aTnBY/1600x900',
+    hero_alt: 'meeting',
+    html: '<p>In the modern digital age, landing pages are an essential component of every successful online marketing approach. Landing pages are web pages that are specifically built to achieve a particular marketing goal be it&nbsp;lead generation or product sales. While the primary goal of a landing page is to nudge&nbsp;visitors to take a specific action, such as signing up for a newsletter or purchasing a product, a well-designed landing page may additionally boost conversions and revenue.</p>' +
+    '<p>Design is one of the most essential elements in creating an outstanding landing page. Design determines how customers view and engage with your landing page, which can have a significant effect on conversion rates. In this article, we will go over some of the major design elements that can assist you in creating high-converting landing pages.</p>' +
+    '<h2>Keep it Simple</h2>' +
+    '<p>The importance of simplicity in landing page design cannot be stressed enough. Your landing page should be neat, uncluttered, and simple to use. Avoid utilising too many graphics or images that may distract viewers from your landing page\'s key content. Instead, focus on a simple, clean design that helps customers comprehend what your landing page is about and what you want them to achieve.</p>' +
+    '<h2>Use Attention-Grabbing Headlines</h2>' +
+    '<p>The headline is the first thing that users will see when they land on your page so it must be attention-grabbing and interesting. The key value of your product or service should be clearly conveyed in your headline, giving readers a reason to stay on your page and take action.</p>' +
+    '<h2>Focus on the Benefits</h2>' +
+    '<p>When creating your landing page, keep the benefits of your product or service in mind rather than the features. Users are more likely to be fuelled by your product\'s benefits, such as how it would streamline their processes&nbsp;or save them time or money. Make sure your landing page highlights the benefits of your product or service and demonstrates how it can assist users.</p>' +
+    '<h2>Use Strong Calls-to-Action</h2>' +
+    '<p>A call-to-action (CTA) is a precise instruction to users suggesting what they should do next. On your landing page, your CTA should be clear, succinct, and prominently presented. Make your CTA stand out from the rest of your landing page design by using powerful, action-oriented wording that encourages viewers to take action.</p>' +
+    '<h2>Use High-Quality Images and Graphics</h2>' +
+    '<p>Images and graphics can help to improve the aesthetic appeal and engagement of your landing page. Make certain that any photos or graphics you employ are of good quality and pertinent to your product or service. Use of stock photos or generic visuals that do not bring value to your landing page should be avoided.</p>' +
+    '<h2>Make it Mobile-Friendly</h2>' +
+    '<p>As more individuals access the internet via mobile devices, it\'s critical that your landing page be mobile-friendly. On mobile devices, your landing page should be responsive and easy to navigate, with large buttons and clear calls-to-action that are easy to click on.</p>' +
+    '<p>In conclusion, design is crucial in generating high-converting landing pages. You can create landing pages that are simple, eye-catching, and focused on the benefits of your product or service by adhering to these design guidelines. Make it a habit to test and optimise your landing pages on a regular basis to ensure that they are operating optimally and driving conversions. Your landing pages can become strong tools for driving income and developing your business with the appropriate design and optimisation.</p>'
+  },
+  {
+    published_at: '2023-05-22T13:00:00+0000',
+    is_active: true,
+    category_id: 4,
+    title: 'Beyond Aesthetics: The Strategic Role of Design in Business Growth',
+    slug: 'beyond-aesthetics-strategic-role-design-business-growth',
+    subtitle: "Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth",
+    hero_src: 'https://source.unsplash.com/vGjGvtSfys4/1600x900',
+    hero_alt: 'sprout',
+    html: '<p>Design is more than just a pretty picture or a sleek logo. t is a potent tool that can aid in business growth and success. As companies contend for customers and market share, design has emerged as a critical distinction that may make or break a company\'s success.</p>' +
+    '<p>Design can help businesses in a variety of ways, from increasing brand recognition and trust to boosting user experience and conversion rates. In this post, we\'ll look at the strategic function of design in business growth and how businesses may use it to their advantage.</p>' +
+    '<h2>Building Brand Recognition and Trust</h2>' +
+    '<p>Building brand awareness and trust is one of among the most fundamental&nbsp;way&nbsp;design can help businesses develop. A well-designed logo, website, and marketing materials may all contribute to the creation of a unified brand identity that customers will recognize and trust. Design may also assist a firm convey its beliefs and mission, allowing it to stand out from competitors and establish a devoted consumer base. Businesses can develop a distinctive brand identity that resonates with customers and helps them stand out in a crowded marketplace by investing in high-quality design.</p>' +
+    '<h2>Improving User Experience</h2>' +
+    '<p>Design can help businesses expand by increasing user experience. Users have high expectations for websites, apps, and other digital products in today\'s digital age. They anticipate that they will be simple to use, intuitive, and visually appealing.</p>' +
+    '<p>Additionally, design may help achieve these expectations by designing practical and aesthetically pleasing user interfaces. Businesses may build goods and experiences that are more likely to be utilised and recommended by satisfied consumers by designing with the user in mind.</p>' +
+    '<h2>Boosting Conversion Rates</h2>' +
+    '<p>Design plays&nbsp;an important role in improving conversion rates for landing pages and other marketing materials. Businesses can create visually appealing and engaging landing pages by integrating design aspects such as colour, typography, and layout.</p>' +
+    '<p>A well-designed landing page, for example, with clear calls to action and a visually appealing design can assist raise click-through rates and, eventually, lead to more conversions. Businesses may promote development and success by investing in high-quality design.</p>' +
+    '<h2>Fostering Innovation</h2>' +
+    '<p>Design&nbsp;stimulates&nbsp;company innovation&nbsp;resulting in new goods&nbsp;and services that can help drive growth. Businesses may discover new opportunities and develop products that fulfil the demands of their customers by supporting a culture of innovation and design thinking.</p>' +
+    '<p>Design thinking, which entails a human-centered approach to problem solving, can assist firms in identifying new ideas and opportunities that they may not have explored otherwise. Businesses may stay ahead of the curve and continue to grow and prosper in the long run by leveraging design to drive innovation.</p>' +
+    '<h2>Final Word</h2>' +
+    '<p>To summarise, design is crucial to business growth and success. From increasing brand identification and trust to improving user experience and increasing conversion rates, design can help organisations differentiate themselves and achieve their objectives. Businesses may unlock the full potential of design and achieve long-term success by investing in high-quality design and cultivating a culture of innovation and design thinking.</p>'
+  },
+  {
+    published_at: '2023-05-22T13:00:00+0000',
+    is_active: true,
+    category_id: 5,
+    title: 'Beyond the Web2: Exploring the Possibilities of Web3 Design',
+    slug: 'beyond-web2-exploring-possibilities-web3-design',
+    subtitle: "Unleashing the potential of decentralization, token economics, interoperability, and community in shaping the future of online interactions.",
+    hero_src: 'https://source.unsplash.com/VK7jXtOtEuM/1600x900',
+    hero_alt: 'coins falling',
+    html: '<p>Web3 is the internet\'s next development, and is already changing the way we interact online. It symbolises a significant change away from the centralised, proprietary Web2 models and toward a more decentralised, open environment that puts consumers in control of their data and online experiences. Web3 is more than just a technological advancement; it is a new paradigm of online engagement that will enable new types of value creation, collaboration, and creativity.</p>' +
+    '<p>In this new Web3 environment, design will be crucial in moulding the user experience and realising the full potential of this technology. In this post, we\'ll look at the possibilities of Web3 design and how it might help shape the future of online interactions.</p>' +
+    '<h2>Designing for a decentralised web</h2>' +
+    '<p>Web3 is a set of technologies and protocols that allow decentralised apps (dApps) to run on top of a blockchain network. This means that data is no longer stored in a centralised server, but is instead dispersed throughout a network of nodes owned and controlled by users. This has significant design consequences since it necessitates new approaches to user experience and information architecture.</p>' +
+    '<p>One of the most difficult aspects of designing for Web3 is balancing decentralisation and usability. While decentralisation is an important element of Web3, it can also complicate and confuse the user experience. Designers must identify solutions to simplify the user experience while keeping the technology\'s decentralised character.</p>' +
+    '<p>Another critical factor to consider is the necessity to design for trust. Web3 is based on trustless systems, which implies users do not need to rely on intermediaries to conduct online transactions. This necessitates designers creating interfaces that are visible, secure, and simple to use, as well as ensuring that consumers understand the dangers and benefits of utilising these systems.</p>' +
+    '<h2>Designing for token economics</h2>' +
+    '<p>The rise of new kinds of value generation and exchange is one of the most intriguing features of Web3. Tokens are a major aspect of Web3. They are digital assets that can represent anything from a currency to a utility to a stake in a network. Tokens allow users to join in networks, have access to services, and even control the protocols itself.</p>' +
+    '<p>Designers must grasp the importance of tokens in Web3 and create interfaces that make them easy to use. This includes designing for token transactions, managing token balances, and giving information about a network\'s token economics. Designers must also consider the effects of token economics on user behaviour and create interfaces that encourage good actions.</p>' +
+    '<h2>Designing for interoperability</h2>' +
+    '<p>One of the primary goals of Web3 is to build a more interoperable web in which diverse apps and networks may connect with one another effortlessly. Designers must think about how their interfaces will interact with other interfaces and networks.</p>' +
+    '<p>Designing for diverse blockchain networks and protocols is also part of interoperability. Each blockchain has its own set of unique features and constraints, and designers must be aware of these intricacies in order to create interfaces that work across multiple networks.</p>' +
+    '<h2>Designing for community</h2>' +
+    '<p>Web3 is more than just a technological upgrade; it is a new paradigm of online interaction based on community and cooperation. Many Web3 initiatives are built around communities, and designers must create interfaces that support community building and interaction.</p>' +
+    '<p>This includes creating social elements like messaging, forums, and reputation systems, as well as creating governance and decision-making processes. Designers must also examine how their interfaces might generate a sense of belonging and ownership among community members.</p>' +
+    '<h2>Conclusion</h2>' +
+    '<p>[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)</p>' +
+    '<p>Web3 is a new online interaction paradigm defined by decentralisation, and new forms of value production and exchange. Design will be crucial in creating the user experience and realising this technology\'s full potential. Designers must comprehend Web3\'s unique problems and opportunities in order to design effective and compelling products and services. Web3 design, when approached correctly, may open up new avenues for innovation and growth, revolutionising the way we connect with technology and with one another.</p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_DESIGN_POST_CATEGORYS),
+  // Images
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'Three circles',
+  // Author
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
+  // Tags
+  tags: sampleSize(MOCK_DESIGN_TAGS, 3),
+  ...item,
+}))
 
 export const MOCK_POSTS = {
   GROUP: MOCK_GROUP_POSTS,

@@ -11,18 +11,19 @@ export interface ContactFormProps {
 const ContactForm: React.FC<ContactFormProps> = (props) => {
   const { onSubmit } = props
 
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
-    toast.loading('Sending...')
+    setIsLoading(true)
     await postEnquiry({
       type: EnquiryTypeEnum.ENQUIRY,
       origin: window.location.href,
       ...values,
     })
+    setIsLoading(false)
     setIsSubmitSuccess(true)
-    toast.remove()
     toast.success('Successfully sent')
   }
 
@@ -50,6 +51,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
           sx: { mt: 2 },
           fullWidthOnMobile: true,
           boxProps: { display: 'flex', justifyContent: 'flex-end' },
+          loading: isLoading
         }}
         formJsx={
           <FormSections

@@ -316,14 +316,6 @@ export const MOCK_DATA_PAGE = {
         },
       ],
     },
-    cta: {
-      hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'Laser net over city',
-      overline: 'Get Started',
-      title: 'Partnering with {appTitle}',
-      subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
-    },
   },
 }
 export const MOCK_DESIGN_PAGE = {
@@ -352,39 +344,6 @@ export const MOCK_DESIGN_PAGE = {
         {
           title:
             'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
-        },
-      ],
-    },
-    benefits: {
-      overline: 'What we do',
-      title: 'Our Suite of {title} Services',
-      subtitle:
-        "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
-      maxWidth: 'lg',
-      center: true,
-      items: [
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Web Design',
-          subtitle:
-            'A conversion centred approach to creating web and product designs that drive action.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Web Development',
-          subtitle: 'Build tailor-made websites that drive leads and sales.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Application Development',
-          subtitle:
-            'Accelerate business agility across your organisation with scalable enterprise apps.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'UI/UX Design',
-          subtitle:
-            'Accelerate business agility across your organisation with scalable enterprise apps.',
         },
       ],
     },
@@ -427,50 +386,6 @@ export const MOCK_DESIGN_PAGE = {
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
       buttonProps: { href: '{routes.SERVICES}' },
-    },
-    features: {
-      overline: 'What we do',
-      title: 'Our Approach to {title}',
-      subtitle:
-        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
-      items: [
-        {
-          fa_icon: 'fa-watch',
-          title: 'Scale up development',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-hand-holding-seedling',
-          title: 'Improve a current system',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-        {
-          fa_icon: 'fa-guitar',
-          title: 'Rewards',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-      ],
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
     checklist: {
@@ -524,14 +439,6 @@ export const MOCK_DESIGN_PAGE = {
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
         },
       ],
-    },
-    cta: {
-      hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'Laser net over city',
-      overline: 'Get Started',
-      title: 'Partnering with {appTitle}',
-      subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
 }
@@ -2068,11 +1975,6 @@ export const MOCK_DATA_PAGES = [
 ].map((page) => merge({}, MOCK_DATA_PAGE, page))
 
 export const MOCK_DESIGN_PAGES = [
-  ...MOCK_COMMON_PAGES,
-  {
-    slug: 'home',
-    is_hidden_from_nav: true
-  },
   {
     title: 'About',
     slug: 'about',
@@ -2083,7 +1985,7 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: 'Greetings',
-        title: 'We are {appTitle}, the Growth Company.',
+        title: 'Designing Digital Innovations for Enterprises',
         buttons: [
           {
             overline: 'What we do',
@@ -2097,13 +1999,27 @@ export const MOCK_DESIGN_PAGES = [
           },
         ],
       },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        title: 'Transforming Enterprises with Exceptional Design Solutions',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of skilled consultants, designers, and engineers is dedicated to delivering best-in-class UI/UX services tailored to meet the unique needs of enterprises.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
       summary: {
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
         title:
-          'We believe technology is the superpower that changes everything about business.',
+          'We believe in using technology to create designs that revolutionize the way enterprises operate',
         subtitle:
-          '{appTitle} is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
+          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
         buttons: [
           {
             overline: 'Who we are',
@@ -2116,9 +2032,9 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_man_with_laptop_in_city.png',
         hero_alt: 'hero',
         title:
-          'We are here to awaken the potential of a supercharged digital economy.',
+          'We are here to ignite the power of design in the digital era.',
         subtitle:
-          'We deliver transformational outcomes for a demanding new digital world.',
+          'We are on a mission to unlock the full potential of the digital economy through exceptional UI/UX solutions.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -2131,71 +2047,57 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'We Transform Businesses',
+        title: 'Re-Imagining Designs for Modern Enterprises',
         subtitle:
-          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+          'We assist enterprise clients in their digital transformation through targeted digital designs that solve problems at the speed and scale of the modern enterprise.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'shape_circle_radial',
             overline: '01',
-            title: 'Design a new product',
+            title: 'Optimize Existing User Interface',
             subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
+              'We conduct in-depth, user-centric analysis of your current design to identify areas for improvement and automation, enhancing efficiency and streamlining workflows for your team and users.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Launch a new company',
+            title: 'Scaling Up the Business',
             subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+              'We provide support and expertise to scale your design systems, ensuring a consistent and seamless experience for your expanding user base.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Scale up development',
+            title: 'Empowering Teams',
             subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+              'Our interactive workshops equip product teams with the skills and knowledge to create exceptional user experiences, fostering a user-centric mindset within your organization.',
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
             avatar_alt: 'Three overlapping circles',
             overline: '04',
-            title: 'Improve a current system',
+            title: 'Building Unique User Experiences',
             subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
-        ],
-      },
-      cta: {
-        hero_src: '/images/about_nodes_above_city.png',
-        title: 'We Design & Develop Custom Software for Enterprises',
-        hero_alt: 'Laser net over city',
-        subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
-        buttons: [
-          {
-            overline: 'Our Mission',
-            title: 'Enabling Smarter Businesses',
-            href: routeConfig.SERVICES,
+              "We craft personalized designs that captivate users, driving engagement and conversions while aligning with your specific business goals.",
           },
         ],
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Let your customers take the reign',
+        title: 'Designing for Product Teams',
         subtitle:
-          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+          'Our designs seek to help clients focus on what really matters.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Accelerating Asia',
+        title: 'Designs that Work Anywhere, Everywhere',
         subtitle:
-          '{appTitle} is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
+          'We stand at the forefront of global enterprise design development, working hand-in-hand with enterprises to deliver innovations that can fuel their digital transformation journey. ',
         items: [
           {
             title: '100+',
@@ -2232,9 +2134,9 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Thinkers & Tinkerers Coming Together',
+        title: 'Design Thinking with A Purpose',
         subtitle:
-          'We’ve assembled some of the brightest minds in business, technology and design. With our diversity of expertise, we’re able to deliver the highest quality software that our industry has seen.',
+          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at One X Design to design for change, to design for better. ',
         buttons: [
           {
             overline: 'Careers',
@@ -2242,6 +2144,135 @@ export const MOCK_DESIGN_PAGES = [
             href: routeConfig.CAREERS,
           },
         ],
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to design digital products',
+    seo_title: '{appTitle} - Building Personalized Enterprise Designs',
+    seo_description:
+      "{appTitle} creates custom, user-centric designs for Singapore's leading companies.",
+    sections: {
+      hero: {
+        overline: '{appTitle}',
+        title: 'Building Personalized Enterprise Designs',
+        subtitle:
+          "{appTitle} creates custom, user-centric designs for Singapore’s leading companies.",
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Design Thinking for Enterprises',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with designs built to meet specific needs and requirements.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Business',
+            subtitle:
+              'Providing user-centric solutions at enterprise scale and speed.',
+            href: `${routeConfig.SERVICES}/business`,
+          },
+          {
+            fa_icon: 'fa-gem',
+            title: 'Brand',
+            subtitle:
+              'Delivering consistent and unique branding solutions for enterprises.',
+            href: `${routeConfig.SERVICES}/brand`,
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Experience',
+            subtitle:
+              'Crafting compelling brand experiences that resonate with users and drive engagement.',
+            href: `${routeConfig.SERVICES}/experience`,
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we design effective, user-driven experiences for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title:
+              'How can One X Design help my business in creating a user-centric and visually appealing product design?',
+            content:
+              'At One X Design, we specialize in UI/UX services tailored for enterprise businesses. Our expert team combines innovative design principles and user research to create user-centric and visually stunning product designs that resonate with your target audience. We understand the importance of delivering exceptional user experiences that drive engagement and loyalty.',
+          },
+          {
+            key: 'faq-2',
+            title:
+              'What is the process for developing an enterprise product design with One X Design?',
+            content:
+              'Our process begins with a comprehensive understanding of your business objectives and target users. We conduct thorough research and analysis to identify user needs and pain points through our interactive workshops. From there, we develop wireframes and prototypes to visualize the product design concepts and gather user feedback. Our iterative approach ensures that the final design aligns with your brand identity and delivers a seamless user experience.',
+          },
+          {
+            key: 'faq-3',
+            title: 'Can One X Design help us improve the user experience of our existing enterprise software?',
+            content:
+              'Absolutely. One X Design specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprise clients to create visually captivating and intuitive user experiences. With a strong focus on UI/UX design, we specialize in crafting engaging designs for web and mobile interfaces. Our approach is centered around understanding your unique product requirements and tailoring our design solutions to meet your specific needs. We excel in translating complex ideas into visually appealing and user-friendly interfaces, ensuring seamless interactions and optimal user engagement. Whether you\'re at the ideation stage or looking to enhance an existing product, our expertise in UI/UX design and enterprise product designs can elevate your digital presence and drive customer satisfaction. Together, we can create designs that leave a lasting impression and set your enterprise apart in the digital landscape.',
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach',
+        subtitle:
+          'Our user-centric approach to every project ensures the delivery of superior UI/UX solutions for enterprises seeking to embark on a transformative digital journey.',
+        items: [
+          {
+            fa_icon: 'fa-users',
+            title: 'User Research',
+            subtitle:
+              'We dive deep into understanding your target audience, their needs, and behaviors to develop insights that drive the creation of user-centric designs.',
+          },
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Information Architecture',
+            subtitle:
+              "We carefully structure and organize information to ensure intuitive navigation and seamless user flow, enhancing usability and overall user experience.",
+          },
+          {
+            fa_icon: 'fa-magic',
+            title: 'Wireframing and Prototyping',
+            subtitle:
+              'Through iterative design processes, we create interactive wireframes and prototypes that allow you to visualize and test the user interface before development, allowing for on-the-spot ideation and adjustments to solutions.',
+          },
+          {
+            fa_icon: 'fa-paint-brush',
+            title: 'Visual Design',
+            subtitle:
+              'Our talented designers blend creativity with a deep understanding of branding and aesthetics to craft visually stunning interfaces that captivate and resonate with your target audience.',
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Interaction Design',
+            subtitle:
+              'We pay meticulous attention to the interactions and animations within the user interface, creating intuitive and delightful experiences that make your product stand out from the competition.',
+          },
+          {
+            fa_icon: 'fa-check-double',
+            title: 'Usability Testing',
+            subtitle:
+              "We conduct thorough usability testing to gather feedback and insights from real users, refining and optimizing the user interface to maximize user satisfaction and achieve business goals.",
+          },
+        ],      
       },
     },
   },

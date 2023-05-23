@@ -3,14 +3,17 @@ import { Block } from '@gravis-os/landing'
 import { renderContactCalloutButtonBlockItem } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
-export interface ContactCalloutProps {}
+export interface ContactCalloutProps {
+  size?: 'medium' | 'large'
+}
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
   const { site } = useLayout()
   const { cta_title, cta_button_title } = site
+  const { size = 'large' } = props
 
   const footerCalloutBlockProps = {
-    py: 8,
+    py: size === 'medium' ? 3 : 8,
     sx: {
       backgroundColor: 'background.paper',
       borderTop: 1,
@@ -21,32 +24,32 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
     items: [
       {
         type: 'grid',
-        gridProps: { spacing: 3 },
+        gridProps: { spacing: size === 'medium' ? { xs: 1, md: 2 } : 3 },
         gridItems: [
           {
-            md: 12,
+            md: size === 'medium' ? 8 : 12,
             boxProps: {
               sx: {
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: size === 'medium' ? { xs: 'center', md: 'flex-start' } : 'center',
               },
             },
             items: [
               {
-                type: 'h4',
+                type: size === 'medium' ? 'h5' : 'h4',
                 title: cta_title,
                 titleProps: {
-                  sx: { textAlign: 'center' },
+                  sx: { textAlign: size === 'medium' ? { xs: 'center', md: 'left' } : 'center' },
                   component: 'h5'
                 },
               },
             ],
           },
           {
-            md: 12,
-            boxProps: { sx: { textAlign: 'center' } },
+            md: size === 'medium' ? 4 : 12,
+            boxProps: { sx: { textAlign: size === 'medium' ? { xs: 'center', md: 'right' } : 'center' } },
             items: [
               renderContactCalloutButtonBlockItem({ title: cta_button_title }),
             ],

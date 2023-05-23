@@ -203,7 +203,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             },
           ],
         },
-        renderFadeToBottomBackgroundImageBlock({
+        cta &&renderFadeToBottomBackgroundImageBlock({
           hero_src: cta.hero_src,
           hero_alt: cta.hero_alt,
           title: cta.title,

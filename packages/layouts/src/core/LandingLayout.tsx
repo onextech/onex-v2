@@ -9,7 +9,7 @@ import {
   LandingLayoutProps as GvsLandingLayoutProps,
 } from '@gravis-os/landing'
 import { useUserPreferences } from '@onex/theme'
-import { ContactCallout } from '@onex/components'
+import { ContactCallout, ContactCalloutProps } from '@onex/components'
 import { useLayout } from '@onex/providers'
 import { GetStartedPage } from '@onex/pages'
 import { useRouter } from 'next/router'
@@ -27,11 +27,12 @@ const commonRightGridItemProps = { md: 8, lg: 9 }
 
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
+  calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { seo, ...rest } = props
+  const { seo, calloutProps, ...rest } = props
 
   // Hooks
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
@@ -619,7 +620,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     footerProps: {
-      callout: <ContactCallout />,
+      callout: <ContactCallout {...calloutProps} />,
       logo: <Image {...logoProps} />,
       companyName: site.company_title,
       accordionProps: {
