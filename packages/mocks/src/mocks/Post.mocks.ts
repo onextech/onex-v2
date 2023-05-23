@@ -222,22 +222,22 @@ export const MOCK_TECH_POSTS = [
       "<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n" +
       '</blockquote>\n' +
       "<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n" +
-      '<h1>Benefits of Digital Transformation in Government</h1>\n' +
-      '<h2>Improved efficiency and cost savings</h2>\n' +
+      '<h2>Benefits of Digital Transformation in Government</h1>\n' +
+      '<h3>Improved efficiency and cost savings</h2>\n' +
       '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
-      '<h2>Increased citizen engagement</h2>\n' +
+      '<h3>Increased citizen engagement</h2>\n' +
       '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
-      '<h2>Enhanced transparency and accountability</h2>\n' +
+      '<h3>Enhanced transparency and accountability</h2>\n' +
       '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
-      '<h1>Challenges of Digital Transformation in Government Sector</h1>\n' +
+      '<h2>Challenges of Digital Transformation in Government Sector</h1>\n' +
       '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
-      '<h2>Resistance to change</h2>\n' +
+      '<h3>Resistance to change</h2>\n' +
       '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
-      '<h2>Skill gaps</h2>\n' +
+      '<h3>Skill gaps</h2>\n' +
       '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
-      '<h3>Security and privacy concerns</h3>\n' +
+      '<h4>Security and privacy concerns</h3>\n' +
       '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
-      '<h2>Conclusion</h2>\n' +
+      '<h3>Conclusion</h2>\n' +
       '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>',
   },
   {

@@ -13,7 +13,7 @@ import {
   renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
+import { Page, Post, Showcase, Industry } from '@onex/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {
@@ -23,7 +23,7 @@ export interface TechPageProps {
   industrys: Industry[]
 }
 
-const TechPage: React.FC<TechPageProps> = (props) => {
+const DesignPage: React.FC<TechPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
@@ -118,4 +118,4 @@ const TechPage: React.FC<TechPageProps> = (props) => {
   )
 }
 
-export default TechPage
+export default DesignPage
