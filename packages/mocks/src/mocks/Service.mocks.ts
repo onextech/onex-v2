@@ -2,6 +2,7 @@ import merge from 'lodash/merge'
 import { routeConfig } from '@onex/common'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 import {
+  MOCK_DESIGN_SERVICE_CATEGORYS,
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_TECH_SERVICE_CATEGORYS,
 } from './ServiceCategory.mocks'
@@ -2612,9 +2613,861 @@ export const MOCK_GROUP_SERVICES = [
   })
 })
 
-export const MOCK_DATA_SERVICES = MOCK_TECH_SERVICES
+export const MOCK_DESIGN_SERVICES = [
+  {
+    // Hero
+    title: 'User Research and Insights',
+    slug: 'user-research-insights',
+    category_id: 3,
+    subtitle:
+      'We identify underlying issues and key challenges from the perspectives of important stakeholders.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'User Research and Insights',
+      description:
+        'We identify underlying issues and key challenges from the perspectives of important stakeholders.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Understanding what matters for those who matter.',
+        items: [
+          {
+            title:
+              'We dive deep into market research and conduct comprehensive jobs-to-be-done discovery. By understanding your target audience and their needs, we lay the foundation for creating a user-centric design that aligns with your business goals. Through in-depth research, we gather valuable insights that shape the direction of the project and inform our design decisions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We follow a systematic approach to user research, which includes user interviews, surveys, usability testing, and data analysis.',
+        items: [
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'User Interviews',
+            subtitle:
+              'We conduct in-depth user interviews to understand user needs, motivations, and pain points.',
+          },
+          {
+            fa_icon: 'fa-file-alt',
+            title: 'Surveys',
+            subtitle:
+              "We design and distribute surveys to gather quantitative data about user behaviors and preferences.",
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Usability Testing',
+            subtitle:
+              'We conduct usability tests to understand how users interact with your product and identify areas of improvement.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We analyze the data collected to uncover actionable insights and inform our design decisions.',
+          },
+          {
+            fa_icon: 'fa-clipboard-check',
+            title: 'Insights and Recommendations',
+            subtitle:
+              'We provide detailed reports on our findings, along with actionable recommendations for design improvements.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User Persona Development',
+            subtitle:
+              'We create detailed user personas that guide our design process and ensure we create experiences that resonate with your target audience.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our User Research and Insights service and how we can help you better understand your users.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is user research important?',
+            content:
+              'User research helps us understand user needs, behaviors, and pain points. These insights inform our design decisions, ensuring we create products that are useful, usable, and desirable.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What methods do you use for user research?',
+            content:
+              'We use a variety of methods, including user interviews, surveys, usability testing, and data analysis. The methods we choose depend on the research objectives and the stage of the product development process.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do the insights from user research inform your design process?',
+            content:
+              'The insights from user research help us understand what users want and need from a product. We use these insights to guide our design decisions, ensuring we create experiences that meet user needs and align with your business goals.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Interactive Design and Prototyping',
+    slug: 'interactive-design-prototyping',
+    category_id: 3,
+    subtitle:
+      'Providing collaborative and immersive experiences throughout the design process.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Interactive Design and Prototyping',
+      description:
+        'Providing collaborative and immersive experiences throughout the design process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Catalysing the design thinking process.',
+        items: [
+          {
+            title:
+              'Through interactive exercises such as empathy mapping, your teams will gain a deep understanding of user-centered design principles and best practices that are applicable to various fields of business. These workshops also provide our team opportunities to build comprehensive images of our client’s business operations, enabling us to deliver exceptional user experiences that drive customer satisfaction and business success.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We specialize in creating interactive designs and prototypes that are not only visually appealing but also user-friendly and intuitive.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Interactive Design',
+            subtitle:
+              'We create interactive designs that are intuitive, engaging, and aligned with your brand.',
+          },
+          {
+            fa_icon: 'fa-drafting-compass',
+            title: 'Prototyping',
+            subtitle:
+              'We build prototypes that allow you to test and validate your ideas before moving into development.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'User Testing',
+            subtitle:
+              'We conduct user testing on our prototypes to gather feedback and make improvements.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Rapid Iterations',
+            subtitle:
+              'We iterate quickly based on user feedback, ensuring your product meets the needs of your users.',
+          },
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'High Fidelity Prototypes',
+            subtitle:
+              'We create high-fidelity prototypes that offer a realistic representation of the final product.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We collaborate closely with your team to ensure our designs align with your business goals.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Interactive Design and Prototyping service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why are interactive design and prototyping important?',
+            content:
+              'Interactive design and prototyping are crucial steps in the product development process. They allow you to test and validate your ideas before investing in development, reducing the risk of failure. They also allow you to gather user feedback and make improvements, ensuring your product meets the needs of your users.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of prototypes do you create?',
+            content:
+              'We create both low-fidelity and high-fidelity prototypes, depending on the needs of the project. Low-fidelity prototypes are simpler and quicker to create, allowing for rapid testing and iteration. High-fidelity prototypes offer a more realistic representation of the final product and are useful for user testing and stakeholder presentations.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you conduct user testing?',
+            content:
+              'We conduct user testing using a variety of methods, including usability testing, user interviews, and surveys. We then analyze the data to identify patterns and insights that can inform our design decisions.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'User Testing and Usability Evaluation',
+    slug: 'user-testing-usability-evaluation',
+    category_id: 3,
+    subtitle:
+      'Ensuring a seamless and polished user interface',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'User Testing and Usability Evaluation',
+      description:
+        'Ensuring a seamless and polished user interface',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Guided by empathy and understanding of user needs',
+        items: [
+          {
+            title:
+              'We look to create relationship-driven experiences that are guided by clear intent on specific needs and requirements of the enterprise. We value using empathy and a deep understanding of needs to create truly intuitive, visually stunning solutions that enhance user satisfaction and drives business success.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We follow best practices in user testing and usability evaluation to ensure your product is user-friendly, intuitive, and meets your business objectives.',
+        items: [
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User Testing',
+            subtitle:
+              'We conduct user testing sessions to observe how users interact with your product, identifying areas of friction and opportunities for improvement.',
+          },
+          {
+            fa_icon: 'fa-eye',
+            title: 'Usability Evaluation',
+            subtitle:
+              'Our experts evaluate the usability of your product, identifying potential issues that could impact the user experience.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'User Interviews',
+            subtitle:
+              'We conduct user interviews to gain insights into user needs, preferences, and experiences with your product.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Heuristic Evaluation',
+            subtitle:
+              'Our team uses established usability heuristics to evaluate your product and identify usability issues.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Metrics',
+            subtitle:
+              'We provide clear, actionable metrics to track your product’s usability over time and guide design decisions.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We collaborate closely with your team, providing detailed feedback and recommendations to enhance your product’s user experience.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our User Testing and Usability Evaluation service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is user testing and usability evaluation important?',
+            content:
+              'User testing and usability evaluation are crucial for understanding how users interact with your product, what issues they encounter, and what needs and preferences they have. This understanding allows you to make informed decisions when designing or improving your product, ensuring it provides a user-friendly and satisfying experience.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What methods do you use for user testing and usability evaluation?',
+            content:
+              'We use a range of methods, including usability testing, user interviews, and heuristic evaluations. The exact methods used will depend on the specifics of your product and the goals of the testing or evaluation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does your service integrate with my existing product development process?',
+            content:
+              'We aim to integrate seamlessly with your existing processes. We can conduct user testing and usability evaluation at various stages of the product development process, from early prototypes to live products. We provide detailed feedback and recommendations that your team can use to inform design and development decisions.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Enterprise Design System',
+    slug: 'enterprise-design-system',
+    category_id: 2,
+    subtitle:
+      'Maximizing brand value for enterprises through customized, comprehensive system building',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Enterprise Design System',
+      description:
+        'Maximizing brand value for enterprises through customized, comprehensive system building',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Providing a robust framework for creating and maintaining a unified design language',
+        items: [
+          {
+            title:
+              'We understand the importance of consistency and scalability in UI/UX design for enterprises. By developing a customized design system tailored to your brand and product requirements, your teams can efficiently design, prototype, and develop interfaces that embody your brand identity while delivering high usability and accessibility standards. With a well-defined and comprehensive design system in place, your enterprise can drive design consistency, enhance collaboration between teams, and reduce development time and costs.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We have a comprehensive approach to building Enterprise Design Systems, ensuring they are adaptable, scalable, and easy to maintain.',
+        items: [
+          {
+            fa_icon: 'fa-palette',
+            title: 'Design Tokens',
+            subtitle:
+              'We establish a set of design tokens to ensure consistency in visuals such as colors, typography, and spacing.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Component Library',
+            subtitle:
+              'We build a component library with reusable UI elements to ensure consistency and efficiency in design and development.',
+          },
+          {
+            fa_icon: 'fa-object-group',
+            title: 'Design Patterns',
+            subtitle:
+              'We create design patterns to solve common UI challenges and improve user experience across your products.',
+          },
+          {
+            fa_icon: 'fa-book',
+            title: 'Documentation',
+            subtitle:
+              'We provide thorough documentation for easy understanding and seamless implementation of the design system.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'System Governance',
+            subtitle:
+              'We establish a governance process for managing and evolving the design system, ensuring its long-term viability.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We facilitate collaboration across your organization for smooth adoption and implementation of the design system.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Enterprise Design System service and how it can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why does my enterprise need a design system?',
+            content:
+              'A design system provides a common language and set of guidelines for designing and developing digital products. This not only leads to a consistent user experience across your products but also promotes collaboration, reduces duplication of work, and speeds up the design and development process.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What components does an enterprise design system include?',
+            content:
+              'An enterprise design system typically includes design tokens, a component library, design patterns, documentation, and a system for governance. Design tokens are the visual atoms of the system, like colors and typography. The component library consists of reusable UI elements. Design patterns provide solutions to common design problems. Documentation guides usage, and a governance system manages updates and evolution.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can we maintain and evolve our design system?',
+            content:
+              'Maintenance and evolution of the design system are managed through a governance process, which includes roles and responsibilities, change processes, and regular reviews. We can help set up this governance structure to ensure your design system stays up-to-date and continues to serve your needs effectively.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Brand Experience Design',
+    slug: 'brand-experience-design',
+    category_id: 2,
+    subtitle:
+      'Crafting compelling brand experiences that resonate with users and drive engagement.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Brand Experience Design',
+      description:
+        'Crafting compelling brand experiences that resonate with users and drive engagement.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Elevate your brand through immersive experiences.',
+        items: [
+          {
+            title:
+              'Creating memorable experiences around your brand is essential for establishing user loyalty and driving growth. We specialize in designing unique, compelling brand experiences that resonate with your audience and differentiate you from the competition. Through a deep understanding of your brand, audience, and business objectives, we create engaging brand interactions across different touchpoints, from digital products to marketing campaigns and beyond.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We blend strategy, design, and technology to create immersive brand experiences.',
+        items: [
+          {
+            fa_icon: 'fa-bullseye',
+            title: 'Strategic Alignment',
+            subtitle:
+              'We ensure every experience aligns with your brand\'s mission, vision, and values, reinforcing your brand identity at each touchpoint.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'User-Centric Design',
+            subtitle:
+              'We adopt a user-centric approach to create experiences that are meaningful and engaging for your target audience.',
+          },
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'Multichannel Approach',
+            subtitle:
+              'We design experiences across various touchpoints to ensure a consistent and seamless brand perception.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Technical Integration',
+            subtitle:
+              'We work alongside your tech teams to ensure the technical feasibility and seamless implementation of the designed experiences.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Metrics',
+            subtitle:
+              'We define and track key performance indicators to measure the success and impact of the brand experiences.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We work collaboratively with your team, aligning with your brand guidelines and business objectives to create impactful experiences.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Brand Experience Design service and how it can elevate your brand.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is Brand Experience Design and why is it important?',
+            content:
+              'Brand Experience Design is the process of creating meaningful and engaging interactions between a brand and its customers across various touchpoints. These experiences can influence how customers perceive your brand, impacting their engagement, loyalty, and ultimately, your business success.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does Brand Experience Design align with my existing branding efforts?',
+            content:
+              'Brand Experience Design is an extension of your overall branding strategy. It takes your brand identity - its values, mission, and visual elements - and brings it to life across different customer interactions. By creating consistent and engaging experiences, it reinforces your brand message and deepens the connection with your audience.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach Brand Experience Design?',
+            content:
+              'Our approach is strategic, user-centric, and collaborative. We start by understanding your brand, your business objectives, and your audience. We then design experiences across different touchpoints that align with your brand values and resonate with your audience. We also collaborate closely with your team and measure performance to ensure the experiences drive the desired outcomes.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Brand Strategy and Positioning',
+    slug: 'brand-strategy-positioning',
+    category_id: 2,
+    subtitle:
+      'Strategically position your brand in the market for maximum visibility, growth, and competitive advantage.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Brand Strategy and Positioning',
+      description:
+        'Strategically position your brand in the market for maximum visibility, growth, and competitive advantage.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Maximizing your brand potential through strategic positioning.',
+        items: [
+          {
+            title:
+              'In an increasingly competitive business landscape, brand strategy and positioning can make or break your success. We specialize in crafting robust brand strategies and clearly defining your brand’s position in the market to differentiate you from competitors. Through thorough market research and a deep understanding of your business, we create strategies that resonate with your target audience and align with your business objectives.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Enterprise Design Library',
+    slug: 'enterprise-design-library',
+    category_id: 1,
+    subtitle:
+      'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Enterprise Design Library',
+      description:
+        'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Focusing on creating scalable design libraries that fit the specific needs of enterprise-level clients.',
+        items: [
+          {
+            title:
+              'Our Enterprise Design Library service is designed to provide leading enterprises with a comprehensive collection of design assets, templates, and resources to support their UI/UX design efforts. With our carefully curated design library, enterprises can leverage a wealth of pre-designed components, layouts, and style guides that align with industry best practices and design standards, enabling them to streamline their design processes, improve consistency across products, and accelerate the development of user-effective interfaces.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We create design libraries that help teams maintain consistency and speed up the design and development process.',
+        items: [
+          {
+            fa_icon: 'fa-cubes',
+            title: 'Component Library',
+            subtitle:
+              'We build a comprehensive library of reusable design components to promote consistency and streamline the design process.',
+          },
+          {
+            fa_icon: 'fa-palette',
+            title: 'Design System',
+            subtitle:
+              'We create a design system that includes style guides, design patterns, and other resources to guide your team in creating consistent user experiences.',
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability',
+            subtitle:
+              'We ensure that your design library is scalable and can grow with your business.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Team Collaboration',
+            subtitle:
+              'We facilitate better collaboration among your designers, developers, and stakeholders by providing a shared resource.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Metrics',
+            subtitle:
+              'We monitor key performance indicators to measure the success and utilization of the design library.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Partnership',
+            subtitle:
+              'We work as an extension of your team, ensuring the design library meets your business objectives and design needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Enterprise Design Library service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is an Enterprise Design Library important?',
+            content:
+              'An Enterprise Design Library promotes consistency in the user experience across different products or platforms. It also helps speed up the design and development process by providing a set of reusable design components. Additionally, it helps facilitate better collaboration among designers, developers, and stakeholders.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What can I expect from your Enterprise Design Library service?',
+            content:
+              'You can expect a comprehensive and scalable design library that includes a component library and a design system. These tools are designed to help your team design and develop more efficiently and consistently. We also monitor performance metrics to ensure that the library is effectively utilized and meets your business objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the design library is scalable?',
+            content:
+              'We build the design library with scalability in mind. We use modular and flexible design principles to ensure that the design components can be easily adapted and expanded to meet the growing needs of your business. We also provide ongoing support to help you update and expand the library as needed.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Dashboard Development',
+    slug: 'dashboard-development',
+    category_id: 1,
+    subtitle:
+      'Creating exceptional dashboard layouts that offer a seamless and intuitive user experience.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'Dashboard Development',
+      description:
+        'Creating exceptional dashboard layouts that offer a seamless and intuitive user experience.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Providing a robust framework for creating and maintaining a unified design language',
+        items: [
+          {
+            title:
+              'We understand the importance of consistency and scalability in UI/UX design for enterprises. By developing a customized design system tailored to your brand and product requirements, your teams can efficiently design, prototype, and develop interfaces that embody your brand identity while delivering high usability and accessibility standards. With a well-defined and comprehensive design system in place, your enterprise can drive design consistency, enhance collaboration between teams, and reduce development time and costs. ',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We bring together design, development, and data visualization expertise to deliver high-quality dashboards.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'We design dashboard elements that present your data in a clear and compelling manner, using charts, graphs, and tables, to present information in easily digestible formats.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Functional Design',
+            subtitle:
+              'We create dashboards that offer robust functionality, allowing users to drill down and interact with the data. Our goal is to create a dashboard that not only looks visually appealing but also delivers actionable insights to drive informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'Information Architecture',
+            subtitle:
+              'We prioritize establishing a hierarchy of information that flows naturally, ensuring that users can easily navigate and locate the most important data points. We carefully organize the layout, considering factors such as data relevance, user priorities, and visual aesthetics. ',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-Centric Approach',
+            subtitle:
+              'We keep your end users in mind throughout the design process, ensuring the final product is intuitive and easy to navigate.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Responsive Design',
+            subtitle:
+              'Our dashboard layouts are designed to be fully responsive, adapting seamlessly to different screen sizes and devices, allowing users to experience a consistent and optimized interface that allows for efficient data exploration.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Partnership',
+            subtitle:
+              'We work closely with you throughout the project, ensuring your business needs and goals are met.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Dashboard Development service and how it can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a well-designed dashboard important?',
+            content:
+              'A well-designed dashboard allows users to quickly understand and interact with data, supporting informed decision-making. It helps in monitoring key metrics, identifying trends, and spotting anomalies.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What can I expect from your Dashboard Development service?',
+            content:
+              'Our service delivers custom dashboards designed to meet your specific business needs. We ensure the dashboards are intuitive, visually appealing, and functional. This includes effective data visualization, responsive design, and a user-centric approach to design.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the dashboard meets our needs?',
+            content:
+              'We begin by understanding your business, your data, and your users. This informs our design process, ensuring we create a dashboard that aligns with your processes, presents your data effectively, and offers a great user experience.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'UX Strategy Consulting',
+    slug: 'ux-strategy-consulting',
+    category_id: 1,
+    subtitle:
+      'Leverage our design expertise to formulate a user experience strategy that aligns with your business goals.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Seo
+    seo: {
+      title: 'UX Strategy Consulting',
+      description:
+        'Leverage our design expertise to formulate a user experience strategy that aligns with your business goals.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'We provide strategic consulting to help you create compelling, user-friendly experiences that drive business success.',
+        items: [
+          {
+            title:
+              'An effective user experience (UX) strategy can transform your product and business. With our UX Strategy Consulting service, we assist you in defining and implementing a UX strategy that aligns with your business objectives and enhances your customer interactions. Our team of experts has a deep understanding of user-centered design and UX best practices. We work collaboratively with you to identify opportunities for improvement, deliver actionable insights, and guide your team in implementing these strategies.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We combine deep UX knowledge with a strategic approach to help you optimize your user experience.',
+        items: [
+          {
+            fa_icon: 'fa-user-check',
+            title: 'User-Centered Design',
+            subtitle:
+              'We promote designs that prioritize the needs and expectations of your users.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Innovative Thinking',
+            subtitle:
+              'We bring fresh ideas and perspectives to help you enhance your user experience.',
+          },
+          {
+            fa_icon: 'fa-align-center',
+            title: 'Strategic Alignment',
+            subtitle:
+              'We ensure your UX strategy aligns with your broader business objectives.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Communication & Collaboration',
+            subtitle:
+              'We believe in close collaboration and clear communication with your team throughout the process.',
+          },
+          {
+            fa_icon: 'fa-hands-helping',
+            title: 'Guidance & Support',
+            subtitle:
+              'We provide support and guidance for implementing the UX strategies we recommend.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Results-Oriented Approach',
+            subtitle:
+              'We focus on delivering strategies that can drive measurable improvements in your user experience.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our UX Strategy Consulting service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a strong UX strategy important?',
+            content:
+              'A well-defined UX strategy guides the design and development process, ensuring your product is aligned with user needs and business goals. It can lead to enhanced user satisfaction, increased engagement, and ultimately, greater business success.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What can I expect from your UX Strategy Consulting service?',
+            content:
+              'Our service involves reviewing your current UX, identifying areas for improvement, and providing actionable strategies to enhance your user experience. We collaborate closely with your team, providing support and guidance throughout the implementation of these strategies.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you tailor your consulting to our specific needs?',
+            content:
+              'We start by understanding your business, your users, and your current UX. This allows us to provide tailored strategies that meet your unique needs and goals. We also offer ongoing support as you implement these strategies, helping you navigate any challenges that arise.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_DESIGN_SERVICE_CATEGORYS),
+    ...item,
+    sections: {
+      ...item.sections,
+      benefits: {
+        overline: 'What we do',
+        title: 'Design Thinking for Enterprises',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with designs built to meet specific needs and requirements.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Business',
+            subtitle:
+              'Providing user-centric solutions at enterprise scale and speed.',
+            href: `${routeConfig.SERVICES}/business`,
+          },
+          {
+            fa_icon: 'fa-gem',
+            title: 'Brand',
+            subtitle:
+              'Delivering consistent and unique branding solutions for enterprises.',
+            href: `${routeConfig.SERVICES}/brand`,
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Experience',
+            subtitle:
+              'Crafting compelling brand experiences that resonate with users and drive engagement.',
+            href: `${routeConfig.SERVICES}/experience`,
+          },
+        ],
+      },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
+      },
+    }
+  })
+})
 
-export const MOCK_DESIGN_SERVICES = MOCK_TECH_SERVICES
+export const MOCK_DATA_SERVICES = MOCK_TECH_SERVICES
 
 export const MOCK_SERVICES = {
   GROUP: MOCK_GROUP_SERVICES,

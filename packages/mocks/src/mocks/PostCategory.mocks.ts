@@ -104,7 +104,58 @@ export const MOCK_TECH_POST_CATEGORYS = [
   },
 ]
 
-export const MOCK_DESIGN_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_DESIGN_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'User Experience',
+    slug: 'user-experience',
+    description: 'Craft Seamless Experiences',
+    subtitle:
+      'Deliver intuitive and delightful user interactions for optimal satisfaction.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 2,
+    title: 'User Interface',
+    slug: 'user-interface',
+    description: 'Design Beautiful Interfaces',
+    subtitle:
+      'Create visually appealing and engaging interfaces that captivate users.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 3,
+    title: 'Design',
+    slug: 'design',
+    description: 'Fuel Creativity and Innovation',
+    subtitle:
+      'Unlock limitless possibilities with design thinking and innovative solutions.',
+    hero_src: '/images/about_working_in_office.png',
+    hero_alt: 'People working in office',
+  },
+  {
+    id: 4,
+    title: 'Growth',
+    slug: 'growth',
+    description: 'Drive Business Expansion',
+    subtitle:
+      'Empower your organization to achieve sustainable growth and success.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 5,
+    title: 'Web3',
+    slug: 'web3',
+    description: 'Embrace the Decentralized Future',
+    subtitle:
+      'Leverage blockchain technology to revolutionize industries and empower users.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+]
 
 export const MOCK_DATA_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
 
