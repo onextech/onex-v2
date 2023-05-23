@@ -2128,6 +2128,20 @@ export const MOCK_DESIGN_PAGES = [
           },
         ],
       },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        title: 'Transforming Enterprises with Exceptional Design Solutions',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of skilled consultants, designers, and engineers is dedicated to delivering best-in-class UI/UX services tailored to meet the unique needs of enterprises.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
       summary: {
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
