@@ -4,16 +4,16 @@ import { renderContactCalloutButtonBlockItem } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 
 export interface ContactCalloutProps {
-  isSubtle?: boolean
+  size?: 'default' | 'large'
 }
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
   const { site } = useLayout()
   const { cta_title, cta_button_title } = site
-  const { isSubtle } = props
+  const { size } = props
 
   const footerCalloutBlockProps = {
-    py: isSubtle ? 3 : 8,
+    py: size === 'default' ? 3 : 8,
     sx: {
       backgroundColor: 'background.paper',
       borderTop: 1,
@@ -24,32 +24,32 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
     items: [
       {
         type: 'grid',
-        gridProps: { spacing: isSubtle ? { xs: 1, md: 2 } : 3 },
+        gridProps: { spacing: size === 'default' ? { xs: 1, md: 2 } : 3 },
         gridItems: [
           {
-            md: isSubtle ? 8 : 12,
+            md: size === 'default' ? 8 : 12,
             boxProps: {
               sx: {
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: isSubtle ? { xs: 'center', md: 'flex-start' } : 'center',
+                justifyContent: size === 'default' ? { xs: 'center', md: 'flex-start' } : 'center',
               },
             },
             items: [
               {
-                type: isSubtle ? 'h5' : 'h4',
+                type: size === 'default' ? 'h5' : 'h4',
                 title: cta_title,
                 titleProps: {
-                  sx: { textAlign: isSubtle ? { xs: 'center', md: 'left' } : 'center' },
+                  sx: { textAlign: size === 'default' ? { xs: 'center', md: 'left' } : 'center' },
                   component: 'h5'
                 },
               },
             ],
           },
           {
-            md: isSubtle ? 4 : 12,
-            boxProps: { sx: { textAlign: isSubtle ? { xs: 'center', md: 'right' } : 'center' } },
+            md: size === 'default' ? 4 : 12,
+            boxProps: { sx: { textAlign: size === 'default' ? { xs: 'center', md: 'right' } : 'center' } },
             items: [
               renderContactCalloutButtonBlockItem({ title: cta_button_title }),
             ],
