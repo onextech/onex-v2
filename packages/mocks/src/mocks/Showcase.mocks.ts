@@ -1,6 +1,6 @@
 import type { Showcase } from '@onex/types'
 
-export const MOCK_GROUP_SHOWCASES: Showcase[] = [
+export const MOCK_TECH_SHOWCASES: Showcase[] = [
   {
     title: 'Rewarding Canon employees in a modern workplace.',
     slug: 'canon',
@@ -197,13 +197,63 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
       },
     },
   },
+  { // TODO: ADD DETAIL
+    title: 'An intelligent chatbot assistant.',
+    slug: 'tgb',
+    subtitle:
+      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies.',
+    hero_src: '/showcases/tgb/hero.png',
+    hero_alt: 'TGB showcase',
+    mode: 'light',
+    backgroundColor: '#c3e8c1',
+    reverse: true,
+    
+    sections: { gallery: { items: [] }, rightGridSticky: {} }
+  },
+  { // TODO: ADD DETAIL
+    title: 'A beautifully crafted self-pick up service app.',
+    slug: 'suntec',
+    subtitle:
+      'Allow users to enjoy scrumptious meals while avoiding long queues.',
+    hero_src: '/showcases/suntec/hero.png',
+    hero_alt: 'Suntec showcase',
+    mode: 'light',
+    backgroundColor: '#ffae81',
+
+    sections: { gallery: { items: [] }, rightGridSticky: {} }
+  },
+  { // TODO: ADD DETAIL
+    title: 'Blockchain and artificial intelligence.',
+    slug: 'spk',
+    subtitle:
+      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform.',
+    hero_src: '/showcases/spk/hero.png',
+    hero_alt: 'SPK showcase',
+    mode: 'dark',
+    backgroundColor: '#071323',
+    reverse: true,
+    
+    sections: { gallery: { items: [] }, rightGridSticky: {} }
+  },
+  { // TODO: ADD DETAIL
+    title: 'NextGEN Global Decarbonisation Initiative.',
+    slug: 'nextgen',
+    subtitle:
+      'How we created an intuitive platform for the International Maritime Organisation & Maritime Port Authority of Singapore.',
+    hero_src: '/showcases/nextgen/hero.png',
+    hero_alt: 'NextGEN showcase',
+    mode: 'dark',
+    backgroundColor: '#013157',
+    
+    sections: { gallery: { items: [] }, rightGridSticky: {} }
+  },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
-export const MOCK_TECH_SHOWCASES = MOCK_GROUP_SHOWCASES
+export const MOCK_GROUP_SHOWCASES = MOCK_TECH_SHOWCASES
 
-export const MOCK_DATA_SHOWCASES = MOCK_GROUP_SHOWCASES
+export const MOCK_DATA_SHOWCASES = MOCK_TECH_SHOWCASES
 
-export const MOCK_DESIGN_SHOWCASES = MOCK_GROUP_SHOWCASES
+export const MOCK_DESIGN_SHOWCASES = MOCK_TECH_SHOWCASES
 
 export const MOCK_SHOWCASES = {
   GROUP: MOCK_GROUP_SHOWCASES,
