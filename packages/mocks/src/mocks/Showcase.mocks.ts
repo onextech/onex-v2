@@ -9,7 +9,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     hero_src: '/showcases/canon/hero.png',
     hero_alt: 'Canon showcase',
     mode: 'dark',
-    backgroundColor: '#111',
+    backgroundColor: '#641718',
     reverse: true,
 
     // Sections
@@ -46,64 +46,14 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     },
   },
   {
-    title: 'Preparing the future of payments with SG Pay.',
-    slug: 'sg-pay',
-    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
-    hero_src: '/showcases/sg-pay/hero.png',
-    hero_alt: 'Temperature adjustment app',
-    mode: 'light',
-    backgroundColor: '#c6dcc0',
-
-    // Sections
-    sections: {
-      leftGridSticky: {
-        title: 'Software + Hardware Integration',
-        subtitle:
-          'Set up your SG Pay Point of Sale system with ease. The intuitive order and payment flow makes POS transactions a snap and let you effortlessly manage customers and your entire business.',
-        hero_src: '/showcases/sg-pay/left.png',
-        hero_alt: 'Cashless payments showcase',
-      },
-      gallery: {
-        title: 'Let your customers take the reign',
-        subtitle:
-          "There's no need to carry a wallet full of credit cards or have numerous banking apps. All you need is your SG Pay app.",
-        items: [
-          {
-            title: '/showcases/sg-pay/gallery_1.png',
-            titleProps: { alt: 'SG Pay merchant guide' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_2.png',
-            titleProps: { alt: 'Security encryption and set up guides' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_3.png',
-            titleProps: { alt: 'Simplified shopping showcase' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_4.png',
-            titleProps: { alt: 'Mobile payments showcase' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'A new fully integrated cashless system',
-        subtitle:
-          'With many payment apps out there, the key goal was to establish how SG Pay was different and better.',
-        hero_src: '/showcases/sg-pay/right.png',
-        hero_alt: 'Mobile payment system showcase',
-      },
-    },
-  },
-  {
     title: 'Luxury Jewellery with Marilyn Tan Jewellery.',
     slug: 'marilyn-tan-jewellery',
     subtitle:
       'Changing the Face of Luxury E-Commerce with Marilyn Tan Jeweller. Building an online presence reflective of a bold and elegant jewellery brand.',
     hero_src: '/showcases/marilyn-tan-jewellery/hero.png',
     hero_alt: 'App controlling Philips lights',
-    mode: 'dark',
-    backgroundColor: '#202941',
+    mode: 'light',
+    backgroundColor: '#f2efec',
     reverse: true,
 
     // Sections
@@ -148,13 +98,63 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     },
   },
   {
+    title: 'Preparing the future of payments with SG Pay.',
+    slug: 'sg-pay',
+    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
+    hero_src: '/showcases/sg-pay/hero.png',
+    hero_alt: 'Temperature adjustment app',
+    mode: 'dark',
+    backgroundColor: '#9B2727',
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'Software + Hardware Integration',
+        subtitle:
+          'Set up your SG Pay Point of Sale system with ease. The intuitive order and payment flow makes POS transactions a snap and let you effortlessly manage customers and your entire business.',
+        hero_src: '/showcases/sg-pay/left.png',
+        hero_alt: 'Cashless payments showcase',
+      },
+      gallery: {
+        title: 'Let your customers take the reign',
+        subtitle:
+          "There's no need to carry a wallet full of credit cards or have numerous banking apps. All you need is your SG Pay app.",
+        items: [
+          {
+            title: '/showcases/sg-pay/gallery_1.png',
+            titleProps: { alt: 'SG Pay merchant guide' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_2.png',
+            titleProps: { alt: 'Security encryption and set up guides' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_3.png',
+            titleProps: { alt: 'Simplified shopping showcase' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_4.png',
+            titleProps: { alt: 'Mobile payments showcase' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'A new fully integrated cashless system',
+        subtitle:
+          'With many payment apps out there, the key goal was to establish how SG Pay was different and better.',
+        hero_src: '/showcases/sg-pay/right.png',
+        hero_alt: 'Mobile payment system showcase',
+      },
+    },
+  },
+  {
     title: 'Wealthscale: Reinventing financial advisory.',
     slug: 'wealthscale',
     subtitle: 'Learn about WealthScale\'s impressive portfolio of innovative wealth management solutions. Harness cutting-edge technology to elevate financial success.',
     hero_src: '/showcases/wealthscale/hero.png',
     hero_alt: 'App with surgery dates',
     mode: 'dark',
-    backgroundColor: '#2b698a',
+    backgroundColor: '#1d71cf',
 
     // Sections
     sections: {
