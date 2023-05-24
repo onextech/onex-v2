@@ -1978,6 +1978,7 @@ export const MOCK_DESIGN_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -2000,7 +2001,7 @@ export const MOCK_DESIGN_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'Transforming Enterprises with Exceptional Design Solutions',
         hero_alt: 'Laser net over city',
         subtitle:
@@ -2014,7 +2015,7 @@ export const MOCK_DESIGN_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
           'We believe in creating designs that revolutionize the way enterprises think and operate.',
@@ -2029,7 +2030,7 @@ export const MOCK_DESIGN_PAGES = [
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
           'We are here to ignite the power of design in the digital era.',
