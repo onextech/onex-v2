@@ -73,7 +73,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                           >
                             {category.title}
                           </Typography>
-                          <Typography variant="h1">{title}</Typography>
+                          <Typography variant="h2">{title}</Typography>
                           <BlockItem
                             disableContainer
                             {...renderGhostButtonBlockItem({

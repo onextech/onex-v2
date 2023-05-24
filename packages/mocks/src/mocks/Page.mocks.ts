@@ -1183,6 +1183,9 @@ const MOCK_GROUP_PAGES = [
       benefits: {
         overline: 'What we do',
         title: 'Enterprise Technology Consulting',
+        titleProps: {
+          component: 'h1'
+        },
         subtitle:
           "From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ",
         maxWidth: 'lg',

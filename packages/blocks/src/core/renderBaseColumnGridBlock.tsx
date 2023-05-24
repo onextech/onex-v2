@@ -1,10 +1,11 @@
 import React from 'react'
-import { BlockProps } from '@gravis-os/landing'
+import { BlockItemProps, BlockProps } from '@gravis-os/landing'
 
 export interface RenderBaseColumnGridBlockProps
   extends Omit<BlockProps, 'items' | 'title'> {
   overline?: string
   title: React.ReactNode
+  titleProps?: BlockItemProps['titleProps']
   subtitle?: string
   items?: Array<{
     avatar_src?: string
@@ -22,6 +23,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
   const {
     overline,
     title,
+    titleProps,
     subtitle,
     items,
     columns,
@@ -42,6 +44,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
         titleProps: {
           gutterBottom: true,
           ...(!isTextAlignCenter && { maxWidth: '50%' }),
+          ...titleProps
         },
         ...(isTextAlignCenter && { maxWidth: 'md' }),
       },
