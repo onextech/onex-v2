@@ -17,15 +17,18 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
   const { site } = useLayout()
   const { cta_button_title } = site
 
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
+    setIsLoading(true)
     await postEnquiry({
       type: EnquiryTypeEnum.LEAD,
       origin: window.location.href,
       ...values,
     })
+    setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
   }
@@ -56,6 +59,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
           sx: { mt: 2 },
           fullWidthOnMobile: true,
           boxProps: { display: 'flex', justifyContent: 'flex-end' },
+          loading: isLoading
         }}
         formJsx={
           <FormSections

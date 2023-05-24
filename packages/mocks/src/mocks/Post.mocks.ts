@@ -1080,7 +1080,6 @@ export const MOCK_DESIGN_POSTS = [
     '<p>Web3 is more than just a technological upgrade; it is a new paradigm of online interaction based on community and cooperation. Many Web3 initiatives are built around communities, and designers must create interfaces that support community building and interaction.</p>' +
     '<p>This includes creating social elements like messaging, forums, and reputation systems, as well as creating governance and decision-making processes. Designers must also examine how their interfaces might generate a sense of belonging and ownership among community members.</p>' +
     '<h2>Conclusion</h2>' +
-    '<p>[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)</p>' +
     '<p>Web3 is a new online interaction paradigm defined by decentralisation, and new forms of value production and exchange. Design will be crucial in creating the user experience and realising this technology\'s full potential. Designers must comprehend Web3\'s unique problems and opportunities in order to design effective and compelling products and services. Web3 design, when approached correctly, may open up new avenues for innovation and growth, revolutionising the way we connect with technology and with one another.</p>'
   },
 ].map((item, i) => ({
