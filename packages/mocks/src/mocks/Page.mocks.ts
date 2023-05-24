@@ -2173,24 +2173,24 @@ export const MOCK_DESIGN_PAGES = [
         items: [
           {
             fa_icon: 'fa-briefcase',
-            title: 'Business',
+            title: 'Design Strategy',
             subtitle:
               'Providing user-centric solutions at enterprise scale and speed.',
-            href: `${routeConfig.SERVICES}/business`,
+            href: `${routeConfig.SERVICES}/design-strategy`,
           },
           {
             fa_icon: 'fa-gem',
-            title: 'Brand',
+            title: 'Enterprise Design System',
             subtitle:
-              'Delivering consistent and unique branding solutions for enterprises.',
-            href: `${routeConfig.SERVICES}/brand`,
+              'Maximizing enterprise value through comprehensive system building.',
+            href: `${routeConfig.SERVICES}/enterprise-design-system`,
           },
           {
             fa_icon: 'fa-lightbulb',
-            title: 'Experience',
+            title: 'UI/UX Design',
             subtitle:
-              'Crafting compelling brand experiences that resonate with users and drive engagement.',
-            href: `${routeConfig.SERVICES}/experience`,
+              'Emphasizing human-centered outcomes, creating relationship-driven experiences.',
+            href: `${routeConfig.SERVICES}/ui-ux-design`,
           },
         ],
       },
