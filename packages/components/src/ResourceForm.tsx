@@ -12,15 +12,18 @@ export interface ResourceFormProps {
 const ResourceForm: React.FC<ResourceFormProps> = (props) => {
   const { onSubmit } = props
 
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
+    setIsLoading(true)
     await postEnquiry({
       type: EnquiryTypeEnum.RESOURCE,
       origin: window.location.href,
       ...values,
     })
+    setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Success!')
   }
@@ -52,6 +55,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
           fullWidth: true,
           startIcon: <FileDownloadOutlinedIcon />,
           boxProps: { display: 'flex', justifyContent: 'flex-end' },
+          loading: isLoading
         }}
         formJsx={
           <FormSections
