@@ -3124,6 +3124,74 @@ export const MOCK_DESIGN_SERVICES = [
               'In an increasingly competitive business landscape, brand strategy and positioning can make or break your success. We specialize in crafting robust brand strategies and clearly defining your brand’s position in the market to differentiate you from competitors. Through thorough market research and a deep understanding of your business, we create strategies that resonate with your target audience and align with your business objectives.',
           },
         ],
+      },features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We employ comprehensive approaches to define and enhance your brand positioning.',
+        items: [
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Market Analysis',
+            subtitle:
+              'We conduct thorough market research and competitor analysis to understand your positioning landscape.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Brand Strategy Formulation',
+            subtitle:
+              'We create robust brand strategies based on insights and analysis, aligning with your business goals.',
+          },
+          {
+            fa_icon: 'fa-ruler-combined',
+            title: 'Brand Positioning',
+            subtitle:
+              'We clearly define your brand’s unique position in the market, setting you apart from competitors.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Brand Messaging',
+            subtitle:
+              'We help develop your brand voice and messaging that resonate with your target audience.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Metrics',
+            subtitle:
+              'We monitor key performance indicators to measure the success of the brand strategy and positioning.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaboration',
+            subtitle:
+              'We work in tandem with your team, ensuring the brand strategy aligns with your overall business objectives.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Brand Strategy and Positioning service and how it can enhance your brand.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Brand Strategy and Positioning important?',
+            content:
+              'Brand Strategy and Positioning provide the foundation for your marketing efforts, defining how your brand communicates with your audience and how it differentiates from competitors. It is essential for creating a cohesive brand image, attracting the right customers, and driving business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What can I expect from your Brand Strategy and Positioning service?',
+            content:
+              'We provide a comprehensive approach to Brand Strategy and Positioning. This includes market analysis, strategy formulation, brand positioning, messaging, and performance tracking. Our goal is to create a compelling brand image that resonates with your audience and sets you apart from competitors.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you develop a brand strategy?',
+            content:
+              'Developing a brand strategy starts with understanding your business, market, competitors, and target audience. We then create a strategy that aligns with your business goals, resonates with your audience, and differentiates you from competitors. We also monitor key performance indicators to ensure the effectiveness of the strategy.',
+          },
+        ],
       },
     },
   },
@@ -3461,7 +3529,7 @@ export const MOCK_DESIGN_SERVICES = [
         overline: 'What we do',
         title: `Why {appTitle} for {title}`,
         subtitle:
-          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
+          'Unlocking the potential of enterprise technology through personalized design thinking processes tailored to drive your business growth.',
       },
     }
   })
