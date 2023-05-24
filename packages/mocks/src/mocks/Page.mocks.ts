@@ -1108,10 +1108,10 @@ const MOCK_GROUP_PAGES = [
         overline: 'What we do',
         title: 'Enterprise Technology Consulting',
         titleProps: {
-          component: 'h1'
+          component: 'h1',
         },
         subtitle:
-          "From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ",
+          'From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ',
         maxWidth: 'lg',
         center: true,
         items: [
@@ -1119,19 +1119,21 @@ const MOCK_GROUP_PAGES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              'Unlock growth and success with One X Group\'s business advisory services.',
+              "Unlock growth and success with One X Group's business advisory services.",
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
             fa_icon: 'fa-cloud-binary',
             title: 'Engineering',
-            subtitle: 'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            subtitle:
+              'Engage our engineering services for insights, innovation, and data-driven decisions.',
             href: `${routeConfig.SERVICES}/engineering`,
           },
           {
             fa_icon: 'fa-chart-mixed',
             title: 'Data',
-            subtitle: 'Data services that drive growth. Gain insights, make informed decisions.',
+            subtitle:
+              'Data services that drive growth. Gain insights, make informed decisions.',
             href: `${routeConfig.SERVICES}/data`,
           },
         ],
@@ -1185,33 +1187,39 @@ const MOCK_GROUP_PAGES = [
           {
             fa_icon: 'fa-check',
             title: 'Agile Development Methodology',
-            subtitle: 'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.'
+            subtitle:
+              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
           },
           {
             fa_icon: 'fa-cogs',
             title: 'Cutting-Edge Technologies',
-            subtitle: 'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.'
+            subtitle:
+              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
           },
           {
             fa_icon: 'fa-cogs',
             title: 'Customized Solutions',
-            subtitle: 'We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization\'s goals and processes.'
+            subtitle:
+              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization's goals and processes.",
           },
           {
             fa_icon: 'fa-tasks',
             title: 'Streamlined Project Management',
-            subtitle: 'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.'
+            subtitle:
+              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
           },
           {
             fa_icon: 'fa-check-circle',
             title: 'Quality Assurance and Testing',
-            subtitle: 'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.'
+            subtitle:
+              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
           },
           {
             fa_icon: 'fa-chart-line',
             title: 'Scalability and Future-Proofing',
-            subtitle: 'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.'
-          }
+            subtitle:
+              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+          },
         ],
       },
       howItWorks: { overline: '', title: '', subtitle: '', items: [] },
@@ -1256,13 +1264,15 @@ const MOCK_GROUP_PAGES = [
           },
           {
             key: 'how-it-works-2',
-            title: 'What is the typical timeline for developing an enterprise software solution?',
+            title:
+              'What is the typical timeline for developing an enterprise software solution?',
             content:
-              "The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.",
+              'The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.',
           },
           {
             key: 'how-it-works-3',
-            title: 'Can you help us integrate our existing systems with the new software solutions?',
+            title:
+              'Can you help us integrate our existing systems with the new software solutions?',
             content:
               'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
@@ -1284,11 +1294,25 @@ const MOCK_GROUP_PAGES = [
       },
     },
   },
-  { title: 'Mission', slug: 'mission', subtitle: 'Find out how we seek to create change that matters.' },
-  { title: 'News', slug: 'news', subtitle: 'Stay up to date with the latest trends in the digital landscape.' },
-  { title: 'Resources', slug: 'resources', subtitle: 'Access our curated resource list for tips and tricks on how you can grow your business.' },
-  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true, },
-  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true, },
+  {
+    title: 'Mission',
+    slug: 'mission',
+    subtitle: 'Find out how we seek to create change that matters.',
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
+  {
+    title: 'Resources',
+    slug: 'resources',
+    subtitle:
+      'Access our curated resource list for tips and tricks on how you can grow your business.',
+  },
+  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true },
+  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true },
 ]
 
 const MOCK_TECH_PAGES = [
@@ -1779,8 +1803,7 @@ export const MOCK_DATA_PAGES = [
       callout: {
         hero_src: '/images/about_man_with_laptop_in_city.png',
         hero_alt: 'hero',
-        title:
-          'Unlocking the potential of data in the digital era.',
+        title: 'Unlocking the potential of data in the digital era.',
         subtitle:
           'We are dedicated to leveraging data science to fuel digital innovation and empower businesses to thrive in the data-driven economy.',
         buttons: [
@@ -1829,15 +1852,14 @@ export const MOCK_DATA_PAGES = [
             overline: '04',
             title: 'Machine Learning Algorithms',
             subtitle:
-              "Utilize machine learning algorithms to build robust models that enhance forecasting accuracy, anomaly detection, recommendation systems, and other critical business applications.",
+              'Utilize machine learning algorithms to build robust models that enhance forecasting accuracy, anomaly detection, recommendation systems, and other critical business applications.',
           },
         ],
       },
       gallery: {
         overline: 'Our Clients',
         title: 'Driving Data Changes',
-        subtitle:
-          'Helping enterprises elevate their digital capabilities.',
+        subtitle: 'Helping enterprises elevate their digital capabilities.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
@@ -1903,13 +1925,13 @@ export const MOCK_DATA_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Data for the Future',
     seo_description:
-      "{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.",
+      '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
     sections: {
       hero: {
         overline: '{appTitle}',
         title: 'Digital Transformation with Enterprise-Scale AI',
         subtitle:
-          "{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.",
+          '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
       },
       benefits: {
         overline: 'What we do',
@@ -1950,18 +1972,24 @@ export const MOCK_DATA_PAGES = [
         items: [
           {
             key: 'faq-1',
-            title: 'How can One X Data help my business in harnessing the power of our data?',
-            content: 'At One X Data, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
+            title:
+              'How can One X Data help my business in harnessing the power of our data?',
+            content:
+              'At One X Data, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
           },
           {
             key: 'faq-2',
-            title: 'What is the process for developing data science solutions with One X Data?',
-            content: 'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
+            title:
+              'What is the process for developing data science solutions with One X Data?',
+            content:
+              'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
           },
           {
             key: 'faq-3',
-            title: 'Can One X Data help us optimize our existing data models and AI solutions?',
-            content: 'Absolutely. One X Data provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
+            title:
+              'Can One X Data help us optimize our existing data models and AI solutions?',
+            content:
+              'Absolutely. One X Data provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
           },
         ],
       },
@@ -1971,7 +1999,7 @@ export const MOCK_DATA_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} collaborates with enterprise-level organizations to harness the power of data and artificial intelligence. We specialize in delivering tailored data science services and AI solutions that empower your business to make data-driven decisions and gain a competitive edge. Our approach centers around understanding your unique data challenges and customizing our solutions to meet those specific needs. We excel in transforming raw data into actionable insights and designing AI models that automate complex processes and enhance decision-making. Whether you\'re just beginning your data journey or looking to optimize existing data systems, our expertise in data science and AI can propel your business towards a future driven by data and intelligence. Together, we can unlock the potential of your data, enabling your enterprise to excel in the evolving digital landscape.',
+          "{appTitle} collaborates with enterprise-level organizations to harness the power of data and artificial intelligence. We specialize in delivering tailored data science services and AI solutions that empower your business to make data-driven decisions and gain a competitive edge. Our approach centers around understanding your unique data challenges and customizing our solutions to meet those specific needs. We excel in transforming raw data into actionable insights and designing AI models that automate complex processes and enhance decision-making. Whether you're just beginning your data journey or looking to optimize existing data systems, our expertise in data science and AI can propel your business towards a future driven by data and intelligence. Together, we can unlock the potential of your data, enabling your enterprise to excel in the evolving digital landscape.",
       },
       features: {
         overline: 'What we do',
@@ -2015,7 +2043,7 @@ export const MOCK_DATA_PAGES = [
             subtitle:
               'We conduct continuous testing and optimization of our data science and AI solutions to ensure they perform effectively, deliver accurate results, and meet your business objectives.',
           },
-        ],     
+        ],
       },
     },
   },
@@ -2028,7 +2056,6 @@ export const MOCK_DESIGN_PAGES = [
     seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
-    seo_title: 'About',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -2080,8 +2107,7 @@ export const MOCK_DESIGN_PAGES = [
       callout: {
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
-        title:
-          'We are here to ignite the power of design in the digital era.',
+        title: 'We are here to ignite the power of design in the digital era.',
         subtitle:
           'We are on a mission to unlock the full potential of the digital economy through exceptional UI/UX solutions.',
         buttons: [
@@ -2130,7 +2156,7 @@ export const MOCK_DESIGN_PAGES = [
             overline: '04',
             title: 'Building Unique User Experiences',
             subtitle:
-              "We craft personalized designs that captivate users, driving engagement and conversions while aligning with your specific business goals.",
+              'We craft personalized designs that captivate users, driving engagement and conversions while aligning with your specific business goals.',
           },
         ],
       },
@@ -2204,13 +2230,13 @@ export const MOCK_DESIGN_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
     seo_description:
-      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies.",
+      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
         title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies..",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies..",
       },
       benefits: {
         overline: 'What we do',
@@ -2265,7 +2291,8 @@ export const MOCK_DESIGN_PAGES = [
           },
           {
             key: 'faq-3',
-            title: 'Can One X Design help us improve the user experience of our existing enterprise software?',
+            title:
+              'Can One X Design help us improve the user experience of our existing enterprise software?',
             content:
               'Absolutely. One X Design specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
           },
@@ -2277,7 +2304,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} collaborates with enterprise clients to create visually captivating and intuitive user experiences. With a strong focus on UI/UX design, we specialize in crafting engaging designs for web and mobile interfaces. Our approach is centered around understanding your unique product requirements and tailoring our design solutions to meet your specific needs. We excel in translating complex ideas into visually appealing and user-friendly interfaces, ensuring seamless interactions and optimal user engagement. Whether you\'re at the ideation stage or looking to enhance an existing product, our expertise in UI/UX design and enterprise product designs can elevate your digital presence and drive customer satisfaction. Together, we can create designs that leave a lasting impression and set your enterprise apart in the digital landscape.',
+          "{appTitle} collaborates with enterprise clients to create visually captivating and intuitive user experiences. With a strong focus on UI/UX design, we specialize in crafting engaging designs for web and mobile interfaces. Our approach is centered around understanding your unique product requirements and tailoring our design solutions to meet your specific needs. We excel in translating complex ideas into visually appealing and user-friendly interfaces, ensuring seamless interactions and optimal user engagement. Whether you're at the ideation stage or looking to enhance an existing product, our expertise in UI/UX design and enterprise product designs can elevate your digital presence and drive customer satisfaction. Together, we can create designs that leave a lasting impression and set your enterprise apart in the digital landscape.",
       },
       features: {
         overline: 'What we do',
@@ -2295,7 +2322,7 @@ export const MOCK_DESIGN_PAGES = [
             fa_icon: 'fa-sitemap',
             title: 'Information Architecture',
             subtitle:
-              "We carefully structure and organize information to ensure intuitive navigation and seamless user flow, enhancing usability and overall user experience.",
+              'We carefully structure and organize information to ensure intuitive navigation and seamless user flow, enhancing usability and overall user experience.',
           },
           {
             fa_icon: 'fa-magic',
@@ -2319,9 +2346,9 @@ export const MOCK_DESIGN_PAGES = [
             fa_icon: 'fa-check-double',
             title: 'Usability Testing',
             subtitle:
-              "We conduct thorough usability testing to gather feedback and insights from real users, refining and optimizing the user interface to maximize user satisfaction and achieve business goals.",
+              'We conduct thorough usability testing to gather feedback and insights from real users, refining and optimizing the user interface to maximize user satisfaction and achieve business goals.',
           },
-        ],      
+        ],
       },
     },
   },
@@ -2331,5 +2358,5 @@ export const MOCK_PAGES = {
   GROUP: MOCK_GROUP_PAGES,
   TECH: MOCK_TECH_PAGES,
   DATA: MOCK_DATA_PAGES,
-  DESIGN: MOCK_DESIGN_PAGES
+  DESIGN: MOCK_DESIGN_PAGES,
 }
