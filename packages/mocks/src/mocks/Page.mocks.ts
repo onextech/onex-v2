@@ -1043,7 +1043,7 @@ const MOCK_GROUP_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Design a new product',
             subtitle:
@@ -1429,7 +1429,7 @@ const MOCK_TECH_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'User Interface Development',
             subtitle:
@@ -1864,7 +1864,7 @@ export const MOCK_DATA_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Design a new product',
             subtitle:
@@ -2053,7 +2053,7 @@ export const MOCK_DESIGN_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Optimize Existing User Interface',
             subtitle:

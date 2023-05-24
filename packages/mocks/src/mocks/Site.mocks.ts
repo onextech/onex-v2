@@ -54,6 +54,7 @@ export const MOCK_GROUP_SITE: Site = {
 
   // Seo
   google_tag_manager_id: '',
+  logo_alt: 'One X Group logo',
 
   // Logo
   logo_width: 110,
@@ -84,6 +85,8 @@ export const MOCK_TECH_SITE = {
   // System
   nav_is_ecosystem_visible: false,
 
+  logo_alt: 'One X Tech logo',
+
   // App
   title: 'One X Tech',
   absolute_url: 'https://www.onextech.com',
@@ -113,6 +116,8 @@ export const MOCK_DESIGN_SITE = {
 
   // System
   nav_is_ecosystem_visible: false,
+
+  logo_alt: 'One X Design logo',
 
   // App
   title: 'One X Design',
@@ -147,6 +152,8 @@ export const MOCK_DATA_SITE = {
   // App
   title: 'One X Data',
   absolute_url: 'https://www.onexdata.com',
+
+  logo_alt: 'One X Data logo',
 
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Data.',
