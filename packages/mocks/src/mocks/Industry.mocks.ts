@@ -8,7 +8,7 @@ export const MOCK_INDUSTRY_PAGE = {
   },
   // Hero
   avatar_src: '/images/about_shape_circle_radial.svg',
-  avatar_alt: '{title}',
+  avatar_alt: 'Three circles',
   hero_src: '/images/about_working_in_office.png',
   hero_alt: 'People working in office',
   overline: 'Industry',
@@ -28,6 +28,7 @@ export const MOCK_INDUSTRY_PAGE = {
       items: [
         {
           avatar_src: '/images/about_shape_circle_radial.svg',
+          avatar_alt: 'Three circles',
           overline: '01',
           title: 'Design a new product',
           subtitle:
@@ -35,6 +36,7 @@ export const MOCK_INDUSTRY_PAGE = {
         },
         {
           avatar_src: '/images/about_shape_squares.svg',
+          avatar_alt: 'Three squares',
           overline: '02',
           title: 'Launch a new company',
           subtitle:
@@ -42,6 +44,7 @@ export const MOCK_INDUSTRY_PAGE = {
         },
         {
           avatar_src: '/images/about_shape_square_with_circle.svg',
+          avatar_alt: 'Square with two circles',
           overline: '03',
           title: 'Scale up development',
           subtitle:
@@ -49,6 +52,7 @@ export const MOCK_INDUSTRY_PAGE = {
         },
         {
           avatar_src: '/images/about_shape_circles.svg',
+          avatar_alt: 'Three circles',
           overline: '04',
           title: 'Improve a current system',
           subtitle:

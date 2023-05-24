@@ -1,13 +1,15 @@
 import React from 'react'
-import { BlockProps } from '@gravis-os/landing'
+import { BlockItemProps, BlockProps } from '@gravis-os/landing'
 
 export interface RenderBaseColumnGridBlockProps
   extends Omit<BlockProps, 'items' | 'title'> {
   overline?: string
   title: React.ReactNode
+  titleProps?: BlockItemProps['titleProps']
   subtitle?: string
   items?: Array<{
     avatar_src?: string
+    avatar_alt?: string
     fa_icon?: string
     overline?: string
     title: string
@@ -22,6 +24,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
   const {
     overline,
     title,
+    titleProps,
     subtitle,
     items,
     columns,
@@ -42,6 +45,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
         titleProps: {
           gutterBottom: true,
           ...(!isTextAlignCenter && { maxWidth: '50%' }),
+          ...titleProps
         },
         ...(isTextAlignCenter && { maxWidth: 'md' }),
       },
@@ -64,14 +68,14 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
           sx: { textAlign: { xs: 'center', md: center ? 'center' : 'left' } },
         },
         gridItems: items?.map((item) => {
-          const { fa_icon, overline, title, subtitle, avatar_src, href } = item
+          const { fa_icon, overline, title, subtitle, avatar_src, avatar_alt, href } = item
           return {
             items: [
               avatar_src && {
                 type: 'image',
                 title: avatar_src,
                 titleProps: {
-                  alt: avatar_src,
+                  alt: avatar_alt,
                   width: 100,
                   height: 100,
                   sx: { mb: 4 },
