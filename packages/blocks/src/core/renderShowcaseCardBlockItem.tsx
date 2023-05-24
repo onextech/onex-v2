@@ -35,7 +35,6 @@ const renderShowcaseCardBlockItem = (
             fixedBackground: true,
             scaleOnHover: true,
             boxSx: {
-              width: { xs: '60%', sm: '65%' },
               height: '100%',
               bottom: -8,
             },
