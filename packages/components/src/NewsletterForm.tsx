@@ -11,15 +11,18 @@ export interface NewsletterFormProps {
 const NewsletterForm: React.FC<NewsletterFormProps> = (props) => {
   const { onSubmit } = props
 
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
+    setIsLoading(true)
     await postEnquiry({
       type: EnquiryTypeEnum.NEWSLETTER,
       origin: window.location.href,
       ...values,
     })
+    setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Success!')
   }
@@ -50,6 +53,7 @@ const NewsletterForm: React.FC<NewsletterFormProps> = (props) => {
             flex: '1 0 auto',
             ml: 1,
           },
+          loading: isLoading
         }}
         sx={{
           display: 'flex',
