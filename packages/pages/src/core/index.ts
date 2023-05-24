@@ -79,6 +79,9 @@ export * from './DigitalPage'
 export { default as DataPage } from './DataPage'
 export * from './DataPage'
 
+export { default as DataHomePage } from './DataHomePage'
+export * from './DataHomePage'
+
 export { default as TechPage } from './TechPage'
 export * from './TechPage'
 

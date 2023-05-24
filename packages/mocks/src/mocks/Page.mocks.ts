@@ -126,7 +126,7 @@ export const MOCK_DATA_PAGE = {
   seo_description: 'This page is all about the technology that we use',
   // Info
   title: 'One X Data',
-  subtitle: 'Discover the agile process we use to build digital products',
+  subtitle: 'We Data for Impact',
   // Sections
   sections: {
     hero: {
@@ -144,38 +144,6 @@ export const MOCK_DATA_PAGE = {
         {
           title:
             'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
-        },
-      ],
-    },
-    benefits: {
-      overline: 'What we do',
-      title: 'Our Suite of Services',
-      subtitle:
-        "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
-      maxWidth: 'lg',
-      center: true,
-      items: [
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Web Design',
-          subtitle:
-            'A conversion centred approach to creating web and product designs that drive action.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Web Development',
-          subtitle: 'Build tailor-made websites that drive leads and sales.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Web Development',
-          subtitle: 'Build tailor-made websites that drive leads and sales.',
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Application Development',
-          subtitle:
-            'Accelerate business agility across your organisation with scalable enterprise apps.',
         },
       ],
     },
@@ -218,50 +186,6 @@ export const MOCK_DATA_PAGE = {
       subtitle:
         'We build modern system architectures and scalable applications that radically transform business performance.',
       buttonProps: { href: '{routes.SERVICES}' },
-    },
-    features: {
-      overline: 'What we do',
-      title: 'Our Approach to {title}',
-      subtitle:
-        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
-      items: [
-        {
-          fa_icon: 'fa-watch',
-          title: 'Scale up development',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-hand-holding-seedling',
-          title: 'Improve a current system',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-        {
-          fa_icon: 'fa-guitar',
-          title: 'Rewards',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-      ],
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
     checklist: {
@@ -1795,11 +1719,6 @@ const MOCK_TECH_PAGES = [
 }))
 
 export const MOCK_DATA_PAGES = [
-  ...MOCK_COMMON_PAGES,
-  {
-    slug: 'home',
-    is_hidden_from_nav: true
-  },
   {
     title: 'About',
     slug: 'about',
@@ -1810,7 +1729,7 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: 'Greetings',
-        title: 'We are {appTitle}, the Growth Company.',
+        title: 'Designing Digital Innovations for Enterprises',
         buttons: [
           {
             overline: 'What we do',
@@ -1824,13 +1743,27 @@ export const MOCK_DATA_PAGES = [
           },
         ],
       },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        title: 'Transforming Enterprises with Exceptional Design Solutions',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of skilled consultants, designers, and engineers is dedicated to delivering best-in-class UI/UX services tailored to meet the unique needs of enterprises.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
       summary: {
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
         title:
-          'We believe technology is the superpower that changes everything about business.',
+          'We believe in using technology to create designs that revolutionize the way enterprises operate',
         subtitle:
-          '{appTitle} is a business technology partner, focused on building technological innovations for leading enterprises. We empower businesses with cutting-edge solutions by applying established and emerging technologies into their core business models.',
+          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
         buttons: [
           {
             overline: 'Who we are',
@@ -1843,9 +1776,9 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_man_with_laptop_in_city.png',
         hero_alt: 'hero',
         title:
-          'We are here to awaken the potential of a supercharged digital economy.',
+          'We are here to ignite the power of design in the digital era.',
         subtitle:
-          'We deliver transformational outcomes for a demanding new digital world.',
+          'We are on a mission to unlock the full potential of the digital economy through exceptional UI/UX solutions.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1858,71 +1791,57 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'We Transform Businesses',
+        title: 'Re-Imagining Designs for Modern Enterprises',
         subtitle:
-          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+          'We assist enterprise clients in their digital transformation through targeted digital designs that solve problems at the speed and scale of the modern enterprise.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'shape_circle_radial',
             overline: '01',
-            title: 'Design a new product',
+            title: 'Optimize Existing User Interface',
             subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
+              'We conduct in-depth, user-centric analysis of your current design to identify areas for improvement and automation, enhancing efficiency and streamlining workflows for your team and users.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Launch a new company',
+            title: 'Scaling Up the Business',
             subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+              'We provide support and expertise to scale your design systems, ensuring a consistent and seamless experience for your expanding user base.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Scale up development',
+            title: 'Empowering Teams',
             subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+              'Our interactive workshops equip product teams with the skills and knowledge to create exceptional user experiences, fostering a user-centric mindset within your organization.',
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
             avatar_alt: 'Three overlapping circles',
             overline: '04',
-            title: 'Improve a current system',
+            title: 'Building Unique User Experiences',
             subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
-        ],
-      },
-      cta: {
-        hero_src: '/images/about_nodes_above_city.png',
-        title: 'We Design & Develop Custom Software for Enterprises',
-        hero_alt: 'Laser net over city',
-        subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
-        buttons: [
-          {
-            overline: 'Our Mission',
-            title: 'Enabling Smarter Businesses',
-            href: routeConfig.SERVICES,
+              "We craft personalized designs that captivate users, driving engagement and conversions while aligning with your specific business goals.",
           },
         ],
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Let your customers take the reign',
+        title: 'Designing for Product Teams',
         subtitle:
-          'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+          'Our designs seek to help clients focus on what really matters.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Accelerating Asia',
+        title: 'Designs that Work Anywhere, Everywhere',
         subtitle:
-          '{appTitle} is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
+          'We stand at the forefront of global enterprise design development, working hand-in-hand with enterprises to deliver innovations that can fuel their digital transformation journey. ',
         items: [
           {
             title: '100+',
@@ -1959,9 +1878,9 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Thinkers & Tinkerers Coming Together',
+        title: 'Design Thinking with A Purpose',
         subtitle:
-          'We’ve assembled some of the brightest minds in business, technology and design. With our diversity of expertise, we’re able to deliver the highest quality software that our industry has seen.',
+          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at One X Design to design for change, to design for better. ',
         buttons: [
           {
             overline: 'Careers',
@@ -1969,6 +1888,130 @@ export const MOCK_DATA_PAGES = [
             href: routeConfig.CAREERS,
           },
         ],
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to design digital products',
+    seo_title: '{appTitle} - Data for the Future',
+    seo_description:
+      "{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.",
+    sections: {
+      hero: {
+        overline: '{appTitle}',
+        title: 'Digital Transformation with Enterprise-Scale AI',
+        subtitle:
+          "{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.",
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Harnessing the Power of AI for Enterprises',
+        subtitle:
+          '{appTitle} empowers enterprises businesses with state-of-the-art technologies to create solutions built for the digital age.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Strategy',
+            subtitle:
+              'Crafting holistic data management plans, governance, and value analysis to empower data-driven decision-making.',
+            href: `${routeConfig.SERVICES}/data-strategy`,
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data Engineering',
+            subtitle:
+              'Designing robust data warehousing, integration, and big data solutions for efficient storage, retrieval, and analysis.',
+            href: `${routeConfig.SERVICES}/data-engineering`,
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Solutions',
+            subtitle:
+              'Building tailored AI models, automating processes, and providing strategic advisory for transformative business intelligence.',
+            href: `${routeConfig.SERVICES}/ai-solutions`,
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Discover how we transform businesses with powerful data insights and advanced AI solutions.',
+        items: [
+          {
+            key: 'faq-1',
+            title: 'How can One X Data help my business in harnessing the power of our data?',
+            content: 'At One X Data, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
+          },
+          {
+            key: 'faq-2',
+            title: 'What is the process for developing data science solutions with One X Data?',
+            content: 'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
+          },
+          {
+            key: 'faq-3',
+            title: 'Can One X Data help us optimize our existing data models and AI solutions?',
+            content: 'Absolutely. One X Data provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprise-level organizations to harness the power of data and artificial intelligence. We specialize in delivering tailored data science services and AI solutions that empower your business to make data-driven decisions and gain a competitive edge. Our approach centers around understanding your unique data challenges and customizing our solutions to meet those specific needs. We excel in transforming raw data into actionable insights and designing AI models that automate complex processes and enhance decision-making. Whether you\'re just beginning your data journey or looking to optimize existing data systems, our expertise in data science and AI can propel your business towards a future driven by data and intelligence. Together, we can unlock the potential of your data, enabling your enterprise to excel in the evolving digital landscape.',
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach',
+        subtitle:
+          'Our data-focused approach ensures the delivery of robust data science and AI solutions for businesses ready to harness the power of their data and gain a competitive edge.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Collection and Processing',
+            subtitle:
+              'We source, cleanse, and structure your data, turning raw information into valuable, usable assets ready for analysis and modeling.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We delve deep into your data, using statistical techniques and data mining to uncover hidden patterns, correlations, and insights that can inform strategic decisions.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Predictive Modeling',
+            subtitle:
+              'We utilize machine learning and AI algorithms to create predictive models, helping you forecast future trends, behaviors, and outcomes.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Solutions',
+            subtitle:
+              'We design and implement AI solutions that automate tasks, improve efficiency, and unlock new possibilities for your business. Our solutions range from machine learning models to natural language processing and computer vision applications.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Visualization',
+            subtitle:
+              'We present complex data findings in easy-to-understand visual formats, helping your team understand and make informed decisions based on the insights extracted from your data.',
+          },
+          {
+            fa_icon: 'fa-cog',
+            title: 'Solution Optimization',
+            subtitle:
+              'We conduct continuous testing and optimization of our data science and AI solutions to ensure they perform effectively, deliver accurate results, and meet your business objectives.',
+          },
+        ],     
       },
     },
   },
