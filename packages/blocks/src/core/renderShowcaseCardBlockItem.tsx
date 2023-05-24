@@ -11,7 +11,7 @@ const renderShowcaseCardBlockItem = (
   props: RenderShowcaseCardBlockItemProps
 ) => {
   const { item, isHero } = props
-  const { slug, backgroundColor, mode, hero_src, title, subtitle, reverse, hero_alt } =
+  const { slug, backgroundColor, mode, hero_src, title, subtitle, reverse, hero_alt, sections } =
     item || {}
 
   const gridItems = [
@@ -35,7 +35,6 @@ const renderShowcaseCardBlockItem = (
             fixedBackground: true,
             scaleOnHover: true,
             boxSx: {
-              width: { xs: '60%', sm: '65%' },
               height: '100%',
               bottom: -8,
             },
@@ -75,7 +74,7 @@ const renderShowcaseCardBlockItem = (
             color: 'text.secondary',
           },
         },
-        !isHero &&
+        !isHero && (sections.leftGridSticky?.items?.length || sections.rightGridSticky?.items?.length || sections.gallery?.items?.length) &&
           renderGhostButtonBlockItem({
             overline: 'Showcase',
             title: 'Read more',
