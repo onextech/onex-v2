@@ -54,7 +54,6 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     hero_alt: 'App controlling Philips lights',
     mode: 'light',
     backgroundColor: '#f2efec',
-    reverse: true,
 
     // Sections
     sections: {
@@ -105,6 +104,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     hero_alt: 'Temperature adjustment app',
     mode: 'dark',
     backgroundColor: '#9B2727',
+    reverse: true,
 
     // Sections
     sections: {
@@ -208,7 +208,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     backgroundColor: '#c3e8c1',
     reverse: true,
     
-    sections: { gallery: { items: [] }, rightGridSticky: {} }
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
     title: 'A beautifully crafted self-pick up service app.',
@@ -220,7 +220,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     mode: 'light',
     backgroundColor: '#ffae81',
 
-    sections: { gallery: { items: [] }, rightGridSticky: {} }
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
     title: 'Blockchain and artificial intelligence.',
@@ -233,7 +233,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     backgroundColor: '#071323',
     reverse: true,
     
-    sections: { gallery: { items: [] }, rightGridSticky: {} }
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
     title: 'NextGEN Global Decarbonisation Initiative.',
@@ -245,7 +245,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
     mode: 'dark',
     backgroundColor: '#013157',
     
-    sections: { gallery: { items: [] }, rightGridSticky: {} }
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
