@@ -1,10 +1,11 @@
 import sampleSize from 'lodash/sampleSize'
 import {
+  MOCK_DATA_POST_CATEGORYS,
   MOCK_DESIGN_POST_CATEGORYS,
   MOCK_GROUP_POST_CATEGORYS,
   MOCK_TECH_POST_CATEGORYS,
 } from './PostCategory.mocks'
-import { MOCK_DESIGN_TAGS, MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import { MOCK_DATA_TAGS, MOCK_DESIGN_TAGS, MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 
 export const MOCK_TECH_POSTS = [
@@ -780,7 +781,148 @@ export const MOCK_GROUP_POSTS = [
   ...item,
 }))
 
-export const MOCK_DATA_POSTS = []
+export const MOCK_DATA_POSTS = [
+  {
+    published_at: '2023-05-23T14:00:00+0000',
+    is_active: true,
+    category_id: 1,
+    title: 'Leveraging Data For Smarter Decision Making in Product Development',
+    slug: 'leveraging-data-for-smarter-decision-making-in-product-development',
+    subtitle: "Maximizing the Power of Data for Enhanced Product Development and Marketing Strategies",
+    hero_src: 'https://source.unsplash.com/Pf5Pj7A5ddA/1600x900',
+    hero_alt: 'person on cliff',
+    html: '<p>The digital world is drowning in data and businesses can either just let it pile up or harness it for their benefit. Despite the fact that the second options seems like the obvious choice, many companies do not fully utilise data-driven decision-making. Data is the lifeblood of product development and without it, decisions can be made without complete information or understanding. Making data-driven decisions in product development can help businesses make smarter, more informed decisions that are based on facts rather than guesses. By leveraging data to make better decisions, companies can accelerate their product development process and create products that are tailored to customer needs and demands.</p>' +
+    '<h2>Understanding user behaviour</h2>' +
+    '<p>Data-driven decision-making can also help companies identify trends and patterns in customer behaviour which can be used to improve product development cycles. By understanding user behaviour, companies can develop features that are tailored to their customers&rsquo; needs, resulting in a better overall user experience. However, this begs the question &mdash; are we really using all this information to its fullest potential?</p>' +
+    '<h2>Data-driven decision-making</h2>' +
+    '<p>Data-driven decision-making involves analysing existing information and obtaining new data to support and motivate the actions of companies. It enables company owners and department heads to minimise the risk when making choices which boosts efficiency and effectiveness. By observing and analysing customer behaviour, purchasing as well as usage habits through the use of customer surveys and feedback throughout the product development lifecycle can provide valuable insights into what customers are looking for in a new product. Companies can also leverage analytics tools such as heatmaps and A/B testing to track user engagement with different features and User Interface (UI) elements within a product. This data can then be used to inform design choices, prioritise feature sets, or even inform how an product is marketed. Building a dashboard which includes metrics like customer conversion rates, churn rate, or product usage frequency can visualise data points and trends. By monitoring changes in these numbers over time, companies can quickly identify areas of opportunity and make informed decisions based on the data they have collected.</p>' +
+    '<p>Data can also be used to quantify the impact of different decisions and changes in product development. Following fluctuations in numbers can give insight into whether it is popular among users, or if it needs to be modified or removed. Product teams can also use data to refine their processes in order to speed up product development cycles and optimise resources. Cross referencing internal data with external data can give a more comprehensive view of the market trends, customer behaviour, and competitor analysis. Oftentimes, data can be used to make predictions about future trends and shifts in the industry. This can help companies stay ahead of the curve by anticipating changes before they happen. In short, data is a powerful tool for businesses to make informed decisions quickly and accurately.</p>' +
+    '<h2>Marketing with data</h2>' +
+    '<p>Data is also often used for marketing purposes as well. Companies monitor the performance of different products using data analytics to measure their reach and target specific audiences with campaigns or adverts. They can keep track of the effectiveness of such activities by tracking metrics like click-through rate or customer engagement levels. By understanding user preferences, companies can tailor products that meet users&rsquo; needs better, leading to higher customer satisfaction rates and improved</p>' +
+    '<h2>Conclusion</h2>' +
+    '<p>By leveraging data to make smarter decisions during the product development process, businesses can create better products that are tailored to customer demands and preferences. Using customer feedback throughout the lifecycle, analytics tools, and quantitative measurements of changes made over time can help companies gain valuable insights into their customer base while simultaneously improving their processes. Data-driven decisions not only help businesses make better products, but they can also save time and resources in the long run.</p>'
+  },
+  {
+    published_at: '2023-05-23T14:00:00+0000',
+    is_active: true,
+    category_id: 2,
+    title: 'The Next Frontier in Enterprise Analytics: Predictive Modelling and AI-Driven Insights',
+    slug: 'the-next-frontier-in-enterprise-analytics-predictive-modelling-and-ai-driven-insights',
+    subtitle: "Unleashing the Power of Predictive Analytics and AI-Driven Insights",
+    hero_src: 'https://source.unsplash.com/gMes5dNykus/1600x900',
+    hero_alt: 'Glass buildings',
+    html: '<p>Recent years have seen a considerable advancement in enterprise analytics, with businesses now using data analytics to gain valuable insights into their operations, customers\' behaviour, and market trends. Traditional analytics techniques, such descriptive and diagnostic analytics, are no longer adequate for businesses attempting to stay competitive. Predictive modelling and AI-driven insights are the newest developments in enterprise analytics.</p>' +
+    '<p>Predictive modelling use statistical techniques and machine learning to analyse previous data and forecast future events. In order to identify patterns and connections in data that humans are might not be able to detect, sophisticated machine learning algorithms are used.</p>' +
+    '<p>Here are some examples of how predictive modeling and AI-driven insights may transform enterprise analytics:</p>' +
+    '<h2>Personalised Customer Experiences</h2>' +
+    '<p>Businesses may better understand their clients and provide individualised experiences by using predictive modelling and AI-driven insights. With appropriate information, retailers can analyse client purchasing patterns to identify the products they are most likely to purchase in the future.</p>' +
+    '<p>Customers can receive personalised product recommendations and promotions based on such consumer behaviour predictions, increasing customer satisfaction and loyalty.</p>' +
+    '<h2>Improved Supply Chain Management</h2>' +
+    '<p>Predictive modelling and AI-driven insights can help businesses optimise their supply chain management. By examining historical data on inventory levels, supplier performance, and demand estimates, businesses may predict future supply chain requirements and alter their operations. Thus, the supply chain will be more efficient, less expensive, and less likely to have disruptions.</p>' +
+    '<h2>Enhanced Risk Management</h2>' +
+    '<p>Companies can also employ AI-driven insights and predictive modelling to identify potential dangers and take precautions. Financial firms, for instance, can examine market trends and past transaction data to spot possible fraud. By doin so, they can avoid financial setbacks and safeguard their reputation.</p>' +
+    '<h2>Streamlined Operations</h2>' +
+    '<p>Businesses can also improve their operations by streamlining processes smoothly by using predictive modelling and AI-driven insights. Predictive modelling for instance, can be used by manufacturers to optimise production schedules and enhance quality assurance. Businesses can increase efficiency and cut costs by analysing historical data on production processes and finding patterns and correlations.</p>' +
+    '<h2>Better Decision Making</h2>' +
+    '<p>Finally, predictive modelling and AI-driven insights can aid in business decision-making. Businesses may make better judgements regarding investments, product development, and other crucial areas by analysing vast amounts of data and looking for patterns and connections.</p>' +
+    '<p>However, predictive modelling and AI-driven insights have their own set of difficulties. The demand for high-quality data represents one of the main obstacles. Large data sets are required for predictive modelling and AI algorithms to produce reliable forecasts and insights. Predictions and insights will also be wrong if the data is unreliable, inaccurate, or prejudiced.</p>' +
+    '<p>Another issue is the lack of qualified data scientists and analysts who can create and apply AI algorithms and prediction models. These specialists need specialised training and experience in data visualisation, machine learning, and statistical analysis.</p>' +
+    '<p>In conclusion, the future of enterprise analytics lies in predictive modelling and AI-driven insights. Businesses may learn a lot about their operations, consumer behaviour, and market trends. They should be also investing in knowledgeable data scientists and analysts if they want to fully realise the potential of predictive modelling and AI-driven insights. In the years to come, we may anticipate seeing even more cutting-edge applications of predictive modelling and AI-driven insights as organisations continue to adopt these technologies.</p>'
+  },
+  {
+    published_at: '2023-05-23T14:00:00+0000',
+    is_active: true,
+    category_id: 3,
+    title: 'I for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
+    slug: 'ai-social-good-solve-public-challenges-ml',
+    subtitle: "Harnessing AI for Positive Impact: Tackling Societal Challenges with Advanced Machine Learning",
+    hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
+    hero_alt: 'miniature train tracks',
+    html: '<p>Artificial intelligence (AI) is employed in a variety of industries to tackle complex challenges. With its ability to analyse vast volumes of data, recognise patterns and make insightful predictions, AI has the potential to assist in addressing some of the world\'s most pressing societal issues. In this article, we will explore how AI can be used for social good and present some examples of how it is currently being put to tackle critical public challenges.</p>' +
+    '<h2>Healthcare</h2>' +
+    '<p>Healthcare is one of the the most promising and exciting fields where AI may be used for social good. AI has the potential to enhance healthcare outcomes and save costs due to the expanding availability of health data and the complexity of medical diagnoses and treatments. AI-powered diagnosis technologies allows for early detections of diseases such as caner. X-rays and CT scans are used to examine medical pictures. Personalised treatment regimens based on a patient&rsquo;s medical history, genetics and other criteria can also be created using the AI. Not to mention, the powerful AI-driven chatbots and virtual assistants can offer patients with personalised advice and support, lessening the workload on the medical staff and improving patient outcomes.</p>' +
+    '<h2>Environmental Sustainability</h2>' +
+    '<p>AI can also be used to address environmental challenges like climate change and resource management. AI can assist in identifying areas of concern and guiding policy decisions by evaluating massive amount of data on environmental trends and patterns &mdash; monitoring environmental aspects like air quality and water contamination, warning authorities of potential concerns and allowing them to take preemptive action. AI may also be applied in the manufacturing and transportation sectors to decrease waste and optimise energy usage.</p>' +
+    '<h2>Disaster Relief Efforts</h2>' +
+    '<p>AI is extremely important in disaster relief efforts. Emergency personnel can better predict and prepare for natural catastrophes like hurricanes and floods by studying real-time data on weather trends. Reactions times can be accelerated with the aid of real-time updates and direction using AI. People who might require aid during a crisis can be easily identified through social media posts and other internet data, increasing the overall effectiveness of disaster response.</p>' +
+    '<h2>Education</h2>' +
+    '<p>Expanding access to education and enhancing learning outcomes are both highly probable with AI in place. Personalised learning plans that respond to individual student needs and areas of weakness can be easily identified for students who may require extra guidance. AI can be employed to interpret educational materials while providing students with more effective and engaging learning experiences. On top of that, administrative tasks such as grading and tracking of students&rsquo; progress can be easily automated with AI-based solutions. Not to mention, the creation of new types of educational experiences &mdash; virtual reality stimulations and interactive games. These technologies enable students to explore real-world scenarios in an immersive and realistic setting, allowing them to learn from their mistakes without the risk of real-world consequences.</p>' +
+    '<p>With AI, teachers can provide a more efficient, effective, and engaging educational experience for their students.</p>' +
+    '<h2>Public Safety</h2>' +
+    '<p>AI can be used to improve public safety and lower crime rates. Law enforcement officers can more efficiently distribute resources and shorten reaction times by evaluating crime data and forecasting where crimes are likely to occur. AI can also be used to keep an eye on public areas like the airports and train stations for potential security risks. AI-powered devices can alert authorities to suspect conduct and aid in the prevention of terrorism and other criminal activity by evaluating security camera footage and other sensor data.</p>' +
+    '<h2>Final Word</h2>' +
+    '<p>In conclusion, AI has the ability to aid in resolving some of the most urgent social issues facing the world today. AI may be used to solve environmental difficulties, improve healthcare outcomes, and detect patterns in massive amounts of data to make predictions. As AI technology continues to evolve, we can expect to see even more applications of AI for social good in the years ahead.</p>'
+  },
+  {
+    published_at: '2023-05-23T14:00:00+0000',
+    is_active: true,
+    category_id: 4,
+    title: 'The AI-powered Finance Revolution: Unlocking New Opportunities and Enhancing Customer Experience in 2023',
+    slug: 'ai-finance-revolution-unlock-opportunities-customer-experience-2023',
+    subtitle: "Driving Financial Transformation: Harnessing the Power of AI for Enhanced Risk Management, Customer Experience, and Investment Strategies",
+    hero_src: 'https://source.unsplash.com/BeVGrXEktIk/1600x900',
+    hero_alt: 'laptop and headphones',
+    html: '<p>Artificial Intelligence (AI) technological advancements are driving a revolution in the finance industry. In 2023, we are likely to see the impact of this revolution continue to grow, as AI-powered solutions unlock new possibilities and improve customer experience in the finance industry.</p>' +
+    '<h2>Enhanced Risk Management</h2>' +
+    '<p>One of the most significant ways that AI is transforming the finance industry is through enhanced risk management. Systems with AI can analyse massive volumes of data in real-time, spot repetitive patterns and emerging trends, and alert organisations about potential threats before they become major problems. This could lessen financial losses and improve overall stability of the financial system as a whole.</p>' +
+    '<p>AI-powered fraud detection systems, for instance, can analyse transaction data and identify unusual activity that may indicate fraud. Similarly, AI-powered credit risk assessment may examine a borrower\'s credit history and financial behaviour to produce a more accurate risk assessment, enabling institutions to make more informed lending decisions.</p>' +
+    '<h2>Improved Customer Experience</h2>' +
+    '<p>AI is also transforming the way that financial institutions communicate with their clients. By leveraging machine learning algorithms and natural language processing, financial institutions can offer more individualised and efficient customer service.</p>' +
+    '<p>AI powered chatbots can provide 24/7 customer support, respond basic queries, and even deliver personalised financial advice. This can enhance client satisfaction, reduce wait times, and lower costs for financial institutions.</p>' +
+    '<p>Additionally, financial institutions can better cater their services and products to the needs of specific clients by using AI-powered personalisation. For example, an AI-powered recommendation engine can make insightful recommendations for products and services based on a customer\'s spending habits, financial objectives and other factors.</p>' +
+    '<h2>Increased Efficiency</h2>' +
+    '<p>Efficiency improvements are a key advantage of AI in the banking sector. By automating repetitive, tedious and time-consuming operations, financial institutions can cut expenses and boost productivity.</p>' +
+    '<p>Automation driven by AI can accelerate and streamline procedures like compliance checks, loan underwriting and account opening. This lessens the need for manual input, giving staff members more time to work on more complex jobs.</p>' +
+    '<p>In addition, with AI-powered analytics, financial institutions may improve their decision making processes and make more informed choices, which can provide insights into consumer behaviour and market trends. Long term efficiency and profitability gains may result from this.</p>' +
+    '<h2>Enhanced Security</h2>' +
+    '<p>Moreover, AI is essential in enhancing financial sector security. Financial institutions must take action to safeguard sensitive client data as cyber attacks and data breaches grow win sophistication and frequency. Real-time threat detection and response capabilities offered by AI-powered security solutions can assist organisations in promptly identifying and thwarting possible attacks. Furthermore, AI-powered authentication can aid in enhancing client account security and reducing the risk of identity theft.</p>' +
+    '<h2>Advanced Investment Strategies</h2>' +
+    '<p>AI is revolutionising how financial organisations approach investment strategies. By leveraging machine learning algorithms and predictive analytics, financial institutions can make more informed investment decisions and optimise their portfolios. AI-powered platform can analyse market trends, identify patterns, and offer recommendations on investment opportunities. Financial institutions may benefit from this by increasing returns and lowering risk. Meanwhile, AI-powered robo-advisors can offer tailored investment advice to specific clients depending on the financial objectives, risk tolerance, and other variables of the clients. Customers&rsquo; financial outcomes may also be improved as a result of helping them make better investing selections.</p>' +
+    '<h2>Final words</h2>' +
+    '<p>To sum up, AI is transforming the finance industry by creating new opportunities and improving the consumer experience. In 2023, we can expect to see the influence of AI in the financial institutions as AI used more frequently to enhance risk management, customer service and investment strategies.</p>'
+  },
+  {
+    published_at: '2023-05-23T14:00:00+0000',
+    is_active: true,
+    category_id: 5,
+    title: 'Building the Next-Gen Government: How AI and ML are Transforming Public Services for a Better Tomorrow',
+    slug: 'building-next-gen-government-ai-ml-transforming-public-services',
+    subtitle: "Building a Future-Ready Government: Embracing AI and ML to Revolutionize Public Services",
+    hero_src: 'https://source.unsplash.com/FDTEzCJ11fk/1600x900',
+    hero_alt: 'Arrangement of screws',
+    html: '<p>The role of government is to serve the people, and in the quickly evolving changing world of today, that means utilising cutting-edge technology to deliver successful public services. Governments around the world are examining how to leverage artificial intelligence (AI) and machine learning (ML), two of the most promising technologies for revolutionising public services, to create the next generation of government.</p>' +
+    '<p>At its core, AI is the process of educating robots to learn and think like humans do. The goal of ML as a branch of artificial intelligence, is to create algorithms that can learn from data and forecast what is to come. Together, as a result of the convergence of AI and ML, the delivery of public services by governments, including healthcare and transportation, has the potential to change.</p>' +
+    '<h2>Enhanced public sector decision-making</h2>' +
+    '<p>One of the key benefits of AI and ML is their ability to enhance decision-making processes in the public sector. These technologies can offer insights that assist policymakers&nbsp;in making more informed judgments by analysing vast amounts of data. For instance, ML algorithms can analyse data on crime rates and trends to assist law enforcement organisations in more efficient resource allocation. Similar to this, AI-driven systems can analyse air pollution data to assist governments in creating regulations that lessen the detrimental effects of pollution on public health.</p>' +
+    '<p>Government workers may focus on more complicated and strategic work by using AI and ML to automate time-consuming and repetitive chores. For instance, AI-powered chatbots can give residents with 24/7 customer care, answering queries and informing them about government services. Additionally, ML algorithms have the ability to automate the processing of massive amounts of data, such as tax returns or visa applications, which decreases the need for manual review and boosts efficiency.</p>' +
+    '<h2>AI and ML in healthcare</h2>' +
+    '<p>Another area where AI and ML can have a transformative impact is in healthcare. Large amounts of medical data, including patient records and the outcomes of clinical trials, can be analysed using these technologies in order to find trends and create more efficient therapies. Predictions on the likelihood of certain diseases can also be made using ML algorithms, allowing healthcare providers to intervene at an earlier stage and maybe save lives.</p>' +
+    '<h2>The delivery of education</h2>' +
+    '<p>The delivery of education can also be enhanced by the application of AI and ML. These tools, for instance, can be used to analyse student performance data, pinpoint problem areas, and create individualised learning programs to support difficult students. Similarly, chatbots powered by AI can assist students around-the-clock by responding to their inquiries and offering feedback on their tasks.</p>' +
+    '<h2>Countering risks with a strategic approach</h2>' +
+    '<p>Without a doubt&nbsp;new dangers and challenges accompany the adoption of every new technology. Despite the challenges, the potential advantages of AI and ML in the public sector are substantial. To harness the power of AI and ML effectively, governments must adopt a strategic approach. This entails figuring out which sectors of public service delivery are best suited for new technologies and creating an implementation strategy. To ensure that the technologies are used in a way that satisfies the needs, it is also important to involve stakeholders in this process, including citizens, employees, and industry experts.</p>' +
+    '<h2>Investing in infrastructure and talent</h2>' +
+    '<p>To fully utilise AI and ML, governments must also invest in the appropriate infrastructure and talent. This entails investing in top-notch data infrastructure and ensuring that government employees are equipped with the essential technical skills. To access the resources, governments will also have to collaborate with businesses and academic institutions in the private sector. Besides, governments should prioritise transparency and accountability in the use of AI and ML. Being open and transparent transparent about how these technologies are being applied and giving the public the knowledge they require to comprehend and interact with them.</p>' +
+    '<p>Ultimately, the use of AI and ML in the public sector is not about replacing humans, but rather about empowering them to perform their tasks more effectively.</p>' +
+    '<h2>Conclusion</h2>' +
+    '<p>The next generation of government will be formed on the foundation of AI and ML. These technologies have the potential to transform public services in ways that were previously unimaginable. However, to fully utilise these technologies, governments must adopt a proactive and open strategy and involve stakeholders in the creation and application of AI and ML solutions. By doing so, we can build a brighter future for all citizens.</p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
+  // Category
+  category: getCategoryFromCrudItem(item, MOCK_DATA_POST_CATEGORYS),
+  // Images
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'Three circles',
+  // Author
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
+  // Tags
+  tags: sampleSize(MOCK_DATA_TAGS, 3),
+  ...item,
+}))
 
 export const MOCK_DESIGN_POSTS = [
   {

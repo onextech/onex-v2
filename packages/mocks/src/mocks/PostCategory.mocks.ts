@@ -157,7 +157,54 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
   },
 ]
 
-export const MOCK_DATA_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_DATA_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Benefits of AI',
+    slug: 'benefits-of-ai',
+    description: 'Unleashing the Power of AI.',
+    subtitle: 'Harnessing Artificial Intelligence for exponential growth, improved decision-making, and unparalleled efficiency.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 2,
+    title: 'Future of AI',
+    slug: 'future-of-ai',
+    description: 'Embracing the AI Revolution.',
+    subtitle: 'Exploring the cutting-edge advancements, emerging trends, and transformative potential of Artificial Intelligence.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 3,
+    title: 'AI in Ethics',
+    slug: 'ai-in-ethics',
+    description: 'Navigating the Ethical Landscape of AI.',
+    subtitle: 'Examining the ethical considerations, responsible development, and societal impact of Artificial Intelligence.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 4,
+    title: 'AI in Finance',
+    slug: 'ai-in-finance',
+    description: 'Transforming Finance through AI.',
+    subtitle: 'Revolutionizing financial services, automating processes, and driving data-driven insights using Artificial Intelligence.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+  {
+    id: 5,
+    title: 'AI in Government',
+    slug: 'ai-in-government',
+    description: 'Empowering Governance with AI.',
+    subtitle: 'Enhancing public services, policy-making, and decision support systems through Artificial Intelligence technologies.',
+    hero_src: '/images/about_nodes.png',
+    hero_alt: 'Laser net with nodes',
+  },
+];
+
 
 export const MOCK_POST_CATEGORYS = {
   GROUP: MOCK_GROUP_POST_CATEGORYS,
