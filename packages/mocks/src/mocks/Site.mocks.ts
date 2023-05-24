@@ -64,7 +64,7 @@ export const MOCK_GROUP_SITE: Site = {
   absolute_url: 'https://onexgroup.co',
 
   // Contact
-  general_email: 'info@onextech.com',
+  general_email: 'info@onexgroup.co',
   general_phone: '+65 8922 8242',
   general_whatsapp: '+65 8922 8242',
 
@@ -91,6 +91,8 @@ export const MOCK_TECH_SITE = {
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Tech.',
   cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onextech.com',
 
   // Logo
   logo_width: 95,
@@ -120,6 +122,8 @@ export const MOCK_DESIGN_SITE = {
   cta_title: 'Transform the Enterprise Experience with One X Design.',
   cta_button_title: 'Schedule a Call',
 
+  general_email: 'info@onexdesign.com',
+
   // Logo
   logo_width: 95,
   logo_height: 13,
@@ -147,6 +151,8 @@ export const MOCK_DATA_SITE = {
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Data.',
   cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onexdata.co',
 
   // Logo
   logo_width: 95,
