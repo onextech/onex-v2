@@ -1994,7 +1994,7 @@ export const MOCK_DESIGN_PAGES = [
           },
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Enterprise Design Experts',
             href: routeConfig.HOME,
           },
         ],
@@ -2017,13 +2017,13 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in using technology to create designs that revolutionize the way enterprises operate',
+          'We believe in creating designs that revolutionize the way enterprises think and operate.',
         subtitle:
           '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
         buttons: [
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Enterprise Design Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -2153,19 +2153,19 @@ export const MOCK_DESIGN_PAGES = [
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Building Personalized Enterprise Designs',
+    seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
     seo_description:
-      "{appTitle} creates custom, user-centric designs for Singapore's leading companies.",
+      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
-        title: 'Building Personalized Enterprise Designs',
+        title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} creates custom, user-centric designs for Singapore’s leading companies.",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies..",
       },
       benefits: {
         overline: 'What we do',
-        title: 'Design Thinking for Enterprises',
+        title: 'Delivering Enterprise-Scale Design Solutions',
         subtitle:
           '{appTitle} empowers enterprise businesses with designs built to meet specific needs and requirements.',
         maxWidth: 'xl',

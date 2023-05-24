@@ -117,7 +117,7 @@ export const MOCK_DESIGN_SITE = {
   absolute_url: 'https://www.onexdesign.com',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with One X Design.',
+  cta_title: 'Transform the Enterprise Experience with One X Design.',
   cta_button_title: 'Schedule a Call',
 
   // Logo
