@@ -1722,6 +1722,7 @@ export const MOCK_DATA_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1729,7 +1730,7 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: 'Greetings',
-        title: 'Designing Digital Innovations for Enterprises',
+        title: 'Empowering Enterprises with Data-Driven Innovations',
         buttons: [
           {
             overline: 'What we do',
@@ -1745,10 +1746,10 @@ export const MOCK_DATA_PAGES = [
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
-        title: 'Transforming Enterprises with Exceptional Design Solutions',
+        title: 'Enterprise-Driven Data to build Enterprise-Focused Solutions',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of skilled consultants, designers, and engineers is dedicated to delivering best-in-class UI/UX services tailored to meet the unique needs of enterprises.',
+          'Our team of skilled consultants, designers, and engineers is dedicated to using leading data solutions to deliver transformative outcomes at an enterprise-scale.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1761,9 +1762,9 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in using technology to create designs that revolutionize the way enterprises operate',
+          'We believe in harnessing the power of data to transform and digitalize enterprises.',
         subtitle:
-          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
+          '{appTitle} is a leading data science service provider, specializing in delivering advanced analytics and AI solutions for enterprises in Singapore.',
         buttons: [
           {
             overline: 'Who we are',
@@ -1776,9 +1777,9 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_man_with_laptop_in_city.png',
         hero_alt: 'hero',
         title:
-          'We are here to ignite the power of design in the digital era.',
+          'Unlocking the potential of data in the digital era.',
         subtitle:
-          'We are on a mission to unlock the full potential of the digital economy through exceptional UI/UX solutions.',
+          'We are dedicated to leveraging data science to fuel digital innovation and empower businesses to thrive in the data-driven economy.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -1791,57 +1792,57 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Re-Imagining Designs for Modern Enterprises',
+        title: 'Transformational Data Solutions for Modern Enterprises ',
         subtitle:
-          'We assist enterprise clients in their digital transformation through targeted digital designs that solve problems at the speed and scale of the modern enterprise.',
+          'We empower enterprise clients through cutting-edge data science solutions that drive innovation and growth in the digital landscape.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'shape_circle_radial',
             overline: '01',
-            title: 'Optimize Existing User Interface',
+            title: 'Advanced Data Analytics',
             subtitle:
-              'We conduct in-depth, user-centric analysis of your current design to identify areas for improvement and automation, enhancing efficiency and streamlining workflows for your team and users.',
+              'Harness the power of your enterprise data with advanced analytics techniques, uncovering valuable insights to drive data-informed decision-making and optimize business processes.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Scaling Up the Business',
+            title: 'AI-Powered Solutions',
             subtitle:
-              'We provide support and expertise to scale your design systems, ensuring a consistent and seamless experience for your expanding user base.',
+              'Leverage the potential of artificial intelligence to develop intelligent systems, predictive models, and automated processes that revolutionize the way your enterprise operates.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Empowering Teams',
+            title: 'Data Strategy and Consulting',
             subtitle:
-              'Our interactive workshops equip product teams with the skills and knowledge to create exceptional user experiences, fostering a user-centric mindset within your organization.',
+              'Our expert consultants work closely with your organization to develop tailored data strategies, ensuring data governance, privacy, and security while maximizing the value of your data assets.',
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
             avatar_alt: 'Three overlapping circles',
             overline: '04',
-            title: 'Building Unique User Experiences',
+            title: 'Machine Learning Algorithms',
             subtitle:
-              "We craft personalized designs that captivate users, driving engagement and conversions while aligning with your specific business goals.",
+              "Utilize machine learning algorithms to build robust models that enhance forecasting accuracy, anomaly detection, recommendation systems, and other critical business applications.",
           },
         ],
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Designing for Product Teams',
+        title: 'Driving Data Changes',
         subtitle:
-          'Our designs seek to help clients focus on what really matters.',
+          'Helping enterprises elevate their digital capabilities.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Designs that Work Anywhere, Everywhere',
+        title: 'Global Data for Global Solutions',
         subtitle:
-          'We stand at the forefront of global enterprise design development, working hand-in-hand with enterprises to deliver innovations that can fuel their digital transformation journey. ',
+          'We stand at the forefront of global enterprise data science and AI solutions, working hand-in-hand with enterprises to deliver innovative data-driven solutions that fuel their digital transformation journey.',
         items: [
           {
             title: '100+',
@@ -1878,9 +1879,9 @@ export const MOCK_DATA_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Design Thinking with A Purpose',
+        title: 'Embrace the Data-Driven Future',
         subtitle:
-          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at One X Design to design for change, to design for better. ',
+          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at One X Data to be at the forefront of change.',
         buttons: [
           {
             overline: 'Careers',
@@ -2023,6 +2024,7 @@ export const MOCK_DESIGN_PAGES = [
     slug: 'about',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_title: 'About',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -2060,7 +2062,7 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: '/images/about_nodes.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in using technology to create designs that revolutionize the way enterprises operate',
+          'We believe in using technology to create designs that revolutionize the way enterprises operate.',
         subtitle:
           '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
         buttons: [
