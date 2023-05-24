@@ -61,6 +61,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
           items: [
             {
               avatar_src: '/images/about_shape_circle_radial.svg',
+              avatar_alt: 'Three circles',
               overline: '01',
               title: 'Design a new product',
               subtitle:
@@ -68,6 +69,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
             {
               avatar_src: '/images/about_shape_squares.svg',
+              avatar_alt: 'Three squares',
               overline: '02',
               title: 'Launch a new company',
               subtitle:
@@ -75,6 +77,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
             {
               avatar_src: '/images/about_shape_square_with_circle.svg',
+              avatar_alt: 'Square with two circles',
               overline: '03',
               title: 'Scale up development',
               subtitle:
@@ -82,6 +85,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
             {
               avatar_src: '/images/about_shape_circles.svg',
+              avatar_alt: 'Three circles',
               overline: '04',
               title: 'Improve a current system',
               subtitle:

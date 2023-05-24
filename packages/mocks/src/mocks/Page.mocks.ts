@@ -1043,7 +1043,7 @@ const MOCK_GROUP_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Design a new product',
             subtitle:
@@ -1432,7 +1432,7 @@ const MOCK_TECH_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'User Interface Development',
             subtitle:
@@ -1867,7 +1867,7 @@ export const MOCK_DATA_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Design a new product',
             subtitle:
@@ -1981,6 +1981,7 @@ export const MOCK_DESIGN_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1997,13 +1998,13 @@ export const MOCK_DESIGN_PAGES = [
           },
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Enterprise Design Experts',
             href: routeConfig.HOME,
           },
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'Transforming Enterprises with Exceptional Design Solutions',
         hero_alt: 'Laser net over city',
         subtitle:
@@ -2017,22 +2018,22 @@ export const MOCK_DESIGN_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in using technology to create designs that revolutionize the way enterprises operate',
+          'We believe in creating designs that revolutionize the way enterprises think and operate.',
         subtitle:
           '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
         buttons: [
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Enterprise Design Experts',
             href: routeConfig.CAREERS,
           },
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
           'We are here to ignite the power of design in the digital era.',
@@ -2056,7 +2057,7 @@ export const MOCK_DESIGN_PAGES = [
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
-            avatar_alt: 'shape_circle_radial',
+            avatar_alt: 'Three circles',
             overline: '01',
             title: 'Optimize Existing User Interface',
             subtitle:
@@ -2156,19 +2157,19 @@ export const MOCK_DESIGN_PAGES = [
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Building Personalized Enterprise Designs',
+    seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
     seo_description:
-      "{appTitle} creates custom, user-centric designs for Singapore's leading companies.",
+      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
-        title: 'Building Personalized Enterprise Designs',
+        title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} creates custom, user-centric designs for Singapore’s leading companies.",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore\'s leading companies..",
       },
       benefits: {
         overline: 'What we do',
-        title: 'Design Thinking for Enterprises',
+        title: 'Delivering Enterprise-Scale Design Solutions',
         subtitle:
           '{appTitle} empowers enterprise businesses with designs built to meet specific needs and requirements.',
         maxWidth: 'xl',
@@ -2176,24 +2177,24 @@ export const MOCK_DESIGN_PAGES = [
         items: [
           {
             fa_icon: 'fa-briefcase',
-            title: 'Business',
+            title: 'Design Strategy',
             subtitle:
               'Providing user-centric solutions at enterprise scale and speed.',
-            href: `${routeConfig.SERVICES}/business`,
+            href: `${routeConfig.SERVICES}/design-strategy`,
           },
           {
             fa_icon: 'fa-gem',
-            title: 'Brand',
+            title: 'Enterprise Design System',
             subtitle:
-              'Delivering consistent and unique branding solutions for enterprises.',
-            href: `${routeConfig.SERVICES}/brand`,
+              'Maximizing enterprise value through comprehensive system building.',
+            href: `${routeConfig.SERVICES}/enterprise-design-system`,
           },
           {
             fa_icon: 'fa-lightbulb',
-            title: 'Experience',
+            title: 'UI/UX Design',
             subtitle:
-              'Crafting compelling brand experiences that resonate with users and drive engagement.',
-            href: `${routeConfig.SERVICES}/experience`,
+              'Emphasizing human-centered outcomes, creating relationship-driven experiences.',
+            href: `${routeConfig.SERVICES}/ui-ux-design`,
           },
         ],
       },

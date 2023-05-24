@@ -54,6 +54,7 @@ export const MOCK_GROUP_SITE: Site = {
 
   // Seo
   google_tag_manager_id: '',
+  logo_alt: 'One X Group logo',
 
   // Logo
   logo_width: 110,
@@ -64,7 +65,7 @@ export const MOCK_GROUP_SITE: Site = {
   absolute_url: 'https://onexgroup.co',
 
   // Contact
-  general_email: 'info@onextech.com',
+  general_email: 'info@onexgroup.co',
   general_phone: '+65 8922 8242',
   general_whatsapp: '+65 8922 8242',
 
@@ -84,6 +85,8 @@ export const MOCK_TECH_SITE = {
   // System
   nav_is_ecosystem_visible: false,
 
+  logo_alt: 'One X Tech logo',
+
   // App
   title: 'One X Tech',
   absolute_url: 'https://www.onextech.com',
@@ -91,6 +94,8 @@ export const MOCK_TECH_SITE = {
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Tech.',
   cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onextech.com',
 
   // Logo
   logo_width: 95,
@@ -112,17 +117,30 @@ export const MOCK_DESIGN_SITE = {
   // System
   nav_is_ecosystem_visible: false,
 
+  logo_alt: 'One X Design logo',
+
   // App
   title: 'One X Design',
   absolute_url: 'https://www.onexdesign.com',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with One X Design.',
+  cta_title: 'Transform the Enterprise Experience with One X Design.',
   cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onexdesign.com',
 
   // Logo
   logo_width: 95,
   logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through custom, user-centric designs' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
+    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
+  ]
+
 }
 
 export const MOCK_DATA_SITE = {
@@ -135,9 +153,13 @@ export const MOCK_DATA_SITE = {
   title: 'One X Data',
   absolute_url: 'https://www.onexdata.com',
 
+  logo_alt: 'One X Data logo',
+
   // Cta
   cta_title: 'Modernize Enterprise UI with One X Data.',
   cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onexdata.co',
 
   // Logo
   logo_width: 95,
