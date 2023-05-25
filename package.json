@@ -20,7 +20,8 @@
     "turbo": "turbo",
     "local": "turbo run local",
     "local:unlink": "turbo run local:unlink",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "analyze": "turbo run analyze --parallel"
   },
   "config": {
     "commitizen": {
