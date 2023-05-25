@@ -1,8 +1,6 @@
 const { i18n } = require('./next-i18next.config')
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+const withBundleAnalyzer = process.env.ANALYZE === 'true' ? require('@next/bundle-analyzer')() : x => x
 
 /** @type {import('next').NextConfig} */
 module.exports = withBundleAnalyzer({
