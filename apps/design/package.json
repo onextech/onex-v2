@@ -13,7 +13,8 @@
     "test": "jest",
     "e2e": "playwright test",
     "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics @gravis-os/query @gravis-os/form @gravis-os/fields",
-    "local:unlink": "yalc remove --all"
+    "local:unlink": "yalc remove --all",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@emotion/cache": "latest",
@@ -73,6 +74,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "lint-staged": "^13.1.0",
     "next-router-mock": "^0.9.1",
+    "@next/bundle-analyzer": "^13.4.3",
     "typescript": "latest"
   }
 }
