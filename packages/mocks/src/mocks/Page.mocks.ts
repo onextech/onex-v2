@@ -1341,7 +1341,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
           'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
@@ -1356,7 +1356,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
           'We are here to elevate enterprise digital capability with exceptional user experiences.',
@@ -1413,7 +1413,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         hero_alt: 'Laser net over city',
         subtitle:
