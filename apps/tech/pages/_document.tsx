@@ -2,11 +2,16 @@ import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 import { createEmotionCache, bodyFont, lightTheme } from '@onex/theme'
-import { renderGtmNoScriptTag } from '@gravis-os/analytics'
+import {
+  renderGtmScriptTag,
+  renderGtmNoScriptTag,
+  renderGtmPreconnectLinkTags,
+} from '@gravis-os/analytics'
+import {
+  renderFontAwesomeKitPreconnectLinkTags,
+  renderFontAwesomeKitScriptTag,
+} from '@gravis-os/ui'
 import i18nextConfig from '../next-i18next.config'
-
-const kitName = process.env.NEXT_PUBLIC_FONT_AWESOME_KIT_NAME
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 
 export default class MyDocument extends Document {
   render() {
@@ -22,33 +27,15 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
-          <link rel="preconnect" href="https://www.googletagmanager.com" />
-          <link rel="preconnect" href="https://www.google-analytics.com" />
-          <link rel="preconnect" href="https://ka-p.fontawesome.com" />
-          <link rel="preconnect" href="https://use.fontawesome.com" />
+          {renderFontAwesomeKitPreconnectLinkTags()}
+          {renderGtmPreconnectLinkTags()}
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
         <body>
           <Main />
           <NextScript />
-          <script
-            async
-            id="gtag-base"
-            dangerouslySetInnerHTML={{
-              __html: `
-                  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                  })(window,document,'script','dataLayer', '${GTM_ID}');
-                `,
-            }}
-          />
-          <script
-            async
-            src={`https://kit.fontawesome.com/${kitName}.js`}
-            crossOrigin="anonymous"
-          />
+          {renderFontAwesomeKitScriptTag()}
+          {renderGtmScriptTag()}
         </body>
       </Html>
     )
