@@ -1928,6 +1928,8 @@ export const MOCK_DATA_PAGES = [
       '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
     sections: {
       hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
         overline: '{appTitle}',
         title: 'Digital Transformation with Enterprise-Scale AI',
         subtitle:
