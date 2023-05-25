@@ -134,7 +134,7 @@ export const MOCK_DESIGN_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through custom, user-centric designs' },
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through quality designing' },
     { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
     { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
     { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
@@ -156,7 +156,7 @@ export const MOCK_DATA_SITE = {
   logo_alt: 'One X Data logo',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with One X Data.',
+  cta_title: 'Lead the Digital Revolution with One X Data',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdata.co',
@@ -164,6 +164,15 @@ export const MOCK_DATA_SITE = {
   // Logo
   logo_width: 95,
   logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises using advanced AI and data solutions' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
+    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
+  ]
+  
 }
 
 export const MOCK_SITE = {

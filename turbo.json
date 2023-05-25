@@ -30,6 +30,9 @@
     },
     "local:unlink": {
       "cache": false
+    },
+    "analyze": {
+      "cache": false
     }
   }
 }

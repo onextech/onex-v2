@@ -13,19 +13,20 @@
     "test": "jest",
     "e2e": "playwright test",
     "local": "yalc link @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics @gravis-os/query @gravis-os/form @gravis-os/fields",
-    "local:unlink": "yalc remove --all"
+    "local:unlink": "yalc remove --all",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
-    "@gravis-os/analytics": "^0.0.2",
+    "@gravis-os/analytics": "^0.0.3",
     "@gravis-os/config": "^0.0.5",
     "@gravis-os/landing": "^0.0.46",
     "@gravis-os/query": "^0.0.26",
-    "@gravis-os/theme": "^0.0.8",
-    "@gravis-os/ui": "^0.0.110",
+    "@gravis-os/theme": "^0.0.9",
+    "@gravis-os/ui": "^0.0.111",
     "@gravis-os/utils": "^0.1.1",
     "@mui/icons-material": "latest",
     "@mui/lab": "^5.0.0-alpha.118",
@@ -73,6 +74,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "lint-staged": "^13.1.0",
     "next-router-mock": "^0.9.1",
+    "@next/bundle-analyzer": "^13.4.3",
     "typescript": "latest"
   }
 }

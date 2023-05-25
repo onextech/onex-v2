@@ -833,7 +833,7 @@ export const MOCK_DATA_POSTS = [
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
     category_id: 3,
-    title: 'I for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
+    title: 'AI for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
     slug: 'ai-social-good-solve-public-challenges-ml',
     subtitle: "Harnessing AI for Positive Impact: Tackling Societal Challenges with Advanced Machine Learning",
     hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
@@ -888,8 +888,8 @@ export const MOCK_DATA_POSTS = [
     title: 'Building the Next-Gen Government: How AI and ML are Transforming Public Services for a Better Tomorrow',
     slug: 'building-next-gen-government-ai-ml-transforming-public-services',
     subtitle: "Building a Future-Ready Government: Embracing AI and ML to Revolutionize Public Services",
-    hero_src: 'https://source.unsplash.com/FDTEzCJ11fk/1600x900',
-    hero_alt: 'Arrangement of screws',
+    hero_src: 'https://source.unsplash.com/n31JPLu8_Pw/1600x900',
+    hero_alt: 'People on street',
     html: '<p>The role of government is to serve the people, and in the quickly evolving changing world of today, that means utilising cutting-edge technology to deliver successful public services. Governments around the world are examining how to leverage artificial intelligence (AI) and machine learning (ML), two of the most promising technologies for revolutionising public services, to create the next generation of government.</p>' +
     '<p>At its core, AI is the process of educating robots to learn and think like humans do. The goal of ML as a branch of artificial intelligence, is to create algorithms that can learn from data and forecast what is to come. Together, as a result of the convergence of AI and ML, the delivery of public services by governments, including healthcare and transportation, has the potential to change.</p>' +
     '<h2>Enhanced public sector decision-making</h2>' +

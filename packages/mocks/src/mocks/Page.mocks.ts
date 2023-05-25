@@ -1341,7 +1341,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
           'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
@@ -1356,7 +1356,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
           'We are here to elevate enterprise digital capability with exceptional user experiences.',
@@ -1413,7 +1413,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'We Build Digital Solutions with Enterprises, for Enterprises',
         hero_alt: 'Laser net over city',
         subtitle:
@@ -1772,7 +1772,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'Enterprise-Driven Data to build Enterprise-Focused Solutions',
         hero_alt: 'Laser net over city',
         subtitle:
@@ -1786,7 +1786,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
           'We believe in harnessing the power of data to transform and digitalize enterprises.',
@@ -1801,7 +1801,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title: 'Unlocking the potential of data in the digital era.',
         subtitle:
@@ -1928,6 +1928,8 @@ export const MOCK_DATA_PAGES = [
       '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
     sections: {
       hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
         overline: '{appTitle}',
         title: 'Digital Transformation with Enterprise-Scale AI',
         subtitle:

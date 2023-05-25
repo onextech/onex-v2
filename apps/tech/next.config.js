@@ -1,7 +1,9 @@
 const { i18n } = require('./next-i18next.config')
 
+const withBundleAnalyzer = process.env.ANALYZE === 'true' ? require('@next/bundle-analyzer')() : x => x
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+module.exports = withBundleAnalyzer({
   i18n,
   images: {
     remotePatterns: [
@@ -43,4 +45,4 @@ module.exports = {
     ]
     return config
   },
-}
+})
