@@ -3930,6 +3930,186 @@ export const MOCK_DATA_SERVICES = [
   },
   {
     // Hero
+    category_id: 1,
+    title: 'Data Scraping',
+    slug: 'data-scraping',
+    subtitle: 'Leverage our expertise to extract and analyze data that matter.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Focus on data that can drive your business success.',
+        items: [
+          {
+            title:
+              'In an increasingly data-driven world, it is vital for businesses to extract, analyze, and derive insights from vast amounts of data. We help businesses gather valuable data, enabling them to make informed decisions and stay ahead in the competitive landscape. Using advanced tools and technologies, we ensure the data extracted is accurate, reliable, and relevant. Our team of data professionals work closely with clients to understand their specific requirements and deliver tailored solutions that drive measurable results.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our data scraping services encompass a range of capabilities that enable businesses to extract, process, and leverage data effectively.',
+        items: [
+          {
+            fa_icon: 'fa-cloud-download-alt',
+            title: 'Data extraction',
+            subtitle:
+              'We extract data from various online sources, ensuring it is comprehensive and precise to meet your business requirements.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Web scraping',
+            subtitle:
+              'We use state-of-the-art technologies to scrape web data accurately and efficiently, delivering it in your preferred format.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Database creation',
+            subtitle:
+              'We organize the extracted data into clean, structured databases for easy access and analysis.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data analysis',
+            subtitle:
+              'Our team of data scientists will analyze your data to identify patterns, trends, and insights that can drive your business growth.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data privacy',
+            subtitle:
+              'We ensure all data is handled in compliance with data protection regulations, safeguarding your business and customer information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Ongoing maintenance',
+            subtitle:
+              'We provide ongoing maintenance and support to ensure your data remains updated and reliable.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Explore frequently asked questions about our Data Scraping services and understand how we can support your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data scraping important for my business?',
+            content:
+              'Data scraping allows your business to gather large amounts of data from various sources. This data, when analyzed, can provide valuable insights to help drive strategic business decisions, understand market trends, and deliver enhanced customer experiences.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Scraping service?',
+            content:
+              'Our Data Scraping service enables you to access precise and relevant data swiftly and efficiently. Our expert team ensures that the data gathered is accurate, reliable, and tailored to your specific business needs. We follow best practices in data privacy, making sure all the data collected is handled in compliance with data protection regulations.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the quality of scraped data?',
+            content:
+              'We use advanced tools and techniques to ensure the data we extract is of the highest quality. This includes cross-validation methods and automated checks for data accuracy. Additionally, our ongoing maintenance ensures your data remains up-to-date and relevant.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 1,
+    title: 'Data Visualisation',
+    slug: 'data-visualisation',
+    subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Turning raw data into visual stories.',
+        items: [
+          {
+            title:
+              'As data continues to play an increasingly important role in business decision-making, the ability to understand and communicate data is more crucial than ever. We help enterprises turn raw data into easily understandable, visual stories that drive decision-making through using cutting-edge visualization tools and techniques to present data in a visually engaging, understandable format that reveals patterns, trends, and insights.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a suite of data visualization services tailored to help businesses make the most of their data.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Interactive dashboards',
+            subtitle:
+              'We create interactive dashboards that allow you to explore and interact with your data, facilitating better understanding and decision-making.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Data storytelling',
+            subtitle:
+              'We transform complex data into engaging visual stories that reveal key insights and guide strategic decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Customized reports',
+            subtitle:
+              'We design and develop tailored reports that present data in a clear, concise, and visually appealing manner.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data management',
+            subtitle:
+              'We ensure your data is organized and structured properly for effective visualization.',
+          },
+          {
+            fa_icon: 'fa-eye',
+            title: 'Visual analytics',
+            subtitle:
+              'Our team performs visual analytics to reveal hidden patterns, trends, and insights in your data.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Consulting and strategy',
+            subtitle:
+              'We provide data visualization consulting and strategy services to ensure your data visualization efforts align with your business objectives.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Get answers to frequently asked questions about our Data Visualization service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data visualization important for my business?',
+            content:
+              'Data visualization can help businesses understand complex data and identify new patterns and trends. It allows for easier data interpretation, facilitates quicker decision-making, and helps communicate insights in a clear and effective manner.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data can be visualized?',
+            content:
+              'Almost any type of data can be visualized, provided it is structured appropriately. This includes sales data, customer data, performance data, market research data, and much more. The goal is to transform raw, complex data into visual insights that inform decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the accuracy of visualized data?',
+            content:
+              'We implement rigorous data management practices to ensure the data being visualized is accurate and up-to-date. This includes data cleaning, validation, and regular updates. We also work closely with our clients to understand their data and ensure it is presented accurately.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
     category_id: 2,
     title: 'Data Warehousing',
     slug: 'data-warehousing',
@@ -4200,6 +4380,95 @@ export const MOCK_DATA_SERVICES = [
   },
   {
     // Hero
+    category_id: 2,
+    title: 'Data ETL',
+    slug: 'data-etl',
+    subtitle: 'Optimize your data workflow with our efficient, reliable, and scalable ETL solutions.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Streamlining data extraction, transformation, and loading.',
+        items: [
+          {
+            title: 'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organization. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our comprehensive suite of ETL services is designed to help businesses optimize their data workflows.',
+        items: [
+          {
+            fa_icon: 'fa-cloud-download-alt',
+            title: 'Data extraction',
+            subtitle:
+              'We extract data from various sources, ensuring it is accurate, relevant, and ready for transformation.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data transformation',
+            subtitle:
+              'We transform data into a consistent format that can be easily analyzed and understood.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data loading',
+            subtitle:
+              'We efficiently load transformed data into your target system or data warehouse for further use.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data security',
+            subtitle:
+              'We prioritize data security, ensuring your data remains protected throughout the ETL process.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Data integration',
+            subtitle:
+              'We facilitate seamless data integration, ensuring your data sources work together effectively.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize ETL processes for performance, ensuring your data workflows run smoothly and efficiently.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Data ETL service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of ETL for my business?',
+            content:
+              'ETL is vital for data-driven decision making in businesses. It helps collect data from various sources, clean and organize it, and store it in a manner that\'s optimized for analysis. This facilitates accurate, timely insights that can drive business strategy.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Data ETL service help my business?',
+            content:
+              'Our Data ETL service helps businesses streamline their data workflows. We ensure that data is extracted from various sources, transformed into a consistent format, and loaded into a target system efficiently. This prepares the data for analysis and reporting, enabling businesses to make informed decisions based on accurate data.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure data security during the ETL process?',
+            content:
+              'Data security is a top priority in our ETL processes. We use secure methods for data extraction, transformation, and loading. We also enforce strict access controls and use encryption to protect sensitive data.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
     category_id: 3,
     title: 'Predictive Analytics',
     slug: 'predictive-analytics',
@@ -4463,6 +4732,184 @@ export const MOCK_DATA_SERVICES = [
             title: 'Is ChatGPT customizable for specific domains?',
             content:
               'Yes, ChatGPT can be customized for specific domains by training it on domain-specific datasets and fine-tuning the model. This allows ChatGPT to provide more accurate and relevant responses tailored to your application and industry.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'Prompt Engineering',
+    slug: 'prompt-engineering',
+    subtitle: 'Leverage the power of AI to improve engagement and increase conversions with personalized, context-aware prompts. ',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming interactions with intelligent prompts.',
+        items: [
+          {
+            title: 'In the age of personalization, intelligent prompts can significantly enhance user engagement and satisfaction. We design AI-powered prompts that are timely, relevant, and context-aware, creating a personalized experience for each user. Working with enterprise clients, we leverage deep learning and AI to create prompts that resonate with users and drive conversions. Our prompts are designed to feel natural, improving user experience and boosting customer loyalty.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of AI and data science to deliver intelligent, personalized prompts.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI-driven prompts',
+            subtitle:
+              'We utilize advanced AI algorithms to generate prompts that engage users and drive interactions.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Timely delivery',
+            subtitle:
+              'Our systems ensure that prompts are delivered at the most appropriate times for maximized effectiveness.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Context-aware',
+            subtitle:
+              'We design prompts that take into account the context of the user for increased personalization and relevance.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance optimization',
+            subtitle:
+              'We constantly analyze the performance of our prompts and make adjustments to optimize their effectiveness.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We design prompts with the user in mind, ensuring a seamless and satisfying user experience.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Integration support',
+            subtitle:
+              'We provide support for integrating our prompt systems into your existing workflows and infrastructure.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Prompt Engineering service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Prompt Engineering important for my business?',
+            content:
+              'Prompt Engineering can significantly enhance user engagement and satisfaction by providing personalized, context-aware prompts. These prompts can drive conversions and improve user experience, contributing to increased customer loyalty and business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your Prompt Engineering service work?',
+            content:
+              'Our Prompt Engineering service leverages AI and deep learning to design and deliver intelligent prompts. We work closely with enterprise clients to understand their needs and customize our prompts accordingly. Our systems ensure timely delivery and context-awareness for maximum effectiveness and personalization.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the effectiveness of your prompts?',
+            content:
+              'We continually analyze the performance of our prompts and adjust our strategies based on the insights we gain. We also design our prompts to be user-centric, which increases their relevance and effectiveness.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'OpenAI API Integration',
+    slug: 'openai-api-integration',
+    subtitle: 'Integrate cutting-edge AI solutions into your business processes.',
+    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
+    hero_alt: 'Person writing on a tablet',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving business transformation with OpenAI.',
+        items: [
+          {
+            title: 'The integration of OpenAI APIs can revolutionize your business, enabling automated processes, advanced analytics, and more. Our services help businesses seamlessly incorporate these powerful AI capabilities into their existing systems. We understand the challenges that businesses face when implementing AI solutions. Our team of experts will work closely with you to understand your business needs and design an OpenAI API integration plan that maximizes the potential of AI for your business.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Discover our wide range of capabilities for integrating the OpenAI API into your business systems.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'System Integration',
+            subtitle:
+              'We ensure seamless integration of OpenAI APIs into your existing systems and workflows.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Solutions',
+            subtitle:
+              'We help implement advanced AI capabilities to drive efficiency and innovation in your business processes.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security & Compliance',
+            subtitle:
+              'We prioritize security and compliance in all our integration processes.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Performance Optimization',
+            subtitle:
+              'We monitor and optimize the performance of the integrated APIs to ensure they meet your business needs.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Continuous Updates',
+            subtitle:
+              'We ensure your systems stay up-to-date with the latest API changes and features.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Client Support',
+            subtitle:
+              'We provide ongoing support and maintenance to ensure smooth operation.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our OpenAI API Integration service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is OpenAI API Integration important for my business?',
+            content:
+              'OpenAI API Integration can significantly enhance your business capabilities by introducing AI-driven automation and insights. It can improve efficiency, drive innovation, and give you a competitive edge in the market.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your OpenAI API Integration service work?',
+            content:
+              'Our team of experts will work with you to understand your business needs and design an integration plan. We will then implement the OpenAI APIs into your existing systems, ensuring seamless integration and optimal performance. We also provide ongoing support and updates to ensure your systems stay up-to-date.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What kind of support can I expect after the OpenAI API integration?',
+            content:
+              'We provide continuous support and maintenance post-integration. This includes performance monitoring, handling API updates and changes, and resolving any issues that may arise. Our goal is to ensure the integrated APIs continuously meet your business needs.',
           },
         ],
       },
