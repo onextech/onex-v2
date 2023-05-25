@@ -66,8 +66,8 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'design-strategy',
     subtitle:
       'Providing user-centric solutions at enterprise scale and speed.',
-    hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
-    hero_alt: 'Group working on a laptop together',
+    hero_src: 'https://source.unsplash.com/CGpifH3FjOA/1600x900',
+    hero_alt: 'Man writing on black pad',
   },
   {
     id: 2,
@@ -75,8 +75,8 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'enterprise-design-system',
     subtitle:
       'Maximizing enterprise value through comprehensive system building.',
-    hero_src: 'https://source.unsplash.com/EUsVwEOsblE/1600x900',
-    hero_alt: 'Lit up electronics diagram',
+    hero_src: 'https://source.unsplash.com/cqkbESEkhjk/1600x900',
+    hero_alt: 'Laptop in front of whiteboard',
   },
   {
     id: 3,
@@ -84,8 +84,8 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'ui-ux-design',
     subtitle:
       'Emphasizing human-centered outcomes, creating relationship-driven experiences.',
-    hero_src: 'https://source.unsplash.com/FXFz-sW0uwo/1600x900',
-    hero_alt: 'Laptop with source code',
+    hero_src: 'https://source.unsplash.com/xzzgY__zX8A/1600x900',
+    hero_alt: 'Paper with wireframe sketches',
   },
 ]
 
