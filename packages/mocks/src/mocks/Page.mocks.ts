@@ -1772,7 +1772,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       cta: {
-        hero_src: '/images/about_nodes_above_city.png',
+        hero_src: '/images/about_banner_3.png',
         title: 'Enterprise-Driven Data to build Enterprise-Focused Solutions',
         hero_alt: 'Laser net over city',
         subtitle:
@@ -1786,7 +1786,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       summary: {
-        hero_src: '/images/about_nodes.png',
+        hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
           'We believe in harnessing the power of data to transform and digitalize enterprises.',
@@ -1801,7 +1801,7 @@ export const MOCK_DATA_PAGES = [
         ],
       },
       callout: {
-        hero_src: '/images/about_man_with_laptop_in_city.png',
+        hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title: 'Unlocking the potential of data in the digital era.',
         subtitle:
