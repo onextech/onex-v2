@@ -3,8 +3,9 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 import { createEmotionCache, bodyFont, lightTheme } from '@onex/theme'
 import { renderGtmScriptTag, renderGtmNoScriptTag } from '@gravis-os/analytics'
-import { renderFontAwesomeKitScriptTag } from '@gravis-os/ui'
 import i18nextConfig from '../next-i18next.config'
+
+const kitName = process.env.NEXT_PUBLIC_FONT_AWESOME_KIT_NAME
 
 export default class MyDocument extends Document {
   render() {
@@ -20,13 +21,20 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
-          {renderGtmScriptTag()}
-          {renderFontAwesomeKitScriptTag()}
+          <link rel="preconnect" href="https://www.googletagmanager.com" />
+          <link rel="preconnect" href="https://www.google-analytics.com" />
+          <link
+            rel="preload"
+            as="style"
+            href={`https://kit.fontawesome.com/${kitName}.css`}
+            crossOrigin="anonymous"
+          />
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
         <body>
           <Main />
           <NextScript />
+          {renderGtmScriptTag()}
         </body>
       </Html>
     )
