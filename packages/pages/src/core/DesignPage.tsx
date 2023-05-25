@@ -12,6 +12,7 @@ import {
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
   renderGhostButtonBlockItem,
+  renderClientHighlightsImageMarqueeBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry } from '@onex/types'
@@ -28,7 +29,7 @@ export interface DesignPageProps {
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientTestimonials } = useLayout()
+  const { site, clientLogos, clientTestimonials, clientHighlights } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -106,6 +107,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        // Marquee
+        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Showcases
         renderShowcasesBlock({
           title: (
