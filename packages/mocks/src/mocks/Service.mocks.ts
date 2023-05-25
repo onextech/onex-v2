@@ -3665,8 +3665,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Governance',
     slug: 'data-governance',
     subtitle: 'Craft and implement comprehensive data governance strategies for your enterprise.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
+    hero_alt: 'Data statistics on a laptop',
     // Sections
     sections: {
       summary: {
@@ -3754,8 +3754,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Roadmap Development',
     slug: 'data-roadmap-development',
     subtitle: 'Expert guidance to craft an effective data roadmap aligned with your enterprise goals.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/vv-oEGlN-4E/1600x900',
+    hero_alt: 'Winding road in forested area',
     // Sections
     sections: {
       summary: {
@@ -3844,8 +3844,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Business Intelligence Consulting',
     slug: 'business-intelligence-consulting',
     subtitle: 'Utilize data-driven insights to drive decision making and business growth.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/774sCXD0dDU/1600x900',
+    hero_alt: 'Businessman using laptop',
     // Sections
     sections: {
       summary: {
@@ -3934,8 +3934,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Scraping',
     slug: 'data-scraping',
     subtitle: 'Leverage our expertise to extract and analyze data that matter.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/shr_Xn8S8QU/1600x900',
+    hero_alt: 'Website Analytics Page',
     // Sections
     sections: {
       summary: {
@@ -4024,8 +4024,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Visualisation',
     slug: 'data-visualisation',
     subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/dcULNhRiRrc/1600x900',
+    hero_alt: 'Two coworkers collaborate on a work project',
     // Sections
     sections: {
       summary: {
@@ -4114,8 +4114,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Warehousing',
     slug: 'data-warehousing',
     subtitle: 'Build a solid foundation for your data with our expert data warehousing solutions.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/IlxX7xnbRF8/1600x900',
+    hero_alt: 'Fibre optic cable rack',
     // Sections
     sections: {
       summary: {
@@ -4204,8 +4204,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Pipeline Architecture',
     slug: 'data-pipeline-architecture',
     subtitle: 'Engineer a streamlined, robust data flow for your organization with our expert solutions.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/KU9ABpm7eV8/1600x900',
+    hero_alt: 'Connected data blocks',
     // Sections
     sections: {
       summary: {
@@ -4294,8 +4294,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Big Data Solutions',
     slug: 'big-data-solutions',
     subtitle: 'Harness the power of data to drive growth and innovation in your business with our big data solutions.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/iM8dxccK1sY/1600x900',
+    hero_alt: 'Multiple data screens',
     // Sections
     sections: {
       summary: {
@@ -4384,8 +4384,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data ETL',
     slug: 'data-etl',
     subtitle: 'Optimize your data workflow with our efficient, reliable, and scalable ETL solutions.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/_rZnChsIFuQ/1600x900',
+    hero_alt: '3D illustration of blocks in a blockchain',
     // Sections
     sections: {
       summary: {
@@ -4473,8 +4473,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Predictive Analytics',
     slug: 'predictive-analytics',
     subtitle: 'Leverage the power of data, statistical algorithms, and machine learning techniques for more accurate business forecasts.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/xU5Mqq0Chck/1600x900',
+    hero_alt: 'Sunrise lensball',
     // Sections
     sections: {
       summary: {
@@ -4563,8 +4563,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'AI Automation',
     slug: 'ai-automation',
     subtitle: 'Leverage cutting-edge AI technologies to automate and streamline your business processes.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/UqCCSbAIaDU/1600x900',
+    hero_alt: '3D printer',
     // Sections
     sections: {
       summary: {
@@ -4653,8 +4653,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'ChatGPT Integration',
     slug: 'chatgpt-integration',
     subtitle: 'Enhance your digital capabilities with AI powered by ChatGPT.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/agFmImWyPso/1600x900',
+    hero_alt: 'ChatGPT logo',
     // Sections
     sections: {
       summary: {
@@ -4743,8 +4743,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Prompt Engineering',
     slug: 'prompt-engineering',
     subtitle: 'Leverage the power of AI to improve engagement and increase conversions with personalized, context-aware prompts. ',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
+    hero_alt: 'Miniature blocks and train tracks',
     // Sections
     sections: {
       summary: {
@@ -4832,8 +4832,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'OpenAI API Integration',
     slug: 'openai-api-integration',
     subtitle: 'Integrate cutting-edge AI solutions into your business processes.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/_HnJfS6WhA8/1600x900',
+    hero_alt: 'Colourful cubic components',
     // Sections
     sections: {
       summary: {
