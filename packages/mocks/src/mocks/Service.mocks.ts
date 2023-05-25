@@ -31,10 +31,6 @@ export const MOCK_SERVICE_PAGE = {
           title:
             'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
-        {
-          title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
-        },
       ],
     },
     benefits: {
@@ -2620,8 +2616,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'ux-strategy-consulting',
     category_id: 1,
     subtitle: 'Leverage our design expertise to formulate a user experience strategy that aligns with your business goals.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
+    hero_alt: 'Man explaining ideas at table',
     // Sections
     sections: {
       summary: {
@@ -2710,8 +2706,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'design-thinking-workshop',
     category_id: 1,
     subtitle: 'Engage with design specialists to discover innovative solutions tailored for your enterprise.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/zoCDWPuiRuA/1600x900',
+    hero_alt: 'Board with post-its',
     // Sections
     sections: {
       summary: {
@@ -2800,8 +2796,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'user-research-insights',
     category_id: 1,
     subtitle: 'We identify underlying issues and key challenges from the perspectives of important stakeholders.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/w00FkE6e8zE/1600x900',
+    hero_alt: 'People sticking post-its',
     // Sections
     sections: {
       summary: {
@@ -2890,8 +2886,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'application-testing-usability-evaluation',
     category_id: 1,
     subtitle: 'Ensure the highest quality and usability of your products with our comprehensive testing and evaluation services.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/gcsNOsPEXfs/1600x900',
+    hero_alt: 'Man highlighting paper',
     // Sections
     sections: {
       summary: {
@@ -2980,8 +2976,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'enterprise-ui-library',
     category_id: 2,
     subtitle: 'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/ubIWo074QlU/1600x900',
+    hero_alt: 'Laptop with icons',
     // Sections
     sections: {
       summary: {
@@ -3070,8 +3066,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'design-system-implementation',
     category_id: 2,
     subtitle: 'Build consistency, improve usability, and streamline your design process with our design system implementation service.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/FlPc9_VocJ4/1600x900',
+    hero_alt: 'People pointing at laptop',
     // Sections
     sections: {
       summary: {
@@ -3160,8 +3156,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'design-principles-guidelines',
     category_id: 2,
     subtitle: 'Establish foundational design principles and guidelines that drive product design decisions and foster innovative solutions.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/T6fDN60bMWY/1600x900',
+    hero_alt: 'Design on screen',
     // Sections
     sections: {
       summary: {
@@ -3250,8 +3246,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'dashboard-design',
     category_id: 3,
     subtitle: 'Creating exceptional dashboard layouts that offer a seamless and intuitive user experience.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/JKUTrJ4vK00/1600x900',
+    hero_alt: 'Dashboard on screen',
     // Sections
     sections: {
       summary: {
@@ -3340,8 +3336,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'web-mobile-app-design',
     category_id: 3,
     subtitle: 'Designing exceptional applications built to elevate the enterprise user experience.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/sv8oOQaUb-o/1600x900',
+    hero_alt: 'Mobile wireframes on paper',
     // Sections
     sections: {
       summary: {
@@ -3430,8 +3426,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'ui-ux-revamp',
     category_id: 3,
     subtitle: 'Upgrade your business with an enhanced UI/UX design, created with the expertise of our specialized team.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/wusOJ-2uY6w/1600x900',
+    hero_alt: 'People discussing wireframes',
     // Sections
     sections: {
       summary: {
@@ -3520,8 +3516,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'design-team-augmentation',
     category_id: 3,
     subtitle: 'Boost your design projects by incorporating our specialized team into your existing infrastructure. Expand your design capabilities with our experienced and highly-skilled team.',
-    hero_src: 'https://source.unsplash.com/KxVlKiqQObU/1600x900',
-    hero_alt: 'Person writing on a tablet',
+    hero_src: 'https://source.unsplash.com/bzqU01v-G54/1600x900',
+    hero_alt: 'Man pointing to computer screen',
     // Sections
     sections: {
       summary: {

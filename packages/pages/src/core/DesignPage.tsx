@@ -11,10 +11,13 @@ import {
   renderFaqsAccordionBlock,
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
+  renderGhostButtonBlockItem,
+  renderClientHighlightsImageMarqueeBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry } from '@onex/types'
 import { useRouter } from 'next/router'
+import { routeConfig } from '@onex/common'
 
 export interface DesignPageProps {
   page: Page
@@ -26,7 +29,7 @@ export interface DesignPageProps {
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientTestimonials } = useLayout()
+  const { site, clientLogos, clientTestimonials, clientHighlights } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -38,22 +41,62 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderLeftHeroWithBackgroundBlock({
-          ...hero,
-          pt: { xs: 10, md: 18 },
-          pb: { xs: 3, md: 15 },
-          hero_src: '/images/hero_background_black_minimal.svg',
-          hero_alt: 'Black minimalistic background',
-          image_src: '/images/hero_glass_window_ui_grey.png',
-          image_alt: 'Website with trend analysis',
-          // image_src dimensions
-          imageProps: { ar: '643:572' } as any,
-          buttonProps: {
-            overline: 'Get Started',
-            title: cta_button_title,
-            isCta: true,
+        {
+          dark: true,
+          key: 'design-impact',
+          centerOnMobile: true,
+          pt: { xs: 20, xl: 20 },
+          pb: { xs: 20, xl: 70 },
+          backgroundImageProps: {
+            src: '/images/design_hero.png',
+            alt: 'hero',
+            sx: { opacity: 0.2 },
           },
-        }),
+          items: [
+            { type: 'overline', title: hero.overline },
+            {
+              type: 'h2',
+              title: hero.title,
+              titleProps: { gutterBottom: true },
+            },
+            {
+              type: 'subtitle1',
+              title: hero.subtitle,
+              titleProps: { color: 'text.secondary', maxWidth: '50%' },
+            },
+            {
+              type: 'stack',
+              sx: { mt: 3 },
+              stackProps: {
+                spacing: 0,
+                direction: 'row',
+                reverseDirectionOnMobile: true,
+              },
+              stackItems: [
+                {
+                  items: [
+                    renderGhostButtonBlockItem({
+                      overline: 'What we do',
+                      title: 'Smarter Businesses',
+                      size: 'lg',
+                      href: routeConfig.SERVICES,
+                    }),
+                  ],
+                },
+                {
+                  items: [
+                    renderGhostButtonBlockItem({
+                      overline: 'Who we are',
+                      title: 'Enterprise Design Experts',
+                      size: 'lg',
+                      href: routeConfig.CAREERS,
+                    }),
+                  ],
+                },
+              ],
+            },
+          ],
+        },
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -64,6 +107,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        // Marquee
+        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Showcases
         renderShowcasesBlock({
           title: (
