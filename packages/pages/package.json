@@ -13,9 +13,9 @@
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
-    "@gravis-os/landing": "^0.0.46",
-    "@gravis-os/ui": "^0.0.111",
-    "@gravis-os/utils": "^0.1.1",
+    "@gravis-os/landing": "^0.0.47",
+    "@gravis-os/ui": "^0.0.112",
+    "@gravis-os/utils": "^0.1.2",
     "lodash": "^4.17.21",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
