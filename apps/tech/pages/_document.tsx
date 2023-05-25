@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script
-            defer
+            async
             id="gtag-base"
             dangerouslySetInnerHTML={{
               __html: `
@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
             }}
           />
           <script
-            defer
+            async
             src={`https://kit.fontawesome.com/${kitName}.js`}
             crossOrigin="anonymous"
           />
