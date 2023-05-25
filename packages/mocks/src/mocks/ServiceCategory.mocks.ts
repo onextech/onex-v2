@@ -57,7 +57,35 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
   },
 ]
 
-export const MOCK_DATA_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_DATA_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Data Strategy',
+    slug: 'data-strategy',
+    subtitle:
+      'Crafting holistic data management plans, governance, and value analysis to empower data-driven decision-making.',
+    hero_src: 'https://source.unsplash.com/mcSDtbWXUZU/1600x900',
+    hero_alt: 'Laptop with statistics on sofa',
+  },
+  {
+    id: 2,
+    title: 'Data Engineering',
+    slug: 'data-engineering',
+    subtitle:
+      'Designing robust data warehousing, integration, and big data solutions for efficient storage, retrieval, and analysis.',
+    hero_src: 'https://source.unsplash.com/f4pUuCc3M0g/1600x900',
+    hero_alt: 'Laptop displaying graph of datapoints',
+  },
+  {
+    id: 3,
+    title: 'AI Solutions',
+    slug: 'ai-solutions',
+    subtitle:
+      'Building tailored AI models, automating processes, and providing strategic advisory for transformative business intelligence.',
+    hero_src: 'https://source.unsplash.com/LaKwLAmcnBc/1600x900',
+    hero_alt: 'Neuroscience art',
+  },
+]
 
 export const MOCK_DESIGN_SERVICE_CATEGORYS = [
   {

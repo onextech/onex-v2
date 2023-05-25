@@ -2,6 +2,7 @@ import merge from 'lodash/merge'
 import { routeConfig } from '@onex/common'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 import {
+  MOCK_DATA_SERVICE_CATEGORYS,
   MOCK_DESIGN_SERVICE_CATEGORYS,
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_TECH_SERVICE_CATEGORYS,
@@ -3653,7 +3654,1315 @@ export const MOCK_DESIGN_SERVICES = [
   })
 })
 
-export const MOCK_DATA_SERVICES = MOCK_TECH_SERVICES
+export const MOCK_DATA_SERVICES = [
+  {
+    // Hero
+    category_id: 1,
+    title: 'Data Governance',
+    slug: 'data-governance',
+    subtitle: 'Craft and implement comprehensive data governance strategies for your enterprise.',
+    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
+    hero_alt: 'Data statistics on a laptop',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Ensure the quality, integrity, and security of your business data.',
+        items: [
+          {
+            title:
+              'In today\'s data-centric world, data governance is crucial to ensuring the quality, integrity, and security of your business data. We specialize in crafting and implementing comprehensive data governance strategies tailored to your enterprise. Our team of experts takes a proactive approach, enabling you to stay ahead of regulatory requirements, manage risk, and promote data accountability within your organization. We believe in establishing a strong data culture that not only meets compliance requirements but also fuels data-driven innovation.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle: 'To ensure effective data governance, we provide a range of expert services.',
+        items: [
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Strategy and Roadmap',
+            subtitle:
+              'We help you define a comprehensive data governance strategy and a clear roadmap for implementation.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Privacy and Security',
+            subtitle:
+              'We ensure the privacy and security of your data, helping you meet regulatory compliance and protect sensitive information.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Quality Management',
+            subtitle:
+              'We implement procedures to enhance data quality, ensuring accuracy, consistency, and completeness across all data assets.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Organizational Alignment',
+            subtitle:
+              'We promote data accountability across your organization, driving data stewardship and fostering a data-conscious culture.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Metrics and Measurement',
+            subtitle:
+              'We set and track key performance indicators to evaluate the effectiveness of your data governance strategy.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your teams to align your data governance strategy with your business objectives, ensuring that it supports your overall goals and delivers value.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Governance Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data governance important for my business?',
+            content:
+              'Effective data governance ensures the quality, consistency, and security of your business data. This not only helps you meet regulatory compliance, but also promotes data accountability within your organization, leading to more accurate, data-driven decisions and business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Data Governance Service?',
+            content:
+              'Our Data Governance Service provides a comprehensive approach to managing your data assets. We help you craft and implement a data governance strategy that aligns with your business objectives. This includes defining a clear roadmap, ensuring data privacy and security, managing data quality, aligning your organization, and setting key performance indicators for ongoing evaluation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data governance?',
+            content:
+              'We take a proactive approach to data governance, starting with understanding your business objectives and data landscape. We then craft a comprehensive data governance strategy and implementation roadmap. We also prioritize data quality, privacy and security, organizational alignment, and performance measurement to ensure your data governance is effective and brings value to your organization.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 1,
+    title: 'Data Roadmap Development',
+    slug: 'data-roadmap-development',
+    subtitle: 'Expert guidance to craft an effective data roadmap aligned with your enterprise goals.',
+    hero_src: 'https://source.unsplash.com/vv-oEGlN-4E/1600x900',
+    hero_alt: 'Winding road in forested area',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Crafting data roadmaps that accelerate business growth.',
+        items: [
+          {
+            title:
+              'In a data-driven era, an effective data roadmap is pivotal for successful business strategy. We specialize in creating detailed, scalable data roadmaps that align with your business objectives. Our experts understand the importance of a well-planned data strategy. We work closely with your teams, understanding your business vision and existing data landscape, to craft roadmaps that guide your data initiatives and drive growth.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a range of services to ensure the development of an efficient and effective data roadmap.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Strategy Formulation',
+            subtitle:
+              'We work with you to define a clear data strategy that aligns with your business objectives and guides your data initiatives.',
+          },
+          {
+            fa_icon: 'fa-road',
+            title: 'Roadmap Development',
+            subtitle:
+              "We create a detailed, scalable data roadmap that outlines your data initiatives and how they'll be executed.",
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Project Planning',
+            subtitle:
+              'We help you plan your data projects, defining clear objectives, timelines, and responsibilities.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance Metrics',
+            subtitle:
+              'We define key performance indicators to measure the success of your data initiatives and adjust the roadmap as needed.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Technological Advice',
+            subtitle:
+              'We provide advice on the best data technologies and tools that align with your data strategy and roadmap.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Roadmap Iteration',
+            subtitle:
+              'We continuously revisit and update your data roadmap based on business changes, technological advancements, and performance metrics.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Roadmap Development Service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a data roadmap important for my business?',
+            content:
+              'A data roadmap provides a strategic framework for your data initiatives, aligning them with your business objectives. It outlines the steps needed to achieve your data goals and provides a clear vision of your data future. This helps ensure efficient use of resources, facilitates better decision making, and accelerates business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Data Roadmap Development Service?',
+            content:
+              'Our Data Roadmap Development Service specializes in crafting detailed, scalable data roadmaps. We work closely with you, understanding your business vision and data landscape, to align your data initiatives with your business objectives. Our comprehensive approach ensures you have a clear data strategy, effective project planning, suitable performance metrics, and continuous roadmap iterations for sustained growth.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you develop a data roadmap?',
+            content:
+              'We start by understanding your business objectives and existing data landscape. From there, we define a clear data strategy and outline the data initiatives needed to achieve this strategy. We then craft a detailed, scalable roadmap, plan your data projects, define key performance indicators, and provide advice on suitable data technologies. We also continuously revisit and update the roadmap based on changes in your business, technology, or performance metrics.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 1,
+    title: 'Business Intelligence Consulting',
+    slug: 'business-intelligence-consulting',
+    subtitle: 'Utilize data-driven insights to drive decision making and business growth.',
+    hero_src: 'https://source.unsplash.com/774sCXD0dDU/1600x900',
+    hero_alt: 'Businessman using laptop',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming data into actionable business insights.',
+        items: [
+          {
+            title:
+              'Given the competitive landscape enterprises find themselves in, making informed decisions is key to success. Our consulting service leverages cutting-edge technologies and proven methodologies to turn your data into meaningful insights. We work closely with your team to understand your business objectives and challenges. Our consultants provide expert guidance to help you make the most of your data, fostering a data-driven culture within your organization.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive range of services to help you maximize the value of your data.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analytics',
+            subtitle:
+              'We utilize sophisticated data analysis techniques to uncover patterns and trends in your data.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              "We help you manage your data effectively to ensure it's always ready for analysis.",
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data Infrastructure',
+            subtitle:
+              'We guide you in building a robust data infrastructure that supports your business intelligence needs.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'BI Tools Implementation',
+            subtitle:
+              'We implement leading BI tools tailored to your specific needs, ensuring you have the right technology in place.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insight Generation',
+            subtitle:
+              'We transform raw data into actionable insights that inform business strategy and decision-making.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Training and Support',
+            subtitle:
+              'We provide training and ongoing support to foster a data-driven culture within your organization.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Business Intelligence Consulting Service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is business intelligence important for my enterprise?',
+            content:
+              'Business Intelligence (BI) provides crucial insights into your operations, customer behavior, and market trends. It allows you to make data-driven decisions, optimize processes, and drive business growth. Without BI, your decisions are likely based on intuition rather than evidence, which can lead to inefficiencies and missed opportunities.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Business Intelligence Consulting Service?',
+            content:
+              'We offer comprehensive BI consulting services, helping you manage your data, implement the right BI tools, and generate actionable insights. Our team of experts works closely with your organization, providing tailored solutions that align with your business objectives. We also provide training and support, ensuring your team is equipped to leverage your BI infrastructure effectively.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach business intelligence consulting?',
+            content:
+              'We start by understanding your business objectives, data landscape, and current challenges. We then provide expert guidance on managing your data, choosing and implementing BI tools, and interpreting data outputs. We also offer training to foster a data-driven culture within your organization, ensuring your team can effectively use your BI tools and interpret the insights they provide.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 1,
+    title: 'Data Scraping',
+    slug: 'data-scraping',
+    subtitle: 'Leverage our expertise to extract and analyze data that matter.',
+    hero_src: 'https://source.unsplash.com/shr_Xn8S8QU/1600x900',
+    hero_alt: 'Website Analytics Page',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Focus on data that can drive your business success.',
+        items: [
+          {
+            title:
+              'In an increasingly data-driven world, it is vital for businesses to extract, analyze, and derive insights from vast amounts of data. We help businesses gather valuable data, enabling them to make informed decisions and stay ahead in the competitive landscape. Using advanced tools and technologies, we ensure the data extracted is accurate, reliable, and relevant. Our team of data professionals work closely with clients to understand their specific requirements and deliver tailored solutions that drive measurable results.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our data scraping services encompass a range of capabilities that enable businesses to extract, process, and leverage data effectively.',
+        items: [
+          {
+            fa_icon: 'fa-cloud-download-alt',
+            title: 'Data extraction',
+            subtitle:
+              'We extract data from various online sources, ensuring it is comprehensive and precise to meet your business requirements.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Web scraping',
+            subtitle:
+              'We use state-of-the-art technologies to scrape web data accurately and efficiently, delivering it in your preferred format.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Database creation',
+            subtitle:
+              'We organize the extracted data into clean, structured databases for easy access and analysis.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data analysis',
+            subtitle:
+              'Our team of data scientists will analyze your data to identify patterns, trends, and insights that can drive your business growth.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data privacy',
+            subtitle:
+              'We ensure all data is handled in compliance with data protection regulations, safeguarding your business and customer information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Ongoing maintenance',
+            subtitle:
+              'We provide ongoing maintenance and support to ensure your data remains updated and reliable.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Explore frequently asked questions about our Data Scraping services and understand how we can support your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data scraping important for my business?',
+            content:
+              'Data scraping allows your business to gather large amounts of data from various sources. This data, when analyzed, can provide valuable insights to help drive strategic business decisions, understand market trends, and deliver enhanced customer experiences.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Scraping service?',
+            content:
+              'Our Data Scraping service enables you to access precise and relevant data swiftly and efficiently. Our expert team ensures that the data gathered is accurate, reliable, and tailored to your specific business needs. We follow best practices in data privacy, making sure all the data collected is handled in compliance with data protection regulations.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the quality of scraped data?',
+            content:
+              'We use advanced tools and techniques to ensure the data we extract is of the highest quality. This includes cross-validation methods and automated checks for data accuracy. Additionally, our ongoing maintenance ensures your data remains up-to-date and relevant.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 1,
+    title: 'Data Visualisation',
+    slug: 'data-visualisation',
+    subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
+    hero_src: 'https://source.unsplash.com/dcULNhRiRrc/1600x900',
+    hero_alt: 'Two coworkers collaborate on a work project',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Turning raw data into visual stories.',
+        items: [
+          {
+            title:
+              'As data continues to play an increasingly important role in business decision-making, the ability to understand and communicate data is more crucial than ever. We help enterprises turn raw data into easily understandable, visual stories that drive decision-making through using cutting-edge visualization tools and techniques to present data in a visually engaging, understandable format that reveals patterns, trends, and insights.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a suite of data visualization services tailored to help businesses make the most of their data.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Interactive dashboards',
+            subtitle:
+              'We create interactive dashboards that allow you to explore and interact with your data, facilitating better understanding and decision-making.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Data storytelling',
+            subtitle:
+              'We transform complex data into engaging visual stories that reveal key insights and guide strategic decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Customized reports',
+            subtitle:
+              'We design and develop tailored reports that present data in a clear, concise, and visually appealing manner.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data management',
+            subtitle:
+              'We ensure your data is organized and structured properly for effective visualization.',
+          },
+          {
+            fa_icon: 'fa-eye',
+            title: 'Visual analytics',
+            subtitle:
+              'Our team performs visual analytics to reveal hidden patterns, trends, and insights in your data.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Consulting and strategy',
+            subtitle:
+              'We provide data visualization consulting and strategy services to ensure your data visualization efforts align with your business objectives.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Get answers to frequently asked questions about our Data Visualization service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data visualization important for my business?',
+            content:
+              'Data visualization can help businesses understand complex data and identify new patterns and trends. It allows for easier data interpretation, facilitates quicker decision-making, and helps communicate insights in a clear and effective manner.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data can be visualized?',
+            content:
+              'Almost any type of data can be visualized, provided it is structured appropriately. This includes sales data, customer data, performance data, market research data, and much more. The goal is to transform raw, complex data into visual insights that inform decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the accuracy of visualized data?',
+            content:
+              'We implement rigorous data management practices to ensure the data being visualized is accurate and up-to-date. This includes data cleaning, validation, and regular updates. We also work closely with our clients to understand their data and ensure it is presented accurately.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 2,
+    title: 'Data Warehousing',
+    slug: 'data-warehousing',
+    subtitle: 'Build a solid foundation for your data with our expert data warehousing solutions.',
+    hero_src: 'https://source.unsplash.com/IlxX7xnbRF8/1600x900',
+    hero_alt: 'Fibre optic cable rack',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Streamlining data storage and accessibility.',
+        items: [
+          {
+            title:
+              'In the era of data-driven decision making, a well-designed data warehouse is a powerful tool. We focus on building structured, efficient, and reliable data warehouses that cater to your specific business needs. We believe in the power of data to drive insights and innovation. Our team of data professionals works to align your data infrastructure with your business goals, ensuring seamless operation and maximum utility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our service covers every aspect of data warehousing to ensure your data is handled with utmost efficiency.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Architecture',
+            subtitle:
+              'We design robust data architectures that effectively manage large volumes of data.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Data Integration',
+            subtitle:
+              'We ensure seamless integration of disparate data sources into a unified, accessible system.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data Transformation',
+            subtitle:
+              'We convert raw data into a more suitable format for reporting and analysis.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Security',
+            subtitle:
+              'We implement strict security measures to safeguard your valuable data assets.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Data Lifecycle Management',
+            subtitle:
+              'We oversee the entire data lifecycle, from creation and maintenance to retirement.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Consultation and Training',
+            subtitle:
+              'We offer expert consultation and training to your team for effective data warehouse management.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Warehousing Service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a well-structured data warehouse important for my business?',
+            content:
+              'A well-structured data warehouse centralizes your data, improving accessibility and reliability. It enables efficient data analysis and reporting, leading to informed business decisions and strategies. Additionally, a well-managed data warehouse ensures data security and compliance with data regulations.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Warehousing Service?',
+            content:
+              'Our Data Warehousing Service offers a comprehensive approach to data management. We handle every aspect, from designing robust data architectures, integrating disparate data sources, managing the data lifecycle, to ensuring top-notch data security. We work closely with your team, providing consultation and training to enable effective use of your data warehouse.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your approach to data warehousing?',
+            content:
+              'We start by understanding your business needs and existing data infrastructure. Based on this, we design a tailored data architecture, followed by integrating data sources, transforming data for analysis, and implementing data security measures. We oversee the entire data lifecycle and provide expert consultation and training to your team.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 2,
+    title: 'Data Pipeline Architecture',
+    slug: 'data-pipeline-architecture',
+    subtitle: 'Engineer a streamlined, robust data flow for your organization with our expert solutions.',
+    hero_src: 'https://source.unsplash.com/KU9ABpm7eV8/1600x900',
+    hero_alt: 'Connected data blocks',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Architecting the backbone of your data operations.',
+        items: [
+          {
+            title:
+              'We focus on engineering efficient data flows that allow your organization to manage and utilize data effectively. In a world of data-driven decisions, a well-designed data pipeline is crucial. We prioritize scalability, reliability, and performance when designing your data pipeline architecture. Our team of experts ensures your data infrastructure aligns with your business goals and supports your growth.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'From data ingestion to processing and storage, we cover all aspects of data pipeline architecture.',
+        items: [
+          {
+            fa_icon: 'fa-arrow-circle-right',
+            title: 'Data Ingestion',
+            subtitle:
+              'We facilitate seamless data ingestion from various sources into your data pipeline.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data Processing',
+            subtitle:
+              'We implement robust data processing mechanisms to cleanse, validate, and transform your data.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Storage',
+            subtitle:
+              'We design reliable and scalable data storage solutions to house your processed data.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Security',
+            subtitle:
+              'We prioritize data security, implementing rigorous protocols to protect your valuable data.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Optimization',
+            subtitle:
+              'We optimize your data pipeline for high performance, ensuring rapid data flow and processing.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Consultation and Training',
+            subtitle:
+              'We offer expert consultation and training to your team for efficient data pipeline management.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Pipeline Architecture service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a well-designed data pipeline crucial for my business?',
+            content:
+              'A well-designed data pipeline is essential for handling data effectively. It enables seamless data flow, accurate processing, secure storage, and ultimately, better decision-making. With a robust data pipeline, your business can achieve improved operational efficiency, quicker insights, and enhanced data-driven strategies.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Pipeline Architecture service?',
+            content:
+              'Our service offers end-to-end solutions for your data pipeline needs. From efficient data ingestion and processing to secure storage and performance optimization, we cover all aspects. Our team works closely with you, understanding your unique needs, and designs a data pipeline architecture that aligns with your business goals. We also provide consultation and training for effective management of your data infrastructure.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the scalability of the data pipeline?',
+            content:
+              'We understand that as your business grows, your data needs will also evolve. We design the data pipeline architecture with scalability as a priority. This includes choosing scalable data storage solutions, implementing mechanisms for efficient data processing even with increasing volumes, and ensuring that the architecture can accommodate additional data sources in the future.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 2,
+    title: 'Big Data Solutions',
+    slug: 'big-data-solutions',
+    subtitle: 'Harness the power of data to drive growth and innovation in your business with our big data solutions.',
+    hero_src: 'https://source.unsplash.com/iM8dxccK1sY/1600x900',
+    hero_alt: 'Multiple data screens',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Making data work for your business.',
+        items: [
+          {
+            title:
+              'With the exponential growth in data, enterprises today are challenged by the need to extract actionable insights from these vast data sets. Our big data solutions are designed to help enterprises leverage the power of data to drive growth, efficiency, and innovation. We have a team of data experts who specialize in managing, processing, and analyzing large data sets. Using state-of-the-art technologies and techniques, we deliver solutions that enable businesses to access, analyze, and use their data effectively and efficiently.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We deliver end-to-end big data solutions tailored to your business needs, providing you with actionable insights and enabling data-driven decision-making.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data management',
+            subtitle:
+              'We ensure efficient data management, allowing for the secure storage, retrieval, and processing of large volumes of data.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics',
+            subtitle:
+              'We provide advanced analytics capabilities, helping you to gain insights and drive decision-making from your data.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data processing',
+            subtitle:
+              'We design and implement robust data processing pipelines to handle complex and large-scale data efficiently.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data security',
+            subtitle:
+              'We implement stringent data security measures to ensure the protection and privacy of your data.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Data integration',
+            subtitle:
+              'We integrate data from disparate sources, providing a unified view of your business data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI and ML integration',
+            subtitle:
+              'We leverage AI and machine learning to extract valuable insights and automate processes, enhancing your business performance.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Big Data Solutions Service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is big data important for my business?',
+            content:
+              'Big data can provide insights that enable you to make more informed decisions, identify new opportunities, improve customer service, and optimize operational efficiency. Effectively leveraging big data can lead to significant business growth and competitive advantage.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of big data solutions does your company provide?',
+            content:
+              'Our big data solutions encompass a broad range of services including data management, data analytics, data processing, data security, data integration, and the integration of AI and machine learning technologies. We tailor our solutions based on your specific business needs and goals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can I be sure that my data is secure?',
+            content:
+              'We prioritize data security in all of our solutions. We implement stringent security measures and follow best practices in data encryption, access control, and compliance to ensure the privacy and protection of your data.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 2,
+    title: 'Data ETL',
+    slug: 'data-etl',
+    subtitle: 'Optimize your data workflow with our efficient, reliable, and scalable ETL solutions.',
+    hero_src: 'https://source.unsplash.com/_rZnChsIFuQ/1600x900',
+    hero_alt: '3D illustration of blocks in a blockchain',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Streamlining data extraction, transformation, and loading.',
+        items: [
+          {
+            title: 'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organization. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our comprehensive suite of ETL services is designed to help businesses optimize their data workflows.',
+        items: [
+          {
+            fa_icon: 'fa-cloud-download-alt',
+            title: 'Data extraction',
+            subtitle:
+              'We extract data from various sources, ensuring it is accurate, relevant, and ready for transformation.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data transformation',
+            subtitle:
+              'We transform data into a consistent format that can be easily analyzed and understood.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data loading',
+            subtitle:
+              'We efficiently load transformed data into your target system or data warehouse for further use.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data security',
+            subtitle:
+              'We prioritize data security, ensuring your data remains protected throughout the ETL process.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Data integration',
+            subtitle:
+              'We facilitate seamless data integration, ensuring your data sources work together effectively.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Performance optimization',
+            subtitle:
+              'We optimize ETL processes for performance, ensuring your data workflows run smoothly and efficiently.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Data ETL service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of ETL for my business?',
+            content:
+              'ETL is vital for data-driven decision making in businesses. It helps collect data from various sources, clean and organize it, and store it in a manner that\'s optimized for analysis. This facilitates accurate, timely insights that can drive business strategy.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Data ETL service help my business?',
+            content:
+              'Our Data ETL service helps businesses streamline their data workflows. We ensure that data is extracted from various sources, transformed into a consistent format, and loaded into a target system efficiently. This prepares the data for analysis and reporting, enabling businesses to make informed decisions based on accurate data.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure data security during the ETL process?',
+            content:
+              'Data security is a top priority in our ETL processes. We use secure methods for data extraction, transformation, and loading. We also enforce strict access controls and use encryption to protect sensitive data.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'Predictive Analytics',
+    slug: 'predictive-analytics',
+    subtitle: 'Leverage the power of data, statistical algorithms, and machine learning techniques for more accurate business forecasts.',
+    hero_src: 'https://source.unsplash.com/xU5Mqq0Chck/1600x900',
+    hero_alt: 'Sunrise lensball',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Turning current data into actionable insights of the future.',
+        items: [
+          {
+            title:
+              'In a world powered by data, predictive analytics can make the difference between staying ahead or falling behind. With our predictive analytics services, we enable you to anticipate trends, predict future outcomes, and make data-driven decisions. We combine our expertise in data science, statistics, and machine learning to analyze current data and make accurate predictions about the future. This empowers your business to identify opportunities, mitigate risks, and create strategic plans for success.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We are experts in extracting value from data, using advanced statistical techniques and machine learning models.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analysis',
+            subtitle:
+              'We analyze your data to identify patterns and trends, providing a solid foundation for accurate predictions.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Machine Learning Models',
+            subtitle:
+              'We apply machine learning models to your data, enhancing the accuracy of our predictive analytics.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management',
+            subtitle:
+              'Our predictive models help you identify potential risks and develop strategies to mitigate them.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insight Generation',
+            subtitle:
+              'We transform complex data into actionable insights that can drive decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Continuous Optimization',
+            subtitle:
+              'Our models are continuously updated and optimized to reflect changes in your data and ensure accurate predictions.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to understand your business objectives and tailor our predictive analytics to meet your specific needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Predictive Analytics Service and how we can empower your business decision making.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is predictive analytics important for my business?',
+            content:
+              'Predictive analytics can help your business anticipate future trends, identify opportunities, and make data-driven decisions. It provides a competitive edge by enabling you to understand customer behavior, predict market trends, manage risks, and optimize operational efficiency.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of using your Predictive Analytics Service?',
+            content:
+              'We use a blend of data science expertise, advanced statistical techniques, and machine learning models to provide accurate predictive insights. Our team works closely with you to understand your specific business needs and tailor our solutions accordingly. We focus on transforming complex data into actionable insights that drive strategic planning and decision-making.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the accuracy of your predictions?',
+            content:
+              'Accuracy in predictive analytics is a result of quality data, appropriate model selection, and rigorous testing. We start with comprehensive data analysis to understand the patterns and trends. Then we choose or develop a predictive model that best suits your data and objectives. After making predictions, we validate our model against actual outcomes and refine it continuously to enhance its accuracy over time.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'AI Automation',
+    slug: 'ai-automation',
+    subtitle: 'Leverage cutting-edge AI technologies to automate and streamline your business processes.',
+    hero_src: 'https://source.unsplash.com/UqCCSbAIaDU/1600x900',
+    hero_alt: '3D printer',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the potential of AI for streamlined automation.',
+        items: [
+          {
+            title:
+              'In the era of digital transformation, AI plays a pivotal role in automating and optimizing business processes. We specialize in harnessing the power of AI to streamline operations, improve efficiency, and drive innovation. We believe that AI automation goes beyond cost reduction; it empowers enterprises to unlock new opportunities and gain a competitive edge. Our team of experts combines cutting-edge AI technologies with deep industry knowledge to deliver tailored automation solutions that transform businesses.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'With our AI automation services, we help businesses reduce operational costs, increase efficiency, and stay competitive in the digital age.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'Intelligent Process Automation',
+            subtitle:
+              'We implement AI-driven solutions that can understand, learn and adapt, automating complex business processes and tasks.',
+          },
+          {
+            fa_icon: 'fa-network-wired',
+            title: 'IT Operations Automation',
+            subtitle:
+              'We automate IT operations, improving efficiency and reducing the risk of errors.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analysis Automation',
+            subtitle:
+              'Our AI solutions can automatically analyze large volumes of data, providing valuable insights and freeing up your team to focus on decision-making.',
+          },
+          {
+            fa_icon: 'fa-headset',
+            title: 'Customer Service Automation',
+            subtitle:
+              'We can automate your customer service operations, reducing response times and improving customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Maintenance and Support',
+            subtitle:
+              'We offer ongoing maintenance and support, ensuring that your AI systems are always up to date and performing optimally.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Custom AI Solutions',
+            subtitle:
+              'We design and implement custom AI solutions to meet your unique business needs and objectives.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI Automation Service and how it can revolutionize your business processes.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What are the benefits of AI automation for enterprises?',
+            content:
+              'AI automation brings numerous benefits to enterprises, including increased operational efficiency, cost reduction, improved accuracy, enhanced customer experiences, and the ability to leverage data for strategic decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can AI automation be implemented in my business?',
+            content:
+              'The implementation of AI automation in your business involves identifying suitable use cases, assessing data availability and quality, selecting appropriate AI technologies, and partnering with experts who can design and deploy tailored automation solutions.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What industries can benefit from AI automation?',
+            content:
+              'AI automation can benefit a wide range of industries, including finance, healthcare, manufacturing, retail, logistics, customer service, and more. Virtually any sector that deals with data-driven processes can leverage AI automation to gain efficiency and competitive advantages.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'ChatGPT Integration',
+    slug: 'chatgpt-integration',
+    subtitle: 'Enhance your digital capabilities with AI powered by ChatGPT.',
+    hero_src: 'https://source.unsplash.com/agFmImWyPso/1600x900',
+    hero_alt: 'ChatGPT logo',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transform your applications with ChatGPT.',
+        items: [
+          {
+            title:
+              'Conversational AI is revolutionizing customer experiences and business interactions. With our ChatGPT Integration Service, we specialize in incorporating ChatGPT, a powerful language model, into your applications to enable natural and engaging conversations with your users. We believe that effective communication plays a critical role in driving customer satisfaction and business success. Our team of experts leverages ChatGPT to create intelligent chatbots, virtual assistants, and other conversational interfaces that deliver personalized and context-aware interactions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What We Do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a range of ChatGPT integration capabilities to enable seamless and dynamic conversational experiences.',
+        items: [
+          {
+            fa_icon: 'fa-comments',
+            title: 'Chatbot Development',
+            subtitle:
+              'Design and develop intelligent chatbots that can understand user queries, provide relevant responses, and perform actions.',
+          },
+          {
+            fa_icon: 'fa-comments-dollar',
+            title: 'Customer Support Automation',
+            subtitle:
+              'Automate customer support processes by integrating ChatGPT to handle frequently asked questions, provide instant assistance, and escalate complex issues to human agents when needed.',
+          },
+          {
+            fa_icon: 'fa-comments-medical',
+            title: 'Healthcare Virtual Assistants',
+            subtitle:
+              'Create virtual assistants powered by ChatGPT to assist healthcare professionals, patients, and caregivers by providing medical information, appointment scheduling, and personalized guidance.',
+          },
+          {
+            fa_icon: 'fa-comments-check',
+            title: 'Interactive Interfaces',
+            subtitle:
+              'Build interactive conversational interfaces for applications, websites, and messaging platforms to enable seamless user interactions and personalized recommendations.',
+          },
+          {
+            fa_icon: 'fa-comments-code',
+            title: 'Developer Tools and APIs',
+            subtitle:
+              'Provide developers with tools, APIs, and documentation for easy integration of ChatGPT into their applications and systems.',
+          },
+          {
+            fa_icon: 'fa-comments-cogs',
+            title: 'Customization and Training',
+            subtitle:
+              'Tailor ChatGPT to your specific domain and requirements by training it on your custom datasets and fine-tuning the model for optimal performance.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our ChatGPT Integration Service and how it can enhance your applications.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is ChatGPT?',
+            content:
+              'ChatGPT is an advanced language model developed by OpenAI that can generate human-like responses and hold context-rich conversations. It uses deep learning techniques to understand and generate text based on the input it receives.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can ChatGPT benefit my applications?',
+            content:
+              'By integrating ChatGPT into your applications, you can provide natural and interactive conversational experiences to your users. ChatGPT can assist with tasks, answer questions, provide recommendations, and engage users in dynamic conversations, enhancing user satisfaction and improving overall user experience.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Is ChatGPT customizable for specific domains?',
+            content:
+              'Yes, ChatGPT can be customized for specific domains by training it on domain-specific datasets and fine-tuning the model. This allows ChatGPT to provide more accurate and relevant responses tailored to your application and industry.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'Prompt Engineering',
+    slug: 'prompt-engineering',
+    subtitle: 'Leverage the power of AI to improve engagement and increase conversions with personalized, context-aware prompts. ',
+    hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
+    hero_alt: 'Miniature blocks and train tracks',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming interactions with intelligent prompts.',
+        items: [
+          {
+            title: 'In the age of personalization, intelligent prompts can significantly enhance user engagement and satisfaction. We design AI-powered prompts that are timely, relevant, and context-aware, creating a personalized experience for each user. Working with enterprise clients, we leverage deep learning and AI to create prompts that resonate with users and drive conversions. Our prompts are designed to feel natural, improving user experience and boosting customer loyalty.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of AI and data science to deliver intelligent, personalized prompts.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI-driven prompts',
+            subtitle:
+              'We utilize advanced AI algorithms to generate prompts that engage users and drive interactions.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Timely delivery',
+            subtitle:
+              'Our systems ensure that prompts are delivered at the most appropriate times for maximized effectiveness.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Context-aware',
+            subtitle:
+              'We design prompts that take into account the context of the user for increased personalization and relevance.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance optimization',
+            subtitle:
+              'We constantly analyze the performance of our prompts and make adjustments to optimize their effectiveness.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We design prompts with the user in mind, ensuring a seamless and satisfying user experience.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Integration support',
+            subtitle:
+              'We provide support for integrating our prompt systems into your existing workflows and infrastructure.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Prompt Engineering service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Prompt Engineering important for my business?',
+            content:
+              'Prompt Engineering can significantly enhance user engagement and satisfaction by providing personalized, context-aware prompts. These prompts can drive conversions and improve user experience, contributing to increased customer loyalty and business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your Prompt Engineering service work?',
+            content:
+              'Our Prompt Engineering service leverages AI and deep learning to design and deliver intelligent prompts. We work closely with enterprise clients to understand their needs and customize our prompts accordingly. Our systems ensure timely delivery and context-awareness for maximum effectiveness and personalization.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the effectiveness of your prompts?',
+            content:
+              'We continually analyze the performance of our prompts and adjust our strategies based on the insights we gain. We also design our prompts to be user-centric, which increases their relevance and effectiveness.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    // Hero
+    category_id: 3,
+    title: 'OpenAI API Integration',
+    slug: 'openai-api-integration',
+    subtitle: 'Integrate cutting-edge AI solutions into your business processes.',
+    hero_src: 'https://source.unsplash.com/_HnJfS6WhA8/1600x900',
+    hero_alt: 'Colourful cubic components',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving business transformation with OpenAI.',
+        items: [
+          {
+            title: 'The integration of OpenAI APIs can revolutionize your business, enabling automated processes, advanced analytics, and more. Our services help businesses seamlessly incorporate these powerful AI capabilities into their existing systems. We understand the challenges that businesses face when implementing AI solutions. Our team of experts will work closely with you to understand your business needs and design an OpenAI API integration plan that maximizes the potential of AI for your business.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Discover our wide range of capabilities for integrating the OpenAI API into your business systems.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'System Integration',
+            subtitle:
+              'We ensure seamless integration of OpenAI APIs into your existing systems and workflows.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Solutions',
+            subtitle:
+              'We help implement advanced AI capabilities to drive efficiency and innovation in your business processes.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security & Compliance',
+            subtitle:
+              'We prioritize security and compliance in all our integration processes.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Performance Optimization',
+            subtitle:
+              'We monitor and optimize the performance of the integrated APIs to ensure they meet your business needs.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Continuous Updates',
+            subtitle:
+              'We ensure your systems stay up-to-date with the latest API changes and features.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Client Support',
+            subtitle:
+              'We provide ongoing support and maintenance to ensure smooth operation.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our OpenAI API Integration service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is OpenAI API Integration important for my business?',
+            content:
+              'OpenAI API Integration can significantly enhance your business capabilities by introducing AI-driven automation and insights. It can improve efficiency, drive innovation, and give you a competitive edge in the market.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your OpenAI API Integration service work?',
+            content:
+              'Our team of experts will work with you to understand your business needs and design an integration plan. We will then implement the OpenAI APIs into your existing systems, ensuring seamless integration and optimal performance. We also provide ongoing support and updates to ensure your systems stay up-to-date.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What kind of support can I expect after the OpenAI API integration?',
+            content:
+              'We provide continuous support and maintenance post-integration. This includes performance monitoring, handling API updates and changes, and resolving any issues that may arise. Our goal is to ensure the integrated APIs continuously meet your business needs.',
+          },
+        ],
+      },
+    }
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_DATA_SERVICE_CATEGORYS),
+    ...item,
+    seo: {
+      title: item.title,
+      description: item.subtitle
+    },
+    sections: {
+      ...item.sections,
+      benefits: {
+        overline: 'What we do',
+        title: 'Harnessing the Power of AI for Enterprises',
+        subtitle:
+          '{appTitle} empowers enterprises businesses with state-of-the-art technologies to create solutions built for the digital age.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Strategy',
+            subtitle:
+              'Crafting holistic data management plans, governance, and value analysis to empower data-driven decision-making.',
+            href: `${routeConfig.SERVICES}/data-strategy`,
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Data Engineering',
+            subtitle:
+              'Designing robust data warehousing, integration, and big data solutions for efficient storage, retrieval, and analysis.',
+            href: `${routeConfig.SERVICES}/data-engineering`,
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Solutions',
+            subtitle:
+              'Building tailored AI models, automating processes, and providing strategic advisory for transformative business intelligence.',
+            href: `${routeConfig.SERVICES}/ai-solutions`,
+          },
+        ],
+      },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'Igniting enterprise transformation through personalized data solutions focused on driving your business success.',
+      },
+    }
+  })
+})
 
 export const MOCK_SERVICES = {
   GROUP: MOCK_GROUP_SERVICES,

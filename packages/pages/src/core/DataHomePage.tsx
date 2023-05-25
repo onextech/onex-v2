@@ -11,10 +11,12 @@ import {
   renderFaqsAccordionBlock,
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
+  renderHeroWithBackgroundBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry } from '@onex/types'
 import { useRouter } from 'next/router'
+import { routeConfig } from '@onex/common'
 
 export interface DataHomePageProps {
   page: Page
@@ -38,20 +40,19 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderLeftHeroWithBackgroundBlock({
+        renderHeroWithBackgroundBlock({
           ...hero,
-          pt: { xs: 10, md: 18 },
-          pb: { xs: 3, md: 15 },
-          hero_src: '/images/hero_background_black_minimal.svg',
-          hero_alt: 'Black minimalistic background',
-          image_src: '/images/hero_glass_window_ui_grey.png',
-          image_alt: 'Website with trend analysis',
-          // image_src dimensions
-          imageProps: { ar: '643:572' } as any,
           buttonProps: {
-            overline: 'Get Started',
-            title: cta_button_title,
-            isCta: true,
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            size: 'lg',
+            href: routeConfig.SERVICES,
+          },
+          secondaryButtonProps: {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            size: 'lg',
+            href: routeConfig.CAREERS,
           },
         }),
         // ClientLogosImageMarquee

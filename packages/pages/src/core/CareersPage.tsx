@@ -79,7 +79,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
         renderLeftThreeColumnGridBlockItem({
           title: 'Great Perks For Everyone.',
           subtitle:
-            "The driven people who make up One X Tech\'s teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+            "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
             items: [
               {
                 fa_icon: 'fa-dollar-sign',
