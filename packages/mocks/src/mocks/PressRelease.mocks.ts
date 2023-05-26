@@ -82,6 +82,25 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     '<p><strong>About International Maritime Organisation:</strong></p>' + 
     '<p>IMO is the United Nations\' specialized agency responsible for safety and security of shipping and the prevention of marine pollution by ships. With 174 Member States and three Associate Members, IMO is based in London with around 300 international staff.</p>'
   },
+  {
+    is_active: true,
+    published_at: '2021-07-26T01:43:55+0800',
+    title: 'Mr Bucket and One X Tech partner to deliver custom chocolate gifts to the online market',
+    slug: 'mr-bucket-and-one-x-tech-partner-to-deliver-custom-chocolate-gifts-to-the',
+    subtitle: "With the partnership of Tyme Digital Banking and One X Tech, customers worldwide gain access to cutting-edge digital banking solutions, unlocking exceptional services from this trusted collaboration.",
+    html:
+      '<p>Mr Bucket has partnered with One X Tech to offer a one-of-a kind gifting experience featuring bespoke chocolates. Through this collaboration, B2B sales have been enabled and landing pages are now tailored based on special occasions for dynamic marketing opportunities.</p>' + 
+      '<p>The new website created by One X Tech for Mr Bucket offers a modern online shopping experience for customers across Asia. It will allow customers to browse through the wide selection of chocolates available from this beloved chocolaterie. Businesses can now access a variety of premium chocolates via the website, thanks to this innovative B2B platform.</p>' + 
+      '<p>One X Tech provides an innovative and unique website design for Mr Bucket, tailored to their brand and target audience. The website contains rich, informative content about the chocolates available, the factory and career opportunities.</p>' + 
+      '<p>Mr Bucket\'s website also features a unique landing page, which adjusts according to the current season. With visuals tailored for each occasion such as Christmas or Valentine\'s Day, this allows the brand to effectively market their products in response to timely celebrations and holidays.</p>' + 
+      '<p>Customers can build their own box of chocolates via the website, allowing them to choose their favourite flavours. The website allows for the creation of a one-of-a-kind shopping experience in the bustling&nbsp;F&amp;B industry, and the Build-a-Box platform provides unrivalled customer service through an integrated eCommerce and inventory control system. The platform seamlessly links e-commerce with powerful order, inventory and production management systems for optimum efficiency.</p>' + 
+      '<p>"This project is an exciting opportunity for us," commented One X Tech\'s Business Development Director, Lu Shu Hui. "We are passionate about assisting family companies in succeeding in the digital age, and we look forward to seeing Mr Bucket\'s success as a result of our collaboration."</p>' + 
+      '<p>With the help of One X Tech,&nbsp;Mr Bucket can now provide a modern, digital shopping experience that will delight its customers throughout Asia and beyond.</p>' + 
+      '<h2><strong>About One X Tech:</strong></h2>' + 
+      '<p>One X Tech is a leading technology company that focuses on building technological innovations for leading enterprises. We are on a mission to build a new digital economy by creating innovative digital solutions that put businesses at the digital frontier. One X Tech brings together an elite digital product team to create best-in-class products that scale across the world. One X Tech is based in Singapore and operates regionally in South East Asia.</p>' + 
+      '<h2><strong>About Mr Bucket Chocolaterie:</strong></h2>' + 
+      '<p>Mr Bucket Chocolaterie is a true Asian family-run chocolaterie for about 120 years. With a commitment to quality and a passion for chocolate, Mr Bucket has become a well-known and respected name in the Asian chocolate industry.</p>'
+  }
 ].map((item, i) => ({
   id: i + 1,
 
