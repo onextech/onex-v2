@@ -103,8 +103,8 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'enterprise-design-system',
     subtitle:
       'Maximizing enterprise value through comprehensive system building.',
-    hero_src: 'https://source.unsplash.com/cqkbESEkhjk/1600x900',
-    hero_alt: 'Laptop in front of whiteboard',
+    hero_src: 'https://source.unsplash.com/4sRFTaQSM8Q/1600x900',
+    hero_alt: 'White block stack'
   },
   {
     id: 3,

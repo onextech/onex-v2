@@ -1899,8 +1899,8 @@ export const MOCK_DATA_PAGES = [
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Driving Data Changes',
-        subtitle: 'Helping enterprises elevate their digital capabilities.',
+        title: 'Elevating Enterprise Digital Capabilities',
+        subtitle: 'Transforming how enterprises work with data.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
