@@ -848,7 +848,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>Modifications</h3>\n' +
       '<p>One X Group Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
       '<h3>Governing Law</h3>\n' +
-      '<p>These terms and conditions are governed by and construed in accordance with the laws of Singapore and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
+      '<p>These terms and conditions are governed by and construed in accordance with the laws of {localeTitle} and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
   },
   {
     title: 'Privacy',
@@ -1791,7 +1791,7 @@ export const MOCK_DATA_PAGES = [
         title:
           'We believe in harnessing the power of data to transform and digitalize enterprises.',
         subtitle:
-          '{appTitle} is a leading data science service provider, specializing in delivering advanced analytics and AI solutions for enterprises in Singapore.',
+          '{appTitle} is a leading data science service provider, specializing in delivering advanced analytics and AI solutions for enterprises in {localeTitle}.',
         buttons: [
           {
             overline: 'Who we are',
@@ -1925,7 +1925,7 @@ export const MOCK_DATA_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Data for the Future',
     seo_description:
-      '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
+      '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -1933,7 +1933,7 @@ export const MOCK_DATA_PAGES = [
         overline: '{appTitle}',
         title: 'Digital Transformation with Enterprise-Scale AI',
         subtitle:
-          '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
+          '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
       },
       benefits: {
         overline: 'What we do',
@@ -2097,7 +2097,7 @@ export const MOCK_DESIGN_PAGES = [
         title:
           'We believe in creating designs that revolutionize the way enterprises think and operate.',
         subtitle:
-          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
+          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in {localeTitle}.',
         buttons: [
           {
             overline: 'Who we are',
@@ -2232,13 +2232,13 @@ export const MOCK_DESIGN_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
     seo_description:
-      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies.",
+      "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
         title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies..",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies..",
       },
       benefits: {
         overline: 'What we do',
