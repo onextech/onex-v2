@@ -785,6 +785,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 1,
     title: 'Leveraging Data For Smarter Decision Making in Product Development',
     slug: 'leveraging-data-for-smarter-decision-making-in-product-development',
@@ -805,6 +806,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 2,
     title: 'The Next Frontier in Enterprise Analytics: Predictive Modelling and AI-Driven Insights',
     slug: 'the-next-frontier-in-enterprise-analytics-predictive-modelling-and-ai-driven-insights',
@@ -832,6 +834,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 3,
     title: 'AI for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
     slug: 'ai-social-good-solve-public-challenges-ml',
@@ -856,6 +859,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 4,
     title: 'The AI-powered Finance Revolution: Unlocking New Opportunities and Enhancing Customer Experience in 2023',
     slug: 'ai-finance-revolution-unlock-opportunities-customer-experience-2023',
@@ -884,6 +888,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 5,
     title: 'Building the Next-Gen Government: How AI and ML are Transforming Public Services for a Better Tomorrow',
     slug: 'building-next-gen-government-ai-ml-transforming-public-services',
