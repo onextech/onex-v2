@@ -2977,8 +2977,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'enterprise-ui-library',
     category_id: 2,
     subtitle: 'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
-    hero_src: 'https://source.unsplash.com/ubIWo074QlU/1600x900',
-    hero_alt: 'Laptop with icons',
+    hero_src: 'https://source.unsplash.com/hpIZ5T6SS-M/1600x900',
+    hero_alt: 'Colourful wavy design',
     // Sections
     sections: {
       summary: {
@@ -3661,8 +3661,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Governance',
     slug: 'data-governance',
     subtitle: 'Craft and implement comprehensive data governance strategies for your enterprise.',
-    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
-    hero_alt: 'Data statistics on a laptop',
+    hero_src: 'https://source.unsplash.com/w7ZyuGYNpRQ/1600x900',
+    hero_alt: 'Laptop screen through spectacle lens',
     // Sections
     sections: {
       summary: {
@@ -4020,8 +4020,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Visualisation',
     slug: 'data-visualisation',
     subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
-    hero_src: 'https://source.unsplash.com/dcULNhRiRrc/1600x900',
-    hero_alt: 'Two coworkers collaborate on a work project',
+    hero_src: 'https://source.unsplash.com/4QVqSh4VvP4/1600x900',
+    hero_alt: 'Data filters',
     // Sections
     sections: {
       summary: {
