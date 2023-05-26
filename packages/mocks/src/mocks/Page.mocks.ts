@@ -125,7 +125,7 @@ export const MOCK_DATA_PAGE = {
   seo_title: 'Data',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Data',
+  title: '{appTitle}',
   subtitle: 'We Data for Impact',
   // Sections
   sections: {
@@ -248,7 +248,7 @@ export const MOCK_DESIGN_PAGE = {
   seo_title: 'Design',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Design',
+  title: '{appTitle}',
   subtitle: 'We Design for Impact',
   // Sections
   sections: {
@@ -372,7 +372,7 @@ export const MOCK_DIGITAL_PAGE = {
   seo_title: 'Digital',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Digital',
+  title: '{appTitle}',
   subtitle: 'Discover the agile process we use to build digital products',
   // Sections
   sections: {
@@ -586,12 +586,12 @@ export const MOCK_VENTURES_PAGE = {
   seo_title: 'Labs',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Labs',
+  title: '{appTitle}',
   subtitle: 'Discover the agile process we use to build digital products',
   // Sections
   sections: {
     hero: {
-      overline: 'One X Labs',
+      overline: '{appTitle}',
       title: 'Corporate Innovation for Enterprises',
       subtitle:
         'We unleash the power of entrepreneurship to solve big problems with the world’s leading companies.',
@@ -817,36 +817,36 @@ const MOCK_COMMON_PAGES = [
     slug: 'terms',
     is_hidden_from_nav: true,
     seo_description:
-      "Explore One X Group's Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
+      "Explore {appTitle}'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
     html:
       '<h3>Overview</h3>\n' +
       '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
       '<h3>Use License</h3>\n' +
       '<ol type="a">\n' +
-      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on One X Group Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
+      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on {appTitle} Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
       '<ul>\n' +
       '<li>modify or copy the materials;</li>\n' +
       '<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n' +
-      "<li>attempt to decompile or reverse engineer any software contained on One X Group Pte Ltd's website;</li>\n" +
+      "<li>attempt to decompile or reverse engineer any software contained on {appTitle} Pte Ltd's website;</li>\n" +
       '<li>remove any copyright or other proprietary notations from the materials; or</li>\n' +
       '<li>transfer the materials to another person or "mirror" the materials on any other server.</li>\n' +
       '</ul>\n' +
       '</li>\n' +
-      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by One X Group Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
+      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by {appTitle} Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
       '</ol>\n' +
       '<h3>Disclaimer</h3>\n' +
       '<ol type="a">\n' +
-      "<li>The materials on One X Group Pte Ltd's website are provided on an 'as is' basis. One X Group Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
-      '<li>Further, One X Group Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
+      "<li>The materials on {appTitle} Pte Ltd's website are provided on an 'as is' basis. {appTitle} Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
+      '<li>Further, {appTitle} Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
       '</ol>\n' +
       '<h3>Limitations</h3>\n' +
-      "<p>In no event shall One X Group Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on One X Group Pte Ltd's website, even if One X Group Pte Ltd or a One X Group Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
+      "<p>In no event shall {appTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {appTitle} Pte Ltd's website, even if {appTitle} Pte Ltd or a {appTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
       '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on One X Group Pte Ltd's website could include technical, typographical, or photographic errors. One X Group Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. One X Group Pte Ltd may make changes to the materials contained on its website at any time without notice. However One X Group Pte Ltd does not make ay commitment to update the materials.</p>\n" +
+      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However {appTitle} Pte Ltd does not make ay commitment to update the materials.</p>\n" +
       '<h3>Links</h3>\n' +
-      "<p>One X Group Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by One X Group Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
+      "<p>{appTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {appTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
       '<h3>Modifications</h3>\n' +
-      '<p>One X Group Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
+      '<p>{appTitle} Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
       '<h3>Governing Law</h3>\n' +
       '<p>These terms and conditions are governed by and construed in accordance with the laws of {localeTitle} and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
   },
@@ -855,10 +855,10 @@ const MOCK_COMMON_PAGES = [
     slug: 'privacy',
     is_hidden_from_nav: true,
     seo_description:
-      'We value your privacy. Discover how One X Group respects your personal information through data protection, consent and protecting your rights.',
+      'We value your privacy. Discover how {appTitle} respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
-      "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
+      "<p>Your privacy is important to us. It is {appTitle} Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
       '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
       '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
       '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
@@ -1119,7 +1119,7 @@ const MOCK_GROUP_PAGES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              "Unlock growth and success with One X Group's business advisory services.",
+              "Unlock growth and success with {appTitle}'s business advisory services.",
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
@@ -1906,7 +1906,7 @@ export const MOCK_DATA_PAGES = [
         overline: 'Careers',
         title: 'Embrace the Data-Driven Future',
         subtitle:
-          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at One X Data to be at the forefront of change.',
+          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at {appTitle} to be at the forefront of change.',
         buttons: [
           {
             overline: 'Careers',
@@ -1975,23 +1975,23 @@ export const MOCK_DATA_PAGES = [
           {
             key: 'faq-1',
             title:
-              'How can One X Data help my business in harnessing the power of our data?',
+              'How can {appTitle} help my business in harnessing the power of our data?',
             content:
-              'At One X Data, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
+              'At {appTitle}, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
           },
           {
             key: 'faq-2',
             title:
-              'What is the process for developing data science solutions with One X Data?',
+              'What is the process for developing data science solutions with {appTitle}?',
             content:
               'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
           },
           {
             key: 'faq-3',
             title:
-              'Can One X Data help us optimize our existing data models and AI solutions?',
+              'Can {appTitle} help us optimize our existing data models and AI solutions?',
             content:
-              'Absolutely. One X Data provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
+              'Absolutely. {appTitle} provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
           },
         ],
       },
@@ -2213,7 +2213,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Careers',
         title: 'Design Thinking with A Purpose',
         subtitle:
-          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at One X Design to design for change, to design for better. ',
+          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at {appTitle} to design for change, to design for better. ',
         buttons: [
           {
             overline: 'Careers',
@@ -2280,23 +2280,23 @@ export const MOCK_DESIGN_PAGES = [
           {
             key: 'faq-1',
             title:
-              'How can One X Design help my business in creating a user-centric and visually appealing product design?',
+              'How can {appTitle} help my business in creating a user-centric and visually appealing product design?',
             content:
-              'At One X Design, we specialize in UI/UX services tailored for enterprise businesses. Our expert team combines innovative design principles and user research to create user-centric and visually stunning product designs that resonate with your target audience. We understand the importance of delivering exceptional user experiences that drive engagement and loyalty.',
+              'At {appTitle}, we specialize in UI/UX services tailored for enterprise businesses. Our expert team combines innovative design principles and user research to create user-centric and visually stunning product designs that resonate with your target audience. We understand the importance of delivering exceptional user experiences that drive engagement and loyalty.',
           },
           {
             key: 'faq-2',
             title:
-              'What is the process for developing an enterprise product design with One X Design?',
+              'What is the process for developing an enterprise product design with {appTitle}?',
             content:
               'Our process begins with a comprehensive understanding of your business objectives and target users. We conduct thorough research and analysis to identify user needs and pain points through our interactive workshops. From there, we develop wireframes and prototypes to visualize the product design concepts and gather user feedback. Our iterative approach ensures that the final design aligns with your brand identity and delivers a seamless user experience.',
           },
           {
             key: 'faq-3',
             title:
-              'Can One X Design help us improve the user experience of our existing enterprise software?',
+              'Can {appTitle} help us improve the user experience of our existing enterprise software?',
             content:
-              'Absolutely. One X Design specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
+              'Absolutely. {appTitle} specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
           },
         ],
       },

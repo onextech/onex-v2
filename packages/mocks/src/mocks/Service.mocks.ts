@@ -2581,7 +2581,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              'Unlock growth and success with One X Group\'s business advisory services.',
+              'Unlock growth and success with {appTitle}\'s business advisory services.',
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
