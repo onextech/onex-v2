@@ -1758,12 +1758,12 @@ export const MOCK_DATA_PAGES = [
         buttons: [
           {
             overline: 'What we do',
-            title: 'Smarter Businesses',
+            title: 'Enterprise Data & AI Solutions',
             href: routeConfig.SHOWCASES,
           },
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Data Science Experts',
             href: routeConfig.HOME,
           },
         ],
