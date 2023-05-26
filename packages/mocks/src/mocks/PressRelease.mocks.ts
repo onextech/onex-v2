@@ -1,22 +1,27 @@
 import sampleSize from 'lodash/sampleSize'
 import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import { PressRelease } from '@onex/types'
 
-export const MOCK_TECH_PRESS_RELEASES = [
+export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
   {
+    is_active: true,
+    published_at: '2019-03-25T01:43:55+0800',
     title: 'One X Tech Launches Digitize™ Program',
     slug: 'one-x-tech-launches-digitize™-program',
     subtitle: "One X Tech Press Release: Launch of One X Tech Digitize™ Program",
-    html: '<p>March 2019</p>' + 
+    html:
     '<p>SINGAPORE: One X Tech, the world&rsquo;s first digital business platform, today announced that it has launched a new initiative aimed at encouraging companies to take their first step towards developing digital capabilities. Known as the One X Tech Digitize&trade; Program, the new initiative helps companies build stronger digital capabilities and deploy IT solutions in their business.</p>' + 
     '<p>Under the Digitize&trade; program, companies can receive up to $5,000 worth of credits to exchange for digital services, and be entitled to book exclusive training sessions with One X Tech&rsquo;s digital consultants. The program is available to enterprise clients, small/medium businesses, and early-stage companies, with benefits catered specially to the needs of each group.</p>' + 
     '<p>&ldquo;The Digitize&trade; program has helped our customers overcome the inertia faced when adopting new technology and provides them with the right support to grow their business,&rdquo; said Lu ShuHui, Director of Client Communications at One X Tech. &ldquo;In today&rsquo;s increasingly digital economy, companies looking to expand their business can depend on Digitize&trade; to kickstart their digital capabilities with ease and confidence.&rdquo;</p>' + 
     '<p>Companies keen to explore digital solutions under the Digitize&trade; program can apply through the One X Tech website today.</p>'
   },
   {
+    is_active: true,
+    published_at: '2018-11-21T01:43:55+0800',
     title: 'One X Tech Moves to Robinson Road, Singapore',
     slug: 'one-x-tech-moves-to-robinson-road-singapore',
     subtitle: "One X Tech Press Release: One X Tech Moves to New Office in Singapore to Create Digital Hub",
-    html: '<p>November 2018</p>' + 
+    html:
     '<p>SINGAPORE: Digital agency One X Tech officially unveiled its new Singapore office located at Robinson Road on Thursday (Nov 10).</p>' + 
     '<p>The Singapore office which serves as the firm&rsquo;s regional head-quarters in the Asia Pacific region, houses its growing team of digital consultants, designers and software engineers.</p>' + 
     '<p>Commenting on the move to its new location in the heart of the central business district, Director of Technology Management, Joel Koh cited the company&rsquo;s desire to promote an integral digital hub for its customers and partners.</p>' + 
@@ -25,10 +30,12 @@ export const MOCK_TECH_PRESS_RELEASES = [
     '<p>One X Tech\'s upgrade comes after it announced its plans to release a suite of new digital services and IT solutions to empower smart businesses last month.</p>'
   },
   {
+    is_active: true,
+    published_at: '2018-10-19T01:43:55+0800',
     title: 'Introducing One X Tech\'s Digital Business Suite',
     slug: 'one-x-tech-digital-business-suite',
     subtitle: "One X Tech Press Release: Introducing One X Tech\'s Digital Business Suite",
-    html: '<p>October 2018</p>' + 
+    html:
     '<p>SINGAPORE: Earlier today, digital agency One X Tech, announced the launch of Digital Business Suite &mdash; a comprehensive offering of digital and IT services aimed at supporting businesses in their digital transformation journey.</p>' + 
     '<p>Amidst today\'s rapidly evolving business landscape, companies want access to the best digital tools and services to stay ahead. With the Digital Business Suite, managers can easily apply established technologies in their work through the proven capabilities and support of the One X Tech digital team. With services spread across key areas such as automation, growth, innovation and more, the Digital Business Suite has been designed specifically to meet the needs of today&rsquo;s modern businesses.</p>' + 
     '<p>&ldquo;We are excited to announce the launch of the Digital Business Suite as an integral way of sharing our expertise in the Digital and IT space with our customers,&rdquo; said Joel Koh, One X Tech&rsquo;s Director of Technology Management.</p>' + 
@@ -36,10 +43,12 @@ export const MOCK_TECH_PRESS_RELEASES = [
     '<p>The Digital Business Suite is currently available for all customers operating in the Asia Pacific region.</p>'
   },
   {
+    is_active: true,
+    published_at: '2023-02-13T01:43:55+0800',
     title: 'Tyme Digital Banking collaborates with One X Tech to redesign its digital capabilities to build up brand presence',
     slug: 'tyme-digital-banking-collaborates-with-one-x-tech-to-redesign-its-digital',
     subtitle: "With the collaboration between Tyme Digital Banking and One X Tech, customers worldwide can now access innovative digital banking solutions and experience exceptional services from a trusted partnership.",
-    html: '<p>Singapore: 13 February 2023</p>' + 
+    html:
     '<p>Tyme Digital Banking announces a collaboration with One X Tech to redesign its digital capabilities in order to exhibit their full capabilities and worldwide presence.</p>' + 
     '<p>The website launch is an important milestone in Tyme\'s digital transformation journey and demonstrates the company\'s commitment to delivering the best online experience for its customers and stakeholders. The new website has a clean and modern appearance, as well as a user-friendly layout that makes it easy for users to access essential information and services.</p>' + 
     '<p>"We are thrilled to be working with Tyme on this exciting venture," says Mr Joel Koh, Chief Technology Officer of One X Tech. "Our team of experts partnered closely with Tyme to understand their needs and design a website that demonstrates the company\'s commitment to innovation and excellence in the digital banking market."</p>' + 
@@ -53,10 +62,12 @@ export const MOCK_TECH_PRESS_RELEASES = [
     '<p>Tyme is creating a revolutionary digital banking experience by expanding economic access across emerging markets in Asia and Africa. Fuelled by their commitment to unleash human potential, the company has partnered with local stakeholders to launch cutting-edge banks. TymeGlobal\'s disruptive business model integrates retailers for an unparalleled financial services solution that was previously impossible due to accessibility issues.</p>'
   },
   {
+    is_active: true,
+    published_at: '2022-04-07T01:43:55+0800',
     title: 'Launch of NextGEN Connect Challenge Platform at the International Maritime Organization Future of Shipping Conference 2022',
     slug: 'launch-of-nextgen-connect-challenge-platform-at-the-international-maritime',
     subtitle: "The International Maritime Organization and Maritime Port Authority of Singapore collaborated with One X Tech to launch NextGEN Connect Challenge, driving sustainable shipping and decarbonization efforts in the Asia-Pacific region.",
-    html: '<p>Singapore: 7 April 2022.</p>' + 
+    html:
     '<p>In conjunction with the International Maritime Organization Future of Shipping Conference and Singapore Maritime Week 2022, the International Maritime Organization and Maritime Port Authority of Singapore have jointly launched the NextGEN Connect Challenge Platform powered by One X Tech.</p>' + 
     '<p>Mr S Iswaran, Minister for Transport and Minister-in-charge of Trade Relations, kicked off the NextGEN Connect Challenge with these opening words, &ldquo;It is important for public and private stakeholders to work together in a collective and inclusive manner globally to accelerate the maritime sector\'s transition towards a low-carbon future. NextGEN Connect serves as a collaborative platform that matches the challenges of sustainable shipping to diverse solution providers across borders and industries. The platform also shares innovative and successful projects that address common problems in shipping worldwide. In this way, no one is left behind on the access to creative sustainability solutions in achieving the goals of the Initial IMO GHG Strategy&rdquo;.</p>' + 
     '<p>The NextGEN database currently comprises more than 500 stakeholders across the world, including IMO Member States, shipowners, technology developers, classification societies, and non-governmental organisations. It is an interactive website that currently lists more than 150 decarbonisation projects. Viewers of the website can utilise an engaging interactive map to gain insight into environment projects happening around the world. Not only will they be able to select a specific country and explore its project, but also use the thematic map feature which presents users with a comprehensive overview of each area\'s environmental themes.</p>' + 
@@ -89,7 +100,7 @@ export const MOCK_TECH_PRESS_RELEASES = [
   ...item,
 }))
 
-export const MOCK_GROUP_PRESS_RELEASES = MOCK_TECH_PRESS_RELEASES.map(
+export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = MOCK_TECH_PRESS_RELEASES.map(
   (item, i) => ({
     ...item,
     // Tags
@@ -97,9 +108,13 @@ export const MOCK_GROUP_PRESS_RELEASES = MOCK_TECH_PRESS_RELEASES.map(
   })
 )
 
+export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = []
+
+export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = []
+
 export const MOCK_PRESS_RELEASES = {
-  GROUP: [],
+  GROUP: MOCK_GROUP_PRESS_RELEASES,
   TECH: MOCK_TECH_PRESS_RELEASES,
-  DATA: [],
-  DESIGN: []
+  DATA: MOCK_DATA_PRESS_RELEASES,
+  DESIGN: MOCK_DESIGN_PRESS_RELEASES
 }

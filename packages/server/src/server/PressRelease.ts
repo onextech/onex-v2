@@ -2,6 +2,7 @@ import { MOCK_PRESS_RELEASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
+import dayjs from 'dayjs'
 
 const { MOCK_KEY } = process.env
 
@@ -18,7 +19,12 @@ export const fetchPressReleaseBySlug = (injectedSlug) => {
 export const PressReleaseList = {
   getStaticProps: (): GetStaticProps =>
     makeGetStaticProps({
-      props: { pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY] },
+      props: {
+        pressReleases:
+          MOCK_PRESS_RELEASES[MOCK_KEY]
+            .filter(({ is_active }) => is_active)
+            .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
+      },
     }),
 }
 
