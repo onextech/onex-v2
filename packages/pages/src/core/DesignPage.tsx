@@ -57,7 +57,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             {
               type: 'h2',
               title: hero.title,
-              titleProps: { gutterBottom: true },
+              titleProps: { gutterBottom: true, component: 'h1' },
             },
             {
               type: 'subtitle1',
