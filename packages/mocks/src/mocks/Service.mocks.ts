@@ -2581,7 +2581,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              'Unlock growth and success with One X Group\'s business advisory services.',
+              'Unlock growth and success with {appTitle}\'s business advisory services.',
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
@@ -2977,8 +2977,8 @@ export const MOCK_DESIGN_SERVICES = [
     slug: 'enterprise-ui-library',
     category_id: 2,
     subtitle: 'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
-    hero_src: 'https://source.unsplash.com/ubIWo074QlU/1600x900',
-    hero_alt: 'Laptop with icons',
+    hero_src: 'https://source.unsplash.com/hpIZ5T6SS-M/1600x900',
+    hero_alt: 'Colourful wavy design',
     // Sections
     sections: {
       summary: {
@@ -3661,8 +3661,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Governance',
     slug: 'data-governance',
     subtitle: 'Craft and implement comprehensive data governance strategies for your enterprise.',
-    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
-    hero_alt: 'Data statistics on a laptop',
+    hero_src: 'https://source.unsplash.com/w7ZyuGYNpRQ/1600x900',
+    hero_alt: 'Laptop screen through spectacle lens',
     // Sections
     sections: {
       summary: {
@@ -4020,8 +4020,8 @@ export const MOCK_DATA_SERVICES = [
     title: 'Data Visualisation',
     slug: 'data-visualisation',
     subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
-    hero_src: 'https://source.unsplash.com/dcULNhRiRrc/1600x900',
-    hero_alt: 'Two coworkers collaborate on a work project',
+    hero_src: 'https://source.unsplash.com/4QVqSh4VvP4/1600x900',
+    hero_alt: 'Data filters',
     // Sections
     sections: {
       summary: {
@@ -4681,25 +4681,25 @@ export const MOCK_DATA_SERVICES = [
               'Automate customer support processes by integrating ChatGPT to handle frequently asked questions, provide instant assistance, and escalate complex issues to human agents when needed.',
           },
           {
-            fa_icon: 'fa-comments-medical',
+            fa_icon: 'fa-medkit',
             title: 'Healthcare Virtual Assistants',
             subtitle:
               'Create virtual assistants powered by ChatGPT to assist healthcare professionals, patients, and caregivers by providing medical information, appointment scheduling, and personalized guidance.',
           },
           {
-            fa_icon: 'fa-comments-check',
+            fa_icon: 'fa-desktop',
             title: 'Interactive Interfaces',
             subtitle:
               'Build interactive conversational interfaces for applications, websites, and messaging platforms to enable seamless user interactions and personalized recommendations.',
           },
           {
-            fa_icon: 'fa-comments-code',
+            fa_icon: 'fa-code',
             title: 'Developer Tools and APIs',
             subtitle:
               'Provide developers with tools, APIs, and documentation for easy integration of ChatGPT into their applications and systems.',
           },
           {
-            fa_icon: 'fa-comments-cogs',
+            fa_icon: 'fa-users',
             title: 'Customization and Training',
             subtitle:
               'Tailor ChatGPT to your specific domain and requirements by training it on your custom datasets and fine-tuning the model for optimal performance.',

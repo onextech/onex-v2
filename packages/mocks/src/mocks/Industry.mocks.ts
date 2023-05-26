@@ -640,7 +640,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             title:
-              'The insurance industry is undergoing rapid digital transformation, driven by changing customer expectations, regulatory requirements, and emerging technologies. At One X Group, we help insurance enterprises navigate these challenges and unlock the full potential of technology to achieve their business goals.',
+              'The insurance industry is undergoing rapid digital transformation, driven by changing customer expectations, regulatory requirements, and emerging technologies. At {appTitle}, we help insurance enterprises navigate these challenges and unlock the full potential of technology to achieve their business goals.',
           },
         ],
       },

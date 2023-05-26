@@ -125,7 +125,7 @@ export const MOCK_DATA_PAGE = {
   seo_title: 'Data',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Data',
+  title: '{appTitle}',
   subtitle: 'We Data for Impact',
   // Sections
   sections: {
@@ -248,7 +248,7 @@ export const MOCK_DESIGN_PAGE = {
   seo_title: 'Design',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Design',
+  title: '{appTitle}',
   subtitle: 'We Design for Impact',
   // Sections
   sections: {
@@ -372,7 +372,7 @@ export const MOCK_DIGITAL_PAGE = {
   seo_title: 'Digital',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Digital',
+  title: '{appTitle}',
   subtitle: 'Discover the agile process we use to build digital products',
   // Sections
   sections: {
@@ -586,12 +586,12 @@ export const MOCK_VENTURES_PAGE = {
   seo_title: 'Labs',
   seo_description: 'This page is all about the technology that we use',
   // Info
-  title: 'One X Labs',
+  title: '{appTitle}',
   subtitle: 'Discover the agile process we use to build digital products',
   // Sections
   sections: {
     hero: {
-      overline: 'One X Labs',
+      overline: '{appTitle}',
       title: 'Corporate Innovation for Enterprises',
       subtitle:
         'We unleash the power of entrepreneurship to solve big problems with the world’s leading companies.',
@@ -817,48 +817,48 @@ const MOCK_COMMON_PAGES = [
     slug: 'terms',
     is_hidden_from_nav: true,
     seo_description:
-      "Explore One X Group's Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
+      "Explore {appTitle}'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
     html:
       '<h3>Overview</h3>\n' +
       '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
       '<h3>Use License</h3>\n' +
       '<ol type="a">\n' +
-      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on One X Group Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
+      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on {appTitle} Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
       '<ul>\n' +
       '<li>modify or copy the materials;</li>\n' +
       '<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n' +
-      "<li>attempt to decompile or reverse engineer any software contained on One X Group Pte Ltd's website;</li>\n" +
+      "<li>attempt to decompile or reverse engineer any software contained on {appTitle} Pte Ltd's website;</li>\n" +
       '<li>remove any copyright or other proprietary notations from the materials; or</li>\n' +
       '<li>transfer the materials to another person or "mirror" the materials on any other server.</li>\n' +
       '</ul>\n' +
       '</li>\n' +
-      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by One X Group Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
+      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by {appTitle} Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
       '</ol>\n' +
       '<h3>Disclaimer</h3>\n' +
       '<ol type="a">\n' +
-      "<li>The materials on One X Group Pte Ltd's website are provided on an 'as is' basis. One X Group Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
-      '<li>Further, One X Group Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
+      "<li>The materials on {appTitle} Pte Ltd's website are provided on an 'as is' basis. {appTitle} Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
+      '<li>Further, {appTitle} Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
       '</ol>\n' +
       '<h3>Limitations</h3>\n' +
-      "<p>In no event shall One X Group Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on One X Group Pte Ltd's website, even if One X Group Pte Ltd or a One X Group Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
+      "<p>In no event shall {appTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {appTitle} Pte Ltd's website, even if {appTitle} Pte Ltd or a {appTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
       '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on One X Group Pte Ltd's website could include technical, typographical, or photographic errors. One X Group Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. One X Group Pte Ltd may make changes to the materials contained on its website at any time without notice. However One X Group Pte Ltd does not make ay commitment to update the materials.</p>\n" +
+      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However {appTitle} Pte Ltd does not make ay commitment to update the materials.</p>\n" +
       '<h3>Links</h3>\n' +
-      "<p>One X Group Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by One X Group Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
+      "<p>{appTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {appTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
       '<h3>Modifications</h3>\n' +
-      '<p>One X Group Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
+      '<p>{appTitle} Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
       '<h3>Governing Law</h3>\n' +
-      '<p>These terms and conditions are governed by and construed in accordance with the laws of Singapore and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
+      '<p>These terms and conditions are governed by and construed in accordance with the laws of {localeTitle} and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
   },
   {
     title: 'Privacy',
     slug: 'privacy',
     is_hidden_from_nav: true,
     seo_description:
-      'We value your privacy. Discover how One X Group respects your personal information through data protection, consent and protecting your rights.',
+      'We value your privacy. Discover how {appTitle} respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
-      "<p>Your privacy is important to us. It is One X Group Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
+      "<p>Your privacy is important to us. It is {appTitle} Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
       '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
       '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
       '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
@@ -1119,7 +1119,7 @@ const MOCK_GROUP_PAGES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              "Unlock growth and success with One X Group's business advisory services.",
+              "Unlock growth and success with {appTitle}'s business advisory services.",
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
@@ -1276,6 +1276,41 @@ const MOCK_GROUP_PAGES = [
             content:
               'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
+          {
+            key: 'how-it-works-4',
+            title: 'What industries do you have experience working with?',
+            content: 'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
+          },
+          {
+            key: 'how-it-works-5',
+            title: 'How do you ensure the security and privacy of our data?',
+            content: 'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
+          },
+          {
+            key: 'how-it-works-6',
+            title: 'What is your approach to project management and communication?',
+            content: 'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
+          },
+          {
+            key: 'how-it-works-7',
+            title: 'How do you handle scalability and future growth considerations in your software solutions?',
+            content: 'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organization.',
+          },
+          {
+            key: 'how-it-works-8',
+            title: 'What is your approach to post-development support and maintenance?',
+            content: 'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
+          },
+          {
+            key: 'how-it-works-9',
+            title: 'What sets One X Group apart from other technology consulting firms?',
+            content: 'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
+          },
+          {
+            key: 'how-it-works-10',
+            title: 'What is your pricing model for technology consulting services?',
+            content: 'Our pricing model is flexible and depends on the scope and complexity of the project. We offer competitive rates and work closely with our clients to develop pricing structures that align with their budget and requirements. We provide transparent and detailed cost estimates upfront, ensuring there are no surprises along the way.',
+          }
         ],
       },
       cta: {
@@ -1740,6 +1775,12 @@ const MOCK_TECH_PAGES = [
       },
     },
   },
+  {
+    title: 'News',
+    slug: 'news',
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
 ].map((page) => ({
   ...MOCK_PAGE,
   ...page,
@@ -1791,7 +1832,7 @@ export const MOCK_DATA_PAGES = [
         title:
           'We believe in harnessing the power of data to transform and digitalize enterprises.',
         subtitle:
-          '{appTitle} is a leading data science service provider, specializing in delivering advanced analytics and AI solutions for enterprises in Singapore.',
+          '{appTitle} is a leading data science service provider, specializing in delivering advanced analytics and AI solutions for enterprises in {localeTitle}.',
         buttons: [
           {
             overline: 'Who we are',
@@ -1858,8 +1899,8 @@ export const MOCK_DATA_PAGES = [
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Driving Data Changes',
-        subtitle: 'Helping enterprises elevate their digital capabilities.',
+        title: 'Elevating Enterprise Digital Capabilities',
+        subtitle: 'Transforming how enterprises work with data.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
@@ -1906,7 +1947,7 @@ export const MOCK_DATA_PAGES = [
         overline: 'Careers',
         title: 'Embrace the Data-Driven Future',
         subtitle:
-          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at One X Data to be at the forefront of change.',
+          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at {appTitle} to be at the forefront of change.',
         buttons: [
           {
             overline: 'Careers',
@@ -1925,7 +1966,7 @@ export const MOCK_DATA_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Data for the Future',
     seo_description:
-      '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
+      '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -1933,7 +1974,7 @@ export const MOCK_DATA_PAGES = [
         overline: '{appTitle}',
         title: 'Digital Transformation with Enterprise-Scale AI',
         subtitle:
-          '{appTitle} specializes in enterprise data and AI solutions for Singapore’s leading companies.',
+          '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
       },
       benefits: {
         overline: 'What we do',
@@ -1972,27 +2013,56 @@ export const MOCK_DATA_PAGES = [
         subtitle:
           'Discover how we transform businesses with powerful data insights and advanced AI solutions.',
         items: [
-          {
-            key: 'faq-1',
-            title:
-              'How can One X Data help my business in harnessing the power of our data?',
-            content:
-              'At One X Data, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
-          },
-          {
-            key: 'faq-2',
-            title:
-              'What is the process for developing data science solutions with One X Data?',
-            content:
-              'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
-          },
-          {
-            key: 'faq-3',
-            title:
-              'Can One X Data help us optimize our existing data models and AI solutions?',
-            content:
-              'Absolutely. One X Data provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
-          },
+            {
+              key: 'data-science-1',
+              title: 'What experience and expertise do you have in data science?',
+              content: 'Our data science team has extensive experience in leveraging data to derive actionable insights and drive business outcomes. We have expertise in various data science techniques, including machine learning, statistical analysis, and data visualization. Our team stays updated with the latest advancements in the field to deliver cutting-edge data solutions to our clients.',
+            },
+            {
+              key: 'data-science-2',
+              title: 'How do you ensure that the data solutions you develop meet our specific requirements?',
+              content: 'We take a collaborative approach to data science projects, working closely with our clients to understand their unique business needs and goals. We conduct thorough data analysis and exploration to gain insights into your data and identify relevant patterns. Based on this analysis, we develop customized data solutions that align with your specific requirements and deliver the desired outcomes.',
+            },
+            {
+              key: 'data-science-3',
+              title: 'How do you ensure the quality and accuracy of the data solutions you develop?',
+              content: 'We have a robust quality assurance process in place to ensure the accuracy and reliability of the data solutions we develop. Our team follows rigorous data cleaning, preprocessing, and validation techniques to ensure the integrity of the data. We also conduct thorough testing and validation of our models and algorithms to ensure their performance and accuracy.',
+            },
+            {
+              key: 'data-science-4',
+              title: 'What industries do you have experience working with in terms of data science?',
+              content: 'Our data science team has experience working with diverse industries, including finance, healthcare, retail, and manufacturing. We understand the unique challenges and requirements of different industries and have successfully delivered data solutions that address industry-specific needs. Our industry experience enables us to provide valuable insights and tailored data solutions to our clients.',
+            },
+            {
+              key: 'data-science-5',
+              title: 'How do you handle project management and communication during data science projects?',
+              content: 'We follow a structured project management approach during data science projects. We work closely with our clients to define project objectives, milestones, and deliverables. We use project management tools to track progress, manage tasks, and facilitate communication. We schedule regular meetings and provide status updates to ensure transparent communication and collaboration throughout the project.',
+            },
+            {
+              key: 'data-science-6',
+              title: 'How do you ensure the security and privacy of our data during data science projects?',
+              content: 'Data security and privacy are of utmost importance to us. We adhere to strict data protection protocols and follow industry best practices to ensure the security and confidentiality of your data. We implement robust data access controls, encryption techniques, and secure storage solutions to safeguard your data throughout the project lifecycle.',
+            },
+            {
+              key: 'data-science-7',
+              title: 'What is your approach to project pricing and timelines for data science services?',
+              content: 'Our pricing model for data science services is based on the complexity of the project, the scope of work, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to align our services with their budget and project goals. Our goal is to deliver high-quality data solutions within the agreed-upon timeline and budget.',
+            },
+            {
+              key: 'data-science-8',
+              title: 'What is your experience in developing enterprise data and AI solutions?',
+              content: 'We have extensive experience in developing enterprise data and AI solutions for various industries. Our team has worked on projects involving data integration, data governance, predictive analytics, and AI-driven automation. We understand the challenges and opportunities that enterprises face in leveraging their data assets and strive to deliver solutions that drive business growth and transformation.',
+            },
+            {
+              key: 'data-science-9',
+              title: 'What is your approach to project management in data science projects?',
+              content: 'We follow an agile project management approach in data science projects, allowing for flexibility and iterative development. We break down projects into manageable tasks and set achievable milestones. We prioritize close collaboration with our clients, seeking their input and feedback throughout the project. Regular progress updates and transparent communication ensure that the project stays on track and meets the desired objectives.',
+            },
+            {
+              key: 'data-science-10',
+              title: 'What is your pricing model for data science services and AI solutions?',
+              content: 'Our pricing model for data science services and AI solutions is tailored to the specific requirements of each project. We offer flexible pricing options, including fixed-price and time-and-materials models. We work closely with our clients to understand their budget constraints and provide cost-effective solutions that deliver maximum value.',
+            },
         ],
       },
       cta: {
@@ -2097,7 +2167,7 @@ export const MOCK_DESIGN_PAGES = [
         title:
           'We believe in creating designs that revolutionize the way enterprises think and operate.',
         subtitle:
-          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in Singapore.',
+          '{appTitle} is a UI/UX service provider, specialized in providing enterprise product designs and UX workshops for leading enterprises in {localeTitle}.',
         buttons: [
           {
             overline: 'Who we are',
@@ -2213,7 +2283,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Careers',
         title: 'Design Thinking with A Purpose',
         subtitle:
-          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at One X Design to design for change, to design for better. ',
+          'We believe that designing with empathy and humility can bring meaningful impact to businesses all over the world. Join us at {appTitle} to design for change, to design for better. ',
         buttons: [
           {
             overline: 'Careers',
@@ -2232,13 +2302,13 @@ export const MOCK_DESIGN_PAGES = [
     subtitle: 'Discover the agile process we use to design digital products',
     seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
     seo_description:
-      "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies.",
+      "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
         title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} sets the standard for top-tier, intuitive design solutions for Singapore's leading companies..",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies..",
       },
       benefits: {
         overline: 'What we do',
@@ -2277,27 +2347,56 @@ export const MOCK_DESIGN_PAGES = [
         subtitle:
           'Learn how we design effective, user-driven experiences for leading enterprises.',
         items: [
-          {
-            key: 'faq-1',
-            title:
-              'How can One X Design help my business in creating a user-centric and visually appealing product design?',
-            content:
-              'At One X Design, we specialize in UI/UX services tailored for enterprise businesses. Our expert team combines innovative design principles and user research to create user-centric and visually stunning product designs that resonate with your target audience. We understand the importance of delivering exceptional user experiences that drive engagement and loyalty.',
-          },
-          {
-            key: 'faq-2',
-            title:
-              'What is the process for developing an enterprise product design with One X Design?',
-            content:
-              'Our process begins with a comprehensive understanding of your business objectives and target users. We conduct thorough research and analysis to identify user needs and pain points through our interactive workshops. From there, we develop wireframes and prototypes to visualize the product design concepts and gather user feedback. Our iterative approach ensures that the final design aligns with your brand identity and delivers a seamless user experience.',
-          },
-          {
-            key: 'faq-3',
-            title:
-              'Can One X Design help us improve the user experience of our existing enterprise software?',
-            content:
-              'Absolutely. One X Design specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
-          },
+            {
+              key: 'how-it-works-1',
+              title: 'What experience and expertise do you have in UI/UX design?',
+              content: 'Our design team has extensive experience in creating intuitive and visually appealing user interfaces and engaging user experiences. We have worked with various industries and have a deep understanding of UI/UX principles, best practices, and emerging trends. We stay updated with the latest design tools and technologies to deliver cutting-edge solutions.',
+            },
+            {
+              key: 'how-it-works-2',
+              title: 'How do you ensure that the designs you create meet our specific requirements?',
+              content: 'We take a collaborative approach to UI/UX design, working closely with our clients to understand their unique needs, target audience, and business goals. We conduct thorough research and analysis to gather insights and create user personas. Our iterative design process involves wireframing, prototyping, and user testing to refine the designs and align them with your requirements.',
+            },
+            {
+              key: 'how-it-works-3',
+              title: 'How do you ensure the usability and effectiveness of the user interfaces you design?',
+              content: 'Usability and effectiveness are at the core of our design philosophy. We focus on creating user-centric designs that prioritize ease of use, clear navigation, and intuitive interactions. We conduct user testing sessions to gather feedback and iterate on the designs, ensuring that they are optimized for seamless user experiences and achieve your desired goals.',
+            },
+            {
+              key: 'how-it-works-4',
+              title: 'What industries do you have experience working with in terms of UI/UX design?',
+              content: 'Our design team has worked across various industries, including finance, healthcare, e-commerce, and more. We understand the unique requirements and challenges of different industries and tailor our designs to meet their specific needs. Our diverse industry experience allows us to bring valuable insights and deliver UI/UX solutions that drive results.',
+            },
+            {
+              key: 'how-it-works-5',
+              title: 'How do you collaborate with clients during the design process?',
+              content: 'We believe in a collaborative approach where we work closely with our clients throughout the design process. We conduct regular meetings to gather requirements, provide updates, and seek feedback. We value your input and involve you in key design decisions to ensure that the final product aligns with your vision and meets your expectations.',
+            },
+            {
+              key: 'how-it-works-6',
+              title: 'How do you ensure the consistency and branding of our enterprise product designs?',
+              content: 'We pay great attention to maintaining consistency and reflecting your branding throughout the design process. We create design systems and style guides that establish a cohesive visual language, including color schemes, typography, and UI components. This ensures consistency across different screens and interactions, strengthening your brand identity.',
+            },
+            {
+              key: 'how-it-works-7',
+              title: 'Can you assist us with user testing and gathering feedback on our existing product designs?',
+              content: 'Absolutely. We offer user testing services to evaluate the usability and effectiveness of your existing product designs. We conduct user interviews, usability tests, and gather feedback to identify areas for improvement. Based on the insights gathered, we provide recommendations and iterative design solutions to enhance the user experience and drive better outcomes.',
+            },
+            {
+              key: 'how-it-works-8',
+              title: 'What is your approach to conducting UX workshops for enterprise clients?',
+              content: 'Our UX workshops are tailored to meet the specific needs of enterprise clients. We combine theory and practical exercises to educate and empower your team with UX design principles, methodologies, and best practices. We facilitate interactive sessions where participants learn to apply UX techniques, such as user research, persona creation, wireframing, and prototyping, to solve real-world design challenges.',
+            },
+            {
+              key: 'how-it-works-9',
+              title: 'What is your approach to enterprise product design?',
+              content: 'Our approach to enterprise product design is rooted in understanding your business objectives, target audience, and market landscape. We conduct thorough research to gain insights into user needs and pain points. We then craft intuitive and visually appealing designs that align with your brand identity and deliver exceptional user experiences. We iterate based on user feedback and ensure the scalability and adaptability of the designs to meet your evolving business requirements.',
+            },
+            {
+              key: 'how-it-works-10',
+              title: 'What is your pricing model for UI/UX design services and UX workshops?',
+              content: 'Our pricing model for UI/UX design services and UX workshops depends on various factors such as project complexity, scope, and timeline. We offer tailored solutions to meet your specific requirements and budget. We provide detailed proposals and cost estimates upfront, and we work closely with you to ensure transparency and alignment throughout the engagement.',
+            },
         ],
       },
       cta: {

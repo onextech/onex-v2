@@ -33,7 +33,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Advisory',
     slug: 'advisory',
     subtitle:
-      'Unlock growth and success with One X Group\'s business advisory services.',
+      'Unlock growth and success with {}\'s business advisory services.',
     hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
     hero_alt: 'Group working on a laptop together',
   },
@@ -103,8 +103,8 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'enterprise-design-system',
     subtitle:
       'Maximizing enterprise value through comprehensive system building.',
-    hero_src: 'https://source.unsplash.com/cqkbESEkhjk/1600x900',
-    hero_alt: 'Laptop in front of whiteboard',
+    hero_src: 'https://source.unsplash.com/4sRFTaQSM8Q/1600x900',
+    hero_alt: 'White block stack'
   },
   {
     id: 3,

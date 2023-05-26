@@ -265,19 +265,19 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     hero_src: '/showcases/mr-bucket/hero.png',
     hero_alt: 'Mr. Bucket showcase',
     mode: 'light',
-    backgroundColor: '#f8f5f0',
+    backgroundColor: '#430114',
     reverse: true,
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
-    title: 'IIX Impact Partnets',
+    title: 'IIX Impact Partners',
     slug: 'iix',
     subtitle:
       'Pioneer in Impact Investing. Global leader in sustainability.',
     hero_src: '/showcases/iix/hero.png',
     hero_alt: 'iix showcase',
     mode: 'light',
-    backgroundColor: '#f8fcf',
+    backgroundColor: '#DDECF2',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))

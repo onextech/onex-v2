@@ -563,7 +563,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const defaultLandingLayoutProps = {
     disableGutters: true,
     seo: {
-      ...(!isHomeRoute && { titleTemplate: `%s | ${site.title}` }),
+      ...(isHomeRoute ? {} : { titleTemplate: `%s | ${site.title}` }),
       ...seo,
     },
     headerProps: {
