@@ -6,6 +6,7 @@ import {
   MOCK_SHOWCASES,
   MOCK_POSTS,
   MOCK_INDUSTRYS,
+  MOCK_TECHNOLOGYS,
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
@@ -21,6 +22,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const page = getDynamicPage({ page: prevPage, context, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
+  // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
+  const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].filter(
+    ({ is_featured }) => is_featured
+  ).slice(0, 8)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
   const featuredPosts = MOCK_POSTS[MOCK_KEY].filter(
     ({ is_active }) => is_active
@@ -40,6 +45,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       page,
       showcases,
+      technologys,
       featuredPosts,
       industrys,
     },
@@ -51,7 +57,14 @@ export interface NextDataPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextTechPage: React.FC<NextDataPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys, pageProviderProps } = props
+  const {
+    page,
+    showcases,
+    technologys,
+    featuredPosts,
+    industrys,
+    pageProviderProps,
+  } = props
 
   return (
     <PageProvider {...pageProviderProps}>
@@ -63,6 +76,7 @@ const NextTechPage: React.FC<NextDataPageProps> = (props) => {
         <DataHomePage
           showcases={showcases}
           featuredPosts={featuredPosts}
+          technologys={technologys}
           industrys={industrys}
           page={page}
         />
