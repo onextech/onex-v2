@@ -60,6 +60,9 @@ export const MOCK_GROUP_SITE: Site = {
   logo_width: 110,
   logo_height: 13,
 
+  // hide testimonials
+  disable_testimonials: true,
+
   // App
   title: 'One X Group',
   absolute_url: 'https://onexgroup.co',
@@ -81,6 +84,8 @@ export const MOCK_GROUP_SITE: Site = {
 
 export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -114,6 +119,8 @@ export const MOCK_TECH_SITE = {
 export const MOCK_DESIGN_SITE = {
   ...MOCK_GROUP_SITE,
 
+  disable_testimonials: false,
+
   // System
   nav_is_ecosystem_visible: false,
 
@@ -145,6 +152,8 @@ export const MOCK_DESIGN_SITE = {
 
 export const MOCK_DATA_SITE = {
   ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
 
   // System
   nav_is_ecosystem_visible: false,

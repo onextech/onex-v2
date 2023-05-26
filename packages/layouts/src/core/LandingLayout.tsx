@@ -608,7 +608,9 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                     fullScreen: true,
                     disableTitle: true,
                     transitionVariant: 'fade' as const,
-                    children: <GetStartedPage fullScreen />,
+                    children: (
+                      <GetStartedPage fullScreen hideTestimonial={site.disable_testimonials} />
+                    ),
                   },
                 }}
               />
