@@ -27,7 +27,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
   const { clientLogos, clientTestimonials, routeConfig } = useLayout()
   const { sections } = page || {}
-  const { benefits, features, faqs, cta } = sections || {}
+  const { benefits, faqs, cta } = sections || {}
 
   return (
     <Blocks
@@ -125,8 +125,6 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         }),
         // Posts
         renderFeaturedPostsBlock({ items: featuredPosts }),
-        // Features
-        renderThreeColumnGridBlock(features),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },

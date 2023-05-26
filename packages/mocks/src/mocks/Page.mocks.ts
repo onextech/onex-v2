@@ -1178,50 +1178,6 @@ const MOCK_GROUP_PAGES = [
           'We build modern system architectures and scalable applications that radically transform business performance.',
         buttonProps: { href: '{routes.SERVICES}' },
       },
-      features: {
-        overline: 'What we do',
-        title: 'Our Approach',
-        subtitle:
-          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
-        items: [
-          {
-            fa_icon: 'fa-check',
-            title: 'Agile Development Methodology',
-            subtitle:
-              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Cutting-Edge Technologies',
-            subtitle:
-              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Customized Solutions',
-            subtitle:
-              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization's goals and processes.",
-          },
-          {
-            fa_icon: 'fa-tasks',
-            title: 'Streamlined Project Management',
-            subtitle:
-              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
-          },
-          {
-            fa_icon: 'fa-check-circle',
-            title: 'Quality Assurance and Testing',
-            subtitle:
-              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
-          },
-          {
-            fa_icon: 'fa-chart-line',
-            title: 'Scalability and Future-Proofing',
-            subtitle:
-              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
-          },
-        ],
-      },
       howItWorks: { overline: '', title: '', subtitle: '', items: [] },
       checklist: {
         overline: 'What we do',
@@ -1583,6 +1539,50 @@ const MOCK_TECH_PAGES = [
           },
         ],
       },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach',
+        subtitle:
+          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
+        items: [
+          {
+            fa_icon: 'fa-check',
+            title: 'Agile Development Methodology',
+            subtitle:
+              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Cutting-Edge Technologies',
+            subtitle:
+              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle:
+              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization's goals and processes.",
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Streamlined Project Management',
+            subtitle:
+              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Quality Assurance and Testing',
+            subtitle:
+              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Scalability and Future-Proofing',
+            subtitle:
+              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+          },
+        ],
+      },
       halfGrids: {
         items: [
           {
@@ -1622,50 +1622,6 @@ const MOCK_TECH_PAGES = [
         subtitle:
           'We build modern system architectures and scalable applications that radically transform business performance.',
         buttonProps: { href: '{routes.SERVICES}' },
-      },
-      features: {
-        overline: 'What we do',
-        title: 'Our Approach',
-        subtitle:
-          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
-        items: [
-          {
-            fa_icon: 'fa-watch',
-            title: 'Scale up development',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
-          },
-          {
-            fa_icon: 'fa-hand-holding-seedling',
-            title: 'Improve a current system',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
-          {
-            fa_icon: 'fa-mug-hot',
-            title: 'Food & Drinks',
-            subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
-          },
-          {
-            fa_icon: 'fa-puzzle-piece',
-            title: 'Live It Up',
-            subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
-          },
-          {
-            fa_icon: 'fa-guitar',
-            title: 'Rewards',
-            subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
-          },
-          {
-            fa_icon: 'fa-table-tennis',
-            title: 'Convenience',
-            subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-          },
-        ],
       },
       howItWorks: { overline: '', title: '', subtitle: '', items: [] },
       checklist: {
