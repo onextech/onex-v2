@@ -264,7 +264,7 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
       'A Chocolaterie E-Commerce',
     hero_src: '/showcases/mr-bucket/hero.png',
     hero_alt: 'Mr. Bucket showcase',
-    mode: 'light',
+    mode: 'dark',
     backgroundColor: '#430114',
     reverse: true,
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
