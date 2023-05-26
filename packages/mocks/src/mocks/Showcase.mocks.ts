@@ -270,7 +270,7 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
-    title: 'IIX Impact Partnets',
+    title: 'IIX Impact Partners',
     slug: 'iix',
     subtitle:
       'Pioneer in Impact Investing. Global leader in sustainability.',
