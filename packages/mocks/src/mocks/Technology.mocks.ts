@@ -18,38 +18,6 @@ export const MOCK_TECHNOLOGY_PAGE = {
     'Work with product experts with the know-how tested in 7+ industries.',
   // Sections
   sections: {
-    benefits: {
-      overline: 'What we do',
-      title: 'Our Suite of {title} Services',
-      subtitle:
-        "Whether designing and developing a new application for an ambitious idea, or upgrading an existing tool, we're the right team to help.",
-      items: [
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-        {
-          fa_icon: 'fa-guitar',
-          title: 'Rewards',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-      ],
-    },
     callout: {
       hero_src: '/images/about_nodes_above_city.png',
       hero_alt: 'Laser net over city',
