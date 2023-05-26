@@ -1740,6 +1740,12 @@ const MOCK_TECH_PAGES = [
       },
     },
   },
+  {
+    title: 'News',
+    slug: 'news',
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
 ].map((page) => ({
   ...MOCK_PAGE,
   ...page,
