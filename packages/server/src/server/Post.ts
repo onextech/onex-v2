@@ -6,7 +6,6 @@ import {
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import dayjs from 'dayjs'
-import { Post } from '@onex/types'
 
 const { MOCK_KEY } = process.env
 
