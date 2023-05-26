@@ -265,7 +265,7 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     hero_src: '/showcases/mr-bucket/hero.png',
     hero_alt: 'Mr. Bucket showcase',
     mode: 'light',
-    backgroundColor: '#f8f5f0',
+    backgroundColor: '#430114',
     reverse: true,
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
@@ -277,7 +277,7 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     hero_src: '/showcases/iix/hero.png',
     hero_alt: 'iix showcase',
     mode: 'light',
-    backgroundColor: '#f8fcf',
+    backgroundColor: '#DDECF2',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
