@@ -4681,25 +4681,25 @@ export const MOCK_DATA_SERVICES = [
               'Automate customer support processes by integrating ChatGPT to handle frequently asked questions, provide instant assistance, and escalate complex issues to human agents when needed.',
           },
           {
-            fa_icon: 'fa-comments-medical',
+            fa_icon: 'fa-medkit',
             title: 'Healthcare Virtual Assistants',
             subtitle:
               'Create virtual assistants powered by ChatGPT to assist healthcare professionals, patients, and caregivers by providing medical information, appointment scheduling, and personalized guidance.',
           },
           {
-            fa_icon: 'fa-comments-check',
+            fa_icon: 'fa-desktop',
             title: 'Interactive Interfaces',
             subtitle:
               'Build interactive conversational interfaces for applications, websites, and messaging platforms to enable seamless user interactions and personalized recommendations.',
           },
           {
-            fa_icon: 'fa-comments-code',
+            fa_icon: 'fa-code',
             title: 'Developer Tools and APIs',
             subtitle:
               'Provide developers with tools, APIs, and documentation for easy integration of ChatGPT into their applications and systems.',
           },
           {
-            fa_icon: 'fa-comments-cogs',
+            fa_icon: 'fa-users',
             title: 'Customization and Training',
             subtitle:
               'Tailor ChatGPT to your specific domain and requirements by training it on your custom datasets and fine-tuning the model for optimal performance.',
