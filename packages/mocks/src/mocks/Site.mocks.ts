@@ -170,6 +170,7 @@ export const MOCK_DATA_SITE = {
     { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
     { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
     { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
+    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
     { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
   ]
   

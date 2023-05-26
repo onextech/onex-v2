@@ -1276,6 +1276,41 @@ const MOCK_GROUP_PAGES = [
             content:
               'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
+          {
+            key: 'how-it-works-4',
+            title: 'What industries do you have experience working with?',
+            content: 'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
+          },
+          {
+            key: 'how-it-works-5',
+            title: 'How do you ensure the security and privacy of our data?',
+            content: 'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
+          },
+          {
+            key: 'how-it-works-6',
+            title: 'What is your approach to project management and communication?',
+            content: 'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
+          },
+          {
+            key: 'how-it-works-7',
+            title: 'How do you handle scalability and future growth considerations in your software solutions?',
+            content: 'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organization.',
+          },
+          {
+            key: 'how-it-works-8',
+            title: 'What is your approach to post-development support and maintenance?',
+            content: 'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
+          },
+          {
+            key: 'how-it-works-9',
+            title: 'What sets One X Group apart from other technology consulting firms?',
+            content: 'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
+          },
+          {
+            key: 'how-it-works-10',
+            title: 'What is your pricing model for technology consulting services?',
+            content: 'Our pricing model is flexible and depends on the scope and complexity of the project. We offer competitive rates and work closely with our clients to develop pricing structures that align with their budget and requirements. We provide transparent and detailed cost estimates upfront, ensuring there are no surprises along the way.',
+          }
         ],
       },
       cta: {
@@ -1972,27 +2007,56 @@ export const MOCK_DATA_PAGES = [
         subtitle:
           'Discover how we transform businesses with powerful data insights and advanced AI solutions.',
         items: [
-          {
-            key: 'faq-1',
-            title:
-              'How can {appTitle} help my business in harnessing the power of our data?',
-            content:
-              'At {appTitle}, we specialize in data science and AI solutions tailored for enterprise-level organizations. Our expert team uses advanced techniques in data mining, predictive modeling, and machine learning to turn your raw data into valuable insights that drive strategic decisions. We focus on delivering solutions that help you understand your data better, predict future trends, and make informed business decisions.',
-          },
-          {
-            key: 'faq-2',
-            title:
-              'What is the process for developing data science solutions with {appTitle}?',
-            content:
-              'Our process begins with a thorough understanding of your business objectives and data landscape. We source, cleanse, and structure your data to prepare it for analysis. We then delve deep into your data using statistical techniques to uncover hidden patterns and correlations. Based on these findings, we create predictive models and design AI solutions that meet your specific needs. Our iterative approach ensures the delivery of reliable and effective data science solutions that align with your business goals.',
-          },
-          {
-            key: 'faq-3',
-            title:
-              'Can {appTitle} help us optimize our existing data models and AI solutions?',
-            content:
-              'Absolutely. {appTitle} provides services for reviewing and optimizing existing data models and AI systems. We conduct system audits, performance evaluations, and fine-tuning to improve the accuracy and efficiency of your models and solutions. Our goal is to ensure your data science and AI systems continue to deliver valuable insights and drive successful outcomes for your business.',
-          },
+            {
+              key: 'data-science-1',
+              title: 'What experience and expertise do you have in data science?',
+              content: 'Our data science team has extensive experience in leveraging data to derive actionable insights and drive business outcomes. We have expertise in various data science techniques, including machine learning, statistical analysis, and data visualization. Our team stays updated with the latest advancements in the field to deliver cutting-edge data solutions to our clients.',
+            },
+            {
+              key: 'data-science-2',
+              title: 'How do you ensure that the data solutions you develop meet our specific requirements?',
+              content: 'We take a collaborative approach to data science projects, working closely with our clients to understand their unique business needs and goals. We conduct thorough data analysis and exploration to gain insights into your data and identify relevant patterns. Based on this analysis, we develop customized data solutions that align with your specific requirements and deliver the desired outcomes.',
+            },
+            {
+              key: 'data-science-3',
+              title: 'How do you ensure the quality and accuracy of the data solutions you develop?',
+              content: 'We have a robust quality assurance process in place to ensure the accuracy and reliability of the data solutions we develop. Our team follows rigorous data cleaning, preprocessing, and validation techniques to ensure the integrity of the data. We also conduct thorough testing and validation of our models and algorithms to ensure their performance and accuracy.',
+            },
+            {
+              key: 'data-science-4',
+              title: 'What industries do you have experience working with in terms of data science?',
+              content: 'Our data science team has experience working with diverse industries, including finance, healthcare, retail, and manufacturing. We understand the unique challenges and requirements of different industries and have successfully delivered data solutions that address industry-specific needs. Our industry experience enables us to provide valuable insights and tailored data solutions to our clients.',
+            },
+            {
+              key: 'data-science-5',
+              title: 'How do you handle project management and communication during data science projects?',
+              content: 'We follow a structured project management approach during data science projects. We work closely with our clients to define project objectives, milestones, and deliverables. We use project management tools to track progress, manage tasks, and facilitate communication. We schedule regular meetings and provide status updates to ensure transparent communication and collaboration throughout the project.',
+            },
+            {
+              key: 'data-science-6',
+              title: 'How do you ensure the security and privacy of our data during data science projects?',
+              content: 'Data security and privacy are of utmost importance to us. We adhere to strict data protection protocols and follow industry best practices to ensure the security and confidentiality of your data. We implement robust data access controls, encryption techniques, and secure storage solutions to safeguard your data throughout the project lifecycle.',
+            },
+            {
+              key: 'data-science-7',
+              title: 'What is your approach to project pricing and timelines for data science services?',
+              content: 'Our pricing model for data science services is based on the complexity of the project, the scope of work, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to align our services with their budget and project goals. Our goal is to deliver high-quality data solutions within the agreed-upon timeline and budget.',
+            },
+            {
+              key: 'data-science-8',
+              title: 'What is your experience in developing enterprise data and AI solutions?',
+              content: 'We have extensive experience in developing enterprise data and AI solutions for various industries. Our team has worked on projects involving data integration, data governance, predictive analytics, and AI-driven automation. We understand the challenges and opportunities that enterprises face in leveraging their data assets and strive to deliver solutions that drive business growth and transformation.',
+            },
+            {
+              key: 'data-science-9',
+              title: 'What is your approach to project management in data science projects?',
+              content: 'We follow an agile project management approach in data science projects, allowing for flexibility and iterative development. We break down projects into manageable tasks and set achievable milestones. We prioritize close collaboration with our clients, seeking their input and feedback throughout the project. Regular progress updates and transparent communication ensure that the project stays on track and meets the desired objectives.',
+            },
+            {
+              key: 'data-science-10',
+              title: 'What is your pricing model for data science services and AI solutions?',
+              content: 'Our pricing model for data science services and AI solutions is tailored to the specific requirements of each project. We offer flexible pricing options, including fixed-price and time-and-materials models. We work closely with our clients to understand their budget constraints and provide cost-effective solutions that deliver maximum value.',
+            },
         ],
       },
       cta: {
@@ -2277,27 +2341,56 @@ export const MOCK_DESIGN_PAGES = [
         subtitle:
           'Learn how we design effective, user-driven experiences for leading enterprises.',
         items: [
-          {
-            key: 'faq-1',
-            title:
-              'How can {appTitle} help my business in creating a user-centric and visually appealing product design?',
-            content:
-              'At {appTitle}, we specialize in UI/UX services tailored for enterprise businesses. Our expert team combines innovative design principles and user research to create user-centric and visually stunning product designs that resonate with your target audience. We understand the importance of delivering exceptional user experiences that drive engagement and loyalty.',
-          },
-          {
-            key: 'faq-2',
-            title:
-              'What is the process for developing an enterprise product design with {appTitle}?',
-            content:
-              'Our process begins with a comprehensive understanding of your business objectives and target users. We conduct thorough research and analysis to identify user needs and pain points through our interactive workshops. From there, we develop wireframes and prototypes to visualize the product design concepts and gather user feedback. Our iterative approach ensures that the final design aligns with your brand identity and delivers a seamless user experience.',
-          },
-          {
-            key: 'faq-3',
-            title:
-              'Can {appTitle} help us improve the user experience of our existing enterprise software?',
-            content:
-              'Absolutely. {appTitle} specializes in UX workshops and user experience audits to evaluate and enhance the user experience of your existing enterprise software. We conduct usability tests, gather user feedback, and provide actionable recommendations to optimize the usability and effectiveness of your software. Our goal is to improve user satisfaction, increase productivity, and drive better business outcomes through an improved user experience.',
-          },
+            {
+              key: 'how-it-works-1',
+              title: 'What experience and expertise do you have in UI/UX design?',
+              content: 'Our design team has extensive experience in creating intuitive and visually appealing user interfaces and engaging user experiences. We have worked with various industries and have a deep understanding of UI/UX principles, best practices, and emerging trends. We stay updated with the latest design tools and technologies to deliver cutting-edge solutions.',
+            },
+            {
+              key: 'how-it-works-2',
+              title: 'How do you ensure that the designs you create meet our specific requirements?',
+              content: 'We take a collaborative approach to UI/UX design, working closely with our clients to understand their unique needs, target audience, and business goals. We conduct thorough research and analysis to gather insights and create user personas. Our iterative design process involves wireframing, prototyping, and user testing to refine the designs and align them with your requirements.',
+            },
+            {
+              key: 'how-it-works-3',
+              title: 'How do you ensure the usability and effectiveness of the user interfaces you design?',
+              content: 'Usability and effectiveness are at the core of our design philosophy. We focus on creating user-centric designs that prioritize ease of use, clear navigation, and intuitive interactions. We conduct user testing sessions to gather feedback and iterate on the designs, ensuring that they are optimized for seamless user experiences and achieve your desired goals.',
+            },
+            {
+              key: 'how-it-works-4',
+              title: 'What industries do you have experience working with in terms of UI/UX design?',
+              content: 'Our design team has worked across various industries, including finance, healthcare, e-commerce, and more. We understand the unique requirements and challenges of different industries and tailor our designs to meet their specific needs. Our diverse industry experience allows us to bring valuable insights and deliver UI/UX solutions that drive results.',
+            },
+            {
+              key: 'how-it-works-5',
+              title: 'How do you collaborate with clients during the design process?',
+              content: 'We believe in a collaborative approach where we work closely with our clients throughout the design process. We conduct regular meetings to gather requirements, provide updates, and seek feedback. We value your input and involve you in key design decisions to ensure that the final product aligns with your vision and meets your expectations.',
+            },
+            {
+              key: 'how-it-works-6',
+              title: 'How do you ensure the consistency and branding of our enterprise product designs?',
+              content: 'We pay great attention to maintaining consistency and reflecting your branding throughout the design process. We create design systems and style guides that establish a cohesive visual language, including color schemes, typography, and UI components. This ensures consistency across different screens and interactions, strengthening your brand identity.',
+            },
+            {
+              key: 'how-it-works-7',
+              title: 'Can you assist us with user testing and gathering feedback on our existing product designs?',
+              content: 'Absolutely. We offer user testing services to evaluate the usability and effectiveness of your existing product designs. We conduct user interviews, usability tests, and gather feedback to identify areas for improvement. Based on the insights gathered, we provide recommendations and iterative design solutions to enhance the user experience and drive better outcomes.',
+            },
+            {
+              key: 'how-it-works-8',
+              title: 'What is your approach to conducting UX workshops for enterprise clients?',
+              content: 'Our UX workshops are tailored to meet the specific needs of enterprise clients. We combine theory and practical exercises to educate and empower your team with UX design principles, methodologies, and best practices. We facilitate interactive sessions where participants learn to apply UX techniques, such as user research, persona creation, wireframing, and prototyping, to solve real-world design challenges.',
+            },
+            {
+              key: 'how-it-works-9',
+              title: 'What is your approach to enterprise product design?',
+              content: 'Our approach to enterprise product design is rooted in understanding your business objectives, target audience, and market landscape. We conduct thorough research to gain insights into user needs and pain points. We then craft intuitive and visually appealing designs that align with your brand identity and deliver exceptional user experiences. We iterate based on user feedback and ensure the scalability and adaptability of the designs to meet your evolving business requirements.',
+            },
+            {
+              key: 'how-it-works-10',
+              title: 'What is your pricing model for UI/UX design services and UX workshops?',
+              content: 'Our pricing model for UI/UX design services and UX workshops depends on various factors such as project complexity, scope, and timeline. We offer tailored solutions to meet your specific requirements and budget. We provide detailed proposals and cost estimates upfront, and we work closely with you to ensure transparency and alignment throughout the engagement.',
+            },
         ],
       },
       cta: {
