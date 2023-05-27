@@ -1,4 +1,4 @@
-import { NextApiRequest } from 'next'
+import { NextRequest, NextResponse } from 'next/server'
 import { EnquiryTypeEnum } from './constants'
 import getSlackFormats from './getSlackFormats'
 
@@ -44,11 +44,11 @@ export interface PostEnquiryRequestBody {
   company_size?: string
 }
 
-export interface HandlePostEnquiryNextApiRequest extends NextApiRequest {
-  body: NextApiRequest['body'] & PostEnquiryRequestBody
+export interface HandlePostEnquiryNextRequest extends NextRequest {
+  body: NextRequest['body'] & PostEnquiryRequestBody
 }
 
-const handlePostEnquiry = async (req: HandlePostEnquiryNextApiRequest, res) => {
+const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest, res) => {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' })
     return
@@ -61,7 +61,7 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextApiRequest, res) => {
       email,
       mobile,
       message,
-      type = 'Enquiry',
+      type = EnquiryTypeEnum.ENQUIRY,
       needs = [],
       source,
       job_department,
