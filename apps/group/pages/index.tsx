@@ -66,7 +66,11 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
   } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={page.seo} darkHeader>
+      <LandingLayout
+        seo={page.seo}
+        transparentHeader
+        headerProps={{ translucentAtScrollY: 755 }}
+      >
         <GroupPage
           industrys={industrys}
           showcases={showcases}
