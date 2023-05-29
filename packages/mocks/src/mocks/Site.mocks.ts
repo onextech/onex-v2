@@ -60,7 +60,7 @@ export const MOCK_GROUP_SITE: Site = {
   logo_width: 110,
   logo_height: 13,
 
-  // hide testimonials
+  // disable testimonials
   disable_testimonials: true,
 
   // App
