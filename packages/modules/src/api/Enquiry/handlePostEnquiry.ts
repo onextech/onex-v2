@@ -48,10 +48,9 @@ export interface HandlePostEnquiryNextRequest extends NextRequest {
   body: NextRequest['body'] & PostEnquiryRequestBody
 }
 
-const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest, res) => {
+const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
   if (req.method !== 'POST') {
-    res.status(405).json({ error: 'Method not allowed' })
-    return
+    return NextResponse.json({ error: 'Method not allowed' }, { status: 405 })
   }
 
   try {
@@ -67,7 +66,7 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest, res) => {
       job_department,
       job_role,
       company_size,
-    } = req.body
+    } = await req.json()
 
     const now = new Date()
     const date = now.toDateString()
@@ -106,11 +105,10 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest, res) => {
       }),
     })
     const data = await response.json()
-
-    res.status(200).json(data)
+    return NextResponse.json(data, { status: 200 })
   } catch (error) {
     console.error(error)
-    res.status(500).json({ error: 'Something went wrong' })
+    return NextResponse.json({ error: 'Something went wrong' }, { status: 500 })
   }
 }
 
