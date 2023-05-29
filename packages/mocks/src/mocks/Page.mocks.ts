@@ -2264,7 +2264,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: '{appTitle}',
         title: 'Building Leading-Edge Enterprise Designs',
         subtitle:
-          "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies..",
+          "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
       },
       benefits: {
         overline: 'What we do',
