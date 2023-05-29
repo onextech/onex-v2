@@ -8,16 +8,14 @@ import orderBy from 'lodash/orderBy'
 
 export interface RenderPostsBlockItemProps {
   items: Post[]
-  isFeatured?: boolean
 }
 
 const renderPostsBlockItem = (props: RenderPostsBlockItemProps) => {
-  const { items, isFeatured } = props
+  const { items } = props
   const { routeConfig } = useLayout()
-  const limit = isFeatured ? 3 : items.length
   return {
     type: 'grid',
-    gridItems: orderBy(items, 'published_at', 'desc').slice(0, limit).map((item) => {
+    gridItems: orderBy(items, 'published_at', 'desc').map((item) => {
       return renderPostBlockItem({
         item: {
           href: `${routeConfig.POSTS}/${item.category.slug}/${item.slug}`,

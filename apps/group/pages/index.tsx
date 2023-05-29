@@ -11,6 +11,7 @@ import {
   MOCK_POSTS,
   MOCK_SHOWCASES,
 } from '@onex/mocks'
+import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY } = process.env
@@ -28,14 +29,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
     )
     .filter(({ is_hero }) => is_hero)
     .slice(0, 3)
-  const featuredPosts = MOCK_POSTS[MOCK_KEY].filter(
-    ({ is_active }) => is_active
-  )
+  const featuredPosts = orderBy(MOCK_POSTS[MOCK_KEY], 'published_at', 'desc')
+    .filter(({ is_active }) => is_active)
     .filter(
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
     .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
+    .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
