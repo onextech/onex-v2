@@ -731,6 +731,7 @@ export const MOCK_GROUP_POSTS = [
   {
     published_at: '2023-05-22T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 5,
     title:
       'Building Better Teams: The Role of Organisational Design in Talent Management',
@@ -915,6 +916,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-28T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 2,
     title: 'Automating Website Personalization with GPT-4: Future Trends and Possibilities',
     slug: 'automating-website-personalization-with-gpt-4-future-trends-and-possibilities',
@@ -949,6 +951,7 @@ export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-28T14:00:00+0000',
     is_active: true,
+    is_featured: true,
     category_id: 1,
     title: 'ChatGPT for Seamless User Experience: Transforming Website Interactions in 2023',
     slug: 'chatgpt-seamless-user-experience-transforming-website-interactions-2023',
