@@ -10,11 +10,11 @@ import { Image } from '@gravis-os/ui'
 
 export interface GetStartedPageProps {
   fullScreen?: boolean
-  hideTestimonial?: boolean
+  disableTestimonial?: boolean
 }
 
 const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
-  const { fullScreen, hideTestimonial } = props
+  const { fullScreen, disableTestimonial } = props
 
   const { logoProps, clientTestimonials, serviceCategorys } = useLayout()
 
@@ -90,7 +90,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     },
                   },
                   items: [
-                    ...(hideTestimonial ? [] : renderTestimonialBlockItem({
+                    ...(disableTestimonial ? [] : renderTestimonialBlockItem({
                       item: clientTestimonials[0],
                     })),
                     ...renderContactLinksBlockItems(),
