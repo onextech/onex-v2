@@ -968,6 +968,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Finance',
+    fa_icon: 'fa-coins',
     slug: 'finance',
     subtitle:
       'Helping financial enterprises enhance user experiences with tailor-made UX/UI solutions.',
@@ -1068,6 +1069,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Government',
+    fa_icon: 'fa-landmark-flag',
     slug: 'government',
     subtitle:
       'Specializing in delivering user-centric product design and UX workshops for government enterprises.',
@@ -1168,6 +1170,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Maritime',
+    fa_icon: 'fa-ship',
     slug: 'maritime',
     subtitle:
       'Expertise in enterprise product design and UX workshops focused on the maritime industry.',
@@ -1268,6 +1271,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Real Estate',
+    fa_icon: 'fa-map',
     slug: 'real-estate',
     subtitle:
       'Specialized in enterprise product design and UX workshops for the real estate industry.',
@@ -1377,6 +1381,7 @@ export const MOCK_DATA_INDUSTRYS = [
   {
     // Hero
     title: 'Finance',
+    fa_icon: 'fa-coins',
     slug: 'finance',
     subtitle:
       'Leveraging data and AI to drive transformative solutions for the finance industry.',
@@ -1477,6 +1482,7 @@ export const MOCK_DATA_INDUSTRYS = [
   {
     // Hero
     title: 'Government',
+    fa_icon: 'fa-landmark-flag',
     slug: 'government',
     subtitle:
       'Harnessing data and AI to drive efficiency, transparency, and innovation in the public sector.',
@@ -1577,6 +1583,7 @@ export const MOCK_DATA_INDUSTRYS = [
   {
     // Hero
     title: 'Maritime',
+    fa_icon: 'fa-ship',
     slug: 'maritime',
     subtitle:
       'Empowering the maritime industry with advanced data analytics and AI solutions.',
@@ -1677,6 +1684,7 @@ export const MOCK_DATA_INDUSTRYS = [
   {
     // Hero
     title: 'Real Estate',
+    fa_icon: 'fa-map',
     slug: 'real-estate',
     subtitle:
       'Empowering the real estate industry with advanced data analytics and AI solutions.',
