@@ -11,6 +11,7 @@ import {
   MOCK_POSTS,
   MOCK_SHOWCASES,
 } from '@onex/mocks'
+import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY } = process.env
@@ -28,9 +29,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     )
     .filter(({ is_hero }) => is_hero)
     .slice(0, 3)
-  const featuredPosts = MOCK_POSTS[MOCK_KEY].filter(
-    ({ is_active }) => is_active
-  )
+  const featuredPosts = orderBy(MOCK_POSTS[MOCK_KEY], 'published_at', 'desc')
+    .filter(({ is_active }) => is_active)
     .filter(
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
@@ -67,7 +67,11 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
   } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={page.seo} darkHeader>
+      <LandingLayout
+        seo={page.seo}
+        transparentHeader
+        headerProps={{ translucentAtScrollY: 755 }}
+      >
         <GroupPage
           industrys={industrys}
           showcases={showcases}

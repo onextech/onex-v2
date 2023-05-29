@@ -5,6 +5,7 @@ import TrendingFlatOutlinedIcon from '@mui/icons-material/TrendingFlatOutlined'
 import { GetStartedPage } from '@onex/pages'
 import { withPaletteMode } from '@gravis-os/theme'
 import { useTheme } from '@mui/material'
+import { useLayout } from '@onex/providers'
 
 export interface RenderGhostButtonBlockItemProps
   extends Omit<ButtonProps, 'size'> {
@@ -18,13 +19,13 @@ export interface RenderGhostButtonBlockItemProps
 const renderGhostButtonBlockItem = (
   props: RenderGhostButtonBlockItemProps
 ): BlockItemProps => {
+  const { site } = useLayout()
   const { isCta, overline, title, boxProps, sx, size = 'md', ...rest } = props
-
   const isLarge = size === 'lg'
 
   const theme = useTheme()
   const dialogChildrenJsx = withPaletteMode({ mode: theme.palette.mode })(
-    <GetStartedPage fullScreen />
+    <GetStartedPage fullScreen disableTestimonials={site.disable_testimonials} />
   )
 
   return {

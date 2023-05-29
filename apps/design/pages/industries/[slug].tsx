@@ -20,7 +20,7 @@ const NextIndustryPage: React.FC<NextIndustryPageProps> = (props) => {
       <LandingLayout
         seo={{
           title: industry.title,
-          description: `Discover how One X Data revolutionizes ${industry.title.toLowerCase()} with analytics and data solutions. Explore insights and stay ahead in the market.`,
+          description: `Discover how One X Design revolutionizes ${industry.title.toLowerCase()} with design solutions. Explore insights and stay ahead in the market.`,
         }}
         autoBreadcrumbs
       >

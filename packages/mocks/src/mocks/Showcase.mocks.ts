@@ -247,16 +247,6 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
     
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
-].map((showcase, i) => ({ id: i + 1, ...showcase }))
-
-export const MOCK_TECH_SHOWCASES= MOCK_COMMON_SHOWCAES
-
-export const MOCK_GROUP_SHOWCASES = MOCK_COMMON_SHOWCAES
-
-export const MOCK_DATA_SHOWCASES = MOCK_COMMON_SHOWCAES
-
-export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
-  ...MOCK_COMMON_SHOWCAES,
   { // TODO: ADD DETAIL
     title: 'Mr. Bucket',
     slug: 'mr-bucket',
@@ -304,6 +294,14 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
+
+export const MOCK_TECH_SHOWCASES= MOCK_COMMON_SHOWCAES
+
+export const MOCK_GROUP_SHOWCASES = MOCK_COMMON_SHOWCAES
+
+export const MOCK_DATA_SHOWCASES = MOCK_COMMON_SHOWCAES
+
+export const MOCK_DESIGN_SHOWCASES = MOCK_COMMON_SHOWCAES
 
 export const MOCK_SHOWCASES = {
   GROUP: MOCK_GROUP_SHOWCASES,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BlockItemProps } from '@gravis-os/landing'
 import { GetStartedPage } from '@onex/pages'
+import { useLayout } from '@onex/providers'
 
 export interface RenderContactCalloutButtonBlockItemProps
   extends BlockItemProps {
@@ -10,6 +11,7 @@ export interface RenderContactCalloutButtonBlockItemProps
 const renderContactCalloutButtonBlockItem = (
   props: RenderContactCalloutButtonBlockItemProps = {}
 ) => {
+  const { site } = useLayout()
   const { title = 'Get Started' } = props
   return {
     type: 'button',
@@ -21,7 +23,7 @@ const renderContactCalloutButtonBlockItem = (
         fullScreen: true,
         disableTitle: true,
         transitionVariant: 'fade' as const,
-        children: <GetStartedPage fullScreen />,
+        children: <GetStartedPage fullScreen disableTestimonials={site.disable_testimonials} />,
       },
     },
   }
