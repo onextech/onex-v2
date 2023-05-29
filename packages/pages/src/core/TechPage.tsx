@@ -33,7 +33,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, faqs, cta } = sections || {}
+  const { hero, benefits, faqs, features, cta } = sections || {}
 
   return (
     <Blocks
@@ -101,6 +101,8 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             : `Read our Latest Insights`,
           items: featuredPosts,
         }),
+        // Features
+        renderThreeColumnGridBlock(features),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },

@@ -47,52 +47,6 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
             },
           ],
         },
-        renderFourColumnGridBlock({
-          overline: 'What we do',
-          title: (
-            <span>
-              Applications That Matter
-              <br />
-              At Startup Speed
-            </span>
-          ),
-          subtitle:
-            'Speed in the digital arena is key. Our process is focused around delivering high quality work quickly. Whether you are looking for stunning app designs or a highly customised enterprise system, our process is here to support you.',
-          items: [
-            {
-              avatar_src: '/images/about_shape_circle_radial.svg',
-              avatar_alt: 'Three circles',
-              overline: '01',
-              title: 'Design a new product',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-            {
-              avatar_src: '/images/about_shape_squares.svg',
-              avatar_alt: 'Three squares',
-              overline: '02',
-              title: 'Launch a new company',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-            {
-              avatar_src: '/images/about_shape_square_with_circle.svg',
-              avatar_alt: 'Square with two circles',
-              overline: '03',
-              title: 'Scale up development',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-            {
-              avatar_src: '/images/about_shape_circles.svg',
-              avatar_alt: 'Three circles',
-              overline: '04',
-              title: 'Improve a current system',
-              subtitle:
-                'We create human-centred designs focused on driving conversions and achieving business goals.',
-            },
-          ],
-        }),
         renderTechnologysBlock({ items: technologys }),
       ]}
     />

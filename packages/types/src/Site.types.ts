@@ -26,6 +26,9 @@ interface Site {
   title?: string
   absolute_url?: string
 
+  // Hide testimonials
+  disable_testimonials?: boolean
+
   // Company
   company_title?: string
   company_absolute_url?: string
