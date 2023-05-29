@@ -36,7 +36,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
         published_at && dayjs(published_at).isBefore(dayjs())
     )
     .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
-    .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured

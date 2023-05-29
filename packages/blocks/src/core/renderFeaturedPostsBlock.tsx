@@ -20,7 +20,7 @@ const renderFeaturedPostsBlock = (props: RenderFeaturedPostsBlockProps) => {
         title,
         titleProps: { sx: { mb: { xs: 3, md: 5 } } },
       },
-      renderPostsBlockItem({ items }),
+      renderPostsBlockItem({ items, isFeatured: true }),
     ],
     ...rest,
   }
