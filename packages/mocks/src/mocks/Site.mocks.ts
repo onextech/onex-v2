@@ -162,7 +162,7 @@ export const MOCK_DATA_SITE = {
   title: 'One X Data',
   absolute_url: 'https://www.onexdata.com',
 
-  logo_alt: 'One X Data logo',
+  logo_alt: 'One X Data Logo',
 
   // Cta
   cta_title: 'Build Your Digital Future with One X Data',
