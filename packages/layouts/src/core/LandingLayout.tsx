@@ -565,6 +565,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     seo: {
       ...(isHomeRoute ? {} : { titleTemplate: `%s | ${site.title}` }),
       ...seo,
+      openGraph: {
+        ...seo.openGraph,
+        url: `${site.absolute_url}${router.asPath}`
+      }
     },
     headerProps: {
       accordionProps: { titleProps: { variant: 'h5' } },
