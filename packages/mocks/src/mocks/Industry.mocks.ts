@@ -70,7 +70,7 @@ export const MOCK_INDUSTRY_PAGE = {
     },
     features: {
       overline: 'What we do',
-      title: 'Our Approach to {title}',
+      title: 'Out {title} Capabilities',
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
@@ -298,7 +298,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Out {title} Capabilities',
         subtitle:
           'With our deep understanding of government operations and regulations, we offer a range of solutions that help government agencies achieve their goals and deliver exceptional services.',
         items: [
@@ -387,7 +387,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Out {title} Capabilities',
         subtitle:
           'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organizations stay ahead in a rapidly evolving digital landscape.',
         items: [
@@ -477,7 +477,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Out {title} Capabilities',
         subtitle:
           'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organizations thrive in a digital-first era.',
         items: [
