@@ -27,7 +27,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
   const { clientLogos, clientTestimonials, routeConfig } = useLayout()
   const { sections } = page || {}
-  const { benefits, features, faqs, cta } = sections || {}
+  const { benefits, faqs, cta } = sections || {}
 
   return (
     <Blocks
@@ -115,13 +115,6 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),
-        // Client Testimonials
-        renderClientTestimonialSliderBlock({
-          title: 'Technology Consulting with Proven Results',
-          subtitle:
-            "Recognized for our unwavering commitment to excellence, One X Group stands as the trusted partner of choice for business leaders seeking quality software development services to drive their enterprise software solutions forward.",
-          items: clientTestimonials,
-        }),
         // Industry
         renderFeaturedIndustrysBlock({
           title: 'Access Industry Expertise & Best Practices',
@@ -132,8 +125,6 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         }),
         // Posts
         renderFeaturedPostsBlock({ items: featuredPosts }),
-        // Features
-        renderThreeColumnGridBlock(features),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },

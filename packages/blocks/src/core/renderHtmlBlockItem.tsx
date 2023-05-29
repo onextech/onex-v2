@@ -15,8 +15,12 @@ const renderHtmlBlockItem = (props: RenderHtmlBlockItemProps) => {
           sx: {
             '& h1, & h2, & h3, & h4, & h5, & h6': {
               mt: 0,
+              mb: 1,
             },
-            '& p': { mb: 3 },
+            '& p': {
+              mt: 0,
+              mb: 3,
+            },
             '& blockquote': { borderLeft: 4, pl: 4, ml: 0, opacity: 0.8 },
             fontSize: {
               xs: 'subtitle2.fontSize',

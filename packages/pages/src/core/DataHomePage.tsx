@@ -44,13 +44,13 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
           ...hero,
           buttonProps: {
             overline: 'What we do',
-            title: 'Smarter Businesses',
+            title: 'Enterprise Data & AI Solutions',
             size: 'lg',
             href: routeConfig.SERVICES,
           },
           secondaryButtonProps: {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Data Science Experts',
             size: 'lg',
             href: routeConfig.CAREERS,
           },

@@ -8,6 +8,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     published_at: '2019-03-25T01:43:55+0800',
     title: 'One X Tech Launches Digitize™ Program',
     slug: 'one-x-tech-launches-digitize™-program',
+    hero_src: '/insights/one-x-tech-launches-digitize™-program.png',
+    hero_alt: 'Man pointing at a laptop',
     subtitle: "One X Tech Press Release: Launch of One X Tech Digitize™ Program",
     html:
     '<p>SINGAPORE: One X Tech, the world&rsquo;s first digital business platform, today announced that it has launched a new initiative aimed at encouraging companies to take their first step towards developing digital capabilities. Known as the One X Tech Digitize&trade; Program, the new initiative helps companies build stronger digital capabilities and deploy IT solutions in their business.</p>' + 
@@ -20,6 +22,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     published_at: '2018-11-21T01:43:55+0800',
     title: 'One X Tech Moves to Robinson Road, Singapore',
     slug: 'one-x-tech-moves-to-robinson-road-singapore',
+    hero_src: '/insights/one-x-tech-moves-to-robinson-road-singapore.png',
+    hero_alt: 'Office at Robinson Road',
     subtitle: "One X Tech Press Release: One X Tech Moves to New Office in Singapore to Create Digital Hub",
     html:
     '<p>SINGAPORE: Digital agency One X Tech officially unveiled its new Singapore office located at Robinson Road on Thursday (Nov 10).</p>' + 
@@ -34,6 +38,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     published_at: '2018-10-19T01:43:55+0800',
     title: 'Introducing One X Tech\'s Digital Business Suite',
     slug: 'one-x-tech-digital-business-suite',
+    hero_src: '/insights/one-x-tech-digital-business-suite.png',
+    hero_alt: 'One X Tech logo',
     subtitle: "One X Tech Press Release: Introducing One X Tech\'s Digital Business Suite",
     html:
     '<p>SINGAPORE: Earlier today, digital agency One X Tech, announced the launch of Digital Business Suite &mdash; a comprehensive offering of digital and IT services aimed at supporting businesses in their digital transformation journey.</p>' + 
@@ -47,6 +53,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     published_at: '2023-02-13T01:43:55+0800',
     title: 'Tyme Digital Banking collaborates with One X Tech to redesign its digital capabilities to build up brand presence',
     slug: 'tyme-digital-banking-collaborates-with-one-x-tech-to-redesign-its-digital',
+    hero_src: '/insights/tyme-digital-banking-collaborates-with-one-x-tech-to-redesign-its-digital.png',
+    hero_alt: 'Tyme Digital Banking website',
     subtitle: "With the collaboration between Tyme Digital Banking and One X Tech, customers worldwide can now access innovative digital banking solutions and experience exceptional services from a trusted partnership.",
     html:
     '<p>Tyme Digital Banking announces a collaboration with One X Tech to redesign its digital capabilities in order to exhibit their full capabilities and worldwide presence.</p>' + 
@@ -66,6 +74,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     published_at: '2022-04-07T01:43:55+0800',
     title: 'Launch of NextGEN Connect Challenge Platform at the International Maritime Organization Future of Shipping Conference 2022',
     slug: 'launch-of-nextgen-connect-challenge-platform-at-the-international-maritime',
+    hero_src: '/insights/launch-of-nextgen-connect-challenge-platform-at-the-international-maritime.png',
+    hero_alt: 'People on stage',
     subtitle: "The International Maritime Organization and Maritime Port Authority of Singapore collaborated with One X Tech to launch NextGEN Connect Challenge, driving sustainable shipping and decarbonization efforts in the Asia-Pacific region.",
     html:
     '<p>In conjunction with the International Maritime Organization Future of Shipping Conference and Singapore Maritime Week 2022, the International Maritime Organization and Maritime Port Authority of Singapore have jointly launched the NextGEN Connect Challenge Platform powered by One X Tech.</p>' + 
@@ -82,17 +92,36 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     '<p><strong>About International Maritime Organisation:</strong></p>' + 
     '<p>IMO is the United Nations\' specialized agency responsible for safety and security of shipping and the prevention of marine pollution by ships. With 174 Member States and three Associate Members, IMO is based in London with around 300 international staff.</p>'
   },
+  {
+    is_active: true,
+    published_at: '2021-07-26T01:43:55+0800',
+    title: 'Mr Bucket and One X Tech partner to deliver custom chocolate gifts to the online market',
+    slug: 'mr-bucket-and-one-x-tech-partner-to-deliver-custom-chocolate-gifts-to-the',
+    hero_src: '/insights/mr-bucket-and-one-x-tech-partner-to-deliver-custom-chocolate-gifts-to-the.png',
+    hero_alt: 'Storefront of chocolate shop',
+    subtitle: "With the partnership of Tyme Digital Banking and One X Tech, customers worldwide gain access to cutting-edge digital banking solutions, unlocking exceptional services from this trusted collaboration.",
+    html:
+      '<p>Mr Bucket has partnered with One X Tech to offer a one-of-a kind gifting experience featuring bespoke chocolates. Through this collaboration, B2B sales have been enabled and landing pages are now tailored based on special occasions for dynamic marketing opportunities.</p>' + 
+      '<p>The new website created by One X Tech for Mr Bucket offers a modern online shopping experience for customers across Asia. It will allow customers to browse through the wide selection of chocolates available from this beloved chocolaterie. Businesses can now access a variety of premium chocolates via the website, thanks to this innovative B2B platform.</p>' + 
+      '<p>One X Tech provides an innovative and unique website design for Mr Bucket, tailored to their brand and target audience. The website contains rich, informative content about the chocolates available, the factory and career opportunities.</p>' + 
+      '<p>Mr Bucket\'s website also features a unique landing page, which adjusts according to the current season. With visuals tailored for each occasion such as Christmas or Valentine\'s Day, this allows the brand to effectively market their products in response to timely celebrations and holidays.</p>' + 
+      '<p>Customers can build their own box of chocolates via the website, allowing them to choose their favourite flavours. The website allows for the creation of a one-of-a-kind shopping experience in the bustling&nbsp;F&amp;B industry, and the Build-a-Box platform provides unrivalled customer service through an integrated eCommerce and inventory control system. The platform seamlessly links e-commerce with powerful order, inventory and production management systems for optimum efficiency.</p>' + 
+      '<p>"This project is an exciting opportunity for us," commented One X Tech\'s Business Development Director, Lu Shu Hui. "We are passionate about assisting family companies in succeeding in the digital age, and we look forward to seeing Mr Bucket\'s success as a result of our collaboration."</p>' + 
+      '<p>With the help of One X Tech,&nbsp;Mr Bucket can now provide a modern, digital shopping experience that will delight its customers throughout Asia and beyond.</p>' + 
+      '<h2><strong>About One X Tech:</strong></h2>' + 
+      '<p>One X Tech is a leading technology company that focuses on building technological innovations for leading enterprises. We are on a mission to build a new digital economy by creating innovative digital solutions that put businesses at the digital frontier. One X Tech brings together an elite digital product team to create best-in-class products that scale across the world. One X Tech is based in Singapore and operates regionally in South East Asia.</p>' + 
+      '<h2><strong>About Mr Bucket Chocolaterie:</strong></h2>' + 
+      '<p>Mr Bucket Chocolaterie is a true Asian family-run chocolaterie for about 120 years. With a commitment to quality and a passion for chocolate, Mr Bucket has become a well-known and respected name in the Asian chocolate industry.</p>'
+  }
 ].map((item, i) => ({
   id: i + 1,
 
   // Images
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: 'Three circles',
-  hero_src: '/images/about_working_in_office.png',
-  hero_alt: 'People working in office',
   // Author
-  author_avatar_src: '/images/about_shape_circle_radial.svg',
-  author_avatar_alt: 'Three circles',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
   // Tags

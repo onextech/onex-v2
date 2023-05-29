@@ -264,7 +264,7 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
       'A Chocolaterie E-Commerce',
     hero_src: '/showcases/mr-bucket/hero.png',
     hero_alt: 'Mr. Bucket showcase',
-    mode: 'light',
+    mode: 'dark',
     backgroundColor: '#430114',
     reverse: true,
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
@@ -278,6 +278,29 @@ export const MOCK_DESIGN_SHOWCASES: Showcase[] = [
     hero_alt: 'iix showcase',
     mode: 'light',
     backgroundColor: '#DDECF2',
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+  },
+  { // TODO: ADD DETAIL
+    title: 'Singapore Realtors Inc: SRI',
+    slug: 'sri',
+    subtitle:
+      'Real Estate Platform. Dare to Be Different.',
+    hero_src: '/showcases/sri/hero.png',
+    hero_alt: 'sri showcase',
+    mode: 'light',
+    reverse: true,
+    backgroundColor: '#DACEE1',
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+  },
+  { // TODO: ADD DETAIL
+    title: 'OctiFi',
+    slug: 'octifi',
+    subtitle:
+      'Fintech Platform. Shop Now, Pay Later.',
+    hero_src: '/showcases/octifi/hero.png',
+    hero_alt: 'octifi showcase',
+    mode: 'dark',
+    backgroundColor: '#31639C',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
