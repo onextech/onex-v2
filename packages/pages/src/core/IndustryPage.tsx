@@ -64,11 +64,6 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
           },
           ...cta,
         }),
-        // Benefits
-        renderFourColumnGridBlock({
-          ...benefits,
-          sx: { backgroundColor: 'background.paper' },
-        }),
       ]}
     />
   )
