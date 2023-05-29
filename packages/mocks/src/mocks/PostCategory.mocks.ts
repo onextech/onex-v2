@@ -59,8 +59,8 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Drive Circular Purpose',
     subtitle:
       'Lead your business toward a long-term vision for holistic prosperity.',
-    hero_src: 'https://source.unsplash.com/_8gR561QtEA/1600x900',
-    hero_alt: 'Apps on a monitor',
+    hero_src: 'https://source.unsplash.com/8OQt1zTnJeE/1600x900',
+    hero_alt: 'Apple watch',
   },
   {
     id: 2,
@@ -132,8 +132,8 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Fuel Creativity and Innovation',
     subtitle:
       'Unlock limitless possibilities with design thinking and innovative solutions.',
-    hero_src: 'https://source.unsplash.com/kKYDdRoTydk/1600x900',
-    hero_alt: 'Connecting cords',
+    hero_src: 'https://source.unsplash.com/8TttTCQLUKw/1600x900',
+    hero_alt: 'Artistic layout',
   },
   {
     id: 4,
@@ -164,8 +164,8 @@ export const MOCK_DATA_POST_CATEGORYS = [
     slug: 'benefits-of-ai',
     description: 'Unleashing the Power of AI.',
     subtitle: 'Harnessing Artificial Intelligence for exponential growth, improved decision-making, and unparalleled efficiency.',
-    hero_src: 'https://source.unsplash.com/E301rX-2CeQ/1600x900',
-    hero_alt: 'Geometric grid',
+    hero_src: 'https://source.unsplash.com/5PZ0ASBTvCQ/1600x900',
+    hero_alt: 'Crystalized layout',
   },
   {
     id: 2,
