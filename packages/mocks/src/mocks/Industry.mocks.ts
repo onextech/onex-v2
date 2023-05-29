@@ -70,7 +70,7 @@ export const MOCK_INDUSTRY_PAGE = {
     },
     features: {
       overline: 'What we do',
-      title: 'Our Approach to {title}',
+      title: 'Our {title} Capabilities',
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
@@ -181,6 +181,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    fa_icon: 'fa-coins',
+    is_featured: true,
     subtitle:
       'Empowering finance firms with tailor-made enterprise software solutions to drive business success.',
     hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
@@ -298,7 +300,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our {title} Capabilities',
         subtitle:
           'With our deep understanding of government operations and regulations, we offer a range of solutions that help government agencies achieve their goals and deliver exceptional services.',
         items: [
@@ -369,6 +371,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   },
   {
     title: 'Maritime',
+    is_featured: true,
     subtitle:
       'We help maritime product teams drive efficiencies, unlock new value, and create new business models.',
     slug: 'maritime',
@@ -387,7 +390,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our {title} Capabilities',
         subtitle:
           'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organizations stay ahead in a rapidly evolving digital landscape.',
         items: [
@@ -477,7 +480,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our {title} Capabilities',
         subtitle:
           'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organizations thrive in a digital-first era.',
         items: [
@@ -559,6 +562,8 @@ export const MOCK_TECH_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    is_featured: true,
+    fa_icon: 'fa-coins',
     subtitle:
       'Partner with finance experts to optimize your business processes and make data-driven decisions.',
     hero_src: 'https://source.unsplash.com/amLfrL8LGls/1600x900',
@@ -654,8 +659,6 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
     },
-    fa_icon: 'fa-coins',
-    is_featured: true,
   },
   {
     // Hero
@@ -759,6 +762,7 @@ export const MOCK_TECH_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    is_featured: true,
     subtitle:
       'Partner with software development experts to optimize maritime operations and enhance efficiency.',
     hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
@@ -967,7 +971,9 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Finance',
+    is_featured: true,
     slug: 'finance',
+    fa_icon: 'fa-coins',
     subtitle:
       'Helping financial enterprises enhance user experiences with tailor-made UX/UI solutions.',
     hero_src: 'https://source.unsplash.com/4fsCBcZt9H8/1600x900',
@@ -1067,6 +1073,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Government',
+    is_featured: true,
+    fa_icon: 'fa-landmark-flag',
     slug: 'government',
     subtitle:
       'Specializing in delivering user-centric product design and UX workshops for government enterprises.',
@@ -1168,6 +1176,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    is_featured: true,
+    fa_icon: 'fa-ship',
     subtitle:
       'Expertise in enterprise product design and UX workshops focused on the maritime industry.',
     hero_src: 'https://source.unsplash.com/XdIrwH98K_E/1600x900',
@@ -1268,6 +1278,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
     // Hero
     title: 'Real Estate',
     slug: 'real-estate',
+    fa_icon: 'fa-map',
+    is_featured: true,
     subtitle:
       'Specialized in enterprise product design and UX workshops for the real estate industry.',
     hero_src: 'https://source.unsplash.com/b3H9CbDZqrs/1600x900',
@@ -1377,6 +1389,8 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    fa_icon: 'fa-coins',
+    is_featured: true,
     subtitle:
       'Leveraging data and AI to drive transformative solutions for the finance industry.',
     hero_src: 'https://source.unsplash.com/p_cHW1REBWc/1600x900',
@@ -1477,6 +1491,8 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Government',
     slug: 'government',
+    fa_icon: 'fa-landmark-flag',
+    is_featured: true,
     subtitle:
       'Harnessing data and AI to drive efficiency, transparency, and innovation in the public sector.',
     hero_src: 'https://source.unsplash.com/GAfoU0t8tsg/1600x900',
@@ -1577,6 +1593,8 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    fa_icon: 'fa-ship',
+    is_featured: true,
     subtitle:
       'Empowering the maritime industry with advanced data analytics and AI solutions.',
     hero_src: 'https://source.unsplash.com/eqwFWHfQipg/1600x900',
@@ -1677,6 +1695,8 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Real Estate',
     slug: 'real-estate',
+    fa_icon: 'fa-map',
+    is_featured: true,
     subtitle:
       'Empowering the real estate industry with advanced data analytics and AI solutions.',
     hero_src: 'https://source.unsplash.com/Ch3WwM6PcsA/1600x900',

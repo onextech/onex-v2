@@ -33,7 +33,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Advisory',
     slug: 'advisory',
     subtitle:
-      'Unlock growth and success with {}\'s business advisory services.',
+      'Unlock growth and success with One X Group\'s business advisory services.',
     hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
     hero_alt: 'Group working on a laptop together',
   },
