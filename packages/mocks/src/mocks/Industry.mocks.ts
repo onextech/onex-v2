@@ -559,6 +559,7 @@ export const MOCK_TECH_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    is_featured: true,
     subtitle:
       'Partner with finance experts to optimize your business processes and make data-driven decisions.',
     hero_src: 'https://source.unsplash.com/amLfrL8LGls/1600x900',
@@ -655,7 +656,6 @@ export const MOCK_TECH_INDUSTRYS = [
       },
     },
     fa_icon: 'fa-coins',
-    is_featured: true,
   },
   {
     // Hero
@@ -967,6 +967,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Finance',
+    is_featured: true,
     slug: 'finance',
     subtitle:
       'Helping financial enterprises enhance user experiences with tailor-made UX/UI solutions.',
@@ -1067,6 +1068,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
   {
     // Hero
     title: 'Government',
+    is_featured: true,
     slug: 'government',
     subtitle:
       'Specializing in delivering user-centric product design and UX workshops for government enterprises.',
@@ -1168,6 +1170,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    is_featured: true,
     subtitle:
       'Expertise in enterprise product design and UX workshops focused on the maritime industry.',
     hero_src: 'https://source.unsplash.com/XdIrwH98K_E/1600x900',
@@ -1268,6 +1271,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     // Hero
     title: 'Real Estate',
     slug: 'real-estate',
+    is_featured: true,
     subtitle:
       'Specialized in enterprise product design and UX workshops for the real estate industry.',
     hero_src: 'https://source.unsplash.com/b3H9CbDZqrs/1600x900',
@@ -1377,6 +1381,7 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    is_featured: true,
     subtitle:
       'Leveraging data and AI to drive transformative solutions for the finance industry.',
     hero_src: 'https://source.unsplash.com/p_cHW1REBWc/1600x900',
@@ -1477,6 +1482,7 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Government',
     slug: 'government',
+    is_featured: true,
     subtitle:
       'Harnessing data and AI to drive efficiency, transparency, and innovation in the public sector.',
     hero_src: 'https://source.unsplash.com/GAfoU0t8tsg/1600x900',
@@ -1577,6 +1583,7 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    is_featured: true,
     subtitle:
       'Empowering the maritime industry with advanced data analytics and AI solutions.',
     hero_src: 'https://source.unsplash.com/eqwFWHfQipg/1600x900',
@@ -1677,6 +1684,7 @@ export const MOCK_DATA_INDUSTRYS = [
     // Hero
     title: 'Real Estate',
     slug: 'real-estate',
+    is_featured: true,
     subtitle:
       'Empowering the real estate industry with advanced data analytics and AI solutions.',
     hero_src: 'https://source.unsplash.com/Ch3WwM6PcsA/1600x900',
