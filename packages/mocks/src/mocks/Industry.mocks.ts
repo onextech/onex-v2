@@ -178,93 +178,103 @@ export const MOCK_INDUSTRY_PAGE = {
 
 export const MOCK_GROUP_INDUSTRYS = [
   {
-    title: 'Capital Markets',
-    slug: 'capital-markets',
+    // Hero
+    title: 'Finance',
+    slug: 'finance',
     subtitle:
-      'We help investment banks, wealth and asset management firms, and other market infrastructure firms prepare for tomorrow.',
-    fa_icon: 'fa-chart-mixed-up-circle-dollar',
-    is_featured: true,
-    hero_src: 'https://source.unsplash.com/NDfqqq_7QWM/1600x900',
-    hero_alt: 'Man monitoring graph',
+      'Empowering finance firms with tailor-made enterprise software solutions to drive business success.',
+    hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
+    hero_alt: 'Financial Building',
+    // Seo
+    seo: {
+      title: 'Finance',
+      description:
+        'Providing expertly crafted enterprise software solutions to drive digital transformation in the financial sector.',
+    },
+    // Sections
     sections: {
       summary: {
-        title: 'Driving success in the Capital Markets industry.',
+        title: 'Driving digital transformation in finance.',
         items: [
           {
             title:
-              'We understand the critical role that technology plays in driving success for enterprises in the capital markets industry. With our specialized technology consulting services and expertise in enterprise software development, we are dedicated to helping businesses in the capital markets sector achieve their goals and gain a competitive edge.',
+              'In the rapidly evolving world of finance, enterprise software solutions are key to staying ahead. We specialize in developing bespoke software solutions that drive efficiency, security, and scalability in financial enterprises.',
+          },
+          {
+            title:
+              'Our deep industry knowledge and technological expertise make us uniquely positioned to help your organization navigate its digital transformation journey. We build solutions that not only meet your current needs but also scale with your future growth.',
           },
         ],
       },
       features: {
         overline: 'What we do',
-        title: 'Our Approach to {title}',
+        title: 'Our {title} Capabilities',
         subtitle:
-          'With our expertise in enterprise software development, we offer a range of solutions tailored to address the specific needs and challenges of the Capital Markets industry.',
+          'Leveraging the latest technologies, we provide comprehensive software development services for the finance industry.',
         items: [
           {
-            fa_icon: 'fa-cogs',
-            title: 'Custom Software Development',
+            fa_icon: 'fa-code',
+            title: 'Custom software development',
             subtitle:
-              'We develop custom software solutions that are designed to streamline your Capital Markets business processes and drive efficiency.',
+              'We develop tailor-made software solutions that align with your business objectives and cater to your unique operational needs.',
           },
           {
-            fa_icon: 'fa-database',
-            title: 'Data Analytics and Insights',
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics solutions',
             subtitle:
-              'Our data analytics services enable you to gain valuable insights from your Capital Markets business data, empowering you to make informed decisions.',
+              'We build robust data analytics solutions to help you derive actionable insights from your data and drive informed decision-making.',
           },
           {
-            fa_icon: 'fa-users',
-            title: 'CRM Solutions',
+            fa_icon: 'fa-lock',
+            title: 'Security & Compliance',
             subtitle:
-              'We provide CRM (Customer Relationship Management) solutions that help you effectively manage customer relationships and enhance customer satisfaction.',
+              'We prioritize security and regulatory compliance in every solution we build, to protect your data and maintain trust with your clients.',
           },
           {
-            fa_icon: 'fa-shield-alt',
-            title: 'Security and Compliance',
+            fa_icon: 'fa-cloud',
+            title: 'Cloud solutions',
             subtitle:
-              'Our expertise in security and compliance ensures that your Capital Markets business is protected against potential threats and meets industry regulations.',
+              'We enable smooth migration to the cloud and develop cloud-native applications, to enhance scalability and operational efficiency.',
           },
           {
-            fa_icon: 'fa-globe',
-            title: 'Integration and Scalability',
+            fa_icon: 'fa-robot',
+            title: 'AI & Machine Learning',
             subtitle:
-              'We offer integration services to connect and streamline your Capital Markets business systems, as well as scalable solutions to support your growth.',
+              'We integrate AI and Machine Learning capabilities into your systems to automate processes, reduce errors and improve customer experiences.',
           },
           {
-            fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            fa_icon: 'fa-sync-alt',
+            title: 'System Integration',
             subtitle:
-              'We assist in modernizing and upgrading your legacy systems, enabling your Capital Markets business to leverage the latest technologies and stay competitive.',
+              'We ensure your systems work together seamlessly, improving data flow, operational efficiency, and overall business performance.',
           },
         ],
       },
       faqs: {
-        title: 'Frequently Asked Questions',
+        title: 'FAQs',
         subtitle:
-          'Learn more about our Capital Markets Solutions and how they can benefit your business.',
+          'Learn more about our enterprise software development services for the financial industry.',
         items: [
           {
             key: 'faqs-1',
-            title: 'What are the key challenges in capital markets operations?',
+            title: 'Why is digital transformation important for finance companies?',
             content:
-              'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
+              'Digital transformation enables finance companies to streamline operations, improve customer experiences, and make data-driven decisions. It can also enhance security, compliance, and scalability, key aspects in the financial sector.',
           },
           {
             key: 'faqs-2',
-            title: 'How can your software solutions improve trading processes?',
+            title: 'What type of software solutions do you provide for finance companies?',
             content:
-              'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
+              'We offer a wide range of software solutions, including custom software development, data analytics solutions, security and compliance, cloud solutions, AI and Machine Learning integration, and system integration.',
           },
           {
             key: 'faqs-3',
-            title: 'Do you offer customization options for capital markets solutions?',
+            title: 'How do you ensure the security and compliance of the software you develop?',
             content:
-              'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
+              'We follow stringent security protocols and best practices in software development. We also ensure our software solutions comply with all relevant regulations and standards in the financial industry.',
           },
         ],
-      }
+      },
     },
   },
   {
@@ -535,185 +545,6 @@ export const MOCK_GROUP_INDUSTRYS = [
         ],
       }
     }
-  },
-  {
-    title: 'Banking',
-    slug: 'banking',
-    subtitle:
-      'We help banks challenge their conventions; capitalize on the full potential of technology, and become better at change.',
-    fa_icon: 'fa-coins',
-    is_featured: true,
-    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900',
-    hero_alt: 'G Pay being used',
-    sections: {
-      summary: {
-        title: 'Driving innovation in the banking industry.',
-        items: [
-          {
-            title:
-              'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
-          },
-        ],
-      },
-      features: {
-        overline: 'What we do',
-        title: 'Our Approach to {title}',
-        subtitle:
-          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower banks to thrive in a digital banking era.',
-        items: [
-          {
-            fa_icon: 'fa-money-check-alt',
-            title: 'Core Banking Systems',
-            subtitle:
-              'We develop robust and scalable core banking systems that streamline banking processes, including account management, transaction processing, and customer data management.',
-          },
-          {
-            fa_icon: 'fa-mobile-alt',
-            title: 'Mobile Banking Applications',
-            subtitle:
-              'Our mobile banking applications enable customers to conveniently perform banking transactions, manage accounts, and access personalized financial services on their mobile devices.',
-          },
-          {
-            fa_icon: 'fa-shield-alt',
-            title: 'Security and Fraud Prevention',
-            subtitle:
-              'We implement advanced security measures and fraud prevention solutions to safeguard banking systems, customer data, and financial transactions from cyber threats.',
-          },
-          {
-            fa_icon: 'fa-chart-pie',
-            title: 'Data Analytics and Insights',
-            subtitle:
-              'Our data analytics solutions leverage big data technologies to provide banks with valuable insights, enabling data-driven decision-making, risk management, and personalized customer experiences.',
-          },
-          {
-            fa_icon: 'fa-briefcase',
-            title: 'Corporate Banking Solutions',
-            subtitle:
-              'We develop comprehensive corporate banking solutions that facilitate corporate account management, treasury services, trade finance, and cash management for corporate clients.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Integration and Middleware',
-            subtitle:
-              'We provide integration and middleware solutions that enable seamless connectivity between banking systems, third-party applications, and external APIs, enhancing operational efficiency and enabling innovation.',
-          },
-        ],
-      },
-      faqs: {
-        title: 'Frequently Asked Questions',
-        subtitle:
-          'Learn more about our Banking Solutions and how they can benefit your institution.',
-        items: [
-          {
-            key: 'faqs-1',
-            title: 'What are the key challenges in the banking industry?',
-            content:
-              'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
-          },
-          {
-            key: 'faqs-2',
-            title: 'How can technology drive innovation in the banking sector?',
-            content:
-              'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
-          },
-          {
-            key: 'faqs-3',
-            title: 'What software solutions do you offer for the banking industry?',
-            content:
-              'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
-          },
-        ],
-      }
-    },
-  },
-  {
-    title: 'Insurance',
-    slug: 'insurance',
-    subtitle:
-      "Insurance is going digital. Whether it's streamlining business processes or enabling new models, we're helping our clients transform.",
-    fa_icon: 'fa-shield-cross',
-    hero_src: 'https://source.unsplash.com/OQMZwNd3ThU/1600x900',
-    hero_alt: 'Person writing on paper',
-    sections: {
-      summary: {
-        title: 'Driving innovation in the insurance industry.',
-        items: [
-          {
-            title:
-              'The insurance industry is undergoing rapid digital transformation, driven by changing customer expectations, regulatory requirements, and emerging technologies. At {appTitle}, we help insurance enterprises navigate these challenges and unlock the full potential of technology to achieve their business goals.',
-          },
-        ],
-      },
-      features: {
-        overline: 'What we do',
-        title: 'Our Approach to {title}',
-        subtitle:
-          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower insurance companies to thrive in a digital era.',
-        items: [
-          {
-            fa_icon: 'fa-shield-alt',
-            title: 'Policy Management Systems',
-            subtitle:
-              'We develop comprehensive policy management systems that automate policy administration, underwriting, claims processing, and policyholder management.',
-          },
-          {
-            fa_icon: 'fa-mobile-alt',
-            title: 'Mobile Claims Applications',
-            subtitle:
-              'Our mobile claims applications enable policyholders to conveniently submit and track insurance claims, upload documents, and communicate with claims adjusters.',
-          },
-          {
-            fa_icon: 'fa-chart-pie',
-            title: 'Data Analytics and Insights',
-            subtitle:
-              'We leverage advanced analytics and big data technologies to help insurance companies extract valuable insights from data, enhance risk assessment, optimize pricing strategies, and improve fraud detection.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Integration and Interoperability',
-            subtitle:
-              'We provide integration and interoperability solutions that enable seamless connectivity between insurance systems, external data sources, and third-party services, facilitating data exchange, process automation, and collaboration.',
-          },
-          {
-            fa_icon: 'fa-users',
-            title: 'Customer Relationship Management (CRM)',
-            subtitle:
-              'Our CRM solutions help insurance companies effectively manage customer relationships, improve customer service, and enable personalized engagement through targeted marketing campaigns.',
-          },
-          {
-            fa_icon: 'fa-lock',
-            title: 'Cybersecurity and Data Protection',
-            subtitle:
-              'We implement robust cybersecurity measures and data protection solutions to safeguard sensitive insurance data, prevent data breaches, and ensure compliance with regulatory requirements.',
-          },
-        ],
-      },
-      faqs: {
-        title: 'Frequently Asked Questions',
-        subtitle:
-          'Learn more about our Insurance Solutions and how they can benefit your organization.',
-        items: [
-          {
-            key: 'faqs-1',
-            title: 'What are the key challenges in the insurance industry?',
-            content:
-              'The insurance industry faces challenges such as digital disruption, legacy system integration, regulatory compliance, customer experience enhancement, fraud detection, risk assessment, and leveraging data insights.',
-          },
-          {
-            key: 'faqs-2',
-            title: 'How can technology drive innovation in the insurance sector?',
-            content:
-              'Technology can drive innovation in the insurance sector by enabling digital insurance platforms, enhancing underwriting processes, automating claims management, improving customer engagement through self-service portals, leveraging data analytics for risk assessment and personalized offerings, and facilitating seamless integration with partner ecosystems.',
-          },
-          {
-            key: 'faqs-3',
-            title: 'What software solutions do you offer for the insurance industry?',
-            content:
-              'We offer a range of software solutions tailored to the insurance industry, including policy management systems, claims processing platforms, customer portals, fraud detection systems, data analytics tools, underwriting automation, and digital transformation consulting services.',
-          },
-        ],
-      }
-    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
@@ -1132,9 +963,823 @@ export const MOCK_TECH_INDUSTRYS = [
   })
 })
 
-export const MOCK_DATA_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_DESIGN_INDUSTRYS = [
+  {
+    // Hero
+    title: 'Finance',
+    slug: 'finance',
+    subtitle:
+      'Helping financial enterprises enhance user experiences with tailor-made UX/UI solutions.',
+    hero_src: 'https://source.unsplash.com/4fsCBcZt9H8/1600x900',
+    hero_alt: 'Wall street sign',
+    // Seo
+    seo: {
+      title: 'Finance',
+      description:
+        'Delivering specialized UX/UI design and workshops for financial enterprises to improve user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing user experiences in the finance industry.',
+        items: [
+          {
+            title:
+              'In the competitive world of finance, superior user experience can set your business apart. We specialize in delivering UX/UI solutions that are not only visually pleasing but also intuitive and user-friendly, enhancing customer satisfaction and business success.',
+          },
+          {
+            title:
+              'Our team of UX/UI experts understand the unique needs and challenges of the finance industry. We are dedicated to helping you improve user engagement and retention through expertly crafted UX/UI designs and workshops.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of UX/UI services to transform your financial enterprise.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Bespoke UX/UI design',
+            subtitle:
+              'We design user interfaces tailored to the needs of your financial enterprise, enhancing usability and customer engagement.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'UX Workshops',
+            subtitle:
+              'We conduct UX workshops to help your team understand and implement best practices in user experience design.',
+          },
+          {
+            fa_icon: 'fa-file-alt',
+            title: 'Product Design',
+            subtitle:
+              'We design financial products with a focus on user experience, helping your customers interact with your services more efficiently.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility',
+            subtitle:
+              'We prioritize accessibility in our designs, ensuring that your services are usable by everyone, regardless of their abilities.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first design',
+            subtitle:
+              'We follow a mobile-first approach to design, ensuring your financial services are easily accessible on all devices.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative approach',
+            subtitle:
+              'We work in close collaboration with your team to ensure our designs align with your business objectives and meet your users’ needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our UX/UI services for the financial industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is UX/UI important in the finance industry?',
+            content:
+              'A well-designed user interface can significantly enhance user experience, leading to improved customer satisfaction and retention. In the finance industry, where services can be complex, an intuitive and user-friendly interface is crucial for customer engagement.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What do your UX workshops involve?',
+            content:
+              'Our UX workshops are designed to educate your team on the principles of user experience design. We cover a range of topics, from understanding user needs and behaviors to creating user journeys and prototypes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach product design for financial services?',
+            content:
+              'Our product design process is user-centric. We start by understanding your users’ needs and behaviors, then design products that meet those needs effectively. We also conduct usability testing to ensure our designs are intuitive and user-friendly.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Government',
+    slug: 'government',
+    subtitle:
+      'Specializing in delivering user-centric product design and UX workshops for government enterprises.',
+    hero_src: 'https://source.unsplash.com/ICXMkhRdquA/1600x900',
+    hero_alt: 'Marble building',
+    // Seo
+    seo: {
+      title: 'Government',
+      description:
+        'This page highlights our specialized UX/UI services for government enterprises, aiming to improve user experiences and accessibility.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'User-focused design solutions for government agencies.',
+        items: [
+          {
+            title:
+              'Government enterprises are increasingly recognizing the importance of excellent user experience in delivering efficient public services. Our UX/UI services are designed to create intuitive, user-friendly interfaces that facilitate seamless interactions between government agencies and the public.',
+          },
+          {
+            title:
+              'Our team of UX/UI experts bring an in-depth understanding of the specific needs and challenges faced by government agencies. Through tailor-made UX workshops and product design, we help government agencies improve user engagement, efficiency, and accessibility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer comprehensive UX/UI services, including product design and UX workshops specifically for government agencies.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Tailored UX/UI design',
+            subtitle:
+              'We create bespoke user interfaces tailored to the needs of government agencies and their users.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'UX Workshops',
+            subtitle:
+              'We conduct specialized UX workshops that enable government teams to understand and implement best UX practices.',
+          },
+          {
+            fa_icon: 'fa-file-alt',
+            title: 'Government Product Design',
+            subtitle:
+              'We design government products with a focus on user experience, improving efficiency and accessibility of public services.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility',
+            subtitle:
+              'Our designs prioritize accessibility, ensuring that public services are usable by everyone, regardless of their abilities.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first design',
+            subtitle:
+              'We follow a mobile-first approach, ensuring government services are easily accessible on all devices.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative approach',
+            subtitle:
+              'We work in close collaboration with government teams to align our designs with public service objectives and user needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our UX/UI services for the government sector.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is UX/UI important for government agencies?',
+            content:
+              'User experience plays a crucial role in how the public interacts with government services. A well-designed user interface can improve efficiency, accessibility, and public satisfaction by making services more intuitive and easy to use.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your UX workshops for government teams?',
+            content:
+              'Our UX workshops are designed to help government teams understand the principles of user experience design. This can enhance their ability to deliver services that meet the public’s needs, improve team collaboration, and drive innovation in public service delivery.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach product design for government services?',
+            content:
+              'Our approach to product design is user-centric. We start by understanding the specific needs and behaviors of the target user group, then design products that effectively meet those needs. Our designs focus on enhancing user engagement, efficiency, and accessibility.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Maritime',
+    slug: 'maritime',
+    subtitle:
+      'Expertise in enterprise product design and UX workshops focused on the maritime industry.',
+    hero_src: 'https://source.unsplash.com/XdIrwH98K_E/1600x900',
+    hero_alt: 'Captain controlling ship',
+    // Seo
+    seo: {
+      title: 'Maritime',
+      description:
+        'This page outlines our specialized UX/UI services for maritime enterprises, aiming to transform user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Navigating the digital transformation in maritime with user-centric design.',
+        items: [
+          {
+            title:
+              'As the maritime industry navigates digital transformation, intuitive user interfaces and effective product designs play a key role. Our UX/UI services are tailored to meet the unique needs of maritime enterprises, enhancing user experience and operational efficiency.',
+          },
+          {
+            title:
+              'Through enterprise product design and UX workshops, we enable maritime organizations to improve user engagement, streamline processes, and foster innovation. We bring an understanding of the maritime industry’s specific challenges and opportunities, ensuring our solutions deliver real value.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'From UX workshops to product design, we provide comprehensive UX/UI services specifically for the maritime industry.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Maritime-focused Design',
+            subtitle:
+              'We design user interfaces tailored to maritime operations and users, delivering both functionality and aesthetic appeal.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'UX Workshops',
+            subtitle:
+              'Our workshops equip maritime teams with knowledge and tools to implement best UX practices, promoting user-centric innovation.',
+          },
+          {
+            fa_icon: 'fa-ship',
+            title: 'Maritime Product Design',
+            subtitle:
+              'We design maritime products with a focus on user experience, streamlining processes and enhancing accessibility.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility',
+            subtitle:
+              'We ensure that our designs are accessible to all users, enhancing the inclusivity and reach of your maritime services.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-First Design',
+            subtitle:
+              'Our mobile-first approach ensures maritime services are easily accessible across devices, catering to the mobile-dominated user behavior.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work collaboratively with your team, aligning our designs with your maritime business objectives and user needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our specialized UX/UI services for the maritime industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is UX/UI important for the maritime industry?',
+            content:
+              'In the digital age, user experience plays a crucial role in how services are perceived and utilized. For the maritime industry, an intuitive user interface can enhance operational efficiency, improve user engagement, and facilitate the adoption of digital solutions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do your UX workshops benefit maritime teams?',
+            content:
+              'Our UX workshops aim to impart understanding and application of best UX practices. For maritime teams, this can lead to the development of more user-centric solutions, fostering innovation and increasing user satisfaction.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your approach to product design for maritime services?',
+            content:
+              'Our approach to product design is anchored in understanding the unique needs of the maritime industry and its users. We design products that streamline maritime operations, enhance user engagement, and are accessible across devices.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Real Estate',
+    slug: 'real-estate',
+    subtitle:
+      'Specialized in enterprise product design and UX workshops for the real estate industry.',
+    hero_src: 'https://source.unsplash.com/b3H9CbDZqrs/1600x900',
+    hero_alt: 'Housing area',
+    // Seo
+    seo: {
+      title: 'Real Estate',
+      description:
+        'This page outlines our tailored UX/UI services for real estate enterprises, aiming to transform user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing real estate experiences with user-centric design.',
+        items: [
+          {
+            title:
+              'The real estate industry is rapidly digitalizing, making effective user interfaces and product designs critical for business success. We offer tailored UX/UI services for real estate enterprises, improving user experiences and process efficiency.',
+          },
+          {
+            title:
+              'Through enterprise product design and UX workshops, we help real estate organizations improve user engagement, streamline processes, and foster innovation. With deep understanding of the specific challenges and opportunities in real estate, we ensure our solutions deliver value.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'From UX workshops to product design, we provide comprehensive UX/UI services designed for the real estate industry.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Real Estate-focused Design',
+            subtitle:
+              'We design user interfaces tailored to the needs of the real estate industry, ensuring both functionality and aesthetic appeal.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'UX Workshops',
+            subtitle:
+              'Our workshops provide real estate teams with the tools and knowledge to implement best UX practices, fostering user-centric innovation.',
+          },
+          {
+            fa_icon: 'fa-building',
+            title: 'Real Estate Product Design',
+            subtitle:
+              'We design products specifically for real estate, focusing on user experience, process efficiency, and accessibility.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility',
+            subtitle:
+              'We prioritize accessibility in our designs, ensuring your real estate services are inclusive and accessible to all users.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-First Design',
+            subtitle:
+              'Recognizing the prominence of mobile users in real estate, we adopt a mobile-first approach to our designs.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team, aligning our designs with your real estate business goals and user needs.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our specialized UX/UI services for the real estate industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is UX/UI important for the real estate industry?',
+            content:
+              'In the era of digital transformation, user experience plays a significant role in how services are perceived and utilized. For real estate, an intuitive user interface can enhance business efficiency, improve user engagement, and facilitate the adoption of digital solutions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do your UX workshops benefit real estate teams?',
+            content:
+              'Our UX workshops equip real estate teams with knowledge and skills to adopt user-centric design principles. This helps enhance user satisfaction, streamline processes, and foster digital innovation within the organization.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your approach to product design for real estate services?',
+            content:
+              'We focus on understanding the unique needs and challenges of the real estate industry. Our product designs aim to improve user engagement, process efficiency, and accessibility across all devices.',
+          },
+        ],
+      },
+    },
+  }
+].map((item, i) => {
+  return merge({}, MOCK_INDUSTRY_PAGE, {
+    id: i + 1,
+    ...item,
+    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.' }}
+  })
+})
 
-export const MOCK_DESIGN_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_DATA_INDUSTRYS = [
+  {
+    // Hero
+    title: 'Finance',
+    slug: 'finance',
+    subtitle:
+      'Leveraging data and AI to drive transformative solutions for the finance industry.',
+    hero_src: 'https://source.unsplash.com/p_cHW1REBWc/1600x900',
+    hero_alt: 'City buildings',
+    // Seo
+    seo: {
+      title: 'Finance',
+      description:
+        'This page focuses on how we employ data science and AI to provide transformative solutions for finance enterprises.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the power of data with AI in Finance.',
+        items: [
+          {
+            title:
+              'In the finance industry, making data-driven decisions is paramount. Our data science and AI solutions are specifically designed to meet the unique needs and challenges of finance enterprises, enabling them to uncover valuable insights and make better, more informed decisions.',
+          },
+          {
+            title:
+              'We focus on delivering cutting-edge AI solutions that enhance efficiency, reduce risk, and drive innovation. Whether it’s improving predictive accuracy, automating processes, or identifying new opportunities, we help finance companies turn their data into a competitive advantage.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of data science and AI solutions tailored to the finance industry.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Strategy',
+            subtitle:
+              'We provide strategic guidance on leveraging AI to drive business growth and innovation in the finance industry.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Predictive Analytics',
+            subtitle:
+              'Our predictive analytics solutions help finance enterprises forecast future events and trends with improved accuracy.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Automation',
+            subtitle:
+              'We automate labor-intensive processes using AI, enhancing efficiency and reducing operational costs for finance enterprises.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management',
+            subtitle:
+              'Our AI solutions can identify potential risks and anomalies, helping enterprises mitigate risks and ensure regulatory compliance.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'AI Implementation',
+            subtitle:
+              'We implement AI solutions seamlessly into existing finance processes, ensuring they align with business goals and deliver value.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with finance enterprises to understand their specific needs and deliver tailored AI solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Science & AI Solutions for Finance and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why are data science and AI important for the finance industry?',
+            content:
+              'Data science and AI are transforming the finance industry. They enable enterprises to uncover insights, improve decision-making, automate processes, manage risks, and drive innovation. Leveraging these technologies is key to staying competitive in today’s digital age.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Science & AI Solutions?',
+            content:
+              'We provide tailored solutions that can help finance enterprises enhance efficiency, reduce risk, and drive innovation. Our expertise in data science and AI, coupled with a deep understanding of the finance industry, allows us to deliver solutions that align with your business goals and deliver real value.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data science and AI in finance?',
+            content:
+              'We start by understanding your business goals and challenges. From there, we leverage data science and AI to design and implement solutions tailored to your needs. This could involve using predictive analytics to forecast trends, automating processes with AI, or implementing AI strategies to drive business growth and innovation.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Government',
+    slug: 'government',
+    subtitle:
+      'Harnessing data and AI to drive efficiency, transparency, and innovation in the public sector.',
+    hero_src: 'https://source.unsplash.com/GAfoU0t8tsg/1600x900',
+    hero_alt: 'Swiss government cabinet',
+    // Seo
+    seo: {
+      title: 'Government',
+      description:
+        'This page details our expertise in leveraging data science and AI to create transformative solutions for government organizations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering the public sector with data and AI.',
+        items: [
+          {
+            title:
+              'In the public sector, making data-driven decisions is crucial. Our data science and AI solutions are designed to meet the unique challenges of government organizations, enabling them to uncover valuable insights and drive efficiency and transparency.',
+          },
+          {
+            title:
+              'We deliver AI solutions that enhance service delivery, facilitate policy making, and foster innovation. Whether it’s improving decision-making, automating processes, or identifying new opportunities, we help government entities turn their data into actionable insights.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a wide range of data science and AI solutions tailored to the needs of government organizations.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Strategy',
+            subtitle:
+              'We provide strategic guidance on leveraging AI to drive efficiency, transparency, and innovation in the public sector.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Predictive Analytics',
+            subtitle:
+              'Our predictive analytics solutions enable government organizations to anticipate future trends and make informed policy decisions.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Automation',
+            subtitle:
+              'We automate labor-intensive processes using AI, enhancing service delivery and reducing operational costs in the public sector.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security & Compliance',
+            subtitle:
+              'We prioritize security and compliance in our AI solutions, ensuring that government data is protected and regulations are met.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'AI Implementation',
+            subtitle:
+              'We seamlessly integrate AI solutions into existing governmental processes, ensuring alignment with public service goals.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with government organizations to understand their specific needs and deliver tailored AI solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Science & AI Solutions for Government and how we can empower your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why are data science and AI important for the public sector?',
+            content:
+              'Data science and AI have the potential to revolutionize the public sector. They can help government organizations make more informed decisions, improve service delivery, and drive transparency and efficiency. Leveraging these technologies is key to meeting the demands of today’s digital age.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Science & AI Solutions?',
+            content:
+              'Our data science and AI solutions help government organizations leverage their data in powerful ways. We provide tools to uncover valuable insights, predict future trends, and automate processes, all while ensuring the highest levels of security and compliance. We strive to deliver solutions that align with your public service objectives and drive meaningful improvement.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data science and AI in the public sector?',
+            content:
+              'We start by understanding your organization’s specific needs and goals. We then design and implement data science and AI solutions tailored to these requirements. This may involve predictive analytics to inform policy decisions, AI automation to improve service delivery, or AI strategy consulting to foster innovation and efficiency.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Maritime',
+    slug: 'maritime',
+    subtitle:
+      'Empowering the maritime industry with advanced data analytics and AI solutions.',
+    hero_src: 'https://source.unsplash.com/eqwFWHfQipg/1600x900',
+    hero_alt: 'Cargo port',
+    // Seo
+    seo: {
+      title: 'Maritime',
+      description:
+        'This page showcases our expertise in applying data science and AI solutions to address challenges in the maritime industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Navigating the future with data and AI.',
+        items: [
+          {
+            title:
+              'The maritime industry is at a critical point in its digital transformation journey. Leveraging data science and AI is key to increasing operational efficiency, improving safety, and driving innovation. Our solutions are designed to meet these needs and more, setting your maritime business on course for the future.',
+          },
+          {
+            title:
+              'Whether it’s predictive maintenance for vessels, AI-powered logistics management, or data-driven decision-making, we help maritime organizations navigate the complexities of the industry and seize new opportunities.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of data science and AI solutions tailored to the unique needs of the maritime industry.',
+        items: [
+          {
+            fa_icon: 'fa-ship',
+            title: 'Predictive Maintenance',
+            subtitle:
+              'We utilize AI and machine learning to anticipate maintenance needs, improving vessel efficiency and minimizing downtime.',
+          },
+          {
+            fa_icon: 'fa-chart-network',
+            title: 'Logistics Management',
+            subtitle:
+              'We leverage AI to optimize logistics and supply chain processes, enhancing operational efficiency in the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Data-Driven Decision Making',
+            subtitle:
+              'Our solutions help organizations make data-backed decisions, improving strategic planning and operational performance.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Security & Compliance',
+            subtitle:
+              'We ensure our solutions meet the rigorous security standards and regulatory requirements of the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'AI Integration',
+            subtitle:
+              'We seamlessly integrate AI capabilities into existing maritime processes, creating a smarter, more efficient operating environment.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We partner with maritime organizations to understand their specific needs and deliver tailored AI solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Science & AI Solutions for the Maritime industry and how we can empower your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why are data science and AI important for the maritime industry?',
+            content:
+              'Data science and AI have the potential to significantly enhance operations in the maritime industry. They can enable predictive maintenance, optimize logistics, improve decision-making, and drive overall operational efficiency. As the maritime industry continues to evolve, these technologies will be key to staying competitive.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Science & AI Solutions?',
+            content:
+              'Our solutions are designed to address the specific challenges and needs of the maritime industry. By leveraging our solutions, maritime organizations can increase operational efficiency, improve safety, and innovate faster. Our team of experts collaborates closely with your organization to ensure that our solutions deliver maximum value.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data science and AI in the maritime industry?',
+            content:
+              'We begin by understanding your organization’s unique needs and objectives. We then design and implement tailored data science and AI solutions to meet these needs. This may involve using machine learning for predictive maintenance, AI for logistics management, or data analytics for decision support.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Real Estate',
+    slug: 'real-estate',
+    subtitle:
+      'Empowering the real estate industry with advanced data analytics and AI solutions.',
+    hero_src: 'https://source.unsplash.com/Ch3WwM6PcsA/1600x900',
+    hero_alt: 'Waterfront property',
+    // Seo
+    seo: {
+      title: 'Real Estate',
+      description:
+        'This page showcases our expertise in applying data science and AI solutions to address challenges in the real estate industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming real estate with data and AI.',
+        items: [
+          {
+            title:
+              'The real estate industry is experiencing a digital revolution. Data science and AI are now essential tools in making informed decisions, driving efficiency, and improving customer experiences. Our solutions are designed to empower real estate businesses to navigate this new landscape effectively.',
+          },
+          {
+            title:
+              'Whether it’s predictive analytics for property valuation, AI-powered customer profiling, or data-driven decision-making, we help real estate businesses unlock the power of data and AI.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of data science and AI solutions tailored to the unique needs of the real estate industry.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Predictive Analytics',
+            subtitle:
+              'We leverage AI and machine learning to generate accurate property valuations and trend predictions, helping businesses make strategic decisions.',
+          },
+          {
+            fa_icon: 'fa-user-tag',
+            title: 'Customer Profiling',
+            subtitle:
+              'We use AI to analyze customer data and generate detailed customer profiles, helping real estate businesses deliver personalized experiences.',
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Data-Driven Decision Making',
+            subtitle:
+              'Our solutions enable organizations to make data-backed decisions, improving strategic planning and operational performance.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Security & Compliance',
+            subtitle:
+              'We ensure our solutions meet the rigorous security standards and regulatory requirements of the real estate industry.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'AI Integration',
+            subtitle:
+              'We seamlessly integrate AI capabilities into existing real estate processes, creating a smarter, more efficient operating environment.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We partner with real estate organizations to understand their specific needs and deliver tailored AI solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Data Science & AI Solutions for the Real Estate industry and how we can empower your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why are data science and AI important for the real estate industry?',
+            content:
+              'Data science and AI provide tools for the real estate industry to make better, data-driven decisions, predict trends, personalize customer experiences, and improve operational efficiency. As the industry becomes increasingly digital, these technologies are becoming essential.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of your Data Science & AI solutions for my real estate business?',
+            content:
+              'Our solutions can help your real estate business in several ways. This includes generating accurate property valuations, predicting industry trends, creating detailed customer profiles for targeted marketing, improving decision-making, and enhancing overall operational efficiency. We ensure that our solutions meet your specific business needs and objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach data science and AI in the real estate industry?',
+            content:
+              'We start by understanding your specific business needs and objectives. Then we design and implement tailored data science and AI solutions to address these needs. This could involve using machine learning for predictive analytics, AI for customer profiling, or data analytics for strategic decision-making. Our team collaborates closely with your organization to ensure our solutions deliver maximum value.',
+          },
+        ],
+      },
+    },
+  }
+].map((item, i) => {
+  return merge({}, MOCK_INDUSTRY_PAGE, {
+    id: i + 1,
+    ...item,
+    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.' }}
+  })
+})
 
 export const MOCK_INDUSTRYS = {
   GROUP: MOCK_GROUP_INDUSTRYS,
