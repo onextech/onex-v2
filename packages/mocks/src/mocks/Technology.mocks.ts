@@ -170,16 +170,10 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
       },
       benefits: {
         overline: 'Benefits',
-        title: '{title} Development Services',
+        title: 'JavaScript Development Services',
         subtitle:
           'With our JavaScript development services, we offer a range of capabilities that include frontend development, framework-based development, performance optimization, code refactoring, and third-party integration.',
-        items: [
-          {
-            fa_icon: 'fa-code',
-            title: 'Frontend development',
-            subtitle:
-              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
-          },
+        items: [    
           {
             fa_icon: 'fa-cogs',
             title: 'Framework-based development',
@@ -193,66 +187,60 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
               'We optimize the performance of your JavaScript applications, ensuring fast load times, smooth animations, and efficient resource utilization.',
           },
           {
-            fa_icon: 'fa-wrench',
-            title: 'Code refactoring',
+            fa_icon: 'fa-database',
+            title: 'Database integration',
             subtitle:
-              'We refactor and optimize existing JavaScript codebases to improve maintainability, readability, and performance.',
+              'We integrate JavaScript applications with databases to store and retrieve data efficiently, ensuring seamless data management.',
           },
           {
-            fa_icon: 'fa-plug',
-            title: 'Third-party integration',
+            fa_icon: 'fa-mobile',
+            title: 'Mobile app development',
             subtitle:
-              'We integrate various third-party services and APIs into your JavaScript applications to extend functionality and improve user experience.',
-          },
-          {
-            fa_icon: 'fa-lock',
-            title: 'Security and data protection',
-            subtitle:
-              'We implement robust security measures and best practices to protect your JavaScript applications and sensitive user data.',
+              'We leverage JavaScript frameworks like React Native to develop cross-platform mobile applications that run smoothly on iOS and Android devices.',
           },
         ],
       },
       features: {
         overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        title: 'Our JavaScript Development Capabilities',
         subtitle:
-          'With our JavaScript development services, we offer a range of capabilities that include frontend development, framework-based development, performance optimization, code refactoring, and third-party integration.',
+          'With our JavaScript expertise, we deliver a wide range of capabilities to meet your development needs.',
         items: [
           {
+            fa_icon: 'fa-desktop',
+            title: 'Frontend web development',
+            subtitle:
+              'We excel in creating responsive and interactive web interfaces using the latest JavaScript libraries and technologies.',
+          },
+          {
             fa_icon: 'fa-code',
-            title: 'Frontend development',
+            title: 'Custom JavaScript development',
             subtitle:
-              'We develop frontend applications using JavaScript, HTML, and CSS to create visually appealing and interactive user interfaces.',
+              'We offer tailored JavaScript development solutions to build unique applications according to your specific requirements.',
           },
           {
-            fa_icon: 'fa-cogs',
-            title: 'Framework-based development',
+            fa_icon: 'fa-laptop-code',
+            title: 'Full-stack JavaScript development',
             subtitle:
-              'We specialize in popular JavaScript frameworks like React, Angular, and Vue.js to build scalable and modular web applications.',
+              'We have expertise in developing both frontend and backend components using JavaScript, providing end-to-end web application development.',
           },
           {
-            fa_icon: 'fa-tachometer-alt',
-            title: 'Performance optimization',
+            fa_icon: 'fa-code-branch',
+            title: 'Code refactoring and optimization',
             subtitle:
-              'We optimize the performance of your JavaScript applications, ensuring fast load times, smooth animations, and efficient resource utilization.',
+              'We refactor and optimize existing JavaScript codebases to improve performance, maintainability, and scalability.',
           },
           {
-            fa_icon: 'fa-wrench',
-            title: 'Code refactoring',
+            fa_icon: 'fa-server',
+            title: 'API development and integration',
             subtitle:
-              'We refactor and optimize existing JavaScript codebases to improve maintainability, readability, and performance.',
+              'We build robust and scalable APIs using JavaScript frameworks like Express.js for seamless integration with frontend and backend systems.',
           },
           {
-            fa_icon: 'fa-plug',
-            title: 'Third-party integration',
+            fa_icon: 'fa-users',
+            title: 'User authentication and authorization',
             subtitle:
-              'We integrate third-party APIs, libraries, and services into your JavaScript applications, enabling enhanced functionality and seamless data exchange.',
-          },
-          {
-            fa_icon: 'fa-rocket',
-            title: 'Application deployment',
-            subtitle:
-              'We assist in deploying your JavaScript applications to various hosting platforms, ensuring smooth and reliable deployment processes.',
+              'We implement secure user authentication and authorization systems in JavaScript applications to protect sensitive data and restrict access.',
           },
         ],
       },
