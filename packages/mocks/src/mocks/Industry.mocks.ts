@@ -181,6 +181,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     // Hero
     title: 'Finance',
     slug: 'finance',
+    fa_icon: 'fa-coins',
+    is_featured: true,
     subtitle:
       'Empowering finance firms with tailor-made enterprise software solutions to drive business success.',
     hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
@@ -369,6 +371,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   },
   {
     title: 'Maritime',
+    is_featured: true,
     subtitle:
       'We help maritime product teams drive efficiencies, unlock new value, and create new business models.',
     slug: 'maritime',
@@ -656,7 +659,6 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
     },
-    fa_icon: 'fa-coins',
   },
   {
     // Hero
@@ -760,6 +762,7 @@ export const MOCK_TECH_INDUSTRYS = [
     // Hero
     title: 'Maritime',
     slug: 'maritime',
+    is_featured: true,
     subtitle:
       'Partner with software development experts to optimize maritime operations and enhance efficiency.',
     hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
