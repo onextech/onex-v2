@@ -21,7 +21,7 @@ const renderContactCalloutButtonBlockItem = (
         fullScreen: true,
         disableTitle: true,
         transitionVariant: 'fade' as const,
-        children: <GetStartedPage fullScreen />,
+        children: <GetStartedPage fullScreen disableTestimonials />,
       },
     },
   }

@@ -24,7 +24,7 @@ const renderGhostButtonBlockItem = (
 
   const theme = useTheme()
   const dialogChildrenJsx = withPaletteMode({ mode: theme.palette.mode })(
-    <GetStartedPage fullScreen />
+    <GetStartedPage fullScreen disableTestimonials />
   )
 
   return {
