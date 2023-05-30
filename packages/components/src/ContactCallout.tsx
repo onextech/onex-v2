@@ -41,7 +41,9 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
                 type: size === 'medium' ? 'h5' : 'h4',
                 title: cta_title,
                 titleProps: {
-                  sx: { textAlign: size === 'medium' ? { xs: 'center', md: 'left' } : 'center' , fontSize: 28},
+                  sx: {
+                    textAlign: size === 'medium' ? { xs: 'center', md: 'left' } : 'center'
+                  },
                   component: 'h5'
                 },
               },

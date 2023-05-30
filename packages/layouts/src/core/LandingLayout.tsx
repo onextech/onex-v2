@@ -528,11 +528,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
   const footerNavConfig = [
-    site.footer_is_showcase_visible && {
-      key: 'showcases',
-      title: 'Showcases',
-      href: routeConfig.SHOWCASES
-    },
     {
       key: 'services',
       title: 'Services',
@@ -557,7 +552,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
-      items: pages,
+      items: [...pages, showcases?.length && {
+        key: 'showcases',
+        title: 'Showcases',
+        href: routeConfig.SHOWCASES
+      }].filter(Boolean),
     },
   ]
 
