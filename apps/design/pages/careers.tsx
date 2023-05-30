@@ -26,7 +26,7 @@ const NextCareersPage: React.FC<NextCareersPageProps> = (props) => {
           position: 'fixed',
         }}
       >
-        <CareersPage jobs={MOCK_JOBS} />
+        <CareersPage jobs={MOCK_JOBS} page={page}/>
       </LandingLayout>
     </PageProvider>
   )
