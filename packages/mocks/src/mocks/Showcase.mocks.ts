@@ -1,50 +1,6 @@
 import type { Showcase } from '@onex/types'
 
-export const MOCK_COMMON_SHOWCAES: Showcase[] = [
-  {
-    title: 'Rewarding Canon employees in a modern workplace.',
-    slug: 'canon',
-    subtitle:
-      'A company specific rewards platform that automates reward orders and provides a wide array of gifts and experience.',
-    hero_src: '/showcases/canon/hero.png',
-    hero_alt: 'Canon showcase',
-    mode: 'dark',
-    backgroundColor: '#641718',
-    reverse: true,
-
-    // Sections
-    sections: {
-      leftGridSticky: {
-        title: 'An Integrated Rewards Marketplace',
-        subtitle:
-          "With hundreds of options, use the filters, categories and budget to find the perfect reward. There's something for everyone.",
-        hero_src: '/showcases/canon/left.png',
-        hero_alt: 'Canon website showcase',
-      },
-      gallery: {
-        title: 'Exclusive rewards curated specially for you',
-        subtitle:
-          'A company specific rewards platform that automates reward orders and provides a wide array of gifts and experience. Everyone can find something they love.',
-        items: [
-          {
-            title: '/showcases/canon/gallery_1.png',
-            titleProps: { alt: 'Canon website login page' },
-          },
-          {
-            title: '/showcases/canon/gallery_2.png',
-            titleProps: { alt: 'Canon rewards program my account page' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'Hundreds of gifts and experiences to choose from',
-        subtitle:
-          'Canon wanted to show employees how much the company appreciates and values their hard work. We created a scalable and enticing online rewards program where staff are awarded points they can use to redeem their preferred gift.',
-        hero_src: '/showcases/canon/right.png',
-        hero_alt: 'Integrated rewards marketplace showcase',
-      },
-    },
-  },
+export const MOCK_TECH_SHOWCASES: Showcase[]= [
   {
     title: 'Luxury Jewellery with Marilyn Tan Jewellery.',
     slug: 'marilyn-tan-jewellery',
@@ -93,57 +49,6 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
           'All that sparkles delivered to you. Enabling customers to discover one-of-a-kind pieces from anywhere in the world',
         hero_src: '/showcases/marilyn-tan-jewellery/right.png',
         hero_alt: 'Marilyn Tan jewellery website showcase',
-      },
-    },
-  },
-  {
-    title: 'Preparing the future of payments with SG Pay.',
-    slug: 'sg-pay',
-    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
-    hero_src: '/showcases/sg-pay/hero.png',
-    hero_alt: 'Temperature adjustment app',
-    mode: 'dark',
-    backgroundColor: '#9B2727',
-    reverse: true,
-
-    // Sections
-    sections: {
-      leftGridSticky: {
-        title: 'Software + Hardware Integration',
-        subtitle:
-          'Set up your SG Pay Point of Sale system with ease. The intuitive order and payment flow makes POS transactions a snap and let you effortlessly manage customers and your entire business.',
-        hero_src: '/showcases/sg-pay/left.png',
-        hero_alt: 'Cashless payments showcase',
-      },
-      gallery: {
-        title: 'Let your customers take the reign',
-        subtitle:
-          "There's no need to carry a wallet full of credit cards or have numerous banking apps. All you need is your SG Pay app.",
-        items: [
-          {
-            title: '/showcases/sg-pay/gallery_1.png',
-            titleProps: { alt: 'SG Pay merchant guide' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_2.png',
-            titleProps: { alt: 'Security encryption and set up guides' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_3.png',
-            titleProps: { alt: 'Simplified shopping showcase' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_4.png',
-            titleProps: { alt: 'Mobile payments showcase' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'A new fully integrated cashless system',
-        subtitle:
-          'With many payment apps out there, the key goal was to establish how SG Pay was different and better.',
-        hero_src: '/showcases/sg-pay/right.png',
-        hero_alt: 'Mobile payment system showcase',
       },
     },
   },
@@ -198,17 +103,69 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
     },
   },
   { // TODO: ADD DETAIL
-    title: 'An intelligent chatbot assistant.',
-    slug: 'tgb',
+    title: 'OctiFi',
+    slug: 'octifi',
     subtitle:
-      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies.',
-    hero_src: '/showcases/tgb/hero.png',
-    hero_alt: 'TGB showcase',
-    mode: 'light',
-    backgroundColor: '#c3e8c1',
-    reverse: true,
-    
+      'Fintech Platform. Shop Now, Pay Later.',
+    hero_src: '/showcases/octifi/hero.png',
+    hero_alt: 'octifi showcase',
+    mode: 'dark',
+    backgroundColor: '#31639C',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+  },
+].map((showcase, i) => ({ id: i + 1, ...showcase }))
+
+export const MOCK_GROUP_SHOWCASES: Showcase[] = [
+  {
+    title: 'Preparing the future of payments with SG Pay.',
+    slug: 'sg-pay',
+    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
+    hero_src: '/showcases/sg-pay/hero.png',
+    hero_alt: 'Temperature adjustment app',
+    mode: 'dark',
+    backgroundColor: '#9B2727',
+    reverse: true,
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'Software + Hardware Integration',
+        subtitle:
+          'Set up your SG Pay Point of Sale system with ease. The intuitive order and payment flow makes POS transactions a snap and let you effortlessly manage customers and your entire business.',
+        hero_src: '/showcases/sg-pay/left.png',
+        hero_alt: 'Cashless payments showcase',
+      },
+      gallery: {
+        title: 'Let your customers take the reign',
+        subtitle:
+          "There's no need to carry a wallet full of credit cards or have numerous banking apps. All you need is your SG Pay app.",
+        items: [
+          {
+            title: '/showcases/sg-pay/gallery_1.png',
+            titleProps: { alt: 'SG Pay merchant guide' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_2.png',
+            titleProps: { alt: 'Security encryption and set up guides' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_3.png',
+            titleProps: { alt: 'Simplified shopping showcase' },
+          },
+          {
+            title: '/showcases/sg-pay/gallery_4.png',
+            titleProps: { alt: 'Mobile payments showcase' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'A new fully integrated cashless system',
+        subtitle:
+          'With many payment apps out there, the key goal was to establish how SG Pay was different and better.',
+        hero_src: '/showcases/sg-pay/right.png',
+        hero_alt: 'Mobile payment system showcase',
+      },
+    },
   },
   { // TODO: ADD DETAIL
     title: 'A beautifully crafted self-pick up service app.',
@@ -223,6 +180,21 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
+    title: 'Singapore Realtors Inc: SRI',
+    slug: 'sri',
+    subtitle:
+      'Real Estate Platform. Dare to Be Different.',
+    hero_src: '/showcases/sri/hero.png',
+    hero_alt: 'sri showcase',
+    mode: 'light',
+    reverse: true,
+    backgroundColor: '#DACEE1',
+    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+  },
+].map((showcase, i) => ({ id: i + 1, ...showcase }))
+
+export const MOCK_DESIGN_SHOWCASES = [
+  { // TODO: ADD DETAIL
     title: 'NextGEN Global Decarbonisation Initiative.',
     slug: 'nextgen',
     subtitle:
@@ -232,18 +204,6 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
     mode: 'dark',
     backgroundColor: '#013157',
     reverse: true,
-    
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
-  },
-  { // TODO: ADD DETAIL
-    title: 'Blockchain and artificial intelligence.',
-    slug: 'spk',
-    subtitle:
-      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform.',
-    hero_src: '/showcases/spk/hero.png',
-    hero_alt: 'SPK showcase',
-    mode: 'dark',
-    backgroundColor: '#071323',
     
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
@@ -270,38 +230,78 @@ export const MOCK_COMMON_SHOWCAES: Showcase[] = [
     backgroundColor: '#DDECF2',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
-  { // TODO: ADD DETAIL
-    title: 'Singapore Realtors Inc: SRI',
-    slug: 'sri',
+].map((showcase, i) => ({ id: i + 1, ...showcase }))
+
+export const MOCK_DATA_SHOWCASES: Showcase[] = [
+  {
+    title: 'Rewarding Canon employees in a modern workplace.',
+    slug: 'canon',
     subtitle:
-      'Real Estate Platform. Dare to Be Different.',
-    hero_src: '/showcases/sri/hero.png',
-    hero_alt: 'sri showcase',
-    mode: 'light',
+      'A company specific rewards platform that automates reward orders and provides a wide array of gifts and experience.',
+    hero_src: '/showcases/canon/hero.png',
+    hero_alt: 'Canon showcase',
+    mode: 'dark',
+    backgroundColor: '#641718',
     reverse: true,
-    backgroundColor: '#DACEE1',
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'An Integrated Rewards Marketplace',
+        subtitle:
+          "With hundreds of options, use the filters, categories and budget to find the perfect reward. There's something for everyone.",
+        hero_src: '/showcases/canon/left.png',
+        hero_alt: 'Canon website showcase',
+      },
+      gallery: {
+        title: 'Exclusive rewards curated specially for you',
+        subtitle:
+          'A company specific rewards platform that automates reward orders and provides a wide array of gifts and experience. Everyone can find something they love.',
+        items: [
+          {
+            title: '/showcases/canon/gallery_1.png',
+            titleProps: { alt: 'Canon website login page' },
+          },
+          {
+            title: '/showcases/canon/gallery_2.png',
+            titleProps: { alt: 'Canon rewards program my account page' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'Hundreds of gifts and experiences to choose from',
+        subtitle:
+          'Canon wanted to show employees how much the company appreciates and values their hard work. We created a scalable and enticing online rewards program where staff are awarded points they can use to redeem their preferred gift.',
+        hero_src: '/showcases/canon/right.png',
+        hero_alt: 'Integrated rewards marketplace showcase',
+      },
+    },
+  },
+  { // TODO: ADD DETAIL
+    title: 'An intelligent chatbot assistant.',
+    slug: 'tgb',
+    subtitle:
+      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies.',
+    hero_src: '/showcases/tgb/hero.png',
+    hero_alt: 'TGB showcase',
+    mode: 'light',
+    backgroundColor: '#c3e8c1',
+    reverse: true,
+    
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
   { // TODO: ADD DETAIL
-    title: 'OctiFi',
-    slug: 'octifi',
+    title: 'Blockchain and artificial intelligence.',
+    slug: 'spk',
     subtitle:
-      'Fintech Platform. Shop Now, Pay Later.',
-    hero_src: '/showcases/octifi/hero.png',
-    hero_alt: 'octifi showcase',
+      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform.',
+    hero_src: '/showcases/spk/hero.png',
+    hero_alt: 'SPK showcase',
     mode: 'dark',
-    backgroundColor: '#31639C',
+    backgroundColor: '#071323',
     sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
-
-export const MOCK_TECH_SHOWCASES= MOCK_COMMON_SHOWCAES
-
-export const MOCK_GROUP_SHOWCASES = MOCK_COMMON_SHOWCAES
-
-export const MOCK_DATA_SHOWCASES = MOCK_COMMON_SHOWCAES
-
-export const MOCK_DESIGN_SHOWCASES = MOCK_COMMON_SHOWCAES
 
 export const MOCK_SHOWCASES = {
   GROUP: MOCK_GROUP_SHOWCASES,
