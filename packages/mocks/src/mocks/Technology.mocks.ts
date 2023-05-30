@@ -2507,6 +2507,17 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
       description: item.subtitle,
     },
     ...item,
+    sections: {
+      ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
+    }
   })
 })
 

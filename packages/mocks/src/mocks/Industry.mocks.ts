@@ -553,7 +553,20 @@ export const MOCK_GROUP_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      checklist:
+        { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
+      },
+    }
   })
 })
 
@@ -1380,7 +1393,20 @@ export const MOCK_DESIGN_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.',
+      },
+      checklist: {
+        subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.'
+      }
+    }
   })
 })
 
@@ -1797,7 +1823,20 @@ export const MOCK_DATA_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      checklist: {
+        subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
+    }
   })
 })
 
