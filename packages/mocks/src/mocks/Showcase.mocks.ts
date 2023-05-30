@@ -272,7 +272,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
 export const MOCK_DESIGN_SHOWCASES = [
-  { // TODO: ADD DETAIL
+  {
     title: 'NextGEN Global Decarbonisation Initiative.',
     slug: 'nextgen',
     subtitle:
@@ -285,41 +285,41 @@ export const MOCK_DESIGN_SHOWCASES = [
     
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Designing for the Future',
         subtitle:
-          '',
+          'Delivering impactful messages of change through purposeful designs.',
         hero_src: '/showcases/nextgen/left.png',
-        hero_alt: '',
+        hero_alt: 'NextGEN Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Simplifying the Process',
         subtitle:
-          '',
+          'Easy-to-follow layouts provides important information for users in clearly defined categories.',
         items: [
           {
             title: '/showcases/nextgen/gallery_1.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'NextGEN Gallery 1' },
           },
           {
             title: '/showcases/nextgen/gallery_2.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'NextGEN Gallery 2' },
           },
           {
             title: '/showcases/nextgen/gallery_3.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'NextGEN Gallery 3' },
           },
           {
             title: '/showcases/nextgen/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'NextGEN Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'Building an Immersive Experience',
         subtitle:
-          '',
+          'Making users a part of the initiative through interactive and immersive site experiences.',
         hero_src: '/showcases/nextgen/right.png',
-        hero_alt: '',
+        hero_alt: 'NextGEN Showcase 2',
       },
     }
   },
@@ -335,45 +335,45 @@ export const MOCK_DESIGN_SHOWCASES = [
     reverse: true,
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Meet Mr. Bucket',
         subtitle:
-          '',
+          'Explosion of chocolatey-goodness with every bite into these delightfully hand-crafted bon-bons.',
         hero_src: '/showcases/mr-bucket/left.png',
-        hero_alt: '',
+        hero_alt: 'Mr Bucket Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Delivering quality UX/UI products ',
         subtitle:
-          '',
+          'Creating an intuitive and visually stunning UX that allows customers to view and purchase products with ease.',
         items: [
           {
             title: '/showcases/mr-bucket/gallery_1.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Mr Bucket Gallery 1' },
           },
           {
             title: '/showcases/mr-bucket/gallery_2.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Mr Bucket Gallery 2' },
           },
           {
             title: '/showcases/mr-bucket/gallery_3.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Mr Bucket Gallery 3' },
           },
           {
             title: '/showcases/mr-bucket/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Mr Bucket Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'Where Modern Design meets History',
         subtitle:
-          '',
+          'A family-run business of 120 years, we complement this history with elegant designs which showcase the bold and fresh take Mr. Bucket has on chocolate treats.',
         hero_src: '/showcases/mr-bucket/right.png',
-        hero_alt: '',
+        hero_alt: 'Mr Bucket Showcase 2',
       },
     }
   },
-  { // TODO: ADD DETAIL
+  {
     title: 'IIX Impact Partners',
     slug: 'iix',
     subtitle:
@@ -384,41 +384,41 @@ export const MOCK_DESIGN_SHOWCASES = [
     backgroundColor: '#DDECF2',
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Meet IIX',
         subtitle:
-          '',
+          'An investment enterprise with the vision of creating a platform for SMEs to make their investment impacts measurable and sustainble.',
         hero_src: '/showcases/iix/left.png',
-        hero_alt: '',
+        hero_alt: 'IIX Impact Partners Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Designs with Clarity, with Purpose',
         subtitle:
-          '',
+          'Convey the impact of your vision with simplicity.',
         items: [
           {
             title: '/showcases/iix/gallery_1.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'IIX Impact Partners Gallery 1' },
           },
           {
             title: '/showcases/iix/gallery_2.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'IIX Impact Partners Gallery 2' },
           },
           {
             title: '/showcases/iix/gallery_3.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'IIX Impact Partners Gallery 3' },
           },
           {
             title: '/showcases/iix/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'IIX Impact Partners Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'A Pioneer and Global Leader',
         subtitle:
-          '',
+          'We translate the vision of impact investing with functional and clean designs which support IIX’s movement to become a global leader in sustainability.',
         hero_src: '/showcases/iix/right.png',
-        hero_alt: '',
+        hero_alt: 'IIX Impact Partners Showcase 2',
       },
     }
   },
