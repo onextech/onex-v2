@@ -2027,7 +2027,7 @@ export const MOCK_DATA_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          "{appTitle} collaborates with enterprise-level organizations to harness the power of data and artificial intelligence. We specialize in delivering tailored data science services and AI solutions that empower your business to make data-driven decisions and gain a competitive edge. Our approach centers around understanding your unique data challenges and customizing our solutions to meet those specific needs. We excel in transforming raw data into actionable insights and designing AI models that automate complex processes and enhance decision-making. Whether you're just beginning your data journey or looking to optimize existing data systems, our expertise in data science and AI can propel your business towards a future driven by data and intelligence. Together, we can unlock the potential of your data, enabling your enterprise to excel in the evolving digital landscape.",
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. We provide customised data science services and AI solutions, transforming raw data into actionable insights and automating complex processes. Unlock your data's potential and excel in the digital landscape with our expertise in data science and AI.",
       },
       features: {
         overline: 'What we do',
@@ -2361,7 +2361,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          "{appTitle} collaborates with enterprise clients to create visually captivating and intuitive user experiences. With a strong focus on UI/UX design, we specialize in crafting engaging designs for web and mobile interfaces. Our approach is centered around understanding your unique product requirements and tailoring our design solutions to meet your specific needs. We excel in translating complex ideas into visually appealing and user-friendly interfaces, ensuring seamless interactions and optimal user engagement. Whether you're at the ideation stage or looking to enhance an existing product, our expertise in UI/UX design and enterprise product designs can elevate your digital presence and drive customer satisfaction. Together, we can create designs that leave a lasting impression and set your enterprise apart in the digital landscape.",
+          "{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.",
       },
       features: {
         overline: 'What we do',
