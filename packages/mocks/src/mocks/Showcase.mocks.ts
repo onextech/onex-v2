@@ -111,7 +111,45 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
     hero_alt: 'octifi showcase',
     mode: 'dark',
     backgroundColor: '#31639C',
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/octifi/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/octifi/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/octifi/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/octifi/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/octifi/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/octifi/right.png',
+        hero_alt: '',
+      },
+    }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -177,7 +215,45 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     mode: 'light',
     backgroundColor: '#ffae81',
 
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/suntec/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/suntec/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/suntec/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/suntec/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/suntec/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/suntec/right.png',
+        hero_alt: '',
+      },
+    }
   },
   { // TODO: ADD DETAIL
     title: 'Singapore Realtors Inc: SRI',
@@ -189,7 +265,45 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     mode: 'light',
     reverse: true,
     backgroundColor: '#DACEE1',
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/sri/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/sri/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/sri/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/sri/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/sri/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/sri/right.png',
+        hero_alt: '',
+      },
+    }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -205,7 +319,45 @@ export const MOCK_DESIGN_SHOWCASES = [
     backgroundColor: '#013157',
     reverse: true,
     
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/nextgen/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/nextgen/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/nextgen/right.png',
+        hero_alt: '',
+      },
+    }
   },
   { // TODO: ADD DETAIL
     title: 'Mr. Bucket',
@@ -217,7 +369,45 @@ export const MOCK_DESIGN_SHOWCASES = [
     mode: 'dark',
     backgroundColor: '#430114',
     reverse: true,
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/mr-bucket/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/mr-bucket/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/mr-bucket/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/mr-bucket/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/mr-bucket/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/mr-bucket/right.png',
+        hero_alt: '',
+      },
+    }
   },
   { // TODO: ADD DETAIL
     title: 'IIX Impact Partners',
@@ -228,7 +418,45 @@ export const MOCK_DESIGN_SHOWCASES = [
     hero_alt: 'iix showcase',
     mode: 'light',
     backgroundColor: '#DDECF2',
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/iix/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/iix/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/iix/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/iix/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/iix/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/iix/right.png',
+        hero_alt: '',
+      },
+    }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -288,7 +516,45 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     backgroundColor: '#c3e8c1',
     reverse: true,
     
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/tgb/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/tgb/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/tgb/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/tgb/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/tgb/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/tgb/right.png',
+        hero_alt: '',
+      },
+    }
   },
   { // TODO: ADD DETAIL
     title: 'Blockchain and artificial intelligence.',
@@ -299,7 +565,45 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     hero_alt: 'SPK showcase',
     mode: 'dark',
     backgroundColor: '#071323',
-    sections: { gallery: { title: '', items: [] }, rightGridSticky: { title: '' } }
+    sections: {
+      leftGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/spk/left.png',
+        hero_alt: '',
+      },
+      gallery: {
+        title: '',
+        subtitle:
+          '',
+        items: [
+          {
+            title: '/showcases/spk/gallery_1.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/spk/gallery_2.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/spk/gallery_3.png',
+            titleProps: { alt: '' },
+          },
+          {
+            title: '/showcases/spk/gallery_4.png',
+            titleProps: { alt: '' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: '',
+        subtitle:
+          '',
+        hero_src: '/showcases/spk/right.png',
+        hero_alt: '',
+      },
+    }
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
