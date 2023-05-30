@@ -138,7 +138,7 @@ export const MOCK_DESIGN_SITE = {
   general_email: 'info@onexdesign.com',
 
   // Logo
-  logo_width: 120,
+  logo_width: 108,
   logo_height: 13,
 
   nav_items: [
