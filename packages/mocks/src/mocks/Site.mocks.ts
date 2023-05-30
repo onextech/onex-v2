@@ -141,6 +141,8 @@ export const MOCK_DESIGN_SITE = {
   logo_width: 108,
   logo_height: 13,
 
+  footer_is_showcase_visible: true,
+
   nav_items: [
     { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through quality designing' },
     { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },

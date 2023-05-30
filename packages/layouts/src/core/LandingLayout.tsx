@@ -528,6 +528,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
   const footerNavConfig = [
+    site.footer_is_showcase_visible && {
+      key: 'showcases',
+      title: 'Showcases',
+      href: routeConfig.SHOWCASES
+    },
     {
       key: 'services',
       title: 'Services',

@@ -53,6 +53,7 @@ interface Site {
   nav_is_open_on_hover?: boolean
   nav_is_ecosystem_visible?: boolean
   nav_items?: SiteNavItem[]
+  footer_is_showcase_visible?: boolean
 
   // Social Media
   social_media_github_url?: string
