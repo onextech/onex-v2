@@ -102,7 +102,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
       },
     },
   },
-  { // TODO: ADD DETAIL
+  {
     title: 'OctiFi',
     slug: 'octifi',
     subtitle:
@@ -113,41 +113,29 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
     backgroundColor: '#31639C',
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Meet Octifi',
         subtitle:
-          '',
+          'Enjoy true credit with Singapore’s first Pay Later credit card by paying in installments with no extra charges.',
         hero_src: '/showcases/octifi/left.png',
-        hero_alt: '',
+        hero_alt: 'Octifi Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Effective Conversion',
         subtitle:
-          '',
+          'Convert site visitors into loyal customers using a superior interface that delivers delightful customer experiences.',
         items: [
           {
             title: '/showcases/octifi/gallery_1.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/octifi/gallery_2.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/octifi/gallery_3.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/octifi/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Octifi Gallery 1' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'Shop Now. Pay Later.',
         subtitle:
-          '',
+          'Using fresh and exciting designs to convey the groundbreaking nature of a revolutionary change to the way customers pay.',
         hero_src: '/showcases/octifi/right.png',
-        hero_alt: '',
+        hero_alt: 'Octifi Showcase 2',
       },
     }
   },
@@ -205,7 +193,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
       },
     },
   },
-  { // TODO: ADD DETAIL
+  {
     title: 'A beautifully crafted self-pick up service app.',
     slug: 'suntec',
     subtitle:
@@ -217,45 +205,33 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
 
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'A One-Stop F&B Solution Application',
         subtitle:
-          '',
+          'Search and filter through a plethora of eatery options to find the perfect one, no matter the occasion.',
         hero_src: '/showcases/suntec/left.png',
-        hero_alt: '',
+        hero_alt: 'Suntec Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Enjoy Hassle-free Ordering',
         subtitle:
-          '',
+          'Whether it be for delivery or self pickup, order conveniently on the Suntec+ App anywhere, at anytime. ',
         items: [
           {
             title: '/showcases/suntec/gallery_1.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/suntec/gallery_2.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/suntec/gallery_3.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/suntec/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'Suntec Gallery 1' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'A Seamless Experience, From Start to Finish',
         subtitle:
-          '',
+          'Our application is optimized for the entire user journey to ensure a delightful customer experience.',
         hero_src: '/showcases/suntec/right.png',
-        hero_alt: '',
+        hero_alt: 'Suntec Showcase 2',
       },
     }
   },
-  { // TODO: ADD DETAIL
+  {
     title: 'Singapore Realtors Inc: SRI',
     slug: 'sri',
     subtitle:
@@ -267,41 +243,29 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     backgroundColor: '#DACEE1',
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Meet SRI',
         subtitle:
-          '',
+          'As one of the top Real Estate Agency in Singapore, SRI stands out by championing the experience of both its clients and realtors as what matters most.',
         hero_src: '/showcases/sri/left.png',
-        hero_alt: '',
+        hero_alt: 'SRI Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Delivering exceptional, customized products',
         subtitle:
-          '',
+          'Making the SRI application stand out while honing in on what matters.',
         items: [
           {
             title: '/showcases/sri/gallery_1.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/sri/gallery_2.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/sri/gallery_3.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/sri/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'SRI Gallery 1' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'It\'s all about the experience',
         subtitle:
-          '',
+          'A titan in the business with over 10 years under their belt, we use clean and diverse designs to propel the vision of SRI to the forefronts of Real Estate in Singapore.',
         hero_src: '/showcases/sri/right.png',
-        hero_alt: '',
+        hero_alt: 'SRI Showcase 2',
       },
     }
   },
