@@ -34,6 +34,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
       open: isOpen,
       onClose: close,
       maxWidth: 'xl',
+      fullScreen: true,
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },
       children: (
