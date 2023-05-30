@@ -168,7 +168,7 @@ export const MOCK_DATA_SITE = {
   logo_alt: 'One X Data logo',
 
   // Cta
-  cta_title: 'Build Your Digital Future with One X Data',
+  cta_title: 'Build Business Intelligence with One X Data',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdata.co',
