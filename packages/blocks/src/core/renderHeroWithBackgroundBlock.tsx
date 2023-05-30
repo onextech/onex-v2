@@ -31,8 +31,8 @@ const renderHeroWithBackgroundBlock = (
 
   return {
     key: 'hero-with-background',
-    pt: 30,
-    pb: 30,
+    pt: { xs: 15, md: 30 },
+    pb: { xs: 15, md: 30 },
     dark: true,
     center,
     maxWidth: 'md',
