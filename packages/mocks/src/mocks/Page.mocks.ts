@@ -858,7 +858,7 @@ const MOCK_COMMON_PAGES = [
       'We value your privacy. Discover how {appTitle} respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
-      "<p>Your privacy is important to us. It is {appTitle} Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
+      "<p>Your privacy is important to us. It is {companyTitle}'s policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
       '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
       '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
       '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
