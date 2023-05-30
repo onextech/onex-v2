@@ -2,8 +2,7 @@ import React from 'react'
 import { Blocks } from '@gravis-os/landing'
 import {
   renderJobCardBlockItem,
-  renderLeftFourColumnGridBlockItem,
-  renderLeftThreeColumnGridBlockItem,
+  renderLeftFourColumnGridBlockItem
 } from '@onex/blocks'
 import type { Job, Page } from '@onex/types'
 
@@ -73,7 +72,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             },
           ],
         },
-        renderLeftThreeColumnGridBlockItem({
+        renderLeftFourColumnGridBlockItem({
           title: benefits.title,
           subtitle: benefits.subtitle,
           items: benefits.items.map(item => ({
