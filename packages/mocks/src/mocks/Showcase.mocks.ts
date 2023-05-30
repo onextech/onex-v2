@@ -469,8 +469,8 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
       },
     },
   },
-  { // TODO: ADD DETAIL
-    title: 'An intelligent chatbot assistant.',
+  {
+    title: 'People\'s Association: Intelligent Chatbot Assistant.',
     slug: 'tgb',
     subtitle:
       'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies.',
@@ -482,46 +482,34 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Effective Digitalization',
         subtitle:
-          '',
+          'Providing an intelligent, secure and accessible solution for local communities.',
         hero_src: '/showcases/tgb/left.png',
-        hero_alt: '',
+        hero_alt: 'TGB Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Harnessing the Power of Automation',
         subtitle:
-          '',
+          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance. ',
         items: [
           {
             title: '/showcases/tgb/gallery_1.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/tgb/gallery_2.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/tgb/gallery_3.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/tgb/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'TGB Gallery 1' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'Expanding Digital Capabilities',
         subtitle:
-          '',
+          'Providing scalable software that can be used for multiple categories.',
         hero_src: '/showcases/tgb/right.png',
-        hero_alt: '',
+        hero_alt: 'TGB Showcase 2',
       },
     }
   },
-  { // TODO: ADD DETAIL
-    title: 'Blockchain and artificial intelligence.',
+  {
+    title: 'Blockchain & Artificial Intelligence.',
     slug: 'spk',
     subtitle:
       'How we curated historical cryptocurrency market data for a Crypto Trading AI platform.',
@@ -531,41 +519,29 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     backgroundColor: '#071323',
     sections: {
       leftGridSticky: {
-        title: '',
+        title: 'Maximizing the Value of Data',
         subtitle:
-          '',
+          'We ensure that relevant market information is not lost in the sea of data and effectively utilize them for the trading platform.',
         hero_src: '/showcases/spk/left.png',
-        hero_alt: '',
+        hero_alt: 'SPK Showcase 1',
       },
       gallery: {
-        title: '',
+        title: 'Providing User-Centric Data ',
         subtitle:
-          '',
+          'Building customized views based on what is important to the user.',
         items: [
           {
             title: '/showcases/spk/gallery_1.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/spk/gallery_2.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/spk/gallery_3.png',
-            titleProps: { alt: '' },
-          },
-          {
-            title: '/showcases/spk/gallery_4.png',
-            titleProps: { alt: '' },
+            titleProps: { alt: 'TGB Gallery 1' },
           },
         ],
       },
       rightGridSticky: {
-        title: '',
+        title: 'Everything At A Glance',
         subtitle:
-          '',
+          'Learn more about the digital landscape in an intuitive and effortless manner.',
         hero_src: '/showcases/spk/right.png',
-        hero_alt: '',
+        hero_alt: 'SPK Showcase 2',
       },
     }
   },
