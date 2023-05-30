@@ -820,41 +820,53 @@ const MOCK_COMMON_PAGES = [
           "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
           items: [
             {
-              fa_icon: 'fa-dollar-sign',
-              title: 'Competitive Compensation',
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
               subtitle:
-                'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
             },
             {
-              fa_icon: 'fa-graduation-cap',
-              title: 'Professional Development',
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
               subtitle:
-                'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
             },
             {
-              fa_icon: 'fa-briefcase',
-              title: 'Flexible Work Arrangements',
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
               subtitle:
-                'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+                'We support various working hours and schedules to work around your life.',
             },
             {
-              fa_icon: 'fa-users',
-              title: 'Collaborative Culture',
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
               subtitle:
-                'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+                'Work and learn from other talented creatives who care about what they do.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Cutting-Edge Technology',
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
               subtitle:
-                'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
             },
             {
-              fa_icon: 'fa-gift',
-              title: 'Paid Time Off',
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
               subtitle:
-                'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+                'Celebrate the festive occasions together as a team.',
             },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
           ],
       },
       callout: {
@@ -971,14 +983,16 @@ const MOCK_GROUP_PAGES = [
       "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
     sections: {
       hero: {
-        hero_src: '/images/careers_hero.png',
-        hero_alt: 'People discussing in white office',
+        hero_src: 'https://source.unsplash.com/QckxruozjRg/1600x900',
+        hero_alt: 'headphone dude',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Shape The Future of Enterprise Software with Us'
       },
       summary: {
-        title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        hero_src: 'https://source.unsplash.com/2pPw5Glro5I/1600x900',
+        hero_alt: 'brainstorm room',
+        title: "Join Our Dynamic Team Crafting Tomorrow's Technological Innovations",
+        subtitle: 'We are fuelled by our goal to enhance lives through the groundbreaking products we conceive and develop. We seek individuals who are dedicated to delivering excellence and have the drive to elevate products to extraordinary heights.'
       },
       benefits: {
         title: 'Great Perks For Everyone.',
@@ -986,41 +1000,53 @@ const MOCK_GROUP_PAGES = [
           "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
           items: [
             {
-              fa_icon: 'fa-dollar-sign',
-              title: 'Competitive Compensation',
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
               subtitle:
-                'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
             },
             {
-              fa_icon: 'fa-graduation-cap',
-              title: 'Professional Development',
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
               subtitle:
-                'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
             },
             {
-              fa_icon: 'fa-briefcase',
-              title: 'Flexible Work Arrangements',
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
               subtitle:
-                'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+                'We support various working hours and schedules to work around your life.',
             },
             {
-              fa_icon: 'fa-users',
-              title: 'Collaborative Culture',
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
               subtitle:
-                'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+                'Work and learn from other talented creatives who care about what they do.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Cutting-Edge Technology',
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
               subtitle:
-                'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
             },
             {
-              fa_icon: 'fa-gift',
-              title: 'Paid Time Off',
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
               subtitle:
-                'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+                'Celebrate the festive occasions together as a team.',
             },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
           ],
       },
       callout: {
@@ -1448,6 +1474,8 @@ const MOCK_TECH_PAGES = [
         title: 'Help Bring Great Software to More People.'
       },
       summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
         title: "Join The Team That's Building Tomorrow's Technology Today.",
         subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
       },
@@ -1457,41 +1485,53 @@ const MOCK_TECH_PAGES = [
           "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
           items: [
             {
-              fa_icon: 'fa-dollar-sign',
-              title: 'Competitive Compensation',
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
               subtitle:
-                'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
             },
             {
-              fa_icon: 'fa-graduation-cap',
-              title: 'Professional Development',
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
               subtitle:
-                'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
             },
             {
-              fa_icon: 'fa-briefcase',
-              title: 'Flexible Work Arrangements',
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
               subtitle:
-                'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+                'We support various working hours and schedules to work around your life.',
             },
             {
-              fa_icon: 'fa-users',
-              title: 'Collaborative Culture',
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
               subtitle:
-                'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+                'Work and learn from other talented creatives who care about what they do.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Cutting-Edge Technology',
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
               subtitle:
-                'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
             },
             {
-              fa_icon: 'fa-gift',
-              title: 'Paid Time Off',
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
               subtitle:
-                'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+                'Celebrate the festive occasions together as a team.',
             },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
           ],
       },
       callout: {
@@ -1945,14 +1985,16 @@ export const MOCK_DATA_PAGES = [
       "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
     sections: {
       hero: {
-        hero_src: '/images/careers_hero.png',
-        hero_alt: 'People discussing in white office',
+        hero_src: 'https://source.unsplash.com/VBLHICVh-lI/1600x900',
+        hero_alt: 'dark office',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Transform Industries with Cutting-Edge Data and AI Expertise'
       },
       summary: {
-        title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        hero_src: 'https://source.unsplash.com/CPs2X8JYmS8/1600x900',
+        hero_alt: 'glasses guy laptop',
+        title: "Join Our Team and Start Revolutionising Data-driven Innovation Today",
+        subtitle: 'We’re fuelled by our goal to transform industries through innovative data-driven technologies. We seek individuals with a passion for excellence and a proactive drive to create exceptional products in the realm of data and AI.'
       },
       benefits: {
         title: 'Great Perks For Everyone.',
@@ -1960,41 +2002,53 @@ export const MOCK_DATA_PAGES = [
           "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
           items: [
             {
-              fa_icon: 'fa-dollar-sign',
-              title: 'Competitive Compensation',
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
               subtitle:
-                'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
             },
             {
-              fa_icon: 'fa-graduation-cap',
-              title: 'Professional Development',
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
               subtitle:
-                'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
             },
             {
-              fa_icon: 'fa-briefcase',
-              title: 'Flexible Work Arrangements',
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
               subtitle:
-                'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+                'We support various working hours and schedules to work around your life.',
             },
             {
-              fa_icon: 'fa-users',
-              title: 'Collaborative Culture',
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
               subtitle:
-                'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+                'Work and learn from other talented creatives who care about what they do.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Cutting-Edge Technology',
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
               subtitle:
-                'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
             },
             {
-              fa_icon: 'fa-gift',
-              title: 'Paid Time Off',
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
               subtitle:
-                'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+                'Celebrate the festive occasions together as a team.',
             },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
           ],
       },
       callout: {
@@ -2347,14 +2401,16 @@ export const MOCK_DESIGN_PAGES = [
       "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
     sections: {
       hero: {
-        hero_src: '/images/careers_hero.png',
-        hero_alt: 'People discussing in white office',
+        hero_src: 'https://source.unsplash.com/qCi_MzVODoU/1600x900',
+        hero_alt: 'meeting room',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Revolutionise Digital Experiences with Us'
       },
       summary: {
-        title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
+        hero_alt: 'hand gestures',
+        title: "Transform the Digital Landscape and Design the Future",
+        subtitle: 'Our relentless pursuit of enhancing lives through our expertly crafted and tailored products drives us forward. We seek individuals dedicated to excellence, empowering them to take the lead in creating exceptional solutions.'
       },
       benefits: {
         title: 'Great Perks For Everyone.',
@@ -2362,41 +2418,53 @@ export const MOCK_DESIGN_PAGES = [
           "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
           items: [
             {
-              fa_icon: 'fa-dollar-sign',
-              title: 'Competitive Compensation',
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
               subtitle:
-                'We provide competitive compensation packages that reflect your skills, expertise, and contributions, ensuring you are rewarded for your valuable work.',
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
             },
             {
-              fa_icon: 'fa-graduation-cap',
-              title: 'Professional Development',
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
               subtitle:
-                'We encourage and support your professional development through ongoing learning opportunities, conferences, workshops, and access to industry resources.',
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
             },
             {
-              fa_icon: 'fa-briefcase',
-              title: 'Flexible Work Arrangements',
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
               subtitle:
-                'We understand the importance of work-life balance, and we offer flexible work arrangements that enable you to manage your personal and professional commitments effectively.',
+                'We support various working hours and schedules to work around your life.',
             },
             {
-              fa_icon: 'fa-users',
-              title: 'Collaborative Culture',
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
               subtitle:
-                'We foster a collaborative and inclusive culture that values teamwork, open communication, and diverse perspectives, creating an environment where everyone can thrive.',
+                'Work and learn from other talented creatives who care about what they do.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Cutting-Edge Technology',
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
               subtitle:
-                'We provide access to the latest tools, technologies, and resources to empower you in delivering high-quality software solutions and staying ahead in the rapidly evolving industry.',
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
             },
             {
-              fa_icon: 'fa-gift',
-              title: 'Paid Time Off',
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
               subtitle:
-                'We offer paid time off, including vacation days, holidays, and personal time off, so you can relax, recharge, and maintain a healthy work-life balance.',
+                'Celebrate the festive occasions together as a team.',
             },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
           ],
       },
       callout: {

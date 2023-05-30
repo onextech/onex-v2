@@ -61,11 +61,11 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             },
             {
               type: 'image',
-              title: '/images/careers_office.jpg',
+              title: summary.hero_src,
               maxWidth: false,
               disableContainer: true,
               titleProps: {
-                alt: 'Office with plants',
+                alt: summary.hero_alt,
                 background: true,
                 backgroundHeight: { xs: 300, md: 500 },
                 sx: { my: 3 },
