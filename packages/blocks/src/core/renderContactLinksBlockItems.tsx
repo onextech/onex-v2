@@ -14,7 +14,7 @@ const renderContactLinksBlockItems = () => {
     {
       type: 'h5',
       title: 'Reach Us',
-      titleProps: { sx: { mt: 8, mb: 2, width: 500 } },
+      titleProps: { sx: { mt: 8, mb: 2, width: 500, maxWidth: 1 } },
     },
     ...[
       {
