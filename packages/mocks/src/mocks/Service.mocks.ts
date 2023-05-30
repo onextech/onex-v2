@@ -119,7 +119,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
     checklist: {
-      overline: 'What we do',
+      overline: 'Why Us',
       title: `Why {appTitle} for {title}`,
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
@@ -2601,7 +2601,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
@@ -3645,7 +3645,7 @@ export const MOCK_DESIGN_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Unlocking the potential of enterprise technology through personalized design thinking processes tailored to drive your business growth.',
@@ -4955,7 +4955,7 @@ export const MOCK_DATA_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Igniting enterprise transformation through personalized data solutions focused on driving your business success.',

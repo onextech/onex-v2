@@ -1540,7 +1540,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
@@ -2030,7 +2030,7 @@ export const MOCK_DATA_PAGES = [
           "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. We provide customised data science services and AI solutions, transforming raw data into actionable insights and automating complex processes. Unlock your data's potential and excel in the digital landscape with our expertise in data science and AI.",
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our data-focused approach ensures the delivery of robust data science and AI solutions for businesses ready to harness the power of their data and gain a competitive edge.',
@@ -2364,7 +2364,7 @@ export const MOCK_DESIGN_PAGES = [
           "{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.",
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our user-centric approach to every project ensures the delivery of superior UI/UX solutions for enterprises seeking to embark on a transformative digital journey.',
