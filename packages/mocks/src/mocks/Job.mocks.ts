@@ -21,7 +21,7 @@ export const MOCK_JOBS = [
   ...item,
   id: i + 1,
   href: `/${item.slug}`,
-  ctaUrl: 'https://www.linkedin.com/jobs/view/3511238718',
+  ctaUrl: '/contact',
   html:
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">Roles and responsibilities:</span></strong></span></span></h4>\n' +
     '<ol class="css-bcmuw8" data-slate-node="element">\n' +
