@@ -72,15 +72,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             },
           ],
         },
-        renderLeftFourColumnGridBlockItem({
-          title: benefits.title,
-          subtitle: benefits.subtitle,
-          items: benefits.items.map(item => ({
-            fa_icon: item.fa_icon || '',
-            title: item.title || '',
-            subtitle: item.subtitle || ''
-          }))
-        }),
+        renderLeftFourColumnGridBlockItem(benefits),
         {
           key: 'openings',
           ...commonBlockProps,
