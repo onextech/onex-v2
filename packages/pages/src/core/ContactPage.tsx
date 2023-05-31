@@ -34,10 +34,12 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
               boxProps: {
                 sx: {
                   backgroundColor: 'background.paper',
-                  minWidth: { md: 'calc(100vw - 84px)' },
                 },
               },
-              gridProps: { spacing: { xs: 0, md: 5 } },
+              gridProps: {
+                spacing: { xs: 0, md: 5 },
+                minWidth: { md: 'calc(100vw - 48px)' },
+              },
               gridItems: [
                 {
                   md: 7,
