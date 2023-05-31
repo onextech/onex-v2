@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, useOpen } from '@gravis-os/ui'
+import { Box, useOpen, DialogProps } from '@gravis-os/ui'
 import { Block } from '@gravis-os/landing'
 import { printPaddedNumber } from '@gravis-os/utils'
 import type { Job } from '@onex/types'
@@ -35,6 +35,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
       open: isOpen,
       onClose: close,
       maxWidth: 'xl',
+      fullScreenOnMobile: true,
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },
       children: (
