@@ -30,7 +30,6 @@ const ServiceCategoryPage: React.FC<ServiceCategoryPageProps> = (props) => {
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Service Category' },
             {
               type: 'h1',
               title,

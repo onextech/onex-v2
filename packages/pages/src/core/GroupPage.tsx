@@ -10,7 +10,6 @@ import {
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
-  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Industry, Page, Post, Showcase } from '@onex/types'

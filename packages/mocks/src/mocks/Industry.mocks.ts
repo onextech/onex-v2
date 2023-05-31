@@ -69,8 +69,8 @@ export const MOCK_INDUSTRY_PAGE = {
         'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
     },
     features: {
-      overline: 'What we do',
-      title: 'Our {title} Capabilities',
+      overline: 'Our Solutions',
+      title: 'Empowering the {title} Sector',
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
@@ -114,7 +114,7 @@ export const MOCK_INDUSTRY_PAGE = {
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
     checklist: {
-      overline: 'What we do',
+      overline: 'Why Us',
       title: `Why {appTitle} for {title}`,
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
@@ -209,8 +209,8 @@ export const MOCK_GROUP_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'Leveraging the latest technologies, we provide comprehensive software development services for the finance industry.',
         items: [
@@ -299,8 +299,8 @@ export const MOCK_GROUP_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'With our deep understanding of government operations and regulations, we offer a range of solutions that help government agencies achieve their goals and deliver exceptional services.',
         items: [
@@ -389,8 +389,8 @@ export const MOCK_GROUP_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organizations stay ahead in a rapidly evolving digital landscape.',
         items: [
@@ -479,8 +479,8 @@ export const MOCK_GROUP_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organizations thrive in a digital-first era.',
         items: [
@@ -553,7 +553,20 @@ export const MOCK_GROUP_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      checklist:
+        { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
+      },
+    }
   })
 })
 
@@ -590,8 +603,8 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a range of finance services that are tailored to meet the specific needs of your business and industry.',
         items: [
@@ -688,8 +701,8 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a range of software development services tailored to meet the specific needs of government agencies.',
         items: [
@@ -790,8 +803,8 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a range of software development services tailored to meet the specific needs of the maritime industry.',
         items: [
@@ -891,8 +904,8 @@ export const MOCK_TECH_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a range of software development services tailored to meet the specific needs of the real estate industry.',
         items: [
@@ -1000,8 +1013,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a comprehensive suite of UX/UI services to transform your financial enterprise.',
         items: [
@@ -1102,8 +1115,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer comprehensive UX/UI services, including product design and UX workshops specifically for government agencies.',
         items: [
@@ -1204,8 +1217,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'From UX workshops to product design, we provide comprehensive UX/UI services specifically for the maritime industry.',
         items: [
@@ -1306,8 +1319,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'From UX workshops to product design, we provide comprehensive UX/UI services designed for the real estate industry.',
         items: [
@@ -1380,7 +1393,20 @@ export const MOCK_DESIGN_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.',
+      },
+      checklist: {
+        subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.'
+      }
+    }
   })
 })
 
@@ -1417,8 +1443,8 @@ export const MOCK_DATA_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a comprehensive suite of data science and AI solutions tailored to the finance industry.',
         items: [
@@ -1519,8 +1545,8 @@ export const MOCK_DATA_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a wide range of data science and AI solutions tailored to the needs of government organizations.',
         items: [
@@ -1621,8 +1647,8 @@ export const MOCK_DATA_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a comprehensive suite of data science and AI solutions tailored to the unique needs of the maritime industry.',
         items: [
@@ -1723,8 +1749,8 @@ export const MOCK_DATA_INDUSTRYS = [
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our {title} Capabilities',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
           'We offer a comprehensive suite of data science and AI solutions tailored to the unique needs of the real estate industry.',
         items: [
@@ -1797,7 +1823,20 @@ export const MOCK_DATA_INDUSTRYS = [
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
-    sections: { ...item.sections, checklist: { subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.' }}
+    sections: {
+      ...item.sections,
+      checklist: {
+        subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
+    }
   })
 })
 

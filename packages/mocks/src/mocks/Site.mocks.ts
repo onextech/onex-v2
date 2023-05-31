@@ -30,17 +30,6 @@ export const MOCK_COMMON_SITE = {
   cta_title: 'Build the future with One X Group',
   cta_button_title: 'Get Started',
 
-  // Social Media
-  social_media_github_url: 'https://github.com/onextech',
-  social_media_medium_url: 'https://medium.com/one-x-tech',
-  social_media_behance_url: 'https://www.behance.net/onextech',
-  social_media_twitter_url: 'https://twitter.com/1XTech',
-  social_media_dribbble_url: 'https://dribbble.com/1XT',
-  social_media_facebook_url: 'https://www.facebook.com/onextech',
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
-  social_media_instagram_url: 'https://www.instagram.com/onextech',
-  social_media_youtube_url: 'https://www.youtube.com/onextech',
-
   // Address
   office_title: 'Singapore (Asia Pacific)',
   office_address: '71 Robinson Road WeWork #13-159 Singapore 068895',
@@ -102,6 +91,18 @@ export const MOCK_TECH_SITE = {
 
   general_email: 'info@onextech.com',
 
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
   // Logo
   logo_width: 95,
   logo_height: 13,
@@ -137,7 +138,7 @@ export const MOCK_DESIGN_SITE = {
   general_email: 'info@onexdesign.com',
 
   // Logo
-  logo_width: 120,
+  logo_width: 108,
   logo_height: 13,
 
   nav_items: [
@@ -165,7 +166,7 @@ export const MOCK_DATA_SITE = {
   logo_alt: 'One X Data logo',
 
   // Cta
-  cta_title: 'Build Your Digital Future with One X Data',
+  cta_title: 'Build Business Intelligence with One X Data',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdata.co',
