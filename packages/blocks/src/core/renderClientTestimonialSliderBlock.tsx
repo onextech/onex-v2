@@ -49,7 +49,7 @@ const renderClientTestimonialSliderBlock = (
           <Slider
             autoplay={!isDesktop}
             loop={!isDesktop}
-            arrows={false}
+            arrows={!isDesktop}
             sx={{ mt: 4 }}
             options={{ slides: { perView: isDesktop ? 3 : 1, spacing: 12 }}}
             dotProps={{ color: 'secondary.main' }}
