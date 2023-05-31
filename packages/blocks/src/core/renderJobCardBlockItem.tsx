@@ -3,7 +3,6 @@ import { Box, useOpen } from '@gravis-os/ui'
 import { Block } from '@gravis-os/landing'
 import { printPaddedNumber } from '@gravis-os/utils'
 import type { Job } from '@onex/types'
-import { useMediaQuery, useTheme } from '@mui/material'
 
 export interface RenderJobCardBlockItemProps {
   index: number
@@ -15,9 +14,6 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
   const { title, subtitle, html, ctaUrl } = job
 
   const [isOpen, { open, close }] = useOpen()
-
-  const theme = useTheme()
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'), { noSsr: true })
 
   return {
     boxProps: {
@@ -38,7 +34,6 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
       open: isOpen,
       onClose: close,
       maxWidth: 'xl',
-      fullScreen: !isDesktop,
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },
       children: (

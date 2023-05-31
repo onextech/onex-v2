@@ -632,7 +632,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     footerProps: {
       callout: <ContactCallout {...calloutProps} />,
       logo: <Image {...logoProps} />,
-      companyName: site.company_title.replace(/\.$/, ''),
+      companyName: site.company_title,
       accordionProps: {
         titleProps: { variant: 'h7' },
         itemTitleProps: {
