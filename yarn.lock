@@ -1697,10 +1697,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/query@^0.0.27":
-  version "0.0.27"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.27.tgz#7cf3e5b42c5929dd4ddf376acaa498ede2339b7a"
-  integrity sha512-ZmwLBK0rUDJ5/XsRqz9gCeuI9wclU4J/GOv3I28kjiHfWiq1FY+b2AoH9enjcIdnDcimu9tkY/vDr1u6+hSxDQ==
+"@gravis-os/query@^0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.28.tgz#d4e1703ffb8db7d24340e5679fcc09522808539f"
+  integrity sha512-Qqpn3g5atc+yCb2dTxPGMJIXcA1vmPo7H8XlQTScBT0tm3IWYk3j1xQestXK4ZoxBMLgmJ5UAdXtTYn388WObQ==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1716,9 +1716,9 @@
   integrity sha512-kW1ph+fyAhRCt6EOMXPpv63lVm1d+KtOJz/hgPoG6nBLcO4zs9N+f/hf+W6PxrjplGIRHgB5sOx9m7teXATyTg==
 
 "@gravis-os/storage@*":
-  version "0.0.41"
-  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.0.41.tgz#40fcd1197f3b548359864215746bb3cba47090c5"
-  integrity sha512-lFxFr5Wm9GNblBymGedui1Qy5L1JmtDctyxubyrqGukkuT+9TbE351ZuqWzCKOWyCzShwKMc2YxzhwuK87U4nA==
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.0.42.tgz#eb0943f4d5f0d42a034b7badce0e1c7813a37cf7"
+  integrity sha512-WREswMPB3egTORzmxYuXo3apZE3uEmsX0AENjiynv8whyMz+Gxkdr4XIeD13NJv4S2GtYbRHnjvOxRprzfS+tg==
   dependencies:
     "@gravis-os/types" "*"
     "@gravis-os/ui" "*"
@@ -1745,17 +1745,17 @@
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
 "@gravis-os/types@*":
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.0.42.tgz#da5c53512710095d57ad1aa99bc6c6038e6805f6"
-  integrity sha512-nEldDsg8lnMAzc52ZuBWW5LjtRbZuDHkEnEDJJvYhSCGsNtH3tFURi1GOeCPtwyRtEzarC29+8ifvDLcPYIfBA==
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.0.43.tgz#d3bc2d124590adbbc1dbda8c9e5a73b8ed845230"
+  integrity sha512-ccqmZBS5LPntzy5s+tYTBHyqbjfC5KO/cdFxdSsIwU0NqZa3eyNJn4sMx8IiY+BldXk7cS7EtLoMt7v7nxSTwQ==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.0.112":
-  version "0.0.112"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.0.112.tgz#0543031d46f42867b87a6ece202824bc964bdb79"
-  integrity sha512-Ye/V9Rn7pz3Xgci/suub+DvH0QHLeR2ll9Dt5IKmGgdvtdWozOQGCEHUTGUiwUL9+tuJseQlQW5lTJ3AX4ET6g==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.1.0.tgz#e466575c8377e9a10194d73bd5c552a63251a5ef"
+  integrity sha512-Vba1ypRJxW2jCbZkW2HPAgBUvprz7CpDgNqjsLyxGYZPmfiW6L6r1WE8OQD4W4FmyoLEigxk66S3ZWCFZDbAlQ==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"
