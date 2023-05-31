@@ -1,8 +1,9 @@
 import React from 'react'
-import { Box, useOpen } from '@gravis-os/ui'
+import { Box, useOpen, DialogProps } from '@gravis-os/ui'
 import { Block } from '@gravis-os/landing'
 import { printPaddedNumber } from '@gravis-os/utils'
 import type { Job } from '@onex/types'
+import { routeConfig } from '@onex/common'
 
 export interface RenderJobCardBlockItemProps {
   index: number
@@ -11,7 +12,7 @@ export interface RenderJobCardBlockItemProps {
 
 const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
   const { job, index } = props
-  const { title, subtitle, html, ctaUrl } = job
+  const { title, subtitle, html } = job
 
   const [isOpen, { open, close }] = useOpen()
 
@@ -34,6 +35,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
       open: isOpen,
       onClose: close,
       maxWidth: 'xl',
+      fullScreenOnMobile: true,
       title: 'Careers',
       titleProps: { variant: 'overline', sx: { pl: { xs: 4, md: 5 } } },
       children: (
@@ -78,7 +80,7 @@ const renderJobCardBlockItem = (props: RenderJobCardBlockItemProps) => {
                         type: 'button',
                         title: 'Apply',
                         titleProps: {
-                          href: ctaUrl,
+                          href: routeConfig.CONTACT,
                           hrefProps: { targetBlank: true },
                           variant: 'contained',
                           color: 'primary',

@@ -21,6 +21,8 @@ const withSiteVariablesReplacement = () => (props) => {
     title: page.title,
     // Replace `{appTitle}` with site.title
     appTitle: site.title,
+    // Replace `{companyTitle}` with site.companyTitle
+    companyTitle: site.company_title,
     // Replace `{localeTitle}` with site.title
     localeTitle,
     // Replace routes e.g. `{routes.SERVICES}` to `/services`

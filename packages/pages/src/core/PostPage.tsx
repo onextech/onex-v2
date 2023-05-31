@@ -25,8 +25,6 @@ const PostPage: React.FC<PostPageProps> = (props) => {
       items={[
         renderPostHeroBlockItem({
           item: post,
-          overline: postCategory.title,
-          overlineProps: { href: `${routeConfig.POSTS}/${postCategory?.slug}` },
         }),
         renderPostDetailBlock({ item: post, pt: { xs: 3, md: 6 } }),
         renderRelatedServicesBlock({

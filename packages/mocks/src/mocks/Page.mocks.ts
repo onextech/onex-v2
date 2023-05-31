@@ -803,6 +803,77 @@ const MOCK_COMMON_PAGES = [
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
       "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.'
+      },
+      summary: {
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
   },
   {
     title: 'Contact',
@@ -858,7 +929,7 @@ const MOCK_COMMON_PAGES = [
       'We value your privacy. Discover how {appTitle} respects your personal information through data protection, consent and protecting your rights.',
     html:
       '<h3>Overview</h3>\n' +
-      "<p>Your privacy is important to us. It is {appTitle} Pte Ltd's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
+      "<p>Your privacy is important to us. It is {companyTitle}'s policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>\n" +
       '<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we&rsquo;re collecting it and how it will be used.</p>\n' +
       '<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we&rsquo;ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>\n' +
       '<p>We don&rsquo;t share any personally identifying information publicly or with third-parties, except when required to by law.</p>\n' +
@@ -903,6 +974,87 @@ const MOCK_COMMON_PAGES = [
 }))
 
 const MOCK_GROUP_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: 'https://source.unsplash.com/QckxruozjRg/1600x900',
+        hero_alt: 'headphone dude',
+        overline: 'Careers',
+        title: 'Shape The Future of Enterprise Software with Us'
+      },
+      summary: {
+        hero_src: 'https://source.unsplash.com/2pPw5Glro5I/1600x900',
+        hero_alt: 'brainstorm room',
+        title: "Join Our Dynamic Team Crafting Tomorrow's Technological Innovations",
+        subtitle: 'We are fuelled by our goal to enhance lives through the groundbreaking products we conceive and develop. We seek individuals who are dedicated to delivering excellence and have the drive to elevate products to extraordinary heights.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
   {
     title: 'About',
     slug: 'about',
@@ -1308,6 +1460,87 @@ const MOCK_GROUP_PAGES = [
 
 const MOCK_TECH_PAGES = [
   {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.'
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
+  {
     title: 'About',
     slug: 'about',
     subtitle:
@@ -1540,7 +1773,7 @@ const MOCK_TECH_PAGES = [
         ],
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
@@ -1743,6 +1976,87 @@ const MOCK_TECH_PAGES = [
 }))
 
 export const MOCK_DATA_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: 'https://source.unsplash.com/VBLHICVh-lI/1600x900',
+        hero_alt: 'dark office',
+        overline: 'Careers',
+        title: 'Transform Industries with Cutting-Edge Data and AI Expertise'
+      },
+      summary: {
+        hero_src: 'https://source.unsplash.com/CPs2X8JYmS8/1600x900',
+        hero_alt: 'glasses guy laptop',
+        title: "Join Our Team and Start Revolutionising Data-driven Innovation Today",
+        subtitle: 'We’re fuelled by our goal to transform industries through innovative data-driven technologies. We seek individuals with a passion for excellence and a proactive drive to create exceptional products in the realm of data and AI.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
   {
     title: 'About',
     slug: 'about',
@@ -2027,10 +2341,10 @@ export const MOCK_DATA_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          "{appTitle} collaborates with enterprise-level organizations to harness the power of data and artificial intelligence. We specialize in delivering tailored data science services and AI solutions that empower your business to make data-driven decisions and gain a competitive edge. Our approach centers around understanding your unique data challenges and customizing our solutions to meet those specific needs. We excel in transforming raw data into actionable insights and designing AI models that automate complex processes and enhance decision-making. Whether you're just beginning your data journey or looking to optimize existing data systems, our expertise in data science and AI can propel your business towards a future driven by data and intelligence. Together, we can unlock the potential of your data, enabling your enterprise to excel in the evolving digital landscape.",
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. We provide customised data science services and AI solutions, transforming raw data into actionable insights and automating complex processes. Unlock your data's potential and excel in the digital landscape with our expertise in data science and AI.",
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our data-focused approach ensures the delivery of robust data science and AI solutions for businesses ready to harness the power of their data and gain a competitive edge.',
@@ -2078,6 +2392,87 @@ export const MOCK_DATA_PAGES = [
 ].map((page) => merge({}, MOCK_DATA_PAGE, page))
 
 export const MOCK_DESIGN_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: 'https://source.unsplash.com/qCi_MzVODoU/1600x900',
+        hero_alt: 'meeting room',
+        overline: 'Careers',
+        title: 'Revolutionise Digital Experiences with Us'
+      },
+      summary: {
+        hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
+        hero_alt: 'hand gestures',
+        title: "Transform the Digital Landscape and Design the Future",
+        subtitle: 'Our relentless pursuit of enhancing lives through our expertly crafted and tailored products drives us forward. We seek individuals dedicated to excellence, empowering them to take the lead in creating exceptional solutions.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
   {
     title: 'About',
     slug: 'about',
@@ -2361,10 +2756,10 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          "{appTitle} collaborates with enterprise clients to create visually captivating and intuitive user experiences. With a strong focus on UI/UX design, we specialize in crafting engaging designs for web and mobile interfaces. Our approach is centered around understanding your unique product requirements and tailoring our design solutions to meet your specific needs. We excel in translating complex ideas into visually appealing and user-friendly interfaces, ensuring seamless interactions and optimal user engagement. Whether you're at the ideation stage or looking to enhance an existing product, our expertise in UI/UX design and enterprise product designs can elevate your digital presence and drive customer satisfaction. Together, we can create designs that leave a lasting impression and set your enterprise apart in the digital landscape.",
+          "{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.",
       },
       features: {
-        overline: 'What we do',
+        overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
           'Our user-centric approach to every project ensures the delivery of superior UI/UX solutions for enterprises seeking to embark on a transformative digital journey.',

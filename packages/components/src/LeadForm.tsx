@@ -31,6 +31,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
     setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
+    
   }
 
   return (
