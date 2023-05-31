@@ -552,7 +552,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
-      items: pages,
+      items: [...pages, showcases?.length && {
+        key: 'showcases',
+        title: 'Showcases',
+        href: routeConfig.SHOWCASES
+      }].filter(Boolean),
     },
   ]
 

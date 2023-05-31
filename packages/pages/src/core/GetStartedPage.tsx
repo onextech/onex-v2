@@ -32,7 +32,11 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
           items: [
             {
               type: 'grid',
-              gridProps: { spacing: { xs: 0, md: 5 } },
+              gridProps: {
+                spacing: { xs: 0, md: 5 },
+                ...(fullScreen && { minWidth: { md: 'calc(100vw - 48px)' } }),
+                px: 0,
+              },
               gridItems: [
                 {
                   md: 7,
@@ -86,7 +90,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                       top: 0,
                       px: 5,
                       py: { xs: 5, md: 10 },
-                      position: { md: 'absolute' },
+                      width: '100%'
                     },
                   },
                   items: [

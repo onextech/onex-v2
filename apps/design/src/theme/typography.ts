@@ -44,7 +44,14 @@ const typography = {
     letterSpacing: -1,
   },
   h3: { fontFamily: headerFontFamily, fontWeight: 400, lineHeight: 1.09 },
-  h4: { fontSize: pxToRem(39), fontFamily: headerFontFamily, fontWeight: 400 },
+  h4: {
+    fontSize: pxToRem(28),
+    fontFamily: headerFontFamily,
+    fontWeight: 400,
+    [defaultTheme.breakpoints.up('md')]: {
+      fontSize: pxToRem(39),
+    },
+  },
   h5: {
     fontFamily: headerFontFamily,
     fontWeight: 400,

@@ -1519,43 +1519,31 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'Benefits',
           title: '{title} Development Services',
           subtitle:
-            'With our Python development services, we offer a range of capabilities that include data analysis, machine learning development, system integration, secure implementations, continuous updates, and ongoing support.',
+            'Our Python services offer diverse benefits, from increased productivity to robust data management, and advanced analytics.',
           items: [
             {
-              fa_icon: 'fa-chart-bar',
-              title: 'Data Analysis',
+              fa_icon: 'fa-tasks',
+              title: 'Productivity',
               subtitle:
-                'Leverage Python’s powerful libraries for complex data analysis and visualization, turning raw data into actionable insights.',
+                'Python’s simplicity and readability can significantly increase programmer productivity, reducing development time.',
             },
             {
-              fa_icon: 'fa-robot',
-              title: 'Machine Learning Development',
+              fa_icon: 'fa-search-dollar',
+              title: 'Advanced Analytics',
               subtitle:
-                'Utilize Python for creating and implementing advanced machine learning models, paving the way for predictive capabilities and decision automation.',
+                'Python provides extensive libraries and frameworks for advanced analytics and data visualization.',
             },
             {
-              fa_icon: 'fa-network-wired',
-              title: 'System Integration',
+              fa_icon: 'fa-shield-alt',
+              title: 'Reliability & Security',
               subtitle:
-                'Integrate Python solutions seamlessly into your existing systems, enhancing data exchange and workflow automation.',
+                'Python has a mature and robust ecosystem, making it a reliable choice for secure application development.',
             },
             {
-              fa_icon: 'fa-lock',
-              title: 'Secure Implementation',
+              fa_icon: 'fa-rocket',
+              title: 'Scalability',
               subtitle:
-                'Count on us for a secure implementation of Python in your systems, ensuring the utmost safety and integrity of your data and processes.',
-            },
-            {
-              fa_icon: 'fa-sync',
-              title: 'Continuous Updates',
-              subtitle:
-                'Stay up-to-date with the latest Python features and updates, with us ensuring your applications always run on the latest version.',
-            },
-            {
-              fa_icon: 'fa-hands-helping',
-              title: 'Support & Maintenance',
-              subtitle:
-                'Experience continuous support and maintenance from our end, ensuring the smooth operation and optimization of your Python applications.',
+                'Python applications can be easily scaled up or down to match your business requirements.',
             },
           ],
         },
@@ -1563,43 +1551,43 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'What we do',
           title: 'Our {title} Capabilities',
           subtitle:
-            'Discover our wide range of capabilities in Python development.',
+            'With a deep understanding of Python, we provide versatile solutions, from data analysis to machine learning, for your business needs.',
           items: [
             {
               fa_icon: 'fa-chart-bar',
               title: 'Data Analysis',
               subtitle:
-                'We leverage Python’s powerful libraries to perform complex data analysis and visualization.',
+                'We leverage Python’s powerful libraries to perform complex data analysis, helping you make data-driven decisions.',
             },
             {
               fa_icon: 'fa-robot',
               title: 'Machine Learning',
               subtitle:
-                'We develop and implement machine learning models using Python to provide predictive capabilities and automate decision-making processes.',
+                'We create predictive models using Python, enabling your enterprise to leverage the power of machine learning.',
             },
             {
-              fa_icon: 'fa-network-wired',
-              title: 'System Integration',
+              fa_icon: 'fa-cogs',
+              title: 'Automation',
               subtitle:
-                'We integrate Python solutions into your existing infrastructure for seamless data exchange and workflow automation.',
+                'Python is excellent for creating efficient automation scripts, and we harness this capability to improve your business processes.',
             },
             {
-              fa_icon: 'fa-lock',
-              title: 'Secure Implementation',
+              fa_icon: 'fa-project-diagram',
+              title: 'Integration',
               subtitle:
-                'We ensure the secure implementation of Python in your systems, safeguarding your data and processes.',
+                'We integrate Python applications with your existing systems to create a cohesive technology environment.',
             },
             {
-              fa_icon: 'fa-sync',
-              title: 'Continuous Updates',
+              fa_icon: 'fa-database',
+              title: 'Database Interaction',
               subtitle:
-                'We ensure your Python applications stay up-to-date with the latest updates and features.',
+                'We use Python to interact with various databases, allowing for robust and versatile data operations.',
             },
             {
-              fa_icon: 'fa-hands-helping',
-              title: 'Support & Maintenance',
+              fa_icon: 'fa-users-cog',
+              title: 'Custom Solutions',
               subtitle:
-                'We provide ongoing support and maintenance to ensure smooth operation and optimization of your Python applications.',
+                'We provide custom Python solutions tailored to your specific business needs and objectives.',
             },
           ],
         },
@@ -1753,43 +1741,31 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'Benefits',
           title: '{title} Development Services',
           subtitle:
-            'With our SQL services, we offer a range of capabilities that include database design, data modeling, query optimization, data analysis, security measures, and maintenance support.',
+            'Our SQL services offer diverse benefits, including reliable data management, enhanced security, and business intelligence capabilities.',
           items: [
             {
-              fa_icon: 'fa-database',
-              title: 'Database Design',
-              subtitle:
-                'We design structured and optimized databases that promote efficient data storage, management, and retrieval.',
-            },
-            {
-              fa_icon: 'fa-project-diagram',
-              title: 'Data Modeling',
-              subtitle:
-                'Our experts create logical and physical data models to effectively organize and manage your data, supporting various business processes.',
-            },
-            {
-              fa_icon: 'fa-tachometer-alt',
-              title: 'Query Optimization',
-              subtitle:
-                'We optimize SQL queries to ensure rapid and accurate data retrieval, supporting your real-time business requirements.',
-            },
-            {
-              fa_icon: 'fa-chart-bar',
-              title: 'Data Analysis',
-              subtitle:
-                'Using SQL, we conduct in-depth data analysis to provide insightful and actionable business intelligence.',
-            },
-            {
               fa_icon: 'fa-shield-alt',
-              title: 'Security Measures',
+              title: 'Robust Security',
               subtitle:
-                'We enforce robust security measures, safeguarding your data from threats and unauthorized access, thereby ensuring data integrity.',
+                'SQL databases come with robust security features to protect your sensitive data and maintain regulatory compliance.',
             },
             {
-              fa_icon: 'fa-tools',
-              title: 'Maintenance Support',
+              fa_icon: 'fa-search-dollar',
+              title: 'Business Intelligence',
               subtitle:
-                'We offer continuous database maintenance and support, ensuring smooth operation and peak performance of your databases.',
+                'SQL is ideal for Business Intelligence applications, providing powerful tools for data analysis and reporting.',
+            },
+            {
+              fa_icon: 'fa-tasks',
+              title: 'Consistent Data Management',
+              subtitle:
+                'SQL provides consistent data management, reducing the risk of data anomalies and ensuring data integrity.',
+            },
+            {
+              fa_icon: 'fa-rocket',
+              title: 'Performance',
+              subtitle:
+                'Optimized SQL databases deliver high performance, ensuring quick and efficient data operations for your business.',
             },
           ],
         },
@@ -1797,43 +1773,43 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'What we do',
           title: 'Our {title} Capabilities',
           subtitle:
-            'We provide a comprehensive range of SQL services, following the best practices in database design, data modeling, query optimization, data analysis, and security.',
+            'With extensive expertise in SQL-based solutions, we provide robust and efficient database services for your enterprise needs.',
           items: [
             {
               fa_icon: 'fa-database',
               title: 'Database Design',
               subtitle:
-                'We design efficient and scalable databases tailored to your unique business requirements.',
+                'We design SQL databases that are robust, secure, and tailored to your specific business requirements.',
+            },
+            {
+              fa_icon: 'fa-chart-bar',
+              title: 'Data Analysis',
+              subtitle:
+                'Leveraging SQL, we perform deep data analysis to glean insights that drive informed business decisions.',
+            },
+            {
+              fa_icon: 'fa-lock',
+              title: 'Data Security',
+              subtitle:
+                'We implement stringent security measures to protect your SQL databases from unauthorized access and data breaches.',
             },
             {
               fa_icon: 'fa-cogs',
-              title: 'Data Modeling',
+              title: 'Database Optimization',
               subtitle:
-                'We create logical and physical data models to organize your data effectively and support your business processes.',
-            },
-            {
-              fa_icon: 'fa-chart-line',
-              title: 'Query Optimization',
-              subtitle:
-                'We optimize SQL queries to ensure fast and accurate data retrieval, supporting your real-time business needs.',
-            },
-            {
-              fa_icon: 'fa-chart-pie',
-              title: 'Data Analysis',
-              subtitle:
-                'We leverage SQL for sophisticated data analysis, providing valuable insights that inform your business decisions.',
-            },
-            {
-              fa_icon: 'fa-shield-alt',
-              title: 'Security',
-              subtitle:
-                'We ensure the security of your data, implementing robust measures to protect against threats and unauthorized access.',
+                'We optimize your SQL databases for high performance, ensuring efficient data retrieval and updates.',
             },
             {
               fa_icon: 'fa-sync',
-              title: 'Maintenance & Support',
+              title: 'Data Synchronization',
               subtitle:
-                'We provide ongoing maintenance and support, ensuring your databases are always running smoothly and efficiently.',
+                'We provide SQL solutions for real-time data synchronization across various platforms and systems.',
+            },
+            {
+              fa_icon: 'fa-project-diagram',
+              title: 'Data Integration',
+              subtitle:
+                'We ensure seamless integration of your SQL databases with other enterprise systems for smooth business operations.',
             },
           ],
         },
@@ -1879,43 +1855,31 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'Benefits',
           title: '{title} Development Services',
           subtitle:
-            'With our NoSQL services, we offer a range of capabilities that include data modeling, implementation, real-time processing, scalability, security, and continuous support.',
+            'Our NoSQL development services offer a wide range of benefits that include performance efficiency, easy data management, and flexible scalability.',
           items: [
             {
-              fa_icon: 'fa-database',
-              title: 'Effective Data Modeling',
+              fa_icon: 'fa-bolt',
+              title: 'High Performance',
               subtitle:
-                'We design and implement effective data models that leverage the unique strengths of NoSQL databases, allowing for efficient management and scalability of your data.',
+                'NoSQL databases enable high-speed read and write operations, significantly improving the performance of your applications.',
             },
             {
-              fa_icon: 'fa-cogs',
-              title: 'Diverse Database Implementation',
+              fa_icon: 'fa-expand-arrows-alt',
+              title: 'Flexibility',
               subtitle:
-                'We provide expertise in implementing various types of NoSQL databases - document, key-value, columnar, or graph-based, selecting the best fit for your specific business requirements.',
+                'With NoSQL databases, you can easily adapt to changing data structures and requirements without any downtime.',
             },
             {
-              fa_icon: 'fa-sync',
-              title: 'Real-Time Processing',
+              fa_icon: 'fa-cloud-upload-alt',
+              title: 'Cloud Compatibility',
               subtitle:
-                'Our NoSQL services facilitate real-time processing and analytics of data, enabling instantaneous insights critical for agile businesses.',
+                'NoSQL databases work exceptionally well with cloud-based storage and computing, allowing for cost-effective data management solutions.',
             },
             {
-              fa_icon: 'fa-chart-line',
-              title: 'Scalability',
+              fa_icon: 'fa-infinity',
+              title: 'Unlimited Scalability',
               subtitle:
-                'We ensure that your NoSQL databases can scale seamlessly with the growing data volumes, maintaining consistent performance and efficiency.',
-            },
-            {
-              fa_icon: 'fa-shield-alt',
-              title: 'Security',
-              subtitle:
-                'Our NoSQL services prioritize the security of your databases, implementing robust measures to protect your data from threats and vulnerabilities.',
-            },
-            {
-              fa_icon: 'fa-users-cog',
-              title: 'Continuous Support',
-              subtitle:
-                'We provide continuous maintenance and support to ensure smooth operation, peak performance, and long-term success of your NoSQL databases.',
+                'With horizontal scaling capabilities, NoSQL databases can handle immense volumes of data without compromising on performance.',
             },
           ],
         },
@@ -1923,43 +1887,43 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           overline: 'What we do',
           title: 'Our {title} Capabilities',
           subtitle:
-            'Our approach to NoSQL involves a keen understanding of your data requirements, followed by the implementation of appropriate NoSQL databases and strategies.',
+            'To provide top-tier NoSQL solutions, we leverage the power and flexibility of NoSQL databases to tackle complex data challenges.',
           items: [
             {
               fa_icon: 'fa-database',
-              title: 'Data Modeling',
+              title: 'Schema-less Design',
               subtitle:
-                'We design data models that capitalize on the strengths of NoSQL, allowing for effective data management and easy scalability.',
-            },
-            {
-              fa_icon: 'fa-cogs',
-              title: 'Database Implementation',
-              subtitle:
-                "We implement appropriate NoSQL databases, whether it's key-value, document, columnar, or graph-based, depending on your business needs.",
+                'We leverage the schema-less nature of NoSQL databases to handle diverse data types and structures for your unique needs.',
             },
             {
               fa_icon: 'fa-sync',
-              title: 'Real-Time Processing',
+              title: 'Real-time Performance',
               subtitle:
-                'We facilitate real-time processing and analytics of data, which is critical for businesses that require instantaneous insights.',
+                'We utilize NoSQL databases to provide real-time data processing capabilities, critical for dynamic and interactive applications.',
             },
             {
-              fa_icon: 'fa-chart-line',
+              fa_icon: 'fa-sitemap',
               title: 'Scalability',
               subtitle:
-                'We ensure that your databases can scale seamlessly to accommodate growing data volumes without sacrificing performance.',
+                'We ensure your applications can easily scale with data growth using NoSQL databases, perfect for big data applications and high-traffic websites.',
             },
             {
               fa_icon: 'fa-shield-alt',
-              title: 'Security',
+              title: 'Data Security',
               subtitle:
-                'We prioritize database security, implementing robust measures to ensure your data is protected from threats.',
+                'We implement robust security measures in our NoSQL solutions to protect your data integrity and privacy.',
             },
             {
-              fa_icon: 'fa-users-cog',
-              title: 'Maintenance and Support',
+              fa_icon: 'fa-project-diagram',
+              title: 'Data Modeling',
               subtitle:
-                'We provide continuous maintenance and support, ensuring smooth operation and peak performance of your databases.',
+                'We apply effective data modeling techniques for NoSQL databases to support your complex business operations and reporting needs.',
+            },
+            {
+              fa_icon: 'fa-cogs',
+              title: 'System Integration',
+              subtitle:
+                'We ensure seamless integration of NoSQL databases with your existing software systems for smooth operations.',
             },
           ],
         },
@@ -2122,8 +2086,8 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     is_active: true,
     title: 'AWS',
     slug: 'aws',
-    avatar_width: 90,
-    avatar_height: 60,
+    avatar_width: 60,
+    avatar_height: 46,
     subtitle: 'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
     hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
     hero_alt: 'Lady working on phone and laptop',
@@ -2301,45 +2265,45 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
         },
         features: {
           overline: 'What we do',
-          title: 'Our Tableau Capabilities',
+          title: 'Our {title} Capabilities',
           subtitle:
-            'To deliver impactful data visualization solutions, we offer a range of Tableau services that include data integration, dashboard development, advanced analytics, and interactive visual exploration.',
+            'Harnessing the power of Snowflake, we provide cutting-edge cloud data warehousing solutions that cater to the diverse needs of your enterprise.',
           items: [
             {
-              fa_icon: 'fa-database',
-              title: 'Data integration',
+              fa_icon: 'fa-cloud',
+              title: 'Cloud-based Storage',
               subtitle:
-                'We integrate data from various sources into Tableau, ensuring a unified view of your business data for effective analysis and visualization.',
+                'We leverage Snowflake’s cloud-native architecture to provide flexible, scalable, and secure data storage solutions.',
+            },
+            {
+              fa_icon: 'fa-cogs',
+              title: 'Data Engineering',
+              subtitle:
+                'Our data engineers efficiently utilize Snowflake for processing and transforming large volumes of data, making it ready for analysis.',
+            },
+            {
+              fa_icon: 'fa-shield-alt',
+              title: 'Security',
+              subtitle:
+                'We prioritize data security, using Snowflake’s robust security measures to protect your sensitive business data.',
+            },
+            {
+              fa_icon: 'fa-sync',
+              title: 'Data Integration',
+              subtitle:
+                'We help in seamless data integration with Snowflake, enabling your enterprise to unify various data sources.',
             },
             {
               fa_icon: 'fa-chart-bar',
-              title: 'Dashboard development',
+              title: 'Data Analytics',
               subtitle:
-                'We create customized dashboards in Tableau that provide clear and actionable insights, allowing you to monitor key metrics and make informed decisions.',
+                'Utilizing Snowflake, we deliver advanced data analytics capabilities, providing deeper insights into your business.',
             },
             {
-              fa_icon: 'fa-brain',
-              title: 'Advanced analytics',
+              fa_icon: 'fa-users-cog',
+              title: 'Custom Solutions',
               subtitle:
-                'We leverage Tableau\'s advanced analytics capabilities to perform statistical analysis, forecasting, and predictive modeling, enabling data-driven strategies and outcomes.',
-            },
-            {
-              fa_icon: 'fa-search-plus',
-              title: 'Interactive visual exploration',
-              subtitle:
-                'We develop interactive visualizations in Tableau that allow users to explore and analyze data from different angles, facilitating deeper insights and discovery.',
-            },
-            {
-              fa_icon: 'fa-chalkboard-teacher',
-              title: 'Training and support',
-              subtitle:
-                'We provide comprehensive training and support services to empower your team in effectively using Tableau for data visualization and analysis.',
-            },
-            {
-              fa_icon: 'fa-users',
-              title: 'Collaboration and sharing',
-              subtitle:
-                'We enable collaborative data analysis and sharing by leveraging Tableau\'s collaboration features, allowing teams to work together on data projects and share insights.',
+                'We tailor Snowflake solutions to meet your specific business objectives and requirements.',
             },
           ],
         },
@@ -2376,6 +2340,8 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     is_active: true,
     title: 'Snowflake',
     slug: 'snowflake',
+    avatar_height: 50,
+    avatar_width: 50,
     subtitle: 'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
     hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
     hero_alt: 'Person sitting at desk taking notes',
@@ -2383,44 +2349,33 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     sections: {
         benefits: {
           overline: 'Benefits',
-          title: 'Snowflake Development Services',
-          subtitle: 'Unlock the power of Snowflake Services for your enterprise data and AI solutions.',
+          title: '{title} Services',
+          subtitle:
+            'Our Snowflake services offer diverse benefits, including data democratization, real-time analytics, cost-effectiveness, and scalability.',
           items: [
             {
-              fa_icon: 'fa-cloud-upload-alt',
-              title: 'Scalability and Elasticity',
-              subtitle:
-                'Snowflake Services provide scalability and elasticity to handle your growing data needs, allowing you to scale up or down as required and pay only for the resources you use.',
-            },
-            {
-              fa_icon: 'fa-shield-alt',
-              title: 'Advanced Security and Compliance',
-              subtitle:
-                'Snowflake Services offer advanced security features, including encryption, access controls, and compliance certifications, ensuring the confidentiality and integrity of your data.',
-            },
-            {
-              fa_icon: 'fa-fast-forward',
-              title: 'High Performance Analytics',
-              subtitle:
-                'Leverage the power of Snowflake Services to perform high-speed data analytics, enabling you to derive insights and make data-driven decisions faster.',
-            },
-            {
-              fa_icon: 'fa-database',
-              title: 'Unified Data Platform',
-              subtitle:
-                'Snowflake Services provide a unified platform to consolidate and analyze diverse data sources, enabling a comprehensive view of your enterprise data for better decision-making.',
-            },
-            {
-              fa_icon: 'fa-sync',
-              title: 'Real-Time Data Integration',
-              subtitle:
-                'With Snowflake Services, you can seamlessly integrate real-time data from multiple sources, enabling you to have up-to-date insights and respond quickly to changing business needs.',
-            },
-            {
               fa_icon: 'fa-users',
-              title: 'Collaboration and Data Sharing',
+              title: 'Data Democratization',
               subtitle:
-                'Snowflake Services facilitate easy collaboration and data sharing among teams and external partners, enabling efficient data-driven workflows and fostering innovation.',
+                'Snowflake enables data democratization, allowing users across your organization to access and analyze data as needed.',
+            },
+            {
+              fa_icon: 'fa-clock',
+              title: 'Real-time Analytics',
+              subtitle:
+                'Snowflake’s architecture allows for real-time data analytics, facilitating timely business decision making.',
+            },
+            {
+              fa_icon: 'fa-dollar-sign',
+              title: 'Cost-effective',
+              subtitle:
+                'Snowflake’s pay-per-use model allows for cost-effective data storage and analytics.',
+            },
+            {
+              fa_icon: 'fa-expand-arrows-alt',
+              title: 'Scalability',
+              subtitle:
+                'With Snowflake, we provide scalable solutions that can adapt to your evolving business needs.',
             },
           ],
         },
@@ -2505,6 +2460,17 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
       description: item.subtitle,
     },
     ...item,
+    sections: {
+      ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
+    }
   })
 })
 
