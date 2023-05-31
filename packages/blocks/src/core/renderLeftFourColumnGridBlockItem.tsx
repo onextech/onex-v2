@@ -5,7 +5,7 @@ export interface RenderLeftFourColumnGridBlockItemProps {
   overline?: string
   title: string
   subtitle?: string
-  items: Array<{ fa_icon: string; title: string; subtitle: string }>
+  items?: Array<{ fa_icon?: string; title: string; subtitle?: string }>
 }
 
 const renderLeftFourColumnGridBlockItem = (

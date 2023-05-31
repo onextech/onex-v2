@@ -119,7 +119,7 @@ export const MOCK_SERVICE_PAGE = {
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
     checklist: {
-      overline: 'What we do',
+      overline: 'Why Us',
       title: `Why {appTitle} for {title}`,
       subtitle:
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
@@ -2569,6 +2569,14 @@ export const MOCK_GROUP_SERVICES = [
     ...item,
     sections: {
       ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
+      },
       benefits: {
         overline: 'What we do',
         title: 'Empowering Digital Transformation',
@@ -2601,7 +2609,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
@@ -3613,6 +3621,14 @@ export const MOCK_DESIGN_SERVICES = [
     },
     sections: {
       ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.',
+      },
       benefits: {
         overline: 'What we do',
         title: 'Design Thinking for Enterprises',
@@ -3645,7 +3661,7 @@ export const MOCK_DESIGN_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Unlocking the potential of enterprise technology through personalized design thinking processes tailored to drive your business growth.',
@@ -4923,6 +4939,14 @@ export const MOCK_DATA_SERVICES = [
     },
     sections: {
       ...item.sections,
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
       benefits: {
         overline: 'What we do',
         title: 'Harnessing the Power of AI for Enterprises',
@@ -4955,7 +4979,7 @@ export const MOCK_DATA_SERVICES = [
         ],
       },
       checklist: {
-        overline: 'What we do',
+        overline: 'Why Us',
         title: `Why {appTitle} for {title}`,
         subtitle:
           'Igniting enterprise transformation through personalized data solutions focused on driving your business success.',

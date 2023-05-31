@@ -1,7 +1,7 @@
 import { BlockProps, BlockItemProps } from '@gravis-os/landing'
 
 export interface RenderPostHeroBlockItemProps extends BlockProps {
-  overline: string
+  overline?: string
   overlineProps?: BlockItemProps['titleProps']
   item: {
     title: string
@@ -12,7 +12,7 @@ export interface RenderPostHeroBlockItemProps extends BlockProps {
 }
 
 const renderPostHeroBlockItem = (props: RenderPostHeroBlockItemProps) => {
-  const { overline, overlineProps, item, ...rest } = props
+  const { item, overline, overlineProps, ...rest } = props
   const { title, subtitle, hero_src, hero_alt } = item || {}
 
   return {
@@ -22,7 +22,7 @@ const renderPostHeroBlockItem = (props: RenderPostHeroBlockItemProps) => {
     sx: { backgroundColor: 'background.paper' },
     ...rest,
     items: [
-      {
+      overline && {
         type: 'link',
         title: overline,
         titleProps: {
@@ -38,7 +38,7 @@ const renderPostHeroBlockItem = (props: RenderPostHeroBlockItemProps) => {
         title: subtitle,
         titleProps: {
           maxWidth: true,
-          sx: { mt: 3 },
+          sx: { mt: 4 },
           color: 'text.secondary',
         },
       },
