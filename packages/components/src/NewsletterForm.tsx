@@ -36,6 +36,7 @@ const NewsletterForm: React.FC<NewsletterFormProps> = (props) => {
       )}
 
       <Form
+        id='1x-newsletter-form'
         resetOnSubmitSuccess
         defaultValues={{
           email: '',
