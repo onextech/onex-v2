@@ -128,6 +128,18 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
             title: '/showcases/octifi/gallery_1.png',
             titleProps: { alt: 'Octifi Gallery 1' },
           },
+          {
+            title: '/showcases/octifi/gallery_2.png',
+            titleProps: { alt: 'Octifi Gallery 2' },
+          },
+          {
+            title: '/showcases/octifi/gallery_3.png',
+            titleProps: { alt: 'Octifi Gallery 3' },
+          },
+          {
+            title: '/showcases/octifi/gallery_4.png',
+            titleProps: { alt: 'Octifi Gallery 4' },
+          },
         ],
       },
       rightGridSticky: {
@@ -220,6 +232,18 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
             title: '/showcases/suntec/gallery_1.png',
             titleProps: { alt: 'Suntec Gallery 1' },
           },
+          {
+            title: '/showcases/suntec/gallery_2.png',
+            titleProps: { alt: 'Suntec Gallery 2' },
+          },
+          {
+            title: '/showcases/suntec/gallery_3.png',
+            titleProps: { alt: 'Suntec Gallery 3' },
+          },
+          {
+            title: '/showcases/suntec/gallery_4.png',
+            titleProps: { alt: 'Suntec Gallery 4' },
+          },
         ],
       },
       rightGridSticky: {
@@ -257,6 +281,18 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
           {
             title: '/showcases/sri/gallery_1.png',
             titleProps: { alt: 'SRI Gallery 1' },
+          },
+          {
+            title: '/showcases/sri/gallery_2.png',
+            titleProps: { alt: 'SRI Gallery 2' },
+          },
+          {
+            title: '/showcases/sri/gallery_3.png',
+            titleProps: { alt: 'SRI Gallery 3' },
+          },
+          {
+            title: '/showcases/sri/gallery_4.png',
+            titleProps: { alt: 'SRI Gallery 4' },
           },
         ],
       },
@@ -497,6 +533,18 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
             title: '/showcases/tgb/gallery_1.png',
             titleProps: { alt: 'TGB Gallery 1' },
           },
+          {
+            title: '/showcases/tgb/gallery_2.png',
+            titleProps: { alt: 'TGB Gallery 2' },
+          },
+          {
+            title: '/showcases/tgb/gallery_3.png',
+            titleProps: { alt: 'TGB Gallery 3' },
+          },
+          {
+            title: '/showcases/tgb/gallery_4.png',
+            titleProps: { alt: 'TGB Gallery 4' },
+          },
         ],
       },
       rightGridSticky: {
@@ -533,6 +581,18 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
           {
             title: '/showcases/spk/gallery_1.png',
             titleProps: { alt: 'TGB Gallery 1' },
+          },
+          {
+            title: '/showcases/spk/gallery_2.png',
+            titleProps: { alt: 'TGB Gallery 2' },
+          },
+          {
+            title: '/showcases/spk/gallery_3.png',
+            titleProps: { alt: 'TGB Gallery 3' },
+          },
+          {
+            title: '/showcases/spk/gallery_4.png',
+            titleProps: { alt: 'TGB Gallery 4' },
           },
         ],
       },
