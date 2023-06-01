@@ -53,7 +53,7 @@ const renderClientTestimonialSliderBlock = (
             sx={{ mt: { xs: 0, md: 4 } }}
             options={{ slides: { perView: isDesktop ? 3 : 1, spacing: 12 }}}
             dotProps={{ color: 'secondary.main' }}
-            height={{ xs: 450, md: 400 }}
+            height={{ md: 450 }}
             items={items.map(item => {
               return (
                 <Block sx={ { padding: 4, backgroundColor: 'background.paper' } } items={renderClientTestimonialSliderBlockItem({ item })}/>
