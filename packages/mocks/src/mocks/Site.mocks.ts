@@ -2,7 +2,7 @@ import { Site } from '@onex/types'
 
 export const MOCK_COMMON_SITE = {
   // Company
-  company_title: 'One X Group Pte. Ltd.',
+  company_title: 'One X Group Pte. Ltd',
   company_absolute_url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
@@ -32,7 +32,7 @@ export const MOCK_COMMON_SITE = {
 
   // Address
   office_title: 'Singapore (Asia Pacific)',
-  office_address: '71 Robinson Road WeWork #13-159 Singapore 068895',
+  office_address: '71 Robinson Road',
 }
 
 export const MOCK_GROUP_SITE: Site = {
