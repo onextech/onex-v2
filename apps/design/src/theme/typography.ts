@@ -48,7 +48,7 @@ const typography = {
     fontSize: pxToRem(28),
     fontFamily: headerFontFamily,
     fontWeight: 400,
-    [defaultTheme.breakpoints.up('md')]: {
+    [defaultTheme.breakpoints.up('sm')]: {
       fontSize: pxToRem(39),
     },
   },
@@ -58,16 +58,12 @@ const typography = {
     letterSpacing: 0,
     lineHeight: 1.3,
     fontSize: pxToRem(20),
-    [defaultTheme.breakpoints.up('md')]: {
+    [defaultTheme.breakpoints.up('sm')]: {
       fontSize: pxToRem(24),
     },
   },
   h6: {
     fontFamily: headerFontFamily,
-    fontSize: pxToRem(16),
-    [defaultTheme.breakpoints.up('md')]: {
-      fontSize: pxToRem(20),
-    },
     fontWeight: 400,
     letterSpacing: 0,
     lineHeight: 1.4,

@@ -22,7 +22,7 @@ const typography = {
     fontSize: pxToRem(28),
     fontFamily: headerFontFamily,
     fontWeight: 400,
-    [defaultTheme.breakpoints.up('md')]: {
+    [defaultTheme.breakpoints.up('sm')]: {
       fontSize: pxToRem(39),
     },
   },
