@@ -10,7 +10,7 @@
     "@gravis-os/analytics": "^0.0.4",
     "@gravis-os/landing": "^0.0.47",
     "@gravis-os/query": "^0.0.28",
-    "@gravis-os/ui": "^0.1.0",
+    "@gravis-os/ui": "^0.1.1",
     "@gravis-os/utils": "^0.1.2",
     "dayjs": "^1.11.7"
   }
