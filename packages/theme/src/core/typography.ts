@@ -19,11 +19,11 @@ const typography = {
   h2: { fontFamily: headerFontFamily, lineHeight: 1.1 },
   h3: { fontFamily: headerFontFamily, fontWeight: 300, lineHeight: 1.09 },
   h4: {
-    fontSize: pxToRem(28),
+    fontSize: pxToRem(39),
     fontFamily: headerFontFamily,
     fontWeight: 400,
-    [defaultTheme.breakpoints.up('md')]: {
-      fontSize: pxToRem(39),
+    [defaultTheme.breakpoints.down('md')]: {
+      fontSize: pxToRem(28),
     },
   },
   h5: {

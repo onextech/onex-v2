@@ -91,6 +91,9 @@ export * from './NewsletterPage'
 export { default as ResourcePage } from './ResourcePage'
 export * from './ResourcePage'
 
+export { default as ResourceSuccessPage } from './ResourceSuccessPage'
+export * from './ResourceSuccessPage'
+
 export { default as ResourcesPage } from './ResourcesPage'
 export * from './ResourcesPage'
 

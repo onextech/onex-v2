@@ -36,6 +36,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
       )}
 
       <Form
+        id='contact-form'
         resetOnSubmitSuccess
         defaultValues={{
           name: '',

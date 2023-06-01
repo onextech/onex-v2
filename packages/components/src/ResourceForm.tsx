@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Form, FormSections } from '@gravis-os/form'
-import toast from 'react-hot-toast'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
-import { Alert } from '@gravis-os/ui'
+import { useRouter } from 'next/router'
 
 export interface ResourceFormProps {
   onSubmit?: (values: any) => void
@@ -13,7 +12,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
   const { onSubmit } = props
 
   const [isLoading, setIsLoading] = useState(false)
-  const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
@@ -24,19 +23,13 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
       ...values,
     })
     setIsLoading(false)
-    setIsSubmitSuccess(true)
-    toast.success('Success!')
+    router.push(`${router.asPath}/success`)
   }
 
   return (
     <div>
-      {isSubmitSuccess && (
-        <Alert onClose={() => setIsSubmitSuccess(false)} sx={{ mb: 2 }}>
-          Success!
-        </Alert>
-      )}
-
       <Form
+        id='honeypot-form'
         resetOnSubmitSuccess
         defaultValues={{
           name: '',

@@ -16,14 +16,14 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
       leftGridSticky: {
         title: 'Easy access with all omni-channel touchpoints',
         subtitle:
-          'Everything you always wanted to know about your orders, past and present.',
+          'Everything you always wanted to know about your orders, past and present. Our simplistic yet intuitive interface allows what\'s important to shine through.',
         hero_src: '/showcases/marilyn-tan-jewellery/left.png',
         hero_alt: 'Marilyn Tan jewellery website showcase',
       },
       gallery: {
         title: 'Depicting the lifestyle: Bold, independent and beautiful',
         subtitle:
-          'In the high fashion spirit of the brand, we kept the photography bright, stunning and inspiring.',
+          'To accentuate the high fashion spirit of the brand, we kept the photography bright, stunning and inspiring. We wanted the website to fully reflect the valuable and luxurious nature of the brand. ',
         items: [
           {
             title: '/showcases/marilyn-tan-jewellery/gallery_1.png',
@@ -71,9 +71,9 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
         hero_alt: 'Wealthscale website invest page',
       },
       gallery: {
-        title: 'Personal investment recommendation',
+        title: 'Personalized Investment Recommendation',
         subtitle:
-          'Built-in risk profiling showcases a tailored approach to every single investor.',
+          'Built-in risk profiling showcases a tailored approach to every single investor. We want each investor to feel valued with a platform catered to their unique needs and preferences.',
         items: [
           {
             title: '/showcases/wealthscale/gallery_1.png',
@@ -103,10 +103,10 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
     },
   },
   {
-    title: 'OctiFi',
+    title: 'OctiFi Payment Solutions',
     slug: 'octifi',
     subtitle:
-      'Fintech Platform. Shop Now, Pay Later.',
+      'Shop Now, Pay Later. OctiFi seeks to revolutionize the way customers pay in the new digital age. ',
     hero_src: '/showcases/octifi/hero.png',
     hero_alt: 'octifi showcase',
     mode: 'dark',
@@ -122,18 +122,30 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
       gallery: {
         title: 'Effective Conversion',
         subtitle:
-          'Convert site visitors into loyal customers using a superior interface that delivers delightful customer experiences.',
+          'Convert site visitors into loyal customers using a superior interface that delivers delightful customer experiences. We want to empower customers through providing a singular platform that makes purchasing easy for them.',
         items: [
           {
             title: '/showcases/octifi/gallery_1.png',
             titleProps: { alt: 'Octifi Gallery 1' },
+          },
+          {
+            title: '/showcases/octifi/gallery_2.png',
+            titleProps: { alt: 'Octifi Gallery 2' },
+          },
+          {
+            title: '/showcases/octifi/gallery_3.png',
+            titleProps: { alt: 'Octifi Gallery 3' },
+          },
+          {
+            title: '/showcases/octifi/gallery_4.png',
+            titleProps: { alt: 'Octifi Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
         title: 'Shop Now. Pay Later.',
         subtitle:
-          'Using fresh and exciting designs to convey the groundbreaking nature of a revolutionary change to the way customers pay.',
+          'Using fresh and exciting designs to convey the groundbreaking nature of a revolutionary change to the way customers pay. We want to highlight the unique value of the brand in a clear and concise manner to easily bring customers onboard.',
         hero_src: '/showcases/octifi/right.png',
         hero_alt: 'Octifi Showcase 2',
       },
@@ -187,7 +199,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
       rightGridSticky: {
         title: 'A new fully integrated cashless system',
         subtitle:
-          'With many payment apps out there, the key goal was to establish how SG Pay was different and better.',
+          'With many payment apps out there, the key goal was to establish how SG Pay was different and better. We set out to create an all powerful platform that would make paying a seamless journey for users. ',
         hero_src: '/showcases/sg-pay/right.png',
         hero_alt: 'Mobile payment system showcase',
       },
@@ -197,7 +209,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     title: 'A beautifully crafted self-pick up service app.',
     slug: 'suntec',
     subtitle:
-      'Allow users to enjoy scrumptious meals while avoiding long queues.',
+      'Bringing digital solutions to one of the largest and most established retail destinations in Singapore. Simplifying the life of shoppers through the power of a custom application.',
     hero_src: '/showcases/suntec/hero.png',
     hero_alt: 'Suntec showcase',
     mode: 'light',
@@ -207,25 +219,37 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
       leftGridSticky: {
         title: 'A One-Stop F&B Solution Application',
         subtitle:
-          'Search and filter through a plethora of eatery options to find the perfect one, no matter the occasion.',
+          'Search and filter through a plethora of eatery options to find the perfect one for you, no matter the occasion. We want to power shoppers to find anything they need right at their fingertips.',
         hero_src: '/showcases/suntec/left.png',
         hero_alt: 'Suntec Showcase 1',
       },
       gallery: {
         title: 'Enjoy Hassle-free Ordering',
         subtitle:
-          'Whether it be for delivery or self pickup, order conveniently on the Suntec+ App anywhere, at anytime. ',
+          'Order conveniently on the Suntec+ App anywhere, at anytime. We look to provide the flexibility and accessibility that customers need when it comes to making orders.',
         items: [
           {
             title: '/showcases/suntec/gallery_1.png',
             titleProps: { alt: 'Suntec Gallery 1' },
+          },
+          {
+            title: '/showcases/suntec/gallery_2.png',
+            titleProps: { alt: 'Suntec Gallery 2' },
+          },
+          {
+            title: '/showcases/suntec/gallery_3.png',
+            titleProps: { alt: 'Suntec Gallery 3' },
+          },
+          {
+            title: '/showcases/suntec/gallery_4.png',
+            titleProps: { alt: 'Suntec Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
         title: 'A Seamless Experience, From Start to Finish',
         subtitle:
-          'Our application is optimized for the entire user journey to ensure a delightful customer experience.',
+          'We are always striving to provide comprehensive solutions for clients and users. Our application is optimized for the entire user journey to ensure a delightful customer experience. ',
         hero_src: '/showcases/suntec/right.png',
         hero_alt: 'Suntec Showcase 2',
       },
@@ -235,7 +259,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     title: 'Singapore Realtors Inc: SRI',
     slug: 'sri',
     subtitle:
-      'Real Estate Platform. Dare to Be Different.',
+      'Dare to be Different. SRI looks to redefine the real estate industry through digital solutions for clients and realtors.',
     hero_src: '/showcases/sri/hero.png',
     hero_alt: 'sri showcase',
     mode: 'light',
@@ -252,11 +276,23 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
       gallery: {
         title: 'Delivering exceptional, customized products',
         subtitle:
-          'Making the SRI application stand out while honing in on what matters.',
+          'Making the SRI application stand out while honing in on what matters. We want clients and realtors to always be able to easily access properties on their devices based on their personalized application page. ',
         items: [
           {
             title: '/showcases/sri/gallery_1.png',
             titleProps: { alt: 'SRI Gallery 1' },
+          },
+          {
+            title: '/showcases/sri/gallery_2.png',
+            titleProps: { alt: 'SRI Gallery 2' },
+          },
+          {
+            title: '/showcases/sri/gallery_3.png',
+            titleProps: { alt: 'SRI Gallery 3' },
+          },
+          {
+            title: '/showcases/sri/gallery_4.png',
+            titleProps: { alt: 'SRI Gallery 4' },
           },
         ],
       },
@@ -287,14 +323,14 @@ export const MOCK_DESIGN_SHOWCASES = [
       leftGridSticky: {
         title: 'Designing for the Future',
         subtitle:
-          'Delivering impactful messages of change through purposeful designs.',
+          'Delivering impactful messages of change through purposeful designs. We align our focus to our client’s vision to ensure what’s important stands out.',
         hero_src: '/showcases/nextgen/left.png',
         hero_alt: 'NextGEN Showcase 1',
       },
       gallery: {
-        title: 'Simplifying the Process',
+        title: 'Building an Immersive Experience',
         subtitle:
-          'Easy-to-follow layouts provides important information for users in clearly defined categories.',
+          'Making users a part of the initiative through interactive and immersive site experiences. We want users to be able to fully understand and more importantly, share the same vision as the brand.',
         items: [
           {
             title: '/showcases/nextgen/gallery_1.png',
@@ -315,19 +351,19 @@ export const MOCK_DESIGN_SHOWCASES = [
         ],
       },
       rightGridSticky: {
-        title: 'Building an Immersive Experience',
+        title: 'Simplifying the Process',
         subtitle:
-          'Making users a part of the initiative through interactive and immersive site experiences.',
+          'We are constantly looking to organize data and information in intuitive and concise ways for simplistic viewing. We use easy-to-follow layouts to provide important information in clearly defined categories. ',
         hero_src: '/showcases/nextgen/right.png',
         hero_alt: 'NextGEN Showcase 2',
       },
     }
   },
   { // TODO: ADD DETAIL
-    title: 'Mr. Bucket',
+    title: 'Spreading Joy with Mr. Bucket',
     slug: 'mr-bucket',
     subtitle:
-      'A Chocolaterie E-Commerce',
+      'A Chocolaterie E-Commerce bringing high quality chocolate products to customers.',
     hero_src: '/showcases/mr-bucket/hero.png',
     hero_alt: 'Mr. Bucket showcase',
     mode: 'dark',
@@ -337,14 +373,14 @@ export const MOCK_DESIGN_SHOWCASES = [
       leftGridSticky: {
         title: 'Meet Mr. Bucket',
         subtitle:
-          'Explosion of chocolatey-goodness with every bite into these delightfully hand-crafted bon-bons.',
+          'Explosion of chocolatey-goodness with every bite into these delightfully hand-crafted bon-bons. Discover these through an all-new user experience.',
         hero_src: '/showcases/mr-bucket/left.png',
         hero_alt: 'Mr Bucket Showcase 1',
       },
       gallery: {
         title: 'Delivering quality UX/UI products ',
         subtitle:
-          'Creating an intuitive and visually stunning UX that allows customers to view and purchase products with ease.',
+          'Shopping shouldn’t be difficult. We created an intuitive and visually stunning UX that allows customers to view and purchase products with ease.',
         items: [
           {
             title: '/showcases/mr-bucket/gallery_1.png',
@@ -393,7 +429,7 @@ export const MOCK_DESIGN_SHOWCASES = [
       gallery: {
         title: 'Designs with Clarity, with Purpose',
         subtitle:
-          'Convey the impact of your vision with simplicity.',
+          'Convey the impact of your vision with simplicity. We use icons, timelines, graphs and much more during our design process to build an intuitive platform for users.',
         items: [
           {
             title: '/showcases/iix/gallery_1.png',
@@ -473,36 +509,47 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     title: 'People\'s Association: Intelligent Chatbot Assistant.',
     slug: 'tgb',
     subtitle:
-      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies.',
+      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies, creating an efficient sharing economy ecosystem.',
     hero_src: '/showcases/tgb/hero.png',
     hero_alt: 'TGB showcase',
     mode: 'light',
     backgroundColor: '#c3e8c1',
     reverse: true,
-    
     sections: {
       leftGridSticky: {
         title: 'Effective Digitalization',
         subtitle:
-          'Providing an intelligent, secure and accessible solution for local communities.',
+          'We utilize our expertise in the public sector to provide an intelligent, secure, and accessible solution for local communities, empowering them with the tools to thrive in the digital age. ',
         hero_src: '/showcases/tgb/left.png',
         hero_alt: 'TGB Showcase 1',
       },
       gallery: {
         title: 'Harnessing the Power of Automation',
         subtitle:
-          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance. ',
+          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance, empowering organizations to focus on higher-value tasks and achieve greater productivity.',
         items: [
           {
             title: '/showcases/tgb/gallery_1.png',
             titleProps: { alt: 'TGB Gallery 1' },
+          },
+          {
+            title: '/showcases/tgb/gallery_2.png',
+            titleProps: { alt: 'TGB Gallery 2' },
+          },
+          {
+            title: '/showcases/tgb/gallery_3.png',
+            titleProps: { alt: 'TGB Gallery 3' },
+          },
+          {
+            title: '/showcases/tgb/gallery_4.png',
+            titleProps: { alt: 'TGB Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
         title: 'Expanding Digital Capabilities',
         subtitle:
-          'Providing scalable software that can be used for multiple categories.',
+          'Providing scalable software that can be used for multiple categories, enabling seamless integration with existing systems and delivering tailored solutions for diverse community needs.',
         hero_src: '/showcases/tgb/right.png',
         hero_alt: 'TGB Showcase 2',
       },
@@ -512,7 +559,7 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     title: 'Blockchain & Artificial Intelligence.',
     slug: 'spk',
     subtitle:
-      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform.',
+      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform, ensuring reliable insights for optimal trading strategies.',
     hero_src: '/showcases/spk/hero.png',
     hero_alt: 'SPK showcase',
     mode: 'dark',
@@ -528,18 +575,30 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
       gallery: {
         title: 'Providing User-Centric Data ',
         subtitle:
-          'Building customized views based on what is important to the user.',
+          'Building customized views based on what is important to the user, tailoring data presentation to enhance user experience and enable personalized insights.',
         items: [
           {
             title: '/showcases/spk/gallery_1.png',
             titleProps: { alt: 'TGB Gallery 1' },
+          },
+          {
+            title: '/showcases/spk/gallery_2.png',
+            titleProps: { alt: 'TGB Gallery 2' },
+          },
+          {
+            title: '/showcases/spk/gallery_3.png',
+            titleProps: { alt: 'TGB Gallery 3' },
+          },
+          {
+            title: '/showcases/spk/gallery_4.png',
+            titleProps: { alt: 'TGB Gallery 4' },
           },
         ],
       },
       rightGridSticky: {
         title: 'Everything At A Glance',
         subtitle:
-          'Learn more about the digital landscape in an intuitive and effortless manner.',
+          'Streamlining information flow for a quick and comprehensive understanding of market trends and performance, enabling users to make informed decisions at a glance, saving time and effort.',
         hero_src: '/showcases/spk/right.png',
         hero_alt: 'SPK Showcase 2',
       },

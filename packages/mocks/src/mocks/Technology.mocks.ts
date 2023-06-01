@@ -2086,7 +2086,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     is_active: true,
     title: 'AWS',
     slug: 'aws',
-    avatar_width: 60,
+    avatar_width: 70,
     avatar_height: 46,
     subtitle: 'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
     hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
