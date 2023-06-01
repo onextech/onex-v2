@@ -38,7 +38,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
               },
               gridProps: {
                 spacing: { xs: 0, md: 5 },
-                minWidth: { md: 'calc(100vw - 48px)' },
+                minWidth: '100%',
               },
               gridItems: [
                 {
