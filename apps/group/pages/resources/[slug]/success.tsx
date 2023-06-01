@@ -6,7 +6,7 @@ import { ResourceDetail } from '@onex/server'
 import { PageProvider } from '@onex/providers'
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps = ResourceDetail.getStaticProps(true)
+export const getStaticProps = ResourceDetail.getStaticProps()
 export const getStaticPaths = ResourceDetail.getStaticPaths()
 
 export interface NextResourceSuccessPageProps

@@ -9,7 +9,7 @@ import { useLayout } from '@onex/providers'
 
 export interface ResourceSuccessPageProps {
   resource: Resource
-  relatedResources: Resource[]
+  relatedResources?: Resource[]
 }
 
 const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
