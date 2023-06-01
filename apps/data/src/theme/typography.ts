@@ -45,11 +45,11 @@ const typography = {
   },
   h3: { fontFamily: headerFontFamily, fontWeight: 400, lineHeight: 1.09 },
   h4: {
-    fontSize: pxToRem(28),
+    fontSize: pxToRem(39),
     fontFamily: headerFontFamily,
     fontWeight: 400,
-    [defaultTheme.breakpoints.up('md')]: {
-      fontSize: pxToRem(39),
+    [defaultTheme.breakpoints.down('md')]: {
+      fontSize: pxToRem(28),
     },
   },
   h5: {
