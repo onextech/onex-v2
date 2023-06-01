@@ -21,11 +21,15 @@ export const ResourceList = {
 }
 
 export const ResourceDetail = {
-  getStaticProps: (): GetStaticProps => (context) => {
+  getStaticProps: (includeRelatedResources?: boolean): GetStaticProps => (context) => {
     const resource = fetchResourceBySlug(context.params.slug)
+    const relatedResources = includeRelatedResources && MOCK_RESOURCES[MOCK_KEY].filter(
+      (resource) => resource.slug !== context.params.slug
+    )
     return makeGetStaticProps({
       props: {
         resource,
+        relatedResources: relatedResources || null
       },
     })(context)
   },
