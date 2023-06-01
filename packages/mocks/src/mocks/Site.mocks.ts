@@ -2,7 +2,7 @@ import { Site } from '@onex/types'
 
 export const MOCK_COMMON_SITE = {
   // Company
-  company_title: 'One X Group Pte. Ltd.',
+  company_title: 'One X Group Pte. Ltd',
   company_absolute_url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
