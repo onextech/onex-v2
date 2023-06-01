@@ -43,6 +43,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
       )}
 
       <Form
+        id='lead-form'
         resetOnSubmitSuccess
         defaultValues={{
           name: '',
