@@ -32,7 +32,7 @@ export const MOCK_COMMON_SITE = {
 
   // Address
   office_title: 'Singapore (Asia Pacific)',
-  office_address: '71 Robinson Road',
+  office_address: '71 Robinson Road, Singapore 068895',
 }
 
 export const MOCK_GROUP_SITE: Site = {
