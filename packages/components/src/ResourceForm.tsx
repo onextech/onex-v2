@@ -37,7 +37,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
       )}
 
       <Form
-        id='1x-honeypot-form'
+        id='honeypot-form'
         resetOnSubmitSuccess
         defaultValues={{
           name: '',
