@@ -1459,7 +1459,7 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'News',
     slug: 'news',
-    href: routeConfig.NEWSLETTER,
+    href: routeConfig.PRESS_RELEASES,
     subtitle:
       'Stay up to date with the latest trends in the digital landscape.',
   },
@@ -1478,6 +1478,7 @@ const MOCK_TECH_PAGES = [
   {
     title: 'Careers',
     slug: 'careers',
+    href: routeConfig.CAREERS,
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
@@ -1559,6 +1560,7 @@ const MOCK_TECH_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1983,6 +1985,7 @@ const MOCK_TECH_PAGES = [
   {
     title: 'News',
     slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
     subtitle:
       'Stay up to date with the latest trends in the digital landscape.',
   },
@@ -1995,6 +1998,7 @@ export const MOCK_DATA_PAGES = [
   {
     title: 'Careers',
     slug: 'careers',
+    href: routeConfig.CAREERS,
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
@@ -2076,6 +2080,7 @@ export const MOCK_DATA_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    href: routeConfig.ABOUT,
     seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
@@ -2411,6 +2416,7 @@ export const MOCK_DESIGN_PAGES = [
   {
     title: 'Careers',
     slug: 'careers',
+    href: routeConfig.CAREERS,
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
@@ -2492,6 +2498,7 @@ export const MOCK_DESIGN_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    href: routeConfig.ABOUT,
     seo_title: 'About',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
