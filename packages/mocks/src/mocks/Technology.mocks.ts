@@ -2478,5 +2478,8 @@ export const MOCK_TECHNOLOGYS = {
   TECH: MOCK_TECH_TECHNOLOGYS,
   GROUP: [],
   DATA: MOCK_DATA_TECHNOLOGYS,
-  DESIGN: []
+  DESIGN: [],
+  DIGITAL: [],
+  FINX: [],
+  GOVX: [],
 }

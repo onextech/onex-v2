@@ -7,6 +7,7 @@ const routeConfig = {
   TERMS: '/terms',
   PRIVACY: '/privacy',
   COOKIES: '/cookies',
+  PDPA: '/pdpa',
   DESIGN: '/design',
   DIGITAL: '/digital',
   DATA: '/data',
