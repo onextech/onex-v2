@@ -888,6 +888,96 @@ const MOCK_COMMON_PAGES = [
       '<p>You can control and/or delete cookies as you wish. For more information, you can visit the <a href="https://www.allaboutcookies.org/">All About Cookies</a> website. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site, and some services and functionalities may not work.</p>\n' +
       '<p>For further details about our use of cookies and your choices regarding cookies, please refer to our <a href="/privacy">Privacy Policy</a>.</p>',
   },
+  {
+    title: 'PDPA',
+    slug: 'pdpa',
+    is_hidden_from_nav: true,
+    seo_description:
+      '{appTitle} prioritizes data privacy, consent, transparency, and accountability. Our policy ensures secure data handling, user control, and compliance.',
+    html:
+      '<p>At {appTitle}, we take data privacy and security very seriously. We understand that your personal data is valuable and we want to ensure that it is used and protected appropriately.</p>' +
+      '<h2><strong>1. Consent</strong></h2>' +
+      '<h3><strong>1.1 Explicit Consent and User Interface</strong></h3>' +
+      '<p>Our commitment to data privacy begins with obtaining explicit and informed consent from our users. This is a foundational aspect of our data collection and processing activities. We\'ve designed our user interface to present an in-depth consent form during the sign-up process or when interacting with an updated feature or service. This form is comprehensive, detailing the nature of the data being collected, the purpose for collection, how it will be processed, and the measures put in place for its protection. We use plain language to ensure that our users fully understand the implications of their consent. Additionally, we treat consent as an ongoing process and frequently remind users of their initial consent and any changes to our data handling practices.</p>' +
+      '<h3><strong>1.2 Clarity and Transparency in Consent Form</strong></h3>' +
+      '<p>We view the consent form as not merely a legal requirement but as a pivotal tool for maintaining transparency in our relationship with our users. The form is designed to demystify our data collection and processing activities, which can often seem opaque. We strive to provide clear, concise, and transparent information about our data practices. We avoid technical or legal jargon that might confuse or mislead users, instead, we provide a comprehensive yet easy-to-understand overview of our data practices. Our ultimate goal is to ensure that users fully understand what they\'re agreeing to when they give their consent.</p>' +
+      '<h3><strong>1.3 The Importance of Active Consent</strong></h3>' +
+      '<p>We are committed to the principle of active consent, believing that users should actively agree to our data collection and usage policies. We\'ve implemented an opt-in mechanism that requires a definitive action from the user, such as checking a box or clicking an "I Agree" button. This approach differs from passive consent methods, such as pre-ticked boxes or consent inferred from inactivity, by necessitating a conscious decision from the user. We believe that this emphasis on active consent helps ensure that the user\'s decision to share personal data is explicit, voluntary, and informed.</p>' +
+      '<h3><strong>1.4 Facilitating User\'s Right to Withdraw Consent</strong></h3>' +
+      '<p>We respect the rights of our users, and this includes the right to withdraw their consent at any point. To facilitate this, we\'ve embedded features in our software that allow users to easily revoke their consent. The user account settings include a clear section where users can manage their consent preferences. Moreover, we have a dedicated customer support team trained to assist users with this process. We respect this right to withdrawal and process such requests promptly and comprehensively.</p>' +
+      '<h3><strong>1.5 Documenting User Consent</strong></h3>' +
+      '<p>As part of our commitment to transparency and accountability, we carefully document the consent given by users. We maintain a clear record of when and how we obtained consent, as well as what the user was informed about at the time of consent. This includes information about the data we proposed to collect, why we collected it, and how we intended to use it. This documentation provides an important reference point for us and a record of our commitment to respecting user consent. It also allows us to respond effectively to any inquiries or complaints from users or regulators.</p>' +
+      '<h2><strong>2. Purpose Limitation</strong></h2>' +
+      '<h3><strong>2.1 Upholding the Principle of Purpose Limitation</strong></h3>' +
+      '<p>We uphold the principle of purpose limitation in our data practices. This implies we only collect personal data for specific, explicit, and legitimate purposes. These purposes are clearly defined in our consent form and communicated to the user. Our technical infrastructure reflects this principle by implementing appropriate data segregation and access control measures, ensuring each piece of personal data is strictly used for the purpose it was collected for.</p>' +
+      '<h3><strong>2.2 Monitoring and Ensuring Compliance</strong></h3>' +
+      '<p>We have implemented a robust monitoring system to ensure that our data processing activities remain aligned with the initial purposes defined during the consent stage. Any proposed use of the data that deviates from the original intent requires a new round of consent from the user. Our data handling processes, both automated and manual, are designed and regularly audited to ensure adherence to the purpose limitation principle.</p>' +
+      '<h3><strong>2.3 User Awareness and Empowerment</strong></h3>' +
+      '<p>To uphold transparency and respect user rights, we keep users informed about the purpose of data collection and processing. Users are provided with easy-to-access information regarding the purpose of their data use. This empowers them to make informed decisions about their personal data, fostering trust and cooperation between us and our user base.</p>' +
+      '<h2><strong>3. Notification</strong></h2>' +
+      '<h3><strong>3.1 Proactive User Notification</strong></h3>' +
+      '<p>As part of our commitment to transparency, we maintain proactive communication with our users regarding any changes to our data privacy practices. Any changes to our privacy policy or data practices are immediately communicated to users through clear, easily understandable notifications. These notifications are delivered through various channels, such as email, in-app notifications, or updates on our website.</p>' +
+      '<h3><strong>3.2 Clarity in Communication</strong></h3>' +
+      '<p>In our communications and notifications, we strive for clarity and comprehensibility. We avoid using complex legal or technical jargon that can be confusing to users. Instead, we prioritize clarity, simplicity, and transparency to ensure users fully understand the changes and how they might be affected.</p>' +
+      '<h3><strong>3.3 User Engagement and Queries</strong></h3>' +
+      '<p>We provide multiple avenues for our users to engage with us regarding our data practices. Users can contact us directly for clarification, questions, or concerns about our notifications. Our customer support team is well-trained in our data practices and ready to assist users with any inquiries they might have.</p>' +
+      '<h2><strong>4. Access &amp; Correction</strong></h2>' +
+      '<h3><strong>4.1 Facilitating User Access to Personal Data</strong></h3>' +
+      '<p>We are committed to providing users with full access to their personal data stored in our system. Our software includes easy-to-use features that allow users to view and download their data in a standard, readable format. This commitment to data accessibility ensures that users have control over their personal data and can verify its accuracy.</p>' +
+      '<h3><strong>4.2 Simplified Correction and Update Process</strong></h3>' +
+      '<p>Alongside providing access, we have also established a streamlined process for users to request corrections or updates to their personal data. Users can make these changes directly within their account settings, or by submitting a request to our customer support team. We process such requests promptly, ensuring the personal data we hold is accurate and up-to-date.</p>' +
+      '<h3><strong>4.3 User Education and Support</strong></h3>' +
+      '<p>We provide educational resources and support to help users understand how they can access and correct their personal data. This includes step-by-step guides, FAQs, and direct support from our customer service team. We aim to empower users by providing them with the knowledge and tools necessary to control their personal data.</p>' +
+      '<h2><strong>5. Accuracy</strong></h2>' +
+      '<h3><strong>5.1 Data Accuracy Assurance</strong></h3>' +
+      '<p>Maintaining the accuracy of personal data is a priority for us. We have built mechanisms within our software that periodically prompt users to review and update their data. These prompts help ensure that the personal data we hold is accurate, complete, and up-to-date.</p>' +
+      '<h3><strong>5.2 User-Driven Data Update</strong></h3>' +
+      '<p>We facilitate an easy-to-use mechanism for users to update their personal data at any time. This user-driven approach allows individuals to directly influence the accuracy of the data we hold, promoting trust and confidence in our data practices.</p>' +
+      '<h3><strong>5.3 Accuracy Checks and Validation</strong></h3>' +
+      '<p>To further ensure data accuracy, we\'ve implemented validation rules and data integrity checks in our systems. These checks help prevent data entry errors and inaccuracies, enhancing the overall quality and reliability of the data.</p>' +
+      '<h2><strong>6. Protection</strong></h2>' +
+      '<h3><strong>6.1 Implementation of Robust Security Measures</strong></h3>' +
+      '<p>Protecting user data is at the heart of our business. We employ robust technical security measures such as encryption, anonymization, and pseudonymization of data. Our systems are designed to withstand common cyber threats and protect data from unauthorized access, alteration, and deletion.</p>' +
+      '<h3><strong>6.2 Continuous Security Monitoring and Upgrades</strong></h3>' +
+      '<p>We continuously monitor our systems for security vulnerabilities and swiftly address any issues that arise. We regularly update and upgrade our security measures in line with evolving technology and potential threats. Our team of security experts is dedicated to maintaining the safety and integrity of user data.</p>' +
+      '<h3><strong>6.3 Employee Training and Awareness</strong></h3>' +
+      '<p>We recognize that security is not just about technology but also about people and processes. Therefore, we conduct regular security awareness and training programs for our employees to ensure they understand and comply with our data security practices.</p>' +
+      '<h2><strong>7. Retention Limitation</strong></h2>' +
+      '<h3><strong>7.1 Retention Policies Aligned with Purpose</strong></h3>' +
+      '<p>We have implemented clear data retention policies that strictly follow the principle of purpose limitation. We only retain personal data for as long as necessary to fulfill the purposes for which it was collected or to comply with legal requirements. Once the purpose is fulfilled or the legal requirement is met, we have procedures in place to delete or anonymize the data.</p>' +
+      '<h3><strong>7.2 Automated Data Lifecycle Management</strong></h3>' +
+      '<p>To ensure adherence to our retention policies, we have automated data lifecycle management systems in place. These systems monitor the age of data and apply our retention rules, flagging data that is due for deletion or anonymization. This approach enhances accuracy and efficiency in managing data retention.</p>' +
+      '<h3><strong>7.3 Regular Audits and Compliance Checks</strong></h3>' +
+      '<p>We conduct regular audits to verify compliance with our data retention policies. These audits review our data storage systems and practices to ensure data is not being held beyond its necessary lifespan. Any identified issues are promptly rectified to ensure ongoing compliance.</p>' +
+      '<h2><strong>8. Transfer Limitation</strong></h2>' +
+      '<h3><strong>8.1 Data Transfer Protocols</strong></h3>' +
+      '<p>We have rigorous protocols in place for any instances where personal data needs to be transferred, either within the organization or to third parties. These protocols ensure that any data transfer is carried out securely and in line with data protection regulations.</p>' +
+      '<h3><strong>8.2 Evaluating Recipient Data Practices</strong></h3>' +
+      '<p>Before transferring personal data to third parties, we meticulously assess their data handling practices and security measures. We only engage with partners who demonstrate a high level of commitment to data privacy and protection.</p>' +
+      '<h3><strong>8.3 Use of Secure Transfer Technologies</strong></h3>' +
+      '<p>In the event of data transfer, we employ secure technologies such as encryption and secure file transfer protocols. These technologies ensure that data remains protected during transit and only authorized recipients can access it.</p>' +
+      '<h2><strong>9. Accountability</strong></h2>' +
+      '<h3><strong>9.1 Clear Data Governance Structure</strong></h3>' +
+      '<p>We have a clear data governance structure in place that outlines responsibilities and processes for data protection. This structure ensures accountability at all levels of the organization and promotes a culture of data protection.</p>' +
+      '<h3><strong>9.2 Regular Staff Training and Awareness</strong></h3>' +
+      '<p>To ensure all staff understand their roles in data protection, we conduct regular training sessions and awareness programs. These initiatives reinforce the importance of data privacy and familiarize staff with our data protection policies and procedures.</p>' +
+      '<h3><strong>9.3 Compliance Reporting and Oversight</strong></h3>' +
+      '<p>We maintain detailed records of our data handling practices and conduct regular reviews to ensure compliance with data protection laws and our internal policies. This process includes internal audits, risk assessments, and reporting to our data protection officer and senior management.</p>' +
+      '<h2><strong>10. Breach Notification</strong></h2>' +
+      '<h3><strong>10.1 Proactive Breach Detection</strong></h3>' +
+      '<p>We have robust systems in place to proactively detect potential data breaches. Our security systems continuously monitor for suspicious activities and alert our security team in real-time to possible threats.</p>' +
+      '<h3><strong>10.2 Prompt Response to Breaches</strong></h3>' +
+      '<p>In the event of a data breach, we have a well-defined incident response plan to promptly address the issue. This plan includes isolating the affected systems, investigating the cause, and implementing measures to prevent further breaches.</p>' +
+      '<h3><strong>10.3 Transparent Breach Notification</strong></h3>' +
+      '<p>We are committed to transparency in our breach notification practices. Should a breach occur, we promptly inform affected users and relevant authorities, providing full details of the incident and the steps we are taking in response.</p>' +
+      '<h2><strong>11. Do Not Call</strong></h2>' +
+      '<h3><strong>11.1 Respecting User Communication Preferences</strong></h3>' +
+      '<p>We respect our users\' communication preferences and adhere to a "Do Not Call" policy. Users can easily register their preference not to receive promotional calls through their account settings or by contacting our customer support team.</p>' +
+      '<h3><strong>11.2 Regular Updates to Do Not Call List</strong></h3>' +
+      '<p>We maintain an up-to-date "Do Not Call" list and regularly review and update this list to reflect changes in user preferences. This process ensures we respect the communication preferences of our users at all times.</p>' +
+      '<h3><strong>11.3 Compliance Checks and Staff Training</strong></h3>' +
+      '<p>To ensure compliance with our "Do Not Call" policy, we conduct regular checks and provide training to staff involved in direct marketing. This approach ensures that our team members are aware of user preferences and respect their decision not to receive promotional calls.</p>'
+  },
 ].map((page) => ({
   ...MOCK_PAGE,
   href: `/${page.slug}`,
