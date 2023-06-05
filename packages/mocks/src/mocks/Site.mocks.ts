@@ -186,9 +186,150 @@ export const MOCK_DATA_SITE = {
   
 }
 
+export const MOCK_DIGITAL_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'One X Digital logo',
+
+  // App
+  title: 'One X Digital',
+  absolute_url: 'https://www.onexdigital.co',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with One X Tech.',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onextech.com',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
+    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
+  ]
+
+}
+
+export const MOCK_FINX_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'FinX logo',
+
+  // App
+  title: 'FinX',
+  absolute_url: 'https://www.finx.ai',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with FinX',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onextech.com',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
+    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
+  ]
+
+}
+
+export const MOCK_GOVX_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'GovX logo',
+
+  // App
+  title: 'GovX',
+  absolute_url: 'https://www.govx.ai',
+
+  // Cta
+  cta_title: 'Modernize Enterprise UI with GovX.',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@onextech.com',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-tech',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 95,
+  logo_height: 13,
+
+  nav_items: [
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
+    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
+    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
+    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
+    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
+  ]
+
+}
+
 export const MOCK_SITE = {
   GROUP: MOCK_GROUP_SITE,
   TECH: MOCK_TECH_SITE,
   DATA: MOCK_DATA_SITE,
-  DESIGN: MOCK_DESIGN_SITE
+  DESIGN: MOCK_DESIGN_SITE,
+  DIGITAL: MOCK_DIGITAL_SITE,
+  FINX: MOCK_FINX_SITE,
+  GOVX: MOCK_GOVX_SITE,
 }
