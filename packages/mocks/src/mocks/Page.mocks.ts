@@ -988,6 +988,7 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'Careers',
     slug: 'careers',
+    href: routeConfig.CAREERS,
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
@@ -1069,6 +1070,7 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1451,17 +1453,20 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'Mission',
     slug: 'mission',
+    href: routeConfig.MISSION,
     subtitle: 'Find out how we seek to create change that matters.',
   },
   {
     title: 'News',
     slug: 'news',
+    href: routeConfig.NEWSLETTER,
     subtitle:
       'Stay up to date with the latest trends in the digital landscape.',
   },
   {
     title: 'Resources',
     slug: 'resources',
+    href: routeConfig.RESOURCES,
     subtitle:
       'Access our curated resource list for tips and tricks on how you can grow your business.',
   },
