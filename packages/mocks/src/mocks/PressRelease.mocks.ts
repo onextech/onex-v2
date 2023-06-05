@@ -2,7 +2,7 @@ import sampleSize from 'lodash/sampleSize'
 import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 import { PressRelease } from '@onex/types'
 
-export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
+export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   {
     is_active: true,
     published_at: '2019-03-25T01:43:55+0800',
@@ -115,31 +115,155 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
   }
 ].map((item, i) => ({
   id: i + 1,
+  ...item,
+}))
 
-  // Images
+export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+  {
+    is_active: true,
+    published_at: '2023-05-29T01:43:55+0800',
+    title: 'Introducing the Revamped One X Tech Website: Unveiling a New Technological Era',
+    slug: 'introducing-revamped-one-x-tech-website-unveiling-new-technological-era',
+    subtitle: "One X Tech Launches Revamped Digital Platform: Empowering Businesses with Technological Innovation",
+    hero_src: '/insights/1xt-banner.png',
+    hero_alt: 'One X Tech banner',
+    html: '<p>29th May 2023</p>' +
+    '<p>Singapore: One X Tech, a software development service provider based in Singapore, is excited to announce the launch of its newly-updated website. The new website signifies a milestone in its mission to advance technology and provide cutting-edge frontend development solutions to companies around the world.</p>' +
+    '<p>One X Tech&rsquo;s newly-released website (<a href="http://onextech.com/">onextech.com</a>) serves as a thorough platform to highlight both its knowledge and commitment to offering cutting-edge software solutions suited to the particular requirements of companies in a range of industries. The website provides helpful insights into One X Tech\'s broad range of consulting services, including enterprise software development, digital transformation strategies, and technology-driven business solutions, and it has been updated with a user-friendly interface.</p>' +
+    '<p>One X Tech\'s Chief Technology Officer, Mr Joel Koh, said, "At One X Tech, we are incredibly excited about the launch of our revamped website, which reflects our unwavering commitment to technological excellence. Our mission is to enable businesses to fully utilize technology, allowing them to drive growth, streamline operations, and maintain a competitive edge in the fast-paced digital environment of today."</p>' +
+    '<p>One X Tech\'s track record of assisting businesses in achieving their strategic goals through cutting-edge technological solutions is displayed on <a href="http://onextech.com/">onextech.com</a>. One X Tech aims to help businesses improve operational efficiency, optimize customer experiences, and maintain competitiveness in an ever-evolving market by leveraging their in-depth industry expertise and cutting-edge technical capabilities in frontend development.</p>' +
+    '<p>The redesigned website\'s main attributes are:.</p>' +
+    '<h2>Wide-ranging insights</h2>' +
+    '<p>Businesses can better understand the value proposition that One X Tech offers by using the website, which offers thorough insights into the consulting services that the company offers. Businesses can investigate a broad range of solutions catered to their unique needs, from custom software development to digital transformation strategies.</p>' +
+    '<h2>Customer Success Stories</h2>' +
+    '<p>The newly updated website for One X Tech highlights actual success tales, emphasizing the radical transformation of their clients\' businesses as a result of their solutions. Businesses can see firsthand through these case studies how One X Tech has aided organizations in overcoming obstacles and achieving outstanding outcomes.</p>' +
+    '<h2>Leadership in thought</h2>' +
+    '<p>The website has a section devoted to thought leadership that provides useful materials like professional insights. Visitors can keep up with the newest fashions, cutting-edge innovations, and best business practices to help them innovate and advance their companies.</p>' +
+    '<p>"One X Tech\'s newly updated website is more than just an online presence. It is evidence of our unwavering dedication to expanding the frontiers of technological innovation, according to Mr Koh. "We invite companies to explore our new platform, interact with our experts, and learn how we can open up fresh possibilities for development, effectiveness, and transformation. ".</p>' +
+    '<p><strong>For more information, contact:</strong></p>' +
+    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>Business Development Director</p>' +
+    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
   avatar_src: '/images/about_shape_circle_radial.svg',
   avatar_alt: 'Three circles',
-  // Author
   author_avatar_src: '/images/author_joel_koh.png',
   author_avatar_alt: 'Picture of Joel Koh',
   author_title: 'Joel Koh',
   author_job_title: 'Digital Lead',
-  // Tags
   tags: sampleSize(MOCK_TECH_TAGS, 3),
   ...item,
 }))
 
-export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = MOCK_TECH_PRESS_RELEASES.map(
-  (item, i) => ({
-    ...item,
-    // Tags
-    tags: sampleSize(MOCK_GROUP_TAGS, 3),
-  })
-)
+export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+  {
+    is_active: true,
+    published_at: '2023-05-30T01:43:55+0800',
+    title: 'Revolutionizing Technology Solutions: Introducing the New One X Group Website',
+    slug: 'revolutionizing-technology-solutions-introducing-one-x-group-new-website',
+    subtitle: "Unleashing the Power of Technological Transformation: Introducing One X Group's New Digital Frontier",
+    hero_src: '/insights/1xg-banner.png',
+    hero_alt: 'One X Group banner',
+    html: '<p>30th May 2023</p>' +
+    '<p>One X Group, a cutting-edge technology consulting firm, is proud to launch its eagerly awaited new website, <a href="http://www.onexgroup.co/">www.onexgroup.co</a>. This cutting-edge platform serves as a testament to One X Group\'s unrelenting pursuit of innovation as it introduces a variety of tailored software solutions created to satisfy the particular requirements of businesses in various industries.</p>' +
+    '<p>Key Features of the new website include:</p>' +
+    '<h2>Tailored Solutions for Every Need</h2>' +
+    '<p>A thorough overview of One X Group\'s customized solutions is given on the new website. Enterprise software development and digital transformation strategies are the main areas that businesses should concentrate on, but they can also look into the wide range of services available to them that are tailored to meet their specific needs.</p>' +
+    '<h2>Thought Leadership and Insights</h2>' +
+    '<p>On its website, One X Group has devoted a sizable section to thought leadership, providing useful materials like market analysis, whitepapers, and best practices. Businesses can gain a competitive edge and make wise decisions by keeping up with the newest trends and emerging technologies.</p>' +
+    '<h2>Showcased Success Stories</h2>' +
+    '<p>One X Group\'s ability to produce transformative results for businesses is proudly displayed on the updated website through success stories. The success of One X Group\'s solutions on growth and operational excellence is demonstrated in these case studies, which act as testimonials.</p>' +
+    '<p>Businesses gain useful knowledge about the extensive consulting services provided by One X Group by visiting the newly launched website. One X Group equips businesses to effectively use technology, boosting operational effectiveness, elevating customer experiences, and fostering strategic growth. This includes providing enterprise-level software development and strategic technology consulting.</p>' +
+    '<p>For more information and inquiries, please contact:</p>' +
+    '<p><strong>Lu ShuHui</strong> Business Development Director Email: <a href="mailto:shu@onexgroup.co">shu@onexgroup.co</a></p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'Three circles',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
+  tags: sampleSize(MOCK_GROUP_TAGS, 3),
+  ...item,
+}))
 
-export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+  {
+    is_active: true,
+    published_at: '2023-05-30T01:43:55+0800',
+    title: 'Introducing One X Data: Revolutionizing Enterprise Data and AI Solutions',
+    slug: 'introducing-one-x-data-revolutionizing-enterprise-data-ai-solutions',
+    subtitle: "Unlocking the Power of Data: Introducing One X Data's Innovative Website for Advanced AI Solutions",
+    hero_src: '/insights/1xdt-banner.png',
+    hero_alt: 'One X Data banner',
+    html: '<p>30th May 2023</p>' +
+    '<p>SINGAPORE: Today marks a significant milestone for One X Data as we proudly announce the official launch of our website, <a href="http://onexdata.co/">onexdata. co</a>. One X Data, a top supplier of business data and AI solutions, is proud to announce the launch of its website, <a href="http://onexdata.co/">onexdata.co</a>. One X Data is revolutionizing the way businesses harness and realize the potential of their data by focusing on leveraging cutting-edge technologies like Chat GPT and AI.</p>' +
+    '<p>Businesses can explore One X Data\'s cutting-edge data and AI solutions on the recently launched <a href="http://onexdata.co/">onexdata.co</a> website, which offers a user-friendly platform. Businesses can confidently navigate the complex data landscape and extract useful insights using analytics, visualization, machine learning, and predictive modeling.</p>' +
+    '<h2>The New Website\'s Key Features:</h2>' +
+    '<p>Important Data Insights: Discover trends and patterns that help you make well-informed decisions by using thorough data analytics to gain important insights into your company. Explore a showcase of previous projects that highlights the transformative effects of One X Data\'s solutions on companies across a range of industries. Expert Advice: Take advantage of the knowledge of the One X Data team, who will give you advice and support to help you get the most out of your data and AI initiatives.</p>' +
+    '<p><strong>For more information, contact:</strong></p>' +
+    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>Business Development Director</p>' +
+    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>' +
+    '<p>Through <a href="http://onexdata.co/">onexdata.co</a>, One X Data uses data and AI to create transformative change. With One X Data, explore the potential of data-driven innovation and realize the full potential of your company.</p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'Three circles',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
+  tags: sampleSize(MOCK_TECH_TAGS, 3),
+  ...item,
+}))
 
-export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+  {
+    is_active: true,
+    published_at: '2023-06-01T01:43:55+0800',
+    title: 'Introducing One X Design: Redefining User Experience and Interface Design',
+    slug: 'introducing-one-x-design-redefining-user-experience-interface-design',
+    subtitle: "Elevating User Experiences: Introducing One X Design's Cutting-Edge Website for Seamless UI/UX Solutions",
+    hero_src: '/insights/1xd-banner.png',
+    hero_alt: 'One X Design banner',
+    html: '<p>1st June 2023</p>' +
+    '<p>SINGAPORE: One X Design, a UI/UX service provider, is thrilled to announce the official launch of their new website, <strong><a href="http://www.onexdesign.com/">www.onexdesign.com</a></strong>. This exciting milestone marks a significant step forward in the company\'s mission to revolutionize the world of user experience and interface design.</p>' +
+    '<p>With the relentless pursuit of excellence and innovation, One X Design has established itself as a prominent player in the UI/UX industry. Their team of highly skilled designers and developers is dedicated to creating immersive digital experiences that captivate users and drive business results.</p>' +
+    '<p>The newly launched website showcases One X Design\'s expertise and commitment to delivering exceptional UI/UX solutions. Visitors will be greeted with a sleek and intuitive interface that reflects the company\'s design principles and showcases its portfolio of successful projects.</p>' +
+    '<h2>Key features include:</h2>' +
+    '<ol>' +
+    '<li><strong>Immersive Portfolio:</strong> One X Design\'s portfolio is showcased on the website in an engaging manner, showcasing their noteworthy work in a range of industries. Visitors can learn about the company\'s design capabilities and creative solutions.</li>' +
+    '<li><strong>Design Principles:</strong> One X Design places a strong emphasis on their design principles on their website, showcasing their dedication to developing aesthetically pleasing, understandable, and user-centric interfaces. Their proficiency in providing seamless experiences is demonstrated by their website itself.</li>' +
+    '<li><strong>Client-Centric Approach:</strong> One X Design\'s dedication to client satisfaction and teamwork is highlighted on the website. They place a high priority on comprehending the particular needs and objectives of their clients, ensuring that every project is customized to suit those needs.</li>' +
+    '<li><strong>Expert Team:</strong> The website introduces One X Design\'s highly qualified team of designers and developers, who are passionate about producing exceptional UI/UX experiences. Customers can rely on their experience and industry knowledge to provide them with creative and effective solutions.</li>' +
+    '</ol>' +
+    '<p>With the help of these crucial components, One X Design\'s website functions as an engaging space for companies to explore their offerings, find inspiration, and interact with a group of people committed to elevating user experiences through creative UI/UX design solutions.</p>' +
+    '<p><strong>For more information, contact:</strong></p>' +
+    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>Business Development Director</p>' +
+    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>'
+  },
+].map((item, i) => ({
+  id: i + 1,
+  avatar_src: '/images/about_shape_circle_radial.svg',
+  avatar_alt: 'Three circles',
+  author_avatar_src: '/images/author_joel_koh.png',
+  author_avatar_alt: 'Picture of Joel Koh',
+  author_title: 'Joel Koh',
+  author_job_title: 'Digital Lead',
+  tags: sampleSize(MOCK_TECH_TAGS, 3),
+  ...item,
+}))
 
 export const MOCK_PRESS_RELEASES = {
   GROUP: MOCK_GROUP_PRESS_RELEASES,
