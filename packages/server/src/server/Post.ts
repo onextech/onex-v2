@@ -33,7 +33,7 @@ export const PostDetail = {
     )
     const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
       ({ category_id }) => category_id === post?.category_id
-    )
+    ).slice(0, 3)
     const relatedPosts = getRelatedCrudItemsByCategoryId(
       MOCK_POSTS[MOCK_KEY]
         .filter(({ title }) => title !== post?.title)
