@@ -2410,6 +2410,13 @@ export const MOCK_DATA_PAGES = [
       },
     },
   },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
 ].map((page) => merge({}, MOCK_DATA_PAGE, page))
 
 export const MOCK_DESIGN_PAGES = [
@@ -2826,6 +2833,13 @@ export const MOCK_DESIGN_PAGES = [
         ],
       },
     },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
   },
 ].map((page) => merge({}, MOCK_DESIGN_PAGE, page))
 
