@@ -19,7 +19,7 @@ const NextResourceSuccessPage: React.FC<NextResourceSuccessPageProps> = (
   const { resource, relatedResources, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'Thank You' }}>
+      <LandingLayout seo={{ title: `${resource.title} Registration Success` }}>
         <ResourceSuccessPage
           resource={resource}
           relatedResources={relatedResources}
