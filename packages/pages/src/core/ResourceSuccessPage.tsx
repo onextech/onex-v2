@@ -14,6 +14,7 @@ export interface ResourceSuccessPageProps {
 
 const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
   const { resource, relatedResources } = props
+  const { title, subtitle, avatar_src, avatar_alt, sections } = resource
   const router = useRouter()
   const { site } = useLayout()
   return (
@@ -21,48 +22,108 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
       items={[
         {
           key: 'hero',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          sx: { backgroundColor: 'background.paper' },
+          reveal: false,
+          py: 5,
+          sx: {
+            position: 'relative',
+            backgroundColor: 'background.default',
+          },
           items: [
-            { type: 'overline', title: 'Thank You For Downloading' },
             {
-              type: 'h1',
-              title: resource.title,
-            },
-            {
-              type: 'subtitle1',
-              title:
-                'It\'s on the way to your inbox.',
-              titleProps: {
-                color: 'text.secondary',
-                maxWidth: true,
-                sx: { mt: 2 },
-              },
-            },
-            {
-              type: 'image',
-              title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
-              disableContainer: true,
-              titleProps: {
-                alt: 'People working in an office',
-                background: true,
-                backgroundHeight: { xs: 200, md: 320 },
-                backgroundSx: { mt: 5 },
-              },
-            },
-            {
-              type: 'h4',
-              title:
-                `More Free Resources from ${site.title}`,
-              titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
+              type: 'grid',
+              gridProps: { spacing: { xs: 0, md: 5 } },
+              gridItems: [
+                {
+                  sm: 7,
+                  md: 8,
+                  lg: 9,
+                  boxProps: {
+                    sx: {
+                      minHeight: { md: '100vh' },
+                    },
+                  },
+                  items: [
+                    { type: 'overline', title: 'Resource' },
+                    {
+                      type: 'h1',
+                      title,
+                      titleProps: { mb: 2 },
+                    },
+                    {
+                      type: 'subtitle3',
+                      title: subtitle,
+                      titleProps: {
+                        color: 'text.secondary',
+                        maxWidth: true,
+                        sx: { mb: 3 },
+                      },
+                    },
+                    {
+                      type: 'image',
+                      title: avatar_src,
+                      titleProps: {
+                        alt: avatar_alt,
+                        ar: '4:3',
+                        scaleOnHover: true,
+                      },
+                      boxProps: { maxWidth: { md: '70%' } },
+                    },
+                  ],
+                },
+                {
+                  sm: 5,
+                  md: 4,
+                  lg: 3,
+                  boxProps: {
+                    reveal: true,
+                    sx: {
+                      height: { md: '100%' },
+                      backgroundColor: 'background.paper',
+                      top: 0,
+                      py: 5,
+                      px: 4,
+                      position: { md: 'absolute' },
+                    },
+                  },
+                  items: [
+                    {
+                      type: 'fa-icon',
+                      title: `fa-3x fa-thin fa-badge-check`,
+                      titleProps: { sx: { mb: 1, color: '#2ecc71' } },
+                    },
+                    {
+                      type: 'overline',
+                      title: `Registration Success`,
+                      titleProps: { sx: { mb: 1, color: '#2ecc71' } },
+                    },
+                    {
+                      type: 'h5',
+                      title: 'Check your inbox for your download.',
+                      titleProps: { sx: { mb: 2 }, gutterBottom: true },
+                    },
+                    {
+                      type: 'body1',
+                      title:
+                        'Great news! Your registration for the eBook is successful. A confirmation email containing your eBook download link has been dispatched to your registered email address. Please ensure you check your email, including your spam or junk folder, to complete the download process. Enjoy your new read!',
+                      titleProps: { color: 'text.secondary' },
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
         {
-          key: 'resource',
+          key: 'hero',
+          py: 8,
           sx: { backgroundColor: 'background.paper' },
           items: [
+            {
+              type: 'h4',
+              title:
+                `More Resources from ${site.title}`,
+              titleProps: { maxWidth: true, sx: { mb: 4 } },
+            },
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
