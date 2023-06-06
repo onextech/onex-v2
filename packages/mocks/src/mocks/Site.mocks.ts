@@ -250,7 +250,7 @@ export const MOCK_FINX_SITE = {
   cta_title: 'Modernize Enterprise UI with FinX',
   cta_button_title: 'Schedule a Call',
 
-  general_email: 'info@onextech.com',
+  general_email: 'info@finx.ai',
 
   // Socials
 
@@ -296,7 +296,7 @@ export const MOCK_GOVX_SITE = {
   cta_title: 'Modernize Enterprise UI with GovX.',
   cta_button_title: 'Schedule a Call',
 
-  general_email: 'info@onextech.com',
+  general_email: 'info@govx.ai',
 
   // Socials
 
