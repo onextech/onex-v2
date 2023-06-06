@@ -32,14 +32,9 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
             {
               type: 'grid',
               boxProps: {
-                sx: {
-                  backgroundColor: 'background.paper',
-                },
+                sx: { backgroundColor: 'background.paper' },
               },
-              gridProps: {
-                spacing: { xs: 0, md: 5 },
-                minWidth: '100%',
-              },
+              gridProps: { spacing: { xs: 0, md: 5 } },
               gridItems: [
                 {
                   md: 7,
@@ -88,12 +83,12 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
-                      width: '100%',
                       height: { md: '100%' },
                       backgroundColor: 'background.default',
                       top: 0,
                       px: { xs: 0, md: 5 },
                       py,
+                      position: { md: 'absolute' },
                     },
                   },
                   items: [
