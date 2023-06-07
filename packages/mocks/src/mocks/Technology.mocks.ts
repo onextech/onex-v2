@@ -296,7 +296,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
         items: [
           {
             title:
-              'TypeScript is a powerful superset of JavaScript that brings static typing and advanced features to JavaScript development. By adding type annotations, TypeScript provides better code organization, improved maintainability, and enhanced tooling support. It enables catching errors at compile-time, resulting in more robust and reliable frontend applications.',
+              'TypeScript is a powerful superset of JavaScript that brings static typing and advanced features to JavaScript development. By adding type annotations, TypeScript provides better code organisation, improved maintainability, and enhanced tooling support. It enables catching errors at compile-time, resulting in more robust and reliable frontend applications.',
           },
           {
             title:
@@ -401,7 +401,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
             key: 'faqs-1',
             title: 'Why should I choose TypeScript for my frontend projects?',
             content:
-              'TypeScript brings the advantages of static typing to JavaScript development, improving code quality, catching errors early, and enhancing tooling support. It allows for better code organization, scalability, and maintainability, making it an excellent choice for building complex frontend applications.',
+              'TypeScript brings the advantages of static typing to JavaScript development, improving code quality, catching errors early, and enhancing tooling support. It allows for better code organisation, scalability, and maintainability, making it an excellent choice for building complex frontend applications.',
           },
           {
             key: 'faqs-2',
@@ -1212,7 +1212,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           fa_icon: 'fa-puzzle-piece',
           title: 'Monorepo architecture',
           subtitle:
-            'We specialize in leveraging the Nx Monorepo architecture to manage multiple frontend applications, libraries, and shared code within a single repository. This allows for better code organization, improved collaboration, and efficient development workflows.',
+            'We specialize in leveraging the Nx Monorepo architecture to manage multiple frontend applications, libraries, and shared code within a single repository. This allows for better code organisation, improved collaboration, and efficient development workflows.',
         },
         {
           fa_icon: 'fa-sync',
@@ -2031,7 +2031,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
               fa_icon: 'fa-book',
               title: 'Knowledge Management',
               subtitle:
-                'We help organizations manage and leverage their vast knowledge repositories by implementing ChatGPT-powered knowledge management systems for efficient information retrieval and sharing.',
+                'We help organisations manage and leverage their vast knowledge repositories by implementing ChatGPT-powered knowledge management systems for efficient information retrieval and sharing.',
             },
             {
               fa_icon: 'fa-lightbulb',
@@ -2253,7 +2253,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
               fa_icon: 'fa-check',
               title: 'Data Accuracy and Consistency',
               subtitle:
-                'Tableau ensures data accuracy and consistency by connecting to various data sources, providing a single source of truth for your organization.',
+                'Tableau ensures data accuracy and consistency by connecting to various data sources, providing a single source of truth for your organisation.',
             },
             {
               fa_icon: 'fa-line-chart',
@@ -2322,7 +2322,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
               key: 'faqs-2',
               title: 'Why is data visualization important?',
               content:
-                'Data visualization is important because it allows individuals and organizations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
+                'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
             },
             {
               key: 'faqs-3',
@@ -2357,7 +2357,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
               fa_icon: 'fa-users',
               title: 'Data Democratization',
               subtitle:
-                'Snowflake enables data democratization, allowing users across your organization to access and analyze data as needed.',
+                'Snowflake enables data democratization, allowing users across your organisation to access and analyze data as needed.',
             },
             {
               fa_icon: 'fa-clock',
@@ -2432,7 +2432,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
               key: 'faqs-1',
               title: 'What is Snowflake?',
               content:
-                'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organization. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
+                'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
             },
             {
               key: 'faqs-2',

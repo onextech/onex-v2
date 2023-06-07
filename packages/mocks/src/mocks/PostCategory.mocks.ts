@@ -45,7 +45,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     slug: 'organisation-design',
     description: 'Creating Agile and Adaptive Structures.',
     subtitle:
-      'Maximizing talent and resources through optimal organizational design.',
+      'Maximizing talent and resources through optimal organisational design.',
     hero_src: 'https://source.unsplash.com/ZSPBhokqDMc/1600x900',
     hero_alt: 'Pen on an open notebook',
   },
@@ -98,7 +98,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     slug: 'digital-transformation',
     description: 'Empowering the Digital Revolution.',
     subtitle:
-      'Harnessing digital solutions to propel your organization forward.',
+      'Harnessing digital solutions to propel your organisation forward.',
     hero_src: 'https://source.unsplash.com/EgL0EtzL0Wc/1600x900',
     hero_alt: 'Digital cubic blocks',
   },
@@ -141,7 +141,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     slug: 'growth',
     description: 'Drive Business Expansion',
     subtitle:
-      'Empower your organization to achieve sustainable growth and success.',
+      'Empower your organisation to achieve sustainable growth and success.',
     hero_src: 'https://source.unsplash.com/-87JyMb9ZfU/1600x900',
     hero_alt: 'Man climbing mountain',
   },
