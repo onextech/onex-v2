@@ -30,7 +30,7 @@ export const MOCK_SERVICE_PAGE = {
       items: [
         {
           title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
       ],
     },
@@ -453,7 +453,7 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our Design Library Development service encompasses a range of activities aimed at establishing and maintaining a robust design system for your organization.',
+          'Our Design Library Development service encompasses a range of activities aimed at establishing and maintaining a robust design system for your organisation.',
         items: [
           {
             fa_icon: 'fa-pencil-ruler',
@@ -483,7 +483,7 @@ export const MOCK_TECH_SERVICES = [
             fa_icon: 'fa-paint-brush',
             title: 'Visual style definition',
             subtitle:
-              'We define a cohesive visual style for your organization, including color schemes, typography choices, iconography, and spacing guidelines.',
+              'We define a cohesive visual style for your organisation, including color schemes, typography choices, iconography, and spacing guidelines.',
           },
           {
             fa_icon: 'fa-users',
@@ -525,30 +525,30 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 2,
     // Hero
-    title: 'Application Modernization',
-    slug: 'application-modernization',
+    title: 'Application modernisation',
+    slug: 'application-modernisation',
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
     hero_src: 'https://source.unsplash.com/jJT2r2n7lYA/1600x900',
     hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
-      title: 'Application Modernization',
+      title: 'Application modernisation',
       description:
-        'Modernize your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
+        'modernise your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
     // Sections
     sections: {
       summary: {
-        title: 'Transform your business with application modernization.',
+        title: 'Transform your business with application modernisation.',
         items: [
           {
             title:
-              'Legacy systems and applications can hold your business back, making it difficult to innovate and scale. Our Application Modernization service helps you upgrade outdated systems and applications to modern, scalable architectures that can drive business growth and fuel innovation.',
+              'Legacy systems and applications can hold your business back, making it difficult to innovate and scale. Our Application modernisation service helps you upgrade outdated systems and applications to modern, scalable architectures that can drive business growth and fuel innovation.',
           },
           {
             title:
-              'We take a comprehensive approach to application modernization, working closely with your team to assess your existing systems, identify opportunities for improvement, and develop a detailed roadmap for modernization. Our team of experts uses the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+              'We take a comprehensive approach to application modernisation, working closely with your team to assess your existing systems, identify opportunities for improvement, and develop a detailed roadmap for modernisation. Our team of experts uses the latest technologies, development methodologies, and best practices to ensure that your modernised applications deliver maximum value to your business.',
           },
         ],
       },
@@ -556,13 +556,13 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'To modernize your applications, we follow a comprehensive set of practices that include application assessment, architecture redesign, migration, and ongoing support.',
+          'To modernise your applications, we follow a comprehensive set of practices that include application assessment, architecture redesign, migration, and ongoing support.',
         items: [
           {
             fa_icon: 'fa-cogs',
             title: 'Application assessment',
             subtitle:
-              'We assess your legacy applications to identify areas for improvement, evaluate technical debt, and prioritize modernization efforts.',
+              'We assess your legacy applications to identify areas for improvement, evaluate technical debt, and prioritize modernisation efforts.',
           },
           {
             fa_icon: 'fa-layer-group',
@@ -586,40 +586,40 @@ export const MOCK_TECH_SERVICES = [
             fa_icon: 'fa-code-branch',
             title: 'Continuous improvement',
             subtitle:
-              'We establish DevOps practices and implement automated testing, deployment, and monitoring to ensure ongoing improvement and stability of your modernized applications.',
+              'We establish DevOps practices and implement automated testing, deployment, and monitoring to ensure ongoing improvement and stability of your modernised applications.',
           },
           {
             fa_icon: 'fa-users',
             title: 'Collaboration',
             subtitle:
-              'We work closely with your team, including business stakeholders and IT personnel, to ensure the modernization process aligns with your business goals and requirements.',
+              'We work closely with your team, including business stakeholders and IT personnel, to ensure the modernisation process aligns with your business goals and requirements.',
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Application Modernization service and how we can help your business.',
+          'Learn more about our Application modernisation service and how we can help your business.',
         items: [
           {
             key: 'faqs-1',
             title:
-              'Why is application modernization important for my business?',
+              'Why is application modernisation important for my business?',
             content:
-              "Application modernization is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. Modernized applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
+              "Application modernisation is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. modernised applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
           },
           {
             key: 'faqs-2',
             title:
-              'What are the benefits of working with your Application Modernization service?',
+              'What are the benefits of working with your Application modernisation service?',
             content:
-              'Our Application Modernization service offers a comprehensive approach to modernizing your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+              'Our Application modernisation service offers a comprehensive approach to modernising your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernised applications deliver maximum value to your business.',
           },
           {
             key: 'how-it-works-3',
-            title: 'How do you approach application modernization?',
+            title: 'How do you approach application modernisation?',
             content:
-              'We begin by assessing your existing systems and applications to identify opportunities for modernization and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
+              'We begin by assessing your existing systems and applications to identify opportunities for modernisation and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
           },
         ],
       },
@@ -1015,7 +1015,7 @@ export const MOCK_TECH_SERVICES = [
             key: 'faqs-1',
             title: 'Why are agile development teams important for my enterprise business?',
             content:
-              'Development teams are crucial for enterprise businesses because they ensure faster delivery, adapatability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
+              'Development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
           },
           {
             key: 'faqs-2',
@@ -1236,7 +1236,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-2',
             title: 'What kind of clients do you work with?',
             content:
-              'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organizations across various industries.',
+              'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organisations across various industries.',
           },
           {
             key: 'faqs-3',
@@ -1274,7 +1274,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'Our team of experienced cyber security experts works closely with your organization to develop a custom security strategy that meets your unique needs. From vulnerability assessments to incident response planning, we offer a full suite of services to help you safeguard your business against cyber threats.',
+              'Our team of experienced cyber security experts works closely with your organisation to develop a custom security strategy that meets your unique needs. From vulnerability assessments to incident response planning, we offer a full suite of services to help you safeguard your business against cyber threats.',
           },
         ],
       },
@@ -1306,7 +1306,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-network-wired',
             title: 'Network security',
             subtitle:
-              'We implement robust network security measures to protect your organization from unauthorized access and data breaches.',
+              'We implement robust network security measures to protect your organisation from unauthorized access and data breaches.',
           },
           {
             fa_icon: 'fa-cloud',
@@ -1331,19 +1331,19 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why is cyber security important for my business?',
             content:
-              'Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organization\'s reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.',
+              'Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organisation\'s reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.',
           },
           {
             key: 'faqs-2',
             title: 'What are the benefits of working with your Cyber Security Service?',
             content:
-              'Working with our Cyber Security Service offers several benefits, including access to experienced cyber security experts, a custom security strategy tailored to your business, and comprehensive protection for your digital assets. We offer a wide range of services, from vulnerability assessments to incident response planning, ensuring that your organization is well-prepared to defend against potential cyber threats.',
+              'Working with our Cyber Security Service offers several benefits, including access to experienced cyber security experts, a custom security strategy tailored to your business, and comprehensive protection for your digital assets. We offer a wide range of services, from vulnerability assessments to incident response planning, ensuring that your organisation is well-prepared to defend against potential cyber threats.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach cyber security?',
             content:
-              'We take a proactive approach to cyber security, working closely with your organization to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team\'s extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.',
+              'We take a proactive approach to cyber security, working closely with your organisation to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team\'s extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.',
           },
         ],
       },
@@ -1572,7 +1572,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In an ever-changing digital landscape, validating ideas quickly and effectively is essential for any organization. Our Proof of Concept (PoC) Development Service helps enterprise clients bring their ideas to life, providing a comprehensive approach to frontend software engineering and dashboard development.',
+              'In an ever-changing digital landscape, validating ideas quickly and effectively is essential for any organisation. Our Proof of Concept (PoC) Development Service helps enterprise clients bring their ideas to life, providing a comprehensive approach to frontend software engineering and dashboard development.',
           },
           {
             title:
@@ -1633,7 +1633,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'What is the purpose of developing a Proof of Concept (PoC)?',
             content:
-              'Developing a Proof of Concept (PoC) allows organizations to validate their ideas and ensure they are feasible, cost-effective, and viable in the marketplace. A well-executed PoC can help minimize risks, accelerate innovation, and provide valuable insights that inform decision-making and future development.',
+              'Developing a Proof of Concept (PoC) allows organisations to validate their ideas and ensure they are feasible, cost-effective, and viable in the marketplace. A well-executed PoC can help minimize risks, accelerate innovation, and provide valuable insights that inform decision-making and future development.',
           },
           {
             key: 'faqs-2',
@@ -1645,7 +1645,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How long does it typically take to develop a Proof of Concept?',
             content:
-              'The time required to develop a Proof of Concept can vary depending on the complexity of the project, the availability of resources, and the specific needs of your organization. In general, a PoC can take anywhere from a few weeks to several months to complete. Our team works closely with you to establish a realistic timeline that aligns with your goals and expectations.',
+              'The time required to develop a Proof of Concept can vary depending on the complexity of the project, the availability of resources, and the specific needs of your organisation. In general, a PoC can take anywhere from a few weeks to several months to complete. Our team works closely with you to establish a realistic timeline that aligns with your goals and expectations.',
           },
         ],
       },
@@ -1835,7 +1835,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why should I invest in custom enterprise applications?',
             content:
-              'Custom enterprise applications provide several benefits, including increased efficiency, improved collaboration, enhanced data security, scalability, and the ability to adapt to your specific business needs. By investing in custom software solutions, you can gain a competitive edge, streamline processes, and drive innovation within your organization.',
+              'Custom enterprise applications provide several benefits, including increased efficiency, improved collaboration, enhanced data security, scalability, and the ability to adapt to your specific business needs. By investing in custom software solutions, you can gain a competitive edge, streamline processes, and drive innovation within your organisation.',
           },
           {
             key: 'faqs-2',
@@ -2068,7 +2068,7 @@ export const MOCK_GROUP_SERVICES = [
     seo: {
       title: 'Application Re-engineering',
       description:
-        'Discover our Application Re-engineering services designed to optimize, modernize, and revamp your existing software applications.',
+        'Discover our Application Re-engineering services designed to optimize, modernise, and revamp your existing software applications.',
     },
     // Sections
     sections: {
@@ -2077,7 +2077,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernize, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
+              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernise, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
           },
           {
             title:
@@ -2089,7 +2089,7 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We offer end-to-end application re-engineering services to modernize and optimize your legacy applications.',
+          'We offer end-to-end application re-engineering services to modernise and optimize your legacy applications.',
         items: [
           {
             fa_icon: 'fa-code-branch',
@@ -2099,7 +2099,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             fa_icon: 'fa-refresh',
-            title: 'Application migration and modernization',
+            title: 'Application migration and modernisation',
             subtitle:
               'We migrate your legacy applications to modern platforms and architectures, ensuring compatibility, scalability, and improved performance.',
           },
@@ -2138,7 +2138,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why is Application Re-engineering important for my business?',
             content:
-              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernizing, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
+              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
@@ -2182,7 +2182,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'Our team of experts has extensive experience in cloud migration, and we work closely with your organization to develop a tailored migration plan that meets your unique needs. From assessing your existing infrastructure to planning and executing the migration, we provide comprehensive support every step of the way.',
+              'Our team of experts has extensive experience in cloud migration, and we work closely with your organisation to develop a tailored migration plan that meets your unique needs. From assessing your existing infrastructure to planning and executing the migration, we provide comprehensive support every step of the way.',
           },
         ],
       },
@@ -2226,7 +2226,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Collaboration',
             subtitle:
-              'We work closely with your team, fostering collaboration and knowledge transfer to ensure your organization is fully prepared to manage your new cloud environment.',
+              'We work closely with your team, fostering collaboration and knowledge transfer to ensure your organisation is fully prepared to manage your new cloud environment.',
           },
         ],
       },
@@ -2239,7 +2239,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why should my business consider migrating to the cloud?',
             content:
-              'Migrating to the cloud can provide your business with numerous benefits, such as cost savings, increased agility, improved scalability, and enhanced security. It also enables your organization to leverage the latest technologies and innovations, making it easier to stay competitive in the digital landscape.',
+              'Migrating to the cloud can provide your business with numerous benefits, such as cost savings, increased agility, improved scalability, and enhanced security. It also enables your organisation to leverage the latest technologies and innovations, making it easier to stay competitive in the digital landscape.',
           },
           {
             key: 'faqs-2',
@@ -2251,7 +2251,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How long does a typical cloud migration process take?',
             content:
-              'The duration of a cloud migration process varies depending on the size and complexity of your organization\'s infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organization to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.',
+              'The duration of a cloud migration process varies depending on the size and complexity of your organisation\'s infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organisation to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.',
           },
         ],
       },
@@ -2283,7 +2283,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'Our team of experts is well-versed in the latest frontend technologies and dashboard development practices, enabling them to tackle even the most complex projects with ease. We work closely with your organization to understand your specific needs and goals, delivering tailor-made solutions that drive results.',
+              'Our team of experts is well-versed in the latest frontend technologies and dashboard development practices, enabling them to tackle even the most complex projects with ease. We work closely with your organisation to understand your specific needs and goals, delivering tailor-made solutions that drive results.',
           },
         ],
       },
@@ -2352,7 +2352,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How does your team approach dashboard development?',
             content:
-              'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business. We work closely with your organization to understand your data needs and goals, and we use the latest dashboard development tools and best practices to create custom solutions that meet your specific requirements.',
+              'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business. We work closely with your organisation to understand your data needs and goals, and we use the latest dashboard development tools and best practices to create custom solutions that meet your specific requirements.',
           },
         ],
       },
@@ -2384,7 +2384,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'Our team of experienced data scientists and analysts work closely with your organization to understand your business needs and develop custom solutions that address those needs. From predictive analytics to data visualization and dashboard development, we provide a comprehensive suite of services designed to help you make the most of your data.',
+              'Our team of experienced data scientists and analysts work closely with your organisation to understand your business needs and develop custom solutions that address those needs. From predictive analytics to data visualization and dashboard development, we provide a comprehensive suite of services designed to help you make the most of your data.',
           },
         ],
       },
@@ -2447,7 +2447,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-2',
             title: 'What are the benefits of working with your Data Science service?',
             content:
-              'Our team of experienced data scientists and analysts work closely with your organization to understand your business needs and develop custom solutions that address those needs. We offer a comprehensive suite of data science services, including data analytics, machine learning, dashboard development, data management, and process optimization. By working with us, you can unlock the full potential of your data and drive better decision-making, optimized processes, and improved customer experiences.',
+              'Our team of experienced data scientists and analysts work closely with your organisation to understand your business needs and develop custom solutions that address those needs. We offer a comprehensive suite of data science services, including data analytics, machine learning, dashboard development, data management, and process optimization. By working with us, you can unlock the full potential of your data and drive better decision-making, optimized processes, and improved customer experiences.',
           },
           {
             key: 'faqs-3',
@@ -2485,7 +2485,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'We believe that data is more than just numbers and statistics. It holds valuable insights that can guide strategic decision-making, optimize processes, and improve customer experiences. Our team of experts combines technical expertise with business acumen to develop tailored data strategies that align with your organizational goals and deliver tangible results.',
+              'We believe that data is more than just numbers and statistics. It holds valuable insights that can guide strategic decision-making, optimize processes, and improve customer experiences. Our team of experts combines technical expertise with business acumen to develop tailored data strategies that align with your organisational goals and deliver tangible results.',
           },
         ],
       },
@@ -2499,7 +2499,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-database',
             title: 'Data governance',
             subtitle:
-              'We help establish data governance frameworks to ensure data integrity, privacy, and compliance across your organization.',
+              'We help establish data governance frameworks to ensure data integrity, privacy, and compliance across your organisation.',
           },
           {
             fa_icon: 'fa-link',
@@ -2529,7 +2529,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Data-driven culture',
             subtitle:
-              'We help foster a data-driven culture within your organization, empowering teams to leverage data in their day-to-day operations and decision-making.',
+              'We help foster a data-driven culture within your organisation, empowering teams to leverage data in their day-to-day operations and decision-making.',
           },
         ],
       },
@@ -2548,13 +2548,13 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-2',
             title: 'What are the benefits of working with your Data Strategy service?',
             content:
-              'By working with our Data Strategy service, you will benefit from our expertise in developing comprehensive data strategies tailored to your business needs. We have a deep understanding of data governance, integration, quality management, and analytics, and we can help you establish a data-driven culture within your organization. Our goal is to empower you to leverage data effectively, optimize processes, and drive growth and innovation.',
+              'By working with our Data Strategy service, you will benefit from our expertise in developing comprehensive data strategies tailored to your business needs. We have a deep understanding of data governance, integration, quality management, and analytics, and we can help you establish a data-driven culture within your organisation. Our goal is to empower you to leverage data effectively, optimize processes, and drive growth and innovation.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach data strategy development?',
             content:
-              'We take a holistic approach to data strategy development, starting with a thorough assessment of your current data landscape, business goals, and challenges. Based on this analysis, we collaborate with your team to define a data strategy that aligns with your objectives. Our approach includes establishing data governance frameworks, designing data integration solutions, implementing data quality management processes, leveraging advanced analytics techniques, and creating a data-driven culture within your organization.',
+              'We take a holistic approach to data strategy development, starting with a thorough assessment of your current data landscape, business goals, and challenges. Based on this analysis, we collaborate with your team to define a data strategy that aligns with your objectives. Our approach includes establishing data governance frameworks, designing data integration solutions, implementing data quality management processes, leveraging advanced analytics techniques, and creating a data-driven culture within your organisation.',
           },
         ],
       },
@@ -3174,7 +3174,7 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             title:
-              'Design principles and guidelines are critical in guiding product design decisions and ensuring a consistent, high-quality user experience. Our service helps your organization define these fundamental design tenets that align with your brand and meet your user needs. We believe that effective design principles are user-centered, clear, and adaptable. Our experienced team will work with you to define these principles and transform them into practical guidelines for your design team.',
+              'Design principles and guidelines are critical in guiding product design decisions and ensuring a consistent, high-quality user experience. Our service helps your organisation define these fundamental design tenets that align with your brand and meet your user needs. We believe that effective design principles are user-centered, clear, and adaptable. Our experienced team will work with you to define these principles and transform them into practical guidelines for your design team.',
           },
         ],
       },
@@ -3444,7 +3444,7 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             title:
-              'In this digital age, having a cutting-edge UI/UX design is crucial for the success of any business. At our UI/UX Revamp Service, we focus on modernizing and enhancing your interfaces to create a more enjoyable and intuitive user experience. We understand that the user is at the heart of every design. Our approach prioritizes user needs and expectations, ensuring an end product that is not just visually appealing but also functional and user-friendly.',
+              'In this digital age, having a cutting-edge UI/UX design is crucial for the success of any business. At our UI/UX Revamp Service, we focus on modernising and enhancing your interfaces to create a more enjoyable and intuitive user experience. We understand that the user is at the heart of every design. Our approach prioritizes user needs and expectations, ensuring an end product that is not just visually appealing but also functional and user-friendly.',
           },
         ],
       },
@@ -3456,9 +3456,9 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             fa_icon: 'fa-sync',
-            title: 'Design Modernization',
+            title: 'Design modernisation',
             subtitle:
-              'We modernize your design to align with current trends and user expectations, ensuring your product remains competitive.',
+              'We modernise your design to align with current trends and user expectations, ensuring your product remains competitive.',
           },
           {
             fa_icon: 'fa-mobile-alt',
@@ -3507,7 +3507,7 @@ export const MOCK_DESIGN_SERVICES = [
             key: 'faqs-2',
             title: 'What are the benefits of working with your UI/UX Revamp Service?',
             content:
-              'Our UI/UX Revamp Service specializes in modernizing and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
+              'Our UI/UX Revamp Service specializes in modernising and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
           },
           {
             key: 'faqs-3',
@@ -3686,7 +3686,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'In today\'s data-centric world, data governance is crucial to ensuring the quality, integrity, and security of your business data. We specialize in crafting and implementing comprehensive data governance strategies tailored to your enterprise. Our team of experts takes a proactive approach, enabling you to stay ahead of regulatory requirements, manage risk, and promote data accountability within your organization. We believe in establishing a strong data culture that not only meets compliance requirements but also fuels data-driven innovation.',
+              'In today\'s data-centric world, data governance is crucial to ensuring the quality, integrity, and security of your business data. We specialize in crafting and implementing comprehensive data governance strategies tailored to your enterprise. Our team of experts takes a proactive approach, enabling you to stay ahead of regulatory requirements, manage risk, and promote data accountability within your organisation. We believe in establishing a strong data culture that not only meets compliance requirements but also fuels data-driven innovation.',
           },
         ],
       },
@@ -3715,9 +3715,9 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             fa_icon: 'fa-users-cog',
-            title: 'Organizational Alignment',
+            title: 'organisational Alignment',
             subtitle:
-              'We promote data accountability across your organization, driving data stewardship and fostering a data-conscious culture.',
+              'We promote data accountability across your organisation, driving data stewardship and fostering a data-conscious culture.',
           },
           {
             fa_icon: 'fa-chart-bar',
@@ -3742,19 +3742,19 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-1',
             title: 'Why is data governance important for my business?',
             content:
-              'Effective data governance ensures the quality, consistency, and security of your business data. This not only helps you meet regulatory compliance, but also promotes data accountability within your organization, leading to more accurate, data-driven decisions and business growth.',
+              'Effective data governance ensures the quality, consistency, and security of your business data. This not only helps you meet regulatory compliance, but also promotes data accountability within your organisation, leading to more accurate, data-driven decisions and business growth.',
           },
           {
             key: 'faqs-2',
             title: 'What are the benefits of working with your Data Governance Service?',
             content:
-              'Our Data Governance Service provides a comprehensive approach to managing your data assets. We help you craft and implement a data governance strategy that aligns with your business objectives. This includes defining a clear roadmap, ensuring data privacy and security, managing data quality, aligning your organization, and setting key performance indicators for ongoing evaluation.',
+              'Our Data Governance Service provides a comprehensive approach to managing your data assets. We help you craft and implement a data governance strategy that aligns with your business objectives. This includes defining a clear roadmap, ensuring data privacy and security, managing data quality, aligning your organisation, and setting key performance indicators for ongoing evaluation.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach data governance?',
             content:
-              'We take a proactive approach to data governance, starting with understanding your business objectives and data landscape. We then craft a comprehensive data governance strategy and implementation roadmap. We also prioritize data quality, privacy and security, organizational alignment, and performance measurement to ensure your data governance is effective and brings value to your organization.',
+              'We take a proactive approach to data governance, starting with understanding your business objectives and data landscape. We then craft a comprehensive data governance strategy and implementation roadmap. We also prioritize data quality, privacy and security, organisational alignment, and performance measurement to ensure your data governance is effective and brings value to your organisation.',
           },
         ],
       },
@@ -3865,7 +3865,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'Given the competitive landscape enterprises find themselves in, making informed decisions is key to success. Our consulting service leverages cutting-edge technologies and proven methodologies to turn your data into meaningful insights. We work closely with your team to understand your business objectives and challenges. Our consultants provide expert guidance to help you make the most of your data, fostering a data-driven culture within your organization.',
+              'Given the competitive landscape enterprises find themselves in, making informed decisions is key to success. Our consulting service leverages cutting-edge technologies and proven methodologies to turn your data into meaningful insights. We work closely with your team to understand your business objectives and challenges. Our consultants provide expert guidance to help you make the most of your data, fostering a data-driven culture within your organisation.',
           },
         ],
       },
@@ -3909,7 +3909,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Training and Support',
             subtitle:
-              'We provide training and ongoing support to foster a data-driven culture within your organization.',
+              'We provide training and ongoing support to foster a data-driven culture within your organisation.',
           },
         ],
       },
@@ -3928,13 +3928,13 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-2',
             title: 'What are the benefits of working with your Business Intelligence Consulting Service?',
             content:
-              'We offer comprehensive BI consulting services, helping you manage your data, implement the right BI tools, and generate actionable insights. Our team of experts works closely with your organization, providing tailored solutions that align with your business objectives. We also provide training and support, ensuring your team is equipped to leverage your BI infrastructure effectively.',
+              'We offer comprehensive BI consulting services, helping you manage your data, implement the right BI tools, and generate actionable insights. Our team of experts works closely with your organisation, providing tailored solutions that align with your business objectives. We also provide training and support, ensuring your team is equipped to leverage your BI infrastructure effectively.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach business intelligence consulting?',
             content:
-              'We start by understanding your business objectives, data landscape, and current challenges. We then provide expert guidance on managing your data, choosing and implementing BI tools, and interpreting data outputs. We also offer training to foster a data-driven culture within your organization, ensuring your team can effectively use your BI tools and interpret the insights they provide.',
+              'We start by understanding your business objectives, data landscape, and current challenges. We then provide expert guidance on managing your data, choosing and implementing BI tools, and interpreting data outputs. We also offer training to foster a data-driven culture within your organisation, ensuring your team can effectively use your BI tools and interpret the insights they provide.',
           },
         ],
       },
@@ -4215,7 +4215,7 @@ export const MOCK_DATA_SERVICES = [
     category_id: 2,
     title: 'Data Pipeline Architecture',
     slug: 'data-pipeline-architecture',
-    subtitle: 'Engineer a streamlined, robust data flow for your organization with our expert solutions.',
+    subtitle: 'Engineer a streamlined, robust data flow for your organisation with our expert solutions.',
     hero_src: 'https://source.unsplash.com/KU9ABpm7eV8/1600x900',
     hero_alt: 'Connected data blocks',
     // Sections
@@ -4225,7 +4225,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'We focus on engineering efficient data flows that allow your organization to manage and utilize data effectively. In a world of data-driven decisions, a well-designed data pipeline is crucial. We prioritize scalability, reliability, and performance when designing your data pipeline architecture. Our team of experts ensures your data infrastructure aligns with your business goals and supports your growth.',
+              'We focus on engineering efficient data flows that allow your organisation to manage and utilize data effectively. In a world of data-driven decisions, a well-designed data pipeline is crucial. We prioritize scalability, reliability, and performance when designing your data pipeline architecture. Our team of experts ensures your data infrastructure aligns with your business goals and supports your growth.',
           },
         ],
       },
@@ -4404,7 +4404,7 @@ export const MOCK_DATA_SERVICES = [
         title: 'Streamlining data extraction, transformation, and loading.',
         items: [
           {
-            title: 'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organization. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
+            title: 'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organisation. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
           },
         ],
       },

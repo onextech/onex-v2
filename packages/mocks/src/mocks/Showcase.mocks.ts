@@ -422,7 +422,7 @@ export const MOCK_DESIGN_SHOWCASES = [
       leftGridSticky: {
         title: 'Meet IIX',
         subtitle:
-          'An investment enterprise with the vision of creating a platform for SMEs to make their investment impacts measurable and sustainble.',
+          'An investment enterprise with the vision of creating a platform for SMEs to make their investment impacts measurable and sustainable.',
         hero_src: '/showcases/iix/left.png',
         hero_alt: 'IIX Impact Partners Showcase 1',
       },
@@ -526,7 +526,7 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
       gallery: {
         title: 'Harnessing the Power of Automation',
         subtitle:
-          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance, empowering organizations to focus on higher-value tasks and achieve greater productivity.',
+          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance, empowering organisations to focus on higher-value tasks and achieve greater productivity.',
         items: [
           {
             title: '/showcases/tgb/gallery_1.png',

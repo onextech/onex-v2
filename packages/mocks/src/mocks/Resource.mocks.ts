@@ -44,7 +44,7 @@ export const MOCK_TECH_RESOURCES = [
         },
         {
           fa_icon: 'fa-mug-hot',
-          title: 'Overcome lack of organizational focus',
+          title: 'Overcome lack of organisational focus',
           subtitle:
             'We create human-centred designs focused on driving conversions and achieving business goals.',
         },
@@ -96,7 +96,7 @@ export const MOCK_TECH_RESOURCES = [
         },
         {
           fa_icon: 'fa-mug-hot',
-          title: 'Overcome lack of organizational focus',
+          title: 'Overcome lack of organisational focus',
           subtitle:
             'We create human-centred designs focused on driving conversions and achieving business goals.',
         },
@@ -186,9 +186,9 @@ export const MOCK_TECH_RESOURCES = [
   html:
     '<h4>Innovation that drives real impact.</h4>\n' +
     '\n' +
-    '<p>In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and posts that don&rsquo;t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.</p>\n' +
+    '<p>In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and posts that don&rsquo;t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.</p>\n' +
     '\n' +
-    '<p>Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.</p>\n',
+    '<p>Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.</p>\n',
   ...item,
 }))
 
