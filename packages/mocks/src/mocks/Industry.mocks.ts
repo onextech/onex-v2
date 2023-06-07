@@ -332,13 +332,13 @@ export const MOCK_GROUP_INDUSTRYS = [
             fa_icon: 'fa-globe',
             title: 'Digital Transformation Strategy',
             subtitle:
-              'We help government agencies develop and implement comprehensive digital transformation strategies to modernize operations and deliver citizen-centric services.',
+              'We help government agencies develop and implement comprehensive digital transformation strategies to modernise operations and deliver citizen-centric services.',
           },
           {
             fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            title: 'Legacy Systems Modernisation',
             subtitle:
-              'We assist in modernizing legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
+              'We assist in modernising legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
           },
         ],
       },
@@ -426,9 +426,9 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            title: 'Legacy Systems Modernisation',
             subtitle:
-              'We assist in modernizing legacy systems in the maritime industry, leveraging emerging technologies to enhance efficiency and reduce costs.',
+              'We assist in modernising legacy systems in the maritime industry, leveraging emerging technologies to enhance efficiency and reduce costs.',
           },
         ],
       },

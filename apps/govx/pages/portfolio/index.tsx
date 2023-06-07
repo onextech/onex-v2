@@ -19,7 +19,7 @@ const NextShowcasesPage: React.FC<NextShowcasesPageProps> = (props) => {
         seo={{
           title: 'Showcases',
           description:
-            'Explore our portfolio of successful digital transformation projcets. Invest with confidence in emerging technologies.',
+            'Explore our portfolio of successful digital transformation projects. Invest with confidence in emerging technologies.',
         }}
       >
         <ShowcasesPage showcases={showcases} />

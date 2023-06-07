@@ -1,7 +1,7 @@
 const isDev = process.env.NODE_ENV === 'development'
 
 export const MOCK_WORKSPACES = [
-  { title: 'One X Tech', href: 'https://onextech.com', subtitle: 'Discover how we modernize enterprise user experiences.' },
+  { title: 'One X Tech', href: 'https://onextech.com', subtitle: 'Discover how we modernise enterprise user experiences.' },
   { title: 'One X Design', href: 'https://onexdesign.com', subtitle: 'Discover how we build custom, user-centric enterprise designs.' },
   { title: 'One X Data', href: 'https://onexdata.com', subtitle: 'Discover how we utilize enterprise-scale AI to build digital solutions.' },
   { title: 'One X Labs', href: 'https://onexlabs.com', subtitle: 'Discover how we research & transform the future of web-driven applications.' },

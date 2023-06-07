@@ -140,7 +140,7 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     '<p>The newly updated website for One X Tech highlights actual success tales, emphasizing the radical transformation of their clients\' businesses as a result of their solutions. Businesses can see firsthand through these case studies how One X Tech has aided organizations in overcoming obstacles and achieving outstanding outcomes.</p>' +
     '<h2>Leadership in thought</h2>' +
     '<p>The website has a section devoted to thought leadership that provides useful materials like professional insights. Visitors can keep up with the newest fashions, cutting-edge innovations, and best business practices to help them innovate and advance their companies.</p>' +
-    '<p>"One X Tech\'s newly updated website is more than just an online presence. It is evidence of our unwavering dedication to expanding the frontiers of technological innovation, according to Mr Koh. "We invite companies to explore our new platform, interact with our experts, and learn how we can open up fresh possibilities for development, effectiveness, and transformation. ".</p>' +
+    '<p>"One X Tech\'s newly updated website is more than just an online presence. It is evidence of our unwavering dedication to expanding the frontiers of technological innovation, according to Mr Koh. "We invite companies to explore our new platform, interact with our experts, and learn how we can open up fresh possibilities for development, effectiveness, and transformation."</p>' +
     '<p><strong>For more information, contact:</strong></p>' +
     '<p><strong>Lu ShuHui</strong></p>' +
     '<p>Business Development Director</p>' +

@@ -525,30 +525,30 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 2,
     // Hero
-    title: 'Application Modernization',
-    slug: 'application-modernization',
+    title: 'Application modernisation',
+    slug: 'application-modernisation',
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
     hero_src: 'https://source.unsplash.com/jJT2r2n7lYA/1600x900',
     hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
-      title: 'Application Modernization',
+      title: 'Application modernisation',
       description:
-        'Modernize your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
+        'modernise your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
     // Sections
     sections: {
       summary: {
-        title: 'Transform your business with application modernization.',
+        title: 'Transform your business with application modernisation.',
         items: [
           {
             title:
-              'Legacy systems and applications can hold your business back, making it difficult to innovate and scale. Our Application Modernization service helps you upgrade outdated systems and applications to modern, scalable architectures that can drive business growth and fuel innovation.',
+              'Legacy systems and applications can hold your business back, making it difficult to innovate and scale. Our Application modernisation service helps you upgrade outdated systems and applications to modern, scalable architectures that can drive business growth and fuel innovation.',
           },
           {
             title:
-              'We take a comprehensive approach to application modernization, working closely with your team to assess your existing systems, identify opportunities for improvement, and develop a detailed roadmap for modernization. Our team of experts uses the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+              'We take a comprehensive approach to application modernisation, working closely with your team to assess your existing systems, identify opportunities for improvement, and develop a detailed roadmap for modernisation. Our team of experts uses the latest technologies, development methodologies, and best practices to ensure that your modernised applications deliver maximum value to your business.',
           },
         ],
       },
@@ -556,13 +556,13 @@ export const MOCK_TECH_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'To modernize your applications, we follow a comprehensive set of practices that include application assessment, architecture redesign, migration, and ongoing support.',
+          'To modernise your applications, we follow a comprehensive set of practices that include application assessment, architecture redesign, migration, and ongoing support.',
         items: [
           {
             fa_icon: 'fa-cogs',
             title: 'Application assessment',
             subtitle:
-              'We assess your legacy applications to identify areas for improvement, evaluate technical debt, and prioritize modernization efforts.',
+              'We assess your legacy applications to identify areas for improvement, evaluate technical debt, and prioritize modernisation efforts.',
           },
           {
             fa_icon: 'fa-layer-group',
@@ -586,40 +586,40 @@ export const MOCK_TECH_SERVICES = [
             fa_icon: 'fa-code-branch',
             title: 'Continuous improvement',
             subtitle:
-              'We establish DevOps practices and implement automated testing, deployment, and monitoring to ensure ongoing improvement and stability of your modernized applications.',
+              'We establish DevOps practices and implement automated testing, deployment, and monitoring to ensure ongoing improvement and stability of your modernised applications.',
           },
           {
             fa_icon: 'fa-users',
             title: 'Collaboration',
             subtitle:
-              'We work closely with your team, including business stakeholders and IT personnel, to ensure the modernization process aligns with your business goals and requirements.',
+              'We work closely with your team, including business stakeholders and IT personnel, to ensure the modernisation process aligns with your business goals and requirements.',
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Application Modernization service and how we can help your business.',
+          'Learn more about our Application modernisation service and how we can help your business.',
         items: [
           {
             key: 'faqs-1',
             title:
-              'Why is application modernization important for my business?',
+              'Why is application modernisation important for my business?',
             content:
-              "Application modernization is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. Modernized applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
+              "Application modernisation is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. modernised applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
           },
           {
             key: 'faqs-2',
             title:
-              'What are the benefits of working with your Application Modernization service?',
+              'What are the benefits of working with your Application modernisation service?',
             content:
-              'Our Application Modernization service offers a comprehensive approach to modernizing your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernized applications deliver maximum value to your business.',
+              'Our Application modernisation service offers a comprehensive approach to modernising your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernised applications deliver maximum value to your business.',
           },
           {
             key: 'how-it-works-3',
-            title: 'How do you approach application modernization?',
+            title: 'How do you approach application modernisation?',
             content:
-              'We begin by assessing your existing systems and applications to identify opportunities for modernization and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
+              'We begin by assessing your existing systems and applications to identify opportunities for modernisation and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
           },
         ],
       },
@@ -1015,7 +1015,7 @@ export const MOCK_TECH_SERVICES = [
             key: 'faqs-1',
             title: 'Why are agile development teams important for my enterprise business?',
             content:
-              'Development teams are crucial for enterprise businesses because they ensure faster delivery, adapatability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
+              'Development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
           },
           {
             key: 'faqs-2',
@@ -2068,7 +2068,7 @@ export const MOCK_GROUP_SERVICES = [
     seo: {
       title: 'Application Re-engineering',
       description:
-        'Discover our Application Re-engineering services designed to optimize, modernize, and revamp your existing software applications.',
+        'Discover our Application Re-engineering services designed to optimize, modernise, and revamp your existing software applications.',
     },
     // Sections
     sections: {
@@ -2077,7 +2077,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernize, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
+              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernise, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
           },
           {
             title:
@@ -2089,7 +2089,7 @@ export const MOCK_GROUP_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We offer end-to-end application re-engineering services to modernize and optimize your legacy applications.',
+          'We offer end-to-end application re-engineering services to modernise and optimize your legacy applications.',
         items: [
           {
             fa_icon: 'fa-code-branch',
@@ -2099,7 +2099,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             fa_icon: 'fa-refresh',
-            title: 'Application migration and modernization',
+            title: 'Application migration and modernisation',
             subtitle:
               'We migrate your legacy applications to modern platforms and architectures, ensuring compatibility, scalability, and improved performance.',
           },
@@ -2138,7 +2138,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why is Application Re-engineering important for my business?',
             content:
-              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernizing, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
+              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
@@ -3444,7 +3444,7 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             title:
-              'In this digital age, having a cutting-edge UI/UX design is crucial for the success of any business. At our UI/UX Revamp Service, we focus on modernizing and enhancing your interfaces to create a more enjoyable and intuitive user experience. We understand that the user is at the heart of every design. Our approach prioritizes user needs and expectations, ensuring an end product that is not just visually appealing but also functional and user-friendly.',
+              'In this digital age, having a cutting-edge UI/UX design is crucial for the success of any business. At our UI/UX Revamp Service, we focus on modernising and enhancing your interfaces to create a more enjoyable and intuitive user experience. We understand that the user is at the heart of every design. Our approach prioritizes user needs and expectations, ensuring an end product that is not just visually appealing but also functional and user-friendly.',
           },
         ],
       },
@@ -3456,9 +3456,9 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             fa_icon: 'fa-sync',
-            title: 'Design Modernization',
+            title: 'Design modernisation',
             subtitle:
-              'We modernize your design to align with current trends and user expectations, ensuring your product remains competitive.',
+              'We modernise your design to align with current trends and user expectations, ensuring your product remains competitive.',
           },
           {
             fa_icon: 'fa-mobile-alt',
@@ -3507,7 +3507,7 @@ export const MOCK_DESIGN_SERVICES = [
             key: 'faqs-2',
             title: 'What are the benefits of working with your UI/UX Revamp Service?',
             content:
-              'Our UI/UX Revamp Service specializes in modernizing and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
+              'Our UI/UX Revamp Service specializes in modernising and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
           },
           {
             key: 'faqs-3',

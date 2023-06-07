@@ -834,7 +834,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>Limitations</h3>\n' +
       "<p>In no event shall {appTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {appTitle} Pte Ltd's website, even if {appTitle} Pte Ltd or a {appTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
       '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However {appTitle} Pte Ltd does not make ay commitment to update the materials.</p>\n" +
+      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However, {appTitle} Pte Ltd does not make any commitment to update the materials.</p>\n" +
       '<h3>Links</h3>\n' +
       "<p>{appTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {appTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
       '<h3>Modifications</h3>\n' +
@@ -1616,7 +1616,7 @@ const MOCK_TECH_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Modernizing the Enterprise User Experience',
+        title: 'Modernising the Enterprise User Experience',
         subtitle:
           'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
         items: [
@@ -1742,7 +1742,7 @@ const MOCK_TECH_PAGES = [
     sections: {
       hero: {
         overline: '{appTitle}',
-        title: 'Modernizing Enterprise User Experiences',
+        title: 'Modernising Enterprise User Experiences',
         subtitle:
           "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
       },
