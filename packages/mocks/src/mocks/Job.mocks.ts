@@ -41,7 +41,7 @@ export const MOCK_JOBS = [
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Ensures best possible planning, execution and management of resources in accordance with business strategies and guidelines (regional budget management, manpower, project execution timelines, and cadence).</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
-    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Drive adherence to the consistent application of organizational processes and administrative standards to maintain efficient operations through personal example.</span></span></span></div>\n' +
+    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Drive adherence to the consistent application of organisational processes and administrative standards to maintain efficient operations through personal example.</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">&nbsp;Future acquisitions that may include merchants and other industries that will have GoTyme Bank as one of the MOPs.</span></span></span></div>\n' +

@@ -139,11 +139,11 @@ export const MOCK_DATA_PAGE = {
       items: [
         {
           title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
         {
           title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+            'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
         },
       ],
     },
@@ -263,11 +263,11 @@ export const MOCK_DESIGN_PAGE = {
       items: [
         {
           title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
         {
           title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+            'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
         },
       ],
     },
@@ -387,11 +387,11 @@ export const MOCK_DIGITAL_PAGE = {
       items: [
         {
           title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
         {
           title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+            'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
         },
       ],
     },
@@ -601,11 +601,11 @@ export const MOCK_VENTURES_PAGE = {
       items: [
         {
           title:
-            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+            'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
         },
         {
           title:
-            'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+            'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
         },
       ],
     },
@@ -834,7 +834,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>Limitations</h3>\n' +
       "<p>In no event shall {appTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {appTitle} Pte Ltd's website, even if {appTitle} Pte Ltd or a {appTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
       '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However {appTitle} Pte Ltd does not make ay commitment to update the materials.</p>\n" +
+      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However, {appTitle} Pte Ltd does not make any commitment to update the materials.</p>\n" +
       '<h3>Links</h3>\n' +
       "<p>{appTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {appTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
       '<h3>Modifications</h3>\n' +
@@ -951,14 +951,14 @@ const MOCK_COMMON_PAGES = [
       '<p>We conduct regular audits to verify compliance with our data retention policies. These audits review our data storage systems and practices to ensure data is not being held beyond its necessary lifespan. Any identified issues are promptly rectified to ensure ongoing compliance.</p>' +
       '<h2><strong>8. Transfer Limitation</strong></h2>' +
       '<h3><strong>8.1 Data Transfer Protocols</strong></h3>' +
-      '<p>We have rigorous protocols in place for any instances where personal data needs to be transferred, either within the organization or to third parties. These protocols ensure that any data transfer is carried out securely and in line with data protection regulations.</p>' +
+      '<p>We have rigorous protocols in place for any instances where personal data needs to be transferred, either within the organisation or to third parties. These protocols ensure that any data transfer is carried out securely and in line with data protection regulations.</p>' +
       '<h3><strong>8.2 Evaluating Recipient Data Practices</strong></h3>' +
       '<p>Before transferring personal data to third parties, we meticulously assess their data handling practices and security measures. We only engage with partners who demonstrate a high level of commitment to data privacy and protection.</p>' +
       '<h3><strong>8.3 Use of Secure Transfer Technologies</strong></h3>' +
       '<p>In the event of data transfer, we employ secure technologies such as encryption and secure file transfer protocols. These technologies ensure that data remains protected during transit and only authorized recipients can access it.</p>' +
       '<h2><strong>9. Accountability</strong></h2>' +
       '<h3><strong>9.1 Clear Data Governance Structure</strong></h3>' +
-      '<p>We have a clear data governance structure in place that outlines responsibilities and processes for data protection. This structure ensures accountability at all levels of the organization and promotes a culture of data protection.</p>' +
+      '<p>We have a clear data governance structure in place that outlines responsibilities and processes for data protection. This structure ensures accountability at all levels of the organisation and promotes a culture of data protection.</p>' +
       '<h3><strong>9.2 Regular Staff Training and Awareness</strong></h3>' +
       '<p>To ensure all staff understand their roles in data protection, we conduct regular training sessions and awareness programs. These initiatives reinforce the importance of data privacy and familiarize staff with our data protection policies and procedures.</p>' +
       '<h3><strong>9.3 Compliance Reporting and Oversight</strong></h3>' +
@@ -1261,11 +1261,11 @@ const MOCK_GROUP_PAGES = [
         items: [
           {
             title:
-              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
           },
           {
             title:
-              'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
           },
         ],
       },
@@ -1415,7 +1415,7 @@ const MOCK_GROUP_PAGES = [
           {
             key: 'how-it-works-7',
             title: 'How do you handle scalability and future growth considerations in your software solutions?',
-            content: 'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organization.',
+            content: 'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
           },
           {
             key: 'how-it-works-8',
@@ -1616,7 +1616,7 @@ const MOCK_TECH_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Modernizing the Enterprise User Experience',
+        title: 'Modernising the Enterprise User Experience',
         subtitle:
           'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
         items: [
@@ -1742,7 +1742,7 @@ const MOCK_TECH_PAGES = [
     sections: {
       hero: {
         overline: '{appTitle}',
-        title: 'Modernizing Enterprise User Experiences',
+        title: 'Modernising Enterprise User Experiences',
         subtitle:
           "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
       },
@@ -1751,11 +1751,11 @@ const MOCK_TECH_PAGES = [
         items: [
           {
             title:
-              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organizations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
           },
           {
             title:
-              'Strategic innovation requires organizations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organizations can empower growth and innovation from the inside out.',
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
           },
         ],
       },
@@ -1812,7 +1812,7 @@ const MOCK_TECH_PAGES = [
             fa_icon: 'fa-cogs',
             title: 'Customized Solutions',
             subtitle:
-              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organization's goals and processes.",
+              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organisation's goals and processes.",
           },
           {
             fa_icon: 'fa-tasks',
@@ -2176,7 +2176,7 @@ export const MOCK_DATA_PAGES = [
             overline: '03',
             title: 'Data Strategy and Consulting',
             subtitle:
-              'Our expert consultants work closely with your organization to develop tailored data strategies, ensuring data governance, privacy, and security while maximizing the value of your data assets.',
+              'Our expert consultants work closely with your organisation to develop tailored data strategies, ensuring data governance, privacy, and security while maximizing the value of your data assets.',
           },
           {
             avatar_src: '/images/about_shape_circles.svg',
@@ -2601,7 +2601,7 @@ export const MOCK_DESIGN_PAGES = [
             overline: '03',
             title: 'Empowering Teams',
             subtitle:
-              'Our interactive workshops equip product teams with the skills and knowledge to create exceptional user experiences, fostering a user-centric mindset within your organization.',
+              'Our interactive workshops equip product teams with the skills and knowledge to create exceptional user experiences, fostering a user-centric mindset within your organisation.',
           },
           {
             avatar_src: '/images/about_shape_circles.svg',

@@ -86,7 +86,7 @@ export const MOCK_TECH_SITE = {
   absolute_url: 'https://www.onextech.com',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with One X Tech.',
+  cta_title: 'Modernise Enterprise UI with One X Tech.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onextech.com',
@@ -201,7 +201,7 @@ export const MOCK_DIGITAL_SITE = {
   absolute_url: 'https://www.onexdigital.co',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with One X Tech.',
+  cta_title: 'Modernise Enterprise UI with One X Tech.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onextech.com',
@@ -247,7 +247,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with FinX',
+  cta_title: 'Modernise Enterprise UI with FinX',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
@@ -293,7 +293,7 @@ export const MOCK_GOVX_SITE = {
   absolute_url: 'https://www.govx.ai',
 
   // Cta
-  cta_title: 'Modernize Enterprise UI with GovX.',
+  cta_title: 'Modernise Enterprise UI with GovX.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@govx.ai',

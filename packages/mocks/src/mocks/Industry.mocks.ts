@@ -204,7 +204,7 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             title:
-              'Our deep industry knowledge and technological expertise make us uniquely positioned to help your organization navigate its digital transformation journey. We build solutions that not only meet your current needs but also scale with your future growth.',
+              'Our deep industry knowledge and technological expertise make us uniquely positioned to help your organisation navigate its digital transformation journey. We build solutions that not only meet your current needs but also scale with your future growth.',
           },
         ],
       },
@@ -282,7 +282,7 @@ export const MOCK_GROUP_INDUSTRYS = [
   {
     title: 'Government',
     subtitle:
-      'We combine technology and a delivery-focused culture to enable leaders across public sector organizations to turn ambition into action.',
+      'We combine technology and a delivery-focused culture to enable leaders across public sector organisations to turn ambition into action.',
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     is_featured: true,
@@ -332,13 +332,13 @@ export const MOCK_GROUP_INDUSTRYS = [
             fa_icon: 'fa-globe',
             title: 'Digital Transformation Strategy',
             subtitle:
-              'We help government agencies develop and implement comprehensive digital transformation strategies to modernize operations and deliver citizen-centric services.',
+              'We help government agencies develop and implement comprehensive digital transformation strategies to modernise operations and deliver citizen-centric services.',
           },
           {
             fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            title: 'Legacy Systems Modernisation',
             subtitle:
-              'We assist in modernizing legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
+              'We assist in modernising legacy systems, enabling government agencies to leverage emerging technologies and enhance service delivery.',
           },
         ],
       },
@@ -392,7 +392,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         overline: 'Our Solutions',
         title: 'Empowering the {title} Sector',
         subtitle:
-          'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organizations stay ahead in a rapidly evolving digital landscape.',
+          'With our deep knowledge of the maritime industry and cutting-edge technologies, we offer a range of solutions that help maritime organisations stay ahead in a rapidly evolving digital landscape.',
         items: [
           {
             fa_icon: 'fa-cogs',
@@ -426,16 +426,16 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            title: 'Legacy Systems Modernisation',
             subtitle:
-              'We assist in modernizing legacy systems in the maritime industry, leveraging emerging technologies to enhance efficiency and reduce costs.',
+              'We assist in modernising legacy systems in the maritime industry, leveraging emerging technologies to enhance efficiency and reduce costs.',
           },
         ],
       },
       faqs: {
         title: 'Frequently Asked Questions',
         subtitle:
-          'Learn more about our Maritime Solutions and how they can benefit your organization.',
+          'Learn more about our Maritime Solutions and how they can benefit your organisation.',
         items: [
           {
             key: 'faqs-1',
@@ -482,7 +482,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         overline: 'Our Solutions',
         title: 'Empowering the {title} Sector',
         subtitle:
-          'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organizations thrive in a digital-first era.',
+          'With our deep knowledge of the real estate industry and cutting-edge technologies, we offer a range of solutions that help real estate organisations thrive in a digital-first era.',
         items: [
           {
             fa_icon: 'fa-building',
@@ -525,7 +525,7 @@ export const MOCK_GROUP_INDUSTRYS = [
       faqs: {
         title: 'Frequently Asked Questions',
         subtitle:
-          'Learn more about our Real Estate Solutions and how they can benefit your organization.',
+          'Learn more about our Real Estate Solutions and how they can benefit your organisation.',
         items: [
           {
             key: 'faqs-1',
@@ -751,19 +751,19 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a high-quality user interface important for government organizations?',
+            title: 'Why is a high-quality user interface important for government organisations?',
             content:
-              'A high-quality user interface is crucial for government organizations as it enhances citizen experience, promotes transparency, and facilitates access to government services. It improves engagement, fosters trust, and enables efficient interaction with government systems and platforms.',
+              'A high-quality user interface is crucial for government organisations as it enhances citizen experience, promotes transparency, and facilitates access to government services. It improves engagement, fosters trust, and enables efficient interaction with government systems and platforms.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your company for government organizations?',
+            title: 'What are the benefits of working with your company for government organisations?',
             content:
-              'By partnering with our software development company, government organizations can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the public sector. We prioritize security, compliance, and accessibility to meet government standards and regulations. Our solutions empower government entities to deliver citizen-centric services, leverage data-driven insights, and enhance overall governance.',
+              'By partnering with our software development company, government organisations can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the public sector. We prioritize security, compliance, and accessibility to meet government standards and regulations. Our solutions empower government entities to deliver citizen-centric services, leverage data-driven insights, and enhance overall governance.',
           },
           {
             key: 'faqs-3',
-            title: 'How do we approach frontend software engineering and dashboard development for government organizations?',
+            title: 'How do we approach frontend software engineering and dashboard development for government organisations?',
             content:
               'Our approach involves in-depth collaboration with government stakeholders to understand their unique requirements and objectives. We prioritize usability, accessibility, and data visualization to create user interfaces and dashboards that cater to diverse user groups. We follow industry best practices, adhere to government standards, conduct thorough security assessments, and ensure compliance with relevant regulations. Our solutions focus on enhancing service delivery, promoting open data initiatives, and driving digital transformation in the government sector.',
           },
@@ -818,7 +818,7 @@ export const MOCK_TECH_INDUSTRYS = [
             fa_icon: 'fa-line-chart',
             title: 'Data analytics and visualization',
             subtitle:
-              'We provide advanced data analytics and visualization tools that help maritime organizations gain valuable insights and make data-driven decisions.',
+              'We provide advanced data analytics and visualization tools that help maritime organisations gain valuable insights and make data-driven decisions.',
           },
           {
             fa_icon: 'fa-map-marked-alt',
@@ -842,7 +842,7 @@ export const MOCK_TECH_INDUSTRYS = [
             fa_icon: 'fa-chart-pie',
             title: 'Performance measurement and reporting',
             subtitle:
-              'We help maritime organizations track and measure their performance through comprehensive performance measurement and reporting tools.',
+              'We help maritime organisations track and measure their performance through comprehensive performance measurement and reporting tools.',
           },
         ],
       },
@@ -867,7 +867,7 @@ export const MOCK_TECH_INDUSTRYS = [
           key: 'faqs-3',
           title: 'How do you ensure the security of maritime data in your software solutions?',
           content:
-            'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organizations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
+            'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organisations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
         },
       ],
     },
@@ -1212,7 +1212,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
           },
           {
             title:
-              'Through enterprise product design and UX workshops, we enable maritime organizations to improve user engagement, streamline processes, and foster innovation. We bring an understanding of the maritime industry’s specific challenges and opportunities, ensuring our solutions deliver real value.',
+              'Through enterprise product design and UX workshops, we enable maritime organisations to improve user engagement, streamline processes, and foster innovation. We bring an understanding of the maritime industry’s specific challenges and opportunities, ensuring our solutions deliver real value.',
           },
         ],
       },
@@ -1314,7 +1314,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
           },
           {
             title:
-              'Through enterprise product design and UX workshops, we help real estate organizations improve user engagement, streamline processes, and foster innovation. With deep understanding of the specific challenges and opportunities in real estate, we ensure our solutions deliver value.',
+              'Through enterprise product design and UX workshops, we help real estate organisations improve user engagement, streamline processes, and foster innovation. With deep understanding of the specific challenges and opportunities in real estate, we ensure our solutions deliver value.',
           },
         ],
       },
@@ -1377,7 +1377,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
             key: 'faqs-2',
             title: 'How do your UX workshops benefit real estate teams?',
             content:
-              'Our UX workshops equip real estate teams with knowledge and skills to adopt user-centric design principles. This helps enhance user satisfaction, streamline processes, and foster digital innovation within the organization.',
+              'Our UX workshops equip real estate teams with knowledge and skills to adopt user-centric design principles. This helps enhance user satisfaction, streamline processes, and foster digital innovation within the organisation.',
           },
           {
             key: 'faqs-3',
@@ -1527,7 +1527,7 @@ export const MOCK_DATA_INDUSTRYS = [
     seo: {
       title: 'Government',
       description:
-        'This page details our expertise in leveraging data science and AI to create transformative solutions for government organizations.',
+        'This page details our expertise in leveraging data science and AI to create transformative solutions for government organisations.',
     },
     // Sections
     sections: {
@@ -1536,7 +1536,7 @@ export const MOCK_DATA_INDUSTRYS = [
         items: [
           {
             title:
-              'In the public sector, making data-driven decisions is crucial. Our data science and AI solutions are designed to meet the unique challenges of government organizations, enabling them to uncover valuable insights and drive efficiency and transparency.',
+              'In the public sector, making data-driven decisions is crucial. Our data science and AI solutions are designed to meet the unique challenges of government organisations, enabling them to uncover valuable insights and drive efficiency and transparency.',
           },
           {
             title:
@@ -1548,7 +1548,7 @@ export const MOCK_DATA_INDUSTRYS = [
         overline: 'Our Solutions',
         title: 'Empowering the {title} Sector',
         subtitle:
-          'We offer a wide range of data science and AI solutions tailored to the needs of government organizations.',
+          'We offer a wide range of data science and AI solutions tailored to the needs of government organisations.',
         items: [
           {
             fa_icon: 'fa-brain',
@@ -1560,7 +1560,7 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-chart-bar',
             title: 'Predictive Analytics',
             subtitle:
-              'Our predictive analytics solutions enable government organizations to anticipate future trends and make informed policy decisions.',
+              'Our predictive analytics solutions enable government organisations to anticipate future trends and make informed policy decisions.',
           },
           {
             fa_icon: 'fa-robot',
@@ -1584,32 +1584,32 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-users-cog',
             title: 'Collaborative Approach',
             subtitle:
-              'We work closely with government organizations to understand their specific needs and deliver tailored AI solutions.',
+              'We work closely with government organisations to understand their specific needs and deliver tailored AI solutions.',
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Data Science & AI Solutions for Government and how we can empower your organization.',
+          'Learn more about our Data Science & AI Solutions for Government and how we can empower your organisation.',
         items: [
           {
             key: 'faqs-1',
             title: 'Why are data science and AI important for the public sector?',
             content:
-              'Data science and AI have the potential to revolutionize the public sector. They can help government organizations make more informed decisions, improve service delivery, and drive transparency and efficiency. Leveraging these technologies is key to meeting the demands of today’s digital age.',
+              'Data science and AI have the potential to revolutionize the public sector. They can help government organisations make more informed decisions, improve service delivery, and drive transparency and efficiency. Leveraging these technologies is key to meeting the demands of today’s digital age.',
           },
           {
             key: 'faqs-2',
             title: 'What are the benefits of your Data Science & AI Solutions?',
             content:
-              'Our data science and AI solutions help government organizations leverage their data in powerful ways. We provide tools to uncover valuable insights, predict future trends, and automate processes, all while ensuring the highest levels of security and compliance. We strive to deliver solutions that align with your public service objectives and drive meaningful improvement.',
+              'Our data science and AI solutions help government organisations leverage their data in powerful ways. We provide tools to uncover valuable insights, predict future trends, and automate processes, all while ensuring the highest levels of security and compliance. We strive to deliver solutions that align with your public service objectives and drive meaningful improvement.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach data science and AI in the public sector?',
             content:
-              'We start by understanding your organization’s specific needs and goals. We then design and implement data science and AI solutions tailored to these requirements. This may involve predictive analytics to inform policy decisions, AI automation to improve service delivery, or AI strategy consulting to foster innovation and efficiency.',
+              'We start by understanding your organisation’s specific needs and goals. We then design and implement data science and AI solutions tailored to these requirements. This may involve predictive analytics to inform policy decisions, AI automation to improve service delivery, or AI strategy consulting to foster innovation and efficiency.',
           },
         ],
       },
@@ -1642,7 +1642,7 @@ export const MOCK_DATA_INDUSTRYS = [
           },
           {
             title:
-              'Whether it’s predictive maintenance for vessels, AI-powered logistics management, or data-driven decision-making, we help maritime organizations navigate the complexities of the industry and seize new opportunities.',
+              'Whether it’s predictive maintenance for vessels, AI-powered logistics management, or data-driven decision-making, we help maritime organisations navigate the complexities of the industry and seize new opportunities.',
           },
         ],
       },
@@ -1668,7 +1668,7 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-analytics',
             title: 'Data-Driven Decision Making',
             subtitle:
-              'Our solutions help organizations make data-backed decisions, improving strategic planning and operational performance.',
+              'Our solutions help organisations make data-backed decisions, improving strategic planning and operational performance.',
           },
           {
             fa_icon: 'fa-user-shield',
@@ -1686,14 +1686,14 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-users-cog',
             title: 'Collaborative Approach',
             subtitle:
-              'We partner with maritime organizations to understand their specific needs and deliver tailored AI solutions.',
+              'We partner with maritime organisations to understand their specific needs and deliver tailored AI solutions.',
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Data Science & AI Solutions for the Maritime industry and how we can empower your organization.',
+          'Learn more about our Data Science & AI Solutions for the Maritime industry and how we can empower your organisation.',
         items: [
           {
             key: 'faqs-1',
@@ -1705,13 +1705,13 @@ export const MOCK_DATA_INDUSTRYS = [
             key: 'faqs-2',
             title: 'What are the benefits of your Data Science & AI Solutions?',
             content:
-              'Our solutions are designed to address the specific challenges and needs of the maritime industry. By leveraging our solutions, maritime organizations can increase operational efficiency, improve safety, and innovate faster. Our team of experts collaborates closely with your organization to ensure that our solutions deliver maximum value.',
+              'Our solutions are designed to address the specific challenges and needs of the maritime industry. By leveraging our solutions, maritime organisations can increase operational efficiency, improve safety, and innovate faster. Our team of experts collaborates closely with your organisation to ensure that our solutions deliver maximum value.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach data science and AI in the maritime industry?',
             content:
-              'We begin by understanding your organization’s unique needs and objectives. We then design and implement tailored data science and AI solutions to meet these needs. This may involve using machine learning for predictive maintenance, AI for logistics management, or data analytics for decision support.',
+              'We begin by understanding your organisation’s unique needs and objectives. We then design and implement tailored data science and AI solutions to meet these needs. This may involve using machine learning for predictive maintenance, AI for logistics management, or data analytics for decision support.',
           },
         ],
       },
@@ -1770,7 +1770,7 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-analytics',
             title: 'Data-Driven Decision Making',
             subtitle:
-              'Our solutions enable organizations to make data-backed decisions, improving strategic planning and operational performance.',
+              'Our solutions enable organisations to make data-backed decisions, improving strategic planning and operational performance.',
           },
           {
             fa_icon: 'fa-user-shield',
@@ -1788,14 +1788,14 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-users-cog',
             title: 'Collaborative Approach',
             subtitle:
-              'We partner with real estate organizations to understand their specific needs and deliver tailored AI solutions.',
+              'We partner with real estate organisations to understand their specific needs and deliver tailored AI solutions.',
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Data Science & AI Solutions for the Real Estate industry and how we can empower your organization.',
+          'Learn more about our Data Science & AI Solutions for the Real Estate industry and how we can empower your organisation.',
         items: [
           {
             key: 'faqs-1',
@@ -1813,7 +1813,7 @@ export const MOCK_DATA_INDUSTRYS = [
             key: 'faqs-3',
             title: 'How do you approach data science and AI in the real estate industry?',
             content:
-              'We start by understanding your specific business needs and objectives. Then we design and implement tailored data science and AI solutions to address these needs. This could involve using machine learning for predictive analytics, AI for customer profiling, or data analytics for strategic decision-making. Our team collaborates closely with your organization to ensure our solutions deliver maximum value.',
+              'We start by understanding your specific business needs and objectives. Then we design and implement tailored data science and AI solutions to address these needs. This could involve using machine learning for predictive analytics, AI for customer profiling, or data analytics for strategic decision-making. Our team collaborates closely with your organisation to ensure our solutions deliver maximum value.',
           },
         ],
       },
