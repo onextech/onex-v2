@@ -16,6 +16,9 @@ export * from './Industry.types'
 export type { default as Technology } from './Technology.types'
 export * from './Technology.types'
 
+export { default as FormCategory } from './FormCategory.types'
+export * from './FormCategory.types'
+
 export type { default as ClientTestimonial } from './ClientTestimonial.types'
 export * from './ClientTestimonial.types'
 

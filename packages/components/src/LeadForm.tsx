@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Form, FormSections } from '@gravis-os/form'
-import { ServiceCategory } from '@onex/types'
+import { FormCategory, ServiceCategory } from '@onex/types'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
@@ -43,7 +43,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
       )}
 
       <Form
-        id='lead-form'
+        id={FormCategory.LEAD}
         resetOnSubmitSuccess
         defaultValues={{
           name: '',

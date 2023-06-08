@@ -3,6 +3,7 @@ import { Form, FormSections } from '@gravis-os/form'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
+import { FormCategory } from '@onex/types'
 
 export interface ContactFormProps {
   onSubmit?: (values: any) => void
@@ -36,7 +37,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
       )}
 
       <Form
-        id='contact-form'
+        id={FormCategory.CONTACT}
         resetOnSubmitSuccess
         defaultValues={{
           name: '',
