@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLayout } from '@onex/providers'
 import { Blocks } from '@gravis-os/landing'
+import ContactPage from './ContactPage'
 
 export interface ContactSuccessPageProps {
   name?: string
@@ -9,7 +10,7 @@ export interface ContactSuccessPageProps {
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
   const { name, email } = props
-  const { site } = useLayout()
+  if (!name || !email) return <ContactPage />
   return (
     <Blocks
       items={[
