@@ -31,7 +31,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
             html && {
               type: 'html',
               title: html,
-              titleProps: { color: 'text.secondary', sx: { mt: 5 } },
+              titleProps: { color: 'text.primary', sx: { mt: 5 } },
             },
           ],
         },
