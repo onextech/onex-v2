@@ -4,6 +4,7 @@ const routeConfig = {
   MISSION: '/mission',
   CAREERS: '/careers',
   CONTACT: '/contact',
+  CONTACT_SUCCESS: '/contact-success',
   TERMS: '/terms',
   PRIVACY: '/privacy',
   COOKIES: '/cookies',

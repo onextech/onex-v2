@@ -3,7 +3,7 @@ import { Form, FormSections } from '@gravis-os/form'
 import toast from 'react-hot-toast'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
-import { FormCategory } from '@onex/types'
+import { FormCategoryEnum } from '@onex/types'
 
 export interface NewsletterFormProps {
   onSubmit?: (values: any) => void
@@ -37,7 +37,7 @@ const NewsletterForm: React.FC<NewsletterFormProps> = (props) => {
       )}
 
       <Form
-        id={FormCategory.NEWSLETTER}
+        id={FormCategoryEnum.NEWSLETTER}
         resetOnSubmitSuccess
         defaultValues={{
           email: '',

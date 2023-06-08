@@ -6,7 +6,9 @@ import { PageDetail } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
 import { useRouter } from 'next/router'
 
-export const getStaticProps = PageDetail.getStaticProps({ slug: 'contact' })
+export const getStaticProps = PageDetail.getStaticProps({
+  slug: 'contact-success',
+})
 
 export interface SuccessPageProps
   extends InferGetStaticPropsType<typeof getStaticProps> {}

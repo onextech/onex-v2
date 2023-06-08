@@ -798,7 +798,7 @@ export const MOCK_VENTURES_PAGE = {
 const MOCK_COMMON_PAGES = [
   {
     title: 'Success',
-    slug: 'success',
+    slug: 'contact-success',
     is_hidden_from_nav: true,
     subtitle:
       'We have received your message, and we will get back to you immediately!',

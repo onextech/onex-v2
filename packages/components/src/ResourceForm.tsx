@@ -3,7 +3,7 @@ import { Form, FormSections } from '@gravis-os/form'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { useRouter } from 'next/router'
-import { FormCategory } from '@onex/types'
+import { FormCategoryEnum } from '@onex/types'
 
 export interface ResourceFormProps {
   onSubmit?: (values: any) => void
@@ -30,7 +30,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
   return (
     <div>
       <Form
-        id={FormCategory.HONEYPOT}
+        id={FormCategoryEnum.HONEYPOT}
         resetOnSubmitSuccess
         defaultValues={{
           name: '',
