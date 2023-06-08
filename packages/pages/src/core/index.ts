@@ -94,6 +94,9 @@ export * from './ResourcePage'
 export { default as ResourceSuccessPage } from './ResourceSuccessPage'
 export * from './ResourceSuccessPage'
 
+export { default as ContactSuccessPage } from './ContactSuccessPage'
+export * from './ContactSuccessPage'
+
 export { default as ResourcesPage } from './ResourcesPage'
 export * from './ResourcesPage'
 

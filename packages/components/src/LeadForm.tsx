@@ -5,6 +5,7 @@ import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
 import { useLayout } from '@onex/providers'
+import { useRouter } from 'next/router'
 
 export interface LeadFormProps {
   serviceCategorys: ServiceCategory[]
@@ -19,6 +20,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
 
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
@@ -31,7 +33,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
     setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
-    
+    router.push(`/success?name=${values.name}&email=${values.email}`)
   }
 
   return (
