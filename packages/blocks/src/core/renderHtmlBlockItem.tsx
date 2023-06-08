@@ -17,6 +17,24 @@ const renderHtmlBlockItem = (props: RenderHtmlBlockItemProps) => {
               mt: 0,
               mb: 1,
             },
+            '& h1': {
+              fontFamily: 'h1.fontFamily',
+            },
+            '& h2': {
+              fontFamily: 'h2.fontFamily',
+            },
+            '& h3': {
+              fontFamily: 'h3.fontFamily',
+            },
+            '& h4': {
+              fontFamily: 'h4.fontFamily',
+            },
+            '& h5': {
+              fontFamily: 'h5.fontFamily',
+            },
+            '& h6': {
+              fontFamily: 'h6.fontFamily',
+            },
             '& p': {
               mt: 0,
               mb: 3,
