@@ -55,11 +55,10 @@ export interface NextDigitalPageProps
   extends DigitalPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextTechPage: React.FC<NextDigitalPageProps> = (props) => {
+const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
   const {
     page,
     showcases,
-    technologys,
     featuredPosts,
     industrys,
     pageProviderProps,
@@ -83,4 +82,4 @@ const NextTechPage: React.FC<NextDigitalPageProps> = (props) => {
   )
 }
 
-export default NextTechPage
+export default NextDigitalPage
