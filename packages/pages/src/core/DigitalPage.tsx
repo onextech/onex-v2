@@ -1,130 +1,110 @@
 import React from 'react'
 import { Block, Blocks } from '@gravis-os/landing'
 import {
-  renderFadeToBottomBackgroundImageBlock,
-  renderThreeColumnGridBlock,
-  renderHalfGridBlock,
-  renderHeroWithBackgroundBlock,
-  renderRightChecklistBlock,
-  renderFaqsAccordionBlock,
   renderClientLogosImageMarqueeBlock,
-  renderClientHighlightsImageMarqueeBlock,
+  renderLeftHeroWithBackgroundBlock,
+  renderShowcasesBlock,
+  renderThreeColumnGridBlock,
+  renderTechnologysBlock,
+  renderFeaturedPostsBlock,
+  renderFeaturedIndustrysBlock,
+  renderFaqsAccordionBlock,
+  renderCtaBlock,
+  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
-import { Slider } from '@gravis-os/ui'
+import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
+import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {
   page: Page
+  showcases: Showcase[]
+  featuredPosts: Post[]
+  industrys: Industry[]
 }
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
-  const { page } = props
-  const { site, routeConfig, clientLogos, clientHighlights } = useLayout()
+  const { page, showcases, featuredPosts, industrys } = props
+  const router = useRouter()
+  const { site, clientLogos, clientHighlights } = useLayout()
+  const { locales, cta_button_title } = site
+  const localeTitle = locales?.find(
+    ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
+  )?.title
   const { sections } = page || {}
-  const { cta, callout, halfGrids, hero, benefits, features, faqs, checklist } =
-    sections || {}
+  const { hero, benefits, features, faqs, cta } = sections || {}
 
   return (
     <Blocks
       items={[
-        {
-          key: 'hero-with-background-fade-slider',
-          dark: true,
-          center: true,
-          disableContainer: true,
-          py: 0,
-          items: [
-            {
-              type: 'jsx',
-              title: (
-                <Slider
-                  autoplay
-                  loop
-                  arrows
-                  fade
-                  dots
-                  dotProps={{ color: 'secondary.main' }}
-                  height={{ xs: 500, md: 800 }}
-                  items={[
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        title: 'We are the Growth Company',
-                        ...hero,
-                        backgroundImageProps: {
-                          src: '/images/about_hero.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        ...hero,
-                        title: 'Unleash your X Factor',
-                        backgroundImageProps: {
-                          src: '/images/about_nodes_above_city.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                    <Block
-                      fill
-                      {...renderHeroWithBackgroundBlock({
-                        ...hero,
-                        title: "Deliver Tomorrow's Innovation Today",
-                        backgroundImageProps: {
-                          src: '/images/mission_earth.png',
-                          alt: 'hero',
-                        },
-                      })}
-                    />,
-                  ]}
-                />
-              ),
-            },
-          ],
-        },
+        // Hero
+        renderLeftHeroWithBackgroundBlock({
+          ...hero,
+          pt: { xs: 10, md: 18 },
+          pb: { xs: 3, md: 15 },
+          hero_src: '/images/hero_background_black_minimal.svg',
+          hero_alt: 'Black minimalistic background',
+          image_src: '/images/hero_glass_window_ui_grey.png',
+          image_alt: 'Website with trend analysis',
+          // image_src dimensions
+          imageProps: { ar: '643:572' } as any,
+          buttonProps: {
+            overline: 'Get Started',
+            title: cta_button_title,
+            isCta: true,
+          },
+        }),
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({
+          items: clientLogos.slice(0, 8),
+          sx: { backgroundColor: 'background.paper', position: 'relative' },
+        }),
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        // HalfGrid
-        ...halfGrids?.items?.map((halfGrid) => renderHalfGridBlock(halfGrid)),
-        // ClientLogosImageMarquee
-        renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
-        // Callout
-        renderFadeToBottomBackgroundImageBlock(callout),
+        // Showcases
+        renderShowcasesBlock({
+          title: (
+            <>
+              Transform Your Enterprise's <br /> Marketing Landscape
+            </>
+          ),
+          subtitle:
+            'Our transformative digital marketing solutions redefine your enterprise\'s marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.',
+          items: showcases,
+          pt: { xs: 5, md: 10 },
+        }),
+        // Industry
+        renderFeaturedIndustrysBlock({
+          title: 'Access Industry Expertise & Best Practices',
+          subtitle:
+            'We are committed to delivering digital marketing solutions that enable our clients to stay at the forefront of their industry. We constantly develop cutting-edge techniques and methodologies, ensuring that our clients always have access to the most effective digital marketing strategies in their field.',
+          items: industrys,
+          sx: { backgroundColor: 'background.paper' },
+        }),
+        // Posts
+        renderFeaturedPostsBlock({
+          title: localeTitle
+            ? `Read our Latest Insights in ${localeTitle}`
+            : `Read our Latest Insights`,
+          items: featuredPosts,
+        }),
         // Features
         renderThreeColumnGridBlock(features),
-        // Checklist
-        renderRightChecklistBlock({
-          py: 0,
-          ...checklist,
-        }),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },
           ...faqs,
+          sx: { backgroundColor: 'background.paper' },
         }),
         // Cta
-        renderFadeToBottomBackgroundImageBlock({
-          hero_src: '/images/data_men.png',
-          hero_alt: 'Two men working',
-          titleProps: { type: 'h3', maxWidth: 'xl' },
-          subtitleProps: {
-            type: 'body1',
-            maxWidth: 'xl',
-            titleProps: { maxWidth: '72%' },
-          },
-          buttonProps: {
-            overline: 'Contact Us',
-            title: 'Get in Touch',
-            href: `/${routeConfig.CONTACT}`,
-          },
-          ...cta,
+        renderCtaBlock({
+          item: cta,
+          pt: { xs: 5, md: 10 },
+          pb: 0,
+          sx: { backgroundColor: 'background.paper' },
         }),
       ]}
     />

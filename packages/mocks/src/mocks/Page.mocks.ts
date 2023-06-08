@@ -2843,7 +2843,525 @@ export const MOCK_DESIGN_PAGES = [
   },
 ].map((page) => merge({}, MOCK_DESIGN_PAGE, page))
 
-export const MOCK_DIGITAL_PAGES = MOCK_TECH_PAGES
+export const MOCK_DIGITAL_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.'
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'hero',
+        overline: '{appTitle}',
+        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title:
+          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+        subtitle:
+          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title:
+          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+        subtitle:
+          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Modernising the Enterprise User Experience',
+        subtitle:
+          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'User Interface Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          },
+          {
+            avatar_src: '/images/about_shape_circles.svg',
+            avatar_alt: 'Three overlapping circles',
+            overline: '04',
+            title: 'Software Architecture R&D',
+            subtitle:
+              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Global Frontend Delivery Services',
+        subtitle:
+          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Empower Enterprises with Extraordinary Experiences',
+        subtitle:
+          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo_title: '{appTitle} - Enterprise Frontend Development Services',
+    seo_description:
+      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    sections: {
+      hero: {
+        overline: '{appTitle}',
+        title: 'Elevating Enterprises to Greater Heights',
+        subtitle:
+          "{appTitle} harnesses the power of digital marketing to push business growth in {localeTitle}'s leading companies.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Enterprise-Level Digital Marketing Solutions',
+        subtitle:
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
+            subtitle:
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
+          },
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
+            subtitle:
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
+            subtitle:
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our data-driven approach combines the latest digital marketing trends, creative strategies, and analytical expertise to propel our clients ahead of the competition.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data-Driven Decision-Making',
+            subtitle:
+              'We base our strategies and tactics on thorough data analysis, ensuring that every marketing decision is backed by actionable insights and metrics.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle:
+              'We understand that each client is unique, so we tailor our digital marketing approach to align with their specific goals, target audience, and industry landscape.',
+          },
+          {
+            fa_icon: 'fa-bullseye',
+            title: 'Holistic Strategy Development',
+            subtitle:
+              "We take a comprehensive approach to digital marketing, considering all relevant channels and touchpoints to create cohesive and integrated campaigns that maximize results.",
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Continuous Innovation',
+            subtitle:
+              'We stay ahead of the curve by constantly researching and adopting emerging trends, tools, and technologies, ensuring our clients benefit from the latest advancements in the digital marketing landscape.',
+          },
+          {
+            fa_icon: 'fa-trophy',
+            title: 'Results-Oriented Focus',
+            subtitle:
+              'Our primary objective is to generate measurable results for our clients, whether it\'s increased brand visibility, higher website traffic, improved conversions, or enhanced customer engagement.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Continuous Optimization',
+            subtitle:
+              'We continuously monitor, analyze, and optimize campaign performance, identifying areas for improvement and implementing refinements to ensure maximum efficiency and effectiveness.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title:
+              'What experience and expertise do you have in digital marketing?',
+            content:
+              'Our team has extensive experience and expertise in digital marketing, encompassing a diverse range of strategies, techniques, and platforms to drive results for our clients.',
+          },
+          {
+            key: 'faq-2',
+            title:
+              'What industries do you have experience working in terms of digital marketing?',
+            content:
+              'We have worked with clients from various industries, including but not limited to e-commerce, finance, healthcare, technology, and professional services, providing digital marketing solutions tailored to the specific needs and nuances of each industry.',
+          },
+          {
+            key: 'faq-3',
+            title: 'How do you ensure that your marketing solutions meet our specific requirements?',
+            content:
+              'We prioritize a thorough understanding of your business and objectives, conducting in-depth research and collaborating closely with you to develop customized marketing solutions that address your specific requirements and goals.',
+          },
+          {
+            key: 'faq-4',
+            title: 'How do you ensure the effectiveness and reliability of our solutions?',
+            content:
+              'We ensure the effectiveness and reliability of our solutions through continuous monitoring, analysis, and optimization of campaigns, leveraging key performance indicators (KPIs) and data-driven insights to drive measurable results and maximize ROI.',
+          },
+          {
+            key: 'faq-5',
+            title: 'How do you collaborate with clients during the design process?',
+            content:
+              'We believe in a collaborative approach, actively involving our clients throughout the design process to gather input, incorporate feedback, and ensure that the final marketing solutions are aligned with your vision and goals.',
+          },
+          {
+            key: 'faq-6',
+            title: 'How do you ensure alignment with our enterprise brand and values?',
+            content:
+              'Our team conducts comprehensive brand research and collaborates closely with you to ensure that our marketing efforts align seamlessly with your enterprise brand and values, delivering a consistent and cohesive digital presence.',
+          },
+          {
+            key: 'faq-7',
+            title: 'How do you measure the success of digital marketing campaigns for enterprise businesses?',
+            content:
+              'We measure the success of digital marketing campaigns through a combination of metrics such as website traffic, conversions, lead generation, engagement, search engine rankings, and overall revenue growth, providing you with clear insights into campaign performance and ROI.',
+          },
+          {
+            key: 'faq-8',
+            title: 'How do you stay updated with the latest digital marketing trends and changes?',
+            content:
+              'We stay updated with the latest digital marketing trends and changes through ongoing industry research, attending conferences, participating in training programs, and actively engaging in continuous learning to ensure we are at the forefront of the digital marketing landscape.',
+          },
+          {
+            key: 'faq-9',
+            title: 'How long does it take to see results from digital marketing efforts?',
+            content:
+              'The time frame to see results from digital marketing efforts can vary depending on factors such as industry competitiveness, campaign goals, and strategies employed. While some results may be observed in the short term, digital marketing is an ongoing process that requires consistent effort and optimization for long-term success.',
+          },
+          {
+            key: 'faq-10',
+            title:
+              'How do you determine the pricing for your enterprise digital marketing services?',
+            content:
+              'Pricing for our enterprise digital marketing services is determined based on factors such as project scope, complexity, required services, and duration. We offer customized pricing packages tailored to meet your specific needs, ensuring transparency and a competitive pricing structure that aligns with your budget and objectives.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to establish a strong and strategic partnership. We work with our clients to navigate the digital landscape, leveraging our expertise and cutting-edge technologies to drive transformative growth. Unlock your enterprise’s full potential, stay ahead of the competition, and achieve remarkable results in the digital realm.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
 
 export const MOCK_FINX_PAGES = MOCK_TECH_PAGES
 
