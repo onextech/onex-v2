@@ -4,10 +4,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "next dev -p 3007",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "start": "next start -p 3007",
+    "start": "next start -p 3005",
     "lint": "next lint",
     "lint-staged": "lint-staged",
     "test": "jest",

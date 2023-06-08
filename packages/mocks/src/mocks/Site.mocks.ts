@@ -201,10 +201,10 @@ export const MOCK_DIGITAL_SITE = {
   absolute_url: 'https://www.onexdigital.co',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with One X Tech.',
+  cta_title: 'Modernise Enterprise UI with One X Digital.',
   cta_button_title: 'Schedule a Call',
 
-  general_email: 'info@onextech.com',
+  general_email: 'info@onexdigital.co',
 
   // Socials
 

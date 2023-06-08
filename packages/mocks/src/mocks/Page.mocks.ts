@@ -809,36 +809,36 @@ const MOCK_COMMON_PAGES = [
     slug: 'terms',
     is_hidden_from_nav: true,
     seo_description:
-      "Explore {appTitle}'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
+      "Explore {companyTitle}'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
     html:
       '<h3>Overview</h3>\n' +
       '<p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n' +
       '<h3>Use License</h3>\n' +
       '<ol type="a">\n' +
-      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on {appTitle} Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
+      "<li>Permission is granted to temporarily download one copy of the materials (information or software) on {companyTitle} Pte Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n" +
       '<ul>\n' +
       '<li>modify or copy the materials;</li>\n' +
       '<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n' +
-      "<li>attempt to decompile or reverse engineer any software contained on {appTitle} Pte Ltd's website;</li>\n" +
+      "<li>attempt to decompile or reverse engineer any software contained on {companyTitle} Pte Ltd's website;</li>\n" +
       '<li>remove any copyright or other proprietary notations from the materials; or</li>\n' +
       '<li>transfer the materials to another person or "mirror" the materials on any other server.</li>\n' +
       '</ul>\n' +
       '</li>\n' +
-      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by {appTitle} Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
+      '<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by {companyTitle} Pte Ltd at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n' +
       '</ol>\n' +
       '<h3>Disclaimer</h3>\n' +
       '<ol type="a">\n' +
-      "<li>The materials on {appTitle} Pte Ltd's website are provided on an 'as is' basis. {appTitle} Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
-      '<li>Further, {appTitle} Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
+      "<li>The materials on {companyTitle} Pte Ltd's website are provided on an 'as is' basis. {companyTitle} Pte Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n" +
+      '<li>Further, {companyTitle} Pte Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n' +
       '</ol>\n' +
       '<h3>Limitations</h3>\n' +
-      "<p>In no event shall {appTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {appTitle} Pte Ltd's website, even if {appTitle} Pte Ltd or a {appTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
+      "<p>In no event shall {companyTitle} Pte Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on {companyTitle} Pte Ltd's website, even if {companyTitle} Pte Ltd or a {companyTitle} Pte Ltd authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n" +
       '<h3>Accuracy of materials</h3>\n' +
-      "<p>The materials appearing on {appTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {appTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {appTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However, {appTitle} Pte Ltd does not make any commitment to update the materials.</p>\n" +
+      "<p>The materials appearing on {companyTitle} Pte Ltd's website could include technical, typographical, or photographic errors. {companyTitle} Pte Ltd does not warrant that any of the materials on its website are accurate, complete or current. {companyTitle} Pte Ltd may make changes to the materials contained on its website at any time without notice. However, {companyTitle} Pte Ltd does not make any commitment to update the materials.</p>\n" +
       '<h3>Links</h3>\n' +
-      "<p>{appTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {appTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
+      "<p>{companyTitle} Pte Ltd has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {companyTitle} Pte Ltd of the site. Use of any such linked website is at the user's own risk.</p>\n" +
       '<h3>Modifications</h3>\n' +
-      '<p>{appTitle} Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
+      '<p>{companyTitle} Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
       '<h3>Governing Law</h3>\n' +
       '<p>These terms and conditions are governed by and construed in accordance with the laws of {localeTitle} and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
   },
@@ -896,86 +896,86 @@ const MOCK_COMMON_PAGES = [
       '{appTitle} prioritizes data privacy, consent, transparency, and accountability. Our policy ensures secure data handling, user control, and compliance.',
     html:
       '<p>At {appTitle}, we take data privacy and security very seriously. We understand that your personal data is valuable and we want to ensure that it is used and protected appropriately.</p>' +
-      '<h2><strong>1. Consent</strong></h2>' +
-      '<h3><strong>1.1 Explicit Consent and User Interface</strong></h3>' +
+      '<h2>1. Consent</h2>' +
+      '<h3>1.1 Explicit Consent and User Interface</h3>' +
       '<p>Our commitment to data privacy begins with obtaining explicit and informed consent from our users. This is a foundational aspect of our data collection and processing activities. We\'ve designed our user interface to present an in-depth consent form during the sign-up process or when interacting with an updated feature or service. This form is comprehensive, detailing the nature of the data being collected, the purpose for collection, how it will be processed, and the measures put in place for its protection. We use plain language to ensure that our users fully understand the implications of their consent. Additionally, we treat consent as an ongoing process and frequently remind users of their initial consent and any changes to our data handling practices.</p>' +
-      '<h3><strong>1.2 Clarity and Transparency in Consent Form</strong></h3>' +
+      '<h3>1.2 Clarity and Transparency in Consent Form</h3>' +
       '<p>We view the consent form as not merely a legal requirement but as a pivotal tool for maintaining transparency in our relationship with our users. The form is designed to demystify our data collection and processing activities, which can often seem opaque. We strive to provide clear, concise, and transparent information about our data practices. We avoid technical or legal jargon that might confuse or mislead users, instead, we provide a comprehensive yet easy-to-understand overview of our data practices. Our ultimate goal is to ensure that users fully understand what they\'re agreeing to when they give their consent.</p>' +
-      '<h3><strong>1.3 The Importance of Active Consent</strong></h3>' +
+      '<h3>1.3 The Importance of Active Consent</h3>' +
       '<p>We are committed to the principle of active consent, believing that users should actively agree to our data collection and usage policies. We\'ve implemented an opt-in mechanism that requires a definitive action from the user, such as checking a box or clicking an "I Agree" button. This approach differs from passive consent methods, such as pre-ticked boxes or consent inferred from inactivity, by necessitating a conscious decision from the user. We believe that this emphasis on active consent helps ensure that the user\'s decision to share personal data is explicit, voluntary, and informed.</p>' +
-      '<h3><strong>1.4 Facilitating User\'s Right to Withdraw Consent</strong></h3>' +
+      '<h3>1.4 Facilitating User\'s Right to Withdraw Consent</h3>' +
       '<p>We respect the rights of our users, and this includes the right to withdraw their consent at any point. To facilitate this, we\'ve embedded features in our software that allow users to easily revoke their consent. The user account settings include a clear section where users can manage their consent preferences. Moreover, we have a dedicated customer support team trained to assist users with this process. We respect this right to withdrawal and process such requests promptly and comprehensively.</p>' +
-      '<h3><strong>1.5 Documenting User Consent</strong></h3>' +
+      '<h3>1.5 Documenting User Consent</h3>' +
       '<p>As part of our commitment to transparency and accountability, we carefully document the consent given by users. We maintain a clear record of when and how we obtained consent, as well as what the user was informed about at the time of consent. This includes information about the data we proposed to collect, why we collected it, and how we intended to use it. This documentation provides an important reference point for us and a record of our commitment to respecting user consent. It also allows us to respond effectively to any inquiries or complaints from users or regulators.</p>' +
-      '<h2><strong>2. Purpose Limitation</strong></h2>' +
-      '<h3><strong>2.1 Upholding the Principle of Purpose Limitation</strong></h3>' +
+      '<h2>2. Purpose Limitation</h2>' +
+      '<h3>2.1 Upholding the Principle of Purpose Limitation</h3>' +
       '<p>We uphold the principle of purpose limitation in our data practices. This implies we only collect personal data for specific, explicit, and legitimate purposes. These purposes are clearly defined in our consent form and communicated to the user. Our technical infrastructure reflects this principle by implementing appropriate data segregation and access control measures, ensuring each piece of personal data is strictly used for the purpose it was collected for.</p>' +
-      '<h3><strong>2.2 Monitoring and Ensuring Compliance</strong></h3>' +
+      '<h3>2.2 Monitoring and Ensuring Compliance</h3>' +
       '<p>We have implemented a robust monitoring system to ensure that our data processing activities remain aligned with the initial purposes defined during the consent stage. Any proposed use of the data that deviates from the original intent requires a new round of consent from the user. Our data handling processes, both automated and manual, are designed and regularly audited to ensure adherence to the purpose limitation principle.</p>' +
-      '<h3><strong>2.3 User Awareness and Empowerment</strong></h3>' +
+      '<h3>2.3 User Awareness and Empowerment</h3>' +
       '<p>To uphold transparency and respect user rights, we keep users informed about the purpose of data collection and processing. Users are provided with easy-to-access information regarding the purpose of their data use. This empowers them to make informed decisions about their personal data, fostering trust and cooperation between us and our user base.</p>' +
-      '<h2><strong>3. Notification</strong></h2>' +
-      '<h3><strong>3.1 Proactive User Notification</strong></h3>' +
+      '<h2>3. Notification</h2>' +
+      '<h3>3.1 Proactive User Notification</h3>' +
       '<p>As part of our commitment to transparency, we maintain proactive communication with our users regarding any changes to our data privacy practices. Any changes to our privacy policy or data practices are immediately communicated to users through clear, easily understandable notifications. These notifications are delivered through various channels, such as email, in-app notifications, or updates on our website.</p>' +
-      '<h3><strong>3.2 Clarity in Communication</strong></h3>' +
+      '<h3>3.2 Clarity in Communication</h3>' +
       '<p>In our communications and notifications, we strive for clarity and comprehensibility. We avoid using complex legal or technical jargon that can be confusing to users. Instead, we prioritize clarity, simplicity, and transparency to ensure users fully understand the changes and how they might be affected.</p>' +
-      '<h3><strong>3.3 User Engagement and Queries</strong></h3>' +
+      '<h3>3.3 User Engagement and Queries</h3>' +
       '<p>We provide multiple avenues for our users to engage with us regarding our data practices. Users can contact us directly for clarification, questions, or concerns about our notifications. Our customer support team is well-trained in our data practices and ready to assist users with any inquiries they might have.</p>' +
-      '<h2><strong>4. Access &amp; Correction</strong></h2>' +
-      '<h3><strong>4.1 Facilitating User Access to Personal Data</strong></h3>' +
+      '<h2>4. Access &amp; Correction</h2>' +
+      '<h3>4.1 Facilitating User Access to Personal Data</h3>' +
       '<p>We are committed to providing users with full access to their personal data stored in our system. Our software includes easy-to-use features that allow users to view and download their data in a standard, readable format. This commitment to data accessibility ensures that users have control over their personal data and can verify its accuracy.</p>' +
-      '<h3><strong>4.2 Simplified Correction and Update Process</strong></h3>' +
+      '<h3>4.2 Simplified Correction and Update Process</h3>' +
       '<p>Alongside providing access, we have also established a streamlined process for users to request corrections or updates to their personal data. Users can make these changes directly within their account settings, or by submitting a request to our customer support team. We process such requests promptly, ensuring the personal data we hold is accurate and up-to-date.</p>' +
-      '<h3><strong>4.3 User Education and Support</strong></h3>' +
+      '<h3>4.3 User Education and Support</h3>' +
       '<p>We provide educational resources and support to help users understand how they can access and correct their personal data. This includes step-by-step guides, FAQs, and direct support from our customer service team. We aim to empower users by providing them with the knowledge and tools necessary to control their personal data.</p>' +
-      '<h2><strong>5. Accuracy</strong></h2>' +
-      '<h3><strong>5.1 Data Accuracy Assurance</strong></h3>' +
+      '<h2>5. Accuracy</h2>' +
+      '<h3>5.1 Data Accuracy Assurance</h3>' +
       '<p>Maintaining the accuracy of personal data is a priority for us. We have built mechanisms within our software that periodically prompt users to review and update their data. These prompts help ensure that the personal data we hold is accurate, complete, and up-to-date.</p>' +
-      '<h3><strong>5.2 User-Driven Data Update</strong></h3>' +
+      '<h3>5.2 User-Driven Data Update</h3>' +
       '<p>We facilitate an easy-to-use mechanism for users to update their personal data at any time. This user-driven approach allows individuals to directly influence the accuracy of the data we hold, promoting trust and confidence in our data practices.</p>' +
-      '<h3><strong>5.3 Accuracy Checks and Validation</strong></h3>' +
+      '<h3>5.3 Accuracy Checks and Validation</h3>' +
       '<p>To further ensure data accuracy, we\'ve implemented validation rules and data integrity checks in our systems. These checks help prevent data entry errors and inaccuracies, enhancing the overall quality and reliability of the data.</p>' +
-      '<h2><strong>6. Protection</strong></h2>' +
-      '<h3><strong>6.1 Implementation of Robust Security Measures</strong></h3>' +
+      '<h2>6. Protection</h2>' +
+      '<h3>6.1 Implementation of Robust Security Measures</h3>' +
       '<p>Protecting user data is at the heart of our business. We employ robust technical security measures such as encryption, anonymization, and pseudonymization of data. Our systems are designed to withstand common cyber threats and protect data from unauthorized access, alteration, and deletion.</p>' +
-      '<h3><strong>6.2 Continuous Security Monitoring and Upgrades</strong></h3>' +
+      '<h3>6.2 Continuous Security Monitoring and Upgrades</h3>' +
       '<p>We continuously monitor our systems for security vulnerabilities and swiftly address any issues that arise. We regularly update and upgrade our security measures in line with evolving technology and potential threats. Our team of security experts is dedicated to maintaining the safety and integrity of user data.</p>' +
-      '<h3><strong>6.3 Employee Training and Awareness</strong></h3>' +
+      '<h3>6.3 Employee Training and Awareness</h3>' +
       '<p>We recognize that security is not just about technology but also about people and processes. Therefore, we conduct regular security awareness and training programs for our employees to ensure they understand and comply with our data security practices.</p>' +
-      '<h2><strong>7. Retention Limitation</strong></h2>' +
-      '<h3><strong>7.1 Retention Policies Aligned with Purpose</strong></h3>' +
+      '<h2>7. Retention Limitation</h2>' +
+      '<h3>7.1 Retention Policies Aligned with Purpose</h3>' +
       '<p>We have implemented clear data retention policies that strictly follow the principle of purpose limitation. We only retain personal data for as long as necessary to fulfill the purposes for which it was collected or to comply with legal requirements. Once the purpose is fulfilled or the legal requirement is met, we have procedures in place to delete or anonymize the data.</p>' +
-      '<h3><strong>7.2 Automated Data Lifecycle Management</strong></h3>' +
+      '<h3>7.2 Automated Data Lifecycle Management</h3>' +
       '<p>To ensure adherence to our retention policies, we have automated data lifecycle management systems in place. These systems monitor the age of data and apply our retention rules, flagging data that is due for deletion or anonymization. This approach enhances accuracy and efficiency in managing data retention.</p>' +
-      '<h3><strong>7.3 Regular Audits and Compliance Checks</strong></h3>' +
+      '<h3>7.3 Regular Audits and Compliance Checks</h3>' +
       '<p>We conduct regular audits to verify compliance with our data retention policies. These audits review our data storage systems and practices to ensure data is not being held beyond its necessary lifespan. Any identified issues are promptly rectified to ensure ongoing compliance.</p>' +
-      '<h2><strong>8. Transfer Limitation</strong></h2>' +
-      '<h3><strong>8.1 Data Transfer Protocols</strong></h3>' +
+      '<h2>8. Transfer Limitation</h2>' +
+      '<h3>8.1 Data Transfer Protocols</h3>' +
       '<p>We have rigorous protocols in place for any instances where personal data needs to be transferred, either within the organisation or to third parties. These protocols ensure that any data transfer is carried out securely and in line with data protection regulations.</p>' +
-      '<h3><strong>8.2 Evaluating Recipient Data Practices</strong></h3>' +
+      '<h3>8.2 Evaluating Recipient Data Practices</h3>' +
       '<p>Before transferring personal data to third parties, we meticulously assess their data handling practices and security measures. We only engage with partners who demonstrate a high level of commitment to data privacy and protection.</p>' +
-      '<h3><strong>8.3 Use of Secure Transfer Technologies</strong></h3>' +
+      '<h3>8.3 Use of Secure Transfer Technologies</h3>' +
       '<p>In the event of data transfer, we employ secure technologies such as encryption and secure file transfer protocols. These technologies ensure that data remains protected during transit and only authorized recipients can access it.</p>' +
-      '<h2><strong>9. Accountability</strong></h2>' +
-      '<h3><strong>9.1 Clear Data Governance Structure</strong></h3>' +
+      '<h2>9. Accountability</h2>' +
+      '<h3>9.1 Clear Data Governance Structure</h3>' +
       '<p>We have a clear data governance structure in place that outlines responsibilities and processes for data protection. This structure ensures accountability at all levels of the organisation and promotes a culture of data protection.</p>' +
-      '<h3><strong>9.2 Regular Staff Training and Awareness</strong></h3>' +
+      '<h3>9.2 Regular Staff Training and Awareness</h3>' +
       '<p>To ensure all staff understand their roles in data protection, we conduct regular training sessions and awareness programs. These initiatives reinforce the importance of data privacy and familiarize staff with our data protection policies and procedures.</p>' +
-      '<h3><strong>9.3 Compliance Reporting and Oversight</strong></h3>' +
+      '<h3>9.3 Compliance Reporting and Oversight</h3>' +
       '<p>We maintain detailed records of our data handling practices and conduct regular reviews to ensure compliance with data protection laws and our internal policies. This process includes internal audits, risk assessments, and reporting to our data protection officer and senior management.</p>' +
-      '<h2><strong>10. Breach Notification</strong></h2>' +
-      '<h3><strong>10.1 Proactive Breach Detection</strong></h3>' +
+      '<h2>10. Breach Notification</h2>' +
+      '<h3>10.1 Proactive Breach Detection</h3>' +
       '<p>We have robust systems in place to proactively detect potential data breaches. Our security systems continuously monitor for suspicious activities and alert our security team in real-time to possible threats.</p>' +
-      '<h3><strong>10.2 Prompt Response to Breaches</strong></h3>' +
+      '<h3>10.2 Prompt Response to Breaches</h3>' +
       '<p>In the event of a data breach, we have a well-defined incident response plan to promptly address the issue. This plan includes isolating the affected systems, investigating the cause, and implementing measures to prevent further breaches.</p>' +
-      '<h3><strong>10.3 Transparent Breach Notification</strong></h3>' +
+      '<h3>10.3 Transparent Breach Notification</h3>' +
       '<p>We are committed to transparency in our breach notification practices. Should a breach occur, we promptly inform affected users and relevant authorities, providing full details of the incident and the steps we are taking in response.</p>' +
-      '<h2><strong>11. Do Not Call</strong></h2>' +
-      '<h3><strong>11.1 Respecting User Communication Preferences</strong></h3>' +
+      '<h2>11. Do Not Call</h2>' +
+      '<h3>11.1 Respecting User Communication Preferences</h3>' +
       '<p>We respect our users\' communication preferences and adhere to a "Do Not Call" policy. Users can easily register their preference not to receive promotional calls through their account settings or by contacting our customer support team.</p>' +
-      '<h3><strong>11.2 Regular Updates to Do Not Call List</strong></h3>' +
+      '<h3>11.2 Regular Updates to Do Not Call List</h3>' +
       '<p>We maintain an up-to-date "Do Not Call" list and regularly review and update this list to reflect changes in user preferences. This process ensures we respect the communication preferences of our users at all times.</p>' +
-      '<h3><strong>11.3 Compliance Checks and Staff Training</strong></h3>' +
+      '<h3>11.3 Compliance Checks and Staff Training</h3>' +
       '<p>To ensure compliance with our "Do Not Call" policy, we conduct regular checks and provide training to staff involved in direct marketing. This approach ensures that our team members are aware of user preferences and respect their decision not to receive promotional calls.</p>'
   },
 ].map((page) => ({
