@@ -29,7 +29,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             {
               type: 'h2',
               title: 'Software that Matters',
-              titleProps: { gutterBottom: true },
+              titleProps: { gutterBottom: true, component: 'h1' },
             },
             {
               type: 'h5',

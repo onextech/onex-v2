@@ -89,12 +89,12 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                     {
                       type: 'fa-icon',
                       title: `fa-3x fa-thin fa-badge-check`,
-                      titleProps: { sx: { mb: 1, color: '#2ecc71' } },
+                      titleProps: { sx: { mb: 1, color: 'success.main' } },
                     },
                     {
                       type: 'overline',
                       title: `Registration Success`,
-                      titleProps: { sx: { mb: 1, color: '#2ecc71' } },
+                      titleProps: { sx: { mb: 1, color: 'success.main' } },
                     },
                     {
                       type: 'h5',

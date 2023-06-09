@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Form, FormSections } from '@gravis-os/form'
-import { ServiceCategory } from '@onex/types'
+import { FormCategoryEnum, ServiceCategory } from '@onex/types'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
 import { useLayout } from '@onex/providers'
+import { useRouter } from 'next/router'
+import { routeConfig } from '@onex/common'
 
 export interface LeadFormProps {
   serviceCategorys: ServiceCategory[]
@@ -19,6 +21,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
 
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
@@ -31,7 +34,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
     setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
-    
+    router.push(`/${routeConfig.CONTACT_SUCCESS}?name=${values.name}&email=${values.email}`)
   }
 
   return (
@@ -43,7 +46,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
       )}
 
       <Form
-        id='lead-form'
+        id={FormCategoryEnum.LEAD}
         resetOnSubmitSuccess
         defaultValues={{
           name: '',

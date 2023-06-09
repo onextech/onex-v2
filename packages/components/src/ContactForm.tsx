@@ -3,6 +3,9 @@ import { Form, FormSections } from '@gravis-os/form'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { Alert } from '@gravis-os/ui'
 import toast from 'react-hot-toast'
+import { FormCategoryEnum } from '@onex/types'
+import { useRouter } from 'next/router'
+import { routeConfig } from '@onex/common'
 
 export interface ContactFormProps {
   onSubmit?: (values: any) => void
@@ -13,6 +16,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
 
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
@@ -25,6 +29,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
     setIsLoading(false)
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
+    router.push(`/${routeConfig.CONTACT_SUCCESS}?name=${values.name}&email=${values.email}`)
   }
 
   return (
@@ -36,7 +41,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
       )}
 
       <Form
-        id='contact-form'
+        id={FormCategoryEnum.CONTACT}
         resetOnSubmitSuccess
         defaultValues={{
           name: '',
