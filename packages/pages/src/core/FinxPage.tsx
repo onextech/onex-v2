@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
+import { Block, Blocks } from '@gravis-os/landing'
 import {
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
@@ -16,8 +16,9 @@ import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry, Technology } from '@onex/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
+import { Slider } from '@gravis-os/ui'
 
-export interface FinxPagePageProps {
+export interface FinxPageProps {
   page: Page
   showcases: Showcase[]
   technologys: Technology[]
@@ -25,7 +26,7 @@ export interface FinxPagePageProps {
   industrys: Industry[]
 }
 
-const FinxPagePage: React.FC<FinxPagePageProps> = (props) => {
+const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, technologys, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
@@ -40,21 +41,64 @@ const FinxPagePage: React.FC<FinxPagePageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderHeroWithBackgroundBlock({
-          ...hero,
-          buttonProps: {
-            overline: 'What we do',
-            title: 'Enterprise Data & AI Solutions',
-            size: 'lg',
-            href: routeConfig.SERVICES,
+        {
+            key: 'hero-with-background-fade-slider',
+            dark: true,
+            center: true,
+            disableContainer: true,
+            py: 0,
+            items: [
+              {
+                type: 'jsx',
+                title: (
+                  <Slider
+                    autoplay
+                    loop
+                    arrows
+                    fade
+                    dots
+                    dotProps={{ color: 'secondary.main' }}
+                    height={{ xs: 500, md: 800 }}
+                    items={[
+                      <Block
+                        fill
+                        {...renderHeroWithBackgroundBlock({
+                          title: 'We are the Growth Company',
+                          ...hero,
+                          backgroundImageProps: {
+                            src: '/images/about_hero.png',
+                            alt: 'hero',
+                          },
+                        })}
+                      />,
+                      <Block
+                        fill
+                        {...renderHeroWithBackgroundBlock({
+                          ...hero,
+                          title: 'Unleash your X Factor',
+                          backgroundImageProps: {
+                            src: '/images/about_nodes_above_city.png',
+                            alt: 'hero',
+                          },
+                        })}
+                      />,
+                      <Block
+                        fill
+                        {...renderHeroWithBackgroundBlock({
+                          ...hero,
+                          title: "Deliver Tomorrow's Innovation Today",
+                          backgroundImageProps: {
+                            src: '/images/mission_earth.png',
+                            alt: 'hero',
+                          },
+                        })}
+                      />,
+                    ]}
+                  />
+                ),
+              },
+            ],
           },
-          secondaryButtonProps: {
-            overline: 'Who we are',
-            title: 'Data Science Experts',
-            size: 'lg',
-            href: routeConfig.CAREERS,
-          },
-        }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -121,4 +165,4 @@ const FinxPagePage: React.FC<FinxPagePageProps> = (props) => {
   )
 }
 
-export default FinxPagePage
+export default FinxPage
