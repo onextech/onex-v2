@@ -3642,9 +3642,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'Swirl of colors',
         overline: '{appTitle}',
-        title: 'Modernising Enterprise User Experiences',
+        title: 'Transforming the Future of Financial Industries',
         subtitle:
-          "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
+          "{appTitle} is the leading catalyst for digital transformation in the finance industry, revolutionizing the way financial institutions thrive in the digital era.",
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -3661,31 +3661,31 @@ export const MOCK_FINX_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
             href: `${routeConfig.SERVICES}/accelerate-development`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
             href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
             href: `${routeConfig.SERVICES}/product-team-augmentation`,
           },
         ],
@@ -3694,43 +3694,43 @@ export const MOCK_FINX_PAGES = [
         overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
-          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
+          'Our focus on data-driven strategies enables us to deliver robust digital transformations, empowering businesses to leverage the power of AI and gain a competitive edge in the market.',
         items: [
           {
-            fa_icon: 'fa-check',
-            title: 'Agile Development Methodology',
-            subtitle:
-              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Cutting-Edge Technologies',
-            subtitle:
-              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Customized Solutions',
-            subtitle:
-              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organisation's goals and processes.",
-          },
-          {
-            fa_icon: 'fa-tasks',
-            title: 'Streamlined Project Management',
-            subtitle:
-              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
-          },
-          {
-            fa_icon: 'fa-check-circle',
-            title: 'Quality Assurance and Testing',
-            subtitle:
-              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
-          },
-          {
             fa_icon: 'fa-chart-line',
-            title: 'Scalability and Future-Proofing',
+            title: 'Data-Driven Insights',
             subtitle:
-              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+              'We employ a data-focused approach, leveraging advanced analytics and machine learning techniques to gain valuable insights from vast volumes of financial data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Tailored Solutions',
+            subtitle:
+              'Our approach involves understanding each client\'s unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.',
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless Integration',
+            subtitle:
+              "We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.",
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and Flexibility',
+            subtitle:
+              'Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client\'s businesses, ensuring long-term success and value.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management and Compliance',
+            subtitle:
+              'We prioritize risk management and compliance within our AI solutions, incorporating robust security measures and adhering to industry regulations to mitigate potential risks and safeguard sensitive financial data.',
+          },
+          {
+            fa_icon: 'fa-gavel',
+            title: 'Ethical AI Practices',
+            subtitle:
+              'We uphold a strong commitment to ethical AI practices, ensuring transparency, fairness, and accountability in our algorithms and models to build trust and maintain the highest standards of integrity in the finance sector.',
           },
         ],
       },
@@ -3810,65 +3810,65 @@ export const MOCK_FINX_PAGES = [
           {
             key: 'faq-1',
             title:
-              'What experience and expertise do you have in frontend development?',
+              'What is the core focus of {appTitle}\'s digital solutions?',
             content:
-              'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
+              'The core focus of {appTitle}\'s digital solutions is to empower the finance industry with AI-driven technologies, enabling digital transformation and driving strategic growth.',
           },
           {
             key: 'faq-2',
             title:
-              'How do you ensure that the software you build meets our specific requirements?',
+              'How can {appTitle}\'s digital solutions help my finance organization streamline operations and enhance efficiency?',
             content:
-              'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
+              '{appTitle}\'s digital solutions streamline finance operations by automating processes, providing actionable insights, and optimizing decision-making, resulting in enhanced efficiency and operational excellence.',
           },
           {
             key: 'faq-3',
-            title: 'How do you ensure the quality of the software you develop?',
+            title: 'What kind of data sources do {appTitle}\'s digital solutions utilize for generating insights?',
             content:
-              'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
+              '{appTitle}\'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behavior, and industry trends, to generate valuable insights and drive data-informed decision-making.',
           },
           {
             key: 'faq-4',
-            title: 'What industries do you have experience working with?',
+            title: 'How does {appTitle} ensure data security and compliance with industry regulations?',
             content:
-              'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
+              '{appTitle} prioritizes data security and compliance by implementing robust security measures, encryption protocols, and adhering to industry regulations, ensuring the protection and confidentiality of sensitive financial data.',
           },
           {
             key: 'faq-5',
-            title: 'How do you handle project management and communication?',
+            title: 'Can {appTitle}\'s AI solutions be integrated with our existing systems and processes?',
             content:
-              'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
+              'Yes, {appTitle}\'s AI solutions are designed to seamlessly integrate with existing systems and processes, enabling a smooth implementation and leveraging the power of AI alongside your established infrastructure.',
           },
           {
             key: 'faq-6',
-            title: 'How do you ensure the security and privacy of our data?',
+            title: 'How long does it typically take to implement {appTitle}\'s digital transformation solutions?',
             content:
-              'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
+              'The implementation timeline for {appTitle}\'s digital transformation solutions varies based on the specific requirements and scope of the project, but typically ranges from a few months to a year, ensuring a thorough and efficient deployment.',
           },
           {
             key: 'faq-7',
-            title: 'What is your approach to project pricing and timelines?',
+            title: 'How does {appTitle} stay updated with the latest advancements and emerging technologies in AI for finance?',
             content:
-              'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
+              '{appTitle} stays at the forefront of advancements in AI for finance through continuous research, collaboration with industry experts, active participation in conferences and events, and a dedicated focus on exploring emerging technologies and trends.',
           },
           {
             key: 'faq-8',
-            title: 'What’s your experience in enterprise software development?',
+            title: 'How does {appTitle} ensure the accuracy and reliability of the insights generated by its AI algorithms?',
             content:
-              'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
+              '{appTitle} ensures the accuracy and reliability of insights generated by its AI algorithms through rigorous testing, validation against real-world data, and continuous monitoring to optimize model performance and minimize errors or biases.',
           },
           {
             key: 'faq-9',
-            title: 'What is your approach to project management?',
+            title: 'Can {appTitle}\'s AI solutions assist in predicting market trends and making informed investment decisions?',
             content:
-              'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
+              'Yes, {appTitle}\'s AI solutions can leverage advanced algorithms and machine learning techniques to analyze market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.',
           },
           {
             key: 'faq-10',
             title:
-              'What is your pricing model for frontend development services?',
+              'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
-              'Our pricing model is flexible and depends on the specific needs and requirements of each project. We offer both fixed-price and time-and-materials pricing options, and we work closely with our clients to determine the most cost-effective and efficient approach for their project.',
+              'Pricing for {appTitle}\'s enterprise digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.',
           },
         ],
       },
@@ -3878,7 +3878,7 @@ export const MOCK_FINX_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          '{appTitle} collaborates closely with businesses, leveraging our industry knowledge and AI-driven solutions to co-create customized strategies that address your specific challenges and drive measurable business impact.',
       },
     },
   },
