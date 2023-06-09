@@ -137,7 +137,7 @@ export const MOCK_TECHNOLOGY_PAGE = {
 export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   {
     // Hero
-    title: 'JavaScript Development',
+    title: 'JavaScript',
     slug: 'javascript-development',
     avatar_src: '/images/technology_javascript.png',
     avatar_alt: 'JavaScript logo',
@@ -421,7 +421,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     // Hero
-    title: 'React Development',
+    title: 'React',
     slug: 'react-development',
     is_featured: true,
     is_active: true,
@@ -569,7 +569,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     // Hero
-    title: 'Next.js Development',
+    title: 'Next.js',
     slug: 'next-js-development',
     avatar_src: '/images/technology_nextjs.png',
     avatar_alt: 'Next.js logo',
@@ -719,7 +719,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
   },
   {
     // Hero
-    title: 'Node.js Development',
+    title: 'Node.js',
     slug: 'node-js-development',
     avatar_src: '/images/technology_node.png',
     avatar_alt: 'Node.js logo',

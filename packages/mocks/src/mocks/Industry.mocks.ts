@@ -687,7 +687,7 @@ export const MOCK_TECH_INDUSTRYS = [
     seo: {
       title: 'Government',
       description:
-        'Discover innovative technology solutions for the government sector. We offers expertise in delivering impactful software solutions.',
+        'Discover innovative technology solutions for the government sector. We offer expertise in delivering impactful software solutions.',
     },
     // Sections
     sections: {

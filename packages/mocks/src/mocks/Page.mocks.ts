@@ -1461,7 +1461,7 @@ const MOCK_GROUP_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
   {
     title: 'Resources',
@@ -1987,7 +1987,7 @@ const MOCK_TECH_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => ({
   ...MOCK_PAGE,
@@ -2415,7 +2415,7 @@ export const MOCK_DATA_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => merge({}, MOCK_DATA_PAGE, page))
 
@@ -2839,7 +2839,7 @@ export const MOCK_DESIGN_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => merge({}, MOCK_DESIGN_PAGE, page))
 
@@ -3356,7 +3356,7 @@ export const MOCK_DIGITAL_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => ({
   ...MOCK_PAGE,
@@ -3878,7 +3878,7 @@ export const MOCK_FINX_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => ({
   ...MOCK_PAGE,
@@ -4400,7 +4400,7 @@ export const MOCK_GOVX_PAGES = [
     slug: 'news',
     href: routeConfig.PRESS_RELEASES,
     subtitle:
-      'Stay up to date with the latest trends in the digital landscape.',
+      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => ({
   ...MOCK_PAGE,

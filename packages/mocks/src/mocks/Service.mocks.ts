@@ -2138,7 +2138,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why is Application Re-engineering important for my business?',
             content:
-              'Application Re-engineering is essential to ensure that your software applications stay up to date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
+              'Application Re-engineering is essential to ensure that your software applications stay up-to-date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
@@ -3814,7 +3814,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-tools',
             title: 'Maintenance and Support',
             subtitle:
-              'We offer ongoing maintenance and support, ensuring that your AI systems are always up to date and performing optimally.',
+              'We offer ongoing maintenance and support, ensuring that your AI systems are always up-to-date and performing optimally.',
           },
           {
             fa_icon: 'fa-project-diagram',
