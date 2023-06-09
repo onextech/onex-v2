@@ -1080,6 +1080,7 @@ const MOCK_GROUP_PAGES = [
     title: 'About',
     slug: 'about',
     href: routeConfig.ABOUT,
+    seo_description: 'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1462,6 +1463,7 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'Mission',
     slug: 'mission',
+    seo_description: 'We revolutionize enterprise software solutions, enabling businesses to thrive in the digital era through strategic technology consulting and cutting-edge software development.',
     href: routeConfig.MISSION,
     subtitle: 'Find out how we seek to create change that matters.',
   },
@@ -1570,6 +1572,7 @@ const MOCK_TECH_PAGES = [
     title: 'About',
     slug: 'about',
     href: routeConfig.ABOUT,
+    seo_description: '{appTitle} is here to elevate enterprise digital capability with exceptional user experiences.',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -3458,6 +3461,9 @@ export const MOCK_FINX_PAGES = [
   {
     title: 'About',
     slug: 'about',
+    seo: {
+      description: 'abc'
+    },
     href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
