@@ -53,7 +53,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
     },
   },
   {
-    title: 'Wealthscale: Reinventing financial advisory.',
+    title: 'WealthScale: Reinventing financial advisory.',
     slug: 'wealthscale',
     subtitle: 'Learn about WealthScale\'s impressive portfolio of innovative wealth management solutions. Harness cutting-edge technology to elevate financial success.',
     hero_src: '/showcases/wealthscale/hero.png',
@@ -113,7 +113,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
     backgroundColor: '#31639C',
     sections: {
       leftGridSticky: {
-        title: 'Meet Octifi',
+        title: 'Meet OctiFi',
         subtitle:
           'Enjoy true credit with Singapore’s first Pay Later credit card by paying in installments with no extra charges.',
         hero_src: '/showcases/octifi/left.png',
