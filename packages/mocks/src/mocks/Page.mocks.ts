@@ -3363,9 +3363,1049 @@ export const MOCK_DIGITAL_PAGES = [
   ...page,
 }))
 
-export const MOCK_FINX_PAGES = MOCK_TECH_PAGES
+export const MOCK_FINX_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.'
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'hero',
+        overline: '{appTitle}',
+        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title:
+          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+        subtitle:
+          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title:
+          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+        subtitle:
+          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Modernising the Enterprise User Experience',
+        subtitle:
+          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'User Interface Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          },
+          {
+            avatar_src: '/images/about_shape_circles.svg',
+            avatar_alt: 'Three overlapping circles',
+            overline: '04',
+            title: 'Software Architecture R&D',
+            subtitle:
+              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Global Frontend Delivery Services',
+        subtitle:
+          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Empower Enterprises with Extraordinary Experiences',
+        subtitle:
+          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo_title: '{appTitle} - Enterprise Frontend Development Services',
+    seo_description:
+      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
+        overline: '{appTitle}',
+        title: 'Modernising Enterprise User Experiences',
+        subtitle:
+          "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Accelerate Product Delivery',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Accelerate Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
+        items: [
+          {
+            fa_icon: 'fa-check',
+            title: 'Agile Development Methodology',
+            subtitle:
+              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Cutting-Edge Technologies',
+            subtitle:
+              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle:
+              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organisation's goals and processes.",
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Streamlined Project Management',
+            subtitle:
+              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Quality Assurance and Testing',
+            subtitle:
+              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Scalability and Future-Proofing',
+            subtitle:
+              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title:
+              'What experience and expertise do you have in frontend development?',
+            content:
+              'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
+          },
+          {
+            key: 'faq-2',
+            title:
+              'How do you ensure that the software you build meets our specific requirements?',
+            content:
+              'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
+          },
+          {
+            key: 'faq-3',
+            title: 'How do you ensure the quality of the software you develop?',
+            content:
+              'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
+          },
+          {
+            key: 'faq-4',
+            title: 'What industries do you have experience working with?',
+            content:
+              'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
+          },
+          {
+            key: 'faq-5',
+            title: 'How do you handle project management and communication?',
+            content:
+              'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
+          },
+          {
+            key: 'faq-6',
+            title: 'How do you ensure the security and privacy of our data?',
+            content:
+              'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
+          },
+          {
+            key: 'faq-7',
+            title: 'What is your approach to project pricing and timelines?',
+            content:
+              'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
+          },
+          {
+            key: 'faq-8',
+            title: 'What’s your experience in enterprise software development?',
+            content:
+              'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
+          },
+          {
+            key: 'faq-9',
+            title: 'What is your approach to project management?',
+            content:
+              'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
+          },
+          {
+            key: 'faq-10',
+            title:
+              'What is your pricing model for frontend development services?',
+            content:
+              'Our pricing model is flexible and depends on the specific needs and requirements of each project. We offer both fixed-price and time-and-materials pricing options, and we work closely with our clients to determine the most cost-effective and efficient approach for their project.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
 
-export const MOCK_GOVX_PAGES = MOCK_TECH_PAGES
+export const MOCK_GOVX_PAGES = [
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.'
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
+          items: [
+            {
+              fa_icon: 'fa-dice-d10',
+              title: 'Collaborative',
+              subtitle:
+                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+            },
+            {
+              fa_icon: 'fa-gingerbread-man',
+              title: 'Friendly',
+              subtitle:
+                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+            },
+            {
+              fa_icon: 'fa-watch',
+              title: 'Flexible',
+              subtitle:
+                'We support various working hours and schedules to work around your life.',
+            },
+            {
+              fa_icon: 'fa-hand-holding-seedling',
+              title: 'Personal Growth',
+              subtitle:
+                'Work and learn from other talented creatives who care about what they do.',
+            },
+            {
+              fa_icon: 'fa-mug-hot',
+              title: 'Food & Drinks',
+              subtitle:
+                'Enjoy all the coffee, tea and snacks you need to keep you going.',
+            },
+            {
+              fa_icon: 'fa-puzzle-piece',
+              title: 'Live It Up',
+              subtitle:
+                'Celebrate the festive occasions together as a team.',
+            },
+            {
+              fa_icon: 'fa-guitar',
+              title: 'Rewards',
+              subtitle:
+                'We recognise progress and reward hard work with our employee incentive scheme.'
+            },
+            {
+              fa_icon: 'fa-table-tennis',
+              title: 'Convenient',
+              subtitle:
+                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
+            }
+          ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
+      }
+    }
+  },
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'hero',
+        overline: '{appTitle}',
+        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title:
+          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+        subtitle:
+          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title:
+          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+        subtitle:
+          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Modernising the Enterprise User Experience',
+        subtitle:
+          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'User Interface Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+          },
+          {
+            avatar_src: '/images/about_shape_circles.svg',
+            avatar_alt: 'Three overlapping circles',
+            overline: '04',
+            title: 'Software Architecture R&D',
+            subtitle:
+              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Global Frontend Delivery Services',
+        subtitle:
+          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Empower Enterprises with Extraordinary Experiences',
+        subtitle:
+          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo_title: '{appTitle} - Enterprise Frontend Development Services',
+    seo_description:
+      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
+        overline: '{appTitle}',
+        title: 'Modernising Enterprise User Experiences',
+        subtitle:
+          "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Accelerate Product Delivery',
+        subtitle:
+          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Accelerate Development',
+            subtitle:
+              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+            href: `${routeConfig.SERVICES}/accelerate-development`,
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Modern Frontend Engineering',
+            subtitle:
+              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Product Team Augmentation',
+            subtitle:
+              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
+        items: [
+          {
+            fa_icon: 'fa-check',
+            title: 'Agile Development Methodology',
+            subtitle:
+              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Cutting-Edge Technologies',
+            subtitle:
+              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customized Solutions',
+            subtitle:
+              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organisation's goals and processes.",
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Streamlined Project Management',
+            subtitle:
+              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
+          },
+          {
+            fa_icon: 'fa-check-circle',
+            title: 'Quality Assurance and Testing',
+            subtitle:
+              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Scalability and Future-Proofing',
+            subtitle:
+              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title:
+              'What experience and expertise do you have in frontend development?',
+            content:
+              'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
+          },
+          {
+            key: 'faq-2',
+            title:
+              'How do you ensure that the software you build meets our specific requirements?',
+            content:
+              'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
+          },
+          {
+            key: 'faq-3',
+            title: 'How do you ensure the quality of the software you develop?',
+            content:
+              'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
+          },
+          {
+            key: 'faq-4',
+            title: 'What industries do you have experience working with?',
+            content:
+              'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
+          },
+          {
+            key: 'faq-5',
+            title: 'How do you handle project management and communication?',
+            content:
+              'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
+          },
+          {
+            key: 'faq-6',
+            title: 'How do you ensure the security and privacy of our data?',
+            content:
+              'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
+          },
+          {
+            key: 'faq-7',
+            title: 'What is your approach to project pricing and timelines?',
+            content:
+              'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
+          },
+          {
+            key: 'faq-8',
+            title: 'What’s your experience in enterprise software development?',
+            content:
+              'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
+          },
+          {
+            key: 'faq-9',
+            title: 'What is your approach to project management?',
+            content:
+              'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
+          },
+          {
+            key: 'faq-10',
+            title:
+              'What is your pricing model for frontend development services?',
+            content:
+              'Our pricing model is flexible and depends on the specific needs and requirements of each project. We offer both fixed-price and time-and-materials pricing options, and we work closely with our clients to determine the most cost-effective and efficient approach for their project.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up to date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
 
 export const MOCK_PAGES = {
   GROUP: MOCK_GROUP_PAGES,
@@ -3376,3 +4416,4 @@ export const MOCK_PAGES = {
   FINX: MOCK_FINX_PAGES,
   GOVX: MOCK_GOVX_PAGES,
 }
+

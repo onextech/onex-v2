@@ -56,7 +56,7 @@ export interface NextDesignPageProps
   extends DesignPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextTechPage: React.FC<NextDesignPageProps> = (props) => {
+const NextDesignPage: React.FC<NextDesignPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys, pageProviderProps } = props
 
   return (
@@ -77,4 +77,4 @@ const NextTechPage: React.FC<NextDesignPageProps> = (props) => {
   )
 }
 
-export default NextTechPage
+export default NextDesignPage
