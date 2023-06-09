@@ -3672,21 +3672,21 @@ export const MOCK_FINX_PAGES = [
             title: 'Digital Transformation Solutions',
             subtitle:
               'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
           },
           {
             fa_icon: 'fa-analytics',
             title: 'Financial Analytics and Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
             title: 'Wealth Management Services',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
           },
         ],
       },
