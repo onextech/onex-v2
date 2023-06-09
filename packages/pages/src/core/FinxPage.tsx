@@ -75,7 +75,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         fill
                         {...renderHeroWithBackgroundBlock({
                           ...hero,
-                          title: 'Unleash your X Factor',
+                          title: 'Transforming the Future of Financial Industries',
                           backgroundImageProps: {
                             src: '/images/about_nodes_above_city.png',
                             alt: 'hero',
@@ -86,7 +86,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         fill
                         {...renderHeroWithBackgroundBlock({
                           ...hero,
-                          title: "Deliver Tomorrow's Innovation Today",
+                          title: "Transforming the Future of Financial Industries",
                           backgroundImageProps: {
                             src: '/images/mission_earth.png',
                             alt: 'hero',
@@ -113,30 +113,13 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Intelligent Data Solutions for Modern Enterprises
+              Empowering the Finance Sector through AI-driven Solutions
             </>
           ),
           subtitle:
-            'Revolutionizing enterprises through strategic data insights and AI-driven solutions: Our proficiency in data science and enterprise AI transformations equips businesses with predictive, optimized, and intelligent systems, developed with a data-first approach.',
+            'At Fin X, we empower the finance sector by harnessing the power of AI-driven solutions. Our innovative technologies and expertise enable financial institutions to streamline operations, optimize decision-making, and drive transformative growth in an increasingly digital landscape',
           items: showcases,
           pt: { xs: 5, md: 10 },
-        }),
-        // Technologys
-        renderTechnologysBlock({ items: technologys }),
-        // Client Testimonials
-        renderClientTestimonialSliderBlock({
-          title: 'Powering Data-Driven Success',
-          subtitle:
-            "One X Data is the preferred choice for enterprises requiring sophisticated data science services, strategic data solutions, and advanced AI implementations.",
-          items: clientTestimonials,
-        }),
-        // Industry
-        renderFeaturedIndustrysBlock({
-          title: 'Access Industry Expertise & Best Practices',
-          subtitle:
-            'We are committed to equipping businesses with superior data science services and state-of-the-art AI solutions. We constantly innovate and refine our methodologies to ensure our clients stay at the forefront of their industry with actionable data insights and transformative AI capabilities.',
-          items: industrys,
-          sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
         renderFeaturedPostsBlock({
