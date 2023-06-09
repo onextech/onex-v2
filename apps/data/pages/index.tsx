@@ -56,7 +56,7 @@ export interface NextDataPageProps
   extends DataPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextTechPage: React.FC<NextDataPageProps> = (props) => {
+const NextDataPage: React.FC<NextDataPageProps> = (props) => {
   const {
     page,
     showcases,
@@ -85,4 +85,4 @@ const NextTechPage: React.FC<NextDataPageProps> = (props) => {
   )
 }
 
-export default NextTechPage
+export default NextDataPage
