@@ -4,7 +4,6 @@ import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,
   MOCK_SHOWCASES,
-  MOCK_TECHNOLOGYS,
   MOCK_POSTS,
   MOCK_INDUSTRYS,
 } from '@onex/mocks'
@@ -23,10 +22,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const page = getDynamicPage({ page: prevPage, context, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
-  // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
-  const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].filter(
-    ({ is_featured }) => is_featured
-  ).slice(0, 8)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
   const featuredPosts = orderBy(MOCK_POSTS[MOCK_KEY], 'published_at', 'desc')
     .filter(({ is_active }) => is_active)
@@ -42,12 +37,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   ).slice(0, 3)
 
   return makeGetStaticProps({
-    props: {
-      page,
-      showcases,
-      featuredPosts,
-      industrys,
-    },
+    props: { page, showcases, featuredPosts, industrys },
   })(context)
 }
 
@@ -56,13 +46,7 @@ export interface NextDigitalPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
-  const {
-    page,
-    showcases,
-    featuredPosts,
-    industrys,
-    pageProviderProps,
-  } = props
+  const { page, showcases, featuredPosts, industrys, pageProviderProps } = props
 
   return (
     <PageProvider {...pageProviderProps}>

@@ -1,12 +1,12 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
-import { TechPage, TechPageProps } from '@onex/pages'
+import { FinxPage, FinxPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,
   MOCK_SHOWCASES,
-  MOCK_TECHNOLOGYS,
   MOCK_POSTS,
   MOCK_INDUSTRYS,
+  MOCK_TECHNOLOGYS,
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
@@ -52,11 +52,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
   })(context)
 }
 
-export interface NextTechPageProps
-  extends TechPageProps,
+export interface NextFinxPageProps
+  extends FinxPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextTechPage: React.FC<NextTechPageProps> = (props) => {
+const NextFinxPage: React.FC<NextFinxPageProps> = (props) => {
   const {
     page,
     showcases,
@@ -73,16 +73,16 @@ const NextTechPage: React.FC<NextTechPageProps> = (props) => {
         transparentHeader
         headerProps={{ translucentAtScrollY: 755 }}
       >
-        <TechPage
-          page={page}
+        <FinxPage
           showcases={showcases}
-          technologys={technologys}
           featuredPosts={featuredPosts}
+          technologys={technologys}
           industrys={industrys}
+          page={page}
         />
       </LandingLayout>
     </PageProvider>
   )
 }
 
-export default NextTechPage
+export default NextFinxPage

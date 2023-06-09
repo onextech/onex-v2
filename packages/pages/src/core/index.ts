@@ -85,6 +85,12 @@ export * from './DataHomePage'
 export { default as TechPage } from './TechPage'
 export * from './TechPage'
 
+export { default as FinxPage } from './FinxPage'
+export * from './FinxPage'
+
+export { default as GovxPage } from './GovxPage'
+export * from './GovxPage'
+
 export { default as NewsletterPage } from './NewsletterPage'
 export * from './NewsletterPage'
 
