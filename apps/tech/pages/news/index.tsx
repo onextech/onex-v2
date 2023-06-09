@@ -19,7 +19,13 @@ const NextPressReleasesPage: React.FC<NextPressReleasesPageProps> = (props) => {
   const { pressReleases, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'News' }}>
+      <LandingLayout
+        seo={{
+          title: 'News',
+          description:
+            'Explore our featured articles and discover how our innovative solutions are making waves in the business world.',
+        }}
+      >
         <PressReleasesPage pressReleases={pressReleases} />
       </LandingLayout>
     </PageProvider>

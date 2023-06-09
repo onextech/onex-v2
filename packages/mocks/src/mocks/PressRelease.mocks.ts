@@ -144,7 +144,7 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     '<p><strong>For more information, contact:</strong></p>' +
     '<p><strong>Lu ShuHui</strong></p>' +
     '<p>Business Development Director</p>' +
-    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>'
+    '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>'
   },
 ].map((item, i) => ({
   id: i + 1,
@@ -211,7 +211,7 @@ export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = [
     '<p><strong>For more information, contact:</strong></p>' +
     '<p><strong>Lu ShuHui</strong></p>' +
     '<p>Business Development Director</p>' +
-    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>' +
+    '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>' +
     '<p>Through <a href="http://onexdata.co/">onexdata.co</a>, One X Data uses data and AI to create transformative change. With One X Data, explore the potential of data-driven innovation and realize the full potential of your company.</p>'
   },
 ].map((item, i) => ({
@@ -251,7 +251,7 @@ export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = [
     '<p><strong>For more information, contact:</strong></p>' +
     '<p><strong>Lu ShuHui</strong></p>' +
     '<p>Business Development Director</p>' +
-    '<p><a href="http://shu@onextech.com/">shu@onextech.com</a></p>'
+    '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>'
   },
 ].map((item, i) => ({
   id: i + 1,

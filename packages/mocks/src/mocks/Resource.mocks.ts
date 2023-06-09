@@ -13,7 +13,7 @@ export const MOCK_TECH_RESOURCES = [
       'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
     slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',
     subtitle:
-      'Learn how OKRs can turn your company strategy into a success. This guide breaks down the OKR framework and gives you access to templates, examples, and more to run OKRs at your business.',
+      'Learn how frontend development can turn your company strategy into a success. This guide breaks down frontend development frameworks and gives you access to templates, examples, and more.',
   },
 ].map((item, i) => ({
   id: i + 1,

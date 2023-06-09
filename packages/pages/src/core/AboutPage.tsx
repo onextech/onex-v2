@@ -44,7 +44,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           },
           items: [
             { type: 'overline', title: hero.overline },
-            { type: 'h2', title: hero.title },
+            { type: 'h2', title: hero.title, titleProps: { component: 'h1' } },
             {
               type: 'stack',
               sx: { mt: 3 },
