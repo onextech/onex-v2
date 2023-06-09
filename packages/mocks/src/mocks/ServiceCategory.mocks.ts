@@ -119,7 +119,58 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
 
 export const MOCK_DIGITAL_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
 
-export const MOCK_FINX_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_FINX_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Transformation Consulting',
+    slug: 'digital-transformation-consulting',
+    subtitle:
+      'Transform your financial institution through harnessing the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+    hero_src: 'https://source.unsplash.com/nOkWMjfMhnc/1600x900',
+    hero_alt: 'Blue circular design',
+  },
+  {
+    id: 2,
+    title: 'Operations & Business Processes',
+    slug: 'operations-and-business-processes',
+    subtitle:
+      'Optimize your financial processes with our expertise in streamlining workflows, increasing efficiency, and reducing costs for your institution.',
+    hero_src: 'https://source.unsplash.com/gdU9NcMLg-M/1600x900',
+    hero_alt: 'Black and white spiral art',
+  },
+  {
+    id: 3,
+    title: 'Investment Analysis & Management',
+    slug: 'investment-analysis-and-management',
+    subtitle: 'Make informed investment decisions and maximize returns with our comprehensive services tailored to your financial goals and risk appetite.',
+    hero_src: 'https://source.unsplash.com/ZGjbiukp_-A/1600x900',
+    hero_alt: 'Skyscrapers',
+  },
+  {
+    id: 4,
+    title: 'RegTech Solutions',
+    slug: 'regtech-solutions',
+    subtitle: 'Streamline regulatory compliance and mitigate risks with solutions designed to simplify and automate regulatory processes in the financial industry.',
+    hero_src: 'https://source.unsplash.com/orl3NGDKOnI/1600x900',
+    hero_alt: 'Tunnel art',
+  },
+  {
+    id: 5,
+    title: 'Wealth Management',
+    slug: 'wealth-management',
+    subtitle: 'Grow and protect your wealth with our comprehensive wealth management services, tailored to meet your financial goals and secure your financial future.',
+    hero_src: 'https://source.unsplash.com/lCPhGxs7pww/1600x900',
+    hero_alt: 'American dollar bills',
+  },
+  {
+    id: 6,
+    title: 'Engineering Solutions',
+    slug: 'engineering-solutions',
+    subtitle: 'Unlock innovative solutions to drive efficiency and maximize performance in your business operations, ensuring a competitive edge in the market.',
+    hero_src: 'https://source.unsplash.com/3JjnYjHCK0c/1600x900',
+    hero_alt: '3d illustration of an abstract geometric shape',
+  },
+]
 
 export const MOCK_GOVX_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
 
