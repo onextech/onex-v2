@@ -44,13 +44,13 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
                     },
                     {
                       type: 'h2',
-                      title: <>Thank you for contacting us, <span id='success-form-name'>{name}</span></>,
+                      title: <>Thank you for contacting us, <span id='contact-success-form-name'>{name}</span></>,
                       titleProps: { mb: 2, component: 'h1' },
                     },
                     {
                       type: 'subtitle1',
                       title: (
-                        <>We have received your details and we will reach out to you immediately at <span id='success-form-email'>{email}</span></>
+                        <>We have received your details and we will reach out to you immediately at <span id='contact-success-form-email'>{email}</span></>
                       ),
                     },
                     
