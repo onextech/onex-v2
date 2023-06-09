@@ -797,6 +797,15 @@ export const MOCK_VENTURES_PAGE = {
 
 const MOCK_COMMON_PAGES = [
   {
+    title: 'Contact Success',
+    slug: 'contact-success',
+    is_hidden_from_nav: true,
+    subtitle:
+      'We have received your message, and we will get back to you immediately!',
+    seo_description:
+      'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.',
+  },
+  {
     title: 'Contact',
     slug: 'contact',
     subtitle:
