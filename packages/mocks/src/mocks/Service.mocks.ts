@@ -2,6 +2,7 @@ import merge from 'lodash/merge'
 import { routeConfig } from '@onex/common'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 import {
+  MOCK_FINX_SERVICE_CATEGORYS,
   MOCK_DATA_SERVICE_CATEGORYS,
   MOCK_DESIGN_SERVICE_CATEGORYS,
   MOCK_GROUP_SERVICE_CATEGORYS,
@@ -4901,8 +4902,1996 @@ export const MOCK_DATA_SERVICES = [
 
 export const MOCK_DIGITAL_SERVICES = MOCK_TECH_SERVICES
 
-export const MOCK_FINX_SERVICES = MOCK_TECH_SERVICES
-
+export const MOCK_FINX_SERVICES = [
+  {
+    title: 'Digital Roadmap Development',
+    slug: 'digital-roadmap-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/p7pEokZap1o/1600x900',
+    hero_alt: 'Toy car on map',
+    subtitle:
+      'Define and execute a comprehensive digital roadmap that aligns with your business goals and drives transformation in the finance industry.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Guiding your digital transformation journey.',
+        items: [
+          {
+            title:
+              "In today's digital landscape, having a well-defined digital roadmap is crucial for companies to stay competitive and adapt to market changes. We understand the unique challenges faced by finance industry players, and we will work closely with you to analyze your business, identify opportunities for digital transformation, and create a roadmap tailored to your specific goals and objectives.",
+          },
+          {
+            title:
+              'By leveraging emerging technologies and industry best practices, we empower your organization to navigate the digital landscape with confidence and achieve sustainable success.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Digital Roadmap Development service combines industry expertise, data-driven insights, and strategic planning to deliver a roadmap that enables you to embrace digital innovation and drive business growth.',
+        items: [
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Strategic Vision',
+            subtitle:
+              'We help you define a clear strategic vision for your digital transformation journey, aligning it with your business goals and objectives.',
+          },
+          {
+            fa_icon: 'fa-gears',
+            title: 'Roadmap Planning',
+            subtitle:
+              'We create a detailed roadmap that outlines the necessary steps, milestones, and timelines to implement digital initiatives successfully.',
+          },
+          {
+            fa_icon: 'fa-balance-scale',
+            title: 'Risk Assessment',
+            subtitle:
+              'We conduct a thorough assessment of potential risks and challenges associated with the digital transformation process, ensuring proactive mitigation strategies.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Stakeholder Alignment',
+            subtitle:
+              'We facilitate collaboration and alignment among key stakeholders, ensuring buy-in and support for the digital roadmap implementation.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Digital Ecosystem Integration',
+            subtitle:
+              'We provide guidance on integrating digital solutions, technologies, and platforms into your existing ecosystem, maximizing their impact.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Partnership and Vendor Selection',
+            subtitle:
+              'We assist in identifying and selecting suitable technology partners and vendors to support your digital transformation initiatives.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Digital Roadmap Development service and how it can drive digital transformation in the finance industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a digital roadmap important for finance companies?',
+            content:
+              'A digital roadmap provides a clear direction and plan for implementing digital initiatives that drive growth, enhance operational efficiency, and deliver superior customer experiences in the ever-changing finance industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Digital Roadmap Development service benefit my finance business?',
+            content:
+              'Our service combines industry expertise, strategic planning, and data-driven insights to create a tailored digital roadmap that aligns with your business goals, mitigates risks, and maximizes the potential of digital transformation in the finance industry.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is the process of developing a digital roadmap?',
+            content:
+              'We collaborate closely with your team, conducting in-depth analysis, assessing risks, facilitating stakeholder alignment, and leveraging our expertise to create a comprehensive digital roadmap that guides your finance business towards successful digital transformation.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'FinTech Digital Strategy',
+    slug: 'fintech-digital-strategy',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/0IVop5v4MMU/1600x900',
+    hero_alt: 'Cashless payment',
+    subtitle:
+      'Innovative digital solutions and strategic consulting services tailored for the financial industry.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming the financial industry through digital innovation.',
+        items: [
+          {
+            title:
+              "In the rapidly evolving financial landscape, staying ahead of the curve is crucial. Our expert team brings together a deep understanding of financial operations, regulatory environment, and customer expectations to help clients navigate their digital transformation journey effectively. ",
+          },
+          {
+            title:
+              'We prioritize delivering practical and sustainable digital strategies that can drive growth, efficiency, and competitive advantage.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We combine technology expertise, industry knowledge, and strategic acumen to deliver comprehensive digital solutions for the finance industry.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Strategic Insight',
+            subtitle:
+              'We provide strategic guidance to help financial firms navigate the complexities of digital transformation.',
+          },
+          {
+            fa_icon: 'fa-digital-tachograph',
+            title: 'Digital Transformation',
+            subtitle:
+              'We empower financial institutions to leverage digital technologies and improve their operations, customer experiences, and revenue streams.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data Analysis & Insights',
+            subtitle:
+              'We leverage data analytics to provide actionable insights that drive informed decision-making and improved business outcomes.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud Strategy',
+            subtitle:
+              'We help institutions implement effective cloud strategies to enhance scalability, flexibility, and security in their operations.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Cybersecurity',
+            subtitle:
+              'We ensure your digital strategy incorporates robust security measures to protect against cyber threats and comply with regulatory standards.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'Automation & AI',
+            subtitle:
+              'We leverage automation and AI to drive process efficiency, cost reduction, and improved customer service.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our FinTech Digital Strategy service and how it can empower your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a digital strategy important for financial institutions?',
+            content:
+              'In the evolving financial landscape, a well-defined digital strategy is crucial. It enables financial institutions to adapt to changing customer expectations, regulatory changes, and emerging technologies. An effective digital strategy can improve operational efficiency, customer experience, compliance, and profitability.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your FinTech Digital Strategy service help my business?',
+            content:
+              'Our service combines deep industry knowledge, technical expertise, and strategic insight to deliver tailored digital solutions. We help you leverage technology to improve operations, customer experiences, and revenue streams. From strategic consulting to implementation, we provide end-to-end support for your digital transformation journey.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What technologies do you leverage in your digital solutions?',
+            content:
+              'We leverage a variety of technologies based on your specific needs. These may include cloud computing, data analytics, AI and machine learning, automation, cybersecurity measures, and more. Our goal is to leverage the right mix of technologies that align with your strategic objectives and operational needs.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'AI-Powered Business Process Automation',
+    slug: 'ai-powered-business-process-automation',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/PWv5NWEGeVE/1600x900',
+    hero_alt: '3d rendered blocks',
+    subtitle:
+      'Delivering top-notch AI-powered automation solutions designed to streamline operations in the finance sector.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing business operations with AI-driven automation.',
+        items: [
+          {
+            title:
+              "We look to introduce advanced automation solutions into the finance sector. Our expertise lies in integrating AI technologies to improve business operations, streamline workflows, and enhance customer experiences.",
+          },
+          {
+            title:
+              'Leveraging AI-powered automation can lead to tremendous operational efficiency and cost reduction, and help financial institutions adapt to the dynamic digital environment.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer AI-driven solutions that automate and optimize business processes, leading to enhanced efficiency and reduced costs.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Intelligent Automation',
+            subtitle:
+              'We provide intelligent automation solutions that integrate AI technologies to optimize various business processes.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'Robotic Process Automation',
+            subtitle:
+              'We implement Robotic Process Automation (RPA) to automate repetitive tasks and streamline workflows.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Analytics',
+            subtitle:
+              'Our solutions offer in-depth performance analytics, providing insights to continually optimize business operations.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud-Based Automation',
+            subtitle:
+              'We design cloud-based automation solutions for increased scalability, flexibility, and efficiency.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Optimization',
+            subtitle:
+              'Our team helps in optimizing your existing processes to maximize the effectiveness of automation.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We ensure our automation solutions comply with industry standards and enhance the security of your processes.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Powered Business Process Automation service and how it can enhance your business operations.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is AI-Powered Business Process Automation important for my business?',
+            content:
+              'AI-powered automation can greatly enhance the efficiency of your business operations. It can automate repetitive tasks, streamline workflows, and provide insights for continual optimization. This can result in significant cost savings and improved customer experiences.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your service help my financial institution?',
+            content:
+              'We provide tailored AI-powered automation solutions designed specifically for the finance sector. These solutions can automate various operations, from data analysis to customer service, leading to enhanced efficiency and improved customer experiences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What technologies do you leverage for your AI-Powered Business Process Automation service?',
+            content:
+              'Our solutions utilize cutting-edge technologies like machine learning, AI, robotic process automation (RPA), cloud computing, and more. The specific technologies used depend on the requirements of the task to be automated.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Workflow Management and Optimization',
+    slug: 'workflow-management-and-optimization',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/mVV0s8ZvEm4/1600x900',
+    hero_alt: 'Man looking at laptop',
+    subtitle:
+      'Streamline your financial operations and enhance productivity with our expert workflow management and optimization solutions.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Boost efficiency and productivity with optimized workflows.',
+        items: [
+          {
+            title:
+              "In the rapidly evolving financial industry, effective workflow management is essential for success. We offer bespoke solutions that streamline operations, enhance productivity, and enable your business to achieve its goals more efficiently.",
+          },
+          {
+            title:
+              'By optimizing workflows, we help you eliminate bottlenecks, reduce errors, and ensure that your team can focus on strategic tasks. ',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our expert solutions streamline operations and increase efficiency by optimizing workflows across your organization.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Workflow Optimization',
+            subtitle:
+              'We analyze your current processes to identify areas of improvement and streamline workflows for better efficiency.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Task Automation',
+            subtitle:
+              'Our team implements automation solutions to handle routine tasks, enabling your staff to focus on strategic initiatives.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Analytics',
+            subtitle:
+              'Leverage our advanced analytics tools to measure the effectiveness of your workflows and identify areas for further improvement.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaborative Workflows',
+            subtitle:
+              'We design workflows that enhance collaboration, ensuring all team members can contribute effectively.',
+          },
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Business Process Management',
+            subtitle:
+              'We apply effective business process management strategies to align your operations with your business goals.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance',
+            subtitle:
+              'Our workflows are designed to help you meet regulatory compliance standards specific to the finance industry.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Workflow Management and Optimization service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Workflow Management and Optimization crucial for my business?',
+            content:
+              'Workflow Management and Optimization is key to increasing efficiency and productivity in your organization. It helps in streamlining operations, eliminating bottlenecks, reducing errors, and ensuring that your team can focus on strategic tasks. This not only improves operational efficiency but also leads to cost savings.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your service enhance my financial operations?',
+            content:
+              'Our expert team analyzes your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organization\'s needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What does the workflow optimization process involve?',
+            content:
+              'Our workflow optimization process involves a thorough analysis of your current workflows, identification of bottlenecks and areas for improvement, and the implementation of changes. This may include process automation, reorganization of tasks, implementation of new technologies, and training of staff. The goal is to make your workflows more efficient and effective.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Automated Portfolio Optimization',
+    slug: 'automated-portfolio-optimization',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/Fixg8KipOg8/1600x900',
+    hero_alt: 'Textured background',
+    subtitle:
+      'Revolutionize your asset management with our automated portfolio optimization solutions.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing asset management with automated portfolio optimization.',
+        items: [
+          {
+            title:
+              "In the complex world of finance, portfolio optimization is key to asset management success. We leverage advanced algorithms and machine learning to optimize your portfolios, improve returns, and reduce risk.",
+          },
+          {
+            title:
+              'Our automated systems monitor market trends and adjust portfolio allocations in real time to maximize your financial performance.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our advanced solutions utilize machine learning and sophisticated algorithms to optimize your portfolios and enhance your financial performance.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Advanced Algorithms',
+            subtitle:
+              'We employ sophisticated algorithms to optimize portfolio allocations and enhance returns.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'Machine Learning',
+            subtitle:
+              'Our systems use machine learning to monitor market trends and adjust portfolio allocations in real time.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Analytics',
+            subtitle:
+              'Leverage our advanced analytics tools to measure the performance of your portfolios and identify areas for further improvement.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management',
+            subtitle:
+              'Our solutions are designed with risk management in mind, aiming to maximize returns while mitigating risk.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Automated Operations',
+            subtitle:
+              'With our automated solutions, your portfolios are optimized 24/7, ensuring you never miss a market opportunity.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Customization',
+            subtitle:
+              'We provide tailored solutions that cater to the unique needs and risk profile of your organization.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Portfolio Optimization service and how it can revolutionize your asset management.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Automated Portfolio Optimization important for my business?',
+            content:
+              'Automated Portfolio Optimization is crucial in the dynamic world of finance, as it can enhance your returns and reduce risk. By leveraging advanced algorithms and machine learning, it can monitor market trends and adjust portfolio allocations in real time, ensuring your financial performance is maximized.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your service improve my asset management?',
+            content:
+              'Our Automated Portfolio Optimization service utilizes sophisticated algorithms and machine learning to optimize your portfolios. It monitors market trends and adjusts portfolio allocations in real time to maximize returns and reduce risk. We also provide advanced analytics tools to measure your portfolio\'s performance and identify areas for improvement.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What does your service include?',
+            content:
+              'Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organization\'s unique needs and risk profile.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'AI-Driven Investment Analysis',
+    slug: 'ai-driven-investment-analysis',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/g_WPAiUc1Us/1600x900',
+    hero_alt: '3d abstract sphere floating in the air',
+    subtitle:
+      'Uncover hidden opportunities and make smarter investment decisions with our AI-powered analysis tools.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering investments with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              "In the fast-paced world of finance, making informed investment decisions can be challenging. Our services utilize advanced AI tools to analyze market trends, evaluate investment opportunities, and provide actionable insights.",
+          },
+          {
+            title:
+              'We leverage AI and machine learning technologies to process vast amounts of financial data and provide predictive analytics, helping you make data-driven decisions and maximize your investment returns.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our AI-driven tools provide advanced analysis and predictive analytics to help you make informed investment decisions.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'AI Analysis',
+            subtitle:
+              'Our advanced AI tools analyze market trends and investment opportunities.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Predictive Analytics',
+            subtitle:
+              'Leverage our predictive analytics to forecast market trends and maximize your investment returns.',
+          },
+          {
+            fa_icon: 'fa-search-dollar',
+            title: 'Investment Evaluation',
+            subtitle:
+              'Our AI tools evaluate potential investments based on a variety of factors to provide actionable insights.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'Automated Data Processing',
+            subtitle:
+              'Our systems can process vast amounts of financial data quickly and accurately, saving you time and resources.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Customization',
+            subtitle:
+              'We provide customized solutions tailored to your specific investment strategies and goals.',
+          },
+          {
+            fa_icon: 'fa-clipboard-check',
+            title: 'Decision Support',
+            subtitle:
+              'Our AI tools help you make data-driven decisions and manage your investments more effectively.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Investment Analysis service and how it can empower your investment decisions.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is AI-Driven Investment Analysis important for my business?',
+            content:
+              'AI-Driven Investment Analysis can significantly enhance your investment decisions. By analyzing vast amounts of financial data and predicting market trends, it provides actionable insights and helps you make data-driven decisions. This not only maximizes your investment returns but also saves time and resources.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What does your service include?',
+            content:
+              'Our service includes AI-driven analysis of market trends and investment opportunities, predictive analytics, evaluation of potential investments, automated data processing, customized solutions based on your specific strategies and goals, and decision support to help you manage your investments more effectively.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does AI enhance investment decisions?',
+            content:
+              'AI enhances investment decisions by processing and analyzing vast amounts of financial data quickly and accurately. It provides predictive analytics to forecast market trends, evaluates potential investments based on a variety of factors, and provides actionable insights to guide your investment decisions.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'AI-Enabled Regulatory Reporting',
+    slug: 'ai-enabled-regulatory-reporting',
+    category_id: 4,
+    // Hero
+    hero_src: 'https://source.unsplash.com/wNsHBf_bTBo/1600x900',
+    hero_alt: 'Cubic 3d art',
+    subtitle:
+      'Leverage our AI solutions to simplify, enhance accuracy and speed up your regulatory reporting process.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming regulatory reporting with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              "Regulatory reporting can be a complex and time-consuming process. Our AI-powered tools help you automate data extraction, validation, and report generation, ensuring accurate and timely reports.",
+          },
+          {
+            title:
+              'This enables your team to focus on strategic tasks, enhancing overall productivity.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We leverage AI to simplify regulatory reporting, reduce errors, and increase efficiency.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'Automated Data Extraction',
+            subtitle:
+              'Our AI-powered tools automate data extraction, reducing manual efforts and risk of errors.',
+          },
+          {
+            fa_icon: 'fa-check-double',
+            title: 'Data Validation',
+            subtitle:
+              'We automate the validation process to ensure that your reports are accurate and reliable.',
+          },
+          {
+            fa_icon: 'fa-file-alt',
+            title: 'Automated Report Generation',
+            subtitle:
+              'Our AI tools generate reports automatically, ensuring timely compliance with regulatory requirements.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Time Efficiency',
+            subtitle:
+              'With automated processes, you can significantly cut down the time spent on regulatory reporting.',
+          },
+          {
+            fa_icon: 'fa-search',
+            title: 'Compliance Tracking',
+            subtitle:
+              'We provide tools for tracking regulatory changes, ensuring your reports are always up-to-date.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Mitigation',
+            subtitle:
+              'By automating reporting and compliance tracking, we help you mitigate regulatory risks.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Enabled Regulatory Reporting service and how it can simplify your regulatory reporting process.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is AI-Enabled Regulatory Reporting important for my business?',
+            content:
+              'AI-Enabled Regulatory Reporting simplifies the complex process of regulatory reporting, reduces errors, increases efficiency, and ensures timely compliance. This allows your team to focus on strategic tasks, enhancing overall productivity.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your service improve regulatory reporting?',
+            content:
+              'Our service uses AI to automate data extraction, validation, and report generation. This reduces manual efforts, increases accuracy, and ensures timely reporting. We also provide tools for tracking regulatory changes, ensuring your reports are always up-to-date.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does AI simplify the regulatory reporting process?',
+            content:
+              'AI simplifies regulatory reporting by automating tasks like data extraction and validation, reducing manual efforts and risk of errors. It also facilitates automatic generation of reports and tracking of regulatory changes, ensuring accuracy and timeliness.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Compliance Risk Assessment',
+    slug: 'compliance-risk-assessment',
+    category_id: 4,
+    // Hero
+    hero_src: 'https://source.unsplash.com/_Mpp6YZytzg/1600x900',
+    hero_alt: 'Dice on table',
+    subtitle:
+      'Streamline your compliance management and minimize risks with our tailored solutions.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Navigating compliance risks with confidence.',
+        items: [
+          {
+            title:
+              "Compliance risks can have significant impacts on your business. We provide effective solutions that help you navigate these challenges confidently.",
+          },
+          {
+            title:
+              'We help identify, assess, and mitigate compliance risks, ensuring you are always ahead of regulatory changes and minimizing potential penalties.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a comprehensive suite of services to assist you in managing your compliance risks effectively.',
+        items: [
+          {
+            fa_icon: 'fa-search',
+            title: 'Risk Identification',
+            subtitle:
+              'We help you identify potential compliance risks associated with your financial operations.',
+          },
+          {
+            fa_icon: 'fa-balance-scale',
+            title: 'Risk Evaluation',
+            subtitle:
+              'Our team evaluates the potential impact and likelihood of identified risks materializing.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Mitigation',
+            subtitle:
+              'We provide strategies to mitigate identified risks, ensuring you operate within regulatory boundaries.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Continuous Monitoring',
+            subtitle:
+              'We offer continuous monitoring services to manage evolving risks and regulatory changes.',
+          },
+          {
+            fa_icon: 'fa-hands-helping',
+            title: 'Consultation',
+            subtitle:
+              'Our experts provide consultation and guidance on your compliance risk management strategy.',
+          },
+          {
+            fa_icon: 'fa-book',
+            title: 'Training',
+            subtitle:
+              'We provide training to ensure your team understands compliance risks and how to manage them.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our Compliance Risk Assessment service and how it can help you.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Compliance Risk Assessment important for my business?',
+            content:
+              'Compliance Risk Assessment is critical to understanding and managing the potential compliance risks associated with your operations. Effective risk management can help prevent regulatory violations, financial losses, and damage to your reputation.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What is included in your Compliance Risk Assessment service?',
+            content:
+              'Our service includes identifying and evaluating compliance risks, providing strategies for risk mitigation, continuous monitoring of evolving risks, and consultation on risk management strategy. We also offer training to ensure your team is equipped to manage compliance risks effectively.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can your service help if we are already facing regulatory issues?',
+            content:
+              'If you are already facing regulatory issues, our Compliance Risk Assessment service can help you understand the root cause and implement remedial measures. We will guide you through necessary steps to mitigate current risks, avoid future regulatory breaches, and restore compliance.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Automated Legal Document Review',
+    slug: 'automated-legal-document-review',
+    category_id: 4,
+    // Hero
+    hero_src: 'https://source.unsplash.com/XN4T2PVUUgk/1600x900',
+    hero_alt: 'Stack of books',
+    subtitle:
+      'Revolutionizing the legal landscape with intelligent automation.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Automate and optimize your legal document review process.',
+        items: [
+          {
+            title:
+              'We believe in the power of automation and its potential to revolutionize the legal industry. We leverage cutting-edge technology to automate and optimize your legal document review process, saving you valuable time and resources.'
+          },
+          {
+            title:
+              'With our service, you can expect enhanced accuracy, faster turnaround times, and lower costs. Empower your legal team to focus on more strategic tasks, while we take care of the routine.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our robust automated legal document review service is designed to help you manage your legal operations more efficiently.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'Intelligent Automation',
+            subtitle:
+              'We leverage advanced AI and machine learning technologies to automate the review of your legal documents.',
+          },
+          {
+            fa_icon: 'fa-clipboard-check',
+            title: 'Accuracy & Consistency',
+            subtitle:
+              'Our automated review ensures consistent results, minimizing the risk of human error.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Time-saving',
+            subtitle:
+              'Our service helps you save valuable time by automating the tedious process of document review.',
+          },
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Cost-effective',
+            subtitle:
+              'By reducing manual effort, our service helps lower the costs associated with legal document review.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance',
+            subtitle:
+              'We ensure that your legal documents comply with applicable laws and regulations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Resource Management',
+            subtitle:
+              'Enable your legal team to focus on strategic tasks by eliminating routine manual review.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Legal Document Review service and how it can streamline your legal operations.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should I automate legal document review?',
+            content:
+              'Automating legal document review not only saves time and resources but also enhances accuracy, as it eliminates the risk of human error. It can help streamline your legal operations and free your legal team to focus on more strategic tasks.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of documents can your service review?',
+            content:
+              'Our service is designed to handle a wide variety of legal documents, including contracts, agreements, and regulatory documents. Contact us for more specific information regarding your needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How accurate is your Automated Legal Document Review service?',
+            content:
+              'Our service leverages advanced AI and machine learning technologies, designed to ensure high accuracy and consistency in document review. However, as with any automated system, it\'s recommended to have final reviews conducted by legal professionals.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'AI-Driven Asset Allocation',
+    slug: 'ai-driven-asset-allocation',
+    category_id: 5,
+    // Hero
+    hero_src: 'https://source.unsplash.com/af5vFlDUHeg/1600x900',
+    hero_alt: 'Textured background',
+    subtitle:
+      'Harnessing the power of AI to optimize asset allocation strategies.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing asset allocation with AI.',
+        items: [
+          {
+            title:
+              'In the rapidly evolving financial world, traditional asset allocation strategies might not yield the desired results. We apply machine learning and data analytics to optimize these strategies, providing your company with a competitive edge.'
+          },
+          {
+            title:
+              'By identifying patterns in vast amounts of financial data, our AI-driven approach can forecast market trends more accurately, enabling smarter and more profitable investment decisions.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harnessing the power of AI, we help companies make informed asset allocation decisions for superior portfolio performance.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Advanced AI Technology',
+            subtitle:
+              'We utilize state-of-the-art AI technology to analyze market trends and inform asset allocation decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Predictive Analytics',
+            subtitle:
+              'Our service provides predictive analytics for future market trends, facilitating data-driven decision making.',
+          },
+          {
+            fa_icon: 'fa-balance-scale',
+            title: 'Risk Assessment',
+            subtitle:
+              'Our AI algorithms evaluate potential risks, aiding in the development of robust risk management strategies.',
+          },
+          {
+            fa_icon: 'fa-coins',
+            title: 'Portfolio Optimization',
+            subtitle:
+              'We optimize your asset portfolio to align with your financial goals and risk tolerance.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Dynamic Reallocation',
+            subtitle:
+              'Our system allows for dynamic asset reallocation in response to changing market conditions.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Regulatory Compliance',
+            subtitle:
+              'Our service is designed to meet all regulatory requirements, ensuring peace of mind.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Asset Allocation service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should I use AI for asset allocation?',
+            content:
+              'AI-driven asset allocation uses machine learning and data analytics to optimize asset allocation strategies. This approach can analyze vast amounts of data, identify patterns, and forecast market trends more accurately, enabling smarter and more profitable investment decisions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of assets can your service allocate?',
+            content:
+              'Our AI-Driven Asset Allocation service can handle a wide range of asset types, including stocks, bonds, real estate, and more. The system can be customized to suit your company\'s specific needs and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does your service handle risk management?',
+            content:
+              'Our service evaluates potential risks using AI algorithms, aiding in the development of robust risk management strategies. By predicting potential market downturns and other risk factors, we help mitigate losses and optimize returns.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Predictive Customer Behavior Analysis',
+    slug: 'predictive-customer-behavior-analysis',
+    category_id: 5,
+    // Hero
+    hero_src: 'https://source.unsplash.com/AnG9sri3WdI/1600x900',
+    hero_alt: '3d illustration of geometric stuff made in a blender.',
+    subtitle:
+      'Utilizing advanced AI algorithms to predict customer behaviors and improve business outcomes.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming customer data into actionable insights.',
+        items: [
+          {
+            title:
+              'In the competitive finance industry, understanding and predicting customer behavior is key to success. We apply machine learning algorithms to customer data, providing powerful insights that can drive business growth.'
+          },
+          {
+            title:
+              'From predicting future buying patterns to identifying potential churn, our service provides the predictive insights needed to optimize customer experiences, improve retention, and increase profitability.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Offering a comprehensive range of customer behavior predictive analysis services to support your business.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Customer Segmentation',
+            subtitle:
+              'Our service clusters customers into distinct groups based on their behaviors, preferences, and more, enabling personalized engagement.',
+          },
+          {
+            fa_icon: 'fa-bullseye',
+            title: 'Churn Prediction',
+            subtitle:
+              'We identify customers who are likely to churn, allowing proactive actions to increase retention.',
+          },
+          {
+            fa_icon: 'fa-shopping-cart',
+            title: 'Purchase Prediction',
+            subtitle:
+              'Predict future buying behaviors to optimize product offerings and increase sales.',
+          },
+          {
+            fa_icon: 'fa-user-circle',
+            title: 'Customer Lifetime Value Prediction',
+            subtitle:
+              'Determine the predicted revenue that a customer can generate during their lifetime with your company.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Personalized Marketing',
+            subtitle:
+              'Utilize customer behavior insights to personalize marketing efforts and improve conversion rates.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance and Privacy',
+            subtitle:
+              'Ensure that all predictive analysis adheres to the highest standards of data privacy and regulatory compliance.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Predictive Customer Behavior Analysis service and how it can drive your business growth.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can Predictive Customer Behavior Analysis benefit my business?',
+            content:
+              'Predictive Customer Behavior Analysis can provide valuable insights into your customers\' future behaviors, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviors, you can make more informed decisions and strategically plan your business operations.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What data do you need to perform Predictive Customer Behavior Analysis?',
+            content:
+              'Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behavior, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company\'s data policies.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How accurate are the predictions from your service?',
+            content:
+              'While no predictive analysis can guarantee 100% accuracy, our service uses advanced machine learning algorithms and robust data processing techniques to provide highly reliable predictions. Furthermore, as we continually refine our models with new data, the accuracy of our predictions typically improves over time.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Personalized Product Recommendation Systems',
+    slug: 'personalized-product-recommendations-systems',
+    category_id: 5,
+    // Hero
+    hero_src: 'https://source.unsplash.com/pu3bAmgHWj4/1600x900',
+    hero_alt: 'iPhone homescreen',
+    subtitle:
+      'Drive customer engagement and revenue by leveraging AI-powered personalized recommendations.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Elevating customer experience with personalized recommendations.',
+        items: [
+          {
+            title:
+              'As the financial landscape grows increasingly competitive, it’s more important than ever to offer tailored experiences to your customers. We leverage advanced machine learning algorithms to analyze customer data and provide highly relevant product suggestions.'
+          },
+          {
+            title:
+              'Our systems adapt to evolving customer preferences, helping financial businesses like yours improve customer engagement, increase conversions, and maximize revenue.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a full suite of services to build, implement, and enhance your personalized product recommendation system.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'AI-Powered Recommendations',
+            subtitle:
+              'Our system uses AI and machine learning to provide accurate, real-time product recommendations for each individual customer.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Adaptive Learning',
+            subtitle:
+              'Our system learns from each interaction, continually refining its recommendations to improve relevance over time.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'System Integration',
+            subtitle:
+              'We ensure seamless integration with your existing digital platforms for a smooth user experience.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Privacy & Security',
+            subtitle:
+              'We prioritize customer data privacy and system security to keep your business and your customers safe.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Analytics & Reporting',
+            subtitle:
+              'We provide detailed analytics to help you understand the performance and impact of your recommendation system.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Consulting & Support',
+            subtitle:
+              'Our team of experts offers ongoing consulting and support to help you maximize the value of your recommendation system.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Personalized Product Recommendation Systems and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a personalized product recommendation system important?',
+            content:
+              'Personalized product recommendations can significantly improve customer engagement by providing a tailored shopping experience. They can help increase conversions, boost customer loyalty, and drive additional revenue by promoting relevant products to customers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data is needed for the system?',
+            content:
+              'Our system uses a variety of customer data, including transaction history, browsing behavior, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company\'s data policies.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can I measure the impact of the recommendation system?',
+            content:
+              'We provide detailed analytics and reporting features that allow you to measure key metrics such as conversion rates, average order value, and customer engagement. These insights can help you understand the impact of the recommendation system on your business performance.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Engineering Staff Augmentation',
+    slug: 'engineering-staff-augmentation',
+    category_id: 6,
+    // Hero
+    hero_src: 'https://source.unsplash.com/uOhBxB23Wao/1600x900',
+    hero_alt: 'Two people discussing',
+    subtitle:
+        'Supplement your team with expert engineers to accelerate your digital transformation.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Flexible, scalable team expansion to meet your goals.',
+        items: [
+          {
+            title:
+              'We provide skilled engineers who can seamlessly integrate with your existing teams and processes, boosting your capabilities and allowing you to scale effortlessly.'
+          },
+          {
+            title:
+              'Whether you need a single engineer or a whole team, for a month or a year, we offer flexible engagement models that align with your business needs and goals.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a full suite of services to help you meet your engineering needs.',
+        items: [
+          {
+            fa_icon: 'fa-user-plus',
+            title: 'Talent Acquisition',
+            subtitle:
+              'We identify and onboard skilled engineers that fit your specific project needs and team culture.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Seamless Integration',
+            subtitle:
+              'Our engineers integrate into your existing team, processes, and communication channels for maximum efficiency.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Scale Rapidly',
+            subtitle:
+              'Quickly scale up or down based on project requirements, helping you manage costs effectively.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Wide Range of Expertise',
+            subtitle:
+              'Our pool of engineers has a broad spectrum of expertise, covering numerous technologies and industries.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Flexible Engagement',
+            subtitle:
+              'We offer both short-term and long-term engagements to suit your project timelines and budget.',
+          },
+          {
+            fa_icon: 'fa-hands-helping',
+            title: 'Support and Guidance',
+            subtitle:
+              'Our relationship managers ensure smooth operations and are always ready to address any issues or queries.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Engineering Staff Augmentation service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is Engineering Staff Augmentation?',
+            content:
+              'Engineering Staff Augmentation is a flexible outsourcing strategy that allows you to hire tech talent globally and manage your augmented team directly. You are the one to choose your team members and manage their work, while the staffing company handles all administrative and HR processes.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How quickly can I scale my team with Staff Augmentation?',
+            content:
+              'The time to scale depends on your specific needs. However, with our extensive network and efficient onboarding processes, we can often introduce new team members within a few days to a few weeks.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What if the provided engineer or team doesn’t meet my expectations?',
+            content:
+              'Your satisfaction is our priority. If you\'re not satisfied with the performance of an engineer or a team we’ve provided, we will work with you to find a suitable replacement.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Generative AI Solutions',
+    slug: 'generative-ai-solutions',
+    category_id: 6,
+    // Hero
+    hero_src: 'https://source.unsplash.com/I02k89RVzB4/1600x900',
+    hero_alt: 'Shapes in a ball',
+    subtitle:
+        'Discover how our generative AI solutions can transform your business by enabling automated creativity and intelligent problem-solving.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlocking new possibilities with generative AI.',
+        items: [
+          {
+            title:
+              'Generative AI is revolutionizing various industries, including finance, by automating creative processes and providing novel solutions to complex problems.'
+          },
+          {
+            title:
+              'Our team of experts combines advanced machine learning techniques with domain-specific knowledge to develop tailored generative AI solutions that can automate tasks, generate personalized recommendations, optimize processes, and much more.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We deliver cutting-edge generative AI solutions tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Automated Creativity',
+            subtitle:
+              'Unlock new possibilities by leveraging generative AI to automate creative processes and generate unique ideas.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Intelligent Problem-Solving',
+            subtitle:
+              'Solve complex problems efficiently by utilizing generative AI algorithms that can explore and optimize solution spaces.',
+          },
+          {
+            fa_icon: 'fa-cube',
+            title: 'Custom Model Development',
+            subtitle:
+              'We develop custom generative AI models tailored to your specific business requirements and data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Domain Expertise',
+            subtitle:
+              'Our team combines expertise in generative AI with deep domain knowledge to deliver impactful solutions in the finance industry.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analysis and Modeling',
+            subtitle:
+              'We provide comprehensive data analysis and modeling services to support generative AI initiatives.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Scalable Deployment',
+            subtitle:
+              'We ensure that your generative AI solutions are deployed efficiently and can scale to meet your growing needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Generative AI Solutions and how they can transform your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is generative AI?',
+            content:
+              'Generative AI refers to the use of artificial intelligence techniques, such as deep learning and reinforcement learning, to generate new content, ideas, or solutions. It enables machines to create original and valuable outputs, leading to automated creativity and intelligent problem-solving.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can generative AI benefit my business in the finance industry?',
+            content:
+              'Generative AI can bring numerous benefits to the finance industry. It can automate time-consuming tasks, generate personalized product recommendations, optimize trading strategies, detect fraud, and enhance risk assessment models. By leveraging generative AI, businesses in finance can drive innovation, improve operational efficiency, and gain a competitive edge.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do I need a large amount of data to implement generative AI solutions?',
+            content:
+              'The amount of data required for generative AI solutions depends on the specific application and complexity of the problem. While more data can often lead to better results, it is possible to develop effective generative AI models even with limited data. Our team will work closely with you to determine the data requirements and develop tailored solutions based on your available data.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'ChatGPT API Development',
+    slug: 'chatgpt-api-development',
+    category_id: 6,
+    // Hero
+    hero_src: 'https://source.unsplash.com/UF3vfhV04SA/1600x900',
+    hero_alt: 'OpenAI homescreen',
+    subtitle:
+        'Unlock the power of conversational AI with our ChatGPT API development services.',
+    // Seo
+    seo: {
+      title: 'User Interface Development',
+      description:
+        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transforming customer interactions with ChatGPT.',
+        items: [
+          {
+            title:
+              'Conversational AI has become a game-changer in customer interactions, enabling businesses to provide personalized and efficient support at scale.'
+          },
+          {
+            title:
+              'Our team of experts leverages the latest advancements in natural language processing and deep learning to create ChatGPT models that can understand user intent, generate human-like responses, and provide meaningful conversational experiences.'
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We deliver robust ChatGPT API solutions tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Chatbot Development',
+            subtitle:
+              'Build intelligent chatbots powered by our ChatGPT API to automate customer support, sales interactions, and more.',
+          },
+          {
+            fa_icon: 'fa-server',
+            title: 'API Integration',
+            subtitle:
+              'Integrate our ChatGPT API seamlessly into your existing systems, applications, and platforms.',
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom Application Development',
+            subtitle:
+              'We develop custom applications and interfaces that leverage the capabilities of our ChatGPT API.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management and Training',
+            subtitle:
+              'Ensure optimal performance of your ChatGPT models through data management, training, and continuous improvement.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Intent Recognition',
+            subtitle:
+              'Enhance your chatbot\'s understanding of user intent with advanced intent recognition capabilities.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize the security and compliance of your ChatGPT API implementation, ensuring data protection and privacy.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our ChatGPT API Development services and how they can elevate your customer interactions.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is ChatGPT?',
+            content:
+              'ChatGPT is a state-of-the-art language model developed by OpenAI that excels in generating human-like text responses in a conversational setting. It can be used to build chatbots, virtual assistants, and other conversational AI applications.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can ChatGPT benefit my business?',
+            content:
+              'By leveraging ChatGPT, businesses can automate customer support, improve response times, personalize interactions, and scale their customer service efforts. It enables efficient handling of frequently asked questions, provides 24/7 availability, and enhances customer satisfaction.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What industries can benefit from ChatGPT API development?',
+            content:
+              'ChatGPT API development can benefit a wide range of industries, including finance, e-commerce, healthcare, telecommunications, and more. Any business that interacts with customers can leverage ChatGPT to enhance their customer support, sales, and engagement processes.',
+          },
+        ],
+      },
+    }
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_FINX_SERVICE_CATEGORYS),
+    ...item,
+  })
+})
 export const MOCK_GOVX_SERVICES = MOCK_TECH_SERVICES
 
 export const MOCK_SERVICES = {
