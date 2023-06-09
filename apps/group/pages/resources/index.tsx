@@ -22,9 +22,9 @@ const NextResourcesPage: React.FC<NextResourcesPageProps> = (props) => {
         seo={{
           title: 'Resources',
           description:
-            'Unlock the key to business success with One X Group\'s comprehensive collection of resources.'
-          }}
-        >
+            "Unlock the key to business success with One X Group's comprehensive collection of resources.",
+        }}
+      >
         <ResourcesPage resources={resources} />
       </LandingLayout>
     </PageProvider>
