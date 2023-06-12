@@ -3466,7 +3466,7 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: '{appTitle}',
-        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        title: 'Transforming the Future of Finance with Scalable Solutions',
         buttons: [
           {
             overline: 'What we do',
@@ -3484,9 +3484,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+          'We believe in harnessing the power of technology to transform and digitalize the finance industry.',
         subtitle:
-          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+          '{appTitle} is driven by the belief in harnessing technology\'s power to digitalize and transform the finance industry, enabling organizations to thrive through innovative solutions.',
         buttons: [
           {
             overline: 'Who we are',
@@ -3499,9 +3499,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
-          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+          'Empowering Financial Institutions for the Digital Age',
         subtitle:
-          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+          '{appTitle} is dedicated to empowering financial institutions for the digital age, enabling their success through innovative solutions and expertise.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -3514,50 +3514,42 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Modernising the Enterprise User Experience',
+        title: 'Unlocking Growth Through Digital Innovation',
         subtitle:
-          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+          'We fuel growth and drive industry transformation through our commitment to digital innovation, empowering businesses to unlock their full potential in the digital era.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'Three circles',
             overline: '01',
-            title: 'User Interface Development',
+            title: 'Digital Transformation Solutions',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Modern Frontend Engineering',
+            title: 'Financial Analytics and Management',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Product Team Augmentation',
+            title: 'Wealth Management Services',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-          },
-          {
-            avatar_src: '/images/about_shape_circles.svg',
-            avatar_alt: 'Three overlapping circles',
-            overline: '04',
-            title: 'Software Architecture R&D',
-            subtitle:
-              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
           },
         ],
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        title: 'Redefining Finance through Digital Innovation',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+          'Our team of consultants, designers, and engineers live and breathe digital services to deliver the best technological solutions targeted at growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -3576,9 +3568,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Global Frontend Delivery Services',
+        title: 'Unleashing Global Financial Potential',
         subtitle:
-          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+          '{appTitle} expands horizons and reaches across borders, empowering the finance industry worldwide with our innovative solutions and global expertise, transforming businesses on a global scale.',
         items: [
           {
             title: '100+',
@@ -3615,9 +3607,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Empower Enterprises with Extraordinary Experiences',
+        title: 'Embrace the Data-Driven Future',
         subtitle:
-          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+          'We believe that embracing data and AI is the next step for businesses all over the world. If you are curious about the future of data and AI solutions, come join us at {appTitle} to be at the forefront of change.',
         buttons: [
           {
             overline: 'Careers',
