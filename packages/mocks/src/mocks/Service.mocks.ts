@@ -8,6 +8,7 @@ import {
   MOCK_DESIGN_SERVICE_CATEGORYS,
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_TECH_SERVICE_CATEGORYS,
+  MOCK_DIGITAL_SERVICE_CATEGORYS,
 } from './ServiceCategory.mocks'
 
 export const MOCK_SERVICE_PAGE = {
@@ -4901,7 +4902,1600 @@ export const MOCK_DATA_SERVICES = [
   })
 })
 
-export const MOCK_DIGITAL_SERVICES = MOCK_TECH_SERVICES
+export const MOCK_DIGITAL_SERVICES = [
+  {
+    title: 'Customer Journey Mapping',
+    slug: 'customer-journey-mapping',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/1V5zGGTYXVc/1600x900',
+    hero_alt: 'Customer journey visualization',
+    subtitle:
+      'Comprehensively understand and optimize your customer journey to enhance engagement and conversions.',
+    // Seo
+    seo: {
+      title: 'Customer Journey Mapping',
+      description:
+        'Comprehensively understand and optimize your customer journey to enhance engagement and conversions.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Understanding the customer journey for optimal customer engagement.',
+        items: [
+          {
+            title:
+              'The customer journey is the complete sum of experiences that customers go through when interacting with your company and brand. A thorough understanding and optimization of this journey is crucial to enhancing customer satisfaction, engagement, and ultimately, conversions.',
+          },
+          {
+            title:
+              'We strive to identify key interactions that the customer has with the business. By understanding these touchpoints, we can improve the overall customer experience, optimize marketing efforts and ultimately boost your company’s bottom line.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'To optimize customer journeys, we follow best practices that include data analysis, touchpoint identification, customer persona development, and more.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analysis',
+            subtitle:
+              'We leverage robust data analytics tools to interpret and present data that provides actionable insights.',
+          },
+          {
+            fa_icon: 'fa-map-marked-alt',
+            title: 'Touchpoint Identification',
+            subtitle:
+              'We identify key customer-business interactions to understand and optimize these crucial points.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Customer Persona Development',
+            subtitle:
+              'We develop detailed customer personas to better understand your target audience and cater to their specific needs.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Journey Visualization',
+            subtitle:
+              'We visually map out the customer journey to provide a clear and comprehensive understanding of the customer experience.',
+          },
+          {
+            fa_icon: 'fa-bullseye',
+            title: 'Targeted Improvements',
+            subtitle:
+              'We provide targeted recommendations to improve customer experience at each touchpoint.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Continuous Optimization',
+            subtitle:
+              'We continually monitor and optimize the customer journey based on performance data and customer feedback.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Customer Journey Mapping service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is understanding the customer journey important for my business?',
+            content:
+              'Understanding the customer journey helps your business to improve customer experience, optimize marketing efforts, and ultimately, increase conversions. It enables you to identify potential pain points in the customer journey and make necessary improvements.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your Customer Journey Mapping service work?',
+            content:
+              'Our service begins with data analysis to understand customer behavior and preferences. We then identify key touchpoints in the customer journey and develop detailed customer personas. After mapping out the customer journey visually, we provide targeted recommendations for improvement at each touchpoint. The customer journey is then continually monitored and optimized based on performance data and customer feedback.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is a touchpoint in the customer journey?',
+            content:
+              'A touchpoint is any interaction between a customer and a business. This can occur at any stage of the customer journey, from initial awareness and discovery to purchase and post-purchase support. Touchpoints can occur across various channels, both online and offline, and they play a crucial role in shaping the customer’s overall experience with a business.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Omnichannel CRM Integration',
+    slug: 'omnichannel-crm-integration',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/Xn5FbEM9564/1600x900',
+    hero_alt: 'Customer using digital payment',
+    subtitle:
+      'Integrate your CRM system across all channels for a unified and seamless customer experience.',
+    // Seo
+    seo: {
+      title: 'Omnichannel CRM Integration',
+      description:
+        'Integrate your CRM system across all channels for a unified and seamless customer experience.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Streamlining communication and data for superior customer relationships.',
+        items: [
+          {
+            title:
+              'Omnichannel CRM integration allows for a seamless customer experience, whether the customer interacts with your business in person, on your website, through a social network, or via customer service. We help bring together disparate data sources for a single customer view.',
+          },
+          {
+            title:
+              'This empowers your business to provide consistent messaging and service, improve customer understanding, and enhance overall customer relationships.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'To ensure effective Omnichannel CRM integration, we follow best practices including data consolidation, system synchronization, advanced analytics, and more.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Consolidation',
+            subtitle:
+              'We bring together disparate data sources to provide a comprehensive view of your customer interactions.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'System Synchronization',
+            subtitle:
+              'We ensure that all your systems are interconnected, providing real-time updates across all channels.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Analytics',
+            subtitle:
+              'We provide robust analytics to help you understand your customers and enhance your decision-making process.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'We help automate various processes to improve efficiency and reduce the risk of human error.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Customer Centricity',
+            subtitle:
+              'We place your customers at the heart of our solutions, ensuring that your CRM system serves to enhance customer relationships.',
+          },
+          {
+            fa_icon: 'fa-life-ring',
+            title: 'Ongoing Support',
+            subtitle:
+              'We provide ongoing support and maintenance to ensure your CRM system continues to function optimally.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Omnichannel CRM Integration service and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Omnichannel CRM Integration important for my business?',
+            content:
+              'Omnichannel CRM Integration allows for a seamless customer experience across all channels. By having a unified view of customer interactions, your business can provide consistent messaging and service, improve customer understanding, and enhance overall customer relationships.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Omnichannel CRM Integration Service?',
+            content:
+              'We specialize in Omnichannel CRM Integration, helping businesses consolidate their customer data from various sources into a unified view. This not only improves the customer experience but also enables better decision-making through robust analytics. Furthermore, we provide ongoing support and maintenance to ensure your CRM system continues to function optimally.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach Omnichannel CRM Integration?',
+            content:
+              'We start by understanding your business, its various customer touchpoints, and the systems currently in place. We then design a solution tailored to your needs, which involves consolidating your data sources, synchronizing your systems, implementing advanced analytics, and automating processes where possible. We also provide ongoing support and maintenance for your integrated CRM system.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Enterprise Social Media Strategy',
+    slug: 'enterprise-social-media-strategy',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/15r9RAOy38Q/1600x900',
+    hero_alt: 'Social media logos',
+    subtitle:
+      'Shape your online presence and engage your audience effectively with our tailored social media strategies.',
+    // Seo
+    seo: {
+      title: 'Enterprise Social Media Strategy',
+      description:
+        'Shape your online presence and engage your audience effectively with our tailored social media strategies.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Crafting tailored social media strategies for your enterprise.',
+        items: [
+          {
+            title:
+              'In today\'s digital landscape, social media is an integral part of any business marketing strategy. However, as an enterprise-level business, it is crucial that your social media presence reflects your brand and engages with your audience in a meaningful and effective way.',
+          },
+          {
+            title:
+              'Leveraging our expertise in B2B digital marketing, we understand the unique needs of your enterprise and can help you shape your online presence accordingly.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a comprehensive set of services to ensure your enterprise’s social media presence is impactful, engaging, and aligned with your overall business strategy.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance Analysis',
+            subtitle:
+              'We perform detailed social media analytics to understand your current performance and identify areas of improvement.',
+          },
+          {
+            fa_icon: 'fa-bullseye',
+            title: 'Targeting Strategy',
+            subtitle:
+              "We develop effective targeting strategies to ensure your content reaches your key audience demographics.",
+          },
+          {
+            fa_icon: 'fa-clipboard-list',
+            title: 'Content Planning',
+            subtitle:
+              'We assist in planning and curating content that resonates with your audience and promotes brand engagement.',
+          },
+          {
+            fa_icon: 'fa-share-alt',
+            title: 'Distribution Strategy',
+            subtitle:
+              'We devise a distribution strategy that optimizes your content’s reach across various social media platforms.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Integration',
+            subtitle:
+              'We ensure your social media strategy is integrated with your overall marketing strategy for a cohesive brand message.',
+          },
+          {
+            fa_icon: 'fa-search-dollar',
+            title: 'ROI Measurement',
+            subtitle:
+              'We provide detailed reports to measure the return on investment of your social media activities.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Enterprise Social Media Strategy service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a tailored social media strategy important for my enterprise?',
+            content:
+              'A tailored social media strategy is crucial in shaping your brand’s online presence, reaching your target audience effectively, and encouraging meaningful engagement. As an enterprise, it’s important that your social media activities reflect your business’s goals and values while also appealing to your specific audience demographics.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Enterprise Social Media Strategy service?',
+            content:
+              'With our service, you get a team of digital marketing experts specializing in B2B enterprise-level businesses. We leverage our understanding of the unique needs of enterprises to create a social media strategy that is tailored to your business. From performance analysis and targeting to content planning and distribution, we ensure your social media presence aligns with your overall marketing strategy and business objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach social media strategy for enterprises?',
+            content:
+              'We start by understanding your business, its goals, and its target audience. We then analyze your current social media performance, and based on this analysis, we develop a strategy that includes content planning, targeting, distribution, and ROI measurement. We ensure this strategy aligns with your overall marketing strategy and business objectives, and we provide regular reports to measure its effectiveness.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Digital Marketing Roadmap Development',
+    slug: 'digital-marketing-roadmap-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/xu2WYJek5AI/1600x900',
+    hero_alt: 'Guy holding compass',
+    subtitle:
+      'Build a robust and effective marketing roadmap for your enterprise.',
+    // Seo
+    seo: {
+      title: 'Digital Marketing Roadmap Development',
+      description:
+        'Build a robust and effective marketing roadmap for your enterprise.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Crafting your path to digital marketing success.',
+        items: [
+          {
+            title:
+              'In today\'s rapidly evolving digital landscape, a clear and well-planned digital marketing roadmap is essential. It serves as a strategic guide that aligns your marketing initiatives with your business objectives, ensuring you stay on track to achieve your goals.',
+          },
+          {
+            title:
+              'We specialize in developing comprehensive digital marketing roadmaps for enterprise-level businesses. Through understanding the unique needs and challenges of your enterprise, we can help you strategize your marketing initiatives effectively.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a range of services designed to help your enterprise develop a robust and effective digital marketing roadmap.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Market Analysis',
+            subtitle:
+              'We conduct comprehensive market analysis to understand your current digital footprint and identify opportunities for growth.',
+          },
+          {
+            fa_icon: 'fa-object-group',
+            title: 'Goal Setting',
+            subtitle:
+              'We help you establish clear, measurable goals aligned with your business objectives to guide your digital marketing initiatives.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Strategy Development',
+            subtitle:
+              'We devise a robust digital marketing strategy tailored to your business, taking into account your target audience, business goals, and market trends.',
+          },
+          {
+            fa_icon: 'fa-calendar-alt',
+            title: 'Action Plan',
+            subtitle:
+              'We develop a detailed action plan outlining the tasks, timelines, and resources needed to execute your digital marketing strategy.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Integration',
+            subtitle:
+              'We ensure your digital marketing roadmap aligns with your overall business strategy, providing a cohesive approach to achieve your goals.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance Metrics',
+            subtitle:
+              'We establish key performance indicators to monitor and measure the success of your digital marketing initiatives, allowing for continuous improvement.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Digital Marketing Roadmap Development service and how it can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why do I need a digital marketing roadmap?',
+            content:
+              'A digital marketing roadmap serves as a strategic guide for your marketing efforts. It aligns your marketing initiatives with your business objectives, ensures you have a clear plan to follow, and allows you to measure and optimize your performance over time.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of working with your Digital Marketing Roadmap Development service?',
+            content:
+              'Working with us, you benefit from our expertise in B2B digital marketing and web development. We understand the unique challenges and needs of enterprise-level businesses and can help you develop a robust and effective digital marketing roadmap that aligns with your business objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you approach developing a digital marketing roadmap?',
+            content:
+              'We start by understanding your business, its goals, and its target audience. We then conduct a comprehensive market analysis to identify opportunities and challenges. Based on this understanding, we help you establish clear, measurable goals and devise a robust digital marketing strategy. We also develop a detailed action plan, ensure alignment with your overall business strategy, and establish key performance indicators for continuous improvement.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'B2B Lead Generation',
+    slug: 'b2b-lead-generation',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/goFBjlQiZFU/1600x900',
+    hero_alt: 'Guy looking at laptop',
+    subtitle:
+      'Partner with our digital experts to maximize your B2B lead generation and accelerate your sales process.',
+    // Seo
+    seo: {
+      title: 'B2B Lead Generation',
+      description:
+        'Partner with our digital experts to maximize your B2B lead generation and accelerate your sales process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Supercharging your B2B sales pipeline.',
+        items: [
+          {
+            title:
+              'In the competitive world of B2B sales, having a robust pipeline filled with high-quality leads is critical. We combine strategic digital marketing techniques with comprehensive analytics to identify, engage, and convert your target audience.',
+          },
+          {
+            title:
+              'Our dedicated team harness the power of advanced technologies to drive results. We create tailored strategies that align with your unique business goals, ensuring a consistent flow of qualified leads into your sales pipeline.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leveraging our expertise in digital marketing, we offer a range of B2B lead generation services.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data-driven strategy',
+            subtitle:
+              'We devise data-backed strategies to identify your target audience and their unique needs, allowing us to deliver targeted marketing campaigns.',
+          },
+          {
+            fa_icon: 'fa-laptop',
+            title: 'Content marketing',
+            subtitle:
+              'We create high-quality, informative content that positions your business as an industry leader and helps attract and engage potential leads.',
+          },
+          {
+            fa_icon: 'fa-search-dollar',
+            title: 'SEO and PPC',
+            subtitle:
+              'By combining organic search engine optimization strategies with paid advertising, we maximize your visibility to attract high-intent leads.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance tracking',
+            subtitle:
+              'We consistently monitor and measure the performance of your lead generation efforts, adjusting strategies as needed to ensure the best results.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Web Development',
+            subtitle:
+              'We build responsive, SEO-friendly websites that provide a smooth user experience and help attract potential leads.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Conversion rate optimization',
+            subtitle:
+              'We optimize your landing pages, forms, and CTAs to increase conversions and drive a steady stream of leads into your sales pipeline.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our B2B Lead Generation service and how it can propel your business growth.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is B2B lead generation important for my business?',
+            content:
+              'A steady stream of qualified B2B leads is crucial to maintain and grow your business. It provides your sales team with potential customers to engage and convert, directly influencing your revenue and business growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does your B2B lead generation service work?',
+            content:
+              'Our B2B lead generation service combines strategic digital marketing techniques such as email marketing, content marketing, SEO, PPC, and LinkedIn marketing. We devise data-driven strategies, develop targeted campaigns, create engaging content, and use advanced analytics to identify, engage, and convert potential leads.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the quality of the leads generated?',
+            content:
+              'We focus on generating high-quality, qualified leads that match your target customer profile. We achieve this by gaining a deep understanding of your business, industry, and customers, which enables us to create highly targeted marketing campaigns that attract leads with a genuine interest in your products or services.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Advanced Technical SEO',
+    slug: 'advanced-technical-seo',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/l5if0iQfV4c/1600x900',
+    hero_alt: 'SEO in colorful alphabets',
+    subtitle:
+      'Maximize your site visibility and improve performance with our Advanced Technical SEO services.',
+    // Seo
+    seo: {
+      title: 'Advanced Technical SEO',
+      description:
+        'Maximize your site visibility and improve performance with our Advanced Technical SEO services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Optimizing your website for better search engine performance.',
+        items: [
+          {
+            title:
+              'Advanced Technical SEO is about maximizing website visibility and enhancing its performance in organic search results. With our expertise, we ensure that search engines can crawl, interpret and index your site efficiently.',
+          },
+          {
+            title:
+              'Our approach goes beyond basic on-page SEO. We delve deeper into the technical aspects of your website, addressing issues that could affect search engine accessibility, indexation, and the overall user experience.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We leverage cutting-edge tools and proven strategies to ensure your website performs at its best.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Optimization',
+            subtitle:
+              'We ensure that your website is optimized for speed and performance, creating a seamless user experience that keeps people engaged.',
+          },
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Site Structure Analysis',
+            subtitle:
+              'We analyze your site structure and make improvements to ensure that search engines can crawl and index your site efficiently.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Code Optimization',
+            subtitle:
+              'We optimize your site code for SEO, addressing any technical issues that could be affecting your site visibility and performance in search results.',
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Link Structure Analysis',
+            subtitle:
+              'We review your site\'s internal and external link structure, optimizing it for better crawlability and user navigation.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile SEO',
+            subtitle:
+              'We ensure that your site is fully optimized for mobile, providing a high-quality user experience across all devices.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security Optimization',
+            subtitle:
+              'We ensure that your site is secure and trustworthy, building confidence among users and search engines alike.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Advanced Technical SEO services and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is Advanced Technical SEO important?',
+            content:
+              'Advanced Technical SEO is crucial for ensuring that search engines can access, crawl, interpret and index your website without any problems. By addressing technical issues, you can enhance your site visibility and performance in search results, leading to more organic traffic and conversions.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of businesses need Advanced Technical SEO?',
+            content:
+              'Any business that wants to improve its online visibility and performance can benefit from Advanced Technical SEO. It is particularly important for businesses with large and complex websites, as these can present more technical issues that could affect search engine accessibility and indexation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does Advanced Technical SEO differ from regular SEO?',
+            content:
+              'While regular SEO often focuses on keyword optimization and link building, Advanced Technical SEO goes deeper into the technical aspects of your website. It involves optimizing your site structure, code, link structure, mobile SEO, and site security for better performance and visibility in search results.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Customized Account-Based Marketing',
+    slug: 'customized-account-based-marketing',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/21GWwco-JBQ/1600x900',
+    hero_alt: 'Guy looking at data on monitor',
+    subtitle:
+      'Drive success with our tailor-made Account-Based Marketing (ABM) strategies designed specifically for your business needs.',
+    // Seo
+    seo: {
+      title: 'Customized Account-Based Marketing',
+      description:
+        'Drive success with our tailor-made Account-Based Marketing (ABM) strategies designed specifically for your business needs.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Personalized marketing strategies for your high-value accounts.',
+        items: [
+          {
+            title:
+              'In the B2B world, one-size-fits-all approaches often fall short. We create personalized marketing strategies that speak directly to the unique needs and pain points of your key decision-makers.',
+          },
+          {
+            title:
+              'Our ABM strategies are not just personalized, they are also coordinated across channels and aligned with sales for the most effective results. We leverage data and insights to deliver the right message, to the right account, at the right time.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Account-Based Marketing capabilities leverage data and technology to create highly targeted, personalized marketing strategies.',
+        items: [
+          {
+            fa_icon: 'fa-user-tie',
+            title: 'Account Identification',
+            subtitle:
+              'We use a mix of data and insights to identify the high-value accounts that are most likely to drive revenue for your business.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Insights and Personalization',
+            subtitle:
+              'We uncover deep insights about your target accounts and use these to deliver personalized marketing messages that resonate.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Sales and Marketing Alignment',
+            subtitle:
+              'We ensure tight alignment between sales and marketing, coordinating efforts to engage your target accounts effectively.',
+          },
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'Multichannel Coordination',
+            subtitle:
+              'We coordinate marketing efforts across multiple channels, ensuring a consistent, personalized experience for your target accounts.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Measurement and Analysis',
+            subtitle:
+              'We measure the effectiveness of our ABM strategies, using insights to continually optimize and improve.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Continual Optimization',
+            subtitle:
+              'We constantly optimize our ABM strategies based on performance data, ensuring we\'re always delivering the best possible results.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Customized Account-Based Marketing services and how they can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is Account-Based Marketing?',
+            content:
+              'Account-Based Marketing (ABM) is a strategic approach to marketing that concentrates resources on a set of target accounts within a market. It uses personalized campaigns designed to engage each account, basing the marketing message on the specific attributes and needs of the account.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How does Customized Account-Based Marketing benefit my business?',
+            content:
+              'Customized Account-Based Marketing allows you to focus on the accounts that are most likely to generate revenue for your business. By personalizing your marketing strategy for each target account, you can create more relevant and impactful interactions. This not only improves engagement but also drives better marketing ROI.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is involved in your Customized Account-Based Marketing service?',
+            content:
+              'Our Customized Account-Based Marketing service involves identifying high-value target accounts, gaining deep insights about these accounts, creating personalized marketing strategies, coordinating these strategies across channels, aligning with sales efforts, and measuring and optimizing performance.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'SEM Management',
+    slug: 'sem-management',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/VCtI-0qlVgA/1600x900',
+    hero_alt: 'Google search console screen',
+    subtitle:
+      'Maximize your online presence with our professional SEM management services.',
+    // Seo
+    seo: {
+      title: 'SEM Management',
+      description:
+        'Maximize your online presence with our professional SEM management services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Amplify your online visibility and reach more customers.',
+        items: [
+          {
+            title:
+              'In the world of digital marketing, Search Engine Marketing (SEM) plays a pivotal role in making your business stand out from the crowd. Our SEM Management service focuses on improving your visibility in search engine results pages, driving more high-quality traffic to your website, and ultimately converting that traffic into sales.',
+          },
+          {
+            title:
+              'We leverage a combination of paid search, SEO strategies, and comprehensive analytics to ensure that your business gets noticed by the people who matter most to your bottom line – your customers.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our SEM Management service is comprehensive, encompassing strategy, implementation, and optimization to deliver exceptional results.',
+        items: [
+          {
+            fa_icon: 'fa-search-dollar',
+            title: 'Paid Search Advertising',
+            subtitle:
+              'We manage your PPC campaigns, optimizing your ad spend to drive quality traffic and leads to your website.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'SEM Strategy',
+            subtitle:
+              'We develop a tailored SEM strategy that aligns with your business goals and maximizes ROI.',
+          },
+          {
+            fa_icon: 'fa-search',
+            title: 'SEO Integration',
+            subtitle:
+              'We integrate SEO strategies into your SEM efforts, improving organic search results and boosting overall performance.',
+          },
+          {
+            fa_icon: 'fa-project-diagram',
+            title: 'Keyword Management',
+            subtitle:
+              'We conduct thorough keyword research and ongoing keyword management to target the terms that will drive the most valuable traffic.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance Tracking',
+            subtitle:
+              'We monitor campaign performance closely, making data-driven adjustments to optimize results.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Continuous Optimization',
+            subtitle:
+              'We continually optimize your SEM campaigns, testing and refining to improve performance over time.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our SEM Management services and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is SEM and how can it benefit my business?',
+            content:
+              'Search Engine Marketing (SEM) is a form of Internet marketing that involves promoting websites by increasing their visibility in search engine results pages. This is achieved primarily through paid advertising. SEM can benefit your business by increasing your online visibility, driving more traffic to your website, and improving your chances of converting that traffic into leads and sales.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What does your SEM Management service include?',
+            content:
+              'Our SEM Management service is comprehensive, encompassing SEM strategy development, paid search advertising, SEO integration, keyword management, performance tracking, and continuous optimization. We manage your SEM campaigns end-to-end, with the goal of maximizing your visibility in search engine results pages and driving more quality traffic to your website.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you measure the success of SEM campaigns?',
+            content:
+              'We measure the success of SEM campaigns using a variety of metrics, including clicks, impressions, click-through rates (CTR), conversion rates, cost per click (CPC), and overall return on ad spend (ROAS). We provide regular reports to keep you informed of your campaign performance and the results we’re achieving.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Enterprise Corporate Website Development',
+    slug: 'enterprise-corporate-website-development',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/Imc-IoZDMXc/1600x900',
+    hero_alt: 'Man using mac',
+    subtitle:
+      'Build scalable, robust, and user-friendly websites designed to match the needs of your enterprise business.',
+    // Seo
+    seo: {
+      title: 'Enterprise Corporate Website Development',
+      description:
+        'Build scalable, robust, and user-friendly websites designed to match the needs of your enterprise business.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Delivering web solutions to drive your business forward.',
+        items: [
+          {
+            title:
+              'In the digital realm, your corporate website acts as the front door to your business. An intuitive, engaging, and robust corporate website is a vital tool to communicate with your existing customers, potential clients, and the wider market.',
+          },
+          {
+            title:
+              'Our team of skilled web developers and designers craft tailor-made websites that align with your business goals, and are scalable to evolve with your growing needs.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We combine our technical proficiency, design prowess, and strategic thinking to deliver high-performing enterprise websites.',
+        items: [
+          {
+            fa_icon: 'fa-drafting-compass',
+            title: 'Custom Design',
+            subtitle:
+              'We design intuitive and user-friendly interfaces that align with your brand and engage your target audience.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Robust Development',
+            subtitle:
+              'We develop high-performing, scalable websites that can handle the demands of your enterprise business.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Responsive Design',
+            subtitle:
+              'We ensure your website looks great and performs well on all devices, providing a seamless user experience across platforms.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Security',
+            subtitle:
+              'We prioritize security in our development process to protect your site and data from potential threats.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'SEO Best Practices',
+            subtitle:
+              'We incorporate SEO best practices to improve your website’s visibility and attract more organic traffic.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Ongoing Support & Maintenance',
+            subtitle:
+              'We provide ongoing support and maintenance services to keep your website up-to-date and running smoothly.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Enterprise Corporate Website Development services and how we can enhance your online presence.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a well-developed corporate website important for my business?',
+            content:
+              'A well-developed corporate website serves as the digital face of your enterprise. It enhances your brand’s online presence, helps you reach a wider audience, and offers a platform for you to effectively communicate with your customers. It also improves your business credibility and can significantly boost customer engagement and conversion rates.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What technologies do you use for corporate website development?',
+            content:
+              'Our team of experienced developers are skilled in a wide range of modern technologies, including but not limited to HTML5, CSS3, JavaScript, React, Angular, Node.js, PHP, and more. We choose the most suitable technology stack based on your business requirements and the project scope.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Can you redesign my existing corporate website?',
+            content:
+              'Yes, we can. Our team is proficient in both creating new websites from scratch and redesigning existing ones. We can evaluate your current website, understand your new requirements, and redesign your website to better align with your business objectives while enhancing its functionality and user experience.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Advanced CMS Customization',
+    slug: 'advanced-cms-customization',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/59yRYIHWtzY/1600x900',
+    hero_alt: 'Web management system',
+    subtitle:
+      'Enhance your business operations with our advanced CMS customization services.',
+    // Seo
+    seo: {
+      title: 'Advanced CMS Customization',
+      description:
+        'Enhance your business operations with our advanced CMS customization services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Tailoring CMS to power your digital infrastructure.',
+        items: [
+          {
+            title:
+              'A Content Management System (CMS) is an integral part of most modern businesses. Whether it\'s for managing content, handling customer data, or orchestrating complex workflows, a CMS can become the digital backbone of your enterprise.',
+          },
+          {
+            title:
+              'We understand that no two businesses are the same, and thus, off-the-shelf CMS solutions often fall short. Our team of skilled developers customizes your CMS to not only enhance its capabilities but also ensure it aligns perfectly with your business model, workflows, and strategic goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a wide range of advanced CMS customization services.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Platform Integration',
+            subtitle:
+              'We integrate your CMS with other enterprise platforms, creating a unified system that boosts efficiency and collaboration.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Functionality Extension',
+            subtitle:
+              'We extend your CMS functionality to match your specific needs, enhancing its utility and user-friendliness.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security Enhancement',
+            subtitle:
+              'We reinforce the security of your CMS, protecting your valuable data from threats and vulnerabilities.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Migration & Upgrade',
+            subtitle:
+              'We assist with CMS migrations and upgrades, ensuring a smooth transition with minimal business disruption.',
+          },
+          {
+            fa_icon: 'fa-user-cog',
+            title: 'User Role Management',
+            subtitle:
+              'We set up custom user roles and permissions, ensuring the right level of access for each member of your team.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Performance Optimization',
+            subtitle:
+              'We optimize your CMS for better performance, enhancing load times and overall user experience.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Advanced CMS Customization services.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the benefit of customizing my CMS?',
+            content:
+              'Customizing your CMS allows you to tailor it to the specific needs of your business. This can enhance your workflow, improve your team’s productivity, and ultimately lead to better business outcomes.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of CMS do you specialize in?',
+            content:
+              'Our team has extensive experience with a variety of CMS platforms, including WordPress, Drupal, Joomla, and many others. We’ll work with you to understand your needs and determine the best CMS for your business.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does the customization process work?',
+            content:
+              'We start by understanding your business, your goals, and your needs. From there, we’ll suggest customizations that we believe will best serve you. Once we’ve agreed on a plan, we’ll work diligently to implement these customizations and test them thoroughly to ensure they work as expected.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Landing Page Optimization & Analytics',
+    slug: 'landing-page-optimization-and-analytics',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/JVSgcV8_vb4/1600x900',
+    hero_alt: 'Landing page',
+    subtitle:
+      'Maximize your landing page performance and conversions with our comprehensive optimization and analytics services.',
+    // Seo
+    seo: {
+      title: 'Landing Page Optimization & Analytics',
+      description:
+        'Maximize your landing page performance and conversions with our comprehensive optimization and analytics services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Optimizing landing pages for success.',
+        items: [
+          {
+            title:
+              'The performance of your landing page is crucial to your business success. As the first point of contact with potential customers, it needs to make a strong impression. Our services help ensure your landing page not only captivates visitors but also motivates them to take action.',
+          },
+          {
+            title:
+              'We use a data-driven approach, relying on robust analytics to understand visitor behavior and identify areas of improvement. From page design and content to load speed and SEO, we optimize every element of your landing page to enhance its performance and maximize conversions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We provide a comprehensive suite of services to optimize your landing pages.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Conversion Rate Optimization',
+            subtitle:
+              'We implement strategies to enhance your landing page and improve its conversion rate, helping turn more visitors into customers.',
+          },
+          {
+            fa_icon: 'fa-eye',
+            title: 'Website Heatmap',
+            subtitle:
+              'We use heatmaps to visualize how users interact with your landing page, helping us identify and improve areas that aren’t performing as well as they could be.',
+          },
+          {
+            fa_icon: 'fa-scroll',
+            title: 'Website Scrollmap',
+            subtitle:
+              'We analyze scrollmaps to understand how far users scroll on your landing page and adjust your page layout and content accordingly.',
+          },
+          {
+            fa_icon: 'fa-mouse-pointer',
+            title: 'Click Tracking Analysis',
+            subtitle:
+              'We monitor and analyze user click behavior to understand what elements of your landing page are attracting attention and which aren’t.',
+          },
+          {
+            fa_icon: 'fa-tachometer-alt',
+            title: 'Page Speed Optimization',
+            subtitle:
+              'We optimize your landing page for speed, ensuring a fast and smooth user experience.',
+          },
+          {
+            fa_icon: 'fa-search',
+            title: 'SEO Optimization',
+            subtitle:
+              'We optimize your landing page for search engines, helping you rank higher and attract more organic traffic.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Landing Page Optimization & Analytics services.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is landing page optimization important?',
+            content:
+              'Landing page optimization is essential for improving the effectiveness of your online marketing campaigns. A well-optimized landing page can increase conversions, lower customer acquisition costs, and improve your return on investment.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of businesses can benefit from landing page optimization?',
+            content:
+              'Any business that relies on online marketing to generate leads or sales can benefit from landing page optimization. This includes e-commerce stores, B2B companies, service providers, and more.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What does the optimization process involve?',
+            content:
+              'The optimization process involves various strategies, such as improving the page design and layout, optimizing the page for SEO, enhancing the page load speed, and analyzing user behavior data to understand how visitors interact with the page and identify areas of improvement.',
+          },
+        ],
+      },
+    }
+  },
+  {
+    title: 'Advanced Data Analytics & Business Intelligence',
+    slug: 'advanced-data-analytics-and-business-intelligence',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/Glel-RswQqM/1600x900',
+    hero_alt: 'Circular artistic design',
+    subtitle:
+      'Leverage data to drive business growth and stay ahead of the competition.',
+    // Seo
+    seo: {
+      title: 'Advanced Data Analytics & Business Intelligence',
+      description:
+        'Leverage data to drive business growth and stay ahead of the competition.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Harnessing the power of data for business success.',
+        items: [
+          {
+            title:
+              'In the age of digital business, data is a valuable asset that can give your organization a competitive edge. We help businesses leverage data to make informed decisions, drive operational efficiency, and accelerate growth.',
+          },
+          {
+            title:
+              'With our sophisticated data analytics tools and techniques, we help you analyze and interpret complex data sets, uncover hidden patterns, and derive valuable insights that can guide your business strategies.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our services are designed to help you transform your data into actionable insights.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              'We help manage your data assets efficiently, ensuring data quality and consistency across the organization.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'Our data visualization tools help you understand complex data with ease, enabling quicker and smarter decision making.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Predictive Analytics',
+            subtitle:
+              'We apply advanced analytics techniques to forecast future trends and help you stay one step ahead.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Business Intelligence',
+            subtitle:
+              'We provide business intelligence solutions that help you monitor key business metrics, spot trends, and make data-driven decisions.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Automation',
+            subtitle:
+              'We help automate repetitive tasks and processes, freeing up your team to focus on strategic initiatives.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Security',
+            subtitle:
+              'We ensure the integrity and security of your data, implementing stringent data protection measures.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        subtitle:
+          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Digital Transformation Solutions',
+            subtitle:
+              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
+            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Financial Analytics and Management',
+            subtitle:
+              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
+            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+          },
+          {
+            fa_icon: 'fa-wallet',
+            title: 'Wealth Management Services',
+            subtitle:
+              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
+            href: `${routeConfig.SERVICES}/wealth-management-services`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Advanced Data Analytics & Business Intelligence services.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is data analytics important for my business?',
+            content:
+              'Data analytics is critical for businesses today. It allows you to understand your customers better, optimize your operations, and make data-driven decisions. With data analytics, you can spot trends, forecast future scenarios, and stay ahead of the competition.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What are the benefits of business intelligence?',
+            content:
+              'Business Intelligence (BI) can transform your business data into actionable insights. BI tools and techniques can help you monitor key business metrics, understand your customers, improve decision making, and drive operational efficiency and growth.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can data analytics and business intelligence work together?',
+            content:
+              'Data analytics and business intelligence work hand-in-hand. While data analytics involves analyzing large data sets to uncover hidden patterns, trends, and insights, business intelligence helps present these insights in an easily understandable format. Together, they can help your business make informed decisions and strategies.',
+          },
+        ],
+      },
+    }
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_DIGITAL_SERVICE_CATEGORYS),
+    ...item,
+  })
+})
 
 export const MOCK_FINX_SERVICES = [
   {
