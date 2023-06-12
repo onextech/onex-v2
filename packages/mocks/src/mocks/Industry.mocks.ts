@@ -556,7 +556,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     sections: {
       ...item.sections,
       checklist:
-        { subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      {
+        subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
@@ -863,15 +864,16 @@ export const MOCK_TECH_INDUSTRYS = [
             content:
               'By partnering with our software development company, maritime businesses can leverage our expertise in frontend software engineering and dashboard development to drive digital transformation. Our solutions enable real-time data visualization, predictive analytics, and process automation, resulting in improved operational efficiency, enhanced safety measures, better fleet management, and increased profitability.',
           },
-        {
-          key: 'faqs-3',
-          title: 'How do you ensure the security of maritime data in your software solutions?',
-          content:
-            'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organisations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
-        },
-      ],
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of maritime data in your software solutions?',
+            content:
+              'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organisations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
+          },
+        ],
+      },
     },
-  },},
+  },
   {
     // Hero
     title: 'Real Estate',
@@ -964,14 +966,15 @@ export const MOCK_TECH_INDUSTRYS = [
             content:
               'By partnering with our company, real estate businesses can leverage our expertise in frontend software engineering and dashboard development to unlock the full potential of their operations. Our solutions enable seamless property management, automated workflows, real-time analytics, and personalized tenant experiences. This results in improved operational efficiency, better tenant engagement, optimized resource allocation, and increased profitability.',
           },
-        {
-          key: 'faqs-3',
-          title: 'How do you ensure the security of sensitive real estate data?',
-          content:
-            'We prioritize the security of sensitive real estate data throughout our software development process. We implement robust security measures, including encryption, access controls, and regular security audits. Additionally, we adhere to industry best practices and comply with relevant data protection regulations to ensure the confidentiality, integrity, and availability of your data.',
-        },
-      ],
-    },},
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of sensitive real estate data?',
+            content:
+              'We prioritize the security of sensitive real estate data throughout our software development process. We implement robust security measures, including encryption, access controls, and regular security audits. Additionally, we adhere to industry best practices and comply with relevant data protection regulations to ensure the confidentiality, integrity, and availability of your data.',
+          },
+        ],
+      },
+    },
   }
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
@@ -1840,9 +1843,1070 @@ export const MOCK_DATA_INDUSTRYS = [
   })
 })
 
-export const MOCK_DIGITAL_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_DIGITAL_INDUSTRYS = [
+  {
+    // Hero
+    title: 'Finance',
+    slug: 'finance',
+    fa_icon: 'fa-coins',
+    is_featured: true,
+    subtitle:
+      'Partner with us for enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services tailored to the finance industry.',
+    hero_src: 'https://source.unsplash.com/M_S7pim3Hwg/1600x900/',
+    hero_alt: 'Finance',
+    // Seo
+    seo: {
+      title: 'Finance',
+      description:
+        'This page is all about enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services for the finance industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Your Partner in Finance Industry Digital Success',
+        items: [
+          {
+            title:
+              'In the fast-paced world of finance, digital success is crucial for staying competitive and meeting the needs of your customers. At our Finance Industry Services, we specialize in providing enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics solutions tailored specifically for the finance industry.',
+          },
+          {
+            title:
+              'We understand the unique challenges and opportunities that the finance industry presents, and our team of experts is ready to partner with you to achieve your digital goals. Whether you need a comprehensive digital strategy, targeted B2B marketing campaigns, or advanced web development and analytics solutions, we have the expertise and experience to deliver results.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We leverage our deep understanding of the finance industry and cutting-edge digital technologies to help you succeed in the digital landscape.',
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Enterprise digital strategy',
+            subtitle:
+              'We develop comprehensive digital strategies that align with your business objectives and drive growth in the finance industry.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'B2B Digital Marketing',
+            subtitle:
+              'We execute targeted digital marketing campaigns to reach and engage your B2B audience, driving leads and conversions for your finance business.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Advanced web development',
+            subtitle:
+              'We build robust and scalable web solutions tailored to the unique requirements of the finance industry, delivering exceptional user experiences and functionality.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Analytics and insights',
+            subtitle:
+              'We provide advanced analytics and data-driven insights to help you make informed decisions and optimize your digital presence in the finance industry.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Personalization and customer experience',
+            subtitle:
+              'We help you create personalized experiences for your customers, leveraging data and technology to deliver relevant and engaging interactions at every touchpoint.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Technology integration',
+            subtitle:
+              'We integrate and optimize digital technologies within your finance operations, streamlining processes and enhancing efficiency.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Finance Industry Services and how we can help your finance business succeed in the digital world.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a comprehensive digital strategy important for finance businesses?',
+            content:
+              'A comprehensive digital strategy is crucial for finance businesses to stay competitive and meet the evolving needs of customers. It helps in establishing a strong digital presence, targeting the right audience, driving leads and conversions, and optimizing business operations for better efficiency and growth.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What benefits can B2B Digital Marketing bring to finance businesses?',
+            content:
+              'B2B Digital Marketing enables finance businesses to reach and engage their target audience effectively. It helps in generating high-quality leads, building brand awareness and credibility, nurturing client relationships, and driving business growth through strategic digital campaigns tailored for B2B audiences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can advanced web development and analytics benefit finance businesses?',
+            content:
+              'Advanced web development and analytics provide finance businesses with powerful tools to create exceptional online experiences, optimize processes, and gain valuable insights from data. It allows for the development of secure, scalable, and user-friendly web solutions, while analytics helps in measuring performance, identifying trends, and making data-driven decisions for continuous improvement and competitive advantage.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Government',
+    slug: 'government',
+    fa_icon: 'fa-landmark-flag',
+    is_featured: true,
+    subtitle:
+      'Partner with our experts to navigate the complexities of digital transformation in the government sector.',
+    hero_src: 'https://source.unsplash.com/TELAb4duebI/1600x900/',
+    hero_alt: 'Government Building',
+    // Seo
+    seo: {
+      title: 'Government',
+      description:
+        'This page focuses on helping government organizations achieve digital transformation and enhance citizen services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving digital transformation in the government sector.',
+        items: [
+          {
+            title:
+              'In the modern era, government organizations face unique challenges in adopting digital technologies and providing efficient services to citizens. At our Government service, we specialize in assisting government agencies with their digital transformation initiatives and helping them navigate the complexities of the public sector.',
+          },
+          {
+            title:
+              'We understand the importance of citizen-centric solutions and the need for secure and accessible digital platforms. Our team of experts combines industry knowledge and technical expertise to deliver innovative strategies and solutions that enhance citizen services, improve operational efficiency, and drive digital innovation in the government sector.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We leverage our expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics to support government organizations in their digital transformation journey.',
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Enterprise digital strategy',
+            subtitle:
+              'We develop comprehensive digital strategies that align with government organizations\' objectives, ensuring effective utilization of digital technologies and resources.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'B2B Digital Marketing',
+            subtitle:
+              "We help government agencies establish strong digital presences, build effective partnerships, and leverage digital marketing techniques to engage with businesses and stakeholders.",
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Advanced web development & analytics',
+            subtitle:
+              'We deliver sophisticated web development solutions and utilize advanced analytics to drive data-driven decision-making and optimize government websites and applications.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Citizen-centric solutions',
+            subtitle:
+              'We prioritize the needs and expectations of citizens, designing and developing user-friendly digital solutions that enhance accessibility, convenience, and satisfaction.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and compliance',
+            subtitle:
+              'We ensure that government digital platforms comply with stringent security and privacy regulations, safeguarding sensitive data and maintaining trust with citizens.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration and interoperability',
+            subtitle:
+              'We facilitate seamless integration and interoperability of digital systems and applications, enabling efficient data sharing and collaboration across government agencies.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Government services and how we can assist your organization in achieving digital transformation.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is digital transformation important for government organizations?',
+            content:
+              'Digital transformation is crucial for government organizations to enhance citizen services, improve operational efficiency, and drive innovation. It enables streamlined processes, data-driven decision-making, and effective engagement with citizens and businesses.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Government services support our digital transformation journey?',
+            content:
+              'Our Government services provide specialized expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics. We collaborate closely with government organizations to develop tailored solutions that address their unique challenges and goals, enabling successful digital transformation.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What approach do you follow for citizen-centric solutions?',
+            content:
+              'We adopt a user-centered design approach for citizen-centric solutions. Our process involves extensive user research and engagement to understand citizen needs and preferences. We then design and develop intuitive digital platforms that prioritize accessibility, convenience, and satisfaction.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Maritime',
+    slug: 'maritime',
+    fa_icon: 'fa-ship',
+    is_featured: true,
+    subtitle:
+      'Unlock the potential of the maritime industry with our enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services.',
+    hero_src: 'https://source.unsplash.com/sFq7vyCSFbM/1600x900/',
+    hero_alt: 'Maritime',
+    // Seo
+    seo: {
+      title: 'Maritime',
+      description:
+        'Discover how our digital marketing company can help your maritime business thrive with our enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Unlock the potential of the maritime industry.',
+        items: [
+          {
+            title:
+              'The maritime industry holds vast opportunities for growth and success. At our company, we specialize in helping maritime businesses unlock their potential through our enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services.',
+          },
+          {
+            title:
+              'We understand the unique challenges and demands of the maritime industry, and we have the expertise and experience to develop tailored digital solutions that drive results. Whether you need assistance in optimizing your digital strategy, reaching B2B clients effectively, or leveraging advanced web development and analytics tools, our team of experts is here to help you achieve your goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We employ industry best practices and cutting-edge technologies to deliver exceptional digital solutions for the maritime industry.',
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Enterprise digital strategy',
+            subtitle:
+              'We develop comprehensive digital strategies that align with your business objectives and drive growth in the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'B2B Digital Marketing',
+            subtitle:
+              'We implement targeted B2B marketing campaigns to help you connect with key stakeholders and decision-makers in the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Advanced web development',
+            subtitle:
+              'We leverage cutting-edge web development technologies to create robust and scalable digital solutions tailored to the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Analytics-driven insights',
+            subtitle:
+              'We utilize advanced analytics tools to gather actionable insights and optimize your digital presence in the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Technology integration',
+            subtitle:
+              'We integrate the latest technological advancements into your digital ecosystem to streamline operations and enhance efficiency in the maritime industry.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaboration',
+            subtitle:
+              'We work closely with your enterprise team to understand your specific needs and develop tailored solutions that deliver measurable results in the maritime industry.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our services for the maritime industry and how we can help your business thrive.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is digital marketing important for the maritime industry?',
+            content:
+              'Digital marketing plays a crucial role in the maritime industry as it enables businesses to expand their reach, engage with key stakeholders, and drive business growth. It allows maritime companies to showcase their expertise, build brand awareness, and connect with potential customers and partners in a highly competitive digital landscape.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can B2B Digital Marketing benefit my maritime business?',
+            content:
+              'B2B Digital Marketing is essential for maritime businesses as it helps establish strong relationships with industry partners, suppliers, and other key stakeholders. It enables you to effectively communicate your value proposition, generate qualified leads, and nurture business opportunities in the B2B space. With targeted B2B marketing strategies, you can enhance brand reputation, increase market visibility, and drive revenue growth in the maritime industry.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What are the advantages of advanced web development for the maritime industry?',
+            content:
+              'Advanced web development provides numerous advantages for the maritime industry. It allows you to create immersive digital experiences, streamline business processes, and enhance customer engagement. With responsive and user-friendly web interfaces, you can attract and retain customers, facilitate seamless transactions, and showcase your services and solutions effectively. Advanced web development also enables integration with other systems and platforms, optimizing operational efficiency and enhancing overall business performance in the maritime industry.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Real Estate',
+    slug: 'real-estate',
+    fa_icon: 'fa-map',
+    is_featured: true,
+    subtitle:
+      'Partner with industry experts to maximize your real estate opportunities and drive growth.',
+    hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900/',
+    hero_alt: 'Real Estate',
+    // Seo
+    seo: {
+      title: 'Real Estate',
+      description:
+        'This page is dedicated to helping you maximize your real estate opportunities and drive growth.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Maximize your real estate opportunities with our expertise.',
+        items: [
+          {
+            title:
+              'In the competitive real estate industry, having a strategic digital presence is crucial for success. At our Real Estate Service, we specialize in partnering with real estate professionals to develop and execute effective digital strategies that drive growth and maximize opportunities.',
+          },
+          {
+            title:
+              'We understand the unique challenges and opportunities that the real estate market presents. Our team of experts combines industry knowledge with digital expertise to provide tailored solutions that help you reach your goals. Whether you are a real estate agent, developer, or investor, we can help you leverage the power of digital marketing to generate leads, enhance your brand, and build a strong online presence.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We offer a range of specialized services designed to meet the unique needs of the real estate industry.',
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Enterprise digital strategy',
+            subtitle:
+              'We develop customized digital strategies that align with your business objectives and help you navigate the competitive real estate landscape.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'B2B Digital Marketing',
+            subtitle:
+              "We specialize in B2B digital marketing strategies that target key stakeholders in the real estate industry, including developers, investors, and property managers.",
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Advanced web development & analytics',
+            subtitle:
+              'Our team of skilled developers and analysts create cutting-edge websites and provide advanced analytics solutions to track performance and optimize your online presence.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Lead generation',
+            subtitle:
+              'We employ targeted lead generation strategies to attract potential buyers, sellers, and investors, helping you expand your client base and increase sales.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Brand management',
+            subtitle:
+              'We develop and execute comprehensive brand management strategies that enhance your reputation, increase brand visibility, and differentiate you from competitors.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Marketing automation',
+            subtitle:
+              'We implement marketing automation tools and processes to streamline your marketing efforts, improve efficiency, and increase ROI.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Real Estate Service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is digital marketing important for real estate professionals?',
+            content:
+              'Digital marketing plays a critical role in the real estate industry by helping professionals reach a wider audience, generate leads, and build brand awareness. It enables targeted marketing campaigns, enhances customer engagement, and provides valuable insights for informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Real Estate Service benefit my business?',
+            content:
+              'Our Real Estate Service offers a comprehensive range of specialized digital marketing solutions tailored to the unique needs of the industry. By partnering with us, you can leverage our expertise to enhance your online presence, attract qualified leads, and stay ahead in a competitive market. We focus on driving measurable results and delivering a strong return on investment for our clients.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What sets your B2B Digital Marketing apart?',
+            content:
+              'Our B2B Digital Marketing services are specifically designed to target key stakeholders in the real estate industry, such as developers, investors, and property managers. We employ a data-driven approach to create customized strategies that effectively reach and engage these audiences. Our team has extensive experience in B2B marketing, allowing us to deliver impactful campaigns that drive meaningful business outcomes.',
+          },
+        ],
+      },
+    },
+  }
+].map((item, i) => {
+  return merge({}, MOCK_INDUSTRY_PAGE, {
+    id: i + 1,
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist:
+      {
+        subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
+      },
+    }
+  })
+})
 
-export const MOCK_FINX_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_FINX_INDUSTRYS = [
+  {
+    title: 'Regtech',
+    slug: 'regtech',
+    fa_icon: 'fa-shield-alt',
+    is_featured: true,
+    subtitle:
+      'Streamline regulatory compliance and risk management with our advanced regtech solutions.',
+    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_alt: 'Regtech',
+    // Seo
+    seo: {
+      title: 'Regtech',
+      description:
+        'Discover how our regtech solutions can help businesses streamline regulatory compliance and risk management.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transform Regulatory Compliance with Regtech Solutions.',
+        items: [
+          {
+            title:
+              'In the highly regulated business landscape, regulatory compliance and risk management are of utmost importance. At our Regtech Solutions, we specialize in providing digital solutions and consulting services to help businesses navigate the complexities of regulatory requirements and streamline compliance processes.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by businesses in adhering to regulations, and we leverage advanced technologies to deliver innovative regtech solutions that enhance compliance efficiency and reduce risks. Our team of experts combines regulatory knowledge with digital expertise to develop comprehensive regtech solutions that address the specific compliance needs of our clients.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Optimize regulatory compliance and risk management with our comprehensive regtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Regulatory Compliance Automation',
+            subtitle:
+              'Automate compliance processes and ensure adherence to regulatory requirements with our advanced regtech solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management Solutions',
+            subtitle:
+              'Identify and mitigate risks with our robust risk management solutions tailored to your business needs.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Governance and Privacy',
+            subtitle:
+              'Ensure data integrity, privacy, and security in compliance with regulatory guidelines using our data governance solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Compliance Reporting and Analytics',
+            subtitle:
+              'Generate accurate compliance reports and gain valuable insights into regulatory trends with our reporting and analytics solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'KYC/AML Solutions',
+            subtitle:
+              'Streamline customer due diligence and anti-money laundering processes with our KYC/AML solutions.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Identity Verification',
+            subtitle:
+              'Verify customer identities and prevent fraud with our secure and efficient identity verification solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Regtech Solutions and how they can benefit businesses.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should businesses invest in regtech solutions?',
+            content:
+              'Regtech solutions offer numerous benefits for businesses, including streamlined regulatory compliance processes, enhanced risk management capabilities, improved data governance and privacy, accurate compliance reporting, efficient KYC/AML processes, and robust identity verification. By leveraging regtech solutions, businesses can ensure adherence to regulatory requirements, reduce compliance costs, mitigate risks, and maintain trust with stakeholders.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Regulatory Compliance Automation solutions help businesses?',
+            content:
+              'Our Regulatory Compliance Automation solutions utilize advanced technologies such as artificial intelligence and machine learning to automate compliance processes. By automating repetitive tasks, ensuring data accuracy, and providing real-time monitoring and alerts, our solutions enable businesses to streamline compliance efforts, reduce manual errors, and stay up to date with regulatory changes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your KYC/AML Solutions stand out?',
+            content:
+              'Our KYC/AML Solutions are designed to help businesses simplify and strengthen their customer due diligence and anti-money laundering processes. We offer advanced identity verification techniques, intelligent risk scoring, and comprehensive compliance checks. Our solutions leverage data analytics and machine learning algorithms to identify potential risks and suspicious activities, enabling businesses to meet regulatory requirements and combat financial crimes effectively.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Insurtech',
+    slug: 'insurtech',
+    fa_icon: 'fa-file-contract',
+    is_featured: true,
+    subtitle:
+      'Transform your insurance business with our digital solutions and consulting services tailored to the insurtech industry.',
+    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_alt: 'Insurance',
+    // Seo
+    seo: {
+      title: 'Insurtech',
+      description:
+        'Discover how our digital solutions and consulting services can revolutionize the insurance industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing the Insurance Industry through Digital Transformation.',
+        items: [
+          {
+            title:
+              'At our Insurtech Service, we specialize in helping insurance companies navigate the digital landscape and leverage technology to drive innovation and deliver enhanced customer experiences.',
+          },
+          {
+            title:
+              'With our digital solutions and consulting services, we empower insurance businesses to streamline operations, improve efficiency, and stay competitive in the fast-paced insurtech industry.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our Insurtech Solutions',
+        subtitle:
+          'We combine cutting-edge technology, data-driven insights, and industry expertise to provide tailored digital solutions and consulting services for insurance companies.',
+        items: [
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'End-to-end digital transformation',
+            subtitle:
+              'We help insurance companies undergo a comprehensive digital transformation journey, from process optimization to customer engagement and data analytics.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Operational efficiency',
+            subtitle:
+              'We identify opportunities to streamline and automate operations, allowing insurance companies to improve efficiency, reduce costs, and enhance customer service.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics and insights',
+            subtitle:
+              'We leverage advanced analytics and data science techniques to extract valuable insights from vast amounts of insurance data, enabling data-driven decision-making and risk assessment.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk management and fraud detection',
+            subtitle:
+              'We implement robust risk management systems and employ cutting-edge technologies to detect and prevent fraudulent activities, safeguarding insurance companies and their customers.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Integration and interoperability',
+            subtitle:
+              'We enable seamless integration of systems and data across different platforms and stakeholders, facilitating collaboration and enhancing operational efficiency.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Enhanced customer experience',
+            subtitle:
+              'We design and implement customer-centric digital solutions, such as self-service portals and personalized interactions, to improve customer satisfaction and retention.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Insurtech Solutions and how they can drive digital transformation in the insurance industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can digital solutions benefit the insurance industry?',
+            content:
+              'Digital solutions can greatly benefit the insurance industry by improving operational efficiency, enhancing customer experiences, enabling data-driven decision-making, and streamlining processes for faster claims processing and underwriting.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What makes your Insurtech Solutions unique?',
+            content:
+              'Our Insurtech Solutions are tailored to the specific needs of insurance companies, combining industry expertise with cutting-edge technology. We provide end-to-end digital transformation support, encompassing everything from operational efficiency improvements to advanced analytics and customer experience enhancements.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure data security and privacy in your solutions?',
+            content:
+              'Data security and privacy are paramount in our solutions. We adhere to industry best practices and implement robust security measures to protect sensitive information. We also comply with relevant data protection regulations to ensure privacy and confidentiality.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Wealthtech',
+    slug: 'wealthtech',
+    fa_icon: 'fa-hand-holding-usd',
+    is_featured: true,
+    subtitle:
+      'Transform your banking and asset management operations with our innovative wealthtech solutions.',
+    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_alt: 'Wealthtech',
+    // Seo
+    seo: {
+      title: 'Wealthtech',
+      description:
+        'Discover how our wealthtech solutions can revolutionize your banking and asset management operations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering Banks and Asset Firms with Wealthtech Solutions.',
+        items: [
+          {
+            title:
+              'At our Wealthtech Solutions, we specialize in providing digital solutions and consulting services to banks and asset firms. Our wealthtech solutions are designed to streamline operations, enhance customer experiences, and drive growth in the financial industry.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by banks and asset firms, and we leverage advanced technologies to deliver innovative solutions that meet their specific needs. Our team of experts combines industry knowledge with digital expertise to transform traditional banking and asset management processes.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Unlock new opportunities and improve operational efficiency with our comprehensive wealthtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Digital Transformation Consulting',
+            subtitle:
+              'Partner with us to navigate the complexities of digital transformation and leverage technology to achieve strategic goals.',
+          },
+          {
+            fa_icon: 'fa-line-chart',
+            title: 'Investment Analysis & Management',
+            subtitle:
+              'Make informed investment decisions and optimize your portfolio with our advanced analysis and management solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Compliance',
+            subtitle:
+              'Ensure compliance with regulatory requirements and automate compliance processes with our comprehensive solutions.',
+          },
+          {
+            fa_icon: 'fa-people-carry',
+            title: 'Robo-Advisory Services',
+            subtitle:
+              'Leverage AI-driven robo-advisory services to deliver personalized investment advice and improve client engagement.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Risk Management',
+            subtitle:
+              'Mitigate risks and optimize risk management strategies with our data-driven risk management solutions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Solutions',
+            subtitle:
+              'Enhance customer experiences and enable seamless mobile banking with our user-friendly mobile banking solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Wealthtech Solutions and how they can benefit banks and asset firms.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should banks and asset firms invest in wealthtech solutions?',
+            content:
+              'Wealthtech solutions offer numerous benefits for banks and asset firms, including increased operational efficiency, improved customer experiences, enhanced risk management, and better compliance with regulatory requirements. By embracing wealthtech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their clients.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Digital Transformation Consulting services help banks and asset firms?',
+            content:
+              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complexities of digital disruption. We help identify strategic goals, assess existing systems and processes, and design customized digital solutions that streamline operations, improve customer engagement, and drive business growth. Our expertise in technology adoption and change management ensures a smooth and successful digital transformation journey.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your Regulatory Compliance solutions stand out?',
+            content:
+              'Our Regulatory Compliance solutions are designed to address the unique regulatory challenges faced by banks and asset firms. We provide comprehensive solutions that automate compliance processes, monitor regulatory changes, and ensure adherence to regulatory requirements. Our solutions leverage advanced technologies, such as artificial intelligence and machine learning, to enhance accuracy, efficiency, and effectiveness in regulatory compliance.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Paytech',
+    slug: 'paytech',
+    fa_icon: 'fa-credit-card',
+    is_featured: true,
+    subtitle:
+      'Transform your payment systems and financial operations with our innovative paytech solutions.',
+    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900/',
+    hero_alt: 'Paytech',
+    // Seo
+    seo: {
+      title: 'Paytech Solutions',
+      description:
+        'Discover how our paytech solutions can revolutionize your payment systems and financial operations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering Banks and Asset Firms with Paytech Solutions.',
+        items: [
+          {
+            title:
+              'At our Paytech Solutions, we specialize in providing digital solutions and consulting services to banks and asset firms. Our paytech solutions are designed to transform payment systems, improve financial operations, and enhance customer experiences in the financial industry.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by banks and asset firms in the payments landscape, and we leverage advanced technologies to deliver innovative paytech solutions that meet their specific needs. Our team of experts combines industry knowledge with digital expertise to streamline payment processes and optimize financial operations.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Unlock new opportunities and improve operational efficiency with our comprehensive paytech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Digital Transformation Consulting',
+            subtitle:
+              'Partner with us to navigate the complexities of digital transformation and leverage technology to achieve strategic goals.',
+          },
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Payment Processing Solutions',
+            subtitle:
+              'Optimize payment processing and enable secure and seamless transactions with our advanced payment solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Fraud Prevention and Security',
+            subtitle:
+              'Protect your payment systems and customer data with our robust fraud prevention and security solutions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Payment Solutions',
+            subtitle:
+              'Enable convenient and secure mobile payments with our user-friendly mobile payment solutions.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Cross-Border Payment Solutions',
+            subtitle:
+              'Facilitate cross-border transactions and expand your global reach with our efficient cross-border payment solutions.',
+          },
+          {
+            fa_icon: 'fa-analytics',
+            title: 'Payment Analytics and Insights',
+            subtitle:
+              'Gain valuable insights into payment trends, customer behavior, and business performance with our payment analytics solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Paytech Solutions and how they can benefit banks and asset firms.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should banks and asset firms invest in paytech solutions?',
+            content:
+              'Paytech solutions offer numerous benefits for banks and asset firms, including improved payment processing efficiency, enhanced security and fraud prevention, seamless mobile payments, expanded global reach, and valuable payment insights. By embracing paytech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their customers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Digital Transformation Consulting services help banks and asset firms?',
+            content:
+              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complex landscape of digital transformation. We provide strategic guidance, technology expertise, and change management support to help organizations embrace digital technologies, optimize processes, and enhance customer experiences. With our consulting services, banks and asset firms can unlock new growth opportunities and achieve sustainable success in the digital era.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What sets your Payment Processing Solutions apart?',
+            content:
+              'Our Payment Processing Solutions are designed to meet the specific needs of banks and asset firms. We offer advanced payment processing capabilities that enable secure and seamless transactions. Our solutions leverage cutting-edge technologies, such as artificial intelligence and machine learning, to optimize payment processes, reduce transaction costs, and enhance customer satisfaction. With our payment processing solutions, banks and asset firms can improve operational efficiency, drive revenue growth, and deliver exceptional payment experiences.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Fintech Solutions',
+    slug: 'fintech-solutions',
+    fa_icon: 'fa-money-bill-wave',
+    is_featured: true,
+    subtitle:
+      'Unlock the power of digital transformation in the banking and asset management industry with our fintech solutions.',
+    hero_src: 'https://source.unsplash.com/RYWEyXopmM4/1600x900/',
+    hero_alt: 'Fintech',
+    // Seo
+    seo: {
+      title: 'Fintech Solutions',
+      description:
+        'Discover how our fintech solutions can revolutionize the banking and asset management industry through digital transformation.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Drive Digital Transformation in the Banking and Asset Management Industry.',
+        items: [
+          {
+            title:
+              'In the rapidly evolving landscape of the banking and asset management industry, digital transformation is crucial for staying competitive. At our Fintech Solutions, we specialize in providing cutting-edge digital solutions and consulting services to help banks and asset firms unlock new opportunities and drive growth through technology.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by banks and asset firms in adopting digital technologies and staying compliant with regulations. Our team of experts combines deep industry knowledge with digital expertise to develop innovative fintech solutions that streamline operations, enhance customer experiences, and improve overall business performance.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Empower your organization with our comprehensive fintech solutions tailored to the needs of the banking and asset management industry.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Digital Banking Solutions',
+            subtitle:
+              'Transform traditional banking processes and deliver seamless digital experiences to customers with our digital banking solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Investment Management Systems',
+            subtitle:
+              'Optimize asset management processes and make data-driven investment decisions with our advanced investment management systems.',
+          },
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Payment and Transaction Solutions',
+            subtitle:
+              'Simplify payment processes, enable secure transactions, and support multiple payment channels with our payment and transaction solutions.',
+          },
+          {
+            fa_icon: 'fa-user-tie',
+            title: 'Wealth Management Platforms',
+            subtitle:
+              'Empower wealth managers and financial advisors with our integrated wealth management platforms for efficient client management and portfolio analysis.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Risk and Compliance Solutions',
+            subtitle:
+              'Mitigate risks and ensure regulatory compliance with our robust risk management and compliance solutions tailored to the banking and asset management industry.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Applications',
+            subtitle:
+              'Deliver seamless mobile banking experiences and empower customers to access banking services anytime, anywhere through our mobile banking applications.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Fintech Solutions and how they can drive digital transformation in the banking and asset management industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is digital transformation important for banks and asset firms?',
+            content:
+              'Digital transformation is essential for banks and asset firms to stay competitive and meet the evolving needs of customers. It enables organizations to streamline operations, enhance customer experiences, and leverage data-driven insights for informed decision-making. By embracing digital technologies, banks and asset firms can unlock new growth opportunities, improve operational efficiency, and drive innovation in the financial industry.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What makes our Fintech Solutions unique?',
+            content:
+              'Our Fintech Solutions are designed specifically for the banking and asset management industry, addressing the industry\'s unique challenges and requirements. We combine industry expertise with technological innovation to deliver comprehensive solutions that drive digital transformation and enable organizations to thrive in the digital era. Our solutions are scalable, secure, and customizable, ensuring they align with the specific needs and objectives of each client.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How can our Fintech Solutions benefit banks and asset firms?',
+            content:
+              'Our Fintech Solutions offer numerous benefits for banks and asset firms. They streamline operations, automate processes, enhance customer experiences, improve data analysis capabilities, and strengthen risk management and compliance efforts. By leveraging our fintech solutions, banks and asset firms can gain a competitive edge, drive business growth, and adapt to the changing demands of the digital financial landscape.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Real Estate',
+    slug: 'real-estate',
+    fa_icon: 'fa-map',
+    is_featured: true,
+    subtitle:
+      'Partner with industry experts to maximize your real estate opportunities and drive growth.',
+    hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900/',
+    hero_alt: 'Real Estate',
+    // Seo
+    seo: {
+      title: 'Real Estate',
+      description:
+        'This page is dedicated to helping you maximize your real estate opportunities and drive growth.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Maximize your real estate opportunities with our expertise.',
+        items: [
+          {
+            title:
+              'In the competitive real estate industry, having a strategic digital presence is crucial for success. At our Real Estate Service, we specialize in partnering with real estate professionals to develop and execute effective digital strategies that drive growth and maximize opportunities.',
+          },
+          {
+            title:
+              'We understand the unique challenges and opportunities that the real estate market presents. Our team of experts combines industry knowledge with digital expertise to provide tailored solutions that help you reach your goals. Whether you are a real estate agent, developer, or investor, we can help you leverage the power of digital marketing to generate leads, enhance your brand, and build a strong online presence.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Real Estate Capabilities',
+        subtitle:
+          'We offer a range of specialized services designed to meet the unique needs of the real estate industry.',
+        items: [
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Enterprise digital strategy',
+            subtitle:
+              'We develop customized digital strategies that align with your business objectives and help you navigate the competitive real estate landscape.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'B2B Digital Marketing',
+            subtitle:
+              "We specialize in B2B digital marketing strategies that target key stakeholders in the real estate industry, including developers, investors, and property managers.",
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Advanced web development & analytics',
+            subtitle:
+              'Our team of skilled developers and analysts create cutting-edge websites and provide advanced analytics solutions to track performance and optimize your online presence.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Lead generation',
+            subtitle:
+              'We employ targeted lead generation strategies to attract potential buyers, sellers, and investors, helping you expand your client base and increase sales.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Brand management',
+            subtitle:
+              'We develop and execute comprehensive brand management strategies that enhance your reputation, increase brand visibility, and differentiate you from competitors.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Marketing automation',
+            subtitle:
+              'We implement marketing automation tools and processes to streamline your marketing efforts, improve efficiency, and increase ROI.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Real Estate Service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is digital marketing important for real estate professionals?',
+            content:
+              'Digital marketing plays a critical role in the real estate industry by helping professionals reach a wider audience, generate leads, and build brand awareness. It enables targeted marketing campaigns, enhances customer engagement, and provides valuable insights for informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your Real Estate Service benefit my business?',
+            content:
+              'Our Real Estate Service offers a comprehensive range of specialized digital marketing solutions tailored to the unique needs of the industry. By partnering with us, you can leverage our expertise to enhance your online presence, attract qualified leads, and stay ahead in a competitive market. We focus on driving measurable results and delivering a strong return on investment for our clients.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What sets your B2B Digital Marketing apart?',
+            content:
+              'Our B2B Digital Marketing services are specifically designed to target key stakeholders in the real estate industry, such as developers, investors, and property managers. We employ a data-driven approach to create customized strategies that effectively reach and engage these audiences. Our team has extensive experience in B2B marketing, allowing us to deliver impactful campaigns that drive meaningful business outcomes.',
+          },
+        ],
+      },
+    },
+  }
+].map((item, i) => {
+  return merge({}, MOCK_INDUSTRY_PAGE, {
+    id: i + 1,
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.'
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+      },
+    }
+  })
+})
+
 
 export const MOCK_GOVX_INDUSTRYS = MOCK_GROUP_INDUSTRYS
 

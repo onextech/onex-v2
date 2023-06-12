@@ -121,6 +121,14 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),
+        // Industry
+        renderFeaturedIndustrysBlock({
+          title: 'Industries We Serve',
+          subtitle:
+            'Fin X revolutionizes the finance sector by providing customized digital solutions and consulting services across industries, empowering businesses to thrive in the modern era of finance.',
+          items: industrys,
+          sx: { backgroundColor: 'background.paper' },
+        }),
         // Posts
         renderFeaturedPostsBlock({
           title: localeTitle

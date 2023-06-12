@@ -117,7 +117,35 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
   },
 ]
 
-export const MOCK_DIGITAL_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Enterprise Digital Strategy',
+    slug: 'enterprise-digital-strategy',
+    subtitle:
+      'Unlock the full potential of your enterprise with our comprehensive strategies, driving digital transformation and empowering business growth.',
+    hero_src: 'https://source.unsplash.com/wGICoyAhEs4/1600x900',
+    hero_alt: 'Purple light shining',
+  },
+  {
+    id: 2,
+    title: 'Specialized B2B Digital Marketing',
+    slug: 'specialized-b2b-digital-marketing',
+    subtitle:
+      'Elevate your marketing efforts with our specialized services tailored to your business needs, driving lead generation, brand awareness, and industry influence.',
+      hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
+      hero_alt: '3D rendered art',
+  },
+  {
+    id: 3,
+    title: 'Advanced Web Development & Analytics',
+    slug: 'advanced-web-development-and-analytics',
+    subtitle:
+      'Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and maximizing your website\'s performance.',
+      hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
+      hero_alt: 'Wall with orange neon lights',
+  },
+]
 
 export const MOCK_FINX_SERVICE_CATEGORYS = [
   {
@@ -172,7 +200,32 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
   },
 ]
 
-export const MOCK_GOVX_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_GOVX_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle: 'Streamline and enhance the delivery of digital services to citizens with our comprehensive solutions, designed to optimize efficiency, accessibility, and user satisfaction.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle: 'Transform and automate complex processes through leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
 
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,
