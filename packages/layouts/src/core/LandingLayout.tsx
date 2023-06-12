@@ -572,7 +572,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       openGraph: {
         ...seo.openGraph,
         url: `${site.absolute_url}${router.asPath}`
-      }
+      },
+      canonical: `${site.absolute_url}${router.asPath.split('?')[0]}`
     },
     headerProps: {
       accordionProps: { titleProps: { variant: 'h5' } },
