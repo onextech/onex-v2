@@ -2949,7 +2949,7 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: '{appTitle}',
-        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        title: 'Empowering Enterprise Growth Through Digital Excellence',
         buttons: [
           {
             overline: 'What we do',
@@ -2967,9 +2967,9 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+          'We believe in the transformative power of digital innovation, harnessing its potential to propel enterprises forward.',
         subtitle:
-          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+          '{appTitle} is your catalyst for digital success, leveraging the transformative power of digital innovation to propel enterprises forward.',
         buttons: [
           {
             overline: 'Who we are',
@@ -2982,9 +2982,9 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
-          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+          'Revolutionizing Enterprise Performance with Digital Solutions',
         subtitle:
-          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+          'We are dedicated to accelerating business success through innovative digital strategies',
         buttons: [
           {
             overline: 'Our Mission',
@@ -2997,50 +2997,42 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Modernising the Enterprise User Experience',
+        title: 'Innovative Marketing Solutions for Contemporary Enterprises',
         subtitle:
-          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+          'Navigating the Digital Landscape to Elevate Your Enterprise\'s Brand and Drive Sustainable Growth',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'Three circles',
             overline: '01',
-            title: 'User Interface Development',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+              'Unlock the full potential of your enterprise with our comprehensive strategies, driving digital transformation and empowering business growth.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Modern Frontend Engineering',
+            title: 'Specialized B2B Marketing',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+              'Elevate your marketing efforts with our specialized services tailored to your business needs, driving lead generation, brand awareness, and industry influence.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Product Team Augmentation',
+            title: 'Advanced Web Deployment & Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-          },
-          {
-            avatar_src: '/images/about_shape_circles.svg',
-            avatar_alt: 'Three overlapping circles',
-            overline: '04',
-            title: 'Software Architecture R&D',
-            subtitle:
-              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+              'Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and your website\'s performance.',
           },
         ],
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        title: 'Powering Enterprises with Data-Driven Solutions Tailored for Success',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+          'Our team of digital experts harnesses the power of data-driven solutions to empower enterprises, crafting tailored strategies that drive success.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -3051,17 +3043,17 @@ export const MOCK_DIGITAL_PAGES = [
       },
       gallery: {
         overline: 'Our Clients',
-        title: 'Trusted by Product Teams at',
+        title: 'Elevating Enterprise Digital Capabilities',
         subtitle:
-          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+          'Propelling businesses to new heights in the digital landscape.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Global Frontend Delivery Services',
+        title: 'Bringing Digital Excellence to Enterprises Everywhere',
         subtitle:
-          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+          '{appTitle} stands at the forefront of digital excellence, delivering our transformative solutions to enterprises worldwide through our strategic presence in key global markets, ensuring impactful results, and driving growth on a global scale.',
         items: [
           {
             title: '100+',
@@ -3098,9 +3090,9 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Empower Enterprises with Extraordinary Experiences',
+        title: 'Shape the Future of Enterprise Marketing',
         subtitle:
-          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+          'Join us at {appTitle} and shape the future of enterprise marketing. Be a part of the team that redefines the digital landscape and unlocks new possibilities for businesses worldwide.',
         buttons: [
           {
             overline: 'Careers',
