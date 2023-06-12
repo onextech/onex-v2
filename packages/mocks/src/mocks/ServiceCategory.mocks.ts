@@ -172,7 +172,32 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
   },
 ]
 
-export const MOCK_GOVX_SERVICE_CATEGORYS = MOCK_TECH_SERVICE_CATEGORYS
+export const MOCK_GOVX_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle: 'Streamline and enhance the delivery of digital services to citizens with our comprehensive solutions, designed to optimize efficiency, accessibility, and user satisfaction.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle: 'Transform and automate complex processes through leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
 
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,

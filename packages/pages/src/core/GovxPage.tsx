@@ -75,7 +75,7 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         fill
                         {...renderHeroWithBackgroundBlock({
                           ...hero,
-                          title: 'Unleash your X Factor',
+                          title: 'Empowering Public Sector Digital Transformation',
                           backgroundImageProps: {
                             src: '/images/about_nodes_above_city.png',
                             alt: 'hero',
@@ -86,7 +86,7 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         fill
                         {...renderHeroWithBackgroundBlock({
                           ...hero,
-                          title: "Deliver Tomorrow's Innovation Today",
+                          title: "Empowering Public Sector Digital Transformation",
                           backgroundImageProps: {
                             src: '/images/mission_earth.png',
                             alt: 'hero',
@@ -113,30 +113,13 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Intelligent Data Solutions for Modern Enterprises
+              Empowering the Public Sector through AI-driven Solutions
             </>
           ),
           subtitle:
-            'Revolutionizing enterprises through strategic data insights and AI-driven solutions: Our proficiency in data science and enterprise AI transformations equips businesses with predictive, optimized, and intelligent systems, developed with a data-first approach.',
+            'Empower the public sector with AI-driven solutions from Gov X. Optimize operations, make data-driven decisions, and deliver enhanced public services. Revolutionize governance with our innovative technologies.',
           items: showcases,
           pt: { xs: 5, md: 10 },
-        }),
-        // Technologys
-        renderTechnologysBlock({ items: technologys }),
-        // Client Testimonials
-        renderClientTestimonialSliderBlock({
-          title: 'Powering Data-Driven Success',
-          subtitle:
-            "One X Data is the preferred choice for enterprises requiring sophisticated data science services, strategic data solutions, and advanced AI implementations.",
-          items: clientTestimonials,
-        }),
-        // Industry
-        renderFeaturedIndustrysBlock({
-          title: 'Access Industry Expertise & Best Practices',
-          subtitle:
-            'We are committed to equipping businesses with superior data science services and state-of-the-art AI solutions. We constantly innovate and refine our methodologies to ensure our clients stay at the forefront of their industry with actionable data insights and transformative AI capabilities.',
-          items: industrys,
-          sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
         renderFeaturedPostsBlock({
