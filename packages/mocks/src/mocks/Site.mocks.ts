@@ -289,7 +289,7 @@ export const MOCK_GOVX_SITE = {
   logo_alt: 'GovX logo',
 
   // App
-  title: 'GovX',
+  title: 'Gov X',
   absolute_url: 'https://www.govx.ai',
 
   // Cta

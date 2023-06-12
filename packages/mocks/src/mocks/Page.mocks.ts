@@ -3986,7 +3986,7 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: '{appTitle}',
-        title: 'Delivering Modern Frontend Solutions for Enterprises',
+        title: 'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',
         buttons: [
           {
             overline: 'What we do',
@@ -4004,9 +4004,9 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
         title:
-          'We believe in enhancing data-driven decision-making with intuitive dashboard frontends.',
+          'We believe in harnessing the power of technology to transform and digitalize industries in the public sector.',
         subtitle:
-          '{appTitle} is a software development service provider, specialized in modern frontend development services for leading enterprises in {localeTitle}.',
+          'At {appTitle}, we are driven by our belief in leveraging technology\'s power to drive digital transformation across public sector industries.',
         buttons: [
           {
             overline: 'Who we are',
@@ -4019,9 +4019,9 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
         title:
-          'We are here to elevate enterprise digital capability with exceptional user experiences.',
+          'Expanding Horizons of Public Sector Innovation',
         subtitle:
-          'At our core, we believe in the power of outstanding user experiences to elevate enterprise digital capability to new heights, driving growth, and fostering meaningful connections between businesses and their users.',
+          'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -4034,50 +4034,42 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Modernising the Enterprise User Experience',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          'We assist enterprise clients with their digital transformation through providing high-performing, on-demand frontend teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
             avatar_alt: 'Three circles',
             overline: '01',
-            title: 'User Interface Development',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
           },
           {
             avatar_src: '/images/about_shape_squares.svg',
             avatar_alt: 'Three squares',
             overline: '02',
-            title: 'Modern Frontend Engineering',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Product Team Augmentation',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-          },
-          {
-            avatar_src: '/images/about_shape_circles.svg',
-            avatar_alt: 'Three overlapping circles',
-            overline: '04',
-            title: 'Software Architecture R&D',
-            subtitle:
-              'Explore new techniques and technologies to design and develop robust and scalable software systems.',
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
           },
         ],
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'We Build Digital Solutions with Enterprises, for Enterprises',
+        title: 'Redefining Public Sector Possibilities',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+          'Our team of consultants, designers, and engineers live and breathe digital services to deliver the best technological solutions targeted at growth and digitalization.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -4096,9 +4088,9 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Global Frontend Delivery Services',
+        title: 'Empowering Public Sector Transformation Across Locations',
         subtitle:
-          '{appTitle} stands at the forefront of global frontend development services, working hand-in-hand with enterprises to deliver innovative solutions that optimize user experiences and fuel their digital transformation journey.',
+          '{appTitle}\'s reach extends its transformative solutions across diverse locations, enabling public sector organizations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.',
         items: [
           {
             title: '100+',
@@ -4135,9 +4127,9 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Empower Enterprises with Extraordinary Experiences',
+        title: 'Empowering the Public Sector through Digital Transformation',
         subtitle:
-          'Step into {appTitle}, a vibrant hub at the forefront of modern frontend development and dashboard user experiences for enterprises. Be part of a team working to revolutionize user experiences and empower enterprises with extraordinary software solutions.',
+          'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
         buttons: [
           {
             overline: 'Careers',
@@ -4162,9 +4154,9 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'Swirl of colors',
         overline: '{appTitle}',
-        title: 'Modernising Enterprise User Experiences',
+        title: 'Empowering Public Sector Digital Transformation',
         subtitle:
-          "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
+          "Unlocking the potential of the public sector through innovative digital solutions, driving efficiency, transparency, and citizen-centric services.",
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -4181,31 +4173,31 @@ export const MOCK_GOVX_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
             href: `${routeConfig.SERVICES}/accelerate-development`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
             href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
             href: `${routeConfig.SERVICES}/product-team-augmentation`,
           },
         ],
@@ -4214,43 +4206,43 @@ export const MOCK_GOVX_PAGES = [
         overline: 'How We Work',
         title: 'Our Approach',
         subtitle:
-          'Our steadfast and meticulous approach towards our work ensures the delivery of superior software solutions for enterprises seeking digital transformation.',
+          'Our focus on data-driven strategies enables us to deliver robust digital transformations, empowering businesses to leverage the power of AI and gain a competitive edge in the market.',
         items: [
           {
-            fa_icon: 'fa-check',
-            title: 'Agile Development Methodology',
-            subtitle:
-              'We follow an agile development approach, enabling us to quickly adapt to changing business needs and deliver software solutions with maximum efficiency.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Cutting-Edge Technologies',
-            subtitle:
-              'Our team of experts stays up-to-date with the latest technologies and tools, allowing us to leverage the most advanced solutions for your enterprise software development projects.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Customized Solutions',
-            subtitle:
-              "We understand that every business is unique, and we tailor our software solutions to meet your specific requirements, ensuring they align seamlessly with your organisation's goals and processes.",
-          },
-          {
-            fa_icon: 'fa-tasks',
-            title: 'Streamlined Project Management',
-            subtitle:
-              'With our meticulous project management practices, we ensure smooth collaboration, transparent communication, and timely delivery of your software development projects.',
-          },
-          {
-            fa_icon: 'fa-check-circle',
-            title: 'Quality Assurance and Testing',
-            subtitle:
-              'We have a dedicated quality assurance team that performs rigorous testing throughout the development process, ensuring the reliability, security, and performance of your software solutions.',
-          },
-          {
             fa_icon: 'fa-chart-line',
-            title: 'Scalability and Future-Proofing',
+            title: 'Data-Driven Insights',
             subtitle:
-              'Our software solutions are designed to be scalable, allowing your business to grow and adapt without limitations. We also consider future technologies and trends to future-proof your software and keep it ahead of the curve.',
+              'We employ a data-focused approach, leveraging advanced analytics and machine learning techniques to gain valuable insights from vast volumes of financial data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Tailored Solutions',
+            subtitle:
+              'Our approach involves understanding each client\'s unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.',
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless Integration',
+            subtitle:
+              "We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.",
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and Flexibility',
+            subtitle:
+              'Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client\'s businesses, ensuring long-term success and value.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management and Compliance',
+            subtitle:
+              'We prioritize risk management and compliance within our AI solutions, incorporating robust security measures and adhering to industry regulations to mitigate potential risks and safeguard sensitive financial data.',
+          },
+          {
+            fa_icon: 'fa-gavel',
+            title: 'Ethical AI Practices',
+            subtitle:
+              'We uphold a strong commitment to ethical AI practices, ensuring transparency, fairness, and accountability in our algorithms and models to build trust and maintain the highest standards of integrity in the finance sector.',
           },
         ],
       },
@@ -4330,65 +4322,65 @@ export const MOCK_GOVX_PAGES = [
           {
             key: 'faq-1',
             title:
-              'What experience and expertise do you have in frontend development?',
+              'What is {appTitle}?',
             content:
-              'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
+              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organizations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
             key: 'faq-2',
             title:
-              'How do you ensure that the software you build meets our specific requirements?',
+              'What industries do you serve?',
             content:
-              'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
+              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organizations.',
           },
           {
             key: 'faq-3',
-            title: 'How do you ensure the quality of the software you develop?',
+            title: 'What kind of solutions does {appTitle} offer?',
             content:
-              'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
+              '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
           },
           {
             key: 'faq-4',
-            title: 'What industries do you have experience working with?',
+            title: 'How can {appTitle}\'s solutions benefit my organization?',
             content:
-              'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
+              'Our solutions are designed to empower government organizations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
             key: 'faq-5',
-            title: 'How do you handle project management and communication?',
+            title: 'Are your solutions scalable?',
             content:
-              'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
+              'Yes, {appTitle}\'s solutions are scalable and can be adapted to organizations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organization grows.',
           },
           {
             key: 'faq-6',
-            title: 'How do you ensure the security and privacy of our data?',
+            title: 'How can I get started with {appTitle}?',
             content:
-              'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
+              'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
           },
           {
             key: 'faq-7',
-            title: 'What is your approach to project pricing and timelines?',
+            title: 'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
-              'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
+              'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
             key: 'faq-8',
-            title: 'What’s your experience in enterprise software development?',
+            title: 'Is {appTitle} compliant with data security and privacy regulations',
             content:
-              'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
+              'Yes, we prioritize the security and privacy of our client\'s data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.',
           },
           {
             key: 'faq-9',
-            title: 'What is your approach to project management?',
+            title: 'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
-              'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
+              'Pricing for {appTitle}\'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.'
           },
           {
             key: 'faq-10',
             title:
-              'What is your pricing model for frontend development services?',
+              'How long does the implementation process typically take?',
             content:
-              'Our pricing model is flexible and depends on the specific needs and requirements of each project. We offer both fixed-price and time-and-materials pricing options, and we work closely with our clients to determine the most cost-effective and efficient approach for their project.',
+              'The implementation timeline depends on the specific requirements of your organization and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
           },
         ],
       },
@@ -4398,7 +4390,7 @@ export const MOCK_GOVX_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
+          '{appTitle} is committed to building strong partnerships and working collaboratively with organizations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
       },
     },
   },
