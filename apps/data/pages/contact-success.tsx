@@ -18,7 +18,7 @@ const SuccessPage = (props: SuccessPageProps) => {
   const router = useRouter()
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout calloutProps={{ isHidden: true }} seo={page.seo}>
+      <LandingLayout calloutProps={{ disableCallout: true }} seo={page.seo}>
         <ContactSuccessPage {...router.query} />
       </LandingLayout>
     </PageProvider>

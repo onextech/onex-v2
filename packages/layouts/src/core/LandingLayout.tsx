@@ -659,7 +659,9 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     footerProps: {
-      callout: !calloutProps?.isHidden && <ContactCallout {...calloutProps} />,
+      callout: !calloutProps?.disableCallout && (
+        <ContactCallout {...calloutProps} />
+      ),
       logo: <Image {...logoProps} />,
       companyName: site.company_title,
       accordionProps: {
