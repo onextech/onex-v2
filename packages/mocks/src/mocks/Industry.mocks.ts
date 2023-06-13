@@ -2908,7 +2908,7 @@ export const MOCK_FINX_INDUSTRYS = [
 })
 
 
-export const MOCK_GOVX_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_GOVX_INDUSTRYS = []
 
 export const MOCK_INDUSTRYS = {
   GROUP: MOCK_GROUP_INDUSTRYS,
