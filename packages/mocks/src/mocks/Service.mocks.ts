@@ -8485,6 +8485,13 @@ export const MOCK_FINX_SERVICES = [
     // Category
     category: getCategoryFromCrudItem(item, MOCK_FINX_SERVICE_CATEGORYS),
     ...item,
+    sections: {
+      ...MOCK_SERVICE_PAGE.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle: 'To deliver financial solutions of the highest quality, we follow the best practices that include thorough financial analysis, regulatory compliance, risk management, data security, and continuous improvement.',
+      },
+    },
   })
 })
 export const MOCK_GOVX_SERVICES = [
