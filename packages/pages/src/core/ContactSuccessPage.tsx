@@ -41,7 +41,7 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
               title: (
                 <>
                   Thank you for contacting us,{' '}
-                  <span id="contact-success-form-name">{name}</span>
+                  <span id="contact-success-form--name">{name}</span>
                 </>
               ),
               titleProps: { mb: 2, component: 'h1' },
@@ -51,7 +51,7 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
               title: (
                 <>
                   We have received your details and we will reach out to you at{' '}
-                  <span id="contact-success-form-email">{email}</span>
+                  <span id="contact-success-form--email">{email}</span>
                 </>
               ),
             },
