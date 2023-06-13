@@ -293,7 +293,7 @@ export const MOCK_GOVX_SITE = {
   absolute_url: 'https://www.govx.ai',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with GovX.',
+  cta_title: 'Modernise Public Sectors with Gov X.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@govx.ai',
