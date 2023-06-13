@@ -33,7 +33,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     title: 'Advisory',
     slug: 'advisory',
     subtitle:
-      'Unlock growth and success with One X Group\'s business advisory services.',
+      "Unlock growth and success with One X Group's business advisory services.",
     hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
     hero_alt: 'Group working on a laptop together',
   },
@@ -92,8 +92,7 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     id: 1,
     title: 'Design Strategy',
     slug: 'design-strategy',
-    subtitle:
-      'Providing user-centric solutions at enterprise scale and speed.',
+    subtitle: 'Providing user-centric solutions at enterprise scale and speed.',
     hero_src: 'https://source.unsplash.com/CGpifH3FjOA/1600x900',
     hero_alt: 'Man writing on black pad',
   },
@@ -104,7 +103,7 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     subtitle:
       'Maximizing enterprise value through comprehensive system building.',
     hero_src: 'https://source.unsplash.com/4sRFTaQSM8Q/1600x900',
-    hero_alt: 'White block stack'
+    hero_alt: 'White block stack',
   },
   {
     id: 3,
@@ -133,17 +132,17 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'specialized-b2b-digital-marketing',
     subtitle:
       'Elevate your marketing efforts with our specialized services tailored to your business needs, driving lead generation, brand awareness, and industry influence.',
-      hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
-      hero_alt: '3D rendered art',
+    hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
+    hero_alt: '3D rendered art',
   },
   {
     id: 3,
     title: 'Advanced Web Development & Analytics',
     slug: 'advanced-web-development-and-analytics',
     subtitle:
-      'Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and maximizing your website\'s performance.',
-      hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
-      hero_alt: 'Wall with orange neon lights',
+      "Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and maximizing your website's performance.",
+    hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
+    hero_alt: 'Wall with orange neon lights',
   },
 ]
 
@@ -170,7 +169,8 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     id: 3,
     title: 'Investment Analysis & Management',
     slug: 'investment-analysis-and-management',
-    subtitle: 'nvestment services tailored to your financial goals and risk appetite..',
+    subtitle:
+      'Investment services tailored to your financial goals and risk appetite.',
     hero_src: 'https://source.unsplash.com/ZGjbiukp_-A/1600x900',
     hero_alt: 'Skyscrapers',
   },
@@ -186,7 +186,8 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     id: 5,
     title: 'Wealth Management',
     slug: 'wealth-management',
-    subtitle: 'Grow and protect your wealth with our comprehensive wealth management services.',
+    subtitle:
+      'Grow and protect your wealth with our comprehensive wealth management services.',
     hero_src: 'https://source.unsplash.com/lCPhGxs7pww/1600x900',
     hero_alt: 'American dollar bills',
   },
@@ -194,7 +195,8 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     id: 6,
     title: 'Engineering Solutions',
     slug: 'engineering-solutions',
-    subtitle: 'Unlock innovative solutions to drive efficiency and maximize performance in your operations.',
+    subtitle:
+      'Unlock innovative solutions to drive efficiency and maximize performance in your operations.',
     hero_src: 'https://source.unsplash.com/3JjnYjHCK0c/1600x900',
     hero_alt: '3d illustration of an abstract geometric shape',
   },
@@ -205,7 +207,8 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     id: 1,
     title: 'Digital Service Delivery',
     slug: 'digital-service-delivery',
-    subtitle: 'Streamline and enhance the delivery of digital services to citizens with our comprehensive solutions, designed to optimize efficiency, accessibility, and user satisfaction.',
+    subtitle:
+      'Streamline and enhance the delivery of digital services to citizens with our comprehensive solutions, designed to optimize efficiency, accessibility, and user satisfaction.',
     hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
     hero_alt: 'Star trail',
   },
@@ -213,7 +216,8 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     id: 2,
     title: 'AI Process Automation',
     slug: 'ai-process-automation',
-    subtitle: 'Transform and automate complex processes through leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
     hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
     hero_alt: '3D rendered cubes',
   },
@@ -221,7 +225,8 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     id: 3,
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
-    subtitle: 'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+    subtitle:
+      'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
     hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
     hero_alt: 'Purple and blue light design',
   },

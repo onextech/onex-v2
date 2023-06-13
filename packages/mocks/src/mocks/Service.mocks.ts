@@ -1016,7 +1016,8 @@ export const MOCK_TECH_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why are agile development teams important for my enterprise business?',
+            title:
+              'Why are agile development teams important for my enterprise business?',
             content:
               'Development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
           },
@@ -1176,7 +1177,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'Our focus is on building intuitive and efficient digital solutions that cater to the unique needs of your enterprise clients. We work closely with you to understand your clients\' business objectives and deliver tailored solutions that drive growth and enhance customer satisfaction.',
+              "Our focus is on building intuitive and efficient digital solutions that cater to the unique needs of your enterprise clients. We work closely with you to understand your clients' business objectives and deliver tailored solutions that drive growth and enhance customer satisfaction.",
           },
         ],
       },
@@ -1231,7 +1232,8 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'What makes your Product and Service Design solutions stand out from the competition?',
+            title:
+              'What makes your Product and Service Design solutions stand out from the competition?',
             content:
               'Our Product and Service Design solutions stand out from the competition because of our specialization in frontend software engineering and dashboard development. We focus on creating digital experiences that are visually stunning, highly functional, and tailored to the unique needs of your enterprise clients. Our team of experts stays up-to-date with the latest frontend technologies and design principles, ensuring that your digital products are built to the highest standards.',
           },
@@ -1245,7 +1247,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How do you ensure the quality of your digital products?',
             content:
-              'To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients\' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.',
+              "To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.",
           },
         ],
       },
@@ -1273,7 +1275,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In today\'s interconnected world, cyber threats pose a significant risk to businesses of all sizes. Our Cyber Security service provides comprehensive protection for your digital assets, ensuring that your business remains secure and resilient against potential cyber attacks.',
+              "In today's interconnected world, cyber threats pose a significant risk to businesses of all sizes. Our Cyber Security service provides comprehensive protection for your digital assets, ensuring that your business remains secure and resilient against potential cyber attacks.",
           },
           {
             title:
@@ -1334,11 +1336,12 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-1',
             title: 'Why is cyber security important for my business?',
             content:
-              'Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organisation\'s reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.',
+              "Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organisation's reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.",
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Cyber Security Service?',
+            title:
+              'What are the benefits of working with your Cyber Security Service?',
             content:
               'Working with our Cyber Security Service offers several benefits, including access to experienced cyber security experts, a custom security strategy tailored to your business, and comprehensive protection for your digital assets. We offer a wide range of services, from vulnerability assessments to incident response planning, ensuring that your organisation is well-prepared to defend against potential cyber threats.',
           },
@@ -1346,7 +1349,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How do you approach cyber security?',
             content:
-              'We take a proactive approach to cyber security, working closely with your organisation to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team\'s extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.',
+              "We take a proactive approach to cyber security, working closely with your organisation to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team's extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.",
           },
         ],
       },
@@ -1378,7 +1381,7 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             title:
-              'We understand the importance of making well-informed decisions in today\'s competitive landscape. Our in-depth evaluations empower you with the knowledge needed to navigate complex software projects and invest your resources wisely.',
+              "We understand the importance of making well-informed decisions in today's competitive landscape. Our in-depth evaluations empower you with the knowledge needed to navigate complex software projects and invest your resources wisely.",
           },
         ],
       },
@@ -1433,13 +1436,15 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a technical feasibility study important for my business?',
+            title:
+              'Why is a technical feasibility study important for my business?',
             content:
               'A technical feasibility study helps you identify potential challenges and risks associated with your software project before you invest significant resources. This enables you to make informed decisions, optimize your project plan, and ultimately improve the likelihood of success. It also helps you identify any gaps in your team capabilities or technology stack, allowing you to address these issues proactively.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Technical Feasibility Study Service?',
+            title:
+              'What are the benefits of working with your Technical Feasibility Study Service?',
             content:
               'Our team of experts has extensive experience in frontend software engineering and dashboard development, giving us the knowledge and insights needed to evaluate the technical feasibility of your project effectively. We provide in-depth analysis, risk assessment, technology evaluation, team capabilities assessment, and comprehensive documentation and reporting, ensuring that you have all the information you need to make informed decisions about your project. We also work closely with your team throughout the process, ensuring a seamless and effective collaboration.',
           },
@@ -1475,7 +1480,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In today\'s world, businesses are becoming increasingly aware of their environmental impact and the importance of sustainability. At our Sustainability Consulting Service, we help you create environmentally responsible software solutions that not only contribute to a greener planet but also benefit your bottom line.',
+              "In today's world, businesses are becoming increasingly aware of their environmental impact and the importance of sustainability. At our Sustainability Consulting Service, we help you create environmentally responsible software solutions that not only contribute to a greener planet but also benefit your bottom line.",
           },
           {
             title:
@@ -1499,7 +1504,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-seedling',
             title: 'Environmental impact reduction',
             subtitle:
-              'We develop strategies and initiatives to minimize your enterprise\'s environmental footprint, including energy conservation, waste reduction, and resource optimization.',
+              "We develop strategies and initiatives to minimize your enterprise's environmental footprint, including energy conservation, waste reduction, and resource optimization.",
           },
           {
             fa_icon: 'fa-globe',
@@ -1540,13 +1545,15 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Sustainability Consulting Service?',
+            title:
+              'What are the benefits of working with your Sustainability Consulting Service?',
             content:
               'By working with our Sustainability Consulting Service, you can expect to receive expert guidance in creating environmentally responsible software solutions. Our team specializes in frontend software engineering and dashboard development, with a strong focus on sustainable technologies and practices. We help you identify the right technologies, develop data-driven dashboards, and provide ongoing support to ensure your solutions are both eco-friendly and effective. This collaboration will enable your business to achieve its sustainability goals while also driving growth and innovation.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure that the software solutions you develop are sustainable?',
+            title:
+              'How do you ensure that the software solutions you develop are sustainable?',
             content:
               'We take a comprehensive approach to sustainability in software development. Our team stays up-to-date with the latest advancements in sustainable technology and follows best practices to ensure eco-friendliness. We collaborate with your team to identify the most appropriate technologies and strategies for your specific needs, develop data-driven dashboards to track sustainability performance, and balance environmental considerations with performance requirements. This approach ensures that the solutions we develop meet your sustainability goals without sacrificing effectiveness or user experience.',
           },
@@ -1571,7 +1578,8 @@ export const MOCK_GROUP_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Validate ideas and drive innovation with Proof of Concept Development.',
+        title:
+          'Validate ideas and drive innovation with Proof of Concept Development.',
         items: [
           {
             title:
@@ -1634,26 +1642,29 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'What is the purpose of developing a Proof of Concept (PoC)?',
+            title:
+              'What is the purpose of developing a Proof of Concept (PoC)?',
             content:
               'Developing a Proof of Concept (PoC) allows organisations to validate their ideas and ensure they are feasible, cost-effective, and viable in the marketplace. A well-executed PoC can help minimize risks, accelerate innovation, and provide valuable insights that inform decision-making and future development.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your PoC Development Service?',
+            title:
+              'What are the benefits of working with your PoC Development Service?',
             content:
               'Our PoC Development Service specializes in frontend software engineering and dashboard development for enterprise clients. By working with us, you gain access to a team of experts dedicated to validating your ideas and creating tailored solutions that align with your business goals. Our collaborative approach ensures open communication and fosters a successful partnership, while our iterative development process allows for continuous improvement and adaptation.',
           },
           {
             key: 'faqs-3',
-            title: 'How long does it typically take to develop a Proof of Concept?',
+            title:
+              'How long does it typically take to develop a Proof of Concept?',
             content:
               'The time required to develop a Proof of Concept can vary depending on the complexity of the project, the availability of resources, and the specific needs of your organisation. In general, a PoC can take anywhere from a few weeks to several months to complete. Our team works closely with you to establish a realistic timeline that aligns with your goals and expectations.',
           },
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -1672,7 +1683,8 @@ export const MOCK_GROUP_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Driving business innovation through tailored application development.',
+        title:
+          'Driving business innovation through tailored application development.',
         items: [
           {
             title:
@@ -1735,13 +1747,15 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'What industries do you serve with your Application Development service?',
+            title:
+              'What industries do you serve with your Application Development service?',
             content:
               'We serve a wide range of industries with our Application Development service, including finance, healthcare, retail, manufacturing, and more. Our team has the expertise and experience to create tailored solutions that address the unique challenges and requirements of your industry.',
           },
           {
             key: 'faqs-2',
-            title: 'What frontend technologies do you use for application development?',
+            title:
+              'What frontend technologies do you use for application development?',
             content:
               'Our team stays up-to-date with the latest frontend technologies and best practices. We primarily use popular and modern frameworks and libraries, such as React, Angular, and Vue.js, to develop high-quality, maintainable, and performant applications.',
           },
@@ -1754,7 +1768,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -1842,20 +1856,22 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What industries do you serve with your Enterprise Application Development services?',
+            title:
+              'What industries do you serve with your Enterprise Application Development services?',
             content:
               'Our Enterprise Application Development services cater to a wide range of industries, including but not limited to finance, healthcare, manufacturing, logistics, retail, and telecommunications. We have experience working with diverse enterprises and can adapt our solutions to meet the unique requirements of your industry.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the security and scalability of enterprise applications?',
+            title:
+              'How do you ensure the security and scalability of enterprise applications?',
             content:
               'Security and scalability are paramount in enterprise applications. We follow industry best practices and employ robust security measures to protect your sensitive data and ensure compliance with relevant regulations. Our development approach focuses on scalability, allowing your software to accommodate future growth and evolving business needs.',
           },
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -1943,7 +1959,8 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What industries can benefit from your ERP Consulting services?',
+            title:
+              'What industries can benefit from your ERP Consulting services?',
             content:
               'Our ERP Consulting services are suitable for businesses across a wide range of industries, including manufacturing, retail, healthcare, finance, and more. We have experience working with various ERP systems and can tailor our services to meet the unique needs of your business.',
           },
@@ -1956,7 +1973,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -2057,7 +2074,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -2080,7 +2097,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernise, and revamp your existing applications to meet today\'s technological demands and enhance user experience.',
+              "In an ever-evolving digital landscape, outdated software applications can hinder your business growth and reduce efficiency. Our Application Re-engineering services are designed to help you optimize, modernise, and revamp your existing applications to meet today's technological demands and enhance user experience.",
           },
           {
             title:
@@ -2139,13 +2156,15 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is Application Re-engineering important for my business?',
+            title:
+              'Why is Application Re-engineering important for my business?',
             content:
               'Application Re-engineering is essential to ensure that your software applications stay up-to-date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Application Re-engineering service?',
+            title:
+              'What are the benefits of working with your Application Re-engineering service?',
             content:
               'Our Application Re-engineering service focuses on frontend software engineering and dashboard development for enterprise clients. We work closely with you to analyze your existing applications, identify bottlenecks and areas for improvement, and provide innovative solutions to enhance their performance and user experience. By leveraging our expertise, your business can benefit from improved efficiency, reduced costs, and a more competitive position in the market.',
           },
@@ -2158,7 +2177,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -2177,7 +2196,8 @@ export const MOCK_GROUP_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Unlock the power of the cloud with our Cloud Migration services.',
+        title:
+          'Unlock the power of the cloud with our Cloud Migration services.',
         items: [
           {
             title:
@@ -2254,12 +2274,12 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How long does a typical cloud migration process take?',
             content:
-              'The duration of a cloud migration process varies depending on the size and complexity of your organisation\'s infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organisation to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.',
+              "The duration of a cloud migration process varies depending on the size and complexity of your organisation's infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organisation to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.",
           },
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -2282,7 +2302,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In today\'s fast-paced digital landscape, having a skilled and experienced development team is crucial for success. Our Smart Team service provides enterprise clients with top-notch frontend engineers and dashboard developers, ensuring your projects are completed efficiently and effectively.',
+              "In today's fast-paced digital landscape, having a skilled and experienced development team is crucial for success. Our Smart Team service provides enterprise clients with top-notch frontend engineers and dashboard developers, ensuring your projects are completed efficiently and effectively.",
           },
           {
             title:
@@ -2341,13 +2361,15 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why should I choose your Smart Team service for my business?',
+            title:
+              'Why should I choose your Smart Team service for my business?',
             content:
               'Our Smart Team service provides your business with highly skilled frontend engineers and dashboard developers who are experienced in working with enterprise clients. We are dedicated to understanding your unique needs and goals, delivering tailor-made solutions that drive results. Our team stays up-to-date with the latest industry trends and best practices, ensuring that your projects benefit from cutting-edge technologies and techniques.',
           },
           {
             key: 'faqs-2',
-            title: 'What frontend technologies and frameworks do your engineers specialize in?',
+            title:
+              'What frontend technologies and frameworks do your engineers specialize in?',
             content:
               'Our frontend engineers are proficient in a wide range of modern technologies and frameworks, including React, Angular, Vue.js, and more. They are experienced in working with HTML, CSS, JavaScript, and other frontend languages, ensuring that your user interfaces are responsive, performant, and visually stunning.',
           },
@@ -2360,7 +2382,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 2
+    category_id: 2,
   },
   {
     // Hero
@@ -2448,7 +2470,8 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Data Science service?',
+            title:
+              'What are the benefits of working with your Data Science service?',
             content:
               'Our team of experienced data scientists and analysts work closely with your organisation to understand your business needs and develop custom solutions that address those needs. We offer a comprehensive suite of data science services, including data analytics, machine learning, dashboard development, data management, and process optimization. By working with us, you can unlock the full potential of your data and drive better decision-making, optimized processes, and improved customer experiences.',
           },
@@ -2461,7 +2484,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 3
+    category_id: 3,
   },
   {
     // Hero
@@ -2484,7 +2507,7 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title:
-              'In today\'s data-driven world, businesses that harness the power of data have a competitive edge. At our Data Strategy service, we specialize in helping enterprises unlock the potential of their data and develop data-driven strategies that drive growth and innovation.',
+              "In today's data-driven world, businesses that harness the power of data have a competitive edge. At our Data Strategy service, we specialize in helping enterprises unlock the potential of their data and develop data-driven strategies that drive growth and innovation.",
           },
           {
             title:
@@ -2549,7 +2572,8 @@ export const MOCK_GROUP_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Data Strategy service?',
+            title:
+              'What are the benefits of working with your Data Strategy service?',
             content:
               'By working with our Data Strategy service, you will benefit from our expertise in developing comprehensive data strategies tailored to your business needs. We have a deep understanding of data governance, integration, quality management, and analytics, and we can help you establish a data-driven culture within your organisation. Our goal is to empower you to leverage data effectively, optimize processes, and drive growth and innovation.',
           },
@@ -2562,8 +2586,8 @@ export const MOCK_GROUP_SERVICES = [
         ],
       },
     },
-    category_id: 3
-  }  
+    category_id: 3,
+  },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
     id: i + 1,
@@ -2592,7 +2616,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-people-group',
             title: 'Advisory',
             subtitle:
-              'Unlock growth and success with {appTitle}\'s business advisory services.',
+              "Unlock growth and success with {appTitle}'s business advisory services.",
             href: `${routeConfig.SERVICES}/advisory`,
           },
           {
@@ -2617,7 +2641,7 @@ export const MOCK_GROUP_SERVICES = [
         subtitle:
           'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
       },
-    }
+    },
   })
 })
 
@@ -2627,13 +2651,15 @@ export const MOCK_DESIGN_SERVICES = [
     title: 'UX Strategy Consulting',
     slug: 'ux-strategy-consulting',
     category_id: 1,
-    subtitle: 'Leverage our design expertise to formulate a user experience strategy that aligns with your business goals.',
+    subtitle:
+      'Leverage our design expertise to formulate a user experience strategy that aligns with your business goals.',
     hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
     hero_alt: 'Man explaining ideas at table',
     // Sections
     sections: {
       summary: {
-        title: 'We provide strategic consulting to help you create compelling, user-friendly experiences that drive business success.',
+        title:
+          'We provide strategic consulting to help you create compelling, user-friendly experiences that drive business success.',
         items: [
           {
             title:
@@ -2698,7 +2724,8 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What can I expect from your UX Strategy Consulting service?',
+            title:
+              'What can I expect from your UX Strategy Consulting service?',
             content:
               'Our service involves reviewing your current UX, identifying areas for improvement, and providing actionable strategies to enhance your user experience. We collaborate closely with your team, providing support and guidance throughout the implementation of these strategies.',
           },
@@ -2710,20 +2737,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Design Thinking Workshop',
     slug: 'design-thinking-workshop',
     category_id: 1,
-    subtitle: 'Engage with design specialists to discover innovative solutions tailored for your enterprise.',
+    subtitle:
+      'Engage with design specialists to discover innovative solutions tailored for your enterprise.',
     hero_src: 'https://source.unsplash.com/zoCDWPuiRuA/1600x900',
     hero_alt: 'Board with post-its',
     // Sections
     sections: {
       summary: {
-        title: 'Providing a transformative approach for innovative problem-solving in your business.',
+        title:
+          'Providing a transformative approach for innovative problem-solving in your business.',
         items: [
           {
             title:
@@ -2790,7 +2819,7 @@ export const MOCK_DESIGN_SERVICES = [
             key: 'faqs-2',
             title: 'What can I expect from your Design Thinking Workshop?',
             content:
-              'Our workshops are designed to be collaborative, engaging, and productive. You\'ll work closely with our team of experts to understand your customers, brainstorm solutions, and prototype ideas. By the end of the workshop, you\'ll have a range of innovative solutions and a clear action plan for implementation.',
+              "Our workshops are designed to be collaborative, engaging, and productive. You'll work closely with our team of experts to understand your customers, brainstorm solutions, and prototype ideas. By the end of the workshop, you'll have a range of innovative solutions and a clear action plan for implementation.",
           },
           {
             key: 'faqs-3',
@@ -2800,14 +2829,15 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'User Research and Insights',
     slug: 'user-research-insights',
     category_id: 1,
-    subtitle: 'We identify underlying issues and key challenges from the perspectives of important stakeholders.',
+    subtitle:
+      'We identify underlying issues and key challenges from the perspectives of important stakeholders.',
     hero_src: 'https://source.unsplash.com/w00FkE6e8zE/1600x900',
     hero_alt: 'People sticking post-its',
     // Sections
@@ -2837,7 +2867,7 @@ export const MOCK_DESIGN_SERVICES = [
             fa_icon: 'fa-file-alt',
             title: 'Surveys',
             subtitle:
-              "We design and distribute surveys to gather quantitative data about user behaviors and preferences.",
+              'We design and distribute surveys to gather quantitative data about user behaviors and preferences.',
           },
           {
             fa_icon: 'fa-laptop-code',
@@ -2884,20 +2914,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'How do the insights from user research inform your design process?',
+            title:
+              'How do the insights from user research inform your design process?',
             content:
               'The insights from user research help us understand what users want and need from a product. We use these insights to guide our design decisions, ensuring we create experiences that meet user needs and align with your business goals.',
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Application Testing & Usability Evaluation',
     slug: 'application-testing-usability-evaluation',
     category_id: 1,
-    subtitle: 'Ensure the highest quality and usability of your products with our comprehensive testing and evaluation services.',
+    subtitle:
+      'Ensure the highest quality and usability of your products with our comprehensive testing and evaluation services.',
     hero_src: 'https://source.unsplash.com/gcsNOsPEXfs/1600x900',
     hero_alt: 'Man highlighting paper',
     // Sections
@@ -2907,7 +2939,7 @@ export const MOCK_DESIGN_SERVICES = [
         items: [
           {
             title:
-              'In today\'s digital landscape, the quality and usability of your application can significantly impact your business success. We offer detailed testing to identify and rectify any potential issues, ensuring a high-quality user experience. Our team of specialists uses a user-centric approach, focusing on ensuring that your application meets the needs and preferences of your target audience. We help your enterprise deliver efficient, reliable, and robust applications.',
+              "In today's digital landscape, the quality and usability of your application can significantly impact your business success. We offer detailed testing to identify and rectify any potential issues, ensuring a high-quality user experience. Our team of specialists uses a user-centric approach, focusing on ensuring that your application meets the needs and preferences of your target audience. We help your enterprise deliver efficient, reliable, and robust applications.",
           },
         ],
       },
@@ -2980,20 +3012,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Enterprise UI Library',
     slug: 'enterprise-ui-library',
     category_id: 2,
-    subtitle: 'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
+    subtitle:
+      'Understanding design needs with a comprehensive, flexible design library capable of supporting business growth.',
     hero_src: 'https://source.unsplash.com/hpIZ5T6SS-M/1600x900',
     hero_alt: 'Colourful wavy design',
     // Sections
     sections: {
       summary: {
-        title: 'Focusing on creating scalable design libraries that fit the specific needs of enterprise-level clients.',
+        title:
+          'Focusing on creating scalable design libraries that fit the specific needs of enterprise-level clients.',
         items: [
           {
             title:
@@ -3070,20 +3104,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Design System Implementation',
     slug: 'design-system-implementation',
     category_id: 2,
-    subtitle: 'Build consistency, improve usability, and streamline your design process with our design system implementation service.',
+    subtitle:
+      'Build consistency, improve usability, and streamline your design process with our design system implementation service.',
     hero_src: 'https://source.unsplash.com/FlPc9_VocJ4/1600x900',
     hero_alt: 'People pointing at laptop',
     // Sections
     sections: {
       summary: {
-        title: 'Aim to enhance the visual consistency and usability of your enterprise products.',
+        title:
+          'Aim to enhance the visual consistency and usability of your enterprise products.',
         items: [
           {
             title:
@@ -3148,7 +3184,8 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What does the process of design system implementation look like?',
+            title:
+              'What does the process of design system implementation look like?',
             content:
               'Our process involves understanding your brand and users, defining a comprehensive design language, maintaining visual consistency, creating a reusable component library, and focusing on usability. We also ensure the system is scalable to accommodate future business growth and needs.',
           },
@@ -3160,20 +3197,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Design Principles & Guidelines',
     slug: 'design-principles-guidelines',
     category_id: 2,
-    subtitle: 'Establish foundational design principles and guidelines that drive product design decisions and foster innovative solutions.',
+    subtitle:
+      'Establish foundational design principles and guidelines that drive product design decisions and foster innovative solutions.',
     hero_src: 'https://source.unsplash.com/T6fDN60bMWY/1600x900',
     hero_alt: 'Design on screen',
     // Sections
     sections: {
       summary: {
-        title: 'Ensure efficient, consistent, and high-quality product design with our carefully crafted design principles and guidelines.',
+        title:
+          'Ensure efficient, consistent, and high-quality product design with our carefully crafted design principles and guidelines.',
         items: [
           {
             title:
@@ -3238,7 +3277,8 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How does your service help establish these principles and guidelines?',
+            title:
+              'How does your service help establish these principles and guidelines?',
             content:
               'Our team works closely with you to understand your brand, your users, and your business objectives. We then define clear, user-centered design principles and translate these into actionable guidelines for your design team.',
           },
@@ -3250,20 +3290,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Dashboard Design',
     slug: 'dashboard-design',
     category_id: 3,
-    subtitle: 'Creating exceptional dashboard layouts that offer a seamless and intuitive user experience.',
+    subtitle:
+      'Creating exceptional dashboard layouts that offer a seamless and intuitive user experience.',
     hero_src: 'https://source.unsplash.com/JKUTrJ4vK00/1600x900',
     hero_alt: 'Dashboard on screen',
     // Sections
     sections: {
       summary: {
-        title: 'Offering clarity, supporting decision-making and enhancing productivity through well-designed enterprise platforms.',
+        title:
+          'Offering clarity, supporting decision-making and enhancing productivity through well-designed enterprise platforms.',
         items: [
           {
             title:
@@ -3340,20 +3382,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Web & Mobile App Design',
     slug: 'web-mobile-app-design',
     category_id: 3,
-    subtitle: 'Designing exceptional applications built to elevate the enterprise user experience.',
+    subtitle:
+      'Designing exceptional applications built to elevate the enterprise user experience.',
     hero_src: 'https://source.unsplash.com/sv8oOQaUb-o/1600x900',
     hero_alt: 'Mobile wireframes on paper',
     // Sections
     sections: {
       summary: {
-        title: 'Creating seamless, intuitive app designs targeted at user needs',
+        title:
+          'Creating seamless, intuitive app designs targeted at user needs',
         items: [
           {
             title:
@@ -3424,20 +3468,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the app design is user-friendly and intuitive?',
+            title:
+              'How do you ensure the app design is user-friendly and intuitive?',
             content:
               'We follow a user-centric design approach, which involves understanding the needs and behavior of your users. We create user journeys, prototypes, and conduct usability tests to ensure the design is intuitive and easy to use. We also design with accessibility in mind, making sure the app can be used by everyone.',
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'UI/UX Revamp',
     slug: 'ui-ux-revamp',
     category_id: 3,
-    subtitle: 'Upgrade your business with an enhanced UI/UX design, created with the expertise of our specialized team.',
+    subtitle:
+      'Upgrade your business with an enhanced UI/UX design, created with the expertise of our specialized team.',
     hero_src: 'https://source.unsplash.com/wusOJ-2uY6w/1600x900',
     hero_alt: 'People discussing wireframes',
     // Sections
@@ -3455,7 +3501,7 @@ export const MOCK_DESIGN_SERVICES = [
         overline: 'What We Do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'We revamp your UI/UX design by adopting the latest design trends and technologies, ensuring your product aligns with your users\' expectations.',
+          "We revamp your UI/UX design by adopting the latest design trends and technologies, ensuring your product aligns with your users' expectations.",
         items: [
           {
             fa_icon: 'fa-sync',
@@ -3508,7 +3554,8 @@ export const MOCK_DESIGN_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your UI/UX Revamp Service?',
+            title:
+              'What are the benefits of working with your UI/UX Revamp Service?',
             content:
               'Our UI/UX Revamp Service specializes in modernising and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
           },
@@ -3520,20 +3567,22 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     title: 'Design Team Augmentation',
     slug: 'design-team-augmentation',
     category_id: 3,
-    subtitle: 'Boost your design projects by incorporating our specialized team into your existing infrastructure. Expand your design capabilities with our experienced and highly-skilled team.',
+    subtitle:
+      'Boost your design projects by incorporating our specialized team into your existing infrastructure. Expand your design capabilities with our experienced and highly-skilled team.',
     hero_src: 'https://source.unsplash.com/bzqU01v-G54/1600x900',
     hero_alt: 'Man pointing to computer screen',
     // Sections
     sections: {
       summary: {
-        title: 'Expand your design capabilities with our experienced and highly-skilled team.',
+        title:
+          'Expand your design capabilities with our experienced and highly-skilled team.',
         items: [
           {
             title:
@@ -3610,7 +3659,7 @@ export const MOCK_DESIGN_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
@@ -3620,7 +3669,7 @@ export const MOCK_DESIGN_SERVICES = [
     ...item,
     seo: {
       title: item.title,
-      description: item.subtitle
+      description: item.subtitle,
     },
     sections: {
       ...item.sections,
@@ -3669,7 +3718,7 @@ export const MOCK_DESIGN_SERVICES = [
         subtitle:
           'Unlocking the potential of enterprise technology through personalized design thinking processes tailored to drive your business growth.',
       },
-    }
+    },
   })
 })
 
@@ -3679,7 +3728,8 @@ export const MOCK_DATA_SERVICES = [
     category_id: 1,
     title: 'Predictive Analytics',
     slug: 'predictive-analytics',
-    subtitle: 'Leverage the power of data, statistical algorithms, and machine learning techniques for more accurate business forecasts.',
+    subtitle:
+      'Leverage the power of data, statistical algorithms, and machine learning techniques for more accurate business forecasts.',
     hero_src: 'https://source.unsplash.com/xU5Mqq0Chck/1600x900',
     hero_alt: 'Sunrise lensball',
     // Sections
@@ -3750,7 +3800,8 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of using your Predictive Analytics Service?',
+            title:
+              'What are the benefits of using your Predictive Analytics Service?',
             content:
               'We use a blend of data science expertise, advanced statistical techniques, and machine learning models to provide accurate predictive insights. Our team works closely with you to understand your specific business needs and tailor our solutions accordingly. We focus on transforming complex data into actionable insights that drive strategic planning and decision-making.',
           },
@@ -3762,14 +3813,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 1,
     title: 'AI Automation',
     slug: 'ai-automation',
-    subtitle: 'Leverage cutting-edge AI technologies to automate and streamline your business processes.',
+    subtitle:
+      'Leverage cutting-edge AI technologies to automate and streamline your business processes.',
     hero_src: 'https://source.unsplash.com/UqCCSbAIaDU/1600x900',
     hero_alt: '3D printer',
     // Sections
@@ -3852,7 +3904,7 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
@@ -3942,14 +3994,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 1,
     title: 'Prompt Engineering',
     slug: 'prompt-engineering',
-    subtitle: 'Leverage the power of AI to improve engagement and increase conversions with personalized, context-aware prompts. ',
+    subtitle:
+      'Leverage the power of AI to improve engagement and increase conversions with personalized, context-aware prompts. ',
     hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
     hero_alt: 'Miniature blocks and train tracks',
     // Sections
@@ -3958,7 +4011,8 @@ export const MOCK_DATA_SERVICES = [
         title: 'Transforming interactions with intelligent prompts.',
         items: [
           {
-            title: 'In the age of personalization, intelligent prompts can significantly enhance user engagement and satisfaction. We design AI-powered prompts that are timely, relevant, and context-aware, creating a personalized experience for each user. Working with enterprise clients, we leverage deep learning and AI to create prompts that resonate with users and drive conversions. Our prompts are designed to feel natural, improving user experience and boosting customer loyalty.',
+            title:
+              'In the age of personalization, intelligent prompts can significantly enhance user engagement and satisfaction. We design AI-powered prompts that are timely, relevant, and context-aware, creating a personalized experience for each user. Working with enterprise clients, we leverage deep learning and AI to create prompts that resonate with users and drive conversions. Our prompts are designed to feel natural, improving user experience and boosting customer loyalty.',
           },
         ],
       },
@@ -4031,14 +4085,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 1,
     title: 'OpenAI API Integration',
     slug: 'openai-api-integration',
-    subtitle: 'Integrate cutting-edge AI solutions into your business processes.',
+    subtitle:
+      'Integrate cutting-edge AI solutions into your business processes.',
     hero_src: 'https://source.unsplash.com/_HnJfS6WhA8/1600x900',
     hero_alt: 'Colourful cubic components',
     // Sections
@@ -4047,7 +4102,8 @@ export const MOCK_DATA_SERVICES = [
         title: 'Driving business transformation with OpenAI.',
         items: [
           {
-            title: 'The integration of OpenAI APIs can revolutionize your business, enabling automated processes, advanced analytics, and more. Our services help businesses seamlessly incorporate these powerful AI capabilities into their existing systems. We understand the challenges that businesses face when implementing AI solutions. Our team of experts will work closely with you to understand your business needs and design an OpenAI API integration plan that maximizes the potential of AI for your business.',
+            title:
+              'The integration of OpenAI APIs can revolutionize your business, enabling automated processes, advanced analytics, and more. Our services help businesses seamlessly incorporate these powerful AI capabilities into their existing systems. We understand the challenges that businesses face when implementing AI solutions. Our team of experts will work closely with you to understand your business needs and design an OpenAI API integration plan that maximizes the potential of AI for your business.',
           },
         ],
       },
@@ -4114,20 +4170,22 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'What kind of support can I expect after the OpenAI API integration?',
+            title:
+              'What kind of support can I expect after the OpenAI API integration?',
             content:
               'We provide continuous support and maintenance post-integration. This includes performance monitoring, handling API updates and changes, and resolving any issues that may arise. Our goal is to ensure the integrated APIs continuously meet your business needs.',
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 2,
     title: 'Data Warehousing',
     slug: 'data-warehousing',
-    subtitle: 'Build a solid foundation for your data with our expert data warehousing solutions.',
+    subtitle:
+      'Build a solid foundation for your data with our expert data warehousing solutions.',
     hero_src: 'https://source.unsplash.com/IlxX7xnbRF8/1600x900',
     hero_alt: 'Fibre optic cable rack',
     // Sections
@@ -4192,7 +4250,8 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a well-structured data warehouse important for my business?',
+            title:
+              'Why is a well-structured data warehouse important for my business?',
             content:
               'A well-structured data warehouse centralizes your data, improving accessibility and reliability. It enables efficient data analysis and reporting, leading to informed business decisions and strategies. Additionally, a well-managed data warehouse ensures data security and compliance with data regulations.',
           },
@@ -4210,14 +4269,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 2,
     title: 'Data Pipeline Architecture',
     slug: 'data-pipeline-architecture',
-    subtitle: 'Engineer a streamlined, robust data flow for your organisation with our expert solutions.',
+    subtitle:
+      'Engineer a streamlined, robust data flow for your organisation with our expert solutions.',
     hero_src: 'https://source.unsplash.com/KU9ABpm7eV8/1600x900',
     hero_alt: 'Connected data blocks',
     // Sections
@@ -4282,13 +4342,15 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a well-designed data pipeline crucial for my business?',
+            title:
+              'Why is a well-designed data pipeline crucial for my business?',
             content:
               'A well-designed data pipeline is essential for handling data effectively. It enables seamless data flow, accurate processing, secure storage, and ultimately, better decision-making. With a robust data pipeline, your business can achieve improved operational efficiency, quicker insights, and enhanced data-driven strategies.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of your Data Pipeline Architecture service?',
+            title:
+              'What are the benefits of your Data Pipeline Architecture service?',
             content:
               'Our service offers end-to-end solutions for your data pipeline needs. From efficient data ingestion and processing to secure storage and performance optimization, we cover all aspects. Our team works closely with you, understanding your unique needs, and designs a data pipeline architecture that aligns with your business goals. We also provide consultation and training for effective management of your data infrastructure.',
           },
@@ -4300,14 +4362,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 2,
     title: 'Big Data Solutions',
     slug: 'big-data-solutions',
-    subtitle: 'Harness the power of data to drive growth and innovation in your business with our big data solutions.',
+    subtitle:
+      'Harness the power of data to drive growth and innovation in your business with our big data solutions.',
     hero_src: 'https://source.unsplash.com/iM8dxccK1sY/1600x900',
     hero_alt: 'Multiple data screens',
     // Sections
@@ -4378,7 +4441,8 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What types of big data solutions does your company provide?',
+            title:
+              'What types of big data solutions does your company provide?',
             content:
               'Our big data solutions encompass a broad range of services including data management, data analytics, data processing, data security, data integration, and the integration of AI and machine learning technologies. We tailor our solutions based on your specific business needs and goals.',
           },
@@ -4390,14 +4454,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 2,
     title: 'Data ETL',
     slug: 'data-etl',
-    subtitle: 'Optimize your data workflow with our efficient, reliable, and scalable ETL solutions.',
+    subtitle:
+      'Optimize your data workflow with our efficient, reliable, and scalable ETL solutions.',
     hero_src: 'https://source.unsplash.com/_rZnChsIFuQ/1600x900',
     hero_alt: '3D illustration of blocks in a blockchain',
     // Sections
@@ -4406,7 +4471,8 @@ export const MOCK_DATA_SERVICES = [
         title: 'Streamlining data extraction, transformation, and loading.',
         items: [
           {
-            title: 'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organisation. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
+            title:
+              'Data ETL (Extraction, Transformation, and Loading) is a crucial process for any data-driven organisation. It involves extracting data from disparate sources, transforming it into a consistent format, and loading it into a target database or data warehouse for analysis and reporting. We specialize in designing and implementing ETL processes that are efficient, reliable, and scalable. We work closely with enterprise clients to understand their data needs and craft ETL solutions that enable them to leverage their data more effectively.',
           },
         ],
       },
@@ -4463,7 +4529,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-1',
             title: 'What is the importance of ETL for my business?',
             content:
-              'ETL is vital for data-driven decision making in businesses. It helps collect data from various sources, clean and organize it, and store it in a manner that\'s optimized for analysis. This facilitates accurate, timely insights that can drive business strategy.',
+              "ETL is vital for data-driven decision making in businesses. It helps collect data from various sources, clean and organize it, and store it in a manner that's optimized for analysis. This facilitates accurate, timely insights that can drive business strategy.",
           },
           {
             key: 'faqs-2',
@@ -4479,14 +4545,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 3,
     title: 'Data Roadmap Development',
     slug: 'data-roadmap-development',
-    subtitle: 'Expert guidance to craft an effective data roadmap aligned with your enterprise goals.',
+    subtitle:
+      'Expert guidance to craft an effective data roadmap aligned with your enterprise goals.',
     hero_src: 'https://source.unsplash.com/vv-oEGlN-4E/1600x900',
     hero_alt: 'Winding road in forested area',
     // Sections
@@ -4557,7 +4624,8 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Data Roadmap Development Service?',
+            title:
+              'What are the benefits of working with your Data Roadmap Development Service?',
             content:
               'Our Data Roadmap Development Service specializes in crafting detailed, scalable data roadmaps. We work closely with you, understanding your business vision and data landscape, to align your data initiatives with your business objectives. Our comprehensive approach ensures you have a clear data strategy, effective project planning, suitable performance metrics, and continuous roadmap iterations for sustained growth.',
           },
@@ -4569,14 +4637,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 3,
     title: 'Business Intelligence Consulting',
     slug: 'business-intelligence-consulting',
-    subtitle: 'Utilize data-driven insights to drive decision making and business growth.',
+    subtitle:
+      'Utilize data-driven insights to drive decision making and business growth.',
     hero_src: 'https://source.unsplash.com/774sCXD0dDU/1600x900',
     hero_alt: 'Businessman using laptop',
     // Sections
@@ -4647,7 +4716,8 @@ export const MOCK_DATA_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Business Intelligence Consulting Service?',
+            title:
+              'What are the benefits of working with your Business Intelligence Consulting Service?',
             content:
               'We offer comprehensive BI consulting services, helping you manage your data, implement the right BI tools, and generate actionable insights. Our team of experts works closely with your organisation, providing tailored solutions that align with your business objectives. We also provide training and support, ensuring your team is equipped to leverage your BI infrastructure effectively.',
           },
@@ -4659,7 +4729,7 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
@@ -4749,14 +4819,15 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     // Hero
     category_id: 3,
     title: 'Data Visualisation',
     slug: 'data-visualisation',
-    subtitle: 'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
+    subtitle:
+      'Transform your complex data into visually engaging, understandable insights with our data visualization expertise.',
     hero_src: 'https://source.unsplash.com/4QVqSh4VvP4/1600x900',
     hero_alt: 'Data filters',
     // Sections
@@ -4839,7 +4910,7 @@ export const MOCK_DATA_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
@@ -4849,7 +4920,7 @@ export const MOCK_DATA_SERVICES = [
     ...item,
     seo: {
       title: item.title,
-      description: item.subtitle
+      description: item.subtitle,
     },
     sections: {
       ...item.sections,
@@ -4859,7 +4930,7 @@ export const MOCK_DATA_SERVICES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data's potential and excel in the digital landscape.",
       },
       benefits: {
         overline: 'What we do',
@@ -4898,7 +4969,7 @@ export const MOCK_DATA_SERVICES = [
         subtitle:
           'Igniting enterprise transformation through personalized data solutions focused on driving your business success.',
       },
-    }
+    },
   })
 })
 
@@ -4921,7 +4992,8 @@ export const MOCK_DIGITAL_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Understanding the customer journey for optimal customer engagement.',
+        title:
+          'Understanding the customer journey for optimal customer engagement.',
         items: [
           {
             title:
@@ -4979,7 +5051,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5015,7 +5088,8 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is understanding the customer journey important for my business?',
+            title:
+              'Why is understanding the customer journey important for my business?',
             content:
               'Understanding the customer journey helps your business to improve customer experience, optimize marketing efforts, and ultimately, increase conversions. It enables you to identify potential pain points in the customer journey and make necessary improvements.',
           },
@@ -5033,7 +5107,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Omnichannel CRM Integration',
@@ -5053,7 +5127,8 @@ export const MOCK_DIGITAL_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Streamlining communication and data for superior customer relationships.',
+        title:
+          'Streamlining communication and data for superior customer relationships.',
         items: [
           {
             title:
@@ -5111,7 +5186,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5147,13 +5223,15 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is Omnichannel CRM Integration important for my business?',
+            title:
+              'Why is Omnichannel CRM Integration important for my business?',
             content:
               'Omnichannel CRM Integration allows for a seamless customer experience across all channels. By having a unified view of customer interactions, your business can provide consistent messaging and service, improve customer understanding, and enhance overall customer relationships.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Omnichannel CRM Integration Service?',
+            title:
+              'What are the benefits of working with your Omnichannel CRM Integration Service?',
             content:
               'We specialize in Omnichannel CRM Integration, helping businesses consolidate their customer data from various sources into a unified view. This not only improves the customer experience but also enables better decision-making through robust analytics. Furthermore, we provide ongoing support and maintenance to ensure your CRM system continues to function optimally.',
           },
@@ -5165,7 +5243,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Enterprise Social Media Strategy',
@@ -5189,7 +5267,7 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             title:
-              'In today\'s digital landscape, social media is an integral part of any business marketing strategy. However, as an enterprise-level business, it is crucial that your social media presence reflects your brand and engages with your audience in a meaningful and effective way.',
+              "In today's digital landscape, social media is an integral part of any business marketing strategy. However, as an enterprise-level business, it is crucial that your social media presence reflects your brand and engages with your audience in a meaningful and effective way.",
           },
           {
             title:
@@ -5213,7 +5291,7 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-bullseye',
             title: 'Targeting Strategy',
             subtitle:
-              "We develop effective targeting strategies to ensure your content reaches your key audience demographics.",
+              'We develop effective targeting strategies to ensure your content reaches your key audience demographics.',
           },
           {
             fa_icon: 'fa-clipboard-list',
@@ -5243,7 +5321,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5279,13 +5358,15 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a tailored social media strategy important for my enterprise?',
+            title:
+              'Why is a tailored social media strategy important for my enterprise?',
             content:
               'A tailored social media strategy is crucial in shaping your brand’s online presence, reaching your target audience effectively, and encouraging meaningful engagement. As an enterprise, it’s important that your social media activities reflect your business’s goals and values while also appealing to your specific audience demographics.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Enterprise Social Media Strategy service?',
+            title:
+              'What are the benefits of working with your Enterprise Social Media Strategy service?',
             content:
               'With our service, you get a team of digital marketing experts specializing in B2B enterprise-level businesses. We leverage our understanding of the unique needs of enterprises to create a social media strategy that is tailored to your business. From performance analysis and targeting to content planning and distribution, we ensure your social media presence aligns with your overall marketing strategy and business objectives.',
           },
@@ -5297,7 +5378,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Digital Marketing Roadmap Development',
@@ -5321,7 +5402,7 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             title:
-              'In today\'s rapidly evolving digital landscape, a clear and well-planned digital marketing roadmap is essential. It serves as a strategic guide that aligns your marketing initiatives with your business objectives, ensuring you stay on track to achieve your goals.',
+              "In today's rapidly evolving digital landscape, a clear and well-planned digital marketing roadmap is essential. It serves as a strategic guide that aligns your marketing initiatives with your business objectives, ensuring you stay on track to achieve your goals.",
           },
           {
             title:
@@ -5375,7 +5456,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5417,19 +5499,21 @@ export const MOCK_DIGITAL_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your Digital Marketing Roadmap Development service?',
+            title:
+              'What are the benefits of working with your Digital Marketing Roadmap Development service?',
             content:
               'Working with us, you benefit from our expertise in B2B digital marketing and web development. We understand the unique challenges and needs of enterprise-level businesses and can help you develop a robust and effective digital marketing roadmap that aligns with your business objectives.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you approach developing a digital marketing roadmap?',
+            title:
+              'How do you approach developing a digital marketing roadmap?',
             content:
               'We start by understanding your business, its goals, and its target audience. We then conduct a comprehensive market analysis to identify opportunities and challenges. Based on this understanding, we help you establish clear, measurable goals and devise a robust digital marketing strategy. We also develop a detailed action plan, ensure alignment with your overall business strategy, and establish key performance indicators for continuous improvement.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'B2B Lead Generation',
@@ -5507,7 +5591,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5561,7 +5646,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Advanced Technical SEO',
@@ -5621,7 +5706,7 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-link',
             title: 'Link Structure Analysis',
             subtitle:
-              'We review your site\'s internal and external link structure, optimizing it for better crawlability and user navigation.',
+              "We review your site's internal and external link structure, optimizing it for better crawlability and user navigation.",
           },
           {
             fa_icon: 'fa-mobile-alt',
@@ -5639,7 +5724,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5693,7 +5779,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Customized Account-Based Marketing',
@@ -5713,7 +5799,8 @@ export const MOCK_DIGITAL_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Personalized marketing strategies for your high-value accounts.',
+        title:
+          'Personalized marketing strategies for your high-value accounts.',
         items: [
           {
             title:
@@ -5765,13 +5852,14 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-cogs',
             title: 'Continual Optimization',
             subtitle:
-              'We constantly optimize our ABM strategies based on performance data, ensuring we\'re always delivering the best possible results.',
+              "We constantly optimize our ABM strategies based on performance data, ensuring we're always delivering the best possible results.",
           },
         ],
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5813,19 +5901,21 @@ export const MOCK_DIGITAL_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How does Customized Account-Based Marketing benefit my business?',
+            title:
+              'How does Customized Account-Based Marketing benefit my business?',
             content:
               'Customized Account-Based Marketing allows you to focus on the accounts that are most likely to generate revenue for your business. By personalizing your marketing strategy for each target account, you can create more relevant and impactful interactions. This not only improves engagement but also drives better marketing ROI.',
           },
           {
             key: 'faqs-3',
-            title: 'What is involved in your Customized Account-Based Marketing service?',
+            title:
+              'What is involved in your Customized Account-Based Marketing service?',
             content:
               'Our Customized Account-Based Marketing service involves identifying high-value target accounts, gaining deep insights about these accounts, creating personalized marketing strategies, coordinating these strategies across channels, aligning with sales efforts, and measuring and optimizing performance.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'SEM Management',
@@ -5903,7 +5993,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -5957,7 +6048,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Enterprise Corporate Website Development',
@@ -6035,7 +6126,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6071,13 +6163,15 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a well-developed corporate website important for my business?',
+            title:
+              'Why is a well-developed corporate website important for my business?',
             content:
               'A well-developed corporate website serves as the digital face of your enterprise. It enhances your brand’s online presence, helps you reach a wider audience, and offers a platform for you to effectively communicate with your customers. It also improves your business credibility and can significantly boost customer engagement and conversion rates.',
           },
           {
             key: 'faqs-2',
-            title: 'What technologies do you use for corporate website development?',
+            title:
+              'What technologies do you use for corporate website development?',
             content:
               'Our team of experienced developers are skilled in a wide range of modern technologies, including but not limited to HTML5, CSS3, JavaScript, React, Angular, Node.js, PHP, and more. We choose the most suitable technology stack based on your business requirements and the project scope.',
           },
@@ -6089,7 +6183,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Advanced CMS Customization',
@@ -6113,7 +6207,7 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             title:
-              'A Content Management System (CMS) is an integral part of most modern businesses. Whether it\'s for managing content, handling customer data, or orchestrating complex workflows, a CMS can become the digital backbone of your enterprise.',
+              "A Content Management System (CMS) is an integral part of most modern businesses. Whether it's for managing content, handling customer data, or orchestrating complex workflows, a CMS can become the digital backbone of your enterprise.",
           },
           {
             title:
@@ -6167,7 +6261,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6198,8 +6293,7 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       faqs: {
         title: 'FAQs',
-        subtitle:
-          'Learn more about our Advanced CMS Customization services.',
+        subtitle: 'Learn more about our Advanced CMS Customization services.',
         items: [
           {
             key: 'faqs-1',
@@ -6221,7 +6315,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Landing Page Optimization & Analytics',
@@ -6299,7 +6393,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6341,7 +6436,8 @@ export const MOCK_DIGITAL_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What kind of businesses can benefit from landing page optimization?',
+            title:
+              'What kind of businesses can benefit from landing page optimization?',
             content:
               'Any business that relies on online marketing to generate leads or sales can benefit from landing page optimization. This includes e-commerce stores, B2B companies, service providers, and more.',
           },
@@ -6353,7 +6449,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Advanced Data Analytics & Business Intelligence',
@@ -6431,7 +6527,8 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6479,13 +6576,14 @@ export const MOCK_DIGITAL_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'How can data analytics and business intelligence work together?',
+            title:
+              'How can data analytics and business intelligence work together?',
             content:
               'Data analytics and business intelligence work hand-in-hand. While data analytics involves analyzing large data sets to uncover hidden patterns, trends, and insights, business intelligence helps present these insights in an easily understandable format. Together, they can help your business make informed decisions and strategies.',
           },
         ],
       },
-    }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
@@ -6574,7 +6672,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6616,7 +6715,8 @@ export const MOCK_FINX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How can your Digital Roadmap Development service benefit my finance business?',
+            title:
+              'How can your Digital Roadmap Development service benefit my finance business?',
             content:
               'Our service combines industry expertise, strategic planning, and data-driven insights to create a tailored digital roadmap that aligns with your business goals, mitigates risks, and maximizes the potential of digital transformation in the finance industry.',
           },
@@ -6628,7 +6728,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'FinTech Digital Strategy',
@@ -6648,11 +6748,12 @@ export const MOCK_FINX_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Transforming the financial industry through digital innovation.',
+        title:
+          'Transforming the financial industry through digital innovation.',
         items: [
           {
             title:
-              "In the rapidly evolving financial landscape, staying ahead of the curve is crucial. Our expert team brings together a deep understanding of financial operations, regulatory environment, and customer expectations to help clients navigate their digital transformation journey effectively. ",
+              'In the rapidly evolving financial landscape, staying ahead of the curve is crucial. Our expert team brings together a deep understanding of financial operations, regulatory environment, and customer expectations to help clients navigate their digital transformation journey effectively. ',
           },
           {
             title:
@@ -6706,7 +6807,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6742,25 +6844,28 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a digital strategy important for financial institutions?',
+            title:
+              'Why is a digital strategy important for financial institutions?',
             content:
               'In the evolving financial landscape, a well-defined digital strategy is crucial. It enables financial institutions to adapt to changing customer expectations, regulatory changes, and emerging technologies. An effective digital strategy can improve operational efficiency, customer experience, compliance, and profitability.',
           },
           {
             key: 'faqs-2',
-            title: 'How can your FinTech Digital Strategy service help my business?',
+            title:
+              'How can your FinTech Digital Strategy service help my business?',
             content:
               'Our service combines deep industry knowledge, technical expertise, and strategic insight to deliver tailored digital solutions. We help you leverage technology to improve operations, customer experiences, and revenue streams. From strategic consulting to implementation, we provide end-to-end support for your digital transformation journey.',
           },
           {
             key: 'faqs-3',
-            title: 'What technologies do you leverage in your digital solutions?',
+            title:
+              'What technologies do you leverage in your digital solutions?',
             content:
               'We leverage a variety of technologies based on your specific needs. These may include cloud computing, data analytics, AI and machine learning, automation, cybersecurity measures, and more. Our goal is to leverage the right mix of technologies that align with your strategic objectives and operational needs.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'AI-Powered Business Process Automation',
@@ -6784,7 +6889,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              "We look to introduce advanced automation solutions into the finance sector. Our expertise lies in integrating AI technologies to improve business operations, streamline workflows, and enhance customer experiences.",
+              'We look to introduce advanced automation solutions into the finance sector. Our expertise lies in integrating AI technologies to improve business operations, streamline workflows, and enhance customer experiences.',
           },
           {
             title:
@@ -6838,7 +6943,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -6874,7 +6980,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is AI-Powered Business Process Automation important for my business?',
+            title:
+              'Why is AI-Powered Business Process Automation important for my business?',
             content:
               'AI-powered automation can greatly enhance the efficiency of your business operations. It can automate repetitive tasks, streamline workflows, and provide insights for continual optimization. This can result in significant cost savings and improved customer experiences.',
           },
@@ -6886,13 +6993,14 @@ export const MOCK_FINX_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'What technologies do you leverage for your AI-Powered Business Process Automation service?',
+            title:
+              'What technologies do you leverage for your AI-Powered Business Process Automation service?',
             content:
               'Our solutions utilize cutting-edge technologies like machine learning, AI, robotic process automation (RPA), cloud computing, and more. The specific technologies used depend on the requirements of the task to be automated.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Workflow Management and Optimization',
@@ -6916,7 +7024,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              "In the rapidly evolving financial industry, effective workflow management is essential for success. We offer bespoke solutions that streamline operations, enhance productivity, and enable your business to achieve its goals more efficiently.",
+              'In the rapidly evolving financial industry, effective workflow management is essential for success. We offer bespoke solutions that streamline operations, enhance productivity, and enable your business to achieve its goals more efficiently.',
           },
           {
             title:
@@ -6970,7 +7078,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7006,7 +7115,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is Workflow Management and Optimization crucial for my business?',
+            title:
+              'Why is Workflow Management and Optimization crucial for my business?',
             content:
               'Workflow Management and Optimization is key to increasing efficiency and productivity in your organization. It helps in streamlining operations, eliminating bottlenecks, reducing errors, and ensuring that your team can focus on strategic tasks. This not only improves operational efficiency but also leads to cost savings.',
           },
@@ -7014,7 +7124,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-2',
             title: 'How can your service enhance my financial operations?',
             content:
-              'Our expert team analyzes your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organization\'s needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.',
+              "Our expert team analyzes your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organization's needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.",
           },
           {
             key: 'faqs-3',
@@ -7024,7 +7134,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Automated Portfolio Optimization',
@@ -7044,11 +7154,12 @@ export const MOCK_FINX_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Enhancing asset management with automated portfolio optimization.',
+        title:
+          'Enhancing asset management with automated portfolio optimization.',
         items: [
           {
             title:
-              "In the complex world of finance, portfolio optimization is key to asset management success. We leverage advanced algorithms and machine learning to optimize your portfolios, improve returns, and reduce risk.",
+              'In the complex world of finance, portfolio optimization is key to asset management success. We leverage advanced algorithms and machine learning to optimize your portfolios, improve returns, and reduce risk.',
           },
           {
             title:
@@ -7102,7 +7213,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7138,7 +7250,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is Automated Portfolio Optimization important for my business?',
+            title:
+              'Why is Automated Portfolio Optimization important for my business?',
             content:
               'Automated Portfolio Optimization is crucial in the dynamic world of finance, as it can enhance your returns and reduce risk. By leveraging advanced algorithms and machine learning, it can monitor market trends and adjust portfolio allocations in real time, ensuring your financial performance is maximized.',
           },
@@ -7146,17 +7259,17 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-2',
             title: 'How can your service improve my asset management?',
             content:
-              'Our Automated Portfolio Optimization service utilizes sophisticated algorithms and machine learning to optimize your portfolios. It monitors market trends and adjusts portfolio allocations in real time to maximize returns and reduce risk. We also provide advanced analytics tools to measure your portfolio\'s performance and identify areas for improvement.',
+              "Our Automated Portfolio Optimization service utilizes sophisticated algorithms and machine learning to optimize your portfolios. It monitors market trends and adjusts portfolio allocations in real time to maximize returns and reduce risk. We also provide advanced analytics tools to measure your portfolio's performance and identify areas for improvement.",
           },
           {
             key: 'faqs-3',
             title: 'What does your service include?',
             content:
-              'Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organization\'s unique needs and risk profile.',
+              "Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organization's unique needs and risk profile.",
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'AI-Driven Investment Analysis',
@@ -7180,7 +7293,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              "In the fast-paced world of finance, making informed investment decisions can be challenging. Our services utilize advanced AI tools to analyze market trends, evaluate investment opportunities, and provide actionable insights.",
+              'In the fast-paced world of finance, making informed investment decisions can be challenging. Our services utilize advanced AI tools to analyze market trends, evaluate investment opportunities, and provide actionable insights.',
           },
           {
             title:
@@ -7234,7 +7347,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7270,7 +7384,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is AI-Driven Investment Analysis important for my business?',
+            title:
+              'Why is AI-Driven Investment Analysis important for my business?',
             content:
               'AI-Driven Investment Analysis can significantly enhance your investment decisions. By analyzing vast amounts of financial data and predicting market trends, it provides actionable insights and helps you make data-driven decisions. This not only maximizes your investment returns but also saves time and resources.',
           },
@@ -7288,7 +7403,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'AI-Enabled Regulatory Reporting',
@@ -7308,11 +7423,12 @@ export const MOCK_FINX_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Transforming regulatory reporting with Artificial Intelligence.',
+        title:
+          'Transforming regulatory reporting with Artificial Intelligence.',
         items: [
           {
             title:
-              "Regulatory reporting can be a complex and time-consuming process. Our AI-powered tools help you automate data extraction, validation, and report generation, ensuring accurate and timely reports.",
+              'Regulatory reporting can be a complex and time-consuming process. Our AI-powered tools help you automate data extraction, validation, and report generation, ensuring accurate and timely reports.',
           },
           {
             title:
@@ -7366,7 +7482,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7402,7 +7519,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is AI-Enabled Regulatory Reporting important for my business?',
+            title:
+              'Why is AI-Enabled Regulatory Reporting important for my business?',
             content:
               'AI-Enabled Regulatory Reporting simplifies the complex process of regulatory reporting, reduces errors, increases efficiency, and ensures timely compliance. This allows your team to focus on strategic tasks, enhancing overall productivity.',
           },
@@ -7420,7 +7538,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Compliance Risk Assessment',
@@ -7444,7 +7562,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              "Compliance risks can have significant impacts on your business. We provide effective solutions that help you navigate these challenges confidently.",
+              'Compliance risks can have significant impacts on your business. We provide effective solutions that help you navigate these challenges confidently.',
           },
           {
             title:
@@ -7498,7 +7616,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7534,25 +7653,28 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is Compliance Risk Assessment important for my business?',
+            title:
+              'Why is Compliance Risk Assessment important for my business?',
             content:
               'Compliance Risk Assessment is critical to understanding and managing the potential compliance risks associated with your operations. Effective risk management can help prevent regulatory violations, financial losses, and damage to your reputation.',
           },
           {
             key: 'faqs-2',
-            title: 'What is included in your Compliance Risk Assessment service?',
+            title:
+              'What is included in your Compliance Risk Assessment service?',
             content:
               'Our service includes identifying and evaluating compliance risks, providing strategies for risk mitigation, continuous monitoring of evolving risks, and consultation on risk management strategy. We also offer training to ensure your team is equipped to manage compliance risks effectively.',
           },
           {
             key: 'faqs-3',
-            title: 'How can your service help if we are already facing regulatory issues?',
+            title:
+              'How can your service help if we are already facing regulatory issues?',
             content:
               'If you are already facing regulatory issues, our Compliance Risk Assessment service can help you understand the root cause and implement remedial measures. We will guide you through necessary steps to mitigate current risks, avoid future regulatory breaches, and restore compliance.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Automated Legal Document Review',
@@ -7576,11 +7698,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'We believe in the power of automation and its potential to revolutionize the legal industry. We leverage cutting-edge technology to automate and optimize your legal document review process, saving you valuable time and resources.'
+              'We believe in the power of automation and its potential to revolutionize the legal industry. We leverage cutting-edge technology to automate and optimize your legal document review process, saving you valuable time and resources.',
           },
           {
             title:
-              'With our service, you can expect enhanced accuracy, faster turnaround times, and lower costs. Empower your legal team to focus on more strategic tasks, while we take care of the routine.'
+              'With our service, you can expect enhanced accuracy, faster turnaround times, and lower costs. Empower your legal team to focus on more strategic tasks, while we take care of the routine.',
           },
         ],
       },
@@ -7630,7 +7752,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7678,13 +7801,14 @@ export const MOCK_FINX_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'How accurate is your Automated Legal Document Review service?',
+            title:
+              'How accurate is your Automated Legal Document Review service?',
             content:
-              'Our service leverages advanced AI and machine learning technologies, designed to ensure high accuracy and consistency in document review. However, as with any automated system, it\'s recommended to have final reviews conducted by legal professionals.',
+              "Our service leverages advanced AI and machine learning technologies, designed to ensure high accuracy and consistency in document review. However, as with any automated system, it's recommended to have final reviews conducted by legal professionals.",
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'AI-Driven Asset Allocation',
@@ -7708,11 +7832,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'In the rapidly evolving financial world, traditional asset allocation strategies might not yield the desired results. We apply machine learning and data analytics to optimize these strategies, providing your company with a competitive edge.'
+              'In the rapidly evolving financial world, traditional asset allocation strategies might not yield the desired results. We apply machine learning and data analytics to optimize these strategies, providing your company with a competitive edge.',
           },
           {
             title:
-              'By identifying patterns in vast amounts of financial data, our AI-driven approach can forecast market trends more accurately, enabling smarter and more profitable investment decisions.'
+              'By identifying patterns in vast amounts of financial data, our AI-driven approach can forecast market trends more accurately, enabling smarter and more profitable investment decisions.',
           },
         ],
       },
@@ -7762,7 +7886,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7806,7 +7931,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-2',
             title: 'What types of assets can your service allocate?',
             content:
-              'Our AI-Driven Asset Allocation service can handle a wide range of asset types, including stocks, bonds, real estate, and more. The system can be customized to suit your company\'s specific needs and preferences.',
+              "Our AI-Driven Asset Allocation service can handle a wide range of asset types, including stocks, bonds, real estate, and more. The system can be customized to suit your company's specific needs and preferences.",
           },
           {
             key: 'faqs-3',
@@ -7816,7 +7941,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Predictive Customer Behavior Analysis',
@@ -7840,11 +7965,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'In the competitive finance industry, understanding and predicting customer behavior is key to success. We apply machine learning algorithms to customer data, providing powerful insights that can drive business growth.'
+              'In the competitive finance industry, understanding and predicting customer behavior is key to success. We apply machine learning algorithms to customer data, providing powerful insights that can drive business growth.',
           },
           {
             title:
-              'From predicting future buying patterns to identifying potential churn, our service provides the predictive insights needed to optimize customer experiences, improve retention, and increase profitability.'
+              'From predicting future buying patterns to identifying potential churn, our service provides the predictive insights needed to optimize customer experiences, improve retention, and increase profitability.',
           },
         ],
       },
@@ -7894,7 +8019,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -7930,15 +8056,17 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'How can Predictive Customer Behavior Analysis benefit my business?',
+            title:
+              'How can Predictive Customer Behavior Analysis benefit my business?',
             content:
-              'Predictive Customer Behavior Analysis can provide valuable insights into your customers\' future behaviors, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviors, you can make more informed decisions and strategically plan your business operations.',
+              "Predictive Customer Behavior Analysis can provide valuable insights into your customers' future behaviors, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviors, you can make more informed decisions and strategically plan your business operations.",
           },
           {
             key: 'faqs-2',
-            title: 'What data do you need to perform Predictive Customer Behavior Analysis?',
+            title:
+              'What data do you need to perform Predictive Customer Behavior Analysis?',
             content:
-              'Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behavior, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company\'s data policies.',
+              "Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behavior, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
             key: 'faqs-3',
@@ -7948,7 +8076,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Personalized Product Recommendation Systems',
@@ -7968,15 +8096,16 @@ export const MOCK_FINX_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Elevating customer experience with personalized recommendations.',
+        title:
+          'Elevating customer experience with personalized recommendations.',
         items: [
           {
             title:
-              'As the financial landscape grows increasingly competitive, it’s more important than ever to offer tailored experiences to your customers. We leverage advanced machine learning algorithms to analyze customer data and provide highly relevant product suggestions.'
+              'As the financial landscape grows increasingly competitive, it’s more important than ever to offer tailored experiences to your customers. We leverage advanced machine learning algorithms to analyze customer data and provide highly relevant product suggestions.',
           },
           {
             title:
-              'Our systems adapt to evolving customer preferences, helping financial businesses like yours improve customer engagement, increase conversions, and maximize revenue.'
+              'Our systems adapt to evolving customer preferences, helping financial businesses like yours improve customer engagement, increase conversions, and maximize revenue.',
           },
         ],
       },
@@ -8026,7 +8155,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -8062,7 +8192,8 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a personalized product recommendation system important?',
+            title:
+              'Why is a personalized product recommendation system important?',
             content:
               'Personalized product recommendations can significantly improve customer engagement by providing a tailored shopping experience. They can help increase conversions, boost customer loyalty, and drive additional revenue by promoting relevant products to customers.',
           },
@@ -8070,7 +8201,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-2',
             title: 'What kind of data is needed for the system?',
             content:
-              'Our system uses a variety of customer data, including transaction history, browsing behavior, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company\'s data policies.',
+              "Our system uses a variety of customer data, including transaction history, browsing behavior, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
             key: 'faqs-3',
@@ -8080,7 +8211,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Engineering Staff Augmentation',
@@ -8090,7 +8221,7 @@ export const MOCK_FINX_SERVICES = [
     hero_src: 'https://source.unsplash.com/uOhBxB23Wao/1600x900',
     hero_alt: 'Two people discussing',
     subtitle:
-        'Supplement your team with expert engineers to accelerate your digital transformation.',
+      'Supplement your team with expert engineers to accelerate your digital transformation.',
     // Seo
     seo: {
       title: 'User Interface Development',
@@ -8104,11 +8235,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'We provide skilled engineers who can seamlessly integrate with your existing teams and processes, boosting your capabilities and allowing you to scale effortlessly.'
+              'We provide skilled engineers who can seamlessly integrate with your existing teams and processes, boosting your capabilities and allowing you to scale effortlessly.',
           },
           {
             title:
-              'Whether you need a single engineer or a whole team, for a month or a year, we offer flexible engagement models that align with your business needs and goals.'
+              'Whether you need a single engineer or a whole team, for a month or a year, we offer flexible engagement models that align with your business needs and goals.',
           },
         ],
       },
@@ -8158,7 +8289,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -8206,13 +8338,14 @@ export const MOCK_FINX_SERVICES = [
           },
           {
             key: 'faqs-3',
-            title: 'What if the provided engineer or team doesn’t meet my expectations?',
+            title:
+              'What if the provided engineer or team doesn’t meet my expectations?',
             content:
-              'Your satisfaction is our priority. If you\'re not satisfied with the performance of an engineer or a team we’ve provided, we will work with you to find a suitable replacement.',
+              "Your satisfaction is our priority. If you're not satisfied with the performance of an engineer or a team we’ve provided, we will work with you to find a suitable replacement.",
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Generative AI Solutions',
@@ -8222,7 +8355,7 @@ export const MOCK_FINX_SERVICES = [
     hero_src: 'https://source.unsplash.com/I02k89RVzB4/1600x900',
     hero_alt: 'Shapes in a ball',
     subtitle:
-        'Discover how our generative AI solutions can transform your business by enabling automated creativity and intelligent problem-solving.',
+      'Discover how our generative AI solutions can transform your business by enabling automated creativity and intelligent problem-solving.',
     // Seo
     seo: {
       title: 'User Interface Development',
@@ -8236,11 +8369,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'Generative AI is revolutionizing various industries, including finance, by automating creative processes and providing novel solutions to complex problems.'
+              'Generative AI is revolutionizing various industries, including finance, by automating creative processes and providing novel solutions to complex problems.',
           },
           {
             title:
-              'Our team of experts combines advanced machine learning techniques with domain-specific knowledge to develop tailored generative AI solutions that can automate tasks, generate personalized recommendations, optimize processes, and much more.'
+              'Our team of experts combines advanced machine learning techniques with domain-specific knowledge to develop tailored generative AI solutions that can automate tasks, generate personalized recommendations, optimize processes, and much more.',
           },
         ],
       },
@@ -8290,7 +8423,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -8332,19 +8466,21 @@ export const MOCK_FINX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How can generative AI benefit my business in the finance industry?',
+            title:
+              'How can generative AI benefit my business in the finance industry?',
             content:
               'Generative AI can bring numerous benefits to the finance industry. It can automate time-consuming tasks, generate personalized product recommendations, optimize trading strategies, detect fraud, and enhance risk assessment models. By leveraging generative AI, businesses in finance can drive innovation, improve operational efficiency, and gain a competitive edge.',
           },
           {
             key: 'faqs-3',
-            title: 'Do I need a large amount of data to implement generative AI solutions?',
+            title:
+              'Do I need a large amount of data to implement generative AI solutions?',
             content:
               'The amount of data required for generative AI solutions depends on the specific application and complexity of the problem. While more data can often lead to better results, it is possible to develop effective generative AI models even with limited data. Our team will work closely with you to determine the data requirements and develop tailored solutions based on your available data.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'ChatGPT API Development',
@@ -8354,7 +8490,7 @@ export const MOCK_FINX_SERVICES = [
     hero_src: 'https://source.unsplash.com/UF3vfhV04SA/1600x900',
     hero_alt: 'OpenAI homescreen',
     subtitle:
-        'Unlock the power of conversational AI with our ChatGPT API development services.',
+      'Unlock the power of conversational AI with our ChatGPT API development services.',
     // Seo
     seo: {
       title: 'User Interface Development',
@@ -8368,11 +8504,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'Conversational AI has become a game-changer in customer interactions, enabling businesses to provide personalized and efficient support at scale.'
+              'Conversational AI has become a game-changer in customer interactions, enabling businesses to provide personalized and efficient support at scale.',
           },
           {
             title:
-              'Our team of experts leverages the latest advancements in natural language processing and deep learning to create ChatGPT models that can understand user intent, generate human-like responses, and provide meaningful conversational experiences.'
+              'Our team of experts leverages the latest advancements in natural language processing and deep learning to create ChatGPT models that can understand user intent, generate human-like responses, and provide meaningful conversational experiences.',
           },
         ],
       },
@@ -8410,7 +8546,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-lightbulb',
             title: 'Intent Recognition',
             subtitle:
-              'Enhance your chatbot\'s understanding of user intent with advanced intent recognition capabilities.',
+              "Enhance your chatbot's understanding of user intent with advanced intent recognition capabilities.",
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -8422,7 +8558,8 @@ export const MOCK_FINX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -8476,7 +8613,7 @@ export const MOCK_FINX_SERVICES = [
           },
         ],
       },
-    }
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_SERVICE_PAGE, {
@@ -8489,7 +8626,8 @@ export const MOCK_FINX_SERVICES = [
       ...MOCK_SERVICE_PAGE.sections,
       checklist: {
         ...MOCK_SERVICE_PAGE.sections.checklist,
-        subtitle: 'To deliver financial solutions of the highest quality, we follow the best practices that include thorough financial analysis, regulatory compliance, risk management, data security, and continuous improvement.',
+        subtitle:
+          'To deliver financial solutions of the highest quality, we follow the best practices that include thorough financial analysis, regulatory compliance, risk management, data security, and continuous improvement.',
       },
     },
   })
@@ -8513,7 +8651,8 @@ export const MOCK_GOVX_SERVICES = [
     // Sections
     sections: {
       summary: {
-        title: 'Empowering the public sector with innovative digital solutions.',
+        title:
+          'Empowering the public sector with innovative digital solutions.',
         items: [
           {
             title:
@@ -8541,7 +8680,7 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-user-shield',
             title: 'Data privacy and security',
             subtitle:
-              "We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.",
+              'We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.',
           },
           {
             fa_icon: 'fa-cloud-upload-alt',
@@ -8609,17 +8748,19 @@ export const MOCK_GOVX_SERVICES = [
             key: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
-              'E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens\' evolving digital expectations.',
+              "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
             key: 'faqs-2',
-            title: 'What sets your E-Government Platform Development services apart?',
+            title:
+              'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
             key: 'faqs-3',
-            title: 'How does your team ensure the security and privacy of the platform?',
+            title:
+              'How does your team ensure the security and privacy of the platform?',
             content:
               'We prioritize security and privacy in our platform development process. We adhere to all the best practices and regulations, including data encryption, secure coding practices, and routine security testing, to ensure the highest level of security and data privacy.',
           },
@@ -8745,13 +8886,15 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How can our public sector institution benefit from your Citizen Engagement Tools service?',
+            title:
+              'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the security and accessibility of your tools?',
+            title:
+              'How do you ensure the security and accessibility of your tools?',
             content:
               'We adhere to industry best practices for data security and privacy. All our tools are designed with robust security measures to protect sensitive information. Furthermore, we focus on making our solutions accessible to all citizens, ensuring inclusivity in the digital transformation journey.',
           },
@@ -9003,7 +9146,8 @@ export const MOCK_GOVX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is an Intelligent Document Search system important for my business?',
+            title:
+              'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
@@ -9141,13 +9285,15 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What capabilities can I expect from the virtual assistant you develop?',
+            title:
+              'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure data privacy with your virtual assistants?',
+            title:
+              'How do you ensure data privacy with your virtual assistants?',
             content:
               'We prioritize data privacy and security in our virtual assistant development. We follow best practices and comply with relevant regulations to ensure that your user data is always protected.',
           },
@@ -9267,7 +9413,8 @@ export const MOCK_GOVX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'How can AI-driven policy analysis enhance our policy making process?',
+            title:
+              'How can AI-driven policy analysis enhance our policy making process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policy makers.',
           },
@@ -9332,8 +9479,7 @@ export const MOCK_GOVX_SERVICES = [
           {
             fa_icon: 'fa-database',
             title: 'Data Management',
-            subtitle:
-              'We ensure efficient and secure management of your data.',
+            subtitle: 'We ensure efficient and secure management of your data.',
           },
           {
             fa_icon: 'fa-brain',
@@ -9399,13 +9545,15 @@ export const MOCK_GOVX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'How can predictive analytics enhance our decision-making process?',
+            title:
+              'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviors. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
             key: 'faqs-2',
-            title: 'What kind of data do your predictive analytics solutions use?',
+            title:
+              'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyze a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
@@ -9537,7 +9685,8 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'What makes your AI-Powered Compliance Monitoring service unique?',
+            title:
+              'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organization. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
@@ -9663,7 +9812,8 @@ export const MOCK_GOVX_SERVICES = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is public sentiment analysis important for government agencies?',
+            title:
+              'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },

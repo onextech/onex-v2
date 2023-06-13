@@ -26,7 +26,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
             {
               type: 'h2',
               title,
-              titleProps: { component: 'h1' }
+              titleProps: { component: 'h1' },
             },
             html && {
               type: 'html',

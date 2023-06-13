@@ -907,13 +907,13 @@ const MOCK_COMMON_PAGES = [
       '<p>At {appTitle}, we take data privacy and security very seriously. We understand that your personal data is valuable and we want to ensure that it is used and protected appropriately.</p>' +
       '<h2>1. Consent</h2>' +
       '<h3>1.1 Explicit Consent and User Interface</h3>' +
-      '<p>Our commitment to data privacy begins with obtaining explicit and informed consent from our users. This is a foundational aspect of our data collection and processing activities. We\'ve designed our user interface to present an in-depth consent form during the sign-up process or when interacting with an updated feature or service. This form is comprehensive, detailing the nature of the data being collected, the purpose for collection, how it will be processed, and the measures put in place for its protection. We use plain language to ensure that our users fully understand the implications of their consent. Additionally, we treat consent as an ongoing process and frequently remind users of their initial consent and any changes to our data handling practices.</p>' +
+      "<p>Our commitment to data privacy begins with obtaining explicit and informed consent from our users. This is a foundational aspect of our data collection and processing activities. We've designed our user interface to present an in-depth consent form during the sign-up process or when interacting with an updated feature or service. This form is comprehensive, detailing the nature of the data being collected, the purpose for collection, how it will be processed, and the measures put in place for its protection. We use plain language to ensure that our users fully understand the implications of their consent. Additionally, we treat consent as an ongoing process and frequently remind users of their initial consent and any changes to our data handling practices.</p>" +
       '<h3>1.2 Clarity and Transparency in Consent Form</h3>' +
-      '<p>We view the consent form as not merely a legal requirement but as a pivotal tool for maintaining transparency in our relationship with our users. The form is designed to demystify our data collection and processing activities, which can often seem opaque. We strive to provide clear, concise, and transparent information about our data practices. We avoid technical or legal jargon that might confuse or mislead users, instead, we provide a comprehensive yet easy-to-understand overview of our data practices. Our ultimate goal is to ensure that users fully understand what they\'re agreeing to when they give their consent.</p>' +
+      "<p>We view the consent form as not merely a legal requirement but as a pivotal tool for maintaining transparency in our relationship with our users. The form is designed to demystify our data collection and processing activities, which can often seem opaque. We strive to provide clear, concise, and transparent information about our data practices. We avoid technical or legal jargon that might confuse or mislead users, instead, we provide a comprehensive yet easy-to-understand overview of our data practices. Our ultimate goal is to ensure that users fully understand what they're agreeing to when they give their consent.</p>" +
       '<h3>1.3 The Importance of Active Consent</h3>' +
       '<p>We are committed to the principle of active consent, believing that users should actively agree to our data collection and usage policies. We\'ve implemented an opt-in mechanism that requires a definitive action from the user, such as checking a box or clicking an "I Agree" button. This approach differs from passive consent methods, such as pre-ticked boxes or consent inferred from inactivity, by necessitating a conscious decision from the user. We believe that this emphasis on active consent helps ensure that the user\'s decision to share personal data is explicit, voluntary, and informed.</p>' +
-      '<h3>1.4 Facilitating User\'s Right to Withdraw Consent</h3>' +
-      '<p>We respect the rights of our users, and this includes the right to withdraw their consent at any point. To facilitate this, we\'ve embedded features in our software that allow users to easily revoke their consent. The user account settings include a clear section where users can manage their consent preferences. Moreover, we have a dedicated customer support team trained to assist users with this process. We respect this right to withdrawal and process such requests promptly and comprehensively.</p>' +
+      "<h3>1.4 Facilitating User's Right to Withdraw Consent</h3>" +
+      "<p>We respect the rights of our users, and this includes the right to withdraw their consent at any point. To facilitate this, we've embedded features in our software that allow users to easily revoke their consent. The user account settings include a clear section where users can manage their consent preferences. Moreover, we have a dedicated customer support team trained to assist users with this process. We respect this right to withdrawal and process such requests promptly and comprehensively.</p>" +
       '<h3>1.5 Documenting User Consent</h3>' +
       '<p>As part of our commitment to transparency and accountability, we carefully document the consent given by users. We maintain a clear record of when and how we obtained consent, as well as what the user was informed about at the time of consent. This includes information about the data we proposed to collect, why we collected it, and how we intended to use it. This documentation provides an important reference point for us and a record of our commitment to respecting user consent. It also allows us to respond effectively to any inquiries or complaints from users or regulators.</p>' +
       '<h2>2. Purpose Limitation</h2>' +
@@ -943,7 +943,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>5.2 User-Driven Data Update</h3>' +
       '<p>We facilitate an easy-to-use mechanism for users to update their personal data at any time. This user-driven approach allows individuals to directly influence the accuracy of the data we hold, promoting trust and confidence in our data practices.</p>' +
       '<h3>5.3 Accuracy Checks and Validation</h3>' +
-      '<p>To further ensure data accuracy, we\'ve implemented validation rules and data integrity checks in our systems. These checks help prevent data entry errors and inaccuracies, enhancing the overall quality and reliability of the data.</p>' +
+      "<p>To further ensure data accuracy, we've implemented validation rules and data integrity checks in our systems. These checks help prevent data entry errors and inaccuracies, enhancing the overall quality and reliability of the data.</p>" +
       '<h2>6. Protection</h2>' +
       '<h3>6.1 Implementation of Robust Security Measures</h3>' +
       '<p>Protecting user data is at the heart of our business. We employ robust technical security measures such as encryption, anonymization, and pseudonymization of data. Our systems are designed to withstand common cyber threats and protect data from unauthorized access, alteration, and deletion.</p>' +
@@ -985,7 +985,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>11.2 Regular Updates to Do Not Call List</h3>' +
       '<p>We maintain an up-to-date "Do Not Call" list and regularly review and update this list to reflect changes in user preferences. This process ensures we respect the communication preferences of our users at all times.</p>' +
       '<h3>11.3 Compliance Checks and Staff Training</h3>' +
-      '<p>To ensure compliance with our "Do Not Call" policy, we conduct regular checks and provide training to staff involved in direct marketing. This approach ensures that our team members are aware of user preferences and respect their decision not to receive promotional calls.</p>'
+      '<p>To ensure compliance with our "Do Not Call" policy, we conduct regular checks and provide training to staff involved in direct marketing. This approach ensures that our team members are aware of user preferences and respect their decision not to receive promotional calls.</p>',
   },
 ].map((page) => ({
   ...MOCK_PAGE,
@@ -1007,80 +1007,83 @@ const MOCK_GROUP_PAGES = [
         hero_src: 'https://source.unsplash.com/QckxruozjRg/1600x900',
         hero_alt: 'headphone dude',
         overline: 'Careers',
-        title: 'Shape The Future of Enterprise Software with Us'
+        title: 'Shape The Future of Enterprise Software with Us',
       },
       summary: {
         hero_src: 'https://source.unsplash.com/2pPw5Glro5I/1600x900',
         hero_alt: 'brainstorm room',
-        title: "Join Our Dynamic Team Crafting Tomorrow's Technological Innovations",
-        subtitle: 'We are fuelled by our goal to enhance lives through the groundbreaking products we conceive and develop. We seek individuals who are dedicated to delivering excellence and have the drive to elevate products to extraordinary heights.'
+        title:
+          "Join Our Dynamic Team Crafting Tomorrow's Technological Innovations",
+        subtitle:
+          'We are fuelled by our goal to enhance lives through the groundbreaking products we conceive and develop. We seek individuals who are dedicated to delivering excellence and have the drive to elevate products to extraordinary heights.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
     slug: 'about',
     href: routeConfig.ABOUT,
-    seo_description: 'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+    seo_description:
+      'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -1410,38 +1413,50 @@ const MOCK_GROUP_PAGES = [
           {
             key: 'how-it-works-4',
             title: 'What industries do you have experience working with?',
-            content: 'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
+            content:
+              'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
           },
           {
             key: 'how-it-works-5',
             title: 'How do you ensure the security and privacy of our data?',
-            content: 'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
+            content:
+              'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
           },
           {
             key: 'how-it-works-6',
-            title: 'What is your approach to project management and communication?',
-            content: 'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
+            title:
+              'What is your approach to project management and communication?',
+            content:
+              'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
           },
           {
             key: 'how-it-works-7',
-            title: 'How do you handle scalability and future growth considerations in your software solutions?',
-            content: 'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
+            title:
+              'How do you handle scalability and future growth considerations in your software solutions?',
+            content:
+              'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
           },
           {
             key: 'how-it-works-8',
-            title: 'What is your approach to post-development support and maintenance?',
-            content: 'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
+            title:
+              'What is your approach to post-development support and maintenance?',
+            content:
+              'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
           },
           {
             key: 'how-it-works-9',
-            title: 'What sets One X Group apart from other technology consulting firms?',
-            content: 'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
+            title:
+              'What sets One X Group apart from other technology consulting firms?',
+            content:
+              'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
           },
           {
             key: 'how-it-works-10',
-            title: 'What is your pricing model for technology consulting services?',
-            content: 'Our pricing model is flexible and depends on the scope and complexity of the project. We offer competitive rates and work closely with our clients to develop pricing structures that align with their budget and requirements. We provide transparent and detailed cost estimates upfront, ensuring there are no surprises along the way.',
-          }
+            title:
+              'What is your pricing model for technology consulting services?',
+            content:
+              'Our pricing model is flexible and depends on the scope and complexity of the project. We offer competitive rates and work closely with our clients to develop pricing structures that align with their budget and requirements. We provide transparent and detailed cost estimates upfront, ensuring there are no surprises along the way.',
+          },
         ],
       },
       cta: {
@@ -1463,7 +1478,8 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'Mission',
     slug: 'mission',
-    seo_description: 'We revolutionize enterprise software solutions, enabling businesses to thrive in the digital era through strategic technology consulting and cutting-edge software development.',
+    seo_description:
+      'We revolutionize enterprise software solutions, enabling businesses to thrive in the digital era through strategic technology consulting and cutting-edge software development.',
     href: routeConfig.MISSION,
     subtitle: 'Find out how we seek to create change that matters.',
   },
@@ -1499,80 +1515,82 @@ const MOCK_TECH_PAGES = [
         hero_src: '/images/careers_hero.png',
         hero_alt: 'People discussing in white office',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Help Bring Great Software to More People.',
       },
       summary: {
         hero_src: '/images/careers_office.jpg',
         hero_alt: 'Office with plants',
         title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
     slug: 'about',
     href: routeConfig.ABOUT,
-    seo_description: '{appTitle} is here to elevate enterprise digital capability with exceptional user experiences.',
+    seo_description:
+      '{appTitle} is here to elevate enterprise digital capability with exceptional user experiences.',
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
@@ -2020,74 +2038,76 @@ export const MOCK_DATA_PAGES = [
         hero_src: 'https://source.unsplash.com/VBLHICVh-lI/1600x900',
         hero_alt: 'dark office',
         overline: 'Careers',
-        title: 'Transform Industries with Cutting-Edge Data and AI Expertise'
+        title: 'Transform Industries with Cutting-Edge Data and AI Expertise',
       },
       summary: {
         hero_src: 'https://source.unsplash.com/CPs2X8JYmS8/1600x900',
         hero_alt: 'glasses guy laptop',
-        title: "Join Our Team and Start Revolutionising Data-driven Innovation Today",
-        subtitle: 'We’re fuelled by our goal to transform industries through innovative data-driven technologies. We seek individuals with a passion for excellence and a proactive drive to create exceptional products in the realm of data and AI.'
+        title:
+          'Join Our Team and Start Revolutionising Data-driven Innovation Today',
+        subtitle:
+          'We’re fuelled by our goal to transform industries through innovative data-driven technologies. We seek individuals with a passion for excellence and a proactive drive to create exceptional products in the realm of data and AI.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
@@ -2316,56 +2336,75 @@ export const MOCK_DATA_PAGES = [
         subtitle:
           'Discover how we transform businesses with powerful data insights and advanced AI solutions.',
         items: [
-            {
-              key: 'data-science-1',
-              title: 'What experience and expertise do you have in data science?',
-              content: 'Our data science team has extensive experience in leveraging data to derive actionable insights and drive business outcomes. We have expertise in various data science techniques, including machine learning, statistical analysis, and data visualization. Our team stays updated with the latest advancements in the field to deliver cutting-edge data solutions to our clients.',
-            },
-            {
-              key: 'data-science-2',
-              title: 'How do you ensure that the data solutions you develop meet our specific requirements?',
-              content: 'We take a collaborative approach to data science projects, working closely with our clients to understand their unique business needs and goals. We conduct thorough data analysis and exploration to gain insights into your data and identify relevant patterns. Based on this analysis, we develop customized data solutions that align with your specific requirements and deliver the desired outcomes.',
-            },
-            {
-              key: 'data-science-3',
-              title: 'How do you ensure the quality and accuracy of the data solutions you develop?',
-              content: 'We have a robust quality assurance process in place to ensure the accuracy and reliability of the data solutions we develop. Our team follows rigorous data cleaning, preprocessing, and validation techniques to ensure the integrity of the data. We also conduct thorough testing and validation of our models and algorithms to ensure their performance and accuracy.',
-            },
-            {
-              key: 'data-science-4',
-              title: 'What industries do you have experience working with in terms of data science?',
-              content: 'Our data science team has experience working with diverse industries, including finance, healthcare, retail, and manufacturing. We understand the unique challenges and requirements of different industries and have successfully delivered data solutions that address industry-specific needs. Our industry experience enables us to provide valuable insights and tailored data solutions to our clients.',
-            },
-            {
-              key: 'data-science-5',
-              title: 'How do you handle project management and communication during data science projects?',
-              content: 'We follow a structured project management approach during data science projects. We work closely with our clients to define project objectives, milestones, and deliverables. We use project management tools to track progress, manage tasks, and facilitate communication. We schedule regular meetings and provide status updates to ensure transparent communication and collaboration throughout the project.',
-            },
-            {
-              key: 'data-science-6',
-              title: 'How do you ensure the security and privacy of our data during data science projects?',
-              content: 'Data security and privacy are of utmost importance to us. We adhere to strict data protection protocols and follow industry best practices to ensure the security and confidentiality of your data. We implement robust data access controls, encryption techniques, and secure storage solutions to safeguard your data throughout the project lifecycle.',
-            },
-            {
-              key: 'data-science-7',
-              title: 'What is your approach to project pricing and timelines for data science services?',
-              content: 'Our pricing model for data science services is based on the complexity of the project, the scope of work, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to align our services with their budget and project goals. Our goal is to deliver high-quality data solutions within the agreed-upon timeline and budget.',
-            },
-            {
-              key: 'data-science-8',
-              title: 'What is your experience in developing enterprise data and AI solutions?',
-              content: 'We have extensive experience in developing enterprise data and AI solutions for various industries. Our team has worked on projects involving data integration, data governance, predictive analytics, and AI-driven automation. We understand the challenges and opportunities that enterprises face in leveraging their data assets and strive to deliver solutions that drive business growth and transformation.',
-            },
-            {
-              key: 'data-science-9',
-              title: 'What is your approach to project management in data science projects?',
-              content: 'We follow an agile project management approach in data science projects, allowing for flexibility and iterative development. We break down projects into manageable tasks and set achievable milestones. We prioritize close collaboration with our clients, seeking their input and feedback throughout the project. Regular progress updates and transparent communication ensure that the project stays on track and meets the desired objectives.',
-            },
-            {
-              key: 'data-science-10',
-              title: 'What is your pricing model for data science services and AI solutions?',
-              content: 'Our pricing model for data science services and AI solutions is tailored to the specific requirements of each project. We offer flexible pricing options, including fixed-price and time-and-materials models. We work closely with our clients to understand their budget constraints and provide cost-effective solutions that deliver maximum value.',
-            },
+          {
+            key: 'data-science-1',
+            title: 'What experience and expertise do you have in data science?',
+            content:
+              'Our data science team has extensive experience in leveraging data to derive actionable insights and drive business outcomes. We have expertise in various data science techniques, including machine learning, statistical analysis, and data visualization. Our team stays updated with the latest advancements in the field to deliver cutting-edge data solutions to our clients.',
+          },
+          {
+            key: 'data-science-2',
+            title:
+              'How do you ensure that the data solutions you develop meet our specific requirements?',
+            content:
+              'We take a collaborative approach to data science projects, working closely with our clients to understand their unique business needs and goals. We conduct thorough data analysis and exploration to gain insights into your data and identify relevant patterns. Based on this analysis, we develop customized data solutions that align with your specific requirements and deliver the desired outcomes.',
+          },
+          {
+            key: 'data-science-3',
+            title:
+              'How do you ensure the quality and accuracy of the data solutions you develop?',
+            content:
+              'We have a robust quality assurance process in place to ensure the accuracy and reliability of the data solutions we develop. Our team follows rigorous data cleaning, preprocessing, and validation techniques to ensure the integrity of the data. We also conduct thorough testing and validation of our models and algorithms to ensure their performance and accuracy.',
+          },
+          {
+            key: 'data-science-4',
+            title:
+              'What industries do you have experience working with in terms of data science?',
+            content:
+              'Our data science team has experience working with diverse industries, including finance, healthcare, retail, and manufacturing. We understand the unique challenges and requirements of different industries and have successfully delivered data solutions that address industry-specific needs. Our industry experience enables us to provide valuable insights and tailored data solutions to our clients.',
+          },
+          {
+            key: 'data-science-5',
+            title:
+              'How do you handle project management and communication during data science projects?',
+            content:
+              'We follow a structured project management approach during data science projects. We work closely with our clients to define project objectives, milestones, and deliverables. We use project management tools to track progress, manage tasks, and facilitate communication. We schedule regular meetings and provide status updates to ensure transparent communication and collaboration throughout the project.',
+          },
+          {
+            key: 'data-science-6',
+            title:
+              'How do you ensure the security and privacy of our data during data science projects?',
+            content:
+              'Data security and privacy are of utmost importance to us. We adhere to strict data protection protocols and follow industry best practices to ensure the security and confidentiality of your data. We implement robust data access controls, encryption techniques, and secure storage solutions to safeguard your data throughout the project lifecycle.',
+          },
+          {
+            key: 'data-science-7',
+            title:
+              'What is your approach to project pricing and timelines for data science services?',
+            content:
+              'Our pricing model for data science services is based on the complexity of the project, the scope of work, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to align our services with their budget and project goals. Our goal is to deliver high-quality data solutions within the agreed-upon timeline and budget.',
+          },
+          {
+            key: 'data-science-8',
+            title:
+              'What is your experience in developing enterprise data and AI solutions?',
+            content:
+              'We have extensive experience in developing enterprise data and AI solutions for various industries. Our team has worked on projects involving data integration, data governance, predictive analytics, and AI-driven automation. We understand the challenges and opportunities that enterprises face in leveraging their data assets and strive to deliver solutions that drive business growth and transformation.',
+          },
+          {
+            key: 'data-science-9',
+            title:
+              'What is your approach to project management in data science projects?',
+            content:
+              'We follow an agile project management approach in data science projects, allowing for flexibility and iterative development. We break down projects into manageable tasks and set achievable milestones. We prioritize close collaboration with our clients, seeking their input and feedback throughout the project. Regular progress updates and transparent communication ensure that the project stays on track and meets the desired objectives.',
+          },
+          {
+            key: 'data-science-10',
+            title:
+              'What is your pricing model for data science services and AI solutions?',
+            content:
+              'Our pricing model for data science services and AI solutions is tailored to the specific requirements of each project. We offer flexible pricing options, including fixed-price and time-and-materials models. We work closely with our clients to understand their budget constraints and provide cost-effective solutions that deliver maximum value.',
+          },
         ],
       },
       cta: {
@@ -2445,74 +2484,75 @@ export const MOCK_DESIGN_PAGES = [
         hero_src: 'https://source.unsplash.com/qCi_MzVODoU/1600x900',
         hero_alt: 'meeting room',
         overline: 'Careers',
-        title: 'Revolutionise Digital Experiences with Us'
+        title: 'Revolutionise Digital Experiences with Us',
       },
       summary: {
         hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
         hero_alt: 'hand gestures',
-        title: "Transform the Digital Landscape and Design the Future",
-        subtitle: 'Our relentless pursuit of enhancing lives through our expertly crafted and tailored products drives us forward. We seek individuals dedicated to excellence, empowering them to take the lead in creating exceptional solutions.'
+        title: 'Transform the Digital Landscape and Design the Future',
+        subtitle:
+          'Our relentless pursuit of enhancing lives through our expertly crafted and tailored products drives us forward. We seek individuals dedicated to excellence, empowering them to take the lead in creating exceptional solutions.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
@@ -2740,56 +2780,74 @@ export const MOCK_DESIGN_PAGES = [
         subtitle:
           'Learn how we design effective, user-driven experiences for leading enterprises.',
         items: [
-            {
-              key: 'how-it-works-1',
-              title: 'What experience and expertise do you have in UI/UX design?',
-              content: 'Our design team has extensive experience in creating intuitive and visually appealing user interfaces and engaging user experiences. We have worked with various industries and have a deep understanding of UI/UX principles, best practices, and emerging trends. We stay updated with the latest design tools and technologies to deliver cutting-edge solutions.',
-            },
-            {
-              key: 'how-it-works-2',
-              title: 'How do you ensure that the designs you create meet our specific requirements?',
-              content: 'We take a collaborative approach to UI/UX design, working closely with our clients to understand their unique needs, target audience, and business goals. We conduct thorough research and analysis to gather insights and create user personas. Our iterative design process involves wireframing, prototyping, and user testing to refine the designs and align them with your requirements.',
-            },
-            {
-              key: 'how-it-works-3',
-              title: 'How do you ensure the usability and effectiveness of the user interfaces you design?',
-              content: 'Usability and effectiveness are at the core of our design philosophy. We focus on creating user-centric designs that prioritize ease of use, clear navigation, and intuitive interactions. We conduct user testing sessions to gather feedback and iterate on the designs, ensuring that they are optimized for seamless user experiences and achieve your desired goals.',
-            },
-            {
-              key: 'how-it-works-4',
-              title: 'What industries do you have experience working with in terms of UI/UX design?',
-              content: 'Our design team has worked across various industries, including finance, healthcare, e-commerce, and more. We understand the unique requirements and challenges of different industries and tailor our designs to meet their specific needs. Our diverse industry experience allows us to bring valuable insights and deliver UI/UX solutions that drive results.',
-            },
-            {
-              key: 'how-it-works-5',
-              title: 'How do you collaborate with clients during the design process?',
-              content: 'We believe in a collaborative approach where we work closely with our clients throughout the design process. We conduct regular meetings to gather requirements, provide updates, and seek feedback. We value your input and involve you in key design decisions to ensure that the final product aligns with your vision and meets your expectations.',
-            },
-            {
-              key: 'how-it-works-6',
-              title: 'How do you ensure the consistency and branding of our enterprise product designs?',
-              content: 'We pay great attention to maintaining consistency and reflecting your branding throughout the design process. We create design systems and style guides that establish a cohesive visual language, including color schemes, typography, and UI components. This ensures consistency across different screens and interactions, strengthening your brand identity.',
-            },
-            {
-              key: 'how-it-works-7',
-              title: 'Can you assist us with user testing and gathering feedback on our existing product designs?',
-              content: 'Absolutely. We offer user testing services to evaluate the usability and effectiveness of your existing product designs. We conduct user interviews, usability tests, and gather feedback to identify areas for improvement. Based on the insights gathered, we provide recommendations and iterative design solutions to enhance the user experience and drive better outcomes.',
-            },
-            {
-              key: 'how-it-works-8',
-              title: 'What is your approach to conducting UX workshops for enterprise clients?',
-              content: 'Our UX workshops are tailored to meet the specific needs of enterprise clients. We combine theory and practical exercises to educate and empower your team with UX design principles, methodologies, and best practices. We facilitate interactive sessions where participants learn to apply UX techniques, such as user research, persona creation, wireframing, and prototyping, to solve real-world design challenges.',
-            },
-            {
-              key: 'how-it-works-9',
-              title: 'What is your approach to enterprise product design?',
-              content: 'Our approach to enterprise product design is rooted in understanding your business objectives, target audience, and market landscape. We conduct thorough research to gain insights into user needs and pain points. We then craft intuitive and visually appealing designs that align with your brand identity and deliver exceptional user experiences. We iterate based on user feedback and ensure the scalability and adaptability of the designs to meet your evolving business requirements.',
-            },
-            {
-              key: 'how-it-works-10',
-              title: 'What is your pricing model for UI/UX design services and UX workshops?',
-              content: 'Our pricing model for UI/UX design services and UX workshops depends on various factors such as project complexity, scope, and timeline. We offer tailored solutions to meet your specific requirements and budget. We provide detailed proposals and cost estimates upfront, and we work closely with you to ensure transparency and alignment throughout the engagement.',
-            },
+          {
+            key: 'how-it-works-1',
+            title: 'What experience and expertise do you have in UI/UX design?',
+            content:
+              'Our design team has extensive experience in creating intuitive and visually appealing user interfaces and engaging user experiences. We have worked with various industries and have a deep understanding of UI/UX principles, best practices, and emerging trends. We stay updated with the latest design tools and technologies to deliver cutting-edge solutions.',
+          },
+          {
+            key: 'how-it-works-2',
+            title:
+              'How do you ensure that the designs you create meet our specific requirements?',
+            content:
+              'We take a collaborative approach to UI/UX design, working closely with our clients to understand their unique needs, target audience, and business goals. We conduct thorough research and analysis to gather insights and create user personas. Our iterative design process involves wireframing, prototyping, and user testing to refine the designs and align them with your requirements.',
+          },
+          {
+            key: 'how-it-works-3',
+            title:
+              'How do you ensure the usability and effectiveness of the user interfaces you design?',
+            content:
+              'Usability and effectiveness are at the core of our design philosophy. We focus on creating user-centric designs that prioritize ease of use, clear navigation, and intuitive interactions. We conduct user testing sessions to gather feedback and iterate on the designs, ensuring that they are optimized for seamless user experiences and achieve your desired goals.',
+          },
+          {
+            key: 'how-it-works-4',
+            title:
+              'What industries do you have experience working with in terms of UI/UX design?',
+            content:
+              'Our design team has worked across various industries, including finance, healthcare, e-commerce, and more. We understand the unique requirements and challenges of different industries and tailor our designs to meet their specific needs. Our diverse industry experience allows us to bring valuable insights and deliver UI/UX solutions that drive results.',
+          },
+          {
+            key: 'how-it-works-5',
+            title:
+              'How do you collaborate with clients during the design process?',
+            content:
+              'We believe in a collaborative approach where we work closely with our clients throughout the design process. We conduct regular meetings to gather requirements, provide updates, and seek feedback. We value your input and involve you in key design decisions to ensure that the final product aligns with your vision and meets your expectations.',
+          },
+          {
+            key: 'how-it-works-6',
+            title:
+              'How do you ensure the consistency and branding of our enterprise product designs?',
+            content:
+              'We pay great attention to maintaining consistency and reflecting your branding throughout the design process. We create design systems and style guides that establish a cohesive visual language, including color schemes, typography, and UI components. This ensures consistency across different screens and interactions, strengthening your brand identity.',
+          },
+          {
+            key: 'how-it-works-7',
+            title:
+              'Can you assist us with user testing and gathering feedback on our existing product designs?',
+            content:
+              'Absolutely. We offer user testing services to evaluate the usability and effectiveness of your existing product designs. We conduct user interviews, usability tests, and gather feedback to identify areas for improvement. Based on the insights gathered, we provide recommendations and iterative design solutions to enhance the user experience and drive better outcomes.',
+          },
+          {
+            key: 'how-it-works-8',
+            title:
+              'What is your approach to conducting UX workshops for enterprise clients?',
+            content:
+              'Our UX workshops are tailored to meet the specific needs of enterprise clients. We combine theory and practical exercises to educate and empower your team with UX design principles, methodologies, and best practices. We facilitate interactive sessions where participants learn to apply UX techniques, such as user research, persona creation, wireframing, and prototyping, to solve real-world design challenges.',
+          },
+          {
+            key: 'how-it-works-9',
+            title: 'What is your approach to enterprise product design?',
+            content:
+              'Our approach to enterprise product design is rooted in understanding your business objectives, target audience, and market landscape. We conduct thorough research to gain insights into user needs and pain points. We then craft intuitive and visually appealing designs that align with your brand identity and deliver exceptional user experiences. We iterate based on user feedback and ensure the scalability and adaptability of the designs to meet your evolving business requirements.',
+          },
+          {
+            key: 'how-it-works-10',
+            title:
+              'What is your pricing model for UI/UX design services and UX workshops?',
+            content:
+              'Our pricing model for UI/UX design services and UX workshops depends on various factors such as project complexity, scope, and timeline. We offer tailored solutions to meet your specific requirements and budget. We provide detailed proposals and cost estimates upfront, and we work closely with you to ensure transparency and alignment throughout the engagement.',
+          },
         ],
       },
       cta: {
@@ -2798,7 +2856,7 @@ export const MOCK_DESIGN_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          "{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.",
+          '{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.',
       },
       features: {
         overline: 'How We Work',
@@ -2869,74 +2927,75 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/careers_hero.png',
         hero_alt: 'People discussing in white office',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Help Bring Great Software to More People.',
       },
       summary: {
         hero_src: '/images/careers_office.jpg',
         hero_alt: 'Office with plants',
         title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
@@ -2981,8 +3040,7 @@ export const MOCK_DIGITAL_PAGES = [
       callout: {
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
-        title:
-          'Revolutionizing Enterprise Performance with Digital Solutions',
+        title: 'Revolutionizing Enterprise Performance with Digital Solutions',
         subtitle:
           'We are dedicated to accelerating business success through innovative digital strategies',
         buttons: [
@@ -2999,7 +3057,7 @@ export const MOCK_DIGITAL_PAGES = [
         overline: 'What we do',
         title: 'Innovative Marketing Solutions for Contemporary Enterprises',
         subtitle:
-          'Navigating the Digital Landscape to Elevate Your Enterprise\'s Brand and Drive Sustainable Growth',
+          "Navigating the Digital Landscape to Elevate Your Enterprise's Brand and Drive Sustainable Growth",
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
@@ -3023,13 +3081,14 @@ export const MOCK_DIGITAL_PAGES = [
             overline: '03',
             title: 'Advanced Web Deployment & Analytics',
             subtitle:
-              'Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and your website\'s performance.',
+              "Maximize the full potential of your online presence with our web solutions, optimizing user experience, driving data-driven insights, and your website's performance.",
           },
         ],
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'Powering Enterprises with Data-Driven Solutions Tailored for Success',
+        title:
+          'Powering Enterprises with Data-Driven Solutions Tailored for Success',
         hero_alt: 'Laser net over city',
         subtitle:
           'Our team of digital experts harnesses the power of data-driven solutions to empower enterprises, crafting tailored strategies that drive success.',
@@ -3185,7 +3244,7 @@ export const MOCK_DIGITAL_PAGES = [
             fa_icon: 'fa-bullseye',
             title: 'Holistic Strategy Development',
             subtitle:
-              "We take a comprehensive approach to digital marketing, considering all relevant channels and touchpoints to create cohesive and integrated campaigns that maximize results.",
+              'We take a comprehensive approach to digital marketing, considering all relevant channels and touchpoints to create cohesive and integrated campaigns that maximize results.',
           },
           {
             fa_icon: 'fa-lightbulb',
@@ -3197,7 +3256,7 @@ export const MOCK_DIGITAL_PAGES = [
             fa_icon: 'fa-trophy',
             title: 'Results-Oriented Focus',
             subtitle:
-              'Our primary objective is to generate measurable results for our clients, whether it\'s increased brand visibility, higher website traffic, improved conversions, or enhanced customer engagement.',
+              "Our primary objective is to generate measurable results for our clients, whether it's increased brand visibility, higher website traffic, improved conversions, or enhanced customer engagement.",
           },
           {
             fa_icon: 'fa-sync-alt',
@@ -3296,43 +3355,50 @@ export const MOCK_DIGITAL_PAGES = [
           },
           {
             key: 'faq-3',
-            title: 'How do you ensure that your marketing solutions meet our specific requirements?',
+            title:
+              'How do you ensure that your marketing solutions meet our specific requirements?',
             content:
               'We prioritize a thorough understanding of your business and objectives, conducting in-depth research and collaborating closely with you to develop customized marketing solutions that address your specific requirements and goals.',
           },
           {
             key: 'faq-4',
-            title: 'How do you ensure the effectiveness and reliability of our solutions?',
+            title:
+              'How do you ensure the effectiveness and reliability of our solutions?',
             content:
               'We ensure the effectiveness and reliability of our solutions through continuous monitoring, analysis, and optimization of campaigns, leveraging key performance indicators (KPIs) and data-driven insights to drive measurable results and maximize ROI.',
           },
           {
             key: 'faq-5',
-            title: 'How do you collaborate with clients during the design process?',
+            title:
+              'How do you collaborate with clients during the design process?',
             content:
               'We believe in a collaborative approach, actively involving our clients throughout the design process to gather input, incorporate feedback, and ensure that the final marketing solutions are aligned with your vision and goals.',
           },
           {
             key: 'faq-6',
-            title: 'How do you ensure alignment with our enterprise brand and values?',
+            title:
+              'How do you ensure alignment with our enterprise brand and values?',
             content:
               'Our team conducts comprehensive brand research and collaborates closely with you to ensure that our marketing efforts align seamlessly with your enterprise brand and values, delivering a consistent and cohesive digital presence.',
           },
           {
             key: 'faq-7',
-            title: 'How do you measure the success of digital marketing campaigns for enterprise businesses?',
+            title:
+              'How do you measure the success of digital marketing campaigns for enterprise businesses?',
             content:
               'We measure the success of digital marketing campaigns through a combination of metrics such as website traffic, conversions, lead generation, engagement, search engine rankings, and overall revenue growth, providing you with clear insights into campaign performance and ROI.',
           },
           {
             key: 'faq-8',
-            title: 'How do you stay updated with the latest digital marketing trends and changes?',
+            title:
+              'How do you stay updated with the latest digital marketing trends and changes?',
             content:
               'We stay updated with the latest digital marketing trends and changes through ongoing industry research, attending conferences, participating in training programs, and actively engaging in continuous learning to ensure we are at the forefront of the digital marketing landscape.',
           },
           {
             key: 'faq-9',
-            title: 'How long does it take to see results from digital marketing efforts?',
+            title:
+              'How long does it take to see results from digital marketing efforts?',
             content:
               'The time frame to see results from digital marketing efforts can vary depending on factors such as industry competitiveness, campaign goals, and strategies employed. While some results may be observed in the short term, digital marketing is an ongoing process that requires consistent effort and optimization for long-term success.',
           },
@@ -3381,80 +3447,81 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/careers_hero.png',
         hero_alt: 'People discussing in white office',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Help Bring Great Software to More People.',
       },
       summary: {
         hero_src: '/images/careers_office.jpg',
         hero_alt: 'Office with plants',
         title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
     slug: 'about',
     seo: {
-      description: 'abc'
+      description: 'abc',
     },
     href: routeConfig.ABOUT,
     subtitle:
@@ -3484,7 +3551,7 @@ export const MOCK_FINX_PAGES = [
         title:
           'We believe in harnessing the power of technology to transform and digitalize the finance industry.',
         subtitle:
-          '{appTitle} is driven by the belief in harnessing technology\'s power to digitalize and transform the finance industry, enabling organizations to thrive through innovative solutions.',
+          "{appTitle} is driven by the belief in harnessing technology's power to digitalize and transform the finance industry, enabling organizations to thrive through innovative solutions.",
         buttons: [
           {
             overline: 'Who we are',
@@ -3496,8 +3563,7 @@ export const MOCK_FINX_PAGES = [
       callout: {
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
-        title:
-          'Empowering Financial Institutions for the Digital Age',
+        title: 'Empowering Financial Institutions for the Digital Age',
         subtitle:
           '{appTitle} is dedicated to empowering financial institutions for the digital age, enabling their success through innovative solutions and expertise.',
         buttons: [
@@ -3634,7 +3700,7 @@ export const MOCK_FINX_PAGES = [
         overline: '{appTitle}',
         title: 'Transforming the Future of Financial Industries',
         subtitle:
-          "{appTitle} is the leading catalyst for digital transformation in the finance industry, revolutionizing the way financial institutions thrive in the digital era.",
+          '{appTitle} is the leading catalyst for digital transformation in the finance industry, revolutionizing the way financial institutions thrive in the digital era.',
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -3651,7 +3717,8 @@ export const MOCK_FINX_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title:
+          'Driving Finance Industry Transformation through Digital Innovation and Growth',
         subtitle:
           '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
         maxWidth: 'xl',
@@ -3696,19 +3763,19 @@ export const MOCK_FINX_PAGES = [
             fa_icon: 'fa-cogs',
             title: 'Tailored Solutions',
             subtitle:
-              'Our approach involves understanding each client\'s unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.',
+              "Our approach involves understanding each client's unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.",
           },
           {
             fa_icon: 'fa-link',
             title: 'Seamless Integration',
             subtitle:
-              "We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.",
+              'We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.',
           },
           {
             fa_icon: 'fa-expand-arrows-alt',
             title: 'Scalability and Flexibility',
             subtitle:
-              'Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client\'s businesses, ensuring long-term success and value.',
+              "Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client's businesses, ensuring long-term success and value.",
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -3799,66 +3866,72 @@ export const MOCK_FINX_PAGES = [
         items: [
           {
             key: 'faq-1',
-            title:
-              'What is the core focus of {appTitle}\'s digital solutions?',
+            title: "What is the core focus of {appTitle}'s digital solutions?",
             content:
-              'The core focus of {appTitle}\'s digital solutions is to empower the finance industry with AI-driven technologies, enabling digital transformation and driving strategic growth.',
+              "The core focus of {appTitle}'s digital solutions is to empower the finance industry with AI-driven technologies, enabling digital transformation and driving strategic growth.",
           },
           {
             key: 'faq-2',
             title:
-              'How can {appTitle}\'s digital solutions help my finance organization streamline operations and enhance efficiency?',
+              "How can {appTitle}'s digital solutions help my finance organization streamline operations and enhance efficiency?",
             content:
-              '{appTitle}\'s digital solutions streamline finance operations by automating processes, providing actionable insights, and optimizing decision-making, resulting in enhanced efficiency and operational excellence.',
+              "{appTitle}'s digital solutions streamline finance operations by automating processes, providing actionable insights, and optimizing decision-making, resulting in enhanced efficiency and operational excellence.",
           },
           {
             key: 'faq-3',
-            title: 'What kind of data sources do {appTitle}\'s digital solutions utilize for generating insights?',
+            title:
+              "What kind of data sources do {appTitle}'s digital solutions utilize for generating insights?",
             content:
-              '{appTitle}\'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behavior, and industry trends, to generate valuable insights and drive data-informed decision-making.',
+              "{appTitle}'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behavior, and industry trends, to generate valuable insights and drive data-informed decision-making.",
           },
           {
             key: 'faq-4',
-            title: 'How does {appTitle} ensure data security and compliance with industry regulations?',
+            title:
+              'How does {appTitle} ensure data security and compliance with industry regulations?',
             content:
               '{appTitle} prioritizes data security and compliance by implementing robust security measures, encryption protocols, and adhering to industry regulations, ensuring the protection and confidentiality of sensitive financial data.',
           },
           {
             key: 'faq-5',
-            title: 'Can {appTitle}\'s AI solutions be integrated with our existing systems and processes?',
+            title:
+              "Can {appTitle}'s AI solutions be integrated with our existing systems and processes?",
             content:
-              'Yes, {appTitle}\'s AI solutions are designed to seamlessly integrate with existing systems and processes, enabling a smooth implementation and leveraging the power of AI alongside your established infrastructure.',
+              "Yes, {appTitle}'s AI solutions are designed to seamlessly integrate with existing systems and processes, enabling a smooth implementation and leveraging the power of AI alongside your established infrastructure.",
           },
           {
             key: 'faq-6',
-            title: 'How long does it typically take to implement {appTitle}\'s digital transformation solutions?',
+            title:
+              "How long does it typically take to implement {appTitle}'s digital transformation solutions?",
             content:
-              'The implementation timeline for {appTitle}\'s digital transformation solutions varies based on the specific requirements and scope of the project, but typically ranges from a few months to a year, ensuring a thorough and efficient deployment.',
+              "The implementation timeline for {appTitle}'s digital transformation solutions varies based on the specific requirements and scope of the project, but typically ranges from a few months to a year, ensuring a thorough and efficient deployment.",
           },
           {
             key: 'faq-7',
-            title: 'How does {appTitle} stay updated with the latest advancements and emerging technologies in AI for finance?',
+            title:
+              'How does {appTitle} stay updated with the latest advancements and emerging technologies in AI for finance?',
             content:
               '{appTitle} stays at the forefront of advancements in AI for finance through continuous research, collaboration with industry experts, active participation in conferences and events, and a dedicated focus on exploring emerging technologies and trends.',
           },
           {
             key: 'faq-8',
-            title: 'How does {appTitle} ensure the accuracy and reliability of the insights generated by its AI algorithms?',
+            title:
+              'How does {appTitle} ensure the accuracy and reliability of the insights generated by its AI algorithms?',
             content:
               '{appTitle} ensures the accuracy and reliability of insights generated by its AI algorithms through rigorous testing, validation against real-world data, and continuous monitoring to optimize model performance and minimize errors or biases.',
           },
           {
             key: 'faq-9',
-            title: 'Can {appTitle}\'s AI solutions assist in predicting market trends and making informed investment decisions?',
+            title:
+              "Can {appTitle}'s AI solutions assist in predicting market trends and making informed investment decisions?",
             content:
-              'Yes, {appTitle}\'s AI solutions can leverage advanced algorithms and machine learning techniques to analyze market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.',
+              "Yes, {appTitle}'s AI solutions can leverage advanced algorithms and machine learning techniques to analyze market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.",
           },
           {
             key: 'faq-10',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
-              'Pricing for {appTitle}\'s enterprise digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.',
+              "Pricing for {appTitle}'s enterprise digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
         ],
       },
@@ -3898,74 +3971,75 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/careers_hero.png',
         hero_alt: 'People discussing in white office',
         overline: 'Careers',
-        title: 'Help Bring Great Software to More People.'
+        title: 'Help Bring Great Software to More People.',
       },
       summary: {
         hero_src: '/images/careers_office.jpg',
         hero_alt: 'Office with plants',
         title: "Join The Team That's Building Tomorrow's Technology Today.",
-        subtitle: 'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.'
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
       },
       benefits: {
         title: 'Great Perks For Everyone.',
         subtitle:
-          "The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!",
-          items: [
-            {
-              fa_icon: 'fa-dice-d10',
-              title: 'Collaborative',
-              subtitle:
-                'Problem-solving isn’t fun unless you’re doing it with awesome people.',
-            },
-            {
-              fa_icon: 'fa-gingerbread-man',
-              title: 'Friendly',
-              subtitle:
-                'We pride ourselves on the fact that we’re all friends and like to monkey around.',
-            },
-            {
-              fa_icon: 'fa-watch',
-              title: 'Flexible',
-              subtitle:
-                'We support various working hours and schedules to work around your life.',
-            },
-            {
-              fa_icon: 'fa-hand-holding-seedling',
-              title: 'Personal Growth',
-              subtitle:
-                'Work and learn from other talented creatives who care about what they do.',
-            },
-            {
-              fa_icon: 'fa-mug-hot',
-              title: 'Food & Drinks',
-              subtitle:
-                'Enjoy all the coffee, tea and snacks you need to keep you going.',
-            },
-            {
-              fa_icon: 'fa-puzzle-piece',
-              title: 'Live It Up',
-              subtitle:
-                'Celebrate the festive occasions together as a team.',
-            },
-            {
-              fa_icon: 'fa-guitar',
-              title: 'Rewards',
-              subtitle:
-                'We recognise progress and reward hard work with our employee incentive scheme.'
-            },
-            {
-              fa_icon: 'fa-table-tennis',
-              title: 'Convenient',
-              subtitle:
-                'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.'
-            }
-          ],
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
       },
       callout: {
         title: 'Openings.',
-        subtitle: 'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.'
-      }
-    }
+        subtitle:
+          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+      },
+    },
   },
   {
     title: 'About',
@@ -3978,7 +4052,8 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'hero',
         overline: '{appTitle}',
-        title: 'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',
+        title:
+          'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',
         buttons: [
           {
             overline: 'What we do',
@@ -3998,7 +4073,7 @@ export const MOCK_GOVX_PAGES = [
         title:
           'We believe in harnessing the power of technology to transform and digitalize industries in the public sector.',
         subtitle:
-          'At {appTitle}, we are driven by our belief in leveraging technology\'s power to drive digital transformation across public sector industries.',
+          "At {appTitle}, we are driven by our belief in leveraging technology's power to drive digital transformation across public sector industries.",
         buttons: [
           {
             overline: 'Who we are',
@@ -4010,8 +4085,7 @@ export const MOCK_GOVX_PAGES = [
       callout: {
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
-        title:
-          'Expanding Horizons of Public Sector Innovation',
+        title: 'Expanding Horizons of Public Sector Innovation',
         subtitle:
           'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
         buttons: [
@@ -4082,7 +4156,7 @@ export const MOCK_GOVX_PAGES = [
         overline: 'Our Locations',
         title: 'Empowering Public Sector Transformation Across Locations',
         subtitle:
-          '{appTitle}\'s reach extends its transformative solutions across diverse locations, enabling public sector organizations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.',
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organizations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
         items: [
           {
             title: '100+',
@@ -4148,7 +4222,7 @@ export const MOCK_GOVX_PAGES = [
         overline: '{appTitle}',
         title: 'Empowering Public Sector Digital Transformation',
         subtitle:
-          "Unlocking the potential of the public sector through innovative digital solutions, driving efficiency, transparency, and citizen-centric services.",
+          'Unlocking the potential of the public sector through innovative digital solutions, driving efficiency, transparency, and citizen-centric services.',
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -4210,19 +4284,19 @@ export const MOCK_GOVX_PAGES = [
             fa_icon: 'fa-cogs',
             title: 'Tailored Solutions',
             subtitle:
-              'Our approach involves understanding each client\'s unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.',
+              "Our approach involves understanding each client's unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.",
           },
           {
             fa_icon: 'fa-link',
             title: 'Seamless Integration',
             subtitle:
-              "We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.",
+              'We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.',
           },
           {
             fa_icon: 'fa-expand-arrows-alt',
             title: 'Scalability and Flexibility',
             subtitle:
-              'Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client\'s businesses, ensuring long-term success and value.',
+              "Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client's businesses, ensuring long-term success and value.",
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -4313,15 +4387,13 @@ export const MOCK_GOVX_PAGES = [
         items: [
           {
             key: 'faq-1',
-            title:
-              'What is {appTitle}?',
+            title: 'What is {appTitle}?',
             content:
               '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organizations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
             key: 'faq-2',
-            title:
-              'What industries do you serve?',
+            title: 'What industries do you serve?',
             content:
               'We primarily focus on serving government entities in the public sector, including federal, state, and local government organizations.',
           },
@@ -4333,7 +4405,7 @@ export const MOCK_GOVX_PAGES = [
           },
           {
             key: 'faq-4',
-            title: 'How can {appTitle}\'s solutions benefit my organization?',
+            title: "How can {appTitle}'s solutions benefit my organization?",
             content:
               'Our solutions are designed to empower government organizations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
@@ -4341,7 +4413,7 @@ export const MOCK_GOVX_PAGES = [
             key: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
-              'Yes, {appTitle}\'s solutions are scalable and can be adapted to organizations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organization grows.',
+              "Yes, {appTitle}'s solutions are scalable and can be adapted to organizations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organization grows.",
           },
           {
             key: 'faq-6',
@@ -4351,26 +4423,28 @@ export const MOCK_GOVX_PAGES = [
           },
           {
             key: 'faq-7',
-            title: 'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
+            title:
+              'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
               'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
             key: 'faq-8',
-            title: 'Is {appTitle} compliant with data security and privacy regulations',
+            title:
+              'Is {appTitle} compliant with data security and privacy regulations',
             content:
-              'Yes, we prioritize the security and privacy of our client\'s data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.',
+              "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
           },
           {
             key: 'faq-9',
-            title: 'How do you determine the pricing for your enterprise digital transformation solutions?',
+            title:
+              'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
-              'Pricing for {appTitle}\'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.'
+              "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
           {
             key: 'faq-10',
-            title:
-              'How long does the implementation process typically take?',
+            title: 'How long does the implementation process typically take?',
             content:
               'The implementation timeline depends on the specific requirements of your organization and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
           },
@@ -4407,4 +4481,3 @@ export const MOCK_PAGES = {
   FINX: MOCK_FINX_PAGES,
   GOVX: MOCK_GOVX_PAGES,
 }
-
