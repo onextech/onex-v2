@@ -6494,6 +6494,14 @@ export const MOCK_DIGITAL_SERVICES = [
     // Category
     category: getCategoryFromCrudItem(item, MOCK_DIGITAL_SERVICE_CATEGORYS),
     ...item,
+    sections: {
+      ...MOCK_SERVICE_PAGE.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver digital solutions of the highest quality, we follow the best practices that include in-depth market research, cutting-edge technology adoption, agile development methodologies, data privacy, and continuous optimization.',
+      },
+    },
   })
 })
 
@@ -9549,8 +9557,8 @@ export const MOCK_GOVX_SERVICES = [
     slug: 'public-sentiment-analysis',
     category_id: 3,
     // Hero
-    hero_src: 'https://source.unsplash.com/Aq9J4RQWYho/1600x900',
-    hero_alt: 'Wall of post-its',
+    hero_src: 'https://source.unsplash.com/7OxV_qDiGRI/1600x900',
+    hero_alt: 'Empty meeting seats',
     subtitle:
       'Leverage advanced analytics to gain insights into public sentiment and opinion.',
     // Seo
@@ -9683,6 +9691,14 @@ export const MOCK_GOVX_SERVICES = [
     // Category
     category: getCategoryFromCrudItem(item, MOCK_GOVX_SERVICE_CATEGORYS),
     ...item,
+    sections: {
+      ...MOCK_SERVICE_PAGE.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver governmental solutions of the highest quality, we follow the best practices that include comprehensive policy analysis, legal compliance, data privacy, and continuous innovation.',
+      },
+    },
   })
 })
 
