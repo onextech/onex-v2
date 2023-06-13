@@ -1,6 +1,6 @@
 import React from 'react'
-import { useLayout } from '@onex/providers'
 import { Blocks } from '@gravis-os/landing'
+import { useRouter } from 'next/router'
 import ContactPage from './ContactPage'
 
 export interface ContactSuccessPageProps {
@@ -10,6 +10,7 @@ export interface ContactSuccessPageProps {
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
   const { name, email } = props
+  const router = useRouter()
   if (!name || !email) return <ContactPage />
   return (
     <Blocks
@@ -17,57 +18,52 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
         {
           key: 'hero',
           reveal: false,
-          py: 5,
+          py: 20,
+          center: true,
+          maxWidth: 'md',
           sx: {
             position: 'relative',
             backgroundColor: 'background.default',
           },
           items: [
             {
-              type: 'grid',
-              gridProps: { spacing: { xs: 0, md: 5 }, py: 8 },
-              gridItems: [
-                {
-                  sm: 7,
-                  md: 8,
-                  lg: 9,
-                  items: [
-                    {
-                      type: 'fa-icon',
-                      title: `fa-3x fa-thin fa-badge-check`,
-                      titleProps: { sx: { mb: 1, color: 'success.main' } },
-                    },
-                    {
-                      type: 'overline',
-                      title: `Registration Success`,
-                      titleProps: { sx: { mb: 1, color: 'success.main' } },
-                    },
-                    {
-                      type: 'h2',
-                      title: <>Thank you for contacting us, <span id='contact-success-form-name'>{name}</span></>,
-                      titleProps: { mb: 2, component: 'h1' },
-                    },
-                    {
-                      type: 'subtitle1',
-                      title: (
-                        <>We have received your details and we will reach out to you immediately at <span id='contact-success-form-email'>{email}</span></>
-                      ),
-                    },
-                    
-                  ],
-                },
-              ],
+              type: 'fa-icon',
+              title: `fa-3x fa-thin fa-badge-check`,
+              titleProps: { sx: { mb: 1, color: 'success.main' } },
+            },
+            {
+              type: 'overline',
+              title: `Registration Success`,
+              titleProps: { sx: { mb: 1, color: 'success.main' } },
+            },
+            {
+              type: 'h2',
+              title: (
+                <>
+                  Thank you for contacting us,{' '}
+                  <span id="contact-success-form-name">{name}</span>
+                </>
+              ),
+              titleProps: { mb: 2, component: 'h1' },
+            },
+            {
+              type: 'subtitle1',
+              title: (
+                <>
+                  We have received your details and we will reach out to you at{' '}
+                  <span id="contact-success-form-email">{email}</span>
+                </>
+              ),
+            },
+            {
+              type: 'button',
+              title: 'Back to Home',
+              titleProps: {
+                href: '/',
+                sx: { mt: 4 },
+              },
             },
           ],
-        },
-        {
-          key: 'background-nodes',
-          py: 0,
-          backgroundImageProps: {
-            src: 'https://source.unsplash.com/Q1p7bh3SHj8/1600x900',
-            alt: 'Planet image',
-            backgroundHeight: { xs: 240, md: 320 },
-          },
         },
       ]}
     />
