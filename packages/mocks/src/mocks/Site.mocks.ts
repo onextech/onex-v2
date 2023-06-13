@@ -247,7 +247,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with Fin X',
+  cta_title: 'Empower your financial processes with Fin X',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
