@@ -64,9 +64,9 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
     '<p>The website can now effectively portray the extent and breadth of Tyme Group\'s international reach. Customers can discover the complete range of services that this unique company provides throughout the world, through this website.</p>' + 
     '<p>Tyme has grown to become one of the world\'s fastest-growing financial firms, serving over 6 million consumers across multiple countries since launching its initial digital banking business in South Africa. Tyme\'s new website is an important aspect of the company\'s digital strategy, enabling it to reach a larger audience and provide more accessible and reliable information about its services.</p>' + 
     '<p>The website brilliantly encapsulates Tyme\'s mission to revolutionize financial services and create a personalized customer experience, allowing customers everywhere access to their money with trust and confidence.</p>' + 
-    '<p><strong>About One X Tech:</strong></p>' + 
+    '<p>About One X Tech:</p>' + 
     '<p>One X Tech is a leading technology company that focuses on building technological innovations for leading enterprises. We are on a mission to build a new digital economy by creating innovative digital solutions that put businesses at the digital frontier. One X Tech brings together an elite digital product team to create best-in-class products that scale across the world. One X Tech is based in Singapore and operates regionally in South East Asia.</p>' + 
-    '<p><strong>About Tyme Group:</strong></p>' + 
+    '<p>About Tyme Group:</p>' + 
     '<p>Tyme is creating a revolutionary digital banking experience by expanding economic access across emerging markets in Asia and Africa. Fuelled by their commitment to unleash human potential, the company has partnered with local stakeholders to launch cutting-edge banks. TymeGlobal\'s disruptive business model integrates retailers for an unparalleled financial services solution that was previously impossible due to accessibility issues.</p>'
   },
   {
@@ -85,11 +85,11 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
     '<p>Participants could learn more about the challenge statement and submitted their proposals after creating an account on the NextGEN website. The platform streamlined the submission and evaluation process, making it more efficient and fair, by asking detailed questions about their solutions, risks and challenges of their solutions and allowing them to upload supporting documents directly onto the platform. Participants could easily check the status of their proposals on their account dashboard to see if they have been shortlisted.</p>' + 
     '<p>Mr Joel Koh, Chief Technology Officer added &ldquo;One X Tech is delighted to support the Maritime and Port Authority of Singapore (MPA) and the International Maritime Organisation in launching the NextGEN Connect Challenge and promoting inclusive maritime decarbonisation".</p>' + 
     '<p>NextGEN connect enabled participants to join a global network of over 500 partners to showcase their projects and gain entry to events centred on inclusive maritime decarbonisation, thereby unlocking their prospects. This collaborative endeavour marks a significant turning point in the global maritime industry\'s digital transformation.</p>' + 
-    '<p><strong>About One X Tech:</strong></p>' + 
+    '<p>About One X Tech:</p>' + 
     '<p>One X Tech is a leading technology company that focuses on building technological innovations for leading enterprises. We are on a mission to build a new digital economy by creating innovative digital solutions that put businesses at the digital frontier. One X Tech brings together an elite digital product team to create best-in-class products that scale across the world. One X Tech is based in Singapore and operates regionally in South East Asia.</p>' + 
-    '<p><strong>About Maritime Port Authority of Singapore:</strong></p>' + 
+    '<p>About Maritime Port Authority of Singapore:</p>' + 
     '<p>Maritime Port Authority of Singapore (MPA) is a leading maritime agency driving Singapore\'s global maritime aspirations. MPA was established on 2 February 1996, with the mission to develop Singapore as a premier global hub port and international maritime centre (IMC), and to advance and safeguard Singapore\'s strategic maritime interests.</p>' + 
-    '<p><strong>About International Maritime Organisation:</strong></p>' + 
+    '<p>About International Maritime Organisation:</p>' + 
     '<p>IMO is the United Nations\' specialized agency responsible for safety and security of shipping and the prevention of marine pollution by ships. With 174 Member States and three Associate Members, IMO is based in London with around 300 international staff.</p>'
   },
   {
@@ -108,9 +108,9 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
       '<p>Customers can build their own box of chocolates via the website, allowing them to choose their favourite flavours. The website allows for the creation of a one-of-a-kind shopping experience in the bustling&nbsp;F&amp;B industry, and the Build-a-Box platform provides unrivalled customer service through an integrated eCommerce and inventory control system. The platform seamlessly links e-commerce with powerful order, inventory and production management systems for optimum efficiency.</p>' + 
       '<p>"This project is an exciting opportunity for us," commented One X Tech\'s Business Development Director, Lu Shu Hui. "We are passionate about assisting family companies in succeeding in the digital age, and we look forward to seeing Mr Bucket\'s success as a result of our collaboration."</p>' + 
       '<p>With the help of One X Tech,&nbsp;Mr Bucket can now provide a modern, digital shopping experience that will delight its customers throughout Asia and beyond.</p>' + 
-      '<h2><strong>About One X Tech:</strong></h2>' + 
+      '<h2>About One X Tech:</h2>' + 
       '<p>One X Tech is a leading technology company that focuses on building technological innovations for leading enterprises. We are on a mission to build a new digital economy by creating innovative digital solutions that put businesses at the digital frontier. One X Tech brings together an elite digital product team to create best-in-class products that scale across the world. One X Tech is based in Singapore and operates regionally in South East Asia.</p>' + 
-      '<h2><strong>About Mr Bucket Chocolaterie:</strong></h2>' + 
+      '<h2>About Mr Bucket Chocolaterie:</h2>' + 
       '<p>Mr Bucket Chocolaterie is a true Asian family-run chocolaterie for about 120 years. With a commitment to quality and a passion for chocolate, Mr Bucket has become a well-known and respected name in the Asian chocolate industry.</p>'
   }
 ].map((item, i) => ({
@@ -141,8 +141,8 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
     '<h2>Leadership in thought</h2>' +
     '<p>The website has a section devoted to thought leadership that provides useful materials like professional insights. Visitors can keep up with the newest fashions, cutting-edge innovations, and best business practices to help them innovate and advance their companies.</p>' +
     '<p>"One X Tech\'s newly updated website is more than just an online presence. It is evidence of our unwavering dedication to expanding the frontiers of technological innovation, according to Mr Koh. "We invite companies to explore our new platform, interact with our experts, and learn how we can open up fresh possibilities for development, effectiveness, and transformation."</p>' +
-    '<p><strong>For more information, contact:</strong></p>' +
-    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>For more information, contact:</p>' +
+    '<p>Lu ShuHui</p>' +
     '<p>Business Development Director</p>' +
     '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>'
   },
@@ -179,7 +179,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
     '<p>One X Group\'s ability to produce transformative results for businesses is proudly displayed on the updated website through success stories. The success of One X Group\'s solutions on growth and operational excellence is demonstrated in these case studies, which act as testimonials.</p>' +
     '<p>Businesses gain useful knowledge about the extensive consulting services provided by One X Group by visiting the newly launched website. One X Group equips businesses to effectively use technology, boosting operational effectiveness, elevating customer experiences, and fostering strategic growth. This includes providing enterprise-level software development and strategic technology consulting.</p>' +
     '<p>For more information and inquiries, please contact:</p>' +
-    '<p><strong>Lu ShuHui</strong> Business Development Director Email: <a href="mailto:shu@onexgroup.co">shu@onexgroup.co</a></p>'
+    '<p>Lu ShuHui Business Development Director Email: <a href="mailto:shu@onexgroup.co">shu@onexgroup.co</a></p>'
   },
 ].map((item, i) => ({
   id: i + 1,
@@ -208,8 +208,8 @@ export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = [
     '<p>Businesses can explore One X Data\'s cutting-edge data and AI solutions on the recently launched <a href="http://onexdata.co/">onexdata.co</a> website, which offers a user-friendly platform. Businesses can confidently navigate the complex data landscape and extract useful insights using analytics, visualization, machine learning, and predictive modeling.</p>' +
     '<h2>The New Website\'s Key Features:</h2>' +
     '<p>Important Data Insights: Discover trends and patterns that help you make well-informed decisions by using thorough data analytics to gain important insights into your company. Explore a showcase of previous projects that highlights the transformative effects of One X Data\'s solutions on companies across a range of industries. Expert Advice: Take advantage of the knowledge of the One X Data team, who will give you advice and support to help you get the most out of your data and AI initiatives.</p>' +
-    '<p><strong>For more information, contact:</strong></p>' +
-    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>For more information, contact:</p>' +
+    '<p>Lu ShuHui</p>' +
     '<p>Business Development Director</p>' +
     '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>' +
     '<p>Through <a href="http://onexdata.co/">onexdata.co</a>, One X Data uses data and AI to create transformative change. With One X Data, explore the potential of data-driven innovation and realize the full potential of your company.</p>'
@@ -237,19 +237,19 @@ export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = [
     hero_src: '/insights/1xd-banner.png',
     hero_alt: 'One X Design banner',
     html: '<p>1st June 2023</p>' +
-    '<p>SINGAPORE: One X Design, a UI/UX service provider, is thrilled to announce the official launch of their new website, <strong><a href="http://www.onexdesign.com/">www.onexdesign.com</a></strong>. This exciting milestone marks a significant step forward in the company\'s mission to revolutionize the world of user experience and interface design.</p>' +
+    '<p>SINGAPORE: One X Design, a UI/UX service provider, is thrilled to announce the official launch of their new website, <a href="http://www.onexdesign.com/">www.onexdesign.com</a>. This exciting milestone marks a significant step forward in the company\'s mission to revolutionize the world of user experience and interface design.</p>' +
     '<p>With the relentless pursuit of excellence and innovation, One X Design has established itself as a prominent player in the UI/UX industry. Their team of highly skilled designers and developers is dedicated to creating immersive digital experiences that captivate users and drive business results.</p>' +
     '<p>The newly launched website showcases One X Design\'s expertise and commitment to delivering exceptional UI/UX solutions. Visitors will be greeted with a sleek and intuitive interface that reflects the company\'s design principles and showcases its portfolio of successful projects.</p>' +
     '<h2>Key features include:</h2>' +
     '<ol>' +
-    '<li><strong>Immersive Portfolio:</strong> One X Design\'s portfolio is showcased on the website in an engaging manner, showcasing their noteworthy work in a range of industries. Visitors can learn about the company\'s design capabilities and creative solutions.</li>' +
-    '<li><strong>Design Principles:</strong> One X Design places a strong emphasis on their design principles on their website, showcasing their dedication to developing aesthetically pleasing, understandable, and user-centric interfaces. Their proficiency in providing seamless experiences is demonstrated by their website itself.</li>' +
-    '<li><strong>Client-Centric Approach:</strong> One X Design\'s dedication to client satisfaction and teamwork is highlighted on the website. They place a high priority on comprehending the particular needs and objectives of their clients, ensuring that every project is customized to suit those needs.</li>' +
-    '<li><strong>Expert Team:</strong> The website introduces One X Design\'s highly qualified team of designers and developers, who are passionate about producing exceptional UI/UX experiences. Customers can rely on their experience and industry knowledge to provide them with creative and effective solutions.</li>' +
+    '<li>Immersive Portfolio: One X Design\'s portfolio is showcased on the website in an engaging manner, showcasing their noteworthy work in a range of industries. Visitors can learn about the company\'s design capabilities and creative solutions.</li>' +
+    '<li>Design Principles: One X Design places a strong emphasis on their design principles on their website, showcasing their dedication to developing aesthetically pleasing, understandable, and user-centric interfaces. Their proficiency in providing seamless experiences is demonstrated by their website itself.</li>' +
+    '<li>Client-Centric Approach: One X Design\'s dedication to client satisfaction and teamwork is highlighted on the website. They place a high priority on comprehending the particular needs and objectives of their clients, ensuring that every project is customized to suit those needs.</li>' +
+    '<li>Expert Team: The website introduces One X Design\'s highly qualified team of designers and developers, who are passionate about producing exceptional UI/UX experiences. Customers can rely on their experience and industry knowledge to provide them with creative and effective solutions.</li>' +
     '</ol>' +
     '<p>With the help of these crucial components, One X Design\'s website functions as an engaging space for companies to explore their offerings, find inspiration, and interact with a group of people committed to elevating user experiences through creative UI/UX design solutions.</p>' +
-    '<p><strong>For more information, contact:</strong></p>' +
-    '<p><strong>Lu ShuHui</strong></p>' +
+    '<p>For more information, contact:</p>' +
+    '<p>Lu ShuHui</p>' +
     '<p>Business Development Director</p>' +
     '<p><a href="mailto:shu@onextech.com">shu@onextech.com</a></p>'
   },
