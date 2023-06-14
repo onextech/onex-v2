@@ -5,7 +5,6 @@ import { useLayout } from '@onex/providers'
 
 export interface ContactCalloutProps {
   size?: 'medium' | 'large'
-  disableCallout?: boolean
 }
 
 const ContactCallout: React.FC<ContactCalloutProps> = (props) => {

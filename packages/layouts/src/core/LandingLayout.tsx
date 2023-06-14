@@ -29,6 +29,7 @@ export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
+  footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
@@ -659,9 +660,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     footerProps: {
-      callout: !calloutProps?.disableCallout && (
-        <ContactCallout {...calloutProps} />
-      ),
+      callout: <ContactCallout {...calloutProps} />,
       logo: <Image {...logoProps} />,
       companyName: site.company_title,
       accordionProps: {
