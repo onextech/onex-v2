@@ -247,7 +247,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with Fin X',
+  cta_title: 'Empower your financial processes with Fin X',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
@@ -269,7 +269,7 @@ export const MOCK_FINX_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
+    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on transforming financial enterprises through digital innovation' },
     { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
     { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
     { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },

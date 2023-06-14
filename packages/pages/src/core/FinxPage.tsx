@@ -4,18 +4,15 @@ import {
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderTechnologysBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderCtaBlock,
-  renderClientTestimonialSliderBlock,
   renderHeroWithBackgroundBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Industry, Technology } from '@onex/types'
 import { useRouter } from 'next/router'
-import { routeConfig } from '@onex/common'
 import { Slider } from '@gravis-os/ui'
 
 export interface FinxPageProps {
@@ -27,10 +24,10 @@ export interface FinxPageProps {
 }
 
 const FinxPage: React.FC<FinxPageProps> = (props) => {
-  const { page, showcases, technologys, featuredPosts, industrys } = props
+  const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientTestimonials } = useLayout()
-  const { locales, cta_button_title } = site
+  const { site, clientLogos } = useLayout()
+  const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
@@ -42,63 +39,65 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
       items={[
         // Hero
         {
-            key: 'hero-with-background-fade-slider',
-            dark: true,
-            center: true,
-            disableContainer: true,
-            py: 0,
-            items: [
-              {
-                type: 'jsx',
-                title: (
-                  <Slider
-                    autoplay
-                    loop
-                    arrows
-                    fade
-                    dots
-                    dotProps={{ color: 'secondary.main' }}
-                    height={{ xs: 500, md: 800 }}
-                    items={[
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          title: 'We are the Growth Company',
-                          ...hero,
-                          backgroundImageProps: {
-                            src: '/images/about_hero.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          ...hero,
-                          title: 'Transforming the Future of Financial Industries',
-                          backgroundImageProps: {
-                            src: '/images/about_nodes_above_city.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          ...hero,
-                          title: "Transforming the Future of Financial Industries",
-                          backgroundImageProps: {
-                            src: '/images/mission_earth.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                    ]}
-                  />
-                ),
-              },
-            ],
-          },
+          key: 'hero-with-background-fade-slider',
+          dark: true,
+          center: true,
+          disableContainer: true,
+          py: 0,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  loop
+                  arrows
+                  fade
+                  dots
+                  dotProps={{ color: 'secondary.main' }}
+                  height={{ xs: 500, md: 800 }}
+                  items={[
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        title: 'We are the Growth Company',
+                        ...hero,
+                        backgroundImageProps: {
+                          src: '/images/about_hero.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title:
+                          'Transforming the Future of Financial Industries',
+                        backgroundImageProps: {
+                          src: '/images/about_nodes_above_city.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title:
+                          'Transforming the Future of Financial Industries',
+                        backgroundImageProps: {
+                          src: '/images/mission_earth.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -111,11 +110,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         }),
         // Showcases
         renderShowcasesBlock({
-          title: (
-            <>
-              Empowering the Finance Sector through AI-driven Solutions
-            </>
-          ),
+          title: <>Empowering the Finance Sector through AI-driven Solutions</>,
           subtitle:
             'At Fin X, we empower the finance sector by harnessing the power of AI-driven solutions. Our innovative technologies and expertise enable financial institutions to streamline operations, optimize decision-making, and drive transformative growth in an increasingly digital landscape',
           items: showcases,

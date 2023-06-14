@@ -168,7 +168,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               gridProps: { spacing: 3 },
               gridItemProps: {
                 xs: 6,
-                md: 3,
+                md: Math.floor(12 / Math.max(features.items.length, 1)),
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
               gridItems: features.items?.map((item) => ({
@@ -203,13 +203,14 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             },
           ],
         },
-        cta &&renderFadeToBottomBackgroundImageBlock({
-          hero_src: cta.hero_src,
-          hero_alt: cta.hero_alt,
-          title: cta.title,
-          subtitle: cta.subtitle,
-          buttonProps: cta.buttons?.[0],
-        }),
+        cta &&
+          renderFadeToBottomBackgroundImageBlock({
+            hero_src: cta.hero_src,
+            hero_alt: cta.hero_alt,
+            title: cta.title,
+            subtitle: cta.subtitle,
+            buttonProps: cta.buttons?.[0],
+          }),
         {
           key: 'gallery',
           ...commonBlockProps,
