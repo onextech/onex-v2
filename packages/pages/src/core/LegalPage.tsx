@@ -26,7 +26,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
             {
               type: 'h2',
               title,
-              titleProps: { component: 'h1' }
+              titleProps: { component: 'h1' },
             },
             html && {
               type: 'html',
@@ -59,12 +59,6 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
                     mt: 0,
                     mb: 3,
                   },
-                  '& blockquote': { borderLeft: 4, pl: 4, ml: 0, opacity: 0.8 },
-                  fontSize: {
-                    xs: 'subtitle2.fontSize',
-                    md: 'subtitle1.fontSize',
-                  },
-                  mt: 5
                 },
               },
             },
