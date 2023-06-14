@@ -3204,21 +3204,21 @@ export const MOCK_DIGITAL_PAGES = [
             title: 'Enterprise Digital Strategy',
             subtitle:
               'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
             fa_icon: 'fa-briefcase',
             title: 'Specialized B2B Digital Marketing',
             subtitle:
               'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
             fa_icon: 'fa-code',
             title: 'Advanced Web Development & Analytics',
             subtitle:
               'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -3726,24 +3726,24 @@ export const MOCK_FINX_PAGES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -4250,21 +4250,21 @@ export const MOCK_GOVX_PAGES = [
             title: 'Digital Service Delivery',
             subtitle:
               'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
             fa_icon: 'fa-robot',
             title: 'AI Process Automation',
             subtitle:
               'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
             fa_icon: 'fa-chart-bar',
             title: 'Advanced Public Sector Analytics',
             subtitle:
               'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
