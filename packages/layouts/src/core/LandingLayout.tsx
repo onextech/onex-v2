@@ -28,6 +28,7 @@ export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
+  footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
