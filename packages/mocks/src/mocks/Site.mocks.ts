@@ -323,7 +323,7 @@ export const MOCK_DIGITAL_SITE = {
       key: 'services',
       title: 'Our Services',
       subtitle:
-        'Explore our comprehensive services focused on empowering enterprises through frontend development',
+        'Explore our comprehensive services focused on empowering enterprises through expert digital development',
     },
     {
       key: 'insights',
@@ -366,7 +366,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with Fin X',
+  cta_title: 'Empower your financial processes with Fin X',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
@@ -392,7 +392,7 @@ export const MOCK_FINX_SITE = {
       key: 'services',
       title: 'Our Services',
       subtitle:
-        'Explore our comprehensive services focused on empowering enterprises through frontend development',
+        'Explore our comprehensive services focused on transforming financial enterprises through digital innovation',
     },
     {
       key: 'insights',
@@ -435,7 +435,7 @@ export const MOCK_GOVX_SITE = {
   absolute_url: 'https://www.govx.ai',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with GovX.',
+  cta_title: 'Modernise Public Sectors with Gov X.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@govx.ai',
@@ -461,7 +461,7 @@ export const MOCK_GOVX_SITE = {
       key: 'services',
       title: 'Our Services',
       subtitle:
-        'Explore our comprehensive services focused on empowering enterprises through frontend development',
+        'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation',
     },
     {
       key: 'insights',

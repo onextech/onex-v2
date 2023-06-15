@@ -15,9 +15,9 @@ export interface EcosystemPageProps {
 
 const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
   const { ecosystem } = props
-  const { site, routeConfig } = useLayout()
-  const { overline, sections } = ecosystem || {}
-  const { summary, benefits, features, checklist, faqs, cta } = sections || {}
+  const { routeConfig } = useLayout()
+  const { sections } = ecosystem || {}
+  const { benefits, cta } = sections || {}
 
   return (
     <Blocks

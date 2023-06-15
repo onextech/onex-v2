@@ -25,7 +25,7 @@ export interface DigitalPageProps {
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientHighlights } = useLayout()
+  const { site, clientLogos } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -67,7 +67,7 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Transform Your Enterprise's <br /> Marketing Landscape
+              Transform Your Enterprise&apos;s <br /> Marketing Landscape
             </>
           ),
           subtitle:
