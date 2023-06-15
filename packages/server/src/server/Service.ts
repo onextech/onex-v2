@@ -4,11 +4,11 @@ import {
   getCategoryFromCrudItem,
   getRelatedCrudItemsByTagTitle,
 } from '@gravis-os/utils'
+import dayjs from 'dayjs'
 import getDynamicPage from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import { fetchSite } from './Site'
-import dayjs from 'dayjs'
 
 const { MOCK_KEY } = process.env
 
@@ -33,13 +33,14 @@ export const ServiceDetail = {
     )
     const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
       ({ category_id }) => category_id === service?.category_id
-    ).filter(
-      (item) => item.title !== service?.title
-    ).slice(0,3)
+    )
+      .filter((item) => item.title !== service?.title)
+      .slice(0, 3)
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY]
-        .filter(({ is_active }) => is_active)
-        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
+        ({ published_at }) =>
+          published_at && dayjs(published_at).isBefore(dayjs())
+      ),
       service?.title
     ).slice(0, 3)
 
