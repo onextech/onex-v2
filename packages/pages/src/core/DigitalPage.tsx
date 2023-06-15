@@ -1,19 +1,17 @@
 import React from 'react'
-import { Block, Blocks } from '@gravis-os/landing'
+import { Blocks } from '@gravis-os/landing'
 import {
   renderClientLogosImageMarqueeBlock,
   renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderTechnologysBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderCtaBlock,
-  renderClientTestimonialSliderBlock,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
+import { Page, Post, Showcase, Industry } from '@onex/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {
@@ -26,7 +24,7 @@ export interface DigitalPageProps {
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientHighlights } = useLayout()
+  const { site, clientLogos } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -68,11 +66,11 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Transform Your Enterprise's <br /> Marketing Landscape
+              Transform Your Enterprise&apos;s <br /> Marketing Landscape
             </>
           ),
           subtitle:
-            'Our transformative digital marketing solutions redefine your enterprise\'s marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.',
+            "Our transformative digital marketing solutions redefine your enterprise\'s marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),

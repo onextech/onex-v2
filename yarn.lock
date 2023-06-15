@@ -1629,10 +1629,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.35.0.tgz#b7569632b0b788a0ca0e438235154e45d42813a7"
   integrity sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==
 
-"@gravis-os/analytics@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.0.4.tgz#b4ca68040751c4002ac765ecd7c1a302451f576f"
-  integrity sha512-LNWOVvIZOow+8Z1KiXUf/UNc+fFHCHA+MIFIymKLpat8x2WWFFn+fqybbnf8XllCNSEeaOSO+5Egoa3tQwm++Q==
+"@gravis-os/analytics@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.1.0.tgz#701e7d95ca6414399b15e506fd6cf9ec3d6b0a45"
+  integrity sha512-kpPa3kJqbZe5HlrgVzAeJxAnOTde5d0tiurfGbNj3OQVXtLT7pVwgVn1+go29NdN1UHnshmDwFg+FhMAijddUg==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1667,7 +1667,7 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*", "@gravis-os/fields@^0.1.1":
+"@gravis-os/fields@*", "@gravis-os/fields@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.1.2.tgz#753e0d26751c808dd637faafd124784c6c29e6d9"
   integrity sha512-9Yw6sQ1sj41dTm+mK0Gw23T1pZxDe6nBndMCwnDJndzmKFmHscsMz4e51kO2slPQhTyC3Qx2Ufx/0MtjUJVVZg==
@@ -1699,10 +1699,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/form@^0.0.113":
-  version "0.0.113"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.113.tgz#66ce4332c3390e6e5c59f3221771b1374e7bd74d"
-  integrity sha512-46iK/0VRi8g4Od2RU+dr9HC4vupfZdk7x280W5HqfFDkdupVIh6F/YMfJHjdXA+esjb1pqRuxeAKCQsatqnb6Q==
+"@gravis-os/form@^0.0.114":
+  version "0.0.114"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.114.tgz#7acc2290f3785f1329f51a9476f3c078623edc97"
+  integrity sha512-+3iwyrN+1iYKKQL0AKZz/6VlxrO0YaAD90YH7jMJJbS7HZPGIltRR362bTJW/4m3gvOUKQ1xKUV7d8Yx00lCKQ==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1734,10 +1734,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/query@^0.0.28":
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.28.tgz#d4e1703ffb8db7d24340e5679fcc09522808539f"
-  integrity sha512-Qqpn3g5atc+yCb2dTxPGMJIXcA1vmPo7H8XlQTScBT0tm3IWYk3j1xQestXK4ZoxBMLgmJ5UAdXtTYn388WObQ==
+"@gravis-os/query@^0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.32.tgz#8220662fbe8752d5f995eee42394a3ba55347344"
+  integrity sha512-BJdi3S3e2Y8SuZg3TctqkeT+6KCEiey2/GB4fDF+xxuloGITKXunAhO5iY1Ezx1+ugseUVwqSRRQesyzeg1dzA==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1789,7 +1789,7 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.1.1":
+"@gravis-os/ui@*", "@gravis-os/ui@^0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.1.4.tgz#1d9e419f98239647d533b2958a6c56b89827664e"
   integrity sha512-SXy+NZ3JzQY7xtfNKTcPuVAIG+PAinCmxCBRGd45dkjDv6i2RCcbrIbvhttyZeRBq2wiS5USc1rtaX4/4MQ6Ow==

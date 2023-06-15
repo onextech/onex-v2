@@ -1,10 +1,10 @@
 import { ClientTestimonial } from '@onex/types'
-import { Block, BlockProps, Blocks } from '@gravis-os/landing'
+import { Block, BlockProps } from '@gravis-os/landing'
 import { Slider } from '@gravis-os/ui'
+import { useMediaQuery, useTheme } from '@mui/material'
 import React from 'react'
 import renderClientTestimonialSliderBlockItem from './renderClientTestimonialSliderBlockItem'
 import 'keen-slider/keen-slider.min.css'
-import { useMediaQuery, useTheme } from '@mui/material'
 
 export interface RenderClientTestimonialSliderBlockProps
   extends Omit<BlockProps, 'items' | 'title'> {
@@ -16,12 +16,7 @@ export interface RenderClientTestimonialSliderBlockProps
 const renderClientTestimonialSliderBlock = (
   props: RenderClientTestimonialSliderBlockProps
 ) => {
-  const {
-    title = '',
-    subtitle = '',
-    items,
-    ...rest
-  } = props
+  const { title = '', subtitle = '', items, ...rest } = props
 
   const theme = useTheme()
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'), { noSsr: true })
@@ -51,12 +46,15 @@ const renderClientTestimonialSliderBlock = (
             loop={!isDesktop}
             arrows={!isDesktop}
             sx={{ mt: { xs: 0, md: 4 } }}
-            options={{ slides: { perView: isDesktop ? 3 : 1, spacing: 12 }}}
+            options={{ slides: { perView: isDesktop ? 3 : 1, spacing: 12 } }}
             dotProps={{ color: 'secondary.main' }}
             height={{ md: 450 }}
-            items={items.map(item => {
+            items={items.map((item) => {
               return (
-                <Block sx={ { padding: 4, backgroundColor: 'background.paper' } } items={renderClientTestimonialSliderBlockItem({ item })}/>
+                <Block
+                  sx={{ padding: 4, backgroundColor: 'background.paper' }}
+                  items={renderClientTestimonialSliderBlockItem({ item })}
+                />
               )
             })}
           />

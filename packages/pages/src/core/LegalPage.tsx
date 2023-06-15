@@ -26,12 +26,20 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
             {
               type: 'h2',
               title,
-              titleProps: { component: 'h1' }
+              titleProps: { component: 'h1' },
             },
             html && {
               type: 'html',
               title: html,
-              titleProps: { color: 'text.primary', sx: { mt: 5 } },
+              titleProps: {
+                color: 'text.primary',
+                sx: {
+                  '& p': {
+                    mt: 0,
+                    mb: 3,
+                  },
+                },
+              },
             },
           ],
         },

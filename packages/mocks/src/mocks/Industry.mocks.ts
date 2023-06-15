@@ -259,19 +259,22 @@ export const MOCK_GROUP_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is digital transformation important for finance companies?',
+            title:
+              'Why is digital transformation important for finance companies?',
             content:
               'Digital transformation enables finance companies to streamline operations, improve customer experiences, and make data-driven decisions. It can also enhance security, compliance, and scalability, key aspects in the financial sector.',
           },
           {
             key: 'faqs-2',
-            title: 'What type of software solutions do you provide for finance companies?',
+            title:
+              'What type of software solutions do you provide for finance companies?',
             content:
               'We offer a wide range of software solutions, including custom software development, data analytics solutions, security and compliance, cloud solutions, AI and Machine Learning integration, and system integration.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the security and compliance of the software you develop?',
+            title:
+              'How do you ensure the security and compliance of the software you develop?',
             content:
               'We follow stringent security protocols and best practices in software development. We also ensure our software solutions comply with all relevant regulations and standards in the financial industry.',
           },
@@ -355,19 +358,21 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             key: 'faqs-2',
-            title: 'What types of software solutions do you offer for government agencies?',
+            title:
+              'What types of software solutions do you offer for government agencies?',
             content:
               'We offer a range of software solutions tailored to the specific needs of government agencies, including citizen engagement platforms, e-governance systems, data management and analytics solutions, workflow automation tools, and secure government portals.',
           },
           {
             key: 'faqs-3',
-            title: 'Do you have experience working with government compliance and regulations?',
+            title:
+              'Do you have experience working with government compliance and regulations?',
             content:
               'Yes, we have extensive experience working with government compliance and regulations. We understand the unique requirements and standards that government agencies must adhere to, and we ensure that our solutions meet the necessary compliance and security standards.',
           },
         ],
       },
-    }
+    },
   },
   {
     title: 'Maritime',
@@ -445,18 +450,20 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             key: 'faqs-2',
-            title: 'How can technology improve operations in the maritime sector?',
+            title:
+              'How can technology improve operations in the maritime sector?',
             content:
               'Technology can help improve maritime operations by automating manual processes, enhancing vessel performance monitoring, optimizing route planning, enabling real-time data sharing and collaboration, and providing data-driven insights for better decision-making.',
           },
           {
             key: 'faqs-3',
-            title: 'What software solutions do you offer for the maritime industry?',
+            title:
+              'What software solutions do you offer for the maritime industry?',
             content:
               'We offer a range of software solutions tailored to the maritime industry, including fleet management systems, vessel tracking and monitoring solutions, port management software, maritime analytics platforms, supply chain optimization tools, and compliance management systems.',
           },
         ],
-      }
+      },
     },
   },
   {
@@ -535,19 +542,21 @@ export const MOCK_GROUP_INDUSTRYS = [
           },
           {
             key: 'faqs-2',
-            title: 'How can technology improve operations in the real estate sector?',
+            title:
+              'How can technology improve operations in the real estate sector?',
             content:
               'Technology can improve real estate operations by automating manual processes, centralizing property and tenant data, streamlining lease administration, enabling online property listings and transactions, facilitating customer self-service, and providing data-driven insights for better decision-making.',
           },
           {
             key: 'faqs-3',
-            title: 'What software solutions do you offer for the real estate industry?',
+            title:
+              'What software solutions do you offer for the real estate industry?',
             content:
               'We offer a range of software solutions tailored to the real estate industry, including real estate management systems, property analytics platforms, transaction management software, customer relationship management (CRM) tools, property listing portals, and investment analysis platforms.',
           },
         ],
-      }
-    }
+      },
+    },
   },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
@@ -555,9 +564,9 @@ export const MOCK_GROUP_INDUSTRYS = [
     ...item,
     sections: {
       ...item.sections,
-      checklist:
-      {
-        subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      checklist: {
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
@@ -567,7 +576,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         subtitle:
           '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
       },
-    }
+    },
   })
 })
 
@@ -654,19 +663,22 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a high-quality user interface important for my finance business?',
+            title:
+              'Why is a high-quality user interface important for my finance business?',
             content:
               'A high-quality user interface is crucial for finance businesses as it enhances user experience, improves productivity, and enables users to make informed financial decisions. It helps streamline complex workflows, visualize financial data effectively, and ensure data accuracy and security.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your company for the finance industry?',
+            title:
+              'What are the benefits of working with your company for the finance industry?',
             content:
               'By partnering with our software development company, you can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the finance industry. We prioritize data security, performance optimization, and scalability to meet the unique demands of finance applications. Our solutions empower your enterprise to make data-driven decisions, enhance operational efficiency, and deliver a superior user experience.',
           },
           {
             key: 'faqs-3',
-            title: 'How do we approach frontend software engineering and dashboard development for finance applications?',
+            title:
+              'How do we approach frontend software engineering and dashboard development for finance applications?',
             content:
               'Our approach involves a deep understanding of finance domain knowledge, collaboration with stakeholders, and leveraging the latest frontend technologies. We conduct thorough user research to identify user needs and pain points, develop intuitive interfaces with seamless navigation and responsive design, implement robust data visualization techniques, and ensure compliance with industry standards and regulations. Throughout the development process, we prioritize user testing and feedback to deliver user interfaces that align with your business objectives and drive financial success.',
           },
@@ -752,19 +764,22 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a high-quality user interface important for government organisations?',
+            title:
+              'Why is a high-quality user interface important for government organisations?',
             content:
               'A high-quality user interface is crucial for government organisations as it enhances citizen experience, promotes transparency, and facilitates access to government services. It improves engagement, fosters trust, and enables efficient interaction with government systems and platforms.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your company for government organisations?',
+            title:
+              'What are the benefits of working with your company for government organisations?',
             content:
               'By partnering with our software development company, government organisations can benefit from our expertise in frontend software engineering and dashboard development tailored specifically for the public sector. We prioritize security, compliance, and accessibility to meet government standards and regulations. Our solutions empower government entities to deliver citizen-centric services, leverage data-driven insights, and enhance overall governance.',
           },
           {
             key: 'faqs-3',
-            title: 'How do we approach frontend software engineering and dashboard development for government organisations?',
+            title:
+              'How do we approach frontend software engineering and dashboard development for government organisations?',
             content:
               'Our approach involves in-depth collaboration with government stakeholders to understand their unique requirements and objectives. We prioritize usability, accessibility, and data visualization to create user interfaces and dashboards that cater to diverse user groups. We follow industry best practices, adhere to government standards, conduct thorough security assessments, and ensure compliance with relevant regulations. Our solutions focus on enhancing service delivery, promoting open data initiatives, and driving digital transformation in the government sector.',
           },
@@ -854,19 +869,22 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is software development important for the maritime industry?',
+            title:
+              'Why is software development important for the maritime industry?',
             content:
               'Software development plays a crucial role in optimizing maritime operations, enhancing safety, efficiency, and decision-making. It allows for streamlined processes, data analysis, and real-time monitoring, resulting in improved productivity and cost-effectiveness in the maritime industry.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your company for the maritime industry?',
+            title:
+              'What are the benefits of working with your company for the maritime industry?',
             content:
               'By partnering with our software development company, maritime businesses can leverage our expertise in frontend software engineering and dashboard development to drive digital transformation. Our solutions enable real-time data visualization, predictive analytics, and process automation, resulting in improved operational efficiency, enhanced safety measures, better fleet management, and increased profitability.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the security of maritime data in your software solutions?',
+            title:
+              'How do you ensure the security of maritime data in your software solutions?',
             content:
               'We understand the importance of data security in the maritime industry. We implement robust security measures to protect maritime data from unauthorized access, breaches, and data loss. This includes encryption, access controls, and multi-factor authentication. We also adhere to industry best practices and compliance standards to ensure the highest level of security. Regular security audits and updates are conducted to identify and address any vulnerabilities. Our goal is to provide maritime organisations with secure software solutions that safeguard their data and maintain the integrity of their operations.',
           },
@@ -956,26 +974,29 @@ export const MOCK_TECH_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is software development important for the real estate industry?',
+            title:
+              'Why is software development important for the real estate industry?',
             content:
               'Software development plays a vital role in the real estate industry by enabling automation, improving efficiency, and enhancing customer experiences. It allows real estate businesses to streamline processes, manage data effectively, and leverage technology to gain a competitive edge in the market.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of working with your company for the real estate industry?',
+            title:
+              'What are the benefits of working with your company for the real estate industry?',
             content:
               'By partnering with our company, real estate businesses can leverage our expertise in frontend software engineering and dashboard development to unlock the full potential of their operations. Our solutions enable seamless property management, automated workflows, real-time analytics, and personalized tenant experiences. This results in improved operational efficiency, better tenant engagement, optimized resource allocation, and increased profitability.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure the security of sensitive real estate data?',
+            title:
+              'How do you ensure the security of sensitive real estate data?',
             content:
               'We prioritize the security of sensitive real estate data throughout our software development process. We implement robust security measures, including encryption, access controls, and regular security audits. Additionally, we adhere to industry best practices and comply with relevant data protection regulations to ensure the confidentiality, integrity, and availability of your data.',
           },
         ],
       },
     },
-  }
+  },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
@@ -1174,13 +1195,15 @@ export const MOCK_DESIGN_INDUSTRYS = [
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of your UX workshops for government teams?',
+            title:
+              'What are the benefits of your UX workshops for government teams?',
             content:
               'Our UX workshops are designed to help government teams understand the principles of user experience design. This can enhance their ability to deliver services that meet the public’s needs, improve team collaboration, and drive innovation in public service delivery.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you approach product design for government services?',
+            title:
+              'How do you approach product design for government services?',
             content:
               'Our approach to product design is user-centric. We start by understanding the specific needs and behaviors of the target user group, then design products that effectively meet those needs. Our designs focus on enhancing user engagement, efficiency, and accessibility.',
           },
@@ -1207,7 +1230,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
     // Sections
     sections: {
       summary: {
-        title: 'Navigating the digital transformation in maritime with user-centric design.',
+        title:
+          'Navigating the digital transformation in maritime with user-centric design.',
         items: [
           {
             title:
@@ -1282,7 +1306,8 @@ export const MOCK_DESIGN_INDUSTRYS = [
           },
           {
             key: 'faqs-3',
-            title: 'What is your approach to product design for maritime services?',
+            title:
+              'What is your approach to product design for maritime services?',
             content:
               'Our approach to product design is anchored in understanding the unique needs of the maritime industry and its users. We design products that streamline maritime operations, enhance user engagement, and are accessible across devices.',
           },
@@ -1384,14 +1409,15 @@ export const MOCK_DESIGN_INDUSTRYS = [
           },
           {
             key: 'faqs-3',
-            title: 'What is your approach to product design for real estate services?',
+            title:
+              'What is your approach to product design for real estate services?',
             content:
               'We focus on understanding the unique needs and challenges of the real estate industry. Our product designs aim to improve user engagement, process efficiency, and accessibility across all devices.',
           },
         ],
       },
     },
-  }
+  },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
@@ -1407,9 +1433,10 @@ export const MOCK_DESIGN_INDUSTRYS = [
           '{appTitle} collaborates with enterprises to create captivating and intuitive UI/UX designs for web and mobile interfaces. We excel at translating complex ideas into visually appealing and user-friendly interfaces, elevating your digital presence and driving customer satisfaction. Together, we create designs that leave a lasting impression and set your enterprise apart.',
       },
       checklist: {
-        subtitle: 'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.'
-      }
-    }
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert design services tailored to drive your business growth.',
+      },
+    },
   })
 })
 
@@ -1496,7 +1523,8 @@ export const MOCK_DATA_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why are data science and AI important for the finance industry?',
+            title:
+              'Why are data science and AI important for the finance industry?',
             content:
               'Data science and AI are transforming the finance industry. They enable enterprises to uncover insights, improve decision-making, automate processes, manage risks, and drive innovation. Leveraging these technologies is key to staying competitive in today’s digital age.',
           },
@@ -1598,7 +1626,8 @@ export const MOCK_DATA_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why are data science and AI important for the public sector?',
+            title:
+              'Why are data science and AI important for the public sector?',
             content:
               'Data science and AI have the potential to revolutionize the public sector. They can help government organisations make more informed decisions, improve service delivery, and drive transparency and efficiency. Leveraging these technologies is key to meeting the demands of today’s digital age.',
           },
@@ -1610,7 +1639,8 @@ export const MOCK_DATA_INDUSTRYS = [
           },
           {
             key: 'faqs-3',
-            title: 'How do you approach data science and AI in the public sector?',
+            title:
+              'How do you approach data science and AI in the public sector?',
             content:
               'We start by understanding your organisation’s specific needs and goals. We then design and implement data science and AI solutions tailored to these requirements. This may involve predictive analytics to inform policy decisions, AI automation to improve service delivery, or AI strategy consulting to foster innovation and efficiency.',
           },
@@ -1700,7 +1730,8 @@ export const MOCK_DATA_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why are data science and AI important for the maritime industry?',
+            title:
+              'Why are data science and AI important for the maritime industry?',
             content:
               'Data science and AI have the potential to significantly enhance operations in the maritime industry. They can enable predictive maintenance, optimize logistics, improve decision-making, and drive overall operational efficiency. As the maritime industry continues to evolve, these technologies will be key to staying competitive.',
           },
@@ -1712,7 +1743,8 @@ export const MOCK_DATA_INDUSTRYS = [
           },
           {
             key: 'faqs-3',
-            title: 'How do you approach data science and AI in the maritime industry?',
+            title:
+              'How do you approach data science and AI in the maritime industry?',
             content:
               'We begin by understanding your organisation’s unique needs and objectives. We then design and implement tailored data science and AI solutions to meet these needs. This may involve using machine learning for predictive maintenance, AI for logistics management, or data analytics for decision support.',
           },
@@ -1802,26 +1834,29 @@ export const MOCK_DATA_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why are data science and AI important for the real estate industry?',
+            title:
+              'Why are data science and AI important for the real estate industry?',
             content:
               'Data science and AI provide tools for the real estate industry to make better, data-driven decisions, predict trends, personalize customer experiences, and improve operational efficiency. As the industry becomes increasingly digital, these technologies are becoming essential.',
           },
           {
             key: 'faqs-2',
-            title: 'What are the benefits of your Data Science & AI solutions for my real estate business?',
+            title:
+              'What are the benefits of your Data Science & AI solutions for my real estate business?',
             content:
               'Our solutions can help your real estate business in several ways. This includes generating accurate property valuations, predicting industry trends, creating detailed customer profiles for targeted marketing, improving decision-making, and enhancing overall operational efficiency. We ensure that our solutions meet your specific business needs and objectives.',
           },
           {
             key: 'faqs-3',
-            title: 'How do you approach data science and AI in the real estate industry?',
+            title:
+              'How do you approach data science and AI in the real estate industry?',
             content:
               'We start by understanding your specific business needs and objectives. Then we design and implement tailored data science and AI solutions to address these needs. This could involve using machine learning for predictive analytics, AI for customer profiling, or data analytics for strategic decision-making. Our team collaborates closely with your organisation to ensure our solutions deliver maximum value.',
           },
         ],
       },
     },
-  }
+  },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
@@ -1829,7 +1864,8 @@ export const MOCK_DATA_INDUSTRYS = [
     sections: {
       ...item.sections,
       checklist: {
-        subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.'
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.',
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
@@ -1837,9 +1873,9 @@ export const MOCK_DATA_INDUSTRYS = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data's potential and excel in the digital landscape.",
       },
-    }
+    },
   })
 })
 
@@ -1926,19 +1962,22 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is a comprehensive digital strategy important for finance businesses?',
+            title:
+              'Why is a comprehensive digital strategy important for finance businesses?',
             content:
               'A comprehensive digital strategy is crucial for finance businesses to stay competitive and meet the evolving needs of customers. It helps in establishing a strong digital presence, targeting the right audience, driving leads and conversions, and optimizing business operations for better efficiency and growth.',
           },
           {
             key: 'faqs-2',
-            title: 'What benefits can B2B Digital Marketing bring to finance businesses?',
+            title:
+              'What benefits can B2B Digital Marketing bring to finance businesses?',
             content:
               'B2B Digital Marketing enables finance businesses to reach and engage their target audience effectively. It helps in generating high-quality leads, building brand awareness and credibility, nurturing client relationships, and driving business growth through strategic digital campaigns tailored for B2B audiences.',
           },
           {
             key: 'faqs-3',
-            title: 'How can advanced web development and analytics benefit finance businesses?',
+            title:
+              'How can advanced web development and analytics benefit finance businesses?',
             content:
               'Advanced web development and analytics provide finance businesses with powerful tools to create exceptional online experiences, optimize processes, and gain valuable insights from data. It allows for the development of secure, scalable, and user-friendly web solutions, while analytics helps in measuring performance, identifying trends, and making data-driven decisions for continuous improvement and competitive advantage.',
           },
@@ -1987,13 +2026,13 @@ export const MOCK_DIGITAL_INDUSTRYS = [
             fa_icon: 'fa-briefcase',
             title: 'Enterprise digital strategy',
             subtitle:
-              'We develop comprehensive digital strategies that align with government organizations\' objectives, ensuring effective utilization of digital technologies and resources.',
+              "We develop comprehensive digital strategies that align with government organizations' objectives, ensuring effective utilization of digital technologies and resources.",
           },
           {
             fa_icon: 'fa-chart-line',
             title: 'B2B Digital Marketing',
             subtitle:
-              "We help government agencies establish strong digital presences, build effective partnerships, and leverage digital marketing techniques to engage with businesses and stakeholders.",
+              'We help government agencies establish strong digital presences, build effective partnerships, and leverage digital marketing techniques to engage with businesses and stakeholders.',
           },
           {
             fa_icon: 'fa-laptop-code',
@@ -2028,13 +2067,15 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is digital transformation important for government organizations?',
+            title:
+              'Why is digital transformation important for government organizations?',
             content:
               'Digital transformation is crucial for government organizations to enhance citizen services, improve operational efficiency, and drive innovation. It enables streamlined processes, data-driven decision-making, and effective engagement with citizens and businesses.',
           },
           {
             key: 'faqs-2',
-            title: 'How can your Government services support our digital transformation journey?',
+            title:
+              'How can your Government services support our digital transformation journey?',
             content:
               'Our Government services provide specialized expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics. We collaborate closely with government organizations to develop tailored solutions that address their unique challenges and goals, enabling successful digital transformation.',
           },
@@ -2130,19 +2171,22 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is digital marketing important for the maritime industry?',
+            title:
+              'Why is digital marketing important for the maritime industry?',
             content:
               'Digital marketing plays a crucial role in the maritime industry as it enables businesses to expand their reach, engage with key stakeholders, and drive business growth. It allows maritime companies to showcase their expertise, build brand awareness, and connect with potential customers and partners in a highly competitive digital landscape.',
           },
           {
             key: 'faqs-2',
-            title: 'How can B2B Digital Marketing benefit my maritime business?',
+            title:
+              'How can B2B Digital Marketing benefit my maritime business?',
             content:
               'B2B Digital Marketing is essential for maritime businesses as it helps establish strong relationships with industry partners, suppliers, and other key stakeholders. It enables you to effectively communicate your value proposition, generate qualified leads, and nurture business opportunities in the B2B space. With targeted B2B marketing strategies, you can enhance brand reputation, increase market visibility, and drive revenue growth in the maritime industry.',
           },
           {
             key: 'faqs-3',
-            title: 'What are the advantages of advanced web development for the maritime industry?',
+            title:
+              'What are the advantages of advanced web development for the maritime industry?',
             content:
               'Advanced web development provides numerous advantages for the maritime industry. It allows you to create immersive digital experiences, streamline business processes, and enhance customer engagement. With responsive and user-friendly web interfaces, you can attract and retain customers, facilitate seamless transactions, and showcase your services and solutions effectively. Advanced web development also enables integration with other systems and platforms, optimizing operational efficiency and enhancing overall business performance in the maritime industry.',
           },
@@ -2197,7 +2241,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
             fa_icon: 'fa-chart-line',
             title: 'B2B Digital Marketing',
             subtitle:
-              "We specialize in B2B digital marketing strategies that target key stakeholders in the real estate industry, including developers, investors, and property managers.",
+              'We specialize in B2B digital marketing strategies that target key stakeholders in the real estate industry, including developers, investors, and property managers.',
           },
           {
             fa_icon: 'fa-laptop-code',
@@ -2232,7 +2276,8 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is digital marketing important for real estate professionals?',
+            title:
+              'Why is digital marketing important for real estate professionals?',
             content:
               'Digital marketing plays a critical role in the real estate industry by helping professionals reach a wider audience, generate leads, and build brand awareness. It enables targeted marketing campaigns, enhances customer engagement, and provides valuable insights for informed decision-making.',
           },
@@ -2251,16 +2296,16 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         ],
       },
     },
-  }
+  },
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
     ...item,
     sections: {
       ...item.sections,
-      checklist:
-      {
-        subtitle: 'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.'
+      checklist: {
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert consulting and software development services tailored to drive your business growth.',
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
@@ -2270,7 +2315,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         subtitle:
           '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
       },
-    }
+    },
   })
 })
 
@@ -2336,7 +2381,7 @@ export const MOCK_FINX_INDUSTRYS = [
               'Generate accurate compliance reports and gain valuable insights into regulatory trends with our reporting and analytics solutions.',
           },
           {
-            fa_icon: 'fa-shield-alt',
+            fa_icon: 'fa-check-double',
             title: 'KYC/AML Solutions',
             subtitle:
               'Streamline customer due diligence and anti-money laundering processes with our KYC/AML solutions.',
@@ -2362,7 +2407,8 @@ export const MOCK_FINX_INDUSTRYS = [
           },
           {
             key: 'faqs-2',
-            title: 'How can your Regulatory Compliance Automation solutions help businesses?',
+            title:
+              'How can your Regulatory Compliance Automation solutions help businesses?',
             content:
               'Our Regulatory Compliance Automation solutions utilize advanced technologies such as artificial intelligence and machine learning to automate compliance processes. By automating repetitive tasks, ensuring data accuracy, and providing real-time monitoring and alerts, our solutions enable businesses to streamline compliance efforts, reduce manual errors, and stay up to date with regulatory changes.',
           },
@@ -2395,7 +2441,8 @@ export const MOCK_FINX_INDUSTRYS = [
     // Sections
     sections: {
       summary: {
-        title: 'Revolutionizing the Insurance Industry through Digital Transformation.',
+        title:
+          'Revolutionizing the Insurance Industry through Digital Transformation.',
         items: [
           {
             title:
@@ -2470,7 +2517,8 @@ export const MOCK_FINX_INDUSTRYS = [
           },
           {
             key: 'faqs-3',
-            title: 'How do you ensure data security and privacy in your solutions?',
+            title:
+              'How do you ensure data security and privacy in your solutions?',
             content:
               'Data security and privacy are paramount in our solutions. We adhere to industry best practices and implement robust security measures to protect sensitive information. We also comply with relevant data protection regulations to ensure privacy and confidentiality.',
           },
@@ -2540,7 +2588,7 @@ export const MOCK_FINX_INDUSTRYS = [
               'Leverage AI-driven robo-advisory services to deliver personalized investment advice and improve client engagement.',
           },
           {
-            fa_icon: 'fa-chart-line',
+            fa_icon: 'fa-exclamation-triangle',
             title: 'Risk Management',
             subtitle:
               'Mitigate risks and optimize risk management strategies with our data-driven risk management solutions.',
@@ -2560,13 +2608,15 @@ export const MOCK_FINX_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why should banks and asset firms invest in wealthtech solutions?',
+            title:
+              'Why should banks and asset firms invest in wealthtech solutions?',
             content:
               'Wealthtech solutions offer numerous benefits for banks and asset firms, including increased operational efficiency, improved customer experiences, enhanced risk management, and better compliance with regulatory requirements. By embracing wealthtech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their clients.',
           },
           {
             key: 'faqs-2',
-            title: 'How can your Digital Transformation Consulting services help banks and asset firms?',
+            title:
+              'How can your Digital Transformation Consulting services help banks and asset firms?',
             content:
               'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complexities of digital disruption. We help identify strategic goals, assess existing systems and processes, and design customized digital solutions that streamline operations, improve customer engagement, and drive business growth. Our expertise in technology adoption and change management ensures a smooth and successful digital transformation journey.',
           },
@@ -2662,13 +2712,15 @@ export const MOCK_FINX_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why should banks and asset firms invest in paytech solutions?',
+            title:
+              'Why should banks and asset firms invest in paytech solutions?',
             content:
               'Paytech solutions offer numerous benefits for banks and asset firms, including improved payment processing efficiency, enhanced security and fraud prevention, seamless mobile payments, expanded global reach, and valuable payment insights. By embracing paytech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their customers.',
           },
           {
             key: 'faqs-2',
-            title: 'How can your Digital Transformation Consulting services help banks and asset firms?',
+            title:
+              'How can your Digital Transformation Consulting services help banks and asset firms?',
             content:
               'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complex landscape of digital transformation. We provide strategic guidance, technology expertise, and change management support to help organizations embrace digital technologies, optimize processes, and enhance customer experiences. With our consulting services, banks and asset firms can unlock new growth opportunities and achieve sustainable success in the digital era.',
           },
@@ -2684,8 +2736,8 @@ export const MOCK_FINX_INDUSTRYS = [
   },
   {
     // Hero
-    title: 'Fintech Solutions',
-    slug: 'fintech-solutions',
+    title: 'Fintech',
+    slug: 'fintech',
     fa_icon: 'fa-money-bill-wave',
     is_featured: true,
     subtitle:
@@ -2701,7 +2753,8 @@ export const MOCK_FINX_INDUSTRYS = [
     // Sections
     sections: {
       summary: {
-        title: 'Drive Digital Transformation in the Banking and Asset Management Industry.',
+        title:
+          'Drive Digital Transformation in the Banking and Asset Management Industry.',
         items: [
           {
             title:
@@ -2764,7 +2817,8 @@ export const MOCK_FINX_INDUSTRYS = [
         items: [
           {
             key: 'faqs-1',
-            title: 'Why is digital transformation important for banks and asset firms?',
+            title:
+              'Why is digital transformation important for banks and asset firms?',
             content:
               'Digital transformation is essential for banks and asset firms to stay competitive and meet the evolving needs of customers. It enables organizations to streamline operations, enhance customer experiences, and leverage data-driven insights for informed decision-making. By embracing digital technologies, banks and asset firms can unlock new growth opportunities, improve operational efficiency, and drive innovation in the financial industry.',
           },
@@ -2772,11 +2826,12 @@ export const MOCK_FINX_INDUSTRYS = [
             key: 'faqs-2',
             title: 'What makes our Fintech Solutions unique?',
             content:
-              'Our Fintech Solutions are designed specifically for the banking and asset management industry, addressing the industry\'s unique challenges and requirements. We combine industry expertise with technological innovation to deliver comprehensive solutions that drive digital transformation and enable organizations to thrive in the digital era. Our solutions are scalable, secure, and customizable, ensuring they align with the specific needs and objectives of each client.',
+              "Our Fintech Solutions are designed specifically for the banking and asset management industry, addressing the industry's unique challenges and requirements. We combine industry expertise with technological innovation to deliver comprehensive solutions that drive digital transformation and enable organizations to thrive in the digital era. Our solutions are scalable, secure, and customizable, ensuring they align with the specific needs and objectives of each client.",
           },
           {
             key: 'faqs-3',
-            title: 'How can our Fintech Solutions benefit banks and asset firms?',
+            title:
+              'How can our Fintech Solutions benefit banks and asset firms?',
             content:
               'Our Fintech Solutions offer numerous benefits for banks and asset firms. They streamline operations, automate processes, enhance customer experiences, improve data analysis capabilities, and strengthen risk management and compliance efforts. By leveraging our fintech solutions, banks and asset firms can gain a competitive edge, drive business growth, and adapt to the changing demands of the digital financial landscape.',
           },
@@ -2784,108 +2839,6 @@ export const MOCK_FINX_INDUSTRYS = [
       },
     },
   },
-  {
-    // Hero
-    title: 'Real Estate',
-    slug: 'real-estate',
-    fa_icon: 'fa-map',
-    is_featured: true,
-    subtitle:
-      'Partner with industry experts to maximize your real estate opportunities and drive growth.',
-    hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900/',
-    hero_alt: 'Real Estate',
-    // Seo
-    seo: {
-      title: 'Real Estate',
-      description:
-        'This page is dedicated to helping you maximize your real estate opportunities and drive growth.',
-    },
-    // Sections
-    sections: {
-      summary: {
-        title: 'Maximize your real estate opportunities with our expertise.',
-        items: [
-          {
-            title:
-              'In the competitive real estate industry, having a strategic digital presence is crucial for success. At our Real Estate Service, we specialize in partnering with real estate professionals to develop and execute effective digital strategies that drive growth and maximize opportunities.',
-          },
-          {
-            title:
-              'We understand the unique challenges and opportunities that the real estate market presents. Our team of experts combines industry knowledge with digital expertise to provide tailored solutions that help you reach your goals. Whether you are a real estate agent, developer, or investor, we can help you leverage the power of digital marketing to generate leads, enhance your brand, and build a strong online presence.',
-          },
-        ],
-      },
-      features: {
-        overline: 'What we do',
-        title: 'Our Real Estate Capabilities',
-        subtitle:
-          'We offer a range of specialized services designed to meet the unique needs of the real estate industry.',
-        items: [
-          {
-            fa_icon: 'fa-briefcase',
-            title: 'Enterprise digital strategy',
-            subtitle:
-              'We develop customized digital strategies that align with your business objectives and help you navigate the competitive real estate landscape.',
-          },
-          {
-            fa_icon: 'fa-chart-line',
-            title: 'B2B Digital Marketing',
-            subtitle:
-              "We specialize in B2B digital marketing strategies that target key stakeholders in the real estate industry, including developers, investors, and property managers.",
-          },
-          {
-            fa_icon: 'fa-laptop-code',
-            title: 'Advanced web development & analytics',
-            subtitle:
-              'Our team of skilled developers and analysts create cutting-edge websites and provide advanced analytics solutions to track performance and optimize your online presence.',
-          },
-          {
-            fa_icon: 'fa-users',
-            title: 'Lead generation',
-            subtitle:
-              'We employ targeted lead generation strategies to attract potential buyers, sellers, and investors, helping you expand your client base and increase sales.',
-          },
-          {
-            fa_icon: 'fa-bullhorn',
-            title: 'Brand management',
-            subtitle:
-              'We develop and execute comprehensive brand management strategies that enhance your reputation, increase brand visibility, and differentiate you from competitors.',
-          },
-          {
-            fa_icon: 'fa-cogs',
-            title: 'Marketing automation',
-            subtitle:
-              'We implement marketing automation tools and processes to streamline your marketing efforts, improve efficiency, and increase ROI.',
-          },
-        ],
-      },
-      faqs: {
-        title: 'FAQs',
-        subtitle:
-          'Find answers to commonly asked questions about our Real Estate Service.',
-        items: [
-          {
-            key: 'faqs-1',
-            title: 'Why is digital marketing important for real estate professionals?',
-            content:
-              'Digital marketing plays a critical role in the real estate industry by helping professionals reach a wider audience, generate leads, and build brand awareness. It enables targeted marketing campaigns, enhances customer engagement, and provides valuable insights for informed decision-making.',
-          },
-          {
-            key: 'faqs-2',
-            title: 'How can your Real Estate Service benefit my business?',
-            content:
-              'Our Real Estate Service offers a comprehensive range of specialized digital marketing solutions tailored to the unique needs of the industry. By partnering with us, you can leverage our expertise to enhance your online presence, attract qualified leads, and stay ahead in a competitive market. We focus on driving measurable results and delivering a strong return on investment for our clients.',
-          },
-          {
-            key: 'faqs-3',
-            title: 'What sets your B2B Digital Marketing apart?',
-            content:
-              'Our B2B Digital Marketing services are specifically designed to target key stakeholders in the real estate industry, such as developers, investors, and property managers. We employ a data-driven approach to create customized strategies that effectively reach and engage these audiences. Our team has extensive experience in B2B marketing, allowing us to deliver impactful campaigns that drive meaningful business outcomes.',
-          },
-        ],
-      },
-    },
-  }
 ].map((item, i) => {
   return merge({}, MOCK_INDUSTRY_PAGE, {
     id: i + 1,
@@ -2893,7 +2846,8 @@ export const MOCK_FINX_INDUSTRYS = [
     sections: {
       ...item.sections,
       checklist: {
-        subtitle: 'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.'
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.',
       },
       cta: {
         hero_src: '/images/about_nodes_above_city.png',
@@ -2901,14 +2855,13 @@ export const MOCK_FINX_INDUSTRYS = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data\'s potential and excel in the digital landscape.',
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data's potential and excel in the digital landscape.",
       },
-    }
+    },
   })
 })
 
-
-export const MOCK_GOVX_INDUSTRYS = MOCK_GROUP_INDUSTRYS
+export const MOCK_GOVX_INDUSTRYS = []
 
 export const MOCK_INDUSTRYS = {
   GROUP: MOCK_GROUP_INDUSTRYS,
