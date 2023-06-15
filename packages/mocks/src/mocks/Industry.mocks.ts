@@ -2381,7 +2381,7 @@ export const MOCK_FINX_INDUSTRYS = [
               'Generate accurate compliance reports and gain valuable insights into regulatory trends with our reporting and analytics solutions.',
           },
           {
-            fa_icon: 'fa-shield-alt',
+            fa_icon: 'fa-check-double',
             title: 'KYC/AML Solutions',
             subtitle:
               'Streamline customer due diligence and anti-money laundering processes with our KYC/AML solutions.',
@@ -2588,7 +2588,7 @@ export const MOCK_FINX_INDUSTRYS = [
               'Leverage AI-driven robo-advisory services to deliver personalized investment advice and improve client engagement.',
           },
           {
-            fa_icon: 'fa-chart-line',
+            fa_icon: 'fa-exclamation-triangle',
             title: 'Risk Management',
             subtitle:
               'Mitigate risks and optimize risk management strategies with our data-driven risk management solutions.',
@@ -2736,8 +2736,8 @@ export const MOCK_FINX_INDUSTRYS = [
   },
   {
     // Hero
-    title: 'Fintech Solutions',
-    slug: 'fintech-solutions',
+    title: 'Fintech',
+    slug: 'fintech',
     fa_icon: 'fa-money-bill-wave',
     is_featured: true,
     subtitle:
