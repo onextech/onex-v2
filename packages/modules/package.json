@@ -7,8 +7,8 @@
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
+    "@gravis-os/landing": "^0.1.2",
     "@gravis-os/analytics": "^0.1.0",
-    "@gravis-os/landing": "^0.1.1",
     "@gravis-os/ui": "^0.1.4",
     "@gravis-os/utils": "^0.1.2"
   }

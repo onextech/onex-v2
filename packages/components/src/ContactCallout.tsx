@@ -33,7 +33,10 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: size === 'medium' ? { xs: 'center', md: 'flex-start' } : 'center',
+                justifyContent:
+                  size === 'medium'
+                    ? { xs: 'center', md: 'flex-start' }
+                    : 'center',
               },
             },
             items: [
@@ -42,16 +45,24 @@ const ContactCallout: React.FC<ContactCalloutProps> = (props) => {
                 title: cta_title,
                 titleProps: {
                   sx: {
-                    textAlign: size === 'medium' ? { xs: 'center', md: 'left' } : 'center'
+                    textAlign:
+                      size === 'medium'
+                        ? { xs: 'center', md: 'left' }
+                        : 'center',
                   },
-                  component: 'h5'
+                  component: 'h5',
                 },
               },
             ],
           },
           {
             md: size === 'medium' ? 4 : 12,
-            boxProps: { sx: { textAlign: size === 'medium' ? { xs: 'center', md: 'right' } : 'center' } },
+            boxProps: {
+              sx: {
+                textAlign:
+                  size === 'medium' ? { xs: 'center', md: 'right' } : 'center',
+              },
+            },
             items: [
               renderContactCalloutButtonBlockItem({ title: cta_button_title }),
             ],

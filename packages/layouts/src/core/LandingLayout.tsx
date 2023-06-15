@@ -29,6 +29,7 @@ export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'headerProps'> {
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
+  footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
@@ -97,12 +98,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'services')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'services'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items?.find(({ key }) => key === 'services')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'services'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -178,12 +183,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'technologies')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'technologies'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items?.find(({ key }) => key === 'technologies')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'technologies'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -253,13 +262,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'industries')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'industries'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title:
-                              site.nav_items?.find(({ key }) => key === 'industries')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'industries'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -329,13 +341,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'insights')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'insights'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title:
-                              site.nav_items?.find(({ key }) => key === 'insights')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'insights'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -405,12 +420,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'company')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'company'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items?.find(({ key }) => key === 'company')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'company'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -480,12 +499,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         items: [
                           {
                             type: 'h5',
-                            title: site.nav_items?.find(({ key }) => key === 'ecosystem')?.title,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'ecosystem'
+                            )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
-                            title: site.nav_items?.find(({ key }) => key === 'ecosystem')?.subtitle,
+                            title: site.nav_items?.find(
+                              ({ key }) => key === 'ecosystem'
+                            )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
                               maxWidth: true,
@@ -552,11 +575,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
-      items: [...pages, showcases?.length && {
-        key: 'showcases',
-        title: 'Showcases',
-        href: routeConfig.SHOWCASES
-      }].filter(Boolean),
+      items: [
+        ...pages,
+        showcases?.length && {
+          key: 'showcases',
+          title: 'Showcases',
+          href: routeConfig.SHOWCASES,
+        },
+      ].filter(Boolean),
     },
   ]
 
@@ -571,9 +597,9 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       ...seo,
       openGraph: {
         ...seo.openGraph,
-        url: `${site.absolute_url}${router.asPath}`
+        url: `${site.absolute_url}${router.asPath}`,
       },
-      canonical: `${site.absolute_url}${router.asPath.split('?')[0]}`
+      canonical: `${site.absolute_url}${router.asPath.split('?')[0]}`,
     },
     headerProps: {
       accordionProps: { titleProps: { variant: 'h5' } },
@@ -618,7 +644,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                     disableTitle: true,
                     transitionVariant: 'fade' as const,
                     children: (
-                      <GetStartedPage fullScreen disableTestimonials={site.disable_testimonials} />
+                      <GetStartedPage
+                        fullScreen
+                        disableTestimonials={site.disable_testimonials}
+                      />
                     ),
                   },
                 }}
