@@ -4,7 +4,7 @@ import { CareersPage } from '@onex/pages'
 import { MOCK_JOBS } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PageDetail } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
   slug: 'careers',

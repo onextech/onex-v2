@@ -3,7 +3,7 @@ import { LandingLayout } from '@onex/layouts'
 import { IndustrysPage, IndustrysPageProps } from '@onex/pages'
 import { IndustryList } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = IndustryList.getStaticProps()
 

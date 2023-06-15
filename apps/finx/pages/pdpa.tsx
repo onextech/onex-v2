@@ -3,7 +3,7 @@ import { LandingLayout } from '@onex/layouts'
 import { LegalPage } from '@onex/pages'
 import { InferGetStaticPropsType } from 'next'
 import { PageDetail } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = PageDetail.getStaticProps({ slug: 'pdpa' })
 

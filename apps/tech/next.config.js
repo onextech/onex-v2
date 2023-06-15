@@ -1,6 +1,7 @@
 const { i18n } = require('./next-i18next.config')
 
-const withBundleAnalyzer = process.env.ANALYZE === 'true' ? require('@next/bundle-analyzer')() : x => x
+const withBundleAnalyzer =
+  process.env.ANALYZE === 'true' ? require('@next/bundle-analyzer')() : (x) => x
 
 /** @type {import('next').NextConfig} */
 module.exports = withBundleAnalyzer({
@@ -14,16 +15,19 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   transpilePackages: [
     '@onex/common',
-    '@onex/blocks',
     '@onex/layouts',
-    '@onex/theme',
-    '@onex/types',
-    '@onex/components',
-    '@onex/providers',
     '@onex/mocks',
     '@onex/tests',
-    '@onex/modules',
     '@onex/server',
+    '@gravis-os/analytics',
+    '@gravis-os/config',
+    '@gravis-os/form',
+    '@gravis-os/landing',
+    '@gravis-os/query',
+    '@gravis-os/theme',
+    '@gravis-os/storage',
+    '@gravis-os/ui',
+    '@gravis-os/utils',
   ],
   webpack(config) {
     // Svg support

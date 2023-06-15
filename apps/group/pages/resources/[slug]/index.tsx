@@ -3,7 +3,7 @@ import { LandingLayout } from '@onex/layouts'
 import { ResourcePage, ResourcePageProps } from '@onex/pages'
 
 import { ResourceDetail } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ResourceDetail.getStaticProps()

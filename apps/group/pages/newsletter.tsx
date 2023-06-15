@@ -3,7 +3,7 @@ import { LandingLayout } from '@onex/layouts'
 import { NewsletterPage } from '@onex/pages'
 import { InferGetStaticPropsType, GetStaticProps } from 'next'
 import { PageDetail } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
   slug: 'newsletter',

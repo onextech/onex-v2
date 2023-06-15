@@ -3,7 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { LandingLayout } from '@onex/layouts'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import {
   MOCK_INDUSTRYS,
@@ -14,7 +14,7 @@ import {
 import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { MOCK_KEY } = process.env
+  const { MOCK_KEY = '' } = process.env
 
   const site = fetchSite()
   const page = getDynamicPage({

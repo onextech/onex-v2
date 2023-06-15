@@ -2,7 +2,7 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ShowcasesPage, ShowcasesPageProps } from '@onex/pages'
 import { ShowcaseList } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ShowcaseList.getStaticProps()

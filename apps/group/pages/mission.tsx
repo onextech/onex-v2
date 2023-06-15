@@ -2,7 +2,7 @@ import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { MissionPage } from '@onex/pages'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { PageDetail } from '@onex/server'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({

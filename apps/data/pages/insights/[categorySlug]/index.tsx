@@ -4,7 +4,7 @@ import { PostCategoryPage, PostCategoryPageProps } from '@onex/pages'
 import { PostCategoryDetail } from '@onex/server'
 
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = PostCategoryDetail.getStaticProps()
 export const getStaticPaths = PostCategoryDetail.getStaticPaths()
