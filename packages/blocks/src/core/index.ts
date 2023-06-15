@@ -156,3 +156,9 @@ export * from './renderShowcasesBlock'
 
 export { default as renderCtaBlock } from './renderCtaBlock'
 export * from './renderCtaBlock'
+
+export { default as renderShowcaseSlider } from './renderShowcaseSlider'
+export * from './renderShowcaseSlider'
+
+export { default as renderShowcaseSliderItem } from './renderShowcaseSliderItem'
+export * from './renderShowcaseSliderItem'

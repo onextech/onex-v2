@@ -2,14 +2,12 @@ import { routeConfig } from '@onex/common'
 import { Showcase } from '@onex/types'
 import renderGhostButtonBlockItem from './renderGhostButtonBlockItem'
 
-export interface RenderShowcaseCardBlockItemProps {
+export interface RenderShowcaseSliderItemProps {
   item: Showcase
   isHero?: boolean
 }
 
-const renderShowcaseCardBlockItem = (
-  props: RenderShowcaseCardBlockItemProps
-) => {
+const renderShowcaseSliderItem = (props: RenderShowcaseSliderItemProps) => {
   const { item, isHero } = props
   const {
     slug,
@@ -114,4 +112,4 @@ const renderShowcaseCardBlockItem = (
   }
 }
 
-export default renderShowcaseCardBlockItem
+export default renderShowcaseSliderItem
