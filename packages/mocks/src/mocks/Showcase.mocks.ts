@@ -1,6 +1,6 @@
-import type { Showcase } from '@onex/types'
+import type { Showcase } from '@gravis-os/landing'
 
-export const MOCK_TECH_SHOWCASES: Showcase[]= [
+export const MOCK_TECH_SHOWCASES: Showcase[] = [
   {
     title: 'Luxury Jewellery with Marilyn Tan Jewellery.',
     slug: 'marilyn-tan-jewellery',
@@ -16,7 +16,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
       leftGridSticky: {
         title: 'Easy access with all omni-channel touchpoints',
         subtitle:
-          'Everything you always wanted to know about your orders, past and present. Our simplistic yet intuitive interface allows what\'s important to shine through.',
+          "Everything you always wanted to know about your orders, past and present. Our simplistic yet intuitive interface allows what's important to shine through.",
         hero_src: '/showcases/marilyn-tan-jewellery/left.png',
         hero_alt: 'Marilyn Tan jewellery website showcase',
       },
@@ -55,7 +55,8 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
   {
     title: 'WealthScale: Reinventing financial advisory.',
     slug: 'wealthscale',
-    subtitle: 'Learn about WealthScale\'s impressive portfolio of innovative wealth management solutions. Harness cutting-edge technology to elevate financial success.',
+    subtitle:
+      "Learn about WealthScale's impressive portfolio of innovative wealth management solutions. Harness cutting-edge technology to elevate financial success.",
     hero_src: '/showcases/wealthscale/hero.png',
     hero_alt: 'App with surgery dates',
     mode: 'dark',
@@ -149,7 +150,7 @@ export const MOCK_TECH_SHOWCASES: Showcase[]= [
         hero_src: '/showcases/octifi/right.png',
         hero_alt: 'Octifi Showcase 2',
       },
-    }
+    },
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -157,7 +158,8 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
   {
     title: 'Preparing the future of payments with SG Pay.',
     slug: 'sg-pay',
-    subtitle: 'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
+    subtitle:
+      'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
     hero_src: '/showcases/sg-pay/hero.png',
     hero_alt: 'Temperature adjustment app',
     mode: 'dark',
@@ -253,7 +255,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
         hero_src: '/showcases/suntec/right.png',
         hero_alt: 'Suntec Showcase 2',
       },
-    }
+    },
   },
   {
     title: 'Singapore Realtors Inc: SRI',
@@ -297,13 +299,13 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
         ],
       },
       rightGridSticky: {
-        title: 'It\'s all about the experience',
+        title: "It's all about the experience",
         subtitle:
           'A titan in the business with over 10 years under their belt, we use clean and diverse designs to propel the vision of SRI to the forefronts of Real Estate in Singapore.',
         hero_src: '/showcases/sri/right.png',
         hero_alt: 'SRI Showcase 2',
       },
-    }
+    },
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -318,7 +320,7 @@ export const MOCK_DESIGN_SHOWCASES = [
     mode: 'dark',
     backgroundColor: '#013157',
     reverse: true,
-    
+
     sections: {
       leftGridSticky: {
         title: 'Designing for the Future',
@@ -357,9 +359,10 @@ export const MOCK_DESIGN_SHOWCASES = [
         hero_src: '/showcases/nextgen/right.png',
         hero_alt: 'NextGEN Showcase 2',
       },
-    }
+    },
   },
-  { // TODO: ADD DETAIL
+  {
+    // TODO: ADD DETAIL
     title: 'Spreading Joy with Mr. Bucket',
     slug: 'mr-bucket',
     subtitle:
@@ -407,13 +410,12 @@ export const MOCK_DESIGN_SHOWCASES = [
         hero_src: '/showcases/mr-bucket/right.png',
         hero_alt: 'Mr Bucket Showcase 2',
       },
-    }
+    },
   },
   {
     title: 'IIX Impact Partners',
     slug: 'iix',
-    subtitle:
-      'Pioneer in Impact Investing. Global leader in sustainability.',
+    subtitle: 'Pioneer in Impact Investing. Global leader in sustainability.',
     hero_src: '/showcases/iix/hero.png',
     hero_alt: 'iix showcase',
     mode: 'light',
@@ -456,7 +458,7 @@ export const MOCK_DESIGN_SHOWCASES = [
         hero_src: '/showcases/iix/right.png',
         hero_alt: 'IIX Impact Partners Showcase 2',
       },
-    }
+    },
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 
@@ -506,10 +508,10 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     },
   },
   {
-    title: 'People\'s Association: Intelligent Chatbot Assistant.',
+    title: "People's Association: Intelligent Chatbot Assistant.",
     slug: 'tgb',
     subtitle:
-      'We\'ve envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies, creating an efficient sharing economy ecosystem.',
+      "We've envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies, creating an efficient sharing economy ecosystem.",
     hero_src: '/showcases/tgb/hero.png',
     hero_alt: 'TGB showcase',
     mode: 'light',
@@ -553,7 +555,7 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
         hero_src: '/showcases/tgb/right.png',
         hero_alt: 'TGB Showcase 2',
       },
-    }
+    },
   },
   {
     title: 'Blockchain & Artificial Intelligence.',
@@ -602,7 +604,7 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
         hero_src: '/showcases/spk/right.png',
         hero_alt: 'SPK Showcase 2',
       },
-    }
+    },
   },
 ].map((showcase, i) => ({ id: i + 1, ...showcase }))
 

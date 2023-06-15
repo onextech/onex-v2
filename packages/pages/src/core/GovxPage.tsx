@@ -1,21 +1,19 @@
 import React from 'react'
-import { Block, Blocks } from '@gravis-os/landing'
 import {
+  Block,
+  Blocks,
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderTechnologysBlock,
   renderFeaturedPostsBlock,
-  renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderCtaBlock,
-  renderClientTestimonialSliderBlock,
   renderHeroWithBackgroundBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Industry, Technology } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Page, Post, Industry, Technology } from '@gravis-os/types'
 import { useRouter } from 'next/router'
-import { routeConfig } from '@onex/common'
 import { Slider } from '@gravis-os/ui'
 
 export interface GovxPageProps {
@@ -42,63 +40,65 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
       items={[
         // Hero
         {
-            key: 'hero-with-background-fade-slider',
-            dark: true,
-            center: true,
-            disableContainer: true,
-            py: 0,
-            items: [
-              {
-                type: 'jsx',
-                title: (
-                  <Slider
-                    autoplay
-                    loop
-                    arrows
-                    fade
-                    dots
-                    dotProps={{ color: 'secondary.main' }}
-                    height={{ xs: 500, md: 800 }}
-                    items={[
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          title: 'We are the Growth Company',
-                          ...hero,
-                          backgroundImageProps: {
-                            src: '/images/about_hero.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          ...hero,
-                          title: 'Empowering Public Sector Digital Transformation',
-                          backgroundImageProps: {
-                            src: '/images/about_nodes_above_city.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                      <Block
-                        fill
-                        {...renderHeroWithBackgroundBlock({
-                          ...hero,
-                          title: "Empowering Public Sector Digital Transformation",
-                          backgroundImageProps: {
-                            src: '/images/mission_earth.png',
-                            alt: 'hero',
-                          },
-                        })}
-                      />,
-                    ]}
-                  />
-                ),
-              },
-            ],
-          },
+          key: 'hero-with-background-fade-slider',
+          dark: true,
+          center: true,
+          disableContainer: true,
+          py: 0,
+          items: [
+            {
+              type: 'jsx',
+              title: (
+                <Slider
+                  autoplay
+                  loop
+                  arrows
+                  fade
+                  dots
+                  dotProps={{ color: 'secondary.main' }}
+                  height={{ xs: 500, md: 800 }}
+                  items={[
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        title: 'We are the Growth Company',
+                        ...hero,
+                        backgroundImageProps: {
+                          src: '/images/about_hero.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title:
+                          'Empowering Public Sector Digital Transformation',
+                        backgroundImageProps: {
+                          src: '/images/about_nodes_above_city.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                    <Block
+                      fill
+                      {...renderHeroWithBackgroundBlock({
+                        ...hero,
+                        title:
+                          'Empowering Public Sector Digital Transformation',
+                        backgroundImageProps: {
+                          src: '/images/mission_earth.png',
+                          alt: 'hero',
+                        },
+                      })}
+                    />,
+                  ]}
+                />
+              ),
+            },
+          ],
+        },
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -111,11 +111,7 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         }),
         // Showcases
         renderShowcasesBlock({
-          title: (
-            <>
-              Empowering the Public Sector through AI-driven Solutions
-            </>
-          ),
+          title: <>Empowering the Public Sector through AI-driven Solutions</>,
           subtitle:
             'Empower the public sector with AI-driven solutions from Gov X. Optimize operations, make data-driven decisions, and deliver enhanced public services. Revolutionize governance with our innovative technologies.',
           items: showcases,

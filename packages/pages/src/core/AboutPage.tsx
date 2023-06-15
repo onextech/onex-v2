@@ -1,12 +1,12 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
   renderClientLogoCardBlockItem,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
+  useLayout,
+} from '@gravis-os/landing'
+import { Page } from '@gravis-os/types'
 
 export interface AboutPageProps {
   page: Page
@@ -203,13 +203,14 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             },
           ],
         },
-        cta &&renderFadeToBottomBackgroundImageBlock({
-          hero_src: cta.hero_src,
-          hero_alt: cta.hero_alt,
-          title: cta.title,
-          subtitle: cta.subtitle,
-          buttonProps: cta.buttons?.[0],
-        }),
+        cta &&
+          renderFadeToBottomBackgroundImageBlock({
+            hero_src: cta.hero_src,
+            hero_alt: cta.hero_alt,
+            title: cta.title,
+            subtitle: cta.subtitle,
+            buttonProps: cta.buttons?.[0],
+          }),
         {
           key: 'gallery',
           ...commonBlockProps,

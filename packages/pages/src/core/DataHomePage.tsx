@@ -1,6 +1,6 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
@@ -11,9 +11,10 @@ import {
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
   renderHeroWithBackgroundBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Industry, Technology } from '@onex/types'
+  useLayout,
+  Showcase,
+} from '@gravis-os/landing'
+import { Page, Post, Industry, Technology } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 
@@ -67,11 +68,7 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
         }),
         // Showcases
         renderShowcasesBlock({
-          title: (
-            <>
-              Intelligent Data Solutions for Modern Enterprises
-            </>
-          ),
+          title: <>Intelligent Data Solutions for Modern Enterprises</>,
           subtitle:
             'Revolutionizing enterprises through strategic data insights and AI-driven solutions: Our proficiency in data science and enterprise AI transformations equips businesses with predictive, optimized, and intelligent systems, developed with a data-first approach.',
           items: showcases,
@@ -83,7 +80,7 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
         renderClientTestimonialSliderBlock({
           title: 'Powering Data-Driven Success',
           subtitle:
-            "One X Data is the preferred choice for enterprises requiring sophisticated data science services, strategic data solutions, and advanced AI implementations.",
+            'One X Data is the preferred choice for enterprises requiring sophisticated data science services, strategic data solutions, and advanced AI implementations.',
           items: clientTestimonials,
         }),
         // Industry

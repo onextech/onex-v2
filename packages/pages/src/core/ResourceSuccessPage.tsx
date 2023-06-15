@@ -1,11 +1,14 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Resource } from '@onex/types'
+import {
+  Blocks,
+  RenderPostBlockItemProps,
+  renderPostBlockItem,
+  useLayout,
+} from '@gravis-os/landing'
+import type { Resource } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
-import { RenderPostBlockItemProps, renderPostBlockItem } from '@onex/blocks'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
-import { useLayout } from '@onex/providers'
 
 export interface ResourceSuccessPageProps {
   resource: Resource
@@ -120,15 +123,14 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
           items: [
             {
               type: 'h4',
-              title:
-                `More Resources from ${site.title}`,
+              title: `More Resources from ${site.title}`,
               titleProps: { maxWidth: true, sx: { mb: 4 } },
             },
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
               gridItems: orderBy(relatedResources, 'published_at', 'desc')
-                .filter(resource => resource.slug !== router.basePath)
+                .filter((resource) => resource.slug !== router.basePath)
                 .map((resource) =>
                   renderPostBlockItem({
                     item: {

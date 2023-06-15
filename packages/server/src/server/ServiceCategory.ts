@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -30,7 +30,7 @@ export const ServiceCategoryList = {
 export const ServiceCategoryDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const serviceCategory = fetchServiceCategoryBySlug(
-      context.params.categorySlug
+      context.params?.categorySlug
     )
     const services = MOCK_SERVICES[MOCK_KEY].filter(
       ({ category_id }) => category_id === serviceCategory?.id

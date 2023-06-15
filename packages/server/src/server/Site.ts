@@ -1,6 +1,6 @@
 import { MOCK_SITE } from '@onex/mocks'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods

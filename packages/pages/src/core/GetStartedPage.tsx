@@ -1,11 +1,11 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import { LeadForm } from '@onex/components'
-import { useLayout } from '@onex/providers'
 import {
+  Blocks,
   renderContactLinksBlockItems,
   renderTestimonialBlockItem,
-} from '@onex/blocks'
+  LeadForm,
+  useLayout,
+} from '@gravis-os/landing'
 import { Image } from '@gravis-os/ui'
 
 export interface GetStartedPageProps {
@@ -90,13 +90,15 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                       top: 0,
                       px: 5,
                       py: { xs: 5, md: 10 },
-                      width: '100%'
+                      width: '100%',
                     },
                   },
                   items: [
-                    ...(disableTestimonials ? [] : renderTestimonialBlockItem({
-                      item: clientTestimonials[0],
-                    })),
+                    ...(disableTestimonials
+                      ? []
+                      : renderTestimonialBlockItem({
+                          item: clientTestimonials[0],
+                        })),
                     ...renderContactLinksBlockItems(),
                   ],
                 },

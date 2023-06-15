@@ -1,13 +1,13 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
   renderHalfGridBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
+  useLayout,
+} from '@gravis-os/landing'
+import { Page } from '@gravis-os/types'
 
 export interface EcosystemPageProps {
   ecosystem: Page

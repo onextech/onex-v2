@@ -1,13 +1,13 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Post, PostCategory, Service } from '@onex/types'
 import {
+  Blocks,
   renderPostDetailBlock,
   renderPostHeroBlockItem,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+  useLayout,
+} from '@gravis-os/landing'
+import type { Post, PostCategory, Service } from '@gravis-os/types'
 
 export interface PostPageProps {
   post: Post

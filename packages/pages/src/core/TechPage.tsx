@@ -1,6 +1,6 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderClientLogosImageMarqueeBlock,
   renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
@@ -11,9 +11,10 @@ import {
   renderFaqsAccordionBlock,
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
+  useLayout,
+  Showcase,
+} from '@gravis-os/landing'
+import { Page, Post, Technology, Industry } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {

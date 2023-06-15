@@ -1,8 +1,11 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Resource } from '@onex/types'
-import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+import {
+  Blocks,
+  renderPostBlockItem,
+  RenderPostBlockItemProps,
+  useLayout,
+} from '@gravis-os/landing'
+import type { Resource } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 
 export interface ResourcesPageProps {
@@ -30,7 +33,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                'Unlock the key to business success with One X Group\'s comprehensive collection of resources.',
+                "Unlock the key to business success with One X Group's comprehensive collection of resources.",
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -63,13 +66,14 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: orderBy(resources, 'published_at', 'desc').map((resource) =>
-                renderPostBlockItem({
-                  item: {
-                    ...resource,
-                    href: `${routeConfig.RESOURCES}/${resource.slug}`,
-                  } as RenderPostBlockItemProps['item'],
-                })
+              gridItems: orderBy(resources, 'published_at', 'desc').map(
+                (resource) =>
+                  renderPostBlockItem({
+                    item: {
+                      ...resource,
+                      href: `${routeConfig.RESOURCES}/${resource.slug}`,
+                    } as RenderPostBlockItemProps['item'],
+                  })
               ),
             },
           ],

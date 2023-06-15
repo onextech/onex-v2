@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -22,14 +22,14 @@ export const ResourceList = {
 
 export const ResourceDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const resource = fetchResourceBySlug(context.params.slug)
+    const resource = fetchResourceBySlug(context.params?.slug)
     const relatedResources = MOCK_RESOURCES[MOCK_KEY]?.filter(
-      (resource) => resource.slug !== context.params.slug
+      (resource) => resource.slug !== context.params?.slug
     ).slice(0, 3)
     return makeGetStaticProps({
       props: {
         resource,
-        relatedResources: relatedResources || null
+        relatedResources: relatedResources || null,
       },
     })(context)
   },

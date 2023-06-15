@@ -1,8 +1,10 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import { ContactForm } from '@onex/components'
-import { useLayout } from '@onex/providers'
-import { renderContactLinksBlockItems } from '@onex/blocks'
+import {
+  Blocks,
+  renderContactLinksBlockItems,
+  useLayout,
+  ContactForm,
+} from '@gravis-os/landing'
 import { Image } from '@gravis-os/ui'
 
 export interface ContactPageProps {

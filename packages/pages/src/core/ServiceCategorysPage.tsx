@@ -1,12 +1,12 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
-import type { Service, ServiceCategory } from '@onex/types'
-import { useLayout } from '@onex/providers'
 import {
+  Blocks,
   renderServiceCategoryBlockItem,
   RenderServiceCategoryBlockItemProps,
-} from '@onex/blocks'
+  useLayout,
+} from '@gravis-os/landing'
+import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
+import type { Service, ServiceCategory } from '@gravis-os/types'
 import chunk from 'lodash/chunk'
 
 export interface ServiceCategorysPageProps {

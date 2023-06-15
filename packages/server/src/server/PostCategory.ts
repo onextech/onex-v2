@@ -1,10 +1,10 @@
 import { MOCK_POST_CATEGORYS, MOCK_POSTS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import dayjs from 'dayjs'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
-import dayjs from 'dayjs'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -20,9 +20,10 @@ export const PostCategoryList = {
   getStaticProps: (): GetStaticProps =>
     makeGetStaticProps({
       props: {
-        posts: MOCK_POSTS[MOCK_KEY]
-          .filter(({ is_active }) => is_active)
-          .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
+        posts: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
+          ({ published_at }) =>
+            published_at && dayjs(published_at).isBefore(dayjs())
+        ),
         postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
       },
     }),
@@ -30,10 +31,12 @@ export const PostCategoryList = {
 
 export const PostCategoryDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const postCategory = fetchPostCategoryBySlug(context.params.categorySlug)
-    const posts = MOCK_POSTS[MOCK_KEY]
-      .filter(({ is_active }) => is_active)
-      .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+    const postCategory = fetchPostCategoryBySlug(context.params?.categorySlug)
+    const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+      .filter(
+        ({ published_at }) =>
+          published_at && dayjs(published_at).isBefore(dayjs())
+      )
       .filter(({ category_id }) => category_id === postCategory?.id)
     return makeGetStaticProps({
       props: {

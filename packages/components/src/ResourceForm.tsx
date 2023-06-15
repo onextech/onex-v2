@@ -3,7 +3,7 @@ import { Form, FormSections } from '@gravis-os/form'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
 import { EnquiryTypeEnum, postEnquiry } from '@onex/modules'
 import { useRouter } from 'next/router'
-import { FormCategoryEnum } from '@onex/types'
+import { FormCategoryEnum } from '@gravis-os/types'
 
 export interface ResourceFormProps {
   onSubmit?: (values: any) => void
@@ -49,7 +49,7 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
           fullWidth: true,
           startIcon: <FileDownloadOutlinedIcon />,
           boxProps: { display: 'flex', justifyContent: 'flex-end' },
-          loading: isLoading
+          loading: isLoading,
         }}
         formJsx={
           <FormSections
@@ -128,24 +128,24 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                       { key: '501+', value: '501+', label: '501+' },
                     ],
                   },
-                  {
-                    key: 'source',
-                    name: 'source',
-                    label: 'How did you hear about us?',
-                    type: 'radio',
-                    required: true,
-                    compact: true,
-                    options: [
-                      {
-                        key: 'social-media',
-                        value: 'Social Media',
-                        label: 'Social Media',
-                      },
-                      { key: 'google', value: 'Google', label: 'Google' },
-                      { key: 'linkedin', value: 'LinkedIn', label: 'LinkedIn' },
-                      { key: 'referral', value: 'Referral', label: 'Referral' },
-                    ],
-                  },
+                  // {
+                  //   key: 'source',
+                  //   name: 'source',
+                  //   label: 'How did you hear about us?',
+                  //   type: 'radio',
+                  //   required: true,
+                  //   compact: true,
+                  //   options: [
+                  //     {
+                  //       key: 'social-media',
+                  //       value: 'Social Media',
+                  //       label: 'Social Media',
+                  //     },
+                  //     { key: 'google', value: 'Google', label: 'Google' },
+                  //     { key: 'linkedin', value: 'LinkedIn', label: 'LinkedIn' },
+                  //     { key: 'referral', value: 'Referral', label: 'Referral' },
+                  //   ],
+                  // },
                 ],
               },
             ]}
