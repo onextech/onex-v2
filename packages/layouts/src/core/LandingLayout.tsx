@@ -25,7 +25,7 @@ const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
 
 export interface LandingLayoutProps
-  extends Omit<GvsLandingLayoutProps, 'headerProps'> {
+  extends Omit<GvsLandingLayoutProps, 'headerProps' | 'footerProps'> {
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
