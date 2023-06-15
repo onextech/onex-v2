@@ -11,7 +11,6 @@ import {
   renderFaqsAccordionBlock,
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
-  renderShowcaseSlider,
 } from '@onex/blocks'
 import { useLayout } from '@onex/providers'
 import { Page, Post, Showcase, Technology, Industry } from '@onex/types'
@@ -86,18 +85,6 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           subtitle:
             "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
           items: clientTestimonials,
-        }),
-        // REMOVE LATER
-        renderShowcaseSlider({
-          title: (
-            <>
-              Build World-Class <br /> Dashboard User Interfaces
-            </>
-          ),
-          subtitle:
-            'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
-          items: showcases,
-          pt: { xs: 5, md: 10 },
         }),
         // Industry
         renderFeaturedIndustrysBlock({

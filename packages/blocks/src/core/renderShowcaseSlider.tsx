@@ -2,9 +2,8 @@ import { Showcase } from '@onex/types'
 import { Block, BlockProps } from '@gravis-os/landing'
 import { Slider } from '@gravis-os/ui'
 import React from 'react'
-import { useMediaQuery, useTheme } from '@mui/material'
-import renderShowcaseSliderItem from './renderShowcaseSliderItem'
 import 'keen-slider/keen-slider.min.css'
+import renderShowcaseCardBlockItem from './renderShowcaseCardBlockItem'
 
 export interface RenderShowcaseSliderProps
   extends Omit<BlockProps, 'items' | 'title'> {
@@ -16,9 +15,6 @@ export interface RenderShowcaseSliderProps
 
 const renderShowcaseSlider = (props: RenderShowcaseSliderProps) => {
   const { overline, title, subtitle, items, ...rest } = props
-
-  const theme = useTheme()
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'), { noSsr: true })
 
   return {
     key: 'showcase-slider',
@@ -53,7 +49,7 @@ const renderShowcaseSlider = (props: RenderShowcaseSliderProps) => {
             dotProps={{ color: 'secondary.main' }}
             height={{ md: 500 }}
             items={items.map((item) => {
-              return <Block items={[renderShowcaseSliderItem({ item })]} />
+              return <Block items={[renderShowcaseCardBlockItem({ item })]} />
             })}
           />
         ),
