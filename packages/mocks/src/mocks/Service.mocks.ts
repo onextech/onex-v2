@@ -841,8 +841,8 @@ export const MOCK_TECH_SERVICES = [
     slug: 'staff-augmentation',
     subtitle:
       'Expand your team with top-tier frontend software engineering and dashboard development experts, tailored to your enterprise needs.',
-    hero_src: 'https://source.unsplash.com/1600x900/?staff-augmentation',
-    hero_alt: 'Group discussion with laptops',
+    hero_src: 'https://source.unsplash.com/gMsnXqILjp4/1600x900',
+    hero_alt: 'Meeting session',
     // Seo
     seo: {
       title: 'Staff Augmentation',
@@ -6593,7 +6593,7 @@ export const MOCK_DIGITAL_SERVICES = [
     category: getCategoryFromCrudItem(item, MOCK_DIGITAL_SERVICE_CATEGORYS),
     ...item,
     sections: {
-      ...MOCK_SERVICE_PAGE.sections,
+      ...item.sections,
       checklist: {
         ...MOCK_SERVICE_PAGE.sections.checklist,
         subtitle:
@@ -8631,7 +8631,7 @@ export const MOCK_FINX_SERVICES = [
     category: getCategoryFromCrudItem(item, MOCK_FINX_SERVICE_CATEGORYS),
     ...item,
     sections: {
-      ...MOCK_SERVICE_PAGE.sections,
+      ...item.sections,
       checklist: {
         ...MOCK_SERVICE_PAGE.sections.checklist,
         subtitle:
@@ -9849,7 +9849,7 @@ export const MOCK_GOVX_SERVICES = [
     category: getCategoryFromCrudItem(item, MOCK_GOVX_SERVICE_CATEGORYS),
     ...item,
     sections: {
-      ...MOCK_SERVICE_PAGE.sections,
+      ...item.sections,
       checklist: {
         ...MOCK_SERVICE_PAGE.sections.checklist,
         subtitle:
