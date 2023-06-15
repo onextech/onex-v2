@@ -1,8 +1,11 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Post } from '@onex/types'
-import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+import {
+  Blocks,
+  renderPostBlockItem,
+  RenderPostBlockItemProps,
+  useLayout,
+} from '@gravis-os/landing'
+import type { Post } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 
 export interface PostsPageProps {

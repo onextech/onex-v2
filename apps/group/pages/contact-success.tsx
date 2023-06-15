@@ -1,7 +1,7 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ContactSuccessPage } from '@onex/pages'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { PageDetail } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
 import { useRouter } from 'next/router'

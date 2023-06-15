@@ -1,9 +1,9 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
-import { PressRelease } from '@onex/types'
+import { PressRelease } from '@gravis-os/types'
 import { PressReleaseList } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PressReleaseList.getStaticProps()

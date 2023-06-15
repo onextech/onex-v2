@@ -1,13 +1,13 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Resource } from '@onex/types'
-import { ResourceForm } from '@onex/components'
 import {
+  Blocks,
   renderThreeColumnGridBlock,
   renderFourColumnGridBlock,
+  useLayout,
   renderClientLogosImageMarqueeBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+} from '@gravis-os/landing'
+import type { Resource } from '@gravis-os/types'
+import { ResourceForm } from '@onex/components'
 
 export interface ResourcePageProps {
   resource: Resource

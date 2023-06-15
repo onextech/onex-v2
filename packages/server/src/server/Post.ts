@@ -1,21 +1,24 @@
 import { MOCK_POSTS, MOCK_POST_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import {
-  getCategoryFromCrudItem, getRelatedCrudItemsByCategoryId,
+  getCategoryFromCrudItem,
+  getRelatedCrudItemsByCategoryId,
 } from '@gravis-os/utils'
+import dayjs from 'dayjs'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
-import dayjs from 'dayjs'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
 // ==============================
 export const fetchPostBySlug = (injectedSlug) => {
-  return MOCK_POSTS[MOCK_KEY]
-    .filter(({ is_active }) => is_active)
-    .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
+  return MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
     .find(({ slug }) => slug === injectedSlug)
 }
 
@@ -23,10 +26,9 @@ export const fetchPostBySlug = (injectedSlug) => {
 // Export
 // ==============================
 
-
 export const PostDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const post = fetchPostBySlug(context.params.slug)
+    const post = fetchPostBySlug(context.params?.slug)
     const postCategory = getCategoryFromCrudItem(
       post,
       MOCK_POST_CATEGORYS[MOCK_KEY]
@@ -35,10 +37,12 @@ export const PostDetail = {
       ({ category_id }) => category_id === post?.category_id
     ).slice(0, 3)
     const relatedPosts = getRelatedCrudItemsByCategoryId(
-      MOCK_POSTS[MOCK_KEY]
-        .filter(({ title }) => title !== post?.title)
+      MOCK_POSTS[MOCK_KEY].filter(({ title }) => title !== post?.title)
         .filter(({ is_active }) => is_active)
-        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
+        .filter(
+          ({ published_at }) =>
+            published_at && dayjs(published_at).isBefore(dayjs())
+        ),
       post?.category_id
     ).slice(0, 3)
 
@@ -53,18 +57,18 @@ export const PostDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     makeGetStaticPaths({
-      paths: MOCK_POSTS[MOCK_KEY]
-        .filter(({ is_active }) => is_active)
-        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs()))
-        .map(
-        ({ slug, category, exclusive_locales, blocked_locales }) => ({
+      paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+        .filter(
+          ({ published_at }) =>
+            published_at && dayjs(published_at).isBefore(dayjs())
+        )
+        .map(({ slug, category, exclusive_locales, blocked_locales }) => ({
           params: {
             slug,
             categorySlug: category.slug,
             exclusive_locales,
             blocked_locales,
           },
-        })
-      ),
+        })),
     }),
 }

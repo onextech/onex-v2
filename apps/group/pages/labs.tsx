@@ -4,7 +4,7 @@ import { LabsPage, LabsPageProps } from '@onex/pages'
 import { MOCK_VENTURES_PAGE } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()

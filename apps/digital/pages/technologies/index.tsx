@@ -4,7 +4,7 @@ import { TechnologysPage, TechnologysPageProps } from '@onex/pages'
 import { TechnologyList } from '@onex/server'
 
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = TechnologyList.getStaticProps()
 

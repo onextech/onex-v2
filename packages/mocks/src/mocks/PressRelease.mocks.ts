@@ -1,5 +1,5 @@
 import sampleSize from 'lodash/sampleSize'
-import { PressRelease } from '@onex/types'
+import { PressRelease } from '@gravis-os/types'
 import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 
 export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [

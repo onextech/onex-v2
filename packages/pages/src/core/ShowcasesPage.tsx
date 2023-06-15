@@ -1,7 +1,5 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import { renderShowcasesBlock } from '@onex/blocks'
-import type { Showcase } from '@onex/types'
+import { Blocks, renderShowcasesBlock, Showcase } from '@gravis-os/landing'
 
 export interface ShowcasesPageProps {
   showcases: Showcase[]

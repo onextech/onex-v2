@@ -1,10 +1,10 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderJobCardBlockItem,
-  renderLeftFourColumnGridBlockItem
-} from '@onex/blocks'
-import type { Job, Page } from '@onex/types'
+  renderLeftFourColumnGridBlockItem,
+} from '@gravis-os/landing'
+import type { Job, Page } from '@gravis-os/types'
 
 export interface CareersPageProps {
   jobs: Job[]
@@ -34,7 +34,11 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
             {
               type: 'h2',
               title: hero.title,
-              titleProps: { mb: { xs: 12, md: 19 }, component: 'h1', maxWidth: 800 },
+              titleProps: {
+                mb: { xs: 12, md: 19 },
+                component: 'h1',
+                maxWidth: 800,
+              },
             },
           ],
         },

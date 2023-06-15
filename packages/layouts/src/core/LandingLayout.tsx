@@ -7,18 +7,17 @@ import {
   Blocks,
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
-} from '@gravis-os/landing'
-import { useUserPreferences } from '@onex/theme'
-import { ContactCallout, ContactCalloutProps } from '@onex/components'
-import { useLayout } from '@onex/providers'
-import { GetStartedPage } from '@onex/pages'
-import { useRouter } from 'next/router'
-import {
+  ContactCallout,
+  ContactCalloutProps,
+  useLayout,
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
   RenderHeaderMenuMobileBlockItemProps,
-} from '@onex/blocks'
+  useUserPreferences,
+} from '@gravis-os/landing'
+import { GetStartedPage } from '@onex/pages'
+import { useRouter } from 'next/router'
 
 // Style Constants
 const commonGridProps = { spacing: 0 }
@@ -26,7 +25,7 @@ const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
 
 export interface LandingLayoutProps
-  extends Omit<GvsLandingLayoutProps, 'headerProps'> {
+  extends Omit<GvsLandingLayoutProps, 'headerProps' | 'footerProps'> {
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>

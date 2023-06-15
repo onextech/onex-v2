@@ -3,9 +3,9 @@ import { LandingLayout } from '@onex/layouts'
 import { EcosystemPage } from '@onex/pages'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Page } from '@onex/types'
+import { Page } from '@gravis-os/types'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()

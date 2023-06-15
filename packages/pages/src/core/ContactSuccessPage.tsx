@@ -1,6 +1,5 @@
 import React from 'react'
 import { Blocks } from '@gravis-os/landing'
-import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 import ContactPage from './ContactPage'
 
@@ -11,7 +10,6 @@ export interface ContactSuccessPageProps {
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
   const { name, email } = props
-  const router = useRouter()
   if (!name || !email) return <ContactPage />
   return (
     <Blocks

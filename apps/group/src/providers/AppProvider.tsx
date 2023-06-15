@@ -7,7 +7,7 @@ import {
   ThemeProvider,
   UserPreferencesProvider,
   createEmotionCache,
-} from '@onex/theme'
+} from '@gravis-os/landing'
 import { darkTheme, lightTheme } from '@app/theme'
 import { Toaster } from 'react-hot-toast'
 

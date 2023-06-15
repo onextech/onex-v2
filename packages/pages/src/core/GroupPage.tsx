@@ -1,7 +1,8 @@
 import React from 'react'
 import { Box, Slider, Typography } from '@gravis-os/ui'
-import { Blocks, BlockItem } from '@gravis-os/landing'
 import {
+  Blocks,
+  BlockItem,
   renderGhostButtonBlockItem,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
@@ -10,9 +11,10 @@ import {
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Industry, Page, Post, Showcase } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Industry, Page, Post } from '@gravis-os/types'
 
 export interface GroupPageProps {
   page: Page
@@ -106,7 +108,8 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderShowcasesBlock({
           title: (
             <>
-              Elevate Your Business with Our Dedicated Technology Consulting Services
+              Elevate Your Business with Our Dedicated Technology Consulting
+              Services
             </>
           ),
           subtitle:

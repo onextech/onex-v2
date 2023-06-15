@@ -1,8 +1,10 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import { renderGhostButtonBlockItem } from '@onex/blocks'
+import {
+  Blocks,
+  renderGhostButtonBlockItem,
+  useLayout,
+} from '@gravis-os/landing'
 import { routeConfig } from '@onex/common'
-import { useLayout } from '@onex/providers'
 
 export interface MissionPageProps {}
 

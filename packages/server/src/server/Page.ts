@@ -6,7 +6,7 @@ import makeGetStaticProps from '../utils/makeGetStaticProps'
 import getDynamicPage from '../utils/getDynamicPage'
 import { fetchSite } from './Site'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
