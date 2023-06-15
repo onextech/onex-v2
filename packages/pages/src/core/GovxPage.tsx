@@ -1,6 +1,7 @@
 import React from 'react'
-import { Block, Blocks } from '@gravis-os/landing'
 import {
+  Block,
+  Blocks,
   renderClientLogosImageMarqueeBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
@@ -8,9 +9,10 @@ import {
   renderFaqsAccordionBlock,
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Industry, Technology } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Page, Post, Industry, Technology } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 

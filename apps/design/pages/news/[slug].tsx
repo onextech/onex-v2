@@ -4,7 +4,7 @@ import { PressReleasePage, PressReleasePageProps } from '@onex/pages'
 import { PressReleaseDetail } from '@onex/server'
 
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = PressReleaseDetail.getStaticProps()
 export const getStaticPaths = PressReleaseDetail.getStaticPaths()

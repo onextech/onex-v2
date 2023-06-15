@@ -1,4 +1,4 @@
-import { Site } from '@onex/types'
+import { Site } from '@gravis-os/types'
 
 export const MOCK_COMMON_SITE = {
   // Company
@@ -62,13 +62,36 @@ export const MOCK_GROUP_SITE: Site = {
   general_whatsapp: '+65 8922 8242',
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through custom software development' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to software development success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
-    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises through custom software development',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to software development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project",
+    },
+    {
+      key: 'ecosystem',
+      title: 'Our Ecosystem',
+      subtitle: 'Learn more about our other functions',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success',
+    },
+  ],
 }
 
 export const MOCK_TECH_SITE = {
@@ -108,13 +131,36 @@ export const MOCK_TECH_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through frontend development' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
-    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises through frontend development',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
 }
 
 export const MOCK_DESIGN_SITE = {
@@ -142,13 +188,36 @@ export const MOCK_DESIGN_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through quality designing' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
-    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises through quality designing',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to custom design success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project",
+    },
+    {
+      key: 'ecosystem',
+      title: 'Our Ecosystem',
+      subtitle: 'Learn more about our other functions',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success',
+    },
+  ],
 }
 
 export const MOCK_DATA_SITE = {
@@ -176,14 +245,41 @@ export const MOCK_DATA_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises using advanced AI and data solutions' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to custom design success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project' },
-    { key: 'ecosystem', title: 'Our Ecosystem', subtitle: 'Learn more about our other functions' },
-    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success' },
-  ]
-  
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises using advanced AI and data solutions',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to custom design success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project",
+    },
+    {
+      key: 'ecosystem',
+      title: 'Our Ecosystem',
+      subtitle: 'Learn more about our other functions',
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success',
+    },
+  ],
 }
 
 export const MOCK_DIGITAL_SITE = {
@@ -223,13 +319,36 @@ export const MOCK_DIGITAL_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on empowering enterprises through expert digital development' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
-    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises through expert digital development',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
 }
 
 export const MOCK_FINX_SITE = {
@@ -269,13 +388,36 @@ export const MOCK_FINX_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on transforming financial enterprises through digital innovation' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
-    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on transforming financial enterprises through digital innovation',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
 }
 
 export const MOCK_GOVX_SITE = {
@@ -315,13 +457,36 @@ export const MOCK_GOVX_SITE = {
   logo_height: 13,
 
   nav_items: [
-    { key: 'services', title: 'Our Services', subtitle: 'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation' },
-    { key: 'insights', title: 'Insights', subtitle: 'Discover the key to frontend development success with the latest best practices and techniques' },
-    { key: 'industries', title: 'Industries We Serve', subtitle: 'Your new team\'s cross-industry knowledge will level up your project.' },
-    { key: 'technologies', title: 'Our Technologies', subtitle: 'Bet on technologies that will work even years from now.' },
-    { key: 'company', title: 'Get to Know us Better', subtitle: 'Learn more about the core values that drive our business and people to success.' },
-  ]
-
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
 }
 
 export const MOCK_SITE = {

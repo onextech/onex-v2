@@ -1,8 +1,11 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { PressRelease } from '@onex/types'
-import { renderPostBlockItem, RenderPostBlockItemProps } from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+import {
+  Blocks,
+  renderPostBlockItem,
+  RenderPostBlockItemProps,
+  useLayout,
+} from '@gravis-os/landing'
+import type { PressRelease } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 
 export interface PressReleasesPageProps {
@@ -51,7 +54,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'h4',
               title:
-                'We strive to make impactful change and help enterprises successfully grow in today\'s digital era. Read on to find out more about our work and collaborations with businesses.',
+                "We strive to make impactful change and help enterprises successfully grow in today's digital era. Read on to find out more about our work and collaborations with businesses.",
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
             },
           ],
@@ -63,13 +66,14 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
             {
               type: 'grid',
               gridProps: { spacing: 5, rowSpacing: 8 },
-              gridItems: orderBy(pressReleases, 'published_at', 'desc').map((pressRelease) =>
-                renderPostBlockItem({
-                  item: {
-                    ...pressRelease,
-                    href: `${routeConfig.PRESS_RELEASES}/${pressRelease.slug}`,
-                  } as RenderPostBlockItemProps['item'],
-                })
+              gridItems: orderBy(pressReleases, 'published_at', 'desc').map(
+                (pressRelease) =>
+                  renderPostBlockItem({
+                    item: {
+                      ...pressRelease,
+                      href: `${routeConfig.PRESS_RELEASES}/${pressRelease.slug}`,
+                    } as RenderPostBlockItemProps['item'],
+                  })
               ),
             },
           ],

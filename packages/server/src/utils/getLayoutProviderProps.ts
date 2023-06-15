@@ -15,7 +15,7 @@ import {
   MOCK_WORKSPACES,
 } from '@onex/mocks'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 const getLayoutProviderProps = ({ context }) => {
   return {

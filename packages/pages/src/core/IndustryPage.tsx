@@ -1,16 +1,15 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Industry, Post } from '@onex/types'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
-  renderFourColumnGridBlock,
   renderHeroBlock,
   renderParagraphBlockItem,
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
-} from '@onex/blocks'
+} from '@gravis-os/landing'
+import type { Industry, Post } from '@gravis-os/types'
 
 export interface IndustryPageProps {
   industry: Industry

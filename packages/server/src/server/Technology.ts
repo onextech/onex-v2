@@ -1,13 +1,13 @@
 import { MOCK_POSTS, MOCK_TECHNOLOGYS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
+import dayjs from 'dayjs'
 import getDynamicPage from '../utils/getDynamicPage'
 import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import { fetchSite } from './Site'
-import dayjs from 'dayjs'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -30,7 +30,7 @@ export const TechnologyList = {
 
 export const TechnologyDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const technology = fetchTechnologyBySlug(context.params.slug)
+    const technology = fetchTechnologyBySlug(context.params?.slug)
     const site = fetchSite()
     const technologyPage = getDynamicPage({
       context,
@@ -40,16 +40,17 @@ export const TechnologyDetail = {
           ...technology?.sections,
           benefits: {
             ...technology?.sections?.benefits,
-            items: technology?.sections?.benefits?.items?.slice(0,4)
-          }
-        }
+            items: technology?.sections?.benefits?.items?.slice(0, 4),
+          },
+        },
       },
       site,
     })
     const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY]
-        .filter(({ is_active }) => is_active)
-        .filter(({ published_at }) => published_at && dayjs(published_at).isBefore(dayjs())),
+      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
+        ({ published_at }) =>
+          published_at && dayjs(published_at).isBefore(dayjs())
+      ),
       technology?.title
     ).slice(0, 3)
     return makeGetStaticProps({

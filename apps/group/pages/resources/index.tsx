@@ -1,9 +1,9 @@
 import React from 'react'
 import { LandingLayout } from '@onex/layouts'
 import { ResourcesPage, ResourcesPageProps } from '@onex/pages'
-import { Resource } from '@onex/types'
+import { Resource } from '@gravis-os/types'
 import { ResourceList } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ResourceList.getStaticProps()

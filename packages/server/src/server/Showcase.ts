@@ -5,7 +5,7 @@ import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import { fetchSite } from './Site'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -26,11 +26,11 @@ export const ShowcaseList = {
 
 export const ShowcaseDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const showcase = fetchShowcaseBySlug(context.params.slug)
+    const showcase = fetchShowcaseBySlug(context.params?.slug)
     const site = fetchSite()
     const showcasePage = getDynamicPage({ context, page: showcase, site })
     const otherShowcases = MOCK_SHOWCASES[MOCK_KEY].filter(
-      ({ slug }) => slug !== context.params.slug
+      ({ slug }) => slug !== context.params?.slug
     ).slice(0, 1)
     return makeGetStaticProps({
       props: { showcase: showcasePage, otherShowcases },

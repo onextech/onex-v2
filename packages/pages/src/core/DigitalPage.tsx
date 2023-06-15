@@ -1,6 +1,6 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderClientLogosImageMarqueeBlock,
   renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
@@ -9,9 +9,10 @@ import {
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderCtaBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Industry } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Page, Post, Industry } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {
@@ -70,7 +71,7 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
             </>
           ),
           subtitle:
-            "Our transformative digital marketing solutions redefine your enterprise\'s marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
+            "Our transformative digital marketing solutions redefine your enterprise's marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
           items: showcases,
           pt: { xs: 5, md: 10 },
         }),

@@ -1,7 +1,8 @@
 import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
-import { createEmotionCache, bodyFont, lightTheme } from '@onex/theme'
+import { createEmotionCache, lightTheme } from '@gravis-os/landing'
+import { bodyFont } from '@app/theme/typography'
 import {
   renderGtmScriptTag,
   renderGtmNoScriptTag,

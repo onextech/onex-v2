@@ -1,11 +1,9 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderClientLogosImageMarqueeBlock,
-  renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderTechnologysBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
@@ -13,9 +11,10 @@ import {
   renderClientTestimonialSliderBlock,
   renderGhostButtonBlockItem,
   renderClientHighlightsImageMarqueeBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Post, Showcase, Industry } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Page, Post, Industry } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 
@@ -29,7 +28,8 @@ export interface DesignPageProps {
 const DesignPage: React.FC<DesignPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, clientTestimonials, clientHighlights } = useLayout()
+  const { site, clientLogos, clientTestimonials, clientHighlights } =
+    useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -111,11 +111,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
         // Showcases
         renderShowcasesBlock({
-          title: (
-            <>
-              Crafting Engaging User Experiences
-            </>
-          ),
+          title: <>Crafting Engaging User Experiences</>,
           subtitle:
             'Transforming digital products through intuitive design and user-centric experiences: Our expertise in UI/UX services and enterprise product designs empowers businesses with captivating interfaces, made with a human-centered mindset.',
           items: showcases,
@@ -125,7 +121,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         renderClientTestimonialSliderBlock({
           title: 'Empowering Design Excellence',
           subtitle:
-            "One X Design is the trusted partner for enterprise-level organizations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.",
+            'One X Design is the trusted partner for enterprise-level organizations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.',
           items: clientTestimonials,
         }),
         // Industry

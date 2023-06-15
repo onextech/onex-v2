@@ -1,11 +1,11 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Industry } from '@onex/types'
 import {
+  Blocks,
   renderIndustryBlockItem,
   RenderIndustryBlockItemProps,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+  useLayout,
+} from '@gravis-os/landing'
+import type { Industry } from '@gravis-os/types'
 
 export interface IndustrysPageProps {
   industrys: Industry[]

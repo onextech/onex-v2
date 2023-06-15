@@ -10,7 +10,7 @@ import makeGetStaticPaths from '../utils/makeGetStaticPaths'
 import makeGetStaticProps from '../utils/makeGetStaticProps'
 import { fetchSite } from './Site'
 
-const { MOCK_KEY } = process.env
+const { MOCK_KEY = '' } = process.env
 
 // ==============================
 // Methods
@@ -24,7 +24,7 @@ export const fetchServiceBySlug = (injectedSlug) => {
 // ==============================
 export const ServiceDetail = {
   getStaticProps: (): GetStaticProps => async (context) => {
-    const service = fetchServiceBySlug(context.params.slug)
+    const service = fetchServiceBySlug(context.params?.slug)
     const site = fetchSite()
     const servicePage = getDynamicPage({ page: service, context, site })
     const serviceCategory = getCategoryFromCrudItem(

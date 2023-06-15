@@ -1,7 +1,6 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
-import type { Post, Technology } from '@onex/types'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
@@ -9,8 +8,9 @@ import {
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
+  useLayout,
+} from '@gravis-os/landing'
+import type { Post, Technology } from '@gravis-os/types'
 
 export interface TechnologyPageProps {
   technology: Technology

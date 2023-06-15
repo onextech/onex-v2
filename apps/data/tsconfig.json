@@ -3,11 +3,23 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["./src/*"],
-      "@public/*": ["./public/*"],
-      "@pages/*": ["./pages/*"],
+      "@app/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

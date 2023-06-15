@@ -1,13 +1,14 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderFourColumnGridBlock,
   renderHalfGridBlock,
   renderHeroWithBackgroundBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page, Showcase } from '@onex/types'
+  Showcase,
+  useLayout,
+} from '@gravis-os/landing'
+import { Page } from '@gravis-os/types'
 
 export interface DataPageProps {
   page: Page

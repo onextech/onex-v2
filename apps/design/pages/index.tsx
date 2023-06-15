@@ -10,12 +10,12 @@ import {
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { MOCK_KEY } = process.env
+  const { MOCK_KEY = '' } = process.env
   // supabaseClient.from('site').select('*').single().where('workspace_id', 1)
   const site = fetchSite()
   // supabaseClient.from('page').select('*').single().where('slug', 'tech').where('workspace_id', 1)

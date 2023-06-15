@@ -4,7 +4,7 @@ import { IndustryDetail } from '@onex/server'
 import { LandingLayout } from '@onex/layouts'
 
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@onex/providers'
+import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = IndustryDetail.getStaticProps()
 export const getStaticPaths = IndustryDetail.getStaticPaths()

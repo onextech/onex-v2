@@ -1,6 +1,6 @@
 import React from 'react'
-import { Blocks } from '@gravis-os/landing'
 import {
+  Blocks,
   renderFadeToBottomBackgroundImageBlock,
   renderThreeColumnGridBlock,
   renderHalfGridBlock,
@@ -8,9 +8,9 @@ import {
   renderFaqsAccordionBlock,
   renderClientLogosImageMarqueeBlock,
   renderHeroWithVideoBackgroundBlock,
-} from '@onex/blocks'
-import { useLayout } from '@onex/providers'
-import { Page } from '@onex/types'
+  useLayout,
+} from '@gravis-os/landing'
+import { Page } from '@gravis-os/types'
 
 export interface LabsPageProps {
   page: Page
