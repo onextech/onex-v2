@@ -5,7 +5,6 @@ import { EmotionCache } from '@emotion/react'
 import { AppProvider } from '@app/providers'
 import { AnalyticsProvider } from '@gravis-os/analytics'
 
-import 'react-medium-image-zoom/dist/styles.css'
 import 'keen-slider/keen-slider.min.css'
 
 export interface MyAppProps extends AppProps {
