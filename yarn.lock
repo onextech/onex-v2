@@ -1699,10 +1699,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.1.2.tgz#702d05c5e83beaf4e4f9771d189dfbdb692132fe"
-  integrity sha512-HwHuynUY9PXa+Afs+AVpLotib/SxLljqiDVlpB7qniidltUnJNvmSb+qj3cROC81rZIuUkCcRBOX2QjLqSd1aQ==
+"@gravis-os/landing@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.1.3.tgz#169f7d30c1398235804cecca699decc41ea64a80"
+  integrity sha512-nJp9SFk274s3vcEJJZ4s0pAIOODQSzU64E6vwVa7nnElS+yAuymgiVYnhf426YnO3snyjeLpEu9qy5OVZH3wOQ==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/theme" "*"
