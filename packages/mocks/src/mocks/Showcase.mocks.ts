@@ -208,6 +208,106 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     },
   },
   {
+    title: 'NextGEN Global Decarbonisation Initiative.',
+    slug: 'nextgen',
+    subtitle:
+      'How we created an intuitive platform for the International Maritime Organisation & Maritime Port Authority of Singapore.',
+    hero_src: '/showcases/nextgen/hero.png',
+    hero_alt: 'NextGEN showcase',
+    mode: 'dark',
+    backgroundColor: '#013157',
+    reverse: true,
+
+    sections: {
+      leftGridSticky: {
+        title: 'Designing for the Future',
+        subtitle:
+          'Delivering impactful messages of change through purposeful designs. We align our focus to our client’s vision to ensure what’s important stands out.',
+        hero_src: '/showcases/nextgen/left.png',
+        hero_alt: 'NextGEN Showcase 1',
+      },
+      gallery: {
+        title: 'Building an Immersive Experience',
+        subtitle:
+          'Making users a part of the initiative through interactive and immersive site experiences. We want users to be able to fully understand and more importantly, share the same vision as the brand.',
+        items: [
+          {
+            title: '/showcases/nextgen/gallery_1.png',
+            titleProps: { alt: 'NextGEN Gallery 1' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_2.png',
+            titleProps: { alt: 'NextGEN Gallery 2' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_3.png',
+            titleProps: { alt: 'NextGEN Gallery 3' },
+          },
+          {
+            title: '/showcases/nextgen/gallery_4.png',
+            titleProps: { alt: 'NextGEN Gallery 4' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'Simplifying the Process',
+        subtitle:
+          'We are constantly looking to organize data and information in intuitive and concise ways for simplistic viewing. We use easy-to-follow layouts to provide important information in clearly defined categories. ',
+        hero_src: '/showcases/nextgen/right.png',
+        hero_alt: 'NextGEN Showcase 2',
+      },
+    },
+  },
+  {
+    title: 'Blockchain & Artificial Intelligence.',
+    slug: 'spk',
+    subtitle:
+      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform, ensuring reliable insights for optimal trading strategies.',
+    hero_src: '/showcases/spk/hero.png',
+    hero_alt: 'SPK showcase',
+    mode: 'dark',
+    backgroundColor: '#071323',
+    sections: {
+      leftGridSticky: {
+        title: 'Maximizing the Value of Data',
+        subtitle:
+          'We ensure that relevant market information is not lost in the sea of data and effectively utilize them for the trading platform.',
+        hero_src: '/showcases/spk/left.png',
+        hero_alt: 'SPK Showcase 1',
+      },
+      gallery: {
+        title: 'Providing User-Centric Data ',
+        subtitle:
+          'Building customized views based on what is important to the user, tailoring data presentation to enhance user experience and enable personalized insights.',
+        items: [
+          {
+            title: '/showcases/spk/gallery_1.png',
+            titleProps: { alt: 'TGB Gallery 1' },
+          },
+          {
+            title: '/showcases/spk/gallery_2.png',
+            titleProps: { alt: 'TGB Gallery 2' },
+          },
+          {
+            title: '/showcases/spk/gallery_3.png',
+            titleProps: { alt: 'TGB Gallery 3' },
+          },
+          {
+            title: '/showcases/spk/gallery_4.png',
+            titleProps: { alt: 'TGB Gallery 4' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'Everything At A Glance',
+        subtitle:
+          'Streamlining information flow for a quick and comprehensive understanding of market trends and performance, enabling users to make informed decisions at a glance, saving time and effort.',
+        hero_src: '/showcases/spk/right.png',
+        hero_alt: 'SPK Showcase 2',
+      },
+    },
+  },
+  {
     title: 'A beautifully crafted self-pick up service app.',
     slug: 'suntec',
     subtitle:
@@ -362,7 +462,6 @@ export const MOCK_DESIGN_SHOWCASES = [
     },
   },
   {
-    // TODO: ADD DETAIL
     title: 'Spreading Joy with Mr. Bucket',
     slug: 'mr-bucket',
     subtitle:
