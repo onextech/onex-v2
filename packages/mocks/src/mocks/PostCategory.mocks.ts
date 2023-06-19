@@ -4,10 +4,10 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     title: 'Sustainability',
     slug: 'sustainability',
     description: 'Green Innovations, Global Impact.',
-    subtitle:
-      'Empowering change for a greener and cleaner future.',
+    subtitle: 'Empowering change for a greener and cleaner future.',
     hero_src: 'https://source.unsplash.com/Mt9DbRm2KmA/1600x900',
-    hero_alt: 'Scenic landscape with green meadows, mountains, and a flowing river.',
+    hero_alt:
+      'Scenic landscape with green meadows, mountains, and a flowing river.',
   },
   {
     id: 2,
@@ -34,8 +34,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     title: 'Brand Strategy',
     slug: 'brand-strategy',
     description: 'Building Brands that Connect.',
-    subtitle:
-      'Crafting a compelling brand story for lasting impact.',
+    subtitle: 'Crafting a compelling brand story for lasting impact.',
     hero_src: 'https://source.unsplash.com/8ryz8T0bWx4/1600x900',
     hero_alt: 'People standing next to organisation wall.',
   },
@@ -163,7 +162,8 @@ export const MOCK_DATA_POST_CATEGORYS = [
     title: 'Benefits of AI',
     slug: 'benefits-of-ai',
     description: 'Unleashing the Power of AI.',
-    subtitle: 'Harnessing Artificial Intelligence for exponential growth, improved decision-making, and unparalleled efficiency.',
+    subtitle:
+      'Harnessing Artificial Intelligence for exponential growth, improved decision-making, and unparalleled efficiency.',
     hero_src: 'https://source.unsplash.com/5PZ0ASBTvCQ/1600x900',
     hero_alt: 'Crystalized layout',
   },
@@ -172,7 +172,8 @@ export const MOCK_DATA_POST_CATEGORYS = [
     title: 'Future of AI',
     slug: 'future-of-ai',
     description: 'Embracing the AI Revolution.',
-    subtitle: 'Exploring the cutting-edge advancements, emerging trends, and transformative potential of Artificial Intelligence.',
+    subtitle:
+      'Exploring the cutting-edge advancements, emerging trends, and transformative potential of Artificial Intelligence.',
     hero_src: 'https://source.unsplash.com/9Y4ronQmPjk/1600x900',
     hero_alt: 'Neuroscience art',
   },
@@ -181,7 +182,8 @@ export const MOCK_DATA_POST_CATEGORYS = [
     title: 'AI in Ethics',
     slug: 'ai-in-ethics',
     description: 'Navigating the Ethical Landscape of AI.',
-    subtitle: 'Examining the ethical considerations, responsible development, and societal impact of Artificial Intelligence.',
+    subtitle:
+      'Examining the ethical considerations, responsible development, and societal impact of Artificial Intelligence.',
     hero_src: 'https://source.unsplash.com/eEVPSeup4OY/1600x900',
     hero_alt: 'Animated garden city',
   },
@@ -190,7 +192,8 @@ export const MOCK_DATA_POST_CATEGORYS = [
     title: 'AI in Finance',
     slug: 'ai-in-finance',
     description: 'Transforming Finance through AI.',
-    subtitle: 'Revolutionizing financial services, automating processes, and driving data-driven insights using Artificial Intelligence.',
+    subtitle:
+      'Revolutionizing financial services, automating processes, and driving data-driven insights using Artificial Intelligence.',
     hero_src: 'https://source.unsplash.com/X5CSjHTjlgw/1600x900',
     hero_alt: 'Ribbons around a cube',
   },
@@ -199,11 +202,12 @@ export const MOCK_DATA_POST_CATEGORYS = [
     title: 'AI in Government',
     slug: 'ai-in-government',
     description: 'Empowering Governance with AI.',
-    subtitle: 'Enhancing public services, policy-making, and decision support systems through Artificial Intelligence technologies.',
+    subtitle:
+      'Enhancing public services, policy-making, and decision support systems through Artificial Intelligence technologies.',
     hero_src: 'https://source.unsplash.com/v-UrekkEHOk/1600x900',
     hero_alt: 'Pipes and smoke',
   },
-];
+]
 
 export const MOCK_DIGITAL_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
 

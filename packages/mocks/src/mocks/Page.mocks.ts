@@ -2287,7 +2287,7 @@ export const MOCK_DATA_PAGES = [
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Data for the Future',
+    seo_title: '{appTitle} - Enterprise AI Development',
     seo_description:
       '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
     sections: {
@@ -2733,7 +2733,7 @@ export const MOCK_DESIGN_PAGES = [
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Building Leading-Edge Enterprise Designs',
+    seo_title: '{appTitle} - Enterprise UI/UX Design',
     seo_description:
       "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
     sections: {

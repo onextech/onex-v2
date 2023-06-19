@@ -6615,9 +6615,9 @@ export const MOCK_FINX_SERVICES = [
       'Define and execute a comprehensive digital roadmap that aligns with your business goals and drives transformation in the finance industry.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Digital Roadmap Development',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Define and execute a comprehensive digital roadmap that aligns with your business goals and drives transformation in the finance industry.',
     },
     // Sections
     sections: {
@@ -6749,9 +6749,9 @@ export const MOCK_FINX_SERVICES = [
       'Innovative digital solutions and strategic consulting services tailored for the financial industry.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'FinTech Digital Strategy',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Innovative digital solutions and strategic consulting services tailored for the financial industry.',
     },
     // Sections
     sections: {
@@ -6886,9 +6886,9 @@ export const MOCK_FINX_SERVICES = [
       'Delivering top-notch AI-powered automation solutions designed to streamline operations in the finance sector.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'AI-Powered Business Process Automation',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Delivering top-notch AI-powered automation solutions designed to streamline operations in the finance sector.',
     },
     // Sections
     sections: {
@@ -7021,9 +7021,9 @@ export const MOCK_FINX_SERVICES = [
       'Streamline your financial operations and enhance productivity with our expert workflow management and optimization solutions.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Workflow Management and Optimization',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Streamline your financial operations and enhance productivity with our expert workflow management and optimization solutions.',
     },
     // Sections
     sections: {
@@ -7155,9 +7155,9 @@ export const MOCK_FINX_SERVICES = [
       'Revolutionize your asset management with our automated portfolio optimization solutions.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Automated Portfolio Optimization',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Revolutionize your asset management with our automated portfolio optimization solutions.',
     },
     // Sections
     sections: {
@@ -7290,9 +7290,9 @@ export const MOCK_FINX_SERVICES = [
       'Uncover hidden opportunities and make smarter investment decisions with our AI-powered analysis tools.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'AI-Driven Investment Analysis',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Uncover hidden opportunities and make smarter investment decisions with our AI-powered analysis tools.',
     },
     // Sections
     sections: {
@@ -7424,9 +7424,9 @@ export const MOCK_FINX_SERVICES = [
       'Leverage our AI solutions to simplify, enhance accuracy and speed up your regulatory reporting process.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'AI-Enabled Regulatory Reporting',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Leverage our AI solutions to simplify, enhance accuracy and speed up your regulatory reporting process.',
     },
     // Sections
     sections: {
@@ -7559,9 +7559,9 @@ export const MOCK_FINX_SERVICES = [
       'Streamline your compliance management and minimize risks with our tailored solutions.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Compliance Risk Assessment',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Streamline your compliance management and minimize risks with our tailored solutions.',
     },
     // Sections
     sections: {
@@ -7695,9 +7695,9 @@ export const MOCK_FINX_SERVICES = [
       'Revolutionizing the legal landscape with intelligent automation.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Automated Legal Document Review',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Revolutionizing the legal landscape with intelligent automation.',
     },
     // Sections
     sections: {
@@ -7829,9 +7829,9 @@ export const MOCK_FINX_SERVICES = [
       'Harnessing the power of AI to optimize asset allocation strategies.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'AI-Driven Asset Allocation',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Harnessing the power of AI to optimize asset allocation strategies.',
     },
     // Sections
     sections: {
@@ -7962,9 +7962,9 @@ export const MOCK_FINX_SERVICES = [
       'Utilizing advanced AI algorithms to predict customer behaviors and improve business outcomes.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Predictive Customer Behavior Analysis',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Utilizing advanced AI algorithms to predict customer behaviors and improve business outcomes.',
     },
     // Sections
     sections: {
@@ -8097,9 +8097,9 @@ export const MOCK_FINX_SERVICES = [
       'Drive customer engagement and revenue by leveraging AI-powered personalized recommendations.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Personalized Product Recommendation Systems',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Drive customer engagement and revenue by leveraging AI-powered personalized recommendations.',
     },
     // Sections
     sections: {
@@ -8232,9 +8232,9 @@ export const MOCK_FINX_SERVICES = [
       'Supplement your team with expert engineers to accelerate your digital transformation.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Engineering Staff Augmentation',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Supplement your team with expert engineers to accelerate your digital transformation.',
     },
     // Sections
     sections: {
@@ -8366,9 +8366,9 @@ export const MOCK_FINX_SERVICES = [
       'Discover how our generative AI solutions can transform your business by enabling automated creativity and intelligent problem-solving.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'Generative AI Solutions',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Discover how our generative AI solutions can transform your business by enabling automated creativity and intelligent problem-solving.',
     },
     // Sections
     sections: {
@@ -8501,9 +8501,9 @@ export const MOCK_FINX_SERVICES = [
       'Unlock the power of conversational AI with our ChatGPT API development services.',
     // Seo
     seo: {
-      title: 'User Interface Development',
+      title: 'ChatGPT API Development',
       description:
-        'Accelerate development with our user interface development services. Create intuitive and visually appealing interfaces for seamless user experiences.',
+        'Unlock the power of conversational AI with our ChatGPT API development services.',
     },
     // Sections
     sections: {
