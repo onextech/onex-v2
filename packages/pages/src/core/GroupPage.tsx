@@ -26,7 +26,7 @@ export interface GroupPageProps {
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
-  const { clientLogos, clientTestimonials, routeConfig } = useLayout()
+  const { clientLogos } = useLayout()
   const { sections } = page || {}
   const { benefits, faqs, cta } = sections || {}
 
