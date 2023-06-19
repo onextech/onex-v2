@@ -5,7 +5,12 @@ import {
   MOCK_GROUP_POST_CATEGORYS,
   MOCK_TECH_POST_CATEGORYS,
 } from './PostCategory.mocks'
-import { MOCK_DATA_TAGS, MOCK_DESIGN_TAGS, MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import {
+  MOCK_DATA_TAGS,
+  MOCK_DESIGN_TAGS,
+  MOCK_GROUP_TAGS,
+  MOCK_TECH_TAGS,
+} from './Tag.mocks'
 import getCategoryFromCrudItem from '../utils/getCategoryFromCrudItem'
 
 export const MOCK_TECH_POSTS = [
@@ -98,7 +103,7 @@ export const MOCK_TECH_POSTS = [
       '<blockquote>\n' +
       "<p><em>Summary: Developing the right product for customers is essential for a business to succeed. To achieve this, business owners and product developers should conduct market research, customer feedback analysis, user persona creation, test assumptions, flexibility, customer experience focused and success measurement. Market research involves compiling data about target audiences&rsquo; demographics, tastes, behaviours, and pain points. Prioritising product features and creating user personas can help provide a more specialised experience. Keeping an open mind and testing hypotheses through user testing and prototyping, and to be adaptable. The product will continue to match the target market's changing needs and wants if success is measured using criteria like customer happiness, retention rates, and revenue growth.</em></p>\n" +
       '</blockquote>\n' +
-      "<p>As a business owner or product developer, it's essential to ensure that you're building the ideal product for your clients. Failure to meet the needs of your target audience can lead to wasted resources and business may not be profitable. If it does not even solve a real problem or fulfill a genuine desire for your target audience, it\'s unlikely to succeed in the long run. To avoid these pitfalls, it's crucial to take the time to evaluate your customers' wants and needs before starting to build the product. Additionally, gathering of feedbacks from them throughout will smoothen the whole development process. Here are some tips to help you do just that.</p>\n" +
+      "<p>As a business owner or product developer, it's essential to ensure that you're building the ideal product for your clients. Failure to meet the needs of your target audience can lead to wasted resources and business may not be profitable. If it does not even solve a real problem or fulfill a genuine desire for your target audience, it's unlikely to succeed in the long run. To avoid these pitfalls, it's crucial to take the time to evaluate your customers' wants and needs before starting to build the product. Additionally, gathering of feedbacks from them throughout will smoothen the whole development process. Here are some tips to help you do just that.</p>\n" +
       '<h3>Conduct market research</h3>\n' +
       '<p>The first step in evaluating and determining the needs and wants of your customers is to conduct sufficient market research. This involves compiling of data about your target audience, including their demographics, preferences, behaviours, and pain points. Surveys, focus groups, interviews and other techniques can be used. The objective of getting to know our audience is to comprehend what motivates your customers, the existing problems that they are attempting to mitigate, and the solutions that they are currently utilising.</p>\n' +
       '<h3>Analyse customer feedback</h3>\n' +
@@ -112,7 +117,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>Focus on customer experience</h3>\n' +
       '<p>Ultimately, building the right product for your customers is all about creating a satisfying consumer experience when developing the ideal product for your target market. This entails not just attending to their requirements and resolving their problems, but also ensuring a seamless and enjoyable experience throughout the entire customer journey. Give close attention to each and every element that affects the user experience, from the initial marketing and sales procedure to the product design and support. Aim to go above and beyond your consumers&rsquo; expectations by being fully aware of what they value.</p>\n' +
       '<h3>Measure success</h3>\n' +
-      '<p>To gauge how well your product satisfies the demands and wants of your target market is also a key step. Establishing clear goals and metrics for success such as customer satisfaction levels, retention rates and revenue expansion. Keep an eye over these indicators over time and change product accordingly to make sure it\'s providing the value your customers are looking for.</p>\n' +
+      "<p>To gauge how well your product satisfies the demands and wants of your target market is also a key step. Establishing clear goals and metrics for success such as customer satisfaction levels, retention rates and revenue expansion. Keep an eye over these indicators over time and change product accordingly to make sure it's providing the value your customers are looking for.</p>\n" +
       '<h2>Final Words</h2>\n' +
       "<p>In summary, developing the ideal product for your customers demands a thorough comprehension of their needs and goals. Keep in mind that creating a successful product that is a continuous process that necessitates constant input and it requires continuous feedback and iteration to stay relevant and competitive in today's rapidly evolving marketplace.</p>\n",
   },
@@ -268,7 +273,7 @@ export const MOCK_TECH_POSTS = [
       '<h3>3D Printing</h3>\n' +
       '<p>Finally, 3D printing technology is being used to make spare parts and ship components. Because components can be printed on demand rather than having to be acquired and transported from elsewhere, this can greatly decrease the time and expense involved in maintaining and repairing vessels. This reduces the need for ships to transport huge inventories of spare parts, increasing efficiency and lowering expenses even further. W&auml;rtsil&auml;, a shipping company, has created a 3D printing solution for making ship spare parts. Customers can use the service to submit a design for a component, which is then manufactured on demand and delivered to the user.</p>\n' +
       '<h3>Final Word</h3>\n' +
-      '<p>Ultimately, rising trends and technologies such as automation, big data, blockchain, autonomous shipping, green energy, and 3D printing are all playing a part in causing major changes in the maritime industry. These developments have the potential to dramatically boost industry productivity and revenue while also lowering costs and increasing safety and sustainability. It will be exciting to see how these trends and technologies develop and how they affect the way products are moved around the globe as the maritime sector keeps evolving.</p>\n'
+      '<p>Ultimately, rising trends and technologies such as automation, big data, blockchain, autonomous shipping, green energy, and 3D printing are all playing a part in causing major changes in the maritime industry. These developments have the potential to dramatically boost industry productivity and revenue while also lowering costs and increasing safety and sustainability. It will be exciting to see how these trends and technologies develop and how they affect the way products are moved around the globe as the maritime sector keeps evolving.</p>\n',
   },
   {
     published_at: '2023-06-12T14:00:00+0000',
@@ -463,7 +468,7 @@ export const MOCK_TECH_POSTS = [
       '<p>React Performance Optimisation is a set of techniques used to make React applications run faster. This may include optimising rendering, reducing the application bundle, and minimising the quantity of network queries needed to load the application.</p>\n' +
       '<h3>10. Accessibility</h3>\n' +
       '<p>Accessibility is an important determinant for any modern web application. It ensures that users with physical or mental limitations can access and use your application successfully. React provides a variety of tools and techniques for improving reach to a larger group of audience, including ARIA attributes, keyboard navigation, and semantic HTML.</p>\n' +
-      "<p>In conclusion, by enhancing performance, usability, and functionality, advanced React development techniques can elevate your web applications to a new level. Learning these techniques can help you provide a more interesting and satisfying user experience whether you're using React for web or mobile development. You can build strong, scalable, and resilient applications that satisfy the requirements of your users and your business by integrating these techniques with cloud infrastructure and best practices.</p>",
+      "<p>In conclusion, by enhancing performance, usability, and functionality, advanced React development techniques can elevate your web applications to a new level. Learning these techniques can help you provide a more interesting and satisfying user experience whether you're using React for web or mobile development. You can build strong, scalable, and resilient applications that satisfy the requirements of your users and your business by integrating these techniques with cloud infrastructure and best practices.</p>\n",
   },
   {
     published_at: '2023-07-03T14:00:00+0000',
@@ -497,7 +502,7 @@ export const MOCK_TECH_POSTS = [
       '<p>AWS Lambda supports a broad variety of programming languages, so you can write your function in whichever language you like. Also, you can use third-party libraries and frameworks in conjunction with your Lambda function to gain the advantages of already written code and hasten development.</p>\n' +
       '<p>You can test your Lambda function using the Amazon Management Console, AWS CLI, or AWS SDKs once it has been created and configured. The functionality of your Lambda function can also be tracked using Amazon CloudWatch, which offers real-time metrics and logs.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      "<p>AWS Lambda is a potent tool for creating serverless apps that can transform the way you create applications. AWS Lambda is swiftly gaining popularity among developers because to its capacity to offer a flexible, scalable, and economical approach to design and deploy applications. With AWS Lambda, you can embrace serverless architecture and cut operational expenses while boosting developer productivity and accelerating the release of new features. Hence, if you haven't already, consider utilising AWS Lambda for your subsequent projects!</p>",
+      "<p>AWS Lambda is a potent tool for creating serverless apps that can transform the way you create applications. AWS Lambda is swiftly gaining popularity among developers because to its capacity to offer a flexible, scalable, and economical approach to design and deploy applications. With AWS Lambda, you can embrace serverless architecture and cut operational expenses while boosting developer productivity and accelerating the release of new features. Hence, if you haven't already, consider utilising AWS Lambda for your subsequent projects!</p>\n",
   },
   {
     published_at: '2023-07-03T14:00:00+0000',
@@ -572,7 +577,7 @@ export const MOCK_GROUP_POSTS = [
       '<h2>Creating a Brand</h2>\n' +
       '<p>Finally, the significance of analytics for branding cannot be further emphasised. Returning customers dictate sustainability and new customers dictate growth. One of the biggest strategies is customer engagement as well as internal customer relationship management. Reaching out to customers personally, focusing continuously on customer problem-solving and improving of service to them is the quickest and most reliable form of return of investment. Their positive experience with what you offer encourages continued trust, value creation and growth.</p>\n' +
       "<p>Embarking on the aforementioned steps allows for organisations to develop strategies that will assist them in achieving sustainable growth for the future. Growth strategies can be complex, may require a significant investment of time and resources-intensive, but with careful planning and execution, organisations can position themselves for success. When implemented appropriately, growth strategies are advantageous for both the organisation and its customers as they foster value creation, solidify bonds and build on customer loyalty. For businesses looking to increase their competitive advantage in today's world, it is essential to invest in long-term growth initiatives that will support their future success.</p>\n" +
-      '<p>In conclusion, growth strategies are an essential part of any business. Organisations that take the time to develop effective and comprehensive plans can set themselves up for long-term success.</p>\n'
+      '<p>In conclusion, growth strategies are an essential part of any business. Organisations that take the time to develop effective and comprehensive plans can set themselves up for long-term success.</p>\n',
   },
   {
     published_at: '2023-05-15T14:00:00+0000',
@@ -765,6 +770,135 @@ export const MOCK_GROUP_POSTS = [
       '<p>At last, companies needs to put their organisational design concepts into action and monitor their efficacy over time. Regular performance assessments, staff surveys, and other techniques of obtaining feedback and data to identify areas for development may be used.</p>\n' +
       "<p>In conclusion, developing better teams requires a strategic approach to talent management that focuses on organisational design. Organisations may establish a setting where employees can thrive and contribute to the organisation's success by clarifying roles and responsibilities, developing efficient processes, fostering cooperation, facilitating learning and development, and promoting diversity and inclusion.</p>",
   },
+  {
+    published_at: '2019-12-03T14:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 2,
+    title: 'Achieving Successful Digital Transformation in the Enterprise',
+    slug: 'achieving-successful-digital-transformation-in-the-enterprise',
+    subtitle:
+      'Companies that succeed at digital transformation are ultimately the ones that are able to deal with change better.',
+    hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
+    hero_alt: 'cubes and lasers',
+    html:
+      "<p>Over the last few years, digital transformation has become one of the most widely-recognised topics in business with companies racing to acquire digital capabilities to drive their business forward. Referring to the adoption of digital technology used to improve fundamental business practices, digital transformation has been a necessary disruption that continues to affect every industry. With an increasing number of <a href='https://www.forbes.com/sites/tomgroenfeldt/2018/04/15/going-digital-in-banking-dbs-citi-bbva-ing-lead-the-way/?sh=3088b09a5877'>companies stepping forward to report record-breaking figures from new digital agendas</a>, going digital has proven to be an essential success factor for businesses today.</p>\n" +
+      '<p>However, despite the growing literature and support available on this issue, digitalisation at scale is far from trivial. For every success story published, comes many other case studies of failed attempts at digital transformation. A few of such cases are noted in <a href="https://hbr.org/2018/03/why-so-many-high-profile-digital-transformations-fail">this 2018 Harvard Business Review article</a> which cites the high-profile failures of companies such as GE, Nike, and P&G in their digital transformation journey. With many other such powerful organisations struggling to make sense of this undertaking despite their abundant resources, attaining successful digital transformation seems more elusive than ever.</p>\n' +
+      '<p>Fortunately, by examining the actions of today’s digital leaders, we are able to gain new insights on the secrets behind successful digital transformation strategies. After all, there are a few indicators that many successfully transformed companies have in common which may serve as worthwhile lessons to companies still finding success.</p>\n' +
+      '<h3>Leadership</h3>\n' +
+      '<p>Digital transformation starts from the top and commitment by the company’s key management is vital to the success of any digital transformation strategy. Organisations must understand that digital transformation is a long term commitment and not simply a technology upgrade. Shareholders need to be aware of the costs of digital transformation and be committed to stick with the change for the long-haul even if it means making capital losses in the beginning. Management buy-in is crucial in ensuring that budget and other resources are rightfully allocated to support change initiatives that drive transformation. Management also needs to be open to suggestions from the ground up while avoiding being change-resistant so as to foster open innovation and transformation success.</p>\n' +
+      '<p>At its heart, digital transformation is more about cultural and organisational change than technology change. It requires a change in company culture and cultural changes cannot happen without leadership. Managers responsible for digital transformation need to actively steer the organisation towards a corporate culture that embraces digital paradigms. Reinventing an organisation’s culture at the enterprise level is an enormous undertaking and requires a concerted effort from its leaders. To effectively influence corporate culture, management must work in unison to communicate the vision of a digitally transformed workplace.</p>\n' +
+      '<p>Successful digital transformation ultimately requires a transformational approach. Leaders who are dedicated, open to change, and are able to inspire cultural reinvention across the organisation will be more likely to find success in their digital transformation strategy.</p>\n' +
+      '<h3>Collaboration</h3>\n' +
+      '<p>While leadership serves as the fuse that sparks digital transformation, collaboration is the catalyst that ignites its success. Digital transformation requires an end-to-end change across the entire organisation and empowering workers to contribute is crucial in ensuring the success of a lasting digital transformation strategy.</p>\n' +
+      '<p>Organisational change can create a sense of confusion for employees who are kept in the dark of new initiatives. Every member of the organisation needs to be involved in achieving a shared vision of a successful digital transformation. Managers can do so by promoting greater transparency and engaging employees in key matters of change. On the ground, operational changes need to be clearly communicated to workers to avoid misaligned priorities and bottlenecks. Managers need to align team members with change efforts and build trust by working together on issues that may arise from change.</p>\n' +
+      '<p>Digital transformation is about changing the way teams work together and not just about the tools at use. Employees should be empowered to make decisions and given opportunities to contribute ideas. Empowering people is the key to achieving profound and inclusive digital transformation that drives sustainable growth.</p>\n' +
+      '<h3>Process</h3>\n' +
+      '<p>For success to take place, digital transformation must be viewed as a continuum. Organisations must acknowledge that digital transformation is not a one-off project but rather a continuous improvement across people, processes, and technology. By embracing digital transformation as a journey rather than a destination, managers can shift focus from merely pursuing technical upgrades to ensuring holistic change throughout the organisation.</p>\n' +
+      '<p>Digital transformation is a process to establish change as a competency in itself. A successful digital transformation is consequently dependent on how integrated change is woven into an organisation’s core capabilities. With technology constantly evolving, companies that view digital transformation as an ongoing process are better positioned to adapt and succeed.</p>\n' +
+      '<h3>Final word</h3>\n' +
+      '<p>When you look beyond the buzz surrounding the topic of digital transformation and its related technical concepts, you may notice that digital transformation is more about how organisations deal with change rather than the tools they use. Companies that succeed at digital transformation are ultimately the ones that are able to deal with change better. In finding success, managers approaching the issue of digital transformation should continue to explore and adopt technologies while bearing change management principles at heart. Enterprises that succeed in adapting to today’s digital landscape will be ones who stand to gain the most in the exciting times ahead.</p>\n',
+  },
+  {
+    published_at: '2019-03-27T14:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 3,
+    title: 'What Going Digital Means',
+    slug: 'what-going-digital-means',
+    subtitle:
+      'For managers leading digital initiatives, learning how to articulate what being digital means is the first step in succeeding at it.',
+    hero_src: 'https://source.unsplash.com/CyFBmFEsytU/1600x900',
+    hero_alt: 'light trails in car park',
+    html:
+      '<p>Amidst a growing trend advocating business digitisation in recent years, everyone is talking about going digital. Companies already riding atop the digital wave are continuing to build out winning capabilities at an accelerating pace every day. However for the uninitiated, approaching the already established dialogue on digital could prove to be too late or overwhelming to be worthwhile. Yet as the growing digital trend shows no signs of stopping in today&rsquo;s computer age, businesses from all walks of life are gradually returning to the drawing board with new digital agendas. With many more companies today diving head first into digital territories with announcements of new initiatives to go digital, one cannot help but wonder &mdash; what does going digital really mean?</p>\n' +
+      '<h2>Not just a buzzword</h2>\n' +
+      '<p>Organisations approaching the topic of going digital should look beyond the buzz to get a deeper understanding of what digital really means in order to apply it effectively. Within the technology industry, there is a tendency to equivocate frequently discussed topics as buzzwords that come and go with time. In recent years, the industry has been buzzing about the idea of digitisation as headlines concerning the topic began making rounds at conferences. Phrases such as digital transformation and technological reinvention are a few examples of terminology that underpins its seemingly superfluous existence. But the notion of going digital has proven to be more than a passing fad. With its ever-growing appeal in boardroom agendas, the imperative to become digital has transcended the industry to achieve mainstream status.</p>\n' +
+      '<h2>No smoke without fire</h2>\n' +
+      '<p>Beyond the hype surrounding its popularity, the motivation behind going digital is well-grounded. A recent&nbsp;<a href="https://cdn2.hubspot.net/hubfs/1624046/Digital%20Business%20Executive%20Summary_FINAL.pdf?t=1534365095051">report by the International Data Group (IDG) in 2018</a>&nbsp;found that 89% of organisations surveyed have adopted or already have plans to adopt digital strategies. The high level of digital adoption rates highlights the rising significance of digital technology and its implications for businesses today. Driven by the need for change in an ever so competitive business world, going digital bears major implications for businesses of all kinds.</p>\n' +
+      '<h3>Open to interpretation</h3>\n' +
+      '<p>Despite its widespread influence, the meaning behind digital still remains an ambiguous concept for many. In its definitive form, the term digital simply describes electronic technology that records binary information. However in reality, the meaning of digital manifests across a multitude of interpretations in various fields.</p>\n' +
+      '<p>For many people in the technology and business sectors, the word digital still conjures up an abstract mixture of thoughts. In the technology market, digital services are often misunderstood as being limited to the marketing practice in the form of digital marketing. While in the business world, digital continues to be packaged to mean different things for different people. For some executives, it&rsquo;s about the complex technical systems that are used at work. While for others, digital could simply be about enhancing the customer experience.</p>\n' +
+      '<p>None of the above interpretations are necessarily wrong. But as a result of its abstract origins and varied interpretations, it is important to note that going digital can sometimes mean entirely different things for different organisations.</p>\n' +
+      '<h2>Having a shared goal</h2>\n' +
+      '<p>Without a common understanding of what digital means, companies implementing digital strategies may find their efforts misdirected as initiatives and employees lack alignment. It is difficult to paint a shared vision of a digital workplace across the organisation when people have different interpretations of what digital means. Being able to define what digital is and what it is not will help companies approach and apply change in the right direction. For managers leading digital initiatives, learning how to articulate what being digital means is the first step in communicating a shared vision of a digitised organisation.</p>\n' +
+      '<h2>All in the mind</h2>\n' +
+      '<p>While going digital invokes a myriad of definitions, it is fundamentally a shift in mindset in the way business is carried out in an organisation. This mindset shift describes the change process in which a company&rsquo;s approach to work, culture, and its offerings are reinvented with the help of technology in order to create new or greater value for customers and itself.</p>\n' +
+      '<p>Promoting a digital mindset means embracing cultural change within the organisation. When businesses embark on plans to go digital, the initial questions that are asked are seldom about technical feasibilities nor technological needs. More often than not, the key concerns revolve around implementing and managing cultural changes that cultivate a digital mindset amongst people and processes.</p>\n' +
+      '<p>The creation of a value-driven culture challenges employees to redefine the way work is done across all levels of the organisation. In redefining value, managers need to focus on shaping culture rather than chasing rigid outcomes. By focusing on the process of creating a digitally-enabled culture rather than brooding over the kind of systems being implemented, executives can better foster the birth of foundational digital capabilities that drive long-term value. This cyclical process of cultural change and value creation inherently represents the meaning of going digital.</p>\n' +
+      '<h2>Final word</h2>\n' +
+      '<p>To achieve success, it is important to be able to define digital and the way it is going to be applied throughout the organisation. Leaders needs to have a clear definition of what digital means in order to communicate digital strategies across the organisation. Owning a better understanding of what digital truly means can help executives gain a complete insight on how to apply it effectively.</p>\n' +
+      '<p>Recognising that going digital refers to a process rather than an outcome is a crucial step in defining what it means. Businesses should view digital as a way of doing things rather than a thing in itself. At its core, going digital is more than just moving offline services online. What really matters is the process of change that it promotes within the organisation. Companies that go digital are essentially undergoing a process of redefining value for its stakeholders.</p>\n' +
+      '<p>Going digital itself is a means to an end, where the end goal is to derive the most value from the process of change. Companies that acknowledge digital as a process are better equipped to make decisions that will lead to success, whereas companies that perceive digital as an outcome are set up to fail. The hardest part of going digital comes from dealing with the mindset shift from old habits of doing work. Going digital is not easy, but with the right definition and mindset, all the investment will pay off.</p>\n',
+  },
+  {
+    published_at: '2019-04-17T14:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 3,
+    title: 'The Rise of Business Process Automation',
+    slug: 'the-rise-of-business-process-automation',
+    subtitle:
+      'In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work.',
+    hero_src: 'https://source.unsplash.com/jIBMSMs4_kA/1600x900',
+    hero_alt: 'robot hand',
+    html:
+      '<p>In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work. Labour-intensive jobs are increasingly costing companies more to manage due to the rising cost of labour in a rapidly globalised world. Increasing headcount as a way to complete human-operated tasks on time has traditionally been the only way out for managers. However, modern technologies today has provided companies with new and innovative ways to deal with this age-old operational challenge. In recent years, business process automation has emerged as the solution to continuing operational challenges. Enabled by advances in the fields of software robotics, machine learning, and artificial intelligence, the benefits of automation have risen exponentially over the years. The new-found potential of business process automation today has led organisations to rethink their operations management strategies and the future of their workforce.</p>\n' +
+      '<h2><Efficiency</h2>\n' +
+      '<p>Operational management and execution form the bulk of activities conducted by businesses every day. As an integral part of any organisation, operations management determines the amount of value a company can produce in any given period. Companies with higher operational efficiency are able to create more value and therefore generate higher levels of profit in the long run.</p>\n' +
+      '<p>A key dynamic of operational efficiency is the way in which work is done in an organisation. In most organisations, teams rely on workflows to get work done by distributing labour across procedures and pre-defined business rules. In the pursuit of operational efficiency, companies are turning to the optimisation of these workflows via automation.</p>\n' +
+      '<p>Automation defines the way work is performed with minimal or zero human intervention. The term business process automation is derived from the application of automation principles in a business context. Business process automation enables a company to streamline its operational processes with simplified workflows, and reduces its reliance on manpower in achieving business outcomes.</p>\n' +
+      '<h2>Success</h2>\n' +
+      '<p>As modern societies evolve towards service and experiential-based economies, demand for future business has shifted towards knowledge-based services instead of manufacturing output. In a bid to prioritise limited resources on higher value businesses over labour-intensive work, companies today are actively looking for ways to adopt and increase automation in their businesses.</p>\n' +
+      '<p>With the rising prominence of business process automation in recent years, organisations are making automation a strategic priority in their core operations. According to a&nbsp;<a href="https://www.mckinsey.com/business-functions/operations/our-insights/the-automation-imperative">McKinsey report in 2018</a>, 75% of surveyed companies have already begun or are planning to automate business processes in the immediate year, suggesting that business process automation is becoming a key priority during strategic planning processes in modern boardrooms.</p>\n' +
+      '<p>Today, business process automation has become a highly prioritised enabler of business success for many organisations. A company&#39;s ability to perform complex and labour-intensive tasks in a reliable and productive fashion is a key driver of business success. Studies have shown that organisations that embrace business process automation are more likely to stay ahead of competition and succeed in their market. A recent&nbsp;<a href="https://www.forrester.com/report/Predictions+2018+Automation+Alters+The+Global+Workforce/-/E-RES139991">report published by Forrester Research in 2018</a>&nbsp;predicts that process automation is a key indicator of success in future generations of businesses, with companies that excel in automation not only succeeding, but also becoming dominant forces in their industries.</p>\n' +
+      '<h2>Tools</h2>\n' +
+      '<p>Automation technologies exists for companies dealing with various types of operational challenges with each type of automation technology built for problems of varying business complexity.</p>\n' +
+      '<p>Stemming from the long-standing popularity of the Microsoft Excel software in business communities, Excel macros are amongst the first choices for companies considering automation. Widely recognised as the de facto automation solution amongst Excel users, Excel&#39;s macro feature offers managers a graphical user interface for automating routine calculations. With Excel macros, managers can easily record procedures to create automation routines which can be stored, shared, and run by others at a later time. Advanced users in Excel also have access to the programming language that runs the software itself. The programming language, better known as Visual Basic for Applications (VBA), allows users to customise macros in order to create more powerful automation routines in their workflows.</p>\n' +
+      '<p>While Excel macros allow companies to gain automation capability with relative ease, they are only effective for manipulating data within the Excel program itself. Operational challenges that exist in other parts of the organisation&#39;s workflow require more advanced forms of automation outside of the software.</p>\n' +
+      '<p>In automating operations across a general spectrum of tasks, a form of automation technology called Robotic Process Automation (RPA) takes the lead. As an emerging domain in business process automation, robotic process automation subscribes to the notion of employing software robots to perform high-volume repeatable tasks from within a workstation. Robotic process automation technology enables managers to configure a program to interact with existing applications on a computer by triggering events to manipulate data in order to fulfill the desired task.</p>\n' +
+      '<p>Robotic process automation solutions are adaptable and flexible enough to handle a wide range of tasks. Most reputable robotic process automation software today are able to take control of a computer&#39;s screen, navigate across web pages, fill in forms, generate documents, send emails, and even communicate with other workstations. With robotic process automation, managers can simply instruct the software robot to follow a pre-defined sequence of steps when encountering repetitive work and watch the task run to completion from the comforts of their desk.</p>\n' +
+      '<p>Eliminating the need for low value, repetitive work across the organisation, robotic process automation has opened up an era of possibilities for companies exploring more efficient operational strategies.</p>\n' +
+      '<p>Yet, even as robotic process automation marches into the future, it is limited by the scope of its mechanical workflows. With the need for sequences to be programmed in advanced, all plausible scenarios must be foreseen ahead of time in order to prevent unexpected errors from breaking the automation workflow. Unlike human operators, robotic software lack the ability to derive decisions based on business logic, and must be manually commanded to complete tasks.</p>\n' +
+      '<p>However in recent years, developments in machine learning and artificial intelligence have given rise to more powerful cognitive abilities. With mounting competitive pressure in the robotic process automation software market today, automation providers are gearing towards cognitive-based automation capabilities to expand their offerings.</p>\n' +
+      '<h2>Final Words</h2>\n' +
+      '<p>Heralding a new wave of automation solutions, modern robotic process automation tools enhanced with cognitive capabilities allow automation software robots to mimic human actions to a larger degree. These cognitive-enabled robots are able to process information with in-depth analysis, learn from heuristics, and make business decisions at levels of accuracy. Organisations that are able to harness these capabilities will gain the ability to automate complex tasks with greater ease and efficiency. As the latest addition to automation technology, machine learning and artificial intelligence promises to take business process automation to the next level.</p>\n' +
+      '<p>Through its humble beginnings and well-grounded motivations, business process automation will continue to be an essential enabler of business success in the days to come. The application of automation tools such as macros and robotic software will continue to proliferate alongside rising business demand as the influence of machine learning and artificial intelligence takes flight.</p>\n',
+  },
+  {
+    published_at: '2023-05-15T14:00:00+0000',
+    is_active: true,
+    is_hero: true,
+    category_id: 3,
+    title: 'Benefits of Business Process Automation',
+    slug: 'benefits-of-business-process-automation',
+    subtitle:
+      'By embracing the automation revolution, organizations can achieve enhanced efficiency and unleash new value.',
+    hero_src: 'https://source.unsplash.com/RPPdQVp-nds/1600x900',
+    hero_alt: 'sticky notes',
+    html:
+      '<p>In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work. Labour-intensive jobs are increasingly costing companies more to manage due to the rising cost of labour in a rapidly globalised world. Increasing headcount as a way to complete human-operated tasks on time has traditionally been the only way out for managers. However, modern technologies today has provided companies with new and innovative ways to deal with this age-old operational challenge. In recent years, business process automation has emerged as the solution to continuing operational challenges. Enabled by advances in the fields of software robotics, machine learning, and artificial intelligence, the benefits of automation have risen exponentially over the years. The new-found potential of business process automation today has led organisations to rethink their operations management strategies and the future of their workforce.</p>\n' +
+      '<h2>Efficiency</h2>\n' +
+      '<p>Operational management and execution form the bulk of activities conducted by businesses every day. As an integral part of any organisation, operations management determines the amount of value a company can produce in any given period. Companies with higher operational efficiency are able to create more value and therefore generate higher levels of profit in the long run.</p>\n' +
+      '<p>A key dynamic of operational efficiency is the way in which work is done in an organisation. In most organisations, teams rely on workflows to get work done by distributing labour across procedures and pre-defined business rules. In the pursuit of operational efficiency, companies are turning to the optimisation of these workflows via automation.</p>\n' +
+      '<p>Automation defines the way work is performed with minimal or zero human intervention. The term business process automation is derived from the application of automation principles in a business context. Business process automation enables a company to streamline its operational processes with simplified workflows, and reduces its reliance on manpower in achieving business outcomes.</p>\n' +
+      '<h2>Success</h2>\n' +
+      '<p>As modern societies evolve towards service and experiential-based economies, demand for future business has shifted towards knowledge-based services instead of manufacturing output. In a bid to prioritise limited resources on higher value businesses over labour-intensive work, companies today are actively looking for ways to adopt and increase automation in their businesses.</p>\n' +
+      '<p>With the rising prominence of business process automation in recent years, organisations are making automation a strategic priority in their core operations. According to a&nbsp;<a href="https://www.mckinsey.com/business-functions/operations/our-insights/the-automation-imperative">McKinsey report in 2018</a>, 75% of surveyed companies have already begun or are planning to automate business processes in the immediate year, suggesting that business process automation is becoming a key priority during strategic planning processes in modern boardrooms.</p>\n' +
+      '<p>Today, business process automation has become a highly prioritised enabler of business success for many organisations. A company&#39;s ability to perform complex and labour-intensive tasks in a reliable and productive fashion is a key driver of business success. Studies have shown that organisations that embrace business process automation are more likely to stay ahead of competition and succeed in their market. A recent&nbsp;<a href="https://www.forrester.com/report/Predictions+2018+Automation+Alters+The+Global+Workforce/-/E-RES139991">report published by Forrester Research in 2018</a>&nbsp;predicts that process automation is a key indicator of success in future generations of businesses, with companies that excel in automation not only succeeding, but also becoming dominant forces in their industries.</p>\n' +
+      '<h2>Tools</h2>\n' +
+      '<p>Automation technologies exists for companies dealing with various types of operational challenges with each type of automation technology built for problems of varying business complexity.</p>\n' +
+      '<p>Stemming from the long-standing popularity of the Microsoft Excel software in business communities, Excel macros are amongst the first choices for companies considering automation. Widely recognised as the de facto automation solution amongst Excel users, Excel&#39;s macro feature offers managers a graphical user interface for automating routine calculations. With Excel macros, managers can easily record procedures to create automation routines which can be stored, shared, and run by others at a later time. Advanced users in Excel also have access to the programming language that runs the software itself. The programming language, better known as Visual Basic for Applications (VBA), allows users to customise macros in order to create more powerful automation routines in their workflows.</p>\n' +
+      '<p>While Excel macros allow companies to gain automation capability with relative ease, they are only effective for manipulating data within the Excel program itself. Operational challenges that exist in other parts of the organisation&#39;s workflow require more advanced forms of automation outside of the software.</p>\n' +
+      '<p>In automating operations across a general spectrum of tasks, a form of automation technology called Robotic Process Automation (RPA) takes the lead. As an emerging domain in business process automation, robotic process automation subscribes to the notion of employing software robots to perform high-volume repeatable tasks from within a workstation. Robotic process automation technology enables managers to configure a program to interact with existing applications on a computer by triggering events to manipulate data in order to fulfill the desired task.</p>\n' +
+      '<p>Robotic process automation solutions are adaptable and flexible enough to handle a wide range of tasks. Most reputable robotic process automation software today are able to take control of a computer&#39;s screen, navigate across web pages, fill in forms, generate documents, send emails, and even communicate with other workstations. With robotic process automation, managers can simply instruct the software robot to follow a pre-defined sequence of steps when encountering repetitive work and watch the task run to completion from the comforts of their desk.</p>\n' +
+      '<p>Eliminating the need for low value, repetitive work across the organisation, robotic process automation has opened up an era of possibilities for companies exploring more efficient operational strategies.</p>\n' +
+      '<p>Yet, even as robotic process automation marches into the future, it is limited by the scope of its mechanical workflows. With the need for sequences to be programmed in advanced, all plausible scenarios must be foreseen ahead of time in order to prevent unexpected errors from breaking the automation workflow. Unlike human operators, robotic software lack the ability to derive decisions based on business logic, and must be manually commanded to complete tasks.</p>\n' +
+      '<p>However in recent years, developments in machine learning and artificial intelligence have given rise to more powerful cognitive abilities. With mounting competitive pressure in the robotic process automation software market today, automation providers are gearing towards cognitive-based automation capabilities to expand their offerings.</p>\n' +
+      '<h2>Final Words</h2>\n' +
+      '<p>Heralding a new wave of automation solutions, modern robotic process automation tools enhanced with cognitive capabilities allow automation software robots to mimic human actions to a larger degree. These cognitive-enabled robots are able to process information with in-depth analysis, learn from heuristics, and make business decisions at levels of accuracy. Organisations that are able to harness these capabilities will gain the ability to automate complex tasks with greater ease and efficiency. As the latest addition to automation technology, machine learning and artificial intelligence promises to take business process automation to the next level.</p>\n' +
+      '<p>Through its humble beginnings and well-grounded motivations, business process automation will continue to be an essential enabler of business success in the days to come. The application of automation tools such as macros and robotic software will continue to proliferate alongside rising business demand as the influence of machine learning and artificial intelligence takes flight.</p>\n',
+  },
 ].map((item, i) => ({
   id: i + 1,
   // Category
@@ -790,189 +924,209 @@ export const MOCK_DATA_POSTS = [
     category_id: 1,
     title: 'Leveraging Data For Smarter Decision Making in Product Development',
     slug: 'leveraging-data-for-smarter-decision-making-in-product-development',
-    subtitle: "Maximizing the Power of Data for Enhanced Product Development and Marketing Strategies",
+    subtitle:
+      'Maximizing the Power of Data for Enhanced Product Development and Marketing Strategies',
     hero_src: 'https://source.unsplash.com/Pf5Pj7A5ddA/1600x900',
     hero_alt: 'person on cliff',
-    html: '<p>The digital world is drowning in data and businesses can either just let it pile up or harness it for their benefit. Despite the fact that the second options seems like the obvious choice, many companies do not fully utilise data-driven decision-making. Data is the lifeblood of product development and without it, decisions can be made without complete information or understanding. Making data-driven decisions in product development can help businesses make smarter, more informed decisions that are based on facts rather than guesses. By leveraging data to make better decisions, companies can accelerate their product development process and create products that are tailored to customer needs and demands.</p>' +
-    '<h2>Understanding user behaviour</h2>' +
-    '<p>Data-driven decision-making can also help companies identify trends and patterns in customer behaviour which can be used to improve product development cycles. By understanding user behaviour, companies can develop features that are tailored to their customers&rsquo; needs, resulting in a better overall user experience. However, this begs the question &mdash; are we really using all this information to its fullest potential?</p>' +
-    '<h2>Data-driven decision-making</h2>' +
-    '<p>Data-driven decision-making involves analysing existing information and obtaining new data to support and motivate the actions of companies. It enables company owners and department heads to minimise the risk when making choices which boosts efficiency and effectiveness. By observing and analysing customer behaviour, purchasing as well as usage habits through the use of customer surveys and feedback throughout the product development lifecycle can provide valuable insights into what customers are looking for in a new product. Companies can also leverage analytics tools such as heatmaps and A/B testing to track user engagement with different features and User Interface (UI) elements within a product. This data can then be used to inform design choices, prioritise feature sets, or even inform how a product is marketed. Building a dashboard which includes metrics like customer conversion rates, churn rate, or product usage frequency can visualise data points and trends. By monitoring changes in these numbers over time, companies can quickly identify areas of opportunity and make informed decisions based on the data they have collected.</p>' +
-    '<p>Data can also be used to quantify the impact of different decisions and changes in product development. Following fluctuations in numbers can give insight into whether it is popular among users, or if it needs to be modified or removed. Product teams can also use data to refine their processes in order to speed up product development cycles and optimise resources. Cross-referencing internal data with external data can give a more comprehensive view of the market trends, customer behaviour, and competitor analysis. Often times, data can be used to make predictions about future trends and shifts in the industry. This can help companies stay ahead of the curve by anticipating changes before they happen. In short, data is a powerful tool for businesses to make informed decisions quickly and accurately.</p>' +
-    '<h2>Marketing with data</h2>' +
-    '<p>Data is also often used for marketing purposes as well. Companies monitor the performance of different products using data analytics to measure their reach and target specific audiences with campaigns or adverts. They can keep track of the effectiveness of such activities by tracking metrics like click-through rate or customer engagement levels. By understanding user preferences, companies can tailor products that meet users&rsquo; needs better, leading to higher customer satisfaction rates and improved</p>' +
-    '<h2>Conclusion</h2>' +
-    '<p>By leveraging data to make smarter decisions during the product development process, businesses can create better products that are tailored to customer demands and preferences. Using customer feedback throughout the lifecycle, analytics tools, and quantitative measurements of changes made over time can help companies gain valuable insights into their customer base while simultaneously improving their processes. Data-driven decisions not only help businesses make better products, but they can also save time and resources in the long run.</p>'
+    html:
+      '<p>The digital world is drowning in data and businesses can either just let it pile up or harness it for their benefit. Despite the fact that the second options seems like the obvious choice, many companies do not fully utilise data-driven decision-making. Data is the lifeblood of product development and without it, decisions can be made without complete information or understanding. Making data-driven decisions in product development can help businesses make smarter, more informed decisions that are based on facts rather than guesses. By leveraging data to make better decisions, companies can accelerate their product development process and create products that are tailored to customer needs and demands.</p>' +
+      '<h2>Understanding user behaviour</h2>' +
+      '<p>Data-driven decision-making can also help companies identify trends and patterns in customer behaviour which can be used to improve product development cycles. By understanding user behaviour, companies can develop features that are tailored to their customers&rsquo; needs, resulting in a better overall user experience. However, this begs the question &mdash; are we really using all this information to its fullest potential?</p>' +
+      '<h2>Data-driven decision-making</h2>' +
+      '<p>Data-driven decision-making involves analysing existing information and obtaining new data to support and motivate the actions of companies. It enables company owners and department heads to minimise the risk when making choices which boosts efficiency and effectiveness. By observing and analysing customer behaviour, purchasing as well as usage habits through the use of customer surveys and feedback throughout the product development lifecycle can provide valuable insights into what customers are looking for in a new product. Companies can also leverage analytics tools such as heatmaps and A/B testing to track user engagement with different features and User Interface (UI) elements within a product. This data can then be used to inform design choices, prioritise feature sets, or even inform how a product is marketed. Building a dashboard which includes metrics like customer conversion rates, churn rate, or product usage frequency can visualise data points and trends. By monitoring changes in these numbers over time, companies can quickly identify areas of opportunity and make informed decisions based on the data they have collected.</p>' +
+      '<p>Data can also be used to quantify the impact of different decisions and changes in product development. Following fluctuations in numbers can give insight into whether it is popular among users, or if it needs to be modified or removed. Product teams can also use data to refine their processes in order to speed up product development cycles and optimise resources. Cross-referencing internal data with external data can give a more comprehensive view of the market trends, customer behaviour, and competitor analysis. Often times, data can be used to make predictions about future trends and shifts in the industry. This can help companies stay ahead of the curve by anticipating changes before they happen. In short, data is a powerful tool for businesses to make informed decisions quickly and accurately.</p>' +
+      '<h2>Marketing with data</h2>' +
+      '<p>Data is also often used for marketing purposes as well. Companies monitor the performance of different products using data analytics to measure their reach and target specific audiences with campaigns or adverts. They can keep track of the effectiveness of such activities by tracking metrics like click-through rate or customer engagement levels. By understanding user preferences, companies can tailor products that meet users&rsquo; needs better, leading to higher customer satisfaction rates and improved</p>' +
+      '<h2>Conclusion</h2>' +
+      '<p>By leveraging data to make smarter decisions during the product development process, businesses can create better products that are tailored to customer demands and preferences. Using customer feedback throughout the lifecycle, analytics tools, and quantitative measurements of changes made over time can help companies gain valuable insights into their customer base while simultaneously improving their processes. Data-driven decisions not only help businesses make better products, but they can also save time and resources in the long run.</p>',
   },
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 2,
-    title: 'The Next Frontier in Enterprise Analytics: Predictive Modelling and AI-Driven Insights',
+    title:
+      'The Next Frontier in Enterprise Analytics: Predictive Modelling and AI-Driven Insights',
     slug: 'the-next-frontier-in-enterprise-analytics-predictive-modelling-and-ai-driven-insights',
-    subtitle: "Unleashing the Power of Predictive Analytics and AI-Driven Insights",
+    subtitle:
+      'Unleashing the Power of Predictive Analytics and AI-Driven Insights',
     hero_src: 'https://source.unsplash.com/gMes5dNykus/1600x900',
     hero_alt: 'Glass buildings',
-    html: '<p>Recent years have seen a considerable advancement in enterprise analytics, with businesses now using data analytics to gain valuable insights into their operations, customers\' behaviour, and market trends. Traditional analytics techniques, such descriptive and diagnostic analytics, are no longer adequate for businesses attempting to stay competitive. Predictive modelling and AI-driven insights are the newest developments in enterprise analytics.</p>' +
-    '<p>Predictive modelling use statistical techniques and machine learning to analyse previous data and forecast future events. In order to identify patterns and connections in data that humans are might not be able to detect, sophisticated machine learning algorithms are used.</p>' +
-    '<p>Here are some examples of how predictive modeling and AI-driven insights may transform enterprise analytics:</p>' +
-    '<h2>Personalised Customer Experiences</h2>' +
-    '<p>Businesses may better understand their clients and provide individualised experiences by using predictive modelling and AI-driven insights. With appropriate information, retailers can analyse client purchasing patterns to identify the products they are most likely to purchase in the future.</p>' +
-    '<p>Customers can receive personalised product recommendations and promotions based on such consumer behaviour predictions, increasing customer satisfaction and loyalty.</p>' +
-    '<h2>Improved Supply Chain Management</h2>' +
-    '<p>Predictive modelling and AI-driven insights can help businesses optimise their supply chain management. By examining historical data on inventory levels, supplier performance, and demand estimates, businesses may predict future supply chain requirements and alter their operations. Thus, the supply chain will be more efficient, less expensive, and less likely to have disruptions.</p>' +
-    '<h2>Enhanced Risk Management</h2>' +
-    '<p>Companies can also employ AI-driven insights and predictive modelling to identify potential dangers and take precautions. Financial firms, for instance, can examine market trends and past transaction data to spot possible fraud. By doing so, they can avoid financial setbacks and safeguard their reputation.</p>' +
-    '<h2>Streamlined Operations</h2>' +
-    '<p>Businesses can also improve their operations by streamlining processes smoothly by using predictive modelling and AI-driven insights. Predictive modelling for instance, can be used by manufacturers to optimise production schedules and enhance quality assurance. Businesses can increase efficiency and cut costs by analysing historical data on production processes and finding patterns and correlations.</p>' +
-    '<h2>Better Decision Making</h2>' +
-    '<p>Finally, predictive modelling and AI-driven insights can aid in business decision-making. Businesses may make better judgements regarding investments, product development, and other crucial areas by analysing vast amounts of data and looking for patterns and connections.</p>' +
-    '<p>However, predictive modelling and AI-driven insights have their own set of difficulties. The demand for high-quality data represents one of the main obstacles. Large data sets are required for predictive modelling and AI algorithms to produce reliable forecasts and insights. Predictions and insights will also be wrong if the data is unreliable, inaccurate, or prejudiced.</p>' +
-    '<p>Another issue is the lack of qualified data scientists and analysts who can create and apply AI algorithms and prediction models. These specialists need specialised training and experience in data visualisation, machine learning, and statistical analysis.</p>' +
-    '<p>In conclusion, the future of enterprise analytics lies in predictive modelling and AI-driven insights. Businesses may learn a lot about their operations, consumer behaviour, and market trends. They should be also investing in knowledgeable data scientists and analysts if they want to fully realise the potential of predictive modelling and AI-driven insights. In the years to come, we may anticipate seeing even more cutting-edge applications of predictive modelling and AI-driven insights as organisations continue to adopt these technologies.</p>'
+    html:
+      "<p>Recent years have seen a considerable advancement in enterprise analytics, with businesses now using data analytics to gain valuable insights into their operations, customers' behaviour, and market trends. Traditional analytics techniques, such descriptive and diagnostic analytics, are no longer adequate for businesses attempting to stay competitive. Predictive modelling and AI-driven insights are the newest developments in enterprise analytics.</p>" +
+      '<p>Predictive modelling use statistical techniques and machine learning to analyse previous data and forecast future events. In order to identify patterns and connections in data that humans are might not be able to detect, sophisticated machine learning algorithms are used.</p>' +
+      '<p>Here are some examples of how predictive modeling and AI-driven insights may transform enterprise analytics:</p>' +
+      '<h2>Personalised Customer Experiences</h2>' +
+      '<p>Businesses may better understand their clients and provide individualised experiences by using predictive modelling and AI-driven insights. With appropriate information, retailers can analyse client purchasing patterns to identify the products they are most likely to purchase in the future.</p>' +
+      '<p>Customers can receive personalised product recommendations and promotions based on such consumer behaviour predictions, increasing customer satisfaction and loyalty.</p>' +
+      '<h2>Improved Supply Chain Management</h2>' +
+      '<p>Predictive modelling and AI-driven insights can help businesses optimise their supply chain management. By examining historical data on inventory levels, supplier performance, and demand estimates, businesses may predict future supply chain requirements and alter their operations. Thus, the supply chain will be more efficient, less expensive, and less likely to have disruptions.</p>' +
+      '<h2>Enhanced Risk Management</h2>' +
+      '<p>Companies can also employ AI-driven insights and predictive modelling to identify potential dangers and take precautions. Financial firms, for instance, can examine market trends and past transaction data to spot possible fraud. By doing so, they can avoid financial setbacks and safeguard their reputation.</p>' +
+      '<h2>Streamlined Operations</h2>' +
+      '<p>Businesses can also improve their operations by streamlining processes smoothly by using predictive modelling and AI-driven insights. Predictive modelling for instance, can be used by manufacturers to optimise production schedules and enhance quality assurance. Businesses can increase efficiency and cut costs by analysing historical data on production processes and finding patterns and correlations.</p>' +
+      '<h2>Better Decision Making</h2>' +
+      '<p>Finally, predictive modelling and AI-driven insights can aid in business decision-making. Businesses may make better judgements regarding investments, product development, and other crucial areas by analysing vast amounts of data and looking for patterns and connections.</p>' +
+      '<p>However, predictive modelling and AI-driven insights have their own set of difficulties. The demand for high-quality data represents one of the main obstacles. Large data sets are required for predictive modelling and AI algorithms to produce reliable forecasts and insights. Predictions and insights will also be wrong if the data is unreliable, inaccurate, or prejudiced.</p>' +
+      '<p>Another issue is the lack of qualified data scientists and analysts who can create and apply AI algorithms and prediction models. These specialists need specialised training and experience in data visualisation, machine learning, and statistical analysis.</p>' +
+      '<p>In conclusion, the future of enterprise analytics lies in predictive modelling and AI-driven insights. Businesses may learn a lot about their operations, consumer behaviour, and market trends. They should be also investing in knowledgeable data scientists and analysts if they want to fully realise the potential of predictive modelling and AI-driven insights. In the years to come, we may anticipate seeing even more cutting-edge applications of predictive modelling and AI-driven insights as organisations continue to adopt these technologies.</p>',
   },
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 3,
-    title: 'AI for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
+    title:
+      'AI for Social Good: Solving Critical Public Challenges with Advanced Machine Learning Techniques',
     slug: 'ai-social-good-solve-public-challenges-ml',
-    subtitle: "Harnessing AI for Positive Impact: Tackling Societal Challenges with Advanced Machine Learning",
+    subtitle:
+      'Harnessing AI for Positive Impact: Tackling Societal Challenges with Advanced Machine Learning',
     hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
     hero_alt: 'miniature train tracks',
-    html: '<p>Artificial intelligence (AI) is employed in a variety of industries to tackle complex challenges. With its ability to analyse vast volumes of data, recognise patterns and make insightful predictions, AI has the potential to assist in addressing some of the world\'s most pressing societal issues. In this article, we will explore how AI can be used for social good and present some examples of how it is currently being put to tackle critical public challenges.</p>' +
-    '<h2>Healthcare</h2>' +
-    '<p>Healthcare is one of the most promising and exciting fields where AI may be used for social good. AI has the potential to enhance healthcare outcomes and save costs due to the expanding availability of health data and the complexity of medical diagnoses and treatments. AI-powered diagnosis technologies allows for early detections of diseases such as caner. X-rays and CT scans are used to examine medical pictures. Personalised treatment regimens based on a patient&rsquo;s medical history, genetics and other criteria can also be created using the AI. Not to mention, the powerful AI-driven chatbots and virtual assistants can offer patients with personalised advice and support, lessening the workload on the medical staff and improving patient outcomes.</p>' +
-    '<h2>Environmental Sustainability</h2>' +
-    '<p>AI can also be used to address environmental challenges like climate change and resource management. AI can assist in identifying areas of concern and guiding policy decisions by evaluating massive amount of data on environmental trends and patterns &mdash; monitoring environmental aspects like air quality and water contamination, warning authorities of potential concerns and allowing them to take pre-emptive action. AI may also be applied in the manufacturing and transportation sectors to decrease waste and optimise energy usage.</p>' +
-    '<h2>Disaster Relief Efforts</h2>' +
-    '<p>AI is extremely important in disaster relief efforts. Emergency personnel can better predict and prepare for natural catastrophes like hurricanes and floods by studying real-time data on weather trends. Reactions times can be accelerated with the aid of real-time updates and direction using AI. People who might require aid during a crisis can be easily identified through social media posts and other internet data, increasing the overall effectiveness of disaster response.</p>' +
-    '<h2>Education</h2>' +
-    '<p>Expanding access to education and enhancing learning outcomes are both highly probable with AI in place. Personalised learning plans that respond to individual student needs and areas of weakness can be easily identified for students who may require extra guidance. AI can be employed to interpret educational materials while providing students with more effective and engaging learning experiences. On top of that, administrative tasks such as grading and tracking of students&rsquo; progress can be easily automated with AI-based solutions. Not to mention, the creation of new types of educational experiences &mdash; virtual reality stimulations and interactive games. These technologies enable students to explore real-world scenarios in an immersive and realistic setting, allowing them to learn from their mistakes without the risk of real-world consequences.</p>' +
-    '<p>With AI, teachers can provide a more efficient, effective, and engaging educational experience for their students.</p>' +
-    '<h2>Public Safety</h2>' +
-    '<p>AI can be used to improve public safety and lower crime rates. Law enforcement officers can more efficiently distribute resources and shorten reaction times by evaluating crime data and forecasting where crimes are likely to occur. AI can also be used to keep an eye on public areas like the airports and train stations for potential security risks. AI-powered devices can alert authorities to suspect conduct and aid in the prevention of terrorism and other criminal activity by evaluating security camera footage and other sensor data.</p>' +
-    '<h2>Final Word</h2>' +
-    '<p>In conclusion, AI has the ability to aid in resolving some of the most urgent social issues facing the world today. AI may be used to solve environmental difficulties, improve healthcare outcomes, and detect patterns in massive amounts of data to make predictions. As AI technology continues to evolve, we can expect to see even more applications of AI for social good in the years ahead.</p>'
+    html:
+      "<p>Artificial intelligence (AI) is employed in a variety of industries to tackle complex challenges. With its ability to analyse vast volumes of data, recognise patterns and make insightful predictions, AI has the potential to assist in addressing some of the world's most pressing societal issues. In this article, we will explore how AI can be used for social good and present some examples of how it is currently being put to tackle critical public challenges.</p>" +
+      '<h2>Healthcare</h2>' +
+      '<p>Healthcare is one of the most promising and exciting fields where AI may be used for social good. AI has the potential to enhance healthcare outcomes and save costs due to the expanding availability of health data and the complexity of medical diagnoses and treatments. AI-powered diagnosis technologies allows for early detections of diseases such as caner. X-rays and CT scans are used to examine medical pictures. Personalised treatment regimens based on a patient&rsquo;s medical history, genetics and other criteria can also be created using the AI. Not to mention, the powerful AI-driven chatbots and virtual assistants can offer patients with personalised advice and support, lessening the workload on the medical staff and improving patient outcomes.</p>' +
+      '<h2>Environmental Sustainability</h2>' +
+      '<p>AI can also be used to address environmental challenges like climate change and resource management. AI can assist in identifying areas of concern and guiding policy decisions by evaluating massive amount of data on environmental trends and patterns &mdash; monitoring environmental aspects like air quality and water contamination, warning authorities of potential concerns and allowing them to take pre-emptive action. AI may also be applied in the manufacturing and transportation sectors to decrease waste and optimise energy usage.</p>' +
+      '<h2>Disaster Relief Efforts</h2>' +
+      '<p>AI is extremely important in disaster relief efforts. Emergency personnel can better predict and prepare for natural catastrophes like hurricanes and floods by studying real-time data on weather trends. Reactions times can be accelerated with the aid of real-time updates and direction using AI. People who might require aid during a crisis can be easily identified through social media posts and other internet data, increasing the overall effectiveness of disaster response.</p>' +
+      '<h2>Education</h2>' +
+      '<p>Expanding access to education and enhancing learning outcomes are both highly probable with AI in place. Personalised learning plans that respond to individual student needs and areas of weakness can be easily identified for students who may require extra guidance. AI can be employed to interpret educational materials while providing students with more effective and engaging learning experiences. On top of that, administrative tasks such as grading and tracking of students&rsquo; progress can be easily automated with AI-based solutions. Not to mention, the creation of new types of educational experiences &mdash; virtual reality stimulations and interactive games. These technologies enable students to explore real-world scenarios in an immersive and realistic setting, allowing them to learn from their mistakes without the risk of real-world consequences.</p>' +
+      '<p>With AI, teachers can provide a more efficient, effective, and engaging educational experience for their students.</p>' +
+      '<h2>Public Safety</h2>' +
+      '<p>AI can be used to improve public safety and lower crime rates. Law enforcement officers can more efficiently distribute resources and shorten reaction times by evaluating crime data and forecasting where crimes are likely to occur. AI can also be used to keep an eye on public areas like the airports and train stations for potential security risks. AI-powered devices can alert authorities to suspect conduct and aid in the prevention of terrorism and other criminal activity by evaluating security camera footage and other sensor data.</p>' +
+      '<h2>Final Word</h2>' +
+      '<p>In conclusion, AI has the ability to aid in resolving some of the most urgent social issues facing the world today. AI may be used to solve environmental difficulties, improve healthcare outcomes, and detect patterns in massive amounts of data to make predictions. As AI technology continues to evolve, we can expect to see even more applications of AI for social good in the years ahead.</p>',
   },
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 4,
-    title: 'The AI-powered Finance Revolution: Unlocking New Opportunities and Enhancing Customer Experience in 2023',
+    title:
+      'The AI-powered Finance Revolution: Unlocking New Opportunities and Enhancing Customer Experience in 2023',
     slug: 'ai-finance-revolution-unlock-opportunities-customer-experience-2023',
-    subtitle: "Driving Financial Transformation: Harnessing the Power of AI for Enhanced Risk Management, Customer Experience, and Investment Strategies",
+    subtitle:
+      'Driving Financial Transformation: Harnessing the Power of AI for Enhanced Risk Management, Customer Experience, and Investment Strategies',
     hero_src: 'https://source.unsplash.com/BeVGrXEktIk/1600x900',
     hero_alt: 'laptop and headphones',
-    html: '<p>Artificial Intelligence (AI) technological advancements are driving a revolution in the finance industry. In 2023, we are likely to see the impact of this revolution continue to grow, as AI-powered solutions unlock new possibilities and improve customer experience in the finance industry.</p>' +
-    '<h2>Enhanced Risk Management</h2>' +
-    '<p>One of the most significant ways that AI is transforming the finance industry is through enhanced risk management. Systems with AI can analyse massive volumes of data in real-time, spot repetitive patterns and emerging trends, and alert organisations about potential threats before they become major problems. This could lessen financial losses and improve overall stability of the financial system as a whole.</p>' +
-    '<p>AI-powered fraud detection systems, for instance, can analyse transaction data and identify unusual activity that may indicate fraud. Similarly, AI-powered credit risk assessment may examine a borrower\'s credit history and financial behaviour to produce a more accurate risk assessment, enabling institutions to make more informed lending decisions.</p>' +
-    '<h2>Improved Customer Experience</h2>' +
-    '<p>AI is also transforming the way that financial institutions communicate with their clients. By leveraging machine learning algorithms and natural language processing, financial institutions can offer more individualised and efficient customer service.</p>' +
-    '<p>AI powered chatbots can provide 24/7 customer support, respond basic queries, and even deliver personalised financial advice. This can enhance client satisfaction, reduce wait times, and lower costs for financial institutions.</p>' +
-    '<p>Additionally, financial institutions can better cater their services and products to the needs of specific clients by using AI-powered personalisation. For example, an AI-powered recommendation engine can make insightful recommendations for products and services based on a customer\'s spending habits, financial objectives and other factors.</p>' +
-    '<h2>Increased Efficiency</h2>' +
-    '<p>Efficiency improvements are a key advantage of AI in the banking sector. By automating repetitive, tedious and time-consuming operations, financial institutions can cut expenses and boost productivity.</p>' +
-    '<p>Automation driven by AI can accelerate and streamline procedures like compliance checks, loan underwriting and account opening. This lessens the need for manual input, giving staff members more time to work on more complex jobs.</p>' +
-    '<p>In addition, with AI-powered analytics, financial institutions may improve their decision making processes and make more informed choices, which can provide insights into consumer behaviour and market trends. Long term efficiency and profitability gains may result from this.</p>' +
-    '<h2>Enhanced Security</h2>' +
-    '<p>Moreover, AI is essential in enhancing financial sector security. Financial institutions must take action to safeguard sensitive client data as cyber attacks and data breaches grow win sophistication and frequency. Real-time threat detection and response capabilities offered by AI-powered security solutions can assist organisations in promptly identifying and thwarting possible attacks. Furthermore, AI-powered authentication can aid in enhancing client account security and reducing the risk of identity theft.</p>' +
-    '<h2>Advanced Investment Strategies</h2>' +
-    '<p>AI is revolutionising how financial organisations approach investment strategies. By leveraging machine learning algorithms and predictive analytics, financial institutions can make more informed investment decisions and optimise their portfolios. AI-powered platform can analyse market trends, identify patterns, and offer recommendations on investment opportunities. Financial institutions may benefit from this by increasing returns and lowering risk. Meanwhile, AI-powered robo-advisors can offer tailored investment advice to specific clients depending on the financial objectives, risk tolerance, and other variables of the clients. Customers&rsquo; financial outcomes may also be improved as a result of helping them make better investing selections.</p>' +
-    '<h2>Final words</h2>' +
-    '<p>To sum up, AI is transforming the finance industry by creating new opportunities and improving the consumer experience. In 2023, we can expect to see the influence of AI in the financial institutions as AI used more frequently to enhance risk management, customer service and investment strategies.</p>'
+    html:
+      '<p>Artificial Intelligence (AI) technological advancements are driving a revolution in the finance industry. In 2023, we are likely to see the impact of this revolution continue to grow, as AI-powered solutions unlock new possibilities and improve customer experience in the finance industry.</p>' +
+      '<h2>Enhanced Risk Management</h2>' +
+      '<p>One of the most significant ways that AI is transforming the finance industry is through enhanced risk management. Systems with AI can analyse massive volumes of data in real-time, spot repetitive patterns and emerging trends, and alert organisations about potential threats before they become major problems. This could lessen financial losses and improve overall stability of the financial system as a whole.</p>' +
+      "<p>AI-powered fraud detection systems, for instance, can analyse transaction data and identify unusual activity that may indicate fraud. Similarly, AI-powered credit risk assessment may examine a borrower's credit history and financial behaviour to produce a more accurate risk assessment, enabling institutions to make more informed lending decisions.</p>" +
+      '<h2>Improved Customer Experience</h2>' +
+      '<p>AI is also transforming the way that financial institutions communicate with their clients. By leveraging machine learning algorithms and natural language processing, financial institutions can offer more individualised and efficient customer service.</p>' +
+      '<p>AI powered chatbots can provide 24/7 customer support, respond basic queries, and even deliver personalised financial advice. This can enhance client satisfaction, reduce wait times, and lower costs for financial institutions.</p>' +
+      "<p>Additionally, financial institutions can better cater their services and products to the needs of specific clients by using AI-powered personalisation. For example, an AI-powered recommendation engine can make insightful recommendations for products and services based on a customer's spending habits, financial objectives and other factors.</p>" +
+      '<h2>Increased Efficiency</h2>' +
+      '<p>Efficiency improvements are a key advantage of AI in the banking sector. By automating repetitive, tedious and time-consuming operations, financial institutions can cut expenses and boost productivity.</p>' +
+      '<p>Automation driven by AI can accelerate and streamline procedures like compliance checks, loan underwriting and account opening. This lessens the need for manual input, giving staff members more time to work on more complex jobs.</p>' +
+      '<p>In addition, with AI-powered analytics, financial institutions may improve their decision making processes and make more informed choices, which can provide insights into consumer behaviour and market trends. Long term efficiency and profitability gains may result from this.</p>' +
+      '<h2>Enhanced Security</h2>' +
+      '<p>Moreover, AI is essential in enhancing financial sector security. Financial institutions must take action to safeguard sensitive client data as cyber attacks and data breaches grow win sophistication and frequency. Real-time threat detection and response capabilities offered by AI-powered security solutions can assist organisations in promptly identifying and thwarting possible attacks. Furthermore, AI-powered authentication can aid in enhancing client account security and reducing the risk of identity theft.</p>' +
+      '<h2>Advanced Investment Strategies</h2>' +
+      '<p>AI is revolutionising how financial organisations approach investment strategies. By leveraging machine learning algorithms and predictive analytics, financial institutions can make more informed investment decisions and optimise their portfolios. AI-powered platform can analyse market trends, identify patterns, and offer recommendations on investment opportunities. Financial institutions may benefit from this by increasing returns and lowering risk. Meanwhile, AI-powered robo-advisors can offer tailored investment advice to specific clients depending on the financial objectives, risk tolerance, and other variables of the clients. Customers&rsquo; financial outcomes may also be improved as a result of helping them make better investing selections.</p>' +
+      '<h2>Final words</h2>' +
+      '<p>To sum up, AI is transforming the finance industry by creating new opportunities and improving the consumer experience. In 2023, we can expect to see the influence of AI in the financial institutions as AI used more frequently to enhance risk management, customer service and investment strategies.</p>',
   },
   {
     published_at: '2023-05-23T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 5,
-    title: 'Building the Next-Gen Government: How AI and ML are Transforming Public Services for a Better Tomorrow',
+    title:
+      'Building the Next-Gen Government: How AI and ML are Transforming Public Services for a Better Tomorrow',
     slug: 'building-next-gen-government-ai-ml-transforming-public-services',
-    subtitle: "Building a Future-Ready Government: Embracing AI and ML to Revolutionize Public Services",
+    subtitle:
+      'Building a Future-Ready Government: Embracing AI and ML to Revolutionize Public Services',
     hero_src: 'https://source.unsplash.com/n31JPLu8_Pw/1600x900',
     hero_alt: 'People on street',
-    html: '<p>The role of government is to serve the people, and in the quickly evolving changing world of today, that means utilising cutting-edge technology to deliver successful public services. Governments around the world are examining how to leverage artificial intelligence (AI) and machine learning (ML), two of the most promising technologies for revolutionising public services, to create the next generation of government.</p>' +
-    '<p>At its core, AI is the process of educating robots to learn and think like humans do. The goal of ML as a branch of artificial intelligence, is to create algorithms that can learn from data and forecast what is to come. Together, as a result of the convergence of AI and ML, the delivery of public services by governments, including healthcare and transportation, has the potential to change.</p>' +
-    '<h2>Enhanced public sector decision-making</h2>' +
-    '<p>One of the key benefits of AI and ML is their ability to enhance decision-making processes in the public sector. These technologies can offer insights that assist policymakers&nbsp;in making more informed judgments by analysing vast amounts of data. For instance, ML algorithms can analyse data on crime rates and trends to assist law enforcement organisations in more efficient resource allocation. Similar to this, AI-driven systems can analyse air pollution data to assist governments in creating regulations that lessen the detrimental effects of pollution on public health.</p>' +
-    '<p>Government workers may focus on more complicated and strategic work by using AI and ML to automate time-consuming and repetitive chores. For instance, AI-powered chatbots can give residents with 24/7 customer care, answering queries and informing them about government services. Additionally, ML algorithms have the ability to automate the processing of massive amounts of data, such as tax returns or visa applications, which decreases the need for manual review and boosts efficiency.</p>' +
-    '<h2>AI and ML in healthcare</h2>' +
-    '<p>Another area where AI and ML can have a transformative impact is in healthcare. Large amounts of medical data, including patient records and the outcomes of clinical trials, can be analysed using these technologies in order to find trends and create more efficient therapies. Predictions on the likelihood of certain diseases can also be made using ML algorithms, allowing healthcare providers to intervene at an earlier stage and maybe save lives.</p>' +
-    '<h2>The delivery of education</h2>' +
-    '<p>The delivery of education can also be enhanced by the application of AI and ML. These tools, for instance, can be used to analyse student performance data, pinpoint problem areas, and create individualised learning programs to support difficult students. Similarly, chatbots powered by AI can assist students around-the-clock by responding to their inquiries and offering feedback on their tasks.</p>' +
-    '<h2>Countering risks with a strategic approach</h2>' +
-    '<p>Without a doubt&nbsp;new dangers and challenges accompany the adoption of every new technology. Despite the challenges, the potential advantages of AI and ML in the public sector are substantial. To harness the power of AI and ML effectively, governments must adopt a strategic approach. This entails figuring out which sectors of public service delivery are best suited for new technologies and creating an implementation strategy. To ensure that the technologies are used in a way that satisfies the needs, it is also important to involve stakeholders in this process, including citizens, employees, and industry experts.</p>' +
-    '<h2>Investing in infrastructure and talent</h2>' +
-    '<p>To fully utilise AI and ML, governments must also invest in the appropriate infrastructure and talent. This entails investing in top-notch data infrastructure and ensuring that government employees are equipped with the essential technical skills. To access the resources, governments will also have to collaborate with businesses and academic institutions in the private sector. Besides, governments should prioritise transparency and accountability in the use of AI and ML. Being open and transparent about how these technologies are being applied and giving the public the knowledge they require to comprehend and interact with them.</p>' +
-    '<p>Ultimately, the use of AI and ML in the public sector is not about replacing humans, but rather about empowering them to perform their tasks more effectively.</p>' +
-    '<h2>Conclusion</h2>' +
-    '<p>The next generation of government will be formed on the foundation of AI and ML. These technologies have the potential to transform public services in ways that were previously unimaginable. However, to fully utilise these technologies, governments must adopt a proactive and open strategy and involve stakeholders in the creation and application of AI and ML solutions. By doing so, we can build a brighter future for all citizens.</p>'
+    html:
+      '<p>The role of government is to serve the people, and in the quickly evolving changing world of today, that means utilising cutting-edge technology to deliver successful public services. Governments around the world are examining how to leverage artificial intelligence (AI) and machine learning (ML), two of the most promising technologies for revolutionising public services, to create the next generation of government.</p>' +
+      '<p>At its core, AI is the process of educating robots to learn and think like humans do. The goal of ML as a branch of artificial intelligence, is to create algorithms that can learn from data and forecast what is to come. Together, as a result of the convergence of AI and ML, the delivery of public services by governments, including healthcare and transportation, has the potential to change.</p>' +
+      '<h2>Enhanced public sector decision-making</h2>' +
+      '<p>One of the key benefits of AI and ML is their ability to enhance decision-making processes in the public sector. These technologies can offer insights that assist policymakers&nbsp;in making more informed judgments by analysing vast amounts of data. For instance, ML algorithms can analyse data on crime rates and trends to assist law enforcement organisations in more efficient resource allocation. Similar to this, AI-driven systems can analyse air pollution data to assist governments in creating regulations that lessen the detrimental effects of pollution on public health.</p>' +
+      '<p>Government workers may focus on more complicated and strategic work by using AI and ML to automate time-consuming and repetitive chores. For instance, AI-powered chatbots can give residents with 24/7 customer care, answering queries and informing them about government services. Additionally, ML algorithms have the ability to automate the processing of massive amounts of data, such as tax returns or visa applications, which decreases the need for manual review and boosts efficiency.</p>' +
+      '<h2>AI and ML in healthcare</h2>' +
+      '<p>Another area where AI and ML can have a transformative impact is in healthcare. Large amounts of medical data, including patient records and the outcomes of clinical trials, can be analysed using these technologies in order to find trends and create more efficient therapies. Predictions on the likelihood of certain diseases can also be made using ML algorithms, allowing healthcare providers to intervene at an earlier stage and maybe save lives.</p>' +
+      '<h2>The delivery of education</h2>' +
+      '<p>The delivery of education can also be enhanced by the application of AI and ML. These tools, for instance, can be used to analyse student performance data, pinpoint problem areas, and create individualised learning programs to support difficult students. Similarly, chatbots powered by AI can assist students around-the-clock by responding to their inquiries and offering feedback on their tasks.</p>' +
+      '<h2>Countering risks with a strategic approach</h2>' +
+      '<p>Without a doubt&nbsp;new dangers and challenges accompany the adoption of every new technology. Despite the challenges, the potential advantages of AI and ML in the public sector are substantial. To harness the power of AI and ML effectively, governments must adopt a strategic approach. This entails figuring out which sectors of public service delivery are best suited for new technologies and creating an implementation strategy. To ensure that the technologies are used in a way that satisfies the needs, it is also important to involve stakeholders in this process, including citizens, employees, and industry experts.</p>' +
+      '<h2>Investing in infrastructure and talent</h2>' +
+      '<p>To fully utilise AI and ML, governments must also invest in the appropriate infrastructure and talent. This entails investing in top-notch data infrastructure and ensuring that government employees are equipped with the essential technical skills. To access the resources, governments will also have to collaborate with businesses and academic institutions in the private sector. Besides, governments should prioritise transparency and accountability in the use of AI and ML. Being open and transparent about how these technologies are being applied and giving the public the knowledge they require to comprehend and interact with them.</p>' +
+      '<p>Ultimately, the use of AI and ML in the public sector is not about replacing humans, but rather about empowering them to perform their tasks more effectively.</p>' +
+      '<h2>Conclusion</h2>' +
+      '<p>The next generation of government will be formed on the foundation of AI and ML. These technologies have the potential to transform public services in ways that were previously unimaginable. However, to fully utilise these technologies, governments must adopt a proactive and open strategy and involve stakeholders in the creation and application of AI and ML solutions. By doing so, we can build a brighter future for all citizens.</p>',
   },
   {
     published_at: '2023-05-28T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 2,
-    tags: [ { id: 1, title: 'ChatGPT Integration' } ],
-    title: 'Automating Website Personalization with GPT-4: Future Trends and Possibilities',
+    tags: [{ id: 1, title: 'ChatGPT Integration' }],
+    title:
+      'Automating Website Personalization with GPT-4: Future Trends and Possibilities',
     slug: 'automating-website-personalization-with-gpt-4-future-trends-and-possibilities',
-    subtitle: "Revolutionizing Digital Experiences: GPT-4 in the Driver's Seat for Automated Website Personalization",
+    subtitle:
+      "Revolutionizing Digital Experiences: GPT-4 in the Driver's Seat for Automated Website Personalization",
     hero_src: 'https://source.unsplash.com/Fc1GBkmV-Dw/1600x900',
     hero_alt: 'GPT 4',
-    html: '<p>Personalization has become a key factor in the modern digital environment when determining customer satisfaction and the overall user experience. GPT-4, a potent language model created by OpenAI, is revolutionizing website personalization automation. GPT-4 is providing website owners and developers with previously unheard-of opportunities thanks to its capacity to produce text that resembles human speech and comprehend context. In this article, we examine how GPT-4 is altering the landscape and the prospects for website personalization in the future.</p>' + 
-    '<h2>Personalized Content Generation</h2>' + 
-    '<p>GPT-4 has the ability to produce original, high-quality content that is customized to the preferences and actions of each individual user. For instance, GPT-4 can produce technology-related content to keep a user engaged and interested if they frequently read articles about technology. In addition to ensuring a user-centric approach to website interaction, this lowers the resources needed to manually create such personalized content.</p>' + 
-    '<h2>Improved User Interactions</h2>' + 
-    '<p>GPT-4-powered chatbots can offer smooth interaction and support to website visitors. GPT-4 chatbots are capable of comprehending the context of a user\'s query, which makes their responses more pertinent and interesting. This degree of individualized interaction creates a strong bond with users, improving customer loyalty and satisfaction.</p>' + 
-    '<h2>User Behaviour Analysis</h2>' + 
-    '<p>GPT-4 can examine a user\'s browsing habits and behaviour on a website, enabling the creation of specialized recommendations and suggestions. The capabilities of GPT-4 ensure that website interactions are in line with specific user preferences, resulting in a truly personalized online experience, whether relevant product suggestions on an e-commerce site or article suggestions on a blog.</p>' + 
-    '<h2>Accessibility and Inclusivity</h2>' + 
-    '<p>Websites\' inclusivity and accessibility can both be improved by GPT-4. For users who are visually impaired, it can produce alternative text for images to help them understand. Similar to this, it can translate website content into various languages, ensuring that users with different linguistic backgrounds can interact with the website comfortably and successfully.</p>' + 
-    '<h2>The Future Trends and Possibilities</h2>' + 
-    '<p>GPT-4 has an almost limitless potential for automating website personalization given the rapid advancements in AI and machine learning. In the not too distant future, we might observe the following trends and opportunities:.</p>' + 
-    '<h2>Hyper-personalized Experiences</h2>' + 
-    '<p>Websites will be able to provide hyper-personalized experiences where every user interaction, from navigation to content consumption to customer support, is specially tailored to each user\'s preferences and behaviours thanks to the upcoming improvements of GPT-4. This will increase user loyalty, engagement, and satisfaction.</p>' + 
-    '<h2>Dynamic Content Creation</h2>' + 
-    '<p>Based on in-the-moment user behaviour and outside variables like current affairs, market trends, and societal changes, GPT-4 might be able to produce dynamic content on the fly. This will guarantee that the content users interact with is constantly relevant and interesting.</p>' + 
-    '<h2>Enhanced Voice Interactions</h2>' + 
-    '<p>By enabling more sophisticated and individualized voice interactions on websites, GPT-4\'s language understanding and generation capabilities have the potential to revolutionize how people use online services and conduct information searches.</p>' + 
-    '<h2>Proactive Personalized Support</h2>' + 
-    '<p>GPT-4 may give chatbots the ability to offer proactive support by anticipating users\' needs based on their behaviour and assisting them even before they ask for it. Customer relationships can be strengthened and the user experience can be significantly improved with this level of personalized service.</p>' + 
-    '<p>Finally, GPT-4 is ready to transform website personalization by giving users richer, more interesting, and truly customized experiences. We can anticipate unprecedented automation in content creation, user interactions, and individualized support on websites thanks to advancements in AI technology.</p>' + 
-    '<h2>Privacy Concerns</h2>' + 
-    '<p>The serious privacy concerns that come with these advancements must be noted, though. It\'s critical to make sure that data collection and usage comply with privacy laws and ethical standards because GPT-4 and similar technologies rely on analyzing user behavior and preferences. As we enter this new era of personalized web experiences, being open about how data is used, using secure data storage techniques, and getting user consent will all remain essential.</p>' + 
-    '<h2>Final Words</h2>' + 
-    '<p>The ability of GPT-4 and comparable AI models to automate website personalization will only increase over the next few years. Users can anticipate more captivating, personalized, and interactive web experiences as developers and companies adopt this technology. Developers and companies must, however, make sure they are using this technology responsibly.</p>'
+    html:
+      '<p>Personalization has become a key factor in the modern digital environment when determining customer satisfaction and the overall user experience. GPT-4, a potent language model created by OpenAI, is revolutionizing website personalization automation. GPT-4 is providing website owners and developers with previously unheard-of opportunities thanks to its capacity to produce text that resembles human speech and comprehend context. In this article, we examine how GPT-4 is altering the landscape and the prospects for website personalization in the future.</p>' +
+      '<h2>Personalized Content Generation</h2>' +
+      '<p>GPT-4 has the ability to produce original, high-quality content that is customized to the preferences and actions of each individual user. For instance, GPT-4 can produce technology-related content to keep a user engaged and interested if they frequently read articles about technology. In addition to ensuring a user-centric approach to website interaction, this lowers the resources needed to manually create such personalized content.</p>' +
+      '<h2>Improved User Interactions</h2>' +
+      "<p>GPT-4-powered chatbots can offer smooth interaction and support to website visitors. GPT-4 chatbots are capable of comprehending the context of a user's query, which makes their responses more pertinent and interesting. This degree of individualized interaction creates a strong bond with users, improving customer loyalty and satisfaction.</p>" +
+      '<h2>User Behaviour Analysis</h2>' +
+      "<p>GPT-4 can examine a user's browsing habits and behaviour on a website, enabling the creation of specialized recommendations and suggestions. The capabilities of GPT-4 ensure that website interactions are in line with specific user preferences, resulting in a truly personalized online experience, whether relevant product suggestions on an e-commerce site or article suggestions on a blog.</p>" +
+      '<h2>Accessibility and Inclusivity</h2>' +
+      "<p>Websites' inclusivity and accessibility can both be improved by GPT-4. For users who are visually impaired, it can produce alternative text for images to help them understand. Similar to this, it can translate website content into various languages, ensuring that users with different linguistic backgrounds can interact with the website comfortably and successfully.</p>" +
+      '<h2>The Future Trends and Possibilities</h2>' +
+      '<p>GPT-4 has an almost limitless potential for automating website personalization given the rapid advancements in AI and machine learning. In the not too distant future, we might observe the following trends and opportunities:.</p>' +
+      '<h2>Hyper-personalized Experiences</h2>' +
+      "<p>Websites will be able to provide hyper-personalized experiences where every user interaction, from navigation to content consumption to customer support, is specially tailored to each user's preferences and behaviours thanks to the upcoming improvements of GPT-4. This will increase user loyalty, engagement, and satisfaction.</p>" +
+      '<h2>Dynamic Content Creation</h2>' +
+      '<p>Based on in-the-moment user behaviour and outside variables like current affairs, market trends, and societal changes, GPT-4 might be able to produce dynamic content on the fly. This will guarantee that the content users interact with is constantly relevant and interesting.</p>' +
+      '<h2>Enhanced Voice Interactions</h2>' +
+      "<p>By enabling more sophisticated and individualized voice interactions on websites, GPT-4's language understanding and generation capabilities have the potential to revolutionize how people use online services and conduct information searches.</p>" +
+      '<h2>Proactive Personalized Support</h2>' +
+      "<p>GPT-4 may give chatbots the ability to offer proactive support by anticipating users' needs based on their behaviour and assisting them even before they ask for it. Customer relationships can be strengthened and the user experience can be significantly improved with this level of personalized service.</p>" +
+      '<p>Finally, GPT-4 is ready to transform website personalization by giving users richer, more interesting, and truly customized experiences. We can anticipate unprecedented automation in content creation, user interactions, and individualized support on websites thanks to advancements in AI technology.</p>' +
+      '<h2>Privacy Concerns</h2>' +
+      "<p>The serious privacy concerns that come with these advancements must be noted, though. It's critical to make sure that data collection and usage comply with privacy laws and ethical standards because GPT-4 and similar technologies rely on analyzing user behavior and preferences. As we enter this new era of personalized web experiences, being open about how data is used, using secure data storage techniques, and getting user consent will all remain essential.</p>" +
+      '<h2>Final Words</h2>' +
+      '<p>The ability of GPT-4 and comparable AI models to automate website personalization will only increase over the next few years. Users can anticipate more captivating, personalized, and interactive web experiences as developers and companies adopt this technology. Developers and companies must, however, make sure they are using this technology responsibly.</p>',
   },
   {
     published_at: '2023-05-28T14:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 1,
-    tags: [ { id: 1, title: 'ChatGPT Integration' } ],
-    title: 'ChatGPT for Seamless User Experience: Transforming Website Interactions in 2023',
+    tags: [{ id: 1, title: 'ChatGPT Integration' }],
+    title:
+      'ChatGPT for Seamless User Experience: Transforming Website Interactions in 2023',
     slug: 'chatgpt-seamless-user-experience-transforming-website-interactions-2023',
-    subtitle: "Revolutionizing Website Interactions: ChatGPT's Seamless Engagement and Enhanced Experiences in 2023",
+    subtitle:
+      "Revolutionizing Website Interactions: ChatGPT's Seamless Engagement and Enhanced Experiences in 2023",
     hero_src: 'https://source.unsplash.com/PeLtf8PCjIY/1600x900',
     hero_alt: 'Chat GPT',
-    html: '<p>In the years leading up to 2023, OpenAI\'s ChatGPT, in its most recent incarnation, GPT-4, is leading the way in revolutionizing how users interact with websites. It is changing the digital landscape by fostering seamless engagement and offering enhanced experiences.</p>' + 
-    '<h2>Tailored Digital Experiences</h2>' + 
-    '<p>ChatGPT offers personalized digital experiences that take into account each user\'s particular interests and preferences thanks to its deep learning capabilities. By doing this, users are more engaged with the platform or website and feel more connected to it.</p>' + 
-    '<h2>Revolutionizing Customer Support</h2>' + 
-    '<p>With the help of ChatGPT, AI chatbots are transforming customer service by offering quick and contextually relevant answers. These chatbots can significantly increase customer satisfaction by responding to their questions quickly and effectively because they are available around-the-clock.</p>' + 
-    '<h2>Dynamic Content Recommendations</h2>' + 
-    '<p>The capacity to dynamically adapt content based on user interactions is one of the exciting developments that ChatGPT brings to websites in 2023. ChatGPT enables real-time content modification to better engage users, from making recommendations for related products to providing pertinent articles.</p>' + 
-    '<h2>Enriching Web Accessibility</h2>' + 
-    '<p>Web accessibility is being pushed to new heights by ChatGPT. It ensures that websites are inclusive and accessible to a wider audience by creating descriptive text for images or facilitating interactions in multiple languages.</p>' + 
-    '<h2>Prioritizing User Privacy</h2>' + 
-    '<p>Despite ChatGPT\'s many advantages, it\'s crucial to protect user privacy. Websites that use ChatGPT to improve user experiences must put privacy regulations and ethical data usage practices as a top priority.</p>' + 
-    '<h2>The Bottom Line</h2>' + 
-    '<p>Website interactions have changed significantly as a result of ChatGPT. Users can look forward to more personalized, interesting, and accessible web experiences as 2023 progresses. As we continue to make use of ChatGPT\'s potential, we must also make sure that the technology is used responsibly and morally.</p>'
+    html:
+      "<p>In the years leading up to 2023, OpenAI's ChatGPT, in its most recent incarnation, GPT-4, is leading the way in revolutionizing how users interact with websites. It is changing the digital landscape by fostering seamless engagement and offering enhanced experiences.</p>" +
+      '<h2>Tailored Digital Experiences</h2>' +
+      "<p>ChatGPT offers personalized digital experiences that take into account each user's particular interests and preferences thanks to its deep learning capabilities. By doing this, users are more engaged with the platform or website and feel more connected to it.</p>" +
+      '<h2>Revolutionizing Customer Support</h2>' +
+      '<p>With the help of ChatGPT, AI chatbots are transforming customer service by offering quick and contextually relevant answers. These chatbots can significantly increase customer satisfaction by responding to their questions quickly and effectively because they are available around-the-clock.</p>' +
+      '<h2>Dynamic Content Recommendations</h2>' +
+      '<p>The capacity to dynamically adapt content based on user interactions is one of the exciting developments that ChatGPT brings to websites in 2023. ChatGPT enables real-time content modification to better engage users, from making recommendations for related products to providing pertinent articles.</p>' +
+      '<h2>Enriching Web Accessibility</h2>' +
+      '<p>Web accessibility is being pushed to new heights by ChatGPT. It ensures that websites are inclusive and accessible to a wider audience by creating descriptive text for images or facilitating interactions in multiple languages.</p>' +
+      '<h2>Prioritizing User Privacy</h2>' +
+      "<p>Despite ChatGPT's many advantages, it's crucial to protect user privacy. Websites that use ChatGPT to improve user experiences must put privacy regulations and ethical data usage practices as a top priority.</p>" +
+      '<h2>The Bottom Line</h2>' +
+      "<p>Website interactions have changed significantly as a result of ChatGPT. Users can look forward to more personalized, interesting, and accessible web experiences as 2023 progresses. As we continue to make use of ChatGPT's potential, we must also make sure that the technology is used responsibly and morally.</p>",
   },
 ].map((item, i) => ({
   id: i + 1,
@@ -997,105 +1151,113 @@ export const MOCK_DESIGN_POSTS = [
     is_active: true,
     is_featured: true,
     category_id: 1,
-    title: 'The Psychology of Colour in UI/UX Design: How to Use Colour to Create Emotion and Increase Engagement',
+    title:
+      'The Psychology of Colour in UI/UX Design: How to Use Colour to Create Emotion and Increase Engagement',
     slug: 'psychology-of-colour-in-ui-ux-design',
-    subtitle: "Understanding the Impact of Colour in UI/UX Design: Leveraging Emotion and Engagement through Strategic Colour Use",
+    subtitle:
+      'Understanding the Impact of Colour in UI/UX Design: Leveraging Emotion and Engagement through Strategic Colour Use',
     hero_src: 'https://source.unsplash.com/dx2xcwgn5ps/1600x900',
     hero_alt: 'tulip field',
     html:
-    '<p>Colour has the greatest ability of all design components for user interface (UI) and user experience (UX) to evoke emotions, communicate value, and impact user behaviour. Colour is a non-verbal language that, from a psychological point of view, has the ability to stir up powerful associations and influence mood, feelings, and behaviour. Designers who want to create engaging and significant experiences for their users must understand how colour functions within the framework of UI/UX design. We\'ll look at the psychology of colour in UI/UX design in this post and discover how colour is used to boost&nbsp;engagement and leave an impression of users.</p>' +
-    '<h2>Colour Theory: A Brief Overview</h2>' +
-    '<p>Before we delve into the psychology of colour, it is indeed crucial to comprehend the fundamentals of colour theory before delving into the psychology of colour. The framework of colour theory explains how colours interact with one another and how they mix to create new colours. Red, blue, and yellow are the three primary colours, and other colours cannot be combined to make them. Two primary colours can then be combined to make a secondary colour, and two primary colours can be combined to make a tertiary colour.</p>' +
-    '<p>Colours can be characterised by hue, saturation, and brightness. The actual colour, for example red, blue, or green, is referred to as hue. The term "saturation" measures the colour&rsquo;s intensity, which can range from brilliant and vibrant to drab and subdued. Brightness refers to how light or dark the colour is, with white being the lightest colour, and black being the darkest.</p>' +
-    '<h2>The Psychology of Colour in UI/UX Design</h2>' +
-    '<p>With the basic understanding of colour theory, let\'s explore the psychology of colour in UI/UX design. Each colour has a unique set of associations and can cause users to experience various feelings. Here are some typical connections between various colours:</p>' +
-    '<ul>' +
-    '<li>Red: Passion, love, anger, danger, urgency</li>' +
-    '<li>Orange: Creativity, warmth, enthusiasm, energy</li>' +
-    '<li>Yellow: Optimism, happiness, caution, warning</li>' +
-    '<li>Green: Growth, nature, harmony, calmness</li>' +
-    '<li>Blue: Trust, security, serenity, intelligence</li>' +
-    '<li>Purple: Luxury, creativity, spirituality, mystery</li>' +
-    '<li>Pink: Femininity, playfulness, love, compassion</li>' +
-    '<li>Brown: Earthiness, warmth, stability, reliability</li>' +
-    '<li>Black: Elegance, sophistication, power, mystery</li>' +
-    '<li>White: Purity, simplicity, cleanliness, innocence</li>' +
-    '</ul>' +
-    '<p>Such associations could serve as a starting point for designers who want to utilise colour to evoke a particular feeling or meaning even if they are not universal and can change depending on cultural and individual circumstances.</p>' +
-    '<h2>Using Colour in UI/UX Design</h2>' +
-    '<p>Let&rsquo;s dive into how we can use colours effectively in UI/UX design. Here are a few insights to enhance your designs:</p>' +
-    '<ol>' +
-    '<li>Consider the context and objective of your design. The same colour that works well for a fun and amusing app may not be appropriate for a serious, professional website. Colours should be chosen with consideration for your design\'s objectives and target market.</li>' +
-    '<li>Create contrast and hierarchy with colours. By using different colours for headings, subheadings, body text, and other elements, you may subconsciously establish a visual hierarchy and direct the user\'s attention to the most crucial information.</li>' +
-    '<li>Use colour to boost branding. Consider employing the brand colours of the company or brand whose design you are creating if you want to maintain a unified aesthetic in all of their documents.</li>' +
-    '<li>Make emotional connections. Use colours that are representative of the mood or emotion you want to evoke. For instance, using warm colours like orange and yellow can create a sense of enthusiasm, while cool colours like blue and green can create a sense of peace.</li>' +
-    '<li>Use colour sparingly. Using too many colours or using them without careful thought can lead to a confusing and overwhelming design. Choose a small range of colours and employ them consistently throughout your design.</li>' +
-    '</ol>' +
-    '<h2>Examples of Colour in UI/UX Design</h2>' +
-    '<p>Colours have been utilised many times in UI/UX design. Some prominent examples include:</p>' +
-    '<ol>' +
-    '<li>Dropbox: The colour scheme of Dropbox\'s website comprises of blue and white colour palette creating a sense of confidence and reliability, while the usage of green in their illustrations and icons conveys growth and innovation.</li>' +
-    '<li>Duolingo: To provide a lively and exciting atmosphere, the language learning app uses a bright and cheerful colour scheme to create a sense of fun and excitement. The use of distinct colours for various languages makes it easy for users to recognise which language they are learning.</li>' +
-    '<li>Headspace: Headspace\'s meditation app uses a relaxing blue and green colour palette to evoke a sense of relaxation and mindfulness. Important elements like buttons and calls-to-action are highlighted with vivid, contrasting colours to assist direct the user\'s attention.</li>' +
-    '</ol>' +
-    '<h2>Conclusion</h2>' +
-    '<p>Colour is a potent tool in UI/UX design that may arouse feelings which will possibly influence user behaviour. Designers are able to give their users compelling and meaningful experiences by successfully utilising colour psychology. Yet, it\'s crucial to use colour purposefully and consciously, keeping in mind the context and goals of the design to make sure the desired effect is realised.</p>'
+      "<p>Colour has the greatest ability of all design components for user interface (UI) and user experience (UX) to evoke emotions, communicate value, and impact user behaviour. Colour is a non-verbal language that, from a psychological point of view, has the ability to stir up powerful associations and influence mood, feelings, and behaviour. Designers who want to create engaging and significant experiences for their users must understand how colour functions within the framework of UI/UX design. We'll look at the psychology of colour in UI/UX design in this post and discover how colour is used to boost&nbsp;engagement and leave an impression of users.</p>" +
+      '<h2>Colour Theory: A Brief Overview</h2>' +
+      '<p>Before we delve into the psychology of colour, it is indeed crucial to comprehend the fundamentals of colour theory before delving into the psychology of colour. The framework of colour theory explains how colours interact with one another and how they mix to create new colours. Red, blue, and yellow are the three primary colours, and other colours cannot be combined to make them. Two primary colours can then be combined to make a secondary colour, and two primary colours can be combined to make a tertiary colour.</p>' +
+      '<p>Colours can be characterised by hue, saturation, and brightness. The actual colour, for example red, blue, or green, is referred to as hue. The term "saturation" measures the colour&rsquo;s intensity, which can range from brilliant and vibrant to drab and subdued. Brightness refers to how light or dark the colour is, with white being the lightest colour, and black being the darkest.</p>' +
+      '<h2>The Psychology of Colour in UI/UX Design</h2>' +
+      "<p>With the basic understanding of colour theory, let's explore the psychology of colour in UI/UX design. Each colour has a unique set of associations and can cause users to experience various feelings. Here are some typical connections between various colours:</p>" +
+      '<ul>' +
+      '<li>Red: Passion, love, anger, danger, urgency</li>' +
+      '<li>Orange: Creativity, warmth, enthusiasm, energy</li>' +
+      '<li>Yellow: Optimism, happiness, caution, warning</li>' +
+      '<li>Green: Growth, nature, harmony, calmness</li>' +
+      '<li>Blue: Trust, security, serenity, intelligence</li>' +
+      '<li>Purple: Luxury, creativity, spirituality, mystery</li>' +
+      '<li>Pink: Femininity, playfulness, love, compassion</li>' +
+      '<li>Brown: Earthiness, warmth, stability, reliability</li>' +
+      '<li>Black: Elegance, sophistication, power, mystery</li>' +
+      '<li>White: Purity, simplicity, cleanliness, innocence</li>' +
+      '</ul>' +
+      '<p>Such associations could serve as a starting point for designers who want to utilise colour to evoke a particular feeling or meaning even if they are not universal and can change depending on cultural and individual circumstances.</p>' +
+      '<h2>Using Colour in UI/UX Design</h2>' +
+      '<p>Let&rsquo;s dive into how we can use colours effectively in UI/UX design. Here are a few insights to enhance your designs:</p>' +
+      '<ol>' +
+      "<li>Consider the context and objective of your design. The same colour that works well for a fun and amusing app may not be appropriate for a serious, professional website. Colours should be chosen with consideration for your design's objectives and target market.</li>" +
+      "<li>Create contrast and hierarchy with colours. By using different colours for headings, subheadings, body text, and other elements, you may subconsciously establish a visual hierarchy and direct the user's attention to the most crucial information.</li>" +
+      '<li>Use colour to boost branding. Consider employing the brand colours of the company or brand whose design you are creating if you want to maintain a unified aesthetic in all of their documents.</li>' +
+      '<li>Make emotional connections. Use colours that are representative of the mood or emotion you want to evoke. For instance, using warm colours like orange and yellow can create a sense of enthusiasm, while cool colours like blue and green can create a sense of peace.</li>' +
+      '<li>Use colour sparingly. Using too many colours or using them without careful thought can lead to a confusing and overwhelming design. Choose a small range of colours and employ them consistently throughout your design.</li>' +
+      '</ol>' +
+      '<h2>Examples of Colour in UI/UX Design</h2>' +
+      '<p>Colours have been utilised many times in UI/UX design. Some prominent examples include:</p>' +
+      '<ol>' +
+      "<li>Dropbox: The colour scheme of Dropbox's website comprises of blue and white colour palette creating a sense of confidence and reliability, while the usage of green in their illustrations and icons conveys growth and innovation.</li>" +
+      '<li>Duolingo: To provide a lively and exciting atmosphere, the language learning app uses a bright and cheerful colour scheme to create a sense of fun and excitement. The use of distinct colours for various languages makes it easy for users to recognise which language they are learning.</li>' +
+      "<li>Headspace: Headspace's meditation app uses a relaxing blue and green colour palette to evoke a sense of relaxation and mindfulness. Important elements like buttons and calls-to-action are highlighted with vivid, contrasting colours to assist direct the user's attention.</li>" +
+      '</ol>' +
+      '<h2>Conclusion</h2>' +
+      "<p>Colour is a potent tool in UI/UX design that may arouse feelings which will possibly influence user behaviour. Designers are able to give their users compelling and meaningful experiences by successfully utilising colour psychology. Yet, it's crucial to use colour purposefully and consciously, keeping in mind the context and goals of the design to make sure the desired effect is realised.</p>",
   },
   {
     published_at: '2023-05-22T13:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 2,
-    title: 'The Art and Science of UI Design: Combining Aesthetics and Functionality for Optimal Results',
+    title:
+      'The Art and Science of UI Design: Combining Aesthetics and Functionality for Optimal Results',
     slug: 'ui-design-aesthetics-functionality-optimal-results',
-    subtitle: "Mastering the Intersection of Beauty and Usability: Achieving Optimal Results in UI Design",
+    subtitle:
+      'Mastering the Intersection of Beauty and Usability: Achieving Optimal Results in UI Design',
     hero_src: 'https://source.unsplash.com/IyjhDTTQitM/1600x900',
     hero_alt: 'hills',
-    html: '<p>The art of UI design entails producing interfaces that are aesthetically attractive, emotions driven and memorable. It mainly focuses on producing designs that inspire and excite users while make them feel good about the products that they use. On the other hand, the science of UI design focuses on comprehending how consumers interact with things and creating interfaces that are intuitive and simple to use.</p>' +
-    '<p>The process of developing user interfaces (UI) that let consumers engage with digital products is known as user interface design. UI design combines aesthetics and usefulness for the best outcomes. It is both an art and a science. Because aesthetics foster an emotional bond between people and the items they use, they are crucial. Functionality ensures that items are simple to use and produce the desired results, which is why it is crucial.</p>' +
-    '<p>Combining these two key aspects &mdash; aesthetics and functionality in UI design, here are some tips:</p>' +
-    '<h2>Understand Your Users</h2>' +
-    '<p>It is crucial to comprehend your users. What are they seeking to achieve? What frustrates and causes them pain? What do they consider important? Understanding your users will allow you to develop interfaces that fulfil demands and go above and beyond what they anticipate.</p>' +
-    '<h2>Use a Consistent Design Language</h2>' +
-    '<p>In UI Design, consistency is crucial. Users can better understand how to interact with your products when you adopt a similar design language across all of your items. Moreover, a consistent design language fosters a sense of familiarity, which facilitates the learning and utilisation of new products by users.</p>' +
-    '<h2>Prioritise Functionality</h2>' +
-    '<p>While it is vital to consider aesthetics, functionality should always come first. Even for customers who have never used your products before, your designs should be simple and intuitive. Be sure that the tasks and objectives that your users are attempting to accomplish are supported by your designs.</p>' +
-    '<h2>Keep It Simple</h2>' +
-    '<p>Simplicity is the pinnacle of sophistication. Designs that are more straightforward sometimes are more appealing and are simpler to use and comprehend. They are easier to use and understand, and they often have a more timeless appeal. Avoid clutter and complexity in your designs, and focus on creating interfaces that are elegant and easy to use.</p>' +
-    '<h2>Use Visual Hierarchy</h2>' +
-    '<p>Visual hierarchy is the arrangement of design elements in a way that communicates their importance. By using visual hierarchy, you can guide users through your interfaces and help them understand which elements are most important. Use size, color, and typography to create visual hierarchy in your designs.</p>' +
-    '<h2>Pay Attention to Detail</h2>' +
-    '<p>The details matter in UI design. Small design decisions can have a big impact on how users perceive your products. Pay attention to things like spacing, alignment, and typography to create designs that are visually balanced and polished.</p>' +
-    '<h2>Test and Iterate</h2>' +
-    '<p>Finally, testing and iteration are key to creating great UI designs. Test your designs with real users to see how they perform in the real world. Use their feedback to make improvements and iterate on your designs until they are optimised for both aesthetics and functionality.</p>' +
-    '<h2>Final Word</h2>' +
-    '<p>In conclusion, UI design is both an art and a science. Combining aesthetics and functionality is essential for creating products that are both visually appealing and easy to use. By understanding your users, using a consistent design language, prioritising functionality, keeping it simple, using visual hierarchy, paying attention to detail, and testing and iterating, you can create UI designs that inspire and delight users.</p>'
+    html:
+      '<p>The art of UI design entails producing interfaces that are aesthetically attractive, emotions driven and memorable. It mainly focuses on producing designs that inspire and excite users while make them feel good about the products that they use. On the other hand, the science of UI design focuses on comprehending how consumers interact with things and creating interfaces that are intuitive and simple to use.</p>' +
+      '<p>The process of developing user interfaces (UI) that let consumers engage with digital products is known as user interface design. UI design combines aesthetics and usefulness for the best outcomes. It is both an art and a science. Because aesthetics foster an emotional bond between people and the items they use, they are crucial. Functionality ensures that items are simple to use and produce the desired results, which is why it is crucial.</p>' +
+      '<p>Combining these two key aspects &mdash; aesthetics and functionality in UI design, here are some tips:</p>' +
+      '<h2>Understand Your Users</h2>' +
+      '<p>It is crucial to comprehend your users. What are they seeking to achieve? What frustrates and causes them pain? What do they consider important? Understanding your users will allow you to develop interfaces that fulfil demands and go above and beyond what they anticipate.</p>' +
+      '<h2>Use a Consistent Design Language</h2>' +
+      '<p>In UI Design, consistency is crucial. Users can better understand how to interact with your products when you adopt a similar design language across all of your items. Moreover, a consistent design language fosters a sense of familiarity, which facilitates the learning and utilisation of new products by users.</p>' +
+      '<h2>Prioritise Functionality</h2>' +
+      '<p>While it is vital to consider aesthetics, functionality should always come first. Even for customers who have never used your products before, your designs should be simple and intuitive. Be sure that the tasks and objectives that your users are attempting to accomplish are supported by your designs.</p>' +
+      '<h2>Keep It Simple</h2>' +
+      '<p>Simplicity is the pinnacle of sophistication. Designs that are more straightforward sometimes are more appealing and are simpler to use and comprehend. They are easier to use and understand, and they often have a more timeless appeal. Avoid clutter and complexity in your designs, and focus on creating interfaces that are elegant and easy to use.</p>' +
+      '<h2>Use Visual Hierarchy</h2>' +
+      '<p>Visual hierarchy is the arrangement of design elements in a way that communicates their importance. By using visual hierarchy, you can guide users through your interfaces and help them understand which elements are most important. Use size, color, and typography to create visual hierarchy in your designs.</p>' +
+      '<h2>Pay Attention to Detail</h2>' +
+      '<p>The details matter in UI design. Small design decisions can have a big impact on how users perceive your products. Pay attention to things like spacing, alignment, and typography to create designs that are visually balanced and polished.</p>' +
+      '<h2>Test and Iterate</h2>' +
+      '<p>Finally, testing and iteration are key to creating great UI designs. Test your designs with real users to see how they perform in the real world. Use their feedback to make improvements and iterate on your designs until they are optimised for both aesthetics and functionality.</p>' +
+      '<h2>Final Word</h2>' +
+      '<p>In conclusion, UI design is both an art and a science. Combining aesthetics and functionality is essential for creating products that are both visually appealing and easy to use. By understanding your users, using a consistent design language, prioritising functionality, keeping it simple, using visual hierarchy, paying attention to detail, and testing and iterating, you can create UI designs that inspire and delight users.</p>',
   },
   {
     published_at: '2023-05-22T13:00:00+0000',
     is_active: true,
     is_featured: true,
     category_id: 3,
-    title: 'Unleashing the Power of Design: Boosting Conversions for Landing Pages',
+    title:
+      'Unleashing the Power of Design: Boosting Conversions for Landing Pages',
     slug: 'unleashing-power-design-boosting-conversions-landing-pages',
-    subtitle: "Maximizing Conversions: The Impact of Effective Design on Landing Pages",
+    subtitle:
+      'Maximizing Conversions: The Impact of Effective Design on Landing Pages',
     hero_src: 'https://source.unsplash.com/KdeqA3aTnBY/1600x900',
     hero_alt: 'meeting',
-    html: '<p>In the modern digital age, landing pages are an essential component of every successful online marketing approach. Landing pages are web pages that are specifically built to achieve a particular marketing goal be it&nbsp;lead generation or product sales. While the primary goal of a landing page is to nudge&nbsp;visitors to take a specific action, such as signing up for a newsletter or purchasing a product, a well-designed landing page may additionally boost conversions and revenue.</p>' +
-    '<p>Design is one of the most essential elements in creating an outstanding landing page. Design determines how customers view and engage with your landing page, which can have a significant effect on conversion rates. In this article, we will go over some of the major design elements that can assist you in creating high-converting landing pages.</p>' +
-    '<h2>Keep it Simple</h2>' +
-    '<p>The importance of simplicity in landing page design cannot be stressed enough. Your landing page should be neat, uncluttered, and simple to use. Avoid utilising too many graphics or images that may distract viewers from your landing page\'s key content. Instead, focus on a simple, clean design that helps customers comprehend what your landing page is about and what you want them to achieve.</p>' +
-    '<h2>Use Attention-Grabbing Headlines</h2>' +
-    '<p>The headline is the first thing that users will see when they land on your page so it must be attention-grabbing and interesting. The key value of your product or service should be clearly conveyed in your headline, giving readers a reason to stay on your page and take action.</p>' +
-    '<h2>Focus on the Benefits</h2>' +
-    '<p>When creating your landing page, keep the benefits of your product or service in mind rather than the features. Users are more likely to be fuelled by your product\'s benefits, such as how it would streamline their processes&nbsp;or save them time or money. Make sure your landing page highlights the benefits of your product or service and demonstrates how it can assist users.</p>' +
-    '<h2>Use Strong Calls-to-Action</h2>' +
-    '<p>A call-to-action (CTA) is a precise instruction to users suggesting what they should do next. On your landing page, your CTA should be clear, succinct, and prominently presented. Make your CTA stand out from the rest of your landing page design by using powerful, action-oriented wording that encourages viewers to take action.</p>' +
-    '<h2>Use High-Quality Images and Graphics</h2>' +
-    '<p>Images and graphics can help to improve the aesthetic appeal and engagement of your landing page. Make certain that any photos or graphics you employ are of good quality and pertinent to your product or service. Use of stock photos or generic visuals that do not bring value to your landing page should be avoided.</p>' +
-    '<h2>Make it Mobile-Friendly</h2>' +
-    '<p>As more individuals access the internet via mobile devices, it\'s critical that your landing page be mobile-friendly. On mobile devices, your landing page should be responsive and easy to navigate, with large buttons and clear calls-to-action that are easy to click on.</p>' +
-    '<p>In conclusion, design is crucial in generating high-converting landing pages. You can create landing pages that are simple, eye-catching, and focused on the benefits of your product or service by adhering to these design guidelines. Make it a habit to test and optimise your landing pages on a regular basis to ensure that they are operating optimally and driving conversions. Your landing pages can become strong tools for driving income and developing your business with the appropriate design and optimisation.</p>'
+    html:
+      '<p>In the modern digital age, landing pages are an essential component of every successful online marketing approach. Landing pages are web pages that are specifically built to achieve a particular marketing goal be it&nbsp;lead generation or product sales. While the primary goal of a landing page is to nudge&nbsp;visitors to take a specific action, such as signing up for a newsletter or purchasing a product, a well-designed landing page may additionally boost conversions and revenue.</p>' +
+      '<p>Design is one of the most essential elements in creating an outstanding landing page. Design determines how customers view and engage with your landing page, which can have a significant effect on conversion rates. In this article, we will go over some of the major design elements that can assist you in creating high-converting landing pages.</p>' +
+      '<h2>Keep it Simple</h2>' +
+      "<p>The importance of simplicity in landing page design cannot be stressed enough. Your landing page should be neat, uncluttered, and simple to use. Avoid utilising too many graphics or images that may distract viewers from your landing page's key content. Instead, focus on a simple, clean design that helps customers comprehend what your landing page is about and what you want them to achieve.</p>" +
+      '<h2>Use Attention-Grabbing Headlines</h2>' +
+      '<p>The headline is the first thing that users will see when they land on your page so it must be attention-grabbing and interesting. The key value of your product or service should be clearly conveyed in your headline, giving readers a reason to stay on your page and take action.</p>' +
+      '<h2>Focus on the Benefits</h2>' +
+      "<p>When creating your landing page, keep the benefits of your product or service in mind rather than the features. Users are more likely to be fuelled by your product's benefits, such as how it would streamline their processes&nbsp;or save them time or money. Make sure your landing page highlights the benefits of your product or service and demonstrates how it can assist users.</p>" +
+      '<h2>Use Strong Calls-to-Action</h2>' +
+      '<p>A call-to-action (CTA) is a precise instruction to users suggesting what they should do next. On your landing page, your CTA should be clear, succinct, and prominently presented. Make your CTA stand out from the rest of your landing page design by using powerful, action-oriented wording that encourages viewers to take action.</p>' +
+      '<h2>Use High-Quality Images and Graphics</h2>' +
+      '<p>Images and graphics can help to improve the aesthetic appeal and engagement of your landing page. Make certain that any photos or graphics you employ are of good quality and pertinent to your product or service. Use of stock photos or generic visuals that do not bring value to your landing page should be avoided.</p>' +
+      '<h2>Make it Mobile-Friendly</h2>' +
+      "<p>As more individuals access the internet via mobile devices, it's critical that your landing page be mobile-friendly. On mobile devices, your landing page should be responsive and easy to navigate, with large buttons and clear calls-to-action that are easy to click on.</p>" +
+      '<p>In conclusion, design is crucial in generating high-converting landing pages. You can create landing pages that are simple, eye-catching, and focused on the benefits of your product or service by adhering to these design guidelines. Make it a habit to test and optimise your landing pages on a regular basis to ensure that they are operating optimally and driving conversions. Your landing pages can become strong tools for driving income and developing your business with the appropriate design and optimisation.</p>',
   },
   {
     published_at: '2023-05-22T13:00:00+0000',
@@ -1103,24 +1265,26 @@ export const MOCK_DESIGN_POSTS = [
     category_id: 4,
     title: 'Beyond Aesthetics: The Strategic Role of Design in Business Growth',
     slug: 'beyond-aesthetics-strategic-role-design-business-growth',
-    subtitle: "Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth",
+    subtitle:
+      'Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth',
     hero_src: 'https://source.unsplash.com/vGjGvtSfys4/1600x900',
     hero_alt: 'sprout',
-    html: '<p>Design is more than just a pretty picture or a sleek logo. It is a potent tool that can aid in business growth and success. As companies contend for customers and market share, design has emerged as a critical distinction that may make or break a company\'s success.</p>' +
-    '<p>Design can help businesses in a variety of ways, from increasing brand recognition and trust to boosting user experience and conversion rates. In this post, we\'ll look at the strategic function of design in business growth and how businesses may use it to their advantage.</p>' +
-    '<h2>Building Brand Recognition and Trust</h2>' +
-    '<p>Building brand awareness and trust is one of among the most fundamental&nbsp;way&nbsp;design can help businesses develop. A well-designed logo, website, and marketing materials may all contribute to the creation of a unified brand identity that customers will recognize and trust. Design may also assist a firm convey its beliefs and mission, allowing it to stand out from competitors and establish a devoted consumer base. Businesses can develop a distinctive brand identity that resonates with customers and helps them stand out in a crowded marketplace by investing in high-quality design.</p>' +
-    '<h2>Improving User Experience</h2>' +
-    '<p>Design can help businesses expand by increasing user experience. Users have high expectations for websites, apps, and other digital products in today\'s digital age. They anticipate that they will be simple to use, intuitive, and visually appealing.</p>' +
-    '<p>Additionally, design may help achieve these expectations by designing practical and aesthetically pleasing user interfaces. Businesses may build goods and experiences that are more likely to be utilised and recommended by satisfied consumers by designing with the user in mind.</p>' +
-    '<h2>Boosting Conversion Rates</h2>' +
-    '<p>Design plays&nbsp;an important role in improving conversion rates for landing pages and other marketing materials. Businesses can create visually appealing and engaging landing pages by integrating design aspects such as colour, typography, and layout.</p>' +
-    '<p>A well-designed landing page, for example, with clear calls to action and a visually appealing design can assist raise click-through rates and, eventually, lead to more conversions. Businesses may promote development and success by investing in high-quality design.</p>' +
-    '<h2>Fostering Innovation</h2>' +
-    '<p>Design&nbsp;stimulates&nbsp;company innovation&nbsp;resulting in new goods&nbsp;and services that can help drive growth. Businesses may discover new opportunities and develop products that fulfil the demands of their customers by supporting a culture of innovation and design thinking.</p>' +
-    '<p>Design thinking, which entails a human-centered approach to problem solving, can assist firms in identifying new ideas and opportunities that they may not have explored otherwise. Businesses may stay ahead of the curve and continue to grow and prosper in the long run by leveraging design to drive innovation.</p>' +
-    '<h2>Final Word</h2>' +
-    '<p>To summarise, design is crucial to business growth and success. From increasing brand identification and trust to improving user experience and increasing conversion rates, design can help organisations differentiate themselves and achieve their objectives. Businesses may unlock the full potential of design and achieve long-term success by investing in high-quality design and cultivating a culture of innovation and design thinking.</p>'
+    html:
+      "<p>Design is more than just a pretty picture or a sleek logo. It is a potent tool that can aid in business growth and success. As companies contend for customers and market share, design has emerged as a critical distinction that may make or break a company's success.</p>" +
+      "<p>Design can help businesses in a variety of ways, from increasing brand recognition and trust to boosting user experience and conversion rates. In this post, we'll look at the strategic function of design in business growth and how businesses may use it to their advantage.</p>" +
+      '<h2>Building Brand Recognition and Trust</h2>' +
+      '<p>Building brand awareness and trust is one of among the most fundamental&nbsp;way&nbsp;design can help businesses develop. A well-designed logo, website, and marketing materials may all contribute to the creation of a unified brand identity that customers will recognize and trust. Design may also assist a firm convey its beliefs and mission, allowing it to stand out from competitors and establish a devoted consumer base. Businesses can develop a distinctive brand identity that resonates with customers and helps them stand out in a crowded marketplace by investing in high-quality design.</p>' +
+      '<h2>Improving User Experience</h2>' +
+      "<p>Design can help businesses expand by increasing user experience. Users have high expectations for websites, apps, and other digital products in today's digital age. They anticipate that they will be simple to use, intuitive, and visually appealing.</p>" +
+      '<p>Additionally, design may help achieve these expectations by designing practical and aesthetically pleasing user interfaces. Businesses may build goods and experiences that are more likely to be utilised and recommended by satisfied consumers by designing with the user in mind.</p>' +
+      '<h2>Boosting Conversion Rates</h2>' +
+      '<p>Design plays&nbsp;an important role in improving conversion rates for landing pages and other marketing materials. Businesses can create visually appealing and engaging landing pages by integrating design aspects such as colour, typography, and layout.</p>' +
+      '<p>A well-designed landing page, for example, with clear calls to action and a visually appealing design can assist raise click-through rates and, eventually, lead to more conversions. Businesses may promote development and success by investing in high-quality design.</p>' +
+      '<h2>Fostering Innovation</h2>' +
+      '<p>Design&nbsp;stimulates&nbsp;company innovation&nbsp;resulting in new goods&nbsp;and services that can help drive growth. Businesses may discover new opportunities and develop products that fulfil the demands of their customers by supporting a culture of innovation and design thinking.</p>' +
+      '<p>Design thinking, which entails a human-centered approach to problem solving, can assist firms in identifying new ideas and opportunities that they may not have explored otherwise. Businesses may stay ahead of the curve and continue to grow and prosper in the long run by leveraging design to drive innovation.</p>' +
+      '<h2>Final Word</h2>' +
+      '<p>To summarise, design is crucial to business growth and success. From increasing brand identification and trust to improving user experience and increasing conversion rates, design can help organisations differentiate themselves and achieve their objectives. Businesses may unlock the full potential of design and achieve long-term success by investing in high-quality design and cultivating a culture of innovation and design thinking.</p>',
   },
   {
     published_at: '2023-05-22T13:00:00+0000',
@@ -1128,26 +1292,28 @@ export const MOCK_DESIGN_POSTS = [
     category_id: 5,
     title: 'Beyond the Web2: Exploring the Possibilities of Web3 Design',
     slug: 'beyond-web2-exploring-possibilities-web3-design',
-    subtitle: "Unleashing the potential of decentralization, token economics, interoperability, and community in shaping the future of online interactions.",
+    subtitle:
+      'Unleashing the potential of decentralization, token economics, interoperability, and community in shaping the future of online interactions.',
     hero_src: 'https://source.unsplash.com/VK7jXtOtEuM/1600x900',
     hero_alt: 'coins falling',
-    html: '<p>Web3 is the internet\'s next development, and is already changing the way we interact online. It symbolises a significant change away from the centralised, proprietary Web2 models and toward a more decentralised, open environment that puts consumers in control of their data and online experiences. Web3 is more than just a technological advancement; it is a new paradigm of online engagement that will enable new types of value creation, collaboration, and creativity.</p>' +
-    '<p>In this new Web3 environment, design will be crucial in moulding the user experience and realising the full potential of this technology. In this post, we\'ll look at the possibilities of Web3 design and how it might help shape the future of online interactions.</p>' +
-    '<h2>Designing for a decentralised web</h2>' +
-    '<p>Web3 is a set of technologies and protocols that allow decentralised apps (dApps) to run on top of a blockchain network. This means that data is no longer stored in a centralised server, but is instead dispersed throughout a network of nodes owned and controlled by users. This has significant design consequences since it necessitates new approaches to user experience and information architecture.</p>' +
-    '<p>One of the most difficult aspects of designing for Web3 is balancing decentralisation and usability. While decentralisation is an important element of Web3, it can also complicate and confuse the user experience. Designers must identify solutions to simplify the user experience while keeping the technology\'s decentralised character.</p>' +
-    '<p>Another critical factor to consider is the necessity to design for trust. Web3 is based on trustless systems, which implies users do not need to rely on intermediaries to conduct online transactions. This necessitates designers creating interfaces that are visible, secure, and simple to use, as well as ensuring that consumers understand the dangers and benefits of utilising these systems.</p>' +
-    '<h2>Designing for token economics</h2>' +
-    '<p>The rise of new kinds of value generation and exchange is one of the most intriguing features of Web3. Tokens are a major aspect of Web3. They are digital assets that can represent anything from a currency to a utility to a stake in a network. Tokens allow users to join in networks, have access to services, and even control the protocols itself.</p>' +
-    '<p>Designers must grasp the importance of tokens in Web3 and create interfaces that make them easy to use. This includes designing for token transactions, managing token balances, and giving information about a network\'s token economics. Designers must also consider the effects of token economics on user behaviour and create interfaces that encourage good actions.</p>' +
-    '<h2>Designing for interoperability</h2>' +
-    '<p>One of the primary goals of Web3 is to build a more interoperable web in which diverse apps and networks may connect with one another effortlessly. Designers must think about how their interfaces will interact with other interfaces and networks.</p>' +
-    '<p>Designing for diverse blockchain networks and protocols is also part of interoperability. Each blockchain has its own set of unique features and constraints, and designers must be aware of these intricacies in order to create interfaces that work across multiple networks.</p>' +
-    '<h2>Designing for community</h2>' +
-    '<p>Web3 is more than just a technological upgrade; it is a new paradigm of online interaction based on community and cooperation. Many Web3 initiatives are built around communities, and designers must create interfaces that support community building and interaction.</p>' +
-    '<p>This includes creating social elements like messaging, forums, and reputation systems, as well as creating governance and decision-making processes. Designers must also examine how their interfaces might generate a sense of belonging and ownership among community members.</p>' +
-    '<h2>Conclusion</h2>' +
-    '<p>Web3 is a new online interaction paradigm defined by decentralisation, and new forms of value production and exchange. Design will be crucial in creating the user experience and realising this technology\'s full potential. Designers must comprehend Web3\'s unique problems and opportunities in order to design effective and compelling products and services. Web3 design, when approached correctly, may open up new avenues for innovation and growth, revolutionising the way we connect with technology and with one another.</p>'
+    html:
+      "<p>Web3 is the internet's next development, and is already changing the way we interact online. It symbolises a significant change away from the centralised, proprietary Web2 models and toward a more decentralised, open environment that puts consumers in control of their data and online experiences. Web3 is more than just a technological advancement; it is a new paradigm of online engagement that will enable new types of value creation, collaboration, and creativity.</p>" +
+      "<p>In this new Web3 environment, design will be crucial in moulding the user experience and realising the full potential of this technology. In this post, we'll look at the possibilities of Web3 design and how it might help shape the future of online interactions.</p>" +
+      '<h2>Designing for a decentralised web</h2>' +
+      '<p>Web3 is a set of technologies and protocols that allow decentralised apps (dApps) to run on top of a blockchain network. This means that data is no longer stored in a centralised server, but is instead dispersed throughout a network of nodes owned and controlled by users. This has significant design consequences since it necessitates new approaches to user experience and information architecture.</p>' +
+      "<p>One of the most difficult aspects of designing for Web3 is balancing decentralisation and usability. While decentralisation is an important element of Web3, it can also complicate and confuse the user experience. Designers must identify solutions to simplify the user experience while keeping the technology's decentralised character.</p>" +
+      '<p>Another critical factor to consider is the necessity to design for trust. Web3 is based on trustless systems, which implies users do not need to rely on intermediaries to conduct online transactions. This necessitates designers creating interfaces that are visible, secure, and simple to use, as well as ensuring that consumers understand the dangers and benefits of utilising these systems.</p>' +
+      '<h2>Designing for token economics</h2>' +
+      '<p>The rise of new kinds of value generation and exchange is one of the most intriguing features of Web3. Tokens are a major aspect of Web3. They are digital assets that can represent anything from a currency to a utility to a stake in a network. Tokens allow users to join in networks, have access to services, and even control the protocols itself.</p>' +
+      "<p>Designers must grasp the importance of tokens in Web3 and create interfaces that make them easy to use. This includes designing for token transactions, managing token balances, and giving information about a network's token economics. Designers must also consider the effects of token economics on user behaviour and create interfaces that encourage good actions.</p>" +
+      '<h2>Designing for interoperability</h2>' +
+      '<p>One of the primary goals of Web3 is to build a more interoperable web in which diverse apps and networks may connect with one another effortlessly. Designers must think about how their interfaces will interact with other interfaces and networks.</p>' +
+      '<p>Designing for diverse blockchain networks and protocols is also part of interoperability. Each blockchain has its own set of unique features and constraints, and designers must be aware of these intricacies in order to create interfaces that work across multiple networks.</p>' +
+      '<h2>Designing for community</h2>' +
+      '<p>Web3 is more than just a technological upgrade; it is a new paradigm of online interaction based on community and cooperation. Many Web3 initiatives are built around communities, and designers must create interfaces that support community building and interaction.</p>' +
+      '<p>This includes creating social elements like messaging, forums, and reputation systems, as well as creating governance and decision-making processes. Designers must also examine how their interfaces might generate a sense of belonging and ownership among community members.</p>' +
+      '<h2>Conclusion</h2>' +
+      "<p>Web3 is a new online interaction paradigm defined by decentralisation, and new forms of value production and exchange. Design will be crucial in creating the user experience and realising this technology's full potential. Designers must comprehend Web3's unique problems and opportunities in order to design effective and compelling products and services. Web3 design, when approached correctly, may open up new avenues for innovation and growth, revolutionising the way we connect with technology and with one another.</p>",
   },
 ].map((item, i) => ({
   id: i + 1,
