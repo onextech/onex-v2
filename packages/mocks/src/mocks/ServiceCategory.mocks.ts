@@ -132,8 +132,8 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'specialized-b2b-digital-marketing',
     subtitle:
       'Elevate your marketing efforts with our specialized services tailored to your business needs.',
-      hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
-      hero_alt: '3D rendered art',
+    hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
+    hero_alt: '3D rendered art',
   },
   {
     id: 3,
@@ -141,8 +141,8 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'advanced-web-development-and-analytics',
     subtitle:
       'Maximize the full potential of your online presence with our web solutions.',
-      hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
-      hero_alt: 'Wall with orange neon lights',
+    hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
+    hero_alt: 'Wall with orange neon lights',
   },
 ]
 
@@ -207,7 +207,8 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     id: 1,
     title: 'Digital Service Delivery',
     slug: 'digital-service-delivery',
-    subtitle: 'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
+    subtitle:
+      'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
     hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
     hero_alt: 'Star trail',
   },
@@ -215,7 +216,8 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     id: 2,
     title: 'AI Process Automation',
     slug: 'ai-process-automation',
-    subtitle: 'Transform and automate complex processes through leveraging AI technologies.',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies.',
     hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
     hero_alt: '3D rendered cubes',
   },

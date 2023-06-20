@@ -4181,6 +4181,99 @@ export const MOCK_DATA_SERVICES = [
   },
   {
     // Hero
+    category_id: 1,
+    title: 'ChatGPT Plugin Development',
+    slug: 'chatgpt-plugin-development',
+    subtitle:
+      'Leverage our expertise to develop powerful ChatGPT plugins for your business.',
+    hero_src: 'https://source.unsplash.com/MMUzS5Qzuus/1600x900',
+    hero_alt: 'ChatGPT home page',
+    // Sections
+    sections: {
+      summary: {
+        title: 'Custom ChatGPT plugins for your enterprise needs.',
+        items: [
+          {
+            title:
+              'In the era of AI-driven interactions, ChatGPT can play a crucial role in enhancing user experience and engagement. We specialize in creating powerful plugins that seamlessly integrate with your business. Our team of experts follows a data-centric approach to create intelligent plugins that understand and respond to user queries effectively, delivering personalized experiences and driving meaningful interactions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our ChatGPT Plugin Development service combines deep domain knowledge, AI expertise, and agile development methodologies to deliver custom plugins that enhance your enterprise data and AI solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Plugin Development',
+            subtitle:
+              'We specialize in developing custom ChatGPT plugins tailored to your enterprise requirements, enabling advanced conversational capabilities.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Integration',
+            subtitle:
+              'We ensure seamless integration of ChatGPT plugins with your enterprise data systems, enabling access to relevant information and insights.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User Personalization',
+            subtitle:
+              'We implement user personalization features in ChatGPT plugins, enabling personalized user experiences and recommendations.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Scalable Architecture',
+            subtitle:
+              'We design and develop ChatGPT plugins with a scalable architecture, allowing for future growth and increasing demand.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Multilingual Support',
+            subtitle:
+              'We enable multilingual support in ChatGPT plugins, allowing for conversations in multiple languages to cater to a global audience.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize security and compliance in ChatGPT plugin development, ensuring data privacy and adherence to industry regulations.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our ChatGPT Plugin Development service and how it can enhance your enterprise data and AI solutions.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why should I consider developing ChatGPT plugins for my enterprise solutions?',
+            content:
+              'ChatGPT plugins can significantly enhance user experiences by enabling advanced conversational capabilities. They can be used for a variety of purposes, including customer support, knowledge management, process automation, and more. By developing custom ChatGPT plugins tailored to your enterprise needs, you can empower your organization with intelligent conversational interfaces that streamline workflows, improve customer interactions, and drive business value.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What are the benefits of partnering with your ChatGPT Plugin Development service?',
+            content:
+              'Our ChatGPT Plugin Development service combines deep domain knowledge, AI expertise, and agile development methodologies to deliver custom plugins that enhance your enterprise data and AI solutions. By partnering with us, you can leverage our experience in developing ChatGPT plugins, ensuring seamless integration with your existing systems, personalized user experiences, scalability, multilingual support, and adherence to security and compliance standards. We work closely with your team to understand your requirements and deliver tailored solutions that meet your enterprise needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How does your team approach ChatGPT plugin development?',
+            content:
+              'We follow a collaborative and iterative approach to ChatGPT plugin development. Our team works closely with your organization to understand your requirements, domain-specific challenges, and desired outcomes. We leverage our AI expertise to design and develop custom ChatGPT plugins that address your unique needs. Throughout the development process, we ensure seamless integration with your existing systems, data privacy, scalability, multilingual support, and compliance with industry regulations. We also provide ongoing support and maintenance to ensure the optimal performance of the ChatGPT plugins.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
     category_id: 2,
     title: 'Data Warehousing',
     slug: 'data-warehousing',
