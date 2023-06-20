@@ -27,6 +27,10 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={lightTheme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
+          <meta
+            name="facebook-domain-verification"
+            content="m0p17phxqrj55qtpudvxz9gle6al63"
+          />
           {(this.props as any).emotionStyleTags}
           {renderFontAwesomeKitPreconnectLinkTags()}
           {renderGtmPreconnectLinkTags()}
