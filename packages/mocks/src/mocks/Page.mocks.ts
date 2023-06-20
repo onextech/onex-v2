@@ -2286,10 +2286,12 @@ export const MOCK_DATA_PAGES = [
     is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
+    seo: {
+      title: '{appTitle} - Enterprise AI Development',
+      description:
+        '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
+    },
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Enterprise AI Development',
-    seo_description:
-      '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -2732,10 +2734,12 @@ export const MOCK_DESIGN_PAGES = [
     is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
+    seo: {
+      title: '{appTitle} - Enterprise UI/UX Design',
+      description:
+        "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
+    },
     subtitle: 'Discover the agile process we use to design digital products',
-    seo_title: '{appTitle} - Enterprise UI/UX Design',
-    seo_description:
-      "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
     sections: {
       hero: {
         overline: '{appTitle}',
@@ -3167,14 +3171,16 @@ export const MOCK_DIGITAL_PAGES = [
     is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
+    seo: {
+      title: '{appTitle} - Enterprise Digital Marketing',
+      description:
+        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    },
     subtitle: 'Discover the agile process we use to build digital products',
-    seo_title: '{appTitle} - Enterprise Frontend Development Services',
-    seo_description:
-      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
     sections: {
       hero: {
         overline: '{appTitle}',
-        title: 'Elevating Enterprises to Greater Heights',
+        title: 'Empower Growth and Nurture Your Brand',
         subtitle:
           "{appTitle} harnesses the power of digital marketing to push business growth in {localeTitle}'s leading companies.",
       },
@@ -3689,10 +3695,12 @@ export const MOCK_FINX_PAGES = [
     is_hidden_from_nav: true,
     title: 'Home',
     slug: 'home',
+    seo: {
+      title: '{appTitle} - Digital Solutions for Financial Enterprise',
+      description:
+        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    },
     subtitle: 'Discover the agile process we use to build digital products',
-    seo_title: '{appTitle} - Enterprise Frontend Development Services',
-    seo_description:
-      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -4212,9 +4220,11 @@ export const MOCK_GOVX_PAGES = [
     title: 'Home',
     slug: 'home',
     subtitle: 'Discover the agile process we use to build digital products',
-    seo_title: '{appTitle} - Enterprise Frontend Development Services',
-    seo_description:
-      "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    seo: {
+      title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
+      description:
+        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+    },
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',

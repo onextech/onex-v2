@@ -7,7 +7,7 @@ import {
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
   renderClientLogosImageMarqueeBlock,
-  renderShowcasesBlock,
+  renderShowcaseSlider,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
@@ -105,7 +105,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Showcases
-        renderShowcasesBlock({
+        renderShowcaseSlider({
           title: (
             <>
               Elevate Your Business with Our Dedicated Technology Consulting
