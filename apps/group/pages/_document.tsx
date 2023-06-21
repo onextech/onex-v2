@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
           <meta name="emotion-insertion-point" content="" />
           <meta
             name="facebook-domain-verification"
-            content="m0p17phxqrj55qtpudvxz9gle6al63"
+            content={process.env.NEXT_PUBLIC_FACEBOOK_DOMAIN_VERIFICATION}
           />
           {(this.props as any).emotionStyleTags}
           {renderFontAwesomeKitPreconnectLinkTags()}
