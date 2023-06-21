@@ -30,7 +30,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
   const router = useRouter()
   const { site, clientLogos, clientTestimonials, clientHighlights } =
     useLayout()
-  const { locales, cta_button_title } = site
+  const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title

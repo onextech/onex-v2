@@ -1668,9 +1668,9 @@
     prettier "^2.0.5"
 
 "@gravis-os/fields@*", "@gravis-os/fields@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.1.2.tgz#753e0d26751c808dd637faafd124784c6c29e6d9"
-  integrity sha512-9Yw6sQ1sj41dTm+mK0Gw23T1pZxDe6nBndMCwnDJndzmKFmHscsMz4e51kO2slPQhTyC3Qx2Ufx/0MtjUJVVZg==
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-0.1.3.tgz#6b7e581ad979dcbbd12a7983d06088ffb099487e"
+  integrity sha512-xe3oRZfi6Zam9a4d1LLScycgOSONxr9JmBrCNqr3pNRl2sR0KpirJPA7sb6zlgu5696+mQpJkpfESTuu7RxPTA==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1735,9 +1735,9 @@
   integrity sha512-kW1ph+fyAhRCt6EOMXPpv63lVm1d+KtOJz/hgPoG6nBLcO4zs9N+f/hf+W6PxrjplGIRHgB5sOx9m7teXATyTg==
 
 "@gravis-os/storage@*":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.1.0.tgz#73d46c78ffeac18214157e6a9af227a1f41ecb4e"
-  integrity sha512-mCpjupneqbAMchrvGykixChEA4ZDxkH6ATxNpsf7OK8pxTRBZ2flpix8yuVUcwAggZ7bT7yljhFrYcDhoDriiA==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.1.1.tgz#2b5cb8f28b964caab6116186147bbffc5f1bfbac"
+  integrity sha512-RUP1nmR6hEoGclHccybMRFKJ8oRS51tYEkuZR3vz9Yh9M6UuSHbKkPxQSorLrkmVxtVz3D5y7Qo6tLsxW/pYsg==
   dependencies:
     "@gravis-os/types" "*"
     "@gravis-os/ui" "*"
