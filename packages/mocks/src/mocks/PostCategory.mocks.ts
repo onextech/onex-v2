@@ -293,7 +293,35 @@ export const MOCK_FINX_POST_CATEGORYS = [
   },
 ]
 
-export const MOCK_GOVX_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_GOVX_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Data-Driven Efficiency',
+    slug: 'data-driven-efficiency',
+    description: 'Maximizing Efficiency through Data-Driven Insights',
+    subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
+    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_alt: 'white building',
+  },
+  {
+    id: 2,
+    title: 'Government Technology',
+    slug: 'government-technology',
+    description: 'Empowering Governance through Technology',
+    subtitle: 'Advancing Public Services through Digital Innovation',
+    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_alt: 'building and sky',
+  },
+  {
+    id: 3,
+    title: 'Public Sector Transformation',
+    slug: 'public-sector-transformation',
+    description: 'Embracing Change for Public Sector Excellence',
+    subtitle: 'Driving Transformational Shifts in Government Services',
+    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_alt: 'high rise building',
+  },
+]
 
 export const MOCK_POST_CATEGORYS = {
   GROUP: MOCK_GROUP_POST_CATEGORYS,
