@@ -209,11 +209,119 @@ export const MOCK_DATA_POST_CATEGORYS = [
   },
 ]
 
-export const MOCK_DIGITAL_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_DIGITAL_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Analytics',
+    slug: 'analytics',
+    description: 'Unveiling Data Secrets',
+    subtitle:
+      'Harness the power of analytics to unlock valuable insights for business growth.',
+    hero_src: 'https://source.unsplash.com/cRFH-ZkVAag/1405x320',
+    hero_alt: 'light trails',
+  },
+  {
+    id: 2,
+    title: 'Conversion Optimization',
+    slug: 'conversion-optimization',
+    description: 'Transform Visitors into Customers',
+    subtitle:
+      'Maximize your conversion rates through strategic optimization techniques.',
+    hero_src: 'https://source.unsplash.com/UYgrVfIhBec/1405x320',
+    hero_alt: 'purple and green discs',
+  },
+  {
+    id: 3,
+    title: 'Digital Marketing',
+    slug: 'digital-marketing',
+    description: 'Navigating the Digital Landscape',
+    subtitle:
+      "Expand your brand's reach and drive success in the digital realm.",
+    hero_src: 'https://source.unsplash.com/MV2BRkkmsIw/1405x320',
+    hero_alt: 'person and light',
+  },
+  {
+    id: 4,
+    title: 'E-commerce',
+    slug: 'ecommerce',
+    description: 'Building a Seamless Shopping Experience',
+    subtitle:
+      'Streamline your e-commerce operations and delight customers at every touchpoint.',
+    hero_src: 'https://source.unsplash.com/RwvwrUebCsk/1405x320',
+    hero_alt: 'diamond',
+  },
+  {
+    id: 5,
+    title: 'Website Development',
+    slug: 'website-development',
+    description: 'Building the Foundation of Online Success',
+    subtitle:
+      'Create visually stunning and user-friendly websites that engage and convert visitors.',
+    hero_src: 'https://source.unsplash.com/nY14Fs8pxT8/1405x320',
+    hero_alt: 'purple light',
+  },
+]
 
-export const MOCK_FINX_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_FINX_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Financial Transformation',
+    slug: 'financial-transformation',
+    description: 'Transforming Finance for Future Growth',
+    subtitle:
+      'Harnessing the Power of Financial Innovation and Strategic Planning',
+    hero_src: 'https://source.unsplash.com/3jj4-HXXa_0/1405x320',
+    hero_alt: 'rendered mountains',
+  },
+  {
+    id: 2,
+    title: 'Advanced Analytics',
+    slug: 'advanced-analytics',
+    description: 'Unleashing Insights through Advanced Analytics',
+    subtitle: 'Empowering Data-Driven Decision Making for Business Success',
+    hero_src: 'https://source.unsplash.com/96wH9-hzdWY/1405x320',
+    hero_alt: 'white mountains',
+  },
+  {
+    id: 3,
+    title: 'Fintech Innovation',
+    slug: 'fintech-innovation',
+    description: 'Revolutionizing Finance through Fintech Solutions',
+    subtitle: 'Embracing Cutting-Edge Technologies for Financial Advancement',
+    hero_src: 'https://source.unsplash.com/wDx3q0yb7fk/1405x320',
+    hero_alt: 'snowy mountains',
+  },
+]
 
-export const MOCK_GOVX_POST_CATEGORYS = MOCK_GROUP_POST_CATEGORYS
+export const MOCK_GOVX_POST_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Data-Driven Efficiency',
+    slug: 'data-driven-efficiency',
+    description: 'Maximizing Efficiency through Data-Driven Insights',
+    subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
+    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_alt: 'white building',
+  },
+  {
+    id: 2,
+    title: 'Government Technology',
+    slug: 'government-technology',
+    description: 'Empowering Governance through Technology',
+    subtitle: 'Advancing Public Services through Digital Innovation',
+    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_alt: 'building and sky',
+  },
+  {
+    id: 3,
+    title: 'Public Sector Transformation',
+    slug: 'public-sector-transformation',
+    description: 'Embracing Change for Public Sector Excellence',
+    subtitle: 'Driving Transformational Shifts in Government Services',
+    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_alt: 'high rise building',
+  },
+]
 
 export const MOCK_POST_CATEGORYS = {
   GROUP: MOCK_GROUP_POST_CATEGORYS,
