@@ -1334,7 +1334,6 @@ export const MOCK_DESIGN_POSTS = [
   ...item,
 }))
 
-// TODO: images not yet, html not yet
 export const MOCK_DIGITAL_POSTS = [
   {
     published_at: '2019-05-02T13:00:00+0000',
@@ -1610,9 +1609,73 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'website-redesign-examples-before-after',
     subtitle:
       'Here are examples of successful web redesigns with their respective before and after transformation',
-    hero_src: '/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/1280w.jpeg',
+    hero_src: '/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre_hero.jpeg',
     hero_alt: 'lightbulb blue and yellow background',
-    html: '',
+    html:
+      '<p>Keeping your website looking fresh and attractive is a vital part of engaging with key audiences and building a solid marketing and sales outreach strategy. Website redesign should ideally take place at least every five years or less. Here&rsquo;s a detailed look at some large scale website redesigns that have been widely successful and resulted in higher conversation rates.</p>\n' +
+      "<h3>1. Reddit's major redesign</h3>\n" +
+      '<h3>Before website redesign</h3>' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre1.png" alt="reddit search result"></p>' +
+      '<h3>After website redesign</h3>' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre2.png" alt="updated reddit search result"></p>' +
+      '<p>The new Reddit highlights easy navigation with a hamburger menu on the left side of the screen, that presents your feed, profiles and any subscriptions you have. There are also a selection of buttons that Redditors can use to change the format of the website according to their individual preference. Card view is a flatter appearance like Facebook, while the compact view lets you view myriad content with an effortless scroll.</p>\n' +
+      '<h3>2. Updating the Dropbox Brand</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre3.png" alt="old dropbox ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre4.png" alt="updated dropbox ui"></p>\n' +
+      '<p>The older version of Dropbox was very content-heavy, with minimum white spacing between each row and small icons that were often difficult to understand. There was no clear distinction between options such as New Folder, Bin and Upload. Now, information is clearly displayed, with additional features such as a thumbnail view to get a glimpse at each file and check who the collaborators are on a file. For better privacy and security, there is more obvious account separation as well.</p>\n' +
+      '<h3>3. Minimalist visuals with Instagram</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre5.png" alt="old instagram ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre6.png" alt="updated instagram ui"></p>\n' +
+      '<p>Instagram got a website overhaul back in 2018, but most of the popular features remain unchanged. You can still scroll through your feed and double-tap to like photos, comment on images and browse through other people&rsquo;s profiles. But the square-shaped profile photos are now rounded, while the grid of images placed above the user name is no longer there.</p>\n' +
+      '<p>The Instagram blue is replaced by a combination gray, white and black theme that is attractive and modern. Overall, the interface is simplified with a flatter design versus the older preference for skeuomorphism. The Instagram app suite was not very consistent in terms of its look and feel. The redesign process helped to integrate all aspects of the app for a cohesive appearance.</p>\n' +
+      '<h3>4. Simpler layout for Twitter</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre7.1.png" alt="old twitter ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre7.2.png" alt="updated twitter ui"></p>\n' +
+      '<p>Compared to the old layout, Twitter now offers two columns for content instead of three. The feed is located on the left side of the screen, with trending topics and user suggestions placed on the right. There are added options to include emojis in tweets, bookmark and explore. Trends section is more functional and shows marked improvements with updates. When you compose a tweet, the pop-up has a distinctive appearance which is an open space instead of a rectangular box. The &ldquo;tweet&rdquo; icon is now moved to the top of the page.</p>' +
+      "<h3>5.Mailchimp's new look</h3>\n" +
+      '<h3>Before website design</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre8.png" alt="old mailchimp ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre9.png" alt="updated mailchimp ui"></p>\n' +
+      '<p>While Mailchimp&rsquo;s website was functioning perfectly well earlier, the company wanted to make a statement and highlight a clear value proposition to its growing customer base. The older version of the homepage was clean and easy to navigate, with a top menu and an organized landing page decorated by a hero image. The redesigning has resulted in quirky imagery and a brighter colour palette, which strays away from typical typeface and wordmark.</p>\n' +
+      '<h3>6. Powerful engagement at the Art Institute of Chicago</h3>\n' +
+      '<h3>Before website design</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre10.png" alt="old chicago website"></p>\n' +
+      '<h3>After website design</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre11.png" alt="updated chicago website"></p>\n' +
+      '<p>The new website for the Art Institute of Chicago is much improved in UX terms. Firstly, it&rsquo;s fully responsive and can now be read comfortably on any device. The top navigation has been simplified to include a handful of clear links without clunky drop-down menus. There&rsquo;s also a space for temporary announcements.</p>\n' +
+      '<p>The carousel has been dropped in exchange for a single hero video, adding movement and life to this primary graphical element. Exhibition info is now presented over an opaque gray layer, vastly improving readability.</p>\n' +
+      '<h3>7. UserTesting: enhances the customer experience</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre12.png" alt="old usertesting ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre13.png" alt="updated usertesting ui"></p>\n' +
+      '<p>The new UserTesting homepage is crafted beautifully, with a light and easy to understand page with the word count reduced by 25%. The carousel that was present in the old version of the landing page now showcases good quality images that are consistent with the brand.</p>\n' +
+      '<h3>8. Panos Pictures&rsquo; website revamp</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre14.png" alt="old panos pictures ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre15.png" alt="updated panos pictures ui"></p>\n' +
+      '<p>The Panos Pictures website provides great elements that adapt to a user&rsquo;s display. There is no longer a navigation menu on the top, as it is hidden behind a hamburger menu icon htat expands when selected. The brand logo and search fields did not undergo any change.</p>' +
+      '<h3>9. <a href="http://Rev.com">Rev.com</a></h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre16.png" alt="old rev.com ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre17.png" alt="updated rev.com ui"></p>\n' +
+      '<p>The previous version of Rev was looking like it needed some upgrades to bring it to a 21st century audience. The main features was the carousel in the center the three values of the company shared &ndash; quality, speed and service. With the website revamp, one can find a menu bar above the carousel, that connects you to the company&rsquo;s main services, and these services were linked to retro graphics, and some the different pricing levels of plans on offer.</p>\n' +
+      '<h3>10. How <a href="http://slack.com">slack.com</a> shaped its image</h3>\n' +
+      '<h3>Before website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre18.png" alt="old slack.com ui"></p>\n' +
+      '<h3>After website redesign</h3>\n' +
+      '<p><img src="/post/image/94fda884-6d5c-45b1-97a3-b0e8a2e36d95/wre19.png" alt="updated slack.com ui"></p>\n' +
+      '<p>In the older version of the landing page, <a href="http://slack.com">slack.com</a> had a flatter appearance that belonged to an earlier decade. Instead, now, there is an easily accessible menu on the top section with details such as pricing, location and &lsquo;find your workspace&rsquo;. In case the intention is to be more proactive, you can find out if things are okay. Now slack allows business owners to directly communicate with customers regarding comments and queries with a few configurations.</p>\n' +
+      '<p>With this impressive array of the latest UX designs being used for websites, most of them have a carousel to give an immediate glimpse into unique products or services. One of a kind imagery, tailored content for better engagement and other multimedia alternatives can significantly boost the number of visitors to the landing page. With a tendency towards less text and more visuals, many of the websites reviewed show that the carousel is no longer a primary element needed to develop a top notch website.</p>',
   },
   {
     published_at: '2019-05-30T13:00:00+0000',
