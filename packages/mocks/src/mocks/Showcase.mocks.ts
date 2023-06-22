@@ -311,7 +311,7 @@ export const MOCK_GROUP_SHOWCASES: Showcase[] = [
     title: 'A beautifully crafted self-pick up service app.',
     slug: 'suntec',
     subtitle:
-      'Bringing digital solutions to one of the largest and most established retail destinations in Singapore. Simplifying the life of shoppers through the power of a custom application.',
+      "Simplifying shoppers' lives through a custom application, bringing digital solutions to a premier retail destination in Singapore.",
     hero_src: '/showcases/suntec/hero.png',
     hero_alt: 'Suntec showcase',
     mode: 'light',

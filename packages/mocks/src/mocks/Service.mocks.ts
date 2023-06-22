@@ -416,7 +416,7 @@ export const MOCK_TECH_SERVICES = [
             key: 'faqs-3',
             title: 'How do you approach API integration?',
             content:
-              'Our approach to API integration starts with understanding your business requirements and goals. We then analyze your existing systems and identify the best way to integrate them to achieve the desired outcomes. Next, our team of experts designs and develops the APIs, ensuring they are secure, efficient, and easy to use. We also conduct thorough testing to ensure the integration works seamlessly and meets your needs. Finally, we provide ongoing maintenance and support to keep your API integrations up-to-date and performing optimally.',
+              'Our approach to API integration starts with understanding your business requirements and goals. We then analyse your existing systems and identify the best way to integrate them to achieve the desired outcomes. Next, our team of experts designs and develops the APIs, ensuring they are secure, efficient, and easy to use. We also conduct thorough testing to ensure the integration works seamlessly and meets your needs. Finally, we provide ongoing maintenance and support to keep your API integrations up-to-date and performing optimally.',
           },
         ],
       },
@@ -655,7 +655,7 @@ export const MOCK_TECH_SERVICES = [
           },
           {
             title:
-              'Our team of experts will analyze your website, identify performance bottlenecks, and implement optimizations to ensure that your site loads quickly, runs smoothly, and provides a seamless experience for your users. With our performance optimization services, you can enjoy increased user satisfaction, higher engagement, and improved search engine rankings.',
+              'Our team of experts will analyse your website, identify performance bottlenecks, and implement optimizations to ensure that your site loads quickly, runs smoothly, and provides a seamless experience for your users. With our performance optimization services, you can enjoy increased user satisfaction, higher engagement, and improved search engine rankings.',
           },
         ],
       },
@@ -675,7 +675,7 @@ export const MOCK_TECH_SERVICES = [
             fa_icon: 'fa-code',
             title: 'Code optimization',
             subtitle:
-              'We analyze and optimize your website code, reducing file sizes and improving overall performance.',
+              'We analyse and optimize your website code, reducing file sizes and improving overall performance.',
           },
           {
             fa_icon: 'fa-images',
@@ -1452,7 +1452,7 @@ export const MOCK_GROUP_SERVICES = [
             key: 'faqs-3',
             title: 'How do you conduct a technical feasibility study?',
             content:
-              'We start by gaining a deep understanding of your project requirements and objectives. We then analyze the potential challenges and risks associated with your project, evaluating the technical feasibility of your proposed solution. This involves assessing the technology stack and tools required, as well as your team capabilities and skills. Throughout the process, we provide insights and recommendations to help you optimize your project plan and mitigate potential risks. Finally, we deliver comprehensive documentation and reports on our findings, giving you the information you need to make informed decisions about your project.',
+              'We start by gaining a deep understanding of your project requirements and objectives. We then analyse the potential challenges and risks associated with your project, evaluating the technical feasibility of your proposed solution. This involves assessing the technology stack and tools required, as well as your team capabilities and skills. Throughout the process, we provide insights and recommendations to help you optimize your project plan and mitigate potential risks. Finally, we deliver comprehensive documentation and reports on our findings, giving you the information you need to make informed decisions about your project.',
           },
         ],
       },
@@ -1924,7 +1924,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Business process optimization',
             subtitle:
-              'We analyze and optimize your business processes to maximize the benefits of your ERP system and drive operational excellence.',
+              'We analyse and optimize your business processes to maximize the benefits of your ERP system and drive operational excellence.',
           },
           {
             fa_icon: 'fa-cloud',
@@ -2166,7 +2166,7 @@ export const MOCK_GROUP_SERVICES = [
             title:
               'What are the benefits of working with your Application Re-engineering service?',
             content:
-              'Our Application Re-engineering service focuses on frontend software engineering and dashboard development for enterprise clients. We work closely with you to analyze your existing applications, identify bottlenecks and areas for improvement, and provide innovative solutions to enhance their performance and user experience. By leveraging our expertise, your business can benefit from improved efficiency, reduced costs, and a more competitive position in the market.',
+              'Our Application Re-engineering service focuses on frontend software engineering and dashboard development for enterprise clients. We work closely with you to analyse your existing applications, identify bottlenecks and areas for improvement, and provide innovative solutions to enhance their performance and user experience. By leveraging our expertise, your business can benefit from improved efficiency, reduced costs, and a more competitive position in the market.',
           },
           {
             key: 'faqs-3',
@@ -2423,7 +2423,7 @@ export const MOCK_GROUP_SERVICES = [
             fa_icon: 'fa-chart-bar',
             title: 'Data analytics',
             subtitle:
-              'We analyze your data to identify patterns, trends, and opportunities, helping you make informed decisions and drive growth.',
+              'We analyse your data to identify patterns, trends, and opportunities, helping you make informed decisions and drive growth.',
           },
           {
             fa_icon: 'fa-brain',
@@ -2770,7 +2770,7 @@ export const MOCK_DESIGN_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Empathy Mapping',
             subtitle:
-              'We dive deep into understanding your customer needs and behaviors to build solutions that truly resonate.',
+              'We dive deep into understanding your customer needs and behaviours to build solutions that truly resonate.',
           },
           {
             fa_icon: 'fa-lightbulb',
@@ -2800,7 +2800,7 @@ export const MOCK_DESIGN_SERVICES = [
             fa_icon: 'fa-chart-bar',
             title: 'Result Analysis',
             subtitle:
-              'We analyze the results of implemented solutions, measuring success and suggesting improvements.',
+              'We analyse the results of implemented solutions, measuring success and suggesting improvements.',
           },
         ],
       },
@@ -2867,7 +2867,7 @@ export const MOCK_DESIGN_SERVICES = [
             fa_icon: 'fa-file-alt',
             title: 'Surveys',
             subtitle:
-              'We design and distribute surveys to gather quantitative data about user behaviors and preferences.',
+              'We design and distribute surveys to gather quantitative data about user behaviours and preferences.',
           },
           {
             fa_icon: 'fa-laptop-code',
@@ -2879,7 +2879,7 @@ export const MOCK_DESIGN_SERVICES = [
             fa_icon: 'fa-chart-bar',
             title: 'Data Analysis',
             subtitle:
-              'We analyze the data collected to uncover actionable insights and inform our design decisions.',
+              'We analyse the data collected to uncover actionable insights and inform our design decisions.',
           },
           {
             fa_icon: 'fa-clipboard-check',
@@ -2904,7 +2904,7 @@ export const MOCK_DESIGN_SERVICES = [
             key: 'faqs-1',
             title: 'Why is user research important?',
             content:
-              'User research helps us understand user needs, behaviors, and pain points. These insights inform our design decisions, ensuring we create products that are useful, usable, and desirable.',
+              'User research helps us understand user needs, behaviours, and pain points. These insights inform our design decisions, ensuring we create products that are useful, usable, and desirable.',
           },
           {
             key: 'faqs-2',
@@ -3471,7 +3471,7 @@ export const MOCK_DESIGN_SERVICES = [
             title:
               'How do you ensure the app design is user-friendly and intuitive?',
             content:
-              'We follow a user-centric design approach, which involves understanding the needs and behavior of your users. We create user journeys, prototypes, and conduct usability tests to ensure the design is intuitive and easy to use. We also design with accessibility in mind, making sure the app can be used by everyone.',
+              'We follow a user-centric design approach, which involves understanding the needs and behaviour of your users. We create user journeys, prototypes, and conduct usability tests to ensure the design is intuitive and easy to use. We also design with accessibility in mind, making sure the app can be used by everyone.',
           },
         ],
       },
@@ -3739,7 +3739,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'In a world powered by data, predictive analytics can make the difference between staying ahead or falling behind. With our predictive analytics services, we enable you to anticipate trends, predict future outcomes, and make data-driven decisions. We combine our expertise in data science, statistics, and machine learning to analyze current data and make accurate predictions about the future. This empowers your business to identify opportunities, mitigate risks, and create strategic plans for success.',
+              'In a world powered by data, predictive analytics can make the difference between staying ahead or falling behind. With our predictive analytics services, we enable you to anticipate trends, predict future outcomes, and make data-driven decisions. We combine our expertise in data science, statistics, and machine learning to analyse current data and make accurate predictions about the future. This empowers your business to identify opportunities, mitigate risks, and create strategic plans for success.',
           },
         ],
       },
@@ -3753,7 +3753,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-chart-line',
             title: 'Data Analysis',
             subtitle:
-              'We analyze your data to identify patterns and trends, providing a solid foundation for accurate predictions.',
+              'We analyse your data to identify patterns and trends, providing a solid foundation for accurate predictions.',
           },
           {
             fa_icon: 'fa-cogs',
@@ -3796,7 +3796,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-1',
             title: 'Why is predictive analytics important for my business?',
             content:
-              'Predictive analytics can help your business anticipate future trends, identify opportunities, and make data-driven decisions. It provides a competitive edge by enabling you to understand customer behavior, predict market trends, manage risks, and optimize operational efficiency.',
+              'Predictive analytics can help your business anticipate future trends, identify opportunities, and make data-driven decisions. It provides a competitive edge by enabling you to understand customer behaviour, predict market trends, manage risks, and optimize operational efficiency.',
           },
           {
             key: 'faqs-2',
@@ -3857,7 +3857,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-chart-line',
             title: 'Data Analysis Automation',
             subtitle:
-              'Our AI solutions can automatically analyze large volumes of data, providing valuable insights and freeing up your team to focus on decision-making.',
+              'Our AI solutions can automatically analyse large volumes of data, providing valuable insights and freeing up your team to focus on decision-making.',
           },
           {
             fa_icon: 'fa-headset',
@@ -4044,7 +4044,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-chart-bar',
             title: 'Performance optimization',
             subtitle:
-              'We constantly analyze the performance of our prompts and make adjustments to optimize their effectiveness.',
+              'We constantly analyse the performance of our prompts and make adjustments to optimize their effectiveness.',
           },
           {
             fa_icon: 'fa-users-cog',
@@ -4081,7 +4081,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-3',
             title: 'How do you ensure the effectiveness of your prompts?',
             content:
-              'We continually analyze the performance of our prompts and adjust our strategies based on the insights we gain. We also design our prompts to be user-centric, which increases their relevance and effectiveness.',
+              'We continually analyse the performance of our prompts and adjust our strategies based on the insights we gain. We also design our prompts to be user-centric, which increases their relevance and effectiveness.',
           },
         ],
       },
@@ -4253,7 +4253,7 @@ export const MOCK_DATA_SERVICES = [
             title:
               'Why should I consider developing ChatGPT plugins for my enterprise solutions?',
             content:
-              'ChatGPT plugins can significantly enhance user experiences by enabling advanced conversational capabilities. They can be used for a variety of purposes, including customer support, knowledge management, process automation, and more. By developing custom ChatGPT plugins tailored to your enterprise needs, you can empower your organization with intelligent conversational interfaces that streamline workflows, improve customer interactions, and drive business value.',
+              'ChatGPT plugins can significantly enhance user experiences by enabling advanced conversational capabilities. They can be used for a variety of purposes, including customer support, knowledge management, process automation, and more. By developing custom ChatGPT plugins tailored to your enterprise needs, you can empower your organisation with intelligent conversational interfaces that streamline workflows, improve customer interactions, and drive business value.',
           },
           {
             key: 'faqs-2',
@@ -4266,7 +4266,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-3',
             title: 'How does your team approach ChatGPT plugin development?',
             content:
-              'We follow a collaborative and iterative approach to ChatGPT plugin development. Our team works closely with your organization to understand your requirements, domain-specific challenges, and desired outcomes. We leverage our AI expertise to design and develop custom ChatGPT plugins that address your unique needs. Throughout the development process, we ensure seamless integration with your existing systems, data privacy, scalability, multilingual support, and compliance with industry regulations. We also provide ongoing support and maintenance to ensure the optimal performance of the ChatGPT plugins.',
+              'We follow a collaborative and iterative approach to ChatGPT plugin development. Our team works closely with your organisation to understand your requirements, domain-specific challenges, and desired outcomes. We leverage our AI expertise to design and develop custom ChatGPT plugins that address your unique needs. Throughout the development process, we ensure seamless integration with your existing systems, data privacy, scalability, multilingual support, and compliance with industry regulations. We also provide ongoing support and maintenance to ensure the optimal performance of the ChatGPT plugins.',
           },
         ],
       },
@@ -4473,7 +4473,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'With the exponential growth in data, enterprises today are challenged by the need to extract actionable insights from these vast data sets. Our big data solutions are designed to help enterprises leverage the power of data to drive growth, efficiency, and innovation. We have a team of data experts who specialize in managing, processing, and analyzing large data sets. Using state-of-the-art technologies and techniques, we deliver solutions that enable businesses to access, analyze, and use their data effectively and efficiently.',
+              'With the exponential growth in data, enterprises today are challenged by the need to extract actionable insights from these vast data sets. Our big data solutions are designed to help enterprises leverage the power of data to drive growth, efficiency, and innovation. We have a team of data experts who specialize in managing, processing, and analyzing large data sets. Using state-of-the-art technologies and techniques, we deliver solutions that enable businesses to access, analyse, and use their data effectively and efficiently.',
           },
         ],
       },
@@ -4585,7 +4585,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-cogs',
             title: 'Data transformation',
             subtitle:
-              'We transform data into a consistent format that can be easily analyzed and understood.',
+              'We transform data into a consistent format that can be easily analysed and understood.',
           },
           {
             fa_icon: 'fa-database',
@@ -4805,7 +4805,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-1',
             title: 'Why is business intelligence important for my enterprise?',
             content:
-              'Business Intelligence (BI) provides crucial insights into your operations, customer behavior, and market trends. It allows you to make data-driven decisions, optimize processes, and drive business growth. Without BI, your decisions are likely based on intuition rather than evidence, which can lead to inefficiencies and missed opportunities.',
+              'Business Intelligence (BI) provides crucial insights into your operations, customer behaviour, and market trends. It allows you to make data-driven decisions, optimize processes, and drive business growth. Without BI, your decisions are likely based on intuition rather than evidence, which can lead to inefficiencies and missed opportunities.',
           },
           {
             key: 'faqs-2',
@@ -4829,7 +4829,7 @@ export const MOCK_DATA_SERVICES = [
     category_id: 3,
     title: 'Data Scraping',
     slug: 'data-scraping',
-    subtitle: 'Leverage our expertise to extract and analyze data that matter.',
+    subtitle: 'Leverage our expertise to extract and analyse data that matter.',
     hero_src: 'https://source.unsplash.com/shr_Xn8S8QU/1600x900',
     hero_alt: 'Website Analytics Page',
     // Sections
@@ -4839,7 +4839,7 @@ export const MOCK_DATA_SERVICES = [
         items: [
           {
             title:
-              'In an increasingly data-driven world, it is vital for businesses to extract, analyze, and derive insights from vast amounts of data. We help businesses gather valuable data, enabling them to make informed decisions and stay ahead in the competitive landscape. Using advanced tools and technologies, we ensure the data extracted is accurate, reliable, and relevant. Our team of data professionals work closely with clients to understand their specific requirements and deliver tailored solutions that drive measurable results.',
+              'In an increasingly data-driven world, it is vital for businesses to extract, analyse, and derive insights from vast amounts of data. We help businesses gather valuable data, enabling them to make informed decisions and stay ahead in the competitive landscape. Using advanced tools and technologies, we ensure the data extracted is accurate, reliable, and relevant. Our team of data professionals work closely with clients to understand their specific requirements and deliver tailored solutions that drive measurable results.',
           },
         ],
       },
@@ -4871,7 +4871,7 @@ export const MOCK_DATA_SERVICES = [
             fa_icon: 'fa-chart-pie',
             title: 'Data analysis',
             subtitle:
-              'Our team of data scientists will analyze your data to identify patterns, trends, and insights that can drive your business growth.',
+              'Our team of data scientists will analyse your data to identify patterns, trends, and insights that can drive your business growth.',
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -4896,7 +4896,7 @@ export const MOCK_DATA_SERVICES = [
             key: 'faqs-1',
             title: 'Why is data scraping important for my business?',
             content:
-              'Data scraping allows your business to gather large amounts of data from various sources. This data, when analyzed, can provide valuable insights to help drive strategic business decisions, understand market trends, and deliver enhanced customer experiences.',
+              'Data scraping allows your business to gather large amounts of data from various sources. This data, when analysed, can provide valuable insights to help drive strategic business decisions, understand market trends, and deliver enhanced customer experiences.',
           },
           {
             key: 'faqs-2',
@@ -5144,33 +5144,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5190,7 +5189,7 @@ export const MOCK_DIGITAL_SERVICES = [
             key: 'faqs-2',
             title: 'How does your Customer Journey Mapping service work?',
             content:
-              'Our service begins with data analysis to understand customer behavior and preferences. We then identify key touchpoints in the customer journey and develop detailed customer personas. After mapping out the customer journey visually, we provide targeted recommendations for improvement at each touchpoint. The customer journey is then continually monitored and optimized based on performance data and customer feedback.',
+              'Our service begins with data analysis to understand customer behaviour and preferences. We then identify key touchpoints in the customer journey and develop detailed customer personas. After mapping out the customer journey visually, we provide targeted recommendations for improvement at each touchpoint. The customer journey is then continually monitored and optimized based on performance data and customer feedback.',
           },
           {
             key: 'faqs-3',
@@ -5279,33 +5278,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5414,33 +5412,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5467,7 +5464,7 @@ export const MOCK_DIGITAL_SERVICES = [
             key: 'faqs-3',
             title: 'How do you approach social media strategy for enterprises?',
             content:
-              'We start by understanding your business, its goals, and its target audience. We then analyze your current social media performance, and based on this analysis, we develop a strategy that includes content planning, targeting, distribution, and ROI measurement. We ensure this strategy aligns with your overall marketing strategy and business objectives, and we provide regular reports to measure its effectiveness.',
+              'We start by understanding your business, its goals, and its target audience. We then analyse your current social media performance, and based on this analysis, we develop a strategy that includes content planning, targeting, distribution, and ROI measurement. We ensure this strategy aligns with your overall marketing strategy and business objectives, and we provide regular reports to measure its effectiveness.',
           },
         ],
       },
@@ -5549,33 +5546,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5684,33 +5680,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5787,7 +5782,7 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-sitemap',
             title: 'Site Structure Analysis',
             subtitle:
-              'We analyze your site structure and make improvements to ensure that search engines can crawl and index your site efficiently.',
+              'We analyse your site structure and make improvements to ensure that search engines can crawl and index your site efficiently.',
           },
           {
             fa_icon: 'fa-code',
@@ -5817,33 +5812,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -5951,33 +5945,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6086,33 +6079,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6219,33 +6211,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6354,33 +6345,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6436,7 +6426,7 @@ export const MOCK_DIGITAL_SERVICES = [
           },
           {
             title:
-              'We use a data-driven approach, relying on robust analytics to understand visitor behavior and identify areas of improvement. From page design and content to load speed and SEO, we optimize every element of your landing page to enhance its performance and maximize conversions.',
+              'We use a data-driven approach, relying on robust analytics to understand visitor behaviour and identify areas of improvement. From page design and content to load speed and SEO, we optimize every element of your landing page to enhance its performance and maximize conversions.',
           },
         ],
       },
@@ -6462,13 +6452,13 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-scroll',
             title: 'Website Scrollmap',
             subtitle:
-              'We analyze scrollmaps to understand how far users scroll on your landing page and adjust your page layout and content accordingly.',
+              'We analyse scrollmaps to understand how far users scroll on your landing page and adjust your page layout and content accordingly.',
           },
           {
             fa_icon: 'fa-mouse-pointer',
             title: 'Click Tracking Analysis',
             subtitle:
-              'We monitor and analyze user click behavior to understand what elements of your landing page are attracting attention and which aren’t.',
+              'We monitor and analyse user click behaviour to understand what elements of your landing page are attracting attention and which aren’t.',
           },
           {
             fa_icon: 'fa-tachometer-alt',
@@ -6486,33 +6476,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6538,7 +6527,7 @@ export const MOCK_DIGITAL_SERVICES = [
             key: 'faqs-3',
             title: 'What does the optimization process involve?',
             content:
-              'The optimization process involves various strategies, such as improving the page design and layout, optimizing the page for SEO, enhancing the page load speed, and analyzing user behavior data to understand how visitors interact with the page and identify areas of improvement.',
+              'The optimization process involves various strategies, such as improving the page design and layout, optimizing the page for SEO, enhancing the page load speed, and analyzing user behaviour data to understand how visitors interact with the page and identify areas of improvement.',
           },
         ],
       },
@@ -6566,11 +6555,11 @@ export const MOCK_DIGITAL_SERVICES = [
         items: [
           {
             title:
-              'In the age of digital business, data is a valuable asset that can give your organization a competitive edge. We help businesses leverage data to make informed decisions, drive operational efficiency, and accelerate growth.',
+              'In the age of digital business, data is a valuable asset that can give your organisation a competitive edge. We help businesses leverage data to make informed decisions, drive operational efficiency, and accelerate growth.',
           },
           {
             title:
-              'With our sophisticated data analytics tools and techniques, we help you analyze and interpret complex data sets, uncover hidden patterns, and derive valuable insights that can guide your business strategies.',
+              'With our sophisticated data analytics tools and techniques, we help you analyse and interpret complex data sets, uncover hidden patterns, and derive valuable insights that can guide your business strategies.',
           },
         ],
       },
@@ -6584,7 +6573,7 @@ export const MOCK_DIGITAL_SERVICES = [
             fa_icon: 'fa-database',
             title: 'Data Management',
             subtitle:
-              'We help manage your data assets efficiently, ensuring data quality and consistency across the organization.',
+              'We help manage your data assets efficiently, ensuring data quality and consistency across the organisation.',
           },
           {
             fa_icon: 'fa-chart-bar',
@@ -6620,33 +6609,32 @@ export const MOCK_DIGITAL_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Enterprise-Level Digital Marketing Solutions',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} provides enterprise businesses with tailored digital solutions to engage audiences and achieve business goals.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            fa_icon: 'fa-globe',
+            title: 'Enterprise Digital Strategy',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Crafting tailored digital strategies to propel enterprise growth and drive success in the digital landscape.',
+            href: `${routeConfig.SERVICES}/enterprise-digital-strategy`,
           },
           {
-            fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            fa_icon: 'fa-briefcase',
+            title: 'Specialized B2B Digital Marketing',
             subtitle:
-              'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+              'Unleashing B2B marketing potential with specialized strategies that generate targeted leads and foster meaningful connections.',
+            href: `${routeConfig.SERVICES}/specialized-b2b-digital-marketing`,
           },
           {
-            fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            fa_icon: 'fa-code',
+            title: 'Advanced Web Development & Analytics',
             subtitle:
-              'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+              'Leveraging technology and data-driven insights to create dynamic websites and optimize user experiences for measurable results.',
+            href: `${routeConfig.SERVICES}/advanced-web-development-and-analytics`,
           },
         ],
       },
@@ -6719,11 +6707,11 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              "In today's digital landscape, having a well-defined digital roadmap is crucial for companies to stay competitive and adapt to market changes. We understand the unique challenges faced by finance industry players, and we will work closely with you to analyze your business, identify opportunities for digital transformation, and create a roadmap tailored to your specific goals and objectives.",
+              "In today's digital landscape, having a well-defined digital roadmap is crucial for companies to stay competitive and adapt to market changes. We understand the unique challenges faced by finance industry players, and we will work closely with you to analyse your business, identify opportunities for digital transformation, and create a roadmap tailored to your specific goals and objectives.",
           },
           {
             title:
-              'By leveraging emerging technologies and industry best practices, we empower your organization to navigate the digital landscape with confidence and achieve sustainable success.',
+              'By leveraging emerging technologies and industry best practices, we empower your organisation to navigate the digital landscape with confidence and achieve sustainable success.',
           },
         ],
       },
@@ -6782,24 +6770,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -6917,24 +6905,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7053,24 +7041,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7137,13 +7125,13 @@ export const MOCK_FINX_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Our expert solutions streamline operations and increase efficiency by optimizing workflows across your organization.',
+          'Our expert solutions streamline operations and increase efficiency by optimizing workflows across your organisation.',
         items: [
           {
             fa_icon: 'fa-cogs',
             title: 'Workflow Optimization',
             subtitle:
-              'We analyze your current processes to identify areas of improvement and streamline workflows for better efficiency.',
+              'We analyse your current processes to identify areas of improvement and streamline workflows for better efficiency.',
           },
           {
             fa_icon: 'fa-tasks',
@@ -7188,24 +7176,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7219,19 +7207,19 @@ export const MOCK_FINX_SERVICES = [
             title:
               'Why is Workflow Management and Optimization crucial for my business?',
             content:
-              'Workflow Management and Optimization is key to increasing efficiency and productivity in your organization. It helps in streamlining operations, eliminating bottlenecks, reducing errors, and ensuring that your team can focus on strategic tasks. This not only improves operational efficiency but also leads to cost savings.',
+              'Workflow Management and Optimization is key to increasing efficiency and productivity in your organisation. It helps in streamlining operations, eliminating bottlenecks, reducing errors, and ensuring that your team can focus on strategic tasks. This not only improves operational efficiency but also leads to cost savings.',
           },
           {
             key: 'faqs-2',
             title: 'How can your service enhance my financial operations?',
             content:
-              "Our expert team analyzes your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organization's needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.",
+              "Our expert team analyses your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organisation's needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.",
           },
           {
             key: 'faqs-3',
             title: 'What does the workflow optimization process involve?',
             content:
-              'Our workflow optimization process involves a thorough analysis of your current workflows, identification of bottlenecks and areas for improvement, and the implementation of changes. This may include process automation, reorganization of tasks, implementation of new technologies, and training of staff. The goal is to make your workflows more efficient and effective.',
+              'Our workflow optimization process involves a thorough analysis of your current workflows, identification of bottlenecks and areas for improvement, and the implementation of changes. This may include process automation, reorganisation of tasks, implementation of new technologies, and training of staff. The goal is to make your workflows more efficient and effective.',
           },
         ],
       },
@@ -7308,7 +7296,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-tasks',
             title: 'Customization',
             subtitle:
-              'We provide tailored solutions that cater to the unique needs and risk profile of your organization.',
+              'We provide tailored solutions that cater to the unique needs and risk profile of your organisation.',
           },
         ],
       },
@@ -7323,24 +7311,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7366,7 +7354,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-3',
             title: 'What does your service include?',
             content:
-              "Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organization's unique needs and risk profile.",
+              "Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organisation's unique needs and risk profile.",
           },
         ],
       },
@@ -7394,7 +7382,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'In the fast-paced world of finance, making informed investment decisions can be challenging. Our services utilize advanced AI tools to analyze market trends, evaluate investment opportunities, and provide actionable insights.',
+              'In the fast-paced world of finance, making informed investment decisions can be challenging. Our services utilize advanced AI tools to analyse market trends, evaluate investment opportunities, and provide actionable insights.',
           },
           {
             title:
@@ -7412,7 +7400,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-brain',
             title: 'AI Analysis',
             subtitle:
-              'Our advanced AI tools analyze market trends and investment opportunities.',
+              'Our advanced AI tools analyse market trends and investment opportunities.',
           },
           {
             fa_icon: 'fa-chart-bar',
@@ -7457,24 +7445,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7592,24 +7580,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7726,24 +7714,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7862,24 +7850,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -7951,7 +7939,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-brain',
             title: 'Advanced AI Technology',
             subtitle:
-              'We utilize state-of-the-art AI technology to analyze market trends and inform asset allocation decisions.',
+              'We utilize state-of-the-art AI technology to analyse market trends and inform asset allocation decisions.',
           },
           {
             fa_icon: 'fa-chart-bar',
@@ -7996,24 +7984,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -8026,7 +8014,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-1',
             title: 'Why should I use AI for asset allocation?',
             content:
-              'AI-driven asset allocation uses machine learning and data analytics to optimize asset allocation strategies. This approach can analyze vast amounts of data, identify patterns, and forecast market trends more accurately, enabling smarter and more profitable investment decisions.',
+              'AI-driven asset allocation uses machine learning and data analytics to optimize asset allocation strategies. This approach can analyse vast amounts of data, identify patterns, and forecast market trends more accurately, enabling smarter and more profitable investment decisions.',
           },
           {
             key: 'faqs-2',
@@ -8045,19 +8033,19 @@ export const MOCK_FINX_SERVICES = [
     },
   },
   {
-    title: 'Predictive Customer Behavior Analysis',
-    slug: 'predictive-customer-behavior-analysis',
+    title: 'Predictive Customer behaviour Analysis',
+    slug: 'predictive-customer-behaviour-analysis',
     category_id: 5,
     // Hero
     hero_src: 'https://source.unsplash.com/AnG9sri3WdI/1600x900',
     hero_alt: '3d illustration of geometric stuff made in a blender.',
     subtitle:
-      'Utilizing advanced AI algorithms to predict customer behaviors and improve business outcomes.',
+      'Utilizing advanced AI algorithms to predict customer behaviours and improve business outcomes.',
     // Seo
     seo: {
-      title: 'Predictive Customer Behavior Analysis',
+      title: 'Predictive Customer behaviour Analysis',
       description:
-        'Utilizing advanced AI algorithms to predict customer behaviors and improve business outcomes.',
+        'Utilizing advanced AI algorithms to predict customer behaviours and improve business outcomes.',
     },
     // Sections
     sections: {
@@ -8066,7 +8054,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'In the competitive finance industry, understanding and predicting customer behavior is key to success. We apply machine learning algorithms to customer data, providing powerful insights that can drive business growth.',
+              'In the competitive finance industry, understanding and predicting customer behaviour is key to success. We apply machine learning algorithms to customer data, providing powerful insights that can drive business growth.',
           },
           {
             title:
@@ -8078,13 +8066,13 @@ export const MOCK_FINX_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Offering a comprehensive range of customer behavior predictive analysis services to support your business.',
+          'Offering a comprehensive range of customer behaviour predictive analysis services to support your business.',
         items: [
           {
             fa_icon: 'fa-chart-line',
             title: 'Customer Segmentation',
             subtitle:
-              'Our service clusters customers into distinct groups based on their behaviors, preferences, and more, enabling personalized engagement.',
+              'Our service clusters customers into distinct groups based on their behaviours, preferences, and more, enabling personalized engagement.',
           },
           {
             fa_icon: 'fa-bullseye',
@@ -8096,7 +8084,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-shopping-cart',
             title: 'Purchase Prediction',
             subtitle:
-              'Predict future buying behaviors to optimize product offerings and increase sales.',
+              'Predict future buying behaviours to optimize product offerings and increase sales.',
           },
           {
             fa_icon: 'fa-user-circle',
@@ -8108,7 +8096,7 @@ export const MOCK_FINX_SERVICES = [
             fa_icon: 'fa-users-cog',
             title: 'Personalized Marketing',
             subtitle:
-              'Utilize customer behavior insights to personalize marketing efforts and improve conversion rates.',
+              'Utilize customer behaviour insights to personalize marketing efforts and improve conversion rates.',
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -8129,45 +8117,45 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Predictive Customer Behavior Analysis service and how it can drive your business growth.',
+          'Learn more about our Predictive Customer behaviour Analysis service and how it can drive your business growth.',
         items: [
           {
             key: 'faqs-1',
             title:
-              'How can Predictive Customer Behavior Analysis benefit my business?',
+              'How can Predictive Customer behaviour Analysis benefit my business?',
             content:
-              "Predictive Customer Behavior Analysis can provide valuable insights into your customers' future behaviors, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviors, you can make more informed decisions and strategically plan your business operations.",
+              "Predictive Customer behaviour Analysis can provide valuable insights into your customers' future behaviours, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviours, you can make more informed decisions and strategically plan your business operations.",
           },
           {
             key: 'faqs-2',
             title:
-              'What data do you need to perform Predictive Customer Behavior Analysis?',
+              'What data do you need to perform Predictive Customer behaviour Analysis?',
             content:
-              "Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behavior, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company's data policies.",
+              "Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behaviour, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
             key: 'faqs-3',
@@ -8202,7 +8190,7 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             title:
-              'As the financial landscape grows increasingly competitive, it’s more important than ever to offer tailored experiences to your customers. We leverage advanced machine learning algorithms to analyze customer data and provide highly relevant product suggestions.',
+              'As the financial landscape grows increasingly competitive, it’s more important than ever to offer tailored experiences to your customers. We leverage advanced machine learning algorithms to analyse customer data and provide highly relevant product suggestions.',
           },
           {
             title:
@@ -8265,24 +8253,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -8302,7 +8290,7 @@ export const MOCK_FINX_SERVICES = [
             key: 'faqs-2',
             title: 'What kind of data is needed for the system?',
             content:
-              "Our system uses a variety of customer data, including transaction history, browsing behavior, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company's data policies.",
+              "Our system uses a variety of customer data, including transaction history, browsing behaviour, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
             key: 'faqs-3',
@@ -8399,24 +8387,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -8533,24 +8521,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -8668,24 +8656,24 @@ export const MOCK_FINX_SERVICES = [
         items: [
           {
             fa_icon: 'fa-rocket',
-            title: 'Digital Transformation Solutions',
+            title: 'Digital Transformation Consulting',
             subtitle:
-              'Ignite your business with comprehensive digital transformation consulting, streamlined operations, and cutting-edge engineering.',
-            href: `${routeConfig.SERVICES}/digital-transformation-solutions`,
+              'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
+            href: `${routeConfig.SERVICES}/digital-transformation-consulting`,
           },
           {
             fa_icon: 'fa-analytics',
-            title: 'Financial Analytics and Management',
+            title: 'Investment Analysis & Management',
             subtitle:
               'Maximize investments and ensure compliance with advanced financial analytics and management solutions.',
-            href: `${routeConfig.SERVICES}/financial-analytics-and-management`,
+            href: `${routeConfig.SERVICES}/investment-analysis-and-management`,
           },
           {
             fa_icon: 'fa-wallet',
-            title: 'Wealth Management Services',
+            title: 'Wealth Management',
             subtitle:
               'Deliver personalized wealth management experiences and drive financial growth with comprehensive services.',
-            href: `${routeConfig.SERVICES}/wealth-management-services`,
+            href: `${routeConfig.SERVICES}/wealth-management`,
           },
         ],
       },
@@ -8811,32 +8799,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -8945,32 +8933,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -8983,7 +8971,7 @@ export const MOCK_GOVX_SERVICES = [
             key: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
-              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policy making, and public affairs.',
+              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
             key: 'faqs-2',
@@ -9079,32 +9067,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -9211,32 +9199,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -9344,32 +9332,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -9410,12 +9398,12 @@ export const MOCK_GOVX_SERVICES = [
     hero_src: 'https://source.unsplash.com/gakXaqzGad0/1600x900',
     hero_alt: 'Computer chip in shape of human head',
     subtitle:
-      'Utilize advanced AI to guide and enhance your policy making process.',
+      'Utilize advanced AI to guide and enhance your policymaking process.',
     // Seo
     seo: {
       title: 'AI-Driven Policy Analysis',
       description:
-        'Utilize advanced AI to guide and enhance your policy making process.',
+        'Utilize advanced AI to guide and enhance your policymaking process.',
     },
     // Sections
     sections: {
@@ -9428,7 +9416,7 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             title:
-              'With a focus on accuracy and usability, our AI-driven analysis tools help policy makers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
+              'With a focus on accuracy and usability, our AI-driven analysis tools help policymakers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
           },
         ],
       },
@@ -9442,7 +9430,7 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-chart-bar',
             title: 'Data Analysis',
             subtitle:
-              'We leverage AI to analyze a broad spectrum of data, identifying trends and patterns crucial for effective policy making.',
+              'We leverage AI to analyse a broad spectrum of data, identifying trends and patterns crucial for effective policymaking.',
           },
           {
             fa_icon: 'fa-brain',
@@ -9478,46 +9466,46 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policy making.',
+          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
             key: 'faqs-1',
             title:
-              'How can AI-driven policy analysis enhance our policy making process?',
+              'How can AI-driven policy analysis enhance our policymaking process?',
             content:
-              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policy makers.',
+              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
             key: 'faqs-2',
@@ -9592,7 +9580,7 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-cogs',
             title: 'Custom Solutions',
             subtitle:
-              'We provide solutions tailored to the unique needs of public sector organizations.',
+              'We provide solutions tailored to the unique needs of public sector organisations.',
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -9610,32 +9598,32 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -9649,14 +9637,14 @@ export const MOCK_GOVX_SERVICES = [
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
-              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviors. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
+              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
             key: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
-              'Our predictive analytics solutions can analyze a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
+              'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
             key: 'faqs-3',
@@ -9694,7 +9682,7 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             title:
-              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organization.',
+              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organisation.',
           },
         ],
       },
@@ -9726,7 +9714,7 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-cogs',
             title: 'Custom Solutions',
             subtitle:
-              'We provide AI-powered compliance solutions tailored to your organization’s needs.',
+              'We provide AI-powered compliance solutions tailored to your organisation’s needs.',
           },
           {
             fa_icon: 'fa-shield-alt',
@@ -9744,39 +9732,39 @@ export const MOCK_GOVX_SERVICES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organization.',
+          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
             key: 'faqs-1',
@@ -9789,7 +9777,7 @@ export const MOCK_GOVX_SERVICES = [
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
-              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organization. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
+              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
             key: 'faqs-3',
@@ -9823,11 +9811,11 @@ export const MOCK_GOVX_SERVICES = [
         items: [
           {
             title:
-              'Understanding public sentiment and opinion is crucial for government agencies and organizations in the public sector. We leverage advanced analytics and natural language processing to analyze social media data and other sources, helping you gain valuable insights to inform decision-making.',
+              'Understanding public sentiment and opinion is crucial for government agencies and organisations in the public sector. We leverage advanced analytics and natural language processing to analyse social media data and other sources, helping you gain valuable insights to inform decision-making.',
           },
           {
             title:
-              'Our team of experts applies state-of-the-art techniques to track and analyze public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
+              'Our team of experts applies state-of-the-art techniques to track and analyse public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
           },
         ],
       },
@@ -9835,19 +9823,19 @@ export const MOCK_GOVX_SERVICES = [
         overline: 'What we do',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Harness the power of advanced analytics to analyze public sentiment and opinion.',
+          'Harness the power of advanced analytics to analyse public sentiment and opinion.',
         items: [
           {
             fa_icon: 'fa-chart-line',
             title: 'Sentiment Analysis',
             subtitle:
-              'Analyze public sentiment and opinion to understand public perception and attitudes.',
+              'Analyse public sentiment and opinion to understand public perception and attitudes.',
           },
           {
             fa_icon: 'fa-globe',
             title: 'Social Media Monitoring',
             subtitle:
-              'Track and analyze social media data to uncover insights and trends.',
+              'Track and analyse social media data to uncover insights and trends.',
           },
           {
             fa_icon: 'fa-comments',
@@ -9859,7 +9847,7 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-bullhorn',
             title: 'Reputation Management',
             subtitle:
-              'Monitor and manage your organization’s online reputation based on public sentiment.',
+              'Monitor and manage your organisation’s online reputation based on public sentiment.',
           },
           {
             fa_icon: 'fa-lightbulb',
@@ -9871,38 +9859,38 @@ export const MOCK_GOVX_SERVICES = [
             fa_icon: 'fa-users',
             title: 'Audience Segmentation',
             subtitle:
-              'Segment the public audience based on sentiment, demographics, and behavior.',
+              'Segment the public audience based on sentiment, demographics, and behaviour.',
           },
         ],
       },
       benefits: {
         overline: 'What we do',
-        title: 'Accelerate Product Delivery',
+        title: 'Bridging the Gap in Public Sector Digitalization',
         subtitle:
-          '{appTitle} empowers enterprise businesses with leading-edge frontend development and best practices. Start in just weeks with our cloud-certified Node.js, React, and Typescript teams.',
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         maxWidth: 'xl',
         center: true,
         items: [
           {
-            fa_icon: 'fa-bolt',
-            title: 'Accelerate Development',
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
             subtitle:
-              'Create visually appealing and user-friendly interfaces that improve user experience and drive engagement.',
-            href: `${routeConfig.SERVICES}/accelerate-development`,
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
           },
           {
-            fa_icon: 'fa-code',
-            title: 'Modern Frontend Engineering',
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
             subtitle:
-              'Develop rich user interfaces and experiences for web applications using modern technologies and frameworks.',
-            href: `${routeConfig.SERVICES}/modern-frontend-engineering`,
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
-            fa_icon: 'fa-users',
-            title: 'Product Team Augmentation',
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
             subtitle:
-              'Providing enterprises and product owners with the frontend development talent they need to achieve their goals.',
-            href: `${routeConfig.SERVICES}/product-team-augmentation`,
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
           },
         ],
       },
@@ -9920,15 +9908,15 @@ export const MOCK_GOVX_SERVICES = [
           },
           {
             key: 'faqs-2',
-            title: 'How do you collect and analyze public sentiment data?',
+            title: 'How do you collect and analyse public sentiment data?',
             content:
-              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyze the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
+              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
             key: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
-              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumors, and develop effective communication strategies to address concerns and restore public trust.',
+              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
           },
         ],
       },

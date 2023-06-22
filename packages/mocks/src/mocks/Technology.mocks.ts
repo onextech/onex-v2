@@ -1126,7 +1126,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
             fa_icon: 'fa-cogs',
             title: 'Version control',
             subtitle:
-              'We utilize Module Federation to manage and control versions of shared modules, ensuring consistent and reliable application behavior across multiple projects.',
+              'We utilize Module Federation to manage and control versions of shared modules, ensuring consistent and reliable application behaviour across multiple projects.',
           },
           {
             fa_icon: 'fa-exchange-alt',
@@ -2077,7 +2077,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             fa_icon: 'fa-smile',
             title: 'Sentiment Analysis',
             subtitle:
-              'We employ sentiment analysis techniques to understand and analyze the emotions and attitudes expressed in user interactions, enabling businesses to gain valuable insights.',
+              'We employ sentiment analysis techniques to understand and analyse the emotions and attitudes expressed in user interactions, enabling businesses to gain valuable insights.',
           },
           {
             fa_icon: 'fa-robot',
@@ -2104,7 +2104,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
-              'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyze user sentiments, and automate various business processes through chatbot development.',
+              'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
             key: 'faqs-3',
@@ -2281,7 +2281,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             fa_icon: 'fa-cogs',
             title: 'Efficient Data Analysis',
             subtitle:
-              'With Tableau, you can analyze large datasets efficiently, saving time and effort in data preparation and analysis processes.',
+              'With Tableau, you can analyse large datasets efficiently, saving time and effort in data preparation and analysis processes.',
           },
           {
             fa_icon: 'fa-users',
@@ -2368,7 +2368,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             key: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
-              'Tableau can benefit your business by enabling you to explore, analyze, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
+              'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
           },
         ],
       },
@@ -2398,7 +2398,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             fa_icon: 'fa-users',
             title: 'Data Democratization',
             subtitle:
-              'Snowflake enables data democratization, allowing users across your organisation to access and analyze data as needed.',
+              'Snowflake enables data democratization, allowing users across your organisation to access and analyse data as needed.',
           },
           {
             fa_icon: 'fa-clock',
@@ -2448,7 +2448,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
             fa_icon: 'fa-cogs',
             title: 'Data Integration',
             subtitle:
-              'Seamlessly integrate and analyze structured and semi-structured data from various sources, including data lakes and data warehouses.',
+              'Seamlessly integrate and analyse structured and semi-structured data from various sources, including data lakes and data warehouses.',
           },
           {
             fa_icon: 'fa-chart-line',

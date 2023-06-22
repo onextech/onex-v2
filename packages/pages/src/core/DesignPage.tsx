@@ -121,7 +121,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         renderClientTestimonialSliderBlock({
           title: 'Empowering Design Excellence',
           subtitle:
-            'One X Design is the trusted partner for enterprise-level organizations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.',
+            'One X Design is the trusted partner for enterprise-level organisations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.',
           items: clientTestimonials,
         }),
         // Industry
