@@ -84,7 +84,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
         renderClientTestimonialSliderBlock({
           title: 'Trusted by Frontend Development Teams',
           subtitle:
-            "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organizations.",
+            "Our focus on excellence, dedication, and commitment to our clients' success has earned us a reputation as a reliable and high-quality provider of frontend development services for enterprise-level organisations.",
           items: clientTestimonials,
         }),
         // Industry
