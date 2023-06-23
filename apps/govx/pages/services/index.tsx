@@ -15,7 +15,13 @@ const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
   const { services, serviceCategorys, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'Services' }}>
+      <LandingLayout
+        seo={{
+          title: 'Services',
+          description:
+            'Empowering public sectors with innovative digital solutions. Streamline service delivery, automate processes, and uncover actionable insights.',
+        }}
+      >
         <ServiceCategorysPage
           services={services}
           serviceCategorys={serviceCategorys}
