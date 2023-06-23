@@ -41,13 +41,13 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
           ...hero,
           buttonProps: {
             overline: 'What we do',
-            title: 'Smarter Businesses',
+            title: 'Enterprise Marketing',
             size: 'lg',
             href: routeConfig.SERVICES,
           },
           secondaryButtonProps: {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Digital Marketing Experts',
             size: 'lg',
             href: routeConfig.CAREERS,
           },
