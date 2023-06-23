@@ -2,12 +2,12 @@ import React from 'react'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
-  renderLeftHeroWithBackgroundBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
   renderFeaturedPostsBlock,
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
+  renderHeroWithBackgroundBlock,
   renderCtaBlock,
   Showcase,
   useLayout,
@@ -25,7 +25,7 @@ export interface DigitalPageProps {
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos } = useLayout()
+  const { site, clientLogos, routeConfig } = useLayout()
   const { locales, cta_button_title } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -37,20 +37,19 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        renderLeftHeroWithBackgroundBlock({
+        renderHeroWithBackgroundBlock({
           ...hero,
-          pt: { xs: 10, md: 18 },
-          pb: { xs: 3, md: 15 },
-          hero_src: '/images/hero_background_black_minimal.svg',
-          hero_alt: 'Black minimalistic background',
-          image_src: '/images/hero_glass_window_ui_grey.png',
-          image_alt: 'Website with trend analysis',
-          // image_src dimensions
-          imageProps: { ar: '643:572' } as any,
           buttonProps: {
-            overline: 'Get Started',
-            title: cta_button_title,
-            isCta: true,
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            size: 'lg',
+            href: routeConfig.SERVICES,
+          },
+          secondaryButtonProps: {
+            overline: 'Who we are',
+            title: 'Business Software Experts',
+            size: 'lg',
+            href: routeConfig.CAREERS,
           },
         }),
         // ClientLogosImageMarquee

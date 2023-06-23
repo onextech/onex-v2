@@ -3181,6 +3181,8 @@ export const MOCK_DIGITAL_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
       hero: {
+        hero_src: '/images/home_hero.png',
+        hero_alt: 'Colourful light',
         overline: '{appTitle}',
         title: 'Empower Growth and Nurture Your Brand',
         subtitle:
