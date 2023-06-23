@@ -315,7 +315,7 @@ export const MOCK_DIGITAL_SITE = {
   social_media_youtube_url: 'https://www.youtube.com/onextech',
 
   // Logo
-  logo_width: 95,
+  logo_width: 120,
   logo_height: 13,
 
   nav_items: [

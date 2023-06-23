@@ -64,8 +64,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         title: 'We are the Growth Company',
                         ...hero,
                         backgroundImageProps: {
-                          src: '/images/about_hero.png',
-                          alt: 'hero',
+                          src: 'https://source.unsplash.com/E4bn9ScilAA/1600x900',
+                          alt: 'stars building',
                         },
                       })}
                     />,
@@ -76,8 +76,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         title:
                           'Empowering Public Sector Digital Transformation',
                         backgroundImageProps: {
-                          src: '/images/about_nodes_above_city.png',
-                          alt: 'hero',
+                          src: 'https://source.unsplash.com/GvjATIgredc/1600x900',
+                          alt: 'train station',
                         },
                       })}
                     />,
@@ -88,8 +88,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         title:
                           'Empowering Public Sector Digital Transformation',
                         backgroundImageProps: {
-                          src: '/images/mission_earth.png',
-                          alt: 'hero',
+                          src: 'https://source.unsplash.com/maNdO_gAyJ4/1600x900',
+                          alt: 'cool library',
                         },
                       })}
                     />,

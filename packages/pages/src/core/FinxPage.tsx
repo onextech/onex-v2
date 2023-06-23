@@ -65,8 +65,8 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title: 'We are the Growth Company',
                         ...hero,
                         backgroundImageProps: {
-                          src: '/images/about_hero.png',
-                          alt: 'circles',
+                          src: 'https://source.unsplash.com/21mJd5NUGZU/1600x900',
+                          alt: 'Glass ball',
                         },
                       })}
                     />,
@@ -77,8 +77,8 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title:
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
-                          src: '/images/about_nodes_above_city.png',
-                          alt: 'Laser net over city',
+                          src: 'https://source.unsplash.com/viaDiE6DH1k/1600x900',
+                          alt: 'Old coin',
                         },
                       })}
                     />,
@@ -89,8 +89,8 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title:
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
-                          src: '/images/mission_earth.png',
-                          alt: 'earth',
+                          src: 'https://source.unsplash.com/ex_p4AaBxbs/1600x900',
+                          alt: 'Black card',
                         },
                       })}
                     />,

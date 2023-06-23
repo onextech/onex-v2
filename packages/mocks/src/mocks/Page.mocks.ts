@@ -3181,6 +3181,8 @@ export const MOCK_DIGITAL_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
       hero: {
+        hero_src: '/images/home_hero.png',
+        hero_alt: 'Colourful light',
         overline: '{appTitle}',
         title: 'Empower Growth and Nurture Your Brand',
         subtitle:
@@ -3535,8 +3537,8 @@ export const MOCK_FINX_PAGES = [
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
       hero: {
-        hero_src: '/images/about_hero.png',
-        hero_alt: 'circles',
+        hero_src: 'https://source.unsplash.com/ep4yZx4taUY/1600x900',
+        hero_alt: 'Grey card',
         overline: '{appTitle}',
         title: 'Transforming the Future of Finance with Scalable Solutions',
         buttons: [
@@ -4060,8 +4062,8 @@ export const MOCK_GOVX_PAGES = [
       'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
     sections: {
       hero: {
-        hero_src: '/images/about_hero.png',
-        hero_alt: 'hero',
+        hero_src: 'https://source.unsplash.com/QG7Wkq2ZrpE/1600x900',
+        hero_alt: 'escalator',
         overline: '{appTitle}',
         title:
           'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',
