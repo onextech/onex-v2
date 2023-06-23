@@ -36,6 +36,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
 
   // Hooks
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
+  const onUseLayout = useLayout()
+
   const {
     // Configs
     site,
@@ -54,7 +56,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     pages,
     showcases,
     workspaces,
-  } = useLayout()
+  } = onUseLayout
 
   // Navs
   const headerNavConfig = [
