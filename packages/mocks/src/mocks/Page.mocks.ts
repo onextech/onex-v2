@@ -873,7 +873,7 @@ const MOCK_COMMON_PAGES = [
     slug: 'cookies',
     is_hidden_from_nav: true,
     seo_description:
-      "Discover more about our website's cookie policy and personalize, analyze and manage cookies to enhance your website experience",
+      "Discover more about our website's cookie policy and personalize, analyse and manage cookies to enhance your website experience",
     html:
       '<p>This website uses cookies. By continuing to use this website, you consent to the use of cookies in accordance with this Cookie Policy.</p>\n' +
       '<h3>What are cookies?</h3>\n' +
@@ -884,13 +884,13 @@ const MOCK_COMMON_PAGES = [
       '<li>Personalize your experience on our website;</li>\n' +
       '<li>Remember your preferences and settings;</li>\n' +
       '<li>Improve the performance and security of our website;</li>\n' +
-      '<li>Analyze how you use our website and gather anonymous statistical data.</li>\n' +
+      '<li>Analyse how you use our website and gather anonymous statistical data.</li>\n' +
       '</ul>\n' +
       '<h3>Types of cookies we use</h3>\n' +
       '<p>There are several types of cookies we use on this website:</p>\n' +
       '<ul>\n' +
       '<li>Essential cookies: These cookies are necessary for the website to function properly. They are usually set in response to your actions, such as setting your privacy preferences, logging in, or filling out forms.</li>\n' +
-      '<li>Analytics cookies: These cookies help us analyze and understand how our website is being used, including which pages are visited the most, how long users spend on each page, and other statistical data. This information helps us improve the performance and relevance of our website.</li>\n' +
+      '<li>Analytics cookies: These cookies help us analyse and understand how our website is being used, including which pages are visited the most, how long users spend on each page, and other statistical data. This information helps us improve the performance and relevance of our website.</li>\n' +
       '<li>Marketing cookies: These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third-party advertisers.</li>\n' +
       '</ul>\n' +
       '<h3>Managing cookies</h3>\n' +
@@ -1074,7 +1074,7 @@ const MOCK_GROUP_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -1581,7 +1581,7 @@ const MOCK_TECH_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -2105,7 +2105,7 @@ export const MOCK_DATA_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -2439,7 +2439,7 @@ export const MOCK_DATA_PAGES = [
             fa_icon: 'fa-cogs',
             title: 'Predictive Modeling',
             subtitle:
-              'We utilize machine learning and AI algorithms to create predictive models, helping you forecast future trends, behaviors, and outcomes.',
+              'We utilize machine learning and AI algorithms to create predictive models, helping you forecast future trends, behaviours, and outcomes.',
           },
           {
             fa_icon: 'fa-brain',
@@ -2552,7 +2552,7 @@ export const MOCK_DESIGN_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -2872,7 +2872,7 @@ export const MOCK_DESIGN_PAGES = [
             fa_icon: 'fa-users',
             title: 'User Research',
             subtitle:
-              'We dive deep into understanding your target audience, their needs, and behaviors to develop insights that drive the creation of user-centric designs.',
+              'We dive deep into understanding your target audience, their needs, and behaviours to develop insights that drive the creation of user-centric designs.',
           },
           {
             fa_icon: 'fa-sitemap',
@@ -2925,7 +2925,7 @@ export const MOCK_DIGITAL_PAGES = [
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
-      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+      "Join our team to shape tomorrow's digital marketing. Make an impact, bring great software to more people. Exciting career opportunities await.",
     sections: {
       hero: {
         hero_src: '/images/careers_hero.png',
@@ -2997,7 +2997,7 @@ export const MOCK_DIGITAL_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -3007,10 +3007,12 @@ export const MOCK_DIGITAL_PAGES = [
     href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Empower enterprise growth with digital excellence. Revolutionize performance through innovative strategies. Elevate brand, drive growth.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
-        hero_alt: 'hero',
+        hero_alt: 'Light trails',
         overline: '{appTitle}',
         title: 'Empowering Enterprise Growth Through Digital Excellence',
         buttons: [
@@ -3043,7 +3045,7 @@ export const MOCK_DIGITAL_PAGES = [
       },
       callout: {
         hero_src: '/images/about_banner_2.png',
-        hero_alt: 'hero',
+        hero_alt: 'city at night',
         title: 'Revolutionizing Enterprise Performance with Digital Solutions',
         subtitle:
           'We are dedicated to accelerating business success through innovative digital strategies',
@@ -3268,7 +3270,7 @@ export const MOCK_DIGITAL_PAGES = [
             fa_icon: 'fa-sync-alt',
             title: 'Continuous Optimization',
             subtitle:
-              'We continuously monitor, analyze, and optimize campaign performance, identifying areas for improvement and implementing refinements to ensure maximum efficiency and effectiveness.',
+              'We continuously monitor, analyse, and optimize campaign performance, identifying areas for improvement and implementing refinements to ensure maximum efficiency and effectiveness.',
           },
         ],
       },
@@ -3447,7 +3449,7 @@ export const MOCK_FINX_PAGES = [
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
-      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+      'Join our team to lead digital transformation in finance. Make an impact, bring innovative software to the industry. Exciting career opportunities await.',
     sections: {
       hero: {
         hero_src: '/images/careers_hero.png',
@@ -3519,23 +3521,22 @@ export const MOCK_FINX_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
   {
     title: 'About',
     slug: 'about',
-    seo: {
-      description: 'abc',
-    },
+    seo_description:
+      'Transforming finance with scalable solutions, digital innovation, and wealth management services. Join us at Fin X to embrace the data-driven future.',
     href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
-        hero_alt: 'hero',
+        hero_alt: 'circles',
         overline: '{appTitle}',
         title: 'Transforming the Future of Finance with Scalable Solutions',
         buttons: [
@@ -3557,7 +3558,7 @@ export const MOCK_FINX_PAGES = [
         title:
           'We believe in harnessing the power of technology to transform and digitalize the finance industry.',
         subtitle:
-          "{appTitle} is driven by the belief in harnessing technology's power to digitalize and transform the finance industry, enabling organizations to thrive through innovative solutions.",
+          "{appTitle} is driven by the belief in harnessing technology's power to digitalize and transform the finance industry, enabling organisations to thrive through innovative solutions.",
         buttons: [
           {
             overline: 'Who we are',
@@ -3568,7 +3569,7 @@ export const MOCK_FINX_PAGES = [
       },
       callout: {
         hero_src: '/images/about_banner_2.png',
-        hero_alt: 'hero',
+        hero_alt: 'city at night',
         title: 'Empowering Financial Institutions for the Digital Age',
         subtitle:
           '{appTitle} is dedicated to empowering financial institutions for the digital age, enabling their success through innovative solutions and expertise.',
@@ -3704,7 +3705,7 @@ export const MOCK_FINX_PAGES = [
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
-        hero_alt: 'Swirl of colors',
+        hero_alt: 'Swirl of colours',
         overline: '{appTitle}',
         title: 'Transforming the Future of Financial Industries',
         subtitle:
@@ -3881,7 +3882,7 @@ export const MOCK_FINX_PAGES = [
           {
             key: 'faq-2',
             title:
-              "How can {appTitle}'s digital solutions help my finance organization streamline operations and enhance efficiency?",
+              "How can {appTitle}'s digital solutions help my finance organisation streamline operations and enhance efficiency?",
             content:
               "{appTitle}'s digital solutions streamline finance operations by automating processes, providing actionable insights, and optimizing decision-making, resulting in enhanced efficiency and operational excellence.",
           },
@@ -3890,7 +3891,7 @@ export const MOCK_FINX_PAGES = [
             title:
               "What kind of data sources do {appTitle}'s digital solutions utilize for generating insights?",
             content:
-              "{appTitle}'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behavior, and industry trends, to generate valuable insights and drive data-informed decision-making.",
+              "{appTitle}'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behaviour, and industry trends, to generate valuable insights and drive data-informed decision-making.",
           },
           {
             key: 'faq-4',
@@ -3932,7 +3933,7 @@ export const MOCK_FINX_PAGES = [
             title:
               "Can {appTitle}'s AI solutions assist in predicting market trends and making informed investment decisions?",
             content:
-              "Yes, {appTitle}'s AI solutions can leverage advanced algorithms and machine learning techniques to analyze market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.",
+              "Yes, {appTitle}'s AI solutions can leverage advanced algorithms and machine learning techniques to analyse market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.",
           },
           {
             key: 'faq-10',
@@ -3973,7 +3974,7 @@ export const MOCK_GOVX_PAGES = [
     subtitle:
       'Discover how you can join us and be part of a team at the forefront of digital innovation.',
     seo_description:
-      "Join our team of thinkers and tinkerers to build tomorrow's technology today. Make an impact and bring great software to more people. Exciting career opportunities are available.",
+      'Join our team to drive digital transformations in the public sector. Make an impact, bring great software to more people. Exciting career opportunities await.',
     sections: {
       hero: {
         hero_src: '/images/careers_hero.png',
@@ -4045,7 +4046,7 @@ export const MOCK_GOVX_PAGES = [
       callout: {
         title: 'Openings.',
         subtitle:
-          'We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don’t see a role that suits but you believe you have a lot to offer, we’d love to hear from you.',
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
       },
     },
   },
@@ -4055,6 +4056,8 @@ export const MOCK_GOVX_PAGES = [
     href: routeConfig.ABOUT,
     subtitle:
       'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
     sections: {
       hero: {
         hero_src: '/images/about_hero.png',
@@ -4126,7 +4129,7 @@ export const MOCK_GOVX_PAGES = [
             overline: '02',
             title: 'AI Process Automation',
             subtitle:
-              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
           },
           {
             avatar_src: '/images/about_shape_square_with_circle.svg',
@@ -4164,7 +4167,7 @@ export const MOCK_GOVX_PAGES = [
         overline: 'Our Locations',
         title: 'Empowering Public Sector Transformation Across Locations',
         subtitle:
-          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organizations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
         items: [
           {
             title: '100+',
@@ -4266,7 +4269,7 @@ export const MOCK_GOVX_PAGES = [
             fa_icon: 'fa-robot',
             title: 'AI Process Automation',
             subtitle:
-              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organization.',
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
             href: `${routeConfig.SERVICES}/ai-process-automation`,
           },
           {
@@ -4399,13 +4402,13 @@ export const MOCK_GOVX_PAGES = [
             key: 'faq-1',
             title: 'What is {appTitle}?',
             content:
-              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organizations embrace digitalization and enhance their operations, services, and citizen engagement.',
+              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
             key: 'faq-2',
             title: 'What industries do you serve?',
             content:
-              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organizations.',
+              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
           },
           {
             key: 'faq-3',
@@ -4415,15 +4418,15 @@ export const MOCK_GOVX_PAGES = [
           },
           {
             key: 'faq-4',
-            title: "How can {appTitle}'s solutions benefit my organization?",
+            title: "How can {appTitle}'s solutions benefit my organisation?",
             content:
-              'Our solutions are designed to empower government organizations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
+              'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
             key: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
-              "Yes, {appTitle}'s solutions are scalable and can be adapted to organizations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organization grows.",
+              "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
           },
           {
             key: 'faq-6',
@@ -4456,7 +4459,7 @@ export const MOCK_GOVX_PAGES = [
             key: 'faq-10',
             title: 'How long does the implementation process typically take?',
             content:
-              'The implementation timeline depends on the specific requirements of your organization and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
+              'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
           },
         ],
       },
@@ -4466,7 +4469,7 @@ export const MOCK_GOVX_PAGES = [
         overline: 'Get Started',
         title: 'Partnering with {appTitle}',
         subtitle:
-          '{appTitle} is committed to building strong partnerships and working collaboratively with organizations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
+          '{appTitle} is committed to building strong partnerships and working collaboratively with organisations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
       },
     },
   },

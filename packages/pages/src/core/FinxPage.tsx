@@ -66,7 +66,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         ...hero,
                         backgroundImageProps: {
                           src: '/images/about_hero.png',
-                          alt: 'hero',
+                          alt: 'circles',
                         },
                       })}
                     />,
@@ -78,7 +78,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
                           src: '/images/about_nodes_above_city.png',
-                          alt: 'hero',
+                          alt: 'Laser net over city',
                         },
                       })}
                     />,
@@ -90,7 +90,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
                           src: '/images/mission_earth.png',
-                          alt: 'hero',
+                          alt: 'earth',
                         },
                       })}
                     />,

@@ -1095,13 +1095,13 @@ export const MOCK_DESIGN_INDUSTRYS = [
             key: 'faqs-2',
             title: 'What do your UX workshops involve?',
             content:
-              'Our UX workshops are designed to educate your team on the principles of user experience design. We cover a range of topics, from understanding user needs and behaviors to creating user journeys and prototypes.',
+              'Our UX workshops are designed to educate your team on the principles of user experience design. We cover a range of topics, from understanding user needs and behaviours to creating user journeys and prototypes.',
           },
           {
             key: 'faqs-3',
             title: 'How do you approach product design for financial services?',
             content:
-              'Our product design process is user-centric. We start by understanding your users’ needs and behaviors, then design products that meet those needs effectively. We also conduct usability testing to ensure our designs are intuitive and user-friendly.',
+              'Our product design process is user-centric. We start by understanding your users’ needs and behaviours, then design products that meet those needs effectively. We also conduct usability testing to ensure our designs are intuitive and user-friendly.',
           },
         ],
       },
@@ -1205,7 +1205,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
             title:
               'How do you approach product design for government services?',
             content:
-              'Our approach to product design is user-centric. We start by understanding the specific needs and behaviors of the target user group, then design products that effectively meet those needs. Our designs focus on enhancing user engagement, efficiency, and accessibility.',
+              'Our approach to product design is user-centric. We start by understanding the specific needs and behaviours of the target user group, then design products that effectively meet those needs. Our designs focus on enhancing user engagement, efficiency, and accessibility.',
           },
         ],
       },
@@ -1277,7 +1277,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
             fa_icon: 'fa-mobile-alt',
             title: 'Mobile-First Design',
             subtitle:
-              'Our mobile-first approach ensures maritime services are easily accessible across devices, catering to the mobile-dominated user behavior.',
+              'Our mobile-first approach ensures maritime services are easily accessible across devices, catering to the mobile-dominated user behaviour.',
           },
           {
             fa_icon: 'fa-handshake',
@@ -1571,7 +1571,7 @@ export const MOCK_DATA_INDUSTRYS = [
           },
           {
             title:
-              'We deliver AI solutions that enhance service delivery, facilitate policy making, and foster innovation. Whether it’s improving decision-making, automating processes, or identifying new opportunities, we help government entities turn their data into actionable insights.',
+              'We deliver AI solutions that enhance service delivery, facilitate policymaking, and foster innovation. Whether it’s improving decision-making, automating processes, or identifying new opportunities, we help government entities turn their data into actionable insights.',
           },
         ],
       },
@@ -1799,7 +1799,7 @@ export const MOCK_DATA_INDUSTRYS = [
             fa_icon: 'fa-user-tag',
             title: 'Customer Profiling',
             subtitle:
-              'We use AI to analyze customer data and generate detailed customer profiles, helping real estate businesses deliver personalized experiences.',
+              'We use AI to analyse customer data and generate detailed customer profiles, helping real estate businesses deliver personalized experiences.',
           },
           {
             fa_icon: 'fa-analytics',
@@ -1999,7 +1999,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     seo: {
       title: 'Government',
       description:
-        'This page focuses on helping government organizations achieve digital transformation and enhance citizen services.',
+        'This page focuses on helping government organisations achieve digital transformation and enhance citizen services.',
     },
     // Sections
     sections: {
@@ -2008,7 +2008,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         items: [
           {
             title:
-              'In the modern era, government organizations face unique challenges in adopting digital technologies and providing efficient services to citizens. At our Government service, we specialize in assisting government agencies with their digital transformation initiatives and helping them navigate the complexities of the public sector.',
+              'In the modern era, government organisations face unique challenges in adopting digital technologies and providing efficient services to citizens. At our Government service, we specialize in assisting government agencies with their digital transformation initiatives and helping them navigate the complexities of the public sector.',
           },
           {
             title:
@@ -2020,13 +2020,13 @@ export const MOCK_DIGITAL_INDUSTRYS = [
         overline: 'What we do',
         title: 'Empowering the {title} Sector',
         subtitle:
-          'We leverage our expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics to support government organizations in their digital transformation journey.',
+          'We leverage our expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics to support government organisations in their digital transformation journey.',
         items: [
           {
             fa_icon: 'fa-briefcase',
             title: 'Enterprise digital strategy',
             subtitle:
-              "We develop comprehensive digital strategies that align with government organizations' objectives, ensuring effective utilization of digital technologies and resources.",
+              "We develop comprehensive digital strategies that align with government organisations' objectives, ensuring effective utilization of digital technologies and resources.",
           },
           {
             fa_icon: 'fa-chart-line',
@@ -2063,21 +2063,21 @@ export const MOCK_DIGITAL_INDUSTRYS = [
       faqs: {
         title: 'FAQs',
         subtitle:
-          'Learn more about our Government services and how we can assist your organization in achieving digital transformation.',
+          'Learn more about our Government services and how we can assist your organisation in achieving digital transformation.',
         items: [
           {
             key: 'faqs-1',
             title:
-              'Why is digital transformation important for government organizations?',
+              'Why is digital transformation important for government organisations?',
             content:
-              'Digital transformation is crucial for government organizations to enhance citizen services, improve operational efficiency, and drive innovation. It enables streamlined processes, data-driven decision-making, and effective engagement with citizens and businesses.',
+              'Digital transformation is crucial for government organisations to enhance citizen services, improve operational efficiency, and drive innovation. It enables streamlined processes, data-driven decision-making, and effective engagement with citizens and businesses.',
           },
           {
             key: 'faqs-2',
             title:
               'How can your Government services support our digital transformation journey?',
             content:
-              'Our Government services provide specialized expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics. We collaborate closely with government organizations to develop tailored solutions that address their unique challenges and goals, enabling successful digital transformation.',
+              'Our Government services provide specialized expertise in enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics. We collaborate closely with government organisations to develop tailored solutions that address their unique challenges and goals, enabling successful digital transformation.',
           },
           {
             key: 'faqs-3',
@@ -2701,7 +2701,7 @@ export const MOCK_FINX_INDUSTRYS = [
             fa_icon: 'fa-analytics',
             title: 'Payment Analytics and Insights',
             subtitle:
-              'Gain valuable insights into payment trends, customer behavior, and business performance with our payment analytics solutions.',
+              'Gain valuable insights into payment trends, customer behaviour, and business performance with our payment analytics solutions.',
           },
         ],
       },
@@ -2722,7 +2722,7 @@ export const MOCK_FINX_INDUSTRYS = [
             title:
               'How can your Digital Transformation Consulting services help banks and asset firms?',
             content:
-              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complex landscape of digital transformation. We provide strategic guidance, technology expertise, and change management support to help organizations embrace digital technologies, optimize processes, and enhance customer experiences. With our consulting services, banks and asset firms can unlock new growth opportunities and achieve sustainable success in the digital era.',
+              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complex landscape of digital transformation. We provide strategic guidance, technology expertise, and change management support to help organisations embrace digital technologies, optimize processes, and enhance customer experiences. With our consulting services, banks and asset firms can unlock new growth opportunities and achieve sustainable success in the digital era.',
           },
           {
             key: 'faqs-3',
@@ -2770,7 +2770,7 @@ export const MOCK_FINX_INDUSTRYS = [
         overline: 'What we offer',
         title: 'Our {title} Capabilities',
         subtitle:
-          'Empower your organization with our comprehensive fintech solutions tailored to the needs of the banking and asset management industry.',
+          'Empower your organisation with our comprehensive fintech solutions tailored to the needs of the banking and asset management industry.',
         items: [
           {
             fa_icon: 'fa-cogs',
@@ -2820,13 +2820,13 @@ export const MOCK_FINX_INDUSTRYS = [
             title:
               'Why is digital transformation important for banks and asset firms?',
             content:
-              'Digital transformation is essential for banks and asset firms to stay competitive and meet the evolving needs of customers. It enables organizations to streamline operations, enhance customer experiences, and leverage data-driven insights for informed decision-making. By embracing digital technologies, banks and asset firms can unlock new growth opportunities, improve operational efficiency, and drive innovation in the financial industry.',
+              'Digital transformation is essential for banks and asset firms to stay competitive and meet the evolving needs of customers. It enables organisations to streamline operations, enhance customer experiences, and leverage data-driven insights for informed decision-making. By embracing digital technologies, banks and asset firms can unlock new growth opportunities, improve operational efficiency, and drive innovation in the financial industry.',
           },
           {
             key: 'faqs-2',
             title: 'What makes our Fintech Solutions unique?',
             content:
-              "Our Fintech Solutions are designed specifically for the banking and asset management industry, addressing the industry's unique challenges and requirements. We combine industry expertise with technological innovation to deliver comprehensive solutions that drive digital transformation and enable organizations to thrive in the digital era. Our solutions are scalable, secure, and customizable, ensuring they align with the specific needs and objectives of each client.",
+              "Our Fintech Solutions are designed specifically for the banking and asset management industry, addressing the industry's unique challenges and requirements. We combine industry expertise with technological innovation to deliver comprehensive solutions that drive digital transformation and enable organisations to thrive in the digital era. Our solutions are scalable, secure, and customizable, ensuring they align with the specific needs and objectives of each client.",
           },
           {
             key: 'faqs-3',
