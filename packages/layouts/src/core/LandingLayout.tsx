@@ -38,8 +38,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const { toggleDarkModeIconButtonJsx } = useUserPreferences()
   const onUseLayout = useLayout()
 
-  console.log('jjj: onUseLayout', onUseLayout)
-
   const {
     // Configs
     site,

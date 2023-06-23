@@ -65,7 +65,6 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
     industrys,
     pageProviderProps,
   } = props
-  console.log('jjj: GroupHome Index', pageProviderProps)
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
