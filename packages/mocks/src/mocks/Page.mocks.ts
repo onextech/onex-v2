@@ -3535,8 +3535,8 @@ export const MOCK_FINX_PAGES = [
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
       hero: {
-        hero_src: '/images/about_hero.png',
-        hero_alt: 'circles',
+        hero_src: 'https://source.unsplash.com/ep4yZx4taUY/1600x900',
+        hero_alt: 'Grey card',
         overline: '{appTitle}',
         title: 'Transforming the Future of Finance with Scalable Solutions',
         buttons: [
