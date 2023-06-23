@@ -4060,8 +4060,8 @@ export const MOCK_GOVX_PAGES = [
       'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
     sections: {
       hero: {
-        hero_src: '/images/about_hero.png',
-        hero_alt: 'hero',
+        hero_src: 'https://source.unsplash.com/QG7Wkq2ZrpE/1600x900',
+        hero_alt: 'escalator',
         overline: '{appTitle}',
         title:
           'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',

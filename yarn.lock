@@ -1681,7 +1681,25 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@*", "@gravis-os/form@^0.0.115":
+"@gravis-os/form@*":
+  version "0.0.116"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.116.tgz#c7fd8dae4c4ccbde6ba615fe2e745aec945916af"
+  integrity sha512-X0BWn2UKhc0H00hmiidLC3Uf9nabjWO26DqDrB+byQ8hhDHGX2TE0X2n+Nmw5vAZA3239oX/puxQRjcLVZU4Yw==
+  dependencies:
+    "@gravis-os/fields" "*"
+    "@gravis-os/storage" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/ui" "*"
+    "@mui/x-date-pickers" "^5.0.2"
+    downloadjs "^1.4.7"
+    lodash "^4.17.21"
+    quill ">=1.3.7"
+    react-hook-form "^7.30.0"
+    react-quilljs ">=1.2.17"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/form@^0.0.115":
   version "0.0.115"
   resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-0.0.115.tgz#c6a132e33de59bfc86dd22d5c43038c40d4159ed"
   integrity sha512-EKK6956wBe9KTbRS5TSk4IfW63SOU1Wq8mIIi7qAFbs6sZi+Nc8VLnqvczSUgFdHLggm0E41hMuTRtXSbqXmxQ==

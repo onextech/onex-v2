@@ -1812,8 +1812,8 @@ export const MOCK_FINX_POSTS = [
     is_active: true,
     category_id: 1,
     title:
-      'Future-Proofing Your Business: Strategies for Long-Term Growth and Success',
-    slug: 'future-proofing-business-strategies-long-term-growth-success',
+      'Data Engineering in Finance: A Key Component of Digital Transformation',
+    slug: 'data-engineering-finance-digital-transformation',
     subtitle:
       'Dive into the transformative impact of data engineering on the digital landscape of the finance sector.',
     hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
