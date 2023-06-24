@@ -2103,7 +2103,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     seo: {
       title: 'Maritime',
       description:
-        'Discover how our digital marketing company can help your maritime business thrive with our enterprise digital strategy, B2B Digital Marketing, and advanced web development & analytics services.',
+        'Thrive with our digital marketing expertise. Enterprise strategy, B2B marketing, advanced web development & analytics. Boost your maritime business.',
     },
     // Sections
     sections: {
