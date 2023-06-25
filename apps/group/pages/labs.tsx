@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { LabsPage, LabsPageProps } from '@onex/pages'
 import { MOCK_VENTURES_PAGE } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'

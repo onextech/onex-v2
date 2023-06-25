@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,

@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { PostCategoryPage, PostCategoryPageProps } from '@onex/pages'
 import { PostCategoryDetail } from '@onex/server'
 
