@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { MissionPage } from '@onex/pages'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@gravis-os/landing'

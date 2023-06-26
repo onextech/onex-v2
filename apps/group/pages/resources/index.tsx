@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { ResourcesPage, ResourcesPageProps } from '@onex/pages'
 import { Resource } from '@gravis-os/types'
 import { ResourceList } from '@onex/server'

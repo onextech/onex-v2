@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { ResourcePageProps, ResourceSuccessPage } from '@onex/pages'
 
 import { ResourceDetail } from '@onex/server'

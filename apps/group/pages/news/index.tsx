@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
 import { PressRelease } from '@gravis-os/types'
 import { PressReleaseList } from '@onex/server'

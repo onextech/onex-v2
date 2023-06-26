@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 import { IndustrysPage, IndustrysPageProps } from '@onex/pages'
 import { IndustryList } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'

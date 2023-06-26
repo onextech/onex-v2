@@ -1,7 +1,7 @@
 import React from 'react'
 import { IndustryPage, IndustryPageProps } from '@onex/pages'
 import { IndustryDetail } from '@onex/server'
-import { LandingLayout } from '@onex/layouts'
+import { LandingLayout } from '@app/layouts'
 
 import { InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@gravis-os/landing'

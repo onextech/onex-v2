@@ -29,14 +29,27 @@ export interface LandingLayoutProps
   calloutProps?: ContactCalloutProps
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
+  useLayout?: typeof useLayout
+  useUserPreferences?: typeof useUserPreferences
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  const { seo, calloutProps, ...rest } = props
+  const {
+    useUserPreferences: injectedUseUserPreferences,
+    useLayout: injectedUseLayout,
+    seo,
+    calloutProps,
+    ...rest
+  } = props
 
   // Hooks
-  const { toggleDarkModeIconButtonJsx } = useUserPreferences()
-  const onUseLayout = useLayout()
+  const useUserPreferencesFunction =
+    injectedUseUserPreferences || useUserPreferences
+  const { toggleDarkModeIconButtonJsx } = useUserPreferencesFunction()
+
+  // Allow overriding the useLayout hook to allow for context override
+  const useLayoutFunction = injectedUseLayout || useLayout
+  const onUseLayout = useLayoutFunction()
 
   const {
     // Configs
@@ -614,9 +627,9 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             title: 'Locale',
             showOnMobileBar: true,
             hideInMobileDrawer: true,
-            children: (
+            children: site.locales && (
               <LocalePicker
-                locales={site.locales.map(({ iso_alpha_2, ...rest }) => ({
+                locales={site.locales?.map(({ iso_alpha_2, ...rest }) => ({
                   ...rest,
                   isoAlpha2: iso_alpha_2,
                 }))}
