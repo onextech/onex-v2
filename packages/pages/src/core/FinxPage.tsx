@@ -65,7 +65,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title: 'We are the Growth Company',
                         ...hero,
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/21mJd5NUGZU/1600x900',
+                          src: '/images/home_hero_1.jpeg',
                           alt: 'Glass ball',
                         },
                       })}
@@ -77,7 +77,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title:
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/viaDiE6DH1k/1600x900',
+                          src: '/images/home_hero_2.jpeg',
                           alt: 'Old coin',
                         },
                       })}
@@ -89,7 +89,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title:
                           'Transforming the Future of Financial Industries',
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/ex_p4AaBxbs/1600x900',
+                          src: '/images/home_hero_3.jpeg',
                           alt: 'Black card',
                         },
                       })}
@@ -120,9 +120,9 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         }),
         // Industry
         renderFeaturedIndustrysBlock({
-          title: 'Industries We Serve',
+          title: 'Empowering Industries with AI-Powered Innovations',
           subtitle:
-            'Fin X revolutionizes the finance sector by providing customized digital solutions and consulting services across industries, empowering businesses to thrive in the modern era of finance.',
+            'Fin X drives the finance sector forward with AI-driven solutions and expert consulting services, revolutionizing industries by harnessing the transformative power of artificial intelligence.',
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
         }),

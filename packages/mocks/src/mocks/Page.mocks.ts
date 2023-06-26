@@ -3537,10 +3537,10 @@ export const MOCK_FINX_PAGES = [
       'Learn more about the driving force behind our mission, vision, and purpose.',
     sections: {
       hero: {
-        hero_src: 'https://source.unsplash.com/ep4yZx4taUY/1600x900',
-        hero_alt: 'Grey card',
+        hero_src: '/images/about_page_hero.jpeg',
+        hero_alt: 'Stock analysis application',
         overline: '{appTitle}',
-        title: 'Transforming the Future of Finance with Scalable Solutions',
+        title: 'Transforming the Future of Finance with AI-Powered Solutions',
         buttons: [
           {
             overline: 'What we do',
@@ -3549,7 +3549,7 @@ export const MOCK_FINX_PAGES = [
           },
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Finance AI Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -3557,14 +3557,13 @@ export const MOCK_FINX_PAGES = [
       summary: {
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
-        title:
-          'We believe in harnessing the power of technology to transform and digitalize the finance industry.',
+        title: 'Unlocking the Potential of AI for Finance Transformation',
         subtitle:
-          "{appTitle} is driven by the belief in harnessing technology's power to digitalize and transform the finance industry, enabling organisations to thrive through innovative solutions.",
+          '{appTitle} leverages the transformative capabilities of AI to revolutionize the finance industry, empowering organizations to thrive through cutting-edge AI-powered solutions and digital transformation.',
         buttons: [
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Finance AI Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -3587,9 +3586,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Unlocking Growth Through Digital Innovation',
+        title: 'Accelerating Growth with AI-Powered Innovation',
         subtitle:
-          'We fuel growth and drive industry transformation through our commitment to digital innovation, empowering businesses to unlock their full potential in the digital era.',
+          'We harness the power of AI-driven digital innovation to propel businesses forward,  exponentially growing and driving enterprise transformation in the digital era.',
         items: [
           {
             avatar_src: '/images/about_shape_circle_radial.svg',
@@ -3619,10 +3618,10 @@ export const MOCK_FINX_PAGES = [
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'Redefining Finance through Digital Innovation',
+        title: 'Empowering Finance with AI-Driven Innovation',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of consultants, designers, and engineers live and breathe digital services to deliver the best technological solutions targeted at growth and digitalization.',
+          'Our team of AI experts, consultants, and engineers are dedicated to redefining the finance industry through cutting-edge AI solutions, unlocking unparalleled growth and digitalization opportunities for your business.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -3635,7 +3634,7 @@ export const MOCK_FINX_PAGES = [
         overline: 'Our Clients',
         title: 'Trusted by Product Teams at',
         subtitle:
-          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+          '{appTitle} empowers finance enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
@@ -3711,7 +3710,7 @@ export const MOCK_FINX_PAGES = [
         overline: '{appTitle}',
         title: 'Transforming the Future of Financial Industries',
         subtitle:
-          '{appTitle} is the leading catalyst for digital transformation in the finance industry, revolutionizing the way financial institutions thrive in the digital era.',
+          '{appTitle} harnesses the power of artificial intelligence to drive unprecedented growth and efficiency in the financial industry, enabling enterprises to unlock the full potential of AI-driven solutions for unparalleled success.',
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -3728,10 +3727,9 @@ export const MOCK_FINX_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title:
-          'Driving Finance Industry Transformation through Digital Innovation and Growth',
+        title: 'Unleashing the Power of AI in Finance',
         subtitle:
-          '{appTitle} ignites your business with unparalleled speed, precision, and knowledge, driving transformative growth and success.',
+          '{appTitle} leverages cutting-edge AI technologies to fuel digital transformation in the finance industry, empowering businesses with unprecedented innovation, growth, and competitive advantage.',
         maxWidth: 'xl',
         center: true,
         items: [
@@ -4062,11 +4060,11 @@ export const MOCK_GOVX_PAGES = [
       'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
     sections: {
       hero: {
-        hero_src: 'https://source.unsplash.com/QG7Wkq2ZrpE/1600x900',
+        hero_src: '/images/about_page_hero.jpeg',
         hero_alt: 'escalator',
         overline: '{appTitle}',
         title:
-          'Revolutionizing Public Sector Efficiency with Scalable Solutions for the Future',
+          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
         buttons: [
           {
             overline: 'What we do',
@@ -4075,7 +4073,7 @@ export const MOCK_GOVX_PAGES = [
           },
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Public Sector IT Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -4083,14 +4081,13 @@ export const MOCK_GOVX_PAGES = [
       summary: {
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
-        title:
-          'We believe in harnessing the power of technology to transform and digitalize industries in the public sector.',
+        title: 'Unlocking the Potential of AI for Public Sector Transformation',
         subtitle:
-          "At {appTitle}, we are driven by our belief in leveraging technology's power to drive digital transformation across public sector industries.",
+          '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
         buttons: [
           {
             overline: 'Who we are',
-            title: 'Business Software Experts',
+            title: 'Public Sector IT Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -4145,10 +4142,10 @@ export const MOCK_GOVX_PAGES = [
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'Redefining Public Sector Possibilities',
+        title: 'Empowering Public Sector Innovation with AI',
         hero_alt: 'Laser net over city',
         subtitle:
-          'Our team of consultants, designers, and engineers live and breathe digital services to deliver the best technological solutions targeted at growth and digitalization.',
+          'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
         buttons: [
           {
             overline: 'Our Mission',
@@ -4161,7 +4158,7 @@ export const MOCK_GOVX_PAGES = [
         overline: 'Our Clients',
         title: 'Trusted by Product Teams at',
         subtitle:
-          '{appTitle} empowers enterprise product teams with trusted frontend development expertise and exceptional dashboard user interfaces.',
+          '{appTitle} empowers public sector enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
       },
       stats: {
         hero_src: '/images/contact_world_map_in_dots.svg',
@@ -4206,7 +4203,7 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Empowering the Public Sector through Digital Transformation',
+        title: 'Revolutionize Public Sector Enterprises with AI',
         subtitle:
           'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
         buttons: [
@@ -4235,9 +4232,10 @@ export const MOCK_GOVX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'Swirl of colors',
         overline: '{appTitle}',
-        title: 'Empowering Public Sector Digital Transformation',
+        title:
+          'Transforming Public Sector Enterprises with AI-Powered Solutions',
         subtitle:
-          'Unlocking the potential of the public sector through innovative digital solutions, driving efficiency, transparency, and citizen-centric services.',
+          "Unleashing the power of artificial intelligence to drive efficient, transparent, and citizen-centric services, revolutionizing the public sector's digital transformation journey.",
       },
       summary: {
         title: 'Innovation that drives real impact.',
@@ -4254,9 +4252,10 @@ export const MOCK_GOVX_PAGES = [
       },
       benefits: {
         overline: 'What we do',
-        title: 'Bridging the Gap in Public Sector Digitalization',
+        title:
+          'Advancing Public Sector Digitalization with AI-Powered Solutions',
         subtitle:
-          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+          '{appTitle} leverages the transformative capabilities of artificial intelligence to bridge the gap in public sector digitalization, enabling governments to modernize operations, optimize processes, and deliver enhanced AI-driven public services.',
         maxWidth: 'xl',
         center: true,
         items: [

@@ -366,7 +366,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Empower your financial processes with Fin X',
+  cta_title: 'Drive Financial Excellence with Fin X',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
@@ -435,7 +435,7 @@ export const MOCK_GOVX_SITE = {
   absolute_url: 'https://www.govx.ai',
 
   // Cta
-  cta_title: 'Modernise Public Sectors with Gov X.',
+  cta_title: 'Transform Public Sectors with AI-Driven Innovation by Gov X.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@govx.ai',
