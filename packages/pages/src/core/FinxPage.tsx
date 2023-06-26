@@ -28,7 +28,7 @@ export interface FinxPageProps {
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos } = useLayout()
+  const { site, clientLogos, routeConfig } = useLayout()
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -65,7 +65,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         title: 'We are the Growth Company',
                         ...hero,
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/21mJd5NUGZU/1600x900',
+                          src: '/images/home_hero_1.jpeg',
                           alt: 'Glass ball',
                         },
                       })}
@@ -75,9 +75,11 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                       {...renderHeroWithBackgroundBlock({
                         ...hero,
                         title:
-                          'Transforming the Future of Financial Industries',
+                          'Empowering the Finance Industry with AI Insights and Expertise',
+                        subtitle:
+                          'Explore our curated collection of articles on the intersection of AI and the finance sector, gaining valuable insights to revolutionize your business and stay ahead of the digital transformation curve.',
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/viaDiE6DH1k/1600x900',
+                          src: '/images/home_hero_2.jpeg',
                           alt: 'Old coin',
                         },
                       })}
@@ -88,8 +90,10 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         ...hero,
                         title:
                           'Transforming the Future of Financial Industries',
+                        subtitle:
+                          'Fin X harnesses the power of artificial intelligence to drive unprecedented growth and efficiency in the financial industry, enabling enterprises to unlock the full potential of AI-driven solutions for unparalleled success.',
                         backgroundImageProps: {
-                          src: 'https://source.unsplash.com/ex_p4AaBxbs/1600x900',
+                          src: '/images/home_hero_3.jpeg',
                           alt: 'Black card',
                         },
                       })}
@@ -120,9 +124,9 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         }),
         // Industry
         renderFeaturedIndustrysBlock({
-          title: 'Industries We Serve',
+          title: 'Empowering Industries with AI-Powered Innovations',
           subtitle:
-            'Fin X revolutionizes the finance sector by providing customized digital solutions and consulting services across industries, empowering businesses to thrive in the modern era of finance.',
+            'Fin X drives the finance sector forward with AI-driven solutions and expert consulting services, revolutionizing industries by harnessing the transformative power of artificial intelligence.',
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
         }),
