@@ -3176,7 +3176,7 @@ export const MOCK_DIGITAL_PAGES = [
     seo: {
       title: '{appTitle} - Enterprise Digital Marketing',
       description:
-        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+        'One X Digital is a leading digital marketing solutions provider, empowering businesses with cutting-edge technology and innovative strategies. From bespoke web solutions to data-driven insights, we are committed to driving growth and success for our clients. Discover the power of digital transformation with One X Digital.',
     },
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
@@ -3700,7 +3700,7 @@ export const MOCK_FINX_PAGES = [
     seo: {
       title: '{appTitle} - Digital Solutions for Financial Enterprise',
       description:
-        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+        'Fin X is a leading provider of innovative AI solutions specialized for financial enterprises. Discover how FinX can revolutionize your financial operations and propel your business towards unparalleled success.',
     },
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
@@ -4225,7 +4225,7 @@ export const MOCK_GOVX_PAGES = [
     seo: {
       title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
       description:
-        "Get exceptional Enterprise Frontend Development Services. Scalable, efficient, and visually stunning solutions tailored to your enterprise's unique needs.",
+        'Gov X is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
     },
     sections: {
       hero: {
