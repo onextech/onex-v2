@@ -1261,7 +1261,7 @@ const MOCK_GROUP_PAGES = [
     subtitle: 'Discover the agile process we use to build digital products',
     seo_title: '{appTitle} - Custom Software Development',
     seo_description:
-      'Empower your business with strategic technology and design solutions. Define strategy, create exceptional experiences, and reinvent digitally.',
+      '{appTitle} is a leading provider of custom software development services, leveraging cutting-edge solutions to deliver exceptional products that meet the evolving needs of clients. With a commitment to excellence and a passion for innovation, One X Group seeks for your business growth in a rapidly changing world.',
     sections: {
       hero: {
         overline: 'Greetings',
@@ -2289,7 +2289,7 @@ export const MOCK_DATA_PAGES = [
     seo: {
       title: '{appTitle} - Enterprise AI Development',
       description:
-        '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
+        '{appTitle} is a leading data and AI solutions provider, empowering businesses with advanced analytics and insights to drive growth and success. From data collection and analysis to predictive modeling and machine learning, we offer tailored solutions that enable you to make data-driven decisions with confidence.',
     },
     subtitle: 'Discover the agile process we use to design digital products',
     sections: {
@@ -2737,7 +2737,7 @@ export const MOCK_DESIGN_PAGES = [
     seo: {
       title: '{appTitle} - Enterprise UI/UX Design',
       description:
-        "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
+        '{appTitle} is a premier design agency, specializing in creating captivating and user-centric UX/UI designs for enterprises. Our expert team of designers and developers crafts stunning visuals and seamless user experiences to elevate your brand. Trust One X Design to deliver exceptional design solutions that leave a lasting impression.',
     },
     subtitle: 'Discover the agile process we use to design digital products',
     sections: {
@@ -3176,7 +3176,7 @@ export const MOCK_DIGITAL_PAGES = [
     seo: {
       title: '{appTitle} - Enterprise Digital Marketing',
       description:
-        'One X Digital is a leading digital marketing solutions provider, empowering businesses with cutting-edge technology and innovative strategies. From bespoke web solutions to data-driven insights, we are committed to driving growth and success for our clients. Discover the power of digital transformation with One X Digital.',
+        '{appTitle} is a leading digital marketing solutions provider, empowering businesses with cutting-edge technology and innovative strategies. From bespoke web solutions to data-driven insights, we are committed to driving growth and success for our clients. Discover the power of digital transformation with One X Digital.',
     },
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
@@ -3700,7 +3700,7 @@ export const MOCK_FINX_PAGES = [
     seo: {
       title: '{appTitle} - Digital Solutions for Financial Enterprise',
       description:
-        'Fin X is a leading provider of innovative AI solutions specialized for financial enterprises. Discover how FinX can revolutionize your financial operations and propel your business towards unparalleled success.',
+        '{appTitle} is a leading provider of innovative AI solutions specialized for financial enterprises. Discover how FinX can revolutionize your financial operations and propel your business towards unparalleled success.',
     },
     subtitle: 'Discover the agile process we use to build digital products',
     sections: {
@@ -4225,7 +4225,7 @@ export const MOCK_GOVX_PAGES = [
     seo: {
       title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
       description:
-        'Gov X is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
+        '{appTitle} is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
     },
     sections: {
       hero: {
