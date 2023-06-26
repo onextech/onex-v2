@@ -74,7 +74,9 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                       {...renderHeroWithBackgroundBlock({
                         ...hero,
                         title:
-                          'Empowering Public Sector Digital Transformation',
+                          'Unlocking Public Sector Innovation: Explore our AI Insights',
+                        subtitle:
+                          'Dive into our curated collection of articles, exploring the intersection of AI solutions and the public sector, as we uncover the transformative potential and latest advancements in technologies that can be harnessed for public enterprises.',
                         backgroundImageProps: {
                           src: '/images/home_hero_2.jpeg',
                           alt: 'train station',
@@ -86,7 +88,9 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                       {...renderHeroWithBackgroundBlock({
                         ...hero,
                         title:
-                          'Empowering Public Sector Digital Transformation',
+                          'Digitalizing the Public Sector: Discover our Vision',
+                        subtitle:
+                          'Bringing revolutionary change to the public sector. Learn more about our values, culture, and vision and how we look to unleash the potential of AI to drive transformation in the public sector.',
                         backgroundImageProps: {
                           src: '/images/home_hero_3.jpeg',
                           alt: 'cool library',

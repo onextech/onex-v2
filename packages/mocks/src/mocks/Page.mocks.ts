@@ -3708,9 +3708,9 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_hero.png',
         hero_alt: 'Swirl of colours',
         overline: '{appTitle}',
-        title: 'Transforming the Future of Financial Industries',
+        title: 'Accelerating Financial Success with AI-Powered Solutions',
         subtitle:
-          '{appTitle} harnesses the power of artificial intelligence to drive unprecedented growth and efficiency in the financial industry, enabling enterprises to unlock the full potential of AI-driven solutions for unparalleled success.',
+          "Discover our comprehensive range of AI-driven services tailored for the finance industry, empowering enterprises to leverage cutting-edge technology and drive transformative growth in today's digital landscape.",
       },
       summary: {
         title: 'Innovation that drives real impact.',

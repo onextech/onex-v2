@@ -28,7 +28,7 @@ export interface FinxPageProps {
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos } = useLayout()
+  const { site, clientLogos, routeConfig } = useLayout()
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -75,7 +75,9 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                       {...renderHeroWithBackgroundBlock({
                         ...hero,
                         title:
-                          'Transforming the Future of Financial Industries',
+                          'Empowering the Finance Industry with AI Insights and Expertise',
+                        subtitle:
+                          'Explore our curated collection of articles on the intersection of AI and the finance sector, gaining valuable insights to revolutionize your business and stay ahead of the digital transformation curve.',
                         backgroundImageProps: {
                           src: '/images/home_hero_2.jpeg',
                           alt: 'Old coin',
@@ -88,6 +90,8 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
                         ...hero,
                         title:
                           'Transforming the Future of Financial Industries',
+                        subtitle:
+                          'Fin X harnesses the power of artificial intelligence to drive unprecedented growth and efficiency in the financial industry, enabling enterprises to unlock the full potential of AI-driven solutions for unparalleled success.',
                         backgroundImageProps: {
                           src: '/images/home_hero_3.jpeg',
                           alt: 'Black card',
