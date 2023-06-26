@@ -3011,7 +3011,7 @@ export const MOCK_DIGITAL_PAGES = [
       'Empower enterprise growth with digital excellence. Revolutionize performance through innovative strategies. Elevate brand, drive growth.',
     sections: {
       hero: {
-        hero_src: '/images/about_hero.png',
+        hero_src: '/images/about_page_hero.jpeg',
         hero_alt: 'Light trails',
         overline: '{appTitle}',
         title: 'Empowering Enterprise Growth Through Digital Excellence',
