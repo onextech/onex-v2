@@ -73,7 +73,6 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                     titleProps: {
                       ...item?.titleProps,
                       fill: true,
-                      zoom: true,
                     },
                   },
                 ],
