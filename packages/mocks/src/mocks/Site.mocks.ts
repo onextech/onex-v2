@@ -53,7 +53,7 @@ export const MOCK_GROUP_SITE: Site = {
   disable_testimonials: true,
 
   // disable faqs
-  disable_faqs: true,
+  disable_faqs_on_home_page: true,
 
   // App
   title: 'One X Group',
@@ -102,7 +102,7 @@ export const MOCK_TECH_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -173,7 +173,7 @@ export const MOCK_DESIGN_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -232,7 +232,7 @@ export const MOCK_DATA_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -296,7 +296,7 @@ export const MOCK_DIGITAL_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -367,7 +367,7 @@ export const MOCK_FINX_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,
@@ -438,7 +438,7 @@ export const MOCK_GOVX_SITE = {
 
   disable_testimonials: false,
 
-  disable_faqs: false,
+  disable_faqs_on_home_page: false,
 
   // System
   nav_is_ecosystem_visible: false,

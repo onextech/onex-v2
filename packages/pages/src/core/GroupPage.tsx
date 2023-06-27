@@ -128,7 +128,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Posts
         renderFeaturedPostsBlock({ items: featuredPosts }),
         // Faqs
-        site.disable_faqs
+        site.disable_faqs_on_home_page
           ? {}
           : renderFaqsAccordionBlock({
               py: { xs: 5, md: 10 },
