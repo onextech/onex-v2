@@ -7,10 +7,10 @@
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
-    "@gravis-os/fields": "^0.1.2",
-    "@gravis-os/form": "^0.0.117",
-    "@gravis-os/landing": "^0.2.2",
-    "@gravis-os/ui": "^0.1.5",
+    "@gravis-os/fields": "^1.0.0",
+    "@gravis-os/form": "^1.0.0",
+    "@gravis-os/landing": "^0.3.0",
+    "@gravis-os/ui": "^0.1.6",
     "@gravis-os/utils": "^0.1.2",
     "@supabase/auth-helpers-nextjs": "^0.5.6",
     "@supabase/supabase-js": "^2.10.0",
