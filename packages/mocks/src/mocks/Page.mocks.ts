@@ -3184,7 +3184,7 @@ export const MOCK_DIGITAL_PAGES = [
         hero_src: '/images/home_hero.png',
         hero_alt: 'Colourful light',
         overline: '{appTitle}',
-        title: 'Empower Growth and Nurture Your Brand',
+        title: 'Transforming Digital Landscapes with Web Development Expertise',
         subtitle:
           "{appTitle} harnesses the power of digital marketing to push business growth in {localeTitle}'s leading companies.",
       },
@@ -3586,7 +3586,7 @@ export const MOCK_FINX_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Accelerating Growth with AI-Powered Innovation',
+        title: 'Unleashing the Power of AI in Finance',
         subtitle:
           'We harness the power of AI-driven digital innovation to propel businesses forward,  exponentially growing and driving enterprise transformation in the digital era.',
         items: [
@@ -3618,7 +3618,7 @@ export const MOCK_FINX_PAGES = [
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'Empowering Finance with AI-Driven Innovation',
+        title: 'Developing AI Capabilities for Financial Enterprises',
         hero_alt: 'Laser net over city',
         subtitle:
           'Our team of AI experts, consultants, and engineers are dedicated to redefining the finance industry through cutting-edge AI solutions, unlocking unparalleled growth and digitalization opportunities for your business.',
