@@ -119,7 +119,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           title: <>Empowering the Finance Sector through AI-driven Solutions</>,
           subtitle:
             'At Fin X, we empower the finance sector by harnessing the power of AI-driven solutions. Our innovative technologies and expertise enable financial institutions to streamline operations, optimize decision-making, and drive transformative growth in an increasingly digital landscape',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Industry

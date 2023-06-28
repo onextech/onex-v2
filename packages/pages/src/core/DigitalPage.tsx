@@ -71,7 +71,7 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
           ),
           subtitle:
             "Our transformative digital marketing solutions redefine your enterprise's marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Industry
