@@ -114,7 +114,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           ),
           subtitle:
             'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Industry
