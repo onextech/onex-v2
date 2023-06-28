@@ -5,9 +5,9 @@ import {
   renderFourColumnGridBlock,
   useLayout,
   renderClientLogosImageMarqueeBlock,
+  ResourceForm,
 } from '@gravis-os/landing'
 import type { Resource } from '@gravis-os/types'
-import { ResourceForm } from '@onex/components'
 
 export interface ResourcePageProps {
   resource: Resource

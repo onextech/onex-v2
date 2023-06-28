@@ -1634,7 +1634,7 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*", "@gravis-os/fields@^1.0.0":
+"@gravis-os/fields@*":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.0.tgz#a3ff3faefa497ccea24b7ae6d31a7504eb5f471c"
   integrity sha512-KoQEQv/6UGsrbizNafN0zU5nv+ey59dm7AOgsYvEQLEaE5fMMZ5Yo19TJiacqeUE6DvMkWsQo/wws2oQm8GfmQ==
@@ -2428,13 +2428,6 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@supabase/auth-helpers-nextjs@^0.5.6":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.5.9.tgz#37b9e7ea6aa15b8291d996db34a62c0fc33f07b9"
-  integrity sha512-OBmltVuPNFbtznBAgQgOFaWh3dO6rRmU7i77TVzEkbViZoK2ylzlKPIORg9Wh+4ZgYbP2QMsI5GzEtAz+aNTvA==
-  dependencies:
-    "@supabase/auth-helpers-shared" "0.3.3"
-
 "@supabase/auth-helpers-nextjs@^0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.7.2.tgz#dc3f8b27999ccaebeb1a19b654875384269bb17d"
@@ -2442,13 +2435,6 @@
   dependencies:
     "@supabase/auth-helpers-shared" "0.4.1"
     set-cookie-parser "^2.6.0"
-
-"@supabase/auth-helpers-shared@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.3.3.tgz#a00d336a631867c199c9634739c225d2303ba00b"
-  integrity sha512-ZwZGffApfyz9MiT3knnZoF1DMWE56H/Q0Mrsn22J9ubhss7/+e7TP3dChxxwlUYqtDmjmLV6OV8W0BANENfUew==
-  dependencies:
-    js-base64 "^3.7.5"
 
 "@supabase/auth-helpers-shared@0.4.1":
   version "0.4.1"
@@ -2494,7 +2480,7 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/supabase-js@^2.10.0", "@supabase/supabase-js@^2.25.0":
+"@supabase/supabase-js@^2.25.0":
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-2.25.0.tgz#54a47339f58837b1cd325fa17376550f1bf2ec31"
   integrity sha512-AEh0suSrjfpQCOhY7hLsgX6gr8XEUWshVkTq9IODiHTnAR6NHiEQ865LTeWu8gqCDf2XH1n20JcSmovIe3Xixw==
@@ -6421,11 +6407,6 @@ jose@^4.14.3:
   resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.4.tgz#59e09204e2670c3164ee24cbfe7115c6f8bff9ca"
   integrity sha512-j8GhLiKmUAh+dsFXlX1aJCbt5KMibuKb+d7j1JaOJG6s2UjX1PQlW+OKB/sD4a/5ZYF4RcmYmLSndOoU3Lt/3g==
 
-js-base64@^3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.5.tgz#21e24cf6b886f76d6f5f165bfcd69cc55b9e3fca"
-  integrity sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==
-
 js-sdsl@^4.1.4:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.3.0.tgz#aeefe32a451f7af88425b11fdb5f58c90ae1d711"
@@ -7783,7 +7764,7 @@ react-from-dom@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-from-dom/-/react-from-dom-0.6.2.tgz#9da903a508c91c013b55afcd59348b8b0a39bdb4"
   integrity sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ==
 
-react-hook-form@^7.30.0, react-hook-form@^7.31.1:
+react-hook-form@^7.30.0:
   version "7.44.3"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.44.3.tgz#a99e560c6ef2b668db1daaebc4f98267331b6828"
   integrity sha512-/tHId6p2ViAka1wECMw8FEPn/oz/w226zehHrJyQ1oIzCBNMIJCaj6ZkQcv+MjDxYh9MWR7RQic7Qqwe4a5nkw==
