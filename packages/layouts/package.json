@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@gravis-os/landing": "^0.3.0",
-    "@gravis-os/theme": "^0.0.10",
+    "@gravis-os/theme": "^0.0.11",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
   },

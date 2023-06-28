@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const prevPage = MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home')
   const page = getDynamicPage({ page: prevPage, context, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
-  const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
+  const showcases = MOCK_SHOWCASES[MOCK_KEY]
   // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
   const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
