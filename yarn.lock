@@ -1635,9 +1635,9 @@
     prettier "^2.0.5"
 
 "@gravis-os/fields@*", "@gravis-os/fields@^1.0.0":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.2.tgz#b4bf1a1dc057e4b421a126ed5b51e54decafb5eb"
-  integrity sha512-9C9aKXZhKFubspesbiwYfSeyyXZLFk3ffS4DlN4TGSKsy8T/6QZUlesPEZ7pzfpkLGV/IlGygIyOrWc8P1+K4w==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.3.tgz#7ae24e5e7ef45664de99e462127bdec12ef3e5e9"
+  integrity sha512-DEmb5qxdCFkVVhdJ9O7VQ9f5GMNAcD57X/fi++qOWs/UfOKZ2tonBXQ5Cbieaj+zqN+kZyppCVmixeldrMt9CQ==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1667,9 +1667,9 @@
     typescript "^4.6.3"
 
 "@gravis-os/form@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.1.tgz#f8d0d7f595882735d9617621cee649f5cdd09194"
-  integrity sha512-M4PYruYHSqfDDjLxgfc1aMNnW/Ma2Id83kywWOn82ale0tr4UoGhl3FM0FEoe/SmMhlmS9NqzT21+8qofdeKWA==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.2.tgz#1292f55af641c6af8d6b5d809a099fb8aac911cc"
+  integrity sha512-DMVRL9KyiYJ8m2q+NOyE6MATEP7Wh822L/qShtQSJxIMqivudI6mnONd54TYBgTpLrB+WpaFsOMbi4qfjkEddQ==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1750,9 +1750,9 @@
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
 "@gravis-os/types@*", "@gravis-os/types@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.0.tgz#94db1e8ba489e5c39fa8536c8a87a1446c1a0b04"
-  integrity sha512-KBFXEgZEQ4OalOXCGtYrs/HW99GYS4tF4dwaFkDFZJoiqDFN9O0u/YM5OcxruS5wn2ZNrTfF0x0/BdZAG5fWNQ==
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.1.tgz#33401cc8f307d1f3bb07731888bb856fb4aaa018"
+  integrity sha512-pIBbwLYH7xvvzsIw2tU//S4AQSCcCy3ChrZzw7PYgOosGzjVOutivOecIM2tgvszpMe7nA2OICjqSlNJSAWG3A==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"
@@ -1786,9 +1786,9 @@
     typescript "^4.6.3"
 
 "@gravis-os/utils@*", "@gravis-os/utils@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.2.tgz#e891f9e5312db47b0e639993aef527fd449421aa"
-  integrity sha512-LGTHTp9u+dAVjIc/FbxDG/x+AXu4a5ldyzHQAUMwGVc5NaPFUdL20iLYnd2gIMfsL8ZIKTuH2IRpMAt1HecpHg==
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.3.tgz#c75999a9327e220e6153adbd5e6c23b696822237"
+  integrity sha512-f0yWc/MkGe2pBM44vj1K4Py3M6bucx0L26O5MYrsUTUGC24qQYyZW3gxzm/HGpVj21vcA365XCNnbjNhN517Cg==
   dependencies:
     "@gravis-os/types" "*"
     dayjs "^1.11.3"
@@ -7826,15 +7826,10 @@ react-from-dom@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-from-dom/-/react-from-dom-0.6.2.tgz#9da903a508c91c013b55afcd59348b8b0a39bdb4"
   integrity sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ==
 
-react-hook-form@^7.30.0:
+react-hook-form@^7.30.0, react-hook-form@^7.45.0:
   version "7.45.0"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
   integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
-
-react-hook-form@^7.31.1:
-  version "7.44.3"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.44.3.tgz#a99e560c6ef2b668db1daaebc4f98267331b6828"
-  integrity sha512-/tHId6p2ViAka1wECMw8FEPn/oz/w226zehHrJyQ1oIzCBNMIJCaj6ZkQcv+MjDxYh9MWR7RQic7Qqwe4a5nkw==
 
 react-hot-toast@>=2.2.0:
   version "2.4.1"
