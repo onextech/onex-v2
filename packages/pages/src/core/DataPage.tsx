@@ -5,10 +5,9 @@ import {
   renderFourColumnGridBlock,
   renderHalfGridBlock,
   renderHeroWithBackgroundBlock,
-  Showcase,
   useLayout,
 } from '@gravis-os/landing'
-import { Page } from '@gravis-os/types'
+import { Page, Showcase } from '@gravis-os/types'
 
 export interface DataPageProps {
   page: Page

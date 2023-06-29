@@ -12,10 +12,9 @@ import {
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
   useLayout,
-  Showcase,
 } from '@gravis-os/landing'
 import { GetStartedPage } from '@onex/pages'
-import { Page, Post, Technology, Industry } from '@gravis-os/types'
+import { Showcase, Page, Post, Technology, Industry } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {
