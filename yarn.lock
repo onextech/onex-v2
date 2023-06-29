@@ -1684,10 +1684,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.0.tgz#9a8165e5c0c0ca6a50699b8422b1c6e58962e9d6"
-  integrity sha512-Q7heBSY6tUZlRAHkQRFXKZbYZw/dkrGVzwF/jSvVqiQ+N3dh89HgDJYw2a7WGHC9YSuH3PxyI1JfMVb9u1wG2Q==
+"@gravis-os/landing@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.1.tgz#9379ca09021b8664851669b6f7115689149de0bd"
+  integrity sha512-LQ/8XOvFUfWoWeDNAFxd4phg6a5cSKdZpYLV5YqLy8X26U6J5E6Mmy/Y/CQkYlgAEnMesIf/yJzY/tD+AdXBLw==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
@@ -1699,13 +1699,11 @@
     material-ui-popup-state "^3.1.1"
     next-seo "^5.15.0"
     nextjs-progressbar "^0.0.16"
-    tslib "^2.4.0"
-    typescript "^4.6.3"
 
-"@gravis-os/query@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.32.tgz#8220662fbe8752d5f995eee42394a3ba55347344"
-  integrity sha512-BJdi3S3e2Y8SuZg3TctqkeT+6KCEiey2/GB4fDF+xxuloGITKXunAhO5iY1Ezx1+ugseUVwqSRRQesyzeg1dzA==
+"@gravis-os/query@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.33.tgz#b29a87a458d744aa61fd99b86228fe9358324298"
+  integrity sha512-l+GiyDisXudX94VNHqEZ/h9pWiEm8ZDqL8yAPccCEkzOP9xGSZgNFj1W7wrfRtpnlmcPJToEw2yh0JWDLh/19Q==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
