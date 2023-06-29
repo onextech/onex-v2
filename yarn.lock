@@ -1648,25 +1648,7 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@*":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.0.tgz#a0069472156fa05526f45f8299eaaf0ad474cdf1"
-  integrity sha512-JdD08uF3bVSAjukI+4GR5y1vF8zng4zNKRjTT26hugcPGAvI87aUgXzobp+c+PWGJcQVTRDMoFpXesOITxl+ow==
-  dependencies:
-    "@gravis-os/fields" "*"
-    "@gravis-os/storage" "*"
-    "@gravis-os/types" "*"
-    "@gravis-os/ui" "*"
-    "@mui/x-date-pickers" "^6.9.0"
-    downloadjs "^1.4.7"
-    lodash "^4.17.21"
-    quill ">=1.3.7"
-    react-hook-form "^7.30.0"
-    react-quilljs ">=1.2.17"
-    tslib "^2.4.0"
-    typescript "^4.6.3"
-
-"@gravis-os/form@^1.0.0":
+"@gravis-os/form@*", "@gravis-os/form@^1.0.0":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.2.tgz#1292f55af641c6af8d6b5d809a099fb8aac911cc"
   integrity sha512-DMVRL9KyiYJ8m2q+NOyE6MATEP7Wh822L/qShtQSJxIMqivudI6mnONd54TYBgTpLrB+WpaFsOMbi4qfjkEddQ==
@@ -1747,10 +1729,10 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.8.tgz#428cd225c6bccc90ada99f0c0dd87122136f78fe"
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
-"@gravis-os/types@*", "@gravis-os/types@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.1.tgz#33401cc8f307d1f3bb07731888bb856fb4aaa018"
-  integrity sha512-pIBbwLYH7xvvzsIw2tU//S4AQSCcCy3ChrZzw7PYgOosGzjVOutivOecIM2tgvszpMe7nA2OICjqSlNJSAWG3A==
+"@gravis-os/types@*", "@gravis-os/types@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.2.tgz#087e5f682dbec4a56c9a05129dc952501d2d2a84"
+  integrity sha512-cMkVl4ip/+5XYIsKE7W+8xiTf8NT0CsXq2Y7X5V1ywl/rl7tYuDtLYugcc5nMD7hA1Kz/IV147H3Q50k+/PwJw==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"

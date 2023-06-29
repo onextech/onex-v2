@@ -11,9 +11,8 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-  Showcase,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Technology } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase, Technology } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 
