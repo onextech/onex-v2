@@ -178,111 +178,6 @@ export const MOCK_INDUSTRY_PAGE = {
 
 export const MOCK_GROUP_INDUSTRYS = [
   {
-    // Hero
-    title: 'Finance',
-    slug: 'finance',
-    fa_icon: 'fa-coins',
-    is_featured: true,
-    subtitle:
-      'Empowering finance firms with tailor-made enterprise software solutions to drive business success.',
-    hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
-    hero_alt: 'Financial Building',
-    // Seo
-    seo: {
-      title: 'Finance',
-      description:
-        'Providing expertly crafted enterprise software solutions to drive digital transformation in the financial sector.',
-    },
-    // Sections
-    sections: {
-      summary: {
-        title: 'Driving digital transformation in finance.',
-        items: [
-          {
-            title:
-              'In the rapidly evolving world of finance, enterprise software solutions are key to staying ahead. We specialize in developing bespoke software solutions that drive efficiency, security, and scalability in financial enterprises.',
-          },
-          {
-            title:
-              'Our deep industry knowledge and technological expertise make us uniquely positioned to help your organisation navigate its digital transformation journey. We build solutions that not only meet your current needs but also scale with your future growth.',
-          },
-        ],
-      },
-      features: {
-        overline: 'Our Solutions',
-        title: 'Empowering the {title} Sector',
-        subtitle:
-          'Leveraging the latest technologies, we provide comprehensive software development services for the finance industry.',
-        items: [
-          {
-            fa_icon: 'fa-code',
-            title: 'Custom software development',
-            subtitle:
-              'We develop tailor-made software solutions that align with your business objectives and cater to your unique operational needs.',
-          },
-          {
-            fa_icon: 'fa-chart-bar',
-            title: 'Data analytics solutions',
-            subtitle:
-              'We build robust data analytics solutions to help you derive actionable insights from your data and drive informed decision-making.',
-          },
-          {
-            fa_icon: 'fa-lock',
-            title: 'Security & Compliance',
-            subtitle:
-              'We prioritize security and regulatory compliance in every solution we build, to protect your data and maintain trust with your clients.',
-          },
-          {
-            fa_icon: 'fa-cloud',
-            title: 'Cloud solutions',
-            subtitle:
-              'We enable smooth migration to the cloud and develop cloud-native applications, to enhance scalability and operational efficiency.',
-          },
-          {
-            fa_icon: 'fa-robot',
-            title: 'AI & Machine Learning',
-            subtitle:
-              'We integrate AI and Machine Learning capabilities into your systems to automate processes, reduce errors and improve customer experiences.',
-          },
-          {
-            fa_icon: 'fa-sync-alt',
-            title: 'System Integration',
-            subtitle:
-              'We ensure your systems work together seamlessly, improving data flow, operational efficiency, and overall business performance.',
-          },
-        ],
-      },
-      faqs: {
-        title: 'FAQs',
-        subtitle:
-          'Learn more about our enterprise software development services for the financial industry.',
-        items: [
-          {
-            key: 'faqs-1',
-            title:
-              'Why is digital transformation important for finance companies?',
-            content:
-              'Digital transformation enables finance companies to streamline operations, improve customer experiences, and make data-driven decisions. It can also enhance security, compliance, and scalability, key aspects in the financial sector.',
-          },
-          {
-            key: 'faqs-2',
-            title:
-              'What type of software solutions do you provide for finance companies?',
-            content:
-              'We offer a wide range of software solutions, including custom software development, data analytics solutions, security and compliance, cloud solutions, AI and Machine Learning integration, and system integration.',
-          },
-          {
-            key: 'faqs-3',
-            title:
-              'How do you ensure the security and compliance of the software you develop?',
-            content:
-              'We follow stringent security protocols and best practices in software development. We also ensure our software solutions comply with all relevant regulations and standards in the financial industry.',
-          },
-        ],
-      },
-    },
-  },
-  {
     title: 'Government',
     subtitle:
       'We combine technology and a delivery-focused culture to enable leaders across public sector organisations to turn ambition into action.',
@@ -553,6 +448,1211 @@ export const MOCK_GROUP_INDUSTRYS = [
               'What software solutions do you offer for the real estate industry?',
             content:
               'We offer a range of software solutions tailored to the real estate industry, including real estate management systems, property analytics platforms, transaction management software, customer relationship management (CRM) tools, property listing portals, and investment analysis platforms.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Capital Markets',
+    subtitle:
+      'Accelerating financial innovation with tailored capital market solutions.',
+    slug: 'capital-markets',
+    fa_icon: 'fa-coins',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/NDfqqq_7QWM/1600x900',
+    hero_alt: 'Man monitoring graph',
+    sections: {
+      summary: {
+        title: 'Driving success in the Capital Markets industry.',
+        items: [
+          {
+            title:
+              'At our Capital Markets Solutions, we understand the unique challenges and opportunities that businesses in the Capital Markets industry face. Our technology consulting services and enterprise software development expertise are tailored to meet the specific needs of Capital Markets companies.',
+          },
+          {
+            title:
+              'We believe that technology plays a crucial role in unlocking growth and competitive advantage in the Capital Markets sector. With our deep understanding of the Capital Markets industry and our commitment to delivering innovative solutions, we can help your Capital Markets business thrive.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our expertise in enterprise software development, we offer a range of solutions tailored to address the specific needs and challenges of the Capital Markets industry.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Software Development',
+            subtitle:
+              'We develop custom software solutions that are designed to streamline your Capital Markets business processes and drive efficiency.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'Our data analytics services enable you to gain valuable insights from your Capital Markets business data, empowering you to make informed decisions.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'CRM Solutions',
+            subtitle:
+              'We provide CRM (Customer Relationship Management) solutions that help you effectively manage customer relationships and enhance customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Our expertise in security and compliance ensures that your Capital Markets business is protected against potential threats and meets industry regulations.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Integration and Scalability',
+            subtitle:
+              'We offer integration services to connect and streamline your Capital Markets business systems, as well as scalable solutions to support your growth.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Legacy Systems Modernization',
+            subtitle:
+              'We assist in modernizing and upgrading your legacy systems, enabling your Capital Markets business to leverage the latest technologies and stay competitive.',
+          },
+        ],
+      },
+    },
+    faqs: {
+      title: 'Frequently Asked Questions',
+      subtitle:
+        'Learn more about our Capital Markets Solutions and how they can benefit your business.',
+      items: [
+        {
+          key: 'faqs-1',
+          title: 'What are the key challenges in capital markets operations?',
+          content:
+            'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
+        },
+        {
+          key: 'faqs-2',
+          title: 'How can your software solutions improve trading processes?',
+          content:
+            'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
+        },
+        {
+          key: 'faqs-3',
+          title:
+            'Do you offer customization options for capital markets solutions?',
+          content:
+            'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
+        },
+      ],
+    },
+  },
+  {
+    title: 'Banking',
+    subtitle:
+      'Boosting banking with custom, secure, and efficient software solutions.',
+    slug: 'banking',
+    fa_icon: 'fa-money-bill-trend-up',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900',
+    hero_alt: 'G pay being used',
+    sections: {
+      summary: {
+        title: 'Driving innovation in the banking industry.',
+        items: [
+          {
+            title:
+              'At our Banking Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the banking industry.',
+          },
+          {
+            title:
+              'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower banks to thrive in a digital banking era.',
+        items: [
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Core Banking Systems',
+            subtitle:
+              'We develop robust and scalable core banking systems that streamline banking processes, including account management, transaction processing, and customer data management.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Applications',
+            subtitle:
+              'Our mobile banking applications enable customers to conveniently perform banking transactions, manage accounts, and access personalized financial services on their mobile devices.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Fraud Prevention',
+            subtitle:
+              'We implement advanced security measures and fraud prevention solutions to safeguard banking systems, customer data, and financial transactions from cyber threats.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'Our data analytics solutions leverage big data technologies to provide banks with valuable insights, enabling data-driven decision-making, risk management, and personalized customer experiences.',
+          },
+          {
+            fa_icon: 'fa-briefcase',
+            title: 'Corporate Banking Solutions',
+            subtitle:
+              'We develop comprehensive corporate banking solutions that facilitate corporate account management, treasury services, trade finance, and cash management for corporate clients.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration and Middleware',
+            subtitle:
+              'We provide integration and middleware solutions that enable seamless connectivity between banking systems, third-party applications, and external APIs, enhancing operational efficiency and enabling innovation.',
+          },
+        ],
+      },
+    },
+
+    faqs: {
+      title: 'Frequently Asked Questions',
+      subtitle:
+        'Learn more about our Banking Solutions and how they can benefit your institution.',
+      items: [
+        {
+          key: 'faqs-1',
+          title: 'What are the key challenges in the banking industry?',
+          content:
+            'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
+        },
+        {
+          key: 'faqs-2',
+          title: 'How can technology drive innovation in the banking sector?',
+          content:
+            'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
+        },
+        {
+          key: 'faqs-3',
+          title:
+            'What software solutions do you offer for the banking industry?',
+          content:
+            'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
+        },
+      ],
+    },
+  },
+  {
+    title: 'Aerospace and Defense',
+    subtitle:
+      'Propel your aerospace and defense operations to new heights with our industry-leading custom software solutions.',
+    slug: 'aerospace-and-defense',
+    fa_icon: 'fa-plane-departure',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
+    sections: {
+      summary: {
+        title:
+          'Boosting operational efficiency in the aerospace and defense sector.',
+        items: [
+          {
+            title:
+              'In the critical industries of aerospace and defense, optimized operations can be a game-changer. Our custom software solutions are designed to address the specific needs of these sectors, enhancing efficiency, reliability, and safety. We understand the complexities involved in aerospace and defense operations. Our expert team can help you navigate these challenges by developing robust, secure, and intuitive software systems that streamline processes, facilitate decision-making, and ensure regulatory compliance.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We deliver comprehensive solutions that adhere to rigorous standards and incorporate the latest technologies to drive success.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'Automate routine processes, enhance accuracy, and save valuable time with our advanced automation solutions.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Cybersecurity',
+            subtitle:
+              'We implement cutting-edge cybersecurity measures to protect your sensitive data and systems from potential threats.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Aerospace Software Solutions',
+            subtitle:
+              'From flight control to maintenance and logistics, we develop tailored software solutions that address the unique needs of the aerospace sector.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Defense Systems Integration',
+            subtitle:
+              'We ensure seamless integration of various defense systems, enhancing collaboration and data exchange across platforms.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud Integration',
+            subtitle:
+              'Leverage the power of cloud technology for enhanced data accessibility, scalability, and cost-effectiveness.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analytics',
+            subtitle:
+              'Make informed decisions with our powerful data analytics solutions, providing you with valuable insights and forecasts.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Aerospace and Defense Solutions and how we can elevate your operations.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are custom software solutions important for the aerospace and defense industry?',
+            content:
+              'Custom software solutions can significantly enhance the efficiency and effectiveness of aerospace and defense operations. They offer tailored functionality, seamless integration with existing systems, and the ability to adapt to changing requirements. These solutions can also improve decision-making, streamline processes, and enhance security.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your solutions benefit my aerospace or defense business?',
+            content:
+              'Our solutions can help you automate processes, improve data management, ensure system security, and make better decisions based on real-time data. By leveraging our software solutions, your business can increase operational efficiency, ensure regulatory compliance, and gain a competitive edge.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure security and compliance in your software solutions?',
+            content:
+              'We prioritize security and compliance in all our software development projects for the Aerospace and Defense industry. Our team follows industry best practices, implements robust security measures, and adheres to relevant regulations and standards. We conduct thorough testing and auditing to ensure the confidentiality, integrity, and availability of data.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Healthcare',
+    subtitle:
+      'Leverage technology to deliver superior patient care and optimize medical operations with our custom healthcare software solutions.',
+    slug: 'healthcare',
+    fa_icon: 'fa-kit-medical',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/6aomTW8ojbo/1600x900',
+    hero_alt: 'Surgery procedure',
+    sections: {
+      summary: {
+        title: 'Elevating healthcare services through technology.',
+        items: [
+          {
+            title:
+              "The healthcare industry is complex and always evolving. Our mission is to help healthcare organizations navigate these changes and transform their operations through custom software solutions. We leverage advanced technologies to build applications that improve patient care, optimize workflows, and ensure data security. Whether it's a patient management system, telemedicine platform, or data analysis tool, we deliver solutions that bring value to your organization.",
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We focus on delivering comprehensive software solutions that meet the unique needs of the healthcare industry.',
+        items: [
+          {
+            fa_icon: 'fa-notes-medical',
+            title: 'Patient Management Systems',
+            subtitle:
+              'We design intuitive systems to manage patient data efficiently and securely.',
+          },
+          {
+            fa_icon: 'fa-stethoscope',
+            title: 'Telemedicine Platforms',
+            subtitle:
+              'Our telemedicine solutions help you deliver remote healthcare services effectively.',
+          },
+          {
+            fa_icon: 'fa-file-medical',
+            title: 'Electronic Health Records',
+            subtitle:
+              'We create systems that streamline the process of managing electronic health records.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Healthcare Data Analysis',
+            subtitle:
+              'Leverage data to improve patient outcomes with our advanced analytics solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Data Security',
+            subtitle:
+              'Protect patient data with our robust security measures in compliance with healthcare regulations.',
+          },
+          {
+            fa_icon: 'fa-laptop-medical',
+            title: 'Healthcare IT Consulting',
+            subtitle:
+              'Our experienced consultants provide strategic advice to help you maximize the use of IT in healthcare.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Healthcare Solutions and how they can benefit your organization.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are custom software solutions important for the healthcare industry?',
+            content:
+              'Custom software solutions can significantly improve healthcare operations by offering tailored functionality, seamless integration with existing systems, and the ability to adapt to changing requirements. These solutions can streamline processes, improve patient care, facilitate compliance with healthcare regulations, and enhance data security.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How can your solutions benefit my healthcare organization?',
+            content:
+              'Our solutions can help you automate processes, improve patient management, enhance remote healthcare services, and make better decisions based on real-time data. By leveraging our software solutions, your healthcare organization can increase operational efficiency, improve patient outcomes, and ensure regulatory compliance.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What kind of support do you provide post-deployment?',
+            content:
+              'We offer comprehensive support post-deployment, including regular software updates, maintenance, and troubleshooting. We also provide training to your staff to ensure they can effectively use the software. Our team is always ready to assist with any concerns or issues you may have.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Life Sciences',
+    subtitle:
+      'Empowering life sciences organizations with custom software solutions that advance research, drive innovation, and enhance patient care.',
+    slug: 'life-sciences',
+    fa_icon: 'fa-flask-vial',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/oCLuFi9GYNA/1600x900',
+    hero_alt: 'Woman in laboratory',
+    sections: {
+      summary: {
+        title: 'Accelerating innovation in life sciences through technology.',
+        items: [
+          {
+            title:
+              'The life sciences sector is at the forefront of innovation and research, contributing significantly to our understanding of life and health. Our life sciences software solutions are designed to support this vital work by enhancing efficiency, data analysis, and collaboration. We understand the unique challenges faced by life sciences organizations and tailor our solutions to meet these needs. Whether it’s data management, research automation, or collaboration tools, we deliver software that empowers your organization to achieve its goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the Life Sciences Sector',
+        subtitle:
+          'To develop custom software solutions for the life sciences industry, we follow best practices that include in-depth requirements gathering, rigorous testing, and compliance with industry standards.',
+        items: [
+          {
+            fa_icon: 'fa-dna',
+            title: 'Laboratory Management Systems',
+            subtitle:
+              'We develop custom laboratory management systems that optimize research processes, track experiments, manage samples, and ensure compliance with regulatory standards.',
+          },
+          {
+            fa_icon: 'fa-microscope',
+            title: 'Scientific Data Analysis',
+            subtitle:
+              'We create software solutions for scientific data analysis, including data visualization, statistical analysis, and machine learning algorithms to derive meaningful insights from complex datasets.',
+          },
+          {
+            fa_icon: 'fa-medkit',
+            title: 'Clinical Trial Management',
+            subtitle:
+              'We build software solutions to streamline clinical trial management, from patient recruitment and enrollment to data collection, monitoring, and reporting.',
+          },
+          {
+            fa_icon: 'fa-flask',
+            title: 'Experiment Tracking and Documentation',
+            subtitle:
+              'We develop software solutions that enable researchers to track and document experiments, protocols, and results, ensuring data integrity and facilitating collaboration.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Collaboration Tools',
+            subtitle:
+              'Our tools enhance collaboration among teams, facilitating knowledge sharing and innovation.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance and Security',
+            subtitle:
+              'We ensure our software meets industry regulations and protects sensitive data.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Life Sciences Service and how we can help your organization in the life sciences industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are custom software solutions important for the life sciences industry?',
+            content:
+              'Custom software solutions play a crucial role in the life sciences industry by offering tailored functionality and the flexibility to adapt to changing needs. These solutions can enhance efficiency, facilitate collaboration, support compliance, and enable the analysis and visualization of complex data.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your solutions benefit my life sciences organization?',
+            content:
+              'Our solutions can help automate repetitive tasks, enhance data management, support the analysis and visualization of complex data, and facilitate collaboration. They can also assist with regulatory compliance and data security. All of these benefits contribute to increased efficiency, better decision-making, and ultimately, advancements in life sciences research and innovation.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and compliance of your software?',
+            content:
+              'We place a high priority on security and compliance. Our solutions are designed with industry-standard security measures and are built to meet regulatory requirements specific to the life sciences industry. We also provide ongoing support and updates to ensure that your software remains secure and compliant.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Software and Platforms',
+    subtitle:
+      'Creating innovative, robust, and scalable software solutions and platforms that power your business.',
+    slug: 'software-and-platforms',
+    fa_icon: 'fa-code-branch',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/uv5_bsypFUM/1600x900',
+    hero_alt: 'People coding',
+    sections: {
+      summary: {
+        title: 'Driving business growth with custom software and platforms.',
+        items: [
+          {
+            title:
+              'In the rapidly evolving software and platforms industry, having the right technology solutions can be a game-changer. Our software development services are designed to meet your unique needs, delivering custom software and platforms that enhance your operations, boost productivity, and help you stay ahead of the competition. Our team of experienced developers is skilled in the latest technologies and best practices to deliver high-quality, scalable, and secure software solutions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the Software and Platforms Sector',
+        subtitle:
+          'To develop custom software solutions for enterprise clients, we follow best practices that include thorough requirements gathering, agile development methodologies, and rigorous quality assurance processes.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Enterprise Application Development',
+            subtitle:
+              'We specialize in developing scalable and secure enterprise applications that optimize business processes, improve collaboration, and drive efficiency.',
+          },
+          {
+            fa_icon: 'fa-server',
+            title: 'Cloud Infrastructure and Deployment',
+            subtitle:
+              'We help businesses leverage the power of cloud computing by designing and implementing scalable, reliable, and cost-effective cloud infrastructure solutions.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Database Management Systems',
+            subtitle:
+              'We design and implement robust database management systems that enable businesses to efficiently store, manage, and analyze large volumes of data.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Cybersecurity Solutions',
+            subtitle:
+              'We prioritize data security and develop comprehensive cybersecurity solutions to protect sensitive business information from threats and breaches.',
+          },
+          {
+            fa_icon: 'fa-network-wired',
+            title: 'Integration and API Development',
+            subtitle:
+              'We specialize in integrating disparate systems and developing APIs to facilitate seamless data exchange and streamline business processes.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Business Intelligence and Analytics',
+            subtitle:
+              'We help businesses harness the power of data by developing business intelligence and analytics solutions that provide valuable insights and drive informed decision-making.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Software and Platforms Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are custom software solutions important for my business?',
+            content:
+              'Custom software solutions are tailored to meet the specific needs of your business. They can help enhance your operations, increase productivity, and provide a competitive edge by offering features and capabilities that off-the-shelf software solutions may not provide.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of software and platforms can you develop?',
+            content:
+              'We can develop a wide range of software and platforms, including but not limited to business management systems, data analytics platforms, customer relationship management (CRM) systems, and mobile applications. We work with a variety of technologies to deliver solutions that meet your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your development process?',
+            content:
+              'We follow an agile development process, which allows for flexibility and iterative improvements. This process includes stages like requirements gathering, design, development, testing, and deployment. We also provide ongoing support and maintenance after the software is deployed.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Automotive',
+    subtitle:
+      'Drive innovation and performance in your automotive business with our custom software solutions.',
+    slug: 'automotive',
+    fa_icon: 'fa-car',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/GJuXN4uyB2U/1600x900',
+    hero_alt: 'Mclaren and Mercedes Benz cars in Monaco',
+    sections: {
+      summary: {
+        title: 'Revving up technology for the automotive industry.',
+        items: [
+          {
+            title:
+              'In the fast-paced automotive industry, the right software solutions can give your business the edge it needs. Our custom software development service specializes in creating innovative solutions tailored to the unique needs of automotive companies. We understand that automotive businesses require complex, integrated systems to manage all aspects of their operations. We can help you streamline processes, improve efficiency, and deliver a better experience to your customers. Whether you need a solution for inventory management, supply chain logistics, or customer relationship management, our team of experts is ready to assist.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'To provide top-notch software solutions, we follow the best practices that include meticulous planning, thorough testing, and continuous improvement.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom Software Development',
+            subtitle:
+              'We create bespoke software solutions that align with your business goals and cater to your specific needs.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Database Management',
+            subtitle:
+              'We develop robust database systems to help you manage and analyze large volumes of data efficiently.',
+          },
+          {
+            fa_icon: 'fa-warehouse',
+            title: 'Supply Chain Optimization',
+            subtitle:
+              'We create solutions to optimize your supply chain, ensuring smooth operations and timely delivery.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Cybersecurity',
+            subtitle:
+              'We ensure the security of your data and systems by implementing state-of-the-art cybersecurity measures.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud Integration',
+            subtitle:
+              'We facilitate seamless cloud integration to enhance collaboration and data accessibility.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'We automate routine tasks to reduce errors and increase operational efficiency.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automotive Industry Solutions and how we can drive your business forward.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why do I need custom software solutions for my automotive business?',
+            content:
+              'Custom software solutions can greatly enhance the efficiency and productivity of your automotive business. These solutions are designed to cater to your specific needs and can be seamlessly integrated with your existing systems. They can also provide valuable insights that can help you make informed business decisions.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your software solutions benefit my automotive business?',
+            content:
+              'Our software solutions can streamline your operations, improve your supply chain management, enhance your customer service, and ensure the security of your data. We develop solutions that are tailored to your business needs, helping you gain a competitive edge in the industry.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What kind of support do you offer post-deployment?',
+            content:
+              'We provide comprehensive support post-deployment, including regular maintenance, updates, and troubleshooting. We also offer training to your staff to ensure they can effectively use the software. Our team is always ready to assist with any issues or concerns you may have.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Communications and Media',
+    subtitle:
+      'Developing custom software solutions that fuel the growth of the communications and media industry.',
+    slug: 'communications-and-media',
+    fa_icon: 'fa-comment',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/_xJqCQgkpLc/1600x900',
+    hero_alt: 'Production director with headset',
+    sections: {
+      summary: {
+        title:
+          'Powering the communications and media industry with custom software.',
+        items: [
+          {
+            title:
+              'The communications and media industry is one that evolves rapidly. To keep up, you need innovative, robust, and scalable software solutions that can accommodate your growing needs. Our custom software development services are designed to help you stay ahead of the curve, transforming your operations and fueling your growth. We design and develop bespoke software solutions that streamline your operations, enhance your service delivery, and ultimately, drive your business forward.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'Our custom software solutions are designed to meet the unique needs of the communications and media industry.',
+        items: [
+          {
+            fa_icon: 'fa-broadcast-tower',
+            title: 'Media Distribution Systems',
+            subtitle:
+              'We design and develop software solutions for efficient media distribution, helping you reach your audience seamlessly.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud-Based Platforms',
+            subtitle:
+              'We build robust and scalable cloud-based platforms for media storage and streaming.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Automated Workflow Systems',
+            subtitle:
+              'We create systems that automate your workflows, boosting efficiency and productivity.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Applications',
+            subtitle:
+              'We develop media-centric mobile applications that deliver superior user experiences.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Our software solutions prioritize security and compliance, protecting your data and your brand.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Consulting Services',
+            subtitle:
+              'Our consulting services can help you identify opportunities to use software to improve your business.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Communications and Media Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why are custom software solutions important for my business in the communications and media industry?',
+            content:
+              'Custom software solutions can help you address the unique challenges of the communications and media industry. They can improve your workflows, streamline your operations, enhance service delivery, and help you keep up with the rapid pace of the industry.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of software solutions can you develop for the communications and media industry?',
+            content:
+              'We can develop a wide range of software solutions, including media distribution systems, cloud-based platforms for media storage and streaming, automated workflow systems, media-centric mobile applications, and more.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your development process?',
+            content:
+              'Our development process begins with understanding your needs and the challenges you face. We then design and develop a solution that addresses these needs. We follow an agile development process, which allows for flexibility and iterative improvements. The process includes stages like requirements gathering, design, development, testing, and deployment, with ongoing support and maintenance after the software is deployed.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Industrial',
+    subtitle: 'Building custom software solutions for the industrial sector.',
+    slug: 'industrial',
+    fa_icon: 'fa-industry-windows',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/SLIFI67jv5k/1600x900',
+    hero_alt: 'Industrial site',
+    sections: {
+      summary: {
+        title: 'Streamlining industrial operations with technology.',
+        items: [
+          {
+            title:
+              'In the industrial sector, efficiency, safety, and reliability are paramount. We specialize in developing custom software solutions that address these aspects, helping industrial enterprises optimize their operations, enhance productivity, and reduce costs. Our experienced team is adept at developing advanced systems for equipment monitoring, process automation, asset management, and predictive maintenance, among other areas.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'Our custom software solutions are designed to address the unique needs and challenges of the Industrial sector.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'We develop software solutions that automate repetitive tasks, enhancing operational efficiency and reducing human error.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Predictive Maintenance',
+            subtitle:
+              'Our predictive maintenance solutions help you anticipate equipment failures and schedule maintenance proactively, minimizing downtime and costs.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Performance Monitoring',
+            subtitle:
+              'We create systems that monitor the performance of your industrial equipment in real time, helping you identify and address inefficiencies quickly.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Asset Management',
+            subtitle:
+              'Our asset management software helps you track and manage your industrial assets effectively, leading to improved utilization and reduced costs.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Safety Compliance',
+            subtitle:
+              'We develop software that helps ensure compliance with safety regulations and standards, fostering a safe work environment.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analytics',
+            subtitle:
+              'Our data analytics solutions help you gain actionable insights from your industrial data, enabling informed decision-making and strategic planning.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Industrial Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can your software solutions benefit my Industrial business?',
+            content:
+              'Our custom software solutions can help improve operational efficiency, enhance productivity, reduce costs, ensure safety compliance, and foster informed decision-making. This is achieved through various ways such as automating repetitive tasks, anticipating equipment failures, monitoring performance in real time, managing industrial assets effectively, ensuring safety compliance, and analyzing industrial data.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of software solutions can you develop for the Industrial sector?',
+            content:
+              'We can develop a variety of software solutions for the Industrial sector, including process automation systems, predictive maintenance software, performance monitoring systems, asset management software, safety compliance systems, and data analytics solutions. We work closely with you to understand your unique needs and develop solutions that are tailored to your business.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What is your development process?',
+            content:
+              'Our development process starts with understanding your business needs and challenges. We then design and develop a solution that addresses these needs. Our agile development process allows for flexibility and iterative improvements. The process includes stages like requirements gathering, design, development, testing, and deployment, with ongoing support and maintenance after the software is deployed.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Energy',
+    subtitle: 'Transforming the energy sector with cutting-edge technologies.',
+    slug: 'energy',
+    fa_icon: 'fa-circle-bolt',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/pONBhDyOFoM/1600x900',
+    hero_alt: 'Offshore wind farm',
+    sections: {
+      summary: {
+        title: 'Custom software solutions for the energy sector.',
+        items: [
+          {
+            title:
+              'In the energy sector, technology can greatly enhance efficiency, reliability, and sustainability. We specialize in developing custom software solutions that address these aspects, helping energy enterprises to optimize their operations, enhance productivity, and reduce costs. Our proficient team is skilled in developing advanced systems for energy management, predictive maintenance, asset tracking, data analysis, and automation, among other areas. Leveraging technology, we empower energy businesses to achieve their operational and strategic goals.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'Our custom software solutions are designed to address the unique needs and challenges of the Energy sector.',
+        items: [
+          {
+            fa_icon: 'fa-solar-panel',
+            title: 'Energy Management',
+            subtitle:
+              'We develop software solutions that facilitate efficient management and utilization of energy resources, contributing to sustainability.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Predictive Maintenance',
+            subtitle:
+              'Our predictive maintenance solutions help anticipate equipment failures and schedule maintenance proactively, minimizing downtime and costs.',
+          },
+          {
+            fa_icon: 'fa-tasks',
+            title: 'Asset Tracking',
+            subtitle:
+              'Our asset tracking software helps you track and manage your energy assets effectively, leading to improved utilization and reduced costs.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data Analysis',
+            subtitle:
+              'Our data analysis solutions provide actionable insights from your energy data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'We develop software solutions that automate repetitive tasks, enhancing operational efficiency and reducing human error.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security',
+            subtitle:
+              'We develop robust security measures within our solutions to protect sensitive energy data and systems from potential threats.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Energy Solutions and how they can benefit your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can your software solutions benefit my Energy business?',
+            content:
+              'Our custom software solutions can improve operational efficiency, enhance productivity, reduce costs, and facilitate informed decision-making. This is achieved through efficient energy management, anticipating equipment failures, tracking and managing energy assets effectively, analyzing energy data, automating repetitive tasks, and implementing strong security measures.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of software solutions can you develop for the Energy sector?',
+            content:
+              'We can develop a wide range of software solutions for the Energy sector, including energy management systems, predictive maintenance software, asset tracking systems, data analysis tools, process automation software, and security measures. Our solutions are custom designed to meet your unique needs and challenges.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'Can your solutions be integrated with our existing systems?',
+            content:
+              'Yes, we understand the importance of seamless integration with your existing systems. We take an API-first approach to ensure that our software can be easily integrated into your existing tech infrastructure without causing disruptions to your ongoing operations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Insurance',
+    subtitle:
+      'Tailored software solutions for the insurance industry, driving efficiency and innovation.',
+    slug: 'insurance',
+    fa_icon: 'fa-hospitals',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/OQMZwNd3ThU/1600x900',
+    hero_alt: 'Person writing on paper',
+    sections: {
+      summary: {
+        title: 'Custom software solutions for the insurance industry.',
+        items: [
+          {
+            title:
+              'In the ever-evolving insurance industry, leveraging technology is crucial. Our custom software solutions aim to transform your business, optimizing operations and enhancing customer service. From underwriting to claims management, our team of skilled developers designs software that seamlessly integrates with your existing systems, supports your team, and serves your customers.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We build software that addresses the unique challenges and opportunities within the Insurance industry.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Automation',
+            subtitle:
+              'We leverage automation to streamline complex processes, boosting efficiency and accuracy.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security',
+            subtitle:
+              'We prioritize data security, adhering to industry standards for data protection.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud Integration',
+            subtitle:
+              'We harness the power of cloud technology for secure, scalable, and flexible solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Analytics',
+            subtitle:
+              'We incorporate analytics to provide valuable insights, driving data-driven decisions.',
+          },
+          {
+            fa_icon: 'fa-user-tie',
+            title: 'Customer-centric Approach',
+            subtitle:
+              'Our solutions are designed with the end-user in mind, enhancing customer experience.',
+          },
+          {
+            fa_icon: 'fa-code-branch',
+            title: 'Integration',
+            subtitle:
+              'We ensure our solutions integrate seamlessly with your existing systems and software.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Discover more about our custom software solutions for the Insurance industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why do insurance companies need custom software solutions?',
+            content:
+              'Insurance companies deal with complex processes, large volumes of data, and regulatory compliance. Custom software solutions can help automate and streamline these processes, improve data management and analysis, and ensure compliance, thereby improving efficiency and decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of software solutions do you provide for the insurance industry?',
+            content:
+              'We provide a range of solutions tailored to the specific needs of the insurance industry. This includes, but is not limited to, policy management systems, claims processing and management software, underwriting and risk management tools, and customer service portals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Do your solutions support cloud integration?',
+            content:
+              'Yes, we leverage cloud technology to deliver secure, scalable, and flexible software solutions. Our solutions can be deployed on the cloud, facilitating easy access from anywhere and easy integration with other cloud-based systems.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Retail',
+    subtitle:
+      'Creating bespoke software solutions for the retail industry, driving business growth and customer engagement.',
+    slug: 'retail',
+    fa_icon: 'fa-store',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/LJyAzs5HJvI/1600x900',
+    hero_alt: 'Marina Bay Sands shops',
+    sections: {
+      summary: {
+        title:
+          'Helping retail businesses enhance efficiency, engagement and drive innovation.',
+        items: [
+          {
+            title:
+              'In the highly competitive retail industry, implementing custom software solutions is key. Our offerings aim to transform your retail operations, improving efficiencies and enhancing customer engagement. From inventory management to e-commerce solutions, our team of skilled developers designs software that seamlessly integrates with your existing systems, supports your team, and serves your customers.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We build software that addresses the unique challenges and opportunities within the Retail industry.',
+        items: [
+          {
+            fa_icon: 'fa-shopping-cart',
+            title: 'E-commerce Solutions',
+            subtitle:
+              'We provide robust e-commerce solutions to enhance your online sales and customer engagement.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We utilize data analysis to provide valuable insights, driving strategic business decisions.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud Integration',
+            subtitle:
+              'We leverage the power of cloud technology for secure, scalable, and flexible solutions.',
+          },
+          {
+            fa_icon: 'fa-warehouse',
+            title: 'Inventory Management',
+            subtitle:
+              'Our solutions streamline your inventory management, improving efficiency and reducing errors.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Process Automation',
+            subtitle:
+              'We incorporate automation to streamline complex retail processes, enhancing accuracy and efficiency.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Solutions',
+            subtitle:
+              'We design mobile solutions to enhance your customer engagement and enable shopping on-the-go.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Discover more about our custom software solutions for the Retail industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why do retail businesses need custom software solutions?',
+            content:
+              'Retail businesses handle complex processes, vast amounts of data, and face intense competition. Custom software solutions can help automate processes, manage inventory effectively, offer insights through data analysis, and enhance customer engagement, thereby improving efficiency and increasing profitability.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What type of software solutions do you provide for the retail industry?',
+            content:
+              'We provide a range of solutions tailored to the specific needs of the retail industry. This includes, but is not limited to, e-commerce solutions, inventory management systems, data analysis tools, and customer engagement platforms.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure your software meets our retail business needs?',
+            content:
+              'We follow a consultative approach, understanding your specific business needs and challenges, and then designing software solutions to address them. Our solutions are scalable and adaptable to align with your evolving business needs.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Utilities',
+    subtitle:
+      'Unlock the power of custom software solutions tailored for the utilities industry.',
+    slug: 'utilities',
+    fa_icon: 'fa-lamp-street',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/0LqtbRIFlVQ/1600x900',
+    hero_alt: 'Power lines',
+    sections: {
+      summary: {
+        title:
+          'Bringing state-of-the-art technologies to the utilities industry.',
+        items: [
+          {
+            title:
+              'The utilities industry faces unique challenges in delivering products and services to customers. Our custom software solutions are designed to address these challenges, enabling streamlined operations and superior customer experiences. From grid management to customer billing, our software development expertise empowers utilities to optimize processes, enhance decision-making, and leverage data-driven insights.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'We deliver innovative software solutions tailored to meet the specific needs of the Utilities sector.',
+        items: [
+          {
+            fa_icon: 'fa-bolt',
+            title: 'Smart Grid Management',
+            subtitle:
+              'Our solutions leverage advanced technologies to optimize grid management, enhance reliability, and enable efficient energy distribution.',
+          },
+          {
+            fa_icon: 'fa-money-bill-alt',
+            title: 'Billing and Customer Management',
+            subtitle:
+              'We develop comprehensive billing and customer management systems to streamline operations and improve customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-bar-chart',
+            title: 'Data Analytics and Visualization',
+            subtitle:
+              'We harness the power of data analytics and visualization to provide utilities with actionable insights for better decision-making and resource optimization.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Asset Management',
+            subtitle:
+              'Our solutions help utilities effectively manage their assets, including infrastructure, equipment, and maintenance, to enhance efficiency and reduce downtime.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud-Based Solutions',
+            subtitle:
+              'We design and implement secure, scalable cloud-based solutions that enable utilities to optimize their operations, improve collaboration, and reduce costs.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Field Service Management',
+            subtitle:
+              'Our software streamlines field service management processes, improving scheduling, workforce coordination, and service efficiency.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Explore common questions about our custom software solutions for the Utilities industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can custom software solutions benefit utilities?',
+            content:
+              'Custom software solutions tailored for utilities help automate manual processes, optimize grid management, improve customer service, enhance decision-making with data insights, and increase overall operational efficiency.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'Are your software solutions scalable to accommodate future growth?',
+            content:
+              'Yes, our software solutions are designed to be scalable, allowing utilities to accommodate future growth and evolving industry needs. We ensure that the solutions can handle increasing data volumes, user demands, and emerging technologies.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do your software solutions integrate with existing utility systems?',
+            content:
+              'Our custom software solutions are designed to seamlessly integrate with existing utility systems. We analyze your current systems, identify integration points, and develop solutions that ensure smooth data flow and interoperability.',
           },
         ],
       },
