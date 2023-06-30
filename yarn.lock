@@ -1612,10 +1612,10 @@
     "@gravis-os/types" "*"
     lodash "^4.17.21"
 
-"@gravis-os/eslint-config@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.17.tgz#670b69576d92118202d9d937a275665668f374ec"
-  integrity sha512-JEaNSXdMjQ3S4Mf/0XzXArGIBbh5t1f04PkPDD4684bOlqCYa4vPYiZJynLaMUrP9j2gyi2hJogsYHum2anqRA==
+"@gravis-os/eslint-config@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.18.tgz#3c31f4f78c6e3f6f556ee17228feaa1a0324423a"
+  integrity sha512-KA3lkp5j3xEPX1L6z0qAG+iYpUE49749tptOFUqFdg1/hEi8BUJp9C3z75yYockjqcZKZxc7nyUxrfVb7qlZXg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.23.0"
     "@typescript-eslint/parser" "^5.23.0"
@@ -1667,9 +1667,9 @@
     typescript "^4.6.3"
 
 "@gravis-os/landing@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.1.tgz#9379ca09021b8664851669b6f7115689149de0bd"
-  integrity sha512-LQ/8XOvFUfWoWeDNAFxd4phg6a5cSKdZpYLV5YqLy8X26U6J5E6Mmy/Y/CQkYlgAEnMesIf/yJzY/tD+AdXBLw==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.2.tgz#0430cbc12e9757e6adc6f62779e5cb0484d12756"
+  integrity sha512-Pc01OG8bvQyUywbZz44KTu20cHjdwAAXxOWzNpwoMZol50UbOHLft2Fh+qRTg80LnK2lPOOwX+Gi6xH4SEgiyA==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
