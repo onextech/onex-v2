@@ -113,7 +113,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           title: <>Crafting Engaging User Experiences</>,
           subtitle:
             'Transforming digital products through intuitive design and user-centric experiences: Our expertise in UI/UX services and enterprise product designs empowers businesses with captivating interfaces, made with a human-centered mindset.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Client Testimonials

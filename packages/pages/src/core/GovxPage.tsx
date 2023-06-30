@@ -117,7 +117,7 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
           title: <>Empowering the Public Sector through AI-driven Solutions</>,
           subtitle:
             'Empower the public sector with AI-driven solutions from Gov X. Optimize operations, make data-driven decisions, and deliver enhanced public services. Revolutionize governance with our innovative technologies.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Posts

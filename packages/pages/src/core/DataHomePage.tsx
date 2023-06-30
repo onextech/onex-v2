@@ -70,7 +70,7 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
           title: <>Intelligent Data Solutions for Modern Enterprises</>,
           subtitle:
             'Revolutionizing enterprises through strategic data insights and AI-driven solutions: Our proficiency in data science and enterprise AI transformations equips businesses with predictive, optimized, and intelligent systems, developed with a data-first approach.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Technologys

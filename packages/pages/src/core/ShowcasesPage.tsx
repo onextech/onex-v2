@@ -16,7 +16,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [
-            { type: 'overline', title: 'Showcases' },
+            { type: 'overline', title: 'Portfolio' },
             {
               type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',

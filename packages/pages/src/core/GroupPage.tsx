@@ -25,7 +25,7 @@ export interface GroupPageProps {
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
-  const { clientLogos } = useLayout()
+  const { clientLogos, site } = useLayout()
   const { sections } = page || {}
   const { benefits, faqs, cta } = sections || {}
 
@@ -113,7 +113,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           ),
           subtitle:
             'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Industry
@@ -127,11 +127,13 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Posts
         renderFeaturedPostsBlock({ items: featuredPosts }),
         // Faqs
-        renderFaqsAccordionBlock({
-          py: { xs: 5, md: 10 },
-          ...faqs,
-          sx: { backgroundColor: 'background.paper' },
-        }),
+        site.disable_faqs_on_home_page
+          ? {}
+          : renderFaqsAccordionBlock({
+              py: { xs: 5, md: 10 },
+              ...faqs,
+              sx: { backgroundColor: 'background.paper' },
+            }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
           hero_src: cta.hero_src,

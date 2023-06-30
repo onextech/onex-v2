@@ -13,7 +13,8 @@ import {
   renderClientTestimonialSliderBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Technology, Industry, Showcase } from '@gravis-os/types'
+import { GetStartedPage } from '@onex/pages'
+import { Showcase, Page, Post, Technology, Industry } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {
@@ -53,6 +54,12 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             overline: 'Get Started',
             title: cta_button_title,
             isCta: true,
+            children: (
+              <GetStartedPage
+                fullScreen
+                disableTestimonials={site.disable_testimonials}
+              />
+            ),
           },
         }),
         // ClientLogosImageMarquee
@@ -74,7 +81,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           ),
           subtitle:
             'Empowering enterprises with high-quality dashboard user interfaces: Our portfolio features a range of dashboard projects that demonstrate our commitment to empowering enterprises with high-quality user interfaces.',
-          items: showcases,
+          items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
         }),
         // Technologys
