@@ -12,6 +12,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   // apps and packages to be sync-ed up in local/yalc mode.
   return (
     <LandingLayoutTemplate
+      disableDarkModeIcon
       useLayout={useLayout}
       useUserPreferences={useUserPreferences}
       {...props}

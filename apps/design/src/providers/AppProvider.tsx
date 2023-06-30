@@ -3,11 +3,7 @@ import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { EmotionCache } from '@emotion/react'
 import { GravisProvider } from '@gravis-os/config'
-import {
-  ThemeProvider,
-  UserPreferencesProvider,
-  createEmotionCache,
-} from '@gravis-os/landing'
+import { ThemeProvider, createEmotionCache } from '@gravis-os/landing'
 import { darkTheme, lightTheme } from '@app/theme'
 import { Toaster } from 'react-hot-toast'
 
@@ -43,15 +39,13 @@ const AppProvider = (props: AppProviderProps) => {
       {/* Toast */}
       <Toaster position="top-right" reverseOrder={false} />
 
-      <UserPreferencesProvider>
-        <ThemeProvider
-          lightTheme={lightTheme}
-          darkTheme={darkTheme}
-          emotionCache={emotionCache}
-        >
-          {children}
-        </ThemeProvider>
-      </UserPreferencesProvider>
+      <ThemeProvider
+        lightTheme={lightTheme}
+        darkTheme={darkTheme}
+        emotionCache={emotionCache}
+      >
+        {children}
+      </ThemeProvider>
     </GravisProvider>
   )
 }

@@ -31,6 +31,7 @@ export interface LandingLayoutProps
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
   useLayout?: typeof useLayout
   useUserPreferences?: typeof useUserPreferences
+  disableDarkModeIcon?: boolean
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
@@ -39,6 +40,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     useLayout: injectedUseLayout,
     seo,
     calloutProps,
+    disableDarkModeIcon,
     ...rest
   } = props
 
@@ -638,7 +640,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
               />
             ),
           },
-          {
+          !disableDarkModeIcon && {
             key: 'toggle-dark-mode',
             children: toggleDarkModeIconButtonJsx,
           },
