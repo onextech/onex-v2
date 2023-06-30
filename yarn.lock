@@ -1596,6 +1596,188 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.35.0.tgz#b7569632b0b788a0ca0e438235154e45d42813a7"
   integrity sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==
 
+"@gravis-os/analytics@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.1.0.tgz#701e7d95ca6414399b15e506fd6cf9ec3d6b0a45"
+  integrity sha512-kpPa3kJqbZe5HlrgVzAeJxAnOTde5d0tiurfGbNj3OQVXtLT7pVwgVn1+go29NdN1UHnshmDwFg+FhMAijddUg==
+  dependencies:
+    "@gravis-os/types" "*"
+    lodash "^4.17.21"
+
+"@gravis-os/config@*", "@gravis-os/config@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@gravis-os/config/-/config-0.0.6.tgz#10fa63bca1b6df993a5193edaf0a24e8ff0aa95f"
+  integrity sha512-b/tOImOfkpq+aWkcT0G8aeDyE6WzyYQXpOLg52oHgNgL0uc7ICzRC0QKo6VYd9xGJUqeUub3pJuVUaTiYZGVwQ==
+  dependencies:
+    "@gravis-os/types" "*"
+    lodash "^4.17.21"
+
+"@gravis-os/eslint-config@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.18.tgz#3c31f4f78c6e3f6f556ee17228feaa1a0324423a"
+  integrity sha512-KA3lkp5j3xEPX1L6z0qAG+iYpUE49749tptOFUqFdg1/hEi8BUJp9C3z75yYockjqcZKZxc7nyUxrfVb7qlZXg==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^5.23.0"
+    "@typescript-eslint/parser" "^5.23.0"
+    eslint "^8.15.0"
+    eslint-config-airbnb "^18.2.0"
+    eslint-config-next "^12.0.8"
+    eslint-config-prettier "^8.3.0"
+    eslint-import-resolver-typescript "^2.2.0"
+    eslint-plugin-import "^2.22.0"
+    eslint-plugin-jest "^27.0.4"
+    eslint-plugin-jsx-a11y "^6.3.1"
+    eslint-plugin-prettier "^3.1.4"
+    eslint-plugin-react "7.28.0"
+    eslint-plugin-react-hooks "^4.0.8"
+    eslint-plugin-testing-library "^5.6.4"
+    eslint-plugin-unused-imports "^2.0.0"
+    prettier "^2.0.5"
+
+"@gravis-os/fields@*":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.4.tgz#b6fd0fe341b538be7eafae0eab78666385d3fa94"
+  integrity sha512-nqZtfGcBqblmzPYco7kW7Y75f9JUr8gmoDgA5gpyknuGgyMKzGYM/PAa6zyAQ9tLSEj2j3MUV2u+5mZM9Tv4/g==
+  dependencies:
+    "@gravis-os/types" "*"
+    country-calling-code "^0.0.3"
+    lodash "^4.17.21"
+    qs "^6.11.0"
+    react-number-format "^4.9.3"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+    zustand "^4.3.6"
+
+"@gravis-os/form@*", "@gravis-os/form@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.2.tgz#1292f55af641c6af8d6b5d809a099fb8aac911cc"
+  integrity sha512-DMVRL9KyiYJ8m2q+NOyE6MATEP7Wh822L/qShtQSJxIMqivudI6mnONd54TYBgTpLrB+WpaFsOMbi4qfjkEddQ==
+  dependencies:
+    "@gravis-os/fields" "*"
+    "@gravis-os/storage" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/ui" "*"
+    "@mui/x-date-pickers" "^6.9.0"
+    downloadjs "^1.4.7"
+    lodash "^4.17.21"
+    quill ">=1.3.7"
+    react-hook-form "^7.30.0"
+    react-quilljs ">=1.2.17"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/landing@^0.3.2":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.3.tgz#2676d9452fa06440703d77a7151ad75392ef266f"
+  integrity sha512-nO4I1mDL+m8shexZMw5hqd8gA5DXMoImNuvqe2dYgfypZz6RU6TZev8QG1eD4OjmsoPdOhk7Gf8kzJ33tMoz0A==
+  dependencies:
+    "@gravis-os/form" "*"
+    "@gravis-os/storage" "*"
+    "@gravis-os/theme" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/ui" "*"
+    clsx "^1.1.1"
+    lodash "^4.17.21"
+    material-ui-popup-state "^3.1.1"
+    next-seo "^5.15.0"
+    nextjs-progressbar "^0.0.16"
+
+"@gravis-os/query@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.33.tgz#b29a87a458d744aa61fd99b86228fe9358324298"
+  integrity sha512-l+GiyDisXudX94VNHqEZ/h9pWiEm8ZDqL8yAPccCEkzOP9xGSZgNFj1W7wrfRtpnlmcPJToEw2yh0JWDLh/19Q==
+  dependencies:
+    "@gravis-os/types" "*"
+    lodash "^4.17.21"
+    qs "^6.11.0"
+    react-intersection-observer "^9.4.3"
+    react-use-measure "^2.1.1"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/rtl@*":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.3.tgz#d2f8e83c6f6dd6c592f0c41cefb13b47d347aff7"
+  integrity sha512-kW1ph+fyAhRCt6EOMXPpv63lVm1d+KtOJz/hgPoG6nBLcO4zs9N+f/hf+W6PxrjplGIRHgB5sOx9m7teXATyTg==
+
+"@gravis-os/storage@*":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@gravis-os/storage/-/storage-0.1.4.tgz#d22eb79cca498762447349bca9650d55fd06d053"
+  integrity sha512-3DD/06dTLJIJAjBO/tKkmDjyA13FrvlHFy91+W7MUR5uS3Hzh9X2Oucn5kSsS+YsoJHCaNPfMn8IUxfPq4Q0sg==
+  dependencies:
+    "@gravis-os/types" "*"
+    "@gravis-os/ui" "*"
+    downloadjs "^1.4.7"
+    lodash "^4.17.21"
+    react-dropzone "^14.2.1"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/theme@*", "@gravis-os/theme@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@gravis-os/theme/-/theme-0.0.11.tgz#923b048cef0ff5acc44391f8ce22b119bd8966b0"
+  integrity sha512-tH9lVBwfM5thU4arbhJ0hcYVnlwAGzRWp5CvV577exzSDoTxWRTxqFs3VcNG5mpmoUYOjwM98cH2kZ7X9e306w==
+  dependencies:
+    "@gravis-os/types" "*"
+    lodash "^4.17.21"
+    qs "^6.11.0"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/tsconfig@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.8.tgz#428cd225c6bccc90ada99f0c0dd87122136f78fe"
+  integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
+
+"@gravis-os/types@*", "@gravis-os/types@^0.2.2":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.3.tgz#6a1edb61dac203d8089c95c2945c8dc274d5bdb6"
+  integrity sha512-x6hupQfxQ8VSNfVU9UA+iRMIRPzG+Xf1ccJVKe7hSZHN2X8t1guCMROT6Ni8ovIMai91S4b91++eIYkzrJIYgQ==
+  dependencies:
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/ui@*", "@gravis-os/ui@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.1.6.tgz#10cc5a32dcc37a2453e873a7952ca04c2581b1c6"
+  integrity sha512-3Dg21FmCDrVY8A0RbAZPQAEhLjNKAj8OVKrNOM/YwYhas4VU8z1b6RoT1Dg86U4uFZzBuZ4RSqKapSvAo6Dhhg==
+  dependencies:
+    "@dnd-kit/core" "^6.0.1"
+    "@dnd-kit/sortable" "^7.0.0"
+    "@dnd-kit/utilities" "^3.2.0"
+    "@gravis-os/config" "*"
+    "@gravis-os/rtl" "*"
+    "@gravis-os/theme" "*"
+    "@gravis-os/types" "*"
+    "@gravis-os/utils" "*"
+    "@react-hook/window-scroll" "^1.3.0"
+    clsx "^1.1.1"
+    keen-slider "^6.8.5"
+    lodash "^4.17.21"
+    material-ui-popup-state "^3.1.1"
+    react-awesome-reveal "4.0.1"
+    react-error-boundary "^3.1.4"
+    react-fast-marquee "^1.3.5"
+    react-hot-toast ">=2.2.0"
+    react-inlinesvg "^3.0.1"
+    react-medium-image-zoom "4"
+    react-share "^4.4.1"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
+"@gravis-os/utils@*", "@gravis-os/utils@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.3.tgz#c75999a9327e220e6153adbd5e6c23b696822237"
+  integrity sha512-f0yWc/MkGe2pBM44vj1K4Py3M6bucx0L26O5MYrsUTUGC24qQYyZW3gxzm/HGpVj21vcA365XCNnbjNhN517Cg==
+  dependencies:
+    "@gravis-os/types" "*"
+    dayjs "^1.11.3"
+    lodash "^4.17.21"
+    micromatch "^4.0.5"
+    sanitize-html "^2.7.2"
+    tslib "^2.4.0"
+    typescript "^4.6.3"
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -7605,7 +7787,7 @@ react-from-dom@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-from-dom/-/react-from-dom-0.6.2.tgz#9da903a508c91c013b55afcd59348b8b0a39bdb4"
   integrity sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ==
 
-react-hook-form@^7.30.0, react-hook-form@^7.45.0:
+react-hook-form@^7.30.0:
   version "7.45.0"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
   integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
