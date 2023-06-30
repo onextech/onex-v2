@@ -1,9 +1,9 @@
 import { MOCK_SHOWCASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import getDynamicPage from '../utils/getDynamicPage'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
+import { getDynamicPage } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -20,7 +20,7 @@ export const fetchShowcaseBySlug = (injectedSlug) => {
 export const ShowcaseList = {
   getStaticProps: (): GetStaticProps => (context) => {
     const showcases = MOCK_SHOWCASES[MOCK_KEY]
-    return makeGetStaticProps({ props: { showcases } })(context)
+    return getStaticPropsWithLayout({ props: { showcases } })(context)
   },
 }
 
@@ -32,12 +32,12 @@ export const ShowcaseDetail = {
     const otherShowcases = MOCK_SHOWCASES[MOCK_KEY].filter(
       ({ slug }) => slug !== context.params?.slug
     ).slice(0, 1)
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: { showcase: showcasePage, otherShowcases },
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_SHOWCASES[MOCK_KEY].map(({ slug }) => ({
         params: { slug },
       })),

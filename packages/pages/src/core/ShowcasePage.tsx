@@ -4,8 +4,8 @@ import {
   renderShowcaseCardBlockItem,
   renderShowcaseStickyGridBlockItem,
   renderOtherShowcasesBlock,
-  Showcase,
 } from '@gravis-os/landing'
+import { Showcase } from '@gravis-os/types'
 
 export interface ShowcasePageProps {
   showcase: Showcase

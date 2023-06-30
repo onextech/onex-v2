@@ -12,9 +12,8 @@ import {
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
   useLayout,
-  Showcase,
 } from '@gravis-os/landing'
-import { Page, Post, Technology, Industry } from '@gravis-os/types'
+import { Page, Post, Technology, Industry, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {

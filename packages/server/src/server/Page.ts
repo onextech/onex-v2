@@ -1,10 +1,10 @@
 import { MOCK_PAGES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
-import getDynamicPage from '../utils/getDynamicPage'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
+import { getDynamicPage } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -21,7 +21,7 @@ export const fetchPageBySlug = (injectedSlug) => {
 export const PageList = {
   getStaticProps: (): GetStaticProps => (context) => {
     const pages = MOCK_PAGES[MOCK_KEY]
-    return makeGetStaticProps({ props: { pages } })(context)
+    return getStaticPropsWithLayout({ props: { pages } })(context)
   },
 }
 
@@ -39,10 +39,10 @@ export const PageDetail = {
       const site = fetchSite()
       const page = fetchPageBySlug(slug || context?.params?.slug)
       const dynamicPage = getDynamicPage({ context, page, site })
-      return makeGetStaticProps({ props: { page: dynamicPage } })(context)
+      return getStaticPropsWithLayout({ props: { page: dynamicPage } })(context)
     },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_PAGES[MOCK_KEY].map(({ slug }) => ({
         params: { slug },
       })),

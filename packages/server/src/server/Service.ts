@@ -5,10 +5,10 @@ import {
   getRelatedCrudItemsByTagTitle,
 } from '@gravis-os/utils'
 import dayjs from 'dayjs'
-import getDynamicPage from '../utils/getDynamicPage'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
+import { getDynamicPage } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -44,7 +44,7 @@ export const ServiceDetail = {
       service?.title
     ).slice(0, 3)
 
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: {
         service: servicePage,
         serviceCategory,
@@ -54,7 +54,7 @@ export const ServiceDetail = {
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_SERVICES[MOCK_KEY].map(
         ({ slug, category, exclusive_locales, blocked_locales }) => ({
           params: {

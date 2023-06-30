@@ -2,7 +2,11 @@ import React from 'react'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { LandingLayout } from '@app/layouts'
 import { GroupPage, GroupPageProps } from '@onex/pages'
-import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
+import {
+  fetchSite,
+  getStaticPropsWithLayout,
+  getDynamicPage,
+} from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import {
@@ -41,7 +45,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
-  return makeGetStaticProps({
+  return getStaticPropsWithLayout({
     props: {
       page,
       heroPosts,

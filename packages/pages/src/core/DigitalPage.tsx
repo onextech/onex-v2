@@ -9,10 +9,9 @@ import {
   renderFaqsAccordionBlock,
   renderHeroWithBackgroundBlock,
   renderCtaBlock,
-  Showcase,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Industry } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {

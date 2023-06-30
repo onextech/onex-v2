@@ -8,7 +8,11 @@ import {
   MOCK_INDUSTRYS,
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
+import {
+  fetchSite,
+  getStaticPropsWithLayout,
+  getDynamicPage,
+} from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import orderBy from 'lodash/orderBy'
@@ -36,7 +40,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     ({ is_featured }) => is_featured
   ).slice(0, 3)
 
-  return makeGetStaticProps({
+  return getStaticPropsWithLayout({
     props: { page, showcases, featuredPosts, industrys },
   })(context)
 }

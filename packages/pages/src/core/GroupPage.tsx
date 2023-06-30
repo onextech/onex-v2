@@ -11,10 +11,9 @@ import {
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
-  Showcase,
   useLayout,
 } from '@gravis-os/landing'
-import { Industry, Page, Post } from '@gravis-os/types'
+import { Industry, Page, Post, Showcase } from '@gravis-os/types'
 
 export interface GroupPageProps {
   page: Page

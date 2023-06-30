@@ -1,4 +1,4 @@
-import type { Showcase } from '@gravis-os/landing'
+import type { Showcase } from '@gravis-os/types'
 
 export const MOCK_TECH_SHOWCASES: Showcase[] = [
   {

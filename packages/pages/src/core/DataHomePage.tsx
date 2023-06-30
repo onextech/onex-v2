@@ -12,9 +12,8 @@ import {
   renderClientTestimonialSliderBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-  Showcase,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Technology } from '@gravis-os/types'
+import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 

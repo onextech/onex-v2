@@ -5,8 +5,8 @@ import {
   getRelatedCrudItemsByCategoryId,
 } from '@gravis-os/utils'
 import dayjs from 'dayjs'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -46,7 +46,7 @@ export const PostDetail = {
       post?.category_id
     ).slice(0, 3)
 
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: {
         post,
         postCategory,
@@ -56,7 +56,7 @@ export const PostDetail = {
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
         .filter(
           ({ published_at }) =>
