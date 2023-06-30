@@ -11,7 +11,7 @@ import {
   renderHeroWithBackgroundBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Showcase, Technology } from '@gravis-os/types'
+import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 

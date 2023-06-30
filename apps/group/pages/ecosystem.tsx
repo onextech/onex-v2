@@ -4,7 +4,11 @@ import { EcosystemPage } from '@onex/pages'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Page } from '@gravis-os/types'
-import { fetchSite, getDynamicPage, makeGetStaticProps } from '@onex/server'
+import {
+  fetchSite,
+  getStaticPropsWithLayout,
+  getDynamicPage,
+} from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps: GetStaticProps = (context) => {
@@ -14,7 +18,7 @@ export const getStaticProps: GetStaticProps = (context) => {
     site,
     context,
   })
-  return makeGetStaticProps({ props: { ecosystem } })(context)
+  return getStaticPropsWithLayout({ props: { ecosystem } })(context)
 }
 
 export interface NextEcosystemPageProps

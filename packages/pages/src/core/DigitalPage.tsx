@@ -11,7 +11,7 @@ import {
   renderCtaBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Showcase, Page, Post, Industry } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {

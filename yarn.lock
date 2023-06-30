@@ -1612,10 +1612,10 @@
     "@gravis-os/types" "*"
     lodash "^4.17.21"
 
-"@gravis-os/eslint-config@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.17.tgz#670b69576d92118202d9d937a275665668f374ec"
-  integrity sha512-JEaNSXdMjQ3S4Mf/0XzXArGIBbh5t1f04PkPDD4684bOlqCYa4vPYiZJynLaMUrP9j2gyi2hJogsYHum2anqRA==
+"@gravis-os/eslint-config@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.18.tgz#3c31f4f78c6e3f6f556ee17228feaa1a0324423a"
+  integrity sha512-KA3lkp5j3xEPX1L6z0qAG+iYpUE49749tptOFUqFdg1/hEi8BUJp9C3z75yYockjqcZKZxc7nyUxrfVb7qlZXg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.23.0"
     "@typescript-eslint/parser" "^5.23.0"
@@ -1634,10 +1634,10 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/fields@*", "@gravis-os/fields@^1.0.0":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.3.tgz#7ae24e5e7ef45664de99e462127bdec12ef3e5e9"
-  integrity sha512-DEmb5qxdCFkVVhdJ9O7VQ9f5GMNAcD57X/fi++qOWs/UfOKZ2tonBXQ5Cbieaj+zqN+kZyppCVmixeldrMt9CQ==
+"@gravis-os/fields@*":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.4.tgz#b6fd0fe341b538be7eafae0eab78666385d3fa94"
+  integrity sha512-nqZtfGcBqblmzPYco7kW7Y75f9JUr8gmoDgA5gpyknuGgyMKzGYM/PAa6zyAQ9tLSEj2j3MUV2u+5mZM9Tv4/g==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1648,7 +1648,7 @@
     typescript "^4.6.3"
     zustand "^4.3.6"
 
-"@gravis-os/form@*", "@gravis-os/form@^1.0.0":
+"@gravis-os/form@*", "@gravis-os/form@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.2.tgz#1292f55af641c6af8d6b5d809a099fb8aac911cc"
   integrity sha512-DMVRL9KyiYJ8m2q+NOyE6MATEP7Wh822L/qShtQSJxIMqivudI6mnONd54TYBgTpLrB+WpaFsOMbi4qfjkEddQ==
@@ -1666,10 +1666,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.1.tgz#9379ca09021b8664851669b6f7115689149de0bd"
-  integrity sha512-LQ/8XOvFUfWoWeDNAFxd4phg6a5cSKdZpYLV5YqLy8X26U6J5E6Mmy/Y/CQkYlgAEnMesIf/yJzY/tD+AdXBLw==
+"@gravis-os/landing@^0.3.2":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.3.tgz#2676d9452fa06440703d77a7151ad75392ef266f"
+  integrity sha512-nO4I1mDL+m8shexZMw5hqd8gA5DXMoImNuvqe2dYgfypZz6RU6TZev8QG1eD4OjmsoPdOhk7Gf8kzJ33tMoz0A==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
@@ -1730,9 +1730,9 @@
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
 "@gravis-os/types@*", "@gravis-os/types@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.2.tgz#087e5f682dbec4a56c9a05129dc952501d2d2a84"
-  integrity sha512-cMkVl4ip/+5XYIsKE7W+8xiTf8NT0CsXq2Y7X5V1ywl/rl7tYuDtLYugcc5nMD7hA1Kz/IV147H3Q50k+/PwJw==
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.3.tgz#6a1edb61dac203d8089c95c2945c8dc274d5bdb6"
+  integrity sha512-x6hupQfxQ8VSNfVU9UA+iRMIRPzG+Xf1ccJVKe7hSZHN2X8t1guCMROT6Ni8ovIMai91S4b91++eIYkzrJIYgQ==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"
@@ -1765,7 +1765,7 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/utils@*", "@gravis-os/utils@^0.1.2":
+"@gravis-os/utils@*", "@gravis-os/utils@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.3.tgz#c75999a9327e220e6153adbd5e6c23b696822237"
   integrity sha512-f0yWc/MkGe2pBM44vj1K4Py3M6bucx0L26O5MYrsUTUGC24qQYyZW3gxzm/HGpVj21vcA365XCNnbjNhN517Cg==
@@ -2451,13 +2451,6 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@supabase/auth-helpers-nextjs@^0.5.6":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.5.9.tgz#37b9e7ea6aa15b8291d996db34a62c0fc33f07b9"
-  integrity sha512-OBmltVuPNFbtznBAgQgOFaWh3dO6rRmU7i77TVzEkbViZoK2ylzlKPIORg9Wh+4ZgYbP2QMsI5GzEtAz+aNTvA==
-  dependencies:
-    "@supabase/auth-helpers-shared" "0.3.3"
-
 "@supabase/auth-helpers-nextjs@^0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.7.2.tgz#dc3f8b27999ccaebeb1a19b654875384269bb17d"
@@ -2465,13 +2458,6 @@
   dependencies:
     "@supabase/auth-helpers-shared" "0.4.1"
     set-cookie-parser "^2.6.0"
-
-"@supabase/auth-helpers-shared@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.3.3.tgz#a00d336a631867c199c9634739c225d2303ba00b"
-  integrity sha512-ZwZGffApfyz9MiT3knnZoF1DMWE56H/Q0Mrsn22J9ubhss7/+e7TP3dChxxwlUYqtDmjmLV6OV8W0BANENfUew==
-  dependencies:
-    js-base64 "^3.7.5"
 
 "@supabase/auth-helpers-shared@0.4.1":
   version "0.4.1"
@@ -2517,7 +2503,7 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/supabase-js@^2.10.0", "@supabase/supabase-js@^2.25.0":
+"@supabase/supabase-js@^2.25.0":
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-2.25.0.tgz#54a47339f58837b1cd325fa17376550f1bf2ec31"
   integrity sha512-AEh0suSrjfpQCOhY7hLsgX6gr8XEUWshVkTq9IODiHTnAR6NHiEQ865LTeWu8gqCDf2XH1n20JcSmovIe3Xixw==
@@ -6444,11 +6430,6 @@ jose@^4.14.3:
   resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.4.tgz#59e09204e2670c3164ee24cbfe7115c6f8bff9ca"
   integrity sha512-j8GhLiKmUAh+dsFXlX1aJCbt5KMibuKb+d7j1JaOJG6s2UjX1PQlW+OKB/sD4a/5ZYF4RcmYmLSndOoU3Lt/3g==
 
-js-base64@^3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.5.tgz#21e24cf6b886f76d6f5f165bfcd69cc55b9e3fca"
-  integrity sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==
-
 js-sdsl@^4.1.4:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.3.0.tgz#aeefe32a451f7af88425b11fdb5f58c90ae1d711"
@@ -7806,10 +7787,10 @@ react-from-dom@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-from-dom/-/react-from-dom-0.6.2.tgz#9da903a508c91c013b55afcd59348b8b0a39bdb4"
   integrity sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ==
 
-react-hook-form@^7.30.0, react-hook-form@^7.45.0:
-  version "7.45.0"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
-  integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
+react-hook-form@^7.30.0:
+  version "7.45.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.1.tgz#e352c7f4dbc7540f0756abbb4dcfd1122fecc9bb"
+  integrity sha512-6dWoFJwycbuFfw/iKMcl+RdAOAOHDiF11KWYhNDRN/OkUt+Di5qsZHwA0OwsVnu9y135gkHpTw9DJA+WzCeR9w==
 
 react-hot-toast@>=2.2.0:
   version "2.4.1"
@@ -7835,9 +7816,9 @@ react-inlinesvg@^3.0.1:
     react-from-dom "^0.6.2"
 
 react-intersection-observer@^9.4.0:
-  version "9.5.1"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.5.1.tgz#63a6d7c45f7251610ad2f5a5abb85204ee0926ac"
-  integrity sha512-YwcNF/4WsMAG1rLVDQHSbpdEW9vDaIl4QW88d+vqeXNUewFV4AJDQB14oHpAJ3rRCnKRmwu3nqfwwYe6wioNIg==
+  version "9.5.2"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.5.2.tgz#f68363a1ff292323c0808201b58134307a1626d0"
+  integrity sha512-EmoV66/yvksJcGa1rdW0nDNc4I1RifDWkT50gXSFnPLYQ4xUptuDD4V7k+Rj1OgVAlww628KLGcxPXFlOkkU/Q==
 
 react-intersection-observer@^9.4.3:
   version "9.4.3"

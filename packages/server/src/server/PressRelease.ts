@@ -1,8 +1,8 @@
 import { MOCK_PRESS_RELEASES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import dayjs from 'dayjs'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -18,7 +18,7 @@ export const fetchPressReleaseBySlug = (injectedSlug) => {
 // ==============================
 export const PressReleaseList = {
   getStaticProps: (): GetStaticProps =>
-    makeGetStaticProps({
+    getStaticPropsWithLayout({
       props: {
         pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY].filter(
           ({ is_active }) => is_active
@@ -37,7 +37,7 @@ export const PressReleaseDetail = {
       ({ slug }) => slug !== context.params?.slug
     ).slice(0, 3)
 
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: {
         pressRelease,
         otherPressReleases,
@@ -45,7 +45,7 @@ export const PressReleaseDetail = {
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_PRESS_RELEASES[MOCK_KEY].map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },

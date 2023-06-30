@@ -1,7 +1,7 @@
 import { MOCK_RESOURCES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -17,7 +17,9 @@ export const fetchResourceBySlug = (injectedSlug) => {
 // ==============================
 export const ResourceList = {
   getStaticProps: (): GetStaticProps =>
-    makeGetStaticProps({ props: { resources: MOCK_RESOURCES[MOCK_KEY] } }),
+    getStaticPropsWithLayout({
+      props: { resources: MOCK_RESOURCES[MOCK_KEY] },
+    }),
 }
 
 export const ResourceDetail = {
@@ -26,7 +28,7 @@ export const ResourceDetail = {
     const relatedResources = MOCK_RESOURCES[MOCK_KEY]?.filter(
       (resource) => resource.slug !== context.params?.slug
     ).slice(0, 3)
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: {
         resource,
         relatedResources: relatedResources || null,
@@ -34,7 +36,7 @@ export const ResourceDetail = {
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_RESOURCES[MOCK_KEY].map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },

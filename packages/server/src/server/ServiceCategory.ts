@@ -1,7 +1,7 @@
 import { MOCK_SERVICE_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -19,7 +19,7 @@ export const fetchServiceCategoryBySlug = (injectedSlug) => {
 // ==============================
 export const ServiceCategoryList = {
   getStaticProps: (): GetStaticProps =>
-    makeGetStaticProps({
+    getStaticPropsWithLayout({
       props: {
         services: MOCK_SERVICES[MOCK_KEY],
         serviceCategorys: MOCK_SERVICE_CATEGORYS[MOCK_KEY],
@@ -39,7 +39,7 @@ export const ServiceCategoryDetail = {
       ({ id }) => id !== serviceCategory?.id
     ).slice(0, 3)
 
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: {
         serviceCategory,
         services,
@@ -48,7 +48,7 @@ export const ServiceCategoryDetail = {
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_SERVICE_CATEGORYS[MOCK_KEY].map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { categorySlug: slug, exclusive_locales, blocked_locales },
