@@ -2,10 +2,10 @@ import { MOCK_POSTS, MOCK_TECHNOLOGYS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
 import dayjs from 'dayjs'
-import getDynamicPage from '../utils/getDynamicPage'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
+import { getDynamicPage } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -24,7 +24,7 @@ export const TechnologyList = {
     const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]?.filter(
       ({ is_active }) => is_active
     )
-    return makeGetStaticProps({ props: { technologys } })(context)
+    return getStaticPropsWithLayout({ props: { technologys } })(context)
   },
 }
 
@@ -53,12 +53,12 @@ export const TechnologyDetail = {
       ),
       technology?.title
     ).slice(0, 3)
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: { technology: technologyPage, relatedPosts },
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_TECHNOLOGYS[MOCK_KEY].map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },

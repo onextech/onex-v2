@@ -1,4 +1,4 @@
-import { handlePostEnquiry } from '@onex/modules'
+import { handlePostEnquiry } from '@gravis-os/landing'
 
 export const config = {
   runtime: 'edge',

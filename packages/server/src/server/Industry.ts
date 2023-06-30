@@ -2,10 +2,9 @@ import { MOCK_POSTS, MOCK_INDUSTRYS } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getRelatedCrudItemsByTagTitle } from '@gravis-os/utils'
 import dayjs from 'dayjs'
-import getDynamicPage from '../utils/getDynamicPage'
-import makeGetStaticPaths from '../utils/makeGetStaticPaths'
-import makeGetStaticProps from '../utils/makeGetStaticProps'
+import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
 import { fetchSite } from './Site'
+import { getDynamicPage, getStaticPropsWithLayout } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -21,7 +20,7 @@ export const fetchIndustryBySlug = (injectedSlug) => {
 // ==============================
 export const IndustryList = {
   getStaticProps: (): GetStaticProps =>
-    makeGetStaticProps({
+    getStaticPropsWithLayout({
       props: { industrys: MOCK_INDUSTRYS[MOCK_KEY] },
     }),
 }
@@ -39,12 +38,12 @@ export const IndustryDetail = {
       industry?.title
     ).slice(0, 3)
 
-    return makeGetStaticProps({
+    return getStaticPropsWithLayout({
       props: { industry: industryPage, relatedPosts },
     })(context)
   },
   getStaticPaths: (): GetStaticPaths =>
-    makeGetStaticPaths({
+    getStaticPathsWithLayout({
       paths: MOCK_INDUSTRYS[MOCK_KEY].map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },

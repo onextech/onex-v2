@@ -13,7 +13,7 @@ import {
   renderClientHighlightsImageMarqueeBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Showcase, Industry } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 

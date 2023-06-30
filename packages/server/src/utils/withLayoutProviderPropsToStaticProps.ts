@@ -1,18 +1,7 @@
-import getLayoutProviderProps from './getLayoutProviderProps'
+import { makeWithLayoutProviderPropsToStaticProps } from '@gravis-os/landing/server'
+import layoutConfig from './layoutConfig'
 
 const withLayoutProviderPropsToStaticProps =
-  (context) => (staticPropsResult) => {
-    const layoutProviderProps = getLayoutProviderProps({ context })
-
-    return {
-      ...staticPropsResult,
-      props: {
-        ...staticPropsResult?.props,
-        pageProviderProps: {
-          layoutProviderProps,
-        },
-      },
-    }
-  }
+  makeWithLayoutProviderPropsToStaticProps(layoutConfig)
 
 export default withLayoutProviderPropsToStaticProps
