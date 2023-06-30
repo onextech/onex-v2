@@ -128,24 +128,24 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                       { key: '501+', value: '501+', label: '501+' },
                     ],
                   },
-                  // {
-                  //   key: 'source',
-                  //   name: 'source',
-                  //   label: 'How did you hear about us?',
-                  //   type: 'radio',
-                  //   required: true,
-                  //   compact: true,
-                  //   options: [
-                  //     {
-                  //       key: 'social-media',
-                  //       value: 'Social Media',
-                  //       label: 'Social Media',
-                  //     },
-                  //     { key: 'google', value: 'Google', label: 'Google' },
-                  //     { key: 'linkedin', value: 'LinkedIn', label: 'LinkedIn' },
-                  //     { key: 'referral', value: 'Referral', label: 'Referral' },
-                  //   ],
-                  // },
+                  {
+                    key: 'source',
+                    name: 'source',
+                    label: 'How did you hear about us?',
+                    type: 'radio',
+                    required: true,
+                    compact: true,
+                    options: [
+                      {
+                        key: 'social-media',
+                        value: 'Social Media',
+                        label: 'Social Media',
+                      },
+                      { key: 'google', value: 'Google', label: 'Google' },
+                      { key: 'linkedin', value: 'LinkedIn', label: 'LinkedIn' },
+                      { key: 'referral', value: 'Referral', label: 'Referral' },
+                    ],
+                  },
                 ],
               },
             ]}

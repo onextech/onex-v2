@@ -1635,9 +1635,9 @@
     prettier "^2.0.5"
 
 "@gravis-os/fields@*", "@gravis-os/fields@^1.0.0":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.3.tgz#7ae24e5e7ef45664de99e462127bdec12ef3e5e9"
-  integrity sha512-DEmb5qxdCFkVVhdJ9O7VQ9f5GMNAcD57X/fi++qOWs/UfOKZ2tonBXQ5Cbieaj+zqN+kZyppCVmixeldrMt9CQ==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.0.4.tgz#b6fd0fe341b538be7eafae0eab78666385d3fa94"
+  integrity sha512-nqZtfGcBqblmzPYco7kW7Y75f9JUr8gmoDgA5gpyknuGgyMKzGYM/PAa6zyAQ9tLSEj2j3MUV2u+5mZM9Tv4/g==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1667,9 +1667,9 @@
     typescript "^4.6.3"
 
 "@gravis-os/landing@^0.3.1":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.2.tgz#0430cbc12e9757e6adc6f62779e5cb0484d12756"
-  integrity sha512-Pc01OG8bvQyUywbZz44KTu20cHjdwAAXxOWzNpwoMZol50UbOHLft2Fh+qRTg80LnK2lPOOwX+Gi6xH4SEgiyA==
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.3.3.tgz#2676d9452fa06440703d77a7151ad75392ef266f"
+  integrity sha512-nO4I1mDL+m8shexZMw5hqd8gA5DXMoImNuvqe2dYgfypZz6RU6TZev8QG1eD4OjmsoPdOhk7Gf8kzJ33tMoz0A==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
@@ -1730,9 +1730,9 @@
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
 "@gravis-os/types@*", "@gravis-os/types@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.2.tgz#087e5f682dbec4a56c9a05129dc952501d2d2a84"
-  integrity sha512-cMkVl4ip/+5XYIsKE7W+8xiTf8NT0CsXq2Y7X5V1ywl/rl7tYuDtLYugcc5nMD7hA1Kz/IV147H3Q50k+/PwJw==
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.2.3.tgz#6a1edb61dac203d8089c95c2945c8dc274d5bdb6"
+  integrity sha512-x6hupQfxQ8VSNfVU9UA+iRMIRPzG+Xf1ccJVKe7hSZHN2X8t1guCMROT6Ni8ovIMai91S4b91++eIYkzrJIYgQ==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"
@@ -7806,7 +7806,12 @@ react-from-dom@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-from-dom/-/react-from-dom-0.6.2.tgz#9da903a508c91c013b55afcd59348b8b0a39bdb4"
   integrity sha512-qvWWTL/4xw4k/Dywd41RBpLQUSq97csuv15qrxN+izNeLYlD9wn5W8LspbfYe5CWbaSdkZ72BsaYBPQf2x4VbQ==
 
-react-hook-form@^7.30.0, react-hook-form@^7.45.0:
+react-hook-form@^7.30.0:
+  version "7.45.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.1.tgz#e352c7f4dbc7540f0756abbb4dcfd1122fecc9bb"
+  integrity sha512-6dWoFJwycbuFfw/iKMcl+RdAOAOHDiF11KWYhNDRN/OkUt+Di5qsZHwA0OwsVnu9y135gkHpTw9DJA+WzCeR9w==
+
+react-hook-form@^7.45.0:
   version "7.45.0"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
   integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
@@ -7835,9 +7840,9 @@ react-inlinesvg@^3.0.1:
     react-from-dom "^0.6.2"
 
 react-intersection-observer@^9.4.0:
-  version "9.5.1"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.5.1.tgz#63a6d7c45f7251610ad2f5a5abb85204ee0926ac"
-  integrity sha512-YwcNF/4WsMAG1rLVDQHSbpdEW9vDaIl4QW88d+vqeXNUewFV4AJDQB14oHpAJ3rRCnKRmwu3nqfwwYe6wioNIg==
+  version "9.5.2"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.5.2.tgz#f68363a1ff292323c0808201b58134307a1626d0"
+  integrity sha512-EmoV66/yvksJcGa1rdW0nDNc4I1RifDWkT50gXSFnPLYQ4xUptuDD4V7k+Rj1OgVAlww628KLGcxPXFlOkkU/Q==
 
 react-intersection-observer@^9.4.3:
   version "9.4.3"
