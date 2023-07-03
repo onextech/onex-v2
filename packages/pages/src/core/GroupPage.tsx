@@ -14,6 +14,7 @@ import {
   useLayout,
 } from '@gravis-os/landing'
 import { Industry, Page, Post, Showcase } from '@gravis-os/types'
+import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {
   page: Page
@@ -58,6 +59,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                       const { category } = post
                       return category.title
                     }),
+                    'About',
                   ]}
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
@@ -87,6 +89,28 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                         </Box>
                       )
                     }),
+                    <Box sx={{ maxWidth: { md: '50%' } }}>
+                      <Typography
+                        variant="overline"
+                        gutterBottom
+                        color="text.secondary"
+                      >
+                        About
+                      </Typography>
+                      <Typography variant="h2">
+                        We Design & Develop Custom Software
+                      </Typography>
+                      <BlockItem
+                        disableContainer
+                        {...renderGhostButtonBlockItem({
+                          overline: 'Our Services',
+                          title: 'Read More',
+                          size: 'lg',
+                          href: routeConfig.ABOUT,
+                          sx: { mt: { xs: 2, md: 4 } },
+                        })}
+                      />
+                    </Box>,
                   ]}
                 />
               ),
