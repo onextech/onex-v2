@@ -25,7 +25,7 @@ export interface GroupPageProps {
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
-  const { clientLogos, site } = useLayout()
+  const { clientLogos, site, routeConfig } = useLayout()
   const { sections } = page || {}
   const { benefits, faqs, cta } = sections || {}
 
@@ -54,6 +54,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   loop
                   height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
                   tabs={[
+                    'Introduction',
                     ...heroPosts.map((post) => {
                       const { category } = post
                       return category.title
@@ -62,6 +63,32 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                   tabsProps={{ fullWidthOnDesktop: true }}
                   tabProps={{ sx: { p: 3 } }}
                   items={[
+                    <Box sx={{ maxWidth: { md: '50%' } }}>
+                      <Typography
+                        variant="overline"
+                        gutterBottom
+                        color="text.secondary"
+                      >
+                        Greetings
+                      </Typography>
+                      <Typography variant="h2">
+                        We Design & Develop Custom Software
+                        <Typography variant="subtitle1" color="text.secondary">
+                          We believe technology is the superpower that changes
+                          everything about business.
+                        </Typography>
+                      </Typography>
+                      <BlockItem
+                        disableContainer
+                        {...renderGhostButtonBlockItem({
+                          overline: 'Our Services',
+                          title: 'Read More',
+                          size: 'lg',
+                          href: routeConfig.SERVICES,
+                          sx: { mt: { xs: 2, md: 4 } },
+                        })}
+                      />
+                    </Box>,
                     ...heroPosts.map((post) => {
                       const { title, category } = post
                       return (
