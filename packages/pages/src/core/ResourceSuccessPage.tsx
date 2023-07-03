@@ -9,6 +9,7 @@ import type { Resource } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
+import { Button } from '@gravis-os/ui'
 
 export interface ResourceSuccessPageProps {
   resource: Resource
@@ -101,14 +102,31 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                     },
                     {
                       type: 'h5',
-                      title: 'Check your inbox for your download.',
+                      title: 'Your download is ready!',
                       titleProps: { sx: { mb: 2 }, gutterBottom: true },
                     },
                     {
                       type: 'body1',
                       title:
-                        'Great news! Your registration for the eBook is successful. A confirmation email containing your eBook download link has been dispatched to your registered email address. Please ensure you check your email, including your spam or junk folder, to complete the download process. Enjoy your new read!',
-                      titleProps: { color: 'text.secondary' },
+                        'Great news! Click the link below to download your eBook. Enjoy your new read!',
+                      titleProps: { color: 'text.secondary', sx: { mb: 2 } },
+                    },
+                    {
+                      type: 'jsx',
+                      title: (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={`/files/resources/${resource.slug}.pdf`}
+                        >
+                          <Button
+                            fullWidth
+                            size="large"
+                            variant="contained"
+                            title="Download"
+                          />
+                        </a>
+                      ),
                     },
                   ],
                 },
