@@ -106,7 +106,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                           overline: 'Our Services',
                           title: 'Read More',
                           size: 'lg',
-                          href: routeConfig.ABOUT,
+                          href: routeConfig.SERVICES,
                           sx: { mt: { xs: 2, md: 4 } },
                         })}
                       />
