@@ -619,11 +619,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       accordionProps: { titleProps: { variant: 'h5' } },
       drawerWidth: '100vw',
       disableBoxShadow: true,
-      announcement: {
-        title: `Read more about the launch of our revamped ${site.title} website!`,
-        href: routeConfig.PRESS_RELEASES,
-      },
-      announcementProps: { variant: 'body1' },
       navItems: {
         left: headerNavConfig,
         right: [
