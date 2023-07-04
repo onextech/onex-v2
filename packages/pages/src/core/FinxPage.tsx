@@ -11,10 +11,19 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
+  renderClientLogoCardBlockItem,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
+import {
+  Page,
+  Post,
+  Industry,
+  Technology,
+  Showcase,
+  ClientLogo,
+} from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
+import { clientEnum } from '../utils/constants'
 
 export interface FinxPageProps {
   page: Page
@@ -23,6 +32,18 @@ export interface FinxPageProps {
   featuredPosts: Post[]
   industrys: Industry[]
 }
+
+const commonBlockProps = { center: true, maxWidth: 'md' }
+const clients = [
+  clientEnum.GIC,
+  clientEnum.IIX,
+  clientEnum.JULIUS_BAR,
+  clientEnum.SPIKING,
+  clientEnum.UOB,
+]
+
+const clientBlockHeader =
+  'We Work With and Drive Innovation for Reputable Financial Organizations'
 
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
@@ -34,6 +55,13 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
   )?.title
   const { sections } = page || {}
   const { hero, benefits, features, faqs, cta } = sections || {}
+
+  const clientAvatarSrc = clients.map((value) => `logo_${value}`)
+
+  const finxClients = clientLogos.filter((value: ClientLogo) => {
+    const { avatar_alt } = value
+    return clientAvatarSrc.includes(avatar_alt)
+  })
 
   return (
     <Blocks
@@ -151,6 +179,33 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
         }),
+        {
+          key: 'gallery',
+          ...commonBlockProps,
+          dark: true,
+          items: [
+            { type: 'h4', title: clientBlockHeader },
+            {
+              type: 'grid',
+              sx: { mt: { xs: 5, md: 10 } },
+              maxWidth: 'xl',
+              gridProps: { spacing: 1 },
+              gridItemProps: { xs: 6, md: 4 },
+              gridItems: finxClients.map((clientLogo) => {
+                const { avatar_src, avatar_alt, avatar_width, avatar_height } =
+                  clientLogo
+                return renderClientLogoCardBlockItem({
+                  title: avatar_src,
+                  titleProps: {
+                    alt: avatar_alt,
+                    width: avatar_width,
+                    height: avatar_height,
+                  },
+                })
+              }),
+            },
+          ],
+        },
       ]}
     />
   )
