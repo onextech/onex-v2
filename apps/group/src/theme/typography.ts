@@ -84,14 +84,14 @@ const typography = {
     fontSize: pxToRem(20),
     letterSpacing: 0,
     lineHeight: 1.35,
-    fontWeight: 300,
+    fontWeight: 400,
   },
   subtitle2: {
     fontSize: pxToRem(16),
     [defaultTheme.breakpoints.up('md')]: {
       fontSize: pxToRem(18),
     },
-    letterSpacing: 0.5,
+    letterSpacing: 0,
     lineHeight: 1.4,
     fontWeight: 400,
   },
