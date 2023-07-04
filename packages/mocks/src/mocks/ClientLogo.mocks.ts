@@ -109,6 +109,12 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
     avatar_width: 89,
     avatar_height: 39,
   },
+  moh: {
+    avatar_src: '/logos/logo_moh.png',
+    avatar_alt: 'logo_moh',
+    avatar_width: 130,
+    avatar_height: 125,
+  },
 }
 
 export const MOCK_GROUP_CLIENT_LOGOS = Object.values(

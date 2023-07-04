@@ -16,4 +16,5 @@ export enum clientEnum {
   GOMU = 'gomu',
   IIX = 'iix',
   SPIKING = 'spiking',
+  MOH = 'moh',
 }
