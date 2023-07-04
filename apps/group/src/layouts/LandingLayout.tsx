@@ -20,12 +20,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       headerProps={{
         announcement: {
           title: `${site.title} unveils the future of Enterprise Software Development`,
-          link: 'Read the blog to learn more',
+          hrefTitle: 'Read the blog to learn more',
           href: routeConfig.PRESS_RELEASES,
-        },
-        announcementProps: {
-          title: { variant: 'body1' },
-          link: { variant: 'body1' },
         },
         ...headerProps,
       }}
