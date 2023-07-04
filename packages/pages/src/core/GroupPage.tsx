@@ -105,15 +105,11 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         }),
         // Showcases
         renderShowcaseSlider({
-          title: (
-            <>
-              Elevate Your Business with Our Dedicated Technology Consulting
-              Services
-            </>
-          ),
+          title:
+            'Elevate Your Business with Our Dedicated Technology Consulting Services',
           subtitle:
             'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
-          items: showcases.slice(0, 3),
+          items: showcases,
           pt: { xs: 5, md: 10 },
         }),
         // Industry
