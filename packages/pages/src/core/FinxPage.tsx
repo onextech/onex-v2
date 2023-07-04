@@ -141,6 +141,33 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        {
+          key: 'gallery',
+          ...commonBlockProps,
+          dark: true,
+          items: [
+            { type: 'h4', title: clientBlockHeader },
+            {
+              type: 'grid',
+              sx: { mt: { xs: 5, md: 10 } },
+              maxWidth: 'xl',
+              gridProps: { spacing: 1 },
+              gridItemProps: { xs: 6, md: 4 },
+              gridItems: finxClients.map((clientLogo) => {
+                const { avatar_src, avatar_alt, avatar_width, avatar_height } =
+                  clientLogo
+                return renderClientLogoCardBlockItem({
+                  title: avatar_src,
+                  titleProps: {
+                    alt: avatar_alt,
+                    width: avatar_width,
+                    height: avatar_height,
+                  },
+                })
+              }),
+            },
+          ],
+        },
         // Showcases
         renderShowcasesBlock({
           title: <>Empowering the Finance Sector through AI-driven Solutions</>,
@@ -179,33 +206,6 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
         }),
-        {
-          key: 'gallery',
-          ...commonBlockProps,
-          dark: true,
-          items: [
-            { type: 'h4', title: clientBlockHeader },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 1 },
-              gridItemProps: { xs: 6, md: 4 },
-              gridItems: finxClients.map((clientLogo) => {
-                const { avatar_src, avatar_alt, avatar_width, avatar_height } =
-                  clientLogo
-                return renderClientLogoCardBlockItem({
-                  title: avatar_src,
-                  titleProps: {
-                    alt: avatar_alt,
-                    width: avatar_width,
-                    height: avatar_height,
-                  },
-                })
-              }),
-            },
-          ],
-        },
       ]}
     />
   )
