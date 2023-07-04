@@ -81,16 +81,19 @@ const typography = {
     lineHeight: 1.5,
   },
   subtitle1: {
-    fontSize: pxToRem(24),
+    fontSize: pxToRem(20),
     letterSpacing: 0,
     lineHeight: 1.35,
     fontWeight: 300,
   },
   subtitle2: {
-    fontSize: pxToRem(20),
-    letterSpacing: 0,
-    lineHeight: 1.5,
-    fontWeight: 500,
+    fontSize: pxToRem(16),
+    [defaultTheme.breakpoints.up('md')]: {
+      fontSize: pxToRem(18),
+    },
+    letterSpacing: 0.5,
+    lineHeight: 1.4,
+    fontWeight: 400,
   },
   subtitle3: {
     fontSize: pxToRem(20),

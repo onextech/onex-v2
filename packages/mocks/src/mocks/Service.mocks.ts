@@ -528,7 +528,7 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 2,
     // Hero
-    title: 'Application modernisation',
+    title: 'Application Modernisation',
     slug: 'application-modernisation',
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
@@ -536,7 +536,7 @@ export const MOCK_TECH_SERVICES = [
     hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
-      title: 'Application modernisation',
+      title: 'Application Modernisation',
       description:
         'modernise your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
