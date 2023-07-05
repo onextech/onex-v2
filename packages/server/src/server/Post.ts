@@ -52,7 +52,6 @@ export const PostDetail = {
         postCategory,
         relatedServices,
         relatedPosts,
-        posts,
       },
     })(context)
   },
