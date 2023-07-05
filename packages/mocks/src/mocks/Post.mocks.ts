@@ -217,42 +217,6 @@ export const MOCK_TECH_POSTS = [
       '<p>In conclusion, the future of cloud infrastructure management is one that is increasingly automated, AI-driven, and DevOps-oriented. These trends are driven by the need for greater efficiency, scalability, and reliability in managing complex cloud environments. Businesses may fully utilise cloud infrastructure, spurring innovation and growth in the digital era, by embracing automation, AI, and DevOps.</p>\n',
   },
   {
-    published_at: '2023-05-15T08:00:00+0000',
-    is_active: true,
-    is_featured: true,
-    category_id: 8,
-    title:
-      'Digital Transformation in Government: Modernising Public Services for the 21st Century',
-    slug: 'digital-transformation-government-modernising-public-services-21st-century',
-    subtitle:
-      'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
-    hero_alt: 'singapore',
-    html:
-      '<blockquote>\n' +
-      '<p><em>Summary:</em></p>\n' +
-      "<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n" +
-      '</blockquote>\n' +
-      "<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n" +
-      '<h2>Benefits of Digital Transformation in Government</h2>\n' +
-      '<h3>Improved efficiency and cost savings</h3>\n' +
-      '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
-      '<h3>Increased citizen engagement</h3>\n' +
-      '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
-      '<h3>Enhanced transparency and accountability</h3>\n' +
-      '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
-      '<h2>Challenges of Digital Transformation in Government Sector</h2>\n' +
-      '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
-      '<h3>Resistance to change</h3>\n' +
-      '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
-      '<h3>Skill gaps</h3>\n' +
-      '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
-      '<h4>Security and privacy concerns</h4>\n' +
-      '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
-      '<h3>Conclusion</h3>\n' +
-      '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>',
-  },
-  {
     published_at: '2023-06-05T14:00:00+0000',
     is_active: true,
     category_id: 8,
@@ -313,41 +277,6 @@ export const MOCK_TECH_POSTS = [
       '<p>Real estate is entering a new era characterised by technology innovation and change. We may anticipate even more changes and advancements in the real estate sector as technology continues to develop.</p>',
   },
   {
-    published_at: '2023-06-12T14:00:00+0000',
-    is_active: true,
-    category_id: 8,
-    title:
-      'The Impact of Fintech on Traditional Banking: Preparing the Workforce for Digital Disruption',
-    slug: 'impact-fintech-traditional-banking-preparing-workforce-digital-disruption',
-    subtitle:
-      'Riding the Fintech Wave: Empowering Traditional Banks for Digital Transformation',
-    hero_src: 'https://source.unsplash.com/EMPZ7yRZoGw/1600x900',
-    hero_alt: 'stocks',
-    html:
-      '<blockquote>\n' +
-      "<p><em>Summary: Traditional banking has been disrupted by the advent of fintech, which has forced banks to adapt to novel digital business models and satisfy rising client expectations for seamless and convenient services. Traditional banks are being pressured to embrace digital transformation and make investments in their workforce's digital training as a result of fintech's capability to innovate swiftly and react to new market opportunities. To obtain access to new markets and cutting-edge technologies, banks must foster a creative culture and work in partnership with fintech firms. Banks must hire fresh talent and invest in the training of current staff in order to succeed in the digital environment. Traditional banks can maintain its competitiveness and satisfy the changing needs and preferences of their customers by adjusting to the effect of fintech.</em></p>\n" +
-      '</blockquote>\n' +
-      '<p>The emergence of fintech has altered traditional banking in numerous ways. Fintech businesses leverage technology to deliver financial services in novel ways, frequently competing with established banking institutions. The banking industry has seen tremendous change as result of the digital disruption, including changes to the workforce. Traditional banking institutions need to give their staff the abilities to perform in the digital world in order to be ready for the effects of fintech.</p>\n' +
-      '<h2>The Impact of Fintech on Traditional Banking</h2>\n' +
-      '<p>By providing quicker, more practical, and more readily accessible financial services, fintech companies have revolutionised the way financial services are supplied. These businesses employ technology to offer a variety of services, including mobile banking, payment processing, lending, and wealth management. Fintech has&nbsp;greatly&nbsp;influences&nbsp;since it has compelled established&nbsp;banking institutions to compete with fresh digital competitors.</p>\n' +
-      '<p>One of the primary impacts of fintech on traditional banking is the shift in customer expectations. Fintech businesses have raised the standard when it comes to providing seamless, individualised, and convenient services that are available around-the-clock. Traditional banks are now expected to provide the same degree of customer service, which has compelled these organisations to make significant investments in digital channels and customer support.</p>\n' +
-      '<p>With the emergence of new business models, fintech companies are often more adaptable and can act fast to seize new market possibilities. They are not constrained by outdated systems and procedures, they can innovate more quickly than traditional banking organisations. Traditional banks must modify their business strategies in order to compete in the digital market.</p>\n' +
-      '<h2>Preparing the Workforce for Digital Disruption</h2>\n' +
-      '<p>The workforce is significantly impacted by how fintech affects traditional banking. To remain competitive, traditional banks must equip their staff with the skills and knowledge required to operate in the digital landscape. Here are some strategies that traditional banks can consider to prepare their workforce for digital disruption:</p>\n' +
-      '<h3>Invest in Digital Training</h3>\n' +
-      '<p>Traditional banks must make investments digital training to ensure that their employees has the abilities and knowledge required to navigate the digital landscape. Digital channels, digital marketing, data analytics, and cybersecurity should be covered in this training. Traditional banks can ensure that their employees are knowledgeable about the newest trends and technologies by investing in digital training.</p>\n' +
-      '<h3>Embrace Digital Transformation</h3>\n' +
-      '<p>To be competitive in the digital environment, traditional banks must embrace digital transformation to remain competitive in the digital landscape. . In order to increase efficiency, this entails making investments in digital channels, creating fresh goods and services, and optimising internal operations. Traditional banks may expand their potential for growth and innovation while also enhancing the client experience by embracing digital transformation.</p>\n' +
-      '<h3>Foster a Culture of Innovation</h3>\n' +
-      "<p>Conventional banks must promote an innovative culture to motivate staff to think critically and take chances. This can be done by fostering an atmosphere that values experimentation and promotes employee idea sharing. Traditional banks can develop fresh goods and services to cater to clients' shifting wants by developing an innovative culture.</p>\n" +
-      '<h3>Collaborate with Fintech Companies</h3>\n' +
-      '<p>Traditional banks can collaborate with fintech companies to leverage their expertise and keep on top of the latest trends. With collaboration, traditional banks can gain access to new markets and consumer groups while also learning about cutting-edge technologies and business models. By embracing such emerging technologies and services, these partnerships can also aid traditional banks in enhancing the client experience.</p>\n' +
-      '<h3>Develop a Talent Pipeline</h3>\n' +
-      '<p>To successfully navigate the digital landscape, traditional banks must build a talent pipeline. This can be achieved by hiring new and fresh talent with digital know-how and expertise, while also investing in the training of current employees. Traditional banks must also ensure that they have a diversified workforce that reflects the evolving demands and tastes of customers.</p>\n' +
-      '<h2>Conclusion</h2>\n' +
-      '<p>In conclusion, the impact of fintech on traditional banking has been significant, as traditional banks are obliged to adapt to new business models and shifting client expectations. By doing so, traditional banks can position themselves to compete with fintech companies and accommodate the changing needs of customers.</p>\n',
-  },
-  {
     published_at: '2023-05-15T08:00:00+0000',
     is_active: true,
     category_id: 1,
@@ -377,37 +306,6 @@ export const MOCK_TECH_POSTS = [
       '<h2>Diligent Developers</h2>\n' +
       '<p>Furthermore, scalability also requires developers to be vigilant about system maintenance and data backups to ensure the application remains reliable over time. By implementing tactics like caching systems, load balancing approaches, and automated backup processes into their applications, developers need to plan for future growth so that they can handle increasing workloads without any issues. Besides, utilising Automated Testing Tools can also greatly reduce development time by cutting down on manual testing tasks and providing feedback on errors quickly and accurately, helping developers identify issues early on in the production cycle before they reach end users&rsquo; hands. Finally, scalability requires developers to keep an eye on current trends in technology and user experience as these may influence how applications need to evolve over time. Developers must stay up-to-date with industry news in order to maintain competitiveness and relevancy.</p>\n' +
       '<p>Developers can create robust solutions that will meet customer needs now and in the future by taking these best practices into account when developing scalable applications. With careful planning, deliberate design, and a commitment to system maintenance, developers can ensure their applications are reliable and performant for years to come.</p>',
-  },
-  {
-    published_at: '2023-06-19T14:00:00+0000',
-    is_active: true,
-    category_id: 1,
-    title:
-      'Designing for the Future: How to Build Applications That Will Stand the Test of Time',
-    slug: 'designing-for-the-future-how-to-build-applications-that-will-stand-the-test-of-time',
-    subtitle:
-      'Embracing Trends and Prioritizing User Experience for Long-Lasting Apps.',
-    hero_src: 'https://source.unsplash.com/BXOXnQ26B7o/1600x900',
-    hero_alt: 'hourglass',
-    html:
-      '<blockquote>\n' +
-      '<p><em>Summary: Developing an application that can stand the test of time requires long-term perspective and knowledge with current software development trends. In order to create long-lasting apps, developers should prioritise user experience (UX), use scalable architecture, accept evolving technologies, use Continuous Integration and Continuous Deployment (CI/CD), and anticipate prospective alterations. A application that is easy to use is more probable to stay useful and relevant over time. The program must be scalable. By&nbsp;leveraging open-source frameworks and libraries is an affordable solution to increase the stability of the application, the program must be scalable. In order to create emerging&nbsp;apps, developers can benefit from embracing emerging technologies like blockchain, machine learning, and artificial intelligence (AI). Application developers must keep up with the most recent trends and technology in software development and plan for changes in the future.</em></p>\n' +
-      '</blockquote>\n' +
-      '<p>Building an application that can stand the test of time&nbsp;is tricky in the present fast-paced technological world. It takes not just an awareness of the newest trends in software development but also a foresight to forecast future changes. As a result, developers should keep themselves up-to-date with the most recent advances in the field to ensure their implementations remain relevant in the years to come. Here are some tips&nbsp;on how to build long-lasting applications.</p>\n' +
-      '<h3>Focus on User Experience (UX)</h3>\n' +
-      '<p>The user experience (UX) is one of the most crucial elements of an application. A user-friendly program has a higher chance of sustaining popularity and relevance over time. Thus, designers should concentrate on creating intuitive, user-friendly, and aesthetically pleasing applications. The user interface of the application should be simple to use, with succinct and clear instructions, and a minimalistic design to reduce clutter.</p>\n' +
-      '<h3>Adopt Scalable Architecture</h3>\n' +
-      "<p>Scalability is an essential aspect of an application that will stand the test of time. An application's architecture must be able to handle the increased traffic and data as it expands. A scalable architecture allows for the addition of new users, features, and modifications without compromising the functionality of the application. The use of cloud-native technologies, containerization, and microservices are a few strategies for creating scalable architecture.</p>\n" +
-      '<h3>Use Open Source Frameworks and Libraries</h3>\n' +
-      '<p>Using open-source libraries and frameworks is&nbsp;a cost effective way that allows&nbsp;developers&nbsp;utilise&nbsp;pre-built&nbsp;solutions . Using open-source frameworks and libraries can expedite development and enhance&nbsp;the stability of the application.</p>\n' +
-      '<h3>Embrace Emerging Technologies</h3>\n' +
-      '<p>Emerging technologies that have the potential to transform the software business&nbsp;should be embraced by developers. Blockchain, machine learning, and artificial intelligence (AI) are some of the cutting-edge technologies that can assist programmers in creating long-lasting apps. AI, for instance, can improve user experience by customising the content of the program and upgrading its functionality.</p>\n' +
-      '<h3>Implement Continuous Integration and Continuous Deployment (CI/CD)</h3>\n' +
-      '<p>Software development methodologies known as Continuous Integration and Continuous Deployment (CI/CD) seek to increase the effectiveness of the development cycle. Developers can test and deploy code changes more rapidly and effectively with&nbsp;CI/CD, which minimises&nbsp;the time needed to fix bugs and add new features. To ensure&nbsp;that the application keeps up with the most recent trends and advancements in the software industry, developers should incorporate CI/CD into their development process.</p>\n' +
-      '<h3>Plan for Future Changes</h3>\n' +
-      '<p>When creating applications, developers must take future changes into account. The architecture and design of the application should be versatile enough to accommodate new additions and modifications without compromising its functionality. In order to foresee and be prepared for changes in the future, developers must also remain informed with the most relevant trends and technologies in software development.</p>\n' +
-      '<h3>Conclusion</h3>\n' +
-      '<p>Building applications that will withstand the test of time requires a long-term perspective and a willingness to adapt to future changes. Developers should focus on creating user-friendly applications that will remain relevant and popular for years to come with the aforementioned tips.</p>',
   },
   {
     published_at: '2023-06-26T14:00:00+0000',
@@ -1237,6 +1135,37 @@ export const MOCK_DESIGN_POSTS = [
       '<p>In conclusion, UI design is both an art and a science. Combining aesthetics and functionality is essential for creating products that are both visually appealing and easy to use. By understanding your users, using a consistent design language, prioritising functionality, keeping it simple, using visual hierarchy, paying attention to detail, and testing and iterating, you can create UI designs that inspire and delight users.</p>',
   },
   {
+    published_at: '2023-06-19T14:00:00+0000',
+    is_active: true,
+    category_id: 3,
+    title:
+      'Designing for the Future: How to Build Applications That Will Stand the Test of Time',
+    slug: 'designing-for-the-future-how-to-build-applications-that-will-stand-the-test-of-time',
+    subtitle:
+      'Embracing Trends and Prioritizing User Experience for Long-Lasting Apps.',
+    hero_src: 'https://source.unsplash.com/BXOXnQ26B7o/1600x900',
+    hero_alt: 'hourglass',
+    html:
+      '<blockquote>\n' +
+      '<p><em>Summary: Developing an application that can stand the test of time requires long-term perspective and knowledge with current software development trends. In order to create long-lasting apps, developers should prioritise user experience (UX), use scalable architecture, accept evolving technologies, use Continuous Integration and Continuous Deployment (CI/CD), and anticipate prospective alterations. A application that is easy to use is more probable to stay useful and relevant over time. The program must be scalable. By&nbsp;leveraging open-source frameworks and libraries is an affordable solution to increase the stability of the application, the program must be scalable. In order to create emerging&nbsp;apps, developers can benefit from embracing emerging technologies like blockchain, machine learning, and artificial intelligence (AI). Application developers must keep up with the most recent trends and technology in software development and plan for changes in the future.</em></p>\n' +
+      '</blockquote>\n' +
+      '<p>Building an application that can stand the test of time&nbsp;is tricky in the present fast-paced technological world. It takes not just an awareness of the newest trends in software development but also a foresight to forecast future changes. As a result, developers should keep themselves up-to-date with the most recent advances in the field to ensure their implementations remain relevant in the years to come. Here are some tips&nbsp;on how to build long-lasting applications.</p>\n' +
+      '<h3>Focus on User Experience (UX)</h3>\n' +
+      '<p>The user experience (UX) is one of the most crucial elements of an application. A user-friendly program has a higher chance of sustaining popularity and relevance over time. Thus, designers should concentrate on creating intuitive, user-friendly, and aesthetically pleasing applications. The user interface of the application should be simple to use, with succinct and clear instructions, and a minimalistic design to reduce clutter.</p>\n' +
+      '<h3>Adopt Scalable Architecture</h3>\n' +
+      "<p>Scalability is an essential aspect of an application that will stand the test of time. An application's architecture must be able to handle the increased traffic and data as it expands. A scalable architecture allows for the addition of new users, features, and modifications without compromising the functionality of the application. The use of cloud-native technologies, containerization, and microservices are a few strategies for creating scalable architecture.</p>\n" +
+      '<h3>Use Open Source Frameworks and Libraries</h3>\n' +
+      '<p>Using open-source libraries and frameworks is&nbsp;a cost effective way that allows&nbsp;developers&nbsp;utilise&nbsp;pre-built&nbsp;solutions . Using open-source frameworks and libraries can expedite development and enhance&nbsp;the stability of the application.</p>\n' +
+      '<h3>Embrace Emerging Technologies</h3>\n' +
+      '<p>Emerging technologies that have the potential to transform the software business&nbsp;should be embraced by developers. Blockchain, machine learning, and artificial intelligence (AI) are some of the cutting-edge technologies that can assist programmers in creating long-lasting apps. AI, for instance, can improve user experience by customising the content of the program and upgrading its functionality.</p>\n' +
+      '<h3>Implement Continuous Integration and Continuous Deployment (CI/CD)</h3>\n' +
+      '<p>Software development methodologies known as Continuous Integration and Continuous Deployment (CI/CD) seek to increase the effectiveness of the development cycle. Developers can test and deploy code changes more rapidly and effectively with&nbsp;CI/CD, which minimises&nbsp;the time needed to fix bugs and add new features. To ensure&nbsp;that the application keeps up with the most recent trends and advancements in the software industry, developers should incorporate CI/CD into their development process.</p>\n' +
+      '<h3>Plan for Future Changes</h3>\n' +
+      '<p>When creating applications, developers must take future changes into account. The architecture and design of the application should be versatile enough to accommodate new additions and modifications without compromising its functionality. In order to foresee and be prepared for changes in the future, developers must also remain informed with the most relevant trends and technologies in software development.</p>\n' +
+      '<h3>Conclusion</h3>\n' +
+      '<p>Building applications that will withstand the test of time requires a long-term perspective and a willingness to adapt to future changes. Developers should focus on creating user-friendly applications that will remain relevant and popular for years to come with the aforementioned tips.</p>',
+  },
+  {
     published_at: '2023-05-22T13:00:00+0000',
     is_active: true,
     is_featured: true,
@@ -1814,33 +1743,33 @@ export const MOCK_FINX_POSTS = [
   {
     published_at: '2023-06-21T13:00:00+0000',
     is_active: true,
-    category_id: 3,
+    category_id: 1,
     title:
-      'Fintech Solution Companies: Redefining the Financial Ecosystem through Digital Innovation',
-    slug: 'fintech-solutions-redefining-financial-ecosystem',
+      'Data Engineering in Finance: A Key Component of Digital Transformation',
+    slug: 'data-engineering-finance-digital-transformation',
     subtitle:
-      'Discover the pivotal role of fintech solution providers in revolutionizing the financial landscape with cutting-edge technologies.',
-    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
-    hero_alt: 'laptop stock market',
+      'Dive into the transformative impact of data engineering on the digital landscape of the finance sector.',
+    hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
+    hero_alt: 'lasers',
     html:
-      '<p>The financial industry landscape has undergone a paradigm shift in a time of quick technological advancements and the digital revolution. The emergence of fintech solution providers has transformed the financial sector, bringing with them cutting-edge digital solutions that are modernizing traditional financial services and redefining the financial ecosystem. The function and effects of these fintech solution providers on the financial industry are examined in this article.</p>\n' +
-      '<h2>The Rise of Fintech Solutions</h2>\n' +
-      '<p>Companies that provide fintech solutions are becoming important players in the financial sector, driven by technological advancements. To create cutting-edge financial solutions, they are utilizing cutting-edge technologies like financial machine learning, complex data analytics, artificial intelligence (AI), and blockchain.</p>\n' +
-      '<p>Machine learning is being used more frequently in finance as financial data engineers and software developers collaborate to create software solutions. Machine learning and AI are enabling more precise and effective decision-making processes through predictive modeling, algorithmic trading, portfolio management, fraud detection, and risk management.</p>\n' +
-      '<h2>The Role of UX Design in Fintech</h2>\n' +
-      '<p>Offering a seamless user experience (UX) is now more crucial than ever due to the increasing competition in the fintech industry. The emergence of UX design in financial services is altering how users interact with their finances. Complex financial information can be made easier to understand for users by using a well-designed UX design.</p>\n' +
-      '<p>For example, banking app UX is currently a key factor for fintech solution providers. Customers want applications that are simple to use, intuitive, and capable of securely processing their transactions. As a result, the role of a fintech design agency has grown to encompass not only the creation of technological solutions but also the design of an easy-to-use user experience.</p>\n' +
-      '<h2>Navigating the Digital Frontier in Wealth Management</h2>\n' +
-      '<p>Wealth management services keep up with the ongoing digital transformation of the financial services industry. Companies offering fintech solutions are creating sophisticated tools that deliver individualized, data-driven financial advice. With the aid of these technologies, wealth managers can make use of enormous amounts of data to provide risk management and investment advice that is more accurate.</p>\n' +
-      '<p>For example, the industry is seeing a rise in the use of robo-advisors that are AI and machine learning powered. They automate investment advice, bringing down costs and opening up wealth management services to a wider audience.</p>\n' +
-      '<h2>Fintech Consulting: A Strategic Advantage</h2>\n' +
-      '<p>Financial institutions must stay current with emerging trends and technologies given the fintech industry&#39;s rapid pace of innovation. Consulting in financial technology is essential in this situation. Consultants offer information on the most recent advancements, assist financial institutions with their digital transformation, and help them make the most of these technologies.</p>\n' +
-      '<p>Consulting firms for fintech solutions not only offer software solutions but also provide strategic guidance on how to successfully integrate these technologies into the current financial infrastructure, lining them up with the institution&#39;s business objectives.</p>\n' +
-      '<h2>Unleashing Global Financial Potential</h2>\n' +
-      '<p>Companies that provide fintech solutions are essential to maximizing the potential of the global financial system in the wake of digital transformation. They are democratizing financial services so that more people can access them. They are expanding markets and fostering global economic growth by promoting financial inclusion.</p>\n' +
-      '<p>Fintech firms also assist financial institutions in increasing operational effectiveness, lowering costs, managing risks, and providing better customer experiences by offering reliable, secure, and innovative solutions.</p>\n' +
+      '<p>Data&#39;s importance is more important than ever in the age of digital transformation. Data engineering has become a crucial part of this change as financial institutions use technology to improve their services and streamline their business processes. In-depth discussion of data engineering&#39;s importance in the financial industry, its many uses, and its prospects in the rapidly changing financial ecosystem are provided in this article.</p>\n' +
+      '<h2>Data Engineering: An Overview</h2>\n' +
+      '<p>Data engineering is the process of gathering, validating, storing, and processing large amounts of data in order to make it accessible for data analysis. The successful application of cutting-edge technologies like machine learning and the effective use of data both depend on this procedure.</p>\n' +
+      '<p>Data engineers are extremely important in the finance industry. They create the architecture and systems that manage financial data, making sure it is trustworthy and easily accessible for data analysis. With the introduction of digital transformation in financial services, this role has assumed even greater significance.</p>\n' +
+      '<h2>Role of Data Engineering in Financial Services</h2>\n' +
+      '<h3>Enhanced Decision Making</h3>\n' +
+      '<p>Data engineering gives financial institutions accurate, trustworthy data so they can make better decisions. Data engineers and financial software developers can create systems that gather data from various sources, clean it up, and process it to produce valuable insights. This can be beneficial for strategic planning overall, risk assessment, and investment decision-making.</p>\n' +
+      '<h3>Fraud Detection</h3>\n' +
+      '<p>Data engineering is essential for fraud detection, as was already mentioned in the context of machine learning. Data engineers make it possible to use complex algorithms that can identify anomalies and potentially fraudulent activities by creating reliable systems that can process enormous amounts of transaction data in real-time.</p>\n' +
+      '<h3>Regulatory Compliance</h3>\n' +
+      '<p>The financial sector is extremely dependent on regulatory compliance. By ensuring the integrity, security, and privacy of financial data, data engineers assist financial institutions in complying with regulatory requirements.</p>\n' +
+      '<h2>Driving User Experience Through Data Engineering</h2>\n' +
+      '<p>In today&#39;s digital age, financial institutions must deliver a seamless user experience (UX). By providing the necessary data to comprehend customer behavior and preferences, data engineering plays a crucial role in this area. These data are used by financial technology consulting firms and fintech solution providers to design and deliver a more individualized and user-friendly UX in their digital platforms, which includes banking apps.</p>\n' +
+      '<h2>The Future of Data Engineering in Finance</h2>\n' +
+      '<p>Data engineering in the financial industry has a bright future. The demand for qualified data engineers in the finance industry is expected to rise as a result of the development of technologies like machine learning, AI, and cloud computing.</p>\n' +
+      '<p>The need for skill upgrades, data privacy concerns, and security issues are just a few of the challenges that come with this and other technological advancements. Financial institutions must promote a culture of ongoing learning, put in place strong data governance frameworks, and collaborate closely with regulators if they are to successfully address these issues.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      '<p>The significance of fintech solution providers in reshaping the financial ecosystem grows as we advance further into the digital era. Their contribution to leveraging digital innovation, whether in terms of advanced analytics, AI, machine learning, or UX design, is in fact redefining the financial sector. Fintech solution providers will likely continue to lead as we look to the future.</p>\n',
+      '<p>In fact, data engineering is a crucial aspect of the financial sector&#39;s digital transformation. The importance of data engineering will only increase as financial institutions learn to operate in the digital world. Financial institutions can stimulate innovation, improve their services, and ultimately influence the future of finance by realizing the full potential of their data.</p>\n',
   },
   {
     published_at: '2023-06-21T13:00:00+0000',
@@ -1873,35 +1802,70 @@ export const MOCK_FINX_POSTS = [
       '<p>In conclusion, machine learning has enormous potential to help the financial services sector provide better services, improve the customer experience, and more effectively manage risks. The importance of machine learning will undoubtedly increase as financial institutions proceed with their digital transformation journeys.</p>',
   },
   {
+    published_at: '2023-06-12T14:00:00+0000',
+    is_active: true,
+    category_id: 3,
+    title:
+      'The Impact of Fintech on Traditional Banking: Preparing the Workforce for Digital Disruption',
+    slug: 'impact-fintech-traditional-banking-preparing-workforce-digital-disruption',
+    subtitle:
+      'Riding the Fintech Wave: Empowering Traditional Banks for Digital Transformation',
+    hero_src: 'https://source.unsplash.com/EMPZ7yRZoGw/1600x900',
+    hero_alt: 'stocks',
+    html:
+      '<blockquote>\n' +
+      "<p><em>Summary: Traditional banking has been disrupted by the advent of fintech, which has forced banks to adapt to novel digital business models and satisfy rising client expectations for seamless and convenient services. Traditional banks are being pressured to embrace digital transformation and make investments in their workforce's digital training as a result of fintech's capability to innovate swiftly and react to new market opportunities. To obtain access to new markets and cutting-edge technologies, banks must foster a creative culture and work in partnership with fintech firms. Banks must hire fresh talent and invest in the training of current staff in order to succeed in the digital environment. Traditional banks can maintain its competitiveness and satisfy the changing needs and preferences of their customers by adjusting to the effect of fintech.</em></p>\n" +
+      '</blockquote>\n' +
+      '<p>The emergence of fintech has altered traditional banking in numerous ways. Fintech businesses leverage technology to deliver financial services in novel ways, frequently competing with established banking institutions. The banking industry has seen tremendous change as result of the digital disruption, including changes to the workforce. Traditional banking institutions need to give their staff the abilities to perform in the digital world in order to be ready for the effects of fintech.</p>\n' +
+      '<h2>The Impact of Fintech on Traditional Banking</h2>\n' +
+      '<p>By providing quicker, more practical, and more readily accessible financial services, fintech companies have revolutionised the way financial services are supplied. These businesses employ technology to offer a variety of services, including mobile banking, payment processing, lending, and wealth management. Fintech has&nbsp;greatly&nbsp;influences&nbsp;since it has compelled established&nbsp;banking institutions to compete with fresh digital competitors.</p>\n' +
+      '<p>One of the primary impacts of fintech on traditional banking is the shift in customer expectations. Fintech businesses have raised the standard when it comes to providing seamless, individualised, and convenient services that are available around-the-clock. Traditional banks are now expected to provide the same degree of customer service, which has compelled these organisations to make significant investments in digital channels and customer support.</p>\n' +
+      '<p>With the emergence of new business models, fintech companies are often more adaptable and can act fast to seize new market possibilities. They are not constrained by outdated systems and procedures, they can innovate more quickly than traditional banking organisations. Traditional banks must modify their business strategies in order to compete in the digital market.</p>\n' +
+      '<h2>Preparing the Workforce for Digital Disruption</h2>\n' +
+      '<p>The workforce is significantly impacted by how fintech affects traditional banking. To remain competitive, traditional banks must equip their staff with the skills and knowledge required to operate in the digital landscape. Here are some strategies that traditional banks can consider to prepare their workforce for digital disruption:</p>\n' +
+      '<h3>Invest in Digital Training</h3>\n' +
+      '<p>Traditional banks must make investments digital training to ensure that their employees has the abilities and knowledge required to navigate the digital landscape. Digital channels, digital marketing, data analytics, and cybersecurity should be covered in this training. Traditional banks can ensure that their employees are knowledgeable about the newest trends and technologies by investing in digital training.</p>\n' +
+      '<h3>Embrace Digital Transformation</h3>\n' +
+      '<p>To be competitive in the digital environment, traditional banks must embrace digital transformation to remain competitive in the digital landscape. . In order to increase efficiency, this entails making investments in digital channels, creating fresh goods and services, and optimising internal operations. Traditional banks may expand their potential for growth and innovation while also enhancing the client experience by embracing digital transformation.</p>\n' +
+      '<h3>Foster a Culture of Innovation</h3>\n' +
+      "<p>Conventional banks must promote an innovative culture to motivate staff to think critically and take chances. This can be done by fostering an atmosphere that values experimentation and promotes employee idea sharing. Traditional banks can develop fresh goods and services to cater to clients' shifting wants by developing an innovative culture.</p>\n" +
+      '<h3>Collaborate with Fintech Companies</h3>\n' +
+      '<p>Traditional banks can collaborate with fintech companies to leverage their expertise and keep on top of the latest trends. With collaboration, traditional banks can gain access to new markets and consumer groups while also learning about cutting-edge technologies and business models. By embracing such emerging technologies and services, these partnerships can also aid traditional banks in enhancing the client experience.</p>\n' +
+      '<h3>Develop a Talent Pipeline</h3>\n' +
+      '<p>To successfully navigate the digital landscape, traditional banks must build a talent pipeline. This can be achieved by hiring new and fresh talent with digital know-how and expertise, while also investing in the training of current employees. Traditional banks must also ensure that they have a diversified workforce that reflects the evolving demands and tastes of customers.</p>\n' +
+      '<h2>Conclusion</h2>\n' +
+      '<p>In conclusion, the impact of fintech on traditional banking has been significant, as traditional banks are obliged to adapt to new business models and shifting client expectations. By doing so, traditional banks can position themselves to compete with fintech companies and accommodate the changing needs of customers.</p>\n',
+  },
+  {
     published_at: '2023-06-21T13:00:00+0000',
     is_active: true,
-    category_id: 1,
+    category_id: 3,
     title:
-      'Data Engineering in Finance: A Key Component of Digital Transformation',
-    slug: 'data-engineering-finance-digital-transformation',
+      'Fintech Solution Companies: Redefining the Financial Ecosystem through Digital Innovation',
+    slug: 'fintech-solutions-redefining-financial-ecosystem',
     subtitle:
-      'Dive into the transformative impact of data engineering on the digital landscape of the finance sector.',
-    hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
-    hero_alt: 'lasers',
+      'Discover the pivotal role of fintech solution providers in revolutionizing the financial landscape with cutting-edge technologies.',
+    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
+    hero_alt: 'laptop stock market',
     html:
-      '<p>Data&#39;s importance is more important than ever in the age of digital transformation. Data engineering has become a crucial part of this change as financial institutions use technology to improve their services and streamline their business processes. In-depth discussion of data engineering&#39;s importance in the financial industry, its many uses, and its prospects in the rapidly changing financial ecosystem are provided in this article.</p>\n' +
-      '<h2>Data Engineering: An Overview</h2>\n' +
-      '<p>Data engineering is the process of gathering, validating, storing, and processing large amounts of data in order to make it accessible for data analysis. The successful application of cutting-edge technologies like machine learning and the effective use of data both depend on this procedure.</p>\n' +
-      '<p>Data engineers are extremely important in the finance industry. They create the architecture and systems that manage financial data, making sure it is trustworthy and easily accessible for data analysis. With the introduction of digital transformation in financial services, this role has assumed even greater significance.</p>\n' +
-      '<h2>Role of Data Engineering in Financial Services</h2>\n' +
-      '<h3>Enhanced Decision Making</h3>\n' +
-      '<p>Data engineering gives financial institutions accurate, trustworthy data so they can make better decisions. Data engineers and financial software developers can create systems that gather data from various sources, clean it up, and process it to produce valuable insights. This can be beneficial for strategic planning overall, risk assessment, and investment decision-making.</p>\n' +
-      '<h3>Fraud Detection</h3>\n' +
-      '<p>Data engineering is essential for fraud detection, as was already mentioned in the context of machine learning. Data engineers make it possible to use complex algorithms that can identify anomalies and potentially fraudulent activities by creating reliable systems that can process enormous amounts of transaction data in real-time.</p>\n' +
-      '<h3>Regulatory Compliance</h3>\n' +
-      '<p>The financial sector is extremely dependent on regulatory compliance. By ensuring the integrity, security, and privacy of financial data, data engineers assist financial institutions in complying with regulatory requirements.</p>\n' +
-      '<h2>Driving User Experience Through Data Engineering</h2>\n' +
-      '<p>In today&#39;s digital age, financial institutions must deliver a seamless user experience (UX). By providing the necessary data to comprehend customer behavior and preferences, data engineering plays a crucial role in this area. These data are used by financial technology consulting firms and fintech solution providers to design and deliver a more individualized and user-friendly UX in their digital platforms, which includes banking apps.</p>\n' +
-      '<h2>The Future of Data Engineering in Finance</h2>\n' +
-      '<p>Data engineering in the financial industry has a bright future. The demand for qualified data engineers in the finance industry is expected to rise as a result of the development of technologies like machine learning, AI, and cloud computing.</p>\n' +
-      '<p>The need for skill upgrades, data privacy concerns, and security issues are just a few of the challenges that come with this and other technological advancements. Financial institutions must promote a culture of ongoing learning, put in place strong data governance frameworks, and collaborate closely with regulators if they are to successfully address these issues.</p>\n' +
+      '<p>The financial industry landscape has undergone a paradigm shift in a time of quick technological advancements and the digital revolution. The emergence of fintech solution providers has transformed the financial sector, bringing with them cutting-edge digital solutions that are modernizing traditional financial services and redefining the financial ecosystem. The function and effects of these fintech solution providers on the financial industry are examined in this article.</p>\n' +
+      '<h2>The Rise of Fintech Solutions</h2>\n' +
+      '<p>Companies that provide fintech solutions are becoming important players in the financial sector, driven by technological advancements. To create cutting-edge financial solutions, they are utilizing cutting-edge technologies like financial machine learning, complex data analytics, artificial intelligence (AI), and blockchain.</p>\n' +
+      '<p>Machine learning is being used more frequently in finance as financial data engineers and software developers collaborate to create software solutions. Machine learning and AI are enabling more precise and effective decision-making processes through predictive modeling, algorithmic trading, portfolio management, fraud detection, and risk management.</p>\n' +
+      '<h2>The Role of UX Design in Fintech</h2>\n' +
+      '<p>Offering a seamless user experience (UX) is now more crucial than ever due to the increasing competition in the fintech industry. The emergence of UX design in financial services is altering how users interact with their finances. Complex financial information can be made easier to understand for users by using a well-designed UX design.</p>\n' +
+      '<p>For example, banking app UX is currently a key factor for fintech solution providers. Customers want applications that are simple to use, intuitive, and capable of securely processing their transactions. As a result, the role of a fintech design agency has grown to encompass not only the creation of technological solutions but also the design of an easy-to-use user experience.</p>\n' +
+      '<h2>Navigating the Digital Frontier in Wealth Management</h2>\n' +
+      '<p>Wealth management services keep up with the ongoing digital transformation of the financial services industry. Companies offering fintech solutions are creating sophisticated tools that deliver individualized, data-driven financial advice. With the aid of these technologies, wealth managers can make use of enormous amounts of data to provide risk management and investment advice that is more accurate.</p>\n' +
+      '<p>For example, the industry is seeing a rise in the use of robo-advisors that are AI and machine learning powered. They automate investment advice, bringing down costs and opening up wealth management services to a wider audience.</p>\n' +
+      '<h2>Fintech Consulting: A Strategic Advantage</h2>\n' +
+      '<p>Financial institutions must stay current with emerging trends and technologies given the fintech industry&#39;s rapid pace of innovation. Consulting in financial technology is essential in this situation. Consultants offer information on the most recent advancements, assist financial institutions with their digital transformation, and help them make the most of these technologies.</p>\n' +
+      '<p>Consulting firms for fintech solutions not only offer software solutions but also provide strategic guidance on how to successfully integrate these technologies into the current financial infrastructure, lining them up with the institution&#39;s business objectives.</p>\n' +
+      '<h2>Unleashing Global Financial Potential</h2>\n' +
+      '<p>Companies that provide fintech solutions are essential to maximizing the potential of the global financial system in the wake of digital transformation. They are democratizing financial services so that more people can access them. They are expanding markets and fostering global economic growth by promoting financial inclusion.</p>\n' +
+      '<p>Fintech firms also assist financial institutions in increasing operational effectiveness, lowering costs, managing risks, and providing better customer experiences by offering reliable, secure, and innovative solutions.</p>\n' +
       '<h2>Conclusion</h2>\n' +
-      '<p>In fact, data engineering is a crucial aspect of the financial sector&#39;s digital transformation. The importance of data engineering will only increase as financial institutions learn to operate in the digital world. Financial institutions can stimulate innovation, improve their services, and ultimately influence the future of finance by realizing the full potential of their data.</p>\n',
+      '<p>The significance of fintech solution providers in reshaping the financial ecosystem grows as we advance further into the digital era. Their contribution to leveraging digital innovation, whether in terms of advanced analytics, AI, machine learning, or UX design, is in fact redefining the financial sector. Fintech solution providers will likely continue to lead as we look to the future.</p>\n',
   },
 ].map((item, i) => ({
   id: i + 1,
@@ -1956,6 +1920,42 @@ export const MOCK_GOVX_POSTS = [
       '<p>Governments must address ethical issues surrounding data analytics, such as ensuring fairness, accountability, and transparency in the decision-making process.</p>\n' +
       '<h2>Conclusion</h2>\n' +
       '<p>Data analytics has the potential to revolutionize the public sector by enhancing efficiency, improving decision making, and optimizing resource allocation. Governments that embrace data analytics will be better equipped to tackle complex challenges, deliver effective public services, and drive evidence-based policy reforms. As the influence of data analytics continues to rise, governments must prioritize. Clear guidelines and frameworks should be established to ensure responsible and ethical use of data analytics.</p>\n',
+  },
+  {
+    published_at: '2023-05-15T08:00:00+0000',
+    is_active: true,
+    is_featured: true,
+    category_id: 2,
+    title:
+      'Digital Transformation in Government: Modernising Public Services for the 21st Century',
+    slug: 'digital-transformation-government-modernising-public-services-21st-century',
+    subtitle:
+      'Embracing the digital revolution for efficient and citizen-centric governance',
+    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_alt: 'singapore',
+    html:
+      '<blockquote>\n' +
+      '<p><em>Summary:</em></p>\n' +
+      "<p><em>Digital transformation has been a commercial buzzword in the business world for long now yet it has been becoming more significant in the public sector. Governments from all over the world are recognising the need to modernise their public services in order to keep up with the fast-paced and ever evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</em></p>\n" +
+      '</blockquote>\n' +
+      "<p>Digital transformation has been a buzzword in the business world for years now yet it has been gaining importance in the public sector. Governments around the world are recognising the need to modernise their public services in order to keep up with the fast-paced and rapidly evolving digital landscape of the 21st century. In this article, we'll explore the benefits of digital transformation in government and how it can help modernise public services.</p>\n" +
+      '<h2>Benefits of Digital Transformation in Government</h2>\n' +
+      '<h3>Improved efficiency and cost savings</h3>\n' +
+      '<p>With the automation of manual processes and the elimination of paperwork, digital transformation can aid governments in streamlining their operations, lowering expenses and reduces the likelihood of errors. This may free up time and resources that may be applied to other significant projects and efforts. Moving forward digitally, mobile apps and self-service portals to access government services are commonly utilised. Such initiatives has reduced the need for face-to-face interaction with government employees, improving the experience for citizens.</p>\n' +
+      '<h3>Increased citizen engagement</h3>\n' +
+      '<p>Digital tools ranging from online services, social media to mobile apps are readily available for citizens to utilise for them to share their opinions on important issues. These platforms create online communities where citizens can share ideas and provide meaningful feedback. Online communities allow for citizens to engage with both each other and government agencies, increasing the likelihood of potential collaboration and participation in the decision-making process. Feedback can also be easily collected from citizens through digital channels such as online surveys and feedback forms. Consequently, aiding governments to deliver services more efficiently and effectively.</p>\n' +
+      '<h3>Enhanced transparency and accountability</h3>\n' +
+      '<p>Governments are now allowed to share data to the public in open. machine-readable formats. Open data, that was previously only accessible to government officials are now made available to the general public, encourages transparency and accountability within the government. Social media has also become an essential tool for governments to communicate with citizens. By making the communication between the government and the public visible to all, transparency is granted.</p>\n' +
+      '<h2>Challenges of Digital Transformation in Government Sector</h2>\n' +
+      '<p>While digital transformation can offer many benefits to governments and citizens, it also presents some challenges. These include:</p>\n' +
+      '<h3>Resistance to change</h3>\n' +
+      '<p>Considering the nature of the government, work tend to be highly bureaucratic, with entrenched processes and procedures that can be resistant to change. Additionally, many government employees have been working in the same way for years or even decades, and may be reluctant to adopt new technologies or processes that will make their jobs redundant or be replaced with automation. Employees may be unfamiliar and hesitant with the introduction of new technologies and may feel unsure about how to use them effectively, for fear of negative consequences. Not to mention the organisational culture that a government has, they might not be willing to go against established norms.</p>\n' +
+      '<h3>Skill gaps</h3>\n' +
+      '<p>Skill gaps refers to the mismatch between the skills that government employees possess and the skills that are required to successfully implement and manage transformation initiatives. Digital transformation requires new skills and expertise that may not exist within government organisations. Be it limited knowledge of emerging technologies, lack of digital literacy and limited understanding of data analytics, employees may struggle with trying address such skills gap. Governments will need to invest in training and education to ensure that employees have the skills they need to succeed in a digital environment.</p>\n' +
+      '<h4>Security and privacy concerns</h4>\n' +
+      '<p>One of the biggest challenges of digital transformation is ensuring the security and privacy of sensitive data and information. In the government sector, there is a great deal of sensitive information that must be protected. Digital transformation can create new security and privacy risks, such as data breaches and cyber attacks. Governments must take steps to ensure that citizen data is protected and secure.</p>\n' +
+      '<h3>Conclusion</h3>\n' +
+      '<p>As governments recognise the need to modernise their public services to keep up with the fast-paced and continuously expanding digital landscape of the 21st century, digital transformation is becoming increasingly viable in the public sector. We are embracing digital transformation. Yet, digital transformation also presents some challenges. Governments must take action to overcome the challenges and guarantee the success of their digital transformation initiatives.</p>',
   },
   {
     published_at: '2023-06-21T13:00:00+0000',
