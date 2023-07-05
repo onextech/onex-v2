@@ -22,7 +22,6 @@ import {
 } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
-import { clientEnum } from '../utils/constants'
 
 export interface GovxPageProps {
   page: Page
@@ -33,13 +32,15 @@ export interface GovxPageProps {
 }
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
+
 const clients = [
-  clientEnum.GIC,
-  clientEnum.MPA,
-  clientEnum.PA,
-  clientEnum.SSA,
-  clientEnum.IMO,
-  clientEnum.MOH,
+  'logo_gic',
+  'logo_mpa',
+  'logo_mpa',
+  'logo_pa',
+  'logo_ssa',
+  'logo_imo',
+  'logo_moh',
 ]
 
 const clientBlockHeader =

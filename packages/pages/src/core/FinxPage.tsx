@@ -23,7 +23,6 @@ import {
 } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
-import { clientEnum } from '../utils/constants'
 
 export interface FinxPageProps {
   page: Page
@@ -34,12 +33,13 @@ export interface FinxPageProps {
 }
 
 const commonBlockProps = { center: true, maxWidth: 'md' }
+
 const clients = [
-  clientEnum.GIC,
-  clientEnum.IIX,
-  clientEnum.JULIUS_BAR,
-  clientEnum.SPIKING,
-  clientEnum.UOB,
+  'logo_gic',
+  'logo_iix',
+  'logo_julius_bar',
+  'logo_spiking',
+  'logo_uob',
 ]
 
 const clientBlockHeader =
@@ -48,7 +48,7 @@ const clientBlockHeader =
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, routeConfig } = useLayout()
+  const { site, clientLogos } = useLayout()
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
