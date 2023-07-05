@@ -11,7 +11,7 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-  renderClientLogoCardBlockItem,
+  renderClientLogosGallery,
 } from '@gravis-os/landing'
 import {
   Page,
@@ -32,9 +32,7 @@ export interface FinxPageProps {
   industrys: Industry[]
 }
 
-const commonBlockProps = { center: true, maxWidth: 'md' }
-
-const clients = [
+const clientAvatarSrc = [
   'logo_gic',
   'logo_iix',
   'logo_julius_bar',
@@ -55,8 +53,6 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
   )?.title
   const { sections } = page || {}
   const { hero, benefits, features, faqs, cta } = sections || {}
-
-  const clientAvatarSrc = clients.map((value) => `logo_${value}`)
 
   const finxClients = clientLogos.filter((value: ClientLogo) => {
     const { avatar_alt } = value
@@ -141,33 +137,10 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        {
-          key: 'gallery',
-          ...commonBlockProps,
-          dark: true,
-          items: [
-            { type: 'h4', title: clientBlockHeader },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 1 },
-              gridItemProps: { xs: 6, md: 4 },
-              gridItems: finxClients.map((clientLogo) => {
-                const { avatar_src, avatar_alt, avatar_width, avatar_height } =
-                  clientLogo
-                return renderClientLogoCardBlockItem({
-                  title: avatar_src,
-                  titleProps: {
-                    alt: avatar_alt,
-                    width: avatar_width,
-                    height: avatar_height,
-                  },
-                })
-              }),
-            },
-          ],
-        },
+        renderClientLogosGallery({
+          clientLogos: finxClients,
+          clientBlockHeader,
+        }),
         // Showcases
         renderShowcasesBlock({
           title: <>Empowering the Finance Sector through AI-driven Solutions</>,
