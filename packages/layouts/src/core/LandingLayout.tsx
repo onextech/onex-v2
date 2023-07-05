@@ -77,6 +77,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'logo',
       preset: { type: 'logo', logoProps },
     },
+    showcases?.length && {
+      key: 'showcase',
+      title: 'Portfolio',
+      href: routeConfig.SHOWCASES,
+    },
     {
       key: 'services',
       title: 'Services',
@@ -161,11 +166,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           />
         )
       },
-    },
-    showcases?.length && {
-      key: 'showcase',
-      title: 'Portfolio',
-      href: routeConfig.SHOWCASES,
     },
     technologys?.length && {
       key: 'technologys',
@@ -590,12 +590,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       title: 'Company',
       href: routeConfig.ABOUT,
       items: [
-        ...pages,
         showcases?.length && {
           key: 'showcases',
           title: 'Portfolio',
           href: routeConfig.SHOWCASES,
         },
+        ...pages,
       ].filter(Boolean),
     },
   ]
