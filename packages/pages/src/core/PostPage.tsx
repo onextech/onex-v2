@@ -28,7 +28,12 @@ const PostPage: React.FC<PostPageProps> = (props) => {
 
   useEffect(() => {
     if (isNil(otherPosts)) return
-    setRandomPosts(getNRandomPosts(otherPosts, NUMBER_OF_OTHER_POSTS))
+    setRandomPosts(
+      getNRandomPosts(
+        otherPosts.filter((value) => value.id !== post.id),
+        NUMBER_OF_OTHER_POSTS
+      )
+    )
   }, [otherPosts])
 
   return (
