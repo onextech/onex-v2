@@ -45,6 +45,12 @@ export const PostDetail = {
         ),
       post?.category_id
     ).slice(0, 3)
+    const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+      .filter(
+        ({ published_at }) =>
+          published_at && dayjs(published_at).isBefore(dayjs())
+      )
+      .filter(({ category_id }) => category_id === postCategory?.id)
 
     return getStaticPropsWithLayout({
       props: {
@@ -52,6 +58,7 @@ export const PostDetail = {
         postCategory,
         relatedServices,
         relatedPosts,
+        posts,
       },
     })(context)
   },
