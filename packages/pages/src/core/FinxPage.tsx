@@ -139,8 +139,8 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         }),
         // Client logo gallery
         renderClientLogosGallery({
-          clientLogos: finxClients,
-          clientBlockHeader,
+          items: finxClients,
+          title: clientBlockHeader,
         }),
         // Showcases
         renderShowcasesBlock({
