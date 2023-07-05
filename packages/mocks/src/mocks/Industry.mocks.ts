@@ -565,9 +565,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'capital-markets',
     fa_icon: 'fa-coins',
     is_featured: true,
-    hero_src:
-      'Accelerating financial innovation with tailored capital market solutions.',
-    hero_alt: 'Man monitoring graph',
+    hero_src: 'https://source.unsplash.com/8lnbXtxFGZw/1600x900',
+    hero_alt: 'US dollar bills',
     sections: {
       summary: {
         title: 'Driving success in the Capital Markets industry.',
@@ -757,7 +756,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'aerospace-and-defense',
     fa_icon: 'fa-plane-departure',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_src: 'https://source.unsplash.com/8atxWjBYzGI/1600x900',
     hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
     sections: {
       summary: {
@@ -1126,8 +1125,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'automotive',
     fa_icon: 'fa-car',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/GJuXN4uyB2U/1600x900',
-    hero_alt: 'Mclaren and Mercedes Benz cars in Monaco',
+    hero_src: 'https://source.unsplash.com/MaraDXSaTho/1600x900',
+    hero_alt: 'Mercedes benz in monaco',
     sections: {
       summary: {
         title: 'Revving up technology for the automotive industry.',
