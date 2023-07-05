@@ -310,7 +310,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'grid',
                             gridProps: { spacing: 2 },
-                            gridItemProps: { xs: 6, md: 6, lg: 4, xl: 4 },
+                            gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: industrys.map((industry) =>
                               renderHeaderMenuBlockItem(industry)
                             ),
