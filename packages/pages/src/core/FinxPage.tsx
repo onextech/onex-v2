@@ -137,6 +137,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        // Client logo gallery
         renderClientLogosGallery({
           clientLogos: finxClients,
           clientBlockHeader,
