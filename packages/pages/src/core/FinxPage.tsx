@@ -11,6 +11,7 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
+  renderClientLogosGallery,
 } from '@gravis-os/landing'
 import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
@@ -27,7 +28,7 @@ export interface FinxPageProps {
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
-  const { site, clientLogos, routeConfig } = useLayout()
+  const { site, clientLogos } = useLayout()
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
@@ -112,6 +113,12 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
+        }),
+        // Client logo gallery
+        renderClientLogosGallery({
+          items: clientLogos,
+          title:
+            'We Work With and Drive Innovation for Reputable Financial Organizations',
         }),
         // Showcases
         renderShowcasesBlock({

@@ -7,7 +7,6 @@ import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PostDetail.getStaticProps()
 export const getStaticPaths = PostDetail.getStaticPaths()
-
 export interface NextPostPageProps
   extends InferGetStaticPropsType<typeof getStaticProps>,
     PostPageProps {}
