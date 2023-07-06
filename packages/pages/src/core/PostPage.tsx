@@ -18,6 +18,7 @@ export interface PostPageProps {
 }
 
 const PostPage: React.FC<PostPageProps> = (props) => {
+
   const { post, relatedPosts, relatedServices, otherPosts } = props
 
   return (

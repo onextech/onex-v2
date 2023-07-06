@@ -10,6 +10,7 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
+  renderClientLogosGallery,
 } from '@gravis-os/landing'
 import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
@@ -111,6 +112,11 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         renderThreeColumnGridBlock({
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
+        }),
+        renderClientLogosGallery({
+          items: clientLogos,
+          title:
+            'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
         }),
         // Showcases
         renderShowcasesBlock({

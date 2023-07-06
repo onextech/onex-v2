@@ -561,97 +561,99 @@ export const MOCK_GROUP_INDUSTRYS = [
   {
     title: 'Capital Markets',
     subtitle:
-      'Accelerating financial innovation with tailored capital market solutions.',
+      'Transform your financial services with bespoke software solutions to navigate complex capital market challenges.',
     slug: 'capital-markets',
     fa_icon: 'fa-coins',
     is_featured: true,
-    hero_src:
-      'Accelerating financial innovation with tailored capital market solutions.',
-    hero_alt: 'Man monitoring graph',
+    hero_src: 'https://source.unsplash.com/8lnbXtxFGZw/1600x900',
+    hero_alt: 'US dollar bills',
     sections: {
       summary: {
-        title: 'Driving success in the Capital Markets industry.',
+        title:
+          'Driving innovation in the capital markets with custom software solutions.',
         items: [
           {
             title:
-              'At our Capital Markets Solutions, we understand the unique challenges and opportunities that businesses in the Capital Markets industry face. Our technology consulting services and enterprise software development expertise are tailored to meet the specific needs of Capital Markets companies.',
+              'In the dynamic and complex world of capital markets, having reliable, robust and efficient software systems is crucial. Our team of experienced developers understands the intricacies of capital markets and creates solutions that enhance your operational efficiency, mitigate risk, and streamline processes.',
           },
           {
             title:
-              'We believe that technology plays a crucial role in unlocking growth and competitive advantage in the Capital Markets sector. With our deep understanding of the Capital Markets industry and our commitment to delivering innovative solutions, we can help your Capital Markets business thrive.',
+              'Our solutions are designed with the user in mind, ensuring they are intuitive and easy to use.',
           },
         ],
       },
       features: {
-        overline: 'What we do',
-        title: 'Our Approach to {title}',
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
         subtitle:
-          'With our expertise in enterprise software development, we offer a range of solutions tailored to address the specific needs and challenges of the Capital Markets industry.',
+          'Our bespoke software solutions are designed to tackle the unique challenges faced by the capital markets sector.',
         items: [
           {
+            fa_icon: 'fa-chart-line',
+            title: 'Robust Risk Management',
+            subtitle:
+              'We develop software solutions that facilitate robust risk management, enabling you to monitor, manage and mitigate market, credit and operational risks effectively.',
+          },
+          {
+            fa_icon: 'fa-dollar-sign',
+            title: 'Seamless Transactions',
+            subtitle:
+              'We create software solutions that streamline transactions, enhance payment processing, and ensure secure and efficient transfer of funds.',
+          },
+          {
             fa_icon: 'fa-cogs',
-            title: 'Custom Software Development',
+            title: 'Process Automation',
             subtitle:
-              'We develop custom software solutions that are designed to streamline your Capital Markets business processes and drive efficiency.',
-          },
-          {
-            fa_icon: 'fa-database',
-            title: 'Data Analytics and Insights',
-            subtitle:
-              'Our data analytics services enable you to gain valuable insights from your Capital Markets business data, empowering you to make informed decisions.',
-          },
-          {
-            fa_icon: 'fa-users',
-            title: 'CRM Solutions',
-            subtitle:
-              'We provide CRM (Customer Relationship Management) solutions that help you effectively manage customer relationships and enhance customer satisfaction.',
+              'We deliver automation solutions that streamline workflows, increase operational efficiency, and reduce manual intervention in the capital market operations.',
           },
           {
             fa_icon: 'fa-shield-alt',
-            title: 'Security and Compliance',
+            title: 'Compliance Assurance',
             subtitle:
-              'Our expertise in security and compliance ensures that your Capital Markets business is protected against potential threats and meets industry regulations.',
+              'Our software solutions ensure compliance with regulations, providing automated compliance checks and reporting.',
           },
           {
-            fa_icon: 'fa-globe',
-            title: 'Integration and Scalability',
+            fa_icon: 'fa-database',
+            title: 'Data Management',
             subtitle:
-              'We offer integration services to connect and streamline your Capital Markets business systems, as well as scalable solutions to support your growth.',
+              'We provide advanced data management solutions, ensuring accurate, timely, and secure access to critical market data.',
           },
           {
-            fa_icon: 'fa-wrench',
-            title: 'Legacy Systems Modernization',
+            fa_icon: 'fa-users-cog',
+            title: 'Collaboration',
             subtitle:
-              'We assist in modernizing and upgrading your legacy systems, enabling your Capital Markets business to leverage the latest technologies and stay competitive.',
+              'Our team works closely with yours to deliver software solutions that meet your business objectives and deliver value to your stakeholders.',
           },
         ],
       },
-    },
-    faqs: {
-      title: 'Frequently Asked Questions',
-      subtitle:
-        'Learn more about our Capital Markets Solutions and how they can benefit your business.',
-      items: [
-        {
-          key: 'faqs-1',
-          title: 'What are the key challenges in capital markets operations?',
-          content:
-            'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
-        },
-        {
-          key: 'faqs-2',
-          title: 'How can your software solutions improve trading processes?',
-          content:
-            'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
-        },
-        {
-          key: 'faqs-3',
-          title:
-            'Do you offer customization options for capital markets solutions?',
-          content:
-            'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
-        },
-      ],
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Capital Markets Software Development Services and how we can help your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why do I need custom software solutions for my capital markets business?',
+            content:
+              'Custom software solutions can significantly enhance your business operations by catering to your unique requirements, improving efficiency, mitigating risk, and ensuring regulatory compliance. They can also offer better scalability and flexibility compared to off-the-shelf products.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What types of software solutions do you develop for the capital markets sector?',
+            content:
+              'We develop a wide range of software solutions for the capital markets sector, including risk management systems, transaction processing systems, automation tools, compliance solutions, and data management systems. Our solutions are tailor-made to meet your specific business needs and objectives.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'Can you integrate your software solutions with my existing systems?',
+            content:
+              'Yes, we design our software solutions to seamlessly integrate with your existing systems, ensuring minimal disruption to your business operations.',
+          },
+        ],
+      },
     },
   },
   {
@@ -757,7 +759,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'aerospace-and-defense',
     fa_icon: 'fa-plane-departure',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_src: 'https://source.unsplash.com/8atxWjBYzGI/1600x900',
     hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
     sections: {
       summary: {
@@ -1126,8 +1128,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'automotive',
     fa_icon: 'fa-car',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/GJuXN4uyB2U/1600x900',
-    hero_alt: 'Mclaren and Mercedes Benz cars in Monaco',
+    hero_src: 'https://source.unsplash.com/MaraDXSaTho/1600x900',
+    hero_alt: 'Mercedes benz in monaco',
     sections: {
       summary: {
         title: 'Revving up technology for the automotive industry.',
