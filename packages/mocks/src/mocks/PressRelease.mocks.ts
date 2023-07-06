@@ -177,6 +177,85 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
   {
     is_active: true,
+    published_at: '2023-07-12T01:43:55+0800',
+    title: 'One X Group Broadens Horizons with One X Design',
+    slug: 'one-x-group-expands-into-ui-ux-with-one-x-design',
+    subtitle:
+      'One X Group propels into the future of digital innovation with the introduction of One X Design, revolutionizing enterprise engagement through transformative UI/UX solutions.',
+    hero_src: 'https://source.unsplash.com/OUi93Rto_bw/1600x900',
+    hero_alt: 'colourful bubbles',
+    html:
+      '<h2>With One X Design, One X Group expands its horizons</h2>\n' +
+      '<p>At One X Group, a quiet revolution is taking place as we navigate the constantly changing digital landscape. The technology partner, renowned for its dedication to innovative solutions, plans to expand its horizons by foraying into user interface and user experience design through its new arm, One X Design.</p>\n' +
+      '<p>Today, a renewed sense of purpose is permeating the One X Group headquarters. A significant shift in how businesses view design is being brought about by teams of developers, designers, and business strategists working together in synergy. This change has long been due; it is an exciting and important natural evolution.</p>\n' +
+      '<h2>Unlocking the Power of Design</h2>\n' +
+      '<p>&quot;We think that technology is the superpower that transforms the entire business world. And flawless design is at the core of any successful technological innovation&rdquo;, according to Lu ShuHui, One X Design&rsquo;s Head of Design. &ldquo;With One X Design, we combine our technological know-how with creative design thinking to produce solutions that not only meet operational needs but also improve the user experience as a whole.&quot;</p>\n' +
+      '<p>One X Design, a Singapore-based company, is committed to using design to transform business practices. One X Design assists enterprise clients in their journey toward digital transformation through targeted digital designs, in-depth user interface analysis, individualized user experiences, and interactive workshops.</p>\n' +
+      '<h2>Redefining Business Through Design</h2>\n' +
+      '<p>The One X Group&#39;s entry into the design field comes at a time when companies are increasingly realizing how crucial conversion-driven and goal-oriented human-centered designs are. One X Design&#39;s mission is to completely transform businesses from the inside out by scaling design systems, improving existing user interfaces, and empowering product teams.</p>\n' +
+      '<p>A well-planned design not only simplifies workflows but also resolves challenging business issues. One X Design&rsquo;s goal is to produce designs that address issues at the speed and scope of contemporary businesses.</p>\n' +
+      '<h2>Nurturing a User-Centric Mindset</h2>\n' +
+      '<p>One important area in which One X Design stands out is its dedication to fostering a user-centric mindset within client organizations. The One X Design team fosters a culture of design-led innovation within businesses by providing product teams with the abilities and knowledge to produce outstanding user experiences through their interactive workshops.</p>\n' +
+      '<p>One X Design was created with the goal of assisting businesses in their design transformation, much like One X Group does for their digital transformation journey. The synergies are endless and the potential is enormous when the two work together.</p>\n' +
+      '<h2>Final Note</h2>\n' +
+      '<p>The sense of camaraderie, shared vision, and collective aspiration is palpable as the teams at One X Group and One X Design continue to work tirelessly, each contributing in their own special way to the larger mission. The possibility of influencing the future of the digital economy through design is exciting, and the new direction has generated a lot of excitement.</p>\n' +
+      '<p>They are prepared, is the resounding message coming from One X Group and One X Design&#39;s corporate offices. The journey has only just begun, but the outlook is positive.</p>\n' +
+      '<p><em>Visit the website of One X Design right away to learn more about their offerings. <a href="https://www.onexdesign.com/*">https://www.onexdesign.com/</a></em></p>\n' +
+      '<p>&nbsp;</p>\n',
+  },
+  {
+    is_active: true,
+    published_at: '2023-07-10T01:43:55+0800',
+    title: 'One X Group Dives into Frontend Development, Launching One X Tech',
+    slug: 'one-x-group-launches-one-x-tech-frontend-development',
+    subtitle:
+      'One X Group launches One X Tech, marking its strategic expansion into the modern frontend development sector.',
+    hero_src: 'https://source.unsplash.com/tmTidmpILWw/1600x900',
+    hero_alt: 'hardware',
+    html:
+      '<h2>Embarking on a New Digital Journey</h2>\n' +
+      '<p>One X Group is pioneering new territory in the perpetually evolving digital world. One X Group, renowned as a business technology partner that fosters innovation, is now expanding its reach into the world of software development, specifically modern frontend development, with the launch of One X Tech.</p>\n' +
+      '<p>The Group&#39;s corporate headquarters reverberate with renewed energy as teams of developers, designers, and strategists collaborate to write a new chapter in the company&#39;s history. They are fostering a transformation in the way businesses view and use frontend technology, starting a thrilling and important trend.</p>\n' +
+      '<h2>Unifying Technology and Frontend Expertise</h2>\n' +
+      '<p>One X Group is adamant that technology is the superpower that is changing the very foundations of business. The Group believes that a strong frontend design sits at the center of successful technological innovation. Through One X Tech, One X Group combines their frontend development expertise and technological expertise to create solutions that not only meet operational needs but also improve the user experience.</p>\n' +
+      '<p>One X Tech, a Singapore-based company, aims to enhance enterprise digital capabilities through exceptional user experiences. One X Tech helps businesses with their digital transformation by providing high-performing frontend teams, aesthetically pleasing user interfaces, and state-of-the-art software architecture.</p>\n' +
+      '<h2>Revolutionizing Businesses through Frontend Development</h2>\n' +
+      '<p>One X Group&#39;s foray into frontend development comes at a good time, as companies are increasingly realizing how crucial a solid and engaging frontend is to generating user engagement and achieving business goals. One X Tech is prepared to transform industries from the ground up by creating cutting-edge user interfaces, adding talented frontend developers to product teams, and researching novel approaches to software architecture.</p>\n' +
+      '<p>Frontend development is a gateway to enhanced user interaction. A well-designed interface not only enables fluid user interactions but also takes on complex business challenges. One X Tech&rsquo;s goal is to develop frontends that deal with these issues at the speed and scope of modern businesses.</p>\n' +
+      '<h2>Cultivating Innovation and Digital Competence</h2>\n' +
+      '<p>One X Tech is devoted to supplying businesses with the talent they require to meet their digital objectives. One X Tech fosters an innovative and digitally competent culture within client organizations by providing qualified frontend developers to support product teams.</p>\n' +
+      '<p>One X Tech is ready to help companies with their frontend development requirements as One X Group continues to support businesses on their journey toward digital transformation. The two branches&#39; harmonious cooperation promises countless synergies and potential.</p>\n' +
+      '<p>The atmosphere is brimming with shared visions, camaraderie, and collective aspirations even as teams from One X Group and One X Tech work tirelessly, each contributing to the overall mission in their own unique ways. The excitement surrounding the new direction is palpable, and the opportunities to shape the future of the digital economy through frontend development are thrilling.</p>\n' +
+      '<p>One X Group and One X Tech have made a loud and clear declaration: they are ready for revolution, transformation, and digital evolution. The journey has only just begun, but the outlook is optimistic.</p>\n' +
+      '<p><em>Visit the website of One X Tech right away to learn more about their offerings. <a href="https://www.onextech.com/*">https://www.onextech.com/</a></em></p>\n',
+  },
+  {
+    is_active: true,
+    published_at: '2023-07-07T01:43:55+0800',
+    title: 'One X Group Dives into Data; Introduces One X Data',
+    slug: 'one-x-group-launches-one-x-data',
+    subtitle:
+      'Exploring the expansive realm of data, One X Group unveils One X Data to revolutionize enterprise decision-making with advanced analytics and AI solutions.',
+    hero_src:
+      'https://source.unsplash.com/macbook-pro-on-white-surface-WiONHd_zYI4/1600x900',
+    hero_alt: 'singapore',
+    html:
+      '<p>We&#39;re pleased to announce that One X Group will be entering the fields of data analytics and artificial intelligence through our new company, One X Data.</p>\n' +
+      '<p>One X Data, a leader in data science services who believes in the transformative power of data, will provide cutting-edge analytics and artificial intelligence (AI) solutions to businesses. We are prepared to expand our influence and skill in this new endeavour because we are based in the thriving tech hub of Singapore.</p>\n' +
+      '<h2>Revolutionizing Business through Data Science</h2>\n' +
+      '<p>Our dedicated platform for high-end data analytics and AI-driven solutions is called One X Data. Utilizing enterprise data to its full potential will enable us to generate insightful data that will help us make better decisions and streamline business operations.</p>\n' +
+      '<p>The development of intelligent systems, predictive models, and automated procedures will be spearheaded by our cutting-edge facility. These revolutionary solutions will revolutionize how our clients work and usher in a new era of accuracy and efficiency.</p>\n' +
+      '<h2>Data Strategy, Consulting, and Machine Learning</h2>\n' +
+      '<p>One X Data offers strategic data consulting along with analytics and AI solutions. In order to create custom data strategies that ensure data governance, privacy, and security while maximizing the value of our clients&#39; data assets, our team of experts works closely with each client.</p>\n' +
+      '<p>We are also experimenting with machine learning. We&#39;re creating models with strong algorithms to improve anomaly detection, forecasting accuracy, and recommendation systems for crucial business applications.</p>\n' +
+      '<h2>A New Era for One X Group</h2>\n' +
+      '<p>A fascinating new chapter for One X Group has begun with the establishment of One X Data. We have always believed in the transformative power of technology in business as an experienced technology partner. By incorporating the power of data into our fundamental model, we are now moving beyond that belief.</p>\n' +
+      '<p>Our dedication to producing transformational results in the digital world is strengthened by this expansion. Our mission to unleash the potential of a supercharged digital economy remains unchanged as we embark on this new endeavour.</p>\n' +
+      '<p>One X Data is evidence of our continuing development and readiness to meet new challenges. We are excited to continue empowering businesses with cutting-edge solutions and making a positive impact on the larger digital ecosystem as we embrace this new environment.</p>\n' +
+      '<p><em>Are you ready to tap into the power of your data? Visit One X Data at <a href="https://www.onexdata.co/*">https://www.onexdata.co/</a></em></p>\n',
+  },
+  {
+    is_active: true,
     published_at: '2023-05-30T01:43:55+0800',
     title:
       'Revolutionizing Technology Solutions: Introducing the New One X Group Website',
