@@ -109,6 +109,12 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
     avatar_width: 89,
     avatar_height: 39,
   },
+  moh: {
+    avatar_src: '/logos/logo_moh.png',
+    avatar_alt: 'logo_moh',
+    avatar_width: 130,
+    avatar_height: 125,
+  },
 }
 
 export const MOCK_GROUP_CLIENT_LOGOS = Object.values(
@@ -129,15 +135,19 @@ export const MOCK_TECH_CLIENT_LOGOS = Object.values(
   ])
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 
+export const MOCK_FINX_CLIENT_LOGOS = Object.values(
+  pick(MOCK_CLIENT_LOGOS_OBJECT, ['gic', 'iix', 'julius_bar', 'spiking', 'uob'])
+).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
+
+export const MOCK_GOVX_CLIENT_LOGOS = Object.values(
+  pick(MOCK_CLIENT_LOGOS_OBJECT, ['gic', 'mpa', 'pa', 'ssa', 'imo', 'moh'])
+).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
+
 export const MOCK_DESIGN_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
 export const MOCK_DATA_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
 export const MOCK_DIGITAL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
-
-export const MOCK_FINX_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
-
-export const MOCK_GOVX_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
 export const MOCK_CLIENT_LOGOS = {
   GROUP: MOCK_GROUP_CLIENT_LOGOS,

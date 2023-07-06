@@ -85,6 +85,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     {
       key: 'services',
       title: 'Services',
+      href: routeConfig.SERVICES,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: services.map((service) => ({
@@ -250,6 +251,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     industrys?.length && {
       key: 'industrys',
       title: 'Industries',
+      href: routeConfig.INDUSTRYS,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: industrys.map((industry) => ({
@@ -329,6 +331,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     {
       key: 'insights',
       title: 'Insights',
+      href: routeConfig.POSTS,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: postCategorys.map((postCategory) => ({
@@ -408,6 +411,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     {
       key: 'company',
       title: 'Company',
+      href: routeConfig.ABOUT,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: pages.map((page) => ({
@@ -565,12 +569,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
   const footerNavConfig = [
-    {
+    services?.length && {
       key: 'services',
       title: 'Services',
       items: services,
     },
-    {
+    industrys?.length && {
       key: 'industrys',
       title: 'Industries',
       items: industrys,

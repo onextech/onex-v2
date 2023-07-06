@@ -5,7 +5,7 @@ import {
   renderPostHeroBlockItem,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-  useLayout,
+  renderOtherPostsBlock,
 } from '@gravis-os/landing'
 import type { Post, PostCategory, Service } from '@gravis-os/types'
 
@@ -14,11 +14,12 @@ export interface PostPageProps {
   postCategory: PostCategory
   relatedPosts?: Post[]
   relatedServices?: Service[]
+  otherPosts: Post[]
 }
 
 const PostPage: React.FC<PostPageProps> = (props) => {
-  const { post, postCategory, relatedPosts, relatedServices } = props
-  const { routeConfig } = useLayout()
+
+  const { post, relatedPosts, relatedServices, otherPosts } = props
 
   return (
     <Blocks
@@ -33,6 +34,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         renderRelatedPostsBlock({ items: relatedPosts, py: { xs: 5, md: 10 } }),
+        renderOtherPostsBlock({ items: otherPosts, py: { xs: 5, md: 10 } }),
       ]}
     />
   )

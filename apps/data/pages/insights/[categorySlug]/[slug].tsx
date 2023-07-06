@@ -7,7 +7,6 @@ import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PostDetail.getStaticProps()
 export const getStaticPaths = PostDetail.getStaticPaths()
-
 export interface NextPostPageProps
   extends InferGetStaticPropsType<typeof getStaticProps>,
     PostPageProps {}
@@ -19,6 +18,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
     relatedPosts,
     relatedServices,
     pageProviderProps,
+    otherPosts,
   } = props
 
   return (
@@ -39,6 +39,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
           postCategory={postCategory}
           relatedPosts={relatedPosts}
           relatedServices={relatedServices}
+          otherPosts={otherPosts}
         />
       </LandingLayout>
     </PageProvider>
