@@ -1765,34 +1765,6 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.2.1.tgz#ab5d9f9d9eaa0ef6467d5e523bfbdf86e47b4806"
-  integrity sha512-dp5jiE1uLfWss6aaq2EjKEeMnc1SDdoACKx2f0In0XZqyh/A/R4sK8lqnQlBOISbbWb+bSpUfGWS+XRhYiqY5Q==
-  dependencies:
-    "@dnd-kit/core" "^6.0.1"
-    "@dnd-kit/sortable" "^7.0.0"
-    "@dnd-kit/utilities" "^3.2.0"
-    "@gravis-os/config" "*"
-    "@gravis-os/rtl" "*"
-    "@gravis-os/theme" "*"
-    "@gravis-os/types" "*"
-    "@gravis-os/utils" "*"
-    "@react-hook/window-scroll" "^1.3.0"
-    clsx "^1.1.1"
-    keen-slider "^6.8.5"
-    lodash "^4.17.21"
-    material-ui-popup-state "^3.1.1"
-    react-awesome-reveal "4.0.1"
-    react-error-boundary "^3.1.4"
-    react-fast-marquee "^1.3.5"
-    react-hot-toast ">=2.2.0"
-    react-inlinesvg "^3.0.1"
-    react-medium-image-zoom "4"
-    react-share "^4.4.1"
-    tslib "^2.4.0"
-    typescript "^4.6.3"
-
 "@gravis-os/utils@*", "@gravis-os/utils@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.3.tgz#c75999a9327e220e6153adbd5e6c23b696822237"
