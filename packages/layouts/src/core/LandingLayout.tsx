@@ -569,12 +569,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     },
   ]
   const footerNavConfig = [
-    {
+    services?.length && {
       key: 'services',
       title: 'Services',
       items: services,
     },
-    {
+    industrys?.length && {
       key: 'industrys',
       title: 'Industries',
       items: industrys,
