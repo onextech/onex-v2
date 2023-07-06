@@ -18,6 +18,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
     relatedPosts,
     relatedServices,
     pageProviderProps,
+    otherPosts,
   } = props
 
   return (
@@ -38,6 +39,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
           postCategory={postCategory}
           relatedPosts={relatedPosts}
           relatedServices={relatedServices}
+          otherPosts={otherPosts}
         />
       </LandingLayout>
     </PageProvider>

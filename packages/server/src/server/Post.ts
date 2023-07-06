@@ -36,13 +36,19 @@ export const PostDetail = {
     const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
       ({ category_id }) => category_id === post?.category_id
     ).slice(0, 3)
+
+    const otherPosts = MOCK_POSTS[MOCK_KEY].filter(
+      ({ title }) => title !== post?.title
+    )
+      .filter(({ is_active }) => is_active)
+      .filter(
+        ({ published_at }) =>
+          published_at && dayjs(published_at).isBefore(dayjs())
+      )
+      .slice(0, 3)
+
     const relatedPosts = getRelatedCrudItemsByCategoryId(
-      MOCK_POSTS[MOCK_KEY].filter(({ title }) => title !== post?.title)
-        .filter(({ is_active }) => is_active)
-        .filter(
-          ({ published_at }) =>
-            published_at && dayjs(published_at).isBefore(dayjs())
-        ),
+      otherPosts,
       post?.category_id
     ).slice(0, 3)
 
@@ -52,6 +58,7 @@ export const PostDetail = {
         postCategory,
         relatedServices,
         relatedPosts,
+        otherPosts,
       },
     })(context)
   },
