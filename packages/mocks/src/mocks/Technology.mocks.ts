@@ -1283,7 +1283,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
               'We utilize Nx Monorepo to automate repetitive tasks such as linting, testing, and code formatting, freeing up your team to focus on higher-value development tasks.',
           },
           {
-            fa_icon: 'fa-collaborate',
+            fa_icon: 'fa-users',
             title: 'Collaborative environment',
             subtitle:
               'We create a collaborative development environment with Nx Monorepo, enabling effective teamwork and efficient sharing of code and resources.',
