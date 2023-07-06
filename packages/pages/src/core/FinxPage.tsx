@@ -13,14 +13,7 @@ import {
   useLayout,
   renderClientLogosGallery,
 } from '@gravis-os/landing'
-import {
-  Page,
-  Post,
-  Industry,
-  Technology,
-  Showcase,
-  ClientLogo,
-} from '@gravis-os/types'
+import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 
@@ -32,17 +25,6 @@ export interface FinxPageProps {
   industrys: Industry[]
 }
 
-const clientAvatarSrc = [
-  'logo_gic',
-  'logo_iix',
-  'logo_julius_bar',
-  'logo_spiking',
-  'logo_uob',
-]
-
-const clientBlockHeader =
-  'We Work With and Drive Innovation for Reputable Financial Organizations'
-
 const FinxPage: React.FC<FinxPageProps> = (props) => {
   const { page, showcases, featuredPosts, industrys } = props
   const router = useRouter()
@@ -53,11 +35,6 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
   )?.title
   const { sections } = page || {}
   const { hero, benefits, features, faqs, cta } = sections || {}
-
-  const finxClients = clientLogos.filter((value: ClientLogo) => {
-    const { avatar_alt } = value
-    return clientAvatarSrc.includes(avatar_alt)
-  })
 
   return (
     <Blocks
@@ -139,8 +116,9 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         }),
         // Client logo gallery
         renderClientLogosGallery({
-          items: finxClients,
-          title: clientBlockHeader,
+          items: clientLogos,
+          title:
+            'We Work With and Drive Innovation for Reputable Financial Organizations',
         }),
         // Showcases
         renderShowcasesBlock({

@@ -12,14 +12,7 @@ import {
   useLayout,
   renderClientLogosGallery,
 } from '@gravis-os/landing'
-import {
-  Page,
-  Post,
-  Industry,
-  Technology,
-  Showcase,
-  ClientLogo,
-} from '@gravis-os/types'
+import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 
@@ -31,19 +24,6 @@ export interface GovxPageProps {
   industrys: Industry[]
 }
 
-const clients = [
-  'logo_gic',
-  'logo_mpa',
-  'logo_mpa',
-  'logo_pa',
-  'logo_ssa',
-  'logo_imo',
-  'logo_moh',
-]
-
-const clientBlockHeader =
-  'We Transform Public Sector Enterprises Across Industries for the Future of Governance'
-
 const GovxPage: React.FC<GovxPageProps> = (props) => {
   const { page, showcases, featuredPosts } = props
   const router = useRouter()
@@ -54,13 +34,6 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
   )?.title
   const { sections } = page || {}
   const { hero, benefits, features, faqs, cta } = sections || {}
-
-  const clientAvatarSrc = clients.map((value) => `logo_${value}`)
-
-  const govxClients = clientLogos.filter((value: ClientLogo) => {
-    const { avatar_alt } = value
-    return clientAvatarSrc.includes(avatar_alt)
-  })
 
   return (
     <Blocks
@@ -141,8 +114,9 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         renderClientLogosGallery({
-          items: govxClients,
-          title: clientBlockHeader,
+          items: clientLogos,
+          title:
+            'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
         }),
         // Showcases
         renderShowcasesBlock({
