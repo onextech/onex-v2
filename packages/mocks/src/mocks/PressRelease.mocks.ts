@@ -111,7 +111,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
       '/insights/mr-bucket-and-one-x-tech-partner-to-deliver-custom-chocolate-gifts-to-the.png',
     hero_alt: 'Storefront of chocolate shop',
     subtitle:
-      'With the partnership of Tyme Digital Banking and One X Tech, customers worldwide gain access to cutting-edge digital banking solutions, unlocking exceptional services from this trusted collaboration.',
+      'Mr Bucket and One X Tech join forces to revolutionize the gifting experience with bespoke chocolates and a modern online shopping platform.',
     html:
       '<p>Mr Bucket has partnered with One X Tech to offer a one-of-a kind gifting experience featuring bespoke chocolates. Through this collaboration, B2B sales have been enabled and landing pages are now tailored based on special occasions for dynamic marketing opportunities.</p>' +
       '<p>The new website created by One X Tech for Mr Bucket offers a modern online shopping experience for customers across Asia. It will allow customers to browse through the wide selection of chocolates available from this beloved chocolaterie. Businesses can now access a variety of premium chocolates via the website, thanks to this innovative B2B platform.</p>' +

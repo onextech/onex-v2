@@ -528,7 +528,7 @@ export const MOCK_TECH_SERVICES = [
   {
     category_id: 2,
     // Hero
-    title: 'Application modernisation',
+    title: 'Application Modernisation',
     slug: 'application-modernisation',
     subtitle:
       'Upgrade your legacy systems and applications to modern, scalable architectures to drive business growth and innovation.',
@@ -536,7 +536,7 @@ export const MOCK_TECH_SERVICES = [
     hero_alt: 'Aesthetic desk setup',
     // Seo
     seo: {
-      title: 'Application modernisation',
+      title: 'Application Modernisation',
       description:
         'modernise your applications with our frontend engineering services. Transform legacy systems into scalable, efficient, and user-friendly solutions.',
     },
@@ -829,6 +829,111 @@ export const MOCK_TECH_SERVICES = [
               'What technologies and frameworks do you use for microfrontend development?',
             content:
               'Our team is well-versed in a wide range of frontend technologies and frameworks, including React, Angular, Vue, and Web Components. We also have experience with various microfrontend-specific tools and libraries, such as single-spa, Module Federation, and Bit. We work closely with you to choose the best technologies and frameworks for your specific application needs and business goals.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Singpass Integration',
+    slug: 'singpass-integration',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/taayxzJk5xY/1600x900',
+    hero_alt: 'Gardens by the bay',
+    is_hidden_from_nav: true,
+    exclusive_locales: ['sg'],
+    subtitle:
+      "Align your business with Singapore's Smart Nation initiative and stay ahead of the curve.",
+    // Seo
+    seo: {
+      title: 'Singpass Integration',
+      description:
+        "Align your business with Singapore's Smart Nation initiative and stay ahead of the curve.",
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Navigate the digital landscape with confidence using Singpass.',
+        items: [
+          {
+            title:
+              "In today's digital era, ensuring secure and seamless access to your business's online services is no longer an option, but a necessity. With an increasing demand for digital convenience, businesses must ensure their clients have easy access to their services while maintaining the highest standards of security and data protection.",
+          },
+          {
+            title:
+              "That's where our expertise comes into play. We specialize in integrating Singpass into your business systems, providing you with a trusted, government-verified authentication service widely recognized by millions of users in Singapore.",
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Efficient and secure integration of Singpass services into your business operations.',
+        items: [
+          {
+            fa_icon: 'fa-lock',
+            title: 'Secure Authentication',
+            subtitle:
+              'Integrating Singpass provides an additional layer of security, reducing potential risks linked to password management.',
+          },
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom Integration',
+            subtitle:
+              'We offer custom integration services that align with your specific business requirements, ensuring the best fit for your system architecture.',
+          },
+          {
+            fa_icon: 'fa-user-check',
+            title: 'User Experience',
+            subtitle:
+              'Our integration process prioritises user experience, ensuring seamless navigation within your existing user interfaces.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Maintenance & Support',
+            subtitle:
+              'Our team offers continual support and maintenance post-integration, ensuring optimal performance of your system.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Protection',
+            subtitle:
+              'With  Singpass, you can uphold the highest standards of security and data privacy for your business, safeguarding sensitive user information from potential breaches.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Efficiency',
+            subtitle:
+              'With Singpass, your users can authenticate seamlessly, speeding up access to your services without compromising security.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our Singpass Integration Service and how it can streamline your business operations.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'What if I need additional custom features in my Singpass integration?',
+            content:
+              'We are experienced in custom frontend development and can accommodate additional custom features in your Singpass integration. We will work with you to understand your needs and tailor the integration process accordingly.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How secure is Singpass integration?',
+            content:
+              'Singpass is a secure and government-verified platform for digital authentication. It enhances the security of your systems by reducing potential vulnerabilities related to password management. However, it is crucial to complement it with other security practices for maximum protection.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'Can Singpass integration be used for all types of enterprise systems?',
+            content:
+              'Singpass can be integrated into a wide variety of systems. However, the feasibility of integration depends on various factors, including the nature of your system, its infrastructure, and your specific business requirements. We recommend discussing your specific needs with our team for an accurate assessment.',
           },
         ],
       },

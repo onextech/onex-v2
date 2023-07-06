@@ -178,6 +178,111 @@ export const MOCK_INDUSTRY_PAGE = {
 
 export const MOCK_GROUP_INDUSTRYS = [
   {
+    // Hero
+    title: 'Finance',
+    slug: 'finance',
+    fa_icon: 'fa-coins',
+    is_featured: true,
+    subtitle:
+      'Empowering finance firms with tailor-made enterprise software solutions to drive business success.',
+    hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
+    hero_alt: 'Financial Building',
+    // Seo
+    seo: {
+      title: 'Finance',
+      description:
+        'Providing expertly crafted enterprise software solutions to drive digital transformation in the financial sector.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving digital transformation in finance.',
+        items: [
+          {
+            title:
+              'In the rapidly evolving world of finance, enterprise software solutions are key to staying ahead. We specialize in developing bespoke software solutions that drive efficiency, security, and scalability in financial enterprises.',
+          },
+          {
+            title:
+              'Our deep industry knowledge and technological expertise make us uniquely positioned to help your organisation navigate its digital transformation journey. We build solutions that not only meet your current needs but also scale with your future growth.',
+          },
+        ],
+      },
+      features: {
+        overline: 'Our Solutions',
+        title: 'Empowering the {title} Sector',
+        subtitle:
+          'Leveraging the latest technologies, we provide comprehensive software development services for the finance industry.',
+        items: [
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom software development',
+            subtitle:
+              'We develop tailor-made software solutions that align with your business objectives and cater to your unique operational needs.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics solutions',
+            subtitle:
+              'We build robust data analytics solutions to help you derive actionable insights from your data and drive informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Security & Compliance',
+            subtitle:
+              'We prioritize security and regulatory compliance in every solution we build, to protect your data and maintain trust with your clients.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Cloud solutions',
+            subtitle:
+              'We enable smooth migration to the cloud and develop cloud-native applications, to enhance scalability and operational efficiency.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI & Machine Learning',
+            subtitle:
+              'We integrate AI and Machine Learning capabilities into your systems to automate processes, reduce errors and improve customer experiences.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'System Integration',
+            subtitle:
+              'We ensure your systems work together seamlessly, improving data flow, operational efficiency, and overall business performance.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our enterprise software development services for the financial industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is digital transformation important for finance companies?',
+            content:
+              'Digital transformation enables finance companies to streamline operations, improve customer experiences, and make data-driven decisions. It can also enhance security, compliance, and scalability, key aspects in the financial sector.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What type of software solutions do you provide for finance companies?',
+            content:
+              'We offer a wide range of software solutions, including custom software development, data analytics solutions, security and compliance, cloud solutions, AI and Machine Learning integration, and system integration.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and compliance of the software you develop?',
+            content:
+              'We follow stringent security protocols and best practices in software development. We also ensure our software solutions comply with all relevant regulations and standards in the financial industry.',
+          },
+        ],
+      },
+    },
+  },
+  {
     title: 'Government',
     subtitle:
       'We combine technology and a delivery-focused culture to enable leaders across public sector organisations to turn ambition into action.',
@@ -454,6 +559,101 @@ export const MOCK_GROUP_INDUSTRYS = [
     },
   },
   {
+    title: 'Capital Markets',
+    subtitle:
+      'Accelerating financial innovation with tailored capital market solutions.',
+    slug: 'capital-markets',
+    fa_icon: 'fa-coins',
+    is_featured: true,
+    hero_src: 'https://source.unsplash.com/8lnbXtxFGZw/1600x900',
+    hero_alt: 'US dollar bills',
+    sections: {
+      summary: {
+        title: 'Driving success in the Capital Markets industry.',
+        items: [
+          {
+            title:
+              'At our Capital Markets Solutions, we understand the unique challenges and opportunities that businesses in the Capital Markets industry face. Our technology consulting services and enterprise software development expertise are tailored to meet the specific needs of Capital Markets companies.',
+          },
+          {
+            title:
+              'We believe that technology plays a crucial role in unlocking growth and competitive advantage in the Capital Markets sector. With our deep understanding of the Capital Markets industry and our commitment to delivering innovative solutions, we can help your Capital Markets business thrive.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our Approach to {title}',
+        subtitle:
+          'With our expertise in enterprise software development, we offer a range of solutions tailored to address the specific needs and challenges of the Capital Markets industry.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Software Development',
+            subtitle:
+              'We develop custom software solutions that are designed to streamline your Capital Markets business processes and drive efficiency.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Analytics and Insights',
+            subtitle:
+              'Our data analytics services enable you to gain valuable insights from your Capital Markets business data, empowering you to make informed decisions.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'CRM Solutions',
+            subtitle:
+              'We provide CRM (Customer Relationship Management) solutions that help you effectively manage customer relationships and enhance customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Our expertise in security and compliance ensures that your Capital Markets business is protected against potential threats and meets industry regulations.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Integration and Scalability',
+            subtitle:
+              'We offer integration services to connect and streamline your Capital Markets business systems, as well as scalable solutions to support your growth.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Legacy Systems Modernization',
+            subtitle:
+              'We assist in modernizing and upgrading your legacy systems, enabling your Capital Markets business to leverage the latest technologies and stay competitive.',
+          },
+        ],
+      },
+    },
+    faqs: {
+      title: 'Frequently Asked Questions',
+      subtitle:
+        'Learn more about our Capital Markets Solutions and how they can benefit your business.',
+      items: [
+        {
+          key: 'faqs-1',
+          title: 'What are the key challenges in capital markets operations?',
+          content:
+            'Capital markets operations face challenges such as complex regulatory requirements, high transaction volumes, market volatility, and the need for real-time data analysis. Our solutions are designed to address these challenges and help you navigate the ever-changing landscape of the capital markets industry.',
+        },
+        {
+          key: 'faqs-2',
+          title: 'How can your software solutions improve trading processes?',
+          content:
+            'Our software solutions leverage advanced technologies and automation to streamline trading processes, reduce manual errors, and improve operational efficiency. We provide features such as order management, trade execution, risk assessment, and real-time market data analysis to enhance decision-making and optimize trading strategies.',
+        },
+        {
+          key: 'faqs-3',
+          title:
+            'Do you offer customization options for capital markets solutions?',
+          content:
+            'Yes, we understand that every capital markets firm has unique requirements. We offer customized software development services to tailor our solutions to your specific needs. Our team works closely with you to understand your business processes and objectives, ensuring that our solutions align with your strategic goals.',
+        },
+      ],
+    },
+  },
+  {
     title: 'Banking',
     subtitle:
       'Boosting banking with custom, secure, and efficient software solutions.',
@@ -556,7 +756,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'aerospace-and-defense',
     fa_icon: 'fa-plane-departure',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_src: 'https://source.unsplash.com/8atxWjBYzGI/1600x900',
     hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
     sections: {
       summary: {
@@ -925,8 +1125,8 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'automotive',
     fa_icon: 'fa-car',
     is_featured: true,
-    hero_src: 'https://source.unsplash.com/GJuXN4uyB2U/1600x900',
-    hero_alt: 'Mclaren and Mercedes Benz cars in Monaco',
+    hero_src: 'https://source.unsplash.com/MaraDXSaTho/1600x900',
+    hero_alt: 'Mercedes benz in monaco',
     sections: {
       summary: {
         title: 'Revving up technology for the automotive industry.',

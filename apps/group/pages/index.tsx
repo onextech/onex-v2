@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     )
     .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
     .slice(0, 3)
-  const showcases = MOCK_SHOWCASES[MOCK_KEY]
+  const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
@@ -69,6 +69,7 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
     industrys,
     pageProviderProps,
   } = props
+
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
