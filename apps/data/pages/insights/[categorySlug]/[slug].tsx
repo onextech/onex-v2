@@ -18,7 +18,7 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
     relatedPosts,
     relatedServices,
     pageProviderProps,
-    posts: otherPosts,
+    otherPosts,
   } = props
 
   return (

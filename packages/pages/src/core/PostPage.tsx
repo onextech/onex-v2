@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
   Blocks,
   renderPostDetailBlock,
@@ -8,7 +8,6 @@ import {
   renderOtherPostsBlock,
 } from '@gravis-os/landing'
 import type { Post, PostCategory, Service } from '@gravis-os/types'
-import { getNRandomPosts } from '../utils'
 
 export interface PostPageProps {
   post: Post
@@ -18,24 +17,8 @@ export interface PostPageProps {
   otherPosts: Post[]
 }
 
-const NUMBER_OF_OTHER_POSTS = 3
-
 const PostPage: React.FC<PostPageProps> = (props) => {
   const { post, relatedPosts, relatedServices, otherPosts } = props
-
-  // randomising posts on every render leads to hydration errors, so we dont render anything on the first render
-  const [hydrated, setHydrated] = useState(false)
-  useEffect(() => {
-    setHydrated(true)
-  }, [])
-  if (!hydrated) {
-    return null
-  }
-
-  const randomPosts = getNRandomPosts(
-    otherPosts.filter((value) => value.id !== post.id),
-    NUMBER_OF_OTHER_POSTS
-  )
 
   return (
     <Blocks
@@ -50,7 +33,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         renderRelatedPostsBlock({ items: relatedPosts, py: { xs: 5, md: 10 } }),
-        renderOtherPostsBlock({ items: randomPosts, py: { xs: 5, md: 10 } }),
+        renderOtherPostsBlock({ items: otherPosts, py: { xs: 5, md: 10 } }),
       ]}
     />
   )
