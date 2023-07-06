@@ -61,8 +61,8 @@ export const MOCK_GROUP_SITE: Site = {
 
   // Contact
   general_email: 'info@onexgroup.co',
-  general_phone: '+65 8922 8242',
-  general_whatsapp: '+65 8922 8242',
+  general_phone: '+65 8808 2673',
+  general_whatsapp: '+65 8808 2673',
 
   nav_items: [
     {
