@@ -77,6 +77,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'logo',
       preset: { type: 'logo', logoProps },
     },
+    showcases?.length && {
+      key: 'showcase',
+      title: 'Portfolio',
+      href: routeConfig.SHOWCASES,
+    },
     {
       key: 'services',
       title: 'Services',
@@ -161,11 +166,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           />
         )
       },
-    },
-    showcases?.length && {
-      key: 'showcase',
-      title: 'Portfolio',
-      href: routeConfig.SHOWCASES,
     },
     technologys?.length && {
       key: 'technologys',
@@ -310,7 +310,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'grid',
                             gridProps: { spacing: 2 },
-                            gridItemProps: { xs: 6, md: 6, lg: 4, xl: 3 },
+                            gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: industrys.map((industry) =>
                               renderHeaderMenuBlockItem(industry)
                             ),
@@ -590,12 +590,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       title: 'Company',
       href: routeConfig.ABOUT,
       items: [
-        ...pages,
         showcases?.length && {
           key: 'showcases',
           title: 'Portfolio',
           href: routeConfig.SHOWCASES,
         },
+        ...pages,
       ].filter(Boolean),
     },
   ]
@@ -619,11 +619,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       accordionProps: { titleProps: { variant: 'h5' } },
       drawerWidth: '100vw',
       disableBoxShadow: true,
-      announcement: {
-        title: `Read more about the launch of our revamped ${site.title} website!`,
-        href: routeConfig.PRESS_RELEASES,
-      },
-      announcementProps: { variant: 'body1' },
       navItems: {
         left: headerNavConfig,
         right: [
