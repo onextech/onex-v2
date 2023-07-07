@@ -65,7 +65,7 @@ export const MOCK_GROUP_SITE: Site = {
   general_whatsapp: '+65 8808 2673',
 
   // Socials
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-grp/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-grp',
 
   nav_items: [
     {
@@ -130,7 +130,7 @@ export const MOCK_TECH_SITE = {
   social_media_twitter_url: 'https://twitter.com/1XTech',
   social_media_dribbble_url: 'https://dribbble.com/1XT',
   social_media_facebook_url: 'https://www.facebook.com/onextech',
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-t/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-t',
   social_media_instagram_url: 'https://www.instagram.com/onextech',
   social_media_youtube_url: 'https://www.youtube.com/onextech',
 
@@ -194,7 +194,7 @@ export const MOCK_DESIGN_SITE = {
   general_email: 'info@onexdesign.com',
 
   // Socials
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-design/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-design',
 
   // Logo
   logo_width: 108,
@@ -256,7 +256,7 @@ export const MOCK_DATA_SITE = {
   general_email: 'info@onexdata.co',
 
   // Socials
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-data/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-data',
 
   // Logo
   logo_width: 95,
@@ -330,7 +330,7 @@ export const MOCK_DIGITAL_SITE = {
   social_media_twitter_url: 'https://twitter.com/1XTech',
   social_media_dribbble_url: 'https://dribbble.com/1XT',
   social_media_facebook_url: 'https://www.facebook.com/onextech',
-  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-digital/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-digital',
   social_media_instagram_url: 'https://www.instagram.com/onextech',
   social_media_youtube_url: 'https://www.youtube.com/onextech',
 
@@ -401,7 +401,7 @@ export const MOCK_FINX_SITE = {
   social_media_twitter_url: 'https://twitter.com/1XTech',
   social_media_dribbble_url: 'https://dribbble.com/1XT',
   social_media_facebook_url: 'https://www.facebook.com/onextech',
-  social_media_linkedin_url: 'https://www.linkedin.com/company/finx-ai/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/finx-ai',
   social_media_instagram_url: 'https://www.instagram.com/onextech',
   social_media_youtube_url: 'https://www.youtube.com/onextech',
 
@@ -472,7 +472,7 @@ export const MOCK_GOVX_SITE = {
   social_media_twitter_url: 'https://twitter.com/1XTech',
   social_media_dribbble_url: 'https://dribbble.com/1XT',
   social_media_facebook_url: 'https://www.facebook.com/onextech',
-  social_media_linkedin_url: 'https://www.linkedin.com/company/govx-ai/',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/govx-ai',
   social_media_instagram_url: 'https://www.instagram.com/onextech',
   social_media_youtube_url: 'https://www.youtube.com/onextech',
 
