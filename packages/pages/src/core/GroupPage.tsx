@@ -53,7 +53,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
                 buttonProps: {
                   overline: 'Our Insights',
                   title: 'Read More',
-                  href: `/insights/${post.category.slug}/${post.slug}`,
+                  href: `${routeConfig.POSTS}/${post.category.slug}/${post.slug}`,
                 },
               }
             }),
