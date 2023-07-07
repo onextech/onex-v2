@@ -15,6 +15,7 @@ import {
   renderHeaderMenuMobileBlockItem,
   RenderHeaderMenuMobileBlockItemProps,
   useUserPreferences,
+  LayoutContext,
 } from '@gravis-os/landing'
 import { GetStartedPage } from '@onex/pages'
 import { useRouter } from 'next/router'
@@ -706,7 +707,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   }
   const landingLayoutProps = merge({}, defaultLandingLayoutProps, rest)
 
-  return <GvsLandingLayout {...landingLayoutProps} />
+  return (
+    <LayoutContext.Provider value={onUseLayout}>
+      <GvsLandingLayout {...landingLayoutProps} />
+    </LayoutContext.Provider>
+  )
 }
 
 export default LandingLayout
