@@ -37,7 +37,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           video_poster_src: '/videos/home_video_poster.jpg',
           items: [
             {
-              title: 'About',
+              title: 'Introduction',
               subtitle: 'We Design & Develop Custom Software',
               buttonProps: {
                 overline: 'Our Services',
