@@ -1,9 +1,6 @@
 import React from 'react'
-import { Box, Slider, Typography } from '@gravis-os/ui'
 import {
   Blocks,
-  BlockItem,
-  renderGhostButtonBlockItem,
   renderFeaturedPostsBlock,
   renderThreeColumnGridBlock,
   renderClientLogosImageMarqueeBlock,
@@ -11,9 +8,11 @@ import {
   renderFeaturedIndustrysBlock,
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
+  renderHeroWithVideoSlider,
   useLayout,
 } from '@gravis-os/landing'
 import { Industry, Page, Post, Showcase } from '@gravis-os/types'
+import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {
   page: Page
@@ -33,66 +32,38 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
     <Blocks
       items={[
         // Hero
-        {
-          key: 'hero-with-video-slider',
-          dark: true,
-          py: 0,
-          backgroundVideoProps: {
-            src: '/videos/home_video.mp4',
-            poster: '/videos/home_video_poster.jpg',
-          },
-          backgroundOverlayOpacity: 0.5,
-          items: [
-            {
-              type: 'jsx',
-              title: (
-                <Slider
-                  autoplay
-                  progress
-                  disableCenter
-                  middle
-                  loop
-                  height={{ xs: 600, sm: 700, md: 800, xxl: 820 }}
-                  tabs={[
-                    ...heroPosts.map((post) => {
-                      const { category } = post
-                      return category.title
-                    }),
-                  ]}
-                  tabsProps={{ fullWidthOnDesktop: true }}
-                  tabProps={{ sx: { p: 3 } }}
-                  items={[
-                    ...heroPosts.map((post) => {
-                      const { title, category } = post
-                      return (
-                        <Box sx={{ maxWidth: { md: '50%' } }}>
-                          <Typography
-                            variant="overline"
-                            gutterBottom
-                            color="text.secondary"
-                          >
-                            {category.title}
-                          </Typography>
-                          <Typography variant="h2">{title}</Typography>
-                          <BlockItem
-                            disableContainer
-                            {...renderGhostButtonBlockItem({
-                              overline: 'Our Insights',
-                              title: 'Read More',
-                              size: 'lg',
-                              href: `/insights/${post.category.slug}/${post.slug}`,
-                              sx: { mt: { xs: 2, md: 4 } },
-                            })}
-                          />
-                        </Box>
-                      )
-                    }),
-                  ]}
-                />
-              ),
-            },
+        renderHeroWithVideoSlider({
+          video_src: '/videos/home_video.mp4',
+          video_poster_src: '/videos/home_video_poster.jpg',
+          headings: [
+            'About',
+            ...heroPosts.map((post) => {
+              const { category } = post
+              return category.title
+            }),
           ],
-        },
+          subheadings: [
+            'We Design & Develop Custom Software',
+            ...heroPosts.map((post) => {
+              const { title } = post
+              return title
+            }),
+          ],
+          buttonProps: [
+            {
+              overline: 'Our Services',
+              title: 'Read More',
+              href: routeConfig.SERVICES,
+            },
+            ...heroPosts.map((post) => {
+              return {
+                overline: 'Our Insights',
+                title: 'Read More',
+                href: `/insights/${post.category.slug}/${post.slug}`,
+              }
+            }),
+          ],
+        }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
