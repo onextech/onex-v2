@@ -1649,9 +1649,9 @@
     zustand "^4.3.6"
 
 "@gravis-os/form@*", "@gravis-os/form@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.2.tgz#1292f55af641c6af8d6b5d809a099fb8aac911cc"
-  integrity sha512-DMVRL9KyiYJ8m2q+NOyE6MATEP7Wh822L/qShtQSJxIMqivudI6mnONd54TYBgTpLrB+WpaFsOMbi4qfjkEddQ==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.0.3.tgz#8c59040b80eb9811657570755652a2a8a4a2d14e"
+  integrity sha512-NazJqadcG5Fw36b56VBc5qq3lyqtp/iBcLM9DF3Weegd1FfeQZvbglF+m6v5ahhDJkHAsenzqfCxIIpVAK2C1A==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1666,10 +1666,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.4.0.tgz#075fbb42888f9fa491c9ec12f8fdd7fec0b4d75b"
-  integrity sha512-FRMmkglNPSEUCVZCfktfPrjUT3h0SP767oq+SBAnSkCozFxTSpCprsR7vyXxYXCvB85Nl/w7EjOJvobiL+rkkw==
+"@gravis-os/landing@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.6.0.tgz#c195a8b025355e397aca7000148b520b6048a26f"
+  integrity sha512-BGgnBxjoo11XgiVAD9G8POQsWowVTbxtoY0uK9/1FpJVvf8embdjNOa1FInNk/Aw5lDc/zVVV5xTf1QusE8hCQ==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
