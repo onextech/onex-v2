@@ -35,31 +35,26 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderHeroWithVideoSlider({
           video_src: '/videos/home_video.mp4',
           video_poster_src: '/videos/home_video_poster.jpg',
-          headings: [
-            'About',
-            ...heroPosts.map((post) => {
-              const { category } = post
-              return category.title
-            }),
-          ],
-          subheadings: [
-            'We Design & Develop Custom Software',
-            ...heroPosts.map((post) => {
-              const { title } = post
-              return title
-            }),
-          ],
-          buttonProps: [
+          items: [
             {
-              overline: 'Our Services',
-              title: 'Read More',
-              href: routeConfig.SERVICES,
+              title: 'About',
+              subtitle: 'We Design & Develop Custom Software',
+              buttonProps: {
+                overline: 'Our Services',
+                title: 'Read More',
+                href: routeConfig.SERVICES,
+              },
             },
             ...heroPosts.map((post) => {
+              const { category, title } = post
               return {
-                overline: 'Our Insights',
-                title: 'Read More',
-                href: `/insights/${post.category.slug}/${post.slug}`,
+                title: category.title,
+                subtitle: title,
+                buttonProps: {
+                  overline: 'Our Insights',
+                  title: 'Read More',
+                  href: `/insights/${post.category.slug}/${post.slug}`,
+                },
               }
             }),
           ],
