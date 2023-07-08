@@ -25,12 +25,6 @@
       "dependsOn": ["^build"]
     },
     "watch": {},
-    "local": {
-      "cache": false
-    },
-    "local:unlink": {
-      "cache": false
-    },
     "analyze": {
       "cache": false
     }
