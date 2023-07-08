@@ -690,7 +690,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         />
       ),
       logo: <Image {...logoProps} />,
-      companyName: 'abc',
+      companyName: site.company_title,
       accordionProps: {
         titleProps: { variant: 'h7' },
         itemTitleProps: {

@@ -753,10 +753,10 @@ export const MOCK_GROUP_INDUSTRYS = [
     },
   },
   {
-    title: 'Aerospace and Defense',
+    title: 'Aerospace & Defense',
     subtitle:
       'Propel your aerospace and defense operations to new heights with our industry-leading custom software solutions.',
-    slug: 'aerospace-and-defense',
+    slug: 'aerospace-defense',
     fa_icon: 'fa-plane-departure',
     is_featured: true,
     hero_src: 'https://source.unsplash.com/8atxWjBYzGI/1600x900',
@@ -1031,10 +1031,10 @@ export const MOCK_GROUP_INDUSTRYS = [
     },
   },
   {
-    title: 'Software and Platforms',
+    title: 'Software & Platforms',
     subtitle:
       'Creating innovative, robust, and scalable software solutions and platforms that power your business.',
-    slug: 'software-and-platforms',
+    slug: 'software-platforms',
     fa_icon: 'fa-code-branch',
     is_featured: true,
     hero_src: 'https://source.unsplash.com/uv5_bsypFUM/1600x900',
@@ -1214,10 +1214,10 @@ export const MOCK_GROUP_INDUSTRYS = [
     },
   },
   {
-    title: 'Communications and Media',
+    title: 'Communications & Media',
     subtitle:
       'Developing custom software solutions that fuel the growth of the communications and media industry.',
-    slug: 'communications-and-media',
+    slug: 'communications-media',
     fa_icon: 'fa-comment',
     is_featured: true,
     hero_src: 'https://source.unsplash.com/_xJqCQgkpLc/1600x900',

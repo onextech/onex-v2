@@ -102,6 +102,7 @@ const typography = {
     fontWeight: 300,
   },
   body1: { lineHeight: 1.56, letterSpacing: 0.5, fontWeight: 400 },
+  body2: { fontSize: pxToRem(14), fontWeight: 600, lineHeight: 1.6 },
   overline: {
     fontFamily: overlineFontFamily,
     fontWeight: 700,
