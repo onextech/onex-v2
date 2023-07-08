@@ -24,9 +24,11 @@ export interface GroupPageProps {
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
   const { page, showcases, featuredPosts, heroPosts, industrys } = props
-  const { clientLogos, site } = useLayout()
+
   const { sections } = page || {}
   const { benefits, faqs, cta } = sections || {}
+
+  const { clientLogos, site } = useLayout()
 
   return (
     <Blocks
@@ -37,7 +39,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           video_poster_src: '/videos/home_video_poster.jpg',
           items: [
             {
-              title: 'Introduction',
+              title: 'One X Group',
               subtitle: 'We Design & Develop Custom Software',
               buttonProps: {
                 overline: 'Our Services',

@@ -12,16 +12,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   // apps and packages to be sync-ed up in local/yalc mode.
   const { site, routeConfig } = useLayout()
   const { headerProps, ...rest } = props
+
   return (
     <LandingLayoutTemplate
       useLayout={useLayout}
       useUserPreferences={useUserPreferences}
       {...props}
       headerProps={{
+        // TODO: This data should be fetched from the cms
         announcement: {
-          title: `${site.title} unveils the future of Enterprise Software Development`,
+          title: `${site.title} unveils the future of Enterprise Software Development.`,
           hrefTitle: 'Read the blog to learn more',
-          href: routeConfig.PRESS_RELEASES,
+          href: `${routeConfig.PRESS_RELEASES}/unveiling-future-unique-enterprise-software-development`,
         },
         ...headerProps,
       }}
