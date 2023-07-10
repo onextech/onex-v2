@@ -112,8 +112,8 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   moh: {
     avatar_src: '/logos/logo_moh.png',
     avatar_alt: 'logo_moh',
-    avatar_width: 130,
-    avatar_height: 125,
+    avatar_width: 200,
+    avatar_height: 100,
   },
 }
 
