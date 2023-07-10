@@ -3,10 +3,11 @@ import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 
 export const MOCK_TECH_RESOURCES = [
   {
-    title: 'The 2023 OKR Guide',
-    slug: 'the-2023-okr-guide',
+    title:
+      'Empower Your Business with Our Comprehensive Guide on Custom Software Solutions',
+    slug: 'empower-business-guide-custom-software-solutions',
     subtitle:
-      'Learn how OKRs can turn your company strategy into a success. This guide breaks down the OKR framework and gives you access to templates, examples, and more to run OKRs at your business.',
+      'Adopt best practices for utilizing custom software to achieve your strategic objectives. This guide seeks to help you navigate your way to success with proven software solutions built for your business needs.',
   },
   {
     title:
@@ -24,150 +25,81 @@ export const MOCK_TECH_RESOURCES = [
   },
   // Sections
   sections: {
-    benefits: {
-      overline: 'What we do',
-      title: 'Our Approach to {title}',
-      subtitle:
-        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
-      items: [
-        {
-          fa_icon: 'fa-guitar',
-          title: 'Achieve strategic team alignment',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
-        },
-        {
-          fa_icon: 'fa-table-tennis',
-          title: 'Create transparency in business',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Overcome lack of organisational focus',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Empower employee engagement',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
-        },
-      ],
-    },
-    callout: {
-      hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'Laser net over city',
-      overline: '',
-      title: 'We Build Digital Solutions with Enterprises, for Enterprises',
-      subtitle:
-        'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
-    },
     features: {
-      overline: 'What we do',
-      title: 'Our Approach to {title}',
+      overline: 'What We Do',
+      title: 'In this guide, we cover:',
       subtitle:
-        'How to deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        'Dive into a comprehensive guide that takes you from introduction to custom software, its construction basics, initiation processes, solution definition, through to implementation methodologies, all the way to efficient review and management strategies for your custom software development journey.',
       items: [
         {
-          fa_icon: 'fa-mug-hot',
-          title: 'What is an OKR?',
+          fa_icon: 'fa-laptop-code',
+          title: 'Why Build Custom Software',
           subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
+            'An introduction to the realm of custom software solutions, and how it provides a competitive edge, aligns with unique business needs, and fosters innovation.',
+        },
+        {
+          fa_icon: 'fa-rocket',
+          title: 'Getting Started with Your Custom Software',
+          subtitle:
+            'Learn about the crucial initial steps to embarking on a custom software development project, including setting goals, defining requirements, and aligning stakeholders.',
+        },
+        {
+          fa_icon: 'fa-hammer',
+          title: 'Crafting Your Solutions',
+          subtitle:
+            'Dive into the intricate process of designing and planning custom software, and how our team tailors these to perfectly fit your business needs and objectives.',
+        },
+        {
+          fa_icon: 'fa-cogs',
+          title: 'Implementation Process',
+          subtitle:
+            'Uncover the step-by-step process of bringing your custom software to life, from coding and testing to deploying, ensuring seamless integration into your business operations.',
+        },
+        {
+          fa_icon: 'fa-search-plus',
+          title: 'Review and Managing',
+          subtitle:
+            'Master the art of continual improvement with ongoing software reviews, updates, and management, ensuring your custom software remains a powerful tool for your business success.',
+        },
+        {
+          fa_icon: 'fa-lightbulb',
+          title: 'Our Distinct Approach to Software',
+          subtitle:
+            "Discover One X Group's unique path to crafting impactful custom software solutions.",
+        },
+      ],
+    },
+    benefits: {
+      overline: 'Why Us',
+      title: 'What you will learn',
+      subtitle:
+        'Embrace the potential of bespoke software to streamline operations, drive innovation, enhance value delivery, and ensure a sustainable tech evolution tailored to your unique business environment.',
+      items: [
+        {
+          fa_icon: 'fa-chart-line',
+          title: 'Streamlined Business Operations',
+          subtitle:
+            'Discover how custom software can optimize your business processes for better efficiency.',
         },
         {
           fa_icon: 'fa-puzzle-piece',
-          title: 'Why the OKR methodology?',
+          title: 'Customized Technological Assets',
           subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
+            'Explore the potential of technology designed uniquely for your business, driving innovation and growth.',
         },
         {
-          fa_icon: 'fa-guitar',
-          title: 'Achieve strategic team alignment',
+          fa_icon: 'fa-sitemap',
+          title: 'Effective Deployment Strategy',
           subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
+            'Acquire knowledge on strategic execution, enhancing the value delivered by your tailored software.',
         },
         {
-          fa_icon: 'fa-table-tennis',
-          title: 'Create transparency in business',
+          fa_icon: 'fa-sync-alt',
+          title: 'Sustainable Tech Evolution',
           subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
-        {
-          fa_icon: 'fa-mug-hot',
-          title: 'Overcome lack of organisational focus',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
-        },
-        {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Empower employee engagement',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
+            'Understand how to ensure your technological assets remain future-proof, keeping pace with the dynamic business environment.',
         },
       ],
-    },
-    howItWorks: { overline: '', title: '', subtitle: '', items: [] },
-    checklist: {
-      overline: 'What we do',
-      title: `Why {appTitle} for {title}`,
-      subtitle:
-        'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
-      items: [
-        {
-          title: 'Full suite of services',
-        },
-        {
-          title: 'Unrivaled {title} knowledge',
-        },
-        {
-          title: 'Quality and best practices baked in',
-        },
-        {
-          title: 'Deep {title} community involvement',
-        },
-        {
-          title: 'Support for {title} ongoing development',
-        },
-        {
-          title: 'Hired by Fortune 500 brands',
-        },
-      ],
-    },
-    faqs: {
-      overline: '',
-      title: 'FAQs',
-      subtitle:
-        'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
-      items: [
-        {
-          key: 'how-it-works-1',
-          title: 'What are the advantages of developing web apps with {title}?',
-          content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
-        },
-        {
-          key: 'how-it-works-2',
-          title: 'How can {title} development benefit my existing system?',
-          content:
-            "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
-        },
-        {
-          key: 'how-it-works-3',
-          title: 'What is the future of {title}?',
-          content:
-            '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
-        },
-      ],
-    },
-    cta: {
-      hero_src: '/images/about_nodes_above_city.png',
-      hero_alt: 'Laser net over city',
-      overline: 'Get Started',
-      title: 'Partnering with {appTitle}',
-      subtitle:
-        '{appTitle} partners with enterprise clients to create solutions to the toughest software problems. Focusing on JavaScript as our core technology, we utilize React, React Native, NodeJS, GraphQL, and the extended JavaScript ecosystem to build web apps, mobile apps, cloud services, open source software, and more. Our approach is tailored to each product, so we will always work with your team to select the technologies best suited to your needs. We excel in web, mobile and cloud platform development and can apply our expertise to your product, no matter where it is in the product lifecycle.',
     },
   },
   // Images
