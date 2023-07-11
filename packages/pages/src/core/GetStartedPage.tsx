@@ -60,7 +60,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     { type: 'overline', title: 'Get Started' },
                     {
                       type: 'h2',
-                      title: 'Get Started',
+                      title: 'Schedule A Call',
                       titleProps: { mb: 1 },
                     },
                     {

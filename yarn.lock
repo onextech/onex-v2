@@ -1596,22 +1596,6 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.35.0.tgz#b7569632b0b788a0ca0e438235154e45d42813a7"
   integrity sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==
 
-"@gravis-os/analytics@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.1.0.tgz#701e7d95ca6414399b15e506fd6cf9ec3d6b0a45"
-  integrity sha512-kpPa3kJqbZe5HlrgVzAeJxAnOTde5d0tiurfGbNj3OQVXtLT7pVwgVn1+go29NdN1UHnshmDwFg+FhMAijddUg==
-  dependencies:
-    "@gravis-os/types" "*"
-    lodash "^4.17.21"
-
-"@gravis-os/config@*", "@gravis-os/config@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@gravis-os/config/-/config-0.0.6.tgz#10fa63bca1b6df993a5193edaf0a24e8ff0aa95f"
-  integrity sha512-b/tOImOfkpq+aWkcT0G8aeDyE6WzyYQXpOLg52oHgNgL0uc7ICzRC0QKo6VYd9xGJUqeUub3pJuVUaTiYZGVwQ==
-  dependencies:
-    "@gravis-os/types" "*"
-    lodash "^4.17.21"
-
 "@gravis-os/eslint-config@^0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.18.tgz#3c31f4f78c6e3f6f556ee17228feaa1a0324423a"
@@ -1681,19 +1665,6 @@
     material-ui-popup-state "^3.1.1"
     next-seo "^5.15.0"
     nextjs-progressbar "^0.0.16"
-
-"@gravis-os/query@^0.0.33":
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.33.tgz#b29a87a458d744aa61fd99b86228fe9358324298"
-  integrity sha512-l+GiyDisXudX94VNHqEZ/h9pWiEm8ZDqL8yAPccCEkzOP9xGSZgNFj1W7wrfRtpnlmcPJToEw2yh0JWDLh/19Q==
-  dependencies:
-    "@gravis-os/types" "*"
-    lodash "^4.17.21"
-    qs "^6.11.0"
-    react-intersection-observer "^9.4.3"
-    react-use-measure "^2.1.1"
-    tslib "^2.4.0"
-    typescript "^4.6.3"
 
 "@gravis-os/rtl@*":
   version "0.0.3"

@@ -1963,7 +1963,7 @@ export const MOCK_GOVX_POSTS = [
     category_id: 2,
     title:
       'Exploring the Future of e-Government Platforms: The Role of Digital Solutions',
-    slug: 'public-sector-efficiency-rising-influence-data-analytics',
+    slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
     hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',

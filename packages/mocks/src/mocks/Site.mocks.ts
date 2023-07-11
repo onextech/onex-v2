@@ -18,8 +18,6 @@ export const MOCK_COMMON_SITE = {
     { key: 'us', iso_alpha_2: 'us', title: 'United States' },
     { key: 'au', iso_alpha_2: 'au', title: 'Australia' },
     { key: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
-    { key: 'id', iso_alpha_2: 'id', title: 'Indonesia' },
-    { key: 'th', iso_alpha_2: 'th', title: 'Thailand' },
   ],
 
   // System
