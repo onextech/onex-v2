@@ -120,7 +120,6 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
             borderTop: 1,
             borderColor: 'divider',
           },
-          title: 'In this guide, we cover:',
         }),
         // Benefits
         renderFourColumnGridBlock({
@@ -131,7 +130,6 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
             borderTop: 1,
             borderColor: 'divider',
           },
-          title: 'What you will learn',
         }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({ items: clientLogos.slice(0, 8) }),
