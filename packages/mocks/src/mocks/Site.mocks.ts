@@ -511,6 +511,278 @@ export const MOCK_GOVX_SITE = {
   ],
 }
 
+export const MOCK_AEL_SITE: Site = {
+  ...MOCK_GROUP_SITE,
+
+  // Logo
+  logo_src: '/logo.png',
+  logo_alt: 'AetherLabs logo',
+  logo_width: 160,
+  logo_height: 30,
+
+  // disable testimonials
+  disable_testimonials: true,
+
+  // disable faqs
+  disable_faqs_on_home_page: true,
+
+  // App
+  company_title: 'Aether Labs',
+  title: 'Aether Labs',
+  absolute_url: 'https://ael-web.vercel.app',
+
+  // Contact
+  general_email: 'info@ael.co',
+  general_phone: '+65 8922 8242',
+  general_whatsapp: '+65 8922 8242',
+
+  nav_items: [
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on empowering enterprises through custom software development',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to software development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project",
+    },
+    {
+      key: 'ecosystem',
+      title: 'Our Ecosystem',
+      subtitle: 'Learn more about our other functions',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success',
+    },
+  ],
+
+  // Cta
+  cta_title: 'Build the future with Aether Labs.',
+  cta_button_title: 'Get Started',
+}
+export const MOCK_SRI_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  disable_faqs_on_home_page: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'GovX logo',
+
+  // App
+  title: 'Gov X',
+  absolute_url: 'https://www.govx.ai',
+
+  // Cta
+  cta_title: 'Transform Public Sectors with AI-Driven Innovation by Gov X.',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@govx.ai',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/govx-ai',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 60,
+  logo_height: 13,
+
+  nav_items: [
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
+}
+export const MOCK_GVS_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  disable_faqs_on_home_page: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'GovX logo',
+
+  // App
+  title: 'Gov X',
+  absolute_url: 'https://www.govx.ai',
+
+  // Cta
+  cta_title: 'Transform Public Sectors with AI-Driven Innovation by Gov X.',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@govx.ai',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/govx-ai',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 60,
+  logo_height: 13,
+
+  nav_items: [
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
+}
+export const MOCK_COASTAL_SITE = {
+  ...MOCK_GROUP_SITE,
+
+  disable_testimonials: false,
+
+  disable_faqs_on_home_page: false,
+
+  // System
+  nav_is_ecosystem_visible: false,
+
+  logo_alt: 'GovX logo',
+
+  // App
+  title: 'Gov X',
+  absolute_url: 'https://www.govx.ai',
+
+  // Cta
+  cta_title: 'Transform Public Sectors with AI-Driven Innovation by Gov X.',
+  cta_button_title: 'Schedule a Call',
+
+  general_email: 'info@govx.ai',
+
+  // Socials
+
+  social_media_github_url: 'https://github.com/onextech',
+  social_media_medium_url: 'https://medium.com/one-x-tech',
+  social_media_behance_url: 'https://www.behance.net/onextech',
+  social_media_twitter_url: 'https://twitter.com/1XTech',
+  social_media_dribbble_url: 'https://dribbble.com/1XT',
+  social_media_facebook_url: 'https://www.facebook.com/onextech',
+  social_media_linkedin_url: 'https://www.linkedin.com/company/govx-ai',
+  social_media_instagram_url: 'https://www.instagram.com/onextech',
+  social_media_youtube_url: 'https://www.youtube.com/onextech',
+
+  // Logo
+  logo_width: 60,
+  logo_height: 13,
+
+  nav_items: [
+    {
+      key: 'services',
+      title: 'Our Services',
+      subtitle:
+        'Explore our comprehensive services focused on transforming public sector enterprises through digital innovation',
+    },
+    {
+      key: 'insights',
+      title: 'Insights',
+      subtitle:
+        'Discover the key to frontend development success with the latest best practices and techniques',
+    },
+    {
+      key: 'industries',
+      title: 'Industries We Serve',
+      subtitle:
+        "Your new team's cross-industry knowledge will level up your project.",
+    },
+    {
+      key: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
+      key: 'company',
+      title: 'Get to Know us Better',
+      subtitle:
+        'Learn more about the core values that drive our business and people to success.',
+    },
+  ],
+}
+
 export const MOCK_SITE = {
   GROUP: MOCK_GROUP_SITE,
   TECH: MOCK_TECH_SITE,
@@ -519,4 +791,8 @@ export const MOCK_SITE = {
   DIGITAL: MOCK_DIGITAL_SITE,
   FINX: MOCK_FINX_SITE,
   GOVX: MOCK_GOVX_SITE,
+  AEL: MOCK_AEL_SITE,
+  SRI: MOCK_SRI_SITE,
+  GVS: MOCK_GVS_SITE,
+  COASTAL: MOCK_COASTAL_SITE,
 }

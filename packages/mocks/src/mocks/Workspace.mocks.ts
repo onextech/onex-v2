@@ -8,6 +8,10 @@ export const MOCK_WORKSPACES = [
   { title: 'One X Digital', href:'https://onexdigital.co', subtitle: 'Discover how we can help digitalize enterprise effectively.' },
   { title: 'Gov X', href: 'https://govx.ai', subtitle: 'Discover how we help public enterprises digitalize effectively.' },
   { title: 'Fin X', href: 'https://finx.ai', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
+  { title: 'Aether Labs', href: 'https://aetherlabs.ai', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
+  { title: 'SRI', href: 'https://sri.com.sg', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
+  { title: 'Gravis AI', href: 'https://gravis-ai.com', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
+  { title: 'Coastal Electronics', href: 'https://coastal.com.sg', subtitle: 'Discover how we help financial enterprises digitalize effectively.' },
 ].map((workspace, i) => ({
   id: i + 1,
   hrefProps: { targetBlank: true },

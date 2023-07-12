@@ -231,6 +231,119 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
   },
 ]
 
+export const MOCK_AEL_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle:
+      'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
+export const MOCK_SRI_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle:
+      'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
+export const MOCK_GVS_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle:
+      'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
+export const MOCK_COASTAL_SERVICE_CATEGORYS = [
+  {
+    id: 1,
+    title: 'Digital Service Delivery',
+    slug: 'digital-service-delivery',
+    subtitle:
+      'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
+    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_alt: 'Star trail',
+  },
+  {
+    id: 2,
+    title: 'AI Process Automation',
+    slug: 'ai-process-automation',
+    subtitle:
+      'Transform and automate complex processes through leveraging AI technologies.',
+    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_alt: '3D rendered cubes',
+  },
+  {
+    id: 3,
+    title: 'Advanced Public Sector Analytics',
+    slug: 'advanced-public-sector-analytics',
+    subtitle: 'Uncover actionable insights and make data-driven decisions.',
+    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_alt: 'Purple and blue light design',
+  },
+]
+
 export const MOCK_SERVICE_CATEGORYS = {
   GROUP: MOCK_GROUP_SERVICE_CATEGORYS,
   TECH: MOCK_TECH_SERVICE_CATEGORYS,
@@ -239,4 +352,8 @@ export const MOCK_SERVICE_CATEGORYS = {
   DIGITAL: MOCK_DIGITAL_SERVICE_CATEGORYS,
   FINX: MOCK_FINX_SERVICE_CATEGORYS,
   GOVX: MOCK_GOVX_SERVICE_CATEGORYS,
+  AEL: MOCK_AEL_SERVICE_CATEGORYS,
+  SRI: MOCK_SRI_SERVICE_CATEGORYS,
+  GVS: MOCK_GVS_SERVICE_CATEGORYS,
+  COASTAL: MOCK_COASTAL_SERVICE_CATEGORYS,
 }

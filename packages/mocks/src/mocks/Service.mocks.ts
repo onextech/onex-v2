@@ -9,6 +9,10 @@ import {
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_TECH_SERVICE_CATEGORYS,
   MOCK_DIGITAL_SERVICE_CATEGORYS,
+  MOCK_AEL_SERVICE_CATEGORYS,
+  MOCK_SRI_SERVICE_CATEGORYS,
+  MOCK_GVS_SERVICE_CATEGORYS,
+  MOCK_COASTAL_SERVICE_CATEGORYS,
 } from './ServiceCategory.mocks'
 
 export const MOCK_SERVICE_PAGE = {
@@ -8826,6 +8830,7 @@ export const MOCK_FINX_SERVICES = [
     },
   })
 })
+
 export const MOCK_GOVX_SERVICES = [
   {
     title: 'E-Government Platform Development',
@@ -10045,6 +10050,4879 @@ export const MOCK_GOVX_SERVICES = [
   })
 })
 
+export const MOCK_AEL_SERVICES = [
+  {
+    title: 'E-Government Platform Development',
+    slug: 'egovernment-platform-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/K_GxWa69dMw/1600x900',
+    hero_alt: 'Lincoln memorial',
+    subtitle:
+      'Building digital platforms that streamline government operations and improve public service delivery.',
+    // Seo
+    seo: {
+      title: 'E-Government Platform Development',
+      description:
+        'Building digital platforms that streamline government operations and improve public service delivery.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Empowering the public sector with innovative digital solutions.',
+        items: [
+          {
+            title:
+              'The public sector is evolving, and so are the digital needs of citizens. We specialize in creating robust, reliable, and user-friendly platforms that cater to the diverse needs of the public sector.',
+          },
+          {
+            title:
+              'Our team of experts understand the unique challenges faced by the public sector and develop tailored solutions that are not only technologically advanced but also focused on enhancing user experience and accessibility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our approach to e-government platform development is comprehensive, focusing on efficiency, security, and most importantly, user engagement.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom platform development',
+            subtitle:
+              'We develop custom digital platforms tailored to meet the unique needs of public sector enterprises.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Data privacy and security',
+            subtitle:
+              'We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-based solutions',
+            subtitle:
+              'We create flexible and scalable cloud-based solutions, enabling seamless service delivery across all devices.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We prioritize a mobile-first approach, ensuring your platform is easily accessible to all users, regardless of their device.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI and automation',
+            subtitle:
+              'We incorporate AI and automation into our platforms to improve service delivery and streamline operations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We place users at the heart of our design process, creating platforms that are intuitive, accessible, and user-friendly.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of e-government platforms?',
+            content:
+              "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What sets your E-Government Platform Development services apart?',
+            content:
+              'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How does your team ensure the security and privacy of the platform?',
+            content:
+              'We prioritize security and privacy in our platform development process. We adhere to all the best practices and regulations, including data encryption, secure coding practices, and routine security testing, to ensure the highest level of security and data privacy.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Citizen Engagement Tools',
+    slug: 'citizen-engagement-tools',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/cw-cj_nFa14/1600x900',
+    hero_alt: 'Town hall meeting',
+    subtitle:
+      'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    // Seo
+    seo: {
+      title: 'Citizen Engagement Tools',
+      description:
+        'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering public sector enterprises through technology.',
+        items: [
+          {
+            title:
+              'In an increasingly digital world, fostering meaningful connections with citizens is a paramount task for public sector institutions. We equip your institution with cutting-edge digital solutions to enhance interactions and foster better relationships with your citizens.',
+          },
+          {
+            title:
+              'We focus on creating accessible, intuitive, and secure digital platforms that empower citizens and make interactions with public sector institutions seamless.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of digital solutions designed to boost citizen engagement and transform public sector institutions.',
+        items: [
+          {
+            fa_icon: 'fa-comments',
+            title: 'Interactive communication platforms',
+            subtitle:
+              'Our solutions foster active dialogue between citizens and institutions, enabling real-time feedback and discussions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We design our solutions with a mobile-first approach, ensuring seamless experiences across all devices.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data-driven insights',
+            subtitle:
+              'Leverage actionable insights from citizens to make data-driven decisions that enhance your services.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Robust security',
+            subtitle:
+              'We prioritize security to protect sensitive citizen data and build trust in your digital platforms.',
+          },
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'User-centric design',
+            subtitle:
+              'Our solutions are designed with the user at the center, ensuring high usability and user satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud solutions',
+            subtitle:
+              'Leverage the power of cloud technologies for scalable, high-performance citizen engagement solutions.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is citizen engagement important in the public sector?',
+            content:
+              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can our public sector institution benefit from your Citizen Engagement Tools service?',
+            content:
+              'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and accessibility of your tools?',
+            content:
+              'We adhere to industry best practices for data security and privacy. All our tools are designed with robust security measures to protect sensitive information. Furthermore, we focus on making our solutions accessible to all citizens, ensuring inclusivity in the digital transformation journey.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Automated Reporting',
+    slug: 'automated-reporting',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/nApaSgkzaxg/1600x900',
+    hero_alt: 'Guy looking at graphs',
+    subtitle:
+      'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    // Seo
+    seo: {
+      title: 'Automated Reporting',
+      description:
+        'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing reporting through automation.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of business, having quick access to accurate, up-to-date information is crucial. We specialize in developing automated reporting systems that facilitate prompt, data-driven decisions. Our team works with you to understand your specific reporting needs.',
+          },
+          {
+            title:
+              'We then employ cutting-edge technology to design and implement an automated reporting system that delivers the right data to the right people at the right time.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Automated Reporting service streamlines your reporting process, enabling efficient data analysis and decision making.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Aggregation',
+            subtitle:
+              'We extract and compile data from various sources to provide comprehensive reports.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Real-Time Reporting',
+            subtitle:
+              'Get immediate insights with real-time reporting and make quick, informed decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'We provide visually appealing and easy-to-understand charts, graphs, and dashboards.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom Report Generation',
+            subtitle:
+              'Our system generates customized reports based on your specific needs and preferences.',
+          },
+          {
+            fa_icon: 'fa-envelope',
+            title: 'Automated Distribution',
+            subtitle:
+              'We automate report distribution, ensuring key personnel receive timely information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Schedule Reports',
+            subtitle:
+              'Set up scheduled reports for regular intervals, ensuring consistent data flow.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Reporting service and how it can revolutionize your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is automated reporting important for my business?',
+            content:
+              'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of reports can be automated?',
+            content:
+              'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Automated Reporting service?',
+            content:
+              'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Intelligent Document Search',
+    slug: 'intelligent-document-search',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/8EzNkvLQosk/1600x900',
+    hero_alt: 'Sorted files',
+    subtitle:
+      'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    // Seo
+    seo: {
+      title: 'Intelligent Document Search',
+      description:
+        'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering your business with smart document search.',
+        items: [
+          {
+            title:
+              'In the digital era, finding specific information in vast document repositories can be a challenge. We assist businesses through utilizing advanced algorithms to ensure quick and accurate retrieval of data.',
+          },
+          {
+            title:
+              'We work closely with you to understand your unique data requirements and create a tailored search system. This significantly enhances your productivity, decision-making, and overall business efficiency.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Intelligent Document Search service ensures efficient and accurate data retrieval, fueling your business insights.',
+        items: [
+          {
+            fa_icon: 'fa-search-plus',
+            title: 'Advanced Search Algorithms',
+            subtitle:
+              'We utilize cutting-edge algorithms to ensure rapid and precise document search.',
+          },
+          {
+            fa_icon: 'fa-folder-open',
+            title: 'Document Indexing',
+            subtitle:
+              'Our system indexes your documents, making data retrieval swift and efficient.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Search Parameters',
+            subtitle:
+              'We offer customized search parameters to cater to your specific data needs.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-Based System',
+            subtitle:
+              'Our cloud-based search system ensures data accessibility from anywhere, anytime.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure Access',
+            subtitle:
+              'We prioritize data security, ensuring that your documents are accessed by authorized personnel only.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Real-Time Updates',
+            subtitle:
+              'Our system provides real-time updates, ensuring that your search results are always current.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is an Intelligent Document Search system important for my business?',
+            content:
+              'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of documents can your system search?',
+            content:
+              'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Intelligent Document Search service?',
+            content:
+              'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Virtual Assistant Development',
+    slug: 'virtual-assistant-development',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/A9TTeuTGrug/1600x900',
+    hero_alt: 'Digital humans',
+    subtitle:
+      'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    // Seo
+    seo: {
+      title: 'Virtual Assistant Development',
+      description:
+        'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Boosting efficiency with AI-powered virtual assistants.',
+        items: [
+          {
+            title:
+              'As the digital landscape evolves, businesses need efficient tools to stay competitive. We offer AI-driven solutions that automate tasks, streamline processes, and enhance customer interaction.',
+          },
+          {
+            title:
+              'Our team designs virtual assistants that understand, learn, and respond in a human-like manner, significantly improving your service efficiency and customer satisfaction.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We create intelligent virtual assistants tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI-Driven Assistants',
+            subtitle:
+              'We leverage advanced AI technology to create virtual assistants that understand and respond to user interactions.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Machine Learning',
+            subtitle:
+              'Our virtual assistants learn from interactions, continually improving their responses and effectiveness.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Natural Language Processing',
+            subtitle:
+              'Our solutions understand and respond to user inputs in a natural, human-like manner.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Real-Time Interactions',
+            subtitle:
+              'Our virtual assistants provide real-time responses to user queries, enhancing customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customization',
+            subtitle:
+              'We customize our solutions based on your business needs, ensuring maximum relevance and efficiency.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Data Privacy',
+            subtitle:
+              'We prioritize data privacy and security, ensuring your user data is always protected.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a virtual assistant important for my business?',
+            content:
+              'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What capabilities can I expect from the virtual assistant you develop?',
+            content:
+              'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data privacy with your virtual assistants?',
+            content:
+              'We prioritize data privacy and security in our virtual assistant development. We follow best practices and comply with relevant regulations to ensure that your user data is always protected.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Driven Policy Analysis',
+    slug: 'ai-driven-policy-analysis',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/gakXaqzGad0/1600x900',
+    hero_alt: 'Computer chip in shape of human head',
+    subtitle:
+      'Utilize advanced AI to guide and enhance your policymaking process.',
+    // Seo
+    seo: {
+      title: 'AI-Driven Policy Analysis',
+      description:
+        'Utilize advanced AI to guide and enhance your policymaking process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Leveraging AI for effective policy analysis.',
+        items: [
+          {
+            title:
+              'In the complex landscape of public policy, data-driven decision making is crucial. We leverage cutting-edge AI technologies to deliver insightful analysis and recommendations.',
+          },
+          {
+            title:
+              'With a focus on accuracy and usability, our AI-driven analysis tools help policymakers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our suite of AI-driven tools and services is designed to support robust policy analysis.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We leverage AI to analyse a broad spectrum of data, identifying trends and patterns crucial for effective policymaking.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Predictive Modeling',
+            subtitle:
+              'Our AI models predict potential policy outcomes, supporting informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-compass',
+            title: 'Policy Guidance',
+            subtitle:
+              'We provide clear, actionable guidance based on our AI-driven policy analysis.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              'Our solutions ensure efficient and secure data management, crucial for any AI-driven service.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We offer custom solutions tailored to specific policy domains and decision-making contexts.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure and Compliant',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our services.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can AI-driven policy analysis enhance our policymaking process?',
+            content:
+              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data does your AI use for analysis?',
+            content:
+              'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sector Predictive Analytics',
+    slug: 'public-sector-predictive-analytics',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/-WXQm_NTK0U/1600x900',
+    hero_alt: 'Data analytics charts',
+    subtitle:
+      'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    // Seo
+    seo: {
+      title: 'Public Sector Predictive Analytics',
+      description:
+        'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving public sector decisions with predictive analytics.',
+        items: [
+          {
+            title:
+              'In the public sector, predictive analytics can turn data into actionable insights, informing decisions and policies. Our predictive analytics services empower you to leverage data-driven insights in your decision-making process.',
+          },
+          {
+            title:
+              'Using advanced predictive models, we help you forecast future events and trends, allowing you to make strategic, forward-thinking decisions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leveraging data to forecast trends and inform strategic decision-making in the public sector.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Predictive Models',
+            subtitle:
+              'We develop advanced predictive models to forecast future events and trends.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle: 'We ensure efficient and secure management of your data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Strategic Insights',
+            subtitle:
+              'We turn data into actionable insights to inform strategic decision-making.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide solutions tailored to the unique needs of public sector organisations.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our solutions.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to align our analytics solutions with your strategic objectives.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can predictive analytics enhance our decision-making process?',
+            content:
+              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of data do your predictive analytics solutions use?',
+            content:
+              'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Powered Compliance Monitoring',
+    slug: 'ai-powered-compliance-monitoring',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/yCdPU73kGSc/1600x900',
+    hero_alt: 'Lady justice',
+    subtitle:
+      'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    // Seo
+    seo: {
+      title: 'AI-Powered Compliance Monitoring',
+      description:
+        'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing compliance monitoring with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              'Regulatory compliance is a key challenge for the public sector. With our services, we streamline the process, helping you detect and manage compliance issues proactively. Our AI-powered solutions enhance accuracy, reduce manual efforts, and provide real-time insights, allowing you to focus on strategic tasks.',
+          },
+          {
+            title:
+              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organisation.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Innovating compliance management in the public sector with artificial intelligence.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Intelligent Monitoring',
+            subtitle:
+              'Our AI algorithms monitor compliance in real-time, detecting anomalies and potential issues.',
+          },
+          {
+            fa_icon: 'fa-bell',
+            title: 'Proactive Alerts',
+            subtitle:
+              'Get proactive alerts on potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Comprehensive Reporting',
+            subtitle:
+              'Generate comprehensive compliance reports with in-depth insights at a click.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide AI-powered compliance solutions tailored to your organisation’s needs.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Updates',
+            subtitle:
+              'Stay updated with regulatory changes with our AI-powered monitoring system.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to understand your compliance landscape and needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can AI enhance compliance monitoring?',
+            content:
+              'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What makes your AI-Powered Compliance Monitoring service unique?',
+            content:
+              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What type of compliance can your service monitor?',
+            content:
+              'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sentiment Analysis',
+    slug: 'public-sentiment-analysis',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/7OxV_qDiGRI/1600x900',
+    hero_alt: 'Empty meeting seats',
+    subtitle:
+      'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    // Seo
+    seo: {
+      title: 'Public Sentiment Analysis',
+      description:
+        'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Uncover actionable insights from public sentiment.',
+        items: [
+          {
+            title:
+              'Understanding public sentiment and opinion is crucial for government agencies and organisations in the public sector. We leverage advanced analytics and natural language processing to analyse social media data and other sources, helping you gain valuable insights to inform decision-making.',
+          },
+          {
+            title:
+              'Our team of experts applies state-of-the-art techniques to track and analyse public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of advanced analytics to analyse public sentiment and opinion.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Sentiment Analysis',
+            subtitle:
+              'Analyse public sentiment and opinion to understand public perception and attitudes.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Social Media Monitoring',
+            subtitle:
+              'Track and analyse social media data to uncover insights and trends.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Opinion Mining',
+            subtitle:
+              'Extract opinions, emotions, and key themes from text data to identify patterns and sentiments.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Reputation Management',
+            subtitle:
+              'Monitor and manage your organisation’s online reputation based on public sentiment.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insightful Reporting',
+            subtitle:
+              'Generate comprehensive reports and visualizations to communicate key findings.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Audience Segmentation',
+            subtitle:
+              'Segment the public audience based on sentiment, demographics, and behaviour.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is public sentiment analysis important for government agencies?',
+            content:
+              'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do you collect and analyse public sentiment data?',
+            content:
+              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Can public sentiment analysis help in crisis management?',
+            content:
+              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_AEL_SERVICE_CATEGORYS),
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver governmental solutions of the highest quality, we follow the best practices that include comprehensive policy analysis, legal compliance, data privacy, and continuous innovation.',
+      },
+    },
+  })
+})
+export const MOCK_SRI_SERVICES = [
+  {
+    title: 'E-Government Platform Development',
+    slug: 'egovernment-platform-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/K_GxWa69dMw/1600x900',
+    hero_alt: 'Lincoln memorial',
+    subtitle:
+      'Building digital platforms that streamline government operations and improve public service delivery.',
+    // Seo
+    seo: {
+      title: 'E-Government Platform Development',
+      description:
+        'Building digital platforms that streamline government operations and improve public service delivery.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Empowering the public sector with innovative digital solutions.',
+        items: [
+          {
+            title:
+              'The public sector is evolving, and so are the digital needs of citizens. We specialize in creating robust, reliable, and user-friendly platforms that cater to the diverse needs of the public sector.',
+          },
+          {
+            title:
+              'Our team of experts understand the unique challenges faced by the public sector and develop tailored solutions that are not only technologically advanced but also focused on enhancing user experience and accessibility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our approach to e-government platform development is comprehensive, focusing on efficiency, security, and most importantly, user engagement.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom platform development',
+            subtitle:
+              'We develop custom digital platforms tailored to meet the unique needs of public sector enterprises.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Data privacy and security',
+            subtitle:
+              'We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-based solutions',
+            subtitle:
+              'We create flexible and scalable cloud-based solutions, enabling seamless service delivery across all devices.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We prioritize a mobile-first approach, ensuring your platform is easily accessible to all users, regardless of their device.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI and automation',
+            subtitle:
+              'We incorporate AI and automation into our platforms to improve service delivery and streamline operations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We place users at the heart of our design process, creating platforms that are intuitive, accessible, and user-friendly.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of e-government platforms?',
+            content:
+              "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What sets your E-Government Platform Development services apart?',
+            content:
+              'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How does your team ensure the security and privacy of the platform?',
+            content:
+              'We prioritize security and privacy in our platform development process. We adhere to all the best practices and regulations, including data encryption, secure coding practices, and routine security testing, to ensure the highest level of security and data privacy.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Citizen Engagement Tools',
+    slug: 'citizen-engagement-tools',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/cw-cj_nFa14/1600x900',
+    hero_alt: 'Town hall meeting',
+    subtitle:
+      'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    // Seo
+    seo: {
+      title: 'Citizen Engagement Tools',
+      description:
+        'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering public sector enterprises through technology.',
+        items: [
+          {
+            title:
+              'In an increasingly digital world, fostering meaningful connections with citizens is a paramount task for public sector institutions. We equip your institution with cutting-edge digital solutions to enhance interactions and foster better relationships with your citizens.',
+          },
+          {
+            title:
+              'We focus on creating accessible, intuitive, and secure digital platforms that empower citizens and make interactions with public sector institutions seamless.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of digital solutions designed to boost citizen engagement and transform public sector institutions.',
+        items: [
+          {
+            fa_icon: 'fa-comments',
+            title: 'Interactive communication platforms',
+            subtitle:
+              'Our solutions foster active dialogue between citizens and institutions, enabling real-time feedback and discussions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We design our solutions with a mobile-first approach, ensuring seamless experiences across all devices.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data-driven insights',
+            subtitle:
+              'Leverage actionable insights from citizens to make data-driven decisions that enhance your services.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Robust security',
+            subtitle:
+              'We prioritize security to protect sensitive citizen data and build trust in your digital platforms.',
+          },
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'User-centric design',
+            subtitle:
+              'Our solutions are designed with the user at the center, ensuring high usability and user satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud solutions',
+            subtitle:
+              'Leverage the power of cloud technologies for scalable, high-performance citizen engagement solutions.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is citizen engagement important in the public sector?',
+            content:
+              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can our public sector institution benefit from your Citizen Engagement Tools service?',
+            content:
+              'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and accessibility of your tools?',
+            content:
+              'We adhere to industry best practices for data security and privacy. All our tools are designed with robust security measures to protect sensitive information. Furthermore, we focus on making our solutions accessible to all citizens, ensuring inclusivity in the digital transformation journey.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Automated Reporting',
+    slug: 'automated-reporting',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/nApaSgkzaxg/1600x900',
+    hero_alt: 'Guy looking at graphs',
+    subtitle:
+      'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    // Seo
+    seo: {
+      title: 'Automated Reporting',
+      description:
+        'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing reporting through automation.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of business, having quick access to accurate, up-to-date information is crucial. We specialize in developing automated reporting systems that facilitate prompt, data-driven decisions. Our team works with you to understand your specific reporting needs.',
+          },
+          {
+            title:
+              'We then employ cutting-edge technology to design and implement an automated reporting system that delivers the right data to the right people at the right time.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Automated Reporting service streamlines your reporting process, enabling efficient data analysis and decision making.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Aggregation',
+            subtitle:
+              'We extract and compile data from various sources to provide comprehensive reports.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Real-Time Reporting',
+            subtitle:
+              'Get immediate insights with real-time reporting and make quick, informed decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'We provide visually appealing and easy-to-understand charts, graphs, and dashboards.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom Report Generation',
+            subtitle:
+              'Our system generates customized reports based on your specific needs and preferences.',
+          },
+          {
+            fa_icon: 'fa-envelope',
+            title: 'Automated Distribution',
+            subtitle:
+              'We automate report distribution, ensuring key personnel receive timely information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Schedule Reports',
+            subtitle:
+              'Set up scheduled reports for regular intervals, ensuring consistent data flow.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Reporting service and how it can revolutionize your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is automated reporting important for my business?',
+            content:
+              'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of reports can be automated?',
+            content:
+              'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Automated Reporting service?',
+            content:
+              'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Intelligent Document Search',
+    slug: 'intelligent-document-search',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/8EzNkvLQosk/1600x900',
+    hero_alt: 'Sorted files',
+    subtitle:
+      'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    // Seo
+    seo: {
+      title: 'Intelligent Document Search',
+      description:
+        'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering your business with smart document search.',
+        items: [
+          {
+            title:
+              'In the digital era, finding specific information in vast document repositories can be a challenge. We assist businesses through utilizing advanced algorithms to ensure quick and accurate retrieval of data.',
+          },
+          {
+            title:
+              'We work closely with you to understand your unique data requirements and create a tailored search system. This significantly enhances your productivity, decision-making, and overall business efficiency.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Intelligent Document Search service ensures efficient and accurate data retrieval, fueling your business insights.',
+        items: [
+          {
+            fa_icon: 'fa-search-plus',
+            title: 'Advanced Search Algorithms',
+            subtitle:
+              'We utilize cutting-edge algorithms to ensure rapid and precise document search.',
+          },
+          {
+            fa_icon: 'fa-folder-open',
+            title: 'Document Indexing',
+            subtitle:
+              'Our system indexes your documents, making data retrieval swift and efficient.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Search Parameters',
+            subtitle:
+              'We offer customized search parameters to cater to your specific data needs.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-Based System',
+            subtitle:
+              'Our cloud-based search system ensures data accessibility from anywhere, anytime.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure Access',
+            subtitle:
+              'We prioritize data security, ensuring that your documents are accessed by authorized personnel only.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Real-Time Updates',
+            subtitle:
+              'Our system provides real-time updates, ensuring that your search results are always current.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is an Intelligent Document Search system important for my business?',
+            content:
+              'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of documents can your system search?',
+            content:
+              'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Intelligent Document Search service?',
+            content:
+              'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Virtual Assistant Development',
+    slug: 'virtual-assistant-development',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/A9TTeuTGrug/1600x900',
+    hero_alt: 'Digital humans',
+    subtitle:
+      'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    // Seo
+    seo: {
+      title: 'Virtual Assistant Development',
+      description:
+        'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Boosting efficiency with AI-powered virtual assistants.',
+        items: [
+          {
+            title:
+              'As the digital landscape evolves, businesses need efficient tools to stay competitive. We offer AI-driven solutions that automate tasks, streamline processes, and enhance customer interaction.',
+          },
+          {
+            title:
+              'Our team designs virtual assistants that understand, learn, and respond in a human-like manner, significantly improving your service efficiency and customer satisfaction.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We create intelligent virtual assistants tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI-Driven Assistants',
+            subtitle:
+              'We leverage advanced AI technology to create virtual assistants that understand and respond to user interactions.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Machine Learning',
+            subtitle:
+              'Our virtual assistants learn from interactions, continually improving their responses and effectiveness.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Natural Language Processing',
+            subtitle:
+              'Our solutions understand and respond to user inputs in a natural, human-like manner.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Real-Time Interactions',
+            subtitle:
+              'Our virtual assistants provide real-time responses to user queries, enhancing customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customization',
+            subtitle:
+              'We customize our solutions based on your business needs, ensuring maximum relevance and efficiency.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Data Privacy',
+            subtitle:
+              'We prioritize data privacy and security, ensuring your user data is always protected.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a virtual assistant important for my business?',
+            content:
+              'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What capabilities can I expect from the virtual assistant you develop?',
+            content:
+              'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data privacy with your virtual assistants?',
+            content:
+              'We prioritize data privacy and security in our virtual assistant development. We follow best practices and comply with relevant regulations to ensure that your user data is always protected.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Driven Policy Analysis',
+    slug: 'ai-driven-policy-analysis',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/gakXaqzGad0/1600x900',
+    hero_alt: 'Computer chip in shape of human head',
+    subtitle:
+      'Utilize advanced AI to guide and enhance your policymaking process.',
+    // Seo
+    seo: {
+      title: 'AI-Driven Policy Analysis',
+      description:
+        'Utilize advanced AI to guide and enhance your policymaking process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Leveraging AI for effective policy analysis.',
+        items: [
+          {
+            title:
+              'In the complex landscape of public policy, data-driven decision making is crucial. We leverage cutting-edge AI technologies to deliver insightful analysis and recommendations.',
+          },
+          {
+            title:
+              'With a focus on accuracy and usability, our AI-driven analysis tools help policymakers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our suite of AI-driven tools and services is designed to support robust policy analysis.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We leverage AI to analyse a broad spectrum of data, identifying trends and patterns crucial for effective policymaking.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Predictive Modeling',
+            subtitle:
+              'Our AI models predict potential policy outcomes, supporting informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-compass',
+            title: 'Policy Guidance',
+            subtitle:
+              'We provide clear, actionable guidance based on our AI-driven policy analysis.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              'Our solutions ensure efficient and secure data management, crucial for any AI-driven service.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We offer custom solutions tailored to specific policy domains and decision-making contexts.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure and Compliant',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our services.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can AI-driven policy analysis enhance our policymaking process?',
+            content:
+              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data does your AI use for analysis?',
+            content:
+              'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sector Predictive Analytics',
+    slug: 'public-sector-predictive-analytics',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/-WXQm_NTK0U/1600x900',
+    hero_alt: 'Data analytics charts',
+    subtitle:
+      'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    // Seo
+    seo: {
+      title: 'Public Sector Predictive Analytics',
+      description:
+        'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving public sector decisions with predictive analytics.',
+        items: [
+          {
+            title:
+              'In the public sector, predictive analytics can turn data into actionable insights, informing decisions and policies. Our predictive analytics services empower you to leverage data-driven insights in your decision-making process.',
+          },
+          {
+            title:
+              'Using advanced predictive models, we help you forecast future events and trends, allowing you to make strategic, forward-thinking decisions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leveraging data to forecast trends and inform strategic decision-making in the public sector.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Predictive Models',
+            subtitle:
+              'We develop advanced predictive models to forecast future events and trends.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle: 'We ensure efficient and secure management of your data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Strategic Insights',
+            subtitle:
+              'We turn data into actionable insights to inform strategic decision-making.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide solutions tailored to the unique needs of public sector organisations.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our solutions.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to align our analytics solutions with your strategic objectives.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can predictive analytics enhance our decision-making process?',
+            content:
+              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of data do your predictive analytics solutions use?',
+            content:
+              'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Powered Compliance Monitoring',
+    slug: 'ai-powered-compliance-monitoring',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/yCdPU73kGSc/1600x900',
+    hero_alt: 'Lady justice',
+    subtitle:
+      'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    // Seo
+    seo: {
+      title: 'AI-Powered Compliance Monitoring',
+      description:
+        'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing compliance monitoring with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              'Regulatory compliance is a key challenge for the public sector. With our services, we streamline the process, helping you detect and manage compliance issues proactively. Our AI-powered solutions enhance accuracy, reduce manual efforts, and provide real-time insights, allowing you to focus on strategic tasks.',
+          },
+          {
+            title:
+              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organisation.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Innovating compliance management in the public sector with artificial intelligence.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Intelligent Monitoring',
+            subtitle:
+              'Our AI algorithms monitor compliance in real-time, detecting anomalies and potential issues.',
+          },
+          {
+            fa_icon: 'fa-bell',
+            title: 'Proactive Alerts',
+            subtitle:
+              'Get proactive alerts on potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Comprehensive Reporting',
+            subtitle:
+              'Generate comprehensive compliance reports with in-depth insights at a click.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide AI-powered compliance solutions tailored to your organisation’s needs.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Updates',
+            subtitle:
+              'Stay updated with regulatory changes with our AI-powered monitoring system.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to understand your compliance landscape and needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can AI enhance compliance monitoring?',
+            content:
+              'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What makes your AI-Powered Compliance Monitoring service unique?',
+            content:
+              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What type of compliance can your service monitor?',
+            content:
+              'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sentiment Analysis',
+    slug: 'public-sentiment-analysis',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/7OxV_qDiGRI/1600x900',
+    hero_alt: 'Empty meeting seats',
+    subtitle:
+      'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    // Seo
+    seo: {
+      title: 'Public Sentiment Analysis',
+      description:
+        'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Uncover actionable insights from public sentiment.',
+        items: [
+          {
+            title:
+              'Understanding public sentiment and opinion is crucial for government agencies and organisations in the public sector. We leverage advanced analytics and natural language processing to analyse social media data and other sources, helping you gain valuable insights to inform decision-making.',
+          },
+          {
+            title:
+              'Our team of experts applies state-of-the-art techniques to track and analyse public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of advanced analytics to analyse public sentiment and opinion.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Sentiment Analysis',
+            subtitle:
+              'Analyse public sentiment and opinion to understand public perception and attitudes.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Social Media Monitoring',
+            subtitle:
+              'Track and analyse social media data to uncover insights and trends.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Opinion Mining',
+            subtitle:
+              'Extract opinions, emotions, and key themes from text data to identify patterns and sentiments.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Reputation Management',
+            subtitle:
+              'Monitor and manage your organisation’s online reputation based on public sentiment.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insightful Reporting',
+            subtitle:
+              'Generate comprehensive reports and visualizations to communicate key findings.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Audience Segmentation',
+            subtitle:
+              'Segment the public audience based on sentiment, demographics, and behaviour.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is public sentiment analysis important for government agencies?',
+            content:
+              'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do you collect and analyse public sentiment data?',
+            content:
+              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Can public sentiment analysis help in crisis management?',
+            content:
+              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_SRI_SERVICE_CATEGORYS),
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver governmental solutions of the highest quality, we follow the best practices that include comprehensive policy analysis, legal compliance, data privacy, and continuous innovation.',
+      },
+    },
+  })
+})
+export const MOCK_GVS_SERVICES = [
+  {
+    title: 'E-Government Platform Development',
+    slug: 'egovernment-platform-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/K_GxWa69dMw/1600x900',
+    hero_alt: 'Lincoln memorial',
+    subtitle:
+      'Building digital platforms that streamline government operations and improve public service delivery.',
+    // Seo
+    seo: {
+      title: 'E-Government Platform Development',
+      description:
+        'Building digital platforms that streamline government operations and improve public service delivery.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Empowering the public sector with innovative digital solutions.',
+        items: [
+          {
+            title:
+              'The public sector is evolving, and so are the digital needs of citizens. We specialize in creating robust, reliable, and user-friendly platforms that cater to the diverse needs of the public sector.',
+          },
+          {
+            title:
+              'Our team of experts understand the unique challenges faced by the public sector and develop tailored solutions that are not only technologically advanced but also focused on enhancing user experience and accessibility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our approach to e-government platform development is comprehensive, focusing on efficiency, security, and most importantly, user engagement.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom platform development',
+            subtitle:
+              'We develop custom digital platforms tailored to meet the unique needs of public sector enterprises.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Data privacy and security',
+            subtitle:
+              'We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-based solutions',
+            subtitle:
+              'We create flexible and scalable cloud-based solutions, enabling seamless service delivery across all devices.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We prioritize a mobile-first approach, ensuring your platform is easily accessible to all users, regardless of their device.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI and automation',
+            subtitle:
+              'We incorporate AI and automation into our platforms to improve service delivery and streamline operations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We place users at the heart of our design process, creating platforms that are intuitive, accessible, and user-friendly.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of e-government platforms?',
+            content:
+              "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What sets your E-Government Platform Development services apart?',
+            content:
+              'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How does your team ensure the security and privacy of the platform?',
+            content:
+              'We prioritize security and privacy in our platform development process. We adhere to all the best practices and regulations, including data encryption, secure coding practices, and routine security testing, to ensure the highest level of security and data privacy.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Citizen Engagement Tools',
+    slug: 'citizen-engagement-tools',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/cw-cj_nFa14/1600x900',
+    hero_alt: 'Town hall meeting',
+    subtitle:
+      'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    // Seo
+    seo: {
+      title: 'Citizen Engagement Tools',
+      description:
+        'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering public sector enterprises through technology.',
+        items: [
+          {
+            title:
+              'In an increasingly digital world, fostering meaningful connections with citizens is a paramount task for public sector institutions. We equip your institution with cutting-edge digital solutions to enhance interactions and foster better relationships with your citizens.',
+          },
+          {
+            title:
+              'We focus on creating accessible, intuitive, and secure digital platforms that empower citizens and make interactions with public sector institutions seamless.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of digital solutions designed to boost citizen engagement and transform public sector institutions.',
+        items: [
+          {
+            fa_icon: 'fa-comments',
+            title: 'Interactive communication platforms',
+            subtitle:
+              'Our solutions foster active dialogue between citizens and institutions, enabling real-time feedback and discussions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We design our solutions with a mobile-first approach, ensuring seamless experiences across all devices.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data-driven insights',
+            subtitle:
+              'Leverage actionable insights from citizens to make data-driven decisions that enhance your services.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Robust security',
+            subtitle:
+              'We prioritize security to protect sensitive citizen data and build trust in your digital platforms.',
+          },
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'User-centric design',
+            subtitle:
+              'Our solutions are designed with the user at the center, ensuring high usability and user satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud solutions',
+            subtitle:
+              'Leverage the power of cloud technologies for scalable, high-performance citizen engagement solutions.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is citizen engagement important in the public sector?',
+            content:
+              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can our public sector institution benefit from your Citizen Engagement Tools service?',
+            content:
+              'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and accessibility of your tools?',
+            content:
+              'We adhere to industry best practices for data security and privacy. All our tools are designed with robust security measures to protect sensitive information. Furthermore, we focus on making our solutions accessible to all citizens, ensuring inclusivity in the digital transformation journey.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Automated Reporting',
+    slug: 'automated-reporting',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/nApaSgkzaxg/1600x900',
+    hero_alt: 'Guy looking at graphs',
+    subtitle:
+      'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    // Seo
+    seo: {
+      title: 'Automated Reporting',
+      description:
+        'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing reporting through automation.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of business, having quick access to accurate, up-to-date information is crucial. We specialize in developing automated reporting systems that facilitate prompt, data-driven decisions. Our team works with you to understand your specific reporting needs.',
+          },
+          {
+            title:
+              'We then employ cutting-edge technology to design and implement an automated reporting system that delivers the right data to the right people at the right time.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Automated Reporting service streamlines your reporting process, enabling efficient data analysis and decision making.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Aggregation',
+            subtitle:
+              'We extract and compile data from various sources to provide comprehensive reports.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Real-Time Reporting',
+            subtitle:
+              'Get immediate insights with real-time reporting and make quick, informed decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'We provide visually appealing and easy-to-understand charts, graphs, and dashboards.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom Report Generation',
+            subtitle:
+              'Our system generates customized reports based on your specific needs and preferences.',
+          },
+          {
+            fa_icon: 'fa-envelope',
+            title: 'Automated Distribution',
+            subtitle:
+              'We automate report distribution, ensuring key personnel receive timely information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Schedule Reports',
+            subtitle:
+              'Set up scheduled reports for regular intervals, ensuring consistent data flow.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Reporting service and how it can revolutionize your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is automated reporting important for my business?',
+            content:
+              'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of reports can be automated?',
+            content:
+              'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Automated Reporting service?',
+            content:
+              'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Intelligent Document Search',
+    slug: 'intelligent-document-search',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/8EzNkvLQosk/1600x900',
+    hero_alt: 'Sorted files',
+    subtitle:
+      'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    // Seo
+    seo: {
+      title: 'Intelligent Document Search',
+      description:
+        'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering your business with smart document search.',
+        items: [
+          {
+            title:
+              'In the digital era, finding specific information in vast document repositories can be a challenge. We assist businesses through utilizing advanced algorithms to ensure quick and accurate retrieval of data.',
+          },
+          {
+            title:
+              'We work closely with you to understand your unique data requirements and create a tailored search system. This significantly enhances your productivity, decision-making, and overall business efficiency.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Intelligent Document Search service ensures efficient and accurate data retrieval, fueling your business insights.',
+        items: [
+          {
+            fa_icon: 'fa-search-plus',
+            title: 'Advanced Search Algorithms',
+            subtitle:
+              'We utilize cutting-edge algorithms to ensure rapid and precise document search.',
+          },
+          {
+            fa_icon: 'fa-folder-open',
+            title: 'Document Indexing',
+            subtitle:
+              'Our system indexes your documents, making data retrieval swift and efficient.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Search Parameters',
+            subtitle:
+              'We offer customized search parameters to cater to your specific data needs.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-Based System',
+            subtitle:
+              'Our cloud-based search system ensures data accessibility from anywhere, anytime.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure Access',
+            subtitle:
+              'We prioritize data security, ensuring that your documents are accessed by authorized personnel only.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Real-Time Updates',
+            subtitle:
+              'Our system provides real-time updates, ensuring that your search results are always current.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is an Intelligent Document Search system important for my business?',
+            content:
+              'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of documents can your system search?',
+            content:
+              'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Intelligent Document Search service?',
+            content:
+              'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Virtual Assistant Development',
+    slug: 'virtual-assistant-development',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/A9TTeuTGrug/1600x900',
+    hero_alt: 'Digital humans',
+    subtitle:
+      'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    // Seo
+    seo: {
+      title: 'Virtual Assistant Development',
+      description:
+        'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Boosting efficiency with AI-powered virtual assistants.',
+        items: [
+          {
+            title:
+              'As the digital landscape evolves, businesses need efficient tools to stay competitive. We offer AI-driven solutions that automate tasks, streamline processes, and enhance customer interaction.',
+          },
+          {
+            title:
+              'Our team designs virtual assistants that understand, learn, and respond in a human-like manner, significantly improving your service efficiency and customer satisfaction.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We create intelligent virtual assistants tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI-Driven Assistants',
+            subtitle:
+              'We leverage advanced AI technology to create virtual assistants that understand and respond to user interactions.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Machine Learning',
+            subtitle:
+              'Our virtual assistants learn from interactions, continually improving their responses and effectiveness.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Natural Language Processing',
+            subtitle:
+              'Our solutions understand and respond to user inputs in a natural, human-like manner.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Real-Time Interactions',
+            subtitle:
+              'Our virtual assistants provide real-time responses to user queries, enhancing customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customization',
+            subtitle:
+              'We customize our solutions based on your business needs, ensuring maximum relevance and efficiency.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Data Privacy',
+            subtitle:
+              'We prioritize data privacy and security, ensuring your user data is always protected.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a virtual assistant important for my business?',
+            content:
+              'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What capabilities can I expect from the virtual assistant you develop?',
+            content:
+              'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data privacy with your virtual assistants?',
+            content:
+              'We prioritize data privacy and security in our virtual assistant development. We follow best practices and comply with relevant regulations to ensure that your user data is always protected.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Driven Policy Analysis',
+    slug: 'ai-driven-policy-analysis',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/gakXaqzGad0/1600x900',
+    hero_alt: 'Computer chip in shape of human head',
+    subtitle:
+      'Utilize advanced AI to guide and enhance your policymaking process.',
+    // Seo
+    seo: {
+      title: 'AI-Driven Policy Analysis',
+      description:
+        'Utilize advanced AI to guide and enhance your policymaking process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Leveraging AI for effective policy analysis.',
+        items: [
+          {
+            title:
+              'In the complex landscape of public policy, data-driven decision making is crucial. We leverage cutting-edge AI technologies to deliver insightful analysis and recommendations.',
+          },
+          {
+            title:
+              'With a focus on accuracy and usability, our AI-driven analysis tools help policymakers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our suite of AI-driven tools and services is designed to support robust policy analysis.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We leverage AI to analyse a broad spectrum of data, identifying trends and patterns crucial for effective policymaking.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Predictive Modeling',
+            subtitle:
+              'Our AI models predict potential policy outcomes, supporting informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-compass',
+            title: 'Policy Guidance',
+            subtitle:
+              'We provide clear, actionable guidance based on our AI-driven policy analysis.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              'Our solutions ensure efficient and secure data management, crucial for any AI-driven service.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We offer custom solutions tailored to specific policy domains and decision-making contexts.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure and Compliant',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our services.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can AI-driven policy analysis enhance our policymaking process?',
+            content:
+              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data does your AI use for analysis?',
+            content:
+              'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sector Predictive Analytics',
+    slug: 'public-sector-predictive-analytics',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/-WXQm_NTK0U/1600x900',
+    hero_alt: 'Data analytics charts',
+    subtitle:
+      'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    // Seo
+    seo: {
+      title: 'Public Sector Predictive Analytics',
+      description:
+        'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving public sector decisions with predictive analytics.',
+        items: [
+          {
+            title:
+              'In the public sector, predictive analytics can turn data into actionable insights, informing decisions and policies. Our predictive analytics services empower you to leverage data-driven insights in your decision-making process.',
+          },
+          {
+            title:
+              'Using advanced predictive models, we help you forecast future events and trends, allowing you to make strategic, forward-thinking decisions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leveraging data to forecast trends and inform strategic decision-making in the public sector.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Predictive Models',
+            subtitle:
+              'We develop advanced predictive models to forecast future events and trends.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle: 'We ensure efficient and secure management of your data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Strategic Insights',
+            subtitle:
+              'We turn data into actionable insights to inform strategic decision-making.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide solutions tailored to the unique needs of public sector organisations.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our solutions.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to align our analytics solutions with your strategic objectives.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can predictive analytics enhance our decision-making process?',
+            content:
+              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of data do your predictive analytics solutions use?',
+            content:
+              'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Powered Compliance Monitoring',
+    slug: 'ai-powered-compliance-monitoring',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/yCdPU73kGSc/1600x900',
+    hero_alt: 'Lady justice',
+    subtitle:
+      'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    // Seo
+    seo: {
+      title: 'AI-Powered Compliance Monitoring',
+      description:
+        'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing compliance monitoring with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              'Regulatory compliance is a key challenge for the public sector. With our services, we streamline the process, helping you detect and manage compliance issues proactively. Our AI-powered solutions enhance accuracy, reduce manual efforts, and provide real-time insights, allowing you to focus on strategic tasks.',
+          },
+          {
+            title:
+              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organisation.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Innovating compliance management in the public sector with artificial intelligence.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Intelligent Monitoring',
+            subtitle:
+              'Our AI algorithms monitor compliance in real-time, detecting anomalies and potential issues.',
+          },
+          {
+            fa_icon: 'fa-bell',
+            title: 'Proactive Alerts',
+            subtitle:
+              'Get proactive alerts on potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Comprehensive Reporting',
+            subtitle:
+              'Generate comprehensive compliance reports with in-depth insights at a click.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide AI-powered compliance solutions tailored to your organisation’s needs.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Updates',
+            subtitle:
+              'Stay updated with regulatory changes with our AI-powered monitoring system.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to understand your compliance landscape and needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can AI enhance compliance monitoring?',
+            content:
+              'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What makes your AI-Powered Compliance Monitoring service unique?',
+            content:
+              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What type of compliance can your service monitor?',
+            content:
+              'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sentiment Analysis',
+    slug: 'public-sentiment-analysis',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/7OxV_qDiGRI/1600x900',
+    hero_alt: 'Empty meeting seats',
+    subtitle:
+      'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    // Seo
+    seo: {
+      title: 'Public Sentiment Analysis',
+      description:
+        'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Uncover actionable insights from public sentiment.',
+        items: [
+          {
+            title:
+              'Understanding public sentiment and opinion is crucial for government agencies and organisations in the public sector. We leverage advanced analytics and natural language processing to analyse social media data and other sources, helping you gain valuable insights to inform decision-making.',
+          },
+          {
+            title:
+              'Our team of experts applies state-of-the-art techniques to track and analyse public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of advanced analytics to analyse public sentiment and opinion.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Sentiment Analysis',
+            subtitle:
+              'Analyse public sentiment and opinion to understand public perception and attitudes.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Social Media Monitoring',
+            subtitle:
+              'Track and analyse social media data to uncover insights and trends.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Opinion Mining',
+            subtitle:
+              'Extract opinions, emotions, and key themes from text data to identify patterns and sentiments.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Reputation Management',
+            subtitle:
+              'Monitor and manage your organisation’s online reputation based on public sentiment.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insightful Reporting',
+            subtitle:
+              'Generate comprehensive reports and visualizations to communicate key findings.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Audience Segmentation',
+            subtitle:
+              'Segment the public audience based on sentiment, demographics, and behaviour.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is public sentiment analysis important for government agencies?',
+            content:
+              'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do you collect and analyse public sentiment data?',
+            content:
+              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Can public sentiment analysis help in crisis management?',
+            content:
+              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_GVS_SERVICE_CATEGORYS),
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver governmental solutions of the highest quality, we follow the best practices that include comprehensive policy analysis, legal compliance, data privacy, and continuous innovation.',
+      },
+    },
+  })
+})
+export const MOCK_COASTAL_SERVICES = [
+  {
+    title: 'E-Government Platform Development',
+    slug: 'egovernment-platform-development',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/K_GxWa69dMw/1600x900',
+    hero_alt: 'Lincoln memorial',
+    subtitle:
+      'Building digital platforms that streamline government operations and improve public service delivery.',
+    // Seo
+    seo: {
+      title: 'E-Government Platform Development',
+      description:
+        'Building digital platforms that streamline government operations and improve public service delivery.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Empowering the public sector with innovative digital solutions.',
+        items: [
+          {
+            title:
+              'The public sector is evolving, and so are the digital needs of citizens. We specialize in creating robust, reliable, and user-friendly platforms that cater to the diverse needs of the public sector.',
+          },
+          {
+            title:
+              'Our team of experts understand the unique challenges faced by the public sector and develop tailored solutions that are not only technologically advanced but also focused on enhancing user experience and accessibility.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our approach to e-government platform development is comprehensive, focusing on efficiency, security, and most importantly, user engagement.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Custom platform development',
+            subtitle:
+              'We develop custom digital platforms tailored to meet the unique needs of public sector enterprises.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Data privacy and security',
+            subtitle:
+              'We ensure the highest level of data privacy and security, adhering to all the regulations and best practices.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-based solutions',
+            subtitle:
+              'We create flexible and scalable cloud-based solutions, enabling seamless service delivery across all devices.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We prioritize a mobile-first approach, ensuring your platform is easily accessible to all users, regardless of their device.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI and automation',
+            subtitle:
+              'We incorporate AI and automation into our platforms to improve service delivery and streamline operations.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'User-centric design',
+            subtitle:
+              'We place users at the heart of our design process, creating platforms that are intuitive, accessible, and user-friendly.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'What is the importance of e-government platforms?',
+            content:
+              "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What sets your E-Government Platform Development services apart?',
+            content:
+              'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How does your team ensure the security and privacy of the platform?',
+            content:
+              'We prioritize security and privacy in our platform development process. We adhere to all the best practices and regulations, including data encryption, secure coding practices, and routine security testing, to ensure the highest level of security and data privacy.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Citizen Engagement Tools',
+    slug: 'citizen-engagement-tools',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/cw-cj_nFa14/1600x900',
+    hero_alt: 'Town hall meeting',
+    subtitle:
+      'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    // Seo
+    seo: {
+      title: 'Citizen Engagement Tools',
+      description:
+        'Delivering strategic solutions to enhance engagement between public sector institutions and citizens.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering public sector enterprises through technology.',
+        items: [
+          {
+            title:
+              'In an increasingly digital world, fostering meaningful connections with citizens is a paramount task for public sector institutions. We equip your institution with cutting-edge digital solutions to enhance interactions and foster better relationships with your citizens.',
+          },
+          {
+            title:
+              'We focus on creating accessible, intuitive, and secure digital platforms that empower citizens and make interactions with public sector institutions seamless.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We offer a comprehensive suite of digital solutions designed to boost citizen engagement and transform public sector institutions.',
+        items: [
+          {
+            fa_icon: 'fa-comments',
+            title: 'Interactive communication platforms',
+            subtitle:
+              'Our solutions foster active dialogue between citizens and institutions, enabling real-time feedback and discussions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile-first approach',
+            subtitle:
+              'We design our solutions with a mobile-first approach, ensuring seamless experiences across all devices.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data-driven insights',
+            subtitle:
+              'Leverage actionable insights from citizens to make data-driven decisions that enhance your services.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Robust security',
+            subtitle:
+              'We prioritize security to protect sensitive citizen data and build trust in your digital platforms.',
+          },
+          {
+            fa_icon: 'fa-user-friends',
+            title: 'User-centric design',
+            subtitle:
+              'Our solutions are designed with the user at the center, ensuring high usability and user satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud solutions',
+            subtitle:
+              'Leverage the power of cloud technologies for scalable, high-performance citizen engagement solutions.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is citizen engagement important in the public sector?',
+            content:
+              'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can our public sector institution benefit from your Citizen Engagement Tools service?',
+            content:
+              'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure the security and accessibility of your tools?',
+            content:
+              'We adhere to industry best practices for data security and privacy. All our tools are designed with robust security measures to protect sensitive information. Furthermore, we focus on making our solutions accessible to all citizens, ensuring inclusivity in the digital transformation journey.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Automated Reporting',
+    slug: 'automated-reporting',
+    category_id: 1,
+    // Hero
+    hero_src: 'https://source.unsplash.com/nApaSgkzaxg/1600x900',
+    hero_alt: 'Guy looking at graphs',
+    subtitle:
+      'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    // Seo
+    seo: {
+      title: 'Automated Reporting',
+      description:
+        'Harness our expertise to streamline your reporting process, enabling quick, data-driven decision making.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Revolutionizing reporting through automation.',
+        items: [
+          {
+            title:
+              'In the fast-paced world of business, having quick access to accurate, up-to-date information is crucial. We specialize in developing automated reporting systems that facilitate prompt, data-driven decisions. Our team works with you to understand your specific reporting needs.',
+          },
+          {
+            title:
+              'We then employ cutting-edge technology to design and implement an automated reporting system that delivers the right data to the right people at the right time.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Automated Reporting service streamlines your reporting process, enabling efficient data analysis and decision making.',
+        items: [
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Aggregation',
+            subtitle:
+              'We extract and compile data from various sources to provide comprehensive reports.',
+          },
+          {
+            fa_icon: 'fa-clock',
+            title: 'Real-Time Reporting',
+            subtitle:
+              'Get immediate insights with real-time reporting and make quick, informed decisions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Visualization',
+            subtitle:
+              'We provide visually appealing and easy-to-understand charts, graphs, and dashboards.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Custom Report Generation',
+            subtitle:
+              'Our system generates customized reports based on your specific needs and preferences.',
+          },
+          {
+            fa_icon: 'fa-envelope',
+            title: 'Automated Distribution',
+            subtitle:
+              'We automate report distribution, ensuring key personnel receive timely information.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Schedule Reports',
+            subtitle:
+              'Set up scheduled reports for regular intervals, ensuring consistent data flow.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Automated Reporting service and how it can revolutionize your business.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is automated reporting important for my business?',
+            content:
+              'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of reports can be automated?',
+            content:
+              'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Automated Reporting service?',
+            content:
+              'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Intelligent Document Search',
+    slug: 'intelligent-document-search',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/8EzNkvLQosk/1600x900',
+    hero_alt: 'Sorted files',
+    subtitle:
+      'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    // Seo
+    seo: {
+      title: 'Intelligent Document Search',
+      description:
+        'Create advanced document search systems, ensuring efficient retrieval of relevant information.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering your business with smart document search.',
+        items: [
+          {
+            title:
+              'In the digital era, finding specific information in vast document repositories can be a challenge. We assist businesses through utilizing advanced algorithms to ensure quick and accurate retrieval of data.',
+          },
+          {
+            title:
+              'We work closely with you to understand your unique data requirements and create a tailored search system. This significantly enhances your productivity, decision-making, and overall business efficiency.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our Intelligent Document Search service ensures efficient and accurate data retrieval, fueling your business insights.',
+        items: [
+          {
+            fa_icon: 'fa-search-plus',
+            title: 'Advanced Search Algorithms',
+            subtitle:
+              'We utilize cutting-edge algorithms to ensure rapid and precise document search.',
+          },
+          {
+            fa_icon: 'fa-folder-open',
+            title: 'Document Indexing',
+            subtitle:
+              'Our system indexes your documents, making data retrieval swift and efficient.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Search Parameters',
+            subtitle:
+              'We offer customized search parameters to cater to your specific data needs.',
+          },
+          {
+            fa_icon: 'fa-cloud-upload-alt',
+            title: 'Cloud-Based System',
+            subtitle:
+              'Our cloud-based search system ensures data accessibility from anywhere, anytime.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure Access',
+            subtitle:
+              'We prioritize data security, ensuring that your documents are accessed by authorized personnel only.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Real-Time Updates',
+            subtitle:
+              'Our system provides real-time updates, ensuring that your search results are always current.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is an Intelligent Document Search system important for my business?',
+            content:
+              'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What types of documents can your system search?',
+            content:
+              'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How secure is your Intelligent Document Search service?',
+            content:
+              'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Virtual Assistant Development',
+    slug: 'virtual-assistant-development',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/A9TTeuTGrug/1600x900',
+    hero_alt: 'Digital humans',
+    subtitle:
+      'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    // Seo
+    seo: {
+      title: 'Virtual Assistant Development',
+      description:
+        'Empower your digital landscape with our advanced, AI-driven virtual assistant development services.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Boosting efficiency with AI-powered virtual assistants.',
+        items: [
+          {
+            title:
+              'As the digital landscape evolves, businesses need efficient tools to stay competitive. We offer AI-driven solutions that automate tasks, streamline processes, and enhance customer interaction.',
+          },
+          {
+            title:
+              'Our team designs virtual assistants that understand, learn, and respond in a human-like manner, significantly improving your service efficiency and customer satisfaction.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'We create intelligent virtual assistants tailored to your business needs.',
+        items: [
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI-Driven Assistants',
+            subtitle:
+              'We leverage advanced AI technology to create virtual assistants that understand and respond to user interactions.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Machine Learning',
+            subtitle:
+              'Our virtual assistants learn from interactions, continually improving their responses and effectiveness.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Natural Language Processing',
+            subtitle:
+              'Our solutions understand and respond to user inputs in a natural, human-like manner.',
+          },
+          {
+            fa_icon: 'fa-sync',
+            title: 'Real-Time Interactions',
+            subtitle:
+              'Our virtual assistants provide real-time responses to user queries, enhancing customer satisfaction.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Customization',
+            subtitle:
+              'We customize our solutions based on your business needs, ensuring maximum relevance and efficiency.',
+          },
+          {
+            fa_icon: 'fa-lock',
+            title: 'Data Privacy',
+            subtitle:
+              'We prioritize data privacy and security, ensuring your user data is always protected.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why is a virtual assistant important for my business?',
+            content:
+              'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What capabilities can I expect from the virtual assistant you develop?',
+            content:
+              'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data privacy with your virtual assistants?',
+            content:
+              'We prioritize data privacy and security in our virtual assistant development. We follow best practices and comply with relevant regulations to ensure that your user data is always protected.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Driven Policy Analysis',
+    slug: 'ai-driven-policy-analysis',
+    category_id: 2,
+    // Hero
+    hero_src: 'https://source.unsplash.com/gakXaqzGad0/1600x900',
+    hero_alt: 'Computer chip in shape of human head',
+    subtitle:
+      'Utilize advanced AI to guide and enhance your policymaking process.',
+    // Seo
+    seo: {
+      title: 'AI-Driven Policy Analysis',
+      description:
+        'Utilize advanced AI to guide and enhance your policymaking process.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Leveraging AI for effective policy analysis.',
+        items: [
+          {
+            title:
+              'In the complex landscape of public policy, data-driven decision making is crucial. We leverage cutting-edge AI technologies to deliver insightful analysis and recommendations.',
+          },
+          {
+            title:
+              'With a focus on accuracy and usability, our AI-driven analysis tools help policymakers cut through the noise, understanding the potential impacts of their decisions in clear, actionable terms.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Our suite of AI-driven tools and services is designed to support robust policy analysis.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data Analysis',
+            subtitle:
+              'We leverage AI to analyse a broad spectrum of data, identifying trends and patterns crucial for effective policymaking.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Predictive Modeling',
+            subtitle:
+              'Our AI models predict potential policy outcomes, supporting informed decision-making.',
+          },
+          {
+            fa_icon: 'fa-compass',
+            title: 'Policy Guidance',
+            subtitle:
+              'We provide clear, actionable guidance based on our AI-driven policy analysis.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle:
+              'Our solutions ensure efficient and secure data management, crucial for any AI-driven service.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We offer custom solutions tailored to specific policy domains and decision-making contexts.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Secure and Compliant',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our services.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can AI-driven policy analysis enhance our policymaking process?',
+            content:
+              'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What kind of data does your AI use for analysis?',
+            content:
+              'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sector Predictive Analytics',
+    slug: 'public-sector-predictive-analytics',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/-WXQm_NTK0U/1600x900',
+    hero_alt: 'Data analytics charts',
+    subtitle:
+      'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    // Seo
+    seo: {
+      title: 'Public Sector Predictive Analytics',
+      description:
+        'Leverage predictive analytics to make data-driven decisions in the public sector.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Driving public sector decisions with predictive analytics.',
+        items: [
+          {
+            title:
+              'In the public sector, predictive analytics can turn data into actionable insights, informing decisions and policies. Our predictive analytics services empower you to leverage data-driven insights in your decision-making process.',
+          },
+          {
+            title:
+              'Using advanced predictive models, we help you forecast future events and trends, allowing you to make strategic, forward-thinking decisions.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Leveraging data to forecast trends and inform strategic decision-making in the public sector.',
+        items: [
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Predictive Models',
+            subtitle:
+              'We develop advanced predictive models to forecast future events and trends.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Management',
+            subtitle: 'We ensure efficient and secure management of your data.',
+          },
+          {
+            fa_icon: 'fa-brain',
+            title: 'Strategic Insights',
+            subtitle:
+              'We turn data into actionable insights to inform strategic decision-making.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide solutions tailored to the unique needs of public sector organisations.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'We prioritize data security and regulatory compliance in all our solutions.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to align our analytics solutions with your strategic objectives.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'How can predictive analytics enhance our decision-making process?',
+            content:
+              'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What kind of data do your predictive analytics solutions use?',
+            content:
+              'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'How do you ensure the security of our data?',
+            content:
+              'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'AI-Powered Compliance Monitoring',
+    slug: 'ai-powered-compliance-monitoring',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/yCdPU73kGSc/1600x900',
+    hero_alt: 'Lady justice',
+    subtitle:
+      'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    // Seo
+    seo: {
+      title: 'AI-Powered Compliance Monitoring',
+      description:
+        'Efficiently monitor and ensure compliance in the public sector through utilizing AI technologies.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Enhancing compliance monitoring with Artificial Intelligence.',
+        items: [
+          {
+            title:
+              'Regulatory compliance is a key challenge for the public sector. With our services, we streamline the process, helping you detect and manage compliance issues proactively. Our AI-powered solutions enhance accuracy, reduce manual efforts, and provide real-time insights, allowing you to focus on strategic tasks.',
+          },
+          {
+            title:
+              'We tailor our solutions to the unique regulatory landscape and compliance requirements of your organisation.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Innovating compliance management in the public sector with artificial intelligence.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Intelligent Monitoring',
+            subtitle:
+              'Our AI algorithms monitor compliance in real-time, detecting anomalies and potential issues.',
+          },
+          {
+            fa_icon: 'fa-bell',
+            title: 'Proactive Alerts',
+            subtitle:
+              'Get proactive alerts on potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            fa_icon: 'fa-chart-pie',
+            title: 'Comprehensive Reporting',
+            subtitle:
+              'Generate comprehensive compliance reports with in-depth insights at a click.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Custom Solutions',
+            subtitle:
+              'We provide AI-powered compliance solutions tailored to your organisation’s needs.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Updates',
+            subtitle:
+              'Stay updated with regulatory changes with our AI-powered monitoring system.',
+          },
+          {
+            fa_icon: 'fa-handshake',
+            title: 'Collaborative Approach',
+            subtitle:
+              'We work closely with your team to understand your compliance landscape and needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can AI enhance compliance monitoring?',
+            content:
+              'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'What makes your AI-Powered Compliance Monitoring service unique?',
+            content:
+              'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What type of compliance can your service monitor?',
+            content:
+              'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Public Sentiment Analysis',
+    slug: 'public-sentiment-analysis',
+    category_id: 3,
+    // Hero
+    hero_src: 'https://source.unsplash.com/7OxV_qDiGRI/1600x900',
+    hero_alt: 'Empty meeting seats',
+    subtitle:
+      'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    // Seo
+    seo: {
+      title: 'Public Sentiment Analysis',
+      description:
+        'Leverage advanced analytics to gain insights into public sentiment and opinion.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Uncover actionable insights from public sentiment.',
+        items: [
+          {
+            title:
+              'Understanding public sentiment and opinion is crucial for government agencies and organisations in the public sector. We leverage advanced analytics and natural language processing to analyse social media data and other sources, helping you gain valuable insights to inform decision-making.',
+          },
+          {
+            title:
+              'Our team of experts applies state-of-the-art techniques to track and analyse public sentiment, allowing you to monitor trends, identify emerging issues, and measure public response to policies and initiatives.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we do',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Harness the power of advanced analytics to analyse public sentiment and opinion.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Sentiment Analysis',
+            subtitle:
+              'Analyse public sentiment and opinion to understand public perception and attitudes.',
+          },
+          {
+            fa_icon: 'fa-globe',
+            title: 'Social Media Monitoring',
+            subtitle:
+              'Track and analyse social media data to uncover insights and trends.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Opinion Mining',
+            subtitle:
+              'Extract opinions, emotions, and key themes from text data to identify patterns and sentiments.',
+          },
+          {
+            fa_icon: 'fa-bullhorn',
+            title: 'Reputation Management',
+            subtitle:
+              'Monitor and manage your organisation’s online reputation based on public sentiment.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Insightful Reporting',
+            subtitle:
+              'Generate comprehensive reports and visualizations to communicate key findings.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Audience Segmentation',
+            subtitle:
+              'Segment the public audience based on sentiment, demographics, and behaviour.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why is public sentiment analysis important for government agencies?',
+            content:
+              'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'How do you collect and analyse public sentiment data?',
+            content:
+              'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'Can public sentiment analysis help in crisis management?',
+            content:
+              'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_SERVICE_PAGE, {
+    id: i + 1,
+    overline: 'Service',
+    // Category
+    category: getCategoryFromCrudItem(item, MOCK_COASTAL_SERVICE_CATEGORYS),
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        ...MOCK_SERVICE_PAGE.sections.checklist,
+        subtitle:
+          'To deliver governmental solutions of the highest quality, we follow the best practices that include comprehensive policy analysis, legal compliance, data privacy, and continuous innovation.',
+      },
+    },
+  })
+})
+
 export const MOCK_SERVICES = {
   GROUP: MOCK_GROUP_SERVICES,
   TECH: MOCK_TECH_SERVICES,
@@ -10053,4 +14931,8 @@ export const MOCK_SERVICES = {
   DIGITAL: MOCK_DIGITAL_SERVICES,
   FINX: MOCK_FINX_SERVICES,
   GOVX: MOCK_GOVX_SERVICES,
+  AEL: MOCK_AEL_SERVICES,
+  SRI: MOCK_SRI_SERVICES,
+  GVS: MOCK_GVS_SERVICES,
+  COASTAL: MOCK_COASTAL_SERVICES,
 }

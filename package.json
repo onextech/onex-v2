@@ -22,7 +22,8 @@
     "watch": "turbo run watch",
     "turbo": "turbo",
     "test": "turbo run test",
-    "analyze": "turbo run analyze --parallel"
+    "analyze": "turbo run analyze --parallel",
+    "gravis:up": "echo 'a' | yarn upgrade-interactive -W --latest --scope @gravis-os"
   },
   "config": {
     "commitizen": {
