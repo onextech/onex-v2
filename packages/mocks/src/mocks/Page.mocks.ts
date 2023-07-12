@@ -1117,7 +1117,7 @@ const MOCK_GROUP_PAGES = [
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Accelerating Asia',
+        title: 'Accelerating IT',
         subtitle:
           '{appTitle} is a global provider of business consulting services and IT solutions, enterprise application development and IT infrastructure services.',
         items: [

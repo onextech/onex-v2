@@ -10,6 +10,7 @@ import {
 } from '@gravis-os/landing'
 import { darkTheme, lightTheme } from '@app/theme'
 import { Toaster } from 'react-hot-toast'
+import { DEFAULT_THEME_MODE_ENUM } from '@gravis-os/types'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -43,7 +44,7 @@ const AppProvider = (props: AppProviderProps) => {
       {/* Toast */}
       <Toaster position="top-right" reverseOrder={false} />
 
-      <UserPreferencesProvider>
+      <UserPreferencesProvider defaultThemeMode={DEFAULT_THEME_MODE_ENUM.LIGHT}>
         <ThemeProvider
           lightTheme={lightTheme}
           darkTheme={darkTheme}

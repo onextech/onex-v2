@@ -31,7 +31,7 @@ export const ShowcaseDetail = {
     const showcasePage = getDynamicPage({ context, page: showcase, site })
     const otherShowcases = MOCK_SHOWCASES[MOCK_KEY].filter(
       ({ slug }) => slug !== context.params?.slug
-    ).slice(0, 1)
+    ).slice(0, 3)
     return getStaticPropsWithLayout({
       props: { showcase: showcasePage, otherShowcases },
     })(context)

@@ -14,6 +14,7 @@ import {
   MOCK_PAGES,
   MOCK_POSTS,
   MOCK_SHOWCASES,
+  MOCK_RESOURCES,
 } from '@onex/mocks'
 import orderBy from 'lodash/orderBy'
 
@@ -45,6 +46,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
+  const resources = orderBy(
+    MOCK_RESOURCES[MOCK_KEY],
+    'published_at',
+    'desc'
+  ).slice(0, 3)
   return getStaticPropsWithLayout({
     props: {
       page,
@@ -52,6 +58,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       featuredPosts,
       showcases,
       industrys,
+      resources,
     },
   })(context)
 }
@@ -67,6 +74,7 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
     featuredPosts,
     heroPosts,
     industrys,
+    resources,
     pageProviderProps,
   } = props
 
@@ -79,6 +87,7 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
       >
         <GroupPage
           industrys={industrys}
+          resources={resources}
           showcases={showcases}
           page={page}
           featuredPosts={featuredPosts}

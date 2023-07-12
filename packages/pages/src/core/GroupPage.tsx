@@ -9,9 +9,10 @@ import {
   renderFaqsAccordionBlock,
   renderFadeToBottomBackgroundImageBlock,
   renderHeroWithVideoSlider,
+  renderFeaturedResourcesBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Industry, Page, Post, Showcase } from '@gravis-os/types'
+import { Industry, Page, Post, Showcase, Resource } from '@gravis-os/types'
 import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {
@@ -20,10 +21,12 @@ export interface GroupPageProps {
   heroPosts: Post[]
   showcases: Showcase[]
   industrys: Industry[]
+  resources: Resource[]
 }
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
-  const { page, showcases, featuredPosts, heroPosts, industrys } = props
+  const { page, showcases, featuredPosts, heroPosts, industrys, resources } =
+    props
 
   const { sections } = page || {}
   const { benefits, faqs, cta } = sections || {}
@@ -98,6 +101,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
               ...faqs,
               sx: { backgroundColor: 'background.paper' },
             }),
+        // Resources
+        renderFeaturedResourcesBlock({
+          items: resources,
+        }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
           hero_src: cta.hero_src,
