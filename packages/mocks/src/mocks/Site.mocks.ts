@@ -1,4 +1,4 @@
-import { Site } from '@gravis-os/types'
+import { Site, DEFAULT_THEME_MODE_ENUM } from '@gravis-os/types'
 
 export const MOCK_COMMON_SITE = {
   // Company
@@ -31,6 +31,9 @@ export const MOCK_COMMON_SITE = {
   // Address
   office_title: 'Singapore (Asia Pacific)',
   office_address: '71 Robinson Road, Singapore 068895',
+
+  // Default theme mode
+  default_theme_mode: DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE,
 }
 
 export const MOCK_GROUP_SITE: Site = {
@@ -229,6 +232,8 @@ export const MOCK_DESIGN_SITE = {
         'Learn more about the core values that drive our business and people to success',
     },
   ],
+
+  default_theme_mode: DEFAULT_THEME_MODE_ENUM.LIGHT,
 }
 
 export const MOCK_DATA_SITE = {
