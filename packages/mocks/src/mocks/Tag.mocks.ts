@@ -6,6 +6,10 @@ import {
   MOCK_DESIGN_SERVICE_CATEGORYS,
   MOCK_GROUP_SERVICE_CATEGORYS,
   MOCK_TECH_SERVICE_CATEGORYS,
+  MOCK_AEL_SERVICE_CATEGORYS,
+  MOCK_SRI_SERVICE_CATEGORYS,
+  MOCK_GVS_SERVICE_CATEGORYS,
+  MOCK_COASTAL_SERVICE_CATEGORYS,
 } from './ServiceCategory.mocks'
 import {
   MOCK_FINX_INDUSTRYS,
@@ -15,6 +19,10 @@ import {
   MOCK_DESIGN_INDUSTRYS,
   MOCK_GROUP_INDUSTRYS,
   MOCK_TECH_INDUSTRYS,
+  MOCK_AEL_INDUSTRYS,
+  MOCK_SRI_INDUSTRYS,
+  MOCK_GVS_INDUSTRYS,
+  MOCK_COASTAL_INDUSTRYS,
 } from './Industry.mocks'
 import { MOCK_TECH_TECHNOLOGYS } from './Technology.mocks'
 import {
@@ -25,6 +33,10 @@ import {
   MOCK_DESIGN_SERVICES,
   MOCK_GROUP_SERVICES,
   MOCK_TECH_SERVICES,
+  MOCK_AEL_SERVICES,
+  MOCK_SRI_SERVICES,
+  MOCK_GVS_SERVICES,
+  MOCK_COASTAL_SERVICES,
 } from './Service.mocks'
 
 export const MOCK_GROUP_TAGS = [
@@ -91,7 +103,52 @@ export const MOCK_GOVX_TAGS = [
   id: i + 1,
 }))
 
+export const MOCK_AEL_TAGS = [
+  ...MOCK_AEL_SERVICE_CATEGORYS,
+  ...MOCK_AEL_SERVICES,
+  ...MOCK_AEL_INDUSTRYS,
+].map((item, i) => ({
+  ...item,
+  id: i + 1,
+}))
+
+export const MOCK_SRI_TAGS = [
+  ...MOCK_SRI_SERVICE_CATEGORYS,
+  ...MOCK_SRI_SERVICES,
+  ...MOCK_SRI_INDUSTRYS,
+].map((item, i) => ({
+  ...item,
+  id: i + 1,
+}))
+
+export const MOCK_GVS_TAGS = [
+  ...MOCK_GVS_SERVICE_CATEGORYS,
+  ...MOCK_GVS_SERVICES,
+  ...MOCK_GVS_INDUSTRYS,
+].map((item, i) => ({
+  ...item,
+  id: i + 1,
+}))
+
+export const MOCK_COASTAL_TAGS = [
+  ...MOCK_COASTAL_SERVICE_CATEGORYS,
+  ...MOCK_COASTAL_SERVICES,
+  ...MOCK_COASTAL_INDUSTRYS,
+].map((item, i) => ({
+  ...item,
+  id: i + 1,
+}))
+
 export const MOCK_TAGS = {
   GROUP: MOCK_GROUP_TAGS,
   TECH: MOCK_TECH_TAGS,
+  DATA: MOCK_DATA_TAGS,
+  DESIGN: MOCK_DESIGN_TAGS,
+  DIGITAL: MOCK_DIGITAL_TAGS,
+  FINX: MOCK_FINX_TAGS,
+  GOVX: MOCK_GOVX_TAGS,
+  AEL: MOCK_AEL_TAGS,
+  SRI: MOCK_SRI_TAGS,
+  GVS: MOCK_GVS_TAGS,
+  COASTAL: MOCK_COASTAL_TAGS,
 }

@@ -580,6 +580,8 @@ export const MOCK_DIGITAL_PAGE = {
     },
   },
 }
+
+// TODO: Deprecate this
 export const MOCK_VENTURES_PAGE = {
   id: 1,
   // Seo
@@ -4486,6 +4488,2054 @@ export const MOCK_GOVX_PAGES = [
   ...page,
 }))
 
+export const MOCK_AEL_PAGES = [
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_page_hero.jpeg',
+        hero_alt: 'escalator',
+        overline: '{appTitle}',
+        title:
+          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title: 'Unlocking the Potential of AI for Public Sector Transformation',
+        subtitle:
+          '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title: 'Expanding Horizons of Public Sector Innovation',
+        subtitle:
+          'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'Empowering Public Sector Innovation with AI',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers public sector enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Empowering Public Sector Transformation Across Locations',
+        subtitle:
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Revolutionize Public Sector Enterprises with AI',
+        subtitle:
+          'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      'Join our team to drive digital transformations in the public sector. Make an impact, bring great software to more people. Exciting career opportunities await.',
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.',
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle:
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo_title: '{appTitle} - Custom Software Development',
+    seo_description:
+      '{appTitle} is a leading provider of custom software development services, leveraging cutting-edge solutions to deliver exceptional products that meet the evolving needs of clients. With a commitment to excellence and a passion for innovation, One X Group seeks for your business growth in a rapidly changing world.',
+    sections: {
+      hero: {
+        overline: 'Welcome to {appTitle}',
+        title:
+          'We build transformative digital health products with amazing healthcare companies.',
+        pt: 12,
+        pb: 0,
+        mb: -6,
+        dark: false,
+        sx: { maxWidth: '100%' },
+        titleProps: {
+          sx: { width: { xs: '100%', md: '200%' } },
+        },
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title: 'Enterprise Technology Consulting',
+        titleProps: {
+          component: 'h1',
+        },
+        subtitle:
+          'From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives. ',
+        maxWidth: 'lg',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-people-group',
+            title: 'Advisory',
+            subtitle:
+              "Unlock growth and success with {appTitle}'s business advisory services.",
+            href: `${routeConfig.SERVICES}/advisory`,
+          },
+          {
+            fa_icon: 'fa-cloud-binary',
+            title: 'Engineering',
+            subtitle:
+              'Engage our engineering services for insights, innovation, and data-driven decisions.',
+            href: `${routeConfig.SERVICES}/engineering`,
+          },
+          {
+            fa_icon: 'fa-chart-mixed',
+            title: 'Data',
+            subtitle:
+              'Data services that drive growth. Gain insights, make informed decisions.',
+            href: `${routeConfig.SERVICES}/data`,
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'how-it-works-1',
+            title:
+              'What industries do you cater to with your technology consulting services?',
+            content:
+              'We serve a wide range of industries, including finance, healthcare, retail, manufacturing, and more. Our expertise in enterprise software development allows us to tailor solutions to meet the unique needs of each industry.',
+          },
+          {
+            key: 'how-it-works-2',
+            title:
+              'What is the typical timeline for developing an enterprise software solution?',
+            content:
+              'The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.',
+          },
+          {
+            key: 'how-it-works-3',
+            title:
+              'Can you help us integrate our existing systems with the new software solutions?',
+            content:
+              'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
+          },
+          {
+            key: 'how-it-works-4',
+            title: 'What industries do you have experience working with?',
+            content:
+              'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
+          },
+          {
+            key: 'how-it-works-5',
+            title: 'How do you ensure the security and privacy of our data?',
+            content:
+              'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
+          },
+          {
+            key: 'how-it-works-6',
+            title:
+              'What is your approach to project management and communication?',
+            content:
+              'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
+          },
+          {
+            key: 'how-it-works-7',
+            title:
+              'How do you handle scalability and future growth considerations in your software solutions?',
+            content:
+              'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
+          },
+          {
+            key: 'how-it-works-8',
+            title:
+              'What is your approach to post-development support and maintenance?',
+            content:
+              'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
+          },
+          {
+            key: 'how-it-works-9',
+            title:
+              'What sets One X Group apart from other technology consulting firms?',
+            content:
+              'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
+          },
+          {
+            key: 'how-it-works-10',
+            title:
+              'What is your pricing model for technology consulting services?',
+            content:
+              'Our pricing model is flexible and depends on the scope and complexity of the project. We offer competitive rates and work closely with our clients to develop pricing structures that align with their budget and requirements. We provide transparent and detailed cost estimates upfront, ensuring there are no surprises along the way.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        title: 'We Design & Develop Custom Software for Enterprises',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our team of consultants, designers and engineers live and breathe digital services to deliver best-in-class technological solutions targeted at enterprise growth and digitalization.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up-to-date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
+export const MOCK_SRI_PAGES = [
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_page_hero.jpeg',
+        hero_alt: 'escalator',
+        overline: '{appTitle}',
+        title:
+          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title: 'Unlocking the Potential of AI for Public Sector Transformation',
+        subtitle:
+          '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title: 'Expanding Horizons of Public Sector Innovation',
+        subtitle:
+          'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'Empowering Public Sector Innovation with AI',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers public sector enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Empowering Public Sector Transformation Across Locations',
+        subtitle:
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Revolutionize Public Sector Enterprises with AI',
+        subtitle:
+          'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      'Join our team to drive digital transformations in the public sector. Make an impact, bring great software to more people. Exciting career opportunities await.',
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.',
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle:
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo: {
+      title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
+      description:
+        '{appTitle} is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
+    },
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
+        overline: '{appTitle}',
+        title:
+          'Transforming Public Sector Enterprises with AI-Powered Solutions',
+        subtitle:
+          "Unleashing the power of artificial intelligence to drive efficient, transparent, and citizen-centric services, revolutionizing the public sector's digital transformation journey.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title:
+          'Advancing Public Sector Digitalization with AI-Powered Solutions',
+        subtitle:
+          '{appTitle} leverages the transformative capabilities of artificial intelligence to bridge the gap in public sector digitalization, enabling governments to modernize operations, optimize processes, and deliver enhanced AI-driven public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our focus on data-driven strategies enables us to deliver robust digital transformations, empowering businesses to leverage the power of AI and gain a competitive edge in the market.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data-Driven Insights',
+            subtitle:
+              'We employ a data-focused approach, leveraging advanced analytics and machine learning techniques to gain valuable insights from vast volumes of financial data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Tailored Solutions',
+            subtitle:
+              "Our approach involves understanding each client's unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.",
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless Integration',
+            subtitle:
+              'We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.',
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and Flexibility',
+            subtitle:
+              "Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client's businesses, ensuring long-term success and value.",
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management and Compliance',
+            subtitle:
+              'We prioritize risk management and compliance within our AI solutions, incorporating robust security measures and adhering to industry regulations to mitigate potential risks and safeguard sensitive financial data.',
+          },
+          {
+            fa_icon: 'fa-gavel',
+            title: 'Ethical AI Practices',
+            subtitle:
+              'We uphold a strong commitment to ethical AI practices, ensuring transparency, fairness, and accountability in our algorithms and models to build trust and maintain the highest standards of integrity in the finance sector.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title: 'What is {appTitle}?',
+            content:
+              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
+          },
+          {
+            key: 'faq-2',
+            title: 'What industries do you serve?',
+            content:
+              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
+          },
+          {
+            key: 'faq-3',
+            title: 'What kind of solutions does {appTitle} offer?',
+            content:
+              '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
+          },
+          {
+            key: 'faq-4',
+            title: "How can {appTitle}'s solutions benefit my organisation?",
+            content:
+              'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
+          },
+          {
+            key: 'faq-5',
+            title: 'Are your solutions scalable?',
+            content:
+              "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
+          },
+          {
+            key: 'faq-6',
+            title: 'How can I get started with {appTitle}?',
+            content:
+              'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
+          },
+          {
+            key: 'faq-7',
+            title:
+              'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
+            content:
+              'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
+          },
+          {
+            key: 'faq-8',
+            title:
+              'Is {appTitle} compliant with data security and privacy regulations',
+            content:
+              "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
+          },
+          {
+            key: 'faq-9',
+            title:
+              'How do you determine the pricing for your enterprise digital transformation solutions?',
+            content:
+              "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
+          },
+          {
+            key: 'faq-10',
+            title: 'How long does the implementation process typically take?',
+            content:
+              'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} is committed to building strong partnerships and working collaboratively with organisations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up-to-date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
+export const MOCK_GVS_PAGES = [
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_page_hero.jpeg',
+        hero_alt: 'escalator',
+        overline: '{appTitle}',
+        title:
+          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title: 'Unlocking the Potential of AI for Public Sector Transformation',
+        subtitle:
+          '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title: 'Expanding Horizons of Public Sector Innovation',
+        subtitle:
+          'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'Empowering Public Sector Innovation with AI',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers public sector enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Empowering Public Sector Transformation Across Locations',
+        subtitle:
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Revolutionize Public Sector Enterprises with AI',
+        subtitle:
+          'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      'Join our team to drive digital transformations in the public sector. Make an impact, bring great software to more people. Exciting career opportunities await.',
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.',
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle:
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo: {
+      title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
+      description:
+        '{appTitle} is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
+    },
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
+        overline: '{appTitle}',
+        title:
+          'Transforming Public Sector Enterprises with AI-Powered Solutions',
+        subtitle:
+          "Unleashing the power of artificial intelligence to drive efficient, transparent, and citizen-centric services, revolutionizing the public sector's digital transformation journey.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title:
+          'Advancing Public Sector Digitalization with AI-Powered Solutions',
+        subtitle:
+          '{appTitle} leverages the transformative capabilities of artificial intelligence to bridge the gap in public sector digitalization, enabling governments to modernize operations, optimize processes, and deliver enhanced AI-driven public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our focus on data-driven strategies enables us to deliver robust digital transformations, empowering businesses to leverage the power of AI and gain a competitive edge in the market.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data-Driven Insights',
+            subtitle:
+              'We employ a data-focused approach, leveraging advanced analytics and machine learning techniques to gain valuable insights from vast volumes of financial data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Tailored Solutions',
+            subtitle:
+              "Our approach involves understanding each client's unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.",
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless Integration',
+            subtitle:
+              'We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.',
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and Flexibility',
+            subtitle:
+              "Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client's businesses, ensuring long-term success and value.",
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management and Compliance',
+            subtitle:
+              'We prioritize risk management and compliance within our AI solutions, incorporating robust security measures and adhering to industry regulations to mitigate potential risks and safeguard sensitive financial data.',
+          },
+          {
+            fa_icon: 'fa-gavel',
+            title: 'Ethical AI Practices',
+            subtitle:
+              'We uphold a strong commitment to ethical AI practices, ensuring transparency, fairness, and accountability in our algorithms and models to build trust and maintain the highest standards of integrity in the finance sector.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title: 'What is {appTitle}?',
+            content:
+              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
+          },
+          {
+            key: 'faq-2',
+            title: 'What industries do you serve?',
+            content:
+              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
+          },
+          {
+            key: 'faq-3',
+            title: 'What kind of solutions does {appTitle} offer?',
+            content:
+              '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
+          },
+          {
+            key: 'faq-4',
+            title: "How can {appTitle}'s solutions benefit my organisation?",
+            content:
+              'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
+          },
+          {
+            key: 'faq-5',
+            title: 'Are your solutions scalable?',
+            content:
+              "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
+          },
+          {
+            key: 'faq-6',
+            title: 'How can I get started with {appTitle}?',
+            content:
+              'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
+          },
+          {
+            key: 'faq-7',
+            title:
+              'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
+            content:
+              'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
+          },
+          {
+            key: 'faq-8',
+            title:
+              'Is {appTitle} compliant with data security and privacy regulations',
+            content:
+              "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
+          },
+          {
+            key: 'faq-9',
+            title:
+              'How do you determine the pricing for your enterprise digital transformation solutions?',
+            content:
+              "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
+          },
+          {
+            key: 'faq-10',
+            title: 'How long does the implementation process typically take?',
+            content:
+              'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} is committed to building strong partnerships and working collaboratively with organisations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up-to-date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
+export const MOCK_COASTAL_PAGES = [
+  {
+    title: 'About',
+    slug: 'about',
+    href: routeConfig.ABOUT,
+    subtitle:
+      'Learn more about the driving force behind our mission, vision, and purpose.',
+    seo_description:
+      'Transforming public sectors with scalable digital solutions. Bridging the gap in digitalization. Join Gov X for transformative possibilities.',
+    sections: {
+      hero: {
+        hero_src: '/images/about_page_hero.jpeg',
+        hero_alt: 'escalator',
+        overline: '{appTitle}',
+        title:
+          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
+        buttons: [
+          {
+            overline: 'What we do',
+            title: 'Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      summary: {
+        hero_src: '/images/about_banner_1.png',
+        hero_alt: 'Laser net',
+        title: 'Unlocking the Potential of AI for Public Sector Transformation',
+        subtitle:
+          '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
+        buttons: [
+          {
+            overline: 'Who we are',
+            title: 'Public Sector IT Experts',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/about_banner_2.png',
+        hero_alt: 'hero',
+        title: 'Expanding Horizons of Public Sector Innovation',
+        subtitle:
+          'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      features: {
+        hero_src: '/images/about_binary.png',
+        hero_alt: 'about_binary',
+        overline: 'What we do',
+        title: 'Bridging the Gap in Public Sector Digitalization',
+        subtitle:
+          '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
+        items: [
+          {
+            avatar_src: '/images/about_shape_circle_radial.svg',
+            avatar_alt: 'Three circles',
+            overline: '01',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+          },
+          {
+            avatar_src: '/images/about_shape_squares.svg',
+            avatar_alt: 'Three squares',
+            overline: '02',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+          },
+          {
+            avatar_src: '/images/about_shape_square_with_circle.svg',
+            avatar_alt: 'Square with two circles',
+            overline: '03',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/about_banner_3.png',
+        title: 'Empowering Public Sector Innovation with AI',
+        hero_alt: 'Laser net over city',
+        subtitle:
+          'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
+        buttons: [
+          {
+            overline: 'Our Mission',
+            title: 'Enabling Smarter Businesses',
+            href: routeConfig.SERVICES,
+          },
+        ],
+      },
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Trusted by Product Teams at',
+        subtitle:
+          '{appTitle} empowers public sector enterprises with trusted AI-powered expertise, delivering exceptional results that leverage the full potential of artificial intelligence.',
+      },
+      stats: {
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        hero_alt: 'contact_world_map_in_dots',
+        overline: 'Our Locations',
+        title: 'Empowering Public Sector Transformation Across Locations',
+        subtitle:
+          "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                width: '100%',
+                height: 24,
+                position: 'relative',
+                top: -8,
+                lineHeight: '1',
+              },
+            },
+          },
+        ],
+        buttons: [
+          {
+            overline: 'Where we are',
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+          },
+        ],
+      },
+      secondaryHero: {
+        hero_src: '/images/about_working_in_office.png',
+        hero_alt: 'People working in an office',
+        overline: 'Careers',
+        title: 'Revolutionize Public Sector Enterprises with AI',
+        subtitle:
+          'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
+        buttons: [
+          {
+            overline: 'Careers',
+            title: 'Explore Careers',
+            href: routeConfig.CAREERS,
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Careers',
+    slug: 'careers',
+    href: routeConfig.CAREERS,
+    subtitle:
+      'Discover how you can join us and be part of a team at the forefront of digital innovation.',
+    seo_description:
+      'Join our team to drive digital transformations in the public sector. Make an impact, bring great software to more people. Exciting career opportunities await.',
+    sections: {
+      hero: {
+        hero_src: '/images/careers_hero.png',
+        hero_alt: 'People discussing in white office',
+        overline: 'Careers',
+        title: 'Help Bring Great Software to More People.',
+      },
+      summary: {
+        hero_src: '/images/careers_office.jpg',
+        hero_alt: 'Office with plants',
+        title: "Join The Team That's Building Tomorrow's Technology Today.",
+        subtitle:
+          'We’re driven by our goal of improving lives through the products we design and build. We look for people with a commitment to excellence who take initiative to make products great.',
+      },
+      benefits: {
+        title: 'Great Perks For Everyone.',
+        subtitle:
+          'The driven people who make up our teams come from all over, with different backgrounds. And they all have one thing in common – the desire to make software more human and friendly. If you are eager to learn or use latest technologies, build strong web applications, work and learn with a team of tech experts, then we are looking for you. Check out some of the benefits of working with us!',
+        items: [
+          {
+            fa_icon: 'fa-dice-d10',
+            title: 'Collaborative',
+            subtitle:
+              'Problem-solving isn’t fun unless you’re doing it with awesome people.',
+          },
+          {
+            fa_icon: 'fa-gingerbread-man',
+            title: 'Friendly',
+            subtitle:
+              'We pride ourselves on the fact that we’re all friends and like to monkey around.',
+          },
+          {
+            fa_icon: 'fa-watch',
+            title: 'Flexible',
+            subtitle:
+              'We support various working hours and schedules to work around your life.',
+          },
+          {
+            fa_icon: 'fa-hand-holding-seedling',
+            title: 'Personal Growth',
+            subtitle:
+              'Work and learn from other talented creatives who care about what they do.',
+          },
+          {
+            fa_icon: 'fa-mug-hot',
+            title: 'Food & Drinks',
+            subtitle:
+              'Enjoy all the coffee, tea and snacks you need to keep you going.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Live It Up',
+            subtitle: 'Celebrate the festive occasions together as a team.',
+          },
+          {
+            fa_icon: 'fa-guitar',
+            title: 'Rewards',
+            subtitle:
+              'We recognise progress and reward hard work with our employee incentive scheme.',
+          },
+          {
+            fa_icon: 'fa-table-tennis',
+            title: 'Convenient',
+            subtitle:
+              'Located in the heart of the CBD, get easy access to transportation, good food and a gorgeous working space.',
+          },
+        ],
+      },
+      callout: {
+        title: 'Openings.',
+        subtitle:
+          "We are always interested in meeting new people who can help us create new and unique meaningful experiences. If you don't see a suitable role but you believe you have a lot to offer, we’d love to hear from you.",
+      },
+    },
+  },
+  ...MOCK_COMMON_PAGES,
+  {
+    is_hidden_from_nav: true,
+    title: 'Home',
+    slug: 'home',
+    subtitle: 'Discover the agile process we use to build digital products',
+    seo: {
+      title: '{appTitle} - Digital Solutions for Public Sector Enterprise',
+      description:
+        '{appTitle} is a trusted provider of IT solutions and services to public sector enterprises. With our AI expertise, we empower governments to embrace the opportunities presented by emerging technologies. Discover how GovX can revolutionize the public sector and unlock the full potential of digitalization for your organization.',
+    },
+    sections: {
+      hero: {
+        hero_src: '/images/about_hero.png',
+        hero_alt: 'Swirl of colors',
+        overline: '{appTitle}',
+        title:
+          'Transforming Public Sector Enterprises with AI-Powered Solutions',
+        subtitle:
+          "Unleashing the power of artificial intelligence to drive efficient, transparent, and citizen-centric services, revolutionizing the public sector's digital transformation journey.",
+      },
+      summary: {
+        title: 'Innovation that drives real impact.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'What we do',
+        title:
+          'Advancing Public Sector Digitalization with AI-Powered Solutions',
+        subtitle:
+          '{appTitle} leverages the transformative capabilities of artificial intelligence to bridge the gap in public sector digitalization, enabling governments to modernize operations, optimize processes, and deliver enhanced AI-driven public services.',
+        maxWidth: 'xl',
+        center: true,
+        items: [
+          {
+            fa_icon: 'fa-globe',
+            title: 'Digital Service Delivery',
+            subtitle:
+              'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
+            href: `${routeConfig.SERVICES}/digital-service-delivery`,
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'AI Process Automation',
+            subtitle:
+              'Transform and automate complex processes by leveraging AI technologies to drive efficiency, accuracy, and cost savings for your organisation.',
+            href: `${routeConfig.SERVICES}/ai-process-automation`,
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Advanced Public Sector Analytics',
+            subtitle:
+              'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
+            href: `${routeConfig.SERVICES}/advanced-public-sector-analytics`,
+          },
+        ],
+      },
+      features: {
+        overline: 'How We Work',
+        title: 'Our Approach',
+        subtitle:
+          'Our focus on data-driven strategies enables us to deliver robust digital transformations, empowering businesses to leverage the power of AI and gain a competitive edge in the market.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Data-Driven Insights',
+            subtitle:
+              'We employ a data-focused approach, leveraging advanced analytics and machine learning techniques to gain valuable insights from vast volumes of financial data, enabling informed decision-making and strategic planning.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Tailored Solutions',
+            subtitle:
+              "Our approach involves understanding each client's unique needs and challenges, allowing us to develop customized AI-driven solutions that align with their specific business goals and objectives.",
+          },
+          {
+            fa_icon: 'fa-link',
+            title: 'Seamless Integration',
+            subtitle:
+              'We seamlessly integrate our AI solutions with existing systems and processes, ensuring minimal disruption and maximum efficiency in the implementation of digital transformation initiatives.',
+          },
+          {
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scalability and Flexibility',
+            subtitle:
+              "Our approach is designed to accommodate scalability and adaptability, allowing our solutions to grow and evolve alongside the changing needs of our client's businesses, ensuring long-term success and value.",
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management and Compliance',
+            subtitle:
+              'We prioritize risk management and compliance within our AI solutions, incorporating robust security measures and adhering to industry regulations to mitigate potential risks and safeguard sensitive financial data.',
+          },
+          {
+            fa_icon: 'fa-gavel',
+            title: 'Ethical AI Practices',
+            subtitle:
+              'We uphold a strong commitment to ethical AI practices, ensuring transparency, fairness, and accountability in our algorithms and models to build trust and maintain the highest standards of integrity in the finance sector.',
+          },
+        ],
+      },
+      halfGrids: {
+        items: [
+          {
+            hero_src: '/images/digital_work_collage.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Design For Impact',
+            subtitle:
+              'At {appTitle}, we take a scientific approach to design, leveraging research to create intuitive user experiences that not only reinforces the brand, but also delivers the business value.',
+          },
+          {
+            reverse: true,
+            hero_src: '/images/digital_ipad.png',
+            hero_alt: 'Design UI Collage',
+            fullHeight: true,
+            overline: 'What we do',
+            title: 'We Develop Modern Technologies',
+            subtitle:
+              'At the core of {appTitle} is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+          },
+          {
+            hero_src: '/images/digital_dashboard.png',
+            hero_alt: 'Digital UI Collage',
+            fullHeight: true,
+            overline: 'Our Services',
+            title: 'Our Capabilities',
+            subtitle:
+              'We’re business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+          },
+        ],
+      },
+      callout: {
+        hero_src: '/images/digital_phone_prototyping.png',
+        hero_alt: 'Laser net over city',
+        title: 'Custom Business Software Made for Market Leaders',
+        subtitle:
+          'We build modern system architectures and scalable applications that radically transform business performance.',
+        buttonProps: { href: '{routes.SERVICES}' },
+      },
+      howItWorks: { overline: '', title: '', subtitle: '', items: [] },
+      checklist: {
+        overline: 'What we do',
+        title: `Why {appTitle} for {title}`,
+        subtitle:
+          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+        items: [
+          {
+            title: 'Full suite of services',
+          },
+          {
+            title: 'Unrivaled {title} knowledge',
+          },
+          {
+            title: 'Quality and best practices baked in',
+          },
+          {
+            title: 'Deep {title} community involvement',
+          },
+          {
+            title: 'Support for {title} ongoing development',
+          },
+          {
+            title: 'Hired by Fortune 500 brands',
+          },
+        ],
+      },
+      faqs: {
+        overline: '',
+        title: 'FAQs',
+        subtitle:
+          'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
+        items: [
+          {
+            key: 'faq-1',
+            title: 'What is {appTitle}?',
+            content:
+              '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
+          },
+          {
+            key: 'faq-2',
+            title: 'What industries do you serve?',
+            content:
+              'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
+          },
+          {
+            key: 'faq-3',
+            title: 'What kind of solutions does {appTitle} offer?',
+            content:
+              '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
+          },
+          {
+            key: 'faq-4',
+            title: "How can {appTitle}'s solutions benefit my organisation?",
+            content:
+              'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
+          },
+          {
+            key: 'faq-5',
+            title: 'Are your solutions scalable?',
+            content:
+              "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
+          },
+          {
+            key: 'faq-6',
+            title: 'How can I get started with {appTitle}?',
+            content:
+              'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
+          },
+          {
+            key: 'faq-7',
+            title:
+              'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
+            content:
+              'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
+          },
+          {
+            key: 'faq-8',
+            title:
+              'Is {appTitle} compliant with data security and privacy regulations',
+            content:
+              "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
+          },
+          {
+            key: 'faq-9',
+            title:
+              'How do you determine the pricing for your enterprise digital transformation solutions?',
+            content:
+              "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
+          },
+          {
+            key: 'faq-10',
+            title: 'How long does the implementation process typically take?',
+            content:
+              'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
+          },
+        ],
+      },
+      cta: {
+        hero_src: '/images/two_men_pointing_at_screen.png',
+        hero_alt: 'Software developers working on a laptop',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          '{appTitle} is committed to building strong partnerships and working collaboratively with organisations to drive digital transformation in the public sector. Together, we can unlock new possibilities, optimize operations, and deliver innovative solutions that empower governments to better serve their communities.',
+      },
+    },
+  },
+  {
+    title: 'News',
+    slug: 'news',
+    href: routeConfig.PRESS_RELEASES,
+    subtitle:
+      'Stay up-to-date with the latest trends in the digital landscape.',
+  },
+].map((page) => ({
+  ...MOCK_PAGE,
+  ...page,
+}))
+
 export const MOCK_PAGES = {
   GROUP: MOCK_GROUP_PAGES,
   TECH: MOCK_TECH_PAGES,
@@ -4494,4 +6544,8 @@ export const MOCK_PAGES = {
   DIGITAL: MOCK_DIGITAL_PAGES,
   FINX: MOCK_FINX_PAGES,
   GOVX: MOCK_GOVX_PAGES,
+  AEL: MOCK_AEL_PAGES,
+  SRI: MOCK_SRI_PAGES,
+  GVS: MOCK_GVS_PAGES,
+  COASTAL: MOCK_COASTAL_PAGES,
 }
