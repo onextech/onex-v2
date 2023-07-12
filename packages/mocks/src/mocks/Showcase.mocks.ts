@@ -1335,6 +1335,62 @@ export const MOCK_FINX_SHOWCASES = MOCK_GROUP_SHOWCASES
 
 export const MOCK_GOVX_SHOWCASES = MOCK_GROUP_SHOWCASES
 
+export const MOCK_AEL_SHOWCASES = [
+  {
+    title: 'Cureka',
+    slug: 'cureka',
+    subtitle: 'Symptom AI',
+    hero_src: '/showcases/cureka/hero.webp',
+    hero_alt: 'Cureka Hero',
+    mode: 'light',
+    backgroundColor: '#eaf4fe',
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'Meet Cureka',
+        subtitle:
+          'Enjoy true credit with Singapore’s first Pay later credit card by paying in installments with no extra charges.',
+        hero_src: '/showcases/cureka/sticky_1.webp',
+        hero_alt: 'Cureka Sticky 1',
+      },
+      gallery: {
+        title: 'Conversion',
+        subtitle: 'Let your site convert visitors into loyal customers',
+        items: [
+          {
+            title: '/showcases/cureka/grid_1.webp',
+            titleProps: { alt: 'Cureka Showcase 1' },
+          },
+          {
+            title: '/showcases/cureka/grid_2.webp',
+            titleProps: { alt: 'Cureka Showcase 2' },
+          },
+          {
+            title: '/showcases/cureka/grid_3.webp',
+            titleProps: { alt: 'Cureka Showcase 3' },
+          },
+          {
+            title: '/showcases/cureka/grid_4.webp',
+            titleProps: { alt: 'Cureka Showcase 4' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: 'Shop Now. Pay Later.',
+        subtitle:
+          'Using fresh and exciting designs to convey the groundbreaking nature of a revolutionary product that customers will ever need.',
+        hero_src: '/showcases/cureka/sticky_2.png',
+        hero_alt: 'Cureka Sticky 2',
+      },
+    },
+  },
+  ...MOCK_GROUP_SHOWCASES,
+]
+export const MOCK_SRI_SHOWCASES = MOCK_GROUP_SHOWCASES
+export const MOCK_GVS_SHOWCASES = MOCK_GROUP_SHOWCASES
+export const MOCK_COASTAL_SHOWCASES = MOCK_GROUP_SHOWCASES
+
 export const MOCK_SHOWCASES = {
   GROUP: MOCK_GROUP_SHOWCASES,
   TECH: MOCK_TECH_SHOWCASES,
@@ -1343,4 +1399,8 @@ export const MOCK_SHOWCASES = {
   DIGITAL: MOCK_DIGITAL_SHOWCASES,
   FINX: MOCK_FINX_SHOWCASES,
   GOVX: MOCK_GOVX_SHOWCASES,
+  AEL: MOCK_AEL_SHOWCASES,
+  SRI: MOCK_SRI_SHOWCASES,
+  GVS: MOCK_GVS_SHOWCASES,
+  COASTAL: MOCK_COASTAL_SHOWCASES,
 }
