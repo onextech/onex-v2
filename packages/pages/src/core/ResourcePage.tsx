@@ -90,7 +90,7 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                   items: [
                     {
                       type: 'h5',
-                      title: 'Get this guide delivered to your inbox.',
+                      title: 'Get a copy of this guide.',
                       titleProps: { gutterBottom: true },
                     },
                     {
