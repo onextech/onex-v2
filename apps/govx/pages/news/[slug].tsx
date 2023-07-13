@@ -19,7 +19,11 @@ const NextPressReleasePage: React.FC<NextPressReleasePageProps> = (props) => {
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
-        seo={{ title: pressRelease.title, description: pressRelease.subtitle }}
+        seo={{
+          title: pressRelease.title,
+          description: pressRelease.subtitle,
+          openGraph: { images: [{ url: pressRelease.hero_src }] },
+        }}
         autoBreadcrumbs
       >
         <PressReleasePage
