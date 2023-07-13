@@ -8,9 +8,9 @@ import {
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
-  useLayout,
 } from '@gravis-os/landing'
 import type { Post, Technology } from '@gravis-os/types'
+import GetStartedPage from './GetStartedPage'
 
 export interface TechnologyPageProps {
   technology: Technology
@@ -19,8 +19,7 @@ export interface TechnologyPageProps {
 
 const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
   const { technology, relatedPosts } = props
-  const { site, routeConfig } = useLayout()
-  const { overline, sections } = technology || {}
+  const { sections } = technology || {}
   const { benefits, callout, features, checklist, faqs, cta } = sections || {}
 
   return (
@@ -63,6 +62,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
             overline: 'Contact Us',
             title: 'Get in Touch',
             isCta: true,
+            children: <GetStartedPage fullScreen disableTestimonials />,
           },
           ...cta,
         }),

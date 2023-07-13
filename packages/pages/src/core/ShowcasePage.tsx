@@ -2,8 +2,8 @@ import React from 'react'
 import {
   Blocks,
   renderShowcaseCardBlockItem,
+  renderShowcaseSlider,
   renderShowcaseStickyGridBlockItem,
-  renderOtherShowcasesBlock,
 } from '@gravis-os/landing'
 import { Showcase } from '@gravis-os/types'
 
@@ -88,8 +88,10 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
             }),
           ],
         },
-        renderOtherShowcasesBlock({
+        renderShowcaseSlider({
+          title: 'Other Showcases',
           items: otherShowcases,
+          sx: { backgroundColor: 'background.paper' },
           py: { xs: 5, md: 10 },
         }),
       ]}
