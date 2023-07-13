@@ -115,10 +115,6 @@ const typography = {
     display: 'block',
   },
   button: {
-    fontSize: pxToRem(13),
-    [defaultTheme.breakpoints.up('md')]: {
-      fontSize: pxToRem(14),
-    },
     fontFamily: overlineFontFamily,
     fontWeight: 600,
     letterSpacing: 1,
