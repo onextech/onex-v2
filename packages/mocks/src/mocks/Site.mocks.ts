@@ -25,7 +25,7 @@ export const MOCK_COMMON_SITE = {
   nav_is_ecosystem_visible: true,
 
   // Cta
-  cta_title: 'Build the future with One X Group',
+  cta_title: 'Build the future with <br/> One X Group',
   cta_button_title: 'Get Started',
 
   // Address
@@ -118,7 +118,7 @@ export const MOCK_TECH_SITE = {
   absolute_url: 'https://www.onextech.com',
 
   // Cta
-  cta_title: 'Modernise Enterprise UI with One X Tech.',
+  cta_title: 'Modernise Enterprise UI with <br/> One X Tech',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onextech.com',
@@ -189,7 +189,7 @@ export const MOCK_DESIGN_SITE = {
   absolute_url: 'https://www.onexdesign.com',
 
   // Cta
-  cta_title: 'Transform the Enterprise Experience with One X Design.',
+  cta_title: 'Transform the Enterprise Experience with <br/> One X Design.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdesign.com',
@@ -253,7 +253,7 @@ export const MOCK_DATA_SITE = {
   logo_alt: 'One X Data logo',
 
   // Cta
-  cta_title: 'Build Business Intelligence with One X Data',
+  cta_title: 'Build Business Intelligence with <br/> One X Data',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdata.co',
@@ -320,7 +320,7 @@ export const MOCK_DIGITAL_SITE = {
   absolute_url: 'https://www.onexdigital.co',
 
   // Cta
-  cta_title: 'Modernise Enterprise Marketing with One X Digital.',
+  cta_title: 'Modernise Enterprise Marketing with <br/> One X Digital.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@onexdigital.co',
@@ -391,7 +391,7 @@ export const MOCK_FINX_SITE = {
   absolute_url: 'https://www.finx.ai',
 
   // Cta
-  cta_title: 'Drive Financial Excellence with Fin X',
+  cta_title: 'Drive Financial Excellence with <br/> Fin X',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@finx.ai',
@@ -462,7 +462,8 @@ export const MOCK_GOVX_SITE = {
   absolute_url: 'https://www.govx.ai',
 
   // Cta
-  cta_title: 'Transform Public Sectors with AI-Driven Innovation by Gov X.',
+  cta_title:
+    'Transform Public Sectors with AI-Driven Innovation by <br/> Gov X.',
   cta_button_title: 'Schedule a Call',
 
   general_email: 'info@govx.ai',

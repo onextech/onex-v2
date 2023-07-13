@@ -1618,22 +1618,6 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-"@gravis-os/landing@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.10.0.tgz#f61ae0f3751577353b8469a69468f826bcd6f302"
-  integrity sha512-vqvzjjXRXE/cufR4c2TezaCSSnd+g6XJoF43XrLoxog6It8+1OetPOduXQWY2GgMXTafHPJjFpYxVB9PgjmIrw==
-  dependencies:
-    "@gravis-os/form" "*"
-    "@gravis-os/storage" "*"
-    "@gravis-os/theme" "*"
-    "@gravis-os/types" "*"
-    "@gravis-os/ui" "*"
-    clsx "^1.1.1"
-    lodash "^4.17.21"
-    material-ui-popup-state "^3.1.1"
-    next-seo "^5.15.0"
-    nextjs-progressbar "^0.0.16"
-
 "@gravis-os/rtl@*":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.3.tgz#d2f8e83c6f6dd6c592f0c41cefb13b47d347aff7"
@@ -1652,17 +1636,6 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/theme@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@gravis-os/theme/-/theme-0.0.13.tgz#a09150dffc847038ec8e5c609e5bff35e21d9b16"
-  integrity sha512-8aLmHejHuk2kRJ2s/abWMfB1dMHAyGMdTrUtfUaYTLDkP9xQYSXLKREQ5qhsMh6A/BBtdcnI/cwEWBCLJ5vRig==
-  dependencies:
-    "@gravis-os/types" "*"
-    lodash "^4.17.21"
-    qs "^6.11.0"
-    tslib "^2.4.0"
-    typescript "^4.6.3"
-
 "@gravis-os/tsconfig@^0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.8.tgz#428cd225c6bccc90ada99f0c0dd87122136f78fe"
@@ -1673,34 +1646,6 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.3.1.tgz#2e69cf33e3e83289a7232b7472552b39338c7398"
   integrity sha512-/bCffn9o2Mnk9OwrkZLq/MeMpQhhiuAAuOVvRcrbdJQUolFrODClIUQDnStlU3OEgKYKbe59zhWJ0ImiD5c3Ew==
   dependencies:
-    tslib "^2.4.0"
-    typescript "^4.6.3"
-
-"@gravis-os/ui@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.4.0.tgz#8ce911f33c3f3b70b2a854fe937a0fc80720a355"
-  integrity sha512-EjUsBFNf4v8Rg9JCxvVjjPapA5gqnK0JhejTyq/3eTpcslueZ0LlItUAkExQlXLEW/tJmjPhkzLd9gIZ+Y9b0w==
-  dependencies:
-    "@dnd-kit/core" "^6.0.1"
-    "@dnd-kit/sortable" "^7.0.0"
-    "@dnd-kit/utilities" "^3.2.0"
-    "@gravis-os/config" "*"
-    "@gravis-os/rtl" "*"
-    "@gravis-os/theme" "*"
-    "@gravis-os/types" "*"
-    "@gravis-os/utils" "*"
-    "@react-hook/window-scroll" "^1.3.0"
-    clsx "^1.1.1"
-    keen-slider "^6.8.5"
-    lodash "^4.17.21"
-    material-ui-popup-state "^3.1.1"
-    react-awesome-reveal "4.0.1"
-    react-error-boundary "^3.1.4"
-    react-fast-marquee "^1.3.5"
-    react-hot-toast ">=2.2.0"
-    react-inlinesvg "^3.0.1"
-    react-medium-image-zoom "4"
-    react-share "^4.4.1"
     tslib "^2.4.0"
     typescript "^4.6.3"
 
