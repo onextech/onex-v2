@@ -10,6 +10,7 @@ import {
   renderThreeColumnGridBlock,
 } from '@gravis-os/landing'
 import type { Industry, Post } from '@gravis-os/types'
+import ContactPage from './ContactPage'
 
 export interface IndustryPageProps {
   industry: Industry
@@ -19,7 +20,7 @@ export interface IndustryPageProps {
 const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   const { industry, relatedPosts } = props
   const { sections } = industry || {}
-  const { summary, benefits, features, checklist, faqs, cta } = sections || {}
+  const { summary, features, checklist, faqs, cta } = sections || {}
 
   return (
     <Blocks
@@ -60,6 +61,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
             overline: 'Contact Us',
             title: 'Get in Touch',
             isCta: true,
+            children: <ContactPage />,
           },
           ...cta,
         }),
