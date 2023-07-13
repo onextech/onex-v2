@@ -10,7 +10,7 @@ import {
   renderThreeColumnGridBlock,
 } from '@gravis-os/landing'
 import type { Post, Technology } from '@gravis-os/types'
-import ContactPage from './ContactPage'
+import GetStartedPage from './GetStartedPage'
 
 export interface TechnologyPageProps {
   technology: Technology
@@ -62,7 +62,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
             overline: 'Contact Us',
             title: 'Get in Touch',
             isCta: true,
-            children: <ContactPage />,
+            children: <GetStartedPage />,
           },
           ...cta,
         }),
