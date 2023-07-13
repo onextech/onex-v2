@@ -62,7 +62,7 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
             overline: 'Contact Us',
             title: 'Get in Touch',
             isCta: true,
-            children: <GetStartedPage />,
+            children: <GetStartedPage fullScreen disableTestimonials />,
           },
           ...cta,
         }),
