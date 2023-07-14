@@ -40,8 +40,8 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
     published_at: '2018-10-19T01:43:55+0800',
     title: "Introducing One X Tech's Digital Business Suite",
     slug: 'one-x-tech-digital-business-suite',
-    hero_src: '/insights/one-x-tech-digital-business-suite.png',
-    hero_alt: 'One X Tech logo',
+    hero_src: '/insights/cd_player.jpeg',
+    hero_alt: 'Metal cd player',
     subtitle:
       "One X Tech Press Release: Introducing One X Tech's Digital Business Suite",
     html:
