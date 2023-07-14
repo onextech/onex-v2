@@ -34,8 +34,8 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   imo: {
     avatar_src: '/logos/logo_imo.svg',
     avatar_alt: 'logo_imo',
-    avatar_width: 162,
-    avatar_height: 32,
+    avatar_width: 152,
+    avatar_height: 25,
   },
   mpa: {
     avatar_src: '/logos/logo_mpa.svg',
@@ -112,8 +112,8 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   moh: {
     avatar_src: '/logos/logo_moh.png',
     avatar_alt: 'logo_moh',
-    avatar_width: 200,
-    avatar_height: 100,
+    avatar_width: 150,
+    avatar_height: 75,
   },
 }
 
