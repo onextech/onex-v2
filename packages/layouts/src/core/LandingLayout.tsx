@@ -72,11 +72,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     workspaces,
   } = onUseLayout
 
-  console.log('refresh')
-  console.log(services)
-  console.log('-----------')
-  console.log(serviceCategorys)
-
   // Navs
   const headerNavConfig = [
     {
