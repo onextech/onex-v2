@@ -18,8 +18,15 @@ const PressReleasePage: React.FC<PressReleasePageProps> = (props) => {
   return (
     <Blocks
       items={[
-        renderPostHeroBlockItem({ item: pressRelease }),
-        renderPostDetailBlock({ item: pressRelease, pt: { xs: 3, md: 6 } }),
+        renderPostHeroBlockItem({
+          item: pressRelease,
+          disableAuthorDetails: true,
+        }),
+        renderPostDetailBlock({
+          item: pressRelease,
+          pt: { xs: 3, md: 6 },
+          disableAuthorDetails: true,
+        }),
         renderOtherPressReleasesBlock({
           items: otherPressReleases,
           py: { xs: 5, md: 10 },

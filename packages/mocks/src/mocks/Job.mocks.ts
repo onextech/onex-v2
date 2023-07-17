@@ -26,7 +26,7 @@ export const MOCK_JOBS = [
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">Roles and responsibilities:</span></strong></span></span></h4>\n' +
     '<ol class="css-bcmuw8" data-slate-node="element">\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
-    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Manages Client / Account Lifecycle to achieve sales and objectives to optimize returns while strengthening a Service Culture that delivers on the service promise of GoTyme.</span></span></span></div>\n' +
+    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Manages Client / Account Lifecycle to achieve sales and objectives to optimize returns while strengthening a Service Culture that delivers on the service promise of One X Group Pte. Ltd.</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Translating the broad area strategies into specific sales objectives, programs and action plans that fit area/industry/channel opportunities and trends for the implementation of sales activities to contribute to over-all performance.</span></span></span></div>\n' +

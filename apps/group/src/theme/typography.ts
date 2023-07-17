@@ -60,6 +60,7 @@ const typography = {
     [defaultTheme.breakpoints.down('md')]: {
       fontSize: pxToRem(28),
     },
+    mt: 4,
   },
   h5: {
     fontFamily: headerFontFamily,
