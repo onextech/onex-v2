@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Blocks,
   renderFeaturedPostsBlock,
+  renderHomeSummaryBlock,
   renderThreeColumnGridBlock,
   renderClientLogosImageMarqueeBlock,
   renderShowcaseSlider,
@@ -29,7 +30,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
     props
 
   const { sections } = page || {}
-  const { benefits, faqs, cta } = sections || {}
+  const { benefits, faqs, cta, summary } = sections || {}
 
   const { clientLogos, site } = useLayout()
 
@@ -69,6 +70,13 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
+        // Summary
+        renderHomeSummaryBlock({
+          ...summary,
+          sx: { backgroundColor: 'background.paper' },
+          titleProps: { maxWidth: '70%' },
+          pb: { xs: 5, md: 0 },
+        }),
         // Benefits
         renderThreeColumnGridBlock({
           ...benefits,
@@ -94,13 +102,12 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Posts
         renderFeaturedPostsBlock({ items: featuredPosts }),
         // Faqs
-        site.disable_faqs_on_home_page
-          ? {}
-          : renderFaqsAccordionBlock({
-              py: { xs: 5, md: 10 },
-              ...faqs,
-              sx: { backgroundColor: 'background.paper' },
-            }),
+        !site.disable_faqs_on_home_page &&
+          renderFaqsAccordionBlock({
+            py: { xs: 5, md: 10 },
+            ...faqs,
+            sx: { backgroundColor: 'background.paper' },
+          }),
         // Resources
         renderFeaturedResourcesBlock({
           items: resources,
