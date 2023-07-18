@@ -106,7 +106,6 @@ const typography = {
     fontSize: pxToRem(14),
     fontWeight: 600,
     lineHeight: 1.6,
-    fontFamily: headerFontFamily,
   },
   overline: {
     fontFamily: overlineFontFamily,
