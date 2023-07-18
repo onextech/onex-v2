@@ -52,7 +52,8 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
         },
         ...categoryWithServicesChunks
           .map((categoryWithServicesChunk) => {
-            const firstCategoryWithServices = categoryWithServicesChunk[0]
+            const firstCategoryWithServices: ServiceCategory =
+              categoryWithServicesChunk[0]
             return [
               {
                 key: 'background-nodes',
