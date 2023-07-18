@@ -29,7 +29,7 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
   const { page, showcases, technologys, featuredPosts, industrys } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
-  const { locales, cta_button_title } = site
+  const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
