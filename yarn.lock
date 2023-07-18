@@ -1625,6 +1625,7 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
+<<<<<<< HEAD
 "@gravis-os/landing@^0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.10.2.tgz#fe3ea76728e4fcdcc4d7a83a5afddfba2f1068f4"
@@ -1641,6 +1642,8 @@
     next-seo "^5.15.0"
     nextjs-progressbar "^0.0.16"
 
+=======
+>>>>>>> 97e10ab (build: update gravis deps)
 "@gravis-os/rtl@*":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.3.tgz#d2f8e83c6f6dd6c592f0c41cefb13b47d347aff7"
@@ -3801,6 +3804,11 @@ country-calling-code@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/country-calling-code/-/country-calling-code-0.0.3.tgz#d4401da11b7cfcda35ba8f05a325cab55a3b7b66"
   integrity sha512-DNLyidwJPrEZyDkILYFbgPRlg/tFkpP+uk6JWG+du41l7qoH5guePxSA2YlIjl6wUfp7vWdjCUJeMRuAQPKpRg==
+
+country-list@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/country-list/-/country-list-2.3.0.tgz#1e7ceaf9834c1d1210054301eabf4dc445ab978c"
+  integrity sha512-qZk66RlmQm7fQjMYWku1AyjlKPogjPEorAZJG88owPExoPV8EsyCcuFLvO2afTXHEhi9liVOoyd+5A6ZS5QwaA==
 
 create-require@^1.1.0:
   version "1.1.1"
