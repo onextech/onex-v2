@@ -1625,25 +1625,6 @@
     eslint-plugin-unused-imports "^2.0.0"
     prettier "^2.0.5"
 
-<<<<<<< HEAD
-"@gravis-os/landing@^0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.10.2.tgz#fe3ea76728e4fcdcc4d7a83a5afddfba2f1068f4"
-  integrity sha512-bzlL2LrccGKg4MWt1JOPLbpXYmVEaONbKiFA5iMUbP+rjBKipredMaiNkTjH78jb308kWR7xkVEnQN3XgLwXFg==
-  dependencies:
-    "@gravis-os/form" "*"
-    "@gravis-os/storage" "*"
-    "@gravis-os/theme" "*"
-    "@gravis-os/types" "*"
-    "@gravis-os/ui" "*"
-    clsx "^1.1.1"
-    lodash "^4.17.21"
-    material-ui-popup-state "^3.1.1"
-    next-seo "^5.15.0"
-    nextjs-progressbar "^0.0.16"
-
-=======
->>>>>>> 97e10ab (build: update gravis deps)
 "@gravis-os/rtl@*":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/rtl/-/rtl-0.0.3.tgz#d2f8e83c6f6dd6c592f0c41cefb13b47d347aff7"
