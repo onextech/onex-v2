@@ -705,7 +705,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       accordionProps: {
         titleProps: { variant: 'h7' },
         itemTitleProps: {
-          variant: 'h7',
+          variant: 'body2',
           color: 'text.secondary',
           hoverColor: 'inherit',
         },
