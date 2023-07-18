@@ -18,7 +18,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
           items: [
             { type: 'overline', title: 'Portfolio' },
             {
-              type: 'h2',
+              type: 'h1',
               title: 'Invest in Digital Transformation with Confidence.',
               titleProps: { mb: 2, maxWidth: '50%' },
             },
