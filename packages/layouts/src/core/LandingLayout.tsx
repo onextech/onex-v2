@@ -568,11 +568,22 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
   ]
+
   const footerNavConfig = [
     services?.length && {
       key: 'services',
       title: 'Services',
-      items: services,
+      href: routeConfig.SERVICES,
+      items: services.map((service) => ({
+        key: service.title,
+        title: (
+          <Block
+            {...renderHeaderMenuMobileBlockItem(
+              service as RenderHeaderMenuMobileBlockItemProps
+            )}
+          />
+        ),
+      })),
     },
     industrys?.length && {
       key: 'industrys',
