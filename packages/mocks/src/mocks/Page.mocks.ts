@@ -1272,7 +1272,8 @@ const MOCK_GROUP_PAGES = [
           'Maximise business growth through insight driven web digital. We put business first in everything we do.',
       },
       summary: {
-        title: 'Innovation that drives real impact.',
+        title:
+          'In a world of generic platforms, {appTitle} empowers businesses to take full control of their digital ecosystem and unlock their true potential through custom software solutions.',
         items: [
           {
             title:
