@@ -47,9 +47,15 @@ const typography = {
   fontFamily: bodyFontFamily,
   h1: {
     fontFamily: headerFontFamily,
+    fontSize: pxToRem(48),
+    [defaultTheme.breakpoints.up('sm')]: {
+      fontSize: pxToRem(60),
+    },
+    [defaultTheme.breakpoints.up('md')]: {
+      fontSize: pxToRem(72),
+    },
     fontWeight: 300,
     lineHeight: 1,
-    fontSize: pxToRem(72),
   },
   h2: { fontFamily: headerFontFamily, lineHeight: 1.1 },
   h3: { fontFamily: headerFontFamily, fontWeight: 300, lineHeight: 1.09 },
@@ -60,6 +66,7 @@ const typography = {
     [defaultTheme.breakpoints.down('md')]: {
       fontSize: pxToRem(28),
     },
+    mt: 4,
   },
   h5: {
     fontFamily: headerFontFamily,
