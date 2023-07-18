@@ -54,7 +54,8 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
         },
         ...categoryWithPostsChunks
           .map((categoryWithPostsChunk) => {
-            const firstCategoryWithPosts = categoryWithPostsChunk[0]
+            const firstCategoryWithPosts: PostCategory =
+              categoryWithPostsChunk[0]
             return [
               {
                 key: 'background-nodes',
