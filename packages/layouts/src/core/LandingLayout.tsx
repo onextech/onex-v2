@@ -64,7 +64,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     // Modules
     services,
     industrys,
-    serviceCategorys,
     postCategorys,
     technologys,
     pages,
