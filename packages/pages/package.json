@@ -9,7 +9,6 @@
   "author": "One X Tech",
   "license": "GPL-3.0",
   "scripts": {
-
     "local:unlink": "yalc remove --all"
   },
   "dependencies": {
