@@ -28,7 +28,6 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
   const { page, showcases, featuredPosts } = props
   const router = useRouter()
   const { site, clientLogos } = useLayout()
-  console.log(clientLogos)
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
