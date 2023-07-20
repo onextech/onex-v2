@@ -34,7 +34,7 @@
     "@gravis-os/analytics": "^0.1.0",
     "@gravis-os/config": "^0.0.6",
     "@gravis-os/form": "^1.0.4",
-    "@gravis-os/landing": "^0.15.1",
+    "@gravis-os/landing": "^0.16.0",
     "@gravis-os/query": "^0.0.33",
     "@gravis-os/theme": "^0.0.14",
     "@gravis-os/ui": "^0.5.0",
