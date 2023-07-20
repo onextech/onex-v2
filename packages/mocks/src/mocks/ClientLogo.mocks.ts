@@ -144,23 +144,23 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
     },
   },
   stanfordmed: {
-    avatar_src: '/logos/logo_stanfordmed.svg',
+    avatar_src: '/logos/logo_stanfordmed.png',
     avatar_alt: 'logo_stanfordmed',
-    avatar_width: 64,
-    avatar_height: 76,
+    avatar_width: 80,
+    avatar_height: 50,
     sx: {
-      width: { xs: 150 * 0.8, md: 150 },
-      height: { xs: 75 * 0.8, md: 75 },
+      width: { xs: 80 * 0.8, md: 80 },
+      height: { xs: 50 * 0.8, md: 50 },
     },
   },
   geh: {
     avatar_src: '/logos/logo_geh.png',
     avatar_alt: 'logo_geh',
-    avatar_width: 64,
-    avatar_height: 76,
+    avatar_width: 250,
+    avatar_height: 175,
     sx: {
-      width: { xs: 225 * 0.8, md: 225 },
-      height: { xs: 150 * 0.8, md: 150 },
+      width: { xs: 250 * 0.8, md: 250 },
+      height: { xs: 175 * 0.8, md: 175 },
     },
   },
   hai: {
@@ -183,9 +183,12 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   ideo: {
     avatar_src: '/logos/logo_ideo.png',
     avatar_alt: 'logo_ideo',
-    avatar_width: 64,
-    avatar_height: 76,
-    sx: { width: { xs: 64 * 0.8, md: 64 }, height: { xs: 76 * 0.8, md: 76 } },
+    avatar_width: 100,
+    avatar_height: 40,
+    sx: {
+      width: { xs: 100 * 0.8, md: 100 },
+      height: { xs: 40 * 0.8, md: 40 },
+    },
   },
   nih: {
     avatar_src: '/logos/logo_nih.png',
@@ -197,23 +200,26 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   prova: {
     avatar_src: '/logos/logo_prova.png',
     avatar_alt: 'logo_prova',
-    avatar_width: 64,
-    avatar_height: 76,
-    sx: { width: { xs: 64 * 0.8, md: 64 }, height: { xs: 76 * 0.8, md: 76 } },
+    avatar_width: 80,
+    avatar_height: 55,
+    sx: { width: { xs: 80 * 0.8, md: 80 }, height: { xs: 55 * 0.8, md: 55 } },
   },
   roche: {
     avatar_src: '/logos/logo_roche.png',
     avatar_alt: 'logo_roche',
-    avatar_width: 64,
-    avatar_height: 76,
-    sx: { width: { xs: 64 * 0.8, md: 64 }, height: { xs: 76 * 0.8, md: 76 } },
+    avatar_width: 80,
+    avatar_height: 60,
+    sx: { width: { xs: 80 * 0.8, md: 80 }, height: { xs: 60 * 0.8, md: 60 } },
   },
   skydeck: {
     avatar_src: '/logos/logo_skydeck.png',
     avatar_alt: 'logo_skydeck',
-    avatar_width: 64,
-    avatar_height: 76,
-    sx: { width: { xs: 64 * 0.8, md: 64 }, height: { xs: 76 * 0.8, md: 76 } },
+    avatar_width: 100,
+    avatar_height: 50,
+    sx: {
+      width: { xs: 100 * 0.8, md: 100 },
+      height: { xs: 50 * 0.8, md: 50 },
+    },
   },
 }
 
