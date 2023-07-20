@@ -108,3 +108,6 @@ export * from './ResourcesPage'
 
 export { default as LabsPage } from './LabsPage'
 export * from './LabsPage'
+
+export { default as AelPage } from './AelPage'
+export * from './AelPage'

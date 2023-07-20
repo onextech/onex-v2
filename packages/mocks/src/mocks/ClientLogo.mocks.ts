@@ -143,6 +143,87 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
       height: { xs: 90 * 0.8, md: 90 },
     },
   },
+  stanfordmed: {
+    avatar_src: '/logos/logo_stanfordmed.png',
+    avatar_alt: 'logo_stanfordmed',
+    avatar_width: 150,
+    avatar_height: 40,
+    sx: {
+      width: { xs: 150 * 0.8, md: 150 },
+      height: { xs: 40 * 0.8, md: 40 },
+    },
+  },
+  geh: {
+    avatar_src: '/logos/logo_geh.png',
+    avatar_alt: 'logo_geh',
+    avatar_width: 280,
+    avatar_height: 175,
+    sx: {
+      width: { xs: 280 * 0.8, md: 280 },
+      height: { xs: 175 * 0.8, md: 175 },
+    },
+  },
+  hai: {
+    avatar_src: '/logos/logo_hai.png',
+    avatar_alt: 'logo_hai',
+    avatar_width: 100,
+    avatar_height: 100,
+    sx: {
+      width: { xs: 100 * 0.6, md: 100 },
+      height: { xs: 100 * 0.6, md: 100 },
+    },
+  },
+  hms: {
+    avatar_src: '/logos/logo_hms.png',
+    avatar_alt: 'logo_hms',
+    avatar_width: 110,
+    avatar_height: 72,
+    sx: {
+      width: { xs: 110 * 0.8, md: 110 },
+      height: { xs: 72 * 0.8, md: 72 },
+    },
+  },
+  ideo: {
+    avatar_src: '/logos/logo_ideo.png',
+    avatar_alt: 'logo_ideo',
+    avatar_width: 95,
+    avatar_height: 30,
+    sx: {
+      width: { xs: 95 * 0.8, md: 95 },
+      height: { xs: 30 * 0.8, md: 30 },
+    },
+  },
+  nih: {
+    avatar_src: '/logos/logo_nih.png',
+    avatar_alt: 'logo_nih',
+    avatar_width: 79,
+    avatar_height: 61,
+    sx: { width: { xs: 79 * 0.8, md: 79 }, height: { xs: 61 * 0.8, md: 61 } },
+  },
+  prova: {
+    avatar_src: '/logos/logo_prova.png',
+    avatar_alt: 'logo_prova',
+    avatar_width: 110,
+    avatar_height: 40,
+    sx: { width: { xs: 110 * 0.8, md: 110 }, height: { xs: 40 * 0.8, md: 40 } },
+  },
+  roche: {
+    avatar_src: '/logos/logo_roche.png',
+    avatar_alt: 'logo_roche',
+    avatar_width: 90,
+    avatar_height: 50,
+    sx: { width: { xs: 90 * 0.8, md: 90 }, height: { xs: 50 * 0.8, md: 50 } },
+  },
+  skydeck: {
+    avatar_src: '/logos/logo_skydeck.png',
+    avatar_alt: 'logo_skydeck',
+    avatar_width: 115,
+    avatar_height: 40,
+    sx: {
+      width: { xs: 115 * 0.8, md: 115 },
+      height: { xs: 40 * 0.8, md: 40 },
+    },
+  },
 }
 
 export const MOCK_GROUP_CLIENT_LOGOS = Object.values(
@@ -177,7 +258,19 @@ export const MOCK_DATA_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
 export const MOCK_DIGITAL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
-export const MOCK_AEL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
+export const MOCK_AEL_CLIENT_LOGOS = Object.values(
+  pick(MOCK_CLIENT_LOGOS_OBJECT, [
+    'geh',
+    'hms',
+    'stanfordmed',
+    'roche',
+    'hai',
+    'ideo',
+    'nih',
+    'prova',
+    'skydeck',
+  ])
+).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 export const MOCK_SRI_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 export const MOCK_GVS_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 export const MOCK_COASTAL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS

@@ -522,8 +522,9 @@ export const MOCK_AEL_SITE: Site = {
   // Logo
   logo_src: '/logo.png',
   logo_alt: 'AetherLabs logo',
-  logo_width: 160,
-  logo_height: 30,
+  logo_width: 148,
+  logo_height: 20,
+  logo_offset_y: 2,
 
   // disable testimonials
   disable_testimonials: true,
@@ -532,14 +533,14 @@ export const MOCK_AEL_SITE: Site = {
   disable_faqs_on_home_page: true,
 
   // App
-  company_title: 'Aether Labs',
+  company_title: 'Aether Labs Inc.',
   title: 'Aether Labs',
-  absolute_url: 'https://ael-web.vercel.app',
+  absolute_url: 'https://onex-v2-ael.vercel.app',
 
   // Contact
-  general_email: 'info@ael.co',
-  general_phone: '+65 8922 8242',
-  general_whatsapp: '+65 8922 8242',
+  general_email: 'info@aetherlabs.ai',
+  general_phone: '+1 8922 8242',
+  general_whatsapp: '+1 8922 8242',
 
   nav_items: [
     {
@@ -561,11 +562,6 @@ export const MOCK_AEL_SITE: Site = {
         "Your new team's cross-industry knowledge will level up your project",
     },
     {
-      key: 'ecosystem',
-      title: 'Our Ecosystem',
-      subtitle: 'Learn more about our other functions',
-    },
-    {
       key: 'company',
       title: 'Get to Know us Better',
       subtitle:
@@ -573,8 +569,14 @@ export const MOCK_AEL_SITE: Site = {
     },
   ],
 
+  // Locale
+  locales: [
+    { key: 'us', iso_alpha_2: 'us', title: 'United States' },
+    { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
+  ],
+
   // Cta
-  cta_title: 'Build the future with Aether Labs.',
+  cta_title: 'Advance Health with Aether Labs',
   cta_button_title: 'Get Started',
 }
 export const MOCK_SRI_SITE = {
