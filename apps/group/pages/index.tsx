@@ -62,6 +62,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
+    .filter(({ is_featured }) => is_featured)
     .slice(0, 3)
   return getStaticPropsWithLayout({
     props: {

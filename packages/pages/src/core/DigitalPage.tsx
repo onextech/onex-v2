@@ -9,9 +9,10 @@ import {
   renderFaqsAccordionBlock,
   renderHeroWithBackgroundBlock,
   renderCtaBlock,
+  renderFeaturedNewsBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Showcase } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase, PressRelease } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {
@@ -19,10 +20,12 @@ export interface DigitalPageProps {
   showcases: Showcase[]
   featuredPosts: Post[]
   industrys: Industry[]
+  featuredPressReleases: PressRelease[]
 }
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys } = props
+  const { page, showcases, featuredPosts, industrys, featuredPressReleases } =
+    props
   const router = useRouter()
   const { site, clientLogos, routeConfig } = useLayout()
   const { locales, cta_button_title } = site
@@ -88,6 +91,8 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
             : `Read our Latest Insights`,
           items: featuredPosts,
         }),
+        // News
+        renderFeaturedNewsBlock({ items: featuredPressReleases }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs

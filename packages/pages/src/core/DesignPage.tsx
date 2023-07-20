@@ -11,9 +11,10 @@ import {
   renderClientTestimonialSliderBlock,
   renderGhostButtonBlockItem,
   renderClientHighlightsImageMarqueeBlock,
+  renderFeaturedNewsBlock,
   useLayout,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Showcase } from '@gravis-os/types'
+import { Page, Post, Industry, Showcase, PressRelease } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
 
@@ -22,10 +23,12 @@ export interface DesignPageProps {
   showcases: Showcase[]
   featuredPosts: Post[]
   industrys: Industry[]
+  featuredPressReleases: PressRelease[]
 }
 
 const DesignPage: React.FC<DesignPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys } = props
+  const { page, showcases, featuredPosts, industrys, featuredPressReleases } =
+    props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials, clientHighlights } =
     useLayout()
@@ -140,6 +143,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         }),
         // Features
         renderThreeColumnGridBlock(features),
+        // News
+        renderFeaturedNewsBlock({ items: featuredPressReleases }),
         // Faqs
         renderFaqsAccordionBlock({
           py: { xs: 5, md: 10 },
