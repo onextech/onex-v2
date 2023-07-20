@@ -156,19 +156,22 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   geh: {
     avatar_src: '/logos/logo_geh.png',
     avatar_alt: 'logo_geh',
-    avatar_width: 250,
+    avatar_width: 280,
     avatar_height: 175,
     sx: {
-      width: { xs: 250 * 0.8, md: 250 },
+      width: { xs: 280 * 0.8, md: 280 },
       height: { xs: 175 * 0.8, md: 175 },
     },
   },
   hai: {
     avatar_src: '/logos/logo_hai.png',
     avatar_alt: 'logo_hai',
-    avatar_width: 64,
-    avatar_height: 64,
-    sx: { width: { xs: 64 * 0.8, md: 64 }, height: { xs: 64 * 0.8, md: 64 } },
+    avatar_width: 100,
+    avatar_height: 100,
+    sx: {
+      width: { xs: 100 * 0.6, md: 100 },
+      height: { xs: 100 * 0.6, md: 100 },
+    },
   },
   hms: {
     avatar_src: '/logos/logo_hms.png',
@@ -257,15 +260,15 @@ export const MOCK_DIGITAL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 
 export const MOCK_AEL_CLIENT_LOGOS = Object.values(
   pick(MOCK_CLIENT_LOGOS_OBJECT, [
-    'hms',
     'geh',
-    'hai',
-    'skydeck',
+    'hms',
     'stanfordmed',
-    'prova',
-    'nih',
     'roche',
+    'hai',
     'ideo',
+    'nih',
+    'prova',
+    'skydeck',
   ])
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 export const MOCK_SRI_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS

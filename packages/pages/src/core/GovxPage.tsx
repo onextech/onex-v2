@@ -113,6 +113,7 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
+        // Client Logos Gallery
         renderClientLogosGallery({
           items: clientLogos,
           title:
