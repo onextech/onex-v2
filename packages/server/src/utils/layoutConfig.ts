@@ -12,6 +12,7 @@ import {
   MOCK_SITE,
   MOCK_TECHNOLOGYS,
   MOCK_WORKSPACES,
+  MOCK_PRESS_RELEASES,
 } from '@onex/mocks'
 import {
   Site,
@@ -26,6 +27,7 @@ import {
   Technology,
   Workspace,
   Showcase,
+  PressRelease,
 } from '@gravis-os/types'
 
 const { MOCK_KEY = '' } = process.env
@@ -44,6 +46,7 @@ export interface LayoutConfig {
   technologys?: Technology[]
   showcases?: Showcase[]
   workspaces?: Workspace[]
+  pressReleases?: PressRelease[]
 }
 
 const layoutConfig: LayoutConfig = {
@@ -60,6 +63,7 @@ const layoutConfig: LayoutConfig = {
   technologys: MOCK_TECHNOLOGYS[MOCK_KEY],
   showcases: MOCK_SHOWCASES[MOCK_KEY],
   workspaces: MOCK_WORKSPACES[MOCK_KEY],
+  pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY],
 }
 
 export default layoutConfig

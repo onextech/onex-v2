@@ -15,6 +15,7 @@ import {
   MOCK_POSTS,
   MOCK_SHOWCASES,
   MOCK_RESOURCES,
+  MOCK_PRESS_RELEASES,
 } from '@onex/mocks'
 import orderBy from 'lodash/orderBy'
 
@@ -51,6 +52,17 @@ export const getStaticProps: GetStaticProps = async (context) => {
     'published_at',
     'desc'
   ).slice(0, 3)
+  const featuredPressReleases = orderBy(
+    MOCK_PRESS_RELEASES[MOCK_KEY],
+    'published_at',
+    'desc'
+  )
+    .filter(({ is_active }) => is_active)
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
+    .slice(0, 3)
   return getStaticPropsWithLayout({
     props: {
       page,
@@ -59,6 +71,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       showcases,
       industrys,
       resources,
+      featuredPressReleases,
     },
   })(context)
 }
@@ -76,6 +89,7 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
     industrys,
     resources,
     pageProviderProps,
+    featuredPressReleases,
   } = props
 
   return (
@@ -92,6 +106,7 @@ const NextHomePage: React.FC<NextHomePageProps> = (props) => {
           page={page}
           featuredPosts={featuredPosts}
           heroPosts={heroPosts}
+          featuredPressReleases={featuredPressReleases}
         />
       </LandingLayout>
     </PageProvider>
