@@ -11,7 +11,7 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-  renderClientLogoCardBlockItem,
+  renderClientLogosGallery,
 } from '@gravis-os/landing'
 import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
@@ -115,45 +115,11 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Client logo gallery
-        {
-          key: 'gallery',
-          center: true,
-          maxWidth: 'md',
-          items: [
-            {
-              type: 'h4',
-              title:
-                'We Work With and Drive Innovation for Reputable Financial Organizations',
-            },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 1 },
-              gridItemProps: { xs: 6, md: 4 },
-              gridItems: clientLogos.map((clientLogo) => {
-                const {
-                  avatar_src,
-                  avatar_alt,
-                  avatar_width,
-                  avatar_height,
-                  sx,
-                } = clientLogo
-
-                return renderClientLogoCardBlockItem({
-                  title: avatar_src,
-                  titleProps: {
-                    alt: avatar_alt,
-                    width: avatar_width,
-                    height: avatar_height,
-                    sx,
-                    invertImageOnMode: 'light',
-                  },
-                })
-              }),
-            },
-          ],
-        },
+        renderClientLogosGallery({
+          items: clientLogos,
+          title:
+            'We Work With and Drive Innovation for Reputable Financial Organizations',
+        }),
         // Showcases
         renderShowcasesBlock({
           title: <>Empowering the Finance Sector through AI-driven Solutions</>,

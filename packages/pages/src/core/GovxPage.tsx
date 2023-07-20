@@ -10,7 +10,7 @@ import {
   renderCtaBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-  renderClientLogoCardBlockItem,
+  renderClientLogosGallery,
 } from '@gravis-os/landing'
 import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
@@ -114,51 +114,11 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        // renderClientLogosGallery({
-        //   items: clientLogos,
-        //   title:
-        //     'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
-        // }),
-        {
-          key: 'gallery',
-          center: true,
-          maxWidth: 'md',
-          items: [
-            {
-              type: 'h4',
-              title:
-                'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
-            },
-            {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 1 },
-              gridItemProps: { xs: 6, md: 4 },
-              gridItems: clientLogos.map((clientLogo) => {
-                console.log(clientLogo)
-                const {
-                  avatar_src,
-                  avatar_alt,
-                  avatar_width,
-                  avatar_height,
-                  sx,
-                } = clientLogo
-
-                return renderClientLogoCardBlockItem({
-                  title: avatar_src,
-                  titleProps: {
-                    alt: avatar_alt,
-                    width: avatar_width,
-                    height: avatar_height,
-                    sx,
-                    invertImageOnMode: 'light',
-                  },
-                })
-              }),
-            },
-          ],
-        },
+        renderClientLogosGallery({
+          items: clientLogos,
+          title:
+            'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
+        }),
         // Showcases
         renderShowcasesBlock({
           title: <>Empowering the Public Sector through AI-driven Solutions</>,
