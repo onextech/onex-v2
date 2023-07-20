@@ -1,6 +1,3 @@
-export { default as AtlasHomePage } from './AtlasHomePage'
-export * from './AtlasHomePage'
-
 export { default as AtlasServiceCategorysPage } from './AtlasServiceCategorysPage'
 export * from './AtlasServiceCategorysPage'
 
