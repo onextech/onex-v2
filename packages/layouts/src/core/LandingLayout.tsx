@@ -2,6 +2,8 @@ import React from 'react'
 import merge from 'lodash/merge'
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
 import { Button, Image, LocalePicker } from '@gravis-os/ui'
+import { GetStartedPage } from '@onex/pages'
+import { useRouter } from 'next/router'
 import {
   Block,
   Blocks,
@@ -16,8 +18,6 @@ import {
   RenderHeaderMenuMobileBlockItemProps,
   useUserPreferences,
 } from '@gravis-os/landing'
-import { GetStartedPage } from '@onex/pages'
-import { useRouter } from 'next/router'
 
 // Style Constants
 const commonGridProps = { spacing: 0 }
@@ -693,14 +693,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       ),
       logo: <Image {...logoProps} />,
       companyName: site.company_title,
-      accordionProps: {
-        titleProps: { variant: 'h7' },
-        itemTitleProps: {
-          variant: 'body2',
-          color: 'text.secondary',
-          hoverColor: 'inherit',
-        },
-      },
       navItems: footerNavConfig,
       legalItems,
       socialMediaItems,
