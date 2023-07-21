@@ -1742,15 +1742,7 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.8.tgz#428cd225c6bccc90ada99f0c0dd87122136f78fe"
   integrity sha512-sSjYOi83AYV6Rn+it46mlf41d5Z4ab16rHkkveZA03rvjrfpbKCkO6UjmFDVj8NeM+MQDqkcQg3csZnOyc1j9A==
 
-"@gravis-os/types@*":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.3.2.tgz#048b852ecf072b421563babd203abbab5f16b19d"
-  integrity sha512-W8+hIp6blu5exHo9W9VuLB6B3LdMC/pLHmacC4WHlNGOQSfIbOP1TlrxsyEMjZzIqlW1GY9g4VVNmYhEQxQh+Q==
-  dependencies:
-    tslib "^2.4.0"
-    typescript "^4.6.3"
-
-"@gravis-os/types@^0.3.3":
+"@gravis-os/types@*", "@gravis-os/types@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.3.3.tgz#ce2775dd950b8b5b727b535fdbdaf8b27c459041"
   integrity sha512-oEkXptJywPXjZRhhStNZpUBlve1OSmAIkbgjJr9ltrS366pkCryB/Hribkw504KDvMpaLc1kzXMslmb0H+c4/A==
@@ -1758,10 +1750,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.5.0.tgz#9839ee1b693d71b7a653f00c2686dcb0d95f05fc"
-  integrity sha512-tgMMWWemcRcLI8upBndJXyDAHJ95jgYRg5XP2ZHWAR4+B+oeuMYxCFGCUmvx8reLH6gLMLB2Ish9QepdQG1GnA==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.5.1.tgz#f32027d8479849dc282cc5b37cdfe79a01e08a93"
+  integrity sha512-0AZc9P6gCcUJoB/Gj4bRe4aCQYhwGeDSvz7Tm2JqkIaxueG4qPT3PP6semLFTGOCf2rFmYZPPbgSIa03Wrbx4w==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"

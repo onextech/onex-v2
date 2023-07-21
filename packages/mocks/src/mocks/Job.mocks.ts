@@ -23,6 +23,7 @@ export const MOCK_JOBS = [
   href: `/${item.slug}`,
   ctaUrl: 'https://www.linkedin.com/jobs/view/3511238718',
   html:
+    '<br>\n' +
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">Roles and responsibilities:</span></strong></span></span></h4>\n' +
     '<ol class="css-bcmuw8" data-slate-node="element">\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
@@ -35,7 +36,7 @@ export const MOCK_JOBS = [
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Cultivate mutually beneficial strategic and commercially viable partnership with enterprise accounts and other channel intermediaries that expand opportunities for sales and revenue, drive sales, sustainability, and growth, as well as loyalty and repeat business.</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
-    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Work with internal groups to deliver GoTyme&rsquo;s service &amp; product promise to improve efficiency, quality and customers satisfaction consistent with GoTyme&rsquo;s Way.</span></span></span></div>\n' +
+    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Work with internal groups to deliver One X Group Pte. Ltd.&rsquo;s service &amp; product promise to improve efficiency, quality and customers satisfaction consistent with One X Group Pte. Ltd.&rsquo;s Way.</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Ensures best possible planning, execution and management of resources in accordance with business strategies and guidelines (regional budget management, manpower, project execution timelines, and cadence).</span></span></span></div>\n' +
@@ -44,7 +45,7 @@ export const MOCK_JOBS = [
     '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Drive adherence to the consistent application of organisational processes and administrative standards to maintain efficient operations through personal example.</span></span></span></div>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
-    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">&nbsp;Future acquisitions that may include merchants and other industries that will have GoTyme Bank as one of the MOPs.</span></span></span></div>\n' +
+    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">&nbsp;Future acquisitions that may include merchants and other industries that will have One X Group Pte. Ltd. as one of the MOPs.</span></span></span></div>\n' +
     '    </li>\n' +
     '</ol>\n' +
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">What does success look like?</span></strong></span></span></h4>\n' +
@@ -81,7 +82,7 @@ export const MOCK_JOBS = [
     '        </ol>\n' +
     '    </li>\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
-    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Acceptance of GoTyme&rsquo;s products to Enterprise to achieve acquisition target.</span></span></span></div>\n' +
+    '        <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Acceptance of One X Group Pte. Ltd.&rsquo;s products to Enterprise to achieve acquisition target.</span></span></span></div>\n' +
     '        <ol class="css-bcmuw8" data-slate-node="element">\n' +
     '            <li class="css-1eg5fk0" data-slate-node="element">\n' +
     '                <div class="css-ss00rg" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-string="true">Disbursement (Payroll, &nbsp;Allowances, etc.)</span></span></span></div>\n' +

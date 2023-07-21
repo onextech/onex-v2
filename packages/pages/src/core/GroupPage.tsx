@@ -12,8 +12,16 @@ import {
   renderHeroWithVideoSlider,
   renderFeaturedResourcesBlock,
   useLayout,
+  renderFeaturedNewsBlock,
 } from '@gravis-os/landing'
-import { Industry, Page, Post, Showcase, Resource } from '@gravis-os/types'
+import {
+  Industry,
+  Page,
+  Post,
+  Showcase,
+  Resource,
+  PressRelease,
+} from '@gravis-os/types'
 import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {
@@ -23,11 +31,19 @@ export interface GroupPageProps {
   showcases: Showcase[]
   industrys: Industry[]
   resources: Resource[]
+  featuredPressReleases: PressRelease[]
 }
 
 const GroupPage: React.FC<GroupPageProps> = (props) => {
-  const { page, showcases, featuredPosts, heroPosts, industrys, resources } =
-    props
+  const {
+    page,
+    showcases,
+    featuredPosts,
+    heroPosts,
+    industrys,
+    resources,
+    featuredPressReleases,
+  } = props
 
   const { sections } = page || {}
   const { benefits, faqs, cta, summary } = sections || {}
@@ -108,6 +124,10 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             ...faqs,
             sx: { backgroundColor: 'background.paper' },
           }),
+        // News
+        renderFeaturedNewsBlock({
+          items: featuredPressReleases,
+        }),
         // Resources
         renderFeaturedResourcesBlock({
           items: resources,

@@ -26,6 +26,7 @@ import {
   Technology,
   Workspace,
   Showcase,
+  PressRelease,
 } from '@gravis-os/types'
 
 const { MOCK_KEY = '' } = process.env
@@ -44,6 +45,7 @@ export interface LayoutConfig {
   technologys?: Technology[]
   showcases?: Showcase[]
   workspaces?: Workspace[]
+  pressReleases?: PressRelease[]
 }
 
 const layoutConfig: LayoutConfig = {

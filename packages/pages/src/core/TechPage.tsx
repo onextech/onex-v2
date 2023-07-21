@@ -12,9 +12,17 @@ import {
   renderCtaBlock,
   renderClientTestimonialSliderBlock,
   useLayout,
+  renderFeaturedNewsBlock,
 } from '@gravis-os/landing'
 import { GetStartedPage } from '@onex/pages'
-import { Showcase, Page, Post, Technology, Industry } from '@gravis-os/types'
+import {
+  Showcase,
+  Page,
+  Post,
+  Technology,
+  Industry,
+  PressRelease,
+} from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {
@@ -23,10 +31,18 @@ export interface TechPageProps {
   technologys: Technology[]
   featuredPosts: Post[]
   industrys: Industry[]
+  featuredPressReleases: PressRelease[]
 }
 
 const TechPage: React.FC<TechPageProps> = (props) => {
-  const { page, showcases, technologys, featuredPosts, industrys } = props
+  const {
+    page,
+    showcases,
+    technologys,
+    featuredPosts,
+    industrys,
+    featuredPressReleases,
+  } = props
   const router = useRouter()
   const { site, clientLogos, clientTestimonials } = useLayout()
   const { locales, cta_button_title } = site
@@ -108,6 +124,8 @@ const TechPage: React.FC<TechPageProps> = (props) => {
             : `Read our Latest Insights`,
           items: featuredPosts,
         }),
+        // News
+        renderFeaturedNewsBlock({ items: featuredPressReleases }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs
