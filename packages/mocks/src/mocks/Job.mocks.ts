@@ -23,7 +23,6 @@ export const MOCK_JOBS = [
   href: `/${item.slug}`,
   ctaUrl: 'https://www.linkedin.com/jobs/view/3511238718',
   html:
-    '<br>\n' +
     '<h4 class="css-v3beis" data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><strong class="css-35ezg3" data-slate-leaf="true"><span data-slate-string="true">Roles and responsibilities:</span></strong></span></span></h4>\n' +
     '<ol class="css-bcmuw8" data-slate-node="element">\n' +
     '    <li class="css-1eg5fk0" data-slate-node="element">\n' +
