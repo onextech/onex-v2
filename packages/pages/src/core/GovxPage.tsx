@@ -11,8 +11,16 @@ import {
   renderHeroWithBackgroundBlock,
   useLayout,
   renderClientLogosGallery,
+  renderFeaturedNewsBlock,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Technology, Showcase } from '@gravis-os/types'
+import {
+  Page,
+  Post,
+  Industry,
+  Technology,
+  Showcase,
+  PressRelease,
+} from '@gravis-os/types'
 import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
 
@@ -22,10 +30,11 @@ export interface GovxPageProps {
   technologys: Technology[]
   featuredPosts: Post[]
   industrys: Industry[]
+  featuredPressReleases: PressRelease[]
 }
 
 const GovxPage: React.FC<GovxPageProps> = (props) => {
-  const { page, showcases, featuredPosts } = props
+  const { page, showcases, featuredPosts, featuredPressReleases } = props
   const router = useRouter()
   const { site, clientLogos } = useLayout()
   const { locales } = site
@@ -134,6 +143,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
             : `Read our Latest Insights`,
           items: featuredPosts,
         }),
+        // News
+        renderFeaturedNewsBlock({ items: featuredPressReleases }),
         // Features
         renderThreeColumnGridBlock(features),
         // Faqs

@@ -8,8 +8,9 @@ import {
   useLayout,
   renderHeroWithVideoBackgroundBlock,
   renderClientLogosGallery,
+  renderFeaturedNewsBlock,
 } from '@gravis-os/landing'
-import { Industry, Page, Post, Showcase } from '@gravis-os/types'
+import { Industry, Page, Post, Showcase, PressRelease } from '@gravis-os/types'
 import { routeConfig } from '@onex/common'
 
 export interface AelPageProps {
@@ -17,6 +18,7 @@ export interface AelPageProps {
   featuredPosts: Post[]
   showcases: Showcase[]
   industrys: Industry[]
+  featuredPressReleases: PressRelease[]
 }
 
 const buttonProps = {
@@ -34,7 +36,8 @@ const buttonProps = {
 }
 
 const AelPage: React.FC<AelPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys } = props
+  const { page, showcases, featuredPosts, industrys, featuredPressReleases } =
+    props
 
   const { sections } = page || {}
   const { hero, benefits, faqs, cta, summary } = sections || {}
@@ -137,6 +140,8 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           items: featuredPosts,
           pt: { xs: 3, md: 6 },
         }),
+        // News
+        renderFeaturedNewsBlock({ items: featuredPressReleases }),
       ]}
     />
   )

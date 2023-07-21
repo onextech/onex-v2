@@ -5,6 +5,7 @@ import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
 export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   {
     is_active: true,
+    is_featured: true,
     published_at: '2019-03-25T01:43:55+0800',
     title: 'One X Tech Launches Digitize™ Program',
     slug: 'one-x-tech-launches-digitize™-program',
@@ -20,6 +21,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2018-11-21T01:43:55+0800',
     title: 'One X Tech Moves to Robinson Road, Singapore',
     slug: 'one-x-tech-moves-to-robinson-road-singapore',
@@ -37,6 +39,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2018-10-19T01:43:55+0800',
     title: "Introducing One X Tech's Digital Business Suite",
     slug: 'one-x-tech-digital-business-suite',
@@ -53,6 +56,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-02-13T01:43:55+0800',
     title:
       'Tyme Digital Banking collaborates with One X Tech to redesign its digital capabilities to build up brand presence',
@@ -77,6 +81,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2022-04-07T01:43:55+0800',
     title:
       'Launch of NextGEN Connect Challenge Platform at the International Maritime Organisation Future of Shipping Conference 2022',
@@ -103,6 +108,7 @@ export const MOCK_COMMON_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2021-07-26T01:43:55+0800',
     title:
       'Mr Bucket and One X Tech partner to deliver custom chocolate gifts to the online market',
@@ -134,6 +140,7 @@ export const MOCK_TECH_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-05-29T01:43:55+0800',
     title:
       'Introducing the Revamped One X Tech Website: Unveiling a New Technological Era',
@@ -177,6 +184,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-07-12T01:43:55+0800',
     title: 'One X Group Broadens Horizons with One X Design',
     slug: 'one-x-group-expands-into-ui-ux-with-one-x-design',
@@ -205,6 +213,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-07-10T01:43:55+0800',
     title: 'One X Group Dives into Frontend Development, Launching One X Tech',
     slug: 'one-x-group-launches-one-x-tech-frontend-development',
@@ -231,6 +240,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-07-07T01:43:55+0800',
     title: 'One X Group Dives into Data; Introduces One X Data',
     slug: 'one-x-group-launches-one-x-data',
@@ -256,6 +266,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-05-30T01:43:55+0800',
     title:
       'Revolutionizing Technology Solutions: Introducing the New One X Group Website',
@@ -280,6 +291,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-06-30T01:43:55+0800',
     title: 'Unveiling the Future of Unique Enterprise Software Development',
     slug: 'unveiling-future-unique-enterprise-software-development',
@@ -305,6 +317,7 @@ export const MOCK_DATA_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-05-30T01:43:55+0800',
     title:
       'Introducing One X Data: Revolutionizing Enterprise Data and AI Solutions',
@@ -341,6 +354,7 @@ export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
   {
     is_active: true,
+    is_featured: true,
     published_at: '2023-06-01T01:43:55+0800',
     title:
       'Introducing One X Design: Redefining User Experience and Interface Design',
@@ -379,16 +393,30 @@ export const MOCK_DESIGN_PRESS_RELEASES: PressRelease[] = [
   ...item,
 }))
 
-export const MOCK_DIGITAL_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_DIGITAL_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
 
-export const MOCK_FINX_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_FINX_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
 
-export const MOCK_GOVX_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_GOVX_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
 
-export const MOCK_AEL_PRESS_RELEASES: PressRelease[] = []
-export const MOCK_SRI_PRESS_RELEASES: PressRelease[] = []
-export const MOCK_GVS_PRESS_RELEASES: PressRelease[] = []
-export const MOCK_COASTAL_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_AEL_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
+export const MOCK_SRI_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
+export const MOCK_GVS_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
+export const MOCK_COASTAL_PRESS_RELEASES: PressRelease[] = [
+  ...MOCK_COMMON_PRESS_RELEASES,
+]
 
 export const MOCK_PRESS_RELEASES = {
   GROUP: MOCK_GROUP_PRESS_RELEASES,

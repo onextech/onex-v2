@@ -6,6 +6,7 @@ import {
   MOCK_SHOWCASES,
   MOCK_POSTS,
   MOCK_INDUSTRYS,
+  MOCK_PRESS_RELEASES,
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import {
@@ -38,14 +39,26 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
-  ).slice(0, 6)
-
+  ).slice(0, 3)
+  const featuredPressReleases = orderBy(
+    MOCK_PRESS_RELEASES[MOCK_KEY],
+    'published_at',
+    'desc'
+  )
+    .filter(({ is_active }) => is_active)
+    .filter(
+      ({ published_at }) =>
+        published_at && dayjs(published_at).isBefore(dayjs())
+    )
+    .filter(({ is_featured }) => is_featured)
+    .slice(0, 3)
   return getStaticPropsWithLayout({
     props: {
       page,
       showcases,
       featuredPosts,
       industrys,
+      featuredPressReleases,
     },
   })(context)
 }
@@ -55,7 +68,15 @@ export interface NextAelPageProps
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextAelPage: React.FC<NextAelPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys, pageProviderProps } = props
+  const {
+    page,
+    showcases,
+    technologys,
+    featuredPosts,
+    industrys,
+    pageProviderProps,
+    featuredPressReleases,
+  } = props
 
   return (
     <PageProvider {...pageProviderProps}>
@@ -69,6 +90,7 @@ const NextAelPage: React.FC<NextAelPageProps> = (props) => {
           featuredPosts={featuredPosts}
           industrys={industrys}
           page={page}
+          featuredPressReleases={featuredPressReleases}
         />
       </LandingLayout>
     </PageProvider>
