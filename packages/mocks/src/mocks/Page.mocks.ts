@@ -4504,7 +4504,7 @@ export const MOCK_AEL_PAGES = [
         hero_alt: 'escalator',
         overline: '{appTitle}',
         title:
-          'Revolutionizing Public Sector Efficiency with Scalable AI Solutions',
+          'Revolutionizing Healthcare Efficiency with Scalable AI Solutions',
         buttons: [
           {
             overline: 'What we do',
@@ -4513,7 +4513,7 @@ export const MOCK_AEL_PAGES = [
           },
           {
             overline: 'Who we are',
-            title: 'Public Sector IT Experts',
+            title: 'Healthcare IT Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -4521,13 +4521,13 @@ export const MOCK_AEL_PAGES = [
       summary: {
         hero_src: '/images/about_banner_1.png',
         hero_alt: 'Laser net',
-        title: 'Unlocking the Potential of AI for Public Sector Transformation',
+        title: 'Unlocking the Potential of AI for Healthcare Transformation',
         subtitle:
           '{appTitle} leads the way in harnessing the potential of AI to drive unprecedented digital transformation across public sector industries, revolutionizing the way governments serve their citizens.',
         buttons: [
           {
             overline: 'Who we are',
-            title: 'Public Sector IT Experts',
+            title: 'Healthcare IT Experts',
             href: routeConfig.CAREERS,
           },
         ],
@@ -4535,7 +4535,7 @@ export const MOCK_AEL_PAGES = [
       callout: {
         hero_src: '/images/about_banner_2.png',
         hero_alt: 'hero',
-        title: 'Expanding Horizons of Public Sector Innovation',
+        title: 'Expanding Horizons of Healthcare Innovation',
         subtitle:
           'At {appTitle}, we push the boundaries of public sector innovation, opening up new possibilities and transforming the way governments operate and serve their communities.',
         buttons: [
@@ -4550,7 +4550,7 @@ export const MOCK_AEL_PAGES = [
         hero_src: '/images/about_binary.png',
         hero_alt: 'about_binary',
         overline: 'What we do',
-        title: 'Bridging the Gap in Public Sector Digitalization',
+        title: 'Bridging the Gap in Healthcare Digitalization',
         subtitle:
           '{appTitle} bridges the public sector digitalization gap, empowering governments with transformative solutions to modernize operations, streamline processes, and enhance public services.',
         items: [
@@ -4574,7 +4574,7 @@ export const MOCK_AEL_PAGES = [
             avatar_src: '/images/about_shape_square_with_circle.svg',
             avatar_alt: 'Square with two circles',
             overline: '03',
-            title: 'Advanced Public Sector Analytics',
+            title: 'Advanced Healthcare Analytics',
             subtitle:
               'Uncover actionable insights and make data-driven decisions that optimize operations, enhance citizen services, and drive meaningful impact.',
           },
@@ -4582,7 +4582,7 @@ export const MOCK_AEL_PAGES = [
       },
       cta: {
         hero_src: '/images/about_banner_3.png',
-        title: 'Empowering Public Sector Innovation with AI',
+        title: 'Empowering Healthcare Innovation with AI',
         hero_alt: 'Laser net over city',
         subtitle:
           'Our dedicated team of AI experts, consultants, and designers are driven to redefine public sector possibilities through cutting-edge technologies, unlocking new levels of innovation and digital transformation.',
@@ -4604,7 +4604,7 @@ export const MOCK_AEL_PAGES = [
         hero_src: '/images/contact_world_map_in_dots.svg',
         hero_alt: 'contact_world_map_in_dots',
         overline: 'Our Locations',
-        title: 'Empowering Public Sector Transformation Across Locations',
+        title: 'Empowering Healthcare Transformation Across Locations',
         subtitle:
           "{appTitle}'s reach extends its transformative solutions across diverse locations, enabling public sector organisations worldwide to unlock their full potential, drive innovation, and deliver impactful services to their local communities.",
         items: [
@@ -4643,7 +4643,7 @@ export const MOCK_AEL_PAGES = [
         hero_src: '/images/about_working_in_office.png',
         hero_alt: 'People working in an office',
         overline: 'Careers',
-        title: 'Revolutionize Public Sector Enterprises with AI',
+        title: 'Revolutionize Healthcare Enterprises with AI',
         subtitle:
           'At {appTitle}, we are dedicated to helping companies in the public sector unlock the full potential of digital transformation, enabling them to deliver efficient, citizen-centric services and embrace the opportunities offered by emerging technologies. Join us on the journey towards a digitally empowered public sector.',
         buttons: [
@@ -4967,13 +4967,6 @@ export const MOCK_AEL_PAGES = [
         ],
       },
     },
-  },
-  {
-    title: 'News',
-    slug: 'news',
-    href: routeConfig.PRESS_RELEASES,
-    subtitle:
-      'Stay up-to-date with the latest trends in the digital landscape.',
   },
 ].map((page) => ({
   ...MOCK_PAGE,

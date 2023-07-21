@@ -4071,7 +4071,648 @@ export const MOCK_FINX_INDUSTRYS = [
 
 export const MOCK_GOVX_INDUSTRYS = []
 
-export const MOCK_AEL_INDUSTRYS = []
+export const MOCK_AEL_INDUSTRYS = [
+  {
+    title: 'Medicine',
+    slug: 'medicine',
+    fa_icon: 'fa-shield-alt',
+    is_featured: true,
+    subtitle:
+      'Streamline regulatory compliance and risk management with our advanced regtech solutions.',
+    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_alt: 'Regtech',
+    // Seo
+    seo: {
+      title: 'Regtech',
+      description:
+        'Discover how our regtech solutions can help businesses streamline regulatory compliance and risk management.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transform Regulatory Compliance with Regtech Solutions.',
+        items: [
+          {
+            title:
+              'In the highly regulated business landscape, regulatory compliance and risk management are of utmost importance. At our Regtech Solutions, we specialize in providing digital solutions and consulting services to help businesses navigate the complexities of regulatory requirements and streamline compliance processes.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by businesses in adhering to regulations, and we leverage advanced technologies to deliver innovative regtech solutions that enhance compliance efficiency and reduce risks. Our team of experts combines regulatory knowledge with digital expertise to develop comprehensive regtech solutions that address the specific compliance needs of our clients.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Optimize regulatory compliance and risk management with our comprehensive regtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Regulatory Compliance Automation',
+            subtitle:
+              'Automate compliance processes and ensure adherence to regulatory requirements with our advanced regtech solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management Solutions',
+            subtitle:
+              'Identify and mitigate risks with our robust risk management solutions tailored to your business needs.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Governance and Privacy',
+            subtitle:
+              'Ensure data integrity, privacy, and security in compliance with regulatory guidelines using our data governance solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Compliance Reporting and Analytics',
+            subtitle:
+              'Generate accurate compliance reports and gain valuable insights into regulatory trends with our reporting and analytics solutions.',
+          },
+          {
+            fa_icon: 'fa-check-double',
+            title: 'KYC/AML Solutions',
+            subtitle:
+              'Streamline customer due diligence and anti-money laundering processes with our KYC/AML solutions.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Identity Verification',
+            subtitle:
+              'Verify customer identities and prevent fraud with our secure and efficient identity verification solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Regtech Solutions and how they can benefit businesses.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should businesses invest in regtech solutions?',
+            content:
+              'Regtech solutions offer numerous benefits for businesses, including streamlined regulatory compliance processes, enhanced risk management capabilities, improved data governance and privacy, accurate compliance reporting, efficient KYC/AML processes, and robust identity verification. By leveraging regtech solutions, businesses can ensure adherence to regulatory requirements, reduce compliance costs, mitigate risks, and maintain trust with stakeholders.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your Regulatory Compliance Automation solutions help businesses?',
+            content:
+              'Our Regulatory Compliance Automation solutions utilize advanced technologies such as artificial intelligence and machine learning to automate compliance processes. By automating repetitive tasks, ensuring data accuracy, and providing real-time monitoring and alerts, our solutions enable businesses to streamline compliance efforts, reduce manual errors, and stay up to date with regulatory changes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your KYC/AML Solutions stand out?',
+            content:
+              'Our KYC/AML Solutions are designed to help businesses simplify and strengthen their customer due diligence and anti-money laundering processes. We offer advanced identity verification techniques, intelligent risk scoring, and comprehensive compliance checks. Our solutions leverage data analytics and machine learning algorithms to identify potential risks and suspicious activities, enabling businesses to meet regulatory requirements and combat financial crimes effectively.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Health Administration',
+    slug: 'health-administration',
+    fa_icon: 'fa-file-contract',
+    is_featured: true,
+    subtitle:
+      'Transform your insurance business with our digital solutions and consulting services tailored to the insurtech industry.',
+    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_alt: 'Insurance',
+    // Seo
+    seo: {
+      title: 'Insurtech',
+      description:
+        'Discover how our digital solutions and consulting services can revolutionize the insurance industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Revolutionizing the Insurance Industry through Digital Transformation.',
+        items: [
+          {
+            title:
+              'At our Insurtech Service, we specialize in helping insurance companies navigate the digital landscape and leverage technology to drive innovation and deliver enhanced customer experiences.',
+          },
+          {
+            title:
+              'With our digital solutions and consulting services, we empower insurance businesses to streamline operations, improve efficiency, and stay competitive in the fast-paced insurtech industry.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our Insurtech Solutions',
+        subtitle:
+          'We combine cutting-edge technology, data-driven insights, and industry expertise to provide tailored digital solutions and consulting services for insurance companies.',
+        items: [
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'End-to-end digital transformation',
+            subtitle:
+              'We help insurance companies undergo a comprehensive digital transformation journey, from process optimization to customer engagement and data analytics.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Operational efficiency',
+            subtitle:
+              'We identify opportunities to streamline and automate operations, allowing insurance companies to improve efficiency, reduce costs, and enhance customer service.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics and insights',
+            subtitle:
+              'We leverage advanced analytics and data science techniques to extract valuable insights from vast amounts of insurance data, enabling data-driven decision-making and risk assessment.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk management and fraud detection',
+            subtitle:
+              'We implement robust risk management systems and employ cutting-edge technologies to detect and prevent fraudulent activities, safeguarding insurance companies and their customers.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Integration and interoperability',
+            subtitle:
+              'We enable seamless integration of systems and data across different platforms and stakeholders, facilitating collaboration and enhancing operational efficiency.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Enhanced customer experience',
+            subtitle:
+              'We design and implement customer-centric digital solutions, such as self-service portals and personalized interactions, to improve customer satisfaction and retention.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Insurtech Solutions and how they can drive digital transformation in the insurance industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can digital solutions benefit the insurance industry?',
+            content:
+              'Digital solutions can greatly benefit the insurance industry by improving operational efficiency, enhancing customer experiences, enabling data-driven decision-making, and streamlining processes for faster claims processing and underwriting.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What makes your Insurtech Solutions unique?',
+            content:
+              'Our Insurtech Solutions are tailored to the specific needs of insurance companies, combining industry expertise with cutting-edge technology. We provide end-to-end digital transformation support, encompassing everything from operational efficiency improvements to advanced analytics and customer experience enhancements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data security and privacy in your solutions?',
+            content:
+              'Data security and privacy are paramount in our solutions. We adhere to industry best practices and implement robust security measures to protect sensitive information. We also comply with relevant data protection regulations to ensure privacy and confidentiality.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Pharma',
+    slug: 'pharma',
+    fa_icon: 'fa-hand-holding-usd',
+    is_featured: true,
+    subtitle:
+      'Transform your banking and asset management operations with our innovative wealthtech solutions.',
+    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_alt: 'Wealthtech',
+    // Seo
+    seo: {
+      title: 'Wealthtech',
+      description:
+        'Discover how our wealthtech solutions can revolutionize your banking and asset management operations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering Banks and Asset Firms with Wealthtech Solutions.',
+        items: [
+          {
+            title:
+              'At our Wealthtech Solutions, we specialize in providing digital solutions and consulting services to banks and asset firms. Our wealthtech solutions are designed to streamline operations, enhance customer experiences, and drive growth in the financial industry.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by banks and asset firms, and we leverage advanced technologies to deliver innovative solutions that meet their specific needs. Our team of experts combines industry knowledge with digital expertise to transform traditional banking and asset management processes.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Unlock new opportunities and improve operational efficiency with our comprehensive wealthtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Digital Transformation Consulting',
+            subtitle:
+              'Partner with us to navigate the complexities of digital transformation and leverage technology to achieve strategic goals.',
+          },
+          {
+            fa_icon: 'fa-line-chart',
+            title: 'Investment Analysis & Management',
+            subtitle:
+              'Make informed investment decisions and optimize your portfolio with our advanced analysis and management solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Compliance',
+            subtitle:
+              'Ensure compliance with regulatory requirements and automate compliance processes with our comprehensive solutions.',
+          },
+          {
+            fa_icon: 'fa-people-carry',
+            title: 'Robo-Advisory Services',
+            subtitle:
+              'Leverage AI-driven robo-advisory services to deliver personalized investment advice and improve client engagement.',
+          },
+          {
+            fa_icon: 'fa-exclamation-triangle',
+            title: 'Risk Management',
+            subtitle:
+              'Mitigate risks and optimize risk management strategies with our data-driven risk management solutions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Solutions',
+            subtitle:
+              'Enhance customer experiences and enable seamless mobile banking with our user-friendly mobile banking solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Wealthtech Solutions and how they can benefit banks and asset firms.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why should banks and asset firms invest in wealthtech solutions?',
+            content:
+              'Wealthtech solutions offer numerous benefits for banks and asset firms, including increased operational efficiency, improved customer experiences, enhanced risk management, and better compliance with regulatory requirements. By embracing wealthtech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their clients.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your Digital Transformation Consulting services help banks and asset firms?',
+            content:
+              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complexities of digital disruption. We help identify strategic goals, assess existing systems and processes, and design customized digital solutions that streamline operations, improve customer engagement, and drive business growth. Our expertise in technology adoption and change management ensures a smooth and successful digital transformation journey.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your Regulatory Compliance solutions stand out?',
+            content:
+              'Our Regulatory Compliance solutions are designed to address the unique regulatory challenges faced by banks and asset firms. We provide comprehensive solutions that automate compliance processes, monitor regulatory changes, and ensure adherence to regulatory requirements. Our solutions leverage advanced technologies, such as artificial intelligence and machine learning, to enhance accuracy, efficiency, and effectiveness in regulatory compliance.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    title: 'Hospital',
+    slug: 'hospital',
+    fa_icon: 'fa-shield-alt',
+    is_featured: true,
+    subtitle:
+      'Streamline regulatory compliance and risk management with our advanced regtech solutions.',
+    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_alt: 'Regtech',
+    // Seo
+    seo: {
+      title: 'Regtech',
+      description:
+        'Discover how our regtech solutions can help businesses streamline regulatory compliance and risk management.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Transform Regulatory Compliance with Regtech Solutions.',
+        items: [
+          {
+            title:
+              'In the highly regulated business landscape, regulatory compliance and risk management are of utmost importance. At our Regtech Solutions, we specialize in providing digital solutions and consulting services to help businesses navigate the complexities of regulatory requirements and streamline compliance processes.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by businesses in adhering to regulations, and we leverage advanced technologies to deliver innovative regtech solutions that enhance compliance efficiency and reduce risks. Our team of experts combines regulatory knowledge with digital expertise to develop comprehensive regtech solutions that address the specific compliance needs of our clients.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Optimize regulatory compliance and risk management with our comprehensive regtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Regulatory Compliance Automation',
+            subtitle:
+              'Automate compliance processes and ensure adherence to regulatory requirements with our advanced regtech solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk Management Solutions',
+            subtitle:
+              'Identify and mitigate risks with our robust risk management solutions tailored to your business needs.',
+          },
+          {
+            fa_icon: 'fa-database',
+            title: 'Data Governance and Privacy',
+            subtitle:
+              'Ensure data integrity, privacy, and security in compliance with regulatory guidelines using our data governance solutions.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Compliance Reporting and Analytics',
+            subtitle:
+              'Generate accurate compliance reports and gain valuable insights into regulatory trends with our reporting and analytics solutions.',
+          },
+          {
+            fa_icon: 'fa-check-double',
+            title: 'KYC/AML Solutions',
+            subtitle:
+              'Streamline customer due diligence and anti-money laundering processes with our KYC/AML solutions.',
+          },
+          {
+            fa_icon: 'fa-user-shield',
+            title: 'Identity Verification',
+            subtitle:
+              'Verify customer identities and prevent fraud with our secure and efficient identity verification solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Regtech Solutions and how they can benefit businesses.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'Why should businesses invest in regtech solutions?',
+            content:
+              'Regtech solutions offer numerous benefits for businesses, including streamlined regulatory compliance processes, enhanced risk management capabilities, improved data governance and privacy, accurate compliance reporting, efficient KYC/AML processes, and robust identity verification. By leveraging regtech solutions, businesses can ensure adherence to regulatory requirements, reduce compliance costs, mitigate risks, and maintain trust with stakeholders.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your Regulatory Compliance Automation solutions help businesses?',
+            content:
+              'Our Regulatory Compliance Automation solutions utilize advanced technologies such as artificial intelligence and machine learning to automate compliance processes. By automating repetitive tasks, ensuring data accuracy, and providing real-time monitoring and alerts, our solutions enable businesses to streamline compliance efforts, reduce manual errors, and stay up to date with regulatory changes.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your KYC/AML Solutions stand out?',
+            content:
+              'Our KYC/AML Solutions are designed to help businesses simplify and strengthen their customer due diligence and anti-money laundering processes. We offer advanced identity verification techniques, intelligent risk scoring, and comprehensive compliance checks. Our solutions leverage data analytics and machine learning algorithms to identify potential risks and suspicious activities, enabling businesses to meet regulatory requirements and combat financial crimes effectively.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Life Sciences',
+    slug: 'life-sciences',
+    fa_icon: 'fa-file-contract',
+    is_featured: true,
+    subtitle:
+      'Transform your insurance business with our digital solutions and consulting services tailored to the insurtech industry.',
+    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_alt: 'Insurance',
+    // Seo
+    seo: {
+      title: 'Insurtech',
+      description:
+        'Discover how our digital solutions and consulting services can revolutionize the insurance industry.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title:
+          'Revolutionizing the Insurance Industry through Digital Transformation.',
+        items: [
+          {
+            title:
+              'At our Insurtech Service, we specialize in helping insurance companies navigate the digital landscape and leverage technology to drive innovation and deliver enhanced customer experiences.',
+          },
+          {
+            title:
+              'With our digital solutions and consulting services, we empower insurance businesses to streamline operations, improve efficiency, and stay competitive in the fast-paced insurtech industry.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our Insurtech Solutions',
+        subtitle:
+          'We combine cutting-edge technology, data-driven insights, and industry expertise to provide tailored digital solutions and consulting services for insurance companies.',
+        items: [
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'End-to-end digital transformation',
+            subtitle:
+              'We help insurance companies undergo a comprehensive digital transformation journey, from process optimization to customer engagement and data analytics.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Operational efficiency',
+            subtitle:
+              'We identify opportunities to streamline and automate operations, allowing insurance companies to improve efficiency, reduce costs, and enhance customer service.',
+          },
+          {
+            fa_icon: 'fa-chart-bar',
+            title: 'Data analytics and insights',
+            subtitle:
+              'We leverage advanced analytics and data science techniques to extract valuable insights from vast amounts of insurance data, enabling data-driven decision-making and risk assessment.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Risk management and fraud detection',
+            subtitle:
+              'We implement robust risk management systems and employ cutting-edge technologies to detect and prevent fraudulent activities, safeguarding insurance companies and their customers.',
+          },
+          {
+            fa_icon: 'fa-exchange-alt',
+            title: 'Integration and interoperability',
+            subtitle:
+              'We enable seamless integration of systems and data across different platforms and stakeholders, facilitating collaboration and enhancing operational efficiency.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Enhanced customer experience',
+            subtitle:
+              'We design and implement customer-centric digital solutions, such as self-service portals and personalized interactions, to improve customer satisfaction and retention.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'Frequently Asked Questions',
+        subtitle:
+          'Learn more about our Insurtech Solutions and how they can drive digital transformation in the insurance industry.',
+        items: [
+          {
+            key: 'faqs-1',
+            title: 'How can digital solutions benefit the insurance industry?',
+            content:
+              'Digital solutions can greatly benefit the insurance industry by improving operational efficiency, enhancing customer experiences, enabling data-driven decision-making, and streamlining processes for faster claims processing and underwriting.',
+          },
+          {
+            key: 'faqs-2',
+            title: 'What makes your Insurtech Solutions unique?',
+            content:
+              'Our Insurtech Solutions are tailored to the specific needs of insurance companies, combining industry expertise with cutting-edge technology. We provide end-to-end digital transformation support, encompassing everything from operational efficiency improvements to advanced analytics and customer experience enhancements.',
+          },
+          {
+            key: 'faqs-3',
+            title:
+              'How do you ensure data security and privacy in your solutions?',
+            content:
+              'Data security and privacy are paramount in our solutions. We adhere to industry best practices and implement robust security measures to protect sensitive information. We also comply with relevant data protection regulations to ensure privacy and confidentiality.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    // Hero
+    title: 'Biology',
+    slug: 'biology',
+    fa_icon: 'fa-hand-holding-usd',
+    is_featured: true,
+    subtitle:
+      'Transform your banking and asset management operations with our innovative wealthtech solutions.',
+    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_alt: 'Wealthtech',
+    // Seo
+    seo: {
+      title: 'Wealthtech',
+      description:
+        'Discover how our wealthtech solutions can revolutionize your banking and asset management operations.',
+    },
+    // Sections
+    sections: {
+      summary: {
+        title: 'Empowering Banks and Asset Firms with Wealthtech Solutions.',
+        items: [
+          {
+            title:
+              'At our Wealthtech Solutions, we specialize in providing digital solutions and consulting services to banks and asset firms. Our wealthtech solutions are designed to streamline operations, enhance customer experiences, and drive growth in the financial industry.',
+          },
+          {
+            title:
+              'We understand the unique challenges faced by banks and asset firms, and we leverage advanced technologies to deliver innovative solutions that meet their specific needs. Our team of experts combines industry knowledge with digital expertise to transform traditional banking and asset management processes.',
+          },
+        ],
+      },
+      features: {
+        overline: 'What we offer',
+        title: 'Our {title} Capabilities',
+        subtitle:
+          'Unlock new opportunities and improve operational efficiency with our comprehensive wealthtech solutions.',
+        items: [
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Digital Transformation Consulting',
+            subtitle:
+              'Partner with us to navigate the complexities of digital transformation and leverage technology to achieve strategic goals.',
+          },
+          {
+            fa_icon: 'fa-line-chart',
+            title: 'Investment Analysis & Management',
+            subtitle:
+              'Make informed investment decisions and optimize your portfolio with our advanced analysis and management solutions.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Regulatory Compliance',
+            subtitle:
+              'Ensure compliance with regulatory requirements and automate compliance processes with our comprehensive solutions.',
+          },
+          {
+            fa_icon: 'fa-people-carry',
+            title: 'Robo-Advisory Services',
+            subtitle:
+              'Leverage AI-driven robo-advisory services to deliver personalized investment advice and improve client engagement.',
+          },
+          {
+            fa_icon: 'fa-exclamation-triangle',
+            title: 'Risk Management',
+            subtitle:
+              'Mitigate risks and optimize risk management strategies with our data-driven risk management solutions.',
+          },
+          {
+            fa_icon: 'fa-mobile-alt',
+            title: 'Mobile Banking Solutions',
+            subtitle:
+              'Enhance customer experiences and enable seamless mobile banking with our user-friendly mobile banking solutions.',
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        subtitle:
+          'Find answers to common questions about our Wealthtech Solutions and how they can benefit banks and asset firms.',
+        items: [
+          {
+            key: 'faqs-1',
+            title:
+              'Why should banks and asset firms invest in wealthtech solutions?',
+            content:
+              'Wealthtech solutions offer numerous benefits for banks and asset firms, including increased operational efficiency, improved customer experiences, enhanced risk management, and better compliance with regulatory requirements. By embracing wealthtech, banks and asset firms can stay competitive, drive innovation, and deliver superior financial services to their clients.',
+          },
+          {
+            key: 'faqs-2',
+            title:
+              'How can your Digital Transformation Consulting services help banks and asset firms?',
+            content:
+              'Our Digital Transformation Consulting services empower banks and asset firms to navigate the complexities of digital disruption. We help identify strategic goals, assess existing systems and processes, and design customized digital solutions that streamline operations, improve customer engagement, and drive business growth. Our expertise in technology adoption and change management ensures a smooth and successful digital transformation journey.',
+          },
+          {
+            key: 'faqs-3',
+            title: 'What makes your Regulatory Compliance solutions stand out?',
+            content:
+              'Our Regulatory Compliance solutions are designed to address the unique regulatory challenges faced by banks and asset firms. We provide comprehensive solutions that automate compliance processes, monitor regulatory changes, and ensure adherence to regulatory requirements. Our solutions leverage advanced technologies, such as artificial intelligence and machine learning, to enhance accuracy, efficiency, and effectiveness in regulatory compliance.',
+          },
+        ],
+      },
+    },
+  },
+].map((item, i) => {
+  return merge({}, MOCK_INDUSTRY_PAGE, {
+    id: i + 1,
+    ...item,
+    sections: {
+      ...item.sections,
+      checklist: {
+        subtitle:
+          'Unlocking the potential of enterprise technology through expert data services tailored to drive your business growth.',
+      },
+      cta: {
+        hero_src: '/images/about_nodes_above_city.png',
+        hero_alt: 'Laser net over city',
+        overline: 'Get Started',
+        title: 'Partnering with {appTitle}',
+        subtitle:
+          "{appTitle} collaborates with enterprises to leverage data and AI for competitive advantage. Utilising future-proof technologies such as Python, JavaScript, SQL, ChatGPT, and Tableau, we provide customized data science services and AI solutions. Transforming raw data into actionable insights and automating complex processes, our expertise in data science and AI helps you unlock your data's potential and excel in the digital landscape.",
+      },
+    },
+  })
+})
 export const MOCK_SRI_INDUSTRYS = []
 export const MOCK_GVS_INDUSTRYS = []
 export const MOCK_COASTAL_INDUSTRYS = []

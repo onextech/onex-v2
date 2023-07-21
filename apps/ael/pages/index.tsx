@@ -1,6 +1,6 @@
 import React from 'react'
 import { LandingLayout } from '@app/layouts'
-import { GovxPage, GovxPageProps } from '@onex/pages'
+import { AelPage, AelPageProps } from '@onex/pages'
 import {
   MOCK_PAGES,
   MOCK_SHOWCASES,
@@ -27,11 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const prevPage = MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home')
   const page = getDynamicPage({ page: prevPage, context, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
-  const showcases = MOCK_SHOWCASES[MOCK_KEY]
-  // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
-  const technologys = MOCK_TECHNOLOGYS[MOCK_KEY].filter(
-    ({ is_featured }) => is_featured
-  ).slice(0, 8)
+  const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(1, 4)
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
   const featuredPosts = orderBy(MOCK_POSTS[MOCK_KEY], 'published_at', 'desc')
     .filter(({ is_active }) => is_active)
@@ -61,7 +57,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       page,
       showcases,
-      technologys,
       featuredPosts,
       industrys,
       featuredPressReleases,
@@ -69,8 +64,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   })(context)
 }
 
-export interface NextGovxPageProps
-  extends GovxPageProps,
+export interface NextAelPageProps
+  extends AelPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
 const NextGovxPage: React.FC<NextGovxPageProps> = (props) => {
@@ -91,10 +86,9 @@ const NextGovxPage: React.FC<NextGovxPageProps> = (props) => {
         transparentHeader
         headerProps={{ translucentAtScrollY: 755 }}
       >
-        <GovxPage
+        <AelPage
           showcases={showcases}
           featuredPosts={featuredPosts}
-          technologys={technologys}
           industrys={industrys}
           page={page}
           featuredPressReleases={featuredPressReleases}
@@ -104,4 +98,4 @@ const NextGovxPage: React.FC<NextGovxPageProps> = (props) => {
   )
 }
 
-export default NextGovxPage
+export default NextAelPage

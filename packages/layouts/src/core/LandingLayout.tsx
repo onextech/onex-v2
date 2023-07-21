@@ -82,7 +82,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       title: 'Portfolio',
       href: routeConfig.SHOWCASES,
     },
-    {
+    services?.length && {
       key: 'services',
       title: 'Services',
       href: routeConfig.SERVICES,
@@ -328,7 +328,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    {
+    postCategorys?.length && {
       key: 'insights',
       title: 'Insights',
       href: routeConfig.POSTS,
@@ -408,7 +408,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         )
       },
     },
-    {
+    pages?.length && {
       key: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
@@ -574,16 +574,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       key: 'services',
       title: 'Services',
       href: routeConfig.SERVICES,
-      items: services.map((service) => ({
-        key: service.title,
-        title: (
-          <Block
-            {...renderHeaderMenuMobileBlockItem(
-              service as RenderHeaderMenuMobileBlockItemProps
-            )}
-          />
-        ),
-      })),
+      items: services,
     },
     industrys?.length && {
       key: 'industrys',
