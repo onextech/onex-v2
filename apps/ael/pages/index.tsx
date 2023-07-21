@@ -6,7 +6,6 @@ import {
   MOCK_SHOWCASES,
   MOCK_POSTS,
   MOCK_INDUSTRYS,
-  MOCK_TECHNOLOGYS,
   MOCK_PRESS_RELEASES,
 } from '@onex/mocks'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
@@ -68,7 +67,7 @@ export interface NextAelPageProps
   extends AelPageProps,
     InferGetStaticPropsType<typeof getStaticProps> {}
 
-const NextGovxPage: React.FC<NextGovxPageProps> = (props) => {
+const NextAelPage: React.FC<NextAelPageProps> = (props) => {
   const {
     page,
     showcases,
