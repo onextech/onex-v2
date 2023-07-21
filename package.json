@@ -37,6 +37,7 @@
     "@gravis-os/landing": "^0.19.1",
     "@gravis-os/query": "^0.0.33",
     "@gravis-os/theme": "^0.0.14",
+    "@gravis-os/types": "^0.3.3",
     "@gravis-os/ui": "^0.5.0",
     "@gravis-os/utils": "^0.1.3"
   },
