@@ -227,11 +227,11 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   telegartner: {
     avatar_src: '/logos/logo_telegartner.png',
     avatar_alt: 'logo_telegartner',
-    avatar_width: 125,
-    avatar_height: 48,
+    avatar_width: 130,
+    avatar_height: 50,
     sx: {
-      width: { xs: 125 * 0.8, md: 125 },
-      height: { xs: 48 * 0.8, md: 48 },
+      width: { xs: 130 * 0.8, md: 130 },
+      height: { xs: 50 * 0.8, md: 50 },
     },
   },
   kramer: {
@@ -247,21 +247,21 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   bedea: {
     avatar_src: '/logos/logo_bedea.png',
     avatar_alt: 'logo_bedea',
-    avatar_width: 100,
-    avatar_height: 26,
+    avatar_width: 110,
+    avatar_height: 30,
     sx: {
-      width: { xs: 100 * 0.8, md: 100 },
-      height: { xs: 26 * 0.8, md: 26 },
+      width: { xs: 110 * 0.8, md: 110 },
+      height: { xs: 30 * 0.8, md: 30 },
     },
   },
   dorrough: {
     avatar_src: '/logos/logo_dorrough.png',
     avatar_alt: 'logo_dorrough',
-    avatar_width: 130,
-    avatar_height: 30,
+    avatar_width: 140,
+    avatar_height: 33,
     sx: {
-      width: { xs: 130 * 0.8, md: 130 },
-      height: { xs: 30 * 0.8, md: 30 },
+      width: { xs: 140 * 0.8, md: 140 },
+      height: { xs: 33 * 0.8, md: 33 },
     },
   },
   weller: {
@@ -307,21 +307,21 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   fischer: {
     avatar_src: '/logos/logo_fischer.png',
     avatar_alt: 'logo_fischer',
-    avatar_width: 75,
-    avatar_height: 30,
+    avatar_width: 80,
+    avatar_height: 32,
     sx: {
-      width: { xs: 75 * 0.8, md: 75 },
-      height: { xs: 30 * 0.8, md: 30 },
+      width: { xs: 80 * 0.8, md: 80 },
+      height: { xs: 32 * 0.8, md: 32 },
     },
   },
   blackmagic: {
     avatar_src: '/logos/logo_blackmagic.png',
     avatar_alt: 'logo_blackmagic',
-    avatar_width: 140,
-    avatar_height: 50,
+    avatar_width: 150,
+    avatar_height: 53,
     sx: {
-      width: { xs: 140 * 0.8, md: 140 },
-      height: { xs: 50 * 0.8, md: 50 },
+      width: { xs: 150 * 0.8, md: 150 },
+      height: { xs: 53 * 0.8, md: 53 },
     },
   },
   muxlab: {
@@ -337,11 +337,11 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
   cwc: {
     avatar_src: '/logos/logo_cwc.png',
     avatar_alt: 'logo_cwc',
-    avatar_width: 110,
-    avatar_height: 36,
+    avatar_width: 120,
+    avatar_height: 40,
     sx: {
-      width: { xs: 110 * 0.8, md: 110 },
-      height: { xs: 36 * 0.8, md: 36 },
+      width: { xs: 120 * 0.8, md: 120 },
+      height: { xs: 40 * 0.8, md: 40 },
     },
   },
 }
