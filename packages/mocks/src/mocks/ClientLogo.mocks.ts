@@ -224,6 +224,126 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
       height: { xs: 40 * 0.8, md: 40 },
     },
   },
+  telegartner: {
+    avatar_src: '/logos/logo_telegartner.png',
+    avatar_alt: 'logo_telegartner',
+    avatar_width: 130,
+    avatar_height: 50,
+    sx: {
+      width: { xs: 130 * 0.8, md: 130 },
+      height: { xs: 50 * 0.8, md: 50 },
+    },
+  },
+  kramer: {
+    avatar_src: '/logos/logo_kramer.png',
+    avatar_alt: 'logo_kramer',
+    avatar_width: 145,
+    avatar_height: 45,
+    sx: {
+      width: { xs: 145 * 0.8, md: 145 },
+      height: { xs: 45 * 0.8, md: 45 },
+    },
+  },
+  bedea: {
+    avatar_src: '/logos/logo_bedea.png',
+    avatar_alt: 'logo_bedea',
+    avatar_width: 110,
+    avatar_height: 30,
+    sx: {
+      width: { xs: 110 * 0.8, md: 110 },
+      height: { xs: 30 * 0.8, md: 30 },
+    },
+  },
+  dorrough: {
+    avatar_src: '/logos/logo_dorrough.png',
+    avatar_alt: 'logo_dorrough',
+    avatar_width: 140,
+    avatar_height: 33,
+    sx: {
+      width: { xs: 140 * 0.8, md: 140 },
+      height: { xs: 33 * 0.8, md: 33 },
+    },
+  },
+  weller: {
+    avatar_src: '/logos/logo_weller.png',
+    avatar_alt: 'logo_weller',
+    avatar_width: 105,
+    avatar_height: 28,
+    sx: {
+      width: { xs: 105 * 0.8, md: 105 },
+      height: { xs: 28 * 0.8, md: 28 },
+    },
+  },
+  erem: {
+    avatar_src: '/logos/logo_erem.png',
+    avatar_alt: 'logo_erem',
+    avatar_width: 84,
+    avatar_height: 23,
+    sx: {
+      width: { xs: 84 * 0.8, md: 84 },
+      height: { xs: 23 * 0.8, md: 23 },
+    },
+  },
+  xcelite: {
+    avatar_src: '/logos/logo_xcelite.png',
+    avatar_alt: 'logo_xcelite',
+    avatar_width: 85,
+    avatar_height: 34,
+    sx: {
+      width: { xs: 85 * 0.8, md: 85 },
+      height: { xs: 34 * 0.8, md: 34 },
+    },
+  },
+  pressmaster: {
+    avatar_src: '/logos/logo_pressmaster.png',
+    avatar_alt: 'logo_pressmaster',
+    avatar_width: 135,
+    avatar_height: 30,
+    sx: {
+      width: { xs: 135 * 0.8, md: 135 },
+      height: { xs: 30 * 0.8, md: 30 },
+    },
+  },
+  fischer: {
+    avatar_src: '/logos/logo_fischer.png',
+    avatar_alt: 'logo_fischer',
+    avatar_width: 80,
+    avatar_height: 32,
+    sx: {
+      width: { xs: 80 * 0.8, md: 80 },
+      height: { xs: 32 * 0.8, md: 32 },
+    },
+  },
+  blackmagic: {
+    avatar_src: '/logos/logo_blackmagic.png',
+    avatar_alt: 'logo_blackmagic',
+    avatar_width: 150,
+    avatar_height: 53,
+    sx: {
+      width: { xs: 150 * 0.8, md: 150 },
+      height: { xs: 53 * 0.8, md: 53 },
+    },
+  },
+  muxlab: {
+    avatar_src: '/logos/logo_muxlab.png',
+    avatar_alt: 'logo_muxlab',
+    avatar_width: 127,
+    avatar_height: 36,
+    sx: {
+      width: { xs: 127 * 0.8, md: 127 },
+      height: { xs: 36 * 0.8, md: 36 },
+    },
+  },
+  cwc: {
+    avatar_src: '/logos/logo_cwc.png',
+    avatar_alt: 'logo_cwc',
+    avatar_width: 120,
+    avatar_height: 40,
+    sx: {
+      width: { xs: 120 * 0.8, md: 120 },
+      height: { xs: 40 * 0.8, md: 40 },
+    },
+  },
 }
 
 export const MOCK_GROUP_CLIENT_LOGOS = Object.values(
@@ -273,7 +393,22 @@ export const MOCK_AEL_CLIENT_LOGOS = Object.values(
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 export const MOCK_SRI_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
 export const MOCK_GVS_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
-export const MOCK_COASTAL_CLIENT_LOGOS = MOCK_GROUP_CLIENT_LOGOS
+export const MOCK_COASTAL_CLIENT_LOGOS = Object.values(
+  pick(MOCK_CLIENT_LOGOS_OBJECT, [
+    'muxlab',
+    'kramer',
+    'erem',
+    'xcelite',
+    'weller',
+    'pressmaster',
+    'dorrough',
+    'bedea',
+    'blackmagic',
+    'fischer',
+    'telegartner',
+    'cwc',
+  ])
+).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 
 export const MOCK_CLIENT_LOGOS = {
   GROUP: MOCK_GROUP_CLIENT_LOGOS,
