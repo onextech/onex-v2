@@ -1780,7 +1780,8 @@ const MOCK_TECH_PAGES = [
           "{appTitle} provides high-performing, on-demand frontend teams for {localeTitle}'s leading companies.",
       },
       summary: {
-        title: 'Innovation that drives real impact.',
+        title:
+          'Accelerating product delivery with high-performing software teams to create modern user experiences in a world of conventional software.',
         items: [
           {
             title:
@@ -2304,6 +2305,20 @@ export const MOCK_DATA_PAGES = [
         subtitle:
           '{appTitle} specializes in enterprise data and AI solutions for {localeTitle}’s leading companies.',
       },
+      summary: {
+        title:
+          'In a world overwhelmed by AI potential, {appTitle} leads businesses by bringing the transformative power of AI to work.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
       benefits: {
         overline: 'What we do',
         title: 'Harnessing the Power of AI for Enterprises',
@@ -2750,6 +2765,20 @@ export const MOCK_DESIGN_PAGES = [
         subtitle:
           "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
       },
+      summary: {
+        title:
+          'In a world inundated with disjointed digital experiences, {appTitle} empowers businesses with unified design systems and delightful user experiences.',
+        items: [
+          {
+            title:
+              'In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and industrys that don’t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.',
+          },
+          {
+            title:
+              'Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.',
+          },
+        ],
+      },
       benefits: {
         overline: 'What we do',
         title: 'Delivering Enterprise-Scale Design Solutions',
@@ -3192,7 +3221,8 @@ export const MOCK_DIGITAL_PAGES = [
           "{appTitle} harnesses the power of digital marketing to push business growth in {localeTitle}'s leading companies.",
       },
       summary: {
-        title: 'Innovation that drives real impact.',
+        title:
+          'In a world of vast digital marketing, {appTitle} drives B2B growth for businesses looking to establish a strong online presence in the digital landscape.',
         items: [
           {
             title:
@@ -3716,7 +3746,8 @@ export const MOCK_FINX_PAGES = [
           "Discover our comprehensive range of AI-driven services tailored for the finance industry, empowering enterprises to leverage cutting-edge technology and drive transformative growth in today's digital landscape.",
       },
       summary: {
-        title: 'Innovation that drives real impact.',
+        title:
+          'In a world defined by traditional finance, {appTitle} propels the finance industry forward with AI-driven solutions.',
         items: [
           {
             title:
@@ -4241,7 +4272,8 @@ export const MOCK_GOVX_PAGES = [
           "Unleashing the power of artificial intelligence to drive efficient, transparent, and citizen-centric services, revolutionizing the public sector's digital transformation journey.",
       },
       summary: {
-        title: 'Innovation that drives real impact.',
+        title:
+          'In a world steeped in legacy systems, {appTitle} fuels digital transformation in the public sector with AI-driven solutions.',
         items: [
           {
             title:
