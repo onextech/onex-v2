@@ -18,7 +18,7 @@ export interface ResourceSuccessPageProps {
 
 const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
   const { resource, relatedResources } = props
-  const { title, subtitle, avatar_src, avatar_alt, sections } = resource
+  const { title, filename, subtitle, avatar_src, avatar_alt } = resource
   const router = useRouter()
   const { site } = useLayout()
   return (
@@ -108,7 +108,7 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                     {
                       type: 'body1',
                       title:
-                        'Great news! Click the link below to download your eBook. Enjoy your new read!',
+                        'Great news! Click the link below to download your exclusive report. Enjoy your new read.',
                       titleProps: { color: 'text.secondary', sx: { mb: 2 } },
                     },
                     {
@@ -117,7 +117,7 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href={`/files/resources/${resource.slug}.pdf`}
+                          href={`/resources/${filename}`}
                         >
                           <Button
                             fullWidth
@@ -134,7 +134,7 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
             },
           ],
         },
-        {
+        Boolean(relatedResources?.length) && {
           key: 'hero',
           py: 8,
           sx: { backgroundColor: 'background.paper' },

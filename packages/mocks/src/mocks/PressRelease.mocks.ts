@@ -397,26 +397,14 @@ export const MOCK_DIGITAL_PRESS_RELEASES: PressRelease[] = [
   ...MOCK_COMMON_PRESS_RELEASES,
 ]
 
-export const MOCK_FINX_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
+export const MOCK_FINX_PRESS_RELEASES: PressRelease[] = []
 
-export const MOCK_GOVX_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
+export const MOCK_GOVX_PRESS_RELEASES: PressRelease[] = []
 
-export const MOCK_AEL_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
-export const MOCK_SRI_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
-export const MOCK_GVS_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
-export const MOCK_COASTAL_PRESS_RELEASES: PressRelease[] = [
-  ...MOCK_COMMON_PRESS_RELEASES,
-]
+export const MOCK_AEL_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_SRI_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_GVS_PRESS_RELEASES: PressRelease[] = []
+export const MOCK_COASTAL_PRESS_RELEASES: PressRelease[] = []
 
 export const MOCK_PRESS_RELEASES = {
   GROUP: MOCK_GROUP_PRESS_RELEASES,

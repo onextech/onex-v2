@@ -1,28 +1,7 @@
 import sampleSize from 'lodash/sampleSize'
-import { MOCK_GROUP_TAGS, MOCK_TECH_TAGS } from './Tag.mocks'
+import { MOCK_TECH_TAGS } from './Tag.mocks'
 
-export const MOCK_TECH_RESOURCES = [
-  {
-    title:
-      'Empower Your Business with Our Comprehensive Guide on Custom Software Solutions',
-    slug: 'empower-business-guide-custom-software-solutions',
-    subtitle:
-      'Adopt best practices for utilizing custom software to achieve your strategic objectives. This guide seeks to help you navigate your way to success with proven software solutions built for your business needs.',
-  },
-  {
-    title:
-      'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
-    slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',
-    subtitle:
-      'Learn how frontend development can turn your company strategy into a success. This guide breaks down frontend development frameworks and gives you access to templates, examples, and more.',
-  },
-].map((item, i) => ({
-  id: i + 1,
-  // Seo
-  seo: {
-    title: item.title,
-    description: item.subtitle,
-  },
+export const MOCK_COMMON_RESOURCE = {
   // Sections
   sections: {
     features: {
@@ -103,10 +82,10 @@ export const MOCK_TECH_RESOURCES = [
     },
   },
   // Images
-  avatar_src: '/images/resource_book.png',
-  avatar_alt: 'resource_book',
-  hero_src: '/images/resource_book.png',
-  hero_alt: 'OKR Resource Book',
+  avatar_src: '/resources/resource_book.png',
+  avatar_alt: 'Resource_book',
+  hero_src: '/resources/resource_book.png',
+  hero_alt: 'Resource Book',
   // Author
   author_avatar_src: '/images/author_joel_koh.png',
   author_avatar_alt: 'about_shape_circle_radial',
@@ -121,37 +100,138 @@ export const MOCK_TECH_RESOURCES = [
     '<p>In the past decade, digital transformation and innovation completely changed the way the world does business. In the decade ahead, technological, social and environmental forces will make strategic innovation essential for the survival of any business operating at scale. For many organisations, however, innovation can feel like fumbling in the dark, leading to new products and posts that don&rsquo;t contribute to the health and longevity of the business. In an increasingly complex world, strategy and creativity are the keys to successful, impactful innovation.</p>\n' +
     '\n' +
     '<p>Strategic innovation requires organisations to have a deep understanding of the fundamental value propositions, offerings and objectives of their core business. From that foundation, they must identify the most valuable and viable paths for innovation based on their market position and internal capabilities. By aligning internal systems and stakeholders behind an innovation strategy crafted to achieve specific business impacts, organisations can empower growth and innovation from the inside out.</p>\n',
-  ...item,
-}))
+}
 
-export const MOCK_GROUP_RESOURCES = MOCK_TECH_RESOURCES.map((item, i) => ({
-  ...item,
-  // Tags
-  cta: {
-    hero_src: '/images/about_nodes_above_city.png',
-    hero_alt: 'Laser net over city',
-    overline: 'Get Started',
-    title: 'Partnering with {appTitle}',
+const mapResourceWithCommonResource = (resource, i) => ({
+  ...MOCK_COMMON_RESOURCE,
+  id: i + 1,
+  seo: { title: resource.title, description: resource.subtitle },
+  ...resource,
+})
+
+export const MOCK_TECH_RESOURCES = [
+  {
+    title:
+      'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
+    slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',
+    filename:
+      'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques.pdf',
     subtitle:
-      '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
+      'Learn how frontend development can turn your company strategy into a success. This guide breaks down frontend development frameworks and gives you access to templates, examples, and more.',
   },
-  tags: sampleSize(MOCK_GROUP_TAGS, 3),
-}))
+].map(mapResourceWithCommonResource)
+export const MOCK_GROUP_RESOURCES = [
+  {
+    title:
+      'Empower Your Business with Our Comprehensive Guide on Custom Software Solutions',
+    slug: 'empower-business-guide-custom-software-solutions',
+    filename: 'empower-business-guide-custom-software-solutions.pdf',
+    subtitle:
+      'Adopt best practices for utilizing custom software to achieve your strategic objectives. This guide seeks to help you navigate your way to success with proven software solutions built for your business needs.',
+  },
+].map(mapResourceWithCommonResource)
+export const MOCK_DATA_RESOURCES = []
+export const MOCK_DESIGN_RESOURCES = []
+export const MOCK_DIGITAL_RESOURCES = []
+export const MOCK_FINX_RESOURCES = [
+  {
+    title: 'The Top Applications of Generative AI in Finance',
+    slug: 'the-top-applications-of-generative-ai-in-finance',
+    filename: 'Fin X - The Top Applications of Generative AI in Finance.pdf',
+    subtitle:
+      'A comprehensive guide for financial firms to leverage generative AI for enhanced decision making, improved efficiency, and transformational workflows.',
+    avatar_src:
+      '/resources/the_top_applications_of_generative_ai_in_finance_avatar.png',
+    avatar_alt: 'The Top Applications of Generative AI in Finance Report',
+    hero_src:
+      '/resources/the_top_applications_of_generative_ai_in_finance_avatar.png',
+    hero_alt: 'The Top Applications of Generative AI in Finance Report',
+    sections: {
+      features: {
+        overline: 'What We Cover',
+        title: 'In this guide, we explore:',
+        subtitle:
+          'Dive into an exhaustive guide that takes you from the basics of Generative AI, its financial applications, strategic implementations, through to review and management strategies for your Generative AI integration journey.',
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'The Power of Generative AI',
+            subtitle:
+              'An introduction to the realm of generative AI, and how it provides a competitive edge, aligns with financial modeling, and fosters innovation.',
+          },
+          {
+            fa_icon: 'fa-money-check-alt',
+            title: 'Generative AI in Finance',
+            subtitle:
+              'Explore the critical financial applications of generative AI, including risk assessment, fraud detection, and portfolio optimization.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Strategic Implementations',
+            subtitle:
+              "Dive into the process of strategizing and implementing generative AI tools, tailored to fit your financial firm's needs and objectives.",
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Quantifying the Impact',
+            subtitle:
+              'Learn about the metrics and indicators to assess the effectiveness of Generative AI on your financial operations.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Review and Management',
+            subtitle:
+              'Master the art of continual improvement with ongoing AI model reviews, updates, and management, ensuring your generative AI remains a powerful tool for your business success.',
+          },
+          {
+            fa_icon: 'fa-comments-dollar',
+            title: 'Transforming Customer Experience',
+            subtitle:
+              'Discover how Generative AI can revolutionize customer experience in finance, from personalized advisory services to striking a balance between customization and data privacy.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why This Guide',
+        title: 'What you will learn',
+        subtitle:
+          'Embrace the potential of Generative AI to streamline operations, drive innovation, enhance decision-making, and ensure a sustainable tech evolution tailored to your financial environment.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Improved Financial Decisions',
+            subtitle:
+              'Discover how Generative AI can optimize your financial decisions for better performance.',
+          },
+          {
+            fa_icon: 'fa-robot',
+            title: 'Innovative AI Tools',
+            subtitle:
+              'Explore the potential of AI tools designed uniquely for your financial needs, driving innovation and growth.',
+          },
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Effective Deployment Strategy',
+            subtitle:
+              'Acquire knowledge on strategic execution, enhancing the value delivered by your AI tools.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Sustainable Tech Evolution',
+            subtitle:
+              'Understand how to ensure your technological assets remain future-proof, keeping pace with the dynamic financial environment.',
+          },
+        ],
+      },
+    },
+  },
+].map(mapResourceWithCommonResource)
+export const MOCK_GOVX_RESOURCES = []
 
-export const MOCK_DATA_RESOURCES = MOCK_GROUP_RESOURCES
-
-export const MOCK_DESIGN_RESOURCES = MOCK_GROUP_RESOURCES
-
-export const MOCK_DIGITAL_RESOURCES = MOCK_GROUP_RESOURCES
-
-export const MOCK_FINX_RESOURCES = MOCK_GROUP_RESOURCES
-
-export const MOCK_GOVX_RESOURCES = MOCK_GROUP_RESOURCES
-
-export const MOCK_AEL_RESOURCES = MOCK_GROUP_RESOURCES
-export const MOCK_SRI_RESOURCES = MOCK_GROUP_RESOURCES
-export const MOCK_GVS_RESOURCES = MOCK_GROUP_RESOURCES
-export const MOCK_COASTAL_RESOURCES = MOCK_GROUP_RESOURCES
+export const MOCK_AEL_RESOURCES = []
+export const MOCK_SRI_RESOURCES = []
+export const MOCK_GVS_RESOURCES = []
+export const MOCK_COASTAL_RESOURCES = []
 
 export const MOCK_RESOURCES = {
   GROUP: MOCK_GROUP_RESOURCES,
