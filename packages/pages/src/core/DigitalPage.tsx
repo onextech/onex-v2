@@ -11,6 +11,7 @@ import {
   renderCtaBlock,
   renderFeaturedNewsBlock,
   useLayout,
+  renderHomeSummaryBlock,
 } from '@gravis-os/landing'
 import { Page, Post, Industry, Showcase, PressRelease } from '@gravis-os/types'
 import { useRouter } from 'next/router'
@@ -33,7 +34,7 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, features, faqs, cta } = sections || {}
+  const { hero, benefits, features, faqs, cta, summary } = sections || {}
 
   return (
     <Blocks
@@ -58,6 +59,13 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
+        }),
+        // Summary
+        renderHomeSummaryBlock({
+          ...summary,
+          sx: { backgroundColor: 'background.paper' },
+          titleProps: { maxWidth: '70%' },
+          pb: { xs: 5, md: 0 },
         }),
         // Benefits
         renderThreeColumnGridBlock({

@@ -23,7 +23,8 @@
     "turbo": "turbo",
     "test": "turbo run test",
     "analyze": "turbo run analyze --parallel",
-    "gravis:up": "yarn upgrade -W --latest --scope @gravis-os"
+    "gravis:up": "yarn upgrade -W --latest --scope @gravis-os",
+    "gravis:dedupe": "npx yarn-deduplicate --strategy highest --scopes @gravis-os"
   },
   "config": {
     "commitizen": {
@@ -32,13 +33,13 @@
   },
   "dependencies": {
     "@gravis-os/analytics": "^0.1.0",
-    "@gravis-os/config": "^0.0.6",
-    "@gravis-os/form": "^1.0.4",
-    "@gravis-os/landing": "^0.19.1",
-    "@gravis-os/query": "^0.0.33",
-    "@gravis-os/theme": "^0.0.14",
-    "@gravis-os/types": "^0.3.3",
-    "@gravis-os/ui": "^0.5.1",
+    "@gravis-os/config": "^0.0.7",
+    "@gravis-os/form": "^1.2.0",
+    "@gravis-os/landing": "^0.20.0",
+    "@gravis-os/query": "^0.0.34",
+    "@gravis-os/theme": "^0.0.15",
+    "@gravis-os/types": "^0.4.0",
+    "@gravis-os/ui": "^0.6.0",
     "@gravis-os/utils": "^0.1.3"
   },
   "devDependencies": {
@@ -47,6 +48,8 @@
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/prompt": "^17.0.0",
+    "@gravis-os/eslint-config": "^0.0.20",
+    "@gravis-os/tsconfig": "^0.0.9",
     "commitizen": "^4.2.4",
     "dotenv": "^16.0.1",
     "husky": "^8.0.0",
@@ -57,5 +60,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.1"
+  "packageManager": "yarn@1.22.1",
+  "resolutions": {
+    "@typescript-eslint/parser": "^6.2.0"
+  }
 }

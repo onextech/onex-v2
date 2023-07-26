@@ -13,6 +13,7 @@ import {
   renderHeroWithBackgroundBlock,
   useLayout,
   renderFeaturedNewsBlock,
+  renderHomeSummaryBlock,
 } from '@gravis-os/landing'
 import {
   Page,
@@ -50,7 +51,7 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, features, faqs, cta } = sections || {}
+  const { hero, benefits, features, faqs, cta, summary } = sections || {}
 
   return (
     <Blocks
@@ -75,6 +76,13 @@ const DataHomePage: React.FC<DataHomePageProps> = (props) => {
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
+        }),
+        // Summary
+        renderHomeSummaryBlock({
+          ...summary,
+          sx: { backgroundColor: 'background.paper' },
+          titleProps: { maxWidth: '70%' },
+          pb: { xs: 5, md: 0 },
         }),
         // Benefits
         renderThreeColumnGridBlock({

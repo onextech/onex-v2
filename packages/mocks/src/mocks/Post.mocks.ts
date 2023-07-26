@@ -387,7 +387,7 @@ export const MOCK_TECH_POSTS = [
     is_active: true,
     category_id: 2,
     title:
-      'Revolutionize Your Application Development: Embrace Serverless Architecture with AWS Lambd',
+      'Revolutionize Your Application Development: Embrace Serverless Architecture with AWS Lambda',
     subtitle:
       "Unlock the Power of Scalability and Cost-Efficiency: Accelerate Application Development with AWS Lambda's Serverless Architecture",
     slug: 'revolutionize-your-application-development-embrace-serverless-architecture-with-aws-lambda',
@@ -2078,8 +2078,7 @@ export const MOCK_AEL_POSTS = [
     is_active: true,
     is_featured: true,
     category_id: 1,
-    title:
-      'Enhancing Healthcare Efficiency: The Rising Influence of AI',
+    title: 'Enhancing Healthcare Efficiency: The Rising Influence of AI',
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',

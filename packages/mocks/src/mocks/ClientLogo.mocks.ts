@@ -365,7 +365,15 @@ export const MOCK_TECH_CLIENT_LOGOS = Object.values(
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 
 export const MOCK_FINX_CLIENT_LOGOS = Object.values(
-  pick(MOCK_CLIENT_LOGOS_OBJECT, ['gic', 'iix', 'julius_bar', 'spiking', 'uob'])
+  pick(MOCK_CLIENT_LOGOS_OBJECT, [
+    'gic',
+    'uob',
+    'julius_bar',
+    'iix',
+    'tyme',
+    'gomu',
+    'spiking',
+  ])
 ).map((item: Record<string, unknown>, i) => ({ ...item, id: i }))
 
 export const MOCK_GOVX_CLIENT_LOGOS = Object.values(
