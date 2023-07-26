@@ -46,8 +46,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
-    "@gravis-os/eslint-config": "^0.0.18",
-    "@gravis-os/tsconfig": "^0.0.8",
+    "@gravis-os/eslint-config": "^0.0.19",
+    "@gravis-os/tsconfig": "^0.0.9",
     "@next/bundle-analyzer": "^13.4.3",
     "@playwright/test": "^1.30.0",
     "@svgr/webpack": "^6.2.1",
