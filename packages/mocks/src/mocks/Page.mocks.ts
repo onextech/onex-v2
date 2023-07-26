@@ -580,6 +580,13 @@ export const MOCK_DIGITAL_PAGE = {
     },
   },
 }
+export const MOCK_RESOURCE_PAGE = {
+  title: 'Resources',
+  slug: 'resources',
+  href: routeConfig.RESOURCES,
+  subtitle:
+    'Access our curated resource list for tips and tricks on how you can grow your business.',
+}
 
 // TODO: Deprecate this
 export const MOCK_VENTURES_PAGE = {
@@ -1493,13 +1500,7 @@ const MOCK_GROUP_PAGES = [
     subtitle:
       'Stay up-to-date with the latest trends in the digital landscape.',
   },
-  {
-    title: 'Resources',
-    slug: 'resources',
-    href: routeConfig.RESOURCES,
-    subtitle:
-      'Access our curated resource list for tips and tricks on how you can grow your business.',
-  },
+  MOCK_RESOURCE_PAGE,
   { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true },
   { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true },
 ]
@@ -3497,11 +3498,6 @@ export const MOCK_FINX_PAGES = [
             title: 'Smarter Businesses',
             href: routeConfig.SERVICES,
           },
-          {
-            overline: 'Who we are',
-            title: 'Finance AI Experts',
-            href: routeConfig.CAREERS,
-          },
         ],
       },
       summary: {
@@ -3642,6 +3638,7 @@ export const MOCK_FINX_PAGES = [
       },
     },
   },
+  ...MOCK_COMMON_PAGES,
   {
     title: 'Careers',
     slug: 'careers',
@@ -3725,7 +3722,6 @@ export const MOCK_FINX_PAGES = [
       },
     },
   },
-  ...MOCK_COMMON_PAGES,
   {
     is_hidden_from_nav: true,
     title: 'Home',
@@ -3988,13 +3984,7 @@ export const MOCK_FINX_PAGES = [
       },
     },
   },
-  {
-    title: 'News',
-    slug: 'news',
-    href: routeConfig.PRESS_RELEASES,
-    subtitle:
-      'Stay up-to-date with the latest trends in the digital landscape.',
-  },
+  MOCK_RESOURCE_PAGE,
 ].map((page) => ({
   ...MOCK_PAGE,
   ...page,

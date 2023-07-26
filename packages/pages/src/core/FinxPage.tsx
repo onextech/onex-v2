@@ -135,8 +135,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
         // Client logo gallery
         renderClientLogosGallery({
           items: clientLogos,
-          title:
-            'We Work With and Drive Innovation for Reputable Financial Organizations',
+          title: 'We work with and drive innovation for financial enterprises',
         }),
         // Showcases
         renderShowcasesBlock({

@@ -33,7 +33,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
             {
               type: 'subtitle1',
               title:
-                "Unlock the key to business success with One X Group's comprehensive collection of resources.",
+                'Unlock the key to business success with our comprehensive collection of resources.',
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
@@ -45,7 +45,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
               title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
               disableContainer: true,
               titleProps: {
-                alt: 'People working in an office',
+                alt: 'Books in a library',
                 background: true,
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
