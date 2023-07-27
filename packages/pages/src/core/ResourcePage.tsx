@@ -91,18 +91,16 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                     {
                       type: 'h5',
                       title: 'Get a copy of this guide.',
-                      titleProps: { gutterBottom: true },
                     },
                     {
                       type: 'body1',
-                      title:
-                        'Enter your email and details to unlock this guide',
+                      title: 'Enter your details to unlock this guide.',
                       titleProps: { color: 'text.secondary' },
                     },
                     {
                       type: 'jsx',
                       title: <ResourceForm />,
-                      boxProps: { sx: { mt: 2 } },
+                      boxProps: { sx: { mt: 3 } },
                     },
                   ],
                 },
