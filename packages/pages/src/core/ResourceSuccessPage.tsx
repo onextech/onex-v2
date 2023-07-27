@@ -9,7 +9,6 @@ import type { Resource } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
 import { routeConfig } from '@onex/common'
-import { Button } from '@gravis-os/ui'
 
 export interface ResourceSuccessPageProps {
   resource: Resource
@@ -35,7 +34,10 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
           items: [
             {
               type: 'grid',
-              gridProps: { spacing: { xs: 0, md: 5 } },
+              gridProps: {
+                reverse: true,
+                spacing: { xs: 0, md: 5 },
+              },
               gridItems: [
                 {
                   sm: 7,
@@ -82,11 +84,12 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                     reveal: true,
                     sx: {
                       height: { md: '100%' },
-                      backgroundColor: 'background.paper',
+                      position: { md: 'absolute' },
                       top: 0,
                       py: 5,
                       px: 4,
-                      position: { md: 'absolute' },
+                      mb: { xs: 5, md: 0 },
+                      backgroundColor: 'background.paper',
                     },
                   },
                   items: [
@@ -112,21 +115,15 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                       titleProps: { color: 'text.secondary', sx: { mb: 2 } },
                     },
                     {
-                      type: 'jsx',
-                      title: (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={`/resources/${filename}`}
-                        >
-                          <Button
-                            fullWidth
-                            size="large"
-                            variant="contained"
-                            title="Download"
-                          />
-                        </a>
-                      ),
+                      type: 'button',
+                      title: 'Download',
+                      titleProps: {
+                        variant: 'contained',
+                        fullWidth: true,
+                        size: 'large',
+                        href: `/resources/${filename}`,
+                        hrefProps: { targetBlank: true },
+                      },
                     },
                   ],
                 },
