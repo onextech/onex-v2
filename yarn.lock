@@ -1654,9 +1654,9 @@
     prettier "^2.0.5"
 
 "@gravis-os/fields@*":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.1.3.tgz#77289cb978bd9e295c2e993c7be50ce207318e00"
-  integrity sha512-8dcd4SNJsOXfSVkOi84PXG7Hwj6B/BaRxKn+Z/ScezC03SXFkc14a1VYjXxyC/T0JixK6wfdNjAmt7ZvcibcMw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.2.0.tgz#0ce913107dab6fc5ceab26d4c70c8eaf9d023432"
+  integrity sha512-pRv9d6U8hqPNKO3hcavP5tJ0+etychl/El4gwd+Y9nJd9i9oXu+BTQzvLpLQl17c+DxPc5fU8fHEotOHWAwAqA==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1685,10 +1685,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/landing@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.20.0.tgz#2b68d0dd2d091abb7390d42750174eb9b170e914"
-  integrity sha512-aug6jKqI5Jg/G5+EBDBiQAQUrwVEUg+VonZTEVxrKZlQ21rR6n3zRzWGmjLBp9MbONsO9s780Dxc718ECO6ZHA==
+"@gravis-os/landing@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.21.0.tgz#6b0d122de257f5cca75a77b853db5a201a744418"
+  integrity sha512-/zbmbKSZ4jzOWepOGQFgqp1zzv5/aTF2RjWUMV1zPj+JpVeD5T4oSWRH0Gwdteg09WzFpWvaLcculENBtKAOHQ==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
@@ -1762,10 +1762,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.6.0.tgz#b828bfba469fe070744609ef79397308c52dff5b"
-  integrity sha512-KoIe6fcAklrt4ppeSWMDQRRk7gl0GiC+GEEZ7JPCvV12E8HPm+KMGqGS3hVhabb5WaoowY2e92a4SLPLvuu2+Q==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.7.0.tgz#def26510206675e22630e9669792b17e4f7400d7"
+  integrity sha512-C0JXVNnZV/vE5BdMbTQqf4rxWCsr1h0aaALTO3MdYsn1P/aEAQaK3cOn6fC5/4cGtZTbK0TkwisrgrVxuSoUIA==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"
