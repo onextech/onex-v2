@@ -24,7 +24,7 @@ const EcosystemPage: React.FC<EcosystemPageProps> = (props) => {
       items={[
         // Hero
         {
-          key: 'ecosystem-hero',
+          id: 'ecosystem-hero',
           dark: true,
           py: 30,
           center: true,

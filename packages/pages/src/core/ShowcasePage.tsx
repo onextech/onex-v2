@@ -21,7 +21,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'showcase-hero',
+          id: 'showcase-hero',
           py: 0,
           sx: { backgroundColor },
           items: [
@@ -29,7 +29,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           ],
         },
         {
-          key: 'showcase-sticky-grid-left',
+          id: 'showcase-sticky-grid-left',
           pt: 10,
           items: [
             renderShowcaseStickyGridBlockItem({
@@ -39,7 +39,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           ],
         },
         {
-          key: 'showcase-gallery',
+          id: 'showcase-gallery',
           py: 5,
           items: [
             gallery.overline && { type: 'overline', title: gallery.overline },
@@ -81,7 +81,7 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
           ],
         },
         {
-          key: 'showcase-sticky-grid-right',
+          id: 'showcase-sticky-grid-right',
           items: [
             renderShowcaseStickyGridBlockItem({
               ...rightGridSticky,

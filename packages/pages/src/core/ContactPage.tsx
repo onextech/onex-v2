@@ -23,7 +23,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'form',
+          id: 'form',
           py: 0,
           reveal: fullScreen && false,
           sx: {

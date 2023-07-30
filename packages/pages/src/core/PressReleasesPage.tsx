@@ -20,7 +20,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           pt: { xs: 5, md: 10 },
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
@@ -60,7 +60,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
           ],
         },
         {
-          key: 'pressRelease',
+          id: 'pressRelease',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {

@@ -19,7 +19,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           dark: true,
           pt: { xs: 10, xl: 20 },
           pb: { xs: 50, xl: 70 },
-          key: 'mission-hero',
+          id: 'mission-hero',
           ...commonBlockProps,
           maxWidth: 'xl',
           backgroundImageProps: {
@@ -53,7 +53,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           ],
         },
         {
-          key: 'change-with-technology',
+          id: 'change-with-technology',
           ...commonBlockProps,
           maxWidth: 'sm',
           sx: { backgroundColor: 'background.paper' },
@@ -82,7 +82,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           ],
         },
         {
-          key: 'we-craft-digital',
+          id: 'we-craft-digital',
           ...commonBlockProps,
           dark: true,
           sx: { backgroundColor: 'background.paper' },
@@ -121,7 +121,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           ],
         },
         {
-          key: 'find-opportunities',
+          id: 'find-opportunities',
           ...commonBlockProps,
           maxWidth: 'md',
           dark: true,

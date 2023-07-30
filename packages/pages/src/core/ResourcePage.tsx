@@ -23,7 +23,7 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'form',
+          id: 'form',
           reveal: false,
           py: 5,
           sx: {

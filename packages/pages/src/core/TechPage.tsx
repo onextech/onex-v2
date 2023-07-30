@@ -65,8 +65,7 @@ const TechPage: React.FC<TechPageProps> = (props) => {
           hero_alt: 'Black minimalistic background',
           image_src: '/images/hero_glass_window_ui_grey.png',
           image_alt: 'Website with trend analysis',
-          // image_src dimensions
-          imageProps: { ar: '643:572' } as any,
+          imageProps: { ar: '643:572' },
           buttonProps: {
             overline: 'Get Started',
             title: cta_button_title,

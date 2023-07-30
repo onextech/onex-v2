@@ -24,7 +24,7 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           reveal: false,
           py: 5,
           sx: {
@@ -132,7 +132,7 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
           ],
         },
         Boolean(relatedResources?.length) && {
-          key: 'hero',
+          id: 'hero',
           py: 8,
           sx: { backgroundColor: 'background.paper' },
           items: [

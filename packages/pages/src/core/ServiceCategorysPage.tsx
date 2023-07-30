@@ -29,7 +29,7 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
@@ -56,7 +56,7 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
               categoryWithServicesChunk[0]
             return [
               {
-                key: 'background-nodes',
+                id: 'background-nodes',
                 py: 0,
                 backgroundImageProps: {
                   src: firstCategoryWithServices.hero_src,
@@ -65,7 +65,7 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
                 },
               },
               {
-                key: 'service-categorys',
+                id: 'service-categorys',
                 sx: { backgroundColor: 'background.paper' },
                 pt: { xs: 5, md: 10 },
                 items: [
