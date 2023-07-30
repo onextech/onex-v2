@@ -13,7 +13,7 @@
     "test": "jest",
     "e2e": "playwright test",
     "local:unlink": "yalc remove --all",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "rm -rf .next && ANALYZE=true next build"
   },
   "dependencies": {
     "@emotion/cache": "latest",
