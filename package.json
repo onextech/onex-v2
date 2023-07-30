@@ -18,7 +18,7 @@
     "changeset": "changeset",
     "commit": "git-cz",
     "local": "yalc link --pure @gravis-os/types @gravis-os/ui @gravis-os/utils @gravis-os/config @gravis-os/theme @gravis-os/landing @gravis-os/analytics @gravis-os/query @gravis-os/form @gravis-os/fields && yarn install",
-    "local:unlink": "yalc remove --all",
+    "local:unlink": "yalc remove --all && yarn install",
     "watch": "turbo run watch",
     "turbo": "turbo",
     "test": "turbo run test",
