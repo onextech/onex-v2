@@ -14,10 +14,10 @@ export const MOCK_COMMON_SITE = {
 
   // Locale
   locales: [
-    { id: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
-    { id: 'us', iso_alpha_2: 'us', title: 'United States' },
-    { id: 'au', iso_alpha_2: 'au', title: 'Australia' },
-    { id: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
+    { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
+    { key: 'us', iso_alpha_2: 'us', title: 'United States' },
+    { key: 'au', iso_alpha_2: 'au', title: 'Australia' },
+    { key: 'jp', iso_alpha_2: 'jp', title: 'Japan' },
   ],
 
   // System
@@ -99,7 +99,8 @@ export const MOCK_GROUP_SITE: Site = {
         'Learn more about the core values that drive our business and people to success',
     },
   ],
-}
+} as any
+// TODO@Joel: Remove any
 
 export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
@@ -567,12 +568,13 @@ export const MOCK_AEL_SITE: Site = {
       subtitle:
         'Learn more about the core values that drive our business and people to success',
     },
-  ],
+  ] as any,
+  // TODO@Joel: Remove any
 
   // Locale
   locales: [
-    { id: 'us', iso_alpha_2: 'us', title: 'United States' },
-    { id: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
+    { key: 'us', iso_alpha_2: 'us', title: 'United States' },
+    { key: 'sg', iso_alpha_2: 'sg', title: 'Singapore' },
   ],
 
   // Cta

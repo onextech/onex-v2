@@ -119,14 +119,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'services'
+                              ({ id }) => id === 'services'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'services'
+                              ({ id }) => id === 'services'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -199,14 +199,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'technologies'
+                              ({ id }) => id === 'technologies'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'technologies'
+                              ({ id }) => id === 'technologies'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -279,14 +279,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'industries'
+                              ({ id }) => id === 'industries'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'industries'
+                              ({ id }) => id === 'industries'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -359,14 +359,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'insights'
+                              ({ id }) => id === 'insights'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'insights'
+                              ({ id }) => id === 'insights'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -439,14 +439,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'company'
+                              ({ id }) => id === 'company'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'company'
+                              ({ id }) => id === 'company'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -518,14 +518,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'ecosystem'
+                              ({ id }) => id === 'ecosystem'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'ecosystem'
+                              ({ id }) => id === 'ecosystem'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',

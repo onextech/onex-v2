@@ -1692,7 +1692,7 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.9.tgz#8e42e12a40267427e79c3c08eab7883e711c4cad"
   integrity sha512-O6RqJZ1AK+u1/SckEYlg9iR+F6iN2Sl07sSSTDVIExp8eKoGxR6Ng/MMRLrtyuNNuxFzuSxHoOSqD/nGY8H5aA==
 
-"@gravis-os/types@*", "@gravis-os/types@^0.4.0":
+"@gravis-os/types@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.4.0.tgz#4bc52ec6d2c306a62ce92c1c4f79528fbdb9aace"
   integrity sha512-7duCMwRL2WPPD2LrKScWCsIBEbR8qDa142pAueJNMsQdMaaRCWIsVpZAFU6pbAwnzVJl2pnVjrEJHcPJA48Ndw==

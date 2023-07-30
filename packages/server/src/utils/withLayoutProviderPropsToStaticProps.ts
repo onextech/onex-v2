@@ -2,6 +2,7 @@ import { makeWithLayoutProviderPropsToStaticProps } from '@gravis-os/landing/ser
 import layoutConfig from './layoutConfig'
 
 const withLayoutProviderPropsToStaticProps =
-  makeWithLayoutProviderPropsToStaticProps(layoutConfig)
+  makeWithLayoutProviderPropsToStaticProps(layoutConfig as any)
+// TODO@Joel: Remove any
 
 export default withLayoutProviderPropsToStaticProps
