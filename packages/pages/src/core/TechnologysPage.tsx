@@ -13,7 +13,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           pt: { xs: 5, md: 10 },
           pb: 0,
           sx: { backgroundColor: 'background.paper' },

@@ -15,7 +15,7 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           reveal: false,
           py: 20,
           center: true,

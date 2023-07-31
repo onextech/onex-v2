@@ -69,7 +69,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
         }),
         // Services
         {
-          key: 'services',
+          id: 'services',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 3, md: 6 },
           items: [
@@ -104,7 +104,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
         },
         // Client Logos Gallery
         {
-          key: 'gallery-title',
+          id: 'gallery-title',
           dark: true,
           pb: 3,
           items: [

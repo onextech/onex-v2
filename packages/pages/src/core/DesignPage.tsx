@@ -46,7 +46,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         // Hero
         {
           dark: true,
-          key: 'design-impact',
+          id: 'design-impact',
           centerOnMobile: true,
           pt: { xs: 20, xl: 20 },
           pb: { xs: 20, xl: 70 },

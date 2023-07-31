@@ -12,32 +12,32 @@ export const MOCK_GROUP_CLIENT_HIGHLIGHTS = [
     alt: 'marquee_image_3',
   },
   {
-    key: '4',
+    id: '4',
     src: '/images/marquee_image_4.png',
     alt: 'marquee_image_4',
   },
   {
-    key: '5',
+    id: '5',
     src: '/images/marquee_image_5.png',
     alt: 'marquee_image_5',
   },
   {
-    key: '6',
+    id: '6',
     src: '/images/marquee_image_6.png',
     alt: 'marquee_image_6',
   },
   {
-    key: '7',
+    id: '7',
     src: '/images/marquee_image_1.png',
     alt: 'marquee_image_7',
   },
   {
-    key: '8',
+    id: '8',
     src: '/images/marquee_image_2.png',
     alt: 'marquee_image_8',
   },
   {
-    key: '9',
+    id: '9',
     src: '/images/marquee_image_3.png',
     alt: 'marquee_image_9',
   },

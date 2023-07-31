@@ -19,7 +19,7 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           pt: { xs: 5, md: 10 },
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
@@ -59,7 +59,7 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
           ],
         },
         {
-          key: 'industrys',
+          id: 'industrys',
           sx: { backgroundColor: 'background.paper' },
           items: [
             {

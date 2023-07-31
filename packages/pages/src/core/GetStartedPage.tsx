@@ -22,7 +22,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'form',
+          id: 'form',
           py: 0,
           reveal: fullScreen && false,
           sx: {

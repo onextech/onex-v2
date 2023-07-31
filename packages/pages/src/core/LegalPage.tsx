@@ -14,7 +14,7 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           pt: 5,
           items: [
             {

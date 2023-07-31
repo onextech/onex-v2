@@ -221,19 +221,19 @@ export const MOCK_DATA_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -345,19 +345,19 @@ export const MOCK_DESIGN_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -521,19 +521,19 @@ export const MOCK_DIGITAL_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -744,19 +744,19 @@ export const MOCK_VENTURES_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -1400,68 +1400,68 @@ const MOCK_GROUP_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'how-it-works-1',
+            id: 'how-it-works-1',
             title:
               'What industries do you cater to with your technology consulting services?',
             content:
               'We serve a wide range of industries, including finance, healthcare, retail, manufacturing, and more. Our expertise in enterprise software development allows us to tailor solutions to meet the unique needs of each industry.',
           },
           {
-            key: 'how-it-works-2',
+            id: 'how-it-works-2',
             title:
               'What is the typical timeline for developing an enterprise software solution?',
             content:
               'The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.',
           },
           {
-            key: 'how-it-works-3',
+            id: 'how-it-works-3',
             title:
               'Can you help us integrate our existing systems with the new software solutions?',
             content:
               'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
           {
-            key: 'how-it-works-4',
+            id: 'how-it-works-4',
             title: 'What industries do you have experience working with?',
             content:
               'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
           },
           {
-            key: 'how-it-works-5',
+            id: 'how-it-works-5',
             title: 'How do you ensure the security and privacy of our data?',
             content:
               'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
           },
           {
-            key: 'how-it-works-6',
+            id: 'how-it-works-6',
             title:
               'What is your approach to project management and communication?',
             content:
               'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
           },
           {
-            key: 'how-it-works-7',
+            id: 'how-it-works-7',
             title:
               'How do you handle scalability and future growth considerations in your software solutions?',
             content:
               'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
           },
           {
-            key: 'how-it-works-8',
+            id: 'how-it-works-8',
             title:
               'What is your approach to post-development support and maintenance?',
             content:
               'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
           },
           {
-            key: 'how-it-works-9',
+            id: 'how-it-works-9',
             title:
               'What sets One X Group apart from other technology consulting firms?',
             content:
               'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
           },
           {
-            key: 'how-it-works-10',
+            id: 'how-it-works-10',
             title:
               'What is your pricing model for technology consulting services?',
             content:
@@ -1943,63 +1943,63 @@ const MOCK_TECH_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title:
               'What experience and expertise do you have in frontend development?',
             content:
               'Our software development team has years of experience in building complex frontend applications for a range of industries. We have a deep understanding of frontend technologies such as React, Angular, and Vue, and we constantly stay up-to-date with the latest trends and best practices to ensure our clients receive top-quality solutions.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title:
               'How do you ensure that the software you build meets our specific requirements?',
             content:
               'We take a collaborative approach to software development, working closely with our clients to understand their unique needs and goals. We begin each project with a discovery phase, during which we conduct research and analysis to gain a deep understanding of your business and industry. We then work with you to create a detailed project plan that outlines your requirements and sets clear goals and expectations.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title: 'How do you ensure the quality of the software you develop?',
             content:
               'We have a rigorous quality assurance process in place that ensures the software we develop meets the highest standards. We perform extensive testing at every stage of the development process, using a combination of manual and automated testing to catch any bugs or issues early on. We also conduct regular code reviews and follow best practices to ensure the software we deliver is of the highest quality.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title: 'What industries do you have experience working with?',
             content:
               'Our team has experience working with a wide range of industries, including finance, healthcare, e-commerce, and more. We have the knowledge and expertise to develop software solutions that meet the unique needs of each industry we work with, and we are committed to staying up-to-date with the latest trends and best practices in each field.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title: 'How do you handle project management and communication?',
             content:
               'We use a variety of tools and techniques to ensure effective project management and communication throughout the development process. We use agile methodologies to break down projects into smaller, more manageable tasks, and we use project management software to track progress and communicate updates. We also schedule regular meetings with our clients to provide status updates and discuss any issues or concerns.',
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title: 'How do you ensure the security and privacy of our data?',
             content:
               'We take data security and privacy very seriously and follow strict protocols to ensure the confidentiality and integrity of your data. We use secure coding practices and encryption techniques to protect your data from unauthorized access and ensure that your data is stored securely. We also follow industry best practices and compliance standards, such as HIPAA and GDPR, to ensure the highest levels of data security and privacy.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title: 'What is your approach to project pricing and timelines?',
             content:
               'We work with our clients to create a detailed project plan that includes pricing and timelines. Our pricing is based on the complexity of the project, the technologies involved, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to ensure that their projects are completed on time and within budget.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title: 'What’s your experience in enterprise software development?',
             content:
               'We have a proven track record of delivering high-quality enterprise software solutions to our clients. We have experience working with large-scale enterprises in various industries, including finance, healthcare, and manufacturing. Our team of experienced developers, project managers, and business analysts have a deep understanding of the complex requirements of enterprise software and are well-equipped to handle the challenges that come with it. We follow a rigorous development process that ensures timely delivery, continuous communication with our clients, and a focus on delivering solutions that meet their specific business needs.',
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title: 'What is your approach to project management?',
             content:
               'We follow an agile project management approach, with a focus on delivering high-quality software solutions on time and within budget. We provide regular progress updates and have an open line of communication with our clients throughout the entire development process.',
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title:
               'What is your pricing model for frontend development services?',
             content:
@@ -2358,69 +2358,69 @@ export const MOCK_DATA_PAGES = [
           'Discover how we transform businesses with powerful data insights and advanced AI solutions.',
         items: [
           {
-            key: 'data-science-1',
+            id: 'data-science-1',
             title: 'What experience and expertise do you have in data science?',
             content:
               'Our data science team has extensive experience in leveraging data to derive actionable insights and drive business outcomes. We have expertise in various data science techniques, including machine learning, statistical analysis, and data visualization. Our team stays updated with the latest advancements in the field to deliver cutting-edge data solutions to our clients.',
           },
           {
-            key: 'data-science-2',
+            id: 'data-science-2',
             title:
               'How do you ensure that the data solutions you develop meet our specific requirements?',
             content:
               'We take a collaborative approach to data science projects, working closely with our clients to understand their unique business needs and goals. We conduct thorough data analysis and exploration to gain insights into your data and identify relevant patterns. Based on this analysis, we develop customized data solutions that align with your specific requirements and deliver the desired outcomes.',
           },
           {
-            key: 'data-science-3',
+            id: 'data-science-3',
             title:
               'How do you ensure the quality and accuracy of the data solutions you develop?',
             content:
               'We have a robust quality assurance process in place to ensure the accuracy and reliability of the data solutions we develop. Our team follows rigorous data cleaning, preprocessing, and validation techniques to ensure the integrity of the data. We also conduct thorough testing and validation of our models and algorithms to ensure their performance and accuracy.',
           },
           {
-            key: 'data-science-4',
+            id: 'data-science-4',
             title:
               'What industries do you have experience working with in terms of data science?',
             content:
               'Our data science team has experience working with diverse industries, including finance, healthcare, retail, and manufacturing. We understand the unique challenges and requirements of different industries and have successfully delivered data solutions that address industry-specific needs. Our industry experience enables us to provide valuable insights and tailored data solutions to our clients.',
           },
           {
-            key: 'data-science-5',
+            id: 'data-science-5',
             title:
               'How do you handle project management and communication during data science projects?',
             content:
               'We follow a structured project management approach during data science projects. We work closely with our clients to define project objectives, milestones, and deliverables. We use project management tools to track progress, manage tasks, and facilitate communication. We schedule regular meetings and provide status updates to ensure transparent communication and collaboration throughout the project.',
           },
           {
-            key: 'data-science-6',
+            id: 'data-science-6',
             title:
               'How do you ensure the security and privacy of our data during data science projects?',
             content:
               'Data security and privacy are of utmost importance to us. We adhere to strict data protection protocols and follow industry best practices to ensure the security and confidentiality of your data. We implement robust data access controls, encryption techniques, and secure storage solutions to safeguard your data throughout the project lifecycle.',
           },
           {
-            key: 'data-science-7',
+            id: 'data-science-7',
             title:
               'What is your approach to project pricing and timelines for data science services?',
             content:
               'Our pricing model for data science services is based on the complexity of the project, the scope of work, and the level of customization required. We provide detailed cost estimates and timelines upfront, and we work closely with our clients to align our services with their budget and project goals. Our goal is to deliver high-quality data solutions within the agreed-upon timeline and budget.',
           },
           {
-            key: 'data-science-8',
+            id: 'data-science-8',
             title:
               'What is your experience in developing enterprise data and AI solutions?',
             content:
               'We have extensive experience in developing enterprise data and AI solutions for various industries. Our team has worked on projects involving data integration, data governance, predictive analytics, and AI-driven automation. We understand the challenges and opportunities that enterprises face in leveraging their data assets and strive to deliver solutions that drive business growth and transformation.',
           },
           {
-            key: 'data-science-9',
+            id: 'data-science-9',
             title:
               'What is your approach to project management in data science projects?',
             content:
               'We follow an agile project management approach in data science projects, allowing for flexibility and iterative development. We break down projects into manageable tasks and set achievable milestones. We prioritize close collaboration with our clients, seeking their input and feedback throughout the project. Regular progress updates and transparent communication ensure that the project stays on track and meets the desired objectives.',
           },
           {
-            key: 'data-science-10',
+            id: 'data-science-10',
             title:
               'What is your pricing model for data science services and AI solutions?',
             content:
@@ -2818,68 +2818,68 @@ export const MOCK_DESIGN_PAGES = [
           'Learn how we design effective, user-driven experiences for leading enterprises.',
         items: [
           {
-            key: 'how-it-works-1',
+            id: 'how-it-works-1',
             title: 'What experience and expertise do you have in UI/UX design?',
             content:
               'Our design team has extensive experience in creating intuitive and visually appealing user interfaces and engaging user experiences. We have worked with various industries and have a deep understanding of UI/UX principles, best practices, and emerging trends. We stay updated with the latest design tools and technologies to deliver cutting-edge solutions.',
           },
           {
-            key: 'how-it-works-2',
+            id: 'how-it-works-2',
             title:
               'How do you ensure that the designs you create meet our specific requirements?',
             content:
               'We take a collaborative approach to UI/UX design, working closely with our clients to understand their unique needs, target audience, and business goals. We conduct thorough research and analysis to gather insights and create user personas. Our iterative design process involves wireframing, prototyping, and user testing to refine the designs and align them with your requirements.',
           },
           {
-            key: 'how-it-works-3',
+            id: 'how-it-works-3',
             title:
               'How do you ensure the usability and effectiveness of the user interfaces you design?',
             content:
               'Usability and effectiveness are at the core of our design philosophy. We focus on creating user-centric designs that prioritize ease of use, clear navigation, and intuitive interactions. We conduct user testing sessions to gather feedback and iterate on the designs, ensuring that they are optimized for seamless user experiences and achieve your desired goals.',
           },
           {
-            key: 'how-it-works-4',
+            id: 'how-it-works-4',
             title:
               'What industries do you have experience working with in terms of UI/UX design?',
             content:
               'Our design team has worked across various industries, including finance, healthcare, e-commerce, and more. We understand the unique requirements and challenges of different industries and tailor our designs to meet their specific needs. Our diverse industry experience allows us to bring valuable insights and deliver UI/UX solutions that drive results.',
           },
           {
-            key: 'how-it-works-5',
+            id: 'how-it-works-5',
             title:
               'How do you collaborate with clients during the design process?',
             content:
               'We believe in a collaborative approach where we work closely with our clients throughout the design process. We conduct regular meetings to gather requirements, provide updates, and seek feedback. We value your input and involve you in key design decisions to ensure that the final product aligns with your vision and meets your expectations.',
           },
           {
-            key: 'how-it-works-6',
+            id: 'how-it-works-6',
             title:
               'How do you ensure the consistency and branding of our enterprise product designs?',
             content:
               'We pay great attention to maintaining consistency and reflecting your branding throughout the design process. We create design systems and style guides that establish a cohesive visual language, including color schemes, typography, and UI components. This ensures consistency across different screens and interactions, strengthening your brand identity.',
           },
           {
-            key: 'how-it-works-7',
+            id: 'how-it-works-7',
             title:
               'Can you assist us with user testing and gathering feedback on our existing product designs?',
             content:
               'Absolutely. We offer user testing services to evaluate the usability and effectiveness of your existing product designs. We conduct user interviews, usability tests, and gather feedback to identify areas for improvement. Based on the insights gathered, we provide recommendations and iterative design solutions to enhance the user experience and drive better outcomes.',
           },
           {
-            key: 'how-it-works-8',
+            id: 'how-it-works-8',
             title:
               'What is your approach to conducting UX workshops for enterprise clients?',
             content:
               'Our UX workshops are tailored to meet the specific needs of enterprise clients. We combine theory and practical exercises to educate and empower your team with UX design principles, methodologies, and best practices. We facilitate interactive sessions where participants learn to apply UX techniques, such as user research, persona creation, wireframing, and prototyping, to solve real-world design challenges.',
           },
           {
-            key: 'how-it-works-9',
+            id: 'how-it-works-9',
             title: 'What is your approach to enterprise product design?',
             content:
               'Our approach to enterprise product design is rooted in understanding your business objectives, target audience, and market landscape. We conduct thorough research to gain insights into user needs and pain points. We then craft intuitive and visually appealing designs that align with your brand identity and deliver exceptional user experiences. We iterate based on user feedback and ensure the scalability and adaptability of the designs to meet your evolving business requirements.',
           },
           {
-            key: 'how-it-works-10',
+            id: 'how-it-works-10',
             title:
               'What is your pricing model for UI/UX design services and UX workshops?',
             content:
@@ -3384,70 +3384,70 @@ export const MOCK_DIGITAL_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title:
               'What experience and expertise do you have in digital marketing?',
             content:
               'Our team has extensive experience and expertise in digital marketing, encompassing a diverse range of strategies, techniques, and platforms to drive results for our clients.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title:
               'What industries do you have experience working in terms of digital marketing?',
             content:
               'We have worked with clients from various industries, including but not limited to e-commerce, finance, healthcare, technology, and professional services, providing digital marketing solutions tailored to the specific needs and nuances of each industry.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title:
               'How do you ensure that your marketing solutions meet our specific requirements?',
             content:
               'We prioritize a thorough understanding of your business and objectives, conducting in-depth research and collaborating closely with you to develop customized marketing solutions that address your specific requirements and goals.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title:
               'How do you ensure the effectiveness and reliability of our solutions?',
             content:
               'We ensure the effectiveness and reliability of our solutions through continuous monitoring, analysis, and optimization of campaigns, leveraging key performance indicators (KPIs) and data-driven insights to drive measurable results and maximize ROI.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title:
               'How do you collaborate with clients during the design process?',
             content:
               'We believe in a collaborative approach, actively involving our clients throughout the design process to gather input, incorporate feedback, and ensure that the final marketing solutions are aligned with your vision and goals.',
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title:
               'How do you ensure alignment with our enterprise brand and values?',
             content:
               'Our team conducts comprehensive brand research and collaborates closely with you to ensure that our marketing efforts align seamlessly with your enterprise brand and values, delivering a consistent and cohesive digital presence.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'How do you measure the success of digital marketing campaigns for enterprise businesses?',
             content:
               'We measure the success of digital marketing campaigns through a combination of metrics such as website traffic, conversions, lead generation, engagement, search engine rankings, and overall revenue growth, providing you with clear insights into campaign performance and ROI.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'How do you stay updated with the latest digital marketing trends and changes?',
             content:
               'We stay updated with the latest digital marketing trends and changes through ongoing industry research, attending conferences, participating in training programs, and actively engaging in continuous learning to ensure we are at the forefront of the digital marketing landscape.',
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               'How long does it take to see results from digital marketing efforts?',
             content:
               'The time frame to see results from digital marketing efforts can vary depending on factors such as industry competitiveness, campaign goals, and strategies employed. While some results may be observed in the short term, digital marketing is an ongoing process that requires consistent effort and optimization for long-term success.',
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title:
               'How do you determine the pricing for your enterprise digital marketing services?',
             content:
@@ -3904,69 +3904,69 @@ export const MOCK_FINX_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title: "What is the core focus of {appTitle}'s digital solutions?",
             content:
               "The core focus of {appTitle}'s digital solutions is to empower the finance industry with AI-driven technologies, enabling digital transformation and driving strategic growth.",
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title:
               "How can {appTitle}'s digital solutions help my finance organisation streamline operations and enhance efficiency?",
             content:
               "{appTitle}'s digital solutions streamline finance operations by automating processes, providing actionable insights, and optimizing decision-making, resulting in enhanced efficiency and operational excellence.",
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title:
               "What kind of data sources do {appTitle}'s digital solutions utilize for generating insights?",
             content:
               "{appTitle}'s digital solutions leverage a wide range of data sources, including financial records, market data, customer behaviour, and industry trends, to generate valuable insights and drive data-informed decision-making.",
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title:
               'How does {appTitle} ensure data security and compliance with industry regulations?',
             content:
               '{appTitle} prioritizes data security and compliance by implementing robust security measures, encryption protocols, and adhering to industry regulations, ensuring the protection and confidentiality of sensitive financial data.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title:
               "Can {appTitle}'s AI solutions be integrated with our existing systems and processes?",
             content:
               "Yes, {appTitle}'s AI solutions are designed to seamlessly integrate with existing systems and processes, enabling a smooth implementation and leveraging the power of AI alongside your established infrastructure.",
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title:
               "How long does it typically take to implement {appTitle}'s digital transformation solutions?",
             content:
               "The implementation timeline for {appTitle}'s digital transformation solutions varies based on the specific requirements and scope of the project, but typically ranges from a few months to a year, ensuring a thorough and efficient deployment.",
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'How does {appTitle} stay updated with the latest advancements and emerging technologies in AI for finance?',
             content:
               '{appTitle} stays at the forefront of advancements in AI for finance through continuous research, collaboration with industry experts, active participation in conferences and events, and a dedicated focus on exploring emerging technologies and trends.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'How does {appTitle} ensure the accuracy and reliability of the insights generated by its AI algorithms?',
             content:
               '{appTitle} ensures the accuracy and reliability of insights generated by its AI algorithms through rigorous testing, validation against real-world data, and continuous monitoring to optimize model performance and minimize errors or biases.',
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               "Can {appTitle}'s AI solutions assist in predicting market trends and making informed investment decisions?",
             content:
               "Yes, {appTitle}'s AI solutions can leverage advanced algorithms and machine learning techniques to analyse market data, identify trends, and provide predictions, assisting finance professionals in making informed investment decisions.",
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
@@ -4425,64 +4425,64 @@ export const MOCK_GOVX_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title: 'What is {appTitle}?',
             content:
               '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title: 'What industries do you serve?',
             content:
               'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title: 'What kind of solutions does {appTitle} offer?',
             content:
               '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title: "How can {appTitle}'s solutions benefit my organisation?",
             content:
               'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
               "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title: 'How can I get started with {appTitle}?',
             content:
               'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
               'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'Is {appTitle} compliant with data security and privacy regulations',
             content:
               "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
               "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title: 'How long does the implementation process typically take?',
             content:
               'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
@@ -4905,68 +4905,68 @@ export const MOCK_AEL_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'how-it-works-1',
+            id: 'how-it-works-1',
             title:
               'What industries do you cater to with your technology consulting services?',
             content:
               'We serve a wide range of industries, including finance, healthcare, retail, manufacturing, and more. Our expertise in enterprise software development allows us to tailor solutions to meet the unique needs of each industry.',
           },
           {
-            key: 'how-it-works-2',
+            id: 'how-it-works-2',
             title:
               'What is the typical timeline for developing an enterprise software solution?',
             content:
               'The timeline for developing an enterprise software solution can vary depending on the complexity of the project and specific client requirements. We work closely with our clients to define project milestones and provide realistic timelines based on thorough analysis and planning. Our goal is to deliver high-quality solutions within a reasonable timeframe.',
           },
           {
-            key: 'how-it-works-3',
+            id: 'how-it-works-3',
             title:
               'Can you help us integrate our existing systems with the new software solutions?',
             content:
               'Absolutely. Our technology consulting services include seamless integration of new software solutions with your existing systems. We have experience working with various platforms and technologies, enabling us to create efficient and scalable integrations that streamline your business processes and enhance overall productivity.',
           },
           {
-            key: 'how-it-works-4',
+            id: 'how-it-works-4',
             title: 'What industries do you have experience working with?',
             content:
               'We have experience working with a wide range of industries, including finance, healthcare, e-commerce, manufacturing, and more. Our team of experts understands the unique challenges and requirements of each industry and can tailor our solutions to meet your specific business needs.',
           },
           {
-            key: 'how-it-works-5',
+            id: 'how-it-works-5',
             title: 'How do you ensure the security and privacy of our data?',
             content:
               'Data security and privacy are top priorities for us. We follow industry best practices and comply with data protection regulations to ensure the highest levels of security and privacy for your data. We implement robust security measures, conduct regular security audits, and provide secure hosting options to safeguard your valuable information.',
           },
           {
-            key: 'how-it-works-6',
+            id: 'how-it-works-6',
             title:
               'What is your approach to project management and communication?',
             content:
               'We believe in transparent and effective project management and communication. We assign dedicated project managers who act as a single point of contact throughout the project. They ensure regular communication, provide project updates, and address any concerns or queries promptly. We also utilize project management tools and methodologies to streamline collaboration and ensure successful project delivery.',
           },
           {
-            key: 'how-it-works-7',
+            id: 'how-it-works-7',
             title:
               'How do you handle scalability and future growth considerations in your software solutions?',
             content:
               'We design our software solutions with scalability and future growth in mind. We leverage flexible architectures and scalable technologies to accommodate future expansion and increasing user demands. Our team assesses your business requirements and anticipates future needs to develop solutions that can adapt and grow with your organisation.',
           },
           {
-            key: 'how-it-works-8',
+            id: 'how-it-works-8',
             title:
               'What is your approach to post-development support and maintenance?',
             content:
               'Our relationship with clients extends beyond development. We offer comprehensive post-development support and maintenance services to ensure the smooth operation of your software solutions. We provide timely updates, bug fixes, performance optimization, and ongoing support to address any issues that may arise and ensure the long-term success of your software.',
           },
           {
-            key: 'how-it-works-9',
+            id: 'how-it-works-9',
             title:
               'What sets One X Group apart from other technology consulting firms?',
             content:
               'At One X Group, we distinguish ourselves through our deep industry expertise, commitment to excellence, and personalized approach. We take the time to understand your business, challenges, and goals, and we tailor our solutions to meet your specific needs. Our experienced team combines technical proficiency with a customer-centric mindset, ensuring that we deliver high-quality solutions that drive tangible business outcomes.',
           },
           {
-            key: 'how-it-works-10',
+            id: 'how-it-works-10',
             title:
               'What is your pricing model for technology consulting services?',
             content:
@@ -5428,64 +5428,64 @@ export const MOCK_SRI_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title: 'What is {appTitle}?',
             content:
               '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title: 'What industries do you serve?',
             content:
               'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title: 'What kind of solutions does {appTitle} offer?',
             content:
               '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title: "How can {appTitle}'s solutions benefit my organisation?",
             content:
               'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
               "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title: 'How can I get started with {appTitle}?',
             content:
               'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
               'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'Is {appTitle} compliant with data security and privacy regulations',
             content:
               "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
               "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title: 'How long does the implementation process typically take?',
             content:
               'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
@@ -5947,64 +5947,64 @@ export const MOCK_GVS_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title: 'What is {appTitle}?',
             content:
               '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title: 'What industries do you serve?',
             content:
               'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title: 'What kind of solutions does {appTitle} offer?',
             content:
               '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title: "How can {appTitle}'s solutions benefit my organisation?",
             content:
               'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
               "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title: 'How can I get started with {appTitle}?',
             content:
               'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
               'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'Is {appTitle} compliant with data security and privacy regulations',
             content:
               "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
               "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title: 'How long does the implementation process typically take?',
             content:
               'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',
@@ -6466,64 +6466,64 @@ export const MOCK_COASTAL_PAGES = [
           'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
         items: [
           {
-            key: 'faq-1',
+            id: 'faq-1',
             title: 'What is {appTitle}?',
             content:
               '{appTitle} is a digital transformation company specializing in providing innovative solutions for the public sector. We help government organisations embrace digitalization and enhance their operations, services, and citizen engagement.',
           },
           {
-            key: 'faq-2',
+            id: 'faq-2',
             title: 'What industries do you serve?',
             content:
               'We primarily focus on serving government entities in the public sector, including federal, state, and local government organisations.',
           },
           {
-            key: 'faq-3',
+            id: 'faq-3',
             title: 'What kind of solutions does {appTitle} offer?',
             content:
               '{appTitle} offers a range of solutions tailored to the needs of the public sector, including digital service delivery, AI process automation, advanced public sector analysis, cybersecurity, and more. We work closely with our clients to identify their specific requirements and provide customized solutions.',
           },
           {
-            key: 'faq-4',
+            id: 'faq-4',
             title: "How can {appTitle}'s solutions benefit my organisation?",
             content:
               'Our solutions are designed to empower government organisations to modernize their operations, streamline processes, enhance citizen services, and make data-driven decisions. By leveraging innovative technologies, we help you drive efficiency, increase transparency, and create a citizen-centric ecosystem.',
           },
           {
-            key: 'faq-5',
+            id: 'faq-5',
             title: 'Are your solutions scalable?',
             content:
               "Yes, {appTitle}'s solutions are scalable and can be adapted to organisations of various sizes. Whether you are a small local government or a large federal agency, our solutions can be customized to meet your specific needs and scale as your organisation grows.",
           },
           {
-            key: 'faq-6',
+            id: 'faq-6',
             title: 'How can I get started with {appTitle}?',
             content:
               'Simply contact our team through the provided contact information on our website, and our experts will guide you through the process, understanding your requirements, and developing a tailored plan to support your digital transformation journey.',
           },
           {
-            key: 'faq-7',
+            id: 'faq-7',
             title:
               'Can {appTitle} help us measure the impact and success of our digital transformation initiatives?',
             content:
               'Yes, {appTitle} offers analytics and reporting capabilities to measure the impact and success of your digital transformation initiatives. We provide insights and metrics to help you assess the effectiveness of your initiatives and make data-driven decisions for continuous improvement.',
           },
           {
-            key: 'faq-8',
+            id: 'faq-8',
             title:
               'Is {appTitle} compliant with data security and privacy regulations',
             content:
               "Yes, we prioritize the security and privacy of our client's data. Our solutions are designed to meet industry-standard security protocols and comply with relevant data protection regulations, safeguarding your sensitive information.",
           },
           {
-            key: 'faq-9',
+            id: 'faq-9',
             title:
               'How do you determine the pricing for your enterprise digital transformation solutions?',
             content:
               "Pricing for {appTitle}'s digital transformation solutions is determined based on various factors such as the scope of the project, customization requirements, implementation timeline, and ongoing support and maintenance, ensuring a tailored pricing approach aligned with the unique needs of each client.",
           },
           {
-            key: 'faq-10',
+            id: 'faq-10',
             title: 'How long does the implementation process typically take?',
             content:
               'The implementation timeline depends on the specific requirements of your organisation and the complexity of the solution. Our team will work closely with you to define a realistic timeline and ensure efficient and timely implementation.',

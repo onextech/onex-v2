@@ -23,7 +23,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
         {
           py: { xs: 14, md: 28 },
           dark: true,
-          key: 'growth-company',
+          id: 'growth-company',
           ...commonBlockProps,
           backgroundImageProps: {
             src: hero.hero_src,
@@ -43,7 +43,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
           ],
         },
         {
-          key: 'join-the-team',
+          id: 'join-the-team',
           ...commonBlockProps,
           pb: { xs: 5, md: 0 },
           items: [
@@ -78,7 +78,7 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
         },
         renderLeftFourColumnGridBlockItem(benefits),
         {
-          key: 'openings',
+          id: 'openings',
           ...commonBlockProps,
           center: false,
           items: [
