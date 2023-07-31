@@ -18,7 +18,7 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           pt: { xs: 5, md: 10 },
           pb: 0,
           sx: { backgroundColor: 'background.paper' },
@@ -39,7 +39,7 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
           ],
         },
         {
-          key: 'post-categorys',
+          id: 'post-categorys',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 2, md: 5 },
           items: [renderPostsBlockItem({ items: posts })],

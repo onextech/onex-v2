@@ -158,19 +158,19 @@ export const MOCK_SERVICE_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -300,21 +300,21 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our User Interface Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a high-quality user interface important for my business?',
             content:
               "A high-quality user interface can have a significant impact on your business's success. It can improve customer satisfaction, increase engagement, and even drive conversions.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your User Interface Development Service?',
             content:
               "At our User Interface Development Service, we specialize in creating beautiful, intuitive interfaces that are tailored to your business's unique needs. Our team of experts takes a user-centric approach to every project, ensuring that your interface not only looks great but also functions effectively and meets the needs of your customers. We also follow best practices for usability testing, accessibility testing, and SEO optimization, to ensure that your interface is easy to use, accessible to all users, and optimized for search engines.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach user interface design?',
             content:
               'We take a user-centric approach to user interface design, starting with user research to understand your target audience and their needs. From there, we create wireframes and prototypes to test and refine our design concepts. We also prioritize accessibility and usability testing throughout the development process, to ensure that your interface is easy to use and accessible to all users.',
@@ -403,21 +403,21 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our API Integration Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What is API integration and why is it important for my business?',
             content:
               'API (Application Programming Interface) integration is the process of connecting different software systems, applications, or platforms to enable seamless communication and data exchange between them. API integration is crucial for businesses as it helps streamline processes, reduce manual work, improve data accuracy, and facilitate better decision-making. By integrating different systems, your business can achieve better efficiency, increased productivity, and enhanced collaboration.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your API Integration Development Service?',
             content:
               'At our API Integration Development Service, we specialize in creating custom API integrations tailored to your specific needs. Our team of experienced developers ensures seamless connectivity between your systems, allowing you to streamline processes and improve efficiency. We also work closely with your team to understand your business goals and deliver an integration solution that meets your requirements and exceeds your expectations. In addition, we provide end-to-end services, including API design, development, testing, deployment, and maintenance, making the integration process as smooth as possible.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach API integration?',
             content:
               'Our approach to API integration starts with understanding your business requirements and goals. We then analyse your existing systems and identify the best way to integrate them to achieve the desired outcomes. Next, our team of experts designs and develops the APIs, ensuring they are secure, efficient, and easy to use. We also conduct thorough testing to ensure the integration works seamlessly and meets your needs. Finally, we provide ongoing maintenance and support to keep your API integrations up-to-date and performing optimally.',
@@ -506,20 +506,20 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Design Library Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a design library important for my business?',
             content:
               'A design library streamlines the design and development process by providing a centralized repository of reusable components, design patterns, and guidelines. This helps your team create consistent, high-quality digital products faster and more efficiently. A design library also improves collaboration and ensures brand consistency across your digital products.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Design Library Development Service?',
             content:
               'Our Design Library Development Service specializes in creating comprehensive design libraries tailored to your business needs. We work closely with you to understand your brand, design principles, and product requirements, and then develop a custom design library complete with reusable components, design patterns, and documentation. This enables your team to quickly and efficiently create new digital products while maintaining consistency and quality across your brand. We also assist in implementing your design library across your digital products, ensuring seamless integration and consistency.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the design library is aligned with my brand guidelines?',
             content:
@@ -609,21 +609,21 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Application modernisation service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is application modernisation important for my business?',
             content:
               "Application modernisation is essential for businesses that want to stay competitive in today's fast-paced digital landscape. Upgrading legacy systems and applications enables you to improve performance, security, and maintainability, making it easier to innovate and scale. modernised applications can also lead to cost savings by reducing the resources needed to maintain outdated systems.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Application modernisation service?',
             content:
               'Our Application modernisation service offers a comprehensive approach to modernising your legacy systems and applications, helping you to achieve your business goals more quickly and cost-effectively. Our team of experts has extensive experience in assessing, re-architecting, and migrating applications to modern, scalable architectures. We also leverage the latest technologies, development methodologies, and best practices to ensure that your modernised applications deliver maximum value to your business.',
           },
           {
-            key: 'how-it-works-3',
+            id: 'how-it-works-3',
             title: 'How do you approach application modernisation?',
             content:
               'We begin by assessing your existing systems and applications to identify opportunities for modernisation and establish priorities based on your business goals. We then develop a detailed roadmap outlining the steps needed to achieve your goals, setting milestones to track progress. Our team of experts re-architects your applications to leverage modern, scalable architectures, and we migrate your applications to the cloud to take advantage of flexible, scalable, and cost-effective infrastructure.',
@@ -713,20 +713,20 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Performance Optimization Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is website performance important for my business?',
             content:
               'Website performance is crucial for user experience, engagement, and search engine rankings. Slow-loading pages can drive away potential customers, while poor performance can negatively impact your search engine rankings, making it harder for users to find your website.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Performance Optimization Service?',
             content:
               'Our Performance Optimization Service helps you improve your website speed, user experience, and search engine rankings by identifying and addressing performance bottlenecks. We use a combination of cutting-edge tools and best practices to optimize your website, including code optimization, image optimization, and server configuration. With our performance optimization services, you can enjoy increased user satisfaction, higher engagement, and improved search engine rankings.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you optimize website performance?',
             content:
               'We optimize website performance by analyzing your website, identifying performance bottlenecks, and implementing optimizations to improve speed and user experience. This includes optimizing your code, images, and server configuration, as well as monitoring your website performance and providing ongoing optimization services to ensure that your site remains fast and efficient as it grows and evolves.',
@@ -815,20 +815,20 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Microfrontend Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What are the benefits of using microfrontends for my enterprise applications?',
             content:
               'Microfrontends offer several benefits for enterprise applications, including improved scalability, maintainability, and development efficiency. By breaking down large frontend applications into smaller, more manageable pieces, microfrontends enable development teams to work independently, iterate faster, and deploy updates with minimal risk. They also promote the use of best practices in software engineering, leading to more modular, maintainable, and high-performing applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Microfrontend Development Service work?',
             content:
               'Our Microfrontend Development Service offers end-to-end support for building enterprise-grade microfrontend applications. We start by helping you design a microfrontend architecture tailored to your specific needs and business goals. Our expert engineers then build modular, scalable, and efficient microfrontends using the latest technologies and best practices in frontend software engineering. We also specialize in dashboard development, integration with backend systems and APIs, and ongoing support and maintenance.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What technologies and frameworks do you use for microfrontend development?',
             content:
@@ -920,20 +920,20 @@ export const MOCK_TECH_SERVICES = [
           'Find out more about our Singpass Integration Service and how it can streamline your business operations.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What if I need additional custom features in my Singpass integration?',
             content:
               'We are experienced in custom frontend development and can accommodate additional custom features in your Singpass integration. We will work with you to understand your needs and tailor the integration process accordingly.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How secure is Singpass integration?',
             content:
               'Singpass is a secure and government-verified platform for digital authentication. It enhances the security of your systems by reducing potential vulnerabilities related to password management. However, it is crucial to complement it with other security practices for maximum protection.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can Singpass integration be used for all types of enterprise systems?',
             content:
@@ -1023,19 +1023,19 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Staff Augmentation service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is staff augmentation?',
             content:
               'Staff augmentation is a flexible outsourcing strategy that allows you to add skilled professionals to your existing team on a short-term or long-term basis. It enables you to access specialized expertise and scale your team quickly, without the overhead of hiring full-time employees.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of staff augmentation?',
             content:
               'Staff augmentation offers several benefits, including cost savings, flexibility, access to specialized expertise, and reduced time-to-market. By augmenting your team with skilled professionals, you can quickly adapt to changing project requirements and ensure that your projects are completed on time and within budget.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Why should I choose your Staff Augmentation service?',
             content:
               'Our Staff Augmentation service provides you with top-tier frontend software engineering and dashboard development experts who are skilled in the latest technologies and best practices. We work closely with you to understand your unique our services accordingly, ensuring that you have the right professionals to help you achieve your project objectives.',
@@ -1124,20 +1124,20 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Agile Development Teams service and how we can help your enterprise business succeed.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are agile development teams important for my enterprise business?',
             content:
               'Development teams are crucial for enterprise businesses because they ensure faster delivery, adaptability to changing requirements, and improved collaboration. This results in higher-quality software solutions that align with your business goals and drive success.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What makes your Agile Development Teams stand out?',
             content:
               'Our Agile Development Teams stand out due to their expertise in frontend software engineering and dashboard development, dedication to your projects, and commitment to collaboration and communication. We work closely with your business to understand your unique requirements and deliver tailored solutions that drive success.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the success of my enterprise projects?',
             content:
               'We ensure the success of your enterprise projects by providing dedicated agile teams that specialize in frontend software engineering and dashboard development. Our expert project managers oversee every aspect of your projects, ensuring seamless communication, timely delivery, and alignment with your business goals.',
@@ -1226,21 +1226,21 @@ export const MOCK_TECH_SERVICES = [
           'Learn more about our Technical Leadership service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is technical leadership important for my software development projects?',
             content:
               'Technical leadership is crucial for the success of your software development projects, as it ensures that your projects are well-planned, organized, and executed. Technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and can guide your team through the complexities of frontend software engineering and dashboard development. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Technical Leadership service?',
             content:
               'Our Technical Leadership service provides experienced leaders who can guide your team through the complexities of frontend software engineering and dashboard development, ensuring that your projects are delivered on time and within budget. Our technical leaders have a deep understanding of the latest technologies, best practices, and industry trends, and work closely with your team to ensure that your projects are built to the highest standards. They also foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do your technical leaders work with my team?',
             content:
               'Our technical leaders work closely with your team, providing guidance on software architecture, best practices, and industry trends. They also help you plan, organize, and execute your projects, ensuring that they are delivered on time and within budget. Additionally, they foster a culture of collaboration, innovation, and continuous improvement, helping you build high-performing teams.',
@@ -1340,20 +1340,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Product and Service Design service and how we can help your enterprise clients.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What makes your Product and Service Design solutions stand out from the competition?',
             content:
               'Our Product and Service Design solutions stand out from the competition because of our specialization in frontend software engineering and dashboard development. We focus on creating digital experiences that are visually stunning, highly functional, and tailored to the unique needs of your enterprise clients. Our team of experts stays up-to-date with the latest frontend technologies and design principles, ensuring that your digital products are built to the highest standards.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of clients do you work with?',
             content:
               'We primarily work with enterprise clients, helping them create exceptional digital experiences for their users. Our expertise in frontend software engineering and dashboard development allows us to deliver tailored solutions that cater to the specific needs of large organisations across various industries.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your digital products?',
             content:
               "To ensure the quality of our digital products, we follow a rigorous development process that includes in-depth research, prototyping, and testing. We work closely with your team to understand your clients' business objectives and user needs, which helps us create digital solutions that are both visually stunning and highly functional. Additionally, we prioritize performance optimization, ensuring that your digital products run smoothly and efficiently, even with large amounts of data.",
@@ -1442,20 +1442,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Cyber Security services and how we can help protect your business from cyber threats.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is cyber security important for my business?',
             content:
               "Cyber security is crucial for businesses of all sizes, as it protects sensitive information, maintains business continuity, and safeguards your organisation's reputation. Cyber attacks can lead to financial loss, legal repercussions, and damage to your brand image. By investing in cyber security, you can minimize the risk of potential threats and ensure the safety of your digital assets.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Cyber Security Service?',
             content:
               'Working with our Cyber Security Service offers several benefits, including access to experienced cyber security experts, a custom security strategy tailored to your business, and comprehensive protection for your digital assets. We offer a wide range of services, from vulnerability assessments to incident response planning, ensuring that your organisation is well-prepared to defend against potential cyber threats.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach cyber security?',
             content:
               "We take a proactive approach to cyber security, working closely with your organisation to understand your unique needs and develop a custom security strategy. We utilize industry best practices, cutting-edge technology, and our team's extensive experience to safeguard your digital assets. Our services include vulnerability assessments, security strategy development, incident response planning, network security, cloud security, and security awareness training for your employees.",
@@ -1544,21 +1544,21 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Technical Feasibility Study services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a technical feasibility study important for my business?',
             content:
               'A technical feasibility study helps you identify potential challenges and risks associated with your software project before you invest significant resources. This enables you to make informed decisions, optimize your project plan, and ultimately improve the likelihood of success. It also helps you identify any gaps in your team capabilities or technology stack, allowing you to address these issues proactively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Technical Feasibility Study Service?',
             content:
               'Our team of experts has extensive experience in frontend software engineering and dashboard development, giving us the knowledge and insights needed to evaluate the technical feasibility of your project effectively. We provide in-depth analysis, risk assessment, technology evaluation, team capabilities assessment, and comprehensive documentation and reporting, ensuring that you have all the information you need to make informed decisions about your project. We also work closely with your team throughout the process, ensuring a seamless and effective collaboration.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you conduct a technical feasibility study?',
             content:
               'We start by gaining a deep understanding of your project requirements and objectives. We then analyse the potential challenges and risks associated with your project, evaluating the technical feasibility of your proposed solution. This involves assessing the technology stack and tools required, as well as your team capabilities and skills. Throughout the process, we provide insights and recommendations to help you optimize your project plan and mitigate potential risks. Finally, we deliver comprehensive documentation and reports on our findings, giving you the information you need to make informed decisions about your project.',
@@ -1647,20 +1647,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Sustainability Consulting services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is sustainability important in software development?',
             content:
               'Sustainability in software development is crucial as it helps reduce the environmental impact of digital products and services. By adopting eco-friendly practices, businesses can decrease energy consumption, minimize waste, and reduce carbon emissions, ultimately contributing to a greener planet. Additionally, sustainable software development can lead to cost savings, improved brand reputation, and increased customer loyalty.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Sustainability Consulting Service?',
             content:
               'By working with our Sustainability Consulting Service, you can expect to receive expert guidance in creating environmentally responsible software solutions. Our team specializes in frontend software engineering and dashboard development, with a strong focus on sustainable technologies and practices. We help you identify the right technologies, develop data-driven dashboards, and provide ongoing support to ensure your solutions are both eco-friendly and effective. This collaboration will enable your business to achieve its sustainability goals while also driving growth and innovation.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure that the software solutions you develop are sustainable?',
             content:
@@ -1750,21 +1750,21 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our PoC Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What is the purpose of developing a Proof of Concept (PoC)?',
             content:
               'Developing a Proof of Concept (PoC) allows organisations to validate their ideas and ensure they are feasible, cost-effective, and viable in the marketplace. A well-executed PoC can help minimize risks, accelerate innovation, and provide valuable insights that inform decision-making and future development.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your PoC Development Service?',
             content:
               'Our PoC Development Service specializes in frontend software engineering and dashboard development for enterprise clients. By working with us, you gain access to a team of experts dedicated to validating your ideas and creating tailored solutions that align with your business goals. Our collaborative approach ensures open communication and fosters a successful partnership, while our iterative development process allows for continuous improvement and adaptation.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How long does it typically take to develop a Proof of Concept?',
             content:
@@ -1855,21 +1855,21 @@ export const MOCK_GROUP_SERVICES = [
           'Find out more about our Application Development service and how we can support your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What industries do you serve with your Application Development service?',
             content:
               'We serve a wide range of industries with our Application Development service, including finance, healthcare, retail, manufacturing, and more. Our team has the expertise and experience to create tailored solutions that address the unique challenges and requirements of your industry.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What frontend technologies do you use for application development?',
             content:
               'Our team stays up-to-date with the latest frontend technologies and best practices. We primarily use popular and modern frameworks and libraries, such as React, Angular, and Vue.js, to develop high-quality, maintainable, and performant applications.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What is your development process?',
             content:
               'Our development process typically involves several stages: requirement gathering, planning, design, development, testing, and deployment. We work closely with your team throughout the process to ensure that the application meets your needs and expectations. Additionally, we follow an agile methodology, which allows us to iterate and improve the application based on feedback and changing requirements.',
@@ -1958,20 +1958,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Enterprise Application Development services and how we can help your business thrive.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I invest in custom enterprise applications?',
             content:
               'Custom enterprise applications provide several benefits, including increased efficiency, improved collaboration, enhanced data security, scalability, and the ability to adapt to your specific business needs. By investing in custom software solutions, you can gain a competitive edge, streamline processes, and drive innovation within your organisation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What industries do you serve with your Enterprise Application Development services?',
             content:
               'Our Enterprise Application Development services cater to a wide range of industries, including but not limited to finance, healthcare, manufacturing, logistics, retail, and telecommunications. We have experience working with diverse enterprises and can adapt our solutions to meet the unique requirements of your industry.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and scalability of enterprise applications?',
             content:
@@ -2061,20 +2061,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our ERP Consulting Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is ERP consulting important for my business?',
             content:
               'ERP consulting is essential for businesses that want to optimize their ERP systems, streamline operations, and improve overall efficiency. Our expert consultants can help you identify areas for improvement, provide implementation support, develop custom frontend solutions, and guide your team through change management processes.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What industries can benefit from your ERP Consulting services?',
             content:
               'Our ERP Consulting services are suitable for businesses across a wide range of industries, including manufacturing, retail, healthcare, finance, and more. We have experience working with various ERP systems and can tailor our services to meet the unique needs of your business.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the success of an ERP implementation?',
             content:
               'We follow a structured approach to ERP implementation that involves assessing your current system, providing expert guidance and support throughout the implementation process, and assisting with change management. This approach helps minimize risks, maximize results, and ensure a smooth transition for your business.',
@@ -2163,19 +2163,19 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our CRM Consulting Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is CRM consulting important for my business?',
             content:
               'CRM consulting is crucial for businesses looking to maximize the potential of their CRM system. Our expert consultants can help you develop a tailored CRM strategy, implement the system effectively, optimize its performance, and provide ongoing support and training for your team. This ensures your CRM investment supports your business objectives and delivers maximum value, driving growth and improving customer relationships.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of CRM systems do you specialize in?',
             content:
               'Our team of CRM consultants has extensive experience with a wide range of CRM systems and platforms. We specialize in frontend software engineering and dashboard development, which allows us to create custom solutions for various CRM systems, ensuring they align with your business needs and objectives.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the success of a CRM implementation?',
             content:
               'We follow a structured approach to CRM implementation, starting with the development of a tailored CRM strategy that aligns with your business goals. Our team provides expert guidance and support throughout the implementation process, minimizing risks and ensuring a smooth transition. We also offer custom development, performance optimization, training, and ongoing support to ensure the continued success of your CRM system.',
@@ -2264,21 +2264,21 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Application Re-engineering services and how they can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is Application Re-engineering important for my business?',
             content:
               'Application Re-engineering is essential to ensure that your software applications stay up-to-date with the latest technological advancements and user expectations. By optimizing, modernising, and revamping your applications, you can increase efficiency, reduce costs, enhance user experience, and maintain a competitive edge in the market.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Application Re-engineering service?',
             content:
               'Our Application Re-engineering service focuses on frontend software engineering and dashboard development for enterprise clients. We work closely with you to analyse your existing applications, identify bottlenecks and areas for improvement, and provide innovative solutions to enhance their performance and user experience. By leveraging our expertise, your business can benefit from improved efficiency, reduced costs, and a more competitive position in the market.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach Application Re-engineering?',
             content:
               'We begin by analyzing your existing software applications to understand their current state and identify areas for improvement. We then work closely with your team to develop a plan for re-engineering, including code refactoring, performance optimization, user interface improvements, and dashboard development. Throughout the process, we prioritize communication and collaboration to ensure the re-engineered applications align with your business objectives and deliver value to your users.',
@@ -2368,19 +2368,19 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Cloud Migration services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider migrating to the cloud?',
             content:
               'Migrating to the cloud can provide your business with numerous benefits, such as cost savings, increased agility, improved scalability, and enhanced security. It also enables your organisation to leverage the latest technologies and innovations, making it easier to stay competitive in the digital landscape.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the main challenges of cloud migration?',
             content:
               'Some of the main challenges of cloud migration include selecting the right cloud provider and service, ensuring data security and compliance, minimizing downtime during the transition, and effectively managing the new cloud environment. Our Cloud Migration service is designed to help you navigate these challenges and ensure a seamless, successful migration.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How long does a typical cloud migration process take?',
             content:
               "The duration of a cloud migration process varies depending on the size and complexity of your organisation's infrastructure, as well as the specific cloud solutions being implemented. Our team works closely with your organisation to develop a tailored migration plan, providing a clear timeline and roadmap for the transition.",
@@ -2469,21 +2469,21 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Smart Team service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should I choose your Smart Team service for my business?',
             content:
               'Our Smart Team service provides your business with highly skilled frontend engineers and dashboard developers who are experienced in working with enterprise clients. We are dedicated to understanding your unique needs and goals, delivering tailor-made solutions that drive results. Our team stays up-to-date with the latest industry trends and best practices, ensuring that your projects benefit from cutting-edge technologies and techniques.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What frontend technologies and frameworks do your engineers specialize in?',
             content:
               'Our frontend engineers are proficient in a wide range of modern technologies and frameworks, including React, Angular, Vue.js, and more. They are experienced in working with HTML, CSS, JavaScript, and other frontend languages, ensuring that your user interfaces are responsive, performant, and visually stunning.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team approach dashboard development?',
             content:
               'Our dashboard developers create intuitive, data-driven dashboards that provide valuable insights, helping you make informed decisions for your business. We work closely with your organisation to understand your data needs and goals, and we use the latest dashboard development tools and best practices to create custom solutions that meet your specific requirements.',
@@ -2572,20 +2572,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Data Science services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is data science important for my business?',
             content:
               'Data science enables you to make better decisions, optimize processes, and uncover new opportunities by analyzing and interpreting the data your business generates. By leveraging data science, you can gain actionable insights, improve customer experiences, and drive growth.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Data Science service?',
             content:
               'Our team of experienced data scientists and analysts work closely with your organisation to understand your business needs and develop custom solutions that address those needs. We offer a comprehensive suite of data science services, including data analytics, machine learning, dashboard development, data management, and process optimization. By working with us, you can unlock the full potential of your data and drive better decision-making, optimized processes, and improved customer experiences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach data science projects?',
             content:
               'We take a collaborative approach to data science projects, working closely with your team to understand your business objectives and tailor our solutions to your needs. Our process typically begins with data exploration and analysis, followed by the development and deployment of custom data models or dashboards. Throughout the project, we prioritize clear communication, knowledge sharing, and the integration of our solutions with your existing systems and processes.',
@@ -2674,20 +2674,20 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Data Strategy service and how it can transform your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is data strategy important for my business?',
             content:
               'Data strategy is crucial for businesses because it enables them to unlock the potential of their data and use it strategically to gain insights, make informed decisions, improve operational efficiency, and drive innovation. A well-defined data strategy aligns data initiatives with business goals and ensures data quality, governance, and security.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Data Strategy service?',
             content:
               'By working with our Data Strategy service, you will benefit from our expertise in developing comprehensive data strategies tailored to your business needs. We have a deep understanding of data governance, integration, quality management, and analytics, and we can help you establish a data-driven culture within your organisation. Our goal is to empower you to leverage data effectively, optimize processes, and drive growth and innovation.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach data strategy development?',
             content:
               'We take a holistic approach to data strategy development, starting with a thorough assessment of your current data landscape, business goals, and challenges. Based on this analysis, we collaborate with your team to define a data strategy that aligns with your objectives. Our approach includes establishing data governance frameworks, designing data integration solutions, implementing data quality management processes, leveraging advanced analytics techniques, and creating a data-driven culture within your organisation.',
@@ -2826,20 +2826,20 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our UX Strategy Consulting service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a strong UX strategy important?',
             content:
               'A well-defined UX strategy guides the design and development process, ensuring your product is aligned with user needs and business goals. It can lead to enhanced user satisfaction, increased engagement, and ultimately, greater business success.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What can I expect from your UX Strategy Consulting service?',
             content:
               'Our service involves reviewing your current UX, identifying areas for improvement, and providing actionable strategies to enhance your user experience. We collaborate closely with your team, providing support and guidance throughout the implementation of these strategies.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you tailor your consulting to our specific needs?',
             content:
               'We start by understanding your business, your users, and your current UX. This allows us to provide tailored strategies that meet your unique needs and goals. We also offer ongoing support as you implement these strategies, helping you navigate any challenges that arise.',
@@ -2919,19 +2919,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Understand more about our Design Thinking Workshop and how it can stimulate innovation in your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is design thinking important for my business?',
             content:
               'Design thinking can bring a fresh perspective to problem-solving in your business. By empathizing with your customers, generating creative ideas, and quickly prototyping solutions, you can uncover new opportunities and respond to market changes more effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What can I expect from your Design Thinking Workshop?',
             content:
               "Our workshops are designed to be collaborative, engaging, and productive. You'll work closely with our team of experts to understand your customers, brainstorm solutions, and prototype ideas. By the end of the workshop, you'll have a range of innovative solutions and a clear action plan for implementation.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Who should attend the Design Thinking Workshop?',
             content:
               'Anyone involved in product development, marketing, strategy, or customer experience would benefit from attending our workshop. Design thinking is a versatile approach that can be applied across various business functions.',
@@ -3010,19 +3010,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our User Research and Insights service and how we can help you better understand your users.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is user research important?',
             content:
               'User research helps us understand user needs, behaviours, and pain points. These insights inform our design decisions, ensuring we create products that are useful, usable, and desirable.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What methods do you use for user research?',
             content:
               'We use a variety of methods, including user interviews, surveys, usability testing, and data analysis. The methods we choose depend on the research objectives and the stage of the product development process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do the insights from user research inform your design process?',
             content:
@@ -3102,19 +3102,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Application Testing & Usability Evaluation Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is application testing important for my business?',
             content:
               'Application testing is essential to ensure that your applications function correctly, provide a good user experience, and meet your business requirements. It helps identify and rectify issues before they impact your users, which can improve customer satisfaction and protect your business reputation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What does usability evaluation involve?',
             content:
               'Usability evaluation involves assessing how user-friendly and intuitive your application is. This could include testing the interface, evaluating the user journey, and gathering user feedback. The goal is to ensure that users can easily navigate your application and successfully complete their intended tasks.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of my application?',
             content:
               'Our team of experts conducts thorough testing and evaluation, using a combination of manual and automated testing techniques. We check functionality, usability, performance, and compatibility across different devices, browsers, and operating systems. We also conduct user experience evaluations to ensure your application is intuitive and user-friendly.',
@@ -3194,19 +3194,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Enterprise UI Library service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is an Enterprise UI Library important?',
             content:
               'An Enterprise UI Library promotes consistency in the user experience across different products or platforms. It also helps speed up the design and development process by providing a set of reusable design components. Additionally, it helps facilitate better collaboration among designers, developers, and stakeholders.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What can I expect from your Enterprise UI Library service?',
             content:
               'You can expect a comprehensive and scalable UI library that includes a component library and a design system. These tools are designed to help your team design and develop more efficiently and consistently. We also monitor performance metrics to ensure that the library is effectively utilized and meets your business objectives.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the UI library is scalable?',
             content:
               'We build the UI library with scalability in mind. We use modular and flexible design principles to ensure that the design components can be easily adapted and expanded to meet the growing needs of your business. We also provide ongoing support to help you update and expand the library as needed.',
@@ -3286,20 +3286,20 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Design System Implementation Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why are design systems important for my business?',
             content:
               'Design systems bring consistency and efficiency to the product design and development process. They streamline communication among teams, reduce design and technical debt, and ensure a unified, recognizable brand presentation across your products.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What does the process of design system implementation look like?',
             content:
               'Our process involves understanding your brand and users, defining a comprehensive design language, maintaining visual consistency, creating a reusable component library, and focusing on usability. We also ensure the system is scalable to accommodate future business growth and needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does a design system improve the user experience?',
             content:
               'Design systems promote consistency, which leads to better usability and a more predictable and recognizable user experience. They also streamline the design process, ensuring faster delivery of high-quality, user-centered designs.',
@@ -3379,20 +3379,20 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Design Principles & Guidelines Service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why are design principles and guidelines important?',
             content:
               'Design principles and guidelines provide a shared understanding and framework for making design decisions. They foster consistency, improve usability, and guide the creation of innovative, user-centered solutions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How does your service help establish these principles and guidelines?',
             content:
               'Our team works closely with you to understand your brand, your users, and your business objectives. We then define clear, user-centered design principles and translate these into actionable guidelines for your design team.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What is the benefit of user-centered design principles?',
             content:
               'User-centered design principles ensure that the needs and experiences of your users are at the forefront of all design decisions. This leads to improved user satisfaction, increased engagement, and ultimately, business success.',
@@ -3472,19 +3472,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Dashboard Design service and how it can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a well-designed dashboard important?',
             content:
               'A well-designed dashboard allows users to quickly understand and interact with data, supporting informed decision-making. It helps in monitoring key metrics, identifying trends, and spotting anomalies.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What can I expect from your Dashboard Design service?',
             content:
               'Our service delivers custom dashboards designed to meet your specific business needs. We ensure the dashboards are intuitive, visually appealing, and functional. This includes effective data visualization, responsive design, and a user-centric approach to design.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the dashboard meets our needs?',
             content:
               'We begin by understanding your business, your data, and your users. This informs our design process, ensuring we create a dashboard that aligns with your processes, presents your data effectively, and offers a great user experience.',
@@ -3564,19 +3564,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Web & Mobile App Design Service and how it can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a good app design important for my business?',
             content:
               'A well-designed app can significantly improve the user experience, leading to increased customer satisfaction and loyalty. It can also improve usability, increase engagement, and ultimately, drive business success.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What is your approach to app design?',
             content:
               'Our approach to app design is user-centric. We start by understanding your target audience and their needs. From there, we create user journeys and prototypes, which we continually test and refine. We also ensure that the design is aligned with your business goals and meets the needs of your users.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the app design is user-friendly and intuitive?',
             content:
@@ -3656,20 +3656,20 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our UI/UX Revamp Service and how it can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a UI/UX revamp important for my business?',
             content:
               'A UI/UX revamp can greatly improve the user experience, leading to increased user satisfaction and engagement. It can also help your product stay competitive by aligning with current design trends and user expectations.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your UI/UX Revamp Service?',
             content:
               'Our UI/UX Revamp Service specializes in modernising and enhancing your interfaces to improve user experience. We adopt a user-centered approach, ensuring the revamped design is not just visually appealing, but also functional and user-friendly. We also prioritize accessibility, allowing your design to be used by everyone.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach the UI/UX revamp process?',
             content:
               'We start by understanding your users and their needs. We then create modern, user-friendly designs and prototypes, which we rigorously test for usability and accessibility. We also work closely with your team throughout the process, ensuring the new design aligns with your business goals and objectives.',
@@ -3749,19 +3749,19 @@ export const MOCK_DESIGN_SERVICES = [
           'Learn more about our Design Team Augmentation Service and how it can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Design Team Augmentation?',
             content:
               'Design Team Augmentation is a service that provides businesses with skilled design professionals who can seamlessly integrate into your existing team to help boost productivity, bring in specialized expertise, and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can Design Team Augmentation benefit my business?',
             content:
               'Design Team Augmentation can provide numerous benefits. It can help increase your team’s capacity, bringing in experts who specialize in enterprise product design and user experience development. This can lead to faster project completion, innovative solutions, and ultimately, better business outcomes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your Design Team Augmentation service work?',
             content:
               'We provide design professionals who can integrate into your team, understanding your project requirements and working towards your business goals. We offer flexibility, allowing you to scale up or down based on your needs. Our experts are skilled in enterprise product design and user experience development, providing you with high-quality solutions.',
@@ -3902,20 +3902,20 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Predictive Analytics Service and how we can empower your business decision making.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is predictive analytics important for my business?',
             content:
               'Predictive analytics can help your business anticipate future trends, identify opportunities, and make data-driven decisions. It provides a competitive edge by enabling you to understand customer behaviour, predict market trends, manage risks, and optimize operational efficiency.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using your Predictive Analytics Service?',
             content:
               'We use a blend of data science expertise, advanced statistical techniques, and machine learning models to provide accurate predictive insights. Our team works closely with you to understand your specific business needs and tailor our solutions accordingly. We focus on transforming complex data into actionable insights that drive strategic planning and decision-making.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the accuracy of your predictions?',
             content:
               'Accuracy in predictive analytics is a result of quality data, appropriate model selection, and rigorous testing. We start with comprehensive data analysis to understand the patterns and trends. Then we choose or develop a predictive model that best suits your data and objectives. After making predictions, we validate our model against actual outcomes and refine it continuously to enhance its accuracy over time.',
@@ -3994,19 +3994,19 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our AI Automation Service and how it can revolutionize your business processes.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What are the benefits of AI automation for enterprises?',
             content:
               'AI automation brings numerous benefits to enterprises, including increased operational efficiency, cost reduction, improved accuracy, enhanced customer experiences, and the ability to leverage data for strategic decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can AI automation be implemented in my business?',
             content:
               'The implementation of AI automation in your business involves identifying suitable use cases, assessing data availability and quality, selecting appropriate AI technologies, and partnering with experts who can design and deploy tailored automation solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What industries can benefit from AI automation?',
             content:
               'AI automation can benefit a wide range of industries, including finance, healthcare, manufacturing, retail, logistics, customer service, and more. Virtually any sector that deals with data-driven processes can leverage AI automation to gain efficiency and competitive advantages.',
@@ -4084,19 +4084,19 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our ChatGPT Integration Service and how it can enhance your applications.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is ChatGPT?',
             content:
               'ChatGPT is an advanced language model developed by OpenAI that can generate human-like responses and hold context-rich conversations. It uses deep learning techniques to understand and generate text based on the input it receives.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can ChatGPT benefit my applications?',
             content:
               'By integrating ChatGPT into your applications, you can provide natural and interactive conversational experiences to your users. ChatGPT can assist with tasks, answer questions, provide recommendations, and engage users in dynamic conversations, enhancing user satisfaction and improving overall user experience.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Is ChatGPT customizable for specific domains?',
             content:
               'Yes, ChatGPT can be customized for specific domains by training it on domain-specific datasets and fine-tuning the model. This allows ChatGPT to provide more accurate and relevant responses tailored to your application and industry.',
@@ -4175,19 +4175,19 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Prompt Engineering service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Prompt Engineering important for my business?',
             content:
               'Prompt Engineering can significantly enhance user engagement and satisfaction by providing personalized, context-aware prompts. These prompts can drive conversions and improve user experience, contributing to increased customer loyalty and business growth.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Prompt Engineering service work?',
             content:
               'Our Prompt Engineering service leverages AI and deep learning to design and deliver intelligent prompts. We work closely with enterprise clients to understand their needs and customize our prompts accordingly. Our systems ensure timely delivery and context-awareness for maximum effectiveness and personalization.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the effectiveness of your prompts?',
             content:
               'We continually analyse the performance of our prompts and adjust our strategies based on the insights we gain. We also design our prompts to be user-centric, which increases their relevance and effectiveness.',
@@ -4266,19 +4266,19 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our OpenAI API Integration service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is OpenAI API Integration important for my business?',
             content:
               'OpenAI API Integration can significantly enhance your business capabilities by introducing AI-driven automation and insights. It can improve efficiency, drive innovation, and give you a competitive edge in the market.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your OpenAI API Integration service work?',
             content:
               'Our team of experts will work with you to understand your business needs and design an integration plan. We will then implement the OpenAI APIs into your existing systems, ensuring seamless integration and optimal performance. We also provide ongoing support and updates to ensure your systems stay up-to-date.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What kind of support can I expect after the OpenAI API integration?',
             content:
@@ -4358,21 +4358,21 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our ChatGPT Plugin Development service and how it can enhance your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should I consider developing ChatGPT plugins for my enterprise solutions?',
             content:
               'ChatGPT plugins can significantly enhance user experiences by enabling advanced conversational capabilities. They can be used for a variety of purposes, including customer support, knowledge management, process automation, and more. By developing custom ChatGPT plugins tailored to your enterprise needs, you can empower your organisation with intelligent conversational interfaces that streamline workflows, improve customer interactions, and drive business value.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of partnering with your ChatGPT Plugin Development service?',
             content:
               'Our ChatGPT Plugin Development service combines deep domain knowledge, AI expertise, and agile development methodologies to deliver custom plugins that enhance your enterprise data and AI solutions. By partnering with us, you can leverage our experience in developing ChatGPT plugins, ensuring seamless integration with your existing systems, personalized user experiences, scalability, multilingual support, and adherence to security and compliance standards. We work closely with your team to understand your requirements and deliver tailored solutions that meet your enterprise needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team approach ChatGPT plugin development?',
             content:
               'We follow a collaborative and iterative approach to ChatGPT plugin development. Our team works closely with your organisation to understand your requirements, domain-specific challenges, and desired outcomes. We leverage our AI expertise to design and develop custom ChatGPT plugins that address your unique needs. Throughout the development process, we ensure seamless integration with your existing systems, data privacy, scalability, multilingual support, and compliance with industry regulations. We also provide ongoing support and maintenance to ensure the optimal performance of the ChatGPT plugins.',
@@ -4451,20 +4451,20 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Data Warehousing Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a well-structured data warehouse important for my business?',
             content:
               'A well-structured data warehouse centralizes your data, improving accessibility and reliability. It enables efficient data analysis and reporting, leading to informed business decisions and strategies. Additionally, a well-managed data warehouse ensures data security and compliance with data regulations.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your Data Warehousing Service?',
             content:
               'Our Data Warehousing Service offers a comprehensive approach to data management. We handle every aspect, from designing robust data architectures, integrating disparate data sources, managing the data lifecycle, to ensuring top-notch data security. We work closely with your team, providing consultation and training to enable effective use of your data warehouse.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What is your approach to data warehousing?',
             content:
               'We start by understanding your business needs and existing data infrastructure. Based on this, we design a tailored data architecture, followed by integrating data sources, transforming data for analysis, and implementing data security measures. We oversee the entire data lifecycle and provide expert consultation and training to your team.',
@@ -4543,21 +4543,21 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Data Pipeline Architecture service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a well-designed data pipeline crucial for my business?',
             content:
               'A well-designed data pipeline is essential for handling data effectively. It enables seamless data flow, accurate processing, secure storage, and ultimately, better decision-making. With a robust data pipeline, your business can achieve improved operational efficiency, quicker insights, and enhanced data-driven strategies.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your Data Pipeline Architecture service?',
             content:
               'Our service offers end-to-end solutions for your data pipeline needs. From efficient data ingestion and processing to secure storage and performance optimization, we cover all aspects. Our team works closely with you, understanding your unique needs, and designs a data pipeline architecture that aligns with your business goals. We also provide consultation and training for effective management of your data infrastructure.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the scalability of the data pipeline?',
             content:
               'We understand that as your business grows, your data needs will also evolve. We design the data pipeline architecture with scalability as a priority. This includes choosing scalable data storage solutions, implementing mechanisms for efficient data processing even with increasing volumes, and ensuring that the architecture can accommodate additional data sources in the future.',
@@ -4636,20 +4636,20 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Big Data Solutions Service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is big data important for my business?',
             content:
               'Big data can provide insights that enable you to make more informed decisions, identify new opportunities, improve customer service, and optimize operational efficiency. Effectively leveraging big data can lead to significant business growth and competitive advantage.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What types of big data solutions does your company provide?',
             content:
               'Our big data solutions encompass a broad range of services including data management, data analytics, data processing, data security, data integration, and the integration of AI and machine learning technologies. We tailor our solutions based on your specific business needs and goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can I be sure that my data is secure?',
             content:
               'We prioritize data security in all of our solutions. We implement stringent security measures and follow best practices in data encryption, access control, and compliance to ensure the privacy and protection of your data.',
@@ -4728,19 +4728,19 @@ export const MOCK_DATA_SERVICES = [
           'Find answers to common questions about our Data ETL service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of ETL for my business?',
             content:
               "ETL is vital for data-driven decision making in businesses. It helps collect data from various sources, clean and organize it, and store it in a manner that's optimized for analysis. This facilitates accurate, timely insights that can drive business strategy.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can your Data ETL service help my business?',
             content:
               'Our Data ETL service helps businesses streamline their data workflows. We ensure that data is extracted from various sources, transformed into a consistent format, and loaded into a target system efficiently. This prepares the data for analysis and reporting, enabling businesses to make informed decisions based on accurate data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure data security during the ETL process?',
             content:
               'Data security is a top priority in our ETL processes. We use secure methods for data extraction, transformation, and loading. We also enforce strict access controls and use encryption to protect sensitive data.',
@@ -4819,20 +4819,20 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Data Roadmap Development Service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a data roadmap important for my business?',
             content:
               'A data roadmap provides a strategic framework for your data initiatives, aligning them with your business objectives. It outlines the steps needed to achieve your data goals and provides a clear vision of your data future. This helps ensure efficient use of resources, facilitates better decision making, and accelerates business growth.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Data Roadmap Development Service?',
             content:
               'Our Data Roadmap Development Service specializes in crafting detailed, scalable data roadmaps. We work closely with you, understanding your business vision and data landscape, to align your data initiatives with your business objectives. Our comprehensive approach ensures you have a clear data strategy, effective project planning, suitable performance metrics, and continuous roadmap iterations for sustained growth.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you develop a data roadmap?',
             content:
               'We start by understanding your business objectives and existing data landscape. From there, we define a clear data strategy and outline the data initiatives needed to achieve this strategy. We then craft a detailed, scalable roadmap, plan your data projects, define key performance indicators, and provide advice on suitable data technologies. We also continuously revisit and update the roadmap based on changes in your business, technology, or performance metrics.',
@@ -4911,20 +4911,20 @@ export const MOCK_DATA_SERVICES = [
           'Learn more about our Business Intelligence Consulting Service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is business intelligence important for my enterprise?',
             content:
               'Business Intelligence (BI) provides crucial insights into your operations, customer behaviour, and market trends. It allows you to make data-driven decisions, optimize processes, and drive business growth. Without BI, your decisions are likely based on intuition rather than evidence, which can lead to inefficiencies and missed opportunities.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Business Intelligence Consulting Service?',
             content:
               'We offer comprehensive BI consulting services, helping you manage your data, implement the right BI tools, and generate actionable insights. Our team of experts works closely with your organisation, providing tailored solutions that align with your business objectives. We also provide training and support, ensuring your team is equipped to leverage your BI infrastructure effectively.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach business intelligence consulting?',
             content:
               'We start by understanding your business objectives, data landscape, and current challenges. We then provide expert guidance on managing your data, choosing and implementing BI tools, and interpreting data outputs. We also offer training to foster a data-driven culture within your organisation, ensuring your team can effectively use your BI tools and interpret the insights they provide.',
@@ -5002,19 +5002,19 @@ export const MOCK_DATA_SERVICES = [
           'Explore frequently asked questions about our Data Scraping services and understand how we can support your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is data scraping important for my business?',
             content:
               'Data scraping allows your business to gather large amounts of data from various sources. This data, when analysed, can provide valuable insights to help drive strategic business decisions, understand market trends, and deliver enhanced customer experiences.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your Data Scraping service?',
             content:
               'Our Data Scraping service enables you to access precise and relevant data swiftly and efficiently. Our expert team ensures that the data gathered is accurate, reliable, and tailored to your specific business needs. We follow best practices in data privacy, making sure all the data collected is handled in compliance with data protection regulations.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of scraped data?',
             content:
               'We use advanced tools and techniques to ensure the data we extract is of the highest quality. This includes cross-validation methods and automated checks for data accuracy. Additionally, our ongoing maintenance ensures your data remains up-to-date and relevant.',
@@ -5093,19 +5093,19 @@ export const MOCK_DATA_SERVICES = [
           'Get answers to frequently asked questions about our Data Visualization service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is data visualization important for my business?',
             content:
               'Data visualization can help businesses understand complex data and identify new patterns and trends. It allows for easier data interpretation, facilitates quicker decision-making, and helps communicate insights in a clear and effective manner.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data can be visualized?',
             content:
               'Almost any type of data can be visualized, provided it is structured appropriately. This includes sales data, customer data, performance data, market research data, and much more. The goal is to transform raw, complex data into visual insights that inform decision-making.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the accuracy of visualized data?',
             content:
               'We implement rigorous data management practices to ensure the data being visualized is accurate and up-to-date. This includes data cleaning, validation, and regular updates. We also work closely with our clients to understand their data and ensure it is presented accurately.',
@@ -5288,20 +5288,20 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Customer Journey Mapping service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is understanding the customer journey important for my business?',
             content:
               'Understanding the customer journey helps your business to improve customer experience, optimize marketing efforts, and ultimately, increase conversions. It enables you to identify potential pain points in the customer journey and make necessary improvements.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Customer Journey Mapping service work?',
             content:
               'Our service begins with data analysis to understand customer behaviour and preferences. We then identify key touchpoints in the customer journey and develop detailed customer personas. After mapping out the customer journey visually, we provide targeted recommendations for improvement at each touchpoint. The customer journey is then continually monitored and optimized based on performance data and customer feedback.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What is a touchpoint in the customer journey?',
             content:
               'A touchpoint is any interaction between a customer and a business. This can occur at any stage of the customer journey, from initial awareness and discovery to purchase and post-purchase support. Touchpoints can occur across various channels, both online and offline, and they play a crucial role in shaping the customer’s overall experience with a business.',
@@ -5422,21 +5422,21 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Omnichannel CRM Integration service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is Omnichannel CRM Integration important for my business?',
             content:
               'Omnichannel CRM Integration allows for a seamless customer experience across all channels. By having a unified view of customer interactions, your business can provide consistent messaging and service, improve customer understanding, and enhance overall customer relationships.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Omnichannel CRM Integration Service?',
             content:
               'We specialize in Omnichannel CRM Integration, helping businesses consolidate their customer data from various sources into a unified view. This not only improves the customer experience but also enables better decision-making through robust analytics. Furthermore, we provide ongoing support and maintenance to ensure your CRM system continues to function optimally.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach Omnichannel CRM Integration?',
             content:
               'We start by understanding your business, its various customer touchpoints, and the systems currently in place. We then design a solution tailored to your needs, which involves consolidating your data sources, synchronizing your systems, implementing advanced analytics, and automating processes where possible. We also provide ongoing support and maintenance for your integrated CRM system.',
@@ -5556,21 +5556,21 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Enterprise Social Media Strategy service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a tailored social media strategy important for my enterprise?',
             content:
               'A tailored social media strategy is crucial in shaping your brand’s online presence, reaching your target audience effectively, and encouraging meaningful engagement. As an enterprise, it’s important that your social media activities reflect your business’s goals and values while also appealing to your specific audience demographics.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Enterprise Social Media Strategy service?',
             content:
               'With our service, you get a team of digital marketing experts specializing in B2B enterprise-level businesses. We leverage our understanding of the unique needs of enterprises to create a social media strategy that is tailored to your business. From performance analysis and targeting to content planning and distribution, we ensure your social media presence aligns with your overall marketing strategy and business objectives.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you approach social media strategy for enterprises?',
             content:
               'We start by understanding your business, its goals, and its target audience. We then analyse your current social media performance, and based on this analysis, we develop a strategy that includes content planning, targeting, distribution, and ROI measurement. We ensure this strategy aligns with your overall marketing strategy and business objectives, and we provide regular reports to measure its effectiveness.',
@@ -5690,20 +5690,20 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Digital Marketing Roadmap Development service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why do I need a digital marketing roadmap?',
             content:
               'A digital marketing roadmap serves as a strategic guide for your marketing efforts. It aligns your marketing initiatives with your business objectives, ensures you have a clear plan to follow, and allows you to measure and optimize your performance over time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of working with your Digital Marketing Roadmap Development service?',
             content:
               'Working with us, you benefit from our expertise in B2B digital marketing and web development. We understand the unique challenges and needs of enterprise-level businesses and can help you develop a robust and effective digital marketing roadmap that aligns with your business objectives.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you approach developing a digital marketing roadmap?',
             content:
@@ -5824,19 +5824,19 @@ export const MOCK_DIGITAL_SERVICES = [
           'Find out more about our B2B Lead Generation service and how it can propel your business growth.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is B2B lead generation important for my business?',
             content:
               'A steady stream of qualified B2B leads is crucial to maintain and grow your business. It provides your sales team with potential customers to engage and convert, directly influencing your revenue and business growth.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your B2B lead generation service work?',
             content:
               'Our B2B lead generation service combines strategic digital marketing techniques such as email marketing, content marketing, SEO, PPC, and LinkedIn marketing. We devise data-driven strategies, develop targeted campaigns, create engaging content, and use advanced analytics to identify, engage, and convert potential leads.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of the leads generated?',
             content:
               'We focus on generating high-quality, qualified leads that match your target customer profile. We achieve this by gaining a deep understanding of your business, industry, and customers, which enables us to create highly targeted marketing campaigns that attract leads with a genuine interest in your products or services.',
@@ -5956,19 +5956,19 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Advanced Technical SEO services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Advanced Technical SEO important?',
             content:
               'Advanced Technical SEO is crucial for ensuring that search engines can access, crawl, interpret and index your website without any problems. By addressing technical issues, you can enhance your site visibility and performance in search results, leading to more organic traffic and conversions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of businesses need Advanced Technical SEO?',
             content:
               'Any business that wants to improve its online visibility and performance can benefit from Advanced Technical SEO. It is particularly important for businesses with large and complex websites, as these can present more technical issues that could affect search engine accessibility and indexation.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does Advanced Technical SEO differ from regular SEO?',
             content:
               'While regular SEO often focuses on keyword optimization and link building, Advanced Technical SEO goes deeper into the technical aspects of your website. It involves optimizing your site structure, code, link structure, mobile SEO, and site security for better performance and visibility in search results.',
@@ -6089,20 +6089,20 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Customized Account-Based Marketing services and how they can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Account-Based Marketing?',
             content:
               'Account-Based Marketing (ABM) is a strategic approach to marketing that concentrates resources on a set of target accounts within a market. It uses personalized campaigns designed to engage each account, basing the marketing message on the specific attributes and needs of the account.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How does Customized Account-Based Marketing benefit my business?',
             content:
               'Customized Account-Based Marketing allows you to focus on the accounts that are most likely to generate revenue for your business. By personalizing your marketing strategy for each target account, you can create more relevant and impactful interactions. This not only improves engagement but also drives better marketing ROI.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What is involved in your Customized Account-Based Marketing service?',
             content:
@@ -6223,19 +6223,19 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our SEM Management services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is SEM and how can it benefit my business?',
             content:
               'Search Engine Marketing (SEM) is a form of Internet marketing that involves promoting websites by increasing their visibility in search engine results pages. This is achieved primarily through paid advertising. SEM can benefit your business by increasing your online visibility, driving more traffic to your website, and improving your chances of converting that traffic into leads and sales.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What does your SEM Management service include?',
             content:
               'Our SEM Management service is comprehensive, encompassing SEM strategy development, paid search advertising, SEO integration, keyword management, performance tracking, and continuous optimization. We manage your SEM campaigns end-to-end, with the goal of maximizing your visibility in search engine results pages and driving more quality traffic to your website.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you measure the success of SEM campaigns?',
             content:
               'We measure the success of SEM campaigns using a variety of metrics, including clicks, impressions, click-through rates (CTR), conversion rates, cost per click (CPC), and overall return on ad spend (ROAS). We provide regular reports to keep you informed of your campaign performance and the results we’re achieving.',
@@ -6355,21 +6355,21 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Enterprise Corporate Website Development services and how we can enhance your online presence.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a well-developed corporate website important for my business?',
             content:
               'A well-developed corporate website serves as the digital face of your enterprise. It enhances your brand’s online presence, helps you reach a wider audience, and offers a platform for you to effectively communicate with your customers. It also improves your business credibility and can significantly boost customer engagement and conversion rates.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What technologies do you use for corporate website development?',
             content:
               'Our team of experienced developers are skilled in a wide range of modern technologies, including but not limited to HTML5, CSS3, JavaScript, React, Angular, Node.js, PHP, and more. We choose the most suitable technology stack based on your business requirements and the project scope.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can you redesign my existing corporate website?',
             content:
               'Yes, we can. Our team is proficient in both creating new websites from scratch and redesigning existing ones. We can evaluate your current website, understand your new requirements, and redesign your website to better align with your business objectives while enhancing its functionality and user experience.',
@@ -6488,19 +6488,19 @@ export const MOCK_DIGITAL_SERVICES = [
         subtitle: 'Learn more about our Advanced CMS Customization services.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the benefit of customizing my CMS?',
             content:
               'Customizing your CMS allows you to tailor it to the specific needs of your business. This can enhance your workflow, improve your team’s productivity, and ultimately lead to better business outcomes.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of CMS do you specialize in?',
             content:
               'Our team has extensive experience with a variety of CMS platforms, including WordPress, Drupal, Joomla, and many others. We’ll work with you to understand your needs and determine the best CMS for your business.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does the customization process work?',
             content:
               'We start by understanding your business, your goals, and your needs. From there, we’ll suggest customizations that we believe will best serve you. Once we’ve agreed on a plan, we’ll work diligently to implement these customizations and test them thoroughly to ensure they work as expected.',
@@ -6620,20 +6620,20 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Landing Page Optimization & Analytics services.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is landing page optimization important?',
             content:
               'Landing page optimization is essential for improving the effectiveness of your online marketing campaigns. A well-optimized landing page can increase conversions, lower customer acquisition costs, and improve your return on investment.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of businesses can benefit from landing page optimization?',
             content:
               'Any business that relies on online marketing to generate leads or sales can benefit from landing page optimization. This includes e-commerce stores, B2B companies, service providers, and more.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What does the optimization process involve?',
             content:
               'The optimization process involves various strategies, such as improving the page design and layout, optimizing the page for SEO, enhancing the page load speed, and analyzing user behaviour data to understand how visitors interact with the page and identify areas of improvement.',
@@ -6753,19 +6753,19 @@ export const MOCK_DIGITAL_SERVICES = [
           'Learn more about our Advanced Data Analytics & Business Intelligence services.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is data analytics important for my business?',
             content:
               'Data analytics is critical for businesses today. It allows you to understand your customers better, optimize your operations, and make data-driven decisions. With data analytics, you can spot trends, forecast future scenarios, and stay ahead of the competition.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of business intelligence?',
             content:
               'Business Intelligence (BI) can transform your business data into actionable insights. BI tools and techniques can help you monitor key business metrics, understand your customers, improve decision making, and drive operational efficiency and growth.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How can data analytics and business intelligence work together?',
             content:
@@ -6906,20 +6906,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Digital Roadmap Development service and how it can drive digital transformation in the finance industry.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a digital roadmap important for finance companies?',
             content:
               'A digital roadmap provides a clear direction and plan for implementing digital initiatives that drive growth, enhance operational efficiency, and deliver superior customer experiences in the ever-changing finance industry.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can your Digital Roadmap Development service benefit my finance business?',
             content:
               'Our service combines industry expertise, strategic planning, and data-driven insights to create a tailored digital roadmap that aligns with your business goals, mitigates risks, and maximizes the potential of digital transformation in the finance industry.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What is the process of developing a digital roadmap?',
             content:
               'We collaborate closely with your team, conducting in-depth analysis, assessing risks, facilitating stakeholder alignment, and leveraging our expertise to create a comprehensive digital roadmap that guides your finance business towards successful digital transformation.',
@@ -7041,21 +7041,21 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our FinTech Digital Strategy service and how it can empower your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a digital strategy important for financial institutions?',
             content:
               'In the evolving financial landscape, a well-defined digital strategy is crucial. It enables financial institutions to adapt to changing customer expectations, regulatory changes, and emerging technologies. An effective digital strategy can improve operational efficiency, customer experience, compliance, and profitability.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can your FinTech Digital Strategy service help my business?',
             content:
               'Our service combines deep industry knowledge, technical expertise, and strategic insight to deliver tailored digital solutions. We help you leverage technology to improve operations, customer experiences, and revenue streams. From strategic consulting to implementation, we provide end-to-end support for your digital transformation journey.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What technologies do you leverage in your digital solutions?',
             content:
@@ -7177,20 +7177,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our AI-Powered Business Process Automation service and how it can enhance your business operations.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is AI-Powered Business Process Automation important for my business?',
             content:
               'AI-powered automation can greatly enhance the efficiency of your business operations. It can automate repetitive tasks, streamline workflows, and provide insights for continual optimization. This can result in significant cost savings and improved customer experiences.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can your service help my financial institution?',
             content:
               'We provide tailored AI-powered automation solutions designed specifically for the finance sector. These solutions can automate various operations, from data analysis to customer service, leading to enhanced efficiency and improved customer experiences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What technologies do you leverage for your AI-Powered Business Process Automation service?',
             content:
@@ -7312,20 +7312,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Workflow Management and Optimization service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is Workflow Management and Optimization crucial for my business?',
             content:
               'Workflow Management and Optimization is key to increasing efficiency and productivity in your organisation. It helps in streamlining operations, eliminating bottlenecks, reducing errors, and ensuring that your team can focus on strategic tasks. This not only improves operational efficiency but also leads to cost savings.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can your service enhance my financial operations?',
             content:
               "Our expert team analyses your existing workflows, identifies areas for improvement, and implements bespoke solutions tailored to your organisation's needs. We also utilize task automation and advanced analytics to increase efficiency. In addition, we design workflows to enhance collaboration and ensure compliance with regulatory standards in the finance industry.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What does the workflow optimization process involve?',
             content:
               'Our workflow optimization process involves a thorough analysis of your current workflows, identification of bottlenecks and areas for improvement, and the implementation of changes. This may include process automation, reorganisation of tasks, implementation of new technologies, and training of staff. The goal is to make your workflows more efficient and effective.',
@@ -7447,20 +7447,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Automated Portfolio Optimization service and how it can revolutionize your asset management.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is Automated Portfolio Optimization important for my business?',
             content:
               'Automated Portfolio Optimization is crucial in the dynamic world of finance, as it can enhance your returns and reduce risk. By leveraging advanced algorithms and machine learning, it can monitor market trends and adjust portfolio allocations in real time, ensuring your financial performance is maximized.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can your service improve my asset management?',
             content:
               "Our Automated Portfolio Optimization service utilizes sophisticated algorithms and machine learning to optimize your portfolios. It monitors market trends and adjusts portfolio allocations in real time to maximize returns and reduce risk. We also provide advanced analytics tools to measure your portfolio's performance and identify areas for improvement.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What does your service include?',
             content:
               "Our service includes automated portfolio optimization using advanced algorithms and machine learning, real-time portfolio adjustment based on market trends, performance analytics, risk management, and tailored solutions to suit your organisation's unique needs and risk profile.",
@@ -7581,20 +7581,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our AI-Driven Investment Analysis service and how it can empower your investment decisions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is AI-Driven Investment Analysis important for my business?',
             content:
               'AI-Driven Investment Analysis can significantly enhance your investment decisions. By analyzing vast amounts of financial data and predicting market trends, it provides actionable insights and helps you make data-driven decisions. This not only maximizes your investment returns but also saves time and resources.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What does your service include?',
             content:
               'Our service includes AI-driven analysis of market trends and investment opportunities, predictive analytics, evaluation of potential investments, automated data processing, customized solutions based on your specific strategies and goals, and decision support to help you manage your investments more effectively.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does AI enhance investment decisions?',
             content:
               'AI enhances investment decisions by processing and analyzing vast amounts of financial data quickly and accurately. It provides predictive analytics to forecast market trends, evaluates potential investments based on a variety of factors, and provides actionable insights to guide your investment decisions.',
@@ -7716,20 +7716,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our AI-Enabled Regulatory Reporting service and how it can simplify your regulatory reporting process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is AI-Enabled Regulatory Reporting important for my business?',
             content:
               'AI-Enabled Regulatory Reporting simplifies the complex process of regulatory reporting, reduces errors, increases efficiency, and ensures timely compliance. This allows your team to focus on strategic tasks, enhancing overall productivity.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your service improve regulatory reporting?',
             content:
               'Our service uses AI to automate data extraction, validation, and report generation. This reduces manual efforts, increases accuracy, and ensures timely reporting. We also provide tools for tracking regulatory changes, ensuring your reports are always up-to-date.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does AI simplify the regulatory reporting process?',
             content:
               'AI simplifies regulatory reporting by automating tasks like data extraction and validation, reducing manual efforts and risk of errors. It also facilitates automatic generation of reports and tracking of regulatory changes, ensuring accuracy and timeliness.',
@@ -7850,21 +7850,21 @@ export const MOCK_FINX_SERVICES = [
           'Find out more about our Compliance Risk Assessment service and how it can help you.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is Compliance Risk Assessment important for my business?',
             content:
               'Compliance Risk Assessment is critical to understanding and managing the potential compliance risks associated with your operations. Effective risk management can help prevent regulatory violations, financial losses, and damage to your reputation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What is included in your Compliance Risk Assessment service?',
             content:
               'Our service includes identifying and evaluating compliance risks, providing strategies for risk mitigation, continuous monitoring of evolving risks, and consultation on risk management strategy. We also offer training to ensure your team is equipped to manage compliance risks effectively.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How can your service help if we are already facing regulatory issues?',
             content:
@@ -7986,19 +7986,19 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Automated Legal Document Review service and how it can streamline your legal operations.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I automate legal document review?',
             content:
               'Automating legal document review not only saves time and resources but also enhances accuracy, as it eliminates the risk of human error. It can help streamline your legal operations and free your legal team to focus on more strategic tasks.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your service review?',
             content:
               'Our service is designed to handle a wide variety of legal documents, including contracts, agreements, and regulatory documents. Contact us for more specific information regarding your needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How accurate is your Automated Legal Document Review service?',
             content:
@@ -8120,19 +8120,19 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our AI-Driven Asset Allocation service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I use AI for asset allocation?',
             content:
               'AI-driven asset allocation uses machine learning and data analytics to optimize asset allocation strategies. This approach can analyse vast amounts of data, identify patterns, and forecast market trends more accurately, enabling smarter and more profitable investment decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of assets can your service allocate?',
             content:
               "Our AI-Driven Asset Allocation service can handle a wide range of asset types, including stocks, bonds, real estate, and more. The system can be customized to suit your company's specific needs and preferences.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your service handle risk management?',
             content:
               'Our service evaluates potential risks using AI algorithms, aiding in the development of robust risk management strategies. By predicting potential market downturns and other risk factors, we help mitigate losses and optimize returns.',
@@ -8253,21 +8253,21 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Predictive Customer behaviour Analysis service and how it can drive your business growth.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can Predictive Customer behaviour Analysis benefit my business?',
             content:
               "Predictive Customer behaviour Analysis can provide valuable insights into your customers' future behaviours, enabling you to optimize product offerings, enhance customer experience, improve retention, and increase profitability. By understanding and anticipating customer behaviours, you can make more informed decisions and strategically plan your business operations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What data do you need to perform Predictive Customer behaviour Analysis?',
             content:
               "Our analysis is based on a variety of customer data, including demographics, transaction history, browsing behaviour, and more. The more data we have, the more accurate our predictions can be. However, we ensure all data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How accurate are the predictions from your service?',
             content:
               'While no predictive analysis can guarantee 100% accuracy, our service uses advanced machine learning algorithms and robust data processing techniques to provide highly reliable predictions. Furthermore, as we continually refine our models with new data, the accuracy of our predictions typically improves over time.',
@@ -8389,20 +8389,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Personalized Product Recommendation Systems and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is a personalized product recommendation system important?',
             content:
               'Personalized product recommendations can significantly improve customer engagement by providing a tailored shopping experience. They can help increase conversions, boost customer loyalty, and drive additional revenue by promoting relevant products to customers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data is needed for the system?',
             content:
               "Our system uses a variety of customer data, including transaction history, browsing behaviour, and personal demographics. We use this data to understand customer preferences and make personalized product recommendations. All data is handled with strict adherence to privacy regulations and your company's data policies.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can I measure the impact of the recommendation system?',
             content:
               'We provide detailed analytics and reporting features that allow you to measure key metrics such as conversion rates, average order value, and customer engagement. These insights can help you understand the impact of the recommendation system on your business performance.',
@@ -8523,19 +8523,19 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Engineering Staff Augmentation service and how it can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Engineering Staff Augmentation?',
             content:
               'Engineering Staff Augmentation is a flexible outsourcing strategy that allows you to hire tech talent globally and manage your augmented team directly. You are the one to choose your team members and manage their work, while the staffing company handles all administrative and HR processes.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How quickly can I scale my team with Staff Augmentation?',
             content:
               'The time to scale depends on your specific needs. However, with our extensive network and efficient onboarding processes, we can often introduce new team members within a few days to a few weeks.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'What if the provided engineer or team doesn’t meet my expectations?',
             content:
@@ -8657,20 +8657,20 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our Generative AI Solutions and how they can transform your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is generative AI?',
             content:
               'Generative AI refers to the use of artificial intelligence techniques, such as deep learning and reinforcement learning, to generate new content, ideas, or solutions. It enables machines to create original and valuable outputs, leading to automated creativity and intelligent problem-solving.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can generative AI benefit my business in the finance industry?',
             content:
               'Generative AI can bring numerous benefits to the finance industry. It can automate time-consuming tasks, generate personalized product recommendations, optimize trading strategies, detect fraud, and enhance risk assessment models. By leveraging generative AI, businesses in finance can drive innovation, improve operational efficiency, and gain a competitive edge.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Do I need a large amount of data to implement generative AI solutions?',
             content:
@@ -8792,19 +8792,19 @@ export const MOCK_FINX_SERVICES = [
           'Learn more about our ChatGPT API Development services and how they can elevate your customer interactions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is ChatGPT?',
             content:
               'ChatGPT is a state-of-the-art language model developed by OpenAI that excels in generating human-like text responses in a conversational setting. It can be used to build chatbots, virtual assistants, and other conversational AI applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How can ChatGPT benefit my business?',
             content:
               'By leveraging ChatGPT, businesses can automate customer support, improve response times, personalize interactions, and scale their customer service efforts. It enables efficient handling of frequently asked questions, provides 24/7 availability, and enhances customer satisfaction.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What industries can benefit from ChatGPT API development?',
             content:
               'ChatGPT API development can benefit a wide range of industries, including finance, e-commerce, healthcare, telecommunications, and more. Any business that interacts with customers can leverage ChatGPT to enhance their customer support, sales, and engagement processes.',
@@ -8944,20 +8944,20 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
               "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How does your team ensure the security and privacy of the platform?',
             content:
@@ -9078,20 +9078,20 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
               'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and accessibility of your tools?',
             content:
@@ -9212,19 +9212,19 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our Automated Reporting service and how it can revolutionize your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is automated reporting important for my business?',
             content:
               'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of reports can be automated?',
             content:
               'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Automated Reporting service?',
             content:
               'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
@@ -9344,20 +9344,20 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your system search?',
             content:
               'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Intelligent Document Search service?',
             content:
               'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
@@ -9477,20 +9477,20 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a virtual assistant important for my business?',
             content:
               'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy with your virtual assistants?',
             content:
@@ -9611,20 +9611,20 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can AI-driven policy analysis enhance our policymaking process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data does your AI use for analysis?',
             content:
               'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -9743,21 +9743,21 @@ export const MOCK_GOVX_SERVICES = [
           'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -9877,20 +9877,20 @@ export const MOCK_GOVX_SERVICES = [
           'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'How can AI enhance compliance monitoring?',
             content:
               'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What type of compliance can your service monitor?',
             content:
               'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
@@ -10010,20 +10010,20 @@ export const MOCK_GOVX_SERVICES = [
           'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How do you collect and analyse public sentiment data?',
             content:
               'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
               'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
@@ -10163,20 +10163,20 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
               "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How does your team ensure the security and privacy of the platform?',
             content:
@@ -10297,20 +10297,20 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
               'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and accessibility of your tools?',
             content:
@@ -10431,19 +10431,19 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our Automated Reporting service and how it can revolutionize your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is automated reporting important for my business?',
             content:
               'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of reports can be automated?',
             content:
               'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Automated Reporting service?',
             content:
               'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
@@ -10563,20 +10563,20 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your system search?',
             content:
               'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Intelligent Document Search service?',
             content:
               'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
@@ -10696,20 +10696,20 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a virtual assistant important for my business?',
             content:
               'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy with your virtual assistants?',
             content:
@@ -10830,20 +10830,20 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can AI-driven policy analysis enhance our policymaking process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data does your AI use for analysis?',
             content:
               'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -10962,21 +10962,21 @@ export const MOCK_AEL_SERVICES = [
           'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -11096,20 +11096,20 @@ export const MOCK_AEL_SERVICES = [
           'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'How can AI enhance compliance monitoring?',
             content:
               'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What type of compliance can your service monitor?',
             content:
               'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
@@ -11229,20 +11229,20 @@ export const MOCK_AEL_SERVICES = [
           'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How do you collect and analyse public sentiment data?',
             content:
               'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
               'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
@@ -11381,20 +11381,20 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
               "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How does your team ensure the security and privacy of the platform?',
             content:
@@ -11515,20 +11515,20 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
               'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and accessibility of your tools?',
             content:
@@ -11649,19 +11649,19 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our Automated Reporting service and how it can revolutionize your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is automated reporting important for my business?',
             content:
               'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of reports can be automated?',
             content:
               'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Automated Reporting service?',
             content:
               'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
@@ -11781,20 +11781,20 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your system search?',
             content:
               'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Intelligent Document Search service?',
             content:
               'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
@@ -11914,20 +11914,20 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a virtual assistant important for my business?',
             content:
               'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy with your virtual assistants?',
             content:
@@ -12048,20 +12048,20 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can AI-driven policy analysis enhance our policymaking process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data does your AI use for analysis?',
             content:
               'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -12180,21 +12180,21 @@ export const MOCK_SRI_SERVICES = [
           'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -12314,20 +12314,20 @@ export const MOCK_SRI_SERVICES = [
           'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'How can AI enhance compliance monitoring?',
             content:
               'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What type of compliance can your service monitor?',
             content:
               'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
@@ -12447,20 +12447,20 @@ export const MOCK_SRI_SERVICES = [
           'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How do you collect and analyse public sentiment data?',
             content:
               'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
               'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
@@ -12599,20 +12599,20 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
               "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How does your team ensure the security and privacy of the platform?',
             content:
@@ -12733,20 +12733,20 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
               'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and accessibility of your tools?',
             content:
@@ -12867,19 +12867,19 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our Automated Reporting service and how it can revolutionize your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is automated reporting important for my business?',
             content:
               'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of reports can be automated?',
             content:
               'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Automated Reporting service?',
             content:
               'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
@@ -12999,20 +12999,20 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your system search?',
             content:
               'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Intelligent Document Search service?',
             content:
               'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
@@ -13132,20 +13132,20 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a virtual assistant important for my business?',
             content:
               'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy with your virtual assistants?',
             content:
@@ -13266,20 +13266,20 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can AI-driven policy analysis enhance our policymaking process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data does your AI use for analysis?',
             content:
               'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -13398,21 +13398,21 @@ export const MOCK_GVS_SERVICES = [
           'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -13532,20 +13532,20 @@ export const MOCK_GVS_SERVICES = [
           'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'How can AI enhance compliance monitoring?',
             content:
               'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What type of compliance can your service monitor?',
             content:
               'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
@@ -13665,20 +13665,20 @@ export const MOCK_GVS_SERVICES = [
           'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How do you collect and analyse public sentiment data?',
             content:
               'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
               'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',
@@ -13817,20 +13817,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our E-Government Platform Development Service and how we can help transform your public sector enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is the importance of e-government platforms?',
             content:
               "E-Government platforms are integral to modernizing public sector services, improving accessibility, streamlining operations, and enhancing transparency and accountability. These platforms also play a vital role in meeting citizens' evolving digital expectations.",
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What sets your E-Government Platform Development services apart?',
             content:
               'Our E-Government Platform Development services are unique due to our comprehensive approach, which incorporates user-centric design, cutting-edge technology, stringent security measures, and a deep understanding of public sector requirements.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How does your team ensure the security and privacy of the platform?',
             content:
@@ -13951,20 +13951,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our Citizen Engagement Tools service and how it can benefit your institution.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is citizen engagement important in the public sector?',
             content:
               'Active citizen engagement is key to effective governance. It allows public sector institutions to understand citizen needs better, gain valuable feedback, and make informed decisions. Moreover, engaged citizens are more likely to contribute positively to community activities, policymaking, and public affairs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'How can our public sector institution benefit from your Citizen Engagement Tools service?',
             content:
               'Our Citizen Engagement Tools service can help your institution foster meaningful relationships with citizens. By using our tools, you can facilitate interactive communication, gain valuable insights, make data-driven decisions, and enhance your services. Moreover, our emphasis on security and accessibility ensures that your digital platforms are trusted and accessible to all.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure the security and accessibility of your tools?',
             content:
@@ -14085,19 +14085,19 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our Automated Reporting service and how it can revolutionize your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is automated reporting important for my business?',
             content:
               'Automated reporting reduces the time and effort spent on manual data collection and report generation. It provides real-time insights, enables quick decision making, reduces the risk of errors, and ensures the right people get the right information at the right time.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of reports can be automated?',
             content:
               'Almost any type of report can be automated, including sales reports, financial reports, operational reports, and marketing analytics reports. The automation can be customized based on your specific needs and preferences.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Automated Reporting service?',
             content:
               'We prioritize data security. We use secure data transmission methods, encryption, and comply with all relevant privacy regulations. We also conduct regular security audits to ensure your data remains safe.',
@@ -14217,20 +14217,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our Intelligent Document Search service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is an Intelligent Document Search system important for my business?',
             content:
               'An Intelligent Document Search system significantly reduces the time and effort required to find specific information in large document repositories. It ensures swift and accurate data retrieval, thereby enhancing productivity and informed decision-making.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of documents can your system search?',
             content:
               'Our system is capable of searching a wide range of document types including PDFs, Word documents, Excel files, and more. We can customize the search capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How secure is your Intelligent Document Search service?',
             content:
               'Data security is our top priority. We ensure that only authorized personnel can access your documents. Our system also includes secure data transmission methods, encryption, and compliance with relevant privacy regulations.',
@@ -14350,20 +14350,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our Virtual Assistant Development service and how it can enhance your business efficiency.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is a virtual assistant important for my business?',
             content:
               'A virtual assistant can automate various tasks, free up resources, improve customer interaction, and provide 24/7 service. This leads to enhanced productivity, efficiency, and customer satisfaction.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What capabilities can I expect from the virtual assistant you develop?',
             content:
               'Our virtual assistants leverage AI and machine learning to understand and respond to user queries in real-time. They continually learn from interactions to improve their responses. We can also customize their capabilities based on your specific needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy with your virtual assistants?',
             content:
@@ -14484,20 +14484,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our AI-Driven Policy Analysis service and how it can help guide policymaking.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can AI-driven policy analysis enhance our policymaking process?',
             content:
               'AI-driven policy analysis can offer insights and predictions that human analysis may miss. By leveraging data in a systematic way, AI can identify trends, predict outcomes, and provide actionable guidance for policymakers.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What kind of data does your AI use for analysis?',
             content:
               'Our AI solutions can handle a wide variety of data, including demographic data, economic indicators, social metrics, and more. We tailor our data sources to the specific policy domain and decision-making context.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -14616,21 +14616,21 @@ export const MOCK_COASTAL_SERVICES = [
           'Learn more about our Public Sector Predictive Analytics service and how it can inform your decision-making process.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'How can predictive analytics enhance our decision-making process?',
             content:
               'Predictive analytics leverages historical and current data to forecast future events, trends, and behaviours. This allows you to make proactive, data-driven decisions. For example, it can help you identify potential risks, opportunities, and areas of improvement, guiding your strategic planning and resource allocation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What kind of data do your predictive analytics solutions use?',
             content:
               'Our predictive analytics solutions can analyse a wide range of data, depending on your specific needs and objectives. This could include demographic data, economic indicators, operational data, and more. We work with you to identify the most relevant data sources for your strategic goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of our data?',
             content:
               'We take data security seriously. Our systems adhere to industry-standard security practices, including encryption at rest and in transit. We also comply with all relevant data protection regulations.',
@@ -14750,20 +14750,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Find out more about our AI-Powered Compliance Monitoring service and how it can benefit your organisation.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'How can AI enhance compliance monitoring?',
             content:
               'AI can streamline compliance monitoring by automating manual tasks, improving accuracy, and providing real-time insights. This not only reduces the resources needed for compliance management but also enables the early detection of potential compliance issues, allowing for timely remediation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What makes your AI-Powered Compliance Monitoring service unique?',
             content:
               'Our AI-Powered Compliance Monitoring service is tailored to the unique compliance requirements of your organisation. We leverage advanced AI algorithms to provide real-time monitoring, proactive alerts, and comprehensive reporting, thereby improving the efficiency and effectiveness of your compliance management process.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'What type of compliance can your service monitor?',
             content:
               'Our AI-Powered Compliance Monitoring service can be customized to monitor various types of compliance, including regulatory compliance, internal policy compliance, and industry-specific compliance. We work closely with your team to understand your compliance landscape and tailor our solution accordingly.',
@@ -14883,20 +14883,20 @@ export const MOCK_COASTAL_SERVICES = [
           'Find answers to commonly asked questions about our Public Sentiment Analysis service.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why is public sentiment analysis important for government agencies?',
             content:
               'Public sentiment analysis provides government agencies with valuable insights into public perception, attitudes, and concerns. By understanding public sentiment, agencies can make informed decisions, improve communication strategies, and address public concerns effectively.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How do you collect and analyse public sentiment data?',
             content:
               'We collect public sentiment data from various sources, including social media platforms, news articles, and online forums. Advanced analytics techniques, such as natural language processing and machine learning, are applied to analyse the data and extract valuable insights. We employ sentiment analysis algorithms, opinion mining techniques, and text analytics to uncover patterns, sentiments, and key themes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can public sentiment analysis help in crisis management?',
             content:
               'Yes, public sentiment analysis is instrumental in crisis management. By monitoring public sentiment during a crisis, government agencies can assess the impact of the crisis on public perception, identify misinformation or rumours, and develop effective communication strategies to address concerns and restore public trust.',

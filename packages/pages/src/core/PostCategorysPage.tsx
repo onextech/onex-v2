@@ -31,7 +31,7 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
@@ -58,7 +58,7 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
               categoryWithPostsChunk[0]
             return [
               {
-                key: 'background-nodes',
+                id: 'background-nodes',
                 py: 0,
                 backgroundImageProps: {
                   src: firstCategoryWithPosts.hero_src,
@@ -67,7 +67,7 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
                 },
               },
               {
-                key: 'post-categorys',
+                id: 'post-categorys',
                 sx: { backgroundColor: 'background.paper' },
                 pt: { xs: 5, md: 10 },
                 items: [

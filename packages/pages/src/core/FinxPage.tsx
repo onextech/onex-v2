@@ -52,7 +52,7 @@ const FinxPage: React.FC<FinxPageProps> = (props) => {
       items={[
         // Hero
         {
-          key: 'hero-with-background-fade-slider',
+          id: 'hero-with-background-fade-slider',
           dark: true,
           center: true,
           disableContainer: true,

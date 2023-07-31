@@ -15,7 +15,7 @@ const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
       items={[
         // Form
         {
-          key: 'form',
+          id: 'form',
           sx: {
             position: 'relative',
             backgroundColor: 'background.paper',

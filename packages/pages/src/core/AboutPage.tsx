@@ -36,7 +36,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
         {
           dark: true,
           py: 30,
-          key: 'hero',
+          id: 'hero',
           ...commonBlockProps,
           backgroundImageProps: {
             src: hero.hero_src,
@@ -66,7 +66,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           ],
         },
         {
-          key: 'summary',
+          id: 'summary',
           ...commonBlockProps,
           sx: { backgroundColor: 'background.paper' },
           dark: true,
@@ -93,7 +93,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           ],
         },
         {
-          key: 'summary-image',
+          id: 'summary-image',
           ...commonBlockProps,
           dark: true,
           pt: 45,
@@ -104,7 +104,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           },
         },
         {
-          key: 'callout',
+          id: 'callout',
           ...commonBlockProps,
           dark: true,
           sx: { backgroundColor: 'background.paper' },
@@ -137,7 +137,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           ],
         },
         {
-          key: 'features',
+          id: 'features',
           ...commonBlockProps,
           dark: true,
           backgroundImageProps: {
@@ -212,7 +212,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             buttonProps: cta.buttons?.[0],
           }),
         {
-          key: 'gallery',
+          id: 'gallery',
           ...commonBlockProps,
           dark: true,
           items: [
@@ -259,7 +259,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           ],
         },
         {
-          key: 'stats',
+          id: 'stats',
           ...commonBlockProps,
           dark: true,
           backgroundImageProps: {
@@ -312,7 +312,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           ],
         },
         {
-          key: 'secondaryHero',
+          id: 'secondaryHero',
           ...commonBlockProps,
           sx: { backgroundColor: 'background.paper' },
           pt: 5,

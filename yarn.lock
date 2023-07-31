@@ -1615,26 +1615,26 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.35.0.tgz#b7569632b0b788a0ca0e438235154e45d42813a7"
   integrity sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==
 
-"@gravis-os/analytics@^0.1.0":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.1.1.tgz#29f23a5513c5a9b7922859e31d7cae496c937a98"
-  integrity sha512-fonK5K9SnHAQc3fZLbP14J7q2EpPJUGKmICExeh1KyQLxOfpRawq96QPxEFriEKj5nAwWH2Yo0FBk1RE0sZSLw==
+"@gravis-os/analytics@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.2.0.tgz#7780d12e910e5e3ac459ff39ac118d44fbb31349"
+  integrity sha512-4prxq81ly+X9aSXEAcheii7lfvFEEj7LLRI5KS12R6wlXxw5tVrR91QByuQww7zlfzmhwCsFVhkaZiXYhpmGQA==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
 
-"@gravis-os/config@*", "@gravis-os/config@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@gravis-os/config/-/config-0.0.7.tgz#3249f9afa39fb6d51187294e9cc7d30abc98f438"
-  integrity sha512-6Nr4hpcRVHlEFCCoO6o4W/uzO08WxIKxx2se3FvgbqYs/r9xRBcGqk+km1pE0Pp2GPIsACYutD26k0b2c67CUw==
+"@gravis-os/config@*", "@gravis-os/config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/config/-/config-0.1.0.tgz#7531c5d330f0af69fbdfe109c6f21907c0d7f59b"
+  integrity sha512-DcWHPW+No5ZQw/mPSsjz96wXpuyrbtNdUjVo9HymBbSokzLolyTk6W7O8ysC+SZ9QzcefimQIdsacgOnnjAMTg==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
 
-"@gravis-os/eslint-config@^0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.0.20.tgz#6861ec7dda93fa823dd043f0e92d76dd7f26046c"
-  integrity sha512-W/7dl/FgpZVyTOsuGxdllzjlyScRJkuXuwhPp9m/rDLiVvVzOzEwBFo7RwcNeQ79ic2bLqJBWll5pVZNK4G1ig==
+"@gravis-os/eslint-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/eslint-config/-/eslint-config-0.1.0.tgz#acf32e96e9456fee318c8b3d3da00a5392d68e01"
+  integrity sha512-2VRwH6j6s6y+tDx8sLgQvZ6TyRraP8plnSepic90pPllrs94XEAgh9kLGoSJE4YhQ95ITH0HJRFxiaEn/PYJ3w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^6.1.0"
     "@typescript-eslint/parser" "^6.1.0"
@@ -1654,9 +1654,9 @@
     prettier "^2.0.5"
 
 "@gravis-os/fields@*":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.2.0.tgz#0ce913107dab6fc5ceab26d4c70c8eaf9d023432"
-  integrity sha512-pRv9d6U8hqPNKO3hcavP5tJ0+etychl/El4gwd+Y9nJd9i9oXu+BTQzvLpLQl17c+DxPc5fU8fHEotOHWAwAqA==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/fields/-/fields-1.4.1.tgz#af5133f0101ca6d7986114843de54d343e85559d"
+  integrity sha512-zSS2jI1TnlLGlo9SVYjdA3UBIDTqJSPu7gQincICpLszJiYwHO/To8qHyF5dFriryBca1DeB8p5ABZ/WEFOO3A==
   dependencies:
     "@gravis-os/types" "*"
     country-calling-code "^0.0.3"
@@ -1668,9 +1668,9 @@
     zustand "^4.3.6"
 
 "@gravis-os/form@*", "@gravis-os/form@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.2.0.tgz#54f0e634ea614cba460c3b676b163fa404e08fc1"
-  integrity sha512-m1b98D/ugGURJCQ4NT6qbNmElNbsx57C47VNG1Mz0KOilWvT/IeTERVBwI7vVLsjuye2daynkrHtzKzVglQLMw==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/form/-/form-1.4.1.tgz#38e3af7a46864ea96b3d0a7bcce9ff988911be3a"
+  integrity sha512-ekMsOB7RIjVy9Q9CkvoApD6/SrYfaiI4/9Er2MGyoSRxacOVNs4QCWa+KEx0LiB71BDXRWZXzxPThHQ18xFi6w==
   dependencies:
     "@gravis-os/fields" "*"
     "@gravis-os/storage" "*"
@@ -1686,9 +1686,9 @@
     typescript "^4.6.3"
 
 "@gravis-os/landing@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.21.0.tgz#6b0d122de257f5cca75a77b853db5a201a744418"
-  integrity sha512-/zbmbKSZ4jzOWepOGQFgqp1zzv5/aTF2RjWUMV1zPj+JpVeD5T4oSWRH0Gwdteg09WzFpWvaLcculENBtKAOHQ==
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-0.21.1.tgz#298a6429d4a219615af6db45629ab13ba679449e"
+  integrity sha512-NI3cxllhINnbHmxC2oYVIfun3mzAtNfAqu766wXzZt/Owe4uxKeHoMZVsAirtwu3Lcu1BwvS0QiHRPda9nznkg==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/storage" "*"
@@ -1707,10 +1707,10 @@
     nextjs-progressbar "^0.0.16"
     yup "0.32.11"
 
-"@gravis-os/query@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.0.34.tgz#c76a93bcb919bb505714d6d67321ba01cf9b4feb"
-  integrity sha512-PE/txXjvaz6Ol1iLqQWtAqTAxklToN/mT0BR6R7jrFNI3x5nvtwzaTIkFjONxdtpQykJGG8N+w5/mpuH0BWhBw==
+"@gravis-os/query@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/query/-/query-0.1.0.tgz#110a253386508b9e669e25ae3f998b0164e22b9f"
+  integrity sha512-ZV7kq9pXvCWLSXA5YsgohfsotToEQHhvn7/po49L+qhE6OjTOUuTSEdGE/OA4ROZ3cPRLQgU8qugfxWz+QXLdg==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1738,10 +1738,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/theme@*", "@gravis-os/theme@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@gravis-os/theme/-/theme-0.0.15.tgz#6f595c683268d73848ad86bb155dcca19c7d15a3"
-  integrity sha512-8V1tWuEhkUlgwvj2lEMARIeRTqkmIjICzSivUbSux+X5INWXA5yyebAQ75WXbHu7NnDu4PKtEcs7mWUW+1LSUQ==
+"@gravis-os/theme@*", "@gravis-os/theme@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/theme/-/theme-0.1.0.tgz#65dc3d17c6a6e9a0de8062c1cf3ecd2e2ca3f81f"
+  integrity sha512-CKroMoE2e3TFM1YjBUnl4AKpNmekRjFMphhBb5I4mfV8kA8yFPc9I9apUr+esuo9qfrL2ay9yPcX1AzhZJ92Sg==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"
@@ -1754,18 +1754,18 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.0.9.tgz#8e42e12a40267427e79c3c08eab7883e711c4cad"
   integrity sha512-O6RqJZ1AK+u1/SckEYlg9iR+F6iN2Sl07sSSTDVIExp8eKoGxR6Ng/MMRLrtyuNNuxFzuSxHoOSqD/nGY8H5aA==
 
-"@gravis-os/types@*", "@gravis-os/types@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.4.0.tgz#4bc52ec6d2c306a62ce92c1c4f79528fbdb9aace"
-  integrity sha512-7duCMwRL2WPPD2LrKScWCsIBEbR8qDa142pAueJNMsQdMaaRCWIsVpZAFU6pbAwnzVJl2pnVjrEJHcPJA48Ndw==
+"@gravis-os/types@*", "@gravis-os/types@^0.5.0":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.5.1.tgz#5eb382978a3c54c6555e82fdaf30e8f6f57879b5"
+  integrity sha512-Rgo6wSQBfvJfz3fCOhXSxGIYRGhWjhv5WXrwRKvbeYLdkksBb71mX5UVkAORchbeWWWao3xEQFKuDZj8I/N0Qg==
   dependencies:
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/ui@*", "@gravis-os/ui@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.7.0.tgz#def26510206675e22630e9669792b17e4f7400d7"
-  integrity sha512-C0JXVNnZV/vE5BdMbTQqf4rxWCsr1h0aaALTO3MdYsn1P/aEAQaK3cOn6fC5/4cGtZTbK0TkwisrgrVxuSoUIA==
+"@gravis-os/ui@*", "@gravis-os/ui@^0.9.0":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/ui/-/ui-0.9.1.tgz#85276622a4b2312e5772795690e6f19eb4a17991"
+  integrity sha512-HBaWvx3euqN2g6TBghH+KO5GaglM+lkCsUt6C+v6ss2Q/806Pv8FMPQv7k5TvCK0kB7wLxWNBhzksCYRW/Lfww==
   dependencies:
     "@dnd-kit/core" "^6.0.1"
     "@dnd-kit/sortable" "^7.0.0"
@@ -1790,10 +1790,10 @@
     tslib "^2.4.0"
     typescript "^4.6.3"
 
-"@gravis-os/utils@*", "@gravis-os/utils@^0.1.3":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.1.5.tgz#a21d06ec16a9e4b117fa364aa3a3b07a8466f785"
-  integrity sha512-JzKSNPTNuU0Wt2U5oQeM7xQeexxTzeaTdG8GjSleVsBE6a7mrP2fmI8IGrCUM7asFXUgjHxklwdj4xzoZLfyJw==
+"@gravis-os/utils@*", "@gravis-os/utils@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/utils/-/utils-0.2.0.tgz#2d3fb0121029997fc1ece7d8e6edcf5fce534570"
+  integrity sha512-41YVX08VdxiJJNZnJeK8Cy22CacOcSWwEsprGhp9BDzr0sXvOTY7mVi7qJFX7YNCjMBxXtvh7XI0P51CioPimA==
   dependencies:
     "@gravis-os/types" "*"
     dayjs "^1.11.3"

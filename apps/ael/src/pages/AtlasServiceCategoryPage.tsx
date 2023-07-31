@@ -28,7 +28,7 @@ const AtlasServiceCategoryPage: React.FC<AtlasServiceCategoryPageProps> = (
     <Blocks
       items={[
         {
-          key: 'hero',
+          id: 'hero',
           py: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           items: [
@@ -48,7 +48,7 @@ const AtlasServiceCategoryPage: React.FC<AtlasServiceCategoryPageProps> = (
           ],
         },
         {
-          key: 'background-nodes',
+          id: 'background-nodes',
           py: 0,
           backgroundImageProps: {
             src: serviceCategory.hero_src,
@@ -57,13 +57,13 @@ const AtlasServiceCategoryPage: React.FC<AtlasServiceCategoryPageProps> = (
           },
         },
         {
-          key: 'services',
+          id: 'services',
           sx: { backgroundColor: 'background.paper' },
           pt: { xs: 5, md: 10 },
           items: [renderServicesBlockItem({ items: services })],
         },
         {
-          key: 'related-service-categorys',
+          id: 'related-service-categorys',
           py: { xs: 5, md: 10 },
           items: [
             {

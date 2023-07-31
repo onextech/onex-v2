@@ -12,7 +12,7 @@ const ShowcasesPage: React.FC<ShowcasesPageProps> = (props) => {
     <Blocks
       items={[
         {
-          key: 'showcase-hero',
+          id: 'showcase-hero',
           sx: { pt: { xs: 3, md: 6 } },
           pb: 0,
           items: [

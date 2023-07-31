@@ -104,19 +104,19 @@ export const MOCK_TECHNOLOGY_PAGE = {
         'Learn how we deliver effective, value-driven technological innovations for leading enterprises.',
       items: [
         {
-          key: 'how-it-works-1',
+          id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
             '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
         },
         {
-          key: 'how-it-works-2',
+          id: 'how-it-works-2',
           title: 'How can {title} development benefit my existing system?',
           content:
             "{title}'s sophisticated algorithms will help to boost system performance and improve user experience.",
         },
         {
-          key: 'how-it-works-3',
+          id: 'how-it-works-3',
           title: 'What is the future of {title}?',
           content:
             '{title} is the fastest growing library used to create user interface in modern single-page applications. It is the driving force behind products of the most successful companies like Airbnb, Instagram and Netflix.',
@@ -251,20 +251,20 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how it can benefit your web application projects.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is JavaScript?',
             content:
               'JavaScript is a versatile programming language commonly used for web development. It allows developers to add interactivity and dynamic functionality to web pages.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'Why should I choose JavaScript for web application development?',
             content:
               "JavaScript is widely adopted and supported by all modern web browsers, making it a reliable choice for building web applications. It offers a wide range of libraries, frameworks, and tools that facilitate rapid development and code reuse. Additionally, JavaScript's versatility allows for both frontend and backend development, making it a full-stack solution for building feature-rich web applications.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Which JavaScript frameworks do you specialize in?',
             content:
               'We specialize in popular JavaScript frameworks like React, Angular, and Vue.js. These frameworks provide efficient solutions for building complex and scalable web applications, and our expertise allows us to leverage their capabilities to deliver high-quality results.',
@@ -399,19 +399,19 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about our TypeScript development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I choose TypeScript for my frontend projects?',
             content:
               'TypeScript brings the advantages of static typing to JavaScript development, improving code quality, catching errors early, and enhancing tooling support. It allows for better code organisation, scalability, and maintainability, making it an excellent choice for building complex frontend applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Which frameworks do you use with TypeScript?',
             content:
               'We have expertise in using TypeScript with popular frontend frameworks such as Angular, React, and Vue.js. We choose the framework based on the specific requirements of your project to ensure the best fit and optimal development experience.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can I migrate an existing JavaScript project to TypeScript?',
             content:
@@ -548,20 +548,20 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about our React Development Service and how it can benefit your enterprise applications.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I choose React for my enterprise applications?',
             content:
               'React offers numerous advantages for enterprise applications, including a component-based architecture, reusability, high performance, and a thriving ecosystem. It enables efficient development, scalability, and easy maintenance, making it an ideal choice for building complex and interactive user interfaces.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What is the benefit of using React in frontend software engineering and dashboard development?',
             content:
               "Using React in frontend software engineering and dashboard development brings several benefits. React's component-based architecture allows for building reusable UI components, promoting code reusability and maintainability. It also provides a virtual DOM, enabling efficient rendering and optimizing performance. React's ecosystem is vast, with a wide range of libraries and tools available for state management, routing, and UI design. Overall, React empowers developers to create scalable, interactive, and responsive dashboards for enterprise clients.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can I integrate React into my existing enterprise applications?',
             content:
@@ -700,20 +700,20 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about Next.js development and how it can benefit your frontend projects.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'What are the advantages of using Next.js for frontend development?',
             content:
               'Next.js offers several advantages, including server-side rendering for better performance, optimized SEO capabilities, and a streamlined development experience. It simplifies frontend development and enables the creation of fast, scalable, and maintainable web applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Can Next.js be integrated with existing frontend projects?',
             content:
               'Yes, Next.js can be seamlessly integrated with existing frontend projects. It provides an easy migration path by allowing incremental adoption of its features. You can start by adding Next.js to specific pages or sections of your application and gradually expand its usage as needed. This flexibility makes it a great choice for enhancing the performance and functionality of your existing frontend',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Is Next.js suitable for enterprise-level frontend development?',
             content:
@@ -852,19 +852,19 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about our Node.js Development Service and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why choose Node.js for backend development?',
             content:
               'Node.js offers several advantages for backend development, including high scalability, non-blocking I/O, extensive package ecosystem, and the ability to use JavaScript for both frontend and backend development, enabling code reuse and increased developer productivity.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What types of applications can be built with Node.js?',
             content:
               'Node.js can be used to build a wide range of applications, including web applications, real-time chat applications, streaming applications, API servers, microservices, command-line tools, and more. Its flexibility and scalability make it suitable for various use cases.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Is Node.js suitable for enterprise applications?',
             content:
               'Yes, Node.js is well-suited for enterprise applications. Its event-driven, non-blocking architecture allows for handling a large number of concurrent requests efficiently. It also integrates well with other technologies commonly used in enterprise environments, making it an excellent choice for building scalable and robust backend systems.',
@@ -999,19 +999,19 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about Webpack and how it can improve your frontend development workflow.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Webpack?',
             content:
               'Webpack is a popular module bundler for JavaScript applications. It helps you manage and optimize your frontend assets, allowing you to bundle and transform your code and assets for efficient delivery and improved performance.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why should I use Webpack?',
             content:
               'Webpack offers numerous benefits for frontend development, including efficient module bundling, code splitting, build automation, and asset optimization. It simplifies the development process and improves the performance of your web applications.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Webpack be used with other frontend frameworks?',
             content:
               'Yes, Webpack is framework-agnostic and can be used with various frontend frameworks such as React, Angular, Vue.js, and more. It provides a flexible and customizable configuration, allowing you to integrate it seamlessly into your preferred frontend framework.',
@@ -1148,19 +1148,19 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about Module Federation and how it can revolutionize your frontend architecture.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Module Federation?',
             content:
               'Module Federation is an architectural pattern that allows you to build scalable and modular applications by breaking down your frontend codebase into smaller, decoupled modules. These modules can be independently developed, deployed, and composed together to form a cohesive application.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of using Module Federation?',
             content:
               'Module Federation offers several benefits, including enhanced flexibility, maintainability, and scalability. It enables you to build applications using a Micro Frontends approach, where each module can be developed and deployed independently. It also facilitates dynamic module loading, allowing modules to be loaded on-demand, reducing initial load times and improving user experience. Additionally, Module Federation enables seamless communication and data sharing between micro frontends, enabling you to build integrated and cohesive applications. It also provides version control mechanisms for consistent and reliable updates across modules, and supports scalable frontend architecture to accommodate growth and changing business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Module Federation benefit my enterprise?',
             content:
               'Module Federation can benefit your enterprise by improving the scalability and maintainability of your frontend applications. It allows for independent development and deployment of modules, facilitating parallel development efforts and faster time-to-market. With its dynamic module loading capabilities, it enables better performance and user experience by loading modules on-demand. Module Federation also promotes modular architecture, making your codebase more manageable and easier to maintain and scale.',
@@ -1296,19 +1296,19 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about Nx Monorepo and how it can benefit your frontend development.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Nx Monorepo?',
             content:
               'Nx Monorepo is a set of tools and techniques for managing multiple frontend projects in a single codebase. It allows for code sharing, efficient dependency management, and improved development productivity.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why should I use Nx Monorepo?',
             content:
               'Nx Monorepo provides several benefits, including code reuse, improved collaboration, streamlined development workflows, and enhanced scalability. By using Nx Monorepo, you can effectively manage and scale your frontend projects, promote code consistency, and optimize development processes.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does Nx Monorepo improve frontend development?',
             content:
               'Nx Monorepo improves frontend development by enabling code sharing and reusability, facilitating efficient dependency management, providing powerful tooling for testing and quality assurance, and offering streamlined deployment and scalability features.',
@@ -1445,20 +1445,20 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
           'Learn more about AWS and how it can benefit your frontend software engineering and dashboard development projects.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should I choose AWS for frontend development projects?',
             content:
               'AWS provides a reliable, scalable, and secure infrastructure for frontend software engineering and dashboard development. It offers flexibility, cost optimization, and seamless integration with other services and tools.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the key advantages of using AWS for frontend development?',
             content:
               'Some of the key advantages of using AWS for frontend development include scalability, reliability, security, flexibility, cost optimization, and integration capabilities.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can I use AWS for both frontend software engineering and dashboard development?',
             content:
@@ -1607,19 +1607,19 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our Python Development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Python a good choice for data and AI applications?',
             content:
               'Python is versatile, easy to use, and has robust libraries and frameworks specifically designed for data analysis, machine learning, and AI. This makes it a popular choice for such applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Python development service work?',
             content:
               "Our Python development service begins with understanding your business needs. Then we design a Python solution that meets those needs, whether it's data analysis, automation, or AI. We work closely with your team throughout the process, from design to implementation, to ensure the solution is a perfect fit.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can you integrate Python solutions with our existing systems?',
             content:
@@ -1735,20 +1735,20 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how we can help enhance your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is JavaScript important for my business?',
             content:
               'JavaScript is a versatile language that powers many interactive and dynamic elements on the web. It allows for the creation of rich user interfaces, real-time updates, and full-stack applications. By using JavaScript, we can create efficient, scalable, and high-performing applications that boost your business.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your JavaScript Development Service?',
             content:
               'Our JavaScript Development Service focuses on delivering high-quality, scalable, and secure applications tailored to your business needs. We have a team of experienced developers who follow industry best practices, ensuring the delivery of robust and efficient solutions. Furthermore, we offer comprehensive support and maintenance, keeping your applications up-to-date and optimized.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your JavaScript code?',
             content:
               'We prioritize code quality and follow strict coding standards and conventions. Our development process includes regular code reviews, automated testing, and continuous integration and deployment (CI/CD) practices to ensure the delivery of high-quality, maintainable, and efficient code.',
@@ -1851,19 +1851,19 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our SQL Services and how we can help your business become more data-driven.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is SQL important for my business?',
             content:
               'SQL is a powerful tool for managing and analyzing data. It allows you to efficiently retrieve and manipulate data, derive meaningful insights, and make informed business decisions. With SQL, you can scale your data operations and maintain the integrity and security of your data.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of working with your SQL Services?',
             content:
               'We provide end-to-end SQL services, helping you navigate from database design and data modeling to query optimization and data analysis. Our team of SQL experts follows best practices to ensure the performance, scalability, and security of your databases. We are committed to helping you unlock the full potential of your data and achieve your business goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of my data?',
             content:
               'We implement robust security measures, including access control, encryption, and regular security audits, to protect your data from threats and unauthorized access. We also adhere to industry standards and regulations to ensure compliance.',
@@ -1966,19 +1966,19 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our NoSQL Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider NoSQL databases?',
             content:
               'NoSQL databases are designed to handle large volumes of structured, semi-structured, and unstructured data. They provide flexible schemas, horizontal scalability, and high availability, making them ideal for businesses with large, diverse, and rapidly changing data needs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your NoSQL Services?',
             content:
               'Our NoSQL Services provide you with flexible and efficient solutions to manage your dynamic data needs. We offer custom data modeling, database implementation, real-time processing, scalability, security, and continuous support. Our experts are proficient in various types of NoSQL databases, allowing us to choose the best solutions for your specific business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team ensure the security of NoSQL databases?',
             content:
               'We take database security seriously. We implement robust security measures, including data encryption, secure access controls, and regular audits. We also keep ourselves updated with the latest security trends and vulnerabilities to ensure your data is always protected.',
@@ -2093,21 +2093,21 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our ChatGPT Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are intelligent conversational agents important for enterprise data?',
             content:
               'Intelligent conversational agents play a crucial role in enterprise data solutions. They enable natural language interactions, providing users with personalized assistance, accurate information retrieval, and efficient knowledge sharing.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
               'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy and security in ChatGPT Services?',
             content:
@@ -2225,20 +2225,20 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about our AWS services and how they can transform your enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should my enterprise choose AWS for data and AI solutions?',
             content:
               'AWS offers a comprehensive suite of services specifically designed for data and AI solutions. It provides scalable and secure infrastructure, advanced analytics capabilities, and AI services to unlock the full potential of your enterprise data and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of leveraging AWS for data science?',
             content:
               'By leveraging AWS, you can achieve cost efficiency, scalability, and reliability for your data science initiatives. AWS services provide flexible storage, powerful analytics, and machine learning capabilities that enable you to extract valuable insights and deliver impactful data-driven solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can AWS help in data security and compliance?',
             content:
               'AWS offers robust security services and compliance frameworks to ensure the confidentiality, integrity, and availability of your enterprise data. It provides encryption, access controls, auditing, and compliance certifications to meet the highest security standards.',
@@ -2353,19 +2353,19 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about Tableau and how it can transform your data into actionable insights.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Tableau?',
             content:
               'Tableau is a powerful data visualization and business intelligence platform that allows users to connect to various data sources, create interactive dashboards, and gain insights through visual analysis.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why is data visualization important?',
             content:
               'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
               'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
@@ -2470,19 +2470,19 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
           'Learn more about Snowflake and how it can transform your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Snowflake?',
             content:
               'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does Snowflake ensure data security?',
             content:
               'Snowflake prioritizes data security and privacy. It employs various security measures, including encryption at rest and in transit, role-based access controls, data masking, and auditing capabilities. With Snowflake, you can trust that your data is protected.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Snowflake handle large-scale data analytics?',
             content:
               "Absolutely! Snowflake's cloud-native architecture enables it to handle massive datasets and deliver high-performance analytics. It scales dynamically to meet the demands of your data analytics workloads, ensuring fast query execution and efficient resource utilization.",
@@ -2610,19 +2610,19 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our Python Development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Python a good choice for data and AI applications?',
             content:
               'Python is versatile, easy to use, and has robust libraries and frameworks specifically designed for data analysis, machine learning, and AI. This makes it a popular choice for such applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Python development service work?',
             content:
               "Our Python development service begins with understanding your business needs. Then we design a Python solution that meets those needs, whether it's data analysis, automation, or AI. We work closely with your team throughout the process, from design to implementation, to ensure the solution is a perfect fit.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can you integrate Python solutions with our existing systems?',
             content:
@@ -2738,20 +2738,20 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how we can help enhance your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is JavaScript important for my business?',
             content:
               'JavaScript is a versatile language that powers many interactive and dynamic elements on the web. It allows for the creation of rich user interfaces, real-time updates, and full-stack applications. By using JavaScript, we can create efficient, scalable, and high-performing applications that boost your business.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your JavaScript Development Service?',
             content:
               'Our JavaScript Development Service focuses on delivering high-quality, scalable, and secure applications tailored to your business needs. We have a team of experienced developers who follow industry best practices, ensuring the delivery of robust and efficient solutions. Furthermore, we offer comprehensive support and maintenance, keeping your applications up-to-date and optimized.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your JavaScript code?',
             content:
               'We prioritize code quality and follow strict coding standards and conventions. Our development process includes regular code reviews, automated testing, and continuous integration and deployment (CI/CD) practices to ensure the delivery of high-quality, maintainable, and efficient code.',
@@ -2854,19 +2854,19 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our SQL Services and how we can help your business become more data-driven.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is SQL important for my business?',
             content:
               'SQL is a powerful tool for managing and analyzing data. It allows you to efficiently retrieve and manipulate data, derive meaningful insights, and make informed business decisions. With SQL, you can scale your data operations and maintain the integrity and security of your data.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of working with your SQL Services?',
             content:
               'We provide end-to-end SQL services, helping you navigate from database design and data modeling to query optimization and data analysis. Our team of SQL experts follows best practices to ensure the performance, scalability, and security of your databases. We are committed to helping you unlock the full potential of your data and achieve your business goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of my data?',
             content:
               'We implement robust security measures, including access control, encryption, and regular security audits, to protect your data from threats and unauthorized access. We also adhere to industry standards and regulations to ensure compliance.',
@@ -2969,19 +2969,19 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our NoSQL Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider NoSQL databases?',
             content:
               'NoSQL databases are designed to handle large volumes of structured, semi-structured, and unstructured data. They provide flexible schemas, horizontal scalability, and high availability, making them ideal for businesses with large, diverse, and rapidly changing data needs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your NoSQL Services?',
             content:
               'Our NoSQL Services provide you with flexible and efficient solutions to manage your dynamic data needs. We offer custom data modeling, database implementation, real-time processing, scalability, security, and continuous support. Our experts are proficient in various types of NoSQL databases, allowing us to choose the best solutions for your specific business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team ensure the security of NoSQL databases?',
             content:
               'We take database security seriously. We implement robust security measures, including data encryption, secure access controls, and regular audits. We also keep ourselves updated with the latest security trends and vulnerabilities to ensure your data is always protected.',
@@ -3096,21 +3096,21 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our ChatGPT Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are intelligent conversational agents important for enterprise data?',
             content:
               'Intelligent conversational agents play a crucial role in enterprise data solutions. They enable natural language interactions, providing users with personalized assistance, accurate information retrieval, and efficient knowledge sharing.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
               'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy and security in ChatGPT Services?',
             content:
@@ -3228,20 +3228,20 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about our AWS services and how they can transform your enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should my enterprise choose AWS for data and AI solutions?',
             content:
               'AWS offers a comprehensive suite of services specifically designed for data and AI solutions. It provides scalable and secure infrastructure, advanced analytics capabilities, and AI services to unlock the full potential of your enterprise data and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of leveraging AWS for data science?',
             content:
               'By leveraging AWS, you can achieve cost efficiency, scalability, and reliability for your data science initiatives. AWS services provide flexible storage, powerful analytics, and machine learning capabilities that enable you to extract valuable insights and deliver impactful data-driven solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can AWS help in data security and compliance?',
             content:
               'AWS offers robust security services and compliance frameworks to ensure the confidentiality, integrity, and availability of your enterprise data. It provides encryption, access controls, auditing, and compliance certifications to meet the highest security standards.',
@@ -3356,19 +3356,19 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about Tableau and how it can transform your data into actionable insights.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Tableau?',
             content:
               'Tableau is a powerful data visualization and business intelligence platform that allows users to connect to various data sources, create interactive dashboards, and gain insights through visual analysis.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why is data visualization important?',
             content:
               'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
               'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
@@ -3473,19 +3473,19 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
           'Learn more about Snowflake and how it can transform your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Snowflake?',
             content:
               'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does Snowflake ensure data security?',
             content:
               'Snowflake prioritizes data security and privacy. It employs various security measures, including encryption at rest and in transit, role-based access controls, data masking, and auditing capabilities. With Snowflake, you can trust that your data is protected.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Snowflake handle large-scale data analytics?',
             content:
               "Absolutely! Snowflake's cloud-native architecture enables it to handle massive datasets and deliver high-performance analytics. It scales dynamically to meet the demands of your data analytics workloads, ensuring fast query execution and efficient resource utilization.",
@@ -3612,19 +3612,19 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our Python Development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Python a good choice for data and AI applications?',
             content:
               'Python is versatile, easy to use, and has robust libraries and frameworks specifically designed for data analysis, machine learning, and AI. This makes it a popular choice for such applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Python development service work?',
             content:
               "Our Python development service begins with understanding your business needs. Then we design a Python solution that meets those needs, whether it's data analysis, automation, or AI. We work closely with your team throughout the process, from design to implementation, to ensure the solution is a perfect fit.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can you integrate Python solutions with our existing systems?',
             content:
@@ -3740,20 +3740,20 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how we can help enhance your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is JavaScript important for my business?',
             content:
               'JavaScript is a versatile language that powers many interactive and dynamic elements on the web. It allows for the creation of rich user interfaces, real-time updates, and full-stack applications. By using JavaScript, we can create efficient, scalable, and high-performing applications that boost your business.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your JavaScript Development Service?',
             content:
               'Our JavaScript Development Service focuses on delivering high-quality, scalable, and secure applications tailored to your business needs. We have a team of experienced developers who follow industry best practices, ensuring the delivery of robust and efficient solutions. Furthermore, we offer comprehensive support and maintenance, keeping your applications up-to-date and optimized.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your JavaScript code?',
             content:
               'We prioritize code quality and follow strict coding standards and conventions. Our development process includes regular code reviews, automated testing, and continuous integration and deployment (CI/CD) practices to ensure the delivery of high-quality, maintainable, and efficient code.',
@@ -3856,19 +3856,19 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our SQL Services and how we can help your business become more data-driven.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is SQL important for my business?',
             content:
               'SQL is a powerful tool for managing and analyzing data. It allows you to efficiently retrieve and manipulate data, derive meaningful insights, and make informed business decisions. With SQL, you can scale your data operations and maintain the integrity and security of your data.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of working with your SQL Services?',
             content:
               'We provide end-to-end SQL services, helping you navigate from database design and data modeling to query optimization and data analysis. Our team of SQL experts follows best practices to ensure the performance, scalability, and security of your databases. We are committed to helping you unlock the full potential of your data and achieve your business goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of my data?',
             content:
               'We implement robust security measures, including access control, encryption, and regular security audits, to protect your data from threats and unauthorized access. We also adhere to industry standards and regulations to ensure compliance.',
@@ -3971,19 +3971,19 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our NoSQL Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider NoSQL databases?',
             content:
               'NoSQL databases are designed to handle large volumes of structured, semi-structured, and unstructured data. They provide flexible schemas, horizontal scalability, and high availability, making them ideal for businesses with large, diverse, and rapidly changing data needs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your NoSQL Services?',
             content:
               'Our NoSQL Services provide you with flexible and efficient solutions to manage your dynamic data needs. We offer custom data modeling, database implementation, real-time processing, scalability, security, and continuous support. Our experts are proficient in various types of NoSQL databases, allowing us to choose the best solutions for your specific business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team ensure the security of NoSQL databases?',
             content:
               'We take database security seriously. We implement robust security measures, including data encryption, secure access controls, and regular audits. We also keep ourselves updated with the latest security trends and vulnerabilities to ensure your data is always protected.',
@@ -4098,21 +4098,21 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our ChatGPT Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are intelligent conversational agents important for enterprise data?',
             content:
               'Intelligent conversational agents play a crucial role in enterprise data solutions. They enable natural language interactions, providing users with personalized assistance, accurate information retrieval, and efficient knowledge sharing.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
               'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy and security in ChatGPT Services?',
             content:
@@ -4230,20 +4230,20 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about our AWS services and how they can transform your enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should my enterprise choose AWS for data and AI solutions?',
             content:
               'AWS offers a comprehensive suite of services specifically designed for data and AI solutions. It provides scalable and secure infrastructure, advanced analytics capabilities, and AI services to unlock the full potential of your enterprise data and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of leveraging AWS for data science?',
             content:
               'By leveraging AWS, you can achieve cost efficiency, scalability, and reliability for your data science initiatives. AWS services provide flexible storage, powerful analytics, and machine learning capabilities that enable you to extract valuable insights and deliver impactful data-driven solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can AWS help in data security and compliance?',
             content:
               'AWS offers robust security services and compliance frameworks to ensure the confidentiality, integrity, and availability of your enterprise data. It provides encryption, access controls, auditing, and compliance certifications to meet the highest security standards.',
@@ -4358,19 +4358,19 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about Tableau and how it can transform your data into actionable insights.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Tableau?',
             content:
               'Tableau is a powerful data visualization and business intelligence platform that allows users to connect to various data sources, create interactive dashboards, and gain insights through visual analysis.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why is data visualization important?',
             content:
               'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
               'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
@@ -4475,19 +4475,19 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
           'Learn more about Snowflake and how it can transform your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Snowflake?',
             content:
               'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does Snowflake ensure data security?',
             content:
               'Snowflake prioritizes data security and privacy. It employs various security measures, including encryption at rest and in transit, role-based access controls, data masking, and auditing capabilities. With Snowflake, you can trust that your data is protected.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Snowflake handle large-scale data analytics?',
             content:
               "Absolutely! Snowflake's cloud-native architecture enables it to handle massive datasets and deliver high-performance analytics. It scales dynamically to meet the demands of your data analytics workloads, ensuring fast query execution and efficient resource utilization.",
@@ -4614,19 +4614,19 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our Python Development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Python a good choice for data and AI applications?',
             content:
               'Python is versatile, easy to use, and has robust libraries and frameworks specifically designed for data analysis, machine learning, and AI. This makes it a popular choice for such applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Python development service work?',
             content:
               "Our Python development service begins with understanding your business needs. Then we design a Python solution that meets those needs, whether it's data analysis, automation, or AI. We work closely with your team throughout the process, from design to implementation, to ensure the solution is a perfect fit.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can you integrate Python solutions with our existing systems?',
             content:
@@ -4742,20 +4742,20 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how we can help enhance your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is JavaScript important for my business?',
             content:
               'JavaScript is a versatile language that powers many interactive and dynamic elements on the web. It allows for the creation of rich user interfaces, real-time updates, and full-stack applications. By using JavaScript, we can create efficient, scalable, and high-performing applications that boost your business.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your JavaScript Development Service?',
             content:
               'Our JavaScript Development Service focuses on delivering high-quality, scalable, and secure applications tailored to your business needs. We have a team of experienced developers who follow industry best practices, ensuring the delivery of robust and efficient solutions. Furthermore, we offer comprehensive support and maintenance, keeping your applications up-to-date and optimized.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your JavaScript code?',
             content:
               'We prioritize code quality and follow strict coding standards and conventions. Our development process includes regular code reviews, automated testing, and continuous integration and deployment (CI/CD) practices to ensure the delivery of high-quality, maintainable, and efficient code.',
@@ -4858,19 +4858,19 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our SQL Services and how we can help your business become more data-driven.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is SQL important for my business?',
             content:
               'SQL is a powerful tool for managing and analyzing data. It allows you to efficiently retrieve and manipulate data, derive meaningful insights, and make informed business decisions. With SQL, you can scale your data operations and maintain the integrity and security of your data.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of working with your SQL Services?',
             content:
               'We provide end-to-end SQL services, helping you navigate from database design and data modeling to query optimization and data analysis. Our team of SQL experts follows best practices to ensure the performance, scalability, and security of your databases. We are committed to helping you unlock the full potential of your data and achieve your business goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of my data?',
             content:
               'We implement robust security measures, including access control, encryption, and regular security audits, to protect your data from threats and unauthorized access. We also adhere to industry standards and regulations to ensure compliance.',
@@ -4973,19 +4973,19 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our NoSQL Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider NoSQL databases?',
             content:
               'NoSQL databases are designed to handle large volumes of structured, semi-structured, and unstructured data. They provide flexible schemas, horizontal scalability, and high availability, making them ideal for businesses with large, diverse, and rapidly changing data needs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your NoSQL Services?',
             content:
               'Our NoSQL Services provide you with flexible and efficient solutions to manage your dynamic data needs. We offer custom data modeling, database implementation, real-time processing, scalability, security, and continuous support. Our experts are proficient in various types of NoSQL databases, allowing us to choose the best solutions for your specific business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team ensure the security of NoSQL databases?',
             content:
               'We take database security seriously. We implement robust security measures, including data encryption, secure access controls, and regular audits. We also keep ourselves updated with the latest security trends and vulnerabilities to ensure your data is always protected.',
@@ -5100,21 +5100,21 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our ChatGPT Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are intelligent conversational agents important for enterprise data?',
             content:
               'Intelligent conversational agents play a crucial role in enterprise data solutions. They enable natural language interactions, providing users with personalized assistance, accurate information retrieval, and efficient knowledge sharing.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
               'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy and security in ChatGPT Services?',
             content:
@@ -5232,20 +5232,20 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about our AWS services and how they can transform your enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should my enterprise choose AWS for data and AI solutions?',
             content:
               'AWS offers a comprehensive suite of services specifically designed for data and AI solutions. It provides scalable and secure infrastructure, advanced analytics capabilities, and AI services to unlock the full potential of your enterprise data and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of leveraging AWS for data science?',
             content:
               'By leveraging AWS, you can achieve cost efficiency, scalability, and reliability for your data science initiatives. AWS services provide flexible storage, powerful analytics, and machine learning capabilities that enable you to extract valuable insights and deliver impactful data-driven solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can AWS help in data security and compliance?',
             content:
               'AWS offers robust security services and compliance frameworks to ensure the confidentiality, integrity, and availability of your enterprise data. It provides encryption, access controls, auditing, and compliance certifications to meet the highest security standards.',
@@ -5360,19 +5360,19 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about Tableau and how it can transform your data into actionable insights.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Tableau?',
             content:
               'Tableau is a powerful data visualization and business intelligence platform that allows users to connect to various data sources, create interactive dashboards, and gain insights through visual analysis.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why is data visualization important?',
             content:
               'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
               'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
@@ -5477,19 +5477,19 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
           'Learn more about Snowflake and how it can transform your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Snowflake?',
             content:
               'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does Snowflake ensure data security?',
             content:
               'Snowflake prioritizes data security and privacy. It employs various security measures, including encryption at rest and in transit, role-based access controls, data masking, and auditing capabilities. With Snowflake, you can trust that your data is protected.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Snowflake handle large-scale data analytics?',
             content:
               "Absolutely! Snowflake's cloud-native architecture enables it to handle massive datasets and deliver high-performance analytics. It scales dynamically to meet the demands of your data analytics workloads, ensuring fast query execution and efficient resource utilization.",
@@ -5616,19 +5616,19 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our Python Development services and how they can benefit your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is Python a good choice for data and AI applications?',
             content:
               'Python is versatile, easy to use, and has robust libraries and frameworks specifically designed for data analysis, machine learning, and AI. This makes it a popular choice for such applications.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does your Python development service work?',
             content:
               "Our Python development service begins with understanding your business needs. Then we design a Python solution that meets those needs, whether it's data analysis, automation, or AI. We work closely with your team throughout the process, from design to implementation, to ensure the solution is a perfect fit.",
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'Can you integrate Python solutions with our existing systems?',
             content:
@@ -5744,20 +5744,20 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our JavaScript Development Service and how we can help enhance your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is JavaScript important for my business?',
             content:
               'JavaScript is a versatile language that powers many interactive and dynamic elements on the web. It allows for the creation of rich user interfaces, real-time updates, and full-stack applications. By using JavaScript, we can create efficient, scalable, and high-performing applications that boost your business.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of your JavaScript Development Service?',
             content:
               'Our JavaScript Development Service focuses on delivering high-quality, scalable, and secure applications tailored to your business needs. We have a team of experienced developers who follow industry best practices, ensuring the delivery of robust and efficient solutions. Furthermore, we offer comprehensive support and maintenance, keeping your applications up-to-date and optimized.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the quality of your JavaScript code?',
             content:
               'We prioritize code quality and follow strict coding standards and conventions. Our development process includes regular code reviews, automated testing, and continuous integration and deployment (CI/CD) practices to ensure the delivery of high-quality, maintainable, and efficient code.',
@@ -5860,19 +5860,19 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our SQL Services and how we can help your business become more data-driven.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why is SQL important for my business?',
             content:
               'SQL is a powerful tool for managing and analyzing data. It allows you to efficiently retrieve and manipulate data, derive meaningful insights, and make informed business decisions. With SQL, you can scale your data operations and maintain the integrity and security of your data.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of working with your SQL Services?',
             content:
               'We provide end-to-end SQL services, helping you navigate from database design and data modeling to query optimization and data analysis. Our team of SQL experts follows best practices to ensure the performance, scalability, and security of your databases. We are committed to helping you unlock the full potential of your data and achieve your business goals.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How do you ensure the security of my data?',
             content:
               'We implement robust security measures, including access control, encryption, and regular security audits, to protect your data from threats and unauthorized access. We also adhere to industry standards and regulations to ensure compliance.',
@@ -5975,19 +5975,19 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our NoSQL Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'Why should my business consider NoSQL databases?',
             content:
               'NoSQL databases are designed to handle large volumes of structured, semi-structured, and unstructured data. They provide flexible schemas, horizontal scalability, and high availability, making them ideal for businesses with large, diverse, and rapidly changing data needs.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of your NoSQL Services?',
             content:
               'Our NoSQL Services provide you with flexible and efficient solutions to manage your dynamic data needs. We offer custom data modeling, database implementation, real-time processing, scalability, security, and continuous support. Our experts are proficient in various types of NoSQL databases, allowing us to choose the best solutions for your specific business needs.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How does your team ensure the security of NoSQL databases?',
             content:
               'We take database security seriously. We implement robust security measures, including data encryption, secure access controls, and regular audits. We also keep ourselves updated with the latest security trends and vulnerabilities to ensure your data is always protected.',
@@ -6102,21 +6102,21 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our ChatGPT Services and how we can help your business.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why are intelligent conversational agents important for enterprise data?',
             content:
               'Intelligent conversational agents play a crucial role in enterprise data solutions. They enable natural language interactions, providing users with personalized assistance, accurate information retrieval, and efficient knowledge sharing.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title:
               'What are the benefits of using ChatGPT Services for enterprise data?',
             content:
               'By utilizing our ChatGPT Services, your enterprise can leverage advanced natural language processing capabilities to extract insights from unstructured data, enhance customer experiences with intelligent conversational agents, streamline knowledge management, deliver personalized recommendations, analyse user sentiments, and automate various business processes through chatbot development.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title:
               'How do you ensure data privacy and security in ChatGPT Services?',
             content:
@@ -6234,20 +6234,20 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about our AWS services and how they can transform your enterprise.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title:
               'Why should my enterprise choose AWS for data and AI solutions?',
             content:
               'AWS offers a comprehensive suite of services specifically designed for data and AI solutions. It provides scalable and secure infrastructure, advanced analytics capabilities, and AI services to unlock the full potential of your enterprise data and drive innovation.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'What are the benefits of leveraging AWS for data science?',
             content:
               'By leveraging AWS, you can achieve cost efficiency, scalability, and reliability for your data science initiatives. AWS services provide flexible storage, powerful analytics, and machine learning capabilities that enable you to extract valuable insights and deliver impactful data-driven solutions.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can AWS help in data security and compliance?',
             content:
               'AWS offers robust security services and compliance frameworks to ensure the confidentiality, integrity, and availability of your enterprise data. It provides encryption, access controls, auditing, and compliance certifications to meet the highest security standards.',
@@ -6362,19 +6362,19 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about Tableau and how it can transform your data into actionable insights.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Tableau?',
             content:
               'Tableau is a powerful data visualization and business intelligence platform that allows users to connect to various data sources, create interactive dashboards, and gain insights through visual analysis.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'Why is data visualization important?',
             content:
               'Data visualization is important because it allows individuals and organisations to understand complex data and extract meaningful insights quickly. Visual representations of data can reveal patterns, trends, and relationships that are not easily apparent in raw data.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'How can Tableau benefit my business?',
             content:
               'Tableau can benefit your business by enabling you to explore, analyse, and visualize your data in a user-friendly and interactive manner. It empowers data-driven decision-making, helps identify trends and patterns, and enables effective communication of insights to stakeholders.',
@@ -6479,19 +6479,19 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
           'Learn more about Snowflake and how it can transform your enterprise data and AI solutions.',
         items: [
           {
-            key: 'faqs-1',
+            id: 'faqs-1',
             title: 'What is Snowflake?',
             content:
               'Snowflake is a cloud-native data platform that provides a scalable, secure, and high-performance environment for storing, analyzing, and sharing data across your organisation. It offers advanced features for data integration, analytics, and machine learning, empowering enterprises to unlock the value of their data and make data-driven decisions.',
           },
           {
-            key: 'faqs-2',
+            id: 'faqs-2',
             title: 'How does Snowflake ensure data security?',
             content:
               'Snowflake prioritizes data security and privacy. It employs various security measures, including encryption at rest and in transit, role-based access controls, data masking, and auditing capabilities. With Snowflake, you can trust that your data is protected.',
           },
           {
-            key: 'faqs-3',
+            id: 'faqs-3',
             title: 'Can Snowflake handle large-scale data analytics?',
             content:
               "Absolutely! Snowflake's cloud-native architecture enables it to handle massive datasets and deliver high-performance analytics. It scales dynamically to meet the demands of your data analytics workloads, ensuring fast query execution and efficient resource utilization.",

@@ -7,7 +7,6 @@ import {
   Blocks,
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
-  ContactCallout,
   ContactCalloutProps,
   useLayout,
   renderHeaderMenuBlockItem,
@@ -15,6 +14,7 @@ import {
   renderHeaderMenuMobileBlockItem,
   RenderHeaderMenuMobileBlockItemProps,
   useUserPreferences,
+  ContactCallout,
 } from '@gravis-os/landing'
 import { GetStartedPage } from '@onex/pages'
 import { useRouter } from 'next/router'
@@ -74,22 +74,22 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   // Navs
   const headerNavConfig = [
     {
-      key: 'logo',
+      id: 'logo',
       preset: { type: 'logo', logoProps },
     },
     showcases?.length && {
-      key: 'showcase',
+      id: 'showcase',
       title: 'Portfolio',
       href: routeConfig.SHOWCASES,
     },
     services?.length && {
-      key: 'services',
+      id: 'services',
       title: 'Services',
       href: routeConfig.SERVICES,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: services.map((service) => ({
-        key: service.title,
+        id: service.title,
         title: (
           <Block
             {...renderHeaderMenuMobileBlockItem(
@@ -103,7 +103,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'services-grid',
+                id: 'services-grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -119,14 +119,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'services'
+                              ({ id }) => id === 'services'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'services'
+                              ({ id }) => id === 'services'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -169,13 +169,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     technologys?.length && {
-      key: 'technologys',
+      id: 'technologys',
       title: 'Technologies',
       href: routeConfig.TECHNOLOGYS,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: technologys.map((technology) => ({
-        key: technology.title,
+        id: technology.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(technology)} />,
       })),
       renderItems: () => {
@@ -183,7 +183,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'technologys-grid',
+                id: 'technologys-grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -199,14 +199,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'technologies'
+                              ({ id }) => id === 'technologies'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'technologies'
+                              ({ id }) => id === 'technologies'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -249,13 +249,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     industrys?.length && {
-      key: 'industrys',
+      id: 'industrys',
       title: 'Industries',
       href: routeConfig.INDUSTRYS,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: industrys.map((industry) => ({
-        key: industry.title,
+        id: industry.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(industry)} />,
       })),
       renderItems: () => {
@@ -263,7 +263,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'industrys-grid',
+                id: 'industrys-grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -279,14 +279,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'industries'
+                              ({ id }) => id === 'industries'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'industries'
+                              ({ id }) => id === 'industries'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -329,13 +329,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     postCategorys?.length && {
-      key: 'insights',
+      id: 'insights',
       title: 'Insights',
       href: routeConfig.POSTS,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: postCategorys.map((postCategory) => ({
-        key: postCategory.title,
+        id: postCategory.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(postCategory)} />,
       })),
       renderItems: () => {
@@ -343,7 +343,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'post-categorys-grid',
+                id: 'post-categorys-grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -359,14 +359,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'insights'
+                              ({ id }) => id === 'insights'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'insights'
+                              ({ id }) => id === 'insights'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -409,13 +409,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     pages?.length && {
-      key: 'company',
+      id: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: pages.map((page) => ({
-        key: page.title,
+        id: page.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(page)} />,
       })),
       renderItems: () => {
@@ -423,7 +423,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'company-grid',
+                id: 'company-grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -439,14 +439,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'company'
+                              ({ id }) => id === 'company'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'company'
+                              ({ id }) => id === 'company'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -489,12 +489,12 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       },
     },
     site.nav_is_ecosystem_visible && {
-      key: 'ecosystem',
+      id: 'ecosystem',
       title: 'Ecosystem',
       fullWidth: true,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: workspaces.map((workspace) => ({
-        key: workspace.title,
+        id: workspace.title,
         title: <Block {...renderHeaderMenuMobileBlockItem(workspace)} />,
       })),
       renderItems: () => {
@@ -502,7 +502,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           <Blocks
             items={[
               {
-                key: 'grid',
+                id: 'grid',
                 pt: { xs: 10, md: 5 },
                 pb: 6,
                 reveal: false,
@@ -518,14 +518,14 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                           {
                             type: 'h5',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'ecosystem'
+                              ({ id }) => id === 'ecosystem'
                             )?.title,
                             titleProps: { gutterBottom: true },
                           },
                           {
                             type: 'body1',
                             title: site.nav_items?.find(
-                              ({ key }) => key === 'ecosystem'
+                              ({ id }) => id === 'ecosystem'
                             )?.subtitle,
                             titleProps: {
                               color: 'text.secondary',
@@ -571,33 +571,33 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
 
   const footerNavConfig = [
     services?.length && {
-      key: 'services',
+      id: 'services',
       title: 'Services',
       href: routeConfig.SERVICES,
       items: services,
     },
     industrys?.length && {
-      key: 'industrys',
+      id: 'industrys',
       title: 'Industries',
       items: industrys,
     },
     technologys?.length && {
-      key: 'technologies',
+      id: 'technologies',
       title: 'Technologies',
       items: technologys,
     },
     site.nav_is_ecosystem_visible && {
-      key: 'ecosystem',
+      id: 'ecosystem',
       title: 'Ecosystem',
       items: workspaces,
     },
     {
-      key: 'company',
+      id: 'company',
       title: 'Company',
       href: routeConfig.ABOUT,
       items: [
         showcases?.length && {
-          key: 'showcases',
+          id: 'showcases',
           title: 'Portfolio',
           href: routeConfig.SHOWCASES,
         },
@@ -645,11 +645,11 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             ),
           },
           {
-            key: 'toggle-dark-mode',
+            id: 'toggle-dark-mode',
             children: toggleDarkModeIconButtonJsx,
           },
           {
-            key: 'get-started',
+            id: 'get-started',
             children: (
               <Button
                 {...{
