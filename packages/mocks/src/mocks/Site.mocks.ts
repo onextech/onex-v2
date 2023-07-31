@@ -99,8 +99,7 @@ export const MOCK_GROUP_SITE: Site = {
         'Learn more about the core values that drive our business and people to success',
     },
   ],
-} as any
-// TODO@Joel: Remove any
+}
 
 export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
@@ -568,8 +567,7 @@ export const MOCK_AEL_SITE: Site = {
       subtitle:
         'Learn more about the core values that drive our business and people to success',
     },
-  ] as any,
-  // TODO@Joel: Remove any
+  ],
 
   // Locale
   locales: [
