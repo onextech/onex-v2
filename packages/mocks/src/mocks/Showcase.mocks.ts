@@ -1227,7 +1227,7 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     title: "People's Association: Intelligent Chatbot Assistant.",
     slug: 'tgb',
     subtitle:
-      "We've envisioned an end-to-end sharing solution for communities, corporate fleets, and rental companies, creating an efficient sharing economy ecosystem.",
+      "Creating a transformative procurement solution for the People's Association, enhancing simplicity and efficiency in every step",
     hero_src: '/showcases/tgb/hero.png',
     hero_alt: 'TGB showcase',
     mode: 'light',
@@ -1235,16 +1235,16 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     reverse: true,
     sections: {
       leftGridSticky: {
-        title: 'Effective Digitalization',
+        title: 'Redefining traditional procurement',
         subtitle:
-          'We utilize our expertise in the public sector to provide an intelligent, secure, and accessible solution for local communities, empowering them with the tools to thrive in the digital age. ',
+          'By integrating artificial intelligence, we\'ve crafted a new paradigm in procurement, allowing the People\'s Association to meet modern demands with innovative solutions.',
         hero_src: '/showcases/tgb/left.png',
         hero_alt: 'TGB Showcase 1',
       },
       gallery: {
-        title: 'Harnessing the Power of Automation',
+        title: 'Leveraging AI for Enhanced Learning',
         subtitle:
-          'Effectively utilizing leading-edge technologies to automate processes and provide 24/7 assistance, empowering organisations to focus on higher-value tasks and achieve greater productivity.',
+          'By using artificial intelligence, we\'ve created a chat interface that provides an intuitive learning experience in grant processing and operational procurement for users.',
         items: [
           {
             title: '/showcases/tgb/gallery_1.png',
@@ -1265,9 +1265,9 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
         ],
       },
       rightGridSticky: {
-        title: 'Expanding Digital Capabilities',
+        title: 'Driving Efficiency through Technology',
         subtitle:
-          'Providing scalable software that can be used for multiple categories, enabling seamless integration with existing systems and delivering tailored solutions for diverse community needs.',
+          'Our transformative solution streamlines the People\'s Association\'s procurement procedures, boosting productivity and simplifying workflow.',
         hero_src: '/showcases/tgb/right.png',
         hero_alt: 'TGB Showcase 2',
       },
