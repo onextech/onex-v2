@@ -112,26 +112,380 @@ const mapResourceWithCommonResource = (resource, i) => ({
 export const MOCK_TECH_RESOURCES = [
   {
     title:
-      'Powering Up Your Frontend Development: Discover the Latest Trends and Techniques',
-    slug: 'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques',
+      'The Modern Frontend: React & Module Federation - Essential Microservice Capabilities for Enterprise Applications',
+    slug: 'the-modern-frontend-react-and-module-federation',
     filename:
-      'powering-up-your-frontend-development-discover-the-latest-trends-and-techniques.pdf',
+      'One X Tech - The Modern Frontend_ React & Module Federation - Essential Microservice Capabilities for Enterprise Applications.pdf',
     subtitle:
-      'Learn how frontend development can turn your company strategy into a success. This guide breaks down frontend development frameworks and gives you access to templates, examples, and more.',
+      'A comprehensive guide to leveraging React and Module Federation for scalable and efficient enterprise application development.',
+    avatar_src: '/resources/modern_frontend_react_module_federation_avatar.png',
+    avatar_alt: 'React & Module Federation Guide for Enterprise Applications',
+    hero_src: '/resources/modern_frontend_react_module_federation_avatar.png',
+    hero_alt: 'React & Module Federation Guide for Enterprise Applications',
+    sections: {
+      features: {
+        overline: 'What We Cover',
+        title: 'In this guide, we delve into:',
+        subtitle:
+          "Uncover the modern tools and techniques in frontend development. From understanding React's capabilities to leveraging Module Federation for microservices, this guide equips you to build cutting-edge enterprise applications.",
+        items: [
+          {
+            fa_icon: 'fa-react',
+            title: 'Understanding React',
+            subtitle:
+              'Explore the core concepts and advantages of using React in frontend development.',
+          },
+          {
+            fa_icon: 'fa-cubes',
+            title: 'Module Federation Explained',
+            subtitle:
+              'Dive into the power of Module Federation for managing microservices efficiently.',
+          },
+          {
+            fa_icon: 'fa-layer-group',
+            title: 'Building Micro Frontends',
+            subtitle:
+              'Learn how to structure and build micro frontends that promote scalability and maintainability.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Seamless Integration Strategies',
+            subtitle:
+              'Master the techniques for integrating React and Module Federation in existing enterprise applications.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Development and Debugging Tips',
+            subtitle:
+              'Gain insights into best practices for development, debugging, and optimizing performance.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Understand the security considerations and compliance requirements for modern frontend development.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why This Guide',
+        title: 'What you will learn',
+        subtitle:
+          'This guide offers practical insights into modern frontend development, focusing on React and Module Federation. Equip yourself with the skills to create robust, scalable, and responsive enterprise applications.',
+        items: [
+          {
+            fa_icon: 'fa-ruler-combined',
+            title: 'Scalable Architecture',
+            subtitle:
+              'Discover how to design a scalable frontend architecture that aligns with modern business needs.',
+          },
+          {
+            fa_icon: 'fa-cloud',
+            title: 'Efficient Microservices',
+            subtitle:
+              'Learn how Module Federation enables efficient microservice management and collaboration.',
+          },
+          {
+            fa_icon: 'fa-code',
+            title: 'Coding Best Practices',
+            subtitle:
+              'Master the coding standards and best practices in React for maintainable code.',
+          },
+          {
+            fa_icon: 'fa-user-check',
+            title: 'Enhanced User Experience',
+            subtitle:
+              'Understand how to leverage React for creating intuitive and responsive user interfaces.',
+          },
+        ],
+      },
+    },
   },
 ].map(mapResourceWithCommonResource)
 export const MOCK_GROUP_RESOURCES = [
   {
     title:
-      'Empower Your Business with Our Comprehensive Guide on Custom Software Solutions',
-    slug: 'empower-business-guide-custom-software-solutions',
-    filename: 'empower-business-guide-custom-software-solutions.pdf',
+      'The Manager’s Guide to Implementing Custom Software Applications for Businesses',
+    slug: 'the-managers-guide-to-implementing-custom-software-applications-for-businesses',
+    filename:
+      'One X Group - The Manager’s Guide to Implementing Custom Software Applications for Businesses.pdf',
     subtitle:
-      'Adopt best practices for utilizing custom software to achieve your strategic objectives. This guide seeks to help you navigate your way to success with proven software solutions built for your business needs.',
+      'A step-by-step manual for business managers to understand, plan, execute, and manage custom software projects tailored for specific business needs.',
+    avatar_src: '/resources/getting_started_custom_software_avatar.png',
+    avatar_alt:
+      'The Manager’s Guide to Implementing Custom Software Applications for Businesses',
+    hero_src: '/resources/getting_started_custom_software_avatar.png',
+    hero_alt:
+      'The Manager’s Guide to Implementing Custom Software Applications for Businesses',
+    sections: {
+      features: {
+        overline: 'What We Cover',
+        title: 'In this guide, we explore:',
+        subtitle:
+          'Navigate through an insightful journey from understanding the need for custom software, to planning, development, deployment, and ongoing management. Tailored to empower managers in making informed decisions.',
+        items: [
+          {
+            fa_icon: 'fa-laptop-code',
+            title: 'Understanding Custom Software',
+            subtitle:
+              'Learn why custom software is essential and how it can be aligned with your business goals.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Planning and Requirement Gathering',
+            subtitle:
+              'Dive into the process of defining requirements, aligning stakeholders, and setting clear project goals.',
+          },
+          {
+            fa_icon: 'fa-drafting-compass',
+            title: 'Design and Development',
+            subtitle:
+              'Explore the methodologies and best practices in crafting tailored software solutions.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Deployment and Integration',
+            subtitle:
+              'Understand the strategies to ensure seamless integration of custom software into existing workflows.',
+          },
+          {
+            fa_icon: 'fa-wrench',
+            title: 'Ongoing Management and Support',
+            subtitle:
+              'Master the aspects of continuous improvement, updates, and support to maintain software efficacy.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Security and Compliance',
+            subtitle:
+              'Grasp the essential security measures and compliance requirements specific to your industry.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why This Guide',
+        title: 'What you will learn',
+        subtitle:
+          'Equip yourself with the knowledge and strategies to successfully lead custom software initiatives, enhancing operational efficiency, innovation, and business value.',
+        items: [
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Tailored Solutions',
+            subtitle:
+              'Discover how custom software can be designed to meet the unique needs and objectives of your business.',
+          },
+          {
+            fa_icon: 'fa-puzzle-piece',
+            title: 'Strategic Execution',
+            subtitle:
+              'Learn the importance of a well-thought execution plan and how it aligns with business growth.',
+          },
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Seamless Integration',
+            subtitle:
+              'Understand how custom software integrates into your existing infrastructure.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Long-term Sustainability',
+            subtitle:
+              'Gain insights into maintaining and scaling your custom software for long-term success.',
+          },
+        ],
+      },
+    },
   },
 ].map(mapResourceWithCommonResource)
-export const MOCK_DATA_RESOURCES = []
-export const MOCK_DESIGN_RESOURCES = []
+export const MOCK_DATA_RESOURCES = [
+  {
+    title: 'The Business Guide to Generative AI Implementation',
+    slug: 'the-business-guide-to-generative-ai-implementation',
+    filename:
+      'One X Data - The Business Guide to Generative AI Implementation.pdf',
+    subtitle:
+      'A hands-on guide for business leaders and managers to understand, strategize, and deploy Generative AI in their organizations.',
+    avatar_src:
+      '/resources/business_guide_generative_ai_implementation_avatar.png',
+    avatar_alt: 'The Business Guide to Generative AI Implementation',
+    hero_src:
+      '/resources/business_guide_generative_ai_implementation_avatar.png',
+    hero_alt: 'The Business Guide to Generative AI Implementation',
+    sections: {
+      features: {
+        overline: 'What We Cover',
+        title: 'In this guide, we explore:',
+        subtitle:
+          "From understanding Generative AI to strategizing its implementation, this guide equips business professionals with the insights needed to harness AI's creative potential within their organizations.",
+        items: [
+          {
+            fa_icon: 'fa-brain',
+            title: 'Understanding Generative AI',
+            subtitle:
+              "Explore the core concepts and applications of Generative AI in today's business environment.",
+          },
+          {
+            fa_icon: 'fa-business-time',
+            title: 'Strategic Planning for AI Implementation',
+            subtitle:
+              'Learn how to devise a strategic plan for implementing Generative AI that aligns with your business goals.',
+          },
+          {
+            fa_icon: 'fa-users-cog',
+            title: 'Team Collaboration & Skills Development',
+            subtitle:
+              'Discover how to foster collaboration and develop the necessary skills within your team for Generative AI success.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Measuring Impact & ROI',
+            subtitle:
+              'Understand how to measure the impact of Generative AI on your business and calculate the return on investment.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Ongoing Management & Optimization',
+            subtitle:
+              'Gain insights into managing and optimizing Generative AI models for continuous improvement and alignment with business needs.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance, Ethics, and Security',
+            subtitle:
+              'Learn about the critical considerations for ensuring compliance, ethics, and security in your Generative AI projects.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why This Guide',
+        title: 'What you will gain',
+        subtitle:
+          'This guide offers a practical roadmap to Generative AI implementation in business. From strategic planning to ethical considerations, it provides the tools needed to leverage Generative AI effectively.',
+        items: [
+          {
+            fa_icon: 'fa-directions',
+            title: 'Clear Roadmap for Implementation',
+            subtitle:
+              'Follow a clear and structured path to implementing Generative AI within your business.',
+          },
+          {
+            fa_icon: 'fa-dollar-sign',
+            title: 'Cost Efficiency & Maximizing ROI',
+            subtitle:
+              'Learn how to implement Generative AI in a cost-effective manner and maximize the return on your investment.',
+          },
+          {
+            fa_icon: 'fa-balance-scale',
+            title: 'Navigating Legal & Ethical Considerations',
+            subtitle:
+              'Understand the legal and ethical aspects of implementing Generative AI in a business context.',
+          },
+          {
+            fa_icon: 'fa-user-check',
+            title: 'Enhancing Customer Experience',
+            subtitle:
+              'Discover how Generative AI can be leveraged to enhance customer experience and engagement.',
+          },
+        ],
+      },
+    },
+  },
+].map(mapResourceWithCommonResource)
+export const MOCK_DESIGN_RESOURCES = [
+  {
+    title:
+      'The Enterprise Guide to Unifying UI/UX with Enterprise Design Systems',
+    slug: 'the-enterprise-guide-to-unifying-ui-ux-with-enterprise-design-systems',
+    filename:
+      'One X Design - The Enterprise Guide to Unifying UI_UX with Enterprise Design Systems.pdf',
+    subtitle:
+      'A comprehensive handbook for enterprise leaders and developers to seamlessly integrate UI/UX design into cohesive and scalable design systems.',
+    avatar_src: '/resources/enterprise_guide_ui_ux_design_systems_avatar.png',
+    avatar_alt:
+      'The Enterprise Guide to Unifying UI/UX with Enterprise Design Systems',
+    hero_src: '/resources/enterprise_guide_ui_ux_design_systems_avatar.png',
+    hero_alt:
+      'The Enterprise Guide to Unifying UI/UX with Enterprise Design Systems',
+    sections: {
+      features: {
+        overline: 'What We Cover',
+        title: 'In this guide, we explore:',
+        subtitle:
+          'From understanding the fundamentals of UI/UX design to building a cohesive enterprise design system, this guide offers the insights and tools needed for a unified design experience.',
+        items: [
+          {
+            fa_icon: 'fa-palette',
+            title: 'UI/UX Design Fundamentals',
+            subtitle:
+              'Learn the core principles of user interface and user experience design that drive engagement and satisfaction.',
+          },
+          {
+            fa_icon: 'fa-sitemap',
+            title: 'Building Enterprise Design Systems',
+            subtitle:
+              'Explore the process of creating and scaling design systems that align with enterprise goals and brand identity.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Collaborative Design Process',
+            subtitle:
+              'Discover how to foster collaboration between designers, developers, and stakeholders for a cohesive design process.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Measuring Design Impact',
+            subtitle:
+              'Understand how to assess the effectiveness of UI/UX design through key metrics and user feedback.',
+          },
+          {
+            fa_icon: 'fa-cogs',
+            title: 'Integration & Maintenance',
+            subtitle:
+              'Gain insights into integrating and maintaining a design system within an enterprise environment for consistent user experiences.',
+          },
+          {
+            fa_icon: 'fa-shield-alt',
+            title: 'Compliance & Accessibility',
+            subtitle:
+              'Learn about ensuring design compliance with regulations and enhancing accessibility for diverse user needs.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why This Guide',
+        title: 'What you will gain',
+        subtitle:
+          'Embrace the strategies and practical insights needed to create a unified UI/UX design system tailored to the enterprise landscape.',
+        items: [
+          {
+            fa_icon: 'fa-tools',
+            title: 'Tools & Best Practices',
+            subtitle:
+              'Uncover the tools, techniques, and best practices for implementing and managing enterprise design systems.',
+          },
+          {
+            fa_icon: 'fa-sync-alt',
+            title: 'Alignment with Business Goals',
+            subtitle:
+              'Learn how to align your design system with broader business objectives to drive value and brand consistency.',
+          },
+          {
+            fa_icon: 'fa-users',
+            title: 'Enhanced Collaboration',
+            subtitle:
+              'Foster collaboration across teams and roles to ensure a unified design approach.',
+          },
+          {
+            fa_icon: 'fa-universal-access',
+            title: 'Accessibility & Inclusion',
+            subtitle:
+              'Understand how to create accessible designs that cater to the diverse needs of all users.',
+          },
+        ],
+      },
+    },
+  },
+].map(mapResourceWithCommonResource)
 export const MOCK_DIGITAL_RESOURCES = []
 export const MOCK_FINX_RESOURCES = [
   {
