@@ -1615,10 +1615,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.35.0.tgz#b7569632b0b788a0ca0e438235154e45d42813a7"
   integrity sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==
 
-"@gravis-os/analytics@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.2.0.tgz#7780d12e910e5e3ac459ff39ac118d44fbb31349"
-  integrity sha512-4prxq81ly+X9aSXEAcheii7lfvFEEj7LLRI5KS12R6wlXxw5tVrR91QByuQww7zlfzmhwCsFVhkaZiXYhpmGQA==
+"@gravis-os/analytics@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@gravis-os/analytics/-/analytics-0.3.1.tgz#1de15a02f05c6af40926417e4fc3e03e0ed9a030"
+  integrity sha512-77+8hfIIjCbChe76K7eK0ElZmxxnx5nzJwr9vI6uFzxkW2ihBYLB/rACzv91yB1xFuoy97FCXEyNRS3wANfmdQ==
   dependencies:
     "@gravis-os/types" "*"
     lodash "^4.17.21"

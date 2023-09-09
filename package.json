@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "@gravis-os/analytics": "^0.2.0",
+    "@gravis-os/analytics": "^0.3.1",
     "@gravis-os/config": "^0.1.0",
     "@gravis-os/form": "^1.2.0",
     "@gravis-os/landing": "^0.21.0",

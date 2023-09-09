@@ -6,6 +6,7 @@ import { bodyFont } from '@app/theme/typography'
 import {
   renderGtmScriptTag,
   renderGtmNoScriptTag,
+  renderFacebookPixelNoScriptTag,
   renderGtmPreconnectLinkTags,
 } from '@gravis-os/analytics'
 import {
@@ -32,6 +33,7 @@ export default class MyDocument extends Document {
           {renderGtmPreconnectLinkTags()}
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
+        <noscript>{renderFacebookPixelNoScriptTag()}</noscript>
         <body>
           <Main />
           <NextScript />
