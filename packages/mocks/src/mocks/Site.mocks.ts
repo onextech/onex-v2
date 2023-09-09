@@ -6,7 +6,7 @@ export const MOCK_COMMON_SITE = {
   company_absolute_url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'https://onexgroup.co',
+      : 'https://www.onexgroup.co',
 
   // Logo
   logo_src: '/logo.svg',
@@ -248,7 +248,7 @@ export const MOCK_DATA_SITE = {
 
   // App
   title: 'One X Data',
-  absolute_url: 'https://www.onexdata.com',
+  absolute_url: 'https://www.onexdata.co',
 
   logo_alt: 'One X Data logo',
 
