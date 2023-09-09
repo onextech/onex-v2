@@ -623,7 +623,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       // Add hreflang tags if locales are available
       ...(Boolean(site.locales?.length) && {
         languageAlternates: site.locales?.map(({ iso_alpha_2 }) => ({
-          hrefLang: iso_alpha_2,
+          hrefLang: `en-${iso_alpha_2}`,
           href: `${site.absolute_url}/${iso_alpha_2}${router.asPath}`,
         })),
       }),
