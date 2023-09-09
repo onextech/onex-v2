@@ -58,7 +58,7 @@ export const MOCK_GROUP_SITE: Site = {
 
   // App
   title: 'One X Group',
-  absolute_url: 'https://onexgroup.co',
+  absolute_url: 'https://www.onexgroup.co',
 
   // Contact
   general_email: 'info@onexgroup.co',
@@ -535,7 +535,7 @@ export const MOCK_AEL_SITE: Site = {
   // App
   company_title: 'Aether Labs Inc.',
   title: 'Aether Labs',
-  absolute_url: 'https://onex-v2-ael.vercel.app',
+  absolute_url: 'https://www.aetherlabs.ai',
 
   // Contact
   general_email: 'info@aetherlabs.ai',
