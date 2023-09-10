@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
 import { EmotionCache } from '@emotion/react'
 import { AppProvider } from '@app/providers'
-import { AnalyticsProvider, FacebookPixel } from '@gravis-os/analytics'
+import { AnalyticsProvider } from '@gravis-os/analytics'
 
 import 'react-medium-image-zoom/dist/styles.css'
 import 'keen-slider/keen-slider.min.css'
@@ -19,7 +19,6 @@ const MyApp = (props: MyAppProps) => {
     <AppProvider {...props}>
       <AnalyticsProvider>
         <Component {...pageProps} />
-        <FacebookPixel />
       </AnalyticsProvider>
     </AppProvider>
   )
