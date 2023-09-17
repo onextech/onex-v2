@@ -619,7 +619,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         ...seo.openGraph,
         url: `${site.absolute_url}${router.asPath}`,
       },
-      canonical: `${site.absolute_url}${router.asPath.split('?')[0]}`,
       // Add hreflang tags if locales are available
       ...(Boolean(site.locales?.length) && {
         languageAlternates: [
