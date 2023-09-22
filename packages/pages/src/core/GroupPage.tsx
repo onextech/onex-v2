@@ -116,7 +116,20 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
-        renderFeaturedPostsBlock({ items: featuredPosts }),
+        renderFeaturedPostsBlock({
+          items: featuredPosts,
+          py: { xs: 5, md: 10 },
+        }),
+        // News
+        renderFeaturedNewsBlock({
+          items: featuredPressReleases,
+          py: 5,
+        }),
+        // Resources
+        renderFeaturedResourcesBlock({
+          items: resources,
+          py: { xs: 5, md: 10 },
+        }),
         // Faqs
         !site.disable_faqs_on_home_page &&
           renderFaqsAccordionBlock({
@@ -124,14 +137,6 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             ...faqs,
             sx: { backgroundColor: 'background.paper' },
           }),
-        // News
-        renderFeaturedNewsBlock({
-          items: featuredPressReleases,
-        }),
-        // Resources
-        renderFeaturedResourcesBlock({
-          items: resources,
-        }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
           hero_src: cta.hero_src,
