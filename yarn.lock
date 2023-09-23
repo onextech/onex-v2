@@ -1727,10 +1727,10 @@
     react-window "^1.8.9"
     tslib "^2.4.0"
 
-"@gravis-os/landing@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-1.0.2.tgz#08d1a1aa7ceb0981689ada6c70f38c597a6cf107"
-  integrity sha512-MajClBabPWLzq3AlCqKPV+be83Hecz/R5tZL8ICSJcIPFTgwEQDk0293c6XWYi/ADsos85AEEjXHS45q8jBKaQ==
+"@gravis-os/landing@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-1.1.0.tgz#e4d8fddf43f7873e91b57d7537bd0fa3b192394e"
+  integrity sha512-SwJV8OGbRrXw4dCSO64a6yxDCQZX9oknK1cjt7lyE81CA6heIOIWUFfvr/rIlQtD4lumNk0SXBpJr59UZqu4/Q==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/theme" "*"

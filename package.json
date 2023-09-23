@@ -23,7 +23,7 @@
     "turbo": "turbo",
     "test": "turbo run test",
     "analyze": "turbo run analyze --parallel",
-    "gravis:up": "yarn upgrade -W --latest --scope @gravis-os && gravis:dedupe",
+    "gravis:up": "yarn upgrade -W --latest --scope @gravis-os && npm run gravis:dedupe",
     "gravis:dedupe": "npx yarn-deduplicate --strategy highest --scopes @gravis-os"
   },
   "config": {
@@ -35,7 +35,7 @@
     "@gravis-os/analytics": "^0.4.0",
     "@gravis-os/config": "^0.2.0",
     "@gravis-os/form": "^1.7.1",
-    "@gravis-os/landing": "^1.0.2",
+    "@gravis-os/landing": "^1.1.0",
     "@gravis-os/query": "^0.2.0",
     "@gravis-os/theme": "^0.2.0",
     "@gravis-os/types": "^0.6.0",

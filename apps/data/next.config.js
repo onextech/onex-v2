@@ -28,6 +28,19 @@ module.exports = withBundleAnalyzer({
     '@gravis-os/ui',
     '@gravis-os/utils',
   ],
+  async headers() {
+    return [
+      {
+        source: '/(.*)?', // Matches all pages
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          }
+        ]
+      }
+    ]
+  },
   webpack(config) {
     // Svg support
     config.module.rules.push({
