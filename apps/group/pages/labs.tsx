@@ -1,14 +1,15 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { LabsPage, LabsPageProps } from '@onex/pages'
+import { PageProvider } from '@gravis-os/landing'
 import { MOCK_VENTURES_PAGE } from '@onex/mocks'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { LabsPage, LabsPageProps } from '@onex/pages'
 import {
   fetchSite,
-  getStaticPropsWithLayout,
   getDynamicPage,
+  getStaticPropsWithLayout,
 } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()
@@ -24,7 +25,7 @@ const NextLabsPage: React.FC<NextLabsPageProps> = (props) => {
   const { page, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={page.seo} darkHeader>
+      <LandingLayout darkHeader seo={page.seo}>
         <LabsPage page={page} />
       </LandingLayout>
     </PageProvider>

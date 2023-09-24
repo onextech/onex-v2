@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { MissionPage } from '@onex/pages'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PageProvider } from '@gravis-os/landing'
+import { MissionPage } from '@onex/pages'
 import { PageDetail } from '@onex/server'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
   slug: 'mission',
@@ -16,7 +17,7 @@ const NextMissionPage: React.FC<NextMissionPageProps> = (props) => {
   const { page, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={page.seo} darkHeader>
+      <LandingLayout darkHeader seo={page.seo}>
         <MissionPage />
       </LandingLayout>
     </PageProvider>

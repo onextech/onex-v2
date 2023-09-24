@@ -1,22 +1,24 @@
-import React from 'react'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+
+import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { GroupPage, GroupPageProps } from '@onex/pages'
-import {
-  fetchSite,
-  getStaticPropsWithLayout,
-  getDynamicPage,
-} from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
-import dayjs from 'dayjs'
 import {
   MOCK_INDUSTRYS,
   MOCK_PAGES,
   MOCK_POSTS,
-  MOCK_SHOWCASES,
-  MOCK_RESOURCES,
   MOCK_PRESS_RELEASES,
+  MOCK_RESOURCES,
+  MOCK_SHOWCASES,
 } from '@onex/mocks'
+import { GroupPage, GroupPageProps } from '@onex/pages'
+import {
+  fetchSite,
+  getDynamicPage,
+  getStaticPropsWithLayout,
+} from '@onex/server'
+import dayjs from 'dayjs'
 import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -41,7 +43,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
-    .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
+    .filter(({ is_featured, is_hero }) => is_featured && !is_hero)
     .slice(0, 3)
   const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
@@ -66,13 +68,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
     .slice(0, 3)
   return getStaticPropsWithLayout({
     props: {
-      page,
-      heroPosts,
       featuredPosts,
-      showcases,
-      industrys,
-      resources,
       featuredPressReleases,
+      heroPosts,
+      industrys,
+      page,
+      resources,
+      showcases,
     },
   })(context)
 }
@@ -83,31 +85,31 @@ export interface NextHomePageProps
 
 const NextHomePage: React.FC<NextHomePageProps> = (props) => {
   const {
-    page,
-    showcases,
     featuredPosts,
+    featuredPressReleases,
     heroPosts,
     industrys,
-    resources,
+    page,
     pageProviderProps,
-    featuredPressReleases,
+    resources,
+    showcases,
   } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        headerProps={{ translucentAtScrollY: 755 }}
         seo={page.seo}
         transparentHeader
-        headerProps={{ translucentAtScrollY: 755 }}
       >
         <GroupPage
+          featuredPosts={featuredPosts}
+          featuredPressReleases={featuredPressReleases}
+          heroPosts={heroPosts}
           industrys={industrys}
+          page={page}
           resources={resources}
           showcases={showcases}
-          page={page}
-          featuredPosts={featuredPosts}
-          heroPosts={heroPosts}
-          featuredPressReleases={featuredPressReleases}
         />
       </LandingLayout>
     </PageProvider>

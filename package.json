@@ -64,6 +64,6 @@
   },
   "packageManager": "yarn@1.22.1",
   "resolutions": {
-    "@typescript-eslint/parser": "^6.2.0"
+    "@typescript-eslint/parser": "6.2.0"
   }
 }
