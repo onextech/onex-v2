@@ -11,7 +11,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "lint-staged && next lint --quiet --fix",
+    "lint": "eslint --ext .ts,.js,.jsx,.tsx . --fix --quiet",
     "tslint": "tsc --noEmit --incremental"
   },
   "dependencies": {

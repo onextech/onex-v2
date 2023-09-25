@@ -1,17 +1,21 @@
+/* eslint-disable fp/no-class, fp/no-this, fp/no-mutation */
+
 import * as React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import createEmotionServer from '@emotion/server/create-instance'
-import { createEmotionCache, lightTheme } from '@gravis-os/landing'
+
 import { bodyFont } from '@app/theme/typography'
+import createEmotionServer from '@emotion/server/create-instance'
 import {
-  renderGtmScriptTag,
   renderGtmNoScriptTag,
   renderGtmPreconnectLinkTags,
+  renderGtmScriptTag,
 } from '@gravis-os/analytics'
+import { createEmotionCache, lightTheme } from '@gravis-os/landing'
 import {
   renderFontAwesomeKitPreconnectLinkTags,
   renderFontAwesomeKitScriptTag,
 } from '@gravis-os/ui'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
+
 import i18nextConfig from '../next-i18next.config'
 
 export default class MyDocument extends Document {
@@ -21,12 +25,12 @@ export default class MyDocument extends Document {
       this.props.__NEXT_DATA__.query.locale || i18nextConfig.i18n.defaultLocale
     )
     return (
-      <Html lang={currentLocale} className={bodyFont.className}>
+      <Html className={bodyFont.className} lang={currentLocale}>
         <Head>
           {/* PWA primary color */}
-          <meta name="theme-color" content={lightTheme.palette.primary.main} />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <meta name="emotion-insertion-point" content="" />
+          <meta content={lightTheme.palette.primary.main} name="theme-color" />
+          <link href="/favicon.ico" rel="shortcut icon" />
+          <meta content="" name="emotion-insertion-point" />
           {(this.props as any).emotionStyleTags}
           {renderFontAwesomeKitPreconnectLinkTags()}
           {renderGtmPreconnectLinkTags()}
@@ -89,10 +93,10 @@ MyDocument.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html)
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
-      key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
+      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      key={style.key}
     />
   ))
 

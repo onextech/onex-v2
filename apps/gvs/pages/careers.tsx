@@ -1,10 +1,11 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { CareersPage } from '@onex/pages'
-import { MOCK_JOBS } from '@onex/mocks'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { PageDetail } from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
+import { MOCK_JOBS } from '@onex/mocks'
+import { CareersPage } from '@onex/pages'
+import { PageDetail } from '@onex/server'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
   slug: 'careers',
@@ -18,13 +19,13 @@ const NextCareersPage: React.FC<NextCareersPageProps> = (props) => {
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
-        seo={page.seo}
         headerProps={{
-          disableBorderBottom: true,
           dark: true,
-          transparent: true,
+          disableBorderBottom: true,
           position: 'fixed',
+          transparent: true,
         }}
+        seo={page.seo}
       >
         <CareersPage jobs={MOCK_JOBS} page={page} />
       </LandingLayout>

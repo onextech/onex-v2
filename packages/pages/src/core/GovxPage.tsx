@@ -1,49 +1,50 @@
 import React from 'react'
+
 import {
   Block,
   Blocks,
+  renderClientLogosGallery,
   renderClientLogosImageMarqueeBlock,
+  renderCtaBlock,
+  renderFaqsAccordionBlock,
+  renderFeaturedNewsBlock,
+  renderFeaturedPostsBlock,
+  renderHeroWithBackgroundBlock,
+  renderHomeSummaryBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderFeaturedPostsBlock,
-  renderFaqsAccordionBlock,
-  renderCtaBlock,
-  renderHeroWithBackgroundBlock,
   useLayout,
-  renderClientLogosGallery,
-  renderFeaturedNewsBlock,
-  renderHomeSummaryBlock,
 } from '@gravis-os/landing'
 import {
+  Industry,
   Page,
   Post,
-  Industry,
-  Technology,
-  Showcase,
   PressRelease,
+  Showcase,
+  Technology,
 } from '@gravis-os/types'
-import { useRouter } from 'next/router'
 import { Slider } from '@gravis-os/ui'
+import { useRouter } from 'next/router'
 
 export interface GovxPageProps {
+  featuredPosts: Post[]
+  featuredPressReleases: PressRelease[]
+  industrys: Industry[]
   page: Page
   showcases: Showcase[]
   technologys: Technology[]
-  featuredPosts: Post[]
-  industrys: Industry[]
-  featuredPressReleases: PressRelease[]
 }
 
 const GovxPage: React.FC<GovxPageProps> = (props) => {
-  const { page, showcases, featuredPosts, featuredPressReleases } = props
+  const { featuredPosts, featuredPressReleases, page, showcases } = props
   const router = useRouter()
-  const { site, clientLogos } = useLayout()
+  const { clientLogos, site } = useLayout()
   const { locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, features, faqs, cta, summary } = sections || {}
+  const { benefits, cta, faqs, features, hero, summary } = sections || {}
 
   return (
     <Blocks
@@ -51,21 +52,18 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         // Hero
         {
           id: 'hero-with-background-fade-slider',
-          dark: true,
           center: true,
+          dark: true,
           disableContainer: true,
-          py: 0,
           items: [
             {
-              type: 'jsx',
               title: (
                 <Slider
-                  autoplay
-                  loop
                   arrows
-                  fade
-                  dots
+                  autoplay
                   dotProps={{ color: 'secondary.main' }}
+                  dots
+                  fade
                   height={{ xs: 500, md: 800 }}
                   items={[
                     <Block
@@ -74,8 +72,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         title: 'We are the Growth Company',
                         ...hero,
                         backgroundImageProps: {
-                          src: '/images/home_hero_1.jpeg',
                           alt: 'stars building',
+                          src: '/images/home_hero_1.jpeg',
                         },
                       })}
                     />,
@@ -85,12 +83,12 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         ...hero,
                         title:
                           'Unlocking Public Sector Innovation: Explore our AI Insights',
+                        backgroundImageProps: {
+                          alt: 'train station',
+                          src: '/images/home_hero_2.jpeg',
+                        },
                         subtitle:
                           'Dive into our curated collection of articles, exploring the intersection of AI solutions and the public sector, as we uncover the transformative potential and latest advancements in technologies that can be harnessed for public enterprises.',
-                        backgroundImageProps: {
-                          src: '/images/home_hero_2.jpeg',
-                          alt: 'train station',
-                        },
                       })}
                     />,
                     <Block
@@ -99,19 +97,22 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
                         ...hero,
                         title:
                           'Digitalizing the Public Sector: Discover our Vision',
+                        backgroundImageProps: {
+                          alt: 'cool library',
+                          src: '/images/home_hero_3.jpeg',
+                        },
                         subtitle:
                           'Bringing revolutionary change to the public sector. Learn more about our values, culture, and vision and how we look to unleash the potential of AI to drive transformation in the public sector.',
-                        backgroundImageProps: {
-                          src: '/images/home_hero_3.jpeg',
-                          alt: 'cool library',
-                        },
                       })}
                     />,
                   ]}
+                  loop
                 />
               ),
+              type: 'jsx',
             },
           ],
+          py: 0,
         },
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
@@ -121,9 +122,9 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         // Summary
         renderHomeSummaryBlock({
           ...summary,
+          pb: { xs: 5, md: 0 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
-          pb: { xs: 5, md: 0 },
         }),
         // Benefits
         renderThreeColumnGridBlock({
@@ -132,17 +133,17 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         }),
         // Client Logos Gallery
         renderClientLogosGallery({
-          items: clientLogos,
           title:
             'We Transform Public Sector Enterprises Across Industries for the Future of Governance',
+          items: clientLogos,
         }),
         // Showcases
         renderShowcasesBlock({
           title: <>Empowering the Public Sector through AI-driven Solutions</>,
-          subtitle:
-            'Empower the public sector with AI-driven solutions from Gov X. Optimize operations, make data-driven decisions, and deliver enhanced public services. Revolutionize governance with our innovative technologies.',
           items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
+          subtitle:
+            'Empower the public sector with AI-driven solutions from Gov X. Optimize operations, make data-driven decisions, and deliver enhanced public services. Revolutionize governance with our innovative technologies.',
         }),
         // Posts
         renderFeaturedPostsBlock({
@@ -164,8 +165,8 @@ const GovxPage: React.FC<GovxPageProps> = (props) => {
         // Cta
         renderCtaBlock({
           item: cta,
-          pt: { xs: 5, md: 10 },
           pb: 0,
+          pt: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
         }),
       ]}

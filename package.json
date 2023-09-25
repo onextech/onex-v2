@@ -13,7 +13,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "start": "turbo run start --parallel",
-    "lint": "turbo run lint",
+    "lint": "turbo run lint --parallel --continue",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "commit": "git-cz",

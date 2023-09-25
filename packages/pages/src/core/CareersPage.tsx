@@ -1,10 +1,12 @@
+import type { Job, Page } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   renderJobCardBlockItem,
   renderLeftFourColumnGridBlockItem,
 } from '@gravis-os/landing'
-import type { Job, Page } from '@gravis-os/types'
 
 export interface CareersPageProps {
   jobs: Job[]
@@ -15,66 +17,66 @@ const commonBlockProps = { center: true, maxWidth: 'xl' }
 
 const CareersPage: React.FC<CareersPageProps> = (props) => {
   const { jobs, page } = props
-  const { sections, title, subtitle } = page
-  const { hero, summary, benefits, callout } = sections
+  const { title, sections, subtitle } = page
+  const { benefits, callout, hero, summary } = sections
   return (
     <Blocks
       items={[
         {
-          py: { xs: 14, md: 28 },
-          dark: true,
           id: 'growth-company',
+          dark: true,
+          py: { xs: 14, md: 28 },
           ...commonBlockProps,
           backgroundImageProps: {
-            src: hero.hero_src,
             alt: hero.hero_alt,
+            src: hero.hero_src,
           },
           items: [
-            { type: 'overline', title: hero.overline },
+            { title: hero.overline, type: 'overline' },
             {
-              type: 'h2',
               title: hero.title,
               titleProps: {
-                mb: { xs: 12, md: 19 },
                 component: 'h1',
                 maxWidth: 800,
+                mb: { xs: 12, md: 19 },
               },
+              type: 'h2',
             },
           ],
         },
         {
           id: 'join-the-team',
           ...commonBlockProps,
-          pb: { xs: 5, md: 0 },
           items: [
             {
-              type: 'h4',
               title: summary.title,
-              titleProps: { gutterBottom: true },
               containerProps: { maxWidth: 'sm' },
+              titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'body1',
               title: summary.subtitle,
+              containerProps: { maxWidth: 'md' },
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
-              containerProps: { maxWidth: 'md' },
+              type: 'body1',
             },
             {
-              type: 'image',
               title: summary.hero_src,
-              maxWidth: false,
               disableContainer: true,
+              maxWidth: false,
               titleProps: {
                 alt: summary.hero_alt,
                 background: true,
                 backgroundHeight: { xs: 300, md: 500 },
                 sx: { my: 3 },
               },
+              type: 'image',
             },
           ],
+          pb: { xs: 5, md: 0 },
         },
         renderLeftFourColumnGridBlockItem(benefits),
         {
@@ -83,30 +85,30 @@ const CareersPage: React.FC<CareersPageProps> = (props) => {
           center: false,
           items: [
             {
-              type: 'h3',
               title: callout.title,
               titleProps: { gutterBottom: true, textAlign: 'left' },
+              type: 'h3',
             },
             {
-              type: 'subtitle1',
               title: callout.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '50%',
               },
+              type: 'subtitle1',
             },
             {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              gridProps: { spacing: 3 },
               gridItemProps: {
                 xs: 12,
                 md: 4,
                 sx: { textAlign: { xs: 'center', md: 'left' } },
               },
               gridItems: jobs.map((job, i) => {
-                return renderJobCardBlockItem({ job, index: i + 1 })
+                return renderJobCardBlockItem({ index: i + 1, job })
               }),
+              gridProps: { spacing: 3 },
+              sx: { mt: { xs: 5, md: 10 } },
+              type: 'grid',
             },
           ],
         },

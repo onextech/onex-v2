@@ -1,13 +1,14 @@
 import React from 'react'
+
 import {
   Blocks,
-  renderFadeToBottomBackgroundImageBlock,
-  renderThreeColumnGridBlock,
-  renderHalfGridBlock,
-  renderRightChecklistBlock,
-  renderFaqsAccordionBlock,
   renderClientLogosImageMarqueeBlock,
+  renderFadeToBottomBackgroundImageBlock,
+  renderFaqsAccordionBlock,
+  renderHalfGridBlock,
   renderHeroWithVideoBackgroundBlock,
+  renderRightChecklistBlock,
+  renderThreeColumnGridBlock,
   useLayout,
 } from '@gravis-os/landing'
 import { Page } from '@gravis-os/types'
@@ -18,9 +19,9 @@ export interface LabsPageProps {
 
 const LabsPage: React.FC<LabsPageProps> = (props) => {
   const { page } = props
-  const { routeConfig, clientLogos } = useLayout()
+  const { clientLogos, routeConfig } = useLayout()
   const { sections } = page || {}
-  const { cta, callout, halfGrids, hero, benefits, features, faqs, checklist } =
+  const { benefits, callout, checklist, cta, faqs, features, halfGrids, hero } =
     sections || {}
 
   return (
@@ -28,20 +29,20 @@ const LabsPage: React.FC<LabsPageProps> = (props) => {
       items={[
         renderHeroWithVideoBackgroundBlock({
           ...hero,
-          video_src: '/videos/home_video.mp4',
-          video_poster_src: '/videos/home_video_poster.jpg',
           buttonProps: {
-            overline: 'What we do',
             title: 'Smarter Businesses',
-            size: 'lg',
             href: routeConfig.SERVICES,
+            overline: 'What we do',
+            size: 'lg',
           },
           secondaryButtonProps: {
-            overline: 'Who we are',
             title: 'Business Software Experts',
-            size: 'lg',
             href: routeConfig.CAREERS,
+            overline: 'Who we are',
+            size: 'lg',
           },
+          video_poster_src: '/videos/home_video_poster.jpg',
+          video_src: '/videos/home_video.mp4',
         }),
         // Benefits
         renderThreeColumnGridBlock({
@@ -68,19 +69,19 @@ const LabsPage: React.FC<LabsPageProps> = (props) => {
         }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
-          hero_src: '/images/data_men.png',
-          hero_alt: 'Two men working',
-          titleProps: { type: 'h3', maxWidth: 'xl' },
-          subtitleProps: {
-            type: 'body1',
-            maxWidth: 'xl',
-            titleProps: { maxWidth: '72%' },
-          },
           buttonProps: {
-            overline: 'Contact Us',
             title: 'Get in Touch',
             href: `/${routeConfig.CONTACT}`,
+            overline: 'Contact Us',
           },
+          hero_alt: 'Two men working',
+          hero_src: '/images/data_men.png',
+          subtitleProps: {
+            maxWidth: 'xl',
+            titleProps: { maxWidth: '72%' },
+            type: 'body1',
+          },
+          titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
         }),
       ]}

@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { PostCategorysPage, PostCategorysPageProps } from '@onex/pages'
 import { PostCategoryList } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PostCategoryList.getStaticProps()
@@ -12,11 +13,11 @@ export interface NextPostsPageProps
     PostCategorysPageProps {}
 
 const NextPostsPage: React.FC<NextPostsPageProps> = (props) => {
-  const { posts, postCategorys, pageProviderProps } = props
+  const { pageProviderProps, postCategorys, posts } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout seo={{ title: 'Insights' }}>
-        <PostCategorysPage posts={posts} postCategorys={postCategorys} />
+        <PostCategorysPage postCategorys={postCategorys} posts={posts} />
       </LandingLayout>
     </PageProvider>
   )

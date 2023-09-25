@@ -1,23 +1,25 @@
+import type { Resource } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   RenderPostBlockItemProps,
   renderPostBlockItem,
   useLayout,
 } from '@gravis-os/landing'
-import type { Resource } from '@gravis-os/types'
+import { routeConfig } from '@onex/common'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
-import { routeConfig } from '@onex/common'
 
 export interface ResourceSuccessPageProps {
-  resource: Resource
   relatedResources?: Resource[]
+  resource: Resource
 }
 
 const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
-  const { resource, relatedResources } = props
-  const { title, filename, subtitle, avatar_src, avatar_alt } = resource
+  const { relatedResources, resource } = props
+  const { title, avatar_alt, avatar_src, filename, subtitle } = resource
   const router = useRouter()
   const { site } = useLayout()
   return (
@@ -25,19 +27,8 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          reveal: false,
-          py: 5,
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.default',
-          },
           items: [
             {
-              type: 'grid',
-              gridProps: {
-                reverse: true,
-                spacing: { xs: 0, md: 5 },
-              },
               gridItems: [
                 {
                   sm: 7,
@@ -49,30 +40,30 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                     },
                   },
                   items: [
-                    { type: 'overline', title: 'Resource' },
+                    { title: 'Resource', type: 'overline' },
                     {
-                      type: 'h1',
                       title,
                       titleProps: { mb: 2 },
+                      type: 'h1',
                     },
                     {
-                      type: 'subtitle3',
                       title: subtitle,
                       titleProps: {
                         color: 'text.secondary',
                         maxWidth: true,
                         sx: { mb: 3 },
                       },
+                      type: 'subtitle3',
                     },
                     {
-                      type: 'image',
                       title: avatar_src,
+                      boxProps: { maxWidth: { md: '70%' } },
                       titleProps: {
                         alt: avatar_alt,
                         ar: '4:3',
                         scaleOnHover: true,
                       },
-                      boxProps: { maxWidth: { md: '70%' } },
+                      type: 'image',
                     },
                   ],
                 },
@@ -83,79 +74,92 @@ const ResourceSuccessPage: React.FC<ResourceSuccessPageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
-                      height: { md: '100%' },
-                      position: { md: 'absolute' },
-                      top: 0,
-                      py: 5,
-                      px: 4,
-                      mb: { xs: 5, md: 0 },
                       backgroundColor: 'background.paper',
+                      height: { md: '100%' },
+                      mb: { xs: 5, md: 0 },
+                      position: { md: 'absolute' },
+                      px: 4,
+                      py: 5,
+                      top: 0,
                     },
                   },
                   items: [
                     {
-                      type: 'fa-icon',
                       title: `fa-3x fa-thin fa-badge-check`,
-                      titleProps: { sx: { mb: 1, color: 'success.main' } },
+                      titleProps: { sx: { color: 'success.main', mb: 1 } },
+                      type: 'fa-icon',
                     },
                     {
-                      type: 'overline',
                       title: `Registration Success`,
-                      titleProps: { sx: { mb: 1, color: 'success.main' } },
+                      titleProps: { sx: { color: 'success.main', mb: 1 } },
+                      type: 'overline',
                     },
                     {
-                      type: 'h5',
                       title: 'Your download is ready!',
-                      titleProps: { sx: { mb: 2 }, gutterBottom: true },
+                      titleProps: { gutterBottom: true, sx: { mb: 2 } },
+                      type: 'h5',
                     },
                     {
-                      type: 'body1',
                       title:
                         'Great news! Click the link below to download your exclusive report. Enjoy your new read.',
                       titleProps: { color: 'text.secondary', sx: { mb: 2 } },
+                      type: 'body1',
                     },
                     {
-                      type: 'button',
                       title: 'Download',
                       titleProps: {
-                        variant: 'contained',
                         fullWidth: true,
-                        size: 'large',
                         href: `/resources/${filename}`,
                         hrefProps: { targetBlank: true },
+                        size: 'large',
+                        variant: 'contained',
                       },
+                      type: 'button',
                     },
                   ],
                 },
               ],
+              gridProps: {
+                reverse: true,
+                spacing: { xs: 0, md: 5 },
+              },
+              type: 'grid',
             },
           ],
+          py: 5,
+          reveal: false,
+          sx: {
+            backgroundColor: 'background.default',
+            position: 'relative',
+          },
         },
         Boolean(relatedResources?.length) && {
           id: 'hero',
-          py: 8,
-          sx: { backgroundColor: 'background.paper' },
           items: [
             {
-              type: 'h4',
               title: `More Resources from ${site.title}`,
               titleProps: { maxWidth: true, sx: { mb: 4 } },
+              type: 'h4',
             },
             {
-              type: 'grid',
-              gridProps: { spacing: 5, rowSpacing: 8 },
               gridItems: orderBy(relatedResources, 'published_at', 'desc')
-                .filter((resource) => resource.slug !== router.basePath)
-                .map((resource) =>
+                .filter(
+                  (relatedResource) => relatedResource.slug !== router.basePath
+                )
+                .map((relatedResource) =>
                   renderPostBlockItem({
                     item: {
-                      ...resource,
-                      href: `${routeConfig.RESOURCES}/${resource.slug}`,
+                      ...relatedResource,
+                      href: `${routeConfig.RESOURCES}/${relatedResource.slug}`,
                     } as RenderPostBlockItemProps['item'],
                   })
                 ),
+              gridProps: { rowSpacing: 8, spacing: 5 },
+              type: 'grid',
             },
           ],
+          py: 8,
+          sx: { backgroundColor: 'background.paper' },
         },
       ]}
     />

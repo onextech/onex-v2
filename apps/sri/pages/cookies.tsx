@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { LegalPage } from '@onex/pages'
-import { InferGetStaticPropsType } from 'next'
-import { PageDetail } from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
+import { LegalPage } from '@onex/pages'
+import { PageDetail } from '@onex/server'
+import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PageDetail.getStaticProps({ slug: 'cookies' })
 

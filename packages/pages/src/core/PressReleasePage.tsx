@@ -1,31 +1,33 @@
+import type { PressRelease } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   renderOtherPressReleasesBlock,
   renderPostDetailBlock,
   renderPostHeroBlockItem,
 } from '@gravis-os/landing'
-import type { PressRelease } from '@gravis-os/types'
 
 export interface PressReleasePageProps {
-  pressRelease: PressRelease
   otherPressReleases?: PressRelease[]
+  pressRelease: PressRelease
 }
 
 const PressReleasePage: React.FC<PressReleasePageProps> = (props) => {
-  const { pressRelease, otherPressReleases } = props
+  const { otherPressReleases, pressRelease } = props
 
   return (
     <Blocks
       items={[
         renderPostHeroBlockItem({
-          item: pressRelease,
           disableAuthorDetails: true,
+          item: pressRelease,
         }),
         renderPostDetailBlock({
+          disableAuthorDetails: true,
           item: pressRelease,
           pt: { xs: 3, md: 6 },
-          disableAuthorDetails: true,
         }),
         renderOtherPressReleasesBlock({
           items: otherPressReleases,

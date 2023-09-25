@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { Blocks, useLayout } from '@gravis-os/landing'
 
 export interface LegalPageProps {
-  title: React.ReactNode
   html?: string
+  title: React.ReactNode
 }
 
 const LegalPage: React.FC<LegalPageProps> = (props) => {
@@ -15,32 +16,32 @@ const LegalPage: React.FC<LegalPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          pt: 5,
           items: [
             {
-              type: 'overline',
               title: `${site.company_title}`,
               titleProps: { color: 'text.secondary' },
+              type: 'overline',
             },
             {
-              type: 'h2',
               title,
               titleProps: { component: 'h1' },
+              type: 'h2',
             },
             html && {
-              type: 'html',
               title: html,
               titleProps: {
                 color: 'text.primary',
                 sx: {
                   '& p': {
-                    mt: 0,
                     mb: 3,
+                    mt: 0,
                   },
                 },
               },
+              type: 'html',
             },
           ],
+          pt: 5,
         },
       ]}
     />

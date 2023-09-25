@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useLayout, useUserPreferences } from '@gravis-os/landing'
 import {
   LandingLayout as LandingLayoutTemplate,

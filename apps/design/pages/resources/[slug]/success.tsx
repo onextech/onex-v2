@@ -1,9 +1,9 @@
 import React from 'react'
-import { LandingLayout } from '@app/layouts'
-import { ResourcePageProps, ResourceSuccessPage } from '@onex/pages'
 
-import { ResourceDetail } from '@onex/server'
+import { LandingLayout } from '@app/layouts'
 import { PageProvider } from '@gravis-os/landing'
+import { ResourcePageProps, ResourceSuccessPage } from '@onex/pages'
+import { ResourceDetail } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ResourceDetail.getStaticProps()
@@ -16,13 +16,13 @@ export interface NextResourceSuccessPageProps
 const NextResourceSuccessPage: React.FC<NextResourceSuccessPageProps> = (
   props
 ) => {
-  const { resource, relatedResources, pageProviderProps } = props
+  const { pageProviderProps, relatedResources, resource } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout seo={{ title: `${resource.title} Registration Success` }}>
         <ResourceSuccessPage
-          resource={resource}
           relatedResources={relatedResources}
+          resource={resource}
         />
       </LandingLayout>
     </PageProvider>

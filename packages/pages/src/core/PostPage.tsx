@@ -1,25 +1,26 @@
+import type { Post, PostCategory, Service } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
+  renderOtherPostsBlock,
   renderPostDetailBlock,
   renderPostHeroBlockItem,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-  renderOtherPostsBlock,
 } from '@gravis-os/landing'
-import type { Post, PostCategory, Service } from '@gravis-os/types'
 
 export interface PostPageProps {
+  otherPosts: Post[]
   post: Post
   postCategory: PostCategory
   relatedPosts?: Post[]
   relatedServices?: Service[]
-  otherPosts: Post[]
 }
 
 const PostPage: React.FC<PostPageProps> = (props) => {
-
-  const { post, relatedPosts, relatedServices, otherPosts } = props
+  const { otherPosts, post, relatedPosts, relatedServices } = props
 
   return (
     <Blocks

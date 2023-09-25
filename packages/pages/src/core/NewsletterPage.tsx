@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { Blocks, NewsletterForm, useLayout } from '@gravis-os/landing'
 
 export interface NewsletterPageProps {
-  title: string
   subtitle?: string
+  title: string
 }
 
 const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
@@ -16,27 +17,20 @@ const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
         // Form
         {
           id: 'form',
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.paper',
-          },
-          dark: true,
-          center: true,
-          pt: { xs: 10, xl: 12 },
-          pb: { xs: 40, xl: 60 },
           backgroundImageProps: {
-            src: '/images/mission_earth.png',
             alt: 'hero',
+            src: '/images/mission_earth.png',
           },
+          center: true,
+          dark: true,
           items: [
-            { type: 'overline', title: `${site.title} Newsletter` },
+            { title: `${site.title} Newsletter`, type: 'overline' },
             {
-              type: 'h2',
               title,
-              titleProps: { sx: { mb: 2 }, maxWidth: 'md' },
+              titleProps: { maxWidth: 'md', sx: { mb: 2 } },
+              type: 'h2',
             },
             {
-              type: 'subtitle1',
               title:
                 subtitle ||
                 'Save 2,000+ hours of market research with free 5-minute reports.',
@@ -44,14 +38,21 @@ const NewsletterPage: React.FC<NewsletterPageProps> = (props) => {
                 maxWidth: true,
                 sx: { mb: 4 },
               },
+              type: 'subtitle1',
             },
             {
-              type: 'jsx',
               title: <NewsletterForm />,
-              boxProps: { sx: { mx: 'auto', maxWidth: { md: '50%' } } },
+              boxProps: { sx: { maxWidth: { md: '50%' }, mx: 'auto' } },
               titleProps: { sx: { mt: 2 } },
+              type: 'jsx',
             },
           ],
+          pb: { xs: 40, xl: 60 },
+          pt: { xs: 10, xl: 12 },
+          sx: {
+            backgroundColor: 'background.paper',
+            position: 'relative',
+          },
         },
       ]}
     />

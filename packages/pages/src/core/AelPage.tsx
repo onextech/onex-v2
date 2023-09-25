@@ -1,46 +1,47 @@
 import React from 'react'
+
 import {
   Blocks,
-  renderFeaturedPostsBlock,
-  renderClientLogosImageMarqueeBlock,
-  renderShowcasesBlock,
-  renderFeaturedIndustrysBlock,
-  useLayout,
-  renderHeroWithVideoBackgroundBlock,
   renderClientLogosGallery,
+  renderClientLogosImageMarqueeBlock,
+  renderFeaturedIndustrysBlock,
   renderFeaturedNewsBlock,
+  renderFeaturedPostsBlock,
+  renderHeroWithVideoBackgroundBlock,
+  renderShowcasesBlock,
+  useLayout,
 } from '@gravis-os/landing'
-import { Industry, Page, Post, Showcase, PressRelease } from '@gravis-os/types'
+import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
 import { routeConfig } from '@onex/common'
 
 export interface AelPageProps {
-  page: Page
   featuredPosts: Post[]
-  showcases: Showcase[]
-  industrys: Industry[]
   featuredPressReleases: PressRelease[]
+  industrys: Industry[]
+  page: Page
+  showcases: Showcase[]
 }
 
 const buttonProps = {
   sx: {
-    width: '100%',
-    justifyContent: 'start',
-    textTransform: 'none',
-    fontFamily: 'inherit',
-    fontWeight: 'normal',
-    fontSize: '2rem',
     borderBottom: '1px solid',
     borderColor: 'divider',
+    fontFamily: 'inherit',
+    fontSize: '2rem',
+    fontWeight: 'normal',
+    justifyContent: 'start',
     py: 2,
+    textTransform: 'none',
+    width: '100%',
   },
 }
 
 const AelPage: React.FC<AelPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys, featuredPressReleases } =
+  const { featuredPosts, featuredPressReleases, industrys, page, showcases } =
     props
 
   const { sections } = page || {}
-  const { hero, benefits, faqs, cta, summary } = sections || {}
+  const { benefits, cta, faqs, hero, summary } = sections || {}
 
   const { clientLogos, site } = useLayout()
 
@@ -49,18 +50,18 @@ const AelPage: React.FC<AelPageProps> = (props) => {
       items={[
         // Hero
         renderHeroWithVideoBackgroundBlock({
-          maxWidth: 'lg',
-          video_src: '/videos/home_video.mp4',
-          video_poster_src: '/videos/home_video_poster.jpg',
           title: 'Advancing creativity with artificial intelligence.',
-          subtitle:
-            'Aether Labs is an applied AI research company shaping the next era of medical innovation.',
           buttonProps: {
-            overline: 'Our Services',
             title: 'Schedule a Demo',
             href: routeConfig.SERVICES,
+            overline: 'Our Services',
             size: 'large',
           },
+          maxWidth: 'lg',
+          subtitle:
+            'Aether Labs is an applied AI research company shaping the next era of medical innovation.',
+          video_poster_src: '/videos/home_video_poster.jpg',
+          video_src: '/videos/home_video.mp4',
         }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
@@ -70,64 +71,64 @@ const AelPage: React.FC<AelPageProps> = (props) => {
         // Services
         {
           id: 'services',
-          sx: { backgroundColor: 'background.paper' },
-          pt: { xs: 3, md: 6 },
           items: [
-            { type: 'overline', title: 'Trusted By' },
+            { title: 'Trusted By', type: 'overline' },
             {
-              type: 'h2',
               title:
                 'We build transformative digital health products with amazing healthcare companies.',
               titleProps: { gutterBottom: true },
+              type: 'h2',
             },
             {
-              type: 'button',
               title: <span>Our Work</span>,
               titleProps: { ...buttonProps, href: routeConfig.SHOWCASES },
+              type: 'button',
             },
             {
-              type: 'button',
               title: <span>What We Do</span>,
               titleProps: { ...buttonProps, href: routeConfig.SERVICES },
+              type: 'button',
             },
             {
-              type: 'button',
               title: <span>About Us</span>,
               titleProps: { ...buttonProps, href: routeConfig.ABOUT },
+              type: 'button',
             },
             {
-              type: 'button',
               title: <span>Contact</span>,
               titleProps: { ...buttonProps, href: routeConfig.CONTACT },
+              type: 'button',
             },
           ],
+          pt: { xs: 3, md: 6 },
+          sx: { backgroundColor: 'background.paper' },
         },
         // Client Logos Gallery
         {
           id: 'gallery-title',
           dark: true,
-          pb: 3,
           items: [
-            { type: 'overline', title: 'Trusted By' },
+            { title: 'Trusted By', type: 'overline' },
             {
-              type: 'h3',
               title:
                 'We unite AI and cutting-edge science to discover and develop new solutions for healthcare.',
               titleProps: { gutterBottom: true },
+              type: 'h3',
             },
           ],
+          pb: 3,
         },
         renderClientLogosGallery({
-          pt: 0,
-          items: clientLogos,
           dark: true,
+          items: clientLogos,
+          pt: 0,
         }),
         // Industry
         renderFeaturedIndustrysBlock({
           title: 'In-Depth Industry Expertise',
-          titleType: 'h2',
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
+          titleType: 'h2',
         }),
         // Showcases
         renderShowcasesBlock({

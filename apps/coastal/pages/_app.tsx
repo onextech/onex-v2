@@ -1,9 +1,10 @@
 import React from 'react'
-import { AppProps } from 'next/app'
-import { appWithTranslation } from 'next-i18next'
-import { EmotionCache } from '@emotion/react'
+
 import { AppProvider } from '@app/providers'
+import { EmotionCache } from '@emotion/react'
 import { AnalyticsProvider } from '@gravis-os/analytics'
+import { appWithTranslation } from 'next-i18next'
+import { AppProps } from 'next/app'
 
 import 'keen-slider/keen-slider.min.css'
 
