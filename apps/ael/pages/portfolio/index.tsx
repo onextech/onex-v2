@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { ShowcasesPage, ShowcasesPageProps } from '@onex/pages'
 import { ShowcaseList } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ShowcaseList.getStaticProps()
@@ -12,7 +13,7 @@ export interface NextShowcasesPageProps
     ShowcasesPageProps {}
 
 const NextShowcasesPage: React.FC<NextShowcasesPageProps> = (props) => {
-  const { showcases, pageProviderProps } = props
+  const { pageProviderProps, showcases } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout

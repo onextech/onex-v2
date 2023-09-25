@@ -1,4 +1,5 @@
 import React from 'react'
+
 import AppProvider, { AppProviderProps } from '@app/providers/AppProvider'
 import { PageProvider } from '@gravis-os/landing'
 import { getLayoutProviderProps } from '@onex/server'
@@ -10,7 +11,7 @@ const pageProviderProps = {
 }
 
 export interface TestProviderProps
-  extends Omit<AppProviderProps, 'pageProps' | 'router' | 'Component'> {}
+  extends Omit<AppProviderProps, 'Component' | 'pageProps' | 'router'> {}
 
 const TestProvider: React.FC<TestProviderProps> = (props) => {
   return (

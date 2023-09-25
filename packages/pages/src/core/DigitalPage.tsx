@@ -1,40 +1,41 @@
 import React from 'react'
+
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
+  renderCtaBlock,
+  renderFaqsAccordionBlock,
+  renderFeaturedIndustrysBlock,
+  renderFeaturedNewsBlock,
+  renderFeaturedPostsBlock,
+  renderHeroWithBackgroundBlock,
+  renderHomeSummaryBlock,
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
-  renderFeaturedPostsBlock,
-  renderFeaturedIndustrysBlock,
-  renderFaqsAccordionBlock,
-  renderHeroWithBackgroundBlock,
-  renderCtaBlock,
-  renderFeaturedNewsBlock,
   useLayout,
-  renderHomeSummaryBlock,
 } from '@gravis-os/landing'
-import { Page, Post, Industry, Showcase, PressRelease } from '@gravis-os/types'
+import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
 import { useRouter } from 'next/router'
 
 export interface DigitalPageProps {
+  featuredPosts: Post[]
+  featuredPressReleases: PressRelease[]
+  industrys: Industry[]
   page: Page
   showcases: Showcase[]
-  featuredPosts: Post[]
-  industrys: Industry[]
-  featuredPressReleases: PressRelease[]
 }
 
 const DigitalPage: React.FC<DigitalPageProps> = (props) => {
-  const { page, showcases, featuredPosts, industrys, featuredPressReleases } =
+  const { featuredPosts, featuredPressReleases, industrys, page, showcases } =
     props
   const router = useRouter()
-  const { site, clientLogos, routeConfig } = useLayout()
-  const { locales, cta_button_title } = site
+  const { clientLogos, routeConfig, site } = useLayout()
+  const { cta_button_title, locales } = site
   const localeTitle = locales?.find(
     ({ iso_alpha_2 }) => iso_alpha_2 === router.locale
   )?.title
   const { sections } = page || {}
-  const { hero, benefits, features, faqs, cta, summary } = sections || {}
+  const { benefits, cta, faqs, features, hero, summary } = sections || {}
 
   return (
     <Blocks
@@ -43,16 +44,16 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         renderHeroWithBackgroundBlock({
           ...hero,
           buttonProps: {
-            overline: 'What we do',
             title: 'Enterprise Marketing',
-            size: 'lg',
             href: routeConfig.SERVICES,
+            overline: 'What we do',
+            size: 'lg',
           },
           secondaryButtonProps: {
-            overline: 'Who we are',
             title: 'Digital Marketing Experts',
-            size: 'lg',
             href: routeConfig.CAREERS,
+            overline: 'Who we are',
+            size: 'lg',
           },
         }),
         // ClientLogosImageMarquee
@@ -63,9 +64,9 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         // Summary
         renderHomeSummaryBlock({
           ...summary,
+          pb: { xs: 5, md: 0 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
-          pb: { xs: 5, md: 0 },
         }),
         // Benefits
         renderThreeColumnGridBlock({
@@ -79,17 +80,17 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
               Transform Your Enterprise&apos;s <br /> Marketing Landscape
             </>
           ),
-          subtitle:
-            "Our transformative digital marketing solutions redefine your enterprise's marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
           items: showcases.slice(0, 3),
           pt: { xs: 5, md: 10 },
+          subtitle:
+            "Our transformative digital marketing solutions redefine your enterprise's marketing approach, unlocking new growth opportunities by harnessing cutting-edge technologies, data-driven strategies, and industry expertise.",
         }),
         // Industry
         renderFeaturedIndustrysBlock({
           title: 'Access Industry Expertise & Best Practices',
+          items: industrys,
           subtitle:
             'We are committed to delivering digital marketing solutions that enable our clients to stay at the forefront of their industry. We constantly develop cutting-edge techniques and methodologies, ensuring that our clients always have access to the most effective digital marketing strategies in their field.',
-          items: industrys,
           sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
@@ -112,8 +113,8 @@ const DigitalPage: React.FC<DigitalPageProps> = (props) => {
         // Cta
         renderCtaBlock({
           item: cta,
-          pt: { xs: 5, md: 10 },
           pb: 0,
+          pt: { xs: 5, md: 10 },
           sx: { backgroundColor: 'background.paper' },
         }),
       ]}

@@ -1,21 +1,23 @@
+import type { Post, PostCategory } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
-  renderPostCategoryBlockItem,
   RenderPostCategoryBlockItemProps,
+  renderPostCategoryBlockItem,
   useLayout,
 } from '@gravis-os/landing'
 import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
-import type { Post, PostCategory } from '@gravis-os/types'
 import chunk from 'lodash/chunk'
 
 export interface PostCategorysPageProps {
-  posts: Post[]
   postCategorys: PostCategory[]
+  posts: Post[]
 }
 
 const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
-  const { posts, postCategorys } = props
+  const { postCategorys, posts } = props
 
   const { routeConfig } = useLayout()
 
@@ -32,16 +34,13 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          py: { xs: 5, md: 10 },
-          sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Insights' },
+            { title: 'Insights', type: 'overline' },
             {
-              type: 'h1',
               title: 'Our Insights.',
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title:
                 'Gleam into key insights that empower enterprises with knowledge to enhance digital strategies.',
               titleProps: {
@@ -49,41 +48,41 @@ const PostCategorysPage: React.FC<PostCategorysPageProps> = (props) => {
                 maxWidth: true,
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
           ],
+          py: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
-        ...categoryWithPostsChunks
-          .map((categoryWithPostsChunk) => {
-            const firstCategoryWithPosts: PostCategory =
-              categoryWithPostsChunk[0]
-            return [
-              {
-                id: 'background-nodes',
-                py: 0,
-                backgroundImageProps: {
-                  src: firstCategoryWithPosts.hero_src,
-                  alt: firstCategoryWithPosts.hero_alt,
-                  backgroundHeight: { xs: 240, md: 320 },
+        ...categoryWithPostsChunks.flatMap((categoryWithPostsChunk) => {
+          const firstCategoryWithPosts: PostCategory = categoryWithPostsChunk[0]
+          return [
+            {
+              id: 'background-nodes',
+              backgroundImageProps: {
+                alt: firstCategoryWithPosts.hero_alt,
+                backgroundHeight: { xs: 240, md: 320 },
+                src: firstCategoryWithPosts.hero_src,
+              },
+              py: 0,
+            },
+            {
+              id: 'post-categorys',
+              items: [
+                {
+                  gridItems: categoryWithPostsChunk.map((categoryWithPost) =>
+                    renderPostCategoryBlockItem({
+                      item: categoryWithPost as RenderPostCategoryBlockItemProps['item'],
+                    })
+                  ),
+                  type: 'grid',
                 },
-              },
-              {
-                id: 'post-categorys',
-                sx: { backgroundColor: 'background.paper' },
-                pt: { xs: 5, md: 10 },
-                items: [
-                  {
-                    type: 'grid',
-                    gridItems: categoryWithPostsChunk.map((categoryWithPost) =>
-                      renderPostCategoryBlockItem({
-                        item: categoryWithPost as RenderPostCategoryBlockItemProps['item'],
-                      })
-                    ),
-                  },
-                ],
-              },
-            ]
-          })
-          .flat(),
+              ],
+              pt: { xs: 5, md: 10 },
+              sx: { backgroundColor: 'background.paper' },
+            },
+          ]
+        }),
       ]}
     />
   )

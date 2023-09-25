@@ -1,22 +1,23 @@
 import React from 'react'
-import merge from 'lodash/merge'
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
-import { Button, Image, LocalePicker } from '@gravis-os/ui'
+
 import {
   Block,
   Blocks,
+  ContactCallout,
+  ContactCalloutProps,
   LandingLayout as GvsLandingLayout,
   LandingLayoutProps as GvsLandingLayoutProps,
-  ContactCalloutProps,
-  useLayout,
+  RenderHeaderMenuMobileBlockItemProps,
   renderHeaderMenuBlockItem,
   renderHeaderMenuListBlockItem,
   renderHeaderMenuMobileBlockItem,
-  RenderHeaderMenuMobileBlockItemProps,
+  useLayout,
   useUserPreferences,
-  ContactCallout,
 } from '@gravis-os/landing'
+import { Button, Image, LocalePicker } from '@gravis-os/ui'
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
 import { GetStartedPage } from '@onex/pages'
+import merge from 'lodash/merge'
 import { useRouter } from 'next/router'
 
 // Style Constants
@@ -25,20 +26,20 @@ const commonLeftGridItemProps = { md: 4, lg: 3 }
 const commonRightGridItemProps = { md: 8, lg: 9 }
 
 export interface LandingLayoutProps
-  extends Omit<GvsLandingLayoutProps, 'headerProps' | 'footerProps'> {
+  extends Omit<GvsLandingLayoutProps, 'footerProps' | 'headerProps'> {
   calloutProps?: ContactCalloutProps
-  headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
+  headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   useLayout?: typeof useLayout
   useUserPreferences?: typeof useUserPreferences
 }
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const {
-    useUserPreferences: injectedUseUserPreferences,
-    useLayout: injectedUseLayout,
-    seo,
     calloutProps,
+    seo,
+    useLayout: injectedUseLayout,
+    useUserPreferences: injectedUseUserPreferences,
     ...rest
   } = props
 
@@ -52,22 +53,22 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const onUseLayout = useLayoutFunction()
 
   const {
-    // Configs
-    site,
-    routeConfig,
+    industrys,
+    legalItems,
 
     // Calculated
     logoProps,
-    socialMediaItems,
-    legalItems,
+    pages,
+    postCategorys,
 
+    routeConfig,
     // Modules
     services,
-    industrys,
-    postCategorys,
-    technologys,
-    pages,
     showcases,
+    // Configs
+    site,
+    socialMediaItems,
+    technologys,
     workspaces,
   } = onUseLayout
 
@@ -75,7 +76,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const headerNavConfig = [
     {
       id: 'logo',
-      preset: { type: 'logo', logoProps },
+      preset: { logoProps, type: 'logo' },
     },
     showcases?.length && {
       id: 'showcase',
@@ -85,8 +86,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     services?.length && {
       id: 'services',
       title: 'Services',
-      href: routeConfig.SERVICES,
       fullWidth: true,
+      href: routeConfig.SERVICES,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: services.map((service) => ({
         id: service.title,
@@ -104,27 +105,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'services-grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: { ...commonGridProps, spacing: 4 },
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'services'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'services'
                             )?.subtitle,
@@ -132,17 +126,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'View Services',
                             titleProps: {
-                              rightCaret: true,
-                              href: routeConfig.SERVICES,
                               color: 'secondary',
+                              href: routeConfig.SERVICES,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -150,18 +145,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2, rowSpacing: 4 },
                             gridItemProps: { xs: 6, md: 4 },
                             gridItems: services.map((service) =>
                               renderHeaderMenuListBlockItem(service)
                             ),
+                            gridProps: { rowSpacing: 4, spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: { ...commonGridProps, spacing: 4 },
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -171,8 +172,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     technologys?.length && {
       id: 'technologys',
       title: 'Technologies',
-      href: routeConfig.TECHNOLOGYS,
       fullWidth: true,
+      href: routeConfig.TECHNOLOGYS,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: technologys.map((technology) => ({
         id: technology.title,
@@ -184,27 +185,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'technologys-grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: commonGridProps,
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'technologies'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'technologies'
                             )?.subtitle,
@@ -212,17 +206,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'View Technologies',
                             titleProps: {
-                              rightCaret: true,
-                              href: routeConfig.TECHNOLOGYS,
                               color: 'secondary',
+                              href: routeConfig.TECHNOLOGYS,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -230,18 +225,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2 },
                             gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: technologys.map((technology) =>
                               renderHeaderMenuBlockItem(technology)
                             ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: commonGridProps,
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -251,8 +252,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     industrys?.length && {
       id: 'industrys',
       title: 'Industries',
-      href: routeConfig.INDUSTRYS,
       fullWidth: true,
+      href: routeConfig.INDUSTRYS,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: industrys.map((industry) => ({
         id: industry.title,
@@ -264,27 +265,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'industrys-grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: commonGridProps,
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'industries'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'industries'
                             )?.subtitle,
@@ -292,17 +286,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'View Industries',
                             titleProps: {
-                              rightCaret: true,
-                              href: routeConfig.INDUSTRYS,
                               color: 'secondary',
+                              href: routeConfig.INDUSTRYS,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -310,18 +305,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2 },
                             gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: industrys.map((industry) =>
                               renderHeaderMenuBlockItem(industry)
                             ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: commonGridProps,
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -331,8 +332,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     postCategorys?.length && {
       id: 'insights',
       title: 'Insights',
-      href: routeConfig.POSTS,
       fullWidth: true,
+      href: routeConfig.POSTS,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: postCategorys.map((postCategory) => ({
         id: postCategory.title,
@@ -344,27 +345,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'post-categorys-grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: commonGridProps,
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'insights'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'insights'
                             )?.subtitle,
@@ -372,17 +366,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'View Insights',
                             titleProps: {
-                              rightCaret: true,
-                              href: routeConfig.POSTS,
                               color: 'secondary',
+                              href: routeConfig.POSTS,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -390,18 +385,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2 },
                             gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: postCategorys.map((industry) =>
                               renderHeaderMenuBlockItem(industry)
                             ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: commonGridProps,
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -411,8 +412,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     pages?.length && {
       id: 'company',
       title: 'Company',
-      href: routeConfig.ABOUT,
       fullWidth: true,
+      href: routeConfig.ABOUT,
       isOpenOnHover: site.nav_is_open_on_hover,
       items: pages.map((page) => ({
         id: page.title,
@@ -424,27 +425,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'company-grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: commonGridProps,
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'company'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'company'
                             )?.subtitle,
@@ -452,17 +446,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'Learn More',
                             titleProps: {
-                              rightCaret: true,
-                              href: `/${routeConfig.ABOUT}`,
                               color: 'secondary',
+                              href: `/${routeConfig.ABOUT}`,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -470,18 +465,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2 },
                             gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: pages.map((page) =>
                               renderHeaderMenuBlockItem(page)
                             ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: commonGridProps,
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -503,27 +504,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
             items={[
               {
                 id: 'grid',
-                pt: { xs: 10, md: 5 },
-                pb: 6,
-                reveal: false,
-                sx: { backgroundColor: 'background.paper' },
                 items: [
                   {
-                    type: 'grid',
-                    gridProps: commonGridProps,
                     gridItems: [
                       {
                         ...commonLeftGridItemProps,
                         items: [
                           {
-                            type: 'h5',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'ecosystem'
                             )?.title,
                             titleProps: { gutterBottom: true },
+                            type: 'h5',
                           },
                           {
-                            type: 'body1',
                             title: site.nav_items?.find(
                               ({ id }) => id === 'ecosystem'
                             )?.subtitle,
@@ -531,17 +525,18 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                               color: 'text.secondary',
                               maxWidth: true,
                             },
+                            type: 'body1',
                           },
                           {
-                            type: 'link',
                             title: 'Learn More',
                             titleProps: {
-                              rightCaret: true,
-                              href: `/${routeConfig.WORKSPACES}`,
                               color: 'secondary',
+                              href: `/${routeConfig.WORKSPACES}`,
+                              rightCaret: true,
                               sx: { mt: 2 },
                               variant: 'body2',
                             },
+                            type: 'link',
                           },
                         ],
                       },
@@ -549,18 +544,24 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                         ...commonRightGridItemProps,
                         items: [
                           {
-                            type: 'grid',
-                            gridProps: { spacing: 2 },
                             gridItemProps: { xs: 6, md: 6, lg: 4 },
                             gridItems: workspaces.map((workspace) =>
                               renderHeaderMenuBlockItem(workspace)
                             ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
                           },
                         ],
                       },
                     ],
+                    gridProps: commonGridProps,
+                    type: 'grid',
                   },
                 ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
               },
             ]}
           />
@@ -612,6 +613,90 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   // LandingLayoutProps
   const defaultLandingLayoutProps = {
     disableGutters: true,
+    footerProps: {
+      accordionProps: {
+        itemTitleProps: {
+          color: 'text.secondary',
+          hoverColor: 'inherit',
+          variant: 'body2',
+        },
+        titleProps: { variant: 'h7' },
+      },
+      callout: (
+        <ContactCallout
+          page={
+            <GetStartedPage
+              disableTestimonials={site.disable_testimonials}
+              fullScreen
+            />
+          }
+          {...calloutProps}
+        />
+      ),
+      companyName: site.company_title,
+      legalItems,
+      logo: <Image {...logoProps} />,
+      navItems: footerNavConfig,
+      socialMediaItems,
+    },
+    headerProps: {
+      accordionProps: { titleProps: { variant: 'h5' } },
+      disableBoxShadow: true,
+      drawerWidth: '100vw',
+      navItems: {
+        left: headerNavConfig,
+        right: [
+          {
+            title: 'Locale',
+            children: site.locales && (
+              <LocalePicker
+                disableBackdrop
+                isOpenOnHover
+                locales={site.locales?.map(({ iso_alpha_2, ...rest }) => ({
+                  ...rest,
+                  isoAlpha2: iso_alpha_2,
+                }))}
+              />
+            ),
+            hideInMobileDrawer: true,
+            name: 'locale-picker',
+            showOnMobileBar: true,
+          },
+          {
+            id: 'toggle-dark-mode',
+            children: toggleDarkModeIconButtonJsx,
+          },
+          {
+            id: 'get-started',
+            children: (
+              <Button
+                {...{
+                  title: 'Get Started',
+                  color: 'inherit' as const,
+                  dialogProps: {
+                    children: (
+                      <GetStartedPage
+                        disableTestimonials={site.disable_testimonials}
+                        fullScreen
+                      />
+                    ),
+                    disableTitle: true,
+                    fullScreen: true,
+                    transitionVariant: 'fade' as const,
+                  },
+                  endIcon: <KeyboardArrowRightOutlinedIcon />,
+                  size: 'small',
+                  sx: { minWidth: { xs: 115, md: 123 }, ml: 1 },
+                  variant: 'text' as const,
+                }}
+              />
+            ),
+            hideInMobileDrawer: true,
+            showOnMobileBar: true,
+          },
+        ],
+      },
+    },
     seo: {
       ...(isHomeRoute ? {} : { titleTemplate: `%s | ${site.title}` }),
       ...seo,
@@ -625,100 +710,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
           // Add default region-independant link for that language
           // @link https://webmasters.stackexchange.com/a/125337
           {
-            hrefLang: 'en',
             href: `${site.absolute_url}/${site.locales[0].iso_alpha_2}${router.asPath}`,
+            hrefLang: 'en',
           },
           // Add other regions
           ...site.locales?.map(({ iso_alpha_2 }) => ({
-            hrefLang: `en-${iso_alpha_2}`,
             href: `${site.absolute_url}/${iso_alpha_2}${router.asPath}`,
+            hrefLang: `en-${iso_alpha_2}`,
           })),
         ],
       }),
-    },
-    headerProps: {
-      accordionProps: { titleProps: { variant: 'h5' } },
-      drawerWidth: '100vw',
-      disableBoxShadow: true,
-      navItems: {
-        left: headerNavConfig,
-        right: [
-          {
-            name: 'locale-picker',
-            title: 'Locale',
-            showOnMobileBar: true,
-            hideInMobileDrawer: true,
-            children: site.locales && (
-              <LocalePicker
-                locales={site.locales?.map(({ iso_alpha_2, ...rest }) => ({
-                  ...rest,
-                  isoAlpha2: iso_alpha_2,
-                }))}
-                disableBackdrop
-                isOpenOnHover
-              />
-            ),
-          },
-          {
-            id: 'toggle-dark-mode',
-            children: toggleDarkModeIconButtonJsx,
-          },
-          {
-            id: 'get-started',
-            children: (
-              <Button
-                {...{
-                  title: 'Get Started',
-                  variant: 'text' as const,
-                  color: 'inherit' as const,
-                  size: 'small',
-                  endIcon: <KeyboardArrowRightOutlinedIcon />,
-                  sx: { ml: 1, minWidth: { xs: 115, md: 123 } },
-                  dialogProps: {
-                    fullScreen: true,
-                    disableTitle: true,
-                    transitionVariant: 'fade' as const,
-                    children: (
-                      <GetStartedPage
-                        fullScreen
-                        disableTestimonials={site.disable_testimonials}
-                      />
-                    ),
-                  },
-                }}
-              />
-            ),
-            showOnMobileBar: true,
-            hideInMobileDrawer: true,
-          },
-        ],
-      },
-    },
-    footerProps: {
-      callout: (
-        <ContactCallout
-          page={
-            <GetStartedPage
-              fullScreen
-              disableTestimonials={site.disable_testimonials}
-            />
-          }
-          {...calloutProps}
-        />
-      ),
-      logo: <Image {...logoProps} />,
-      companyName: site.company_title,
-      accordionProps: {
-        titleProps: { variant: 'h7' },
-        itemTitleProps: {
-          variant: 'body2',
-          color: 'text.secondary',
-          hoverColor: 'inherit',
-        },
-      },
-      navItems: footerNavConfig,
-      legalItems,
-      socialMediaItems,
     },
   }
   const landingLayoutProps = merge({}, defaultLandingLayoutProps, rest)

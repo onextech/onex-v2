@@ -1,4 +1,7 @@
+import type { Industry, Post } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   renderFadeToBottomBackgroundImageBlock,
@@ -9,7 +12,7 @@ import {
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
 } from '@gravis-os/landing'
-import type { Industry, Post } from '@gravis-os/types'
+
 import GetStartedPage from './GetStartedPage'
 
 export interface IndustryPageProps {
@@ -20,7 +23,7 @@ export interface IndustryPageProps {
 const IndustryPage: React.FC<IndustryPageProps> = (props) => {
   const { industry, relatedPosts } = props
   const { sections } = industry || {}
-  const { summary, features, checklist, faqs, cta } = sections || {}
+  const { checklist, cta, faqs, features, summary } = sections || {}
 
   return (
     <Blocks
@@ -31,8 +34,8 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
         }),
         // Summary
         renderParagraphBlockItem({
-          pt: { xs: 5, md: 10 },
           pb: 0,
+          pt: { xs: 5, md: 10 },
           ...summary,
         }),
         // Features
@@ -51,18 +54,18 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
         }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
-          titleProps: { type: 'h3', maxWidth: 'xl' },
+          buttonProps: {
+            title: 'Get in Touch',
+            children: <GetStartedPage disableTestimonials fullScreen />,
+            isCta: true,
+            overline: 'Contact Us',
+          },
           subtitleProps: {
-            type: 'body1',
             maxWidth: 'xl',
             titleProps: { maxWidth: '72%' },
+            type: 'body1',
           },
-          buttonProps: {
-            overline: 'Contact Us',
-            title: 'Get in Touch',
-            isCta: true,
-            children: <GetStartedPage fullScreen disableTestimonials />,
-          },
+          titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
         }),
       ]}

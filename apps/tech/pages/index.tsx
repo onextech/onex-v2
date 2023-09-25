@@ -1,21 +1,23 @@
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { TechPage, TechPageProps } from '@onex/pages'
+import { PageProvider } from '@gravis-os/landing'
 import {
+  MOCK_INDUSTRYS,
   MOCK_PAGES,
+  MOCK_POSTS,
+  MOCK_PRESS_RELEASES,
   MOCK_SHOWCASES,
   MOCK_TECHNOLOGYS,
-  MOCK_POSTS,
-  MOCK_INDUSTRYS,
-  MOCK_PRESS_RELEASES,
 } from '@onex/mocks'
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { TechPage, TechPageProps } from '@onex/pages'
 import {
   fetchSite,
-  getStaticPropsWithLayout,
   getDynamicPage,
+  getStaticPropsWithLayout,
 } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import orderBy from 'lodash/orderBy'
 
@@ -25,7 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const site = fetchSite()
   // supabaseClient.from('page').select('*').single().where('slug', 'tech').where('workspace_id', 1)
   const prevPage = MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home')
-  const page = getDynamicPage({ page: prevPage, context, site })
+  const page = getDynamicPage({ context, page: prevPage, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_SHOWCASES[MOCK_KEY]
   // supabaseClient.from('technology').select('*').limit(8).where('workspace_id', 1)
@@ -39,7 +41,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
-    .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
+    .filter(({ is_featured, is_hero }) => is_featured && !is_hero)
     .slice(0, 3)
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
@@ -59,12 +61,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
     .slice(0, 3)
   return getStaticPropsWithLayout({
     props: {
+      featuredPosts,
+      featuredPressReleases,
+      industrys,
       page,
       showcases,
       technologys,
-      featuredPosts,
-      industrys,
-      featuredPressReleases,
     },
   })(context)
 }
@@ -75,29 +77,29 @@ export interface NextTechPageProps
 
 const NextTechPage: React.FC<NextTechPageProps> = (props) => {
   const {
+    featuredPosts,
+    featuredPressReleases,
+    industrys,
     page,
+    pageProviderProps,
     showcases,
     technologys,
-    featuredPosts,
-    industrys,
-    pageProviderProps,
-    featuredPressReleases,
   } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        headerProps={{ translucentAtScrollY: 755 }}
         seo={page.seo}
         transparentHeader
-        headerProps={{ translucentAtScrollY: 755 }}
       >
         <TechPage
+          featuredPosts={featuredPosts}
+          featuredPressReleases={featuredPressReleases}
+          industrys={industrys}
           page={page}
           showcases={showcases}
           technologys={technologys}
-          featuredPosts={featuredPosts}
-          industrys={industrys}
-          featuredPressReleases={featuredPressReleases}
         />
       </LandingLayout>
     </PageProvider>

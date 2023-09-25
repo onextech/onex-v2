@@ -1,8 +1,6 @@
-import { handlePostEnquiry } from '@gravis-os/landing'
-
 export const config = {
-  runtime: 'edge',
   regions: ['sin1'],
+  runtime: 'edge',
   // @link: https://github.com/lodash/lodash/issues/5525
   unstable_allowDynamic: [
     '**/node_modules/lodash/_root.js', // use a glob to allow anything in the function-bind 3rd party module
@@ -10,4 +8,4 @@ export const config = {
   ],
 }
 
-export default handlePostEnquiry
+export { handlePostEnquiry as default } from '@gravis-os/landing'

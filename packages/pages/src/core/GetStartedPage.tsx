@@ -1,42 +1,31 @@
 import React from 'react'
+
 import {
   Blocks,
+  LeadForm,
   renderContactLinksBlockItems,
   renderTestimonialBlockItem,
-  LeadForm,
   useLayout,
 } from '@gravis-os/landing'
 import { Image } from '@gravis-os/ui'
 
 export interface GetStartedPageProps {
-  fullScreen?: boolean
   disableTestimonials?: boolean
+  fullScreen?: boolean
 }
 
 const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
-  const { fullScreen, disableTestimonials } = props
+  const { disableTestimonials, fullScreen } = props
 
-  const { logoProps, clientTestimonials, serviceCategorys } = useLayout()
+  const { clientTestimonials, logoProps, serviceCategorys } = useLayout()
 
   return (
     <Blocks
       items={[
         {
           id: 'form',
-          py: 0,
-          reveal: fullScreen && false,
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.paper',
-          },
           items: [
             {
-              type: 'grid',
-              gridProps: {
-                spacing: { xs: 0, md: 5 },
-                ...(fullScreen && { minWidth: '100%' }),
-                px: 0,
-              },
               gridItems: [
                 {
                   md: 7,
@@ -51,20 +40,19 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     ...(logoProps
                       ? [
                           {
-                            type: 'jsx',
                             title: <Image {...logoProps} />,
                             boxProps: { sx: { mb: 5 } },
+                            type: 'jsx',
                           },
                         ]
                       : []),
-                    { type: 'overline', title: 'Get Started' },
+                    { title: 'Get Started', type: 'overline' },
                     {
-                      type: 'h2',
                       title: 'Schedule A Call',
                       titleProps: { mb: 1 },
+                      type: 'h2',
                     },
                     {
-                      type: 'body1',
                       title:
                         'Thank you for your interest. So we can help serve you better, please complete the form below.',
                       titleProps: {
@@ -72,10 +60,11 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                         maxWidth: true,
                         sx: { mb: 3 },
                       },
+                      type: 'body1',
                     },
                     {
-                      type: 'jsx',
                       title: <LeadForm serviceCategorys={serviceCategorys} />,
+                      type: 'jsx',
                     },
                   ],
                 },
@@ -85,11 +74,11 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
-                      height: { md: '100%' },
                       backgroundColor: 'background.default',
-                      top: 0,
+                      height: { md: '100%' },
                       px: 5,
                       py: { xs: 5, md: 10 },
+                      top: 0,
                       width: '100%',
                     },
                   },
@@ -103,8 +92,20 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                   ],
                 },
               ],
+              gridProps: {
+                spacing: { xs: 0, md: 5 },
+                ...(fullScreen && { minWidth: '100%' }),
+                px: 0,
+              },
+              type: 'grid',
             },
           ],
+          py: 0,
+          reveal: fullScreen && false,
+          sx: {
+            backgroundColor: 'background.paper',
+            position: 'relative',
+          },
         },
       ]}
     />

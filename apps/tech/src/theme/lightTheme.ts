@@ -1,6 +1,7 @@
-import merge from 'lodash/merge'
-import { lightTheme as commonLightTheme } from '@gravis-os/landing'
 import lightPalette from '@app/theme/lightPalette'
+import { lightTheme as commonLightTheme } from '@gravis-os/landing'
+import merge from 'lodash/merge'
+
 import typography from './typography'
 
 const lightTheme = merge({}, commonLightTheme, {

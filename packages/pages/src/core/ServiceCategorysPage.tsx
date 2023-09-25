@@ -1,21 +1,23 @@
+import type { Service, ServiceCategory } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
-  renderServiceCategoryBlockItem,
   RenderServiceCategoryBlockItemProps,
+  renderServiceCategoryBlockItem,
   useLayout,
 } from '@gravis-os/landing'
 import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
-import type { Service, ServiceCategory } from '@gravis-os/types'
 import chunk from 'lodash/chunk'
 
 export interface ServiceCategorysPageProps {
-  services: Service[]
   serviceCategorys: ServiceCategory[]
+  services: Service[]
 }
 
 const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
-  const { services, serviceCategorys } = props
+  const { serviceCategorys, services } = props
   const { routeConfig } = useLayout()
 
   const categoryWithServices = getCategoryWithItemsAndHref<
@@ -30,16 +32,13 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          py: { xs: 5, md: 10 },
-          sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Services' },
+            { title: 'Services', type: 'overline' },
             {
-              type: 'h1',
               title: 'Empowering Innovation, Driving Transformation',
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title:
                 'Partner with us to unleash your full potential and achieve digital excellence through our technology consulting services and expertise in enterprise software development.',
               titleProps: {
@@ -47,42 +46,43 @@ const ServiceCategorysPage: React.FC<ServiceCategorysPageProps> = (props) => {
                 maxWidth: true,
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
           ],
+          py: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
-        ...categoryWithServicesChunks
-          .map((categoryWithServicesChunk) => {
-            const firstCategoryWithServices: ServiceCategory =
-              categoryWithServicesChunk[0]
-            return [
-              {
-                id: 'background-nodes',
-                py: 0,
-                backgroundImageProps: {
-                  src: firstCategoryWithServices.hero_src,
-                  alt: firstCategoryWithServices.hero_alt,
-                  backgroundHeight: { xs: 240, md: 320 },
+        ...categoryWithServicesChunks.flatMap((categoryWithServicesChunk) => {
+          const firstCategoryWithServices: ServiceCategory =
+            categoryWithServicesChunk[0]
+          return [
+            {
+              id: 'background-nodes',
+              backgroundImageProps: {
+                alt: firstCategoryWithServices.hero_alt,
+                backgroundHeight: { xs: 240, md: 320 },
+                src: firstCategoryWithServices.hero_src,
+              },
+              py: 0,
+            },
+            {
+              id: 'service-categorys',
+              items: [
+                {
+                  gridItems: categoryWithServicesChunk.map(
+                    (categoryWithService) =>
+                      renderServiceCategoryBlockItem({
+                        item: categoryWithService as RenderServiceCategoryBlockItemProps['item'],
+                      })
+                  ),
+                  type: 'grid',
                 },
-              },
-              {
-                id: 'service-categorys',
-                sx: { backgroundColor: 'background.paper' },
-                pt: { xs: 5, md: 10 },
-                items: [
-                  {
-                    type: 'grid',
-                    gridItems: categoryWithServicesChunk.map(
-                      (categoryWithService) =>
-                        renderServiceCategoryBlockItem({
-                          item: categoryWithService as RenderServiceCategoryBlockItemProps['item'],
-                        })
-                    ),
-                  },
-                ],
-              },
-            ]
-          })
-          .flat(),
+              ],
+              pt: { xs: 5, md: 10 },
+              sx: { backgroundColor: 'background.paper' },
+            },
+          ]
+        }),
       ]}
     />
   )

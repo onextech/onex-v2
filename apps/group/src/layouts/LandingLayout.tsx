@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useLayout, useUserPreferences } from '@gravis-os/landing'
 import {
   LandingLayout as LandingLayoutTemplate,
@@ -10,7 +11,7 @@ export type LandingLayoutProps = LandingLayoutTemplateProps
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   // Allow overriding of hooks to allow for context between
   // apps and packages to be sync-ed up in local/yalc mode.
-  const { site, routeConfig } = useLayout()
+  const { routeConfig, site } = useLayout()
   const { headerProps, ...rest } = props
 
   return (
@@ -22,8 +23,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         // TODO: This data should be fetched from the cms
         announcement: {
           title: `${site.title} unveils the future of Enterprise Software Development.`,
-          hrefTitle: 'Read the blog to learn more',
           href: `${routeConfig.PRESS_RELEASES}/unveiling-future-unique-enterprise-software-development`,
+          hrefTitle: 'Read the blog to learn more',
         },
         ...headerProps,
       }}

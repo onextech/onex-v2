@@ -2,24 +2,24 @@ import { createTheme } from '@mui/material/styles'
 import { Inter, Roboto, Source_Sans_Pro } from 'next/font/google'
 
 export const headerFont = Inter({
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
 })
 
 export const bodyFont = Source_Sans_Pro({
-  weight: ['300', '400'],
-  subsets: ['latin'],
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
+  subsets: ['latin'],
+  weight: ['300', '400'],
 })
 
 export const overlineFont = Roboto({
-  weight: ['500', '700'],
-  subsets: ['latin'],
   display: 'swap',
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  subsets: ['latin'],
+  weight: ['500', '700'],
 })
 
 const headerFontFamily = headerFont.style.fontFamily
@@ -33,50 +33,61 @@ const defaultTheme = createTheme()
 const { pxToRem } = defaultTheme.typography
 
 const typography = {
+  body1: { fontWeight: 400, letterSpacing: 0.5, lineHeight: 1.56 },
+  button: {
+    fontFamily: overlineFontFamily,
+    fontSize: pxToRem(13),
+    fontWeight: 700,
+    letterSpacing: 1.5,
+  },
+  caption: {
+    display: 'block',
+    lineHeight: 1.5,
+  },
   fontFamily: bodyFontFamily,
   h1: {
-    fontSize: pxToRem(60),
-    [defaultTheme.breakpoints.up('sm')]: {
-      fontSize: pxToRem(80),
-    },
     [defaultTheme.breakpoints.up('md')]: {
       fontSize: pxToRem(108),
     },
+    [defaultTheme.breakpoints.up('sm')]: {
+      fontSize: pxToRem(80),
+    },
     fontFamily: headerFontFamily,
+    fontSize: pxToRem(60),
     fontWeight: headerFontWeight,
     lineHeight: 1,
   },
   h2: {
-    fontSize: pxToRem(44),
-    [defaultTheme.breakpoints.up('sm')]: {
-      fontSize: pxToRem(54),
-    },
     [defaultTheme.breakpoints.up('md')]: {
       fontSize: pxToRem(60),
     },
+    [defaultTheme.breakpoints.up('sm')]: {
+      fontSize: pxToRem(54),
+    },
     fontFamily: headerFontFamily,
+    fontSize: pxToRem(44),
     fontWeight: headerFontWeight,
     lineHeight: 1.1,
   },
   h3: {
-    fontSize: pxToRem(39),
-    [defaultTheme.breakpoints.up('sm')]: {
-      fontSize: pxToRem(44),
-    },
     [defaultTheme.breakpoints.up('md')]: {
       fontSize: pxToRem(54),
     },
+    [defaultTheme.breakpoints.up('sm')]: {
+      fontSize: pxToRem(44),
+    },
     fontFamily: headerFontFamily,
+    fontSize: pxToRem(39),
     fontWeight: headerFontWeight,
     lineHeight: 1.09,
   },
   h4: {
-    fontSize: pxToRem(39),
-    fontFamily: headerFontFamily,
-    fontWeight: headerFontWeight,
     [defaultTheme.breakpoints.down('md')]: {
       fontSize: pxToRem(28),
     },
+    fontFamily: headerFontFamily,
+    fontSize: pxToRem(39),
+    fontWeight: headerFontWeight,
   },
   h5: {
     fontFamily: headerFontFamily,
@@ -91,53 +102,42 @@ const typography = {
     lineHeight: 1.4,
   },
   h7: {
-    fontSize: pxToRem(16),
     fontFamily: headerFontWeight2,
+    fontSize: pxToRem(16),
     fontWeight: 600,
     letterSpacing: 0,
     lineHeight: 1.5,
   },
-  subtitle1: {
-    fontSize: pxToRem(24),
-    letterSpacing: 0,
-    lineHeight: 1.35,
-    fontWeight: 300,
-  },
-  subtitle2: {
-    fontSize: pxToRem(20),
-    letterSpacing: 0,
-    lineHeight: 1.5,
-    fontWeight: 500,
-  },
-  subtitle3: {
-    fontSize: pxToRem(20),
-    letterSpacing: 0,
-    lineHeight: 1.45,
-    fontWeight: 300,
-  },
-  body1: { lineHeight: 1.56, letterSpacing: 0.5, fontWeight: 400 },
   overline: {
+    display: 'block',
     fontFamily: overlineFontFamily,
     fontWeight: 700,
     letterSpacing: 3,
-    display: 'block',
   },
   overline2: {
-    fontSize: pxToRem(10),
+    display: 'block',
     fontFamily: overlineFontFamily,
+    fontSize: pxToRem(10),
     fontWeight: 700,
     letterSpacing: 2,
-    display: 'block',
   },
-  button: {
-    fontSize: pxToRem(13),
-    fontFamily: overlineFontFamily,
-    fontWeight: 700,
-    letterSpacing: 1.5,
+  subtitle1: {
+    fontSize: pxToRem(24),
+    fontWeight: 300,
+    letterSpacing: 0,
+    lineHeight: 1.35,
   },
-  caption: {
+  subtitle2: {
+    fontSize: pxToRem(20),
+    fontWeight: 500,
+    letterSpacing: 0,
     lineHeight: 1.5,
-    display: 'block',
+  },
+  subtitle3: {
+    fontSize: pxToRem(20),
+    fontWeight: 300,
+    letterSpacing: 0,
+    lineHeight: 1.45,
   },
 }
 

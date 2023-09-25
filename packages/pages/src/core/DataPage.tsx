@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Blocks,
   renderFadeToBottomBackgroundImageBlock,
@@ -16,9 +17,9 @@ export interface DataPageProps {
 
 const DataPage: React.FC<DataPageProps> = (props) => {
   const { page } = props
-  const { site, routeConfig } = useLayout()
+  const { routeConfig, site } = useLayout()
   const { overline, sections } = page || {}
-  const { hero, benefits, features, checklist, faqs, cta } = sections || {}
+  const { benefits, checklist, cta, faqs, features, hero } = sections || {}
 
   return (
     <Blocks
@@ -27,16 +28,16 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         renderHeroWithBackgroundBlock({
           ...hero,
           buttonProps: {
-            overline: 'What we do',
             title: 'Smarter Businesses',
-            size: 'lg',
             href: routeConfig.SERVICES,
+            overline: 'What we do',
+            size: 'lg',
           },
           secondaryButtonProps: {
-            overline: 'Who we are',
             title: 'Business Software Experts',
-            size: 'lg',
             href: routeConfig.CAREERS,
+            overline: 'Who we are',
+            size: 'lg',
           },
         }),
         // Benefits
@@ -46,57 +47,57 @@ const DataPage: React.FC<DataPageProps> = (props) => {
         }),
         // HalfGrid
         renderHalfGridBlock({
-          hero_src: '/images/ecosystem_tech.png',
-          hero_alt: 'Data UI Collage',
-          fullHeight: true,
-          overline: 'What we do',
           title: 'One X Tech',
+          fullHeight: true,
+          hero_alt: 'Data UI Collage',
+          hero_src: '/images/ecosystem_tech.png',
+          overline: 'What we do',
           subtitle:
             'Maximise business growth through insight driven web data. We put business first in everything we do.',
         }),
         renderHalfGridBlock({
-          reverse: true,
-          hero_src: '/images/ecosystem_design.png',
-          hero_alt: 'Data UI Collage',
-          fullHeight: true,
-          overline: 'What we do',
           title: 'One X Design',
-          subtitle:
-            'Maximise business growth through insight driven web data. We put business first in everything we do.',
-        }),
-        renderHalfGridBlock({
-          hero_src: '/images/ecosystem_data.png',
-          hero_alt: 'Data UI Collage',
           fullHeight: true,
+          hero_alt: 'Data UI Collage',
+          hero_src: '/images/ecosystem_design.png',
           overline: 'What we do',
-          title: 'One X Data',
-          subtitle:
-            'Maximise business growth through insight driven web data. We put business first in everything we do.',
-        }),
-        renderHalfGridBlock({
           reverse: true,
-          hero_src: '/images/ecosystem_data.png',
-          hero_alt: 'Data UI Collage',
+          subtitle:
+            'Maximise business growth through insight driven web data. We put business first in everything we do.',
+        }),
+        renderHalfGridBlock({
+          title: 'One X Data',
           fullHeight: true,
+          hero_alt: 'Data UI Collage',
+          hero_src: '/images/ecosystem_data.png',
           overline: 'What we do',
+          subtitle:
+            'Maximise business growth through insight driven web data. We put business first in everything we do.',
+        }),
+        renderHalfGridBlock({
           title: 'One X Digital',
+          fullHeight: true,
+          hero_alt: 'Data UI Collage',
+          hero_src: '/images/ecosystem_data.png',
+          overline: 'What we do',
+          reverse: true,
           subtitle:
             'Maximise business growth through insight driven web data. We put business first in everything we do.',
         }),
         renderFadeToBottomBackgroundImageBlock({
-          hero_src: '/images/design_men.png',
-          hero_alt: 'Two men working',
-          titleProps: { type: 'h3', maxWidth: 'xl' },
-          subtitleProps: {
-            type: 'body1',
-            maxWidth: 'xl',
-            titleProps: { maxWidth: '72%' },
-          },
           buttonProps: {
-            overline: 'Contact Us',
             title: 'Get in Touch',
             href: `/${routeConfig.CONTACT}`,
+            overline: 'Contact Us',
           },
+          hero_alt: 'Two men working',
+          hero_src: '/images/design_men.png',
+          subtitleProps: {
+            maxWidth: 'xl',
+            titleProps: { maxWidth: '72%' },
+            type: 'body1',
+          },
+          titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
         }),
       ]}

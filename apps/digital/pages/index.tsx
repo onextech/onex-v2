@@ -1,20 +1,22 @@
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
+import {
+  MOCK_INDUSTRYS,
+  MOCK_PAGES,
+  MOCK_POSTS,
+  MOCK_PRESS_RELEASES,
+  MOCK_SHOWCASES,
+} from '@onex/mocks'
 import { DigitalPage, DigitalPageProps } from '@onex/pages'
 import {
-  MOCK_PAGES,
-  MOCK_SHOWCASES,
-  MOCK_POSTS,
-  MOCK_INDUSTRYS,
-  MOCK_PRESS_RELEASES,
-} from '@onex/mocks'
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import {
   fetchSite,
-  getStaticPropsWithLayout,
   getDynamicPage,
+  getStaticPropsWithLayout,
 } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import dayjs from 'dayjs'
 import orderBy from 'lodash/orderBy'
 
@@ -24,7 +26,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const site = fetchSite()
   // supabaseClient.from('page').select('*').single().where('slug', 'tech').where('workspace_id', 1)
   const prevPage = MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home')
-  const page = getDynamicPage({ page: prevPage, context, site })
+  const page = getDynamicPage({ context, page: prevPage, site })
   // supabaseClient.from('showcase').select('*').limit(3).where('workspace_id', 1)
   const showcases = MOCK_SHOWCASES[MOCK_KEY]
   // supabaseClient.from('post').select('*').limit(3).where('workspace_id', 1)
@@ -34,7 +36,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       ({ published_at }) =>
         published_at && dayjs(published_at).isBefore(dayjs())
     )
-    .filter(({ is_hero, is_featured }) => is_featured && !is_hero)
+    .filter(({ is_featured, is_hero }) => is_featured && !is_hero)
     .slice(0, 3)
   // supabaseClient.from('industry').select('*').limit(6).where('workspace_id', 1)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
@@ -53,7 +55,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     .filter(({ is_featured }) => is_featured)
     .slice(0, 3)
   return getStaticPropsWithLayout({
-    props: { page, showcases, featuredPosts, industrys, featuredPressReleases },
+    props: { featuredPosts, featuredPressReleases, industrys, page, showcases },
   })(context)
 }
 
@@ -63,27 +65,27 @@ export interface NextDigitalPageProps
 
 const NextDigitalPage: React.FC<NextDigitalPageProps> = (props) => {
   const {
-    page,
-    showcases,
     featuredPosts,
-    industrys,
-    pageProviderProps,
     featuredPressReleases,
+    industrys,
+    page,
+    pageProviderProps,
+    showcases,
   } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        headerProps={{ translucentAtScrollY: 755 }}
         seo={page.seo}
         transparentHeader
-        headerProps={{ translucentAtScrollY: 755 }}
       >
         <DigitalPage
+          featuredPosts={featuredPosts}
+          featuredPressReleases={featuredPressReleases}
+          industrys={industrys}
           page={page}
           showcases={showcases}
-          featuredPosts={featuredPosts}
-          industrys={industrys}
-          featuredPressReleases={featuredPressReleases}
         />
       </LandingLayout>
     </PageProvider>

@@ -1,10 +1,10 @@
 import React from 'react'
+
+import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { IndustryPage, IndustryPageProps } from '@onex/pages'
 import { IndustryDetail } from '@onex/server'
-import { LandingLayout } from '@app/layouts'
-
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = IndustryDetail.getStaticProps()
 export const getStaticPaths = IndustryDetail.getStaticPaths()
@@ -14,15 +14,15 @@ export interface NextIndustryPageProps
     IndustryPageProps {}
 
 const NextIndustryPage: React.FC<NextIndustryPageProps> = (props) => {
-  const { industry, relatedPosts, pageProviderProps } = props
+  const { industry, pageProviderProps, relatedPosts } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        autoBreadcrumbs
         seo={{
           title: industry.title,
           description: `Discover how One X Data revolutionizes ${industry.title.toLowerCase()} with data and analytics solutions. Explore insights and stay ahead in the market.`,
         }}
-        autoBreadcrumbs
       >
         <IndustryPage industry={industry} relatedPosts={relatedPosts} />
       </LandingLayout>

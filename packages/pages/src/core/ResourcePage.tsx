@@ -1,13 +1,15 @@
+import type { Resource } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
-  renderThreeColumnGridBlock,
-  renderFourColumnGridBlock,
-  useLayout,
-  renderClientLogosImageMarqueeBlock,
   ResourceForm,
+  renderClientLogosImageMarqueeBlock,
+  renderFourColumnGridBlock,
+  renderThreeColumnGridBlock,
+  useLayout,
 } from '@gravis-os/landing'
-import type { Resource } from '@gravis-os/types'
 
 export interface ResourcePageProps {
   resource: Resource
@@ -16,7 +18,7 @@ export interface ResourcePageProps {
 const ResourcePage: React.FC<ResourcePageProps> = (props) => {
   const { resource } = props
   const { clientLogos } = useLayout()
-  const { title, subtitle, avatar_src, avatar_alt, sections } = resource
+  const { title, avatar_alt, avatar_src, sections, subtitle } = resource
   const { benefits, features } = sections || {}
 
   return (
@@ -24,16 +26,8 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
       items={[
         {
           id: 'form',
-          reveal: false,
-          py: 5,
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.default',
-          },
           items: [
             {
-              type: 'grid',
-              gridProps: { spacing: { xs: 0, md: 5 } },
               gridItems: [
                 {
                   sm: 7,
@@ -45,30 +39,30 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                     },
                   },
                   items: [
-                    { type: 'overline', title: 'Resource' },
+                    { title: 'Resource', type: 'overline' },
                     {
-                      type: 'h1',
                       title,
                       titleProps: { mb: 2 },
+                      type: 'h1',
                     },
                     {
-                      type: 'subtitle3',
                       title: subtitle,
                       titleProps: {
                         color: 'text.secondary',
                         maxWidth: true,
                         sx: { mb: 3 },
                       },
+                      type: 'subtitle3',
                     },
                     {
-                      type: 'image',
                       title: avatar_src,
+                      boxProps: { maxWidth: { md: '70%' } },
                       titleProps: {
                         alt: avatar_alt,
                         ar: '4:3',
                         scaleOnHover: true,
                       },
-                      boxProps: { maxWidth: { md: '70%' } },
+                      type: 'image',
                     },
                   ],
                 },
@@ -79,45 +73,53 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
-                      height: { md: '100%' },
                       backgroundColor: 'background.paper',
-                      top: 0,
-                      py: 5,
-                      px: 4,
+                      height: { md: '100%' },
                       position: { md: 'absolute' },
+                      px: 4,
+                      py: 5,
+                      top: 0,
                     },
                   },
                   items: [
                     {
-                      type: 'h5',
                       title: 'Get a copy of this guide.',
+                      type: 'h5',
                     },
                     {
-                      type: 'body1',
                       title: 'Enter your details to unlock this guide.',
                       titleProps: { color: 'text.secondary' },
+                      type: 'body1',
                     },
                     {
-                      type: 'jsx',
                       title: <ResourceForm />,
                       boxProps: { sx: { mt: 3 } },
+                      type: 'jsx',
                     },
                   ],
                 },
               ],
+              gridProps: { spacing: { xs: 0, md: 5 } },
+              type: 'grid',
             },
           ],
+          py: 5,
+          reveal: false,
+          sx: {
+            backgroundColor: 'background.default',
+            position: 'relative',
+          },
         },
         // Features
         renderThreeColumnGridBlock({
           ...features,
-          textAlign: 'left',
           py: { xs: 5, md: 10 },
           sx: {
             backgroundColor: 'background.paper',
-            borderTop: 1,
             borderColor: 'divider',
+            borderTop: 1,
           },
+          textAlign: 'left',
         }),
         // Benefits
         renderFourColumnGridBlock({
@@ -125,8 +127,8 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
           pt: { xs: 5, md: 10 },
           sx: {
             backgroundColor: 'background.paper',
-            borderTop: 1,
             borderColor: 'divider',
+            borderTop: 1,
           },
         }),
         // ClientLogosImageMarquee

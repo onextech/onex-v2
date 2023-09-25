@@ -1,11 +1,11 @@
 import React from 'react'
-import { LandingLayout } from '@app/layouts'
-import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
-import { PressRelease } from '@gravis-os/types'
-import { PressReleaseList } from '@onex/server'
 
-import { InferGetStaticPropsType } from 'next'
+import { LandingLayout } from '@app/layouts'
 import { PageProvider } from '@gravis-os/landing'
+import { PressRelease } from '@gravis-os/types'
+import { PressReleasesPage, PressReleasesPageProps } from '@onex/pages'
+import { PressReleaseList } from '@onex/server'
+import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PressReleaseList.getStaticProps()
 
@@ -16,7 +16,7 @@ export interface NextPressReleasesPageProps
 }
 
 const NextPressReleasesPage: React.FC<NextPressReleasesPageProps> = (props) => {
-  const { pressReleases, pageProviderProps } = props
+  const { pageProviderProps, pressReleases } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout

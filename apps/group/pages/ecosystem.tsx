@@ -1,22 +1,23 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { EcosystemPage } from '@onex/pages'
-import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { PageProvider } from '@gravis-os/landing'
 import { Page } from '@gravis-os/types'
+import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
+import { EcosystemPage } from '@onex/pages'
 import {
   fetchSite,
-  getStaticPropsWithLayout,
   getDynamicPage,
+  getStaticPropsWithLayout,
 } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = (context) => {
   const site = fetchSite()
   const ecosystem = getDynamicPage({
+    context,
     page: { ...MOCK_GROUP_INDUSTRYS[0], title: 'Ecosystem' },
     site,
-    context,
   })
   return getStaticPropsWithLayout({ props: { ecosystem } })(context)
 }
@@ -30,7 +31,7 @@ const NextEcosystemPage: React.FC<NextEcosystemPageProps> = (props) => {
   const { ecosystem, pageProviderProps } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={{ title: 'Ecosystem' }} darkHeader>
+      <LandingLayout darkHeader seo={{ title: 'Ecosystem' }}>
         <EcosystemPage ecosystem={ecosystem} />
       </LandingLayout>
     </PageProvider>

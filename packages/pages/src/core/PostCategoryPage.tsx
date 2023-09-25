@@ -1,14 +1,16 @@
-import React from 'react'
-import { Blocks, renderPostsBlockItem } from '@gravis-os/landing'
 import type { Post, PostCategory } from '@gravis-os/types'
 
+import React from 'react'
+
+import { Blocks, renderPostsBlockItem } from '@gravis-os/landing'
+
 export interface PostCategoryPageProps {
-  posts: Post[]
   postCategory: PostCategory
+  posts: Post[]
 }
 
 const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
-  const { posts, postCategory } = props
+  const { postCategory, posts } = props
 
   if (!postCategory) return null
 
@@ -19,30 +21,30 @@ const PostCategoryPage: React.FC<PostCategoryPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          sx: { backgroundColor: 'background.paper' },
           items: [
             {
-              type: 'h1',
               title,
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title: subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
           ],
+          pb: 0,
+          pt: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'post-categorys',
-          sx: { backgroundColor: 'background.paper' },
-          pt: { xs: 2, md: 5 },
           items: [renderPostsBlockItem({ items: posts })],
+          pt: { xs: 2, md: 5 },
+          sx: { backgroundColor: 'background.paper' },
         },
       ]}
     />

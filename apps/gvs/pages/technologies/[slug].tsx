@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { TechnologyPage, TechnologyPageProps } from '@onex/pages'
 import { TechnologyDetail } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = TechnologyDetail.getStaticProps()
@@ -13,11 +14,11 @@ export interface NextTechnologyPageProps
     TechnologyPageProps {}
 
 const NextTechnologyPage: React.FC<NextTechnologyPageProps> = (props) => {
-  const { technology, relatedPosts, pageProviderProps } = props
+  const { pageProviderProps, relatedPosts, technology } = props
   return (
     <PageProvider {...pageProviderProps}>
-      <LandingLayout seo={technology.seo} autoBreadcrumbs>
-        <TechnologyPage technology={technology} relatedPosts={relatedPosts} />
+      <LandingLayout autoBreadcrumbs seo={technology.seo}>
+        <TechnologyPage relatedPosts={relatedPosts} technology={technology} />
       </LandingLayout>
     </PageProvider>
   )

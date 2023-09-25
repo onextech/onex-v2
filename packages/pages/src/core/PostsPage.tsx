@@ -1,11 +1,13 @@
+import type { Post } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
-  renderPostBlockItem,
   RenderPostBlockItemProps,
+  renderPostBlockItem,
   useLayout,
 } from '@gravis-os/landing'
-import type { Post } from '@gravis-os/types'
 import orderBy from 'lodash/orderBy'
 
 export interface PostsPageProps {
@@ -21,17 +23,13 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Insights' },
+            { title: 'Insights', type: 'overline' },
             {
-              type: 'h1',
               title: 'Insights',
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title:
                 'Meet the moment with our posts and capabilities that help you define your vision for the future and make it happen.',
               titleProps: {
@@ -39,9 +37,9 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
                 maxWidth: true,
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
             {
-              type: 'image',
               title: '/images/about_working_in_office.png',
               disableContainer: true,
               titleProps: {
@@ -50,22 +48,23 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
               },
+              type: 'image',
             },
             {
-              type: 'h4',
               title:
                 'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
+              type: 'h4',
             },
           ],
+          pb: 0,
+          pt: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'posts',
-          sx: { backgroundColor: 'background.paper' },
           items: [
             {
-              type: 'grid',
-              gridProps: { spacing: 5, rowSpacing: 8 },
               gridItems: orderBy(posts, 'published_at', 'desc').map((post) =>
                 renderPostBlockItem({
                   item: {
@@ -74,8 +73,11 @@ const PostsPage: React.FC<PostsPageProps> = (props) => {
                   } as RenderPostBlockItemProps['item'],
                 })
               ),
+              gridProps: { rowSpacing: 8, spacing: 5 },
+              type: 'grid',
             },
           ],
+          sx: { backgroundColor: 'background.paper' },
         },
       ]}
     />
