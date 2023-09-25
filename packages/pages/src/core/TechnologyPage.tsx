@@ -1,4 +1,7 @@
+import type { Post, Technology } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   renderFadeToBottomBackgroundImageBlock,
@@ -9,18 +12,18 @@ import {
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
 } from '@gravis-os/landing'
-import type { Post, Technology } from '@gravis-os/types'
+
 import GetStartedPage from './GetStartedPage'
 
 export interface TechnologyPageProps {
-  technology: Technology
   relatedPosts?: Post[]
+  technology: Technology
 }
 
 const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
-  const { technology, relatedPosts } = props
+  const { relatedPosts, technology } = props
   const { sections } = technology || {}
-  const { benefits, callout, features, checklist, faqs, cta } = sections || {}
+  const { benefits, callout, checklist, cta, faqs, features } = sections || {}
 
   return (
     <Blocks
@@ -52,18 +55,18 @@ const TechnologyPage: React.FC<TechnologyPageProps> = (props) => {
         }),
         // Cta
         renderFadeToBottomBackgroundImageBlock({
-          titleProps: { type: 'h3', maxWidth: 'xl' },
+          buttonProps: {
+            title: 'Get in Touch',
+            children: <GetStartedPage disableTestimonials fullScreen />,
+            isCta: true,
+            overline: 'Contact Us',
+          },
           subtitleProps: {
-            type: 'body1',
             maxWidth: 'xl',
             titleProps: { maxWidth: '72%' },
+            type: 'body1',
           },
-          buttonProps: {
-            overline: 'Contact Us',
-            title: 'Get in Touch',
-            isCta: true,
-            children: <GetStartedPage fullScreen disableTestimonials />,
-          },
+          titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
         }),
       ]}

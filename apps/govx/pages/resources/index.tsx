@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { ResourcesPage, ResourcesPageProps } from '@onex/pages'
-import { Resource } from '@gravis-os/types'
-import { ResourceList } from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
+import { Resource } from '@gravis-os/types'
+import { ResourcesPage, ResourcesPageProps } from '@onex/pages'
+import { ResourceList } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ResourceList.getStaticProps()
@@ -15,7 +16,7 @@ export interface NextResourcesPageProps
 }
 
 const NextResourcesPage: React.FC<NextResourcesPageProps> = (props) => {
-  const { resources, pageProviderProps } = props
+  const { pageProviderProps, resources } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout

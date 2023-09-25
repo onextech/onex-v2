@@ -1,6 +1,8 @@
-import React from 'react'
-import { Blocks, renderTechnologysBlock } from '@gravis-os/landing'
 import type { Technology } from '@gravis-os/types'
+
+import React from 'react'
+
+import { Blocks, renderTechnologysBlock } from '@gravis-os/landing'
 
 export interface TechnologysPageProps {
   technologys: Technology[]
@@ -14,17 +16,13 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Technologies' },
+            { title: 'Technologies', type: 'overline' },
             {
-              type: 'h1',
               title: 'Technologies',
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title:
                 'Explore the innovative technologies and frameworks we leverage to deliver modern and seamless digital experiences.',
               titleProps: {
@@ -32,9 +30,9 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
                 maxWidth: '50%',
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
             {
-              type: 'image',
               title: 'https://source.unsplash.com/Q1p7bh3SHj8/1600x900',
               disableContainer: true,
               titleProps: {
@@ -43,8 +41,12 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
               },
+              type: 'image',
             },
           ],
+          pb: 0,
+          pt: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
         renderTechnologysBlock({ items: technologys }),
       ]}

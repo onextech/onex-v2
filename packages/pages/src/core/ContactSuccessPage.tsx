@@ -1,68 +1,70 @@
 import React from 'react'
+
 import { Blocks } from '@gravis-os/landing'
 import { routeConfig } from '@onex/common'
+
 import ContactPage from './ContactPage'
 
 export interface ContactSuccessPageProps {
-  name?: string
   email?: string
+  name?: string
 }
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
-  const { name, email } = props
+  const { email, name } = props
   if (!name || !email) return <ContactPage />
   return (
     <Blocks
       items={[
         {
           id: 'hero',
-          reveal: false,
-          py: 20,
           center: true,
-          maxWidth: 'md',
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.default',
-          },
           items: [
             {
-              type: 'fa-icon',
               title: `fa-3x fa-thin fa-badge-check`,
-              titleProps: { sx: { mb: 1, color: 'success.main' } },
+              titleProps: { sx: { color: 'success.main', mb: 1 } },
+              type: 'fa-icon',
             },
             {
-              type: 'overline',
               title: `Registration Success`,
-              titleProps: { sx: { mb: 1, color: 'success.main' } },
+              titleProps: { sx: { color: 'success.main', mb: 1 } },
+              type: 'overline',
             },
             {
-              type: 'h2',
               title: (
                 <>
                   Thank you for contacting us,{' '}
                   <span id="contact-success-form--name">{name}</span>
                 </>
               ),
-              titleProps: { mb: 2, component: 'h1' },
+              titleProps: { component: 'h1', mb: 2 },
+              type: 'h2',
             },
             {
-              type: 'subtitle1',
               title: (
                 <>
                   We have received your details and we will reach out to you at{' '}
                   <span id="contact-success-form--email">{email}</span>
                 </>
               ),
+              type: 'subtitle1',
             },
             {
-              type: 'button',
               title: 'Back to Home',
               titleProps: {
                 href: routeConfig.HOME,
                 sx: { mt: 4 },
               },
+              type: 'button',
             },
           ],
+          maxWidth: 'md',
+          py: 20,
+          reveal: false,
+          sx: {
+            backgroundColor: 'background.default',
+            position: 'relative',
+          },
         },
       ]}
     />

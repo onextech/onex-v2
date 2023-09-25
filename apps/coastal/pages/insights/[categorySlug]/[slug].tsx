@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { PostPage, PostPageProps } from '@onex/pages'
 import { PostDetail } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PostDetail.getStaticProps()
@@ -13,17 +14,19 @@ export interface NextPostPageProps
 
 const NextPostPage: React.FC<NextPostPageProps> = (props) => {
   const {
+    otherPosts,
+    pageProviderProps,
     post,
     postCategory,
     relatedPosts,
     relatedServices,
-    pageProviderProps,
-    otherPosts,
   } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        autoBreadcrumbs
+        breadcrumbsProps={{ hideLastItem: true }}
         seo={{
           title: post.title,
           description: post.subtitle,
@@ -31,15 +34,13 @@ const NextPostPage: React.FC<NextPostPageProps> = (props) => {
             images: [{ url: post.hero_src }],
           },
         }}
-        autoBreadcrumbs
-        breadcrumbsProps={{ hideLastItem: true }}
       >
         <PostPage
+          otherPosts={otherPosts}
           post={post}
           postCategory={postCategory}
           relatedPosts={relatedPosts}
           relatedServices={relatedServices}
-          otherPosts={otherPosts}
         />
       </LandingLayout>
     </PageProvider>

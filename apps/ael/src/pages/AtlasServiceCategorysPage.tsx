@@ -1,22 +1,24 @@
+import type { Service, ServiceCategory } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
   renderHeroWithBackgroundBlock,
   useLayout,
 } from '@gravis-os/landing'
 import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
-import type { Service, ServiceCategory } from '@gravis-os/types'
 import chunk from 'lodash/chunk'
 
 export interface AtlasServiceCategorysPageProps {
-  services: Service[]
   serviceCategorys: ServiceCategory[]
+  services: Service[]
 }
 
 const AtlasServiceCategorysPage: React.FC<AtlasServiceCategorysPageProps> = (
   props
 ) => {
-  const { services, serviceCategorys } = props
+  const { serviceCategorys, services } = props
   const { routeConfig } = useLayout()
 
   const categoryWithServices = getCategoryWithItemsAndHref<
@@ -45,8 +47,8 @@ const AtlasServiceCategorysPage: React.FC<AtlasServiceCategorysPageProps> = (
         renderHeroWithBackgroundBlock({
           title:
             'We navigate, design and deliver medical websites, mobile applications, and data dashboards that are used globally by millions of users every day.',
-          dark: true,
           center: true,
+          dark: true,
           py: 20,
           sx: {
             '& h1': {
@@ -57,11 +59,16 @@ const AtlasServiceCategorysPage: React.FC<AtlasServiceCategorysPageProps> = (
         }),
         renderHeroWithBackgroundBlock({
           title: 'Next Generation Digital Health',
+          buttonProps: {
+            title: 'Our Work',
+            href: routeConfig.SHOWCASES,
+            sx: { mt: 4 },
+          },
+          center: true,
+          dark: false,
+          py: 20,
           subtitle:
             "We've work with clients to build, iterate and launch digital health products in consumer health education, medical data, health equity, Pharma SaaS, healthcare financing, community wellness, provider management, specialty care and more.",
-          dark: false,
-          center: true,
-          py: 20,
           sx: {
             '& h1': {
               fontSize: '3rem',
@@ -71,11 +78,6 @@ const AtlasServiceCategorysPage: React.FC<AtlasServiceCategorysPageProps> = (
               fontSize: '2rem',
               lineHeight: '3rem',
             },
-          },
-          buttonProps: {
-            title: 'Our Work',
-            sx: { mt: 4 },
-            href: routeConfig.SHOWCASES,
           },
         }),
       ]}

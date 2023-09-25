@@ -1,6 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
-import { AppProps } from 'next/app'
+import { Toaster } from 'react-hot-toast'
+
+import { darkTheme, lightTheme } from '@app/theme'
 import { EmotionCache } from '@emotion/react'
 import { GravisProvider } from '@gravis-os/config'
 import {
@@ -8,15 +9,15 @@ import {
   UserPreferencesProvider,
   createEmotionCache,
 } from '@gravis-os/landing'
-import { darkTheme, lightTheme } from '@app/theme'
-import { Toaster } from 'react-hot-toast'
+import { AppProps } from 'next/app'
+import Head from 'next/head'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
 
 export interface AppProviderProps extends AppProps {
-  emotionCache?: EmotionCache
   children?: React.ReactNode
+  emotionCache?: EmotionCache
 }
 
 const AppProvider = (props: AppProviderProps) => {
@@ -25,19 +26,19 @@ const AppProvider = (props: AppProviderProps) => {
   return (
     <GravisProvider
       config={{
-        next: {
-          version: 13,
-        },
         mui: {
           theme: {
-            light: lightTheme,
             dark: darkTheme,
+            light: lightTheme,
           },
+        },
+        next: {
+          version: 13,
         },
       }}
     >
       <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta content="initial-scale=1, width=device-width" name="viewport" />
       </Head>
 
       {/* Toast */}
@@ -45,9 +46,9 @@ const AppProvider = (props: AppProviderProps) => {
 
       <UserPreferencesProvider>
         <ThemeProvider
-          lightTheme={lightTheme}
           darkTheme={darkTheme}
           emotionCache={emotionCache}
+          lightTheme={lightTheme}
         >
           {children}
         </ThemeProvider>

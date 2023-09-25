@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Blocks,
   renderShowcaseCardBlockItem,
@@ -8,58 +9,54 @@ import {
 import { Showcase } from '@gravis-os/types'
 
 export interface ShowcasePageProps {
-  showcase: Showcase
   otherShowcases?: Showcase[]
+  showcase: Showcase
 }
 
 const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
-  const { showcase, otherShowcases } = props
+  const { otherShowcases, showcase } = props
   const { backgroundColor, sections } = showcase || {}
-  const { leftGridSticky, rightGridSticky, gallery } = sections || {}
+  const { gallery, leftGridSticky, rightGridSticky } = sections || {}
 
   return (
     <Blocks
       items={[
         {
           id: 'showcase-hero',
+          items: [
+            renderShowcaseCardBlockItem({ isHero: true, item: showcase }),
+          ],
           py: 0,
           sx: { backgroundColor },
-          items: [
-            renderShowcaseCardBlockItem({ item: showcase, isHero: true }),
-          ],
         },
         {
           id: 'showcase-sticky-grid-left',
-          pt: 10,
           items: [
             renderShowcaseStickyGridBlockItem({
               reverse: true,
               ...leftGridSticky,
             }),
           ],
+          pt: 10,
         },
         {
           id: 'showcase-gallery',
-          py: 5,
           items: [
-            gallery.overline && { type: 'overline', title: gallery.overline },
+            gallery.overline && { title: gallery.overline, type: 'overline' },
             {
-              type: 'h3',
               title: gallery.title,
               titleProps: { gutterBottom: true },
+              type: 'h3',
             },
             {
-              type: 'subtitle1',
               title: gallery.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: '50%',
               },
+              type: 'subtitle1',
             },
             {
-              type: 'grid',
-              sx: { mt: { xs: 4, md: 8 } },
-              gridProps: { spacing: 6 },
               gridItemProps: {
                 xs: 12,
                 md: 6,
@@ -69,16 +66,20 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
                 items: [
                   {
                     ...item,
-                    type: 'image',
                     titleProps: {
                       ...item?.titleProps,
                       fill: true,
                     },
+                    type: 'image',
                   },
                 ],
               })),
+              gridProps: { spacing: 6 },
+              sx: { mt: { xs: 4, md: 8 } },
+              type: 'grid',
             },
           ],
+          py: 5,
         },
         {
           id: 'showcase-sticky-grid-right',
@@ -91,8 +92,8 @@ const ShowcasePage: React.FC<ShowcasePageProps> = (props) => {
         renderShowcaseSlider({
           title: 'Other Showcases',
           items: otherShowcases,
-          sx: { backgroundColor: 'background.paper' },
           py: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         }),
       ]}
     />

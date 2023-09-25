@@ -1,11 +1,13 @@
+import type { Industry } from '@gravis-os/types'
+
 import React from 'react'
+
 import {
   Blocks,
-  renderIndustryBlockItem,
   RenderIndustryBlockItemProps,
+  renderIndustryBlockItem,
   useLayout,
 } from '@gravis-os/landing'
-import type { Industry } from '@gravis-os/types'
 
 export interface IndustrysPageProps {
   industrys: Industry[]
@@ -20,17 +22,13 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
       items={[
         {
           id: 'hero',
-          pt: { xs: 5, md: 10 },
-          pb: 0,
-          sx: { backgroundColor: 'background.paper' },
           items: [
-            { type: 'overline', title: 'Industries' },
+            { title: 'Industries', type: 'overline' },
             {
-              type: 'h1',
               title: 'Industries',
+              type: 'h1',
             },
             {
-              type: 'subtitle1',
               title:
                 'Our expertise and knowledge allow us to cater to a diverse range of industries, addressing their unique challenges and requirements.',
               titleProps: {
@@ -38,9 +36,9 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
                 maxWidth: true,
                 sx: { mt: 2 },
               },
+              type: 'subtitle1',
             },
             {
-              type: 'image',
               title: 'https://source.unsplash.com/bwpgwJesFhw/1600x900',
               disableContainer: true,
               titleProps: {
@@ -49,22 +47,23 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
                 backgroundHeight: { xs: 320, md: 450 },
                 backgroundSx: { mt: 5 },
               },
+              type: 'image',
             },
             {
-              type: 'h4',
               title:
                 'We leverage deep insights and global expertise to achieve outcomes that are most important to you. As your trusted advisor, we bring the full depth and breadth of our firm to focus on your unique needs and challenges.',
               titleProps: { maxWidth: true, sx: { mt: { xs: 5, md: 10 } } },
+              type: 'h4',
             },
           ],
+          pb: 0,
+          pt: { xs: 5, md: 10 },
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'industrys',
-          sx: { backgroundColor: 'background.paper' },
           items: [
             {
-              type: 'grid',
-              gridProps: { spacing: 5, rowSpacing: 8 },
               gridItems: industrys.map((industry) =>
                 renderIndustryBlockItem({
                   item: {
@@ -73,8 +72,11 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
                   } as RenderIndustryBlockItemProps['item'],
                 })
               ),
+              gridProps: { rowSpacing: 8, spacing: 5 },
+              type: 'grid',
             },
           ],
+          sx: { backgroundColor: 'background.paper' },
         },
       ]}
     />

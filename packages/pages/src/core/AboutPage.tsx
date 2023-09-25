@@ -1,9 +1,10 @@
 import React from 'react'
+
 import {
   Blocks,
+  renderClientLogoCardBlockItem,
   renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
-  renderClientLogoCardBlockItem,
   useLayout,
 } from '@gravis-os/landing'
 import { Page } from '@gravis-os/types'
@@ -20,40 +21,32 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
 
   const { sections } = page || {}
   const {
-    hero,
-    summary,
     callout,
-    features,
     cta,
+    features,
     gallery,
-    stats,
+    hero,
     secondaryHero,
+    stats,
+    summary,
   } = sections || {}
 
   return (
     <Blocks
       items={[
         {
+          id: 'hero',
           dark: true,
           py: 30,
-          id: 'hero',
           ...commonBlockProps,
           backgroundImageProps: {
-            src: hero.hero_src,
             alt: hero.hero_alt,
+            src: hero.hero_src,
           },
           items: [
-            { type: 'overline', title: hero.overline },
-            { type: 'h2', title: hero.title, titleProps: { component: 'h1' } },
+            { title: hero.overline, type: 'overline' },
+            { title: hero.title, titleProps: { component: 'h1' }, type: 'h2' },
             {
-              type: 'stack',
-              sx: { mt: 3 },
-              stackProps: {
-                spacing: 0,
-                center: true,
-                direction: 'row',
-                reverseDirectionOnMobile: true,
-              },
               stackItems: hero.buttons?.map((item) => ({
                 items: [
                   renderGhostButtonBlockItem({
@@ -62,110 +55,114 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                   }),
                 ],
               })),
+              stackProps: {
+                center: true,
+                direction: 'row',
+                reverseDirectionOnMobile: true,
+                spacing: 0,
+              },
+              sx: { mt: 3 },
+              type: 'stack',
             },
           ],
         },
         {
           id: 'summary',
           ...commonBlockProps,
-          sx: { backgroundColor: 'background.paper' },
           dark: true,
-          pt: 5,
-          pb: 10,
           items: [
             {
-              type: 'h4',
               title: summary.title,
               titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'body1',
               title: summary.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'body1',
             },
             renderGhostButtonBlockItem({
               ...summary.buttons?.[0],
               boxProps: { mt: 4 },
             }),
           ],
+          pb: 10,
+          pt: 5,
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'summary-image',
           ...commonBlockProps,
-          dark: true,
-          pt: 45,
-          pb: 0,
           backgroundImageProps: {
-            src: summary.hero_src,
             alt: summary.hero_alt,
+            src: summary.hero_src,
           },
+          dark: true,
+          pb: 0,
+          pt: 45,
         },
         {
           id: 'callout',
           ...commonBlockProps,
-          dark: true,
-          sx: { backgroundColor: 'background.paper' },
-          pt: 12,
-          pb: 26,
           backgroundImageProps: {
-            src: callout.hero_src,
             alt: callout.hero_alt,
+            boxSx: { bottom: -8, width: '100%' },
             fixedBackground: true,
-            boxSx: { width: '100%', bottom: -8 },
+            src: callout.hero_src,
           },
+          dark: true,
           items: [
             {
-              type: 'h4',
               title: callout.title,
               titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'h6',
               title: callout.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'h6',
             },
             renderGhostButtonBlockItem({
               boxProps: { mt: 3 },
               ...callout.buttons?.[0],
             }),
           ],
+          pb: 26,
+          pt: 12,
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'features',
           ...commonBlockProps,
-          dark: true,
           backgroundImageProps: {
-            src: features.hero_src,
             alt: features.hero_alt,
+            boxSx: { top: 0, width: '100%' },
             fixedBackground: true,
-            boxSx: { width: '100%', top: 0 },
+            src: features.hero_src,
           },
+          dark: true,
           items: [
-            { type: 'overline', title: features.overline },
+            { title: features.overline, type: 'overline' },
             {
-              type: 'h4',
               title: features.title,
               titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'body1',
               title: features.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'body1',
             },
             {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 3 },
               gridItemProps: {
                 xs: 6,
                 md: Math.floor(12 / Math.max(features.items.length, 1)),
@@ -174,74 +171,74 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               gridItems: features.items?.map((item) => ({
                 items: [
                   {
-                    type: 'image',
                     title: item.avatar_src,
                     titleProps: {
                       alt: item.avatar_alt,
-                      width: 101,
                       height: 101,
                       sx: { mb: 4 },
+                      width: 101,
                     },
+                    type: 'image',
                   },
                   {
-                    type: 'subtitle2',
                     title: item.overline,
                     titleProps: { color: 'text.secondary', sx: { mb: 3 } },
+                    type: 'subtitle2',
                   },
                   {
-                    type: 'subtitle2',
                     title: item.title,
                     titleProps: { gutterBottom: true },
+                    type: 'subtitle2',
                   },
                   {
-                    type: 'body1',
                     title: item.subtitle,
                     titleProps: { color: 'text.secondary' },
+                    type: 'body1',
                   },
                 ],
               })),
+              gridProps: { spacing: 3 },
+              maxWidth: 'xl',
+              sx: { mt: { xs: 5, md: 10 } },
+              type: 'grid',
             },
           ],
         },
         cta &&
           renderFadeToBottomBackgroundImageBlock({
-            hero_src: cta.hero_src,
-            hero_alt: cta.hero_alt,
             title: cta.title,
-            subtitle: cta.subtitle,
             buttonProps: cta.buttons?.[0],
+            hero_alt: cta.hero_alt,
+            hero_src: cta.hero_src,
+            subtitle: cta.subtitle,
           }),
         {
           id: 'gallery',
           ...commonBlockProps,
           dark: true,
           items: [
-            { type: 'overline', title: gallery.overline },
+            { title: gallery.overline, type: 'overline' },
             {
-              type: 'h4',
               title: gallery.title,
               titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'body1',
               title: gallery.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'body1',
             },
             {
-              type: 'grid',
-              sx: { mt: { xs: 5, md: 10 } },
-              maxWidth: 'xl',
-              gridProps: { spacing: 1 },
               gridItemProps: { xs: 6, md: 4 },
               gridItems: clientLogos.map((clientLogo) => {
                 const {
-                  avatar_src,
                   avatar_alt,
-                  avatar_width,
                   avatar_height,
+                  avatar_src,
+                  avatar_width,
                   sx,
                 } = clientLogo
 
@@ -249,85 +246,86 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                   title: avatar_src,
                   titleProps: {
                     alt: avatar_alt,
-                    width: avatar_width,
                     height: avatar_height,
                     sx,
+                    width: avatar_width,
                   },
                 })
               }),
+              gridProps: { spacing: 1 },
+              maxWidth: 'xl',
+              sx: { mt: { xs: 5, md: 10 } },
+              type: 'grid',
             },
           ],
         },
         {
           id: 'stats',
           ...commonBlockProps,
-          dark: true,
           backgroundImageProps: {
-            src: stats.hero_src,
             alt: stats.hero_alt,
-            fixedBackground: true,
             boxSx: { bottom: 24 },
+            fixedBackground: true,
+            src: stats.hero_src,
           },
-          sx: { backgroundColor: 'background.paper' },
+          dark: true,
           items: [
-            { type: 'overline', title: stats.overline },
+            { title: stats.overline, type: 'overline' },
             {
-              type: 'h4',
               title: stats.title,
               titleProps: { gutterBottom: true },
+              type: 'h4',
             },
             {
-              type: 'body1',
               title: stats.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'body1',
             },
             {
-              type: 'grid',
-              sx: { mt: 6 },
-              maxWidth: 'sm',
-              gridProps: { spacing: 2 },
               gridItemProps: { xs: 4 },
               gridItems: stats.items?.map((stat) => ({
                 items: [
                   {
-                    type: 'subtitle1',
                     title: stat.title,
                     titleProps: stat.titleProps,
+                    type: 'subtitle1',
                   },
                   {
-                    type: 'overline',
                     title: stat.overline,
                     titleProps: { color: 'text.secondary' },
+                    type: 'overline',
                   },
                 ],
               })),
+              gridProps: { spacing: 2 },
+              maxWidth: 'sm',
+              sx: { mt: 6 },
+              type: 'grid',
             },
             renderGhostButtonBlockItem({
               boxProps: { mt: 16 },
               ...stats.buttons?.[0],
             }),
           ],
+          sx: { backgroundColor: 'background.paper' },
         },
         {
           id: 'secondaryHero',
           ...commonBlockProps,
-          sx: { backgroundColor: 'background.paper' },
-          pt: 5,
           items: [
             {
-              type: 'overline',
               title: secondaryHero.overline,
               titleProps: { color: 'text.secondary' },
+              type: 'overline',
             },
             {
-              type: 'h3',
               title: secondaryHero.title,
+              type: 'h3',
             },
             {
-              type: 'image',
               title: secondaryHero.hero_src,
               disableContainer: true,
               titleProps: {
@@ -335,20 +333,23 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                 fill: true,
                 sx: { my: 3 },
               },
+              type: 'image',
             },
             {
-              type: 'body1',
               title: secondaryHero.subtitle,
               titleProps: {
                 color: 'text.secondary',
                 maxWidth: true,
               },
+              type: 'body1',
             },
             renderGhostButtonBlockItem({
               boxProps: { mt: 3 },
               ...secondaryHero.buttons?.[0],
             }),
           ],
+          pt: 5,
+          sx: { backgroundColor: 'background.paper' },
         },
       ]}
     />

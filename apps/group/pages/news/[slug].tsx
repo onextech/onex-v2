@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { PressReleasePage, PressReleasePageProps } from '@onex/pages'
 import { PressReleaseDetail } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = PressReleaseDetail.getStaticProps()
@@ -13,21 +14,21 @@ export interface NextPressReleasePageProps
     PressReleasePageProps {}
 
 const NextPressReleasePage: React.FC<NextPressReleasePageProps> = (props) => {
-  const { pressRelease, otherPressReleases, pageProviderProps } = props
+  const { otherPressReleases, pageProviderProps, pressRelease } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        autoBreadcrumbs
         seo={{
           title: pressRelease.title,
           description: pressRelease.subtitle,
           openGraph: { images: [{ url: pressRelease.hero_src }] },
         }}
-        autoBreadcrumbs
       >
         <PressReleasePage
-          pressRelease={pressRelease}
           otherPressReleases={otherPressReleases}
+          pressRelease={pressRelease}
         />
       </LandingLayout>
     </PageProvider>

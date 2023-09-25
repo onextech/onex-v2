@@ -1,12 +1,13 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
 import {
   AtlasServiceCategorysPage,
   AtlasServiceCategorysPageProps,
 } from '@app/pages'
+import { PageProvider } from '@gravis-os/landing'
 import { ServiceCategoryList } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
-import { PageProvider } from '@gravis-os/landing'
 
 export const getStaticProps = ServiceCategoryList.getStaticProps()
 
@@ -15,7 +16,7 @@ export interface NextServicesPageProps
     AtlasServiceCategorysPageProps {}
 
 const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
-  const { services, serviceCategorys, pageProviderProps } = props
+  const { pageProviderProps, serviceCategorys, services } = props
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
@@ -24,8 +25,8 @@ const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
         }}
       >
         <AtlasServiceCategorysPage
-          services={services}
           serviceCategorys={serviceCategorys}
+          services={services}
         />
       </LandingLayout>
     </PageProvider>

@@ -1,9 +1,10 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
-import { ContactPage } from '@onex/pages'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { PageDetail } from '@onex/server'
 import { PageProvider } from '@gravis-os/landing'
+import { ContactPage } from '@onex/pages'
+import { PageDetail } from '@onex/server'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = PageDetail.getStaticProps({
   slug: 'contact',

@@ -1,9 +1,10 @@
 import React from 'react'
+
 import {
   Blocks,
+  ContactForm,
   renderContactLinksBlockItems,
   useLayout,
-  ContactForm,
 } from '@gravis-os/landing'
 import { Image } from '@gravis-os/ui'
 
@@ -15,7 +16,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
   const { fullScreen } = props
 
   const { logoProps, site } = useLayout()
-  const { office_title, office_address } = site
+  const { office_address, office_title } = site
 
   const py = fullScreen ? { xs: 5, md: 10 } : { xs: 3, md: 7 }
 
@@ -24,23 +25,12 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
       items={[
         {
           id: 'form',
-          py: 0,
-          reveal: fullScreen && false,
-          sx: {
-            position: 'relative',
-            backgroundColor: 'background.paper',
-          },
           items: [
             {
-              type: 'grid',
               boxProps: {
                 sx: {
                   backgroundColor: 'background.paper',
                 },
-              },
-              gridProps: {
-                spacing: { xs: 0, md: 5 },
-                minWidth: '100%',
               },
               gridItems: [
                 {
@@ -56,20 +46,19 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                     ...(logoProps && fullScreen
                       ? [
                           {
-                            type: 'jsx',
                             title: <Image {...logoProps} />,
                             boxProps: { sx: { mb: 5 } },
+                            type: 'jsx',
                           },
                         ]
                       : []),
-                    { type: 'overline', title: 'Contact' },
+                    { title: 'Contact', type: 'overline' },
                     {
-                      type: 'h2',
                       title: 'Get in Touch',
-                      titleProps: { mb: 1, component: 'h1' },
+                      titleProps: { component: 'h1', mb: 1 },
+                      type: 'h2',
                     },
                     {
-                      type: 'body1',
                       title:
                         'Thank you for your interest in working with us. Please complete the form below to help us better understand the services you require and we will get back to you as soon as possible. We look forward to embarking on an exciting and fruitful collaboration with you! ',
                       titleProps: {
@@ -77,10 +66,11 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                         maxWidth: true,
                         sx: { mb: 3 },
                       },
+                      type: 'body1',
                     },
                     {
-                      type: 'jsx',
                       title: <ContactForm />,
+                      type: 'jsx',
                     },
                   ],
                 },
@@ -90,33 +80,44 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                   boxProps: {
                     reveal: true,
                     sx: {
-                      width: '100%',
-                      height: { md: '100%' },
                       backgroundColor: 'background.default',
-                      top: 0,
+                      height: { md: '100%' },
                       px: { xs: 0, md: 5 },
                       py,
+                      top: 0,
+                      width: '100%',
                     },
                   },
                   items: [
                     // Offices
                     {
-                      type: 'h5',
                       title: 'Offices',
                       titleProps: { sx: { mb: 2 } },
+                      type: 'h5',
                     },
-                    { type: 'body1', title: office_title },
+                    { title: office_title, type: 'body1' },
                     {
-                      type: 'body1',
                       title: office_address,
                       titleProps: { color: 'text.secondary' },
+                      type: 'body1',
                     },
                     ...renderContactLinksBlockItems(),
                   ],
                 },
               ],
+              gridProps: {
+                minWidth: '100%',
+                spacing: { xs: 0, md: 5 },
+              },
+              type: 'grid',
             },
           ],
+          py: 0,
+          reveal: fullScreen && false,
+          sx: {
+            backgroundColor: 'background.paper',
+            position: 'relative',
+          },
         },
       ]}
     />

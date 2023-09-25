@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { LandingLayout } from '@app/layouts'
+import { PageProvider } from '@gravis-os/landing'
 import { ServiceCategoryPage, ServiceCategoryPageProps } from '@onex/pages'
 import { ServiceCategoryDetail } from '@onex/server'
-import { PageProvider } from '@gravis-os/landing'
 import { InferGetStaticPropsType } from 'next'
 
 export const getStaticProps = ServiceCategoryDetail.getStaticProps()
@@ -14,24 +15,24 @@ export interface NextServicesPageProps
 
 const NextServicesPage: React.FC<NextServicesPageProps> = (props) => {
   const {
-    serviceCategory,
-    services,
     otherServiceCategorys,
     pageProviderProps,
+    serviceCategory,
+    services,
   } = props
 
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
+        autoBreadcrumbs
         seo={{
           title: serviceCategory.title,
           description: serviceCategory.subtitle,
         }}
-        autoBreadcrumbs
       >
         <ServiceCategoryPage
-          serviceCategory={serviceCategory}
           otherServiceCategorys={otherServiceCategorys}
+          serviceCategory={serviceCategory}
           services={services}
         />
       </LandingLayout>
