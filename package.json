@@ -10,6 +10,7 @@
     ".yalc/@*/*"
   ],
   "scripts": {
+    "preinstall": "git config core.hooksPath hooks",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "start": "turbo run start --parallel",
