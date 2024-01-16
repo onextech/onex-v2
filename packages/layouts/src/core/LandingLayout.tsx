@@ -677,6 +677,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                     children: (
                       <GetStartedPage
                         disableTestimonials={site.disable_testimonials}
+                        disableServiceCategorys={site.disable_service_categorys}
                         fullScreen
                       />
                     ),

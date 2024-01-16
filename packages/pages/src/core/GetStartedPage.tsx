@@ -10,12 +10,13 @@ import {
 import { Image } from '@gravis-os/ui'
 
 export interface GetStartedPageProps {
+  disableServiceCategorys?: boolean
   disableTestimonials?: boolean
   fullScreen?: boolean
 }
 
 const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
-  const { disableTestimonials, fullScreen } = props
+  const { disableServiceCategorys, disableTestimonials, fullScreen } = props
 
   const { clientTestimonials, logoProps, serviceCategorys } = useLayout()
 
@@ -63,7 +64,13 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                       type: 'body1',
                     },
                     {
-                      title: <LeadForm serviceCategorys={serviceCategorys} />,
+                      title: (
+                        <LeadForm
+                          {...(!disableServiceCategorys && {
+                            serviceCategorys,
+                          })}
+                        />
+                      ),
                       type: 'jsx',
                     },
                   ],
