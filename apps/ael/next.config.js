@@ -38,7 +38,7 @@ module.exports = withBundleAnalyzer({
           // No sniffing
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           // No cross-site scripting (XSS)
-          { key: 'Content=Security-Policy', value: "default-src 'self'; image-src 'https://unsplash.com'; script-src 'self' https://www.google-analytics.com; font-src 'self' 'https://fonts.googleapis.com';" },
+          { key: 'Security-Policy', value: "default-src 'self'; image-src 'https://unsplash.com'; script-src 'self' https://www.google-analytics.com; font-src 'self' 'https://fonts.googleapis.com';" },
           // No permissions
           { key: 'Permissions-Policy', value: "camera=(); battery=(self); geolocation=(); microphone=()" },
           // No referrer

@@ -46,6 +46,14 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
           items: [
             { title: hero.overline, type: 'overline' },
             { title: hero.title, titleProps: { component: 'h1' }, type: 'h2' },
+            hero.subtitle && {
+              title: hero.subtitle,
+              titleProps: {
+                maxWidth: true,
+                sx: { mt: 2, opacity: 0.8 },
+              },
+              type: 'h5',
+            },
             {
               stackItems: hero.buttons?.map((item) => ({
                 items: [
@@ -89,8 +97,6 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
               boxProps: { mt: 4 },
             }),
           ],
-          pb: 10,
-          pt: 5,
           sx: { backgroundColor: 'background.paper' },
         },
         {

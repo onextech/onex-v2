@@ -676,6 +676,9 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                   dialogProps: {
                     children: (
                       <GetStartedPage
+                        // @ts-ignore
+                        // TODO@Joel: Type site and remove this ignore
+                        disableServiceCategorys={site.disable_service_categorys}
                         disableTestimonials={site.disable_testimonials}
                         fullScreen
                       />

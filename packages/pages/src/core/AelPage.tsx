@@ -50,7 +50,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
       items={[
         // Hero
         renderHeroWithVideoBackgroundBlock({
-          title: 'Advancing creativity with artificial intelligence.',
+          title: 'Advancing healthcare with artificial intelligence.',
           buttonProps: {
             title: 'Schedule a Demo',
             href: routeConfig.SERVICES,
@@ -59,7 +59,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           },
           maxWidth: 'lg',
           subtitle:
-            'Aether Labs is an applied AI research company shaping the next era of medical innovation.',
+            'Aether Labs is an applied AI research and technology consultancy shaping the next era of healthcare innovation.',
           video_poster_src: '/videos/home_video_poster.jpg',
           video_src: '/videos/home_video.mp4',
         }),
@@ -72,10 +72,10 @@ const AelPage: React.FC<AelPageProps> = (props) => {
         {
           id: 'services',
           items: [
-            { title: 'Trusted By', type: 'overline' },
+            { title: 'Our Services', type: 'overline' },
             {
               title:
-                'We build transformative digital health products with amazing healthcare companies.',
+                'We build transformative AI-driven products with amazing healthcare companies.',
               titleProps: { gutterBottom: true },
               type: 'h2',
             },
@@ -111,7 +111,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
             { title: 'Trusted By', type: 'overline' },
             {
               title:
-                'We unite AI and cutting-edge science to discover and develop new solutions for healthcare.',
+                'We unite technology and cutting-edge research to discover and develop new AI solutions for our healthcare partners.',
               titleProps: { gutterBottom: true },
               type: 'h3',
             },
@@ -129,12 +129,6 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
           titleType: 'h2',
-        }),
-        // Showcases
-        renderShowcasesBlock({
-          title: 'Elevating Healthcare with Dedicated AI Technology',
-          items: showcases,
-          pt: { xs: 5, md: 10 },
         }),
         // Posts
         renderFeaturedPostsBlock({
