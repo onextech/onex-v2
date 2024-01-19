@@ -6,9 +6,7 @@ import {
   renderClientLogosImageMarqueeBlock,
   renderFeaturedIndustrysBlock,
   renderFeaturedNewsBlock,
-  renderFeaturedPostsBlock,
   renderHeroWithVideoBackgroundBlock,
-  renderShowcasesBlock,
   useLayout,
 } from '@gravis-os/landing'
 import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
@@ -129,11 +127,6 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
           titleType: 'h2',
-        }),
-        // Posts
-        renderFeaturedPostsBlock({
-          items: featuredPosts,
-          pt: { xs: 3, md: 6 },
         }),
         // News
         renderFeaturedNewsBlock({ items: featuredPressReleases }),
