@@ -6,9 +6,7 @@ import {
   renderClientLogosImageMarqueeBlock,
   renderFeaturedIndustrysBlock,
   renderFeaturedNewsBlock,
-  renderFeaturedPostsBlock,
   renderHeroWithVideoBackgroundBlock,
-  renderShowcasesBlock,
   useLayout,
 } from '@gravis-os/landing'
 import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
@@ -60,9 +58,12 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           maxWidth: 'lg',
           subtitle:
             'Aether Labs is an applied AI research and technology consultancy shaping the next era of healthcare innovation.',
+          subtitleProps: {
+            sx: { color: 'text.primary', fontWeight: 500, opacity: 0.8 },
+          },
           video_poster_src: '/videos/home_video_poster.jpg',
           video_src: '/videos/home_video.mp4',
-        }),
+        }) as any,
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -129,11 +130,7 @@ const AelPage: React.FC<AelPageProps> = (props) => {
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
           titleType: 'h2',
-        }),
-        // Posts
-        renderFeaturedPostsBlock({
-          items: featuredPosts,
-          pt: { xs: 3, md: 6 },
+          disableHref: true,
         }),
         // News
         renderFeaturedNewsBlock({ items: featuredPressReleases }),
