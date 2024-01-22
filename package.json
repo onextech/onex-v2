@@ -36,10 +36,10 @@
     "@gravis-os/analytics": "^0.5.0",
     "@gravis-os/config": "^0.3.0",
     "@gravis-os/form": "^1.8.0",
-    "@gravis-os/landing": "^2.0.0",
+    "@gravis-os/landing": "^2.0.2",
     "@gravis-os/query": "^0.3.0",
     "@gravis-os/theme": "^0.3.0",
-    "@gravis-os/types": "^0.7.0",
+    "@gravis-os/types": "^0.7.2",
     "@gravis-os/ui": "^0.12.0",
     "@gravis-os/utils": "^0.6.0"
   },

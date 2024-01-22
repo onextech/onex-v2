@@ -1750,10 +1750,10 @@
     react-window "^1.8.9"
     tslib "^2.4.0"
 
-"@gravis-os/landing@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-2.0.0.tgz#c1aad43487c1b80e2ae215bcfd61725a1fdd467b"
-  integrity sha512-yNgcd0/6RgATGCAXe3E2r4oL267B7lLTej2bPSHQF4FrGD2YGsnvuJXjTeV4KZUHkCDCARH1S4rWRqVQDe1bpA==
+"@gravis-os/landing@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/landing/-/landing-2.0.2.tgz#ab8cfdfb22fa8128cce7052b4c5301b422bc4b44"
+  integrity sha512-1Ob1FbmDXYbhh4LA11caIFWaNqGGA0gfqMnanHE5+j2GOIVB7gQvmkkwHzWePLOXDAp4kakryNZFc3/FwGLacA==
   dependencies:
     "@gravis-os/form" "*"
     "@gravis-os/theme" "*"
@@ -1816,10 +1816,17 @@
   resolved "https://registry.yarnpkg.com/@gravis-os/tsconfig/-/tsconfig-0.1.0.tgz#31af882de2ae2706e4a5443ec69c896786e29e4b"
   integrity sha512-zw6jnGDwjER0gt8eP8QT/rGZ/ToMJUNYqNylQmFk2/3KtNlvoV7L2GrpMnrRJAtrVW1JFhSPwK5jHf6AhLYHUQ==
 
-"@gravis-os/types@*", "@gravis-os/types@^0.7.0":
+"@gravis-os/types@*":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.7.0.tgz#ca9cc1cf536d98b87ee252e39a856e27f87f3024"
   integrity sha512-LurizpATWhHovl7ZORs7Akuf1hFONNpjcb6FJnTzaDbCh/7lh8Y89EKEdbIHXkjC5QoUG0rO3Fmdj/3mJPPneA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@gravis-os/types@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@gravis-os/types/-/types-0.7.2.tgz#0b04c4a58464ecb9b77fba0b99a84f27e37f687b"
+  integrity sha512-v5FPcajmowmP6rMNOWi68fEgle334jPmkQeAUGCqWde5l3aBERef5HDuvZ1dehM2PH8Jrc/8FZz1lb8xm8psNg==
   dependencies:
     tslib "^2.4.0"
 
