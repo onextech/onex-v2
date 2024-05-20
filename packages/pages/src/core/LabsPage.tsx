@@ -27,6 +27,7 @@ const LabsPage: React.FC<LabsPageProps> = (props) => {
   return (
     <Blocks
       items={[
+        // @ts-ignore
         renderHeroWithVideoBackgroundBlock({
           ...hero,
           buttonProps: {
