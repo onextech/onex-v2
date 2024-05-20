@@ -45,3 +45,4 @@ yalc.lock
 # Sitemap
 robots.txt
 sitemap*.xml
+.env*.local
