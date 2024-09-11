@@ -1,4 +1,4 @@
-import type { Post, PostCategory, Service } from '@gravis-os/types'
+import type { Post, PostCategory, Service } from '@onex/types'
 
 import React from 'react'
 
@@ -9,7 +9,7 @@ import {
   renderPostHeroBlockItem,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface PostPageProps {
   otherPosts: Post[]

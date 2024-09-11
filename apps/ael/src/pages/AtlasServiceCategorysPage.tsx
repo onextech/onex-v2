@@ -1,4 +1,4 @@
-import type { Service, ServiceCategory } from '@gravis-os/types'
+import type { Service, ServiceCategory } from '@onex/types'
 
 import React from 'react'
 
@@ -6,8 +6,8 @@ import {
   Blocks,
   renderHeroWithBackgroundBlock,
   useLayout,
-} from '@gravis-os/landing'
-import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
+} from '@onex/landing'
+import { getCategoryWithItemsAndHref } from '@onex/utils'
 import chunk from 'lodash/chunk'
 
 export interface AtlasServiceCategorysPageProps {

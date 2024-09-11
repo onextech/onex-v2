@@ -6,8 +6,8 @@ import {
   renderFadeToBottomBackgroundImageBlock,
   renderGhostButtonBlockItem,
   useLayout,
-} from '@gravis-os/landing'
-import { Page } from '@gravis-os/types'
+} from '@onex/landing'
+import { Page } from '@onex/types'
 
 export interface AboutPageProps {
   page: Page

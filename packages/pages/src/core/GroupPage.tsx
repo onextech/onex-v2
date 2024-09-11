@@ -14,7 +14,7 @@ import {
   renderShowcaseSlider,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import {
   Industry,
   Page,
@@ -22,7 +22,7 @@ import {
   PressRelease,
   Resource,
   Showcase,
-} from '@gravis-os/types'
+} from '@onex/types'
 import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {

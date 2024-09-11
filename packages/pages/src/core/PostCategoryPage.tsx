@@ -1,8 +1,8 @@
-import type { Post, PostCategory } from '@gravis-os/types'
+import type { Post, PostCategory } from '@onex/types'
 
 import React from 'react'
 
-import { Blocks, renderPostsBlockItem } from '@gravis-os/landing'
+import { Blocks, renderPostsBlockItem } from '@onex/landing'
 
 export interface PostCategoryPageProps {
   postCategory: PostCategory

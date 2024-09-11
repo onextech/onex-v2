@@ -1,4 +1,4 @@
-import type { Showcase } from '@gravis-os/types'
+import type { Showcase } from '@onex/types'
 
 export const MOCK_COMMON_SHOWCASES: Showcase[] = [
   {

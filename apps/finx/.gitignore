@@ -38,9 +38,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Custom
-.yalc
-yalc.lock
 
 # Sitemap
 robots.txt

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useLayout, useUserPreferences } from '@gravis-os/landing'
+import { useLayout, useUserPreferences } from '@onex/landing'
 import {
   LandingLayout as LandingLayoutTemplate,
   LandingLayoutProps as LandingLayoutTemplateProps,
@@ -9,8 +9,7 @@ import {
 export type LandingLayoutProps = LandingLayoutTemplateProps
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  // Allow overriding of hooks to allow for context between
-  // apps and packages to be sync-ed up in local/yalc mode.
+  
   return (
     <LandingLayoutTemplate
       useLayout={useLayout}

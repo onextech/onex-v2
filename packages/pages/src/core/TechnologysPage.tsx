@@ -1,8 +1,8 @@
-import type { Technology } from '@gravis-os/types'
+import type { Technology } from '@onex/types'
 
 import React from 'react'
 
-import { Blocks, renderTechnologysBlock } from '@gravis-os/landing'
+import { Blocks, renderTechnologysBlock } from '@onex/landing'
 
 export interface TechnologysPageProps {
   technologys: Technology[]

@@ -1,5 +1,5 @@
 import lightPalette from '@app/theme/lightPalette'
-import { lightTheme as commonLightTheme } from '@gravis-os/landing'
+import { lightTheme as commonLightTheme } from '@onex/landing'
 import merge from 'lodash/merge'
 
 import typography from './typography'

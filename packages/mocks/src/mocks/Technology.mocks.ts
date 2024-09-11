@@ -1,4 +1,4 @@
-import { Technology } from '@gravis-os/types'
+import { Technology } from '@onex/types'
 import merge from 'lodash/merge'
 
 export const MOCK_TECHNOLOGY_PAGE = {

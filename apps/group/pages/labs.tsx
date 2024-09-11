@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { LandingLayout } from '@app/layouts'
-import { PageProvider } from '@gravis-os/landing'
+import { PageProvider } from '@onex/landing'
 import { MOCK_VENTURES_PAGE } from '@onex/mocks'
 import { LabsPage, LabsPageProps } from '@onex/pages'
 import {

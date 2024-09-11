@@ -1,4 +1,4 @@
-import type { Post, Service, ServiceCategory } from '@gravis-os/types'
+import type { Post, Service, ServiceCategory } from '@onex/types'
 
 import React from 'react'
 
@@ -13,7 +13,7 @@ import {
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface ServicePageProps {
   relatedPosts?: Post[]

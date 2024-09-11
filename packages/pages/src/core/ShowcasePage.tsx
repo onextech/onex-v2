@@ -5,8 +5,8 @@ import {
   renderShowcaseCardBlockItem,
   renderShowcaseSlider,
   renderShowcaseStickyGridBlockItem,
-} from '@gravis-os/landing'
-import { Showcase } from '@gravis-os/types'
+} from '@onex/landing'
+import { Showcase } from '@onex/types'
 
 export interface ShowcasePageProps {
   otherShowcases?: Showcase[]

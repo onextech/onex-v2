@@ -1,7 +1,7 @@
 import React from 'react'
 
 import AppProvider, { AppProviderProps } from '@app/providers/AppProvider'
-import { PageProvider } from '@gravis-os/landing'
+import { PageProvider } from '@onex/landing'
 import { getLayoutProviderProps } from '@onex/server'
 
 const pageProviderProps = {

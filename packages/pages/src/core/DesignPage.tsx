@@ -15,8 +15,8 @@ import {
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
-import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
+} from '@onex/landing'
+import { Industry, Page, Post, PressRelease, Showcase } from '@onex/types'
 import { routeConfig } from '@onex/common'
 import { useRouter } from 'next/router'
 

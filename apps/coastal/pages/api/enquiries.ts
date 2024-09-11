@@ -8,4 +8,4 @@ export const config = {
   ],
 }
 
-export { handlePostEnquiry as default } from '@gravis-os/landing'
+export { handlePostEnquiry as default } from '@onex/landing'

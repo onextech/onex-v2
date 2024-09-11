@@ -1,5 +1,6 @@
 import React from 'react'
 
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
 import {
   Block,
   Blocks,
@@ -13,10 +14,9 @@ import {
   renderHeaderMenuMobileBlockItem,
   useLayout,
   useUserPreferences,
-} from '@gravis-os/landing'
-import { Button, Image, LocalePicker } from '@gravis-os/ui'
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
+} from '@onex/landing'
 import { GetStartedPage } from '@onex/pages'
+import { Button, Image, LocalePicker } from '@onex/ui'
 import merge from 'lodash/merge'
 import { useRouter } from 'next/router'
 
@@ -676,8 +676,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                   dialogProps: {
                     children: (
                       <GetStartedPage
-                        // @ts-ignore
-                        // TODO@Joel: Type site and remove this ignore
                         disableServiceCategorys={site.disable_service_categorys}
                         disableTestimonials={site.disable_testimonials}
                         fullScreen

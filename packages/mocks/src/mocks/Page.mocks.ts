@@ -1,4 +1,4 @@
-import { Page } from '@gravis-os/types'
+import { Page } from '@onex/types'
 import { routeConfig } from '@onex/common'
 import merge from 'lodash/merge'
 

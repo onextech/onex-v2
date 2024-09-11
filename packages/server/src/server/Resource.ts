@@ -1,6 +1,6 @@
 import { MOCK_RESOURCES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import { getStaticPathsWithLayout } from '../nextjs'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env

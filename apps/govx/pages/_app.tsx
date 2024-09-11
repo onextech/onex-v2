@@ -2,7 +2,7 @@ import React from 'react'
 
 import { AppProvider } from '@app/providers'
 import { EmotionCache } from '@emotion/react'
-import { AnalyticsProvider } from '@gravis-os/analytics'
+import { AnalyticsProvider } from '@onex/analytics'
 import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
 

@@ -1,4 +1,4 @@
-import type { PressRelease } from '@gravis-os/types'
+import type { PressRelease } from '@onex/types'
 
 import React from 'react'
 
@@ -7,7 +7,7 @@ import {
   renderOtherPressReleasesBlock,
   renderPostDetailBlock,
   renderPostHeroBlockItem,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface PressReleasePageProps {
   otherPressReleases?: PressRelease[]
