@@ -40,7 +40,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
               type: 'subtitle1',
             },
             {
-              title: 'https://source.unsplash.com/c5QdMcuFlgY/1600x900',
+              title: '/unsplash/c5QdMcuFlgY.jpg',
               disableContainer: true,
               titleProps: {
                 alt: 'Person looking at a wall of newspapers',

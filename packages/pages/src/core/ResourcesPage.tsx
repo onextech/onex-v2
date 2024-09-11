@@ -40,7 +40,7 @@ const ResourcesPage: React.FC<ResourcesPageProps> = (props) => {
               type: 'subtitle1',
             },
             {
-              title: 'https://source.unsplash.com/yEQ9TOaL5FM/1600x900',
+              title: '/unsplash/yEQ9TOaL5FM.jpg',
               disableContainer: true,
               titleProps: {
                 alt: 'Books in a library',

@@ -33,7 +33,7 @@ const TechnologysPage: React.FC<TechnologysPageProps> = (props) => {
               type: 'subtitle1',
             },
             {
-              title: 'https://source.unsplash.com/Q1p7bh3SHj8/1600x900',
+              title: '/unsplash/Q1p7bh3SHj8.jpg',
               disableContainer: true,
               titleProps: {
                 alt: 'People working in office',

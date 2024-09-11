@@ -5,7 +5,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     slug: 'sustainability',
     description: 'Green Innovations, Global Impact.',
     subtitle: 'Empowering change for a greener and cleaner future.',
-    hero_src: 'https://source.unsplash.com/Mt9DbRm2KmA/1600x900',
+    hero_src: '/unsplash/Mt9DbRm2KmA.jpg',
     hero_alt:
       'Scenic landscape with green meadows, mountains, and a flowing river.',
   },
@@ -16,7 +16,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     description: 'Fueling Your Path to Success.',
     subtitle:
       'Navigating growth challenges with agile strategies and bold vision.',
-    hero_src: 'https://source.unsplash.com/RyJULtf_ins/1600x900',
+    hero_src: '/unsplash/RyJULtf_ins.jpg',
     hero_alt: 'Elevator going up',
   },
   {
@@ -26,7 +26,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     description: 'Transforming Work for Tomorrow.',
     subtitle:
       'Building resilience and agility to navigate the shifting landscape of work.',
-    hero_src: 'https://source.unsplash.com/glRqyWJgUeY/1600x900',
+    hero_src: '/unsplash/glRqyWJgUeY.jpg',
     hero_alt: 'Person standing against glass window of server room.',
   },
   {
@@ -35,7 +35,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     slug: 'brand-strategy',
     description: 'Building Brands that Connect.',
     subtitle: 'Crafting a compelling brand story for lasting impact.',
-    hero_src: 'https://source.unsplash.com/8ryz8T0bWx4/1600x900',
+    hero_src: '/unsplash/8ryz8T0bWx4.jpg',
     hero_alt: 'People standing next to organisation wall.',
   },
   {
@@ -45,7 +45,7 @@ export const MOCK_GROUP_POST_CATEGORYS = [
     description: 'Creating Agile and Adaptive Structures.',
     subtitle:
       'Maximizing talent and resources through optimal organisational design.',
-    hero_src: 'https://source.unsplash.com/ZSPBhokqDMc/1600x900',
+    hero_src: '/unsplash/ZSPBhokqDMc.jpg',
     hero_alt: 'Pen on an open notebook',
   },
 ]
@@ -58,7 +58,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Drive Circular Purpose',
     subtitle:
       'Lead your business toward a long-term vision for holistic prosperity.',
-    hero_src: 'https://source.unsplash.com/8OQt1zTnJeE/1600x900',
+    hero_src: '/unsplash/8OQt1zTnJeE.jpg',
     hero_alt: 'Apple watch',
   },
   {
@@ -68,7 +68,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Craft Unique Stories',
     subtitle:
       'Intrigue customers and capture the market with captivating brand narratives.',
-    hero_src: 'https://source.unsplash.com/WDCE0T4khsE/1600x900',
+    hero_src: '/unsplash/WDCE0T4khsE.jpg',
     hero_alt: 'Mechanical engineer working on project',
   },
   {
@@ -78,7 +78,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Build Better Products',
     subtitle:
       'Design and build products, services and experiences that your customers will love.',
-    hero_src: 'https://source.unsplash.com/mNa_V4J-GGY/1600x900',
+    hero_src: '/unsplash/mNa_V4J-GGY.jpg',
     hero_alt: 'Spiralling pattern',
   },
   {
@@ -88,7 +88,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Design. Innovate. Conquer.',
     subtitle:
       'Inspire innovation, drive growth, and exceed customer expectations.',
-    hero_src: 'https://source.unsplash.com/bzdhc5b3Bxs/1600x900',
+    hero_src: '/unsplash/bzdhc5b3Bxs.jpg',
     hero_alt: 'Man giving a speech',
   },
   {
@@ -98,7 +98,7 @@ export const MOCK_TECH_POST_CATEGORYS = [
     description: 'Empowering the Digital Revolution.',
     subtitle:
       'Harnessing digital solutions to propel your organisation forward.',
-    hero_src: 'https://source.unsplash.com/EgL0EtzL0Wc/1600x900',
+    hero_src: '/unsplash/EgL0EtzL0Wc.jpg',
     hero_alt: 'Digital cubic blocks',
   },
 ]
@@ -111,7 +111,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Craft Seamless Experiences',
     subtitle:
       'Deliver intuitive and delightful user interactions for optimal satisfaction.',
-    hero_src: 'https://source.unsplash.com/ts4Y8-wTDWM/1600x900',
+    hero_src: '/unsplash/ts4Y8-wTDWM.jpg',
     hero_alt: 'Crystal plantation',
   },
   {
@@ -121,7 +121,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Design Beautiful Interfaces',
     subtitle:
       'Create visually appealing and engaging interfaces that captivate users.',
-    hero_src: 'https://source.unsplash.com/cZr2sgaxy3Q/1600x900',
+    hero_src: '/unsplash/cZr2sgaxy3Q.jpg',
     hero_alt: 'App interface',
   },
   {
@@ -131,7 +131,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Fuel Creativity and Innovation',
     subtitle:
       'Unlock limitless possibilities with design thinking and innovative solutions.',
-    hero_src: 'https://source.unsplash.com/8TttTCQLUKw/1600x900',
+    hero_src: '/unsplash/8TttTCQLUKw.jpg',
     hero_alt: 'Artistic layout',
   },
   {
@@ -141,7 +141,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Drive Business Expansion',
     subtitle:
       'Empower your organisation to achieve sustainable growth and success.',
-    hero_src: 'https://source.unsplash.com/-87JyMb9ZfU/1600x900',
+    hero_src: '/unsplash/-87JyMb9ZfU.jpg',
     hero_alt: 'Man climbing mountain',
   },
   {
@@ -151,7 +151,7 @@ export const MOCK_DESIGN_POST_CATEGORYS = [
     description: 'Embrace the Decentralized Future',
     subtitle:
       'Leverage blockchain technology to revolutionize industries and empower users.',
-    hero_src: 'https://source.unsplash.com/UZWZrhqsXwI/1600x900',
+    hero_src: '/unsplash/UZWZrhqsXwI.jpg',
     hero_alt: 'Connecting nodes',
   },
 ]
@@ -164,7 +164,7 @@ export const MOCK_DATA_POST_CATEGORYS = [
     description: 'Unleashing the Power of AI.',
     subtitle:
       'Harnessing Artificial Intelligence for exponential growth, improved decision-making, and unparalleled efficiency.',
-    hero_src: 'https://source.unsplash.com/5PZ0ASBTvCQ/1600x900',
+    hero_src: '/unsplash/5PZ0ASBTvCQ.jpg',
     hero_alt: 'Crystalized layout',
   },
   {
@@ -174,7 +174,7 @@ export const MOCK_DATA_POST_CATEGORYS = [
     description: 'Embracing the AI Revolution.',
     subtitle:
       'Exploring the cutting-edge advancements, emerging trends, and transformative potential of Artificial Intelligence.',
-    hero_src: 'https://source.unsplash.com/9Y4ronQmPjk/1600x900',
+    hero_src: '/unsplash/9Y4ronQmPjk.jpg',
     hero_alt: 'Neuroscience art',
   },
   {
@@ -184,7 +184,7 @@ export const MOCK_DATA_POST_CATEGORYS = [
     description: 'Navigating the Ethical Landscape of AI.',
     subtitle:
       'Examining the ethical considerations, responsible development, and societal impact of Artificial Intelligence.',
-    hero_src: 'https://source.unsplash.com/eEVPSeup4OY/1600x900',
+    hero_src: '/unsplash/eEVPSeup4OY.jpg',
     hero_alt: 'Animated garden city',
   },
   {
@@ -194,7 +194,7 @@ export const MOCK_DATA_POST_CATEGORYS = [
     description: 'Transforming Finance through AI.',
     subtitle:
       'Revolutionizing financial services, automating processes, and driving data-driven insights using Artificial Intelligence.',
-    hero_src: 'https://source.unsplash.com/X5CSjHTjlgw/1600x900',
+    hero_src: '/unsplash/X5CSjHTjlgw.jpg',
     hero_alt: 'Ribbons around a cube',
   },
   {
@@ -204,7 +204,7 @@ export const MOCK_DATA_POST_CATEGORYS = [
     description: 'Empowering Governance with AI.',
     subtitle:
       'Enhancing public services, policy-making, and decision support systems through Artificial Intelligence technologies.',
-    hero_src: 'https://source.unsplash.com/v-UrekkEHOk/1600x900',
+    hero_src: '/unsplash/v-UrekkEHOk.jpg',
     hero_alt: 'Pipes and smoke',
   },
 ]
@@ -217,7 +217,7 @@ export const MOCK_DIGITAL_POST_CATEGORYS = [
     description: 'Unveiling Data Secrets',
     subtitle:
       'Harness the power of analytics to unlock valuable insights for business growth.',
-    hero_src: 'https://source.unsplash.com/cRFH-ZkVAag/1405x320',
+    hero_src: '/unsplash/cRFH-ZkVAag.jpg',
     hero_alt: 'light trails',
   },
   {
@@ -227,7 +227,7 @@ export const MOCK_DIGITAL_POST_CATEGORYS = [
     description: 'Transform Visitors into Customers',
     subtitle:
       'Maximize your conversion rates through strategic optimization techniques.',
-    hero_src: 'https://source.unsplash.com/UYgrVfIhBec/1405x320',
+    hero_src: '/unsplash/UYgrVfIhBec.jpg',
     hero_alt: 'purple and green discs',
   },
   {
@@ -237,7 +237,7 @@ export const MOCK_DIGITAL_POST_CATEGORYS = [
     description: 'Navigating the Digital Landscape',
     subtitle:
       "Expand your brand's reach and drive success in the digital realm.",
-    hero_src: 'https://source.unsplash.com/MV2BRkkmsIw/1405x320',
+    hero_src: '/unsplash/MV2BRkkmsIw.jpg',
     hero_alt: 'person and light',
   },
   {
@@ -247,7 +247,7 @@ export const MOCK_DIGITAL_POST_CATEGORYS = [
     description: 'Building a Seamless Shopping Experience',
     subtitle:
       'Streamline your e-commerce operations and delight customers at every touchpoint.',
-    hero_src: 'https://source.unsplash.com/RwvwrUebCsk/1405x320',
+    hero_src: '/unsplash/RwvwrUebCsk.jpg',
     hero_alt: 'diamond',
   },
   {
@@ -257,7 +257,7 @@ export const MOCK_DIGITAL_POST_CATEGORYS = [
     description: 'Building the Foundation of Online Success',
     subtitle:
       'Create visually stunning and user-friendly websites that engage and convert visitors.',
-    hero_src: 'https://source.unsplash.com/nY14Fs8pxT8/1405x320',
+    hero_src: '/unsplash/nY14Fs8pxT8.jpg',
     hero_alt: 'purple light',
   },
 ]
@@ -270,7 +270,7 @@ export const MOCK_FINX_POST_CATEGORYS = [
     description: 'Transforming Finance for Future Growth',
     subtitle:
       'Harnessing the Power of Financial Innovation and Strategic Planning',
-    hero_src: 'https://source.unsplash.com/3jj4-HXXa_0/1405x320',
+    hero_src: '/unsplash/3jj4-HXXa_0.jpg',
     hero_alt: 'rendered mountains',
   },
   {
@@ -279,7 +279,7 @@ export const MOCK_FINX_POST_CATEGORYS = [
     slug: 'advanced-analytics',
     description: 'Unleashing Insights through Advanced Analytics',
     subtitle: 'Empowering Data-Driven Decision Making for Business Success',
-    hero_src: 'https://source.unsplash.com/96wH9-hzdWY/1405x320',
+    hero_src: '/unsplash/96wH9-hzdWY.jpg',
     hero_alt: 'white mountains',
   },
   {
@@ -288,7 +288,7 @@ export const MOCK_FINX_POST_CATEGORYS = [
     slug: 'fintech-innovation',
     description: 'Revolutionizing Finance through Fintech Solutions',
     subtitle: 'Embracing Cutting-Edge Technologies for Financial Advancement',
-    hero_src: 'https://source.unsplash.com/wDx3q0yb7fk/1405x320',
+    hero_src: '/unsplash/wDx3q0yb7fk.jpg',
     hero_alt: 'snowy mountains',
   },
 ]
@@ -300,7 +300,7 @@ export const MOCK_GOVX_POST_CATEGORYS = [
     slug: 'data-driven-efficiency',
     description: 'Maximizing Efficiency through Data-Driven Insights',
     subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
-    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_src: '/unsplash/2GJrSieM57w.jpg',
     hero_alt: 'white building',
   },
   {
@@ -309,7 +309,7 @@ export const MOCK_GOVX_POST_CATEGORYS = [
     slug: 'government-technology',
     description: 'Empowering Governance through Technology',
     subtitle: 'Advancing Public Services through Digital Innovation',
-    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_src: '/unsplash/htErOt2k8E4.jpg',
     hero_alt: 'building and sky',
   },
   {
@@ -318,7 +318,7 @@ export const MOCK_GOVX_POST_CATEGORYS = [
     slug: 'public-sector-transformation',
     description: 'Embracing Change for Public Sector Excellence',
     subtitle: 'Driving Transformational Shifts in Government Services',
-    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_src: '/unsplash/hb3fnk6PNZE.jpg',
     hero_alt: 'high rise building',
   },
 ]
@@ -330,7 +330,7 @@ export const MOCK_AEL_POST_CATEGORYS = [
     slug: 'data-driven-efficiency',
     description: 'Maximizing Efficiency through Data-Driven Insights',
     subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
-    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_src: '/unsplash/2GJrSieM57w.jpg',
     hero_alt: 'white building',
   },
   {
@@ -339,7 +339,7 @@ export const MOCK_AEL_POST_CATEGORYS = [
     slug: 'health-technology',
     description: 'Empowering Governance through Technology',
     subtitle: 'Advancing Public Services through Digital Innovation',
-    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_src: '/unsplash/htErOt2k8E4.jpg',
     hero_alt: 'building and sky',
   },
   {
@@ -348,7 +348,7 @@ export const MOCK_AEL_POST_CATEGORYS = [
     slug: 'health-sector-transformation',
     description: 'Embracing Change for Health Sector Excellence',
     subtitle: 'Driving Transformational Shifts in Healthcare Services',
-    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_src: '/unsplash/hb3fnk6PNZE.jpg',
     hero_alt: 'high rise building',
   },
 ]
@@ -359,7 +359,7 @@ export const MOCK_SRI_POST_CATEGORYS = [
     slug: 'data-driven-efficiency',
     description: 'Maximizing Efficiency through Data-Driven Insights',
     subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
-    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_src: '/unsplash/2GJrSieM57w.jpg',
     hero_alt: 'white building',
   },
   {
@@ -368,7 +368,7 @@ export const MOCK_SRI_POST_CATEGORYS = [
     slug: 'government-technology',
     description: 'Empowering Governance through Technology',
     subtitle: 'Advancing Public Services through Digital Innovation',
-    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_src: '/unsplash/htErOt2k8E4.jpg',
     hero_alt: 'building and sky',
   },
   {
@@ -377,7 +377,7 @@ export const MOCK_SRI_POST_CATEGORYS = [
     slug: 'public-sector-transformation',
     description: 'Embracing Change for Public Sector Excellence',
     subtitle: 'Driving Transformational Shifts in Government Services',
-    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_src: '/unsplash/hb3fnk6PNZE.jpg',
     hero_alt: 'high rise building',
   },
 ]
@@ -388,7 +388,7 @@ export const MOCK_GVS_POST_CATEGORYS = [
     slug: 'data-driven-efficiency',
     description: 'Maximizing Efficiency through Data-Driven Insights',
     subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
-    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_src: '/unsplash/2GJrSieM57w.jpg',
     hero_alt: 'white building',
   },
   {
@@ -397,7 +397,7 @@ export const MOCK_GVS_POST_CATEGORYS = [
     slug: 'government-technology',
     description: 'Empowering Governance through Technology',
     subtitle: 'Advancing Public Services through Digital Innovation',
-    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_src: '/unsplash/htErOt2k8E4.jpg',
     hero_alt: 'building and sky',
   },
   {
@@ -406,7 +406,7 @@ export const MOCK_GVS_POST_CATEGORYS = [
     slug: 'public-sector-transformation',
     description: 'Embracing Change for Public Sector Excellence',
     subtitle: 'Driving Transformational Shifts in Government Services',
-    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_src: '/unsplash/hb3fnk6PNZE.jpg',
     hero_alt: 'high rise building',
   },
 ]
@@ -417,7 +417,7 @@ export const MOCK_COASTAL_POST_CATEGORYS = [
     slug: 'data-driven-efficiency',
     description: 'Maximizing Efficiency through Data-Driven Insights',
     subtitle: 'Leveraging Data Analytics for Enhanced Operational Performance',
-    hero_src: 'https://source.unsplash.com/2GJrSieM57w/1405x320',
+    hero_src: '/unsplash/2GJrSieM57w.jpg',
     hero_alt: 'white building',
   },
   {
@@ -426,7 +426,7 @@ export const MOCK_COASTAL_POST_CATEGORYS = [
     slug: 'government-technology',
     description: 'Empowering Governance through Technology',
     subtitle: 'Advancing Public Services through Digital Innovation',
-    hero_src: 'https://source.unsplash.com/htErOt2k8E4/1405x320',
+    hero_src: '/unsplash/htErOt2k8E4.jpg',
     hero_alt: 'building and sky',
   },
   {
@@ -435,7 +435,7 @@ export const MOCK_COASTAL_POST_CATEGORYS = [
     slug: 'public-sector-transformation',
     description: 'Embracing Change for Public Sector Excellence',
     subtitle: 'Driving Transformational Shifts in Government Services',
-    hero_src: 'https://source.unsplash.com/hb3fnk6PNZE/1405x320',
+    hero_src: '/unsplash/hb3fnk6PNZE.jpg',
     hero_alt: 'high rise building',
   },
 ]

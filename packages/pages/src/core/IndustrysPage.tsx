@@ -39,7 +39,7 @@ const IndustrysPage: React.FC<IndustrysPageProps> = (props) => {
               type: 'subtitle1',
             },
             {
-              title: 'https://source.unsplash.com/bwpgwJesFhw/1600x900',
+              title: '/unsplash/bwpgwJesFhw.jpg',
               disableContainer: true,
               titleProps: {
                 alt: 'High rise buildings',

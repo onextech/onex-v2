@@ -183,7 +183,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'finance',
     fa_icon: 'fa-coins',
     hero_alt: 'Financial Building',
-    hero_src: 'https://source.unsplash.com/6Pv4LtEw9GM/1600x900',
+    hero_src: '/unsplash/6Pv4LtEw9GM.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -287,7 +287,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     hero_alt: 'Circular seating area',
-    hero_src: 'https://source.unsplash.com/x_0hW-KaCgI/1600x900',
+    hero_src: '/unsplash/x_0hW-KaCgI.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -379,7 +379,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'maritime',
     fa_icon: 'fa-ship',
     hero_alt: 'Ship in the ocean',
-    hero_src: 'https://source.unsplash.com/sfjS-FglvU4/1600x900',
+    hero_src: '/unsplash/sfjS-FglvU4.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -471,7 +471,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     hero_alt: 'Buildings being constructed',
-    hero_src: 'https://source.unsplash.com/qyzo7TDSVQs/1600x900',
+    hero_src: '/unsplash/qyzo7TDSVQs.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -563,7 +563,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'capital-markets',
     fa_icon: 'fa-coins',
     hero_alt: 'US dollar bills',
-    hero_src: 'https://source.unsplash.com/8lnbXtxFGZw/1600x900',
+    hero_src: '/unsplash/8lnbXtxFGZw.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -687,7 +687,7 @@ export const MOCK_GROUP_INDUSTRYS = [
         'Learn more about our Banking Solutions and how they can benefit your institution.',
     },
     hero_alt: 'G pay being used',
-    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900',
+    hero_src: '/unsplash/XvS-uKUoUao.jpg',
     is_featured: true,
     sections: {
       features: {
@@ -757,7 +757,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'aerospace-defense',
     fa_icon: 'fa-plane-departure',
     hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
-    hero_src: 'https://source.unsplash.com/8atxWjBYzGI/1600x900',
+    hero_src: '/unsplash/8atxWjBYzGI.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -851,7 +851,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'healthcare',
     fa_icon: 'fa-kit-medical',
     hero_alt: 'Surgery procedure',
-    hero_src: 'https://source.unsplash.com/6aomTW8ojbo/1600x900',
+    hero_src: '/unsplash/6aomTW8ojbo.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -942,7 +942,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'life-sciences',
     fa_icon: 'fa-flask-vial',
     hero_alt: 'Woman in laboratory',
-    hero_src: 'https://source.unsplash.com/oCLuFi9GYNA/1600x900',
+    hero_src: '/unsplash/oCLuFi9GYNA.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1035,7 +1035,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'software-platforms',
     fa_icon: 'fa-code-branch',
     hero_alt: 'People coding',
-    hero_src: 'https://source.unsplash.com/uv5_bsypFUM/1600x900',
+    hero_src: '/unsplash/uv5_bsypFUM.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1126,7 +1126,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'automotive',
     fa_icon: 'fa-car',
     hero_alt: 'Mercedes benz in monaco',
-    hero_src: 'https://source.unsplash.com/MaraDXSaTho/1600x900',
+    hero_src: '/unsplash/MaraDXSaTho.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1218,7 +1218,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'communications-media',
     fa_icon: 'fa-comment',
     hero_alt: 'Production director with headset',
-    hero_src: 'https://source.unsplash.com/_xJqCQgkpLc/1600x900',
+    hero_src: '/unsplash/_xJqCQgkpLc.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1311,7 +1311,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'industrial',
     fa_icon: 'fa-industry-windows',
     hero_alt: 'Industrial site',
-    hero_src: 'https://source.unsplash.com/SLIFI67jv5k/1600x900',
+    hero_src: '/unsplash/SLIFI67jv5k.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1402,7 +1402,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'energy',
     fa_icon: 'fa-circle-bolt',
     hero_alt: 'Offshore wind farm',
-    hero_src: 'https://source.unsplash.com/pONBhDyOFoM/1600x900',
+    hero_src: '/unsplash/pONBhDyOFoM.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1494,7 +1494,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'insurance',
     fa_icon: 'fa-hospitals',
     hero_alt: 'Person writing on paper',
-    hero_src: 'https://source.unsplash.com/OQMZwNd3ThU/1600x900',
+    hero_src: '/unsplash/OQMZwNd3ThU.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1585,7 +1585,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'retail',
     fa_icon: 'fa-store',
     hero_alt: 'Marina Bay Sands shops',
-    hero_src: 'https://source.unsplash.com/LJyAzs5HJvI/1600x900',
+    hero_src: '/unsplash/LJyAzs5HJvI.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1678,7 +1678,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     slug: 'utilities',
     fa_icon: 'fa-lamp-street',
     hero_alt: 'Power lines',
-    hero_src: 'https://source.unsplash.com/0LqtbRIFlVQ/1600x900',
+    hero_src: '/unsplash/0LqtbRIFlVQ.jpg',
     is_featured: true,
     sections: {
       faqs: {
@@ -1795,7 +1795,7 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'finance',
     fa_icon: 'fa-coins',
     hero_alt: 'Finance laptop',
-    hero_src: 'https://source.unsplash.com/amLfrL8LGls/1600x900',
+    hero_src: '/unsplash/amLfrL8LGls.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -1900,7 +1900,7 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     hero_alt: 'Greek temple',
-    hero_src: 'https://source.unsplash.com/o0kbc907i20/1600x900',
+    hero_src: '/unsplash/o0kbc907i20.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2001,7 +2001,7 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'maritime',
     fa_icon: 'fa-ship',
     hero_alt: 'Port with shipping containers',
-    hero_src: 'https://source.unsplash.com/xewrfLD8emE/1600x900',
+    hero_src: '/unsplash/xewrfLD8emE.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2106,7 +2106,7 @@ export const MOCK_TECH_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     hero_alt: 'Glass buildings',
-    hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900',
+    hero_src: '/unsplash/w3eFhqXjkZE.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2219,7 +2219,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     slug: 'finance',
     fa_icon: 'fa-coins',
     hero_alt: 'Wall street sign',
-    hero_src: 'https://source.unsplash.com/4fsCBcZt9H8/1600x900',
+    hero_src: '/unsplash/4fsCBcZt9H8.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2321,7 +2321,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     hero_alt: 'Marble building',
-    hero_src: 'https://source.unsplash.com/ICXMkhRdquA/1600x900',
+    hero_src: '/unsplash/ICXMkhRdquA.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2425,7 +2425,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     slug: 'maritime',
     fa_icon: 'fa-ship',
     hero_alt: 'Captain controlling ship',
-    hero_src: 'https://source.unsplash.com/XdIrwH98K_E/1600x900',
+    hero_src: '/unsplash/XdIrwH98K_E.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2529,7 +2529,7 @@ export const MOCK_DESIGN_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     hero_alt: 'Housing area',
-    hero_src: 'https://source.unsplash.com/b3H9CbDZqrs/1600x900',
+    hero_src: '/unsplash/b3H9CbDZqrs.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2655,7 +2655,7 @@ export const MOCK_DATA_INDUSTRYS = [
     slug: 'finance',
     fa_icon: 'fa-coins',
     hero_alt: 'City buildings',
-    hero_src: 'https://source.unsplash.com/p_cHW1REBWc/1600x900',
+    hero_src: '/unsplash/p_cHW1REBWc.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2758,7 +2758,7 @@ export const MOCK_DATA_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     hero_alt: 'Swiss government cabinet',
-    hero_src: 'https://source.unsplash.com/GAfoU0t8tsg/1600x900',
+    hero_src: '/unsplash/GAfoU0t8tsg.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2862,7 +2862,7 @@ export const MOCK_DATA_INDUSTRYS = [
     slug: 'maritime',
     fa_icon: 'fa-ship',
     hero_alt: 'Cargo port',
-    hero_src: 'https://source.unsplash.com/eqwFWHfQipg/1600x900',
+    hero_src: '/unsplash/eqwFWHfQipg.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -2966,7 +2966,7 @@ export const MOCK_DATA_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     hero_alt: 'Waterfront property',
-    hero_src: 'https://source.unsplash.com/Ch3WwM6PcsA/1600x900',
+    hero_src: '/unsplash/Ch3WwM6PcsA.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3094,7 +3094,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     slug: 'finance',
     fa_icon: 'fa-coins',
     hero_alt: 'Finance',
-    hero_src: 'https://source.unsplash.com/M_S7pim3Hwg/1600x900/',
+    hero_src: '/unsplash/M_S7pim3Hwg.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3199,7 +3199,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     slug: 'government',
     fa_icon: 'fa-landmark-flag',
     hero_alt: 'Government Building',
-    hero_src: 'https://source.unsplash.com/TELAb4duebI/1600x900/',
+    hero_src: '/unsplash/TELAb4duebI.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3303,7 +3303,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     slug: 'maritime',
     fa_icon: 'fa-ship',
     hero_alt: 'Maritime',
-    hero_src: 'https://source.unsplash.com/sFq7vyCSFbM/1600x900/',
+    hero_src: '/unsplash/sFq7vyCSFbM.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3408,7 +3408,7 @@ export const MOCK_DIGITAL_INDUSTRYS = [
     slug: 'real-estate',
     fa_icon: 'fa-map',
     hero_alt: 'Real Estate',
-    hero_src: 'https://source.unsplash.com/w3eFhqXjkZE/1600x900/',
+    hero_src: '/unsplash/w3eFhqXjkZE.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3533,7 +3533,7 @@ export const MOCK_FINX_INDUSTRYS = [
     slug: 'regtech',
     fa_icon: 'fa-shield-alt',
     hero_alt: 'Regtech',
-    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_src: '/unsplash/9lpSbMgYm0Q.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3636,7 +3636,7 @@ export const MOCK_FINX_INDUSTRYS = [
     slug: 'insurtech',
     fa_icon: 'fa-file-contract',
     hero_alt: 'Insurance',
-    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_src: '/unsplash/mCqi3MljC4E.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3740,7 +3740,7 @@ export const MOCK_FINX_INDUSTRYS = [
     slug: 'wealthtech',
     fa_icon: 'fa-hand-holding-usd',
     hero_alt: 'Wealthtech',
-    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_src: '/unsplash/3PyBkxgTiL0.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3844,7 +3844,7 @@ export const MOCK_FINX_INDUSTRYS = [
     slug: 'paytech',
     fa_icon: 'fa-credit-card',
     hero_alt: 'Paytech',
-    hero_src: 'https://source.unsplash.com/XvS-uKUoUao/1600x900/',
+    hero_src: '/unsplash/XvS-uKUoUao.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -3948,7 +3948,7 @@ export const MOCK_FINX_INDUSTRYS = [
     slug: 'fintech',
     fa_icon: 'fa-money-bill-wave',
     hero_alt: 'Fintech',
-    hero_src: 'https://source.unsplash.com/RYWEyXopmM4/1600x900/',
+    hero_src: '/unsplash/RYWEyXopmM4.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4077,7 +4077,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'pharma-and-medical-device',
     fa_icon: 'fa-shield-alt',
     hero_alt: 'pharma-and-medical-device',
-    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_src: '/unsplash/9lpSbMgYm0Q.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4180,7 +4180,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'providers',
     fa_icon: 'fa-file-contract',
     hero_alt: 'Insurance',
-    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_src: '/unsplash/mCqi3MljC4E.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4283,7 +4283,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'technology-companies',
     fa_icon: 'fa-mobile-alt',
     hero_alt: 'Wealthtech',
-    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_src: '/unsplash/3PyBkxgTiL0.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4386,7 +4386,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'hospital',
     fa_icon: 'fa-shield-alt',
     hero_alt: 'Regtech',
-    hero_src: 'https://source.unsplash.com/9lpSbMgYm0Q/1600x900/',
+    hero_src: '/unsplash/9lpSbMgYm0Q.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4489,7 +4489,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'life-sciences',
     fa_icon: 'fa-file-contract',
     hero_alt: 'Insurance',
-    hero_src: 'https://source.unsplash.com/mCqi3MljC4E/1600x900/',
+    hero_src: '/unsplash/mCqi3MljC4E.jpg',
     is_featured: true,
     // Sections
     sections: {
@@ -4593,7 +4593,7 @@ export const MOCK_AEL_INDUSTRYS = [
     slug: 'biology',
     fa_icon: 'fa-hand-holding-usd',
     hero_alt: 'Wealthtech',
-    hero_src: 'https://source.unsplash.com/3PyBkxgTiL0/1600x900/',
+    hero_src: '/unsplash/3PyBkxgTiL0.jpg',
     is_featured: true,
     // Sections
     sections: {
