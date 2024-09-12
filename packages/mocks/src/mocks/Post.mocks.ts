@@ -2019,7 +2019,7 @@ export const MOCK_GOVX_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: '/unsplash/ccqRivRETCQ.jpg',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2334,7 +2334,7 @@ export const MOCK_SRI_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: '/unsplash/ccqRivRETCQ.jpg',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2513,7 +2513,7 @@ export const MOCK_GVS_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: '/unsplash/ccqRivRETCQ.jpg',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2692,7 +2692,7 @@ export const MOCK_COASTAL_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: '/unsplash/ccqRivRETCQ.jpg',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +

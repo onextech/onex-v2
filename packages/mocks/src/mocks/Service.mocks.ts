@@ -1779,7 +1779,7 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'poc-development',
     category_id: 2,
     hero_alt: 'Open book',
-    hero_src: '/unsplash/RX_0vwSPiWs.jpg',
+    hero_src: '/unsplash/FQvadXmA524.jpg',
     // Sections
     sections: {
       faqs: {
@@ -4490,7 +4490,7 @@ export const MOCK_DATA_SERVICES = [
     // Hero
     category_id: 2,
     hero_alt: 'Fibre optic cable rack',
-    hero_src: '/unsplash/IlxX7xnbRF8.jpg',
+    hero_src: '/unsplash/8xnaQKWjDrM.jpg',
     // Sections
     sections: {
       faqs: {
