@@ -1,4 +1,4 @@
-import type { Service, ServiceCategory } from '@gravis-os/types'
+import type { Service, ServiceCategory } from '@onex/types'
 
 import React from 'react'
 
@@ -8,7 +8,7 @@ import {
   renderServiceBlockItem,
   renderServicesBlockItem,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface AtlasServiceCategoryPageProps {
   otherServiceCategorys?: ServiceCategory[]

@@ -15,7 +15,7 @@ import {
   renderShowcasesBlock,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import {
   Industry,
   Page,
@@ -23,8 +23,8 @@ import {
   PressRelease,
   Showcase,
   Technology,
-} from '@gravis-os/types'
-import { Slider } from '@gravis-os/ui'
+} from '@onex/types'
+import { Slider } from '@onex/ui'
 import { useRouter } from 'next/router'
 
 export interface FinxPageProps {

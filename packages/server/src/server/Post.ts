@@ -3,9 +3,9 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import {
   getCategoryFromCrudItem,
   getRelatedCrudItemsByCategoryId,
-} from '@gravis-os/utils'
+} from '@onex/utils'
 import dayjs from 'dayjs'
-import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import { getStaticPathsWithLayout } from '../nextjs'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env

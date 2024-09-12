@@ -1,0 +1,9 @@
+{
+  "name": "@onex/utils",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "dependencies": {
+    "micromatch": "^4.0.5",
+    "sanitize-html": "^2.7.2"
+  }
+}

@@ -1,7 +1,8 @@
 import { MOCK_POST_CATEGORYS, MOCK_POSTS } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
 import dayjs from 'dayjs'
-import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import { GetStaticPaths, GetStaticProps } from 'next'
+
+import { getStaticPathsWithLayout } from '../nextjs'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 
 const { MOCK_KEY = '' } = process.env
@@ -20,16 +21,24 @@ export const PostCategoryList = {
   getStaticProps: (): GetStaticProps =>
     getStaticPropsWithLayout({
       props: {
+        postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
         posts: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
           ({ published_at }) =>
             published_at && dayjs(published_at).isBefore(dayjs())
         ),
-        postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
       },
     }),
 }
 
 export const PostCategoryDetail = {
+  getStaticPaths: (): GetStaticPaths =>
+    getStaticPathsWithLayout({
+      paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(
+        ({ slug, blocked_locales, exclusive_locales }) => ({
+          params: { blocked_locales, categorySlug: slug, exclusive_locales },
+        })
+      ),
+    }),
   getStaticProps: (): GetStaticProps => (context) => {
     const postCategory = fetchPostCategoryBySlug(context.params?.categorySlug)
     const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
@@ -40,17 +49,9 @@ export const PostCategoryDetail = {
       .filter(({ category_id }) => category_id === postCategory?.id)
     return getStaticPropsWithLayout({
       props: {
-        posts,
         postCategory,
+        posts,
       },
     })(context)
   },
-  getStaticPaths: (): GetStaticPaths =>
-    getStaticPathsWithLayout({
-      paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(
-        ({ slug, exclusive_locales, blocked_locales }) => ({
-          params: { categorySlug: slug, exclusive_locales, blocked_locales },
-        })
-      ),
-    }),
 }

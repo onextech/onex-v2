@@ -1,4 +1,4 @@
-import type { Resource } from '@gravis-os/types'
+import type { Resource } from '@onex/types'
 
 import React from 'react'
 
@@ -7,7 +7,7 @@ import {
   RenderPostBlockItemProps,
   renderPostBlockItem,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import { routeConfig } from '@onex/common'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'

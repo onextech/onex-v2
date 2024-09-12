@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Blocks, NewsletterForm, useLayout } from '@gravis-os/landing'
+import { Blocks, NewsletterForm, useLayout } from '@onex/landing'
 
 export interface NewsletterPageProps {
   subtitle?: string

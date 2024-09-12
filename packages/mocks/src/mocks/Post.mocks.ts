@@ -38,7 +38,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'successful-products-stand-out-from-crowd',
     subtitle:
       'Key factors and strategies for creating distinctive and successful technical products',
-    hero_src: 'https://source.unsplash.com/SPpsFbCaN2A/1600x900',
+    hero_src: '/unsplash/SPpsFbCaN2A.jpg',
     hero_alt: 'crowd',
     html:
       '<blockquote>\n' +
@@ -73,7 +73,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'costly-risks-product-development-mitigation',
     subtitle:
       'Navigating the pitfalls of product development: Mitigating risks for successful launches.',
-    hero_src: 'https://source.unsplash.com/UU69D-_nwPI/1600x900',
+    hero_src: '/unsplash/UU69D-_nwPI.jpg',
     hero_alt: 'compass',
     html:
       '<blockquote>\n' +
@@ -111,7 +111,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'evaluating-customers-wants-needs-building-right-product',
     subtitle:
       'Key strategies to ensure customer-centric product development and success in the market.',
-    hero_src: 'https://source.unsplash.com/7tXA8xwe4W4/1600x900',
+    hero_src: '/unsplash/7tXA8xwe4W4.jpg',
     hero_alt: 'sticky notes',
     html:
       '<blockquote>\n' +
@@ -144,7 +144,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'beyond-the-cloud-latest-innovations-trends-cloud-computing-2023',
     subtitle:
       'Exploring the evolving landscape of cloud computing and its cutting-edge advancements in 2023.',
-    hero_src: 'https://source.unsplash.com/FfPmBpiuPf0/1600x900',
+    hero_src: '/unsplash/FfPmBpiuPf0.jpg',
     hero_alt: 'city sky',
     html:
       '<blockquote>\n' +
@@ -173,7 +173,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'navigating-cloud-landscape-key-considerations-enterprise-product-managers-2023',
     subtitle:
       'Maximizing efficiency and innovation in the cloud era for successful enterprise product management.',
-    hero_src: 'https://source.unsplash.com/_K-QKkbn7Ds/1600x900',
+    hero_src: '/unsplash/_K-QKkbn7Ds.jpg',
     hero_alt: 'building',
     html:
       '<blockquote>\n' +
@@ -204,7 +204,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'future-cloud-infrastructure-management-automation-ai-devops',
     subtitle:
       'Unlocking the Potential: Embracing automation, AI, and DevOps for efficient and scalable cloud infrastructure management.',
-    hero_src: 'https://source.unsplash.com/-8ttvM3Ca94/1600x900',
+    hero_src: '/unsplash/-8ttvM3Ca94.jpg',
     hero_alt: 'road',
     html:
       '<blockquote>\n' +
@@ -233,7 +233,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'innovation-maritime-emerging-trends-technologies-efficiency-profitability',
     subtitle:
       'Exploring the transformative power of innovation in the maritime industry for increased efficiency and profitability',
-    hero_src: 'https://source.unsplash.com/BLxxUrvAIn4/1600x900',
+    hero_src: '/unsplash/BLxxUrvAIn4.jpg',
     hero_alt: 'ships',
     html:
       '<blockquote>\n' +
@@ -262,7 +262,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'new-era-real-estate-technology-reshaping-buying-selling-property-management',
     subtitle:
       'Exploring the transformative impact of technology on real estate transactions, property management, and the future of the industry.',
-    hero_src: 'https://source.unsplash.com/r3WAWU5Fi5Q/1600x900',
+    hero_src: '/unsplash/r3WAWU5Fi5Q.jpg',
     hero_alt: 'houses',
     html:
       '<blockquote>\n' +
@@ -292,7 +292,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'best-practices-when-developing-scalable-applications',
     subtitle:
       'Prioritizing Performance and Flexibility: Building Scalable Applications for Competitive Advantage.',
-    hero_src: 'https://source.unsplash.com/YfCVCPMNd38/1600x900',
+    hero_src: '/unsplash/YfCVCPMNd38.jpg',
     hero_alt: 'spiral staircase',
     html:
       '<blockquote>\n' +
@@ -322,7 +322,7 @@ export const MOCK_TECH_POSTS = [
     title: 'Progressive Web Apps: Bridging the Gap Between Web and Mobile',
     slug: 'progressive-web-apps-bridging-the-gap-between-web-and-mobile',
     subtitle: 'The Rise of Offline Capabilities and Mobile-like Experiences',
-    hero_src: 'https://source.unsplash.com/4V8uMZx8FYA/1600x900',
+    hero_src: '/unsplash/4V8uMZx8FYA.jpg',
     hero_alt: 'discussion',
     html:
       '<blockquote>\n' +
@@ -352,7 +352,7 @@ export const MOCK_TECH_POSTS = [
     slug: 'advanced-react-development-techniques-to-enhance-your-web-apps',
     subtitle:
       "Unleash React's potential with advanced techniques for faster, user-friendly, and scalable web apps.",
-    hero_src: 'https://source.unsplash.com/tzFVsg6nWtM/1600x900',
+    hero_src: '/unsplash/tzFVsg6nWtM.jpg',
     hero_alt: 'Singapore city view',
     html:
       '<blockquote>\n' +
@@ -391,7 +391,7 @@ export const MOCK_TECH_POSTS = [
     subtitle:
       "Unlock the Power of Scalability and Cost-Efficiency: Accelerate Application Development with AWS Lambda's Serverless Architecture",
     slug: 'revolutionize-your-application-development-embrace-serverless-architecture-with-aws-lambda',
-    hero_src: 'https://source.unsplash.com/p0j-mE6mGo4/1600x900',
+    hero_src: '/unsplash/p0j-mE6mGo4.jpg',
     hero_alt: 'tech set-up',
     html:
       '<blockquote>\n' +
@@ -425,7 +425,7 @@ export const MOCK_TECH_POSTS = [
     subtitle:
       'Building scalable and maintainable JavaScript: Harnessing modularity, functional programming, and testing for cleaner and efficient code.',
     slug: 'advanced-javascript-techniques-for-writing-cleaner-and-more-maintainable-code',
-    hero_src: 'https://source.unsplash.com/vpOeXr5wmR4/1600x900',
+    hero_src: '/unsplash/vpOeXr5wmR4.jpg',
     hero_alt: 'computer screen',
     html:
       "<p><em>Summary: JavaScript is a widely used programming language for modern web applications, and it's critical to make sure your code is scalable and maintainable as the application grows. Modular programming, functional programming, asynchronous programming, error handling, object-oriented programming, testing, and optimisation are advanced JavaScript approaches that can help create cleaner, simpler, and more efficient code. Modular programming entails breaking down software design into independent and interchangeable modules, whereas functional programming emphasises pure functions and immutable data structures. Asynchronous programming is useful for tasks that require I/O, and error handling is essential when developing robust systems. Classes and objects are used to represent entities in object-oriented programming, and testing and optimisation are critical for ensuring code quality and performance. Developers can write simple code by employing such methods for ease of understanding, testing, and modifying over time.</em></p>\n" +
@@ -475,7 +475,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'future-proofing-business-strategies-long-term-growth-success',
     subtitle:
       'Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth',
-    hero_src: 'https://source.unsplash.com/UU69D-_nwPI/1600x900',
+    hero_src: '/unsplash/UU69D-_nwPI.jpg',
     hero_alt: 'compass',
     html:
       '<blockquote>\n' +
@@ -500,7 +500,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'guide-implementing-new-technologies-level-up-business',
     subtitle:
       'Unlocking Growth and Success: A Comprehensive Guide to Implementing New Technologies for Business Advancement',
-    hero_src: 'https://source.unsplash.com/PhYq704ffdA/1600x900',
+    hero_src: '/unsplash/PhYq704ffdA.jpg',
     hero_alt: 'building',
     html:
       "<p>Want to unlock the full potential of your business through new technology? We've got you covered.</p>\n" +
@@ -572,7 +572,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'hybrid-workforce-flexibility-productivity-post-pandemic-era',
     subtitle:
       'Achieving efficiency, inclusivity, and equal opportunities in the evolving work landscape.',
-    hero_src: 'https://source.unsplash.com/VWcPlbHglYc/1600x900',
+    hero_src: '/unsplash/VWcPlbHglYc.jpg',
     hero_alt: 'office',
     html:
       '<p><em>The COVID-19 epidemic has changed the way we work, driving companies to seek remote work approaches in order to keep operations functioning during lockdowns and constraints. Companies are currently examining how to implement a hybrid work paradigm that balances flexibility and productivity in the following the pandemic&nbsp;with&nbsp;the progressive lifting of restrictions.</em></p>\n' +
@@ -599,7 +599,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'harness-power-intelligent-process-automation-unlock-business-growth',
     subtitle:
       'Streamline operations, boost efficiency, and meet customer needs with Intelligent Process Automation.',
-    hero_src: 'https://source.unsplash.com/lZ_4nPFKcV8/1600x900',
+    hero_src: '/unsplash/lZ_4nPFKcV8.jpg',
     hero_alt: 'sprout',
     html:
       '<p>In today&rsquo;s digital world, Intelligent Process Automation (IPA) is becoming increasingly important to spur business growth and building that unique competitive advantage. By eliminating repetitive, replicable and routine tasks, IPA is a suite of business-process improvements and next-generation tools that benefits the knowledge worker. It can also radically enhance customer journeys by streamlining interactions and accelerating procedures.</p>\n' +
@@ -623,7 +623,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'beyond-logo-developing-comprehensive-brand-identity',
     subtitle:
       'Crafting a Memorable and Cohesive Brand Identity for Lasting Connections',
-    hero_src: 'https://source.unsplash.com/mxIGWk111u0/1600x900',
+    hero_src: '/unsplash/mxIGWk111u0.jpg',
     hero_alt: 'paint',
     html:
       "<p>Creating an extensive brand identity is an essential phase in developing a strong and recognisable brand. A brand identity is more than a logo or a snappy phrase; it is a brand's visual, verbal, and emotional representation that distinguishes it from competitors and connects with its intended consumer base.</p>\n" +
@@ -655,7 +655,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'building-better-teams-role-organisational-design-talent-management',
     subtitle:
       'Maximizing team success through strategic talent management and effective organisational design.',
-    hero_src: 'https://source.unsplash.com/FHnnjk1Yj7Y/1600x900',
+    hero_src: '/unsplash/FHnnjk1Yj7Y.jpg',
     hero_alt: 'desk',
     html:
       "<p>In today's fast-paced business world, attracting and retaining top talent is more important than ever. However, simply hiring the best people is not enough to ensure success. Building effective teams requires a thoughtful approach to talent management, including a focus on organisational design.</p>\n" +
@@ -691,7 +691,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'achieving-successful-digital-transformation-in-the-enterprise',
     subtitle:
       'Companies that succeed at digital transformation are ultimately the ones that are able to deal with change better.',
-    hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
+    hero_src: '/unsplash/wUPnMygSwYk.jpg',
     hero_alt: 'cubes and lasers',
     html:
       "<p>Over the last few years, digital transformation has become one of the most widely-recognised topics in business with companies racing to acquire digital capabilities to drive their business forward. Referring to the adoption of digital technology used to improve fundamental business practices, digital transformation has been a necessary disruption that continues to affect every industry. With an increasing number of <a href='https://www.forbes.com/sites/tomgroenfeldt/2018/04/15/going-digital-in-banking-dbs-citi-bbva-ing-lead-the-way/?sh=3088b09a5877'>companies stepping forward to report record-breaking figures from new digital agendas</a>, going digital has proven to be an essential success factor for businesses today.</p>\n" +
@@ -720,7 +720,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'what-going-digital-means',
     subtitle:
       'For managers leading digital initiatives, learning how to articulate what being digital means is the first step in succeeding at it.',
-    hero_src: 'https://source.unsplash.com/CyFBmFEsytU/1600x900',
+    hero_src: '/unsplash/CyFBmFEsytU.jpg',
     hero_alt: 'light trails in car park',
     html:
       '<p>Amidst a growing trend advocating business digitisation in recent years, everyone is talking about going digital. Companies already riding atop the digital wave are continuing to build out winning capabilities at an accelerating pace every day. However for the uninitiated, approaching the already established dialogue on digital could prove to be too late or overwhelming to be worthwhile. Yet as the growing digital trend shows no signs of stopping in today&rsquo;s computer age, businesses from all walks of life are gradually returning to the drawing board with new digital agendas. With many more companies today diving head first into digital territories with announcements of new initiatives to go digital, one cannot help but wonder &mdash; what does going digital really mean?</p>\n' +
@@ -752,7 +752,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'the-rise-of-business-process-automation',
     subtitle:
       'In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work.',
-    hero_src: 'https://source.unsplash.com/jIBMSMs4_kA/1600x900',
+    hero_src: '/unsplash/jIBMSMs4_kA.jpg',
     hero_alt: 'robot hand',
     html:
       '<p>In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work. Labour-intensive jobs are increasingly costing companies more to manage due to the rising cost of labour in a rapidly globalised world. Increasing headcount as a way to complete human-operated tasks on time has traditionally been the only way out for managers. However, modern technologies today has provided companies with new and innovative ways to deal with this age-old operational challenge. In recent years, business process automation has emerged as the solution to continuing operational challenges. Enabled by advances in the fields of software robotics, machine learning, and artificial intelligence, the benefits of automation have risen exponentially over the years. The new-found potential of business process automation today has led organisations to rethink their operations management strategies and the future of their workforce.</p>\n' +
@@ -786,7 +786,7 @@ export const MOCK_GROUP_POSTS = [
     slug: 'benefits-of-business-process-automation',
     subtitle:
       'By embracing the automation revolution, organisations can achieve enhanced efficiency and unleash new value.',
-    hero_src: 'https://source.unsplash.com/RPPdQVp-nds/1600x900',
+    hero_src: '/unsplash/RPPdQVp-nds.jpg',
     hero_alt: 'sticky notes',
     html:
       '<p>In the production of goods and services, businesses are often presented with multiple levels of inefficiencies in the form of menial and repetitive work. Labour-intensive jobs are increasingly costing companies more to manage due to the rising cost of labour in a rapidly globalised world. Increasing headcount as a way to complete human-operated tasks on time has traditionally been the only way out for managers. However, modern technologies today has provided companies with new and innovative ways to deal with this age-old operational challenge. In recent years, business process automation has emerged as the solution to continuing operational challenges. Enabled by advances in the fields of software robotics, machine learning, and artificial intelligence, the benefits of automation have risen exponentially over the years. The new-found potential of business process automation today has led organisations to rethink their operations management strategies and the future of their workforce.</p>\n' +
@@ -838,7 +838,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'leveraging-data-for-smarter-decision-making-in-product-development',
     subtitle:
       'Maximizing the Power of Data for Enhanced Product Development and Marketing Strategies',
-    hero_src: 'https://source.unsplash.com/Pf5Pj7A5ddA/1600x900',
+    hero_src: '/unsplash/Pf5Pj7A5ddA.jpg',
     hero_alt: 'person on cliff',
     html:
       '<p>The digital world is drowning in data and businesses can either just let it pile up or harness it for their benefit. Despite the fact that the second options seems like the obvious choice, many companies do not fully utilise data-driven decision-making. Data is the lifeblood of product development and without it, decisions can be made without complete information or understanding. Making data-driven decisions in product development can help businesses make smarter, more informed decisions that are based on facts rather than guesses. By leveraging data to make better decisions, companies can accelerate their product development process and create products that are tailored to customer needs and demands.</p>' +
@@ -862,7 +862,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'the-next-frontier-in-enterprise-analytics-predictive-modelling-and-ai-driven-insights',
     subtitle:
       'Unleashing the Power of Predictive Analytics and AI-Driven Insights',
-    hero_src: 'https://source.unsplash.com/gMes5dNykus/1600x900',
+    hero_src: '/unsplash/gMes5dNykus.jpg',
     hero_alt: 'Glass buildings',
     html:
       "<p>Recent years have seen a considerable advancement in enterprise analytics, with businesses now using data analytics to gain valuable insights into their operations, customers' behaviour, and market trends. Traditional analytics techniques, such descriptive and diagnostic analytics, are no longer adequate for businesses attempting to stay competitive. Predictive modelling and AI-driven insights are the newest developments in enterprise analytics.</p>" +
@@ -893,7 +893,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'ai-social-good-solve-public-challenges-ml',
     subtitle:
       'Harnessing AI for Positive Impact: Tackling Societal Challenges with Advanced Machine Learning',
-    hero_src: 'https://source.unsplash.com/ZJKE4XVlKIA/1600x900',
+    hero_src: '/unsplash/ZJKE4XVlKIA.jpg',
     hero_alt: 'miniature train tracks',
     html:
       "<p>Artificial intelligence (AI) is employed in a variety of industries to tackle complex challenges. With its ability to analyse vast volumes of data, recognise patterns and make insightful predictions, AI has the potential to assist in addressing some of the world's most pressing societal issues. In this article, we will explore how AI can be used for social good and present some examples of how it is currently being put to tackle critical public challenges.</p>" +
@@ -921,7 +921,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'ai-finance-revolution-unlock-opportunities-customer-experience-2023',
     subtitle:
       'Driving Financial Transformation: Harnessing the Power of AI for Enhanced Risk Management, Customer Experience, and Investment Strategies',
-    hero_src: 'https://source.unsplash.com/BeVGrXEktIk/1600x900',
+    hero_src: '/unsplash/BeVGrXEktIk.jpg',
     hero_alt: 'laptop and headphones',
     html:
       '<p>Artificial Intelligence (AI) technological advancements are driving a revolution in the finance industry. In 2023, we are likely to see the impact of this revolution continue to grow, as AI-powered solutions unlock new possibilities and improve customer experience in the finance industry.</p>' +
@@ -953,7 +953,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'building-next-gen-government-ai-ml-transforming-public-services',
     subtitle:
       'Building a Future-Ready Government: Embracing AI and ML to Revolutionize Public Services',
-    hero_src: 'https://source.unsplash.com/n31JPLu8_Pw/1600x900',
+    hero_src: '/unsplash/n31JPLu8_Pw.jpg',
     hero_alt: 'People on street',
     html:
       '<p>The role of government is to serve the people, and in the quickly evolving changing world of today, that means utilising cutting-edge technology to deliver successful public services. Governments around the world are examining how to leverage artificial intelligence (AI) and machine learning (ML), two of the most promising technologies for revolutionising public services, to create the next generation of government.</p>' +
@@ -984,7 +984,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'automating-website-personalization-with-gpt-4-future-trends-and-possibilities',
     subtitle:
       "Revolutionizing Digital Experiences: GPT-4 in the Driver's Seat for Automated Website Personalization",
-    hero_src: 'https://source.unsplash.com/Fc1GBkmV-Dw/1600x900',
+    hero_src: '/unsplash/Fc1GBkmV-Dw.jpg',
     hero_alt: 'GPT 4',
     html:
       '<p>Personalization has become a key factor in the modern digital environment when determining customer satisfaction and the overall user experience. GPT-4, a potent language model created by OpenAI, is revolutionizing website personalization automation. GPT-4 is providing website owners and developers with previously unheard-of opportunities thanks to its capacity to produce text that resembles human speech and comprehend context. In this article, we examine how GPT-4 is altering the landscape and the prospects for website personalization in the future.</p>' +
@@ -1023,7 +1023,7 @@ export const MOCK_DATA_POSTS = [
     slug: 'chatgpt-seamless-user-experience-transforming-website-interactions-2023',
     subtitle:
       "Revolutionizing Website Interactions: ChatGPT's Seamless Engagement and Enhanced Experiences in 2023",
-    hero_src: 'https://source.unsplash.com/PeLtf8PCjIY/1600x900',
+    hero_src: '/unsplash/PeLtf8PCjIY.jpg',
     hero_alt: 'Chat GPT',
     html:
       "<p>In the years leading up to 2023, OpenAI's ChatGPT, in its most recent incarnation, GPT-4, is leading the way in revolutionizing how users interact with websites. It is changing the digital landscape by fostering seamless engagement and offering enhanced experiences.</p>" +
@@ -1068,7 +1068,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'psychology-of-colour-in-ui-ux-design',
     subtitle:
       'Understanding the Impact of Colour in UI/UX Design: Leveraging Emotion and Engagement through Strategic Colour Use',
-    hero_src: 'https://source.unsplash.com/dx2xcwgn5ps/1600x900',
+    hero_src: '/unsplash/dx2xcwgn5ps.jpg',
     hero_alt: 'tulip field',
     html:
       "<p>Colour has the greatest ability of all design components for user interface (UI) and user experience (UX) to evoke emotions, communicate value, and impact user behaviour. Colour is a non-verbal language that, from a psychological point of view, has the ability to stir up powerful associations and influence mood, feelings, and behaviour. Designers who want to create engaging and significant experiences for their users must understand how colour functions within the framework of UI/UX design. We'll look at the psychology of colour in UI/UX design in this post and discover how colour is used to boost&nbsp;engagement and leave an impression of users.</p>" +
@@ -1119,7 +1119,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'ui-design-aesthetics-functionality-optimal-results',
     subtitle:
       'Mastering the Intersection of Beauty and Usability: Achieving Optimal Results in UI Design',
-    hero_src: 'https://source.unsplash.com/IyjhDTTQitM/1600x900',
+    hero_src: '/unsplash/IyjhDTTQitM.jpg',
     hero_alt: 'hills',
     html:
       '<p>The art of UI design entails producing interfaces that are aesthetically attractive, emotions driven and memorable. It mainly focuses on producing designs that inspire and excite users while make them feel good about the products that they use. On the other hand, the science of UI design focuses on comprehending how consumers interact with things and creating interfaces that are intuitive and simple to use.</p>' +
@@ -1151,7 +1151,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'designing-for-the-future-how-to-build-applications-that-will-stand-the-test-of-time',
     subtitle:
       'Embracing Trends and Prioritizing User Experience for Long-Lasting Apps.',
-    hero_src: 'https://source.unsplash.com/BXOXnQ26B7o/1600x900',
+    hero_src: '/unsplash/BXOXnQ26B7o.jpg',
     hero_alt: 'hourglass',
     html:
       '<blockquote>\n' +
@@ -1183,7 +1183,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'unleashing-power-design-boosting-conversions-landing-pages',
     subtitle:
       'Maximizing Conversions: The Impact of Effective Design on Landing Pages',
-    hero_src: 'https://source.unsplash.com/KdeqA3aTnBY/1600x900',
+    hero_src: '/unsplash/KdeqA3aTnBY.jpg',
     hero_alt: 'meeting',
     html:
       '<p>In the modern digital age, landing pages are an essential component of every successful online marketing approach. Landing pages are web pages that are specifically built to achieve a particular marketing goal be it&nbsp;lead generation or product sales. While the primary goal of a landing page is to nudge&nbsp;visitors to take a specific action, such as signing up for a newsletter or purchasing a product, a well-designed landing page may additionally boost conversions and revenue.</p>' +
@@ -1210,7 +1210,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'beyond-aesthetics-strategic-role-design-business-growth',
     subtitle:
       'Unleashing Potential, Embracing Innovation, and Fostering Customer Loyalty for Sustainable Growth',
-    hero_src: 'https://source.unsplash.com/vGjGvtSfys4/1600x900',
+    hero_src: '/unsplash/vGjGvtSfys4.jpg',
     hero_alt: 'sprout',
     html:
       "<p>Design is more than just a pretty picture or a sleek logo. It is a potent tool that can aid in business growth and success. As companies contend for customers and market share, design has emerged as a critical distinction that may make or break a company's success.</p>" +
@@ -1237,7 +1237,7 @@ export const MOCK_DESIGN_POSTS = [
     slug: 'beyond-web2-exploring-possibilities-web3-design',
     subtitle:
       'Unleashing the potential of decentralization, token economics, interoperability, and community in shaping the future of online interactions.',
-    hero_src: 'https://source.unsplash.com/VK7jXtOtEuM/1600x900',
+    hero_src: '/unsplash/VK7jXtOtEuM.jpg',
     hero_alt: 'coins falling',
     html:
       "<p>Web3 is the internet's next development, and is already changing the way we interact online. It symbolises a significant change away from the centralised, proprietary Web2 models and toward a more decentralised, open environment that puts consumers in control of their data and online experiences. Web3 is more than just a technological advancement; it is a new paradigm of online engagement that will enable new types of value creation, collaboration, and creativity.</p>" +
@@ -1285,7 +1285,7 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'digital-transformation-sustainability-modern-software',
     subtitle:
       'Embracing Sustainability: Unleashing the Power of Digital Transformation in Modern Software',
-    hero_src: 'https://source.unsplash.com/07KxLPfH0l4/1600x900',
+    hero_src: '/unsplash/07KxLPfH0l4.jpg',
     hero_alt: 'Silhouette of windmills',
     html: '<p>The digital revolution of sectors and enterprises has been underway for some time, and it has had a significant impact on the software industry. Digital transformation has emerged as a critical driver of innovation, allowing businesses to produce more efficient and effective products and services. However, in recent years, corporations have recognised sustainability as a vital problem, and the software sector is no different. The convergence of sustainability and digital transformation is opening up new avenues for innovation and growth, and firms who can capitalise on this opportunity will be well positioned to flourish in the future years.</p><p>Sustainability has emerged as a major problem for all types of organisations. With climate change affecting the integrity of ecosystems and populations worldwide, businesses must lower their carbon footprint and adopt more sustainable business practices. This entails rethinking how products are created, produced, and delivered in the software industry. Traditionally, software has been distributed as a tangible object, necessitating large resources for production, shipping, and distribution. However, the emergence of cloud computing and other digital technologies has enabled software to be offered as a service, lowering the software industry&#39;s environmental impact.</p><h2>Data Analytics</h2><p>Data analytics is one of the ways that digital transformation is driving sustainability in the software business. Companies can find areas where they can cut waste and boost efficiency by evaluating data from various sources. Companies, for example, can identify possibilities to cut energy consumption and carbon emissions by evaluating data from data center energy usage. Companies can lower their environmental impact while improving their bottom line by using data analytics to improve resource utilisation.</p><h2>Renewable Energy Sources</h2><p>The usage of renewable energy sources is another way that sustainability is changing the game in current software. As the cost of renewable energy continues to fall, more businesses are using solar, wind, and other renewable energy sources to power their data centers and other facilities. Companies can lower their carbon footprint and improve their environmental profile by embracing renewable energy sources. This not only benefits the environment, but it can also be a selling factor for clients who are becoming more concerned about environmental issues.</p><h2>Circular Economy</h2><p>The emergence of the circular economy has an impact on the software business as well. The circular economy is an economic strategy that aims to reduce waste and maximise resource utilisation. This involves creating products that are more easily recyclable and reusable in the software sector. Businesses can reduce waste and improve their sustainability profile by developing products with circularity in mind. This can also open up new avenues for innovation as companies look for new methods to design more sustainable and ecologically friendly products.</p><h2>Collaboration and Partnerships</h2><p>Finally, sustainability is changing the game in modern software by opening up new avenues for collaboration and collaboration. Companies must collaborate to share knowledge and resources in order to overcome sustainability concerns. As organisations collaborate to develop new technology and solutions, this can open up new avenues for innovation and growth. Companies, for example, can collaborate to build new standards for sustainable software development or to produce new products that are designed to be more sustainable.</p><p>In general, the convergence of sustainability and digital transformation is opening up new avenues for innovation and growth in the software sector. Companies that embrace sustainability can lower their environmental effect while simultaneously enhancing their financial line. As organisations collaborate to address sustainability concerns, this might open up new avenues for collaboration and partnerships. Companies who can leverage the potential of sustainability and digital transformation will be well positioned to succeed in the next years as the software industry evolves.</p>',
   },
@@ -1298,7 +1298,7 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'seo-analytics-unleashed-7-tactics-better-online-visibility',
     subtitle:
       'Unleashing the Power of SEO Analytics: Mastering Tactics for Dominating Online Visibility',
-    hero_src: 'https://source.unsplash.com/9wYdW55NbnY/1600x900',
+    hero_src: '/unsplash/9wYdW55NbnY.jpg',
     hero_alt: 'close up of lens',
     html: '<p>SEO analytics is one of the most vital elements of a company&#39;s online presence since it allows them to rank higher in search engine results pages (SERPs). Businesses can boost their online exposure by studying and assessing the success of SEO campaigns. We believe in using the power of SEO analytics to drive innovation and stay ahead of the competition. Here are seven SEO analytics methods that organisations must understand in order to remain competitive in the ever-changing digital market.</p><h2><strong>Keyword Research and Analysis</strong></h2><p>Keyword research and analysis are the fundamental steps toward effective SEO analytics. This entails finding suitable keywords for your business and examining their search volume, competition, and potential to attract visitors to your website. The Google Keyword Planner is a popular tool that gives data on search traffic, competition, and suggested bid estimates for various keywords. SEMrush, Ahrefs, and Moz are also popular tools.</p><p>After identifying a list of prospective keywords, businesses can analyze them to discover which ones are most relevant and have the most potential to attract traffic to their website. This analysis typically involves looking at factors such as search volume, competition, and relevance to the business&#39;s products or services.</p><p>Businesses must employ keywords wisely in their website content in addition to identifying and assessing them. This involves including keywords in page titles, headers, and body text while also ensuring that the content is high-quality and entertaining for readers. This is a tricky balance, since term abuse can result in search engine penalties, while keyword underuse can result in low search ranks.</p><h2><strong>Track Your Rankings</strong></h2><p>Tracking your website&#39;s SERP ranking is critical for understanding how effectively your SEO techniques are working. It involves keeping track of where your website&#39;s pages rank in search engine results pages (SERPs) for certain keywords. Google Search Console, Moz, and Ahrefs are all tools that can assist you in tracking your website&#39;s rating for certain keywords. These tools can provide you with frequent updates on the ranking performance of your website, as well as insights into the keywords that are delivering the most traffic to your site. You may discover patterns and make necessary changes to your SEO strategy by studying your website&#39;s ranking over time.</p><p>Tracking your rankings also allows you to follow the performance of your competitors. When you compare your rankings to those of your rivals, you may learn about the keywords they are targeting and change your approach appropriately.</p><h2><strong>Monitor Your Backlinks</strong></h2><p>Backlinks, also known as inbound links, are links to your website from other websites. Backlinks are an essential aspect in establishing your website&#39;s authority and ranking in search engine results pages (SERPs). Monitoring your backlinks with tools like Ahrefs or Majestic may help you uncover chances to develop new backlinks and eliminate any unwanted links that may be undermining your SEO efforts.</p><p>One of the most important advantages of monitoring your backlinks is that it helps you to spot any possible problems with your link profile. For example, if you see that you have a big number of low-quality or spammy backlinks, this might indicate that search engines are penalizing your page. By recognizing these issues early on, you can take actions to delete any potentially harmful links and avoid penalties that might impact your search engine rankings.</p><h2><strong>Analyze Your Competitors</strong></h2><p>Analyzing competitor&#39;s SEO techniques might give useful insights into what is and is not working in your sector. You may use a number of tools and approaches to assess your competition. Conducting competitor analysis, which involves determining your primary competitors and examining their websites, content, backlinks, social media presence, and other online activity, is one of the most successful approaches.</p><p>To conduct a competitor analysis, you can start by identifying your top competitors using search engines and other online directories. Once you&#39;ve identified your competitors, you can evaluate their websites to learn about their SEO methods, such as the keywords they&#39;re targeting, their content strategy, and their on-page optimization.</p><p>Analyzing competitor&#39;s SEO techniques might give useful insights into what is and is not working in your sector. You may use a number of tools and approaches to assess your competition. Conducting competitor analysis, which involves determining your primary competitors and examining their websites, content, backlinks, social media presence, and other online activity, is one of the most successful approaches.</p><p>You may also examine competitor&#39;s backlink profiles to learn which websites are connecting to them and which sites could be worthwhile targets for your own link building efforts. Analyzing your competitor&#39;s social media presence may also give insights into the sort of content that connects with their audience, allowing you to fine-tune your own social media approach.</p><p>A SWOT analysis, which identifies your rivals&#39; strengths, weaknesses, opportunities, and threats, is another excellent way for studying your competition. This study can assist you in determining areas where your rivals thrive and areas in which you can differentiate yourself and obtain a competitive edge.</p><h2><strong>Analyze Your Website Traffic</strong></h2><p>Monitoring your website&#39;s traffic patterns and understanding how visitors interact with your site may provide useful insights into the efficiency of your SEO efforts and allow you to make data-driven decisions about how to optimize your website further. Google Analytics, for example, can assist you in measuring your website&#39;s traffic sources, bounce rate, and user behavior. By examining this data, you may find areas for development and change your SEO approach appropriately.</p><p>One of the most important advantages of evaluating your website traffic is that it helps you to identify parts of your website that want development. For example, if your website has a high bounce rate, this might indicate that your site&#39;s content or user experience could be improved. You can enhance your website and optimize it for improved engagement and conversions if you detect these issues early on.</p><p>Another advantage of analyzing your website traffic is that it provides you with insights into your audience&#39;s behavior and preferences. By understanding how visitors are interacting with your site, you can identify opportunities for improving user experience, creating more engaging content, and tailoring your marketing efforts to better target your audience.</p><h2><strong>Measure Your Content Performance</strong></h2><p>Content is an important element of SEO, and analyzing the success of your content could aid you discover what is and is not engaging with your audience. By assessing the performance of your content, you can adjust your strategy in order to enhance your rankings, engagement, and conversions. Tools like Google Analytics and BuzzSumo can help you measure the engagement, social shares, and backlinks of your content.</p><p>Page views, time on page, bounce rate, and engagement rate are all measures you may use to assess the performance of your content. These analytics can assist you understand how your content is being received by your audience and how you can enhance its performance.</p><p>Another crucial indicator that may help you determine how engaged your audience is with your content is time on page. Visitors that spend a lot of time on your website indicate that they find the content valuable and interesting. Visitors who leave your website fast, on the other hand, are an indication that your content isn&#39;t resonating with them.</p><p>Another key indicator for measuring the performance of your content is the bounce rate. This number indicates how many people leave your website after just seeing one page. If your bounce rate is high, it might indicate that your content is not engaging enough or that the navigation on your site is confusing.</p><p>Finally, engagement rate is a measure that indicates how many people connect with your content by sharing it on social media, writing comments, or clicking on links. You can detect which sorts of content are producing the most engagement by watching your engagement rate and adjusting your approach appropriately.</p><h2><strong>Optimize for Local SEO</strong></h2><p>Local SEO optimisation is crucial for businesses that rely on local clients, such as restaurants, plumbers, and brick-and-mortar retail establishments. Local SEO is the technique of optimizing your website and online presence so that it appears in local search results when people in your region search for the products or services you provide. Tools like Whitespark and BrightLocal can assist you in managing your local SEO efforts.</p><p>One of the first tasks in local SEO optimisation is to verify that your company&#39;s information is consistent throughout all online platforms, such as your website, Google My Business, social media, and directory listings. This comprises your company&#39;s name, address, phone number, and operating hours. Having accurate and consistent information makes it simpler for search engines to comprehend your business and present it in local search results.</p><p>Another critical aspect of local SEO is optimising your website for local keywords. This involves include location-specific keywords onto your website, such as &quot;best coffee shop in Orchard&quot; or &quot;law firm in Bishan.&quot; Including location-specific keywords on your website helps search engines comprehend your company&#39;s geographic focus and boosts your chances of showing in local search results. Building local backlinks, such as listing on local directories or sponsoring local events, can also help your local SEO efforts. Local backlinks tell search engines that your company is relevant and reliable in your region.</p><p>Finally, it is important to ensure that your website is mobile-friendly for local SEO. Because more and more consumers are searching for local companies on their mobile devices, having a mobile-friendly website is critical for appearing in local search results.</p><h2>Conclusion</h2><p>To summarise, SEO analytics is a game changer for organisations looking to increase their online presence and drive more visitors to their website. By implementing the seven methods discussed in this article, businesses may assess how effectively their SEO efforts are doing and make necessary changes to stay ahead of their competitors. Remember that SEO is a never-ending challenge, and staying up to date on the newest trends and optimising accordingly are the keys to winning the ever-changing digital environment. So strap in and prepare to outrank the competition like a boss!</p>',
   },
@@ -1311,7 +1311,7 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'strategies-legacy-systems-digital-transformation',
     subtitle:
       'Embracing Digital Transformation: Strategies to Modernize Legacy Systems and Thrive in the Digital Age',
-    hero_src: 'https://source.unsplash.com/MIdLSFHYuMk/1600x900',
+    hero_src: '/unsplash/MIdLSFHYuMk.jpg',
     hero_alt: 'colourful projection mapping',
     html: "<p>With the tremendous pace of technology progress, digital revolution has transformed the way businesses work. Many organisations, however, continue to be encumbered by legacy systems that are obsolete, inflexible, and incompatible with the new digital reality. These old systems are commonly referred to as \"dinosaurs\" in today's fast-paced environment because they lack agility, scalability, and resilience. For organisations that want to remain competitive in the digital age, the necessity to modernise or die is increasingly becoming increasingly crucial.</p><p>Legacy systems are often complicated, monolithic, and based on obsolete technology, making them difficult to maintain, upgrade, and integrate with new applications. As a result, these systems can be a major impediment to digital transformation since they impede an organization's agility and flexibility in responding to new market demands, changing consumer expectations, and developing business prospects. Furthermore, because legacy systems are frequently prone to cyber threats and data breaches, they can pose a considerable security risk.</p><p>To address these issues, businesses must implement a modernisation strategy that allows them to transition their outdated systems into contemporary, cloud-native, and resilient architectures. This will necessitate a substantial investment in new technology, people, and procedures that can assist organisations in embracing the future.</p><h2>Strategies to help organisations transform their legacy systems and embrace the future of digital:</h2><h2>Develop a clear roadmap</h2><p>The first stage in modernising old systems is to create a clear roadmap that specifies the modernisation effort's objectives, aims, and priorities. This should involve a detailed assessment of the existing state of the legacy systems, an analysis of the business requirements, and an assessment of the technical feasibility and hazards associated with the modernisation endeavour. The roadmap should also include a detailed plan for the migration process, including dates, resource requirements, and milestones.</p><h2>Adopt a cloud-native approach</h2><p>A cloud-native approach is critical for modernising outdated systems. This strategy entails migrating legacy applications to cloud platforms intended to handle new, distributed architectures. Cloud-native platforms enable organisations to adapt to changing business requirements with the flexibility, scalability, and resilience they require, while minimising the complexity and cost of operating legacy systems. Furthermore, cloud-native platforms provide a diverse set of services and capabilities that can assist organisations in accelerating their digital transformation efforts.</p><h2>Adopt an agile methodology</h2><p>Agile methodology is a collaborative, iterative approach to software development that allows businesses to adjust quickly to changing market demands and consumer needs. This methodology employs cross-functional teams that collaborate closely to build and distribute software in short, iterative cycles. Organisations that use an agile methodology can break down divisions between departments, boost cooperation, and shorten the time-to-market of new apps and services.</p><h2>Invest in DevOps</h2><p>DevOps is a collection of methods that integrates software development and operations to increase software delivery speed, quality, and reliability. Automation, collaboration, and monitoring technologies are used in this method to streamline the software development and deployment process. Organisations that invest in DevOps may expedite the delivery of new apps and features, increase software quality and dependability, and reduce the risk of downtime and outages.</p><h2>Embrace emerging technologies</h2><p>Finally, in order to stay ahead of the competition, businesses must embrace emerging technologies that can help them generate innovation and differentiate themselves. Artificial intelligence (AI), machine learning (ML), and the Internet of Things (IoT) are emerging technologies that can help businesses automate operations, acquire insights from data, and create innovative customer experiences. Organisations may stay ahead of the curve and relevant in the fast-paced digital landscape by embracing these technologies.</p><h2>Final Word</h2><p>To summarise, modernising legacy systems is a technical problem as well as a strategic need for organisations seeking to remain competitive in the digital age. The idea is to start with a clear roadmap that describes the modernisation effort's objectives, aims, and priorities, and then execute the strategy with discipline, agility, and teamwork. The digital future has arrived, and organisations who embrace it will succeed in the new digital landscape.</p>",
   },
@@ -1421,7 +1421,7 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'digital-marketing-for-smes-compelling-brand-experiences-online',
     subtitle:
       'Unleashing Online Success: The Power of Digital Marketing for SMEs',
-    hero_src: 'https://source.unsplash.com/SbzwHkk3wF4/1600x900',
+    hero_src: '/unsplash/SbzwHkk3wF4.jpg',
     hero_alt: 'empty street',
     html: '<p>As more consumers move their shopping habits online, digital marketing has emerged as an essential component of any company&#39;s growth plan. This is especially true for small and medium-sized organisations (SMEs), which may lack the means to compete in traditional marketing channels with larger corporations. We will look at the art of digital marketing and how SMEs may build captivating brand experiences online in this article.</p><h2>Define your brand</h2><p>Before you commence your efforts to market yourself online, you must first understand and know&nbsp;your brand. Your brand ought to function as the foundation for all of your marketing operations, directing everything from your messaging to your visual design. Take the time to create your brand&#39;s personality, values, and unique selling proposition&nbsp;(USP).</p><h2>Create a website that reflects your brand</h2><p>Your website serves as your online storefront and can be the first point of contact between a potential buyer and your business. It is critical that your internet presence reflects the personality and values of your brand. Make sure your website is visually appealing, easy to use, and clearly conveys your USP.</p><h2>Optimise your website for search engines</h2><p>Search engine optimisation (SEO) is the means of boosting your website&#39;s exposure on search engines such as Google. You can enhance the likelihood that your website will be displayed at the top of search engine results pages (SERPs) when potential clients search for keywords related to your business by optimising it for SEO.</p><h2>Leverage social media</h2><p>For SMEs to connect and engage&nbsp;with their target audience, social media is an invaluable instrument. Determine which social media platforms your intended audience prefers and develop a social media plan that reflects your brand&#39;s personality and beliefs. Share useful material on social media, interact with your audience, and advertise your products or services.</p><h2>Use email marketing to nurture leads</h2><p>Email marketing is a powerful tool for nurturing prospects and converting them into customers. Email marketing may be used to deliver valuable content with your subscribers, promote your products or services, and keep your brand at the forefront of their minds. Check that your email marketing initiatives are consistent with the personality and values of your business.</p><h2>Create valuable content</h2><p>Creating valuable content is a great way to raise brand awareness and attract new clients to your website. Blog articles, videos, infographics, and eBooks are a variety of valuable information. Make certain that your content is consistent with your brand&#39;s personality and values, and that it adds value to your target audience.</p><h2>Use paid advertising to reach new audiences</h2><p>Paid advertising can be an effective way for SMEs to reach new audiences and increase sales. Determine which advertising platforms your target audience prefers and develop advertising campaigns that reflect your brand&#39;s personality and values. Monitor your advertising campaigns carefully and make adjustments as needed to improve their success.</p><h2>Monitor and analyse your digital marketing efforts</h2><p>Monitoring and analysing your digital marketing activities is crucial to figuring out what is and is not working. Analyse the efficacy of&nbsp;your website traffic, social media engagement, email marketing performance, and advertising campaign&nbsp;with analytics tools. Make data-driven decisions with this data to maximise your digital marketing efforts over time.</p><h2>Final Word</h2><p>All in all, digital marketing is an essential component of any SME&#39;s growth plan. SMEs can create compelling brand experiences online that attract and retain customers by defining their brand, creating a website that reflects their brand, optimising their website for search engines, leveraging social media, using email marketing to nurture leads, creating valuable content, using paid advertising to reach new audiences, and monitoring and analysing their digital marketing efforts.</p>',
   },
@@ -1434,7 +1434,7 @@ export const MOCK_DIGITAL_POSTS = [
     slug: 'future-brand-marketing-emerging-trends-strategies',
     subtitle:
       'Revolutionizing Brand Marketing: Exploring Emerging Trends and Strategies for Future Success',
-    hero_src: 'https://source.unsplash.com/W1B2LpQOBxA/1600x900',
+    hero_src: '/unsplash/W1B2LpQOBxA.jpg',
     hero_alt: 'person using tablet',
     html: "<p>Brand marketing has always been a vital component of business success, and it has become even more so in recent years. To stay relevant and competitive as the world becomes more digital and consumers grow increasingly demanding, brands must adapt to new trends and strategies. We will look at some of the new trends and game-changing strategies that are defining the future of brand marketing in this article.</p><h2>Personalisation</h2><p>For good reason, personalisation is the new buzzword in brand marketing. Consumers today want a personalised experience that caters to their own requirements and tastes. Brands that can provide this level of service are more likely to earn client loyalty and repeat business.</p><p>Personalisation requires brands to use data and analytics to better understand their customers and create personalised experiences across all touch points be it personalised message, customised information, and personalised product recommendations.</p><h2>Influencer Marketing</h2><p>Influencer marketing has been around for a for a while, but it is now gaining prominence. As consumers become more skeptical of traditional advertising, firms can engage with their target demographic through influencer marketing, which is more honest and relatable.</p><p>Finding suitable influencers that have a deep connection with their followers and can truthfully advocate for a brand's products or services is the key for successful influencer marketing. To minimise backlashes from customer, brands also have to preserve authenticity and openness in their influencer contracts.</p><h2>Customer Experience</h2><p>Customer experience is no longer a nice-to-have, but a must-have in brand marketing. Brands that can provide a seamless, frictionless, and pleasurable customer experiences&nbsp;are more likely to develop customer loyalty and favourable word-of-mouth.</p><p>Brands must focus on all points of contact, from the initial engagement to post-purchase assistance, to create a fantastic customer experience. This includes developing user-friendly websites and apps, offering prompt and effective customer service, and giving personalised recommendations and information.</p><h2>Social Media Marketing</h2><p>Social media marketing is not new, but it is evolving and becoming increasingly vital for the promotion of brands. With billions of people employing social media platforms every day, brands who use such&nbsp;channels efficiently can reach an extensive and motivated audience.</p><p>To be successful with social media marketing, marketers must first understand the specific characteristics and user behaviour of each platform before creating content that resonates with their target audience. To create brand awareness and engagement, brands must also be consistent in their messaging and maintain a strong social media presence.</p><h2>Voice Search Optimisation</h2><p>Voice search has rapidly become the new normal, with an increasing number of people employing voice assistants such as Alexa and Google Home to find information and make purchases. In the future, brands that can optimise their content and websites for voice search will have a significant advantage.</p><p>To optimise for voice search, marketers must provide natural language content that answers frequently asked inquiries and employs long-tail keywords. To capture voice search queries, brands must also ensure that their websites are mobile-friendly and optimised for local search.</p><h2>Sustainability</h2><p>Consumers are increasingly concerned about sustainability, and brands that can demonstrate their commitment to sustainable practices and principles are more likely to acquire customer loyalty. Brands must approach sustainability holistically, taking into account environmental, social, and economic issues.</p><p>Brands must be upfront about their processes and principles, and aggressively communicate their efforts to consumers, in order to demonstrate their commitment to sustainability. Brands must also design environmentally friendly products and packaging, as well as assure an ethical and sustainable supply chain.</p><h2>Video Marketing</h2><p>Video marketing has been a game changer in brand marketing, and it is only growing in importance. With the rise of video-sharing platforms such as YouTube and TikTok, brands who can generate and distribute video content successfully can reach a large and engaged audience.</p><p>Brands must generate compelling and relevant video content that resonates with their target audience in order to thrive in video marketing. Brands must also ensure that their videos are optimised for various platforms and devices, and they must use analytics to track interaction and make any improvements.</p><p>To summarise, the future of brand marketing is continuously changing, and brands that can adapt to new trends and techniques will thrive. By prioritising these techniques, brands can provide their customers with more engaging, relevant, and personalised experiences, ultimately driving commercial success.</p>",
   },
@@ -1757,7 +1757,7 @@ export const MOCK_FINX_POSTS = [
     slug: 'data-engineering-finance-digital-transformation',
     subtitle:
       'Dive into the transformative impact of data engineering on the digital landscape of the finance sector.',
-    hero_src: 'https://source.unsplash.com/wUPnMygSwYk/1600x900',
+    hero_src: '/unsplash/wUPnMygSwYk.jpg',
     hero_alt: 'lasers',
     html:
       '<p>Data&#39;s importance is more important than ever in the age of digital transformation. Data engineering has become a crucial part of this change as financial institutions use technology to improve their services and streamline their business processes. In-depth discussion of data engineering&#39;s importance in the financial industry, its many uses, and its prospects in the rapidly changing financial ecosystem are provided in this article.</p>\n' +
@@ -1788,7 +1788,7 @@ export const MOCK_FINX_POSTS = [
     slug: 'utilizing-machine-learning-for-financial-services',
     subtitle:
       'Dive into the potential of machine learning as it revolutionizes the financial services industry.',
-    hero_src: 'https://source.unsplash.com/pjAH2Ax4uWk/1600x900',
+    hero_src: '/unsplash/pjAH2Ax4uWk.jpg',
     hero_alt: 'person and screen',
     html:
       '<p>As it transitions to utilizing digital technologies, the financial services sector is going through a significant transformation. Machine learning, a branch of artificial intelligence (AI) that is reshaping how financial services operate and provide value to customers, is one of the key tools in this digital revolution. This article investigates the use of machine learning by financial institutions to enhance their offerings.</p>\n' +
@@ -1818,7 +1818,7 @@ export const MOCK_FINX_POSTS = [
     slug: 'impact-fintech-traditional-banking-preparing-workforce-digital-disruption',
     subtitle:
       'Riding the Fintech Wave: Empowering Traditional Banks for Digital Transformation',
-    hero_src: 'https://source.unsplash.com/EMPZ7yRZoGw/1600x900',
+    hero_src: '/unsplash/EMPZ7yRZoGw.jpg',
     hero_alt: 'stocks',
     html:
       '<blockquote>\n' +
@@ -1853,7 +1853,7 @@ export const MOCK_FINX_POSTS = [
     slug: 'fintech-solutions-redefining-financial-ecosystem',
     subtitle:
       'Discover the pivotal role of fintech solution providers in revolutionizing the financial landscape with cutting-edge technologies.',
-    hero_src: 'https://source.unsplash.com/dBI_My696Rk/1600x900',
+    hero_src: '/unsplash/dBI_My696Rk.jpg',
     hero_alt: 'laptop stock market',
     html:
       '<p>The financial industry landscape has undergone a paradigm shift in a time of quick technological advancements and the digital revolution. The emergence of fintech solution providers has transformed the financial sector, bringing with them cutting-edge digital solutions that are modernizing traditional financial services and redefining the financial ecosystem. The function and effects of these fintech solution providers on the financial industry are examined in this article.</p>\n' +
@@ -1902,7 +1902,7 @@ export const MOCK_GOVX_POSTS = [
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',
-    hero_src: 'https://source.unsplash.com/p7av1ZhKGBQ/1600x900',
+    hero_src: '/unsplash/p7av1ZhKGBQ.jpg',
     hero_alt: 'stairs and seats',
     html:
       '<p>The public sector is increasingly using data analytics to boost productivity and effectiveness in the current digital era. Governments around the world are recognising the transformative power of data analytics in optimising public services and decision-making processes. The growing impact of data analytics in the public sector and its potential to transform governance will be discussed in this article.</p>\n' +
@@ -1939,7 +1939,7 @@ export const MOCK_GOVX_POSTS = [
     slug: 'digital-transformation-government-modernising-public-services-21st-century',
     subtitle:
       'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_src: '/unsplash/CQhgno3yhv8.jpg',
     hero_alt: 'singapore',
     html:
       '<blockquote>\n' +
@@ -1974,7 +1974,7 @@ export const MOCK_GOVX_POSTS = [
     slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
-    hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',
+    hero_src: '/unsplash/eLCTitD23xo.jpg',
     hero_alt: 'city at night',
     html:
       '<p>E-Government platforms are becoming increasingly important resources for effective and citizen-focused service delivery as the digital era progresses. This article examines the future of e-Government platforms, highlighting how digital solutions transform governmental processes, increase citizen involvement, and promote transparency in the digital age.</p>\n' +
@@ -2019,7 +2019,7 @@ export const MOCK_GOVX_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: 'https://source.unsplash.com/ccqRivRETCQ/1600x900',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2082,7 +2082,7 @@ export const MOCK_AEL_POSTS = [
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',
-    hero_src: 'https://source.unsplash.com/p7av1ZhKGBQ/1600x900',
+    hero_src: '/unsplash/p7av1ZhKGBQ.jpg',
     hero_alt: 'stairs and seats',
     html:
       '<p>The public sector is increasingly using data analytics to boost productivity and effectiveness in the current digital era. Governments around the world are recognising the transformative power of data analytics in optimising public services and decision-making processes. The growing impact of data analytics in the public sector and its potential to transform governance will be discussed in this article.</p>\n' +
@@ -2119,7 +2119,7 @@ export const MOCK_AEL_POSTS = [
     slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
-    hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',
+    hero_src: '/unsplash/eLCTitD23xo.jpg',
     hero_alt: 'city at night',
     html:
       '<p>E-Government platforms are becoming increasingly important resources for effective and citizen-focused service delivery as the digital era progresses. This article examines the future of e-Government platforms, highlighting how digital solutions transform governmental processes, increase citizen involvement, and promote transparency in the digital age.</p>\n' +
@@ -2165,7 +2165,7 @@ export const MOCK_AEL_POSTS = [
     slug: 'digital-transformation-government-modernising-public-services-21st-century',
     subtitle:
       'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_src: '/unsplash/CQhgno3yhv8.jpg',
     hero_alt: 'singapore',
     html:
       '<blockquote>\n' +
@@ -2217,7 +2217,7 @@ export const MOCK_SRI_POSTS = [
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',
-    hero_src: 'https://source.unsplash.com/p7av1ZhKGBQ/1600x900',
+    hero_src: '/unsplash/p7av1ZhKGBQ.jpg',
     hero_alt: 'stairs and seats',
     html:
       '<p>The public sector is increasingly using data analytics to boost productivity and effectiveness in the current digital era. Governments around the world are recognising the transformative power of data analytics in optimising public services and decision-making processes. The growing impact of data analytics in the public sector and its potential to transform governance will be discussed in this article.</p>\n' +
@@ -2254,7 +2254,7 @@ export const MOCK_SRI_POSTS = [
     slug: 'digital-transformation-government-modernising-public-services-21st-century',
     subtitle:
       'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_src: '/unsplash/CQhgno3yhv8.jpg',
     hero_alt: 'singapore',
     html:
       '<blockquote>\n' +
@@ -2289,7 +2289,7 @@ export const MOCK_SRI_POSTS = [
     slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
-    hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',
+    hero_src: '/unsplash/eLCTitD23xo.jpg',
     hero_alt: 'city at night',
     html:
       '<p>E-Government platforms are becoming increasingly important resources for effective and citizen-focused service delivery as the digital era progresses. This article examines the future of e-Government platforms, highlighting how digital solutions transform governmental processes, increase citizen involvement, and promote transparency in the digital age.</p>\n' +
@@ -2334,7 +2334,7 @@ export const MOCK_SRI_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: 'https://source.unsplash.com/ccqRivRETCQ/1600x900',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2396,7 +2396,7 @@ export const MOCK_GVS_POSTS = [
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',
-    hero_src: 'https://source.unsplash.com/p7av1ZhKGBQ/1600x900',
+    hero_src: '/unsplash/p7av1ZhKGBQ.jpg',
     hero_alt: 'stairs and seats',
     html:
       '<p>The public sector is increasingly using data analytics to boost productivity and effectiveness in the current digital era. Governments around the world are recognising the transformative power of data analytics in optimising public services and decision-making processes. The growing impact of data analytics in the public sector and its potential to transform governance will be discussed in this article.</p>\n' +
@@ -2433,7 +2433,7 @@ export const MOCK_GVS_POSTS = [
     slug: 'digital-transformation-government-modernising-public-services-21st-century',
     subtitle:
       'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_src: '/unsplash/CQhgno3yhv8.jpg',
     hero_alt: 'singapore',
     html:
       '<blockquote>\n' +
@@ -2468,7 +2468,7 @@ export const MOCK_GVS_POSTS = [
     slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
-    hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',
+    hero_src: '/unsplash/eLCTitD23xo.jpg',
     hero_alt: 'city at night',
     html:
       '<p>E-Government platforms are becoming increasingly important resources for effective and citizen-focused service delivery as the digital era progresses. This article examines the future of e-Government platforms, highlighting how digital solutions transform governmental processes, increase citizen involvement, and promote transparency in the digital age.</p>\n' +
@@ -2513,7 +2513,7 @@ export const MOCK_GVS_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: 'https://source.unsplash.com/ccqRivRETCQ/1600x900',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +
@@ -2575,7 +2575,7 @@ export const MOCK_COASTAL_POSTS = [
     slug: 'public-sector-efficiency-rising-influence-data-analytics',
     subtitle:
       'By leveraging data analytics, governments are improving decision-making and efficiency in the public sector and redefining governance in the digital age.',
-    hero_src: 'https://source.unsplash.com/p7av1ZhKGBQ/1600x900',
+    hero_src: '/unsplash/p7av1ZhKGBQ.jpg',
     hero_alt: 'stairs and seats',
     html:
       '<p>The public sector is increasingly using data analytics to boost productivity and effectiveness in the current digital era. Governments around the world are recognising the transformative power of data analytics in optimising public services and decision-making processes. The growing impact of data analytics in the public sector and its potential to transform governance will be discussed in this article.</p>\n' +
@@ -2612,7 +2612,7 @@ export const MOCK_COASTAL_POSTS = [
     slug: 'digital-transformation-government-modernising-public-services-21st-century',
     subtitle:
       'Embracing the digital revolution for efficient and citizen-centric governance',
-    hero_src: 'https://source.unsplash.com/CQhgno3yhv8/1600x900',
+    hero_src: '/unsplash/CQhgno3yhv8.jpg',
     hero_alt: 'singapore',
     html:
       '<blockquote>\n' +
@@ -2647,7 +2647,7 @@ export const MOCK_COASTAL_POSTS = [
     slug: 'future-of-e-government-platforms-digital-solutions',
     subtitle:
       'In the digital age, e-Government platforms are improving service delivery and changing how government functions.',
-    hero_src: 'https://source.unsplash.com/eLCTitD23xo/1600x900',
+    hero_src: '/unsplash/eLCTitD23xo.jpg',
     hero_alt: 'city at night',
     html:
       '<p>E-Government platforms are becoming increasingly important resources for effective and citizen-focused service delivery as the digital era progresses. This article examines the future of e-Government platforms, highlighting how digital solutions transform governmental processes, increase citizen involvement, and promote transparency in the digital age.</p>\n' +
@@ -2692,7 +2692,7 @@ export const MOCK_COASTAL_POSTS = [
     slug: 'embracing-digitalization-strategies-for-modernizing-public-sector-services',
     subtitle:
       'Transforming the Public Sector: Embracing Digitalization to Enhance Services and Citizen Engagement',
-    hero_src: 'https://source.unsplash.com/ccqRivRETCQ/1600x900',
+    hero_src: '/unsplash/2BMSj-xN008.jpg',
     hero_alt: 'desert with shadows',
     html:
       '<p>The public sector is realizing how crucial it is to embrace digitalization in order to modernize its services and satisfy citizens&#39; shifting needs in today&#39;s rapidly changing digital landscape. Governments can boost efficiency, improve service delivery, and encourage citizen engagement by utilizing digital technologies and creative strategies. In addition to highlighting the advantages and difficulties of this transformation, this article investigates the essential approaches for successfully embracing digitalization in the public sector.</p>\n' +

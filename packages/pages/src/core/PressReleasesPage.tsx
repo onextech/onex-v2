@@ -1,4 +1,4 @@
-import type { PressRelease } from '@gravis-os/types'
+import type { PressRelease } from '@onex/types'
 
 import React from 'react'
 
@@ -7,7 +7,7 @@ import {
   RenderPostBlockItemProps,
   renderPostBlockItem,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import orderBy from 'lodash/orderBy'
 
 export interface PressReleasesPageProps {
@@ -40,7 +40,7 @@ const PressReleasesPage: React.FC<PressReleasesPageProps> = (props) => {
               type: 'subtitle1',
             },
             {
-              title: 'https://source.unsplash.com/c5QdMcuFlgY/1600x900',
+              title: '/unsplash/c5QdMcuFlgY.jpg',
               disableContainer: true,
               titleProps: {
                 alt: 'Person looking at a wall of newspapers',

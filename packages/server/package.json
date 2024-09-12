@@ -2,9 +2,6 @@
   "name": "@onex/server",
   "version": "0.0.0",
   "sideEffects": false,
-  "scripts": {
-    "local:unlink": "yalc remove --all"
-  },
   "dependencies": {
     "dayjs": "^1.11.7"
   }

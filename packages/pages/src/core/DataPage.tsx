@@ -7,8 +7,8 @@ import {
   renderHalfGridBlock,
   renderHeroWithBackgroundBlock,
   useLayout,
-} from '@gravis-os/landing'
-import { Page, Showcase } from '@gravis-os/types'
+} from '@onex/landing'
+import { Page, Showcase } from '@onex/types'
 
 export interface DataPageProps {
   page: Page

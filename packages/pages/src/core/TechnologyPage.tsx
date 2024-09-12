@@ -1,4 +1,4 @@
-import type { Post, Technology } from '@gravis-os/types'
+import type { Post, Technology } from '@onex/types'
 
 import React from 'react'
 
@@ -11,7 +11,7 @@ import {
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 import GetStartedPage from './GetStartedPage'
 

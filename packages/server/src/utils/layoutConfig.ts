@@ -13,54 +13,24 @@ import {
   MOCK_TECHNOLOGYS,
   MOCK_WORKSPACES,
 } from '@onex/mocks'
-import {
-  Site,
-  ClientLogo,
-  ClientHighlight,
-  ClientTestimonial,
-  Industry,
-  Page,
-  PostCategory,
-  ServiceCategory,
-  Service,
-  Technology,
-  Workspace,
-  Showcase,
-  PressRelease,
-} from '@gravis-os/types'
+
+import { LayoutConfig } from '../nextjs'
 
 const { MOCK_KEY = '' } = process.env
 
-export interface LayoutConfig {
-  routeConfig?: Record<string, string>
-  site?: Site
-  clientLogos?: ClientLogo[]
-  clientHighlights?: ClientHighlight[]
-  clientTestimonials?: ClientTestimonial[]
-  industrys?: Industry[]
-  pages?: Page[]
-  postCategorys?: PostCategory[]
-  serviceCategorys?: ServiceCategory[]
-  services?: Service[]
-  technologys?: Technology[]
-  showcases?: Showcase[]
-  workspaces?: Workspace[]
-  pressReleases?: PressRelease[]
-}
-
 const layoutConfig: LayoutConfig = {
-  routeConfig,
-  site: MOCK_SITE[MOCK_KEY],
-  clientLogos: MOCK_CLIENT_LOGOS[MOCK_KEY],
   clientHighlights: MOCK_CLIENT_HIGHLIGHTS[MOCK_KEY],
+  clientLogos: MOCK_CLIENT_LOGOS[MOCK_KEY],
   clientTestimonials: MOCK_CLIENT_TESTIMONIALS[MOCK_KEY],
   industrys: MOCK_INDUSTRYS[MOCK_KEY],
   pages: MOCK_PAGES[MOCK_KEY],
   postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
+  routeConfig,
   serviceCategorys: MOCK_SERVICE_CATEGORYS[MOCK_KEY],
   services: MOCK_SERVICES[MOCK_KEY],
-  technologys: MOCK_TECHNOLOGYS[MOCK_KEY],
   showcases: MOCK_SHOWCASES[MOCK_KEY],
+  site: MOCK_SITE[MOCK_KEY],
+  technologys: MOCK_TECHNOLOGYS[MOCK_KEY],
   workspaces: MOCK_WORKSPACES[MOCK_KEY],
 }
 

@@ -1,8 +1,7 @@
 import React from 'react'
 
 import { LandingLayout } from '@app/layouts'
-import { PageProvider } from '@gravis-os/landing'
-import { Page } from '@gravis-os/types'
+import { PageProvider } from '@onex/landing'
 import { MOCK_GROUP_INDUSTRYS } from '@onex/mocks'
 import { EcosystemPage } from '@onex/pages'
 import {
@@ -10,6 +9,7 @@ import {
   getDynamicPage,
   getStaticPropsWithLayout,
 } from '@onex/server'
+import { Page } from '@onex/types'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export const getStaticProps: GetStaticProps = (context) => {

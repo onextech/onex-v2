@@ -5,8 +5,8 @@ import {
   ContactForm,
   renderContactLinksBlockItems,
   useLayout,
-} from '@gravis-os/landing'
-import { Image } from '@gravis-os/ui'
+} from '@onex/landing'
+import { Image } from '@onex/ui'
 
 export interface ContactPageProps {
   fullScreen?: boolean

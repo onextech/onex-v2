@@ -3,12 +3,12 @@ import { Toaster } from 'react-hot-toast'
 
 import { darkTheme, lightTheme } from '@app/theme'
 import { EmotionCache } from '@emotion/react'
-import { GravisProvider } from '@gravis-os/config'
+import { GravisProvider } from '@onex/config'
 import {
   ThemeProvider,
   UserPreferencesProvider,
   createEmotionCache,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 

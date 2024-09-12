@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Blocks, useLayout } from '@gravis-os/landing'
+import { Blocks, useLayout } from '@onex/landing'
 
 export interface LegalPageProps {
   html?: string

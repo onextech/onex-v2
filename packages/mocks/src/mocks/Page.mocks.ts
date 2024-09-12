@@ -1,4 +1,4 @@
-import { Page } from '@gravis-os/types'
+import { Page } from '@onex/types'
 import { routeConfig } from '@onex/common'
 import merge from 'lodash/merge'
 
@@ -1245,14 +1245,14 @@ const MOCK_GROUP_PAGES = [
       hero: {
         title: 'Shape The Future of Enterprise Software with Us',
         hero_alt: 'headphone dude',
-        hero_src: 'https://source.unsplash.com/QckxruozjRg/1600x900',
+        hero_src: '/unsplash/QckxruozjRg.jpg',
         overline: 'Careers',
       },
       summary: {
         title:
           "Join Our Dynamic Team Crafting Tomorrow's Technological Innovations",
         hero_alt: 'brainstorm room',
-        hero_src: 'https://source.unsplash.com/2pPw5Glro5I/1600x900',
+        hero_src: '/unsplash/2pPw5Glro5I.jpg',
         subtitle:
           'We are fuelled by our goal to enhance lives through the groundbreaking products we conceive and develop. We seek individuals who are dedicated to delivering excellence and have the drive to elevate products to extraordinary heights.',
       },
@@ -2269,14 +2269,14 @@ export const MOCK_DATA_PAGES = [
       hero: {
         title: 'Transform Industries with Cutting-Edge Data and AI Expertise',
         hero_alt: 'dark office',
-        hero_src: 'https://source.unsplash.com/VBLHICVh-lI/1600x900',
+        hero_src: '/unsplash/VBLHICVh-lI.jpg',
         overline: 'Careers',
       },
       summary: {
         title:
           'Join Our Team and Start Revolutionising Data-driven Innovation Today',
         hero_alt: 'glasses guy laptop',
-        hero_src: 'https://source.unsplash.com/CPs2X8JYmS8/1600x900',
+        hero_src: '/unsplash/CPs2X8JYmS8.jpg',
         subtitle:
           'We’re fuelled by our goal to transform industries through innovative data-driven technologies. We seek individuals with a passion for excellence and a proactive drive to create exceptional products in the realm of data and AI.',
       },
@@ -2732,13 +2732,13 @@ export const MOCK_DESIGN_PAGES = [
       hero: {
         title: 'Revolutionise Digital Experiences with Us',
         hero_alt: 'meeting room',
-        hero_src: 'https://source.unsplash.com/qCi_MzVODoU/1600x900',
+        hero_src: '/unsplash/qCi_MzVODoU.jpg',
         overline: 'Careers',
       },
       summary: {
         title: 'Transform the Digital Landscape and Design the Future',
         hero_alt: 'hand gestures',
-        hero_src: 'https://source.unsplash.com/5QgIuuBxKwM/1600x900',
+        hero_src: '/unsplash/5QgIuuBxKwM.jpg',
         subtitle:
           'Our relentless pursuit of enhancing lives through our expertly crafted and tailored products drives us forward. We seek individuals dedicated to excellence, empowering them to take the lead in creating exceptional solutions.',
       },

@@ -8,8 +8,8 @@ import {
   renderFeaturedNewsBlock,
   renderHeroWithVideoBackgroundBlock,
   useLayout,
-} from '@gravis-os/landing'
-import { Industry, Page, Post, PressRelease, Showcase } from '@gravis-os/types'
+} from '@onex/landing'
+import { Industry, Page, Post, PressRelease, Showcase } from '@onex/types'
 import { routeConfig } from '@onex/common'
 
 export interface AelPageProps {

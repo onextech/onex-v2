@@ -1,4 +1,4 @@
-import type { Resource } from '@gravis-os/types'
+import type { Resource } from '@onex/types'
 
 import React from 'react'
 
@@ -9,7 +9,7 @@ import {
   renderFourColumnGridBlock,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface ResourcePageProps {
   resource: Resource

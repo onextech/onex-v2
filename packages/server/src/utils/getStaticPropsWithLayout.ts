@@ -1,4 +1,4 @@
-import { makeGetStaticPropsWithLayout } from '@gravis-os/landing/server'
+import { makeGetStaticPropsWithLayout } from '../nextjs'
 import layoutConfig from './layoutConfig'
 
 /**

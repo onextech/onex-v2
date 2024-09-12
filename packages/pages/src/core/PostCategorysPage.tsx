@@ -1,4 +1,4 @@
-import type { Post, PostCategory } from '@gravis-os/types'
+import type { Post, PostCategory } from '@onex/types'
 
 import React from 'react'
 
@@ -7,8 +7,8 @@ import {
   RenderPostCategoryBlockItemProps,
   renderPostCategoryBlockItem,
   useLayout,
-} from '@gravis-os/landing'
-import { getCategoryWithItemsAndHref } from '@gravis-os/utils'
+} from '@onex/landing'
+import { getCategoryWithItemsAndHref } from '@onex/utils'
 import chunk from 'lodash/chunk'
 
 export interface PostCategorysPageProps {

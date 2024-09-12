@@ -5,7 +5,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'accelerate-development',
     subtitle:
       'Seamlessly streamline your development workflow and accelerate time-to-market.',
-    hero_src: 'https://source.unsplash.com/NqOInJ-ttqM/1600x900',
+    hero_src: '/unsplash/NqOInJ-ttqM.jpg',
     hero_alt: 'Light streaks from a fast car',
   },
   {
@@ -14,7 +14,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     slug: 'modern-frontend-engineering',
     subtitle:
       'Develop rich user interfaces using modern technologies and frameworks.',
-    hero_src: 'https://source.unsplash.com/LJ9KY8pIH3E/1600x900',
+    hero_src: '/unsplash/LJ9KY8pIH3E.jpg',
     hero_alt: 'Two monitors in the dark',
   },
   {
@@ -22,7 +22,7 @@ export const MOCK_TECH_SERVICE_CATEGORYS = [
     title: 'Product Team Augmentation',
     slug: 'product-team-augmentation',
     subtitle: 'Reach product goals with engaged software development experts.',
-    hero_src: 'https://source.unsplash.com/XkKCui44iM0/1600x900',
+    hero_src: '/unsplash/XkKCui44iM0.jpg',
     hero_alt: 'Group working on a laptop together',
   },
 ]
@@ -34,7 +34,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'advisory',
     subtitle:
       "Unlock growth and success with One X Group's business advisory services.",
-    hero_src: 'https://source.unsplash.com/w79mIrYKcK4/1600x900',
+    hero_src: '/unsplash/w79mIrYKcK4.jpg',
     hero_alt: 'Group working on a laptop together',
   },
   {
@@ -43,7 +43,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'engineering',
     subtitle:
       'Engage our engineering services for insights, innovation, and data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/EUsVwEOsblE/1600x900',
+    hero_src: '/unsplash/EUsVwEOsblE.jpg',
     hero_alt: 'Lit up electronics diagram',
   },
   {
@@ -52,7 +52,7 @@ export const MOCK_GROUP_SERVICE_CATEGORYS = [
     slug: 'data',
     subtitle:
       'Data services that drive growth. Gain insights, make informed decisions.',
-    hero_src: 'https://source.unsplash.com/FXFz-sW0uwo/1600x900',
+    hero_src: '/unsplash/FXFz-sW0uwo.jpg',
     hero_alt: 'Laptop with source code',
   },
 ]
@@ -64,7 +64,7 @@ export const MOCK_DATA_SERVICE_CATEGORYS = [
     slug: 'ai-solutions',
     subtitle:
       'Building tailored AI models, automating processes, and providing strategic advisory for transformative business intelligence.',
-    hero_src: 'https://source.unsplash.com/LaKwLAmcnBc/1600x900',
+    hero_src: '/unsplash/LaKwLAmcnBc.jpg',
     hero_alt: 'Neuroscience art',
   },
   {
@@ -73,7 +73,7 @@ export const MOCK_DATA_SERVICE_CATEGORYS = [
     slug: 'data-engineering',
     subtitle:
       'Designing robust data warehousing, integration, and big data solutions for efficient storage, retrieval, and analysis.',
-    hero_src: 'https://source.unsplash.com/f4pUuCc3M0g/1600x900',
+    hero_src: '/unsplash/f4pUuCc3M0g.jpg',
     hero_alt: 'Laptop displaying graph of datapoints',
   },
   {
@@ -82,7 +82,7 @@ export const MOCK_DATA_SERVICE_CATEGORYS = [
     slug: 'data-strategy',
     subtitle:
       'Crafting holistic data management plans, governance, and value analysis to empower data-driven decision-making.',
-    hero_src: 'https://source.unsplash.com/mcSDtbWXUZU/1600x900',
+    hero_src: '/unsplash/mcSDtbWXUZU.jpg',
     hero_alt: 'Laptop with statistics on sofa',
   },
 ]
@@ -93,7 +93,7 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     title: 'Design Strategy',
     slug: 'design-strategy',
     subtitle: 'Providing user-centric solutions at enterprise scale and speed.',
-    hero_src: 'https://source.unsplash.com/CGpifH3FjOA/1600x900',
+    hero_src: '/unsplash/CGpifH3FjOA.jpg',
     hero_alt: 'Man writing on black pad',
   },
   {
@@ -102,7 +102,7 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'enterprise-design-system',
     subtitle:
       'Maximizing enterprise value through comprehensive system building.',
-    hero_src: 'https://source.unsplash.com/4sRFTaQSM8Q/1600x900',
+    hero_src: '/unsplash/4sRFTaQSM8Q.jpg',
     hero_alt: 'White block stack',
   },
   {
@@ -111,7 +111,7 @@ export const MOCK_DESIGN_SERVICE_CATEGORYS = [
     slug: 'ui-ux-design',
     subtitle:
       'Emphasizing human-centered outcomes, creating relationship-driven experiences.',
-    hero_src: 'https://source.unsplash.com/xzzgY__zX8A/1600x900',
+    hero_src: '/unsplash/xzzgY__zX8A.jpg',
     hero_alt: 'Paper with wireframe sketches',
   },
 ]
@@ -123,7 +123,7 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'enterprise-digital-strategy',
     subtitle:
       'Drive digital transformation and empower business growth with our comprehensive strategies.',
-    hero_src: 'https://source.unsplash.com/wGICoyAhEs4/1600x900',
+    hero_src: '/unsplash/wGICoyAhEs4.jpg',
     hero_alt: 'Purple light shining',
   },
   {
@@ -132,7 +132,7 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'specialized-b2b-digital-marketing',
     subtitle:
       'Elevate your marketing efforts with our specialized services tailored to your business needs.',
-    hero_src: 'https://source.unsplash.com/PGdW_bHDbpI/1600x900',
+    hero_src: '/unsplash/PGdW_bHDbpI.jpg',
     hero_alt: '3D rendered art',
   },
   {
@@ -141,7 +141,7 @@ export const MOCK_DIGITAL_SERVICE_CATEGORYS = [
     slug: 'advanced-web-development-and-analytics',
     subtitle:
       'Maximize the full potential of your online presence with our web solutions.',
-    hero_src: 'https://source.unsplash.com/-fW75WfpAfc/1600x900',
+    hero_src: '/unsplash/-fW75WfpAfc.jpg',
     hero_alt: 'Wall with orange neon lights',
   },
 ]
@@ -153,7 +153,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     slug: 'digital-transformation-consulting',
     subtitle:
       'Harness the power of technology to streamline processes, enhance customer experiences, and drive innovation.',
-    hero_src: 'https://source.unsplash.com/nOkWMjfMhnc/1600x900',
+    hero_src: '/unsplash/nOkWMjfMhnc.jpg',
     hero_alt: 'Blue circular design',
   },
   {
@@ -162,7 +162,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     slug: 'operations-and-business-processes',
     subtitle:
       'Optimize your financial processes with our expertise in streamlining workflows.',
-    hero_src: 'https://source.unsplash.com/gdU9NcMLg-M/1600x900',
+    hero_src: '/unsplash/gdU9NcMLg-M.jpg',
     hero_alt: 'Black and white spiral art',
   },
   {
@@ -171,7 +171,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     slug: 'investment-analysis-and-management',
     subtitle:
       'Investment services tailored to your financial goals and risk appetite.',
-    hero_src: 'https://source.unsplash.com/ZGjbiukp_-A/1600x900',
+    hero_src: '/unsplash/ZGjbiukp_-A.jpg',
     hero_alt: 'Skyscrapers',
   },
   {
@@ -179,7 +179,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     title: 'RegTech Solutions',
     slug: 'regtech-solutions',
     subtitle: 'Simplify and automate your regulatory processes.',
-    hero_src: 'https://source.unsplash.com/orl3NGDKOnI/1600x900',
+    hero_src: '/unsplash/orl3NGDKOnI.jpg',
     hero_alt: 'Tunnel art',
   },
   {
@@ -188,7 +188,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     slug: 'wealth-management',
     subtitle:
       'Grow and protect your wealth with our comprehensive wealth management services.',
-    hero_src: 'https://source.unsplash.com/lCPhGxs7pww/1600x900',
+    hero_src: '/unsplash/lCPhGxs7pww.jpg',
     hero_alt: 'American dollar bills',
   },
   {
@@ -197,7 +197,7 @@ export const MOCK_FINX_SERVICE_CATEGORYS = [
     slug: 'engineering-solutions',
     subtitle:
       'Unlock innovative solutions to drive efficiency and maximize performance in your operations.',
-    hero_src: 'https://source.unsplash.com/3JjnYjHCK0c/1600x900',
+    hero_src: '/unsplash/3JjnYjHCK0c.jpg',
     hero_alt: '3d illustration of an abstract geometric shape',
   },
 ]
@@ -209,7 +209,7 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     slug: 'digital-service-delivery',
     subtitle:
       'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
-    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_src: '/unsplash/NqJYQ3m_rVA.jpg',
     hero_alt: 'Star trail',
   },
   {
@@ -218,7 +218,7 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     slug: 'ai-process-automation',
     subtitle:
       'Transform and automate complex processes through leveraging AI technologies.',
-    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_src: '/unsplash/9l98kFByiao.jpg',
     hero_alt: '3D rendered cubes',
   },
   {
@@ -226,7 +226,7 @@ export const MOCK_GOVX_SERVICE_CATEGORYS = [
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
     subtitle: 'Uncover actionable insights and make data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_src: '/unsplash/dQDDMWgvotg.jpg',
     hero_alt: 'Purple and blue light design',
   },
 ]
@@ -238,7 +238,7 @@ export const MOCK_AEL_SERVICE_CATEGORYS = [
     slug: 'digital-service-delivery',
     subtitle:
       'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
-    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_src: '/unsplash/NqJYQ3m_rVA.jpg',
     hero_alt: 'Star trail',
   },
   {
@@ -247,7 +247,7 @@ export const MOCK_AEL_SERVICE_CATEGORYS = [
     slug: 'ai-process-automation',
     subtitle:
       'Transform and automate complex processes through leveraging AI technologies.',
-    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_src: '/unsplash/9l98kFByiao.jpg',
     hero_alt: '3D rendered cubes',
   },
   {
@@ -255,7 +255,7 @@ export const MOCK_AEL_SERVICE_CATEGORYS = [
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
     subtitle: 'Uncover actionable insights and make data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_src: '/unsplash/dQDDMWgvotg.jpg',
     hero_alt: 'Purple and blue light design',
   },
 ]
@@ -266,7 +266,7 @@ export const MOCK_SRI_SERVICE_CATEGORYS = [
     slug: 'digital-service-delivery',
     subtitle:
       'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
-    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_src: '/unsplash/NqJYQ3m_rVA.jpg',
     hero_alt: 'Star trail',
   },
   {
@@ -275,7 +275,7 @@ export const MOCK_SRI_SERVICE_CATEGORYS = [
     slug: 'ai-process-automation',
     subtitle:
       'Transform and automate complex processes through leveraging AI technologies.',
-    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_src: '/unsplash/9l98kFByiao.jpg',
     hero_alt: '3D rendered cubes',
   },
   {
@@ -283,7 +283,7 @@ export const MOCK_SRI_SERVICE_CATEGORYS = [
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
     subtitle: 'Uncover actionable insights and make data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_src: '/unsplash/dQDDMWgvotg.jpg',
     hero_alt: 'Purple and blue light design',
   },
 ]
@@ -294,7 +294,7 @@ export const MOCK_GVS_SERVICE_CATEGORYS = [
     slug: 'digital-service-delivery',
     subtitle:
       'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
-    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_src: '/unsplash/NqJYQ3m_rVA.jpg',
     hero_alt: 'Star trail',
   },
   {
@@ -303,7 +303,7 @@ export const MOCK_GVS_SERVICE_CATEGORYS = [
     slug: 'ai-process-automation',
     subtitle:
       'Transform and automate complex processes through leveraging AI technologies.',
-    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_src: '/unsplash/9l98kFByiao.jpg',
     hero_alt: '3D rendered cubes',
   },
   {
@@ -311,7 +311,7 @@ export const MOCK_GVS_SERVICE_CATEGORYS = [
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
     subtitle: 'Uncover actionable insights and make data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_src: '/unsplash/dQDDMWgvotg.jpg',
     hero_alt: 'Purple and blue light design',
   },
 ]
@@ -322,7 +322,7 @@ export const MOCK_COASTAL_SERVICE_CATEGORYS = [
     slug: 'digital-service-delivery',
     subtitle:
       'Streamline and enhance the delivery of digital services with our comprehensive solutions.',
-    hero_src: 'https://source.unsplash.com/NqJYQ3m_rVA/1600x900',
+    hero_src: '/unsplash/NqJYQ3m_rVA.jpg',
     hero_alt: 'Star trail',
   },
   {
@@ -331,7 +331,7 @@ export const MOCK_COASTAL_SERVICE_CATEGORYS = [
     slug: 'ai-process-automation',
     subtitle:
       'Transform and automate complex processes through leveraging AI technologies.',
-    hero_src: 'https://source.unsplash.com/9l98kFByiao/1600x900',
+    hero_src: '/unsplash/9l98kFByiao.jpg',
     hero_alt: '3D rendered cubes',
   },
   {
@@ -339,7 +339,7 @@ export const MOCK_COASTAL_SERVICE_CATEGORYS = [
     title: 'Advanced Public Sector Analytics',
     slug: 'advanced-public-sector-analytics',
     subtitle: 'Uncover actionable insights and make data-driven decisions.',
-    hero_src: 'https://source.unsplash.com/dQDDMWgvotg/1600x900',
+    hero_src: '/unsplash/dQDDMWgvotg.jpg',
     hero_alt: 'Purple and blue light design',
   },
 ]

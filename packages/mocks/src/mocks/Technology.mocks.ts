@@ -1,4 +1,4 @@
-import { Technology } from '@gravis-os/types'
+import { Technology } from '@onex/types'
 import merge from 'lodash/merge'
 
 export const MOCK_TECHNOLOGY_PAGE = {
@@ -145,7 +145,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_active: true,
     subtitle:
       'Leverage the power of JavaScript to build interactive and dynamic web applications.',
-    hero_src: 'https://source.unsplash.com/1IW4HQuauSU/1600x900',
+    hero_src: '/unsplash/1IW4HQuauSU.jpg',
     hero_alt: 'JavaScript codes',
     // Seo
     seo: {
@@ -282,7 +282,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_featured: true,
     is_active: true,
     subtitle: 'Enhance your frontend development with TypeScript.',
-    hero_src: 'https://source.unsplash.com/xrVDYZRGdw4/1600x900',
+    hero_src: '/unsplash/xrVDYZRGdw4.jpg',
     hero_alt: 'Laptop with codes on a desk',
     // Seo
     seo: {
@@ -431,7 +431,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_alt: 'React logo',
     subtitle:
       'Harness the power of React to build dynamic and interactive user interfaces for your enterprise applications.',
-    hero_src: 'https://source.unsplash.com/xkBaqlcqeb4/1600x900',
+    hero_src: '/unsplash/xkBaqlcqeb4.jpg',
     hero_alt: 'React Development coding screen',
     // Seo
     seo: {
@@ -583,7 +583,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_active: true,
     subtitle:
       'Take your frontend software engineering to the next level with Next.js.',
-    hero_src: 'https://source.unsplash.com/EUzk9BIEq6M/1600x900',
+    hero_src: '/unsplash/EUzk9BIEq6M.jpg',
     hero_alt: 'Next.js Development',
     // Seo
     seo: {
@@ -735,7 +735,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_active: true,
     subtitle:
       'Leverage the power of Node.js to build scalable and efficient backend solutions for your enterprise applications.',
-    hero_src: 'https://source.unsplash.com/0qvBNep1Y04/1600x900',
+    hero_src: '/unsplash/0qvBNep1Y04.jpg',
     hero_alt: 'Desk setup with monitor showing codes',
     // Seo
     seo: {
@@ -882,7 +882,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_featured: true,
     is_active: true,
     subtitle: 'Optimize your frontend development workflow with Webpack.',
-    hero_src: 'https://source.unsplash.com/EJSaEnVvZcg/1600x900',
+    hero_src: '/unsplash/EJSaEnVvZcg.jpg',
     hero_alt: 'Webpack codes',
     // Seo
     seo: {
@@ -1030,7 +1030,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_active: true,
     subtitle:
       'Enhance your frontend architecture with Module Federation and build scalable, modular applications.',
-    hero_src: 'https://source.unsplash.com/26MJGnCM0Wc/1600x900',
+    hero_src: '/unsplash/26MJGnCM0Wc.jpg',
     hero_alt: 'People writing on a whiteboard',
     // Seo
     seo: {
@@ -1179,7 +1179,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     is_active: true,
     subtitle:
       'Build scalable and efficient frontend applications using Nx Monorepo.',
-    hero_src: 'https://source.unsplash.com/m_HRfLhgABo/1600x900',
+    hero_src: '/unsplash/m_HRfLhgABo.jpg',
     hero_alt: 'Frontend Development',
     // Seo
     seo: {
@@ -1327,7 +1327,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     avatar_height: 60,
     subtitle:
       'Reliable infrastructure for building frontend software engineering and dashboard development projects.',
-    hero_src: 'https://source.unsplash.com/HIctpU2PA8E/1600x900',
+    hero_src: '/unsplash/HIctpU2PA8E.jpg',
     hero_alt: 'Amazon logo with desk setup',
     // Seo
     seo: {
@@ -1521,7 +1521,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'python',
     subtitle:
       'Build robust, scalable, and efficient data and AI solutions with Python.',
-    hero_src: 'https://source.unsplash.com/zGuBURGGmdY/1600x900',
+    hero_src: '/unsplash/zGuBURGGmdY.jpg',
     hero_alt: 'Code through spectacle lens',
     // Sections
     sections: {
@@ -1637,7 +1637,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Harness the power of a leading web technology to deliver dynamic, efficient, and high-performing enterprise applications.',
-    hero_src: 'https://source.unsplash.com/Agx5_TLsIf4/1600x900',
+    hero_src: '/unsplash/Agx5_TLsIf4.jpg',
     hero_alt: 'Working on code',
     // Sections
     sections: {
@@ -1765,7 +1765,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'sql',
     subtitle:
       'Leverage the power of SQL for optimized data management and informed decision-making.',
-    hero_src: 'https://source.unsplash.com/fPkvU7RDmCo/1600x900',
+    hero_src: '/unsplash/fPkvU7RDmCo.jpg',
     hero_alt: 'Code on laptop',
     // Sections
     sections: {
@@ -1880,7 +1880,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'nosql',
     subtitle:
       'Harness the power of flexible, scalable, and efficient NoSQL databases for your enterprise data needs.',
-    hero_src: 'https://source.unsplash.com/QQ9LainS6tI/1600x900',
+    hero_src: '/unsplash/QQ9LainS6tI.jpg',
     hero_alt: 'Coding with black and white filter',
     // Sections
     sections: {
@@ -1995,7 +1995,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'chatgpt',
     subtitle:
       'Leverage the power of ChatGPT to transform enterprise data and AI solutions, providing intelligent conversational agents and advanced natural language processing capabilities.',
-    hero_src: 'https://source.unsplash.com/oLthDWAG244/1600x900',
+    hero_src: '/unsplash/oLthDWAG244.jpg',
     hero_alt: 'ChatGPT description screen',
     // Sections
     sections: {
@@ -2127,7 +2127,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     avatar_height: 46,
     subtitle:
       'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
-    hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
+    hero_src: '/unsplash/UTw3j_aoIKM.jpg',
     hero_alt: 'Lady working on phone and laptop',
     // Sections
     sections: {
@@ -2255,7 +2255,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     slug: 'tableau',
     subtitle:
       'Harness the power of data visualization with Tableau to gain actionable insights and make informed business decisions.',
-    hero_src: 'https://source.unsplash.com/eveI7MOcSmw/1600x900',
+    hero_src: '/unsplash/eveI7MOcSmw.jpg',
     hero_alt: 'Analytics overview report',
     // Sections
     sections: {
@@ -2384,7 +2384,7 @@ export const MOCK_DATA_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     subtitle:
       'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
-    hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
+    hero_src: '/unsplash/hC_796Wu-VY.jpg',
     hero_alt: 'Person sitting at desk taking notes',
     // Sections
     sections: {
@@ -2524,7 +2524,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'python',
     subtitle:
       'Build robust, scalable, and efficient data and AI solutions with Python.',
-    hero_src: 'https://source.unsplash.com/zGuBURGGmdY/1600x900',
+    hero_src: '/unsplash/zGuBURGGmdY.jpg',
     hero_alt: 'Code through spectacle lens',
     // Sections
     sections: {
@@ -2640,7 +2640,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Harness the power of a leading web technology to deliver dynamic, efficient, and high-performing enterprise applications.',
-    hero_src: 'https://source.unsplash.com/Agx5_TLsIf4/1600x900',
+    hero_src: '/unsplash/Agx5_TLsIf4.jpg',
     hero_alt: 'Working on code',
     // Sections
     sections: {
@@ -2768,7 +2768,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'sql',
     subtitle:
       'Leverage the power of SQL for optimized data management and informed decision-making.',
-    hero_src: 'https://source.unsplash.com/fPkvU7RDmCo/1600x900',
+    hero_src: '/unsplash/fPkvU7RDmCo.jpg',
     hero_alt: 'Code on laptop',
     // Sections
     sections: {
@@ -2883,7 +2883,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'nosql',
     subtitle:
       'Harness the power of flexible, scalable, and efficient NoSQL databases for your enterprise data needs.',
-    hero_src: 'https://source.unsplash.com/QQ9LainS6tI/1600x900',
+    hero_src: '/unsplash/QQ9LainS6tI.jpg',
     hero_alt: 'Coding with black and white filter',
     // Sections
     sections: {
@@ -2998,7 +2998,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'chatgpt',
     subtitle:
       'Leverage the power of ChatGPT to transform enterprise data and AI solutions, providing intelligent conversational agents and advanced natural language processing capabilities.',
-    hero_src: 'https://source.unsplash.com/oLthDWAG244/1600x900',
+    hero_src: '/unsplash/oLthDWAG244.jpg',
     hero_alt: 'ChatGPT description screen',
     // Sections
     sections: {
@@ -3130,7 +3130,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     avatar_height: 46,
     subtitle:
       'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
-    hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
+    hero_src: '/unsplash/UTw3j_aoIKM.jpg',
     hero_alt: 'Lady working on phone and laptop',
     // Sections
     sections: {
@@ -3258,7 +3258,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     slug: 'tableau',
     subtitle:
       'Harness the power of data visualization with Tableau to gain actionable insights and make informed business decisions.',
-    hero_src: 'https://source.unsplash.com/eveI7MOcSmw/1600x900',
+    hero_src: '/unsplash/eveI7MOcSmw.jpg',
     hero_alt: 'Analytics overview report',
     // Sections
     sections: {
@@ -3387,7 +3387,7 @@ export const MOCK_AEL_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     subtitle:
       'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
-    hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
+    hero_src: '/unsplash/hC_796Wu-VY.jpg',
     hero_alt: 'Person sitting at desk taking notes',
     // Sections
     sections: {
@@ -3526,7 +3526,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'python',
     subtitle:
       'Build robust, scalable, and efficient data and AI solutions with Python.',
-    hero_src: 'https://source.unsplash.com/zGuBURGGmdY/1600x900',
+    hero_src: '/unsplash/zGuBURGGmdY.jpg',
     hero_alt: 'Code through spectacle lens',
     // Sections
     sections: {
@@ -3642,7 +3642,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Harness the power of a leading web technology to deliver dynamic, efficient, and high-performing enterprise applications.',
-    hero_src: 'https://source.unsplash.com/Agx5_TLsIf4/1600x900',
+    hero_src: '/unsplash/Agx5_TLsIf4.jpg',
     hero_alt: 'Working on code',
     // Sections
     sections: {
@@ -3770,7 +3770,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'sql',
     subtitle:
       'Leverage the power of SQL for optimized data management and informed decision-making.',
-    hero_src: 'https://source.unsplash.com/fPkvU7RDmCo/1600x900',
+    hero_src: '/unsplash/fPkvU7RDmCo.jpg',
     hero_alt: 'Code on laptop',
     // Sections
     sections: {
@@ -3885,7 +3885,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'nosql',
     subtitle:
       'Harness the power of flexible, scalable, and efficient NoSQL databases for your enterprise data needs.',
-    hero_src: 'https://source.unsplash.com/QQ9LainS6tI/1600x900',
+    hero_src: '/unsplash/QQ9LainS6tI.jpg',
     hero_alt: 'Coding with black and white filter',
     // Sections
     sections: {
@@ -4000,7 +4000,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'chatgpt',
     subtitle:
       'Leverage the power of ChatGPT to transform enterprise data and AI solutions, providing intelligent conversational agents and advanced natural language processing capabilities.',
-    hero_src: 'https://source.unsplash.com/oLthDWAG244/1600x900',
+    hero_src: '/unsplash/oLthDWAG244.jpg',
     hero_alt: 'ChatGPT description screen',
     // Sections
     sections: {
@@ -4132,7 +4132,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     avatar_height: 46,
     subtitle:
       'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
-    hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
+    hero_src: '/unsplash/UTw3j_aoIKM.jpg',
     hero_alt: 'Lady working on phone and laptop',
     // Sections
     sections: {
@@ -4260,7 +4260,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     slug: 'tableau',
     subtitle:
       'Harness the power of data visualization with Tableau to gain actionable insights and make informed business decisions.',
-    hero_src: 'https://source.unsplash.com/eveI7MOcSmw/1600x900',
+    hero_src: '/unsplash/eveI7MOcSmw.jpg',
     hero_alt: 'Analytics overview report',
     // Sections
     sections: {
@@ -4389,7 +4389,7 @@ export const MOCK_SRI_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     subtitle:
       'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
-    hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
+    hero_src: '/unsplash/hC_796Wu-VY.jpg',
     hero_alt: 'Person sitting at desk taking notes',
     // Sections
     sections: {
@@ -4528,7 +4528,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'python',
     subtitle:
       'Build robust, scalable, and efficient data and AI solutions with Python.',
-    hero_src: 'https://source.unsplash.com/zGuBURGGmdY/1600x900',
+    hero_src: '/unsplash/zGuBURGGmdY.jpg',
     hero_alt: 'Code through spectacle lens',
     // Sections
     sections: {
@@ -4644,7 +4644,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Harness the power of a leading web technology to deliver dynamic, efficient, and high-performing enterprise applications.',
-    hero_src: 'https://source.unsplash.com/Agx5_TLsIf4/1600x900',
+    hero_src: '/unsplash/Agx5_TLsIf4.jpg',
     hero_alt: 'Working on code',
     // Sections
     sections: {
@@ -4772,7 +4772,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'sql',
     subtitle:
       'Leverage the power of SQL for optimized data management and informed decision-making.',
-    hero_src: 'https://source.unsplash.com/fPkvU7RDmCo/1600x900',
+    hero_src: '/unsplash/fPkvU7RDmCo.jpg',
     hero_alt: 'Code on laptop',
     // Sections
     sections: {
@@ -4887,7 +4887,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'nosql',
     subtitle:
       'Harness the power of flexible, scalable, and efficient NoSQL databases for your enterprise data needs.',
-    hero_src: 'https://source.unsplash.com/QQ9LainS6tI/1600x900',
+    hero_src: '/unsplash/QQ9LainS6tI.jpg',
     hero_alt: 'Coding with black and white filter',
     // Sections
     sections: {
@@ -5002,7 +5002,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'chatgpt',
     subtitle:
       'Leverage the power of ChatGPT to transform enterprise data and AI solutions, providing intelligent conversational agents and advanced natural language processing capabilities.',
-    hero_src: 'https://source.unsplash.com/oLthDWAG244/1600x900',
+    hero_src: '/unsplash/oLthDWAG244.jpg',
     hero_alt: 'ChatGPT description screen',
     // Sections
     sections: {
@@ -5134,7 +5134,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     avatar_height: 46,
     subtitle:
       'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
-    hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
+    hero_src: '/unsplash/UTw3j_aoIKM.jpg',
     hero_alt: 'Lady working on phone and laptop',
     // Sections
     sections: {
@@ -5262,7 +5262,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     slug: 'tableau',
     subtitle:
       'Harness the power of data visualization with Tableau to gain actionable insights and make informed business decisions.',
-    hero_src: 'https://source.unsplash.com/eveI7MOcSmw/1600x900',
+    hero_src: '/unsplash/eveI7MOcSmw.jpg',
     hero_alt: 'Analytics overview report',
     // Sections
     sections: {
@@ -5391,7 +5391,7 @@ export const MOCK_GVS_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     subtitle:
       'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
-    hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
+    hero_src: '/unsplash/hC_796Wu-VY.jpg',
     hero_alt: 'Person sitting at desk taking notes',
     // Sections
     sections: {
@@ -5530,7 +5530,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'python',
     subtitle:
       'Build robust, scalable, and efficient data and AI solutions with Python.',
-    hero_src: 'https://source.unsplash.com/zGuBURGGmdY/1600x900',
+    hero_src: '/unsplash/zGuBURGGmdY.jpg',
     hero_alt: 'Code through spectacle lens',
     // Sections
     sections: {
@@ -5646,7 +5646,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'javascript',
     subtitle:
       'Harness the power of a leading web technology to deliver dynamic, efficient, and high-performing enterprise applications.',
-    hero_src: 'https://source.unsplash.com/Agx5_TLsIf4/1600x900',
+    hero_src: '/unsplash/Agx5_TLsIf4.jpg',
     hero_alt: 'Working on code',
     // Sections
     sections: {
@@ -5774,7 +5774,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'sql',
     subtitle:
       'Leverage the power of SQL for optimized data management and informed decision-making.',
-    hero_src: 'https://source.unsplash.com/fPkvU7RDmCo/1600x900',
+    hero_src: '/unsplash/fPkvU7RDmCo.jpg',
     hero_alt: 'Code on laptop',
     // Sections
     sections: {
@@ -5889,7 +5889,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'nosql',
     subtitle:
       'Harness the power of flexible, scalable, and efficient NoSQL databases for your enterprise data needs.',
-    hero_src: 'https://source.unsplash.com/QQ9LainS6tI/1600x900',
+    hero_src: '/unsplash/QQ9LainS6tI.jpg',
     hero_alt: 'Coding with black and white filter',
     // Sections
     sections: {
@@ -6004,7 +6004,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'chatgpt',
     subtitle:
       'Leverage the power of ChatGPT to transform enterprise data and AI solutions, providing intelligent conversational agents and advanced natural language processing capabilities.',
-    hero_src: 'https://source.unsplash.com/oLthDWAG244/1600x900',
+    hero_src: '/unsplash/oLthDWAG244.jpg',
     hero_alt: 'ChatGPT description screen',
     // Sections
     sections: {
@@ -6136,7 +6136,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     avatar_height: 46,
     subtitle:
       'Unlock the potential of your enterprise data and drive AI-driven solutions using AWS.',
-    hero_src: 'https://source.unsplash.com/UTw3j_aoIKM/1600x900',
+    hero_src: '/unsplash/UTw3j_aoIKM.jpg',
     hero_alt: 'Lady working on phone and laptop',
     // Sections
     sections: {
@@ -6264,7 +6264,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     slug: 'tableau',
     subtitle:
       'Harness the power of data visualization with Tableau to gain actionable insights and make informed business decisions.',
-    hero_src: 'https://source.unsplash.com/eveI7MOcSmw/1600x900',
+    hero_src: '/unsplash/eveI7MOcSmw.jpg',
     hero_alt: 'Analytics overview report',
     // Sections
     sections: {
@@ -6393,7 +6393,7 @@ export const MOCK_COASTAL_TECHNOLOGYS: Technology[] = [
     avatar_width: 50,
     subtitle:
       'Discover the benefits of Snowflake, the leading cloud data platform for enterprise data and AI solutions.',
-    hero_src: 'https://source.unsplash.com/hC_796Wu-VY/1600x900',
+    hero_src: '/unsplash/hC_796Wu-VY.jpg',
     hero_alt: 'Person sitting at desk taking notes',
     // Sections
     sections: {

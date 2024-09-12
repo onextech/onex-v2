@@ -5,7 +5,7 @@ import {
   AtlasServiceCategorysPage,
   AtlasServiceCategorysPageProps,
 } from '@app/pages'
-import { PageProvider } from '@gravis-os/landing'
+import { PageProvider } from '@onex/landing'
 import { ServiceCategoryList } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
 

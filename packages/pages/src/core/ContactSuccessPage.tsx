@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Blocks } from '@gravis-os/landing'
+import { Blocks } from '@onex/landing'
 import { routeConfig } from '@onex/common'
 
 import ContactPage from './ContactPage'

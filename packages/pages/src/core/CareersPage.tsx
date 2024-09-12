@@ -1,4 +1,4 @@
-import type { Job, Page } from '@gravis-os/types'
+import type { Job, Page } from '@onex/types'
 
 import React from 'react'
 
@@ -6,7 +6,7 @@ import {
   Blocks,
   renderJobCardBlockItem,
   renderLeftFourColumnGridBlockItem,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 
 export interface CareersPageProps {
   jobs: Job[]

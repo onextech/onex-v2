@@ -15,7 +15,7 @@ import {
   renderTechnologysBlock,
   renderThreeColumnGridBlock,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import {
   Industry,
   Page,
@@ -23,7 +23,7 @@ import {
   PressRelease,
   Showcase,
   Technology,
-} from '@gravis-os/types'
+} from '@onex/types'
 import { GetStartedPage } from '@onex/pages'
 import { useRouter } from 'next/router'
 

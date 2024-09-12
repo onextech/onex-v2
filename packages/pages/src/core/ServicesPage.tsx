@@ -1,8 +1,8 @@
-import type { Service } from '@gravis-os/types'
+import type { Service } from '@onex/types'
 
 import React from 'react'
 
-import { Blocks, renderServicesBlockItem, useLayout } from '@gravis-os/landing'
+import { Blocks, renderServicesBlockItem, useLayout } from '@onex/landing'
 
 export interface ServicesPageProps {
   services: Service[]

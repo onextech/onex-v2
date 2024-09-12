@@ -1,7 +1,7 @@
 import { MOCK_PAGES } from '@onex/mocks'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
-import { getStaticPathsWithLayout } from '@gravis-os/landing/server'
+import { getStaticPathsWithLayout } from '../nextjs'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
 import { getDynamicPage } from '../utils'

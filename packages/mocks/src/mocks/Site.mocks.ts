@@ -1,4 +1,4 @@
-import { DEFAULT_THEME_MODE_ENUM, Site } from '@gravis-os/types'
+import { DEFAULT_THEME_MODE_ENUM, Site } from '@onex/types'
 
 export const MOCK_COMMON_SITE = {
   company_absolute_url:

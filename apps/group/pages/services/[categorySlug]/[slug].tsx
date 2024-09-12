@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { LandingLayout } from '@app/layouts'
-import { PageProvider } from '@gravis-os/landing'
+import { PageProvider } from '@onex/landing'
 import { ServicePage, ServicePageProps } from '@onex/pages'
 import { ServiceDetail } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'

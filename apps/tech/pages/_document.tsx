@@ -7,12 +7,12 @@ import {
   renderGtmNoScriptTag,
   renderGtmPreconnectLinkTags,
   renderGtmScriptTag,
-} from '@gravis-os/analytics'
-import { createEmotionCache, lightTheme } from '@gravis-os/landing'
+} from '@onex/analytics'
+import { createEmotionCache, lightTheme } from '@onex/landing'
 import {
   renderFontAwesomeKitPreconnectLinkTags,
   renderFontAwesomeKitScriptTag,
-} from '@gravis-os/ui'
+} from '@onex/ui'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import i18nextConfig from '../next-i18next.config'

@@ -4,7 +4,7 @@ import {
   Blocks,
   renderGhostButtonBlockItem,
   useLayout,
-} from '@gravis-os/landing'
+} from '@onex/landing'
 import { routeConfig } from '@onex/common'
 
 export interface MissionPageProps {}

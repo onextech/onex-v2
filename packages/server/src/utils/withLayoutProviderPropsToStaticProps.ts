@@ -1,4 +1,4 @@
-import { makeWithLayoutProviderPropsToStaticProps } from '@gravis-os/landing/server'
+import { makeWithLayoutProviderPropsToStaticProps } from '../nextjs'
 import layoutConfig from './layoutConfig'
 
 const withLayoutProviderPropsToStaticProps =
