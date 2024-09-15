@@ -1,4 +1,10 @@
+import React from 'react'
+
+import { GetStartedPage } from '@onex/pages'
+
+import { useLayout } from '../providers'
 import { BlockProps } from '../web/Block/Block'
+import renderContactCalloutButtonBlockItem from './renderContactCalloutButtonBlockItem'
 
 export interface RenderHeroBlockProps extends BlockProps {
   item: {
@@ -12,6 +18,7 @@ export interface RenderHeroBlockProps extends BlockProps {
 const renderHeroBlock = (props: RenderHeroBlockProps) => {
   const { item, ...rest } = props
   const { title, hero_alt, hero_src, subtitle } = item || {}
+  const { site } = useLayout()
   return {
     id: 'hero',
     pb: 0,
@@ -24,9 +31,26 @@ const renderHeroBlock = (props: RenderHeroBlockProps) => {
         title: subtitle,
         titleProps: {
           maxWidth: true,
-          sx: { mt: { xs: 1, md: 3 } },
+          sx: { maxWidth: { md: '60%' }, mt: { xs: 1, md: 3 } },
         },
         type: 'subtitle1',
+      },
+      renderContactCalloutButtonBlockItem({
+        title: site.cta_button_title,
+        children: (
+          <GetStartedPage
+            disableTestimonials={site.disable_testimonials}
+            fullScreen
+          />
+        ),
+        titleProps: { sx: { mt: 3 } },
+      }),
+      {
+        title: 'Schedule a non-obligatory 30 mins consultation',
+        titleProps: {
+          sx: { color: 'text.secondary', fontWeight: 'normal', mt: 1 },
+        },
+        type: 'body2',
       },
       {
         title: hero_src,

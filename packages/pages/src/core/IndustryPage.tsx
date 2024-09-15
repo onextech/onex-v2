@@ -7,7 +7,7 @@ import {
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderHeroBlock,
-  renderParagraphBlockItem,
+  renderSummaryBlockItem,
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
   renderThreeColumnGridBlock,
@@ -33,7 +33,7 @@ const IndustryPage: React.FC<IndustryPageProps> = (props) => {
           item: industry,
         }),
         // Summary
-        renderParagraphBlockItem({
+        renderSummaryBlockItem({
           pb: 0,
           pt: { xs: 5, md: 10 },
           ...summary,

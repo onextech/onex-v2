@@ -1,14 +1,20 @@
-import { MOCK_POSTS, MOCK_SERVICE_CATEGORYS, MOCK_SERVICES } from '@onex/mocks'
-import { GetStaticPaths, GetStaticProps } from 'next'
+import {
+  MOCK_POSTS,
+  MOCK_SERVICE_CATEGORYS,
+  MOCK_SERVICES,
+  MOCK_SHOWCASES, MOCK_TECHNOLOGYS,
+} from '@onex/mocks'
 import {
   getCategoryFromCrudItem,
   getRelatedCrudItemsByTagTitle,
 } from '@onex/utils'
 import dayjs from 'dayjs'
+import { GetStaticPaths, GetStaticProps } from 'next'
+
 import { getStaticPathsWithLayout } from '../nextjs'
+import { getDynamicPage } from '../utils'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchSite } from './Site'
-import { getDynamicPage } from '../utils'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -23,10 +29,23 @@ export const fetchServiceBySlug = (injectedSlug) => {
 // Export
 // ==============================
 export const ServiceDetail = {
+  getStaticPaths: (): GetStaticPaths =>
+    getStaticPathsWithLayout({
+      paths: MOCK_SERVICES[MOCK_KEY].map(
+        ({ slug, blocked_locales, category, exclusive_locales }) => ({
+          params: {
+            slug,
+            blocked_locales,
+            categorySlug: category.slug,
+            exclusive_locales,
+          },
+        })
+      ),
+    }),
   getStaticProps: (): GetStaticProps => async (context) => {
     const service = fetchServiceBySlug(context.params?.slug)
     const site = fetchSite()
-    const servicePage = getDynamicPage({ page: service, context, site })
+    const servicePage = getDynamicPage({ context, page: service, site })
     const serviceCategory = getCategoryFromCrudItem(
       service,
       MOCK_SERVICE_CATEGORYS[MOCK_KEY]
@@ -43,27 +62,16 @@ export const ServiceDetail = {
       ),
       service?.title
     ).slice(0, 3)
+    const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
 
     return getStaticPropsWithLayout({
       props: {
+        relatedPosts,
+        relatedServices,
         service: servicePage,
         serviceCategory,
-        relatedServices,
-        relatedPosts,
+        showcases,
       },
     })(context)
   },
-  getStaticPaths: (): GetStaticPaths =>
-    getStaticPathsWithLayout({
-      paths: MOCK_SERVICES[MOCK_KEY].map(
-        ({ slug, category, exclusive_locales, blocked_locales }) => ({
-          params: {
-            slug,
-            categorySlug: category.slug,
-            exclusive_locales,
-            blocked_locales,
-          },
-        })
-      ),
-    }),
 }

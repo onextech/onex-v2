@@ -44,11 +44,13 @@ export interface Job extends CrudItem {
   html?: string
 }
 
-export type PageSection =
+export type PageSectionKey =
   | 'benefits'
   | 'callout'
+  | 'challenges'
   | 'checklist'
   | 'cta'
+  | 'facts'
   | 'faqs'
   | 'features'
   | 'gallery'
@@ -56,10 +58,38 @@ export type PageSection =
   | 'hero'
   | 'howItWorks'
   | 'leftGridSticky'
+  | 'offerings'
   | 'rightGridSticky'
   | 'secondaryHero'
+  | 'showcase'
   | 'stats'
   | 'summary'
+  | 'testimonial'
+  | 'usps'
+
+export interface PageSection {
+  buttons?: Array<{
+    href?: string
+    overline?: string
+    title?: string
+  }>
+  hero_alt?: string
+  hero_src?: string
+  items?: Array<{
+    avatar_alt?: string
+    avatar_src?: string
+    content?: string
+    fa_icon?: string
+    href?: string
+    overline?: string
+    subtitle?: string
+    title: string
+    titleProps?: any
+  }>
+  overline?: string
+  subtitle?: string
+  title: string
+}
 
 export interface Page extends CrudItem {
   hero_alt?: string
@@ -74,29 +104,7 @@ export interface Page extends CrudItem {
   overline?: string
   // Sections
   sections?: {
-    [key in PageSection]?: {
-      buttons?: Array<{
-        href?: string
-        overline?: string
-        title?: string
-      }>
-      hero_alt?: string
-      hero_src?: string
-      items?: Array<{
-        avatar_alt?: string
-        avatar_src?: string
-        content?: string
-        fa_icon?: string
-        href?: string
-        overline?: string
-        subtitle?: string
-        title: string
-        titleProps?: any
-      }>
-      overline?: string
-      subtitle?: string
-      title: string
-    }
+    [key in PageSectionKey]?: PageSection
   }
   seo?: {
     description?: string

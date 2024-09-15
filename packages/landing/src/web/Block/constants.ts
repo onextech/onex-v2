@@ -33,4 +33,5 @@ export enum BlockItemTypeEnum {
   SUBTITLE2 = 'subtitle2',
   SUBTITLE3 = 'subtitle3',
   SVG = 'svg',
+  TABS = 'tabs',
 }

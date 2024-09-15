@@ -8,7 +8,7 @@ export interface TabProps extends Omit<MuiTabProps, 'children' | 'hidden'> {
 }
 
 const Tab: React.FC<TabProps> = (props) => {
-  const { children, hidden, ...rest } = props
+  const { children, label, hidden, ...rest } = props
 
   // Hidden
   if (typeof hidden === 'function' || typeof hidden === 'boolean') {
@@ -16,7 +16,7 @@ const Tab: React.FC<TabProps> = (props) => {
     if (shouldHide) return null
   }
 
-  return <MuiTab {...rest} />
+  return <MuiTab label={label || rest?.title} {...rest} />
 }
 
 export default Tab

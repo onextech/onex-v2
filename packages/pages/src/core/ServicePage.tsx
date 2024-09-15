@@ -1,32 +1,54 @@
-import type { Post, Service, ServiceCategory } from '@onex/types'
-
 import React from 'react'
 
 import {
   Blocks,
+  renderClientLogosImageMarqueeBlock,
+  renderClientTestimonialSliderBlock,
+  renderFactsAccordionBlock,
+  renderFactsVerticalTabsBlock,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
+  renderFourColumnGridBlock,
   renderHeroBlock,
-  renderParagraphBlockItem,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
   renderRightChecklistBlock,
+  renderShowcaseSlider,
+  renderSummaryBlockItem,
+  renderTechnologysBlock,
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
+import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
 
 export interface ServicePageProps {
   relatedPosts?: Post[]
   relatedServices?: Service[]
   service: Service
   serviceCategory: ServiceCategory
+  showcases?: Showcase[]
 }
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
-  const { relatedPosts, relatedServices, service } = props
-  const { routeConfig } = useLayout()
+  const { relatedPosts, relatedServices, service, showcases } = props
+  const { clientLogos, clientTestimonials, routeConfig, technologys } =
+    useLayout()
   const { sections } = service || {}
-  const { benefits, checklist, cta, faqs, features, summary } = sections || {}
+
+  const {
+    benefits,
+    challenges,
+    checklist,
+    cta,
+    facts,
+    faqs,
+    features,
+    offerings,
+    showcase,
+    summary,
+    testimonial,
+    usps,
+  } = sections || {}
 
   return (
     <Blocks
@@ -35,10 +57,23 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderHeroBlock({
           item: service,
         }),
+        // ClientLogosImageMarquee
+        renderClientLogosImageMarqueeBlock({
+          items: clientLogos.slice(0, 8),
+          sx: { backgroundColor: 'background.paper', position: 'relative' },
+        }),
+        // Facts
+        facts &&
+        renderFactsVerticalTabsBlock({
+          ...facts,
+        }),
+        // Challenges
+        challenges &&
+          renderThreeColumnGridBlock({
+            ...challenges,
+          }),
         // Summary
-        renderParagraphBlockItem({
-          pb: 0,
-          pt: { xs: 5, md: 10 },
+        renderSummaryBlockItem({
           ...summary,
         }),
         // Features
@@ -46,16 +81,37 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ...features,
           textAlign: 'left',
         }),
+        // Showcases
+        Boolean(showcases?.length) &&
+          renderShowcaseSlider({
+            overline: showcase.overline,
+            title: showcase.title,
+            items: showcases,
+            pt: { xs: 5, md: 10 },
+            subtitle: showcase.subtitle,
+          }),
+        renderClientTestimonialSliderBlock({
+          title: testimonial.title,
+          items: clientTestimonials,
+          subtitle: testimonial.subtitle,
+        }),
+        // Technologys
+        renderTechnologysBlock({ items: technologys }),
+        // Offerings: From Concept to Completion
+        renderThreeColumnGridBlock({
+          ...offerings,
+          textAlign: 'left',
+        }),
+        // UniqueSellingPoints
+        renderFourColumnGridBlock(usps),
         // Related Posts
         renderRelatedPostsBlock({ items: relatedPosts }),
         // Checklist
         renderRightChecklistBlock({
-          py: 0,
           ...checklist,
         }),
         // Faqs
         renderFaqsAccordionBlock({
-          py: { xs: 5, md: 10 },
           ...faqs,
         }),
         // Cta
@@ -81,7 +137,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Related Services
         renderRelatedServicesBlock({
           items: relatedServices,
-          py: { xs: 5, md: 10 },
         }),
       ]}
     />

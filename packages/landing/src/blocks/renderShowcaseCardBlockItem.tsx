@@ -109,7 +109,7 @@ const renderShowcaseCardBlockItem = (
   const nextGridItems = reverse ? [...gridItems].reverse() : [...gridItems]
 
   return {
-    boxProps: { sx: { backgroundColor, borderRadius: 1 } },
+    boxProps: { sx: { backgroundColor, borderRadius: 2.5 } },
     gridItems: nextGridItems,
     gridProps: {
       reverse: { xs: !reverse, md: reverse },
@@ -120,6 +120,7 @@ const renderShowcaseCardBlockItem = (
     mode,
     sx: { mt: { xs: isHero ? 4 : 6, md: isHero ? 6 : 8 } },
     type: 'grid',
+    py: 0,
     ...rest,
   }
 }
