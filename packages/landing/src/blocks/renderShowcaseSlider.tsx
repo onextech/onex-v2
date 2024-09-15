@@ -26,14 +26,14 @@ const renderShowcaseSlider = (props: RenderShowcaseSliderProps) => {
       },
       title && {
         title,
-        titleProps: { gutterBottom: true, maxWidth: '60%' },
+        titleProps: { gutterBottom: true, maxWidth: '50%' },
         type: 'h3',
       },
       subtitle && {
         title: subtitle,
         titleProps: {
           color: 'text.secondary',
-          maxWidth: '45%',
+          maxWidth: '40%',
         },
         type: 'body1',
       },
@@ -48,6 +48,7 @@ const renderShowcaseSlider = (props: RenderShowcaseSliderProps) => {
               return (
                 <Box key={item.id} sx={{ width: '100%' }}>
                   <Block
+                    py={0}
                     items={[
                       renderShowcaseCardBlockItem({
                         disableContainer: true,
@@ -61,7 +62,6 @@ const renderShowcaseSlider = (props: RenderShowcaseSliderProps) => {
             })}
             loop
             options={{ slides: { perView: 1, spacing: 12 } }}
-            sx={{ mt: { xs: 0, md: 4 } }}
           />
         ),
         type: 'jsx',

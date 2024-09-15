@@ -185,7 +185,7 @@ const ImageMarquee: React.FC<ImageMarqueeProps> = (props) => {
         // Set gradientColor automatically from palette.background.default
         ...(gradient &&
           !gradientColor && {
-            '& .overlay::before, & .overlay::after': {
+            '& .rfm-overlay::before, & .rfm-overlay::after': {
               background: ({ palette }) => {
                 const gradientColor = palette.background.default
                 return `linear-gradient(to right, ${alpha(

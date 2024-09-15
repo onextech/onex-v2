@@ -11,7 +11,7 @@ export interface RenderContactCalloutButtonBlockItemProps
 const renderContactCalloutButtonBlockItem = (
   props: RenderContactCalloutButtonBlockItemProps = {}
 ) => {
-  const { title = 'Get Started', children = <></> } = props
+  const { title = 'Get Started', children = <></>, titleProps } = props
   return {
     title,
     titleProps: {
@@ -23,6 +23,7 @@ const renderContactCalloutButtonBlockItem = (
         transitionVariant: 'fade' as const,
       },
       variant: 'contained' as const,
+      ...titleProps,
     },
     type: 'button',
   }

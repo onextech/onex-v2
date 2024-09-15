@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { routeConfig } from '@onex/common'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
@@ -23,7 +24,6 @@ import {
   Resource,
   Showcase,
 } from '@onex/types'
-import { routeConfig } from '@onex/common'
 
 export interface GroupPageProps {
   featuredPosts: Post[]

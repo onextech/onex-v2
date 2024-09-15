@@ -20,6 +20,7 @@ const NextServicePage: React.FC<NextServicePageProps> = (props) => {
     relatedServices,
     service,
     serviceCategory,
+    showcases,
   } = props
   return (
     <PageProvider {...pageProviderProps}>
@@ -37,6 +38,7 @@ const NextServicePage: React.FC<NextServicePageProps> = (props) => {
           relatedServices={relatedServices}
           service={service}
           serviceCategory={serviceCategory}
+          showcases={showcases}
         />
       </LandingLayout>
     </PageProvider>

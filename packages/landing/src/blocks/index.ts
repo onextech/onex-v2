@@ -34,6 +34,12 @@ export * from './renderServiceBlockItem'
 export { default as renderIndustryBlockItem } from './renderIndustryBlockItem'
 export * from './renderIndustryBlockItem'
 
+export { default as renderFactsAccordionBlock } from './renderFactsAccordionBlock'
+export * from './renderFactsAccordionBlock'
+
+export { default as renderFactsVerticalTabsBlock } from './renderFactsVerticalTabsBlock'
+export * from './renderFactsVerticalTabsBlock'
+
 export { default as renderFeaturedIndustrysBlock } from './renderFeaturedIndustrysBlock'
 export * from './renderFeaturedIndustrysBlock'
 
@@ -106,8 +112,8 @@ export * from './renderClientTestimonialSliderBlockItem'
 export { default as renderClientTestimonialCardsBlock } from './renderClientTestimonialCardsBlock'
 export * from './renderClientTestimonialCardsBlock'
 
-export { default as renderParagraphBlockItem } from './renderParagraphBlockItem'
-export * from './renderParagraphBlockItem'
+export { default as renderSummaryBlockItem } from './renderSummaryBlockItem'
+export * from './renderSummaryBlockItem'
 
 export { default as renderContactCalloutButtonBlockItem } from './renderContactCalloutButtonBlockItem'
 export * from './renderContactCalloutButtonBlockItem'

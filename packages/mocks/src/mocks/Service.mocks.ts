@@ -1676,9 +1676,67 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'custom-software-development',
     category_id: 2,
     hero_alt: 'Custom software design on a computer screen',
-    hero_src: '/unsplash/sfjS-FglvU4.jpg',
+    hero_src: '/unsplash/uv5_bsypFUM.jpg',
     // Sections
     sections: {
+      challenges: {
+        title: 'The Challenges Decision Makers Face',
+        center: true,
+        items: [
+          {
+            title: 'Managing Complex Project Technicalities',
+            fa_icon: 'fa-laptop-code',
+            subtitle:
+              'Overseeing multiple projects with different teams and stakeholders is no easy task. It often results in confusion, delays, and missed deadlines that hinder progress.',
+          },
+          {
+            title: 'Limited Budget and Resources',
+            fa_icon: 'fa-database',
+            subtitle:
+              'With tight budgets and limited resources, maintaining quality while managing numerous digital products and campaigns becomes a constant struggle.',
+          },
+          {
+            title: 'Finding Skilled Developers',
+            fa_icon: 'fa-robot',
+            subtitle:
+              'The competition for talented developers and engineers makes hiring and retaining top talent harder than ever, further slowing down projects and stifling innovation.',
+          },
+        ],
+        overline: 'Stakeholder Challenges',
+        subtitle:
+          'IT leaders are tasked with navigating a series of difficult challenges, from managing complex software projects and juggling tight budgets to securing experienced developers. These ongoing issues can quickly lead to frustration and burnout as they struggle to balance the demands of growth and innovation.',
+      },
+      facts: {
+        overline: 'Facts',
+        title: 'Key Information about {title}',
+        subtitle: 'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
+        items: [
+          {
+            id: 'facts-1',
+            title: 'Benefits of {title}',
+            content: `Workflow Efficiency
+              Custom software development brings you solutions tailored to your specific business needs.
+              When you customize the software you use instead of leaning on generic off-the-shelf solutions, you can operate more efficiently by addressing each challenge you face with a solution crafted to your particular purpose.
+              
+              Strategic Data Use
+              Customized software generates and organizes data in a way that aligns with your business objectives. This empowers teams to extract more meaningful insights and make strategic decisions based on accurate and accessible data.
+              
+              Seamless Connectivity and Collaboration
+              Software systems need to speak to each other. Customizing a software solution allows for connectivity across technologies, teams, and departments. This leads to real-time information sharing that strengthens communication and boosts collaboration.
+            `,
+          },
+          {
+            id: 'facts-2',
+            title: 'Understanding the {title} Process',
+            content: "Custom software development starts with a deep dive into your business needs. We engage in close collaboration with your team to gather requirements, ensuring we understand your objectives thoroughly. This understanding forms the foundation for creating a solution that aligns perfectly with your business goals.\n\nUsing agile methodologies, we design, develop, and iterate on the solution with regular feedback. This ensures flexibility and timely delivery. Our process is adaptive, allowing us to continuously refine the software until it meets and exceeds your expectations.",
+          },
+          {
+            id: 'facts-3',
+            title: 'Who needs {title}?',
+            content: "{title} is ideal for businesses with unique operational needs that cannot be met by off-the-shelf software. Companies looking to enhance workflow efficiency, enable seamless integration across departments, or leverage strategic data insights are prime candidates for custom solutions.\n\nWhether you're a startup scaling your operations or an enterprise seeking to refine and optimize existing processes, custom software provides the flexibility and personalization needed to tackle specific challenges. It's designed to fit your business model and drive success in a competitive market.",
+          },
+        ],
+      },
       faqs: {
         title: 'FAQs',
         items: [
@@ -1709,53 +1767,53 @@ export const MOCK_GROUP_SERVICES = [
         title: 'Our {title} Capabilities',
         items: [
           {
-            title: 'Custom software development',
+            title: 'PoC Development',
             fa_icon: 'fa-laptop-code',
             subtitle:
-              'We craft software solutions tailored to the specific challenges and goals of your business.',
+              'Accelerate innovation and minimize risk with our Proof of Concept Development Service for our clients.',
           },
           {
-            title: 'System integration',
+            title: 'Custom Application Development',
             fa_icon: 'fa-sync',
             subtitle:
-              'We ensure your new software integrates seamlessly with existing business systems for a cohesive workflow.',
+              'Leverage our expertise in frontend software engineering and dashboard development to create powerful applications for your business.',
           },
           {
-            title: 'Mobile app development',
+            title: 'Software Product Development',
             fa_icon: 'fa-mobile-alt',
             subtitle:
-              'We design and develop mobile applications to complement your custom software, extending your reach across devices.',
+              'Enhance your software development process with our experienced team of frontend engineers and dashboard developers.',
           },
           {
-            title: 'Automation solutions',
+            title: 'ERP Consulting',
             fa_icon: 'fa-robot',
             subtitle:
-              'We implement automation features that reduce manual processes and increase operational efficiency.',
+              'Maximize the potential of your enterprise software with our expert ERP consulting services.',
           },
           {
-            title: 'Data management',
+            title: 'Application Enhancement and Modernization',
             fa_icon: 'fa-database',
             subtitle:
-              'We build secure, efficient data management systems to ensure seamless data flow and storage.',
+              'We offer end-to-end application re-engineering services to modernise and optimize your legacy applications.',
           },
           {
-            title: 'Ongoing support',
+            title: 'Custom Enterprise Application Development',
             fa_icon: 'fa-check-circle',
             subtitle:
-              'We provide post-launch support and maintenance to ensure your software continues to perform optimally.',
+              'Developing powerful frontend applications and dashboards for enterprise clients.',
           },
         ],
         overline: 'Our expertise',
         subtitle:
-          'Leveraging our technical expertise and industry knowledge, we deliver robust and tailored software solutions for diverse business needs.',
+          'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
       },
       summary: {
-        title:
-          'Transforming businesses with custom-tailored software solutions.',
+        overline: 'Summary',
+        title: 'Transforming Businesses with {title} Services',
         items: [
           {
             title:
-              'Our Custom Software Development service is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.',
+              '{appTitle}\'s {title} service is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.',
           },
           {
             title:
@@ -2853,6 +2911,108 @@ export const MOCK_GROUP_SERVICES = [
         subtitle:
           '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
       },
+      showcase: {
+        overline: 'Showcase',
+        title: 'Our {title} Projects',
+        subtitle:
+          'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
+      },
+      offerings: {
+        title: '{title} Services from Concept to Completion',
+        items: [
+          {
+            title: 'Custom Software Development',
+            fa_icon: 'fa-laptop-code',
+            subtitle: 'Build custom software tailored to business needs, including front-end interfaces and core back-end technology.',
+            titleProps: { sx: { color: '#f66134' } },
+          },
+          {
+            title: 'Mobile App Development',
+            fa_icon: 'fa-mobile-alt',
+            subtitle: 'Develop high performance, secure mobile applications for iOS and Android devices.',
+            titleProps: { sx: { color: '#ffad02' } },
+          },
+          {
+            title: 'QA and Testing',
+            fa_icon: 'fa-sync',
+            subtitle: 'Ensure technology products and services are robust and error-free through manual and automated QA.',
+            titleProps: { sx: { color: '#1b73e8' } },
+          },
+          {
+            title: 'AI and Data Science',
+            fa_icon: 'fa-robot',
+            subtitle: 'Identify and leverage hidden patterns in your data, using machine learning & data science principles.',
+            titleProps: { sx: { color: '#34f6e6' } },
+          },
+          {
+            title: 'UX/UI Design',
+            fa_icon: 'fa-paint-brush',
+            subtitle: 'Create beautiful, user-friendly designs for websites, mobile apps, and other human-machine interfaces.',
+            titleProps: { sx: { color: '#15a97a' } },
+          },
+          {
+            title: 'Platform and Infrastructure',
+            fa_icon: 'fa-database',
+            subtitle: 'Keep applications scalable and resilient with cybersecurity and DevOps experts.',
+            titleProps: { sx: { color: '#f63a34' } },
+          },
+        ],
+        overline: 'Our Offerings',
+        subtitle:
+          'Unlock unparalleled potential with our end-to-end custom software solutions, crafted to perfection.',
+      },
+      testimonial: {
+        title: 'What Our Clients Say',
+        subtitle: 'Discover how our clients have benefited from our expert technology consulting and {title} services.',
+      },
+      usps: {
+        title: "What sets {appTitle} apart?",
+        items: [
+          {
+            stat: '2,500+',
+            title: "Top Talent",
+            subtitle: "Leverage expertise from a talent pool of over 2,500 top technology experts across the globe."
+          },
+          {
+            stat: '100+',
+            title: "Clients Served",
+            subtitle: "Empowering over 100 prestigious clients globally, including Fortune 500 companies.",
+          },
+          {
+            stat: '200+',
+            title: "Projects Delivered",
+            subtitle: "Delivering excellence with 200+ projects, celebrated for excellence in software development and outsourcing."
+          },
+          {
+            stat: '20+',
+            title: "Years In-market",
+            subtitle: "20+ years on the market, consistently driving forward innovation and digital excellence."
+          },
+          {
+            stat: '18',
+            title: "Global Service Centers",
+            subtitle: "Active in eight countries, providing localized support and comprehensive solutions worldwide."
+          },
+          {
+            title: "Innovative Solutions",
+            fa_icon: "fa-lightbulb",
+            subtitle: "Pioneering the use of advanced technologies to solve complex challenges and boost efficiency."
+          },
+          {
+            title: "Industry Recognition",
+            fa_icon: "fa-award",
+            subtitle: "Featured as a Top Software Agency in 2023 by Clutch and recognized globally as a leader in technology outsourcing."
+          },
+          {
+            title: "Certifications",
+            fa_icon: "fa-certificate",
+            subtitle: "Adhering to the highest standards with OWASP, Amazon Web Services (AWS), and Google certifications."
+          },
+        ],
+        maxWidth: "xl",
+        overline: "Difference",
+        subtitle: "{appTitle} stands out by offering a unique blend of seasoned expertise, global presence, and recognized credibility to drive transformative outcomes."
+      }
     },
   })
 })

@@ -22,14 +22,14 @@ const renderShowcasesBlock = (props: RenderShowcasesBlockProps) => {
       },
       title && {
         title,
-        titleProps: { gutterBottom: true, maxWidth: '60%' },
+        titleProps: { gutterBottom: true, maxWidth: '50%' },
         type: 'h3',
       },
       subtitle && {
         title: subtitle,
         titleProps: {
           color: 'text.secondary',
-          maxWidth: '45%',
+          maxWidth: '40%',
         },
         type: 'body1',
       },

@@ -76,7 +76,7 @@ const typography = {
     },
     fontFamily: headerFontFamily,
     fontSize: pxToRem(39),
-    fontWeight: 400,
+    fontWeight: 300,
     mt: 4,
   },
   h5: {

@@ -21,8 +21,14 @@ const renderClientLogosImageMarqueeBlock = (
   const { imageSizeMultiplier = 0.8, items, opacity = 0.3, ...rest } = props
 
   return {
+    center: true,
     disableContainer: true,
     items: [
+      {
+        title: 'Trusted by leading organizations',
+        titleProps: { sx: { opacity: 0.7 } },
+        type: 'overline',
+      },
       {
         title: (
           <ImageMarquee
@@ -37,7 +43,6 @@ const renderClientLogosImageMarqueeBlock = (
               sx: { opacity, ...item?.sx },
               width: item.avatar_width * imageSizeMultiplier,
             }))}
-            py={2}
             spacing={{ xs: 10, md: 15, lg: 20 }}
             speed={15}
           />
@@ -45,7 +50,8 @@ const renderClientLogosImageMarqueeBlock = (
         type: 'jsx',
       },
     ],
-    py: 0,
+    pb: 2,
+    pt: 3,
     reveal: false,
     ...rest,
   }

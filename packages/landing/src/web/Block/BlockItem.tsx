@@ -200,6 +200,13 @@ const renderBlockItem = (props) => {
         )
         return <DynamicAccordion items={title} transparent {...titleProps} />
       }
+      // Tab
+      case BlockItemTypeEnum.TABS: {
+        const DynamicTabs = dynamic(() =>
+          import('@onex/ui').then((module) => module.Tabs)
+        )
+        return <DynamicTabs items={title} disableCard {...titleProps} />
+      }
       // List
       case BlockItemTypeEnum.LIST: {
         const DynamicList = dynamic(() =>

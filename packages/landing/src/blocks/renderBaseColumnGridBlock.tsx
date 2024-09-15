@@ -13,8 +13,10 @@ export interface RenderBaseColumnGridBlockProps
     fa_icon?: string
     href?: string
     overline?: string
+    stat?: string
     subtitle?: string
     title: string
+    titleProps?: BlockItemProps['titleProps']
   }>
   overline?: string
   subtitle?: string
@@ -78,8 +80,11 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
             fa_icon,
             href,
             overline,
+            stat,
             subtitle,
+            titleProps,
           } = item
+          const hasStat = items.some((item) => item.stat)
           return {
             items: [
               avatar_src && {
@@ -94,9 +99,23 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
                 type: 'image',
               },
               fa_icon && {
-                title: `fa-3x fa-thin ${fa_icon}`,
-                titleProps: { sx: { mb: 3 } },
+                title: [hasStat ? '' : 'fa-3x', 'fa-thin', `${fa_icon}`].join(
+                  ' '
+                ),
+                titleProps: {
+                  ...titleProps,
+                  sx: {
+                    mb: 3,
+                    ...(hasStat && { fontSize: '2.5rem', mb: '0.75rem' }),
+                    ...titleProps?.sx,
+                  },
+                },
                 type: 'fa-icon',
+              },
+              stat && {
+                title: stat,
+                titleProps: { mb: 0.5 },
+                type: 'h4',
               },
               overline && {
                 title: overline,

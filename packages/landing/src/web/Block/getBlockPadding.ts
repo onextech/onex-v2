@@ -21,7 +21,7 @@ const getBlockPadding = ({ pb, pt, py }) => {
   // Handle injected py immediately
   if (typeof py === 'number' || typeof py === 'object') return { py }
 
-  const defaultPadding = { xs: 5, md: 15 }
+  const defaultPadding = { xs: 4, md: 8 }
   const defaultPy = { py: defaultPadding }
 
   // Handle case where pt/pb is provided without py. Manage overrides
