@@ -13,7 +13,7 @@ export interface RenderLeadFormBlockProps extends Omit<BlockProps, 'items'> {
 
 const renderLeadFormBlock = (props: RenderLeadFormBlockProps = {}) => {
   const {
-    title = 'Schedule A Free 30-min Consultation with a One X Specialist',
+    title = 'Schedule a Consultation with a One X Specialist',
     overline = 'Get Started',
     subtitle = 'Thank you for your interest. We’d like to ask a few questions to better understand your project needs.',
     ...rest

@@ -11,13 +11,13 @@ import { postEnquiry } from '../enquiries/common/postEnquiry'
 import { useLayout } from '../providers/LayoutProvider'
 
 export interface LeadFormProps {
+  alignButtonLeft?: boolean
   onSubmit?: (values: any) => void
   serviceCategorys?: ServiceCategory[]
-  alignButtonLeft?: boolean
 }
 
 const LeadForm: React.FC<LeadFormProps> = (props) => {
-  const { onSubmit, serviceCategorys, alignButtonLeft } = props
+  const { alignButtonLeft, onSubmit, serviceCategorys } = props
 
   const { routeConfig, site } = useLayout()
   const { cta_button_title } = site
@@ -133,7 +133,10 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
         resetOnSubmitSuccess
         submitButtonProps={{
           title: cta_button_title,
-          boxProps: { display: 'flex', justifyContent: alignButtonLeft ? 'flex-start' : 'flex-end' },
+          boxProps: {
+            display: 'flex',
+            justifyContent: alignButtonLeft ? 'flex-start' : 'flex-end',
+          },
           fullWidthOnMobile: true,
           loading: isLoading,
           size: 'large',

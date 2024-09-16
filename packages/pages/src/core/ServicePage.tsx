@@ -12,8 +12,9 @@ import {
   renderLeadFormBlock,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-  renderRightChecklistBlock,
+  renderServiceNotFoundCalloutBlock,
   renderShowcaseSlider,
+  renderSoftwareLifecycleBlock,
   renderSummaryBlockItem,
   renderTechnologysBlock,
   renderThreeColumnGridBlock,
@@ -86,6 +87,8 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ...features,
           textAlign: 'left',
         }),
+        // Callout
+        renderServiceNotFoundCalloutBlock(),
         // Showcases
         Boolean(showcases?.length) &&
           renderShowcaseSlider({
@@ -102,9 +105,12 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         }),
         // Technologys
         renderTechnologysBlock({ items: technologys }),
+        // Process
+        renderSoftwareLifecycleBlock(),
         // Offerings: From Concept to Completion
         renderThreeColumnGridBlock({
           ...offerings,
+          sx: { backgroundColor: 'background.paper' },
           textAlign: 'left',
         }),
         // UniqueSellingPoints
