@@ -79,7 +79,7 @@ const renderServiceNotFoundCalloutBlock = (
             items: [
               renderContactCalloutButtonBlockItem({
                 title: cta || cta_button_title,
-                children: <GetStartedPage fullScreen />,
+                children: <GetStartedPage />,
                 subtitle: 'Schedule a non-obligatory 30-min consultation',
               }),
             ],
