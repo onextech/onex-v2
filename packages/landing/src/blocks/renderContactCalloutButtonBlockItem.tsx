@@ -5,13 +5,19 @@ import { BlockItemProps } from '../web/Block/BlockItem'
 export interface RenderContactCalloutButtonBlockItemProps
   extends BlockItemProps {
   children?: JSX.Element
+  subtitle?: string
   title?: string
 }
 
 const renderContactCalloutButtonBlockItem = (
   props: RenderContactCalloutButtonBlockItemProps = {}
 ) => {
-  const { title = 'Get Started', children = <></>, titleProps } = props
+  const {
+    title = 'Get Started',
+    children = <></>,
+    subtitle = '',
+    titleProps,
+  } = props
   return {
     title,
     titleProps: {
@@ -22,6 +28,7 @@ const renderContactCalloutButtonBlockItem = (
         fullScreen: true,
         transitionVariant: 'fade' as const,
       },
+      subtitle,
       variant: 'contained' as const,
       ...titleProps,
     },

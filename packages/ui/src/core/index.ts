@@ -67,6 +67,9 @@ export * from './withStartEndIcon'
 export { default as withContainer } from './withContainer'
 export * from './withContainer'
 
+export { default as withSubtitle } from './withSubtitle'
+export * from './withSubtitle'
+
 export { default as Ratings } from './Ratings'
 export * from './Ratings'
 

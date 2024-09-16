@@ -17,6 +17,7 @@ import withPopover from './withPopover'
 import withSetLoadingInOnClick, {
   WithSetLoadingInOnClick,
 } from './withSetLoadingInOnClick'
+import withSubtitle from './withSubtitle'
 import withTooltip from './withTooltip'
 
 // Methods
@@ -53,6 +54,7 @@ export interface ButtonProps
   onClick?: WithSetLoadingInOnClick | any
   popover?: React.ReactNode
   square?: boolean
+  subtitle?: string
   targetBlank?: boolean
   title?: string
   tooltip?: string
@@ -82,6 +84,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     loading,
     popover,
     square,
+    subtitle,
     sx,
     targetBlank,
     tooltip,
@@ -205,6 +208,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       }),
       ...hrefProps,
     }),
+    withSubtitle({ subtitle }),
     withTooltip({ tooltip }),
     withPopover({ popover }),
     withSetLoadingInOnClick({ onClick }),

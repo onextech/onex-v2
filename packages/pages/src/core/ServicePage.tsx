@@ -12,7 +12,7 @@ import {
   renderLeadFormBlock,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
-  renderRightChecklistBlock,
+  renderServiceNotFoundCalloutBlock,
   renderShowcaseSlider,
   renderSummaryBlockItem,
   renderTechnologysBlock,
@@ -86,6 +86,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ...features,
           textAlign: 'left',
         }),
+        renderServiceNotFoundCalloutBlock(),
         // Showcases
         Boolean(showcases?.length) &&
           renderShowcaseSlider({

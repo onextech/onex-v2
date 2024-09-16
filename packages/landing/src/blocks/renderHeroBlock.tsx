@@ -43,15 +43,9 @@ const renderHeroBlock = (props: RenderHeroBlockProps) => {
             fullScreen
           />
         ),
+        subtitle: 'Schedule a non-obligatory 30-min consultation',
         titleProps: { sx: { mt: 3 } },
       }),
-      {
-        title: 'Schedule a non-obligatory 30 mins consultation',
-        titleProps: {
-          sx: { color: 'text.secondary', fontWeight: 'normal', mt: 1 },
-        },
-        type: 'body2',
-      },
       {
         title: hero_src,
         disableContainer: true,
