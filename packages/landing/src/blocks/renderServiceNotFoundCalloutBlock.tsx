@@ -85,7 +85,7 @@ const renderServiceNotFoundCalloutBlock = (
             ],
           },
         ],
-        gridProps: { spacing: { xs: 2, md: 42 }, sx: { alignItems: 'center' } },
+        gridProps: { spacing: { xs: 2, md: 4 }, sx: { alignItems: 'center' } },
         type: 'grid',
       },
     ],
