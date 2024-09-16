@@ -33,41 +33,35 @@ export const MOCK_TECHNOLOGY_PAGE = {
         'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
       items: [
         {
-          fa_icon: 'fa-watch',
-          title: 'Scale up development',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
+          "fa_icon": "fa-code",
+          "title": "Accelerate Development",
+          "subtitle": "Leverage our expertise to streamline your development process and deliver faster results."
         },
         {
-          fa_icon: 'fa-hand-holding-seedling',
-          title: 'Improve a current system',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+          "fa_icon": "fa-cogs",
+          "title": "Optimize Existing Systems",
+          "subtitle": "Enhance your current technology stack by identifying areas for improvement and automation."
         },
         {
-          fa_icon: 'fa-mug-hot',
-          title: 'Food & Drinks',
-          subtitle:
-            'We create human-centred designs focused on driving conversions and achieving business goals.',
+          "fa_icon": "fa-layer-group",
+          "title": "Custom Software Solutions",
+          "subtitle": "We design and build tailored software solutions to meet your unique business challenges."
         },
         {
-          fa_icon: 'fa-puzzle-piece',
-          title: 'Live It Up',
-          subtitle:
-            'Launch your MVP at start-up speed with an expert team of designers and developers.',
+          "fa_icon": "fa-rocket",
+          "title": "Rapid MVP Development",
+          "subtitle": "Launch your minimum viable product quickly with our experienced team of developers and designers."
         },
         {
-          fa_icon: 'fa-guitar',
-          title: 'Rewards',
-          subtitle:
-            'Our team works directly with you to boost your development speed and scale.',
+          "fa_icon": "fa-cloud",
+          "title": "Scalable Cloud Solutions",
+          "subtitle": "Adopt cloud technologies to create scalable, efficient systems that grow with your business."
         },
         {
-          fa_icon: 'fa-table-tennis',
-          title: 'Convenience',
-          subtitle:
-            "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
-        },
+          "fa_icon": "fa-shield-alt",
+          "title": "Enhanced Security",
+          "subtitle": "Implement robust security measures to protect your data and ensure compliance with industry standards."
+        }
       ],
     },
     howItWorks: { overline: '', title: '', subtitle: '', items: [] },
@@ -107,7 +101,7 @@ export const MOCK_TECHNOLOGY_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
@@ -1329,6 +1323,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
       'Reliable infrastructure for building frontend software engineering and dashboard development projects.',
     hero_src: '/unsplash/HIctpU2PA8E.jpg',
     hero_alt: 'Amazon logo with desk setup',
+    is_active: true,
     // Seo
     seo: {
       title: 'AWS',
@@ -1504,6 +1499,30 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
     is_hidden_from_nav: true,
+  },
+  {
+    avatar_src: "/images/technology_google.png",
+    avatar_alt: "Google logo",
+    title: "Google Cloud",
+    slug: "google-cloud",
+    subtitle: "Work with cloud experts who have implemented solutions across various industries.",
+    is_active: true,
+  },
+  {
+    avatar_src: "/images/technology_microsoft.png",
+    avatar_alt: "Microsoft logo",
+    title: "Microsoft Azure",
+    slug: "microsoft-azure",
+    subtitle: "Leverage cloud solutions tested in enterprise environments with Azure expertise.",
+    is_active: true,
+  },
+  {
+    avatar_src: "/images/technology_vercel.png",
+    avatar_alt: "Vercel logo",
+    title: "Vercel",
+    slug: "vercel",
+    subtitle: "Develop and deploy high-performance web applications with ease.",
+    is_active: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECHNOLOGY_PAGE, {

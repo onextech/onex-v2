@@ -166,7 +166,7 @@ export const MOCK_DATA_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
@@ -289,7 +289,7 @@ export const MOCK_DESIGN_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
@@ -448,7 +448,7 @@ export const MOCK_DIGITAL_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
@@ -671,7 +671,7 @@ export const MOCK_VENTURES_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-            '{title} components allows to really embrace agile approach to ever-changing business requirements. It takes care of the inner workings of updating the browser and allows us to focus on developing the application’s features.',
+              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
