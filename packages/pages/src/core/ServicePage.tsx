@@ -111,10 +111,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderFourColumnGridBlock(usps),
         // Related Posts
         renderRelatedPostsBlock({ items: relatedPosts }),
-        // Checklist: Why Us
-        renderRightChecklistBlock({
-          ...checklist,
-        }),
         // Faqs
         renderFaqsAccordionBlock({
           ...faqs,
@@ -133,11 +129,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           },
           titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
-        }),
-        // Benefits
-        renderThreeColumnGridBlock({
-          ...benefits,
-          sx: { backgroundColor: 'background.paper' },
         }),
         // Related Services
         renderRelatedServicesBlock({
