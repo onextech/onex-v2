@@ -13,10 +13,11 @@ import { useLayout } from '../providers/LayoutProvider'
 export interface LeadFormProps {
   onSubmit?: (values: any) => void
   serviceCategorys?: ServiceCategory[]
+  alignButtonLeft?: boolean
 }
 
 const LeadForm: React.FC<LeadFormProps> = (props) => {
-  const { onSubmit, serviceCategorys } = props
+  const { onSubmit, serviceCategorys, alignButtonLeft } = props
 
   const { routeConfig, site } = useLayout()
   const { cta_button_title } = site
@@ -132,7 +133,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
         resetOnSubmitSuccess
         submitButtonProps={{
           title: cta_button_title,
-          boxProps: { display: 'flex', justifyContent: 'flex-end' },
+          boxProps: { display: 'flex', justifyContent: alignButtonLeft ? 'flex-start' : 'flex-end' },
           fullWidthOnMobile: true,
           loading: isLoading,
           size: 'large',

@@ -4,12 +4,12 @@ import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
   renderClientTestimonialSliderBlock,
-  renderFactsAccordionBlock,
   renderFactsVerticalTabsBlock,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
   renderHeroBlock,
+  renderLeadFormBlock,
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
   renderRightChecklistBlock,
@@ -31,8 +31,13 @@ export interface ServicePageProps {
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { relatedPosts, relatedServices, service, showcases } = props
-  const { clientLogos, clientTestimonials, routeConfig, technologys } =
-    useLayout()
+  const {
+    clientLogos,
+    clientTestimonials,
+    routeConfig,
+    serviceCategorys,
+    technologys,
+  } = useLayout()
   const { sections } = service || {}
 
   const {
@@ -64,9 +69,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         }),
         // Facts
         facts &&
-        renderFactsVerticalTabsBlock({
-          ...facts,
-        }),
+          renderFactsVerticalTabsBlock({
+            ...facts,
+          }),
         // Challenges
         challenges &&
           renderThreeColumnGridBlock({
@@ -84,9 +89,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Showcases
         Boolean(showcases?.length) &&
           renderShowcaseSlider({
-            overline: showcase.overline,
             title: showcase.title,
             items: showcases,
+            overline: showcase.overline,
             pt: { xs: 5, md: 10 },
             subtitle: showcase.subtitle,
           }),
@@ -106,7 +111,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderFourColumnGridBlock(usps),
         // Related Posts
         renderRelatedPostsBlock({ items: relatedPosts }),
-        // Checklist
+        // Checklist: Why Us
         renderRightChecklistBlock({
           ...checklist,
         }),
@@ -138,6 +143,8 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderRelatedServicesBlock({
           items: relatedServices,
         }),
+        // Form
+        renderLeadFormBlock(),
       ]}
     />
   )

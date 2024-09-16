@@ -55,6 +55,9 @@ export * from './renderHeroBlock'
 export { default as renderLeftHeroWithBackgroundBlock } from './renderLeftHeroWithBackgroundBlock'
 export * from './renderLeftHeroWithBackgroundBlock'
 
+export { default as renderLeadFormBlock } from './renderLeadFormBlock'
+export * from './renderLeadFormBlock'
+
 export { default as renderHeroWithVideoBackgroundBlock } from './renderHeroWithVideoBackgroundBlock'
 export * from './renderHeroWithVideoBackgroundBlock'
 
