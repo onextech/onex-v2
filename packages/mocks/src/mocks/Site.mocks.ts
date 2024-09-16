@@ -79,6 +79,11 @@ export const MOCK_GROUP_SITE: Site = {
         'Discover the key to software development success with the latest best practices and techniques',
     },
     {
+      id: 'technologies',
+      title: 'Our Technologies',
+      subtitle: 'Bet on technologies that will work even years from now.',
+    },
+    {
       id: 'industries',
       title: 'Industries We Serve',
       subtitle:

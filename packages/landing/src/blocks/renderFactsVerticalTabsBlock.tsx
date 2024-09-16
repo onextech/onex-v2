@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { Box, Typography } from '@onex/ui'
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
+import { Box, Typography } from '@onex/ui'
+
 import { BlockItemProps } from '../web'
 import { BlockProps } from '../web/Block/Block'
 
@@ -34,15 +35,15 @@ function TabPanel(props: TabPanelProps) {
 export interface RenderFactsVerticalTabsBlockProps
   extends Omit<BlockProps, 'items'> {
   items?: Array<{ content?: string; id?: string; title: string }>
+  overline?: BlockItemProps['title']
   subtitle?: BlockItemProps['title']
   title: BlockItemProps['title']
-  overline?: BlockItemProps['title']
 }
 
 const renderFactsVerticalTabsBlock = (
   props: RenderFactsVerticalTabsBlockProps
 ) => {
-  const { overline, title, items, subtitle, ...rest } = props
+  const { title, items, overline, subtitle, ...rest } = props
 
   const [value, setValue] = React.useState(0)
 
@@ -70,7 +71,7 @@ const renderFactsVerticalTabsBlock = (
       },
       {
         gridItemProps: {
-          sx: { mt: { xs: 4, md: 8 }, textAlign: { xs: 'center', md: 'left' } },
+          sx: { mt: { xs: 4, md: 8 }, textAlign: 'left' },
         },
         gridItems: [
           // Left
@@ -84,30 +85,42 @@ const renderFactsVerticalTabsBlock = (
                   return {
                     id: id || title,
                     title: (
-                      <Box key={id || title} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <Box
+                        key={id || title}
+                        sx={{
+                          width: '100%',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: { xs: 'space-between', md: 'center' },
+                          gap: 1,
+                        }}
+                      >
                         <span>{title}</span>
 
-                        <KeyboardArrowRightOutlinedIcon sx={{
-                          ml: 1,
-                          color: isActive ? 'primary.main' : 'text.secondary',
-                        }} />
+                        <KeyboardArrowRightOutlinedIcon
+                          sx={{
+                            color: isActive ? 'primary.main' : 'text.secondary',
+                            ml: 1,
+                            transform: { xs: 'rotate(90deg)', md: 'none' },
+                          }}
+                        />
                       </Box>
                     ),
                     sx: {
-                      maxWidth: '100%',
+                      '&:hover': { backgroundColor: 'action.hover' },
+                      borderBottom: 1,
+                      borderColor: 'divider',
+                      color: 'text.primary',
                       fontFamily: 'inherit',
                       fontSize: '1.15rem',
                       fontWeight: 'normal',
-                      textTransform: 'none',
                       letterSpacing: 0,
-                      textAlign: 'left',
-                      variant: 'subtitle2' as const,
-                      p: 2,
-                      borderBottom: 1,
-                      borderColor: 'divider',
                       lineHeight: 1.35,
-                      color: 'text.primary',
-                      '&:hover': { backgroundColor: 'action.hover' },
+                      maxWidth: '100%',
+                      p: 2,
+                      textAlign: 'left',
+                      textTransform: 'none',
+                      variant: 'subtitle2' as const,
                     },
                   }
                 }),
@@ -115,8 +128,8 @@ const renderFactsVerticalTabsBlock = (
                   indicatorColor: '',
                   onChange: handleChange,
                   orientation: 'vertical',
+                  sx: { ml: -2, mt: -2 },
                   value,
-                  sx: { ml: -2,  mt: -2 },
                 },
                 type: 'tabs',
               },
@@ -144,7 +157,7 @@ const renderFactsVerticalTabsBlock = (
             ],
           },
         ],
-        gridProps: { spacing: 8 },
+        gridProps: { spacing: { xs: 0, md: 8 } },
         type: 'grid',
       },
     ],

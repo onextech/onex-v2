@@ -61,7 +61,11 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = (props) => {
       component="fieldset"
       error={error}
       required={required}
-      sx={sx}
+      sx={{
+        width: '100%',
+        textAlign: 'left',
+        ...sx,
+      }}
       variant="standard"
     >
       {!disableLabel && (

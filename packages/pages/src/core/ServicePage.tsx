@@ -36,15 +36,12 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
     clientLogos,
     clientTestimonials,
     routeConfig,
-    serviceCategorys,
     technologys,
   } = useLayout()
   const { sections } = service || {}
 
   const {
-    benefits,
     challenges,
-    checklist,
     cta,
     facts,
     faqs,
