@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { TypographyProps } from '@onex/ui'
+
 import { BlockProps } from '../web/Block/Block'
 import { BlockItemProps } from '../web/Block/BlockItem'
 
@@ -26,7 +28,9 @@ export interface RenderBaseColumnGridBlockProps
   titleProps?: BlockItemProps['titleProps']
 }
 
-const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
+const renderBaseColumnGridBlock = (
+  props: RenderBaseColumnGridBlockProps
+): BlockProps => {
   const {
     title,
     columns,
@@ -52,7 +56,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
           gutterBottom: true,
           ...(!isTextAlignCenter && { maxWidth: '50%' }),
           ...titleProps,
-        },
+        } as TypographyProps,
         type: 'h3',
         ...(isTextAlignCenter && { maxWidth: 'md' }),
       },
@@ -84,7 +88,7 @@ const renderBaseColumnGridBlock = (props: RenderBaseColumnGridBlockProps) => {
             subtitle,
             titleProps,
           } = item
-          const hasStat = items.some((item) => item.stat)
+          const hasStat = items.some(({ stat }) => Boolean(stat))
           return {
             items: [
               avatar_src && {
