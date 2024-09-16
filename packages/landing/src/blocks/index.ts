@@ -148,6 +148,9 @@ export * from './renderServicesBlockItem'
 export { default as renderServiceNotFoundCalloutBlock } from './renderServiceNotFoundCalloutBlock'
 export * from './renderServiceNotFoundCalloutBlock'
 
+export { default as renderSoftwareLifecycleBlock } from './renderSoftwareLifecycleBlock'
+export * from './renderSoftwareLifecycleBlock'
+
 export { default as renderOtherPressReleasesBlock } from './renderOtherPressReleasesBlock'
 export * from './renderOtherPressReleasesBlock'
 

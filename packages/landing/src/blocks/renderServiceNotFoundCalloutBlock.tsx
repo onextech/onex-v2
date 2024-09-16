@@ -26,6 +26,7 @@ const renderServiceNotFoundCalloutBlock = (
     cta = 'Schedule a Call',
     size = 'medium',
     subtitle = 'A One X Specialist is available to discuss custom solutions tailored to your specific needs. Reach out to find out more.',
+    sx,
     ...rest
   } = props
 
@@ -33,7 +34,7 @@ const renderServiceNotFoundCalloutBlock = (
   const { cta_button_title } = site || {}
 
   return {
-    id: 'lead-form-block',
+    id: 'service-not-found-callout',
     items: [
       {
         gridItems: [
@@ -97,6 +98,7 @@ const renderServiceNotFoundCalloutBlock = (
       borderColor: 'divider',
       borderTop: 1,
       borderTopColor: 'divider',
+      ...sx,
     },
     ...rest,
   }

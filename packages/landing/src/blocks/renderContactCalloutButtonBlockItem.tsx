@@ -17,7 +17,9 @@ const renderContactCalloutButtonBlockItem = (
     children = <></>,
     subtitle = '',
     titleProps,
+    ...rest
   } = props
+
   return {
     title,
     titleProps: {
@@ -33,6 +35,7 @@ const renderContactCalloutButtonBlockItem = (
       ...titleProps,
     },
     type: 'button',
+    ...rest,
   }
 }
 
