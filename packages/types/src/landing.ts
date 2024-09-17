@@ -36,7 +36,8 @@ export enum FormCategoryEnum {
 export interface Industry extends Page {
   fa_icon?: string
   is_featured?: boolean
-  is_hidden_from_nav?: boolean
+  is_hidden_from_footer?: boolean
+  is_hidden_from_header?: boolean
 }
 
 export interface Job extends CrudItem {
@@ -99,7 +100,7 @@ export interface Page extends CrudItem {
   is_active?: boolean
   // Display
   is_featured?: boolean
-  is_hidden_from_nav?: boolean
+  is_hidden_from_header?: boolean
   // Hero
   overline?: string
   // Sections
@@ -157,7 +158,7 @@ export interface Service extends Page {
   category_id?: number
   hero_alt?: string
   hero_src?: string
-  is_hidden_from_nav?: boolean
+  is_hidden_from_header?: boolean
   // Tags
   tags?: CrudItem[]
 }
@@ -260,7 +261,8 @@ export interface Technology extends Page {
   hero_alt?: string
   hero_src?: string
   is_featured?: boolean
-  is_hidden_from_nav?: boolean
+  is_hidden_from_footer?: boolean
+  is_hidden_from_header?: boolean
 }
 
 export interface Showcase extends Page {

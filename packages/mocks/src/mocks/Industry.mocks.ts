@@ -559,6 +559,102 @@ export const MOCK_GROUP_INDUSTRYS = [
       'Unlock the value in every dimension of your real estate with integrated, data-led services that support your overall product strategy.',
   },
   {
+    title: 'Banking',
+    slug: 'banking',
+    fa_icon: 'fa-money-bill-trend-up',
+    faqs: {
+      title: 'Frequently Asked Questions',
+      items: [
+        {
+          id: 'faqs-1',
+          title: 'What are the key challenges in the banking industry?',
+          content:
+            'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
+        },
+        {
+          id: 'faqs-2',
+          title: 'How can technology drive innovation in the banking sector?',
+          content:
+            'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
+        },
+        {
+          id: 'faqs-3',
+          title:
+            'What software solutions do you offer for the banking industry?',
+          content:
+            'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
+        },
+      ],
+      subtitle:
+        'Learn more about our Banking Solutions and how they can benefit your institution.',
+    },
+    hero_alt: 'G pay being used',
+    hero_src: '/unsplash/XvS-uKUoUao.jpg',
+    is_featured: true,
+    sections: {
+      features: {
+        title: 'Our Approach to {title}',
+        items: [
+          {
+            title: 'Core Banking Systems',
+            fa_icon: 'fa-money-check-alt',
+            subtitle:
+              'We develop robust and scalable core banking systems that streamline banking processes, including account management, transaction processing, and customer data management.',
+          },
+          {
+            title: 'Mobile Banking Applications',
+            fa_icon: 'fa-mobile-alt',
+            subtitle:
+              'Our mobile banking applications enable customers to conveniently perform banking transactions, manage accounts, and access personalized financial services on their mobile devices.',
+          },
+          {
+            title: 'Security and Fraud Prevention',
+            fa_icon: 'fa-shield-alt',
+            subtitle:
+              'We implement advanced security measures and fraud prevention solutions to safeguard banking systems, customer data, and financial transactions from cyber threats.',
+          },
+          {
+            title: 'Data Analytics and Insights',
+            fa_icon: 'fa-chart-pie',
+            subtitle:
+              'Our data analytics solutions leverage big data technologies to provide banks with valuable insights, enabling data-driven decision-making, risk management, and personalized customer experiences.',
+          },
+          {
+            title: 'Corporate Banking Solutions',
+            fa_icon: 'fa-briefcase',
+            subtitle:
+              'We develop comprehensive corporate banking solutions that facilitate corporate account management, treasury services, trade finance, and cash management for corporate clients.',
+          },
+          {
+            title: 'Integration and Middleware',
+            fa_icon: 'fa-cogs',
+            subtitle:
+              'We provide integration and middleware solutions that enable seamless connectivity between banking systems, third-party applications, and external APIs, enhancing operational efficiency and enabling innovation.',
+          },
+        ],
+        overline: 'What we do',
+        subtitle:
+          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower banks to thrive in a digital banking era.',
+      },
+      summary: {
+        title: 'Driving innovation in the banking industry.',
+        items: [
+          {
+            title:
+              'At our Banking Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the banking industry.',
+          },
+          {
+            title:
+              'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
+          },
+        ],
+      },
+    },
+
+    subtitle:
+      'Boosting banking with custom, secure, and efficient software solutions.',
+  },
+  {
     title: 'Capital Markets',
     slug: 'capital-markets',
     fa_icon: 'fa-coins',
@@ -657,108 +753,14 @@ export const MOCK_GROUP_INDUSTRYS = [
       'Transform your financial services with bespoke software solutions to navigate complex capital market challenges.',
   },
   {
-    title: 'Banking',
-    slug: 'banking',
-    fa_icon: 'fa-money-bill-trend-up',
-    faqs: {
-      title: 'Frequently Asked Questions',
-      items: [
-        {
-          id: 'faqs-1',
-          title: 'What are the key challenges in the banking industry?',
-          content:
-            'The banking industry faces challenges such as cybersecurity threats, regulatory compliance, legacy system integration, digital transformation, customer experience enhancement, and data management.',
-        },
-        {
-          id: 'faqs-2',
-          title: 'How can technology drive innovation in the banking sector?',
-          content:
-            'Technology can drive innovation in the banking sector by enabling digital banking services, enhancing security and fraud detection, streamlining processes, enabling personalized customer experiences, facilitating data-driven decision-making, and promoting financial inclusion.',
-        },
-        {
-          id: 'faqs-3',
-          title:
-            'What software solutions do you offer for the banking industry?',
-          content:
-            'We offer a range of software solutions tailored to the banking industry, including core banking system integration, digital banking platforms, risk and compliance solutions, fraud detection systems, data analytics tools, customer relationship management (CRM) systems, and mobile banking applications.',
-        },
-      ],
-      subtitle:
-        'Learn more about our Banking Solutions and how they can benefit your institution.',
-    },
-    hero_alt: 'G pay being used',
-    hero_src: '/unsplash/XvS-uKUoUao.jpg',
-    is_featured: true,
-    sections: {
-      features: {
-        title: 'Our Approach to {title}',
-        items: [
-          {
-            title: 'Core Banking Systems',
-            fa_icon: 'fa-money-check-alt',
-            subtitle:
-              'We develop robust and scalable core banking systems that streamline banking processes, including account management, transaction processing, and customer data management.',
-          },
-          {
-            title: 'Mobile Banking Applications',
-            fa_icon: 'fa-mobile-alt',
-            subtitle:
-              'Our mobile banking applications enable customers to conveniently perform banking transactions, manage accounts, and access personalized financial services on their mobile devices.',
-          },
-          {
-            title: 'Security and Fraud Prevention',
-            fa_icon: 'fa-shield-alt',
-            subtitle:
-              'We implement advanced security measures and fraud prevention solutions to safeguard banking systems, customer data, and financial transactions from cyber threats.',
-          },
-          {
-            title: 'Data Analytics and Insights',
-            fa_icon: 'fa-chart-pie',
-            subtitle:
-              'Our data analytics solutions leverage big data technologies to provide banks with valuable insights, enabling data-driven decision-making, risk management, and personalized customer experiences.',
-          },
-          {
-            title: 'Corporate Banking Solutions',
-            fa_icon: 'fa-briefcase',
-            subtitle:
-              'We develop comprehensive corporate banking solutions that facilitate corporate account management, treasury services, trade finance, and cash management for corporate clients.',
-          },
-          {
-            title: 'Integration and Middleware',
-            fa_icon: 'fa-cogs',
-            subtitle:
-              'We provide integration and middleware solutions that enable seamless connectivity between banking systems, third-party applications, and external APIs, enhancing operational efficiency and enabling innovation.',
-          },
-        ],
-        overline: 'What we do',
-        subtitle:
-          'With our deep industry knowledge and cutting-edge technologies, we offer a range of solutions that empower banks to thrive in a digital banking era.',
-      },
-      summary: {
-        title: 'Driving innovation in the banking industry.',
-        items: [
-          {
-            title:
-              'At our Banking Solutions, we specialize in providing technology consulting services and enterprise software development solutions to the banking industry.',
-          },
-          {
-            title:
-              'We understand the evolving needs and challenges faced by banks, and our expertise in enterprise software development enables us to deliver innovative solutions that enhance operational efficiency, improve customer experiences, and ensure regulatory compliance.',
-          },
-        ],
-      },
-    },
-
-    subtitle:
-      'Boosting banking with custom, secure, and efficient software solutions.',
-  },
-  {
     title: 'Aerospace & Defense',
     slug: 'aerospace-defense',
     fa_icon: 'fa-plane-departure',
     hero_alt: 'Artist depiction of hypersonic passenger aircraft.',
     hero_src: '/unsplash/8atxWjBYzGI.jpg',
     is_featured: true,
+
+is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -853,6 +855,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Surgery procedure',
     hero_src: '/unsplash/6aomTW8ojbo.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -944,6 +947,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Woman in laboratory',
     hero_src: '/unsplash/oCLuFi9GYNA.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1037,6 +1041,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'People coding',
     hero_src: '/unsplash/uv5_bsypFUM.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1128,6 +1133,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Mercedes benz in monaco',
     hero_src: '/unsplash/MaraDXSaTho.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1220,6 +1226,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Production director with headset',
     hero_src: '/unsplash/_xJqCQgkpLc.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1313,6 +1320,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Industrial site',
     hero_src: '/unsplash/SLIFI67jv5k.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1404,6 +1412,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Offshore wind farm',
     hero_src: '/unsplash/pONBhDyOFoM.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1496,6 +1505,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Person writing on paper',
     hero_src: '/unsplash/OQMZwNd3ThU.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1587,6 +1597,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Marina Bay Sands shops',
     hero_src: '/unsplash/LJyAzs5HJvI.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',
@@ -1680,6 +1691,7 @@ export const MOCK_GROUP_INDUSTRYS = [
     hero_alt: 'Power lines',
     hero_src: '/unsplash/0LqtbRIFlVQ.jpg',
     is_featured: true,
+    is_hidden_from_footer: true,
     sections: {
       faqs: {
         title: 'FAQs',

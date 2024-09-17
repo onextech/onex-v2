@@ -581,12 +581,16 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     industrys?.length && {
       id: 'industrys',
       title: 'Industries',
-      items: industrys,
+      items: industrys.filter(
+        ({ is_hidden_from_footer }) => !is_hidden_from_footer
+      ),
     },
     technologys?.length && {
       id: 'technologies',
       title: 'Technologies',
-      items: technologys,
+      items: technologys.filter(
+        ({ is_hidden_from_footer }) => !is_hidden_from_footer
+      ),
     },
     site.nav_is_ecosystem_visible && {
       id: 'ecosystem',

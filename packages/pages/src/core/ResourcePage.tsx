@@ -116,8 +116,7 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
           py: { xs: 5, md: 10 },
           sx: {
             backgroundColor: 'background.paper',
-            borderColor: 'divider',
-            borderTop: 1,
+            border: (theme) => `1px solid ${theme.palette.divider}`,
           },
           textAlign: 'left',
         }),
@@ -127,8 +126,7 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
           pt: { xs: 5, md: 10 },
           sx: {
             backgroundColor: 'background.paper',
-            borderColor: 'divider',
-            borderTop: 1,
+            border: (theme) => `1px solid ${theme.palette.divider}`,
           },
         }),
         // ClientLogosImageMarquee

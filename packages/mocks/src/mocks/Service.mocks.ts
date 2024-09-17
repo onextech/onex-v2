@@ -847,7 +847,7 @@ export const MOCK_TECH_SERVICES = [
     hero_alt: 'Gardens by the bay',
     // Hero
     hero_src: '/unsplash/taayxzJk5xY.jpg',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     // Sections
     sections: {
       faqs: {
