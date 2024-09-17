@@ -28,6 +28,7 @@ const commonRightGridItemProps = { md: 8, lg: 9 }
 export interface LandingLayoutProps
   extends Omit<GvsLandingLayoutProps, 'footerProps' | 'headerProps'> {
   calloutProps?: ContactCalloutProps
+  disableCallout?: boolean
   footerProps?: Partial<GvsLandingLayoutProps['footerProps']>
   headerProps?: Partial<GvsLandingLayoutProps['headerProps']>
   useLayout?: typeof useLayout
@@ -37,6 +38,7 @@ export interface LandingLayoutProps
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const {
     calloutProps,
+    footerProps,
     seo,
     useLayout: injectedUseLayout,
     useUserPreferences: injectedUseUserPreferences,
@@ -638,6 +640,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       logo: <Image {...logoProps} />,
       navItems: footerNavConfig,
       socialMediaItems,
+      ...footerProps,
     },
     headerProps: {
       accordionProps: { titleProps: { variant: 'h5' } },

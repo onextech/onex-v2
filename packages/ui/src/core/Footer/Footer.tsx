@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { WithPaletteModeProps, withPaletteMode } from '@onex/theme'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import YouTubeIcon from '@mui/icons-material/YouTube'
+import { BoxProps } from '@mui/material'
+import { WithPaletteModeProps, withPaletteMode } from '@onex/theme'
 import startCase from 'lodash/startCase'
 
 import Box from '../Box'
@@ -44,6 +45,7 @@ export interface FooterProps extends WithPaletteModeProps {
   logo?: React.ReactElement
   navItems: FooterNavItem[]
   socialMediaItems?: { [type in SocialItemType]?: string }
+  sx?: BoxProps['sx']
 }
 
 const Footer: React.FC<FooterProps> = (props) => {
@@ -58,6 +60,7 @@ const Footer: React.FC<FooterProps> = (props) => {
     mode,
     navItems: injectedNavItems,
     socialMediaItems,
+    sx,
   } = props
 
   const navItems = injectedNavItems?.filter(Boolean)
@@ -68,10 +71,14 @@ const Footer: React.FC<FooterProps> = (props) => {
 
       {/* Footer */}
       <Box
-        bgcolor="background.paper"
         component="footer"
-        py={2}
-        textAlign={{ xs: 'center', md: 'left' }}
+        sx={{
+          backgroundColor: 'background.paper',
+          border: (theme) => `1px solid ${theme.palette.divider}`,
+          py: 2,
+          textAlign: { xs: 'center', md: 'left' },
+          ...sx,
+        }}
       >
         <Container disableGuttersOnMobile>
           <Box sx={{ py: { xs: 0, md: 4 } }}>

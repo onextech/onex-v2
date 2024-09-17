@@ -26,6 +26,7 @@ const NextServicePage: React.FC<NextServicePageProps> = (props) => {
     <PageProvider {...pageProviderProps}>
       <LandingLayout
         autoBreadcrumbs
+        footerProps={{ disableCallout: true }}
         seo={{
           title: service.title,
           description: `Leverage our expert ${service.category.title.toLowerCase()} services for ${service.title.toLowerCase()}. ${

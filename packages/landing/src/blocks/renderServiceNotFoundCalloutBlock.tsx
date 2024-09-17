@@ -11,7 +11,6 @@ import { BlockProps } from '../web/Block/Block'
 
 export interface RenderServiceNotFoundCalloutBlockProps
   extends Omit<BlockProps, 'items'> {
-  cta?: BlockItemProps['title']
   overline?: BlockItemProps['title']
   size?: 'large' | 'medium'
   subtitle?: BlockItemProps['title']
@@ -23,7 +22,6 @@ const renderServiceNotFoundCalloutBlock = (
 ) => {
   const {
     title = 'Looking for a Solution Not Included Here?',
-    cta = 'Schedule a Call',
     size = 'medium',
     subtitle = 'A One X Specialist is available to discuss custom solutions tailored to your specific needs. Reach out to find out more.',
     sx,
@@ -79,7 +77,7 @@ const renderServiceNotFoundCalloutBlock = (
             },
             items: [
               renderContactCalloutButtonBlockItem({
-                title: cta || cta_button_title,
+                title: cta_button_title,
                 children: <GetStartedPage />,
                 subtitle: 'Schedule a non-obligatory 30-min consultation',
               }),
