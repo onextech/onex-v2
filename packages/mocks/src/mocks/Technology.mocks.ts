@@ -875,6 +875,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     avatar_alt: 'Webpack logo',
     is_featured: true,
     is_active: true,
+    is_hidden_from_footer: true,
     subtitle: 'Optimize your frontend development workflow with Webpack.',
     hero_src: '/unsplash/EJSaEnVvZcg.jpg',
     hero_alt: 'Webpack codes',
@@ -1022,6 +1023,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     avatar_alt: 'Module Federation logo',
     is_featured: true,
     is_active: true,
+    is_hidden_from_footer: true,
     subtitle:
       'Enhance your frontend architecture with Module Federation and build scalable, modular applications.',
     hero_src: '/unsplash/26MJGnCM0Wc.jpg',
@@ -1171,6 +1173,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     avatar_alt: 'Nx logo',
     is_featured: true,
     is_active: true,
+    is_hidden_from_footer: true,
     subtitle:
       'Build scalable and efficient frontend applications using Nx Monorepo.',
     hero_src: '/unsplash/m_HRfLhgABo.jpg',
@@ -1324,6 +1327,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     hero_src: '/unsplash/HIctpU2PA8E.jpg',
     hero_alt: 'Amazon logo with desk setup',
     is_active: true,
+    is_hidden_from_footer: true,
     // Seo
     seo: {
       title: 'AWS',
@@ -1470,7 +1474,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: 'ant-design',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_mui.png',
@@ -1479,7 +1483,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: 'mui',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_sass.png',
@@ -1488,7 +1492,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: 'saas',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_storybook.png',
@@ -1498,7 +1502,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: 'storybook',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: "/images/technology_google.png",
@@ -1507,6 +1511,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: "google-cloud",
     subtitle: "Work with cloud experts who have implemented solutions across various industries.",
     is_active: true,
+    is_hidden_from_footer: true,
   },
   {
     avatar_src: "/images/technology_microsoft.png",
@@ -1515,6 +1520,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: "microsoft-azure",
     subtitle: "Leverage cloud solutions tested in enterprise environments with Azure expertise.",
     is_active: true,
+    is_hidden_from_footer: true,
   },
   {
     avatar_src: "/images/technology_vercel.png",
@@ -1523,6 +1529,7 @@ export const MOCK_GROUP_TECHNOLOGYS: Technology[] = [
     slug: "vercel",
     subtitle: "Develop and deploy high-performance web applications with ease.",
     is_active: true,
+    is_hidden_from_footer: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECHNOLOGY_PAGE, {
@@ -2872,7 +2879,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'ant-design',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_mui.png',
@@ -2881,7 +2888,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'mui',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_sass.png',
@@ -2890,7 +2897,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'saas',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
   {
     avatar_src: '/images/technology_storybook.png',
@@ -2900,7 +2907,7 @@ export const MOCK_TECH_TECHNOLOGYS: Technology[] = [
     slug: 'storybook',
     subtitle:
       'Work with product experts with the know-how tested in 7+ industries.',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
   },
 ].map((item, i) => {
   return merge({}, MOCK_TECHNOLOGY_PAGE, {

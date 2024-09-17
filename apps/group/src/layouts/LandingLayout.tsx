@@ -18,7 +18,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
       useUserPreferences={useUserPreferences}
       {...props}
       headerProps={{
-        // TODO: This data should be fetched from the cms
+        // TODO: This data should be fetched from the cms or else mocks
         announcement: {
           title: `${site.title} unveils the future of Enterprise Software Development.`,
           href: `${routeConfig.PRESS_RELEASES}/unveiling-future-unique-enterprise-software-development`,

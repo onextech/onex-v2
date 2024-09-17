@@ -93,7 +93,7 @@ const typography = {
   },
   h7: {
     fontFamily: headerFontFamily,
-    fontSize: pxToRem(16),
+    fontSize: pxToRem(18),
     fontWeight: 400,
     letterSpacing: 0,
     lineHeight: 1.5,

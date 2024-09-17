@@ -120,7 +120,7 @@ const renderSoftwareLifecycleBlock = (
           spacing: 4,
           width: '100%',
         },
-        sx: { overflowX: 'scroll' },
+        sx: { overflowX: 'scroll', '&::-webkit-scrollbar': { display: 'none' } },
         type: 'stack',
       },
       renderContactCalloutButtonBlockItem({

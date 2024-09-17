@@ -32,12 +32,8 @@ export interface ServicePageProps {
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { relatedPosts, relatedServices, service, showcases } = props
-  const {
-    clientLogos,
-    clientTestimonials,
-    routeConfig,
-    technologys,
-  } = useLayout()
+  const { clientLogos, clientTestimonials, routeConfig, technologys } =
+    useLayout()
   const { sections } = service || {}
 
   const {

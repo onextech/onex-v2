@@ -808,7 +808,7 @@ const MOCK_COMMON_PAGES = [
   {
     title: 'Contact Success',
     slug: 'contact-success',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     seo_description:
       'Get in touch with our dedicated team through our contact form, email or phone so that we can help serve you better.',
     subtitle:
@@ -856,7 +856,7 @@ const MOCK_COMMON_PAGES = [
       '<p>{companyTitle} Pte Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n' +
       '<h3>Governing Law</h3>\n' +
       '<p>These terms and conditions are governed by and construed in accordance with the laws of {localeTitle} and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     seo_description:
       "Explore {companyTitle}'s Terms of Service, guidelines, and limitations. Stay informed, comply, and find peace of mind.",
   },
@@ -873,7 +873,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>Rights</h3>\n' +
       '<p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>\n' +
       '<p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     seo_description:
       'We value your privacy. Discover how {appTitle} respects your personal information through data protection, consent and protecting your rights.',
   },
@@ -902,7 +902,7 @@ const MOCK_COMMON_PAGES = [
       '<h3>Managing cookies</h3>\n' +
       '<p>You can control and/or delete cookies as you wish. For more information, you can visit the <a href="https://www.allaboutcookies.org/">All About Cookies</a> website. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site, and some services and functionalities may not work.</p>\n' +
       '<p>For further details about our use of cookies and your choices regarding cookies, please refer to our <a href="/privacy">Privacy Policy</a>.</p>',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     seo_description:
       "Discover more about our website's cookie policy and personalize, analyse and manage cookies to enhance your website experience",
   },
@@ -992,7 +992,7 @@ const MOCK_COMMON_PAGES = [
       '<p>We maintain an up-to-date "Do Not Call" list and regularly review and update this list to reflect changes in user preferences. This process ensures we respect the communication preferences of our users at all times.</p>' +
       '<h3>11.3 Compliance Checks and Staff Training</h3>' +
       '<p>To ensure compliance with our "Do Not Call" policy, we conduct regular checks and provide training to staff involved in direct marketing. This approach ensures that our team members are aware of user preferences and respect their decision not to receive promotional calls.</p>',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     seo_description:
       '{appTitle} prioritizes data privacy, consent, transparency, and accountability. Our policy ensures secure data handling, user control, and compliance.',
   },
@@ -1266,7 +1266,7 @@ const MOCK_GROUP_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Enterprise Technology Consulting',
@@ -1501,8 +1501,8 @@ const MOCK_GROUP_PAGES = [
       'Stay up-to-date with the latest trends in the digital landscape.',
   },
   MOCK_RESOURCE_PAGE,
-  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_nav: true },
-  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_nav: true },
+  { title: 'Newsletter', slug: 'newsletter', is_hidden_from_header: true },
+  { title: 'Ecosystem', slug: 'ecosystem', is_hidden_from_header: true },
 ]
 
 const MOCK_TECH_PAGES = [
@@ -1768,7 +1768,7 @@ const MOCK_TECH_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Accelerate Product Delivery',
@@ -2290,7 +2290,7 @@ export const MOCK_DATA_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Harnessing the Power of AI for Enterprises',
@@ -2752,7 +2752,7 @@ export const MOCK_DESIGN_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Delivering Enterprise-Scale Design Solutions',
@@ -3205,7 +3205,7 @@ export const MOCK_DIGITAL_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Enterprise-Level Digital Marketing Solutions',
@@ -3725,7 +3725,7 @@ export const MOCK_FINX_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Unleashing the Power of AI in Finance',
@@ -4244,7 +4244,7 @@ export const MOCK_GOVX_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title:
@@ -4768,7 +4768,7 @@ export const MOCK_AEL_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title: 'Enterprise Technology Consulting',
@@ -5251,7 +5251,7 @@ export const MOCK_SRI_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title:
@@ -5770,7 +5770,7 @@ export const MOCK_GVS_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title:
@@ -6289,7 +6289,7 @@ export const MOCK_COASTAL_PAGES = [
   {
     title: 'Home',
     slug: 'home',
-    is_hidden_from_nav: true,
+    is_hidden_from_header: true,
     sections: {
       benefits: {
         title:

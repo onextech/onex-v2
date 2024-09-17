@@ -141,7 +141,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
           fullWidthOnMobile: true,
           loading: isLoading,
           size: 'large',
-          sx: { mt: 2 },
+          sx: { mt: 4 },
           variant: 'contained',
         }}
         {...props}

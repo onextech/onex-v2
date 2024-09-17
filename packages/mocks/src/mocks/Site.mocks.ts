@@ -8,7 +8,7 @@ export const MOCK_COMMON_SITE = {
   // Company
   company_title: 'One X Group Pte. Ltd.',
 
-  cta_button_title: 'Get Started',
+  cta_button_title: 'Schedule a Call',
   // Cta
   cta_title: 'Build the future with One X Group',
 

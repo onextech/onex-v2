@@ -28,12 +28,12 @@ const makeGetLayoutProviderProps =
 
       clientTestimonials,
       industrys: industrys
-        ?.filter(({ is_hidden_from_nav }) => !is_hidden_from_nav)
+        ?.filter(({ is_hidden_from_header }) => !is_hidden_from_header)
         ?.map((industry) => ({
           ...industry,
           href: `${routeConfig.INDUSTRYS}/${industry.slug}`,
         })),
-      pages: pages?.filter(({ is_hidden_from_nav }) => !is_hidden_from_nav),
+      pages: pages?.filter(({ is_hidden_from_header }) => !is_hidden_from_header),
       postCategorys: postCategorys?.map((postCategory) => ({
         ...postCategory,
         href: `${routeConfig.POSTS}/${postCategory.slug}`,
@@ -42,7 +42,7 @@ const makeGetLayoutProviderProps =
       routeConfig,
       serviceCategorys,
       services: getCrudItemsByCategory(
-        services.filter(({ is_hidden_from_nav }) => !is_hidden_from_nav),
+        services.filter(({ is_hidden_from_header }) => !is_hidden_from_header),
         serviceCategorys
       ).map((service) => ({
         ...service,
@@ -58,7 +58,7 @@ const makeGetLayoutProviderProps =
       // Site
       site,
       technologys: technologys
-        .filter(({ is_hidden_from_nav }) => !is_hidden_from_nav)
+        .filter(({ is_hidden_from_header }) => !is_hidden_from_header)
         .map((technology) => ({
           ...technology,
           href: `${routeConfig.TECHNOLOGYS}/${technology.slug}`,
