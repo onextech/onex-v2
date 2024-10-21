@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+import { fetchGravisApi } from '../../gravis-api'
 import getSlackFormats from '../slack/getSlackFormats'
 import { EnquiryTypeEnum } from './constants'
 import { getDomainAndPathTagsFromUrl } from './utils'
@@ -96,6 +97,7 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       source,
       time,
     }
+
     const introText = `<!here> We have a new ${getAudienceByType(
       type
     )} from ${origin}! Here are the details:`
@@ -151,14 +153,25 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       method: 'POST',
     })
 
-    await Promise.all([slackRequest, mailchimpRequest])
+    const onPostGravisLeadRequest = fetchGravisApi(`/leads`, {
+      body: JSON.stringify({
+        ...payload,
+        channel: `Company Website: ${domain}`,
+        full_name: name,
+      }),
+      method: 'POST',
+    }).catch((error) => {
+      console.error(`Gravis API request failed for: ${domain}`, error)
+    })
+
+    await Promise.all([slackRequest, mailchimpRequest, onPostGravisLeadRequest])
 
     return NextResponse.json(
       { data: 'Successfully submitted!' },
       { status: 200 }
     )
   } catch (error) {
-    console.error(error)
+    console.error('Failed handlePostEnquiry:', error)
     return NextResponse.json({ error: 'Something went wrong' }, { status: 500 })
   }
 }
