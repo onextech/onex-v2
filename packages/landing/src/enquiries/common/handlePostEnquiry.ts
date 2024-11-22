@@ -1,3 +1,4 @@
+import { ipAddress } from '@vercel/functions'
 import { NextRequest, NextResponse } from 'next/server'
 
 import { fetchGravisApi } from '../../gravis-api'
@@ -78,6 +79,9 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       source,
       type = EnquiryTypeEnum.ENQUIRY,
     } = await req.json()
+
+    const ip = ipAddress(req) || 'unknown'
+    console.log('jjj: ip', ip)
 
     const now = new Date()
     const date = now.toDateString()
