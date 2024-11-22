@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from 'react'
 import toast from 'react-hot-toast'
 
+import { yupResolver } from '@hookform/resolvers/yup'
 import { Form, FormSections } from '@onex/form'
 import { FormCategoryEnum } from '@onex/types'
 import { Alert } from '@onex/ui'
-import { yupResolver } from '@hookform/resolvers/yup'
 import { parsePhoneNumber } from 'awesome-phonenumber'
 import freeEmailDomains from 'free-email-domains'
 import { useRouter } from 'next/router'

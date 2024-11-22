@@ -1,8 +1,8 @@
 import React from 'react'
 
+import { useMediaQuery, useTheme } from '@mui/material'
 import { ClientTestimonial } from '@onex/types'
 import { Slider } from '@onex/ui'
-import { useMediaQuery, useTheme } from '@mui/material'
 
 import Block, { BlockProps } from '../web/Block/Block'
 import renderClientTestimonialSliderBlockItem from './renderClientTestimonialSliderBlockItem'

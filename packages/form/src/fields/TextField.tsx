@@ -53,7 +53,7 @@ const TextField: React.FC<TextFieldProps> = (props) => {
     titleProps,
     ...rest
   } = props
-  const { error, name, placeholder, required, value } = rest
+  const { error, name, placeholder, required, value, type } = rest
 
   // Autofocus
   // @link https://github.com/mui/material-ui/issues/7247#issuecomment-576032102
@@ -79,6 +79,7 @@ const TextField: React.FC<TextFieldProps> = (props) => {
     /// Hidden
     inputProps: {
       ...(hidden && { type: 'hidden' }),
+      ...(type && { type }),
       ...inputProps,
     },
     InputProps: {

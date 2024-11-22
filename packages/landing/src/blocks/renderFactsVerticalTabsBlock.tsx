@@ -51,6 +51,9 @@ const renderFactsVerticalTabsBlock = (
     setValue(newValue)
   }
 
+  // Return if no items
+  if (!items || items.length === 0) return null
+
   return {
     id: 'facts-vertical-tabs',
     ...rest,
@@ -88,11 +91,11 @@ const renderFactsVerticalTabsBlock = (
                       <Box
                         key={id || title}
                         sx={{
-                          width: '100%',
-                          display: 'flex',
                           alignItems: 'center',
-                          justifyContent: { xs: 'space-between', md: 'center' },
+                          display: 'flex',
                           gap: 1,
+                          justifyContent: { xs: 'space-between', md: 'center' },
+                          width: '100%',
                         }}
                       >
                         <span>{title}</span>

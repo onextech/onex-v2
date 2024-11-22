@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { useMediaQuery, useTheme } from '@mui/material'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
@@ -62,10 +63,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
         // Facts
-        facts &&
-          renderFactsVerticalTabsBlock({
-            ...facts,
-          }),
+        renderFactsVerticalTabsBlock({
+          ...facts,
+        }),
         // Challenges
         challenges &&
           renderThreeColumnGridBlock({
