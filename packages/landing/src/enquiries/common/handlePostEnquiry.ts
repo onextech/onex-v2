@@ -1,4 +1,4 @@
-import { ipAddress } from '@vercel/functions'
+import { geolocation, ipAddress } from '@vercel/functions'
 import { NextRequest, NextResponse } from 'next/server'
 
 import { fetchGravisApi } from '../../gravis-api'
@@ -80,8 +80,9 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       type = EnquiryTypeEnum.ENQUIRY,
     } = await req.json()
 
-    const ip = ipAddress(req) || 'unknown'
-    console.log('jjj: ip', ip)
+    const geo = geolocation(req) || {}
+    const ip = ipAddress(req) || ''
+    console.log('vercel/functions', { ip, geo })
 
     const now = new Date()
     const date = now.toDateString()
@@ -100,6 +101,14 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       needs: needs.map(({ value }) => value).join(', '),
       source,
       time,
+      // Ip & Geo data
+      ip_address: ip,
+      geo_city: geo.city,
+      geo_country: geo.country,
+      geo_region: geo.countryRegion,
+      geo_flag: geo.flag,
+      geo_lat: geo.latitude,
+      geo_long: geo.longitude,
     }
 
     const introText = `<!here> We have a new ${getAudienceByType(

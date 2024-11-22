@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useMemo, useState} from 'react'
 import toast from 'react-hot-toast'
 
 import { Form, FormSections } from '@onex/form'
@@ -9,6 +9,10 @@ import { useRouter } from 'next/router'
 import { EnquiryTypeEnum } from '../enquiries/common/constants'
 import { postEnquiry } from '../enquiries/common/postEnquiry'
 import { useLayout } from '../providers/LayoutProvider'
+import {yupResolver} from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import freeEmailDomains from "free-email-domains";
+import {parsePhoneNumber} from "awesome-phonenumber";
 
 export interface LeadFormProps {
   alignButtonLeft?: boolean
@@ -25,6 +29,27 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false)
   const router = useRouter()
+  const { locale } = router
+
+  const leadFormSchema = useMemo(
+    () =>
+      yup.object().shape({
+        email: yup
+          .mixed()
+          .test('isValidEmail', 'Please enter a valid work email.', (value) => {
+            if (typeof value !== 'string') return false; // Ensure the value is a string
+
+            const emailParts = value.split('@');
+            if (emailParts.length !== 2) return false; // Ensure it has one '@'
+
+            const domain = emailParts[1];
+            if (!domain.includes('.')) return false; // Ensure the domain contains a '.'
+
+            return !freeEmailDomains.includes(domain); // Check against free email domains
+          }),
+      }),
+    [locale]
+  )
 
   const handleSubmit = async (values) => {
     if (onSubmit) return onSubmit(values)
@@ -144,6 +169,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
           sx: { mt: 4 },
           variant: 'contained',
         }}
+        useFormProps={{ resolver: yupResolver(leadFormSchema) }}
         {...props}
       />
     </div>
