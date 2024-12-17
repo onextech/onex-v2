@@ -1832,6 +1832,162 @@ export const MOCK_GROUP_SERVICES = [
       'Partner with us to build bespoke software solutions that cater specifically to your business needs and drive operational efficiency.',
   },
   {
+    title: 'Web App Development',
+    slug: 'web-app-development',
+    category_id: 2,
+    hero_alt: 'Web app design on a computer screen',
+    hero_src: '/unsplash/uv5_bsypFUM.jpg',
+    sections: {
+      challenges: {
+        title: 'Struggling to Find the Perfect Fit?',
+        center: true,
+        items: [
+          {
+            title: 'Confused About Where to Start?',
+            fa_icon: 'fa-map-signs',
+            subtitle:
+              'We’ll help you map out your goals and turn them into a clear, actionable plan.',
+          },
+          {
+            title: 'Struggling to Find a Reliable Partner?',
+            fa_icon: 'fa-handshake',
+            subtitle:
+              'We’ve delivered 200+ projects on time, on budget, and above expectations.',
+          },
+          {
+            title: 'Worried About Scalability?',
+            fa_icon: 'fa-expand',
+            subtitle:
+              'Our solutions are built to grow with your business needs.',
+          },
+        ],
+        overline: 'Your Challenges, Solved',
+        subtitle:
+          'Choosing the right web app partner can feel like navigating a maze. Sound familiar? We simplify the process and ensure your business needs are met seamlessly.',
+      },
+      facts: {
+        overline: 'Facts',
+        title: 'Key Information about {title}',
+        subtitle:
+          'We deliver powerful, custom-built web applications that simplify workflows, optimize performance, and scale alongside your business.',
+        items: [
+          {
+            id: 'facts-1',
+            title: 'Benefits of {title}',
+            content: `Tailored Solutions
+            Custom web applications are designed to address your unique business challenges and workflows. Unlike off-the-shelf solutions, they evolve with your specific needs.
+
+            Enhanced Performance
+            Our web apps are built with optimized performance in mind, ensuring smooth, reliable, and fast user experiences across devices.
+
+            Scalable and Secure
+            Designed for growth, our solutions adapt as your business expands. We prioritize robust security to protect your data and users.`,
+          },
+          {
+            id: 'facts-2',
+            title: 'Understanding the {title} Process',
+            content: "Web app development starts with understanding your vision and goals. Through collaborative planning, we gather detailed requirements to build a solid foundation for your project.\n\nUsing agile development, we design, build, and refine the application, ensuring regular feedback to meet your business objectives. Our process guarantees flexibility, speed, and high-quality outcomes.",
+          },
+          {
+            id: 'facts-3',
+            title: 'Who Needs {title}?',
+            content: "{title} is perfect for startups, growing businesses, and enterprises looking to streamline operations, improve collaboration, or create seamless user experiences. Whether you need an MVP, a feature-rich web application, or a scalable enterprise portal, we tailor our solutions to meet your goals.",
+          },
+        ],
+      },
+      faqs: {
+        title: 'FAQs',
+        items: [
+          {
+            id: 'faqs-1',
+            title: 'What types of web apps do you develop?',
+            content:
+              'We develop a wide range of web apps, including custom applications, portals, progressive web apps (PWAs), and scalable enterprise solutions.',
+          },
+          {
+            id: 'faqs-2',
+            title: 'How long does web app development take?',
+            content:
+              'The timeline depends on project complexity, but we follow agile methodologies to deliver efficiently with regular updates and milestones.',
+          },
+          {
+            id: 'faqs-3',
+            title: 'What technologies do you use?',
+            content:
+              'We use modern frameworks and tools such as React, Angular, Node.js, AWS, and MongoDB to ensure future-proof, high-performance solutions.',
+          },
+        ],
+        subtitle:
+          'Learn more about our Web App Development services and how we can help achieve your business goals.',
+      },
+      features: {
+        title: 'Web Applications We Deliver',
+        items: [
+          {
+            title: 'Front-End Development',
+            fa_icon: 'fa-desktop',
+            subtitle:
+              'Create stunning, responsive user interfaces that captivate and engage your audience.',
+          },
+          {
+            title: 'Back-End Development',
+            fa_icon: 'fa-server',
+            subtitle:
+              'Secure, efficient back-end systems to power your web applications.',
+          },
+          {
+            title: 'Custom Web Applications',
+            fa_icon: 'fa-cogs',
+            subtitle:
+              'Dynamic, user-centric apps that streamline workflows and delight users.',
+          },
+          {
+            title: 'Proof of Concept Development',
+            fa_icon: 'fa-lightbulb',
+            subtitle:
+              'Test ideas quickly and reduce risks before scaling your project.',
+          },
+          {
+            title: 'Web Portal Development',
+            fa_icon: 'fa-network-wired',
+            subtitle:
+              'Centralize data, optimize communication, and improve collaboration with secure web portals.',
+          },
+          {
+            title: 'Progressive Web App Development (PWAs)',
+            fa_icon: 'fa-mobile-alt',
+            subtitle:
+              'Combine the best of web and mobile apps with PWAs for exceptional performance and accessibility.',
+          },
+        ],
+        overline: 'Our Expertise',
+        subtitle:
+          'We bring 8+ years of experience to craft web applications that fit your business needs perfectly.',
+      },
+      summary: {
+        overline: 'Summary',
+        title: 'Driving Business Success with {title} Services',
+        items: [
+          {
+            title:
+              '{appTitle}’s {title} service focuses on creating scalable, high-performance web solutions that align with your goals. We build applications that simplify processes and deliver measurable results.',
+          },
+          {
+            title:
+              'From consultation to delivery, we collaborate closely with your team to ensure the web application meets your requirements and drives long-term success.',
+          },
+        ],
+      },
+    },
+    seo: {
+      title: 'Web App Development',
+      description:
+        'This page highlights our Web App Development services, offering scalable and custom-built solutions for businesses across industries.',
+    },
+    subtitle:
+      'We create custom web applications tailored to your business needs, ensuring efficiency, scalability, and success.',
+  },
+  {
     // Hero
     title: 'PoC Development',
     slug: 'poc-development',
