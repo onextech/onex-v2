@@ -18,6 +18,10 @@ import Link from '../Link'
 import NavAccordion, { NavAccordionProps } from '../NavAccordion'
 import Stack from '../Stack'
 import Typography from '../Typography'
+import {useLayout} from "@onex/landing";
+import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export type SocialItemType =
   | 'behance'
@@ -64,6 +68,10 @@ const Footer: React.FC<FooterProps> = (props) => {
   } = props
 
   const navItems = injectedNavItems?.filter(Boolean)
+
+  const { logoProps, site } = useLayout()
+  const { office_address, office_title, general_email, general_phone,
+    general_whatsapp } = site
 
   const childrenJsx = (
     <>
@@ -117,30 +125,37 @@ const Footer: React.FC<FooterProps> = (props) => {
               justifyContent="space-between"
               spacing={2}
             >
-              {/* Legal items */}
-              <Stack
-                alignItems="center"
-                direction="row"
-                justifyContent={{ xs: 'center', md: 'flex-start' }}
-                spacing={1}
-              >
-                {legalItems &&
-                  Object.entries(legalItems)?.map(([key, href]) => {
-                    if (!key || !href) return null
-
-                    return (
-                      <Link
-                        href={href}
-                        key={key}
-                        sx={{ color: 'text.secondary' }}
-                        targetBlank
-                      >
-                        <Typography sx={{ display: 'block' }} variant="caption">
-                          {startCase(key)}
-                        </Typography>
+              <Stack spacing={1} direction={{ xs: 'column-reverse', md: 'row' }} alignItems="center">
+                {/* Contact */}
+                {[
+                  {
+                    title: general_email,
+                    href: `mailto:${general_email}`,
+                    overline: 'Submit a general inquiry',
+                    startIcon: <EmailOutlinedIcon sx={{ fontSize: 'body1.fontSize' }} color="action" />,
+                  },
+                  {
+                    title: general_phone,
+                    href: `tel:${general_phone?.replaceAll(' ', '')}`,
+                    overline: 'General hotline',
+                    startIcon: <LocalPhoneOutlinedIcon sx={{ fontSize: 'body1.fontSize' }}  color="action"/>,
+                  },
+                  {
+                    title: general_whatsapp,
+                    href: `https://wa.me/${general_whatsapp?.replaceAll(' ', '')}?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20One%20X.%20Could%20you%20please%20provide%20me%20with%20some%20additional%20information?%20Thank%20you!`,
+                    overline: 'WhatsApp',
+                    startIcon: <WhatsAppIcon sx={{ fontSize: 'body1.fontSize' }} style={{ fill: 'green'} }/>,
+                    titleProps: { targetBlank: true },
+                  },
+                ].map(({ title, href, overline, startIcon, titleProps }) => {
+                  return (
+                    <div key={title}>
+                      <Link sx={{ color: 'text.secondary' }} href={href} {...titleProps}>
+                        <Typography variant="caption" startIcon={startIcon}>{title}</Typography>
                       </Link>
-                    )
-                  })}
+                    </div>
+                  )
+                })}
               </Stack>
 
               {/* Social media urls */}
@@ -188,16 +203,49 @@ const Footer: React.FC<FooterProps> = (props) => {
           />
 
           <Box mt={2}>
+            {/* Disclaimer */}
             <Stack
               alignItems="center"
               direction={{ xs: 'column-reverse', md: 'row' }}
-              justifyContent="space-between"
+              justifyContent={{ xs: 'center', md: 'space-between' }}
+              spacing={1}
             >
-              <Typography color="text.secondary" variant="caption">
-                {/* The following line replaces only the last period at the end of the company name. */}
-                Copyright ©{new Date().getFullYear()}{' '}
-                {companyName?.replace(/\.$/, '')}. All rights reserved.
+              {/* Address */}
+              <Typography sx={{ color: 'text.secondary', display: 'inline-flex', flexShrink: 0 }} variant="caption">
+                {office_address} {office_title}
               </Typography>
+
+              {/* Legal items */}
+              <Stack
+                alignItems="center"
+                direction="row"
+                justifyContent={{ xs: 'center', md: 'flex-end' }}
+                spacing={1}
+              >
+                {legalItems &&
+                  Object.entries(legalItems)?.map(([key, href]) => {
+                    if (!key || !href) return null
+
+                    return (
+                      <Link
+                        href={href}
+                        key={key}
+                        sx={{ color: 'text.secondary' }}
+                        targetBlank
+                      >
+                        <Typography sx={{ display: 'block' }} variant="caption">
+                          {startCase(key)}
+                        </Typography>
+                      </Link>
+                    )
+                  })}
+
+                <Typography color="text.secondary" variant="caption" sx={{ flexShrink: 0 }}>
+                  {/* The following line replaces only the last period at the end of the company name. */}
+                  © {new Date().getFullYear()}{' '}
+                  {companyName?.replace(/\.$/, '')}. All rights reserved.
+                </Typography>
+              </Stack>
             </Stack>
           </Box>
         </Container>

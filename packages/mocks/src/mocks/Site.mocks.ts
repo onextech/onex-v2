@@ -104,6 +104,8 @@ export const MOCK_GROUP_SITE: Site = {
 
   // Socials
   social_media_linkedin_url: 'https://www.linkedin.com/company/one-x-grp',
+  social_media_facebook_url: 'https://www.facebook.com/onexgroupofficial',
+  social_media_instagram_url: 'https://www.instagram.com/onexgroup.co',
 }
 
 export const MOCK_TECH_SITE = {

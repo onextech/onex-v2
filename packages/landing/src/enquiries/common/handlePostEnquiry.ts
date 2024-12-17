@@ -80,13 +80,11 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       type = EnquiryTypeEnum.ENQUIRY,
     } = await req.json()
 
-    const geo = geolocation(req) || {}
-    const ip = ipAddress(req) || ''
-    console.log('vercel/functions', { ip, geo })
-
     const now = new Date()
     const date = now.toDateString()
     const time = now.toTimeString()
+    const geo = geolocation(req) || {}
+    const ip = ipAddress(req) || ''
 
     const payload = {
       country,
@@ -105,7 +103,6 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       ip_address: ip,
       geo_city: geo.city,
       geo_country: geo.country,
-      geo_region: geo.countryRegion,
       geo_flag: geo.flag,
       geo_lat: geo.latitude,
       geo_long: geo.longitude,
