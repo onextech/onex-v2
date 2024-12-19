@@ -28,11 +28,12 @@ export const MOCK_COMMON_SITE = {
   logo_src: '/logo.svg',
   nav_is_ecosystem_visible: true,
 
-  // System
+  // Nav
   nav_is_open_on_hover: true,
-  office_address: '71 Robinson Road, Singapore 068895',
 
   // Address
+  office_address: '71 Robinson Road, Singapore 068895',
+  office_address_url: 'https://maps.app.goo.gl/xaLDg2LHzWSqfoTN6',
   office_title: 'Singapore (Asia Pacific)',
 }
 

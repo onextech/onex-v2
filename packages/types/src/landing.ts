@@ -224,6 +224,7 @@ export interface Site {
   nav_items?: SiteNavItem[]
 
   office_address?: string
+  office_address_url?: string
 
   // Address
   office_title?: string

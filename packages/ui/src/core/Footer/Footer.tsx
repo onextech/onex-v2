@@ -70,7 +70,7 @@ const Footer: React.FC<FooterProps> = (props) => {
   const navItems = injectedNavItems?.filter(Boolean)
 
   const { logoProps, site } = useLayout()
-  const { office_address, office_title, general_email, general_phone,
+  const { office_address_url, office_address, office_title, general_email, general_phone,
     general_whatsapp } = site
 
   const childrenJsx = (
@@ -211,9 +211,15 @@ const Footer: React.FC<FooterProps> = (props) => {
               spacing={1}
             >
               {/* Address */}
-              <Typography sx={{ color: 'text.secondary', display: 'inline-flex', flexShrink: 0 }} variant="caption">
-                {office_address} {office_title}
-              </Typography>
+              <Link
+                href={office_address_url || ''}
+                target="_blank"
+                sx={{ display: 'flex', flexShrink: 0, color: 'text.secondary' }}
+              >
+                <Typography variant="caption">
+                  {office_address} {office_title}
+                </Typography>
+              </Link>
 
               {/* Legal items */}
               <Stack
