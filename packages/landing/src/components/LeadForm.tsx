@@ -11,8 +11,6 @@ import { postEnquiry } from '../enquiries/common/postEnquiry'
 import { useLayout } from '../providers/LayoutProvider'
 import {yupResolver} from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import freeEmailDomains from "free-email-domains";
-import {parsePhoneNumber} from "awesome-phonenumber";
 
 export interface LeadFormProps {
   alignButtonLeft?: boolean
@@ -45,7 +43,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
             const domain = emailParts[1];
             if (!domain.includes('.')) return false; // Ensure the domain contains a '.'
 
-            return !freeEmailDomains.includes(domain); // Check against free email domains
+            return true;
           }),
       }),
     [locale]

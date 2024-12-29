@@ -178,15 +178,24 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
       regionCode: getCountryCode(country),
     })
 
-    const emailDomain = email.split('@')[1]
-    const isEmailValid = !freeEmailDomains.includes(emailDomain)
+
     return yup.object({
       email: yup
         .mixed()
         .test(
           'isValidEmail',
           'Please enter a valid work email.',
-          () => isEmailValid
+          (value) => {
+            if (typeof value !== 'string') return false; // Ensure the value is a string
+
+            const emailParts = value.split('@');
+            if (emailParts.length !== 2) return false; // Ensure it has one '@'
+
+            const domain = emailParts[1];
+            if (!domain.includes('.')) return false; // Ensure the domain contains a '.'
+
+            return !freeEmailDomains.includes(domain); // Check against free email domains
+          }
         ),
       mobile: yup
         .mixed()

@@ -6,7 +6,6 @@ import { Form, FormSections } from '@onex/form'
 import { FormCategoryEnum } from '@onex/types'
 import { Alert } from '@onex/ui'
 import { parsePhoneNumber } from 'awesome-phonenumber'
-import freeEmailDomains from 'free-email-domains'
 import { useRouter } from 'next/router'
 import * as yup from 'yup'
 
@@ -42,7 +41,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
             const domain = emailParts[1];
             if (!domain.includes('.')) return false; // Ensure the domain contains a '.'
 
-            return !freeEmailDomains.includes(domain); // Check against free email domains
+            return true;
           }),
         mobile: yup
           .mixed()
