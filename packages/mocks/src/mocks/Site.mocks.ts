@@ -19,8 +19,10 @@ export const MOCK_COMMON_SITE = {
   locales: [
     { title: 'Singapore', iso_alpha_2: 'sg', key: 'sg' },
     { title: 'United States', iso_alpha_2: 'us', key: 'us' },
+    { title: 'London', iso_alpha_2: 'gb', key: 'gb' },
+    { title: 'Dubai', iso_alpha_2: 'ae', key: 'ae' },
+    { title: 'Hong Kong', iso_alpha_2: 'hk', key: 'hk' },
     { title: 'Australia', iso_alpha_2: 'au', key: 'au' },
-    { title: 'Japan', iso_alpha_2: 'jp', key: 'jp' },
   ],
   logo_alt: 'One X Tech logo',
 
