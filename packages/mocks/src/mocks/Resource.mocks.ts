@@ -296,6 +296,106 @@ export const MOCK_GROUP_RESOURCES = [
       },
     },
   },
+  {
+    title: 'Bring Your Product Idea to Life with the One X Innovation Blueprint™',
+    slug: 'the-one-x-innovation-blueprint',
+    filename: 'One X Group - Bring Your Product Idea to Life with the One X Innovation Blueprint™.pdf',
+    subtitle:
+      'A complimentary program designed to help enterprise product managers, product owners, and technical leads explore new possibilities for growth through actionable insights and tailored innovation strategies.',
+    avatar_src: '/resources/one_x_innovation_blueprint_avatar.png',
+    avatar_alt: 'Bring Your Product Idea to Life with the One X Innovation Blueprint™',
+    hero_src: '/resources/one_x_innovation_blueprint_avatar.png',
+    hero_alt: 'Bring Your Product Idea to Life with the One X Innovation Blueprint™',
+    hero_box_props: {
+      maxWidth: '100%',
+      mt: 4,
+    },
+    hero_props: {
+      ar: '1009:411',
+      scaleOnHover: false,
+    },
+    cta_form_title: 'Request a complimentary consultation to get started',
+    cta_form_subtitle: 'Enter your details to apply for this program. Limited slots available.',
+    cta_form_button_title: 'Get Started',
+    sections: {
+      features: {
+        overline: 'The One X Innovation Blueprint',
+        title: 'Program Highlights',
+        subtitle:
+          'The One X Innovation Blueprint™ equips you with the clarity and tools to turn your vision into reality. From tailored designs to strategic roadmaps, this program provides everything you need to succeed.',
+        items: [
+          {
+            fa_icon: 'fa-pencil-ruler',
+            title: 'Tailored Design Concept',
+            subtitle:
+              'Receive a fully designed concept for a new product or feature that aligns with your business objectives and customer needs. Visual prototypes included.',
+          },
+          {
+            fa_icon: 'fa-route',
+            title: 'Strategic Product Roadmap',
+            subtitle:
+              'A high-level roadmap outlining steps, milestones, and resources needed to bring your idea to life, with prioritized features based on impact and feasibility.',
+          },
+          {
+            fa_icon: 'fa-comments',
+            title: 'Product Innovation Consultation Session',
+            subtitle:
+              'A one-on-one strategy session with product specialists to refine ideas and explore transformative opportunities, including AI and automation.',
+          },
+          {
+            fa_icon: 'fa-rocket',
+            title: 'Opportunity Identification',
+            subtitle:
+              'Explore new opportunities to unlock growth and stay ahead of competitors.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Custom Innovation Insights',
+            subtitle:
+              'Receive insights tailored to your industry, helping you make data-driven decisions.',
+          },
+          {
+            fa_icon: 'fa-tools',
+            title: 'Execution Readiness Guide',
+            subtitle:
+              'Get actionable recommendations to prepare your team and resources for implementation.',
+          },
+        ],
+      },
+      benefits: {
+        overline: 'Why Apply',
+        title: "Benefits of Applying",
+        subtitle:
+          'This exclusive offer is designed to help you create impact and drive innovation within your organization. Here’s why you shouldn’t miss out:',
+        items: [
+          {
+            fa_icon: 'fa-user-tie',
+            title: 'Expert Guidance',
+            subtitle:
+              'Work with seasoned product specialists who understand the challenges of enterprise-level projects.',
+          },
+          {
+            fa_icon: 'fa-chart-line',
+            title: 'Strategic Clarity',
+            subtitle:
+              'Gain a clear roadmap and actionable steps to bring your vision to life.',
+          },
+          {
+            fa_icon: 'fa-lightbulb',
+            title: 'Fresh Perspectives',
+            subtitle:
+              'Discover innovative approaches and ideas you may not have considered.',
+          },
+          {
+            fa_icon: 'fa-gem',
+            title: 'Exclusive Opportunity',
+            subtitle:
+              'This program is offered free of charge to help you experience the value we bring firsthand.',
+          },
+        ],
+      },
+    },
+  }
 ].map(mapResourceWithCommonResource)
 export const MOCK_DATA_RESOURCES = [
   {

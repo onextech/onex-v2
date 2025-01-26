@@ -94,6 +94,8 @@ export interface PageSection {
 
 export interface Page extends CrudItem {
   hero_alt?: string
+  hero_box_props?: Record<string, unknown>
+  hero_props?: Record<string, unknown>
   hero_src?: string
   html?: string
 
@@ -150,6 +152,9 @@ export interface PostCategory extends CrudItem {
 export interface PressRelease extends Omit<Post, 'category' | 'category_id'> {}
 
 export interface Resource extends Page {
+  cta_form_button_title?: string
+  cta_form_subtitle?: string
+  cta_form_title?: string
   filename: string
 }
 

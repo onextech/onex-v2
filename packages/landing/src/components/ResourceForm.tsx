@@ -15,6 +15,7 @@ import * as yup from 'yup'
 
 import { EnquiryTypeEnum } from '../enquiries/common/constants'
 import { postEnquiry } from '../enquiries/common/postEnquiry'
+import { ButtonProps } from '@onex/ui/src/core/Button'
 
 const INDUSTRY_OPTIONS = [
   {
@@ -163,10 +164,11 @@ const SOURCE_OPTIONS = [
 
 export interface ResourceFormProps {
   onSubmit?: (values: any) => void
+  submitButtonProps?: ButtonProps
 }
 
 const ResourceForm: React.FC<ResourceFormProps> = (props) => {
-  const { onSubmit } = props
+  const { onSubmit, submitButtonProps, ...rest } = props
 
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
@@ -344,8 +346,8 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
                     label: 'How did you hear about us?',
                     name: 'source',
                     options: SOURCE_OPTIONS,
+                    props: { disableFirstOptionAsDefaultValue: true },
                     required: true,
-                    type: 'radio',
                   },
                 ].map((field) => ({ disabled: isLoading, ...field })),
                 key: 'contact',
@@ -357,17 +359,18 @@ const ResourceForm: React.FC<ResourceFormProps> = (props) => {
         onSubmit={handleSubmit}
         resetOnSubmitSuccess
         submitButtonProps={{
-          title: 'Download Guide',
+          ...submitButtonProps,
+          title: submitButtonProps?.title || 'Download Guide',
           boxProps: { display: 'flex', justifyContent: 'flex-end' },
           fullWidth: true,
           loading: isLoading,
           size: 'large',
           startIcon: <FileDownloadOutlinedIcon />,
-          sx: { mt: 1 },
+          sx: { mt: 2 },
           variant: 'contained',
         }}
         useFormProps={{ resolver: yupResolver(resourceFormSchema) }}
-        {...props}
+        {...rest}
       />
     </div>
   )

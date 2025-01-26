@@ -18,7 +18,11 @@ export interface ResourcePageProps {
 const ResourcePage: React.FC<ResourcePageProps> = (props) => {
   const { resource } = props
   const { clientLogos } = useLayout()
-  const { title, avatar_alt, avatar_src, sections, subtitle } = resource
+  const { title, avatar_alt, avatar_src, hero_src, hero_alt, hero_props, hero_box_props,
+    cta_form_title,
+    cta_form_subtitle,
+    cta_form_button_title,
+    sections, subtitle } = resource
   const { benefits, features } = sections || {}
 
   return (
@@ -55,12 +59,13 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                       type: 'subtitle3',
                     },
                     {
-                      title: avatar_src,
-                      boxProps: { maxWidth: { md: '70%' } },
+                      title: hero_src || avatar_src,
+                      boxProps: { maxWidth: { md: '70%' }, ...hero_box_props },
                       titleProps: {
-                        alt: avatar_alt,
+                        alt: hero_alt || avatar_alt,
                         ar: '4:3',
                         scaleOnHover: true,
+                        ...hero_props,
                       },
                       type: 'image',
                     },
@@ -83,16 +88,18 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                   },
                   items: [
                     {
-                      title: 'Get a copy of this guide.',
+                      title: cta_form_title || 'Get a copy of this guide.',
                       type: 'h5',
                     },
                     {
-                      title: 'Enter your details to unlock this guide.',
-                      titleProps: { color: 'text.secondary' },
+                      title: cta_form_subtitle || 'Enter your details to unlock this guide.',
+                      titleProps: { color: 'text.secondary', sx: { mt: 1 } },
                       type: 'body1',
                     },
                     {
-                      title: <ResourceForm />,
+                      title: <ResourceForm submitButtonProps={{
+                        title: cta_form_button_title,
+                      }} />,
                       boxProps: { sx: { mt: 3 } },
                       type: 'jsx',
                     },
