@@ -61,7 +61,7 @@ const LeadForm: React.FC<LeadFormProps> = (props) => {
     setIsSubmitSuccess(true)
     toast.success('Successfully sent')
     router.push(
-      `/${routeConfig?.CONTACT_SUCCESS}?name=${values.name}&email=${values.email}`
+      `/${routeConfig?.CONTACT_SUCCESS}?name=${values.name}&email=${values.email}&mobile=${values.mobile}`
     )
   }
 

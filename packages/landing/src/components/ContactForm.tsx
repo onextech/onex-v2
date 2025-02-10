@@ -76,7 +76,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
     router.push(
       `/${routeConfig?.CONTACT_SUCCESS || contactSuccessRoute}?name=${
         values.name
-      }&email=${values.email}`
+      }&email=${values.email}&mobile=${values.mobile}`
     )
   }
 

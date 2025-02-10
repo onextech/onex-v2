@@ -8,10 +8,11 @@ import ContactPage from './ContactPage'
 export interface ContactSuccessPageProps {
   email?: string
   name?: string
+  mobile?: string
 }
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
-  const { email, name } = props
+  const { email, name, mobile } = props
   if (!name || !email) return <ContactPage />
   return (
     <Blocks
@@ -47,6 +48,16 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
                   <span id="contact-success-form--email">{email}</span>
                 </>
               ),
+              type: 'subtitle1',
+            },
+            {
+              title: (
+                <>
+                  Mobile{' '}
+                  <span id="contact-success-form--mobile">{mobile}</span>
+                </>
+              ),
+              titleProps: { sx: { display: 'none' } },
               type: 'subtitle1',
             },
             {
