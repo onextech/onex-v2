@@ -240,7 +240,7 @@ export const MOCK_GROUP_PRESS_RELEASES: PressRelease[] = [
   },
   {
     is_active: true,
-    is_featured: true,
+    is_featured: false,
     published_at: '2023-07-07T01:43:55+0800',
     title: 'One X Group Dives into Data; Introduces One X Data',
     slug: 'one-x-group-launches-one-x-data',

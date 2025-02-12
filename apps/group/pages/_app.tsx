@@ -5,6 +5,7 @@ import { EmotionCache } from '@emotion/react'
 import { AnalyticsProvider } from '@onex/analytics'
 import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
+import { SeoProvider } from "@app/providers/SeoProvider"
 
 import 'keen-slider/keen-slider.min.css'
 
@@ -18,7 +19,9 @@ const MyApp = (props: MyAppProps) => {
   return (
     <AppProvider {...props}>
       <AnalyticsProvider>
-        <Component {...pageProps} />
+        <SeoProvider>
+          <Component {...pageProps} />
+        </SeoProvider>
       </AnalyticsProvider>
     </AppProvider>
   )

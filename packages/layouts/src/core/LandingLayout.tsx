@@ -711,22 +711,6 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
         ...seo.openGraph,
         url: `${site.absolute_url}${router.asPath}`,
       },
-      // Add hreflang tags if locales are available
-      ...(Boolean(site.locales?.length) && {
-        languageAlternates: [
-          // Add default region-independant link for that language
-          // @link https://webmasters.stackexchange.com/a/125337
-          {
-            href: `${site.absolute_url}/${site.locales[0].iso_alpha_2}${router.asPath}`,
-            hrefLang: 'en',
-          },
-          // Add other regions
-          ...site.locales?.map(({ iso_alpha_2 }) => ({
-            href: `${site.absolute_url}/${iso_alpha_2}${router.asPath}`,
-            hrefLang: `en-${iso_alpha_2}`,
-          })),
-        ],
-      }),
     },
   }
   const landingLayoutProps = merge({}, defaultLandingLayoutProps, rest)
