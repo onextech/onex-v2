@@ -39,6 +39,15 @@ module.exports = withBundleAnalyzer({
       }
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: "/sg/:path*",
+        destination: "/:path*",
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
   webpack(config) {
     // Svg support
     config.module.rules.push({
