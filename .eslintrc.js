@@ -1,6 +1,6 @@
 module.exports = {
-  root: true,
   extends: ['@gravis-os/eslint-config'],
+  root: true,
   settings: {
     next: {
       rootDir: ['apps/*/'],

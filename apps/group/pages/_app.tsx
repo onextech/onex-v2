@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { AppProvider } from '@app/providers'
+import { SeoProvider } from '@app/providers/SeoProvider'
 import { EmotionCache } from '@emotion/react'
 import { AnalyticsProvider } from '@onex/analytics'
 import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
-import { SeoProvider } from "@app/providers/SeoProvider"
 
 import 'keen-slider/keen-slider.min.css'
 

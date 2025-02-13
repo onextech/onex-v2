@@ -1,29 +1,33 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { MOCK_COMMON_SITE } from "@onex/mocks"
+import { MOCK_COMMON_SITE } from '@onex/mocks'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-const siteUrl = process.env.NEXT_PUBLIC_ABSOLUTE_URL;
+const siteUrl = process.env.NEXT_PUBLIC_ABSOLUTE_URL
 
 export function SeoProvider({ children }: { children?: React.ReactNode }) {
-  const router = useRouter();
-  const currentPath = router.asPath;
-  const fullUrl = `${siteUrl}${currentPath}`;
+  const router = useRouter()
+  const currentPath = router.asPath
+  const fullUrl = `${siteUrl}${currentPath}`
 
   return (
     <>
       <Head>
         {/* Canonical Tag */}
-        <link rel="canonical" href={fullUrl} />
+        <link href={fullUrl} rel="canonical" />
 
         {/* Hreflang Tags */}
         {MOCK_COMMON_SITE.locales.map(({ iso_alpha_2, key }) => (
-          <link key={key} rel="alternate" hrefLang={`en-${iso_alpha_2}`} href={`${siteUrl}/${key}${currentPath}`} />
+          <link
+            href={`${siteUrl}/${key}${currentPath}`}
+            hrefLang={`en-${iso_alpha_2}`}
+            key={key}
+            rel="alternate"
+          />
         ))}
-        <link rel="alternate" hrefLang="x-default" href={siteUrl} />
+        <link href={siteUrl} hrefLang="x-default" rel="alternate" />
       </Head>
 
       {children}
     </>
-  );
+  )
 }
