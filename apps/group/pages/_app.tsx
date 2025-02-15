@@ -7,6 +7,7 @@ import { AnalyticsProvider } from '@onex/analytics'
 import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
 
+import '../globals.css' // For using tailwind styles in MUI
 import 'keen-slider/keen-slider.min.css'
 
 export interface MyAppProps extends AppProps {
