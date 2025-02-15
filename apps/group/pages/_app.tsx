@@ -7,7 +7,7 @@ import { AnalyticsProvider } from '@onex/analytics'
 import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
 
-import '../globals.css' // For using tailwind styles in MUI
+import '@/styles/globals.css' // For using tailwind styles in MUI
 import { fonts } from '@/styles/fonts'
 
 import 'keen-slider/keen-slider.min.css'
@@ -23,13 +23,13 @@ const MyApp = (props: MyAppProps) => {
     <main
       className={`${fonts.roboto.variable} ${fonts.publicoHeadline.variable} ${fonts.publicoText.variable} antialiased`}
     >
-      <AppProvider {...props}>
-        <AnalyticsProvider>
-          <SeoProvider>
-            <Component {...pageProps} />
-          </SeoProvider>
-        </AnalyticsProvider>
-      </AppProvider>
+        <AppProvider {...props}>
+          <AnalyticsProvider>
+            <SeoProvider>
+              <Component {...pageProps} />
+            </SeoProvider>
+          </AnalyticsProvider>
+        </AppProvider>
     </main>
   )
 }

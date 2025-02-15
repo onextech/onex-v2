@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { NextThemeProvider } from './next-theme-provider'
 import {
   ThemeProvider as GvsThemeProvider,
   ThemeProviderProps as GvsThemeProviderProps,
@@ -30,7 +31,15 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
       emotionCache={emotionCache}
       theme={isDarkMode ? darkTheme : lightTheme}
     >
-      {children}
+      <NextThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        disableTransitionOnChange
+        enableSystem
+        forcedTheme={isDarkMode ? 'dark' : 'light'}
+      >
+        {children}
+      </NextThemeProvider>
     </GvsThemeProvider>
   )
 }

@@ -79,3 +79,12 @@
     --custom-dark-bg: 240 6% 7%; /* Same value for dark mode */
   }
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

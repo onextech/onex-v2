@@ -10,6 +10,7 @@ export default {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     '../../packages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   corePlugins: { preflight: false },
   darkMode: ['class'],
@@ -88,7 +89,12 @@ export default {
         roboto: ['var(--font-roboto)', ...fontFamily.mono],
       },
       fontSize: {
-        xxs: ['9.5px', { lineHeight: '9.5px' }],
+        xxs: [
+          '9.5px',
+          {
+            lineHeight: '9.5px',
+          },
+        ],
       },
       keyframes: {
         'accordion-down': {
@@ -108,8 +114,12 @@ export default {
           },
         },
         'caret-blink': {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0' },
+          '0%, 100%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '0',
+          },
         },
       },
       letterSpacing: {
