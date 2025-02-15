@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { useMediaQuery, useTheme } from '@mui/material'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
@@ -16,12 +15,12 @@ import {
   renderServiceNotFoundCalloutBlock,
   renderShowcaseSlider,
   renderSoftwareLifecycleBlock,
-  renderSummaryBlockItem,
   renderTechnologysBlock,
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
 import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
+import { cn } from '@onex/utils'
 
 export interface ServicePageProps {
   relatedPosts?: Post[]
@@ -57,6 +56,15 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderHeroBlock({
           item: service,
         }),
+        <div className="text-center py-16 bg-red-500">
+          <h2
+            className={cn(
+              'mt-6 font-publico-headline text-5xl font-light text-white'
+            )}
+          >
+            Hello World
+          </h2>
+        </div>,
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -71,10 +79,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           renderThreeColumnGridBlock({
             ...challenges,
           }),
-        // Summary
-        renderSummaryBlockItem({
-          ...summary,
-        }),
         // Features
         renderThreeColumnGridBlock({
           ...features,

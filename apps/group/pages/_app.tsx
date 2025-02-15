@@ -8,6 +8,8 @@ import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
 
 import '../globals.css' // For using tailwind styles in MUI
+import { fonts } from '@/styles/fonts'
+
 import 'keen-slider/keen-slider.min.css'
 
 export interface MyAppProps extends AppProps {
@@ -18,13 +20,17 @@ const MyApp = (props: MyAppProps) => {
   const { Component, pageProps } = props
 
   return (
-    <AppProvider {...props}>
-      <AnalyticsProvider>
-        <SeoProvider>
-          <Component {...pageProps} />
-        </SeoProvider>
-      </AnalyticsProvider>
-    </AppProvider>
+    <main
+      className={`${fonts.roboto.variable} ${fonts.publicoHeadline.variable} ${fonts.publicoText.variable} antialiased`}
+    >
+      <AppProvider {...props}>
+        <AnalyticsProvider>
+          <SeoProvider>
+            <Component {...pageProps} />
+          </SeoProvider>
+        </AnalyticsProvider>
+      </AppProvider>
+    </main>
   )
 }
 
