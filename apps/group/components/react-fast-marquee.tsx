@@ -1,24 +1,25 @@
-import Marquee, { MarqueeProps } from 'react-fast-marquee';
-import { ReactNode } from 'react';
-import { ClassNameProp } from '@/src/types/utils';
+import { ReactNode } from 'react'
+import Marquee, { MarqueeProps } from 'react-fast-marquee'
+
+import { ClassNameProp } from '@/src/types/utils'
 
 interface ReactFastMarqueeProps extends Partial<MarqueeProps>, ClassNameProp {
-  children: ReactNode | ReactNode[];
-  speed?: number;
-  autoFill?: boolean;
+  autoFill?: boolean
+  children: ReactNode | ReactNode[]
+  speed?: number
 }
 
 export const ReactFastMarquee = ({
+  autoFill = true,
   children,
   className = '',
-  autoFill = true,
   ...options
 }: ReactFastMarqueeProps) => {
   return (
     <div className={`h-full w-full ${className}`}>
-      <Marquee className={className} autoFill={autoFill} {...options}>
+      <Marquee autoFill={autoFill} className={className} {...options}>
         {children}
       </Marquee>
     </div>
-  );
-};
+  )
+}

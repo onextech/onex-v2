@@ -1,11 +1,11 @@
 export interface Feature {
-  label: string;
-  title: string;
-  description: string;
-  iconUrl: string;
+  description: string
+  iconUrl: string
+  label: string
+  title: string
 }
 
 export interface FeatureHero {
-  title: string;
-  description: string;
+  description: string
+  title: string
 }

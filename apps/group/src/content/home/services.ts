@@ -1,16 +1,38 @@
-import { ServicesHero, Service, ServiceSlide } from '@/src/types/service';
+import { Service, ServiceSlide, ServicesHero } from '@/src/types/service'
 
 export const servicesContent: {
-  hero: ServicesHero;
-  services: Service[];
-  slider: ServiceSlide[][];
+  hero: ServicesHero
+  services: Service[]
+  slider: ServiceSlide[][]
 } = {
   hero: {
     title: 'Services',
-    heading: 'Build Custom Solutions',
     description:
       'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
+    heading: 'Build Custom Solutions',
   },
+  services: [
+    {
+      title: 'Web Design',
+      description:
+        'A conversion centred approach to creating web and product designs that drive action.',
+      href: '/',
+      iconUrl: '/images/icons/pencil-ruler.svg',
+    },
+    {
+      title: 'Web Development',
+      description: 'Build tailor-made websites that drive leads and sales.',
+      href: '/',
+      iconUrl: '/images/icons/web-code.svg',
+    },
+    {
+      title: 'Application Development',
+      description:
+        'Accelerate business agility across your organisation with scalable enterprise apps.',
+      href: '/',
+      iconUrl: '/images/icons/laptop.svg',
+    },
+  ],
   slider: [
     [
       {
@@ -45,26 +67,4 @@ export const servicesContent: {
       },
     ],
   ],
-  services: [
-    {
-      title: 'Web Design',
-      iconUrl: '/images/icons/pencil-ruler.svg',
-      description:
-        'A conversion centred approach to creating web and product designs that drive action.',
-      href: '/',
-    },
-    {
-      title: 'Web Development',
-      iconUrl: '/images/icons/web-code.svg',
-      description: 'Build tailor-made websites that drive leads and sales.',
-      href: '/',
-    },
-    {
-      title: 'Application Development',
-      iconUrl: '/images/icons/laptop.svg',
-      description:
-        'Accelerate business agility across your organisation with scalable enterprise apps.',
-      href: '/',
-    },
-  ],
-};
+}

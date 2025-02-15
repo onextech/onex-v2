@@ -1,8 +1,8 @@
 export type ClassNameProp = {
-  className?: string;
-};
+  className?: string
+}
 
 export interface ImageSlide {
-  alt: string;
-  imgSrc: string;
+  alt: string
+  imgSrc: string
 }

@@ -1,14 +1,19 @@
 export const techContent = {
-  image: {
-    src: '/images/what-we-do/modern-tech.webp',
-    alt: 'Modern Tech',
-    width: 760,
-    height: 610,
-  },
   title: 'What We Do',
-  heading: 'We Develop Modern Technologies',
+  button: {
+    title: 'What We Do',
+    href: '/',
+    label: 'Our Technologies',
+  },
   description:
     'At the core of One X Tech is a software engineering team specialising in ReactJS, GraphQL, NodeJS, and the extended JavaScript ecosystem.',
+  heading: 'We Develop Modern Technologies',
+  image: {
+    alt: 'Modern Tech',
+    height: 610,
+    src: '/images/what-we-do/modern-tech.webp',
+    width: 760,
+  },
   techstack: [
     {
       alt: 'Javascript',
@@ -23,9 +28,4 @@ export const techContent = {
       src: '/images/what-we-do/graphql.webp',
     },
   ],
-  button: {
-    title: 'What We Do',
-    label: 'Our Technologies',
-    href: '/',
-  },
-};
+}

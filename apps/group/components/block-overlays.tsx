@@ -1,17 +1,17 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils'
 
 type BlockOverlayProps = {
-  type?: number;
-  className?: string;
-};
+  className?: string
+  type?: number
+}
 
-export const BlockOverlay = ({ type = 1, className }: BlockOverlayProps) => {
+export const BlockOverlay = ({ className, type = 1 }: BlockOverlayProps) => {
   if (type === 1) {
-    return <DefaultOverlay className={className} />;
+    return <DefaultOverlay className={className} />
   }
 
-  return <DefaultOverlay className={className} />;
-};
+  return <DefaultOverlay className={className} />
+}
 
 const DefaultOverlay = ({ className }: { className?: string }) => {
   return (
@@ -23,5 +23,5 @@ const DefaultOverlay = ({ className }: { className?: string }) => {
         className
       )}
     />
-  );
-};
+  )
+}

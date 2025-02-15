@@ -1,14 +1,5 @@
 export const capabilitiesContent = {
-  image: {
-    src: '/images/what-we-do/capabilities.png',
-    alt: 'Our Capabilities',
-    width: 493,
-    height: 550,
-  },
   title: 'Our Services',
-  heading: 'Our Capabilities',
-  description:
-    'We are business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
   capabilities: [
     {
       title: 'Strategy',
@@ -22,7 +13,13 @@ export const capabilitiesContent = {
     },
     {
       title: 'Design',
-      items: ['UI/UX', 'Design Process', 'Experience Design', 'Web Design', 'Mobile Design'],
+      items: [
+        'UI/UX',
+        'Design Process',
+        'Experience Design',
+        'Web Design',
+        'Mobile Design',
+      ],
     },
     {
       title: 'Development',
@@ -35,4 +32,13 @@ export const capabilitiesContent = {
       ],
     },
   ],
-};
+  description:
+    'We are business software experts. We build disruptive digital capabilities for enterprise clients, driving lasting innovation and breakthrough engagement. We help you turn concepts into reliable and robust digital solutions, with tangible strategy, stunning design and an amazing user experience.',
+  heading: 'Our Capabilities',
+  image: {
+    alt: 'Our Capabilities',
+    height: 550,
+    src: '/images/what-we-do/capabilities.png',
+    width: 493,
+  },
+}

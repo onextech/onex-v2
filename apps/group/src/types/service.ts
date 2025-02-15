@@ -1,31 +1,31 @@
 export interface ServiceOverview {
-  title: string;
-  heading: string;
-  description: string;
-  href: string;
+  description: string
+  heading: string
+  href: string
+  title: string
 }
 
 export interface ServicesContent {
-  services: ServiceOverview[];
-  mainHeader: string;
-  mainLinkTitle: string;
-  mainLinkHref: string;
+  mainHeader: string
+  mainLinkHref: string
+  mainLinkTitle: string
+  services: ServiceOverview[]
 }
 
 export interface Service {
-  title: string;
-  iconUrl: string;
-  description: string;
-  href: string;
+  description: string
+  href: string
+  iconUrl: string
+  title: string
 }
 
 export interface ServicesHero {
-  title: string;
-  heading: string;
-  description: string;
+  description: string
+  heading: string
+  title: string
 }
 
 export interface ServiceSlide {
-  alt: string;
-  imgSrc: string;
+  alt: string
+  imgSrc: string
 }

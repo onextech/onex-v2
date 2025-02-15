@@ -1,12 +1,12 @@
 export type SectionButton = {
-  title: string;
-  label: string;
-  href: string;
-};
+  href: string
+  label: string
+  title: string
+}
 
 export type SectionBlock = {
-  title: string;
-  heading: string;
-  description: string;
-  button: SectionButton;
-};
+  button: SectionButton
+  description: string
+  heading: string
+  title: string
+}
