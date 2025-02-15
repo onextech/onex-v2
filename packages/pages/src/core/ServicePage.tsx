@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { FeaturesSection } from '@onex/group/components/sections/features-section'
+import { ServicesSection } from '@onex/group/components/sections/services-section'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
@@ -13,14 +15,13 @@ import {
   renderRelatedPostsBlock,
   renderRelatedServicesBlock,
   renderServiceNotFoundCalloutBlock,
-  renderShowcaseSlider,
+  renderShowcasesBlock,
   renderSoftwareLifecycleBlock,
   renderTechnologysBlock,
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
 import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
-import { cn } from '@onex/utils'
 
 export interface ServicePageProps {
   relatedPosts?: Post[]
@@ -56,15 +57,8 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderHeroBlock({
           item: service,
         }),
-        <div className="text-center py-16 bg-red-500">
-          <h2
-            className={cn(
-              'mt-6 font-publico-headline text-5xl font-light text-white'
-            )}
-          >
-            Hello World
-          </h2>
-        </div>,
+        <FeaturesSection />,
+        <ServicesSection />,
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
@@ -74,6 +68,15 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderFactsVerticalTabsBlock({
           ...facts,
         }),
+        // Showcases
+        Boolean(showcases?.length) &&
+          renderShowcasesBlock({
+            title: showcase.title,
+            items: showcases,
+            overline: showcase.overline,
+            pt: { xs: 5, md: 10 },
+            subtitle: showcase.subtitle,
+          }),
         // Challenges
         challenges &&
           renderThreeColumnGridBlock({
@@ -86,15 +89,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         }),
         // Callout
         renderServiceNotFoundCalloutBlock(),
-        // Showcases
-        Boolean(showcases?.length) &&
-          renderShowcaseSlider({
-            title: showcase.title,
-            items: showcases,
-            overline: showcase.overline,
-            pt: { xs: 5, md: 10 },
-            subtitle: showcase.subtitle,
-          }),
         renderClientTestimonialSliderBlock({
           title: testimonial.title,
           items: clientTestimonials,
