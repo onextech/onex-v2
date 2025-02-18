@@ -50,7 +50,7 @@ export const PageSectionHeader = ({
   return (
     <h2
       className={cn(
-        'mt-6 font-publico-headline text-5xl font-light text-white',
+        'font-publico-headline text-5xl font-light',
         className
       )}
     >

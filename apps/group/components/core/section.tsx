@@ -16,7 +16,7 @@ export const Overline = ({ title, className }: OverlineProps) => {
   return (
     <p
       className={cn(
-        'font-roboto text-xs font-bold uppercase leading-none tracking-2px text-title-gray',
+        'text-xs font-bold uppercase leading-none tracking-2px text-title-gray',
         className
       )}
     >
@@ -34,16 +34,7 @@ export const PageSectionDescription = ({
   className,
   description,
 }: PageSectionDescriptionProps) => {
-  return (
-    <p
-      className={cn(
-        'mt-3 font-roboto text-base font-normal text-gray-400',
-        className
-      )}
-    >
-      {description}
-    </p>
-  )
+  return <p className={cn('text-muted-foreground', className)}>{description}</p>
 }
 
 interface PageSectionButtonProps extends SectionButton {
@@ -68,7 +59,7 @@ export const PageSectionButton = ({
         {title}
       </p>
       <div className="mt-2 flex w-full flex-row items-center justify-between">
-        <p className="font-publico-text text-base font-normal leading-4 text-white sm:text-xl sm:leading-5">
+        <p className="font-publico-text text-base font-normal leading-4 sm:text-xl sm:leading-5">
           {label}
         </p>
         <ArrowRightSVGIcon

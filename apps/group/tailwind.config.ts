@@ -11,6 +11,7 @@ export default {
     '../../packages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   corePlugins: { preflight: false },
   darkMode: ['class'],

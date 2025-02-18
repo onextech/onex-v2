@@ -3,12 +3,29 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["./src/*"],
-      "@public/*": ["./public/*"],
-      "@pages/*": ["./pages/*"]
-    }
+      "@/*": [
+        "./*"
+      ],
+      "@app/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ]
+    },
+    "strictNullChecks": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".eslintrc.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
