@@ -1,4 +1,4 @@
-import { AlertCircle } from "lucide-react"
+import { AlertCircle } from 'lucide-react'
 
 interface ErrorProps {
   error: string
@@ -12,4 +12,3 @@ export const ErrorGeneration = ({ error }: ErrorProps) => {
     </div>
   )
 }
-

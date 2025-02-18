@@ -125,7 +125,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
             <div className="flex-shrink-0">
               <Select>
                 <SelectTrigger className="w-[100px] border-zinc-300 rounded-r-none">
-                  <SelectValue placeholder="+65"/>
+                  <SelectValue placeholder="+65" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="+65">+65</SelectItem>
@@ -181,7 +181,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
             value={formData.companySize}
           >
             <SelectTrigger className="border-zinc-300">
-              <SelectValue placeholder="Please select your company size"/>
+              <SelectValue placeholder="Please select your company size" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="1-10">1-10 employees</SelectItem>
@@ -251,7 +251,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
   const renderSuccessState = () => (
     <div className="text-center space-y-4">
       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-        <Check className="w-8 h-8 text-primary"/>
+        <Check className="w-8 h-8 text-primary" />
       </div>
       <h3 className="text-xl font-semibold text-zinc-900">Thank You!</h3>
       <p className="text-zinc-600">

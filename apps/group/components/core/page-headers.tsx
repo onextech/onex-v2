@@ -48,12 +48,7 @@ export const PageSectionHeader = ({
   className,
 }: PageSectionHeaderProps) => {
   return (
-    <h2
-      className={cn(
-        'font-publico-headline text-5xl font-light',
-        className
-      )}
-    >
+    <h2 className={cn('font-publico-headline text-5xl font-light', className)}>
       {title}
     </h2>
   )

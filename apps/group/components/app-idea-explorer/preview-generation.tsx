@@ -282,10 +282,10 @@ export const PreviewGeneration = ({
             <BarChart2 className="w-5 h-5 text-zinc-300" />,
             <div className="space-y-4">
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
-                The industry shows{' '}
-                {result.marketPotential.toLowerCase()} potential for your app
-                idea. With a target user base of {result.targetUserBase},
-                there's significant room for growth and adoption.
+                The industry shows {result.marketPotential.toLowerCase()}{' '}
+                potential for your app idea. With a target user base of{' '}
+                {result.targetUserBase}, there's significant room for growth and
+                adoption.
               </p>
               <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 Key Market Insights:
