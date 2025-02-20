@@ -33,7 +33,9 @@ export const SampleGallery: React.FC<SampleGalleryProps> = ({
   const [visibleIdeas, setVisibleIdeas] = useState(8)
 
   const loadMoreIdeas = () => {
-    setVisibleIdeas((prevVisible) => Math.min(prevVisible + 8, appIdeas.length))
+    setVisibleIdeas((prevVisible) =>
+      Math.min(prevVisible + 16, appIdeas.length)
+    )
   }
 
   return (

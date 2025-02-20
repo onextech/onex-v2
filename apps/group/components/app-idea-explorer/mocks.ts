@@ -222,4 +222,169 @@ export const appIdeas = [
       targetAudience: 'Clients',
     },
   },
+  {
+    title: 'Customer Feedback Collection Tool',
+    description: 'Gather and analyze customer feedback to improve services',
+    formValues: {
+      appCategory: 'Business',
+      appIdea:
+        'A user-friendly tool for collecting customer feedback through surveys and polls, with analytics features to track sentiments and trends',
+      appType: 'Feedback Management',
+      industry: 'Retail',
+      platform: 'Web & Mobile',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Social Media Management Platform',
+    description:
+      'Manage and schedule social media posts across multiple channels',
+    formValues: {
+      appCategory: 'Marketing',
+      appIdea:
+        'An integrated platform for scheduling, managing, and analyzing social media content across various platforms like Facebook, Twitter, and Instagram',
+      appType: 'Social Media Management',
+      industry: 'Marketing',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'E-commerce Store Builder',
+    description: 'Create and manage online stores with ease',
+    formValues: {
+      appCategory: 'E-commerce',
+      appIdea:
+        'A drag-and-drop website builder specifically designed for small businesses to create and manage their e-commerce stores without coding',
+      appType: 'E-commerce',
+      industry: 'Retail',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Virtual Meeting Scheduler',
+    description: 'Simplify scheduling for virtual meetings and appointments',
+    formValues: {
+      appCategory: 'Productivity',
+      appIdea:
+        'A scheduling tool that integrates with calendars to automate meeting bookings, send reminders, and manage availability',
+      appType: 'Scheduling',
+      industry: 'Business Services',
+      platform: 'Web & Mobile',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Freelancer Management System',
+    description: 'Manage freelance projects and payments efficiently',
+    formValues: {
+      appCategory: 'Business',
+      appIdea:
+        'A platform for businesses to manage freelance work, including project tracking, payment processing, and communication tools',
+      appType: 'Project Management',
+      industry: 'Creative Services',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Marketing Automation Tool',
+    description: 'Automate marketing campaigns and customer engagement',
+    formValues: {
+      appCategory: 'Marketing',
+      appIdea:
+        'An all-in-one marketing automation platform that allows businesses to create, execute, and analyze multi-channel marketing campaigns',
+      appType: 'Marketing Automation',
+      industry: 'Marketing',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Customer Loyalty Program App',
+    description: 'Enhance customer retention through loyalty rewards',
+    formValues: {
+      appCategory: 'Business',
+      appIdea:
+        'A mobile app for businesses to create and manage customer loyalty programs, offering rewards and tracking customer engagement',
+      appType: 'Loyalty Program',
+      industry: 'Retail',
+      platform: 'Mobile',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Document Signing Solution',
+    description: 'Facilitate secure electronic signatures for contracts',
+    formValues: {
+      appCategory: 'Business',
+      appIdea:
+        'A secure document signing platform that allows users to send, sign, and manage contracts electronically, ensuring compliance and security',
+      appType: 'Document Management',
+      industry: 'Legal',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Online Course Marketplace',
+    description: 'Create and sell online courses to a global audience',
+    formValues: {
+      appCategory: 'Education',
+      appIdea:
+        'A platform that allows instructors to create and market their online courses while providing learners with diverse educational content',
+      appType: 'E-learning',
+      industry: 'Education',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Real Estate Listing Platform',
+    description: 'Connect buyers and sellers in the real estate market',
+    formValues: {
+      appCategory: 'Real Estate',
+      appIdea:
+        'An online platform for listing properties, connecting buyers with sellers, and providing tools for virtual tours and price comparisons',
+      appType: 'Real Estate',
+      industry: 'Real Estate',
+      platform: 'Web & Mobile',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Health and Safety Compliance Tracker',
+    description: 'Ensure workplace safety and compliance with regulations',
+    formValues: {
+      appCategory: 'Business',
+      appIdea:
+        'A compliance tracking tool that helps businesses monitor health and safety regulations, conduct audits, and manage incident reports',
+      appType: 'Compliance Management',
+      industry: 'Manufacturing',
+      platform: 'Web',
+      targetAudience: 'Clients',
+    },
+  },
+  {
+    title: 'Personal Finance Management App',
+    description: 'Help users manage personal finances and budgeting',
+    formValues: {
+      appCategory: 'Finance',
+      appIdea:
+        'A mobile app for individuals to track expenses, set budgets, and manage savings with personalized financial advice',
+      appType: 'Budgeting',
+      industry: 'Finance',
+      platform: 'Mobile',
+      targetAudience: 'Clients',
+    },
+  },
 ]
+
+export const appTechstack = {
+  frontend: 'React',
+  framework: 'Next.js',
+  backend: 'AWS/Serverless',
+  database: 'PostgreSQL',
+  language: 'Javascript',
+}

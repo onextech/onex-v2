@@ -18,6 +18,7 @@ module.exports = {
     'unicorn/consistent-destructuring': 1,
     'unicorn/explicit-length-check': 1,
     'unicorn/no-document-cookie': 1,
+    'perfectionist/sort-objects': 0,
   },
   settings: {
     next: {

@@ -83,7 +83,7 @@ export const AppIdeaForm: React.FC<FormProps> = ({
                       adjustTextareaHeight(textarea)
                     }
                   }}
-                  placeholder="Describe your app idea..."
+                  placeholder={`Describe your idea and features you'd like your app to have. For example: "An app where employees can..."`}
                   value={appIdea}
                 />
                 <InfoIcon className="w-4 h-4 text-zinc-500 absolute top-2 right-2" />
