@@ -2,7 +2,7 @@ import type React from 'react'
 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Sparkles } from 'lucide-react'
+import { ShareIcon, Sparkles } from 'lucide-react'
 
 interface HeaderExplorerProps {
   isLoading: boolean
@@ -40,6 +40,17 @@ export const HeaderExplorer: React.FC<HeaderExplorerProps> = ({
           >
             Reset
           </Button>
+
+          {/* Share button with icon */}
+          <Button
+            className={cn(showForm && 'hidden')}
+            size="sm"
+            variant="outline"
+          >
+            <ShareIcon className="w-4 h-4 mr-1" />
+            Share
+          </Button>
+
           <Button
             className={cn(showForm && 'hidden')}
             onClick={() => setIsDialogOpen(true)}
