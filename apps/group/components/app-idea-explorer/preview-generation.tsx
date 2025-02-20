@@ -315,6 +315,63 @@ export const PreviewGeneration = ({
             )}
 
             {renderSection(
+              'How Much Will It Cost to Develop This App?',
+              <DollarSign className="w-5 h-5 text-zinc-300" />,
+              'COST ESTIMATES',
+              <div className="space-y-4 p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm">
+                {/* Short paragraph explaining cost overview */}
+                <p className="text-sm">
+                  CRM development costs vary based on features and integrations.
+                  A <strong>basic MVP</strong> is cost-effective, while a
+                  full-scale solution requires greater investment.
+                </p>
+
+                {/* Horizontal rule or line */}
+                <hr className="border-zinc-200 dark:border-zinc-700" />
+
+                {/* Table matching the reference style */}
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <th className="px-2 py-2 text-left font-semibold text-zinc-600">
+                        Stage
+                      </th>
+                      <th className="px-2 py-2 text-right font-semibold text-zinc-600">
+                        Estimated Cost
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <td className="px-2 py-2 text-zinc-600">
+                        MVP Development
+                      </td>
+                      <td className="px-2 py-2 text-right font-semibold text-green-600">
+                        $30,000 - $80,000
+                      </td>
+                    </tr>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <td className="px-2 py-2 text-zinc-600">
+                        Hosting &amp; Infrastructure
+                      </td>
+                      <td className="px-2 py-2 text-right font-semibold text-green-600">
+                        Cloud-based costs vary
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-2 py-2 text-zinc-600">
+                        Maintenance &amp; Updates
+                      </td>
+                      <td className="px-2 py-2 text-right font-semibold text-green-600">
+                        Ongoing
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {renderSection(
               'What is the Cheapest Way to Build It?',
               <TrendingDown className="w-5 h-5 text-zinc-300" />,
               'BUDGET-FRIENDLY DEV',
@@ -564,7 +621,7 @@ export const PreviewGeneration = ({
                   </div>
                   <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                     <div
-                      className="bg-blue-500 h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full"
                       style={{ width: '70%' }} // Approx. progress representation
                     />
                   </div>
@@ -596,6 +653,167 @@ export const PreviewGeneration = ({
                   iteration.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
+                  <li>
+                    <strong>Planning:</strong> 1 month for scoping and
+                    requirements.
+                  </li>
+                  <li>
+                    <strong>Development:</strong> 4-6 months for core CRM
+                    functionality.
+                  </li>
+                  <li>
+                    <strong>Implementation:</strong> 1-2 months for data
+                    migration and team training.
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {renderSection(
+              'What Is the Process for Development and Implementation?',
+              <Calendar className="w-5 h-5 text-zinc-300" />,
+              'PROJECT TIMELINE',
+              <div className="space-y-4 p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm">
+                {/* Descriptive paragraph about the process */}
+                <p className="text-sm">
+                  A well-planned process ensures a smooth rollout from
+                  development to deployment. Key phases include{' '}
+                  <strong>planning</strong>, <strong>development</strong>, and{' '}
+                  <strong>implementation</strong> with room for feedback and
+                  iteration.
+                </p>
+
+                {/* Simple HTML-based Gantt-style layout using divs */}
+                <div className="space-y-3">
+                  {/* Gantt chart "header" row for months */}
+                  <div className="flex items-center space-x-1 text-xs font-semibold text-zinc-600">
+                    {/* Each month cell */}
+                    <div className="flex-1 text-center">0 mo</div>
+                    <div className="flex-1 text-center">1 mo</div>
+                    <div className="flex-1 text-center">2 mo</div>
+                    <div className="flex-1 text-center">3 mo</div>
+                    <div className="flex-1 text-center">4 mo</div>
+                    <div className="flex-1 text-center">5 mo</div>
+                    <div className="flex-1 text-center">6 mo</div>
+                    <div className="flex-1 text-center">7 mo</div>
+                    <div className="flex-1 text-center">8 mo</div>
+                  </div>
+
+                  {/* Row for Planning */}
+                  <div className="relative flex items-center h-5 bg-white dark:bg-zinc-700 rounded shadow text-xs text-zinc-600">
+                    <div className="px-2 font-bold">Planning</div>
+                    {/* Gantt "bar" offset & width */}
+                    <div
+                      className="absolute top-0 left-0 h-5 bg-blue-400/70 rounded"
+                      style={{ width: '11.11%' }}
+                    />
+                    {/* Explanation: 1 month out of 9 total columns ( ~11.11% ) */}
+                  </div>
+
+                  {/* Row for Development */}
+                  <div className="relative flex items-center h-5 bg-white dark:bg-zinc-700 rounded shadow text-xs text-zinc-600">
+                    <div className="px-2 font-bold">Development</div>
+                    {/* Gantt "bar" offset & width */}
+                    <div
+                      className="absolute top-0 left-[11.11%] h-5 bg-green-400/70 rounded"
+                      style={{ width: '55.55%' }}
+                    />
+                    {/* Explanation: starts at 1 mo (11.11% offset), ends at 6 mo (5 months long ~55.55%) */}
+                  </div>
+
+                  {/* Row for Implementation */}
+                  <div className="relative flex items-center h-5 bg-white dark:bg-zinc-700 rounded shadow text-xs text-zinc-600">
+                    <div className="px-2 font-bold">Implementation</div>
+                    {/* Gantt "bar" offset & width */}
+                    <div
+                      className="absolute top-0 left-[66.66%] h-5 bg-orange-400/70 rounded"
+                      style={{ width: '22.22%' }}
+                    />
+                    {/* Explanation: starts at 6 mo (66.66% offset), ends at 8 mo (2 months ~22.22%) */}
+                  </div>
+                </div>
+
+                {/* High-level breakdown of each phase */}
+                <ul className="text-sm list-disc pl-5 space-y-1 mt-4">
+                  <li>
+                    <strong>Planning:</strong> 1 month for scoping and
+                    requirements.
+                  </li>
+                  <li>
+                    <strong>Development:</strong> 4-6 months for core CRM
+                    functionality.
+                  </li>
+                  <li>
+                    <strong>Implementation:</strong> 1-2 months for data
+                    migration and team training.
+                  </li>
+                </ul>
+              </div>
+            )}
+            {renderSection(
+              'What Is the Process for Development and Implementation?',
+              <Calendar className="w-5 h-5 text-zinc-300" />,
+              'PROJECT TIMELINE',
+              <div className="space-y-4 p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm">
+                <p className="text-sm">
+                  A well-planned process ensures a smooth rollout from
+                  development to deployment. The timeline below shows each phase
+                  as a waterfall, with each stage starting sequentially.
+                </p>
+                {/* Header Row with Month Labels */}
+                <div className="flex items-center text-xs font-semibold text-zinc-600">
+                  {Array.from({ length: 9 }, (_, i) => (
+                    <div className="flex-1 text-center" key={i}>
+                      {i} mo
+                    </div>
+                  ))}
+                </div>
+                {/* Waterfall-style Gantt Chart */}
+                <div className="space-y-3">
+                  {/* Planning Phase: starts at 0, lasts 1 month */}
+                  <div className="flex items-center">
+                    <div className="w-1/4 text-xs font-bold text-zinc-600">
+                      Planning
+                    </div>
+                    <div className="w-3/4">
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
+                        <div
+                          className="h-2 rounded-full bg-primary"
+                          style={{ width: '11.11%' }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* Development Phase: starts at 1 mo, lasts 5 months */}
+                  <div className="flex items-center">
+                    <div className="w-1/4 text-xs font-bold text-zinc-600">
+                      Development
+                    </div>
+                    <div className="w-3/4">
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
+                        <div
+                          className="h-2 rounded-full bg-primary"
+                          style={{ marginLeft: '11.11%', width: '55.55%' }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* Implementation Phase: starts at 6 mo, lasts 2 months */}
+                  <div className="flex items-center">
+                    <div className="w-1/4 text-xs font-bold text-zinc-600">
+                      Implementation
+                    </div>
+                    <div className="w-3/4">
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
+                        <div
+                          className="h-2 rounded-full bg-primary"
+                          style={{ marginLeft: '66.66%', width: '22.22%' }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul className="text-sm list-disc pl-5 space-y-1 mt-4">
                   <li>
                     <strong>Planning:</strong> 1 month for scoping and
                     requirements.
