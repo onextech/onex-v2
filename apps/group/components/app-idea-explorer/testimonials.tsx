@@ -96,7 +96,7 @@ export const Testimonials: React.FC = () => {
   }, [])
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-8">
+    <section className="container py-8">
       <div className="mb-4">
         <PageSectionHeader
           className="text-2xl"

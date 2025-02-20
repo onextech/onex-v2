@@ -1,6 +1,13 @@
 import type React from 'react'
 
 import {
+  appCategories,
+  appIndustrys,
+  appPlatforms,
+  appTargetAudiences,
+  appTypesByCategory,
+} from '@/components/app-idea-explorer/mocks'
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -28,54 +35,7 @@ interface SettingsProps {
   settings: AppIdeaSettings
 }
 
-const appCategories = [
-  'Social Networking',
-  'Productivity',
-  'Entertainment',
-  'Education',
-  'Health & Fitness',
-  'E-commerce',
-  'Travel',
-  'Finance',
-]
-
-const appTypesByCategory: { [key: string]: string[] } = {
-  'E-commerce': ['Marketplace', 'Retail', 'Auction', 'Subscription Box'],
-  Education: [
-    'Language Learning',
-    'Skill Development',
-    'Online Courses',
-    'Educational Games',
-  ],
-  Entertainment: [
-    'Gaming',
-    'Video Streaming',
-    'Music Streaming',
-    'AR/VR Experiences',
-  ],
-  Finance: ['Banking', 'Investing', 'Budgeting', 'Cryptocurrency'],
-  'Health & Fitness': [
-    'Workout Tracking',
-    'Nutrition Planning',
-    'Mental Health',
-    'Medical Reference',
-  ],
-  Productivity: [
-    'Task Management',
-    'Note-taking',
-    'Time Tracking',
-    'Project Management',
-  ],
-  'Social Networking': [
-    'Dating',
-    'Professional Networking',
-    'Community Building',
-    'Photo Sharing',
-  ],
-  Travel: ['Booking', 'Trip Planning', 'Local Guides', 'Transportation'],
-}
-
-export const SettingsExplorer: React.FC<SettingsProps> = ({
+export const SettingsForm: React.FC<SettingsProps> = ({
   onSettingsChange,
   settings,
 }) => {
@@ -99,11 +59,11 @@ export const SettingsExplorer: React.FC<SettingsProps> = ({
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="technology">Technology</SelectItem>
-            <SelectItem value="healthcare">Healthcare</SelectItem>
-            <SelectItem value="education">Education</SelectItem>
-            <SelectItem value="finance">Finance</SelectItem>
-            <SelectItem value="entertainment">Entertainment</SelectItem>
+            {appIndustrys.map((industry) => (
+              <SelectItem key={industry} value={industry}>
+                {industry}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>
@@ -116,8 +76,12 @@ export const SettingsExplorer: React.FC<SettingsProps> = ({
         </div>
         <Select
           onValueChange={(value) => {
-            handleSettingChange('appCategory', value)
-            handleSettingChange('appType', '')
+            const nextSettings = {
+              ...settings,
+              appCategory: value,
+              appType: appTypesByCategory[value]?.[0] || '',
+            }
+            onSettingsChange(nextSettings)
           }}
           value={settings.appCategory}
         >
@@ -142,7 +106,9 @@ export const SettingsExplorer: React.FC<SettingsProps> = ({
         </div>
         <Select
           disabled={!settings.appCategory}
-          onValueChange={(value) => handleSettingChange('appType', value)}
+          onValueChange={(value) =>
+            value && handleSettingChange('appType', value)
+          }
           value={settings.appType}
         >
           <SelectTrigger className="w-[140px] h-8 bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
@@ -175,10 +141,11 @@ export const SettingsExplorer: React.FC<SettingsProps> = ({
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="customers">Customers</SelectItem>
-            <SelectItem value="employees">Employees</SelectItem>
-            <SelectItem value="businesses">Businesses</SelectItem>
-            <SelectItem value="general">General</SelectItem>
+            {appTargetAudiences.map((targetAudience) => (
+              <SelectItem key={targetAudience} value={targetAudience}>
+                {targetAudience}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>
@@ -197,10 +164,11 @@ export const SettingsExplorer: React.FC<SettingsProps> = ({
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="web">Web</SelectItem>
-            <SelectItem value="mobile">Mobile</SelectItem>
-            <SelectItem value="desktop">Desktop</SelectItem>
-            <SelectItem value="cross-platform">Cross-platform</SelectItem>
+            {appPlatforms.map((platform) => (
+              <SelectItem key={platform} value={platform}>
+                {platform}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>

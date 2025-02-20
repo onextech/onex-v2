@@ -11,7 +11,7 @@ import {
 import { cn } from '@/lib/utils'
 import { InfoIcon, MessageCircle } from 'lucide-react'
 
-import { SettingsExplorer } from './settings-generation'
+import { SettingsForm } from './settings-form'
 
 interface AppIdeaSettings {
   appCategory: string
@@ -29,7 +29,7 @@ interface FormProps {
   showAdditionalFields: boolean
 }
 
-export const FormExplorer: React.FC<FormProps> = ({
+export const AppIdeaForm: React.FC<FormProps> = ({
   appIdea,
   onSettingsChange,
   setAppIdea,
@@ -100,7 +100,7 @@ export const FormExplorer: React.FC<FormProps> = ({
       </div>
 
       {showAdditionalFields && (
-        <SettingsExplorer
+        <SettingsForm
           onSettingsChange={onSettingsChange}
           settings={settings}
         />

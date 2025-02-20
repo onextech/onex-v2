@@ -19,6 +19,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Check, X } from 'lucide-react'
 
 interface LeadInfoDialogProps {
+  onDialogClose: () => void
   onOpenChange: (open: boolean) => void
   open: boolean
 }
@@ -36,7 +37,11 @@ const defaultFormData = {
   phoneNumber: '',
 }
 
-export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
+export function LeadInfoDialog({
+  onDialogClose,
+  onOpenChange,
+  open,
+}: LeadInfoDialogProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState(defaultFormData)
 
@@ -55,6 +60,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
     setIsSubmitted(false)
     setFormData(defaultFormData)
     onOpenChange(false)
+    onDialogClose()
   }
 
   const renderStepper = () => (
@@ -129,8 +135,6 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="+65">+65</SelectItem>
-                  <SelectItem value="+1">+1</SelectItem>
-                  <SelectItem value="+44">+44</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -196,7 +200,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
 
       <div className="space-y-1">
         <Label className="text-xs font-medium" htmlFor="additionalMessage">
-          ADDITIONAL REQUESTS/MESSAGE
+          MESSAGE
         </Label>
         <Textarea
           className="border-zinc-300"
@@ -217,6 +221,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
             onCheckedChange={(checked) =>
               handleChange('marketingConsent', checked as boolean)
             }
+            required
           />
           <Label className="text-sm text-zinc-600" htmlFor="marketingConsent">
             I agree to receive app development insights, market trends, and
@@ -231,6 +236,7 @@ export function LeadInfoDialog({ onOpenChange, open }: LeadInfoDialogProps) {
             onCheckedChange={(checked) =>
               handleChange('apiAccess', checked as boolean)
             }
+            required
           />
           <Label className="text-sm text-zinc-600" htmlFor="apiAccess">
             I am interested in receiving a consultation about developing my app

@@ -18,6 +18,13 @@ export default {
   important: '#__next',
   plugins: [tailwindAnimate],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',

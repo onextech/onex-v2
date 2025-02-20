@@ -3,8 +3,10 @@
 import type React from 'react'
 import { useEffect, useState } from 'react'
 
+import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import startCase from 'lodash/startCase'
 import {
   BarChart2,
   CheckCircle2,
@@ -49,17 +51,26 @@ interface AppIdeaResult {
 }
 
 interface PreviewProps {
+  appIdea: string
+  isDialogOpen: boolean
   isLoading: boolean
+  onDialogClose: () => void
   onReset: () => void
   result: AppIdeaResult
+  setIsDialogOpen: React.Dispatch<React.SetStateAction<boolean>>
+  settings: AppIdeaSettings
 }
 
 export const PreviewGeneration = ({
+  appIdea,
+  isDialogOpen,
   isLoading,
+  onDialogClose,
   onReset,
   result,
+  setIsDialogOpen,
+  settings,
 }: PreviewProps) => {
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
   const availableTexts = [
     'Analyzing market trends...',
     'Evaluating technical feasibility...',
@@ -68,6 +79,11 @@ export const PreviewGeneration = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [progress, setProgress] = useState(0)
 
+  const isExternalFacingApp = ['Clients', 'Consumers'].includes(
+    settings.targetAudience
+  )
+
+  // Loading state effect
   useEffect(() => {
     if (!isLoading) {
       setProgress(0)
@@ -86,7 +102,6 @@ export const PreviewGeneration = ({
 
     return () => clearInterval(interval)
   }, [isLoading])
-
   useEffect(() => {
     if (!isLoading) return
 
@@ -96,20 +111,6 @@ export const PreviewGeneration = ({
 
     return () => clearInterval(interval)
   }, [isLoading])
-
-  const renderSection = (
-    title: string,
-    icon: React.ReactNode,
-    content: React.ReactNode
-  ) => (
-    <div className="bg-white dark:bg-zinc-800 rounded-lg p-4">
-      <h4 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-3 flex items-center">
-        {icon}
-        <span className="ml-2">{title}</span>
-      </h4>
-      {content}
-    </div>
-  )
 
   const renderRecommendation = () => {
     const feasibilityScore = getFeasibilityScore(result.feasibility)
@@ -130,7 +131,7 @@ export const PreviewGeneration = ({
 
     return (
       <div className="bg-white dark:bg-zinc-800 rounded-lg">
-        <h4 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-3 flex items-center">
+        <h4 className="text-lg font-semibold mb-3 flex items-center">
           {overallScore >= 3 ? (
             <ThumbsUp className="mr-2 w-5 h-5 text-zinc-300" />
           ) : (
@@ -153,7 +154,7 @@ export const PreviewGeneration = ({
       <Card className="w-full max-w-lg border-0 shadow-none bg-transparent">
         <CardContent className="flex flex-col items-center gap-4 p-6">
           <div className="relative w-12 h-12">
-            <Loader2 className="w-full h-full animate-spin text-zinc-900 dark:text-zinc-100" />
+            <Loader2 className="w-full h-full animate-spin" />
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-zinc-500/10 rounded-full animate-spin-slow" />
           </div>
           <div className="space-y-1 text-center">
@@ -181,163 +182,188 @@ export const PreviewGeneration = ({
         isLoading ? 'max-w-sm' : 'max-w-5xl'
       }`}
     >
-      <div className="grid grid-cols-12">
-        <div className="col-span-4 p-4 border-r">
-          {renderRecommendation()}
-          <p className="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
-            {result.summary}
-          </p>
-          <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Feasibility</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.feasibility}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Market Potential</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.marketPotential}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Scalability Potential</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.scalabilityPotential}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Competitive Landscape</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.competitiveLandscape}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Complexity Rating</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.technicalFeasibility.complexityRating}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-500">Est. Development Effort</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {result.technicalFeasibility.estimatedEffort}
-              </span>
+      {/* Title */}
+      <div>
+        {appIdea && (
+          <div className="p-4 border-b w-full">
+            <h6 className="mb-1 text-muted-foreground uppercase font-medium text-xxs">
+              App Idea
+            </h6>
+            <h3 className="mb-1 leading-tight text-lg font-semibold flex items-center">
+              {appIdea}
+            </h3>
+            <p className="text-muted-foreground text-sm">{appIdea}</p>
+          </div>
+        )}
+
+        {/* Results Grid */}
+        <div className="grid grid-cols-12">
+          <div className="col-span-8">
+            {renderSection(
+              'MVP Features',
+              <CheckCircle2 className="w-5 h-5 text-zinc-300" />,
+              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                {result.productScope.mvpFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            )}
+            {renderSection(
+              'Nice-to-Have Features',
+              <Zap className="w-5 h-5 text-zinc-300" />,
+              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                {result.productScope.niceToHaveFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            )}
+            {renderSection(
+              'Technical Requirements',
+              <Rocket className="w-5 h-5 text-zinc-300" />,
+              <div className="space-y-2">
+                <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                  {result.productScope.technicalRequirements}
+                </p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                  {result.productScope.integrationAndScalability}
+                </p>
+                <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                  {result.technicalFeasibility.techStack.map((tech, index) => (
+                    <li key={index}>{tech}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {renderSection(
+              'Next Steps',
+              <List className="w-5 h-5 text-zinc-300" />,
+              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                {result.nextSteps.map((step, index) => (
+                  <li key={index}>{step}</li>
+                ))}
+              </ul>
+            )}
+            {renderSection(
+              'Market Analysis',
+              <BarChart2 className="w-5 h-5 text-zinc-300" />,
+              <div className="space-y-2">
+                <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                  The industry shows {result.marketPotential.toLowerCase()}{' '}
+                  potential for your app idea. With a target user base of{' '}
+                  {result.targetUserBase}, there's significant room for growth and
+                  adoption.
+                </p>
+                <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                  <li>Market Size: Large and growing</li>
+                  <li>User Demand: High for innovative solutions</li>
+                  <li>Competition: {result.competitiveLandscape}</li>
+                  <li>Growth Trajectory: Upward trend expected</li>
+                </ul>
+              </div>
+            )}
+            {renderSection(
+              'Business Model',
+              <TrendingUp className="w-5 h-5 text-zinc-300" />,
+              <div className="space-y-4">
+                <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                  {result.businessModel.monetizationStrategies.map(
+                    (strategy, index) => (
+                      <li key={index}>{strategy}</li>
+                    )
+                  )}
+                </ul>
+              </div>
+            )}
+            {renderSection(
+              'Risk Assessment',
+              <Target className="w-5 h-5 text-zinc-300" />,
+              <div className="space-y-4">
+                <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+                  {result.potentialChallenges.map((challenge, index) => (
+                    <li key={index}>{challenge}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className="col-span-4 p-4 border-l">
+            {renderRecommendation()}
+            <p className="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
+              {result.summary}
+            </p>
+
+            <div className="space-y-4">
+              {/* Analysis */}
+              <div className="space-y-1">
+                <h6 className="text-muted-foreground uppercase font-medium text-xxs">
+                  Analysis
+                </h6>
+                <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-zinc-500">Feasibility</span>
+                    <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                    {result.feasibility}
+                  </span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-zinc-500">Market Potential</span>
+                    <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                    {result.marketPotential}
+                  </span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-zinc-500">Scalability Potential</span>
+                    <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                    {result.scalabilityPotential}
+                  </span>
+                  </div>
+                  {isExternalFacingApp && (
+                    <div className="flex justify-between text-sm">
+                      <span className="text-zinc-500">Competitive Landscape</span>
+                      <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                      {result.competitiveLandscape}
+                    </span>
+                    </div>
+                  )}
+                  <div className="flex justify-between text-sm">
+                    <span className="text-zinc-500">Complexity Rating</span>
+                    <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                    {result.technicalFeasibility.complexityRating}
+                  </span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-zinc-500">Est. Development Effort</span>
+                    <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                    {result.technicalFeasibility.estimatedEffort}
+                  </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Selected options */}
+              <div className="space-y-1">
+                <h6 className="text-muted-foreground uppercase font-medium text-xxs">
+                  Selected options
+                </h6>
+                <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
+                  {Object.entries(settings).map(([key, value]) => {
+                    return (
+                      <div className="flex justify-between text-sm" key={key}>
+                        <span className="text-zinc-500">{startCase(key)}</span>
+                        <span className="text-zinc-900 dark:text-zinc-100 text-right">
+                        {value}
+                      </span>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-span-8">
-          {renderSection(
-            'MVP Features',
-            <CheckCircle2 className="w-5 h-5 text-zinc-300" />,
-            <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-              {result.productScope.mvpFeatures.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-          )}
-          {renderSection(
-            'Nice-to-Have Features',
-            <Zap className="w-5 h-5 text-zinc-300" />,
-            <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-              {result.productScope.niceToHaveFeatures.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-          )}
-          {renderSection(
-            'Technical Requirements',
-            <Rocket className="w-5 h-5 text-zinc-300" />,
-            <div className="space-y-2">
-              <p className="text-sm text-zinc-700 dark:text-zinc-300">
-                {result.productScope.technicalRequirements}
-              </p>
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Integration & Scalability
-              </h5>
-              <p className="text-sm text-zinc-700 dark:text-zinc-300">
-                {result.productScope.integrationAndScalability}
-              </p>
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100 mt-4">
-                Recommended Tech Stack
-              </h5>
-              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-                {result.technicalFeasibility.techStack.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {renderSection(
-            'Next Steps',
-            <List className="w-5 h-5 text-zinc-300" />,
-            <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-              {result.nextSteps.map((step, index) => (
-                <li key={index}>{step}</li>
-              ))}
-            </ul>
-          )}
-          {renderSection(
-            'Market Analysis',
-            <BarChart2 className="w-5 h-5 text-zinc-300" />,
-            <div className="space-y-4">
-              <p className="text-sm text-zinc-700 dark:text-zinc-300">
-                The industry shows {result.marketPotential.toLowerCase()}{' '}
-                potential for your app idea. With a target user base of{' '}
-                {result.targetUserBase}, there's significant room for growth and
-                adoption.
-              </p>
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Key Market Insights:
-              </h5>
-              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-                <li>Market Size: Large and growing</li>
-                <li>User Demand: High for innovative solutions</li>
-                <li>Competition: {result.competitiveLandscape}</li>
-                <li>Growth Trajectory: Upward trend expected</li>
-              </ul>
-            </div>
-          )}
-          {renderSection(
-            'Business Model',
-            <TrendingUp className="w-5 h-5 text-zinc-300" />,
-            <div className="space-y-4">
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Monetization Strategies:
-              </h5>
-              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-                {result.businessModel.monetizationStrategies.map(
-                  (strategy, index) => (
-                    <li key={index}>{strategy}</li>
-                  )
-                )}
-              </ul>
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Potential Revenue Streams:
-              </h5>
-              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-                {result.businessModel.revenueStreams.map((stream, index) => (
-                  <li key={index}>{stream}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {renderSection(
-            'Risk Assessment',
-            <Target className="w-5 h-5 text-zinc-300" />,
-            <div className="space-y-4">
-              <h5 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Potential Challenges:
-              </h5>
-              <ul className="text-sm text-zinc-700 dark:text-zinc-300 list-disc list-inside">
-                {result.potentialChallenges.map((challenge, index) => (
-                  <li key={index}>{challenge}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
       </div>
+
+      {/* Buttons */}
       <div className="flex items-center justify-between gap-2 p-4 w-full">
         <Button onClick={onReset} size="lg" variant="outline">
           Start Over
@@ -350,7 +376,28 @@ export const PreviewGeneration = ({
           Download Report
         </Button>
       </div>
-      <LeadInfoDialog onOpenChange={setIsDialogOpen} open={isDialogOpen} />
+
+      <LeadInfoDialog
+        onDialogClose={onDialogClose}
+        onOpenChange={setIsDialogOpen}
+        open={isDialogOpen}
+      />
+    </div>
+  )
+}
+
+function renderSection(
+  title: string,
+  icon: React.ReactNode,
+  content: React.ReactNode
+) {
+  return (
+    <div className="bg-white dark:bg-zinc-800 rounded-lg p-4">
+      <h4 className="text-lg font-semibold mb-3 flex items-center">
+        {icon}
+        <span className="ml-2">{title}</span>
+      </h4>
+      {content}
     </div>
   )
 }
