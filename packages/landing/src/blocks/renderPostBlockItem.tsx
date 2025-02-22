@@ -23,7 +23,7 @@ const renderPostBlockItem = (props: RenderPostBlockItemProps) => {
         titleProps: {
           alt: hero_alt || avatar_alt,
           ar: '16:9',
-          boxProps: { href, sx: { mb: 2 } },
+          boxProps: { href, sx: { borderRadius: 1, mb: 2 } },
           scaleOnHover: true,
         },
         type: 'image',

@@ -106,7 +106,7 @@ export const MOCK_SERVICE_PAGE = {
           id: 'how-it-works-1',
           title: 'What are the advantages of developing web apps with {title}?',
           content:
-              'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
+            'Developing web apps with {title} offers flexibility, scalability, and faster iteration. Its components streamline the process, making it easier to adapt to changing business needs while maintaining a focus on delivering key features efficiently.',
         },
         {
           id: 'how-it-works-2',
@@ -1680,7 +1680,7 @@ export const MOCK_GROUP_SERVICES = [
     // Sections
     sections: {
       challenges: {
-        title: 'The Challenges Decision Makers Face',
+        title: 'Solving Key Challenges for Businesses',
         center: true,
         items: [
           {
@@ -1701,15 +1701,31 @@ export const MOCK_GROUP_SERVICES = [
             subtitle:
               'The competition for talented developers and engineers makes hiring and retaining top talent harder than ever, further slowing down projects and stifling innovation.',
           },
+          {
+            title: 'Unsure How to Get Started',
+            fa_icon: 'fa-question-circle',
+            subtitle:
+              'Many businesses struggle with digital transformation, unsure of where to begin or which technologies best suit their needs.',
+          },
+          {
+            title: 'Integrating New Software with Existing Systems',
+            fa_icon: 'fa-plug',
+            subtitle:
+              'Ensuring seamless integration of new tools with legacy systems can be challenging, often leading to inefficiencies and technical roadblocks.',
+          },
+          {
+            title: 'Lack of Technical Expertise',
+            fa_icon: 'fa-tools',
+            subtitle:
+              'Without the right technical knowledge, businesses may face difficulties in implementing and managing digital solutions effectively.',
+          },
         ],
-        overline: 'Stakeholder Challenges',
+        overline: 'How We Help',
         subtitle:
           'IT leaders are tasked with navigating a series of difficult challenges, from managing complex software projects and juggling tight budgets to securing experienced developers. These ongoing issues can quickly lead to frustration and burnout as they struggle to balance the demands of growth and innovation.',
       },
       facts: {
-        overline: 'Facts',
         title: 'Key Information about {title}',
-        subtitle: 'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
         items: [
           {
             id: 'facts-1',
@@ -1728,14 +1744,19 @@ export const MOCK_GROUP_SERVICES = [
           {
             id: 'facts-2',
             title: 'Understanding the {title} Process',
-            content: "Custom software development starts with a deep dive into your business needs. We engage in close collaboration with your team to gather requirements, ensuring we understand your objectives thoroughly. This understanding forms the foundation for creating a solution that aligns perfectly with your business goals.\n\nUsing agile methodologies, we design, develop, and iterate on the solution with regular feedback. This ensures flexibility and timely delivery. Our process is adaptive, allowing us to continuously refine the software until it meets and exceeds your expectations.",
+            content:
+              'Custom software development starts with a deep dive into your business needs. We engage in close collaboration with your team to gather requirements, ensuring we understand your objectives thoroughly. This understanding forms the foundation for creating a solution that aligns perfectly with your business goals.\n\nUsing agile methodologies, we design, develop, and iterate on the solution with regular feedback. This ensures flexibility and timely delivery. Our process is adaptive, allowing us to continuously refine the software until it meets and exceeds your expectations.',
           },
           {
             id: 'facts-3',
             title: 'Who needs {title}?',
-            content: "{title} is ideal for businesses with unique operational needs that cannot be met by off-the-shelf software. Companies looking to enhance workflow efficiency, enable seamless integration across departments, or leverage strategic data insights are prime candidates for custom solutions.\n\nWhether you're a startup scaling your operations or an enterprise seeking to refine and optimize existing processes, custom software provides the flexibility and personalization needed to tackle specific challenges. It's designed to fit your business model and drive success in a competitive market.",
+            content:
+              "{title} is ideal for businesses with unique operational needs that cannot be met by off-the-shelf software. Companies looking to enhance workflow efficiency, enable seamless integration across departments, or leverage strategic data insights are prime candidates for custom solutions.\n\nWhether you're a startup scaling your operations or an enterprise seeking to refine and optimize existing processes, custom software provides the flexibility and personalization needed to tackle specific challenges. It's designed to fit your business model and drive success in a competitive market.",
           },
         ],
+        overline: 'Facts',
+        subtitle:
+          'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
       },
       faqs: {
         title: 'FAQs',
@@ -1764,7 +1785,7 @@ export const MOCK_GROUP_SERVICES = [
           'Learn more about our Custom Software Development service and how it can benefit your business.',
       },
       features: {
-        title: 'Our {title} Capabilities',
+        title: 'End-to-end {title} Capabilities',
         items: [
           {
             title: 'PoC Development',
@@ -1773,53 +1794,53 @@ export const MOCK_GROUP_SERVICES = [
               'Accelerate innovation and minimize risk with our Proof of Concept Development Service for our clients.',
           },
           {
-            title: 'Custom Application Development',
-            fa_icon: 'fa-sync',
+            title: 'Web and Mobile Application Development',
+            fa_icon: 'fa-code',
             subtitle:
-              'Leverage our expertise in frontend software engineering and dashboard development to create powerful applications for your business.',
+              'Build high-performing and user-friendly applications across web, iOS, and Android.',
           },
           {
-            title: 'Software Product Development',
-            fa_icon: 'fa-mobile-alt',
+            title: 'API Development & System Integration',
+            fa_icon: 'fa-link',
             subtitle:
-              'Enhance your software development process with our experienced team of frontend engineers and dashboard developers.',
+              'Seamlessly connect your software ecosystem with secure, scalable APIs and system integrations.',
           },
           {
-            title: 'ERP Consulting',
-            fa_icon: 'fa-robot',
+            title: 'AI & Machine Learning Solutions',
+            fa_icon: 'fa-brain',
             subtitle:
-              'Maximize the potential of your enterprise software with our expert ERP consulting services.',
+              'Leverage AI to automate tasks, uncover insights, and enhance decision-making for smarter business operations.',
           },
           {
-            title: 'Application Enhancement and Modernization',
+            title: 'Enterprise Application Development',
+            fa_icon: 'fa-building',
+            subtitle:
+              'Create powerful, scalable enterprise solutions that streamline workflows and drive business growth.',
+          },
+          {
+            title: 'Legacy Software Modernisation',
             fa_icon: 'fa-database',
             subtitle:
-              'We offer end-to-end application re-engineering services to modernise and optimize your legacy applications.',
-          },
-          {
-            title: 'Custom Enterprise Application Development',
-            fa_icon: 'fa-check-circle',
-            subtitle:
-              'Developing powerful frontend applications and dashboards for enterprise clients.',
+              'End-to-end application re-engineering services to modernise and optimize your legacy applications.',
           },
         ],
-        overline: 'Our expertise',
+        overline: 'Solution Offering',
         subtitle:
           'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
       },
       summary: {
-        overline: 'Summary',
         title: 'Transforming Businesses with {title} Services',
         items: [
           {
             title:
-              '{appTitle}\'s {title} service is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.',
+              "{appTitle}'s {title} service is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.",
           },
           {
             title:
               'From the initial concept to deployment and maintenance, we work closely with you to deliver software that meets your exact requirements, integrates seamlessly with your current systems, and drives operational efficiency.',
           },
         ],
+        overline: 'Summary',
       },
     },
     // Seo
@@ -1866,10 +1887,7 @@ export const MOCK_GROUP_SERVICES = [
           'Choosing the right web app partner can feel like navigating a maze. Sound familiar? We simplify the process and ensure your business needs are met seamlessly.',
       },
       facts: {
-        overline: 'Facts',
         title: 'Key Information about {title}',
-        subtitle:
-          'We deliver powerful, custom-built web applications that simplify workflows, optimize performance, and scale alongside your business.',
         items: [
           {
             id: 'facts-1',
@@ -1886,14 +1904,19 @@ export const MOCK_GROUP_SERVICES = [
           {
             id: 'facts-2',
             title: 'Understanding the {title} Process',
-            content: "Web app development starts with understanding your vision and goals. Through collaborative planning, we gather detailed requirements to build a solid foundation for your project.\n\nUsing agile development, we design, build, and refine the application, ensuring regular feedback to meet your business objectives. Our process guarantees flexibility, speed, and high-quality outcomes.",
+            content:
+              'Web app development starts with understanding your vision and goals. Through collaborative planning, we gather detailed requirements to build a solid foundation for your project.\n\nUsing agile development, we design, build, and refine the application, ensuring regular feedback to meet your business objectives. Our process guarantees flexibility, speed, and high-quality outcomes.',
           },
           {
             id: 'facts-3',
             title: 'Who Needs {title}?',
-            content: "{title} is perfect for startups, growing businesses, and enterprises looking to streamline operations, improve collaboration, or create seamless user experiences. Whether you need an MVP, a feature-rich web application, or a scalable enterprise portal, we tailor our solutions to meet your goals.",
+            content:
+              '{title} is perfect for startups, growing businesses, and enterprises looking to streamline operations, improve collaboration, or create seamless user experiences. Whether you need an MVP, a feature-rich web application, or a scalable enterprise portal, we tailor our solutions to meet your goals.',
           },
         ],
+        overline: 'Facts',
+        subtitle:
+          'We deliver powerful, custom-built web applications that simplify workflows, optimize performance, and scale alongside your business.',
       },
       faqs: {
         title: 'FAQs',
@@ -1965,7 +1988,6 @@ export const MOCK_GROUP_SERVICES = [
           'We bring 8+ years of experience to craft web applications that fit your business needs perfectly.',
       },
       summary: {
-        overline: 'Summary',
         title: 'Driving Business Success with {title} Services',
         items: [
           {
@@ -1977,6 +1999,7 @@ export const MOCK_GROUP_SERVICES = [
               'From consultation to delivery, we collaborate closely with your team to ensure the web application meets your requirements and drives long-term success.',
           },
         ],
+        overline: 'Summary',
       },
     },
     seo: {
@@ -3067,49 +3090,49 @@ export const MOCK_GROUP_SERVICES = [
         subtitle:
           '{appTitle} partners with enterprise clients to tackle the most challenging software hurdles. With a keen focus on bespoke enterprise software development, we leverage leading technologies and methodologies tailored to your business requirements. Our approach is meticulously customized for each project, promising seamless collaboration with your team to choose the most suitable technologies. We shine in enterprise software development and consulting, and we are equipped to apply our knowledge and skills to your project, no matter its current stage in the product lifecycle.',
       },
-      showcase: {
-        overline: 'Showcase',
-        title: 'Our {title} Projects',
-        subtitle:
-          'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
-      },
       offerings: {
         title: '{title} Services from Concept to Completion',
         items: [
           {
             title: 'Custom Software Development',
             fa_icon: 'fa-laptop-code',
-            subtitle: 'Build custom software tailored to business needs, including front-end interfaces and core back-end technology.',
+            subtitle:
+              'Build custom software tailored to business needs, including front-end interfaces and core back-end technology.',
             titleProps: { sx: { color: '#f66134' } },
           },
           {
             title: 'Mobile App Development',
             fa_icon: 'fa-mobile-alt',
-            subtitle: 'Develop high performance, secure mobile applications for iOS and Android devices.',
+            subtitle:
+              'Develop high performance, secure mobile applications for iOS and Android devices.',
             titleProps: { sx: { color: '#ffad02' } },
           },
           {
             title: 'QA and Testing',
             fa_icon: 'fa-sync',
-            subtitle: 'Ensure technology products and services are robust and error-free through manual and automated QA.',
+            subtitle:
+              'Ensure technology products and services are robust and error-free through manual and automated QA.',
             titleProps: { sx: { color: '#1b73e8' } },
           },
           {
             title: 'AI and Data Science',
             fa_icon: 'fa-robot',
-            subtitle: 'Identify and leverage hidden patterns in your data, using machine learning & data science principles.',
+            subtitle:
+              'Identify and leverage hidden patterns in your data, using machine learning & data science principles.',
             titleProps: { sx: { color: '#34f6e6' } },
           },
           {
             title: 'UX/UI Design',
             fa_icon: 'fa-paint-brush',
-            subtitle: 'Create beautiful, user-friendly designs for websites, mobile apps, and other human-machine interfaces.',
+            subtitle:
+              'Create beautiful, user-friendly designs for websites, mobile apps, and other human-machine interfaces.',
             titleProps: { sx: { color: '#15a97a' } },
           },
           {
             title: 'Platform and Infrastructure',
             fa_icon: 'fa-database',
-            subtitle: 'Keep applications scalable and resilient with cybersecurity and DevOps experts.',
+            subtitle:
+              'Keep applications scalable and resilient with cybersecurity and DevOps experts.',
             titleProps: { sx: { color: '#f63a34' } },
           },
         ],
@@ -3117,58 +3140,79 @@ export const MOCK_GROUP_SERVICES = [
         subtitle:
           'Unlock unparalleled potential with our end-to-end custom software solutions, crafted to perfection.',
       },
+      insights: {
+        title: "What's Trending in {title}",
+        subtitle:
+          'From AI automation to seamless integrations and scalable cloud solutions, businesses are evolving. Discover innovations to optimize workflows and stay ahead.',
+      },
+      showcase: {
+        title: 'Our {title} Projects',
+        overline: 'Showcase',
+        subtitle:
+          'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful {title} that drive business success.',
+      },
       testimonial: {
-        title: 'What Our Clients Say',
-        subtitle: 'Discover how our clients have benefited from our expert technology consulting and {title} services.',
+        title: 'Our Clients’ Success Stories',
+        subtitle:
+          'Real results. Real impact. See how businesses like yours have leveraged our {title} solutions to streamline operations and drive growth.',
       },
       usps: {
-        title: "What sets {appTitle} apart?",
+        title: 'What sets {appTitle} apart?',
         items: [
           {
+            title: 'Top Talent',
             stat: '2,500+',
-            title: "Top Talent",
-            subtitle: "Leverage expertise from a talent pool of over 2,500 top technology experts across the globe."
+            subtitle:
+              'Leverage expertise from a talent pool of over 2,500 top technology experts across the globe.',
           },
           {
+            title: 'Clients Served',
             stat: '100+',
-            title: "Clients Served",
-            subtitle: "Empowering over 100 prestigious clients globally, including Fortune 500 companies.",
+            subtitle:
+              'Empowering over 100 prestigious clients globally, including Fortune 500 companies.',
           },
           {
+            title: 'Projects Delivered',
             stat: '200+',
-            title: "Projects Delivered",
-            subtitle: "Delivering excellence with 200+ projects, celebrated for excellence in software development and outsourcing."
+            subtitle:
+              'Delivering excellence with 200+ projects, celebrated for excellence in software development and outsourcing.',
           },
           {
+            title: 'Years In-market',
             stat: '20+',
-            title: "Years In-market",
-            subtitle: "20+ years on the market, consistently driving forward innovation and digital excellence."
+            subtitle:
+              '20+ years on the market, consistently driving forward innovation and digital excellence.',
           },
           {
+            title: 'Global Service Centers',
             stat: '18',
-            title: "Global Service Centers",
-            subtitle: "Active in eight countries, providing localized support and comprehensive solutions worldwide."
+            subtitle:
+              'Active in eight countries, providing localized support and comprehensive solutions worldwide.',
           },
           {
-            title: "Innovative Solutions",
-            fa_icon: "fa-lightbulb",
-            subtitle: "Pioneering the use of advanced technologies to solve complex challenges and boost efficiency."
+            title: 'Innovative Solutions',
+            fa_icon: 'fa-lightbulb',
+            subtitle:
+              'Pioneering the use of advanced technologies to solve complex challenges and boost efficiency.',
           },
           {
-            title: "Industry Recognition",
-            fa_icon: "fa-award",
-            subtitle: "Featured as a Top Software Agency in 2023 by Clutch and recognized globally as a leader in technology outsourcing."
+            title: 'Industry Recognition',
+            fa_icon: 'fa-award',
+            subtitle:
+              'Featured as a Top Software Agency in 2023 by Clutch and recognized globally as a leader in technology outsourcing.',
           },
           {
-            title: "Certifications",
-            fa_icon: "fa-certificate",
-            subtitle: "Adhering to the highest standards with OWASP, Amazon Web Services (AWS), and Google certifications."
+            title: 'Certifications',
+            fa_icon: 'fa-certificate',
+            subtitle:
+              'Adhering to the highest standards with OWASP, Amazon Web Services (AWS), and Google certifications.',
           },
         ],
-        maxWidth: "xl",
-        overline: "Difference",
-        subtitle: "{appTitle} stands out by offering a unique blend of seasoned expertise, global presence, and recognized credibility to drive transformative outcomes."
-      }
+        maxWidth: 'xl',
+        overline: 'Difference',
+        subtitle:
+          '{appTitle} stands out by offering a unique blend of seasoned expertise, global presence, and recognized credibility to drive transformative outcomes.',
+      },
     },
   })
 })

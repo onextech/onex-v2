@@ -1,12 +1,11 @@
 import React from 'react'
 
 import { FeaturesSection } from '@onex/group/components/sections/features-section'
-import { ServicesSection } from '@onex/group/components/sections/services-section'
+import { GalleryMarqueeSection } from '@onex/group/components/sections/gallery-marquee-section'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
   renderClientTestimonialSliderBlock,
-  renderFactsVerticalTabsBlock,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
@@ -48,6 +47,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
     summary,
     testimonial,
     usps,
+    insights,
   } = sections || {}
 
   return (
@@ -58,15 +58,21 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           item: service,
         }),
         <FeaturesSection />,
-        <ServicesSection />,
+        <GalleryMarqueeSection />,
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
-        // Facts
-        renderFactsVerticalTabsBlock({
-          ...facts,
+        // Challenges
+        challenges &&
+          renderThreeColumnGridBlock({
+            ...challenges,
+          }),
+        // Solution Offering
+        renderThreeColumnGridBlock({
+          ...features,
+          textAlign: 'left',
         }),
         // Showcases
         Boolean(showcases?.length) &&
@@ -77,20 +83,11 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             pt: { xs: 5, md: 10 },
             subtitle: showcase.subtitle,
           }),
-        // Challenges
-        challenges &&
-          renderThreeColumnGridBlock({
-            ...challenges,
-          }),
-        // Features
-        renderThreeColumnGridBlock({
-          ...features,
-          textAlign: 'left',
-        }),
         // Callout
         renderServiceNotFoundCalloutBlock(),
         renderClientTestimonialSliderBlock({
           title: testimonial.title,
+          dark: true,
           items: clientTestimonials,
           subtitle: testimonial.subtitle,
         }),
@@ -107,7 +104,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // UniqueSellingPoints
         renderFourColumnGridBlock(usps),
         // Related Posts
-        renderRelatedPostsBlock({ items: relatedPosts }),
+        renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
         // Faqs
         renderFaqsAccordionBlock({
           ...faqs,
@@ -127,12 +124,12 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           titleProps: { maxWidth: 'xl', type: 'h3' },
           ...cta,
         }),
+        // Form
+        renderLeadFormBlock(),
         // Related Services
         renderRelatedServicesBlock({
           items: relatedServices,
         }),
-        // Form
-        renderLeadFormBlock(),
       ]}
     />
   )

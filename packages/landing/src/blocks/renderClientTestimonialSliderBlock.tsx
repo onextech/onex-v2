@@ -25,7 +25,7 @@ const renderClientTestimonialSliderBlock = (
   return {
     id: 'client-testimonials',
     items: [
-      { title: 'Client Testimonials', type: 'overline' },
+      { title: 'Testimonials', type: 'overline' },
       title && {
         title,
         titleProps: { gutterBottom: true },

@@ -58,6 +58,7 @@ export type PageSectionKey =
   | 'halfGrids'
   | 'hero'
   | 'howItWorks'
+  | 'insights'
   | 'leftGridSticky'
   | 'offerings'
   | 'rightGridSticky'

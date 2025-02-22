@@ -23,7 +23,7 @@ const renderClientTestimonialCardsBlock = (
   return {
     id: 'client-testimonials',
     items: [
-      { title: 'Client Testimonials', type: 'overline' },
+      { title: 'Testimonials', type: 'overline' },
       {
         title,
         titleProps: { gutterBottom: true },

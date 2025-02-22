@@ -6,29 +6,30 @@ export const servicesContent: {
   slider: ServiceSlide[][]
 } = {
   hero: {
-    title: 'Services',
+    title: 'Build Custom Solutions',
     description:
-      'We assist enterprise clients in their digital transformation by applying established and emerging technologies into their core business models.',
-    heading: 'Build Custom Solutions',
+      'Streamline operations and unlock new growth for your business with tailored solutions. Create software that empowers your success.',
+    heading: 'Software That Works for You, Not Against You',
   },
   services: [
     {
-      title: 'Web Design',
+      title: 'Designed for Your Unique Needs',
       description:
-        'A conversion centred approach to creating web and product designs that drive action.',
+        'Built to match your exact workflows, processes, and objectives, ensuring efficiency without compromise.',
       href: '/',
       iconUrl: '/images/icons/pencil-ruler.svg',
     },
     {
-      title: 'Web Development',
-      description: 'Build tailor-made websites that drive leads and sales.',
+      title: 'Grows with Your Business',
+      description:
+        'Unlike off-the-shelf solutions, custom software evolves with your business, adapting to growth and new challenges.',
       href: '/',
       iconUrl: '/images/icons/web-code.svg',
     },
     {
-      title: 'Application Development',
+      title: 'Gives You a Competitive Edge',
       description:
-        'Accelerate business agility across your organisation with scalable enterprise apps.',
+        'Empowers you with unique features, automation, and data-driven insights that help you move faster and outperform competitors.',
       href: '/',
       iconUrl: '/images/icons/laptop.svg',
     },
