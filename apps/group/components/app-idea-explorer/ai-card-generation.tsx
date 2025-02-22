@@ -1,7 +1,6 @@
 'use client'
 
-import type React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import {
   appCategories,
@@ -11,10 +10,11 @@ import {
   appTypesByCategory,
 } from '@/components/app-idea-explorer/mocks'
 import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
+import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Sparkles } from 'lucide-react'
-
+import Link from 'next/link'
 import { AppIdeaForm } from './app-idea-form'
 import { ErrorGeneration } from './error-generation'
 import { HeaderExplorer } from './form-header'
@@ -123,186 +123,199 @@ export function AppIdeaExplorer() {
   }
 
   return (
-    <div className="min-h-screen space-y-16 bg-muted">
+    <div className="min-h-screen bg-muted">
       {/* Hero */}
-      <div className="py-32 bg-card w-full">
-        <div className="container">
-          {/* Title */}
-          <div className="max-w-xl mx-auto mb-4">
-            {/* // TODO@Joel: Add logo here */}
-            <h1 className="font-publico-headline text-5xl font-bold mb-4 text-center">
-              One X App Idea Explorer
-            </h1>
-            <p className="text-xl text-muted-foreground text-center">
-              Describe your app idea and find out if it can be built instantly.
-              Get access to an in-depth breakdown of what’s required and
-              actionable steps to bring your idea to life.
-            </p>
-          </div>
-
-          {/* Form */}
-          <div
-            className={cn(
-              `group relative overflow-hidden w-full mx-auto transition-all duration-300 flex flex-col justify-between ${
-                showAdditionalFields
-                  ? 'bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]'
-                  : ''
-              }`,
-              showForm || isLoading ? 'max-w-lg' : 'max-w-5xl'
-            )}
-          >
-            {showAdditionalFields && (
-              <HeaderExplorer
-                isLoading={isLoading}
-                onReset={handleReset}
-                setIsDialogOpen={setIsDialogOpen}
-                showForm={showForm}
-              />
-            )}
-            <div className="flex-1 overflow-hidden flex flex-col">
-              {error && <ErrorGeneration error={error} />}
-
-              {showForm ? (
-                <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
-                  <AppIdeaForm
-                    appIdea={appIdea}
-                    onSettingsChange={setSettings}
-                    setAppIdea={setAppIdea}
-                    settings={settings}
-                    showAdditionalFields={showAdditionalFields}
-                  />
-
-                  <div className="flex gap-2">
-                    <Button
-                      className="w-full flex items-center justify-center gap-2"
-                      type="submit"
-                    >
-                      <Sparkles className="w-3.5 h-3.5" />
-                      Explore Idea
-                    </Button>
-                  </div>
-                </form>
-              ) : (
-                // Preview/Results
-                <div>
-                  <PreviewGeneration
-                    appIdea={appIdea}
-                    isDialogOpen={isDialogOpen}
-                    isLoading={isLoading}
-                    onDialogClose={() => {
-                      handleReset()
-                    }}
-                    onReset={handleReset}
-                    result={
-                      isLoading
-                        ? {
-                            businessModel: {
-                              monetizationStrategies: [],
-                              revenueStreams: [],
-                            },
-                            competitiveLandscape: '',
-                            estimatedTimeline: '',
-                            feasibility: '',
-                            keyFeatures: [],
-                            marketPotential: '',
-                            nextSteps: [],
-                            potentialChallenges: [],
-                            productScope: {
-                              integrationAndScalability: '',
-                              mvpFeatures: [],
-                              niceToHaveFeatures: [],
-                              technicalRequirements: '',
-                            },
-                            scalabilityPotential: '',
-                            summary: '',
-                            targetUserBase: '',
-                            technicalFeasibility: {
-                              complexityRating: '',
-                              estimatedEffort: '',
-                              techStack: [],
-                            },
-                          }
-                        : {
-                            businessModel: {
-                              monetizationStrategies: [
-                                'Freemium model',
-                                'In-app purchases',
-                                'Sponsored content',
-                              ],
-                              revenueStreams: [
-                                'Premium subscriptions',
-                                'Marketplace commission',
-                                'Targeted advertising',
-                              ],
-                            },
-                            competitiveLandscape: 'Moderate',
-                            estimatedTimeline: '6-8 months',
-                            feasibility: 'High',
-                            keyFeatures: [
-                              'User profiles for pet owners',
-                              'Social feed for pet updates',
-                              'Event organization for pet meetups',
-                              'Marketplace for pet products',
-                            ],
-                            marketPotential: 'Medium-High',
-                            nextSteps: [
-                              'Conduct user research',
-                              'Create a detailed product roadmap',
-                              'Develop a prototype',
-                              'Seek initial funding or bootstrap',
-                            ],
-                            potentialChallenges: [
-                              'User acquisition and retention',
-                              'Content moderation',
-                              'Monetization strategy',
-                            ],
-                            productScope: {
-                              integrationAndScalability:
-                                'Scalable cloud architecture, potential integration with existing pet service APIs',
-                              mvpFeatures: [
-                                'User profiles',
-                                'Social feed',
-                                'Basic event creation',
-                              ],
-                              niceToHaveFeatures: [
-                                'AI-powered pet recommendations',
-                                'Virtual pet playdates',
-                              ],
-                              technicalRequirements:
-                                'Mobile app development, cloud infrastructure, database management',
-                            },
-                            scalabilityPotential: 'High',
-                            summary:
-                              "Your app idea for a social media platform for pet owners shows promise. Here's a comprehensive analysis:",
-                            targetUserBase: '1M+ pet owners',
-                            technicalFeasibility: {
-                              complexityRating: 'Medium',
-                              estimatedEffort: '4-6 months',
-                              techStack: [
-                                'React Native',
-                                'Node.js',
-                                'MongoDB',
-                                'AWS',
-                              ],
-                            },
-                          }
-                    }
-                    setIsDialogOpen={setIsDialogOpen}
-                    settings={settings}
-                  />
+      <div
+        className="py-32 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
+        {/* Card */}
+        <div className="container relative">
+          <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_rgba(0,0,0,0)_70%)]"/>
+          <div className="relative md:px-8 py-20">
+            <div>
+              {/* Title */}
+              <div className="max-w-xl mx-auto mb-8">
+                <div className="text-center mb-6">
+                  <Link href="/">
+                    <Logo className="w-[120px] inline-block"/>
+                  </Link>
                 </div>
-              )}
+                <h1 className="font-publico-headline text-5xl font-bold mb-4 text-center">
+                  App Idea Explorer
+                </h1>
+                <p className="text-xl text-muted-foreground text-center">
+                  Describe your app idea and find out if it can be built
+                  instantly. Get access to an in-depth breakdown of what’s
+                  required and actionable steps to bring your idea to life.
+                </p>
+              </div>
+
+              {/* Form */}
+              <div
+                className={cn(
+                  `group relative overflow-hidden w-full mx-auto transition-all duration-300 ease-in-out flex flex-col justify-between ${
+                    showAdditionalFields
+                      ? 'max-h-[600px] bg-card dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]'
+                      : 'max-h-[300px]'
+                  }`,
+                  showForm || isLoading ? 'max-w-xl' : 'max-w-5xl',
+                  !showForm && 'max-h-auto'
+                )}
+              >
+                {showAdditionalFields && (
+                  <HeaderExplorer
+                    isLoading={isLoading}
+                    onReset={handleReset}
+                    setIsDialogOpen={setIsDialogOpen}
+                    showForm={showForm}
+                  />
+                )}
+                <div className="flex-1 overflow-hidden flex flex-col">
+                  {error && <ErrorGeneration error={error}/>}
+
+                  {showForm ? (
+                    <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+                      <AppIdeaForm
+                        appIdea={appIdea}
+                        onSettingsChange={setSettings}
+                        setAppIdea={setAppIdea}
+                        settings={settings}
+                        showAdditionalFields={showAdditionalFields}
+                      />
+
+                      <div className={cn("flex gap-2 opacity-0 transition-opacity", showAdditionalFields && 'pb-4 px-4', appIdea && 'opacity-100 delay-200 duration-1000 ease-in-out')}>
+                        <Button
+                          className="h-11 rounded-full w-full flex items-center justify-center gap-2"
+                          size="lg"
+                          type="submit"
+                        >
+                          <Sparkles className="w-3.5 h-3.5"/>
+                          Explore Idea
+                        </Button>
+                      </div>
+                    </form>
+                  ) : (
+                    // Preview/Results
+                    <div>
+                      <PreviewGeneration
+                        appIdea={appIdea}
+                        isDialogOpen={isDialogOpen}
+                        isLoading={isLoading}
+                        onDialogClose={() => {
+                          handleReset()
+                        }}
+                        onReset={handleReset}
+                        result={
+                          isLoading
+                            ? {
+                              businessModel: {
+                                monetizationStrategies: [],
+                                revenueStreams: [],
+                              },
+                              competitiveLandscape: '',
+                              estimatedTimeline: '',
+                              feasibility: '',
+                              keyFeatures: [],
+                              marketPotential: '',
+                              nextSteps: [],
+                              potentialChallenges: [],
+                              productScope: {
+                                integrationAndScalability: '',
+                                mvpFeatures: [],
+                                niceToHaveFeatures: [],
+                                technicalRequirements: '',
+                              },
+                              scalabilityPotential: '',
+                              summary: '',
+                              targetUserBase: '',
+                              technicalFeasibility: {
+                                complexityRating: '',
+                                estimatedEffort: '',
+                                techStack: [],
+                              },
+                            }
+                            : {
+                              businessModel: {
+                                monetizationStrategies: [
+                                  'Freemium model',
+                                  'In-app purchases',
+                                  'Sponsored content',
+                                ],
+                                revenueStreams: [
+                                  'Premium subscriptions',
+                                  'Marketplace commission',
+                                  'Targeted advertising',
+                                ],
+                              },
+                              competitiveLandscape: 'Moderate',
+                              estimatedTimeline: '6-8 months',
+                              feasibility: 'High',
+                              keyFeatures: [
+                                'User profiles for pet owners',
+                                'Social feed for pet updates',
+                                'Event organization for pet meetups',
+                                'Marketplace for pet products',
+                              ],
+                              marketPotential: 'Medium-High',
+                              nextSteps: [
+                                'Conduct user research',
+                                'Create a detailed product roadmap',
+                                'Develop a prototype',
+                                'Seek initial funding or bootstrap',
+                              ],
+                              potentialChallenges: [
+                                'User acquisition and retention',
+                                'Content moderation',
+                                'Monetization strategy',
+                              ],
+                              productScope: {
+                                integrationAndScalability:
+                                  'Scalable cloud architecture, potential integration with existing pet service APIs',
+                                mvpFeatures: [
+                                  'User profiles',
+                                  'Social feed',
+                                  'Basic event creation',
+                                ],
+                                niceToHaveFeatures: [
+                                  'AI-powered pet recommendations',
+                                  'Virtual pet playdates',
+                                ],
+                                technicalRequirements:
+                                  'Mobile app development, cloud infrastructure, database management',
+                              },
+                              scalabilityPotential: 'High',
+                              summary:
+                                "Your app idea for a social media platform for pet owners shows promise. Here's a comprehensive analysis:",
+                              targetUserBase: '1M+ pet owners',
+                              technicalFeasibility: {
+                                complexityRating: 'Medium',
+                                estimatedEffort: '4-6 months',
+                                techStack: [
+                                  'React Native',
+                                  'Node.js',
+                                  'MongoDB',
+                                  'AWS',
+                                ],
+                              },
+                            }
+                        }
+                        setIsDialogOpen={setIsDialogOpen}
+                        settings={settings}
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <SampleGallery onSelectIdea={handleSelectIdeaSample} />
+      <SampleGallery onSelectIdea={handleSelectIdeaSample}/>
 
-      <Testimonials />
+      <Testimonials/>
 
       <footer className="py-8">
-        <div className="container">
+      <div className="container">
           <div className="text-xs text-zinc-400 dark:text-zinc-500 max-w-2xl mx-auto text-center">
             <p className="mb-2">
               © {new Date().getFullYear()} One X App Idea Explorer. All rights

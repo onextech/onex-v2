@@ -6,6 +6,7 @@ import { appTechstack } from '@/components/app-idea-explorer/mocks'
 import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { Separator } from '@/components/ui/separator'
 import { cn } from '@/lib/utils'
 import startCase from 'lodash/startCase'
 import {
@@ -28,9 +29,8 @@ import {
 } from 'lucide-react'
 
 import { LeadInfoDialog } from './lead-info-dialog'
-import {Separator} from "@/components/ui/separator";
 
-const isGreyMainCard = false
+const isGreyMainCard = true
 const mainCardClassName = cn(
   'p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm',
   isGreyMainCard && 'bg-zinc-50 dark:bg-zinc-800/50'
@@ -165,7 +165,7 @@ export const PreviewGeneration = ({
 
   if (isLoading) {
     return (
-      <Card className="w-full max-w-lg border-0 shadow-none bg-transparent">
+      <Card className="w-full max-w-xl border-0 shadow-none bg-transparent">
         <CardContent className="flex flex-col items-center gap-4 p-6">
           <div className="relative w-12 h-12">
             <Loader2 className="w-full h-full animate-spin" />

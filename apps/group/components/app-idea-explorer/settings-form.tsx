@@ -21,6 +21,7 @@ import {
   Type,
   Users,
 } from 'lucide-react'
+import orderBy from "lodash/orderBy";
 
 interface AppIdeaSettings {
   appCategory: string
@@ -116,7 +117,7 @@ export const SettingsForm: React.FC<SettingsProps> = ({
           </SelectTrigger>
           <SelectContent>
             {settings.appCategory &&
-              appTypesByCategory[settings.appCategory]?.map((type) => (
+              orderBy(appTypesByCategory[settings.appCategory])?.map((type) => (
                 <SelectItem key={type} value={type}>
                   {type}
                 </SelectItem>

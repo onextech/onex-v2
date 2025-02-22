@@ -1,3 +1,5 @@
+import orderBy from "lodash/orderBy";
+
 export const appCategories = ['Business', 'Productivity', 'Finance']
 
 export const appTypesByCategory: { [key: string]: string[] } = {
@@ -35,7 +37,7 @@ export const appTypesByCategory: { [key: string]: string[] } = {
   ],
 }
 
-export const appIndustrys = [
+export const appIndustrys = orderBy([
   'Technology',
   'Healthcare',
   'Education',
@@ -55,7 +57,7 @@ export const appIndustrys = [
   'Media',
   'Pharmaceuticals',
   'Automotive',
-]
+])
 
 export const appTargetAudiences = ['Employees', 'Clients', 'Consumers']
 
