@@ -61,7 +61,8 @@ export const PageSlider = ({
           >
             <Image
               alt={slide.alt}
-              className="object-cover"
+              className="object-cover select-none"
+              draggable="false"
               fill
               priority={priority}
               sizes={`(max-width: 768px) 100vw, ${width}px`}

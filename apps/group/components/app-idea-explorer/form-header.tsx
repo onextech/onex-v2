@@ -33,7 +33,7 @@ export const HeaderExplorer: React.FC<HeaderExplorerProps> = ({
       {!isLoading && (
         <div className="flex items-center justify-end gap-1">
           <Button
-            className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
             onClick={onReset}
             size="sm"
             variant="link"

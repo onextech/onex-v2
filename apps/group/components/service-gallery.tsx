@@ -55,9 +55,6 @@ export const ServiceGallery = ({
                 alt={service.title}
                 fill
                 src={service.iconUrl}
-                style={{
-                  objectFit: 'contain',
-                }}
               />
             </div>
 

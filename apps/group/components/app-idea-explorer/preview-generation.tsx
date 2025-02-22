@@ -200,13 +200,13 @@ export const PreviewGeneration = ({
       <div>
         {appIdea && (
           <div className="p-4 border-b w-full">
-            <h6 className="mb-2 text-muted-foreground uppercase font-medium text-xxs">
+            <h6 className="mb-2.5 text-muted-foreground uppercase font-medium text-xxs">
               App Idea
             </h6>
-            <h3 className="leading-tight text-lg font-semibold flex items-center">
+            <h3 className="leading-tight text-lg font-semibold flex items-center mb-1">
               CRM for Small Businesses
             </h3>
-            <p>{appIdea}</p>
+            <p className="max-w-xl">{appIdea}</p>
           </div>
         )}
 

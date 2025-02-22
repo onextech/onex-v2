@@ -17,7 +17,7 @@ const DefaultOverlay = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        'pointer-events-none absolute inset-0 z-10',
+        'pointer-events-none select-none absolute inset-0 z-10',
         'bg-gradient-to-b from-[rgb(83,84,95)] to-[rgb(16,16,19)] opacity-50',
         'md:from-transparent md:via-[rgba(16,16,19,0.25)] md:to-[rgb(16,16,19)]',
         className

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
 import {
   appCategories,
@@ -9,18 +9,18 @@ import {
   appTargetAudiences,
   appTypesByCategory,
 } from '@/components/app-idea-explorer/mocks'
-import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
-import { Logo } from '@/components/logo'
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
-import { Sparkles } from 'lucide-react'
+import {AppIdeaSettings} from '@/components/app-idea-explorer/types'
+import {Logo} from '@/components/logo'
+import {Button} from '@/components/ui/button'
+import {cn} from '@/lib/utils'
+import {Sparkles} from 'lucide-react'
 import Link from 'next/link'
-import { AppIdeaForm } from './app-idea-form'
-import { ErrorGeneration } from './error-generation'
-import { HeaderExplorer } from './form-header'
-import { PreviewGeneration } from './preview-generation'
-import { SampleGallery } from './sample-gallery'
-import { Testimonials } from './testimonials'
+import {AppIdeaForm} from './app-idea-form'
+import {ErrorGeneration} from './error-generation'
+import {HeaderExplorer} from './form-header'
+import {PreviewGeneration} from './preview-generation'
+import {SampleGallery} from './sample-gallery'
+import {Testimonials} from './testimonials'
 
 import '@/styles/marquee.css'
 
@@ -126,11 +126,11 @@ export function AppIdeaExplorer() {
     <div className="min-h-screen bg-muted">
       {/* Hero */}
       <div
-        className="py-32 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
+        className="pt-32 pb-16 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
         {/* Card */}
         <div className="container relative">
           <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_rgba(0,0,0,0)_70%)]"/>
-          <div className="relative md:px-8 py-20">
+          <div className="relative md:px-8">
             <div>
               {/* Title */}
               <div className="max-w-xl mx-auto mb-8">
@@ -182,7 +182,7 @@ export function AppIdeaExplorer() {
                         showAdditionalFields={showAdditionalFields}
                       />
 
-                      <div className={cn("flex gap-2 opacity-0 transition-opacity", showAdditionalFields && 'pb-4 px-4', appIdea && 'opacity-100 delay-200 duration-1000 ease-in-out')}>
+                      <div className={cn("flex gap-2 opacity-0 invisible transition-opacity", showAdditionalFields && 'pb-4 px-4', appIdea && 'visible opacity-100 delay-200 duration-1000 ease-in-out')}>
                         <Button
                           className="h-11 rounded-full w-full flex items-center justify-center gap-2"
                           size="lg"
