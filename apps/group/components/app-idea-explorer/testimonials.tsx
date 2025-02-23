@@ -99,8 +99,8 @@ export const Testimonials: React.FC = () => {
     <section className="container py-8">
       <div className="mb-4">
         <PageSectionHeader
-          className="text-2xl"
-          title="What business owners say"
+          className="text-3xl tracking-wide"
+          title="What Business Owners Say"
         />
         <PageSectionDescription description="Testimonials from business owners" />
       </div>

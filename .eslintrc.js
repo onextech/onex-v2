@@ -20,6 +20,7 @@ module.exports = {
     'unicorn/no-document-cookie': 1,
     'perfectionist/sort-objects': 0,
     '@typescript-eslint/naming-convention': 0,
+    'unused-imports/no-unused-imports': 0,
   },
   settings: {
     next: {

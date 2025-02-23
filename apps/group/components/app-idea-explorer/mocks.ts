@@ -1,4 +1,6 @@
+import { appIdeaResultSchema } from '@/components/app-idea-explorer/schema'
 import orderBy from 'lodash/orderBy'
+import { z } from 'zod'
 
 export const appCategories = ['Business', 'Productivity', 'Finance']
 
@@ -389,4 +391,138 @@ export const appTechstack = {
   backend: 'AWS/Serverless',
   database: 'PostgreSQL',
   language: 'Javascript',
+}
+
+export const mockAppIdeaResult: z.infer<typeof appIdeaResultSchema> = {
+  name: 'CRM for Small Businesses',
+
+  // ==============================
+  // Feasibility Factors
+  // ==============================
+  feasibilityFactors: {
+    techComplexity: 3,
+    developmentTime: 3,
+    customFrameworksRequired: 3,
+    scalabilityNeeds: 3,
+    complianceRequirements: 3,
+    expertiseRequired: 3,
+  },
+
+  // ==============================
+  // Main sections
+  // ==============================
+  costEstimates: [
+    {
+      stage: 'MVP Development',
+      cost: `From $${Number(5000).toLocaleString()}`,
+    },
+    {
+      stage: 'Hosting & Infrastructure',
+      cost: 'Cloud-based costs vary',
+    },
+    {
+      stage: 'Maintenance & Updates',
+      cost: 'Ongoing',
+    },
+  ],
+  coreFeatures: [
+    {
+      icon: '🔥',
+      title: 'Contact Management',
+      description: 'Organize and manage customer data efficiently.',
+    },
+    {
+      icon: '⚡',
+      title: 'Sales Pipeline',
+      description: 'Track deals and forecast revenue.',
+    },
+    {
+      icon: '💼',
+      title: 'Automated Follow-ups',
+      description: 'Ensure timely communications with prospects.',
+    },
+  ],
+  developmentPhases: [
+    {
+      label: 'MVP DEVELOPMENT',
+      duration: '4-6 MONTHS',
+      width: '70%',
+    },
+  ],
+  developmentTimelineSteps: [
+    {
+      title: 'Beta Testing',
+      duration: '2 months for optimization and feedback.',
+    },
+    {
+      title: 'Full Launch',
+      duration: '1 month for deployment and onboarding.',
+    },
+  ],
+  projectTimelinePhases: [
+    { label: 'Planning', start: '0%', width: '11.11%' },
+    { label: 'Development', start: '11.11%', width: '55.55%' },
+    { label: 'Implementation', start: '66.66%', width: '22.22%' },
+  ],
+  projectTimelineSteps: [
+    {
+      title: 'Planning',
+      description: '1 month for scoping and requirements.',
+    },
+    {
+      title: 'Development',
+      description: '4-6 months for core CRM functionality.',
+    },
+    {
+      title: 'Implementation',
+      description: '1-2 months for data migration and team training.',
+    },
+  ],
+  ongoingExpenses: [
+    {
+      title: 'Hosting & API Usage',
+      description: 'Costs vary based on data volume and requests.',
+    },
+    {
+      title: 'Security & Compliance',
+      description: 'Regular updates are required for data protection.',
+    },
+    {
+      title: 'Support & Scalability',
+      description: 'Expenses increase as your user base grows.',
+    },
+  ],
+  efficiencyAutomation: [
+    {
+      title: 'Sales Pipeline',
+      description: 'Automates lead tracking and follow-ups.',
+    },
+    {
+      title: 'Customer Support',
+      description: 'Unifies client interactions for improved service.',
+    },
+    {
+      title: 'Task Automation',
+      description: 'Minimizes manual processes and boosts productivity.',
+    },
+  ],
+  projectKickoffSteps: [
+    {
+      number: 1,
+      title: 'Feature Definition',
+      description:
+        'Define which features are <strong>must-have</strong> and which are <strong>nice-to-have</strong>.',
+    },
+    {
+      number: 2,
+      title: 'Integration Needs',
+      description:
+        'Identify the essential tools (e.g., email, accounting, marketing) to integrate.',
+    },
+    {
+      number: 3,
+      title: 'Budget & User Base',
+      description: 'Set clear cost expectations and forecast your user growth.',
+    },
+  ],
 }

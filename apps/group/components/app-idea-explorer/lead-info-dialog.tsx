@@ -18,7 +18,8 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { Textarea } from '@/components/ui/textarea'
 import { cn } from '@/lib/utils'
-import { Check } from 'lucide-react'
+import { Check, ExternalLinkIcon } from 'lucide-react'
+import Link from 'next/link'
 
 interface LeadInfoDialogProps {
   onDialogClose: () => void
@@ -44,7 +45,7 @@ export function LeadInfoDialog({
   onOpenChange,
   open,
 }: LeadInfoDialogProps) {
-  const [isSubmitted1, setIsSubmitted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState(defaultFormData)
 
   const handleChange = (field: string, value: boolean | string) => {
@@ -53,8 +54,6 @@ export function LeadInfoDialog({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formData)
     setIsSubmitted(true)
   }
 
@@ -64,19 +63,6 @@ export function LeadInfoDialog({
     onOpenChange(false)
     onDialogClose()
   }
-
-  const renderStepper = () => (
-    <div className="flex items-center justify-center gap-2 my-6">
-      {[1, 2, 3].map((i) => (
-        <div className="flex items-center" key={i}>
-          <div className="w-8 h-8 rounded-full flex items-center justify-center bg-primary text-primary-foreground">
-            <Check className="w-5 h-5" />
-          </div>
-          {i < 3 && <div className="h-[2px] w-16 bg-primary" />}
-        </div>
-      ))}
-    </div>
-  )
 
   const renderForm = () => (
     <form className="space-y-6" onSubmit={handleSubmit}>
@@ -324,15 +310,23 @@ export function LeadInfoDialog({
         ))}
       </div>
       <p className="text-zinc-600 text-sm">
-        In the meantime, feel free to schedule a strategy call with our team to
-        discuss your project in more detail.
+        In the meantime, feel free to{' '}
+        <Link
+          className="underline hover:text-primary"
+          href="/contact"
+          target="_blank"
+        >
+          get in touch
+          <ExternalLinkIcon className="size-3.5 -mt-0.5 underline ml-1 inline-block" />
+        </Link>{' '}
+        with a One X Digital Specialist to discuss your project to get started.
       </p>
 
-      <Button className="w-full">Schedule a Strategy Call</Button>
+      <Button className="w-full" onClick={handleClose}>
+        Return to App Idea Explorer
+      </Button>
     </div>
   )
-
-  const isSubmitted = true
 
   return (
     <Dialog onOpenChange={onOpenChange} open={open}>

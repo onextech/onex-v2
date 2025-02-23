@@ -9,10 +9,12 @@ import {
   appTargetAudiences,
   appTypesByCategory,
 } from '@/components/app-idea-explorer/mocks'
+import { appIdeaResultSchema } from '@/components/app-idea-explorer/schema'
 import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
 import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { experimental_useObject as useObject } from '@ai-sdk/react'
 import { Sparkles } from 'lucide-react'
 import Link from 'next/link'
 
@@ -24,34 +26,6 @@ import { SampleGallery } from './sample-gallery'
 import { Testimonials } from './testimonials'
 
 import '@/styles/marquee.css'
-
-interface AppIdeaResult {
-  businessModel: {
-    monetizationStrategies: string[]
-    revenueStreams: string[]
-  }
-  competitiveLandscape: string
-  estimatedTimeline: string
-  feasibility: string
-  keyFeatures: string[]
-  marketPotential: string
-  nextSteps: string[]
-  potentialChallenges: string[]
-  productScope: {
-    integrationAndScalability: string
-    mvpFeatures: string[]
-    niceToHaveFeatures: string[]
-    technicalRequirements: string
-  }
-  scalabilityPotential: string
-  summary: string
-  targetUserBase: string
-  technicalFeasibility: {
-    complexityRating: string
-    estimatedEffort: string
-    techStack: string[]
-  }
-}
 
 const defaultSettings: AppIdeaSettings = {
   appCategory: appCategories[0],
@@ -69,6 +43,20 @@ export function AppIdeaExplorer() {
   const [appIdea, setAppIdea] = useState('')
   const [settings, setSettings] = useState<AppIdeaSettings>(defaultSettings)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  const {
+    submit,
+    object: generatedObject,
+    isLoading: isGenerating,
+    stop,
+  } = useObject({
+    api: '/api/use-object',
+    schema: appIdeaResultSchema,
+  })
+
+  const handleGenerate = () => submit({ appIdea, appSettings: settings })
+
+  console.log('jjj: generatedObject', generatedObject)
 
   const handleSelectIdeaSample = (formValues: {
     appCategory: string
@@ -105,7 +93,8 @@ export function AppIdeaExplorer() {
     setError(null)
 
     try {
-      // TODO@Joel: Add LLM call here. Run useObject call here with stream
+      // Fire LLM call
+      handleGenerate()
       await new Promise((resolve) => setTimeout(resolve, 3000))
       setShowForm(false)
     } catch {
@@ -210,104 +199,9 @@ export function AppIdeaExplorer() {
                         appIdea={appIdea}
                         isDialogOpen={isDialogOpen}
                         isLoading={isLoading}
-                        onDialogClose={() => {
-                          handleReset()
-                        }}
+                        onDialogClose={handleReset}
                         onReset={handleReset}
-                        result={
-                          isLoading
-                            ? {
-                                businessModel: {
-                                  monetizationStrategies: [],
-                                  revenueStreams: [],
-                                },
-                                competitiveLandscape: '',
-                                estimatedTimeline: '',
-                                feasibility: '',
-                                keyFeatures: [],
-                                marketPotential: '',
-                                nextSteps: [],
-                                potentialChallenges: [],
-                                productScope: {
-                                  integrationAndScalability: '',
-                                  mvpFeatures: [],
-                                  niceToHaveFeatures: [],
-                                  technicalRequirements: '',
-                                },
-                                scalabilityPotential: '',
-                                summary: '',
-                                targetUserBase: '',
-                                technicalFeasibility: {
-                                  complexityRating: '',
-                                  estimatedEffort: '',
-                                  techStack: [],
-                                },
-                              }
-                            : {
-                                businessModel: {
-                                  monetizationStrategies: [
-                                    'Freemium model',
-                                    'In-app purchases',
-                                    'Sponsored content',
-                                  ],
-                                  revenueStreams: [
-                                    'Premium subscriptions',
-                                    'Marketplace commission',
-                                    'Targeted advertising',
-                                  ],
-                                },
-                                competitiveLandscape: 'Moderate',
-                                estimatedTimeline: '6-8 months',
-                                feasibility: 'High',
-                                keyFeatures: [
-                                  'User profiles for pet owners',
-                                  'Social feed for pet updates',
-                                  'Event organization for pet meetups',
-                                  'Marketplace for pet products',
-                                ],
-                                marketPotential: 'Medium-High',
-                                nextSteps: [
-                                  'Conduct user research',
-                                  'Create a detailed product roadmap',
-                                  'Develop a prototype',
-                                  'Seek initial funding or bootstrap',
-                                ],
-                                potentialChallenges: [
-                                  'User acquisition and retention',
-                                  'Content moderation',
-                                  'Monetization strategy',
-                                ],
-                                productScope: {
-                                  integrationAndScalability:
-                                    'Scalable cloud architecture, potential integration with existing pet service APIs',
-                                  mvpFeatures: [
-                                    'User profiles',
-                                    'Social feed',
-                                    'Basic event creation',
-                                  ],
-                                  niceToHaveFeatures: [
-                                    'AI-powered pet recommendations',
-                                    'Virtual pet playdates',
-                                  ],
-                                  technicalRequirements:
-                                    'Mobile app development, cloud infrastructure, database management',
-                                },
-                                scalabilityPotential: 'High',
-                                summary:
-                                  "Your app idea for a social media platform for pet owners shows promise. Here's a comprehensive analysis:",
-                                targetUserBase: '1M+ pet owners',
-                                technicalFeasibility: {
-                                  complexityRating: 'Medium',
-                                  estimatedEffort: '4-6 months',
-                                  techStack: [
-                                    'React Native',
-                                    'Node.js',
-                                    'MongoDB',
-                                    'AWS',
-                                  ],
-                                },
-                              }
-                        }
+                        result={generatedObject}
                         setIsDialogOpen={setIsDialogOpen}
                         settings={settings}
                       />

@@ -1,11 +1,4 @@
-export type FeasibilityFactors = {
-  complianceRequirements: number // Scale: 1 (none) - 5 (strict regulations)
-  customFrameworksRequired: number // Scale: 1 (many pre-built) - 5 (fully custom)
-  developmentTime: number // Scale: 1 (<1 month) - 5 (>12 months)
-  expertiseRequired: number // Scale: 1 (general developer) - 5 (specialized AI/Blockchain teams)
-  scalabilityNeeds: number // Scale: 1 (small/local) - 5 (global, millions of users)
-  techComplexity: number // Scale: 1 (simple) - 5 (highly advanced)
-}
+import { FeasibilityFactors } from './types'
 
 export function calculateFeasibilityScore(factors: FeasibilityFactors): number {
   const weights: Record<keyof FeasibilityFactors, number> = {
