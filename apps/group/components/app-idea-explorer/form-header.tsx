@@ -1,8 +1,9 @@
 import type React from 'react'
 
+import { ShareButton } from '@/components/app-idea-explorer/share-button'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { ShareIcon, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 
 interface HeaderExplorerProps {
   isLoading: boolean
@@ -42,14 +43,11 @@ export const HeaderExplorer: React.FC<HeaderExplorerProps> = ({
           </Button>
 
           {/* Share button with icon */}
-          <Button
+          <ShareButton
             className={cn(showForm && 'hidden')}
             size="sm"
             variant="outline"
-          >
-            <ShareIcon className="w-4 h-4 mr-1" />
-            Share
-          </Button>
+          />
 
           <Button
             className={cn('flex-1 md:flex-0', showForm && 'hidden')}

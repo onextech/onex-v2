@@ -74,7 +74,7 @@ export const SampleGallery: React.FC<SampleGalleryProps> = ({
         {visibleIdeas < appIdeas.length && (
           <div className="mt-8 text-center">
             <Button
-              className="inline-flex items-center"
+              className="inline-flex items-center rounded-full"
               onClick={loadMoreIdeas}
               variant="outline"
             >
