@@ -1,7 +1,13 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
+import {
+  FeasibilityFactors,
+  calculateFeasibilityScore,
+  getFeasibilityLabel,
+} from '@/components/app-idea-explorer/calculate-feasibility-score'
+import { GaugeChart } from '@/components/app-idea-explorer/gauge-chart'
 import { appTechstack } from '@/components/app-idea-explorer/mocks'
 import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
 import { Button } from '@/components/ui/button'
@@ -29,11 +35,6 @@ import {
 } from 'lucide-react'
 
 import { LeadInfoDialog } from './lead-info-dialog'
-import { GaugeChart } from "@/components/app-idea-explorer/gauge-chart"
-import {
-  calculateFeasibilityScore,
-  FeasibilityFactors, getFeasibilityLabel
-} from "@/components/app-idea-explorer/calculate-feasibility-score";
 
 // Sample mock data
 const mockAppIdeaFeasibilityFactors: FeasibilityFactors = {
@@ -43,10 +44,12 @@ const mockAppIdeaFeasibilityFactors: FeasibilityFactors = {
   scalabilityNeeds: 3,
   complianceRequirements: 3,
   expertiseRequired: 3,
-};
+}
 
 // Run function with mock data
-const feasibilityScore = calculateFeasibilityScore(mockAppIdeaFeasibilityFactors);
+const feasibilityScore = calculateFeasibilityScore(
+  mockAppIdeaFeasibilityFactors
+)
 
 const isGreyMainCard = true
 const mainCardClassName = cn(
@@ -175,29 +178,68 @@ export const PreviewGeneration = ({
         </p>
         <div className="md:w-3/4 mx-auto mb-4">
           <GaugeChart
-            value={feasibilityScore}
-            content={(
+            content={
               <div className="">
-                <h6
-                  className="font-bold uppercase leading-none tracking-wide text-5xl md:text-2xl"
-                >
+                <h6 className="font-bold uppercase leading-none tracking-wide text-5xl md:text-2xl">
                   {feasibilityScore}%
                 </h6>
                 <p className="font-medium uppercase leading-none tracking-wide text-muted-foreground md:text-xs mt-1 md:mt-0">
                   {getFeasibilityLabel(feasibilityScore)}
                 </p>
               </div>
-            )}
+            }
+            value={feasibilityScore}
           />
         </div>
       </div>
     )
   }
 
+  const renderSection = useCallback(
+    (
+      title: string,
+      icon: React.ReactNode,
+      overline: string,
+      content: React.ReactNode,
+      isBlurred?: boolean
+    ) => {
+      return (
+        <div className="relative bg-card dark:bg-zinc-800 rounded-lg p-4">
+          <div className="flex items-center gap-1.5 mb-1">
+            {icon}
+            <span className="text-xs uppercase font-medium tracking-wide text-zinc-500 dark:text-zinc-400">
+              {overline}
+            </span>
+          </div>
+          <h4 className="text-lg font-semibold mb-3">{title}</h4>
+
+          <div className="relative">
+            {isBlurred && (
+              <div className="absolute inset-0 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm flex items-center justify-center rounded-lg">
+                <Button
+                  className="shadow-md"
+                  onClick={() => setIsDialogOpen(true)}
+                  variant="outline"
+                >
+                  Download Full Report
+                </Button>
+              </div>
+            )}
+
+            <div className={isBlurred ? 'select-none pointer-events-none' : ''}>
+              {content}
+            </div>
+          </div>
+        </div>
+      )
+    },
+    [setIsDialogOpen]
+  )
+
   if (isLoading) {
     return (
-      <Card className="w-full max-w-xl border-0 shadow-none bg-transparent">
-        <CardContent className="flex flex-col items-center gap-4 p-6">
+      <Card className="w-full max-w-xl mx-auto border-0 shadow-none bg-transparent">
+        <CardContent className="flex flex-col items-center gap-4 px-6 py-16">
           <div className="relative w-12 h-12">
             <Loader2 className="w-full h-full animate-spin" />
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-zinc-500/10 rounded-full animate-spin-slow" />
@@ -243,7 +285,6 @@ export const PreviewGeneration = ({
 
         {/* Results Grid */}
         <div className="grid grid-cols-12">
-
           {/* Right */}
           <div className="col-span-12 md:order-2 md:col-span-4 p-4 md:border-l">
             {renderRecommendation()}
@@ -256,9 +297,7 @@ export const PreviewGeneration = ({
             <div className="space-y-8">
               {/* Analysis */}
               <div className="space-y-1">
-                <h6 className="uppercase font-medium text-xxs">
-                  Analysis
-                </h6>
+                <h6 className="uppercase font-medium text-xxs">Analysis</h6>
                 <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
                   <div className="flex justify-between text-sm">
                     <span className="text-zinc-500">Feasibility</span>
@@ -318,7 +357,6 @@ export const PreviewGeneration = ({
 
           {/* Left */}
           <div className="col-span-12 md:order-1 md:col-span-8">
-
             {renderSection(
               'How Much Will It Cost to Develop This App?',
               <DollarSign className="size-4 text-red-300" />,
@@ -337,40 +375,34 @@ export const PreviewGeneration = ({
                 {/* Table matching the reference style */}
                 <table className="w-full text-sm border-collapse">
                   <thead>
-                  <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <th className="px-2 py-2 text-left font-medium">
-                      Stage
-                    </th>
-                    <th className="px-2 py-2 text-right font-medium">
-                      Estimated Cost
-                    </th>
-                  </tr>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <th className="px-2 py-2 text-left font-medium">Stage</th>
+                      <th className="px-2 py-2 text-right font-medium">
+                        Estimated Cost
+                      </th>
+                    </tr>
                   </thead>
                   <tbody>
-                  <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <td className="px-2 py-2">
-                      MVP Development
-                    </td>
-                    <td className="px-2 py-2 text-right text-primary-600">
-                      From ${Number(5000).toLocaleString()}
-                    </td>
-                  </tr>
-                  <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <td className="px-2 py-2">
-                      Hosting &amp; Infrastructure
-                    </td>
-                    <td className="px-2 py-2 text-right text-primary-600">
-                      Cloud-based costs vary
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-2 py-2">
-                      Maintenance &amp; Updates
-                    </td>
-                    <td className="px-2 py-2 text-right text-primary-600">
-                      Ongoing
-                    </td>
-                  </tr>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <td className="px-2 py-2">MVP Development</td>
+                      <td className="px-2 py-2 text-right text-primary-600">
+                        From ${Number(5000).toLocaleString()}
+                      </td>
+                    </tr>
+                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                      <td className="px-2 py-2">
+                        Hosting &amp; Infrastructure
+                      </td>
+                      <td className="px-2 py-2 text-right text-primary-600">
+                        Cloud-based costs vary
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-2 py-2">Maintenance &amp; Updates</td>
+                      <td className="px-2 py-2 text-right text-primary-600">
+                        Ongoing
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -553,7 +585,7 @@ export const PreviewGeneration = ({
 
             {renderSection(
               'What Processes Will This App Improve?',
-              <Settings className="size-4 text-blue-300"/>,
+              <Settings className="size-4 text-blue-300" />,
               'EFFICIENCY & AUTOMATION',
               <div className={cn(`space-y-4 ${mainCardClassName}`)}>
                 <p className="text-sm">
@@ -825,8 +857,8 @@ export const PreviewGeneration = ({
               'COMPETITOR ANALYSIS',
               <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm space-y-4">
                 <p className="text-sm">
-                  Reviewing popular CRMs like HubSpot, Salesforce, and Zoho
-                  CRM reveals the key elements driving their success. Use this
+                  Reviewing popular CRMs like HubSpot, Salesforce, and Zoho CRM
+                  reveals the key elements driving their success. Use this
                   information to identify opportunities for{' '}
                   <strong>innovation</strong> in your own solution.
                 </p>
@@ -836,8 +868,7 @@ export const PreviewGeneration = ({
                       🔥
                     </span>
                     <strong>HubSpot:</strong> Excels in{' '}
-                    <strong>marketing</strong> and <strong>automation</strong>
-                    .
+                    <strong>marketing</strong> and <strong>automation</strong>.
                   </li>
                   <li>
                     <span aria-label="Salesforce" className="mr-1" role="img">
@@ -878,7 +909,7 @@ export const PreviewGeneration = ({
                   <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                     <div
                       className="bg-primary h-2 rounded-full"
-                      style={{width: '30%'}}
+                      style={{ width: '30%' }}
                     />
                   </div>
                 </div>
@@ -890,7 +921,7 @@ export const PreviewGeneration = ({
                   <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                     <div
                       className="bg-primary h-2 rounded-full"
-                      style={{width: '50%'}}
+                      style={{ width: '50%' }}
                     />
                   </div>
                 </div>
@@ -902,7 +933,7 @@ export const PreviewGeneration = ({
                   <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                     <div
                       className="bg-primary h-2 rounded-full"
-                      style={{width: '80%'}}
+                      style={{ width: '80%' }}
                     />
                   </div>
                 </div>
@@ -938,36 +969,36 @@ export const PreviewGeneration = ({
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                      <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
-                        1
-                      </span>
+                    <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
+                      1
+                    </span>
                     <span className="text-sm font-semibold">
-                        Feature Definition
-                      </span>
+                      Feature Definition
+                    </span>
                   </div>
                   <div className="pl-8 text-xs text-muted-foreground">
                     Define which features are <strong>must-have</strong> and
                     which are <strong>nice-to-have</strong>.
                   </div>
                   <div className="flex items-center space-x-3">
-                      <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
-                        2
-                      </span>
+                    <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
+                      2
+                    </span>
                     <span className="text-sm font-semibold">
-                        Integration Needs
-                      </span>
+                      Integration Needs
+                    </span>
                   </div>
                   <div className="pl-8 text-xs text-muted-foreground">
                     Identify the essential tools (e.g., email, accounting,
                     marketing) to integrate.
                   </div>
                   <div className="flex items-center space-x-3">
-                      <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
-                        3
-                      </span>
+                    <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
+                      3
+                    </span>
                     <span className="text-sm font-semibold">
-                        Budget & User Base
-                      </span>
+                      Budget & User Base
+                    </span>
                   </div>
                   <div className="pl-8 text-xs text-muted-foreground">
                     Set clear cost expectations and forecast your user growth.
@@ -991,23 +1022,23 @@ export const PreviewGeneration = ({
                   <li className="flex items-center">
                     <Check className="w-4 h-4 mr-2 text-primary-600" />
                     <span>
-                        <strong>Feature Definition:</strong> Clearly distinguish
-                        must-have from optional features.
-                      </span>
+                      <strong>Feature Definition:</strong> Clearly distinguish
+                      must-have from optional features.
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-4 h-4 mr-2 text-primary-600" />
                     <span>
-                        <strong>Integration Needs:</strong> List essential tools
-                        (e.g., email, accounting, marketing).
-                      </span>
+                      <strong>Integration Needs:</strong> List essential tools
+                      (e.g., email, accounting, marketing).
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-4 h-4 mr-2 text-primary-600" />
                     <span>
-                        <strong>Budget & User Base:</strong> Establish cost
-                        parameters and projected scale.
-                      </span>
+                      <strong>Budget & User Base:</strong> Establish cost
+                      parameters and projected scale.
+                    </span>
                   </li>
                 </ul>
               </div>,
@@ -1058,44 +1089,6 @@ function renderFactsCard(title: string, settings: Record<string, string>) {
       </div>
     </div>
   )
-}
-
-function renderSection(
-  title: string,
-  icon: React.ReactNode,
-  overline: string,
-  content: React.ReactNode,
-  isBlurred?: boolean, // Optional, defaults to false
-  onDownload?: () => void // Optional callback
-) {
-  return (
-    <div className="relative bg-card dark:bg-zinc-800 rounded-lg p-4">
-      <div className="flex items-center gap-1.5 mb-1">
-        {icon}
-        <span className="text-xs uppercase font-medium tracking-wide text-zinc-500 dark:text-zinc-400">
-          {overline}
-        </span>
-      </div>
-      <h4 className="text-lg font-semibold mb-3">{title}</h4>
-
-      <div className="relative">
-        {isBlurred && (
-          <div className="absolute inset-0 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md flex items-center justify-center rounded-lg">
-            <button
-              onClick={onDownload}
-              className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
-            >
-              Download Full Report
-            </button>
-          </div>
-        )}
-
-        <div className={isBlurred ? "blur-sm select-none pointer-events-none" : ""}>
-          {content}
-        </div>
-      </div>
-    </div>
-  );
 }
 
 function getMarketPotentialScore(marketPotential: string): number {

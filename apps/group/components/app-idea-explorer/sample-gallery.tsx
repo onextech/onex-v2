@@ -64,8 +64,8 @@ export const SampleGallery: React.FC<SampleGalleryProps> = ({
                     {idea.formValues.appCategory}
                   </Badge>
                   <span className="text-xs text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors">
-                  {idea.formValues.appType}
-                </span>
+                    {idea.formValues.appType}
+                  </span>
                 </div>
               </div>
             </button>

@@ -1,4 +1,4 @@
-import orderBy from "lodash/orderBy";
+import orderBy from 'lodash/orderBy'
 
 export const appCategories = ['Business', 'Productivity', 'Finance']
 

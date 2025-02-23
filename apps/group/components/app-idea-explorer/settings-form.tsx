@@ -14,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import orderBy from 'lodash/orderBy'
 import {
   Briefcase,
   ListIcon as Category,
@@ -21,7 +22,6 @@ import {
   Type,
   Users,
 } from 'lucide-react'
-import orderBy from "lodash/orderBy";
 
 interface AppIdeaSettings {
   appCategory: string

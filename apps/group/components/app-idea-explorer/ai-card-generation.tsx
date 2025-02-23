@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 import {
   appCategories,
@@ -9,18 +9,19 @@ import {
   appTargetAudiences,
   appTypesByCategory,
 } from '@/components/app-idea-explorer/mocks'
-import {AppIdeaSettings} from '@/components/app-idea-explorer/types'
-import {Logo} from '@/components/logo'
-import {Button} from '@/components/ui/button'
-import {cn} from '@/lib/utils'
-import {Sparkles} from 'lucide-react'
+import { AppIdeaSettings } from '@/components/app-idea-explorer/types'
+import { Logo } from '@/components/logo'
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import { Sparkles } from 'lucide-react'
 import Link from 'next/link'
-import {AppIdeaForm} from './app-idea-form'
-import {ErrorGeneration} from './error-generation'
-import {HeaderExplorer} from './form-header'
-import {PreviewGeneration} from './preview-generation'
-import {SampleGallery} from './sample-gallery'
-import {Testimonials} from './testimonials'
+
+import { AppIdeaForm } from './app-idea-form'
+import { ErrorGeneration } from './error-generation'
+import { HeaderExplorer } from './form-header'
+import { PreviewGeneration } from './preview-generation'
+import { SampleGallery } from './sample-gallery'
+import { Testimonials } from './testimonials'
 
 import '@/styles/marquee.css'
 
@@ -125,18 +126,17 @@ export function AppIdeaExplorer() {
   return (
     <div className="min-h-screen bg-muted">
       {/* Hero */}
-      <div
-        className="pt-32 pb-16 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
+      <div className="pt-32 pb-16 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
         {/* Card */}
         <div className="container relative">
-          <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_rgba(0,0,0,0)_70%)]"/>
+          <div className="max-h-[300px] absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_rgba(0,0,0,0)_70%)]" />
           <div className="relative md:px-8">
             <div>
               {/* Title */}
               <div className="max-w-xl mx-auto mb-8">
                 <div className="text-center mb-6">
                   <Link href="/">
-                    <Logo className="w-[120px] inline-block"/>
+                    <Logo className="w-[120px] inline-block" />
                   </Link>
                 </div>
                 <h1 className="font-publico-headline text-5xl font-bold mb-4 text-center">
@@ -170,10 +170,13 @@ export function AppIdeaExplorer() {
                   />
                 )}
                 <div className="flex-1 overflow-hidden flex flex-col">
-                  {error && <ErrorGeneration error={error}/>}
+                  {error && <ErrorGeneration error={error} />}
 
                   {showForm ? (
-                    <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+                    <form
+                      className="flex flex-col gap-4"
+                      onSubmit={handleSubmit}
+                    >
                       <AppIdeaForm
                         appIdea={appIdea}
                         onSettingsChange={setSettings}
@@ -182,13 +185,20 @@ export function AppIdeaExplorer() {
                         showAdditionalFields={showAdditionalFields}
                       />
 
-                      <div className={cn("flex gap-2 opacity-0 invisible transition-opacity", showAdditionalFields && 'pb-4 px-4', appIdea && 'visible opacity-100 delay-200 duration-1000 ease-in-out')}>
+                      <div
+                        className={cn(
+                          'flex gap-2 opacity-0 invisible transition-opacity',
+                          showAdditionalFields && 'pb-4 px-4',
+                          appIdea &&
+                            'visible opacity-100 delay-200 duration-1000 ease-in-out'
+                        )}
+                      >
                         <Button
                           className="h-11 rounded-full w-full flex items-center justify-center gap-2"
                           size="lg"
                           type="submit"
                         >
-                          <Sparkles className="w-3.5 h-3.5"/>
+                          <Sparkles className="w-3.5 h-3.5" />
                           Explore Idea
                         </Button>
                       </div>
@@ -207,96 +217,96 @@ export function AppIdeaExplorer() {
                         result={
                           isLoading
                             ? {
-                              businessModel: {
-                                monetizationStrategies: [],
-                                revenueStreams: [],
-                              },
-                              competitiveLandscape: '',
-                              estimatedTimeline: '',
-                              feasibility: '',
-                              keyFeatures: [],
-                              marketPotential: '',
-                              nextSteps: [],
-                              potentialChallenges: [],
-                              productScope: {
-                                integrationAndScalability: '',
-                                mvpFeatures: [],
-                                niceToHaveFeatures: [],
-                                technicalRequirements: '',
-                              },
-                              scalabilityPotential: '',
-                              summary: '',
-                              targetUserBase: '',
-                              technicalFeasibility: {
-                                complexityRating: '',
-                                estimatedEffort: '',
-                                techStack: [],
-                              },
-                            }
+                                businessModel: {
+                                  monetizationStrategies: [],
+                                  revenueStreams: [],
+                                },
+                                competitiveLandscape: '',
+                                estimatedTimeline: '',
+                                feasibility: '',
+                                keyFeatures: [],
+                                marketPotential: '',
+                                nextSteps: [],
+                                potentialChallenges: [],
+                                productScope: {
+                                  integrationAndScalability: '',
+                                  mvpFeatures: [],
+                                  niceToHaveFeatures: [],
+                                  technicalRequirements: '',
+                                },
+                                scalabilityPotential: '',
+                                summary: '',
+                                targetUserBase: '',
+                                technicalFeasibility: {
+                                  complexityRating: '',
+                                  estimatedEffort: '',
+                                  techStack: [],
+                                },
+                              }
                             : {
-                              businessModel: {
-                                monetizationStrategies: [
-                                  'Freemium model',
-                                  'In-app purchases',
-                                  'Sponsored content',
+                                businessModel: {
+                                  monetizationStrategies: [
+                                    'Freemium model',
+                                    'In-app purchases',
+                                    'Sponsored content',
+                                  ],
+                                  revenueStreams: [
+                                    'Premium subscriptions',
+                                    'Marketplace commission',
+                                    'Targeted advertising',
+                                  ],
+                                },
+                                competitiveLandscape: 'Moderate',
+                                estimatedTimeline: '6-8 months',
+                                feasibility: 'High',
+                                keyFeatures: [
+                                  'User profiles for pet owners',
+                                  'Social feed for pet updates',
+                                  'Event organization for pet meetups',
+                                  'Marketplace for pet products',
                                 ],
-                                revenueStreams: [
-                                  'Premium subscriptions',
-                                  'Marketplace commission',
-                                  'Targeted advertising',
+                                marketPotential: 'Medium-High',
+                                nextSteps: [
+                                  'Conduct user research',
+                                  'Create a detailed product roadmap',
+                                  'Develop a prototype',
+                                  'Seek initial funding or bootstrap',
                                 ],
-                              },
-                              competitiveLandscape: 'Moderate',
-                              estimatedTimeline: '6-8 months',
-                              feasibility: 'High',
-                              keyFeatures: [
-                                'User profiles for pet owners',
-                                'Social feed for pet updates',
-                                'Event organization for pet meetups',
-                                'Marketplace for pet products',
-                              ],
-                              marketPotential: 'Medium-High',
-                              nextSteps: [
-                                'Conduct user research',
-                                'Create a detailed product roadmap',
-                                'Develop a prototype',
-                                'Seek initial funding or bootstrap',
-                              ],
-                              potentialChallenges: [
-                                'User acquisition and retention',
-                                'Content moderation',
-                                'Monetization strategy',
-                              ],
-                              productScope: {
-                                integrationAndScalability:
-                                  'Scalable cloud architecture, potential integration with existing pet service APIs',
-                                mvpFeatures: [
-                                  'User profiles',
-                                  'Social feed',
-                                  'Basic event creation',
+                                potentialChallenges: [
+                                  'User acquisition and retention',
+                                  'Content moderation',
+                                  'Monetization strategy',
                                 ],
-                                niceToHaveFeatures: [
-                                  'AI-powered pet recommendations',
-                                  'Virtual pet playdates',
-                                ],
-                                technicalRequirements:
-                                  'Mobile app development, cloud infrastructure, database management',
-                              },
-                              scalabilityPotential: 'High',
-                              summary:
-                                "Your app idea for a social media platform for pet owners shows promise. Here's a comprehensive analysis:",
-                              targetUserBase: '1M+ pet owners',
-                              technicalFeasibility: {
-                                complexityRating: 'Medium',
-                                estimatedEffort: '4-6 months',
-                                techStack: [
-                                  'React Native',
-                                  'Node.js',
-                                  'MongoDB',
-                                  'AWS',
-                                ],
-                              },
-                            }
+                                productScope: {
+                                  integrationAndScalability:
+                                    'Scalable cloud architecture, potential integration with existing pet service APIs',
+                                  mvpFeatures: [
+                                    'User profiles',
+                                    'Social feed',
+                                    'Basic event creation',
+                                  ],
+                                  niceToHaveFeatures: [
+                                    'AI-powered pet recommendations',
+                                    'Virtual pet playdates',
+                                  ],
+                                  technicalRequirements:
+                                    'Mobile app development, cloud infrastructure, database management',
+                                },
+                                scalabilityPotential: 'High',
+                                summary:
+                                  "Your app idea for a social media platform for pet owners shows promise. Here's a comprehensive analysis:",
+                                targetUserBase: '1M+ pet owners',
+                                technicalFeasibility: {
+                                  complexityRating: 'Medium',
+                                  estimatedEffort: '4-6 months',
+                                  techStack: [
+                                    'React Native',
+                                    'Node.js',
+                                    'MongoDB',
+                                    'AWS',
+                                  ],
+                                },
+                              }
                         }
                         setIsDialogOpen={setIsDialogOpen}
                         settings={settings}
@@ -310,12 +320,12 @@ export function AppIdeaExplorer() {
         </div>
       </div>
 
-      <SampleGallery onSelectIdea={handleSelectIdeaSample}/>
+      <SampleGallery onSelectIdea={handleSelectIdeaSample} />
 
-      <Testimonials/>
+      <Testimonials />
 
       <footer className="py-8">
-      <div className="container">
+        <div className="container">
           <div className="text-xs text-zinc-400 dark:text-zinc-500 max-w-2xl mx-auto text-center">
             <p className="mb-2">
               © {new Date().getFullYear()} One X App Idea Explorer. All rights

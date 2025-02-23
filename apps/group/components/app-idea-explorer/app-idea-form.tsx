@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import type React from 'react'
 
 import { Textarea } from '@/components/ui/textarea'
@@ -30,12 +30,12 @@ interface FormProps {
 }
 
 export const AppIdeaForm: React.FC<FormProps> = ({
-                                                   appIdea,
-                                                   onSettingsChange,
-                                                   setAppIdea,
-                                                   settings,
-                                                   showAdditionalFields,
-                                                 }) => {
+  appIdea,
+  onSettingsChange,
+  setAppIdea,
+  settings,
+  showAdditionalFields,
+}) => {
   const textareaRef = useRef<HTMLTextAreaElement | null>(null)
 
   useEffect(() => {
@@ -74,7 +74,6 @@ export const AppIdeaForm: React.FC<FormProps> = ({
         </div>
 
         <Textarea
-          ref={textareaRef}
           className={cn(
             'w-full min-h-[120px] rounded-lg md:text-md text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-500 focus:outline-none focus-visible:ring-offset-0 focus-visible:ring-0 focus-visible:border-zinc-900 dark:focus-visible:border-zinc-100 resize-none',
             showAdditionalFields ? 'bg-zinc-100 dark:bg-zinc-800' : 'bg-card'
@@ -99,6 +98,7 @@ export const AppIdeaForm: React.FC<FormProps> = ({
             }
           }}
           placeholder={`Describe your idea and features you'd like your app to have. For example: "An app where employees can..."`}
+          ref={textareaRef}
           value={appIdea}
         />
       </div>

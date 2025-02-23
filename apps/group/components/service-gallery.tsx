@@ -51,11 +51,7 @@ export const ServiceGallery = ({
             key={service.title}
           >
             <div className="relative size-[3.125rem]">
-              <Image
-                alt={service.title}
-                fill
-                src={service.iconUrl}
-              />
+              <Image alt={service.title} fill src={service.iconUrl} />
             </div>
 
             <div className="group mt-5 flex items-center gap-2">
