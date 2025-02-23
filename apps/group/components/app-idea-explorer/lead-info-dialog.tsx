@@ -44,7 +44,7 @@ export function LeadInfoDialog({
   onOpenChange,
   open,
 }: LeadInfoDialogProps) {
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitted1, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState(defaultFormData)
 
   const handleChange = (field: string, value: boolean | string) => {
@@ -277,62 +277,83 @@ export function LeadInfoDialog({
   )
 
   const renderSuccessState = () => (
-    <div className="text-center space-y-4">
-      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-        <Check className="w-8 h-8 text-primary" />
+    <div className="text-center space-y-6 pt-6 pb-10 px-10">
+      <div className="space-y-3">
+        <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto">
+          <Check className="w-8 h-8 text-green-500" />
+        </div>
+        <h3 className="font-publico-headline text-3xl">
+          Your App Idea Report is Being Prepared
+        </h3>
+        <p className="text-zinc-700 text-lg">
+          Our team is carefully reviewing your app idea to ensure you receive
+          valuable insights. We'll notify you via email once your analysis is
+          ready.
+        </p>
       </div>
-      <h3 className="text-xl font-semibold text-zinc-900">Thank You!</h3>
-      <p className="text-zinc-600">
-        Your submission was successful. We'll analyze your request and your
-        app's features and get back to you within one or two business days.
+      <div className="bg-zinc-100 p-4 rounded-lg text-left">
+        <h4 className="font-publico-text text-zinc-800 text-lg mb-2">
+          Here's what happens next:
+        </h4>
+        {[
+          {
+            number: 1,
+            title: 'Get a refined project scope tailored to your idea.',
+          },
+          {
+            number: 2,
+            title: 'Get a detailed cost estimate and development roadmap.',
+          },
+          {
+            number: 3,
+            title:
+              'Get a strategic recommendations for building and launching your app.',
+          },
+        ].map((step) => (
+          <div className="flex items-center space-x-3 py-2" key={step.number}>
+            {/* Number */}
+            <div className="inline-block py-1 px-1.5 bg-gray-200 rounded-full text-xxs font-bold">
+              {step.number}
+            </div>
+
+            {/* Text */}
+            <div>
+              <h6 className="text-sm">{step.title}</h6>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="text-zinc-600 text-sm">
+        In the meantime, feel free to schedule a strategy call with our team to
+        discuss your project in more detail.
       </p>
-      {renderStepper()}
-      <div className="text-left space-y-2">
-        <h4 className="font-semibold text-zinc-800">Next Steps:</h4>
-        <ol className="list-decimal list-inside text-sm text-zinc-600">
-          <li>Our team will review your app idea and requirements</li>
-          <li>
-            We'll prepare a detailed analysis of your app's feasibility and
-            market potential
-          </li>
-          <li>
-            You'll receive an email with your personalized report and further
-            recommendations
-          </li>
-          <li>
-            If requested, we'll schedule a consultation to discuss your app idea
-            in more detail
-          </li>
-        </ol>
-      </div>
-      <Button
-        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-        onClick={handleClose}
-      >
-        Close
-      </Button>
+
+      <Button className="w-full">Schedule a Strategy Call</Button>
     </div>
   )
 
+  const isSubmitted = true
+
   return (
     <Dialog onOpenChange={onOpenChange} open={open}>
-      <DialogContent className="md:max-w-xl p-0 gap-0 bg-card">
+      <DialogContent className="md:max-w-xl p-0 gap-0 bg-card overflow-y-auto max-h-screen">
         <div className="p-6 space-y-4">
           {!isSubmitted && (
-            <div className="pr-6">
-              <h2 className="font-publico-headline tracking-wide text-2xl font-semibold mb-1">
-                Ready to Download Your App Idea Report?
-              </h2>
-              <p className="text-muted-foreground text-sm mb-4">
-                Get a comprehensive report analyzing your app's feasibility,
-                market potential, and technical requirements. Fill out the form
-                below to download your personalized insights.
-              </p>
-            </div>
+            <>
+              <div className="pr-6">
+                <h2 className="font-publico-headline tracking-wide text-2xl font-semibold mb-1">
+                  Ready to Download Your App Idea Report?
+                </h2>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Get a comprehensive report analyzing your app's feasibility,
+                  market potential, and technical requirements. Fill out the
+                  form below to download your personalized insights.
+                </p>
+              </div>
+              {/* Horizontal rule or line */}
+              <hr className="border-zinc-200 dark:border-zinc-700" />
+            </>
           )}
-
-          {/* Horizontal rule or line */}
-          <hr className="border-zinc-200 dark:border-zinc-700" />
 
           {isSubmitted ? renderSuccessState() : renderForm()}
         </div>

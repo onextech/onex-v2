@@ -30,7 +30,6 @@ import {
   Square,
   ThumbsDown,
   ThumbsUp,
-  TrendingDown,
   TrendingUp,
 } from 'lucide-react'
 
@@ -933,72 +932,6 @@ export const PreviewGeneration = ({
                   <li>
                     <strong>Task & Workflow Automation:</strong> Streamlines
                     repetitive processes for increased productivity.
-                  </li>
-                </ul>
-              </>,
-              true
-            )}
-
-            {renderSection(
-              'What are Other Ways to Build It?',
-              <TrendingDown className="size-4 text-zinc-300" />,
-              'BUDGET OPTIONS',
-              <>
-                <p className="text-sm">
-                  Choose a solution that balances cost and customization.
-                  Consider your business needs and technical capabilities to
-                  decide between different development approaches.
-                </p>
-                {/* Horizontal rule or line */}
-                <hr className="border-zinc-200 dark:border-zinc-700" />
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">No-Code</span>
-                    <span className="text-xs">30%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{ width: '30%' }}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">Open-Source</span>
-                    <span className="text-xs">50%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{ width: '50%' }}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">Custom MVP</span>
-                    <span className="text-xs">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{ width: '80%' }}
-                    />
-                  </div>
-                </div>
-                <ul className="text-sm list-disc pl-5 pt-2 space-y-1">
-                  <li>
-                    <strong>No-Code:</strong> Fast and affordable, with some
-                    limitations.
-                  </li>
-                  <li>
-                    <strong>Open-Source:</strong> Lower upfront cost but may
-                    require integration work.
-                  </li>
-                  <li>
-                    <strong>Custom MVP:</strong> More tailored but with higher
-                    initial investment.
                   </li>
                 </ul>
               </>,

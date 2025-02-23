@@ -154,7 +154,7 @@ export function AppIdeaExplorer() {
                 className={cn(
                   `group relative overflow-hidden w-full mx-auto transition-all duration-300 ease-in-out flex flex-col justify-between ${
                     showAdditionalFields
-                      ? 'max-h-[600px] bg-card dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]'
+                      ? 'max-h-[800px] bg-card dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]'
                       : 'max-h-[300px]'
                   }`,
                   showForm || isLoading ? 'max-w-xl' : 'max-w-5xl',
