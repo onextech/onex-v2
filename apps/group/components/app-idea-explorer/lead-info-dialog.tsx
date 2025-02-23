@@ -135,6 +135,11 @@ export function LeadInfoDialog({
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="+65">+65</SelectItem>
+                  <SelectItem value="+1">+1</SelectItem>
+                  <SelectItem value="+61">+61</SelectItem>
+                  <SelectItem value="+44">+44</SelectItem>
+                  <SelectItem value="+852">+852</SelectItem>
+                  <SelectItem value="+971">+971</SelectItem>
                 </SelectContent>
               </Select>
             </div>

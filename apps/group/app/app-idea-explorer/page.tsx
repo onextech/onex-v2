@@ -23,20 +23,13 @@ export const metadata: Metadata = {
       {
         alt: 'One X App Idea Explorer Preview',
         height: 630,
-        url: 'https://www.onexgroup.co/app-idea-explorer-og-image.jpg',
+        url: 'https://www.onexgroup.co/app-idea-explorer/app-idea-explorer-og-image.png',
         width: 1200,
       },
     ],
     siteName: 'One X Group',
     type: 'website',
     url: 'https://www.onexgroup.co/app-idea-explorer',
-  },
-  twitter: {
-    title: 'One X App Idea Explorer',
-    card: 'summary_large_image',
-    description:
-      'Discover if your app idea can be built instantly with an in-depth technical breakdown and execution roadmap.',
-    images: ['https://www.onexgroup.co/app-idea-explorer-twitter-image.jpg'], // Replace with actual image URL
   },
 }
 
