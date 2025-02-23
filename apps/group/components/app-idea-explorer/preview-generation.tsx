@@ -352,7 +352,7 @@ export const PreviewGeneration = ({
                       MVP Development
                     </td>
                     <td className="px-2 py-2 text-right text-primary-600">
-                      $10,000 - $80,000
+                      From ${Number(5000).toLocaleString()}
                     </td>
                   </tr>
                   <tr className="border-b border-zinc-200 dark:border-zinc-700">
@@ -377,150 +377,27 @@ export const PreviewGeneration = ({
             )}
 
             {renderSection(
-              'What is the Cheapest Way to Build It?',
-              <TrendingDown className="size-4 text-red-300" />,
-              'BUDGET OPTIONS',
+              'What Are the Key Features?',
+              <List className="size-4 text-zinc-300" />,
+              'CORE FEATURES',
               <div className={cn(`space-y-4 ${mainCardClassName}`)}>
                 <p className="text-sm">
-                  Choose a solution that balances cost and customization.
-                  Consider your business needs and technical capabilities to
-                  decide between different development approaches.
-                </p>
-                {/* Horizontal rule or line */}
-                <hr className="border-zinc-200 dark:border-zinc-700" />
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">No-Code</span>
-                    <span className="text-xs">30%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{width: '30%'}}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">Open-Source</span>
-                    <span className="text-xs">50%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{width: '50%'}}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold">Custom MVP</span>
-                    <span className="text-xs">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-                    <div
-                      className="bg-primary h-2 rounded-full"
-                      style={{width: '80%'}}
-                    />
-                  </div>
-                </div>
-                <ul className="text-sm list-disc pl-5 pt-2 space-y-1">
-                  <li>
-                    <strong>No-Code:</strong> Fast and affordable, with some
-                    limitations.
-                  </li>
-                  <li>
-                    <strong>Open-Source:</strong> Lower upfront cost but may
-                    require integration work.
-                  </li>
-                  <li>
-                    <strong>Custom MVP:</strong> More tailored but with higher
-                    initial investment.
-                  </li>
-                </ul>
-              </div>
-            )}
-
-            {renderSection(
-              'Are There Any Other Cost Considerations?',
-              <DollarSign className="size-4 text-red-300" />,
-              'ONGOING EXPENSES',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
-                <p className="text-sm">
-                  Beyond development, long-term costs include{' '}
-                  <strong>cloud hosting</strong>,{' '}
-                  <strong>third-party integrations</strong>, and continuous{' '}
-                  <strong>maintenance</strong> to ensure optimal performance.
+                  The CRM’s success relies on its core features which drive user
+                  engagement and streamline operations. Focus on functionalities
+                  that deliver immediate value.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
-                    <strong>Hosting & API Usage:</strong> Costs vary based on
-                    data volume and requests.
+                    <strong>Contact Management:</strong> Organize and manage
+                    customer data efficiently.
                   </li>
                   <li>
-                    <strong>Security & Compliance:</strong> Regular updates are
-                    required for data protection.
+                    <strong>Sales Pipeline:</strong> Track deals and forecast
+                    revenue.
                   </li>
                   <li>
-                    <strong>Support & Scalability:</strong> Expenses increase as
-                    your user base grows.
-                  </li>
-                </ul>
-              </div>
-            )}
-
-            {renderSection(
-              'What Processes Will This App Improve?',
-              <Settings className="size-4 text-blue-300"/>,
-              'EFFICIENCY & AUTOMATION',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
-                <p className="text-sm">
-                  A CRM boosts your operations by{' '}
-                  <strong>centralizing customer data</strong> and{' '}
-                  <strong>automating repetitive tasks</strong>, leading to more
-                  efficient workflows.
-                </p>
-                {/* Horizontal rule or line */}
-                <hr className="border-zinc-200 dark:border-zinc-700" />
-                <ul className="text-sm list-disc pl-5 space-y-1">
-                  <li>
-                    <strong>Sales Pipeline:</strong> Automates lead tracking and
-                    follow-ups.
-                  </li>
-                  <li>
-                    <strong>Customer Support:</strong> Unifies client
-                    interactions for improved service.
-                  </li>
-                  <li>
-                    <strong>Task Automation:</strong> Minimizes manual processes
-                    and boosts productivity.
-                  </li>
-                </ul>
-              </div>
-            )}
-
-            {renderSection(
-              'How Will the App Integrate with Existing Systems?',
-              <Link className="size-4 text-blue-300" />,
-              'SYSTEM INTEGRATION',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
-                <p className="text-sm">
-                  Seamless integration ensures your CRM{' '}
-                  <strong>communicates effectively</strong> with existing tools,
-                  keeping data consistent and workflows smooth.
-                </p>
-                <ul className="text-sm list-disc pl-5 space-y-1">
-                  <li>
-                    <strong>Email & Calendar:</strong> Syncs with Outlook,
-                    Gmail, and scheduling apps.
-                  </li>
-                  <li>
-                    <strong>Accounting Software:</strong> Connects to QuickBooks
-                    or Xero for streamlined billing.
-                  </li>
-                  <li>
-                    <strong>Marketing Platforms:</strong> Integrates with
-                    Mailchimp, HubSpot, and ad networks.
+                    <strong>Automated Follow-ups:</strong> Ensure timely
+                    communications with prospects.
                   </li>
                 </ul>
               </div>
@@ -647,6 +524,99 @@ export const PreviewGeneration = ({
             )}
 
             {renderSection(
+              'Are There Any Other Cost Considerations?',
+              <DollarSign className="size-4 text-red-300" />,
+              'ONGOING EXPENSES',
+              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  Beyond development, long-term costs include{' '}
+                  <strong>cloud hosting</strong>,{' '}
+                  <strong>third-party integrations</strong>, and continuous{' '}
+                  <strong>maintenance</strong> to ensure optimal performance.
+                </p>
+                <ul className="text-sm list-disc pl-5 space-y-1">
+                  <li>
+                    <strong>Hosting & API Usage:</strong> Costs vary based on
+                    data volume and requests.
+                  </li>
+                  <li>
+                    <strong>Security & Compliance:</strong> Regular updates are
+                    required for data protection.
+                  </li>
+                  <li>
+                    <strong>Support & Scalability:</strong> Expenses increase as
+                    your user base grows.
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {renderSection(
+              'What Processes Will This App Improve?',
+              <Settings className="size-4 text-blue-300"/>,
+              'EFFICIENCY & AUTOMATION',
+              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  A CRM boosts your operations by{' '}
+                  <strong>centralizing customer data</strong> and{' '}
+                  <strong>automating repetitive tasks</strong>, leading to more
+                  efficient workflows.
+                </p>
+                {/* Horizontal rule or line */}
+                <hr className="border-zinc-200 dark:border-zinc-700" />
+                <ul className="text-sm list-disc pl-5 space-y-1">
+                  <li>
+                    <strong>Sales Pipeline:</strong> Automates lead tracking and
+                    follow-ups.
+                  </li>
+                  <li>
+                    <strong>Customer Support:</strong> Unifies client
+                    interactions for improved service.
+                  </li>
+                  <li>
+                    <strong>Task Automation:</strong> Minimizes manual processes
+                    and boosts productivity.
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {renderSection(
+              'What Do I Need to Get Started?',
+              <Rocket className="size-4 text-zinc-300" />,
+              'PROJECT KICKOFF',
+              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  A clear roadmap, defined requirements, and budget expectations
+                  are essential for a successful CRM development kickoff.
+                </p>
+                <ul className="text-sm list-disc space-y-2">
+                  <li className="flex items-center">
+                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
+                    <span>
+                      <strong>Feature Definition:</strong> Distinguish between
+                      must-have and nice-to-have functionalities.
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
+                    <span>
+                      <strong>Integration Needs:</strong> Identify target tools
+                      (e.g., email, accounting, marketing).
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
+                    <span>
+                      <strong>Budget & User Base:</strong> Establish cost
+                      expectations and projected scale.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {renderSection(
               'How Will It Work?',
               <Settings className="size-4 text-zinc-300" />,
               'APP WORKFLOW',
@@ -671,7 +641,36 @@ export const PreviewGeneration = ({
                     essential business tools.
                   </li>
                 </ul>
-              </div>
+              </div>,
+              true
+            )}
+
+            {renderSection(
+              'How Will the App Integrate with Existing Systems?',
+              <Link className="size-4 text-blue-300" />,
+              'SYSTEM INTEGRATION',
+              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  Seamless integration ensures your CRM{' '}
+                  <strong>communicates effectively</strong> with existing tools,
+                  keeping data consistent and workflows smooth.
+                </p>
+                <ul className="text-sm list-disc pl-5 space-y-1">
+                  <li>
+                    <strong>Email & Calendar:</strong> Syncs with Outlook,
+                    Gmail, and scheduling apps.
+                  </li>
+                  <li>
+                    <strong>Accounting Software:</strong> Connects to QuickBooks
+                    or Xero for streamlined billing.
+                  </li>
+                  <li>
+                    <strong>Marketing Platforms:</strong> Integrates with
+                    Mailchimp, HubSpot, and ad networks.
+                  </li>
+                </ul>
+              </div>,
+              true
             )}
 
             {renderSection(
@@ -699,34 +698,8 @@ export const PreviewGeneration = ({
                     grows with your business.
                   </li>
                 </ul>
-              </div>
-            )}
-
-            {renderSection(
-              'What Are the Key Features?',
-              <List className="size-4 text-zinc-300" />,
-              'CORE FEATURES',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
-                <p className="text-sm">
-                  The CRM’s success relies on its core features which drive user
-                  engagement and streamline operations. Focus on functionalities
-                  that deliver immediate value.
-                </p>
-                <ul className="text-sm list-disc pl-5 space-y-1">
-                  <li>
-                    <strong>Contact Management:</strong> Organize and manage
-                    customer data efficiently.
-                  </li>
-                  <li>
-                    <strong>Sales Pipeline:</strong> Track deals and forecast
-                    revenue.
-                  </li>
-                  <li>
-                    <strong>Automated Follow-ups:</strong> Ensure timely
-                    communications with prospects.
-                  </li>
-                </ul>
-              </div>
+              </div>,
+              true
             )}
 
             {renderSection(
@@ -753,7 +726,8 @@ export const PreviewGeneration = ({
                     feature expansion.
                   </li>
                 </ul>
-              </div>
+              </div>,
+              true
             )}
 
             {renderSection(
@@ -779,7 +753,8 @@ export const PreviewGeneration = ({
                     repetitive processes for increased productivity.
                   </li>
                 </ul>
-              </div>
+              </div>,
+              true
             )}
 
             {renderSection(
@@ -840,225 +815,204 @@ export const PreviewGeneration = ({
                     </tr>
                   </tbody>
                 </table>
-              </div>
-            )}
-
-            {renderSection(
-              'Does It Need Any External APIs?',
-              <Plug className="size-4 text-zinc-300" />,
-              'THIRD-PARTY INTEGRATIONS',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
-                <p className="text-sm">
-                  Integrating external APIs enhances the CRM by connecting it to
-                  vital business tools and services.
-                </p>
-                <ul className="text-sm list-disc pl-5 space-y-1">
-                  <li>
-                    <strong>Email & Messaging:</strong> Connect with Twilio,
-                    Gmail, or WhatsApp.
-                  </li>
-                  <li>
-                    <strong>Accounting & Payments:</strong> Integrate with
-                    Stripe, PayPal, or QuickBooks.
-                  </li>
-                  <li>
-                    <strong>Marketing Automation:</strong> Sync with HubSpot or
-                    Mailchimp for streamlined campaigns.
-                  </li>
-                </ul>
-              </div>
+              </div>,
+              true
             )}
 
             {renderSection(
               'What Are Similar Popular Apps?',
               <BarChart2 className="size-4 text-zinc-300" />,
               'COMPETITOR ANALYSIS',
-              <div className={cn(`space-y-4 ${mainCardClassName}`)}>
+              <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm space-y-4">
                 <p className="text-sm">
-                  Benchmarking against industry leaders helps pinpoint key
-                  features and opportunities to differentiate your CRM.
+                  Reviewing popular CRMs like HubSpot, Salesforce, and Zoho
+                  CRM reveals the key elements driving their success. Use this
+                  information to identify opportunities for{' '}
+                  <strong>innovation</strong> in your own solution.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
-                    <strong>HubSpot:</strong> Excels in marketing and
-                    automation.
+                    <span aria-label="HubSpot" className="mr-1" role="img">
+                      🔥
+                    </span>
+                    <strong>HubSpot:</strong> Excels in{' '}
+                    <strong>marketing</strong> and <strong>automation</strong>
+                    .
                   </li>
                   <li>
-                    <strong>Salesforce:</strong> Offers extensive integrations
-                    for enterprise needs.
+                    <span aria-label="Salesforce" className="mr-1" role="img">
+                      ⚡
+                    </span>
+                    <strong>Salesforce:</strong> Offers extensive{' '}
+                    <strong>integrations</strong> for enterprise needs.
                   </li>
                   <li>
-                    <strong>Zoho CRM:</strong> Affordable and scalable for small
-                    businesses.
+                    <span aria-label="Zoho" className="mr-1" role="img">
+                      💼
+                    </span>
+                    <strong>Zoho CRM:</strong> Affordable and scalable, ideal
+                    for small businesses.
                   </li>
                 </ul>
-              </div>
+              </div>,
+              true
             )}
-            <div className="pl-16 space-y-4 rounded-xl">
-              {/* Variation 3: Minimalist List with Emoji Badges */}
-              {renderSection(
-                'What Are Similar Popular Apps? (Emoji List)',
-                <BarChart2 className="size-4 text-zinc-300" />,
-                'COMPETITOR ANALYSIS',
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-sm space-y-4">
-                  <p className="text-sm">
-                    Reviewing popular CRMs like HubSpot, Salesforce, and Zoho
-                    CRM reveals the key elements driving their success. Use this
-                    information to identify opportunities for{' '}
-                    <strong>innovation</strong> in your own solution.
-                  </p>
-                  <ul className="text-sm list-disc pl-5 space-y-1">
-                    <li>
-                      <span aria-label="HubSpot" className="mr-1" role="img">
-                        🔥
-                      </span>
-                      <strong>HubSpot:</strong> Excels in{' '}
-                      <strong>marketing</strong> and <strong>automation</strong>
-                      .
-                    </li>
-                    <li>
-                      <span aria-label="Salesforce" className="mr-1" role="img">
-                        ⚡
-                      </span>
-                      <strong>Salesforce:</strong> Offers extensive{' '}
-                      <strong>integrations</strong> for enterprise needs.
-                    </li>
-                    <li>
-                      <span aria-label="Zoho" className="mr-1" role="img">
-                        💼
-                      </span>
-                      <strong>Zoho CRM:</strong> Affordable and scalable, ideal
-                      for small businesses.
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
 
             {renderSection(
-              'What Do I Need to Get Started?',
-              <Rocket className="size-4 text-zinc-300" />,
-              'PROJECT KICKOFF',
+              'What are Other Ways to Build It?',
+              <TrendingDown className="size-4 text-red-300" />,
+              'BUDGET OPTIONS',
               <div className={cn(`space-y-4 ${mainCardClassName}`)}>
                 <p className="text-sm">
-                  A clear roadmap, defined requirements, and budget expectations
-                  are essential for a successful CRM development kickoff.
+                  Choose a solution that balances cost and customization.
+                  Consider your business needs and technical capabilities to
+                  decide between different development approaches.
                 </p>
-                <ul className="text-sm list-disc space-y-2">
-                  <li className="flex items-center">
-                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
-                    <span>
-                      <strong>Feature Definition:</strong> Distinguish between
-                      must-have and nice-to-have functionalities.
-                    </span>
+                {/* Horizontal rule or line */}
+                <hr className="border-zinc-200 dark:border-zinc-700" />
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold">No-Code</span>
+                    <span className="text-xs">30%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                    <div
+                      className="bg-primary h-2 rounded-full"
+                      style={{width: '30%'}}
+                    />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold">Open-Source</span>
+                    <span className="text-xs">50%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                    <div
+                      className="bg-primary h-2 rounded-full"
+                      style={{width: '50%'}}
+                    />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold">Custom MVP</span>
+                    <span className="text-xs">80%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                    <div
+                      className="bg-primary h-2 rounded-full"
+                      style={{width: '80%'}}
+                    />
+                  </div>
+                </div>
+                <ul className="text-sm list-disc pl-5 pt-2 space-y-1">
+                  <li>
+                    <strong>No-Code:</strong> Fast and affordable, with some
+                    limitations.
                   </li>
-                  <li className="flex items-center">
-                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
-                    <span>
-                      <strong>Integration Needs:</strong> Identify target tools
-                      (e.g., email, accounting, marketing).
-                    </span>
+                  <li>
+                    <strong>Open-Source:</strong> Lower upfront cost but may
+                    require integration work.
                   </li>
-                  <li className="flex items-center">
-                    <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
-                    <span>
-                      <strong>Budget & User Base:</strong> Establish cost
-                      expectations and projected scale.
-                    </span>
+                  <li>
+                    <strong>Custom MVP:</strong> More tailored but with higher
+                    initial investment.
                   </li>
                 </ul>
-              </div>
+              </div>,
+              true
             )}
 
-            <div className="pl-16 space-y-4 rounded-xl">
-              {/* Variation 1: Step-by-Step Timeline */}
-              {renderSection(
-                'What Do I Need to Get Started? (Step-by-Step)',
-                <Rocket className="size-4 text-zinc-300" />,
-                'PROJECT KICKOFF',
-                <div className={cn(`space-y-6 ${mainCardClassName}`)}>
-                  <p className="text-sm">
-                    A clear roadmap is essential. Begin by outlining your{' '}
-                    <strong>feature priorities</strong>, identifying key{' '}
-                    <strong>integration needs</strong>, and establishing your{' '}
-                    <strong>budget and user expectations</strong>.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
+            {/* Variation 1: Step-by-Step Timeline */}
+            {renderSection(
+              'What Do I Need to Get Started? (Step-by-Step)',
+              <Rocket className="size-4 text-zinc-300" />,
+              'PROJECT KICKOFF',
+              <div className={cn(`space-y-6 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  A clear roadmap is essential. Begin by outlining your{' '}
+                  <strong>feature priorities</strong>, identifying key{' '}
+                  <strong>integration needs</strong>, and establishing your{' '}
+                  <strong>budget and user expectations</strong>.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
                       <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
                         1
                       </span>
-                      <span className="text-sm font-semibold">
+                    <span className="text-sm font-semibold">
                         Feature Definition
                       </span>
-                    </div>
-                    <div className="pl-8 text-xs text-muted-foreground">
-                      Define which features are <strong>must-have</strong> and
-                      which are <strong>nice-to-have</strong>.
-                    </div>
-                    <div className="flex items-center space-x-3">
+                  </div>
+                  <div className="pl-8 text-xs text-muted-foreground">
+                    Define which features are <strong>must-have</strong> and
+                    which are <strong>nice-to-have</strong>.
+                  </div>
+                  <div className="flex items-center space-x-3">
                       <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
                         2
                       </span>
-                      <span className="text-sm font-semibold">
+                    <span className="text-sm font-semibold">
                         Integration Needs
                       </span>
-                    </div>
-                    <div className="pl-8 text-xs text-muted-foreground">
-                      Identify the essential tools (e.g., email, accounting,
-                      marketing) to integrate.
-                    </div>
-                    <div className="flex items-center space-x-3">
+                  </div>
+                  <div className="pl-8 text-xs text-muted-foreground">
+                    Identify the essential tools (e.g., email, accounting,
+                    marketing) to integrate.
+                  </div>
+                  <div className="flex items-center space-x-3">
                       <span className="inline-block px-2 py-1 bg-gray-200 rounded-full text-xs font-bold">
                         3
                       </span>
-                      <span className="text-sm font-semibold">
+                    <span className="text-sm font-semibold">
                         Budget & User Base
                       </span>
-                    </div>
-                    <div className="pl-8 text-xs text-muted-foreground">
-                      Set clear cost expectations and forecast your user growth.
-                    </div>
+                  </div>
+                  <div className="pl-8 text-xs text-muted-foreground">
+                    Set clear cost expectations and forecast your user growth.
                   </div>
                 </div>
-              )}
+              </div>,
+              true
+            )}
 
-              {/* Variation 2: Checklist with Checkbox Icons */}
-              {renderSection(
-                'What Do I Need to Get Started? (Checklist)',
-                <Rocket className="size-4 text-zinc-300" />,
-                'PROJECT KICKOFF',
-                <div className={cn(`space-y-6 ${mainCardClassName}`)}>
-                  <p className="text-sm">
-                    Kick off your CRM project with a focused checklist. Verify
-                    that all key elements are in place for a successful launch.
-                  </p>
-                  <ul className="text-sm space-y-2">
-                    <li className="flex items-center">
-                      <Check className="w-4 h-4 mr-2 text-primary-600" />
-                      <span>
+            {/* Variation 2: Checklist with Checkbox Icons */}
+            {renderSection(
+              'What Do I Need to Get Started? (Checklist)',
+              <Rocket className="size-4 text-zinc-300" />,
+              'PROJECT KICKOFF',
+              <div className={cn(`space-y-6 ${mainCardClassName}`)}>
+                <p className="text-sm">
+                  Kick off your CRM project with a focused checklist. Verify
+                  that all key elements are in place for a successful launch.
+                </p>
+                <ul className="text-sm space-y-2">
+                  <li className="flex items-center">
+                    <Check className="w-4 h-4 mr-2 text-primary-600" />
+                    <span>
                         <strong>Feature Definition:</strong> Clearly distinguish
                         must-have from optional features.
                       </span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="w-4 h-4 mr-2 text-primary-600" />
-                      <span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-4 h-4 mr-2 text-primary-600" />
+                    <span>
                         <strong>Integration Needs:</strong> List essential tools
                         (e.g., email, accounting, marketing).
                       </span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="w-4 h-4 mr-2 text-primary-600" />
-                      <span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-4 h-4 mr-2 text-primary-600" />
+                    <span>
                         <strong>Budget & User Base:</strong> Establish cost
                         parameters and projected scale.
                       </span>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
+                  </li>
+                </ul>
+              </div>,
+              true
+            )}
           </div>
         </div>
       </div>
@@ -1110,10 +1064,12 @@ function renderSection(
   title: string,
   icon: React.ReactNode,
   overline: string,
-  content: React.ReactNode
+  content: React.ReactNode,
+  isBlurred?: boolean, // Optional, defaults to false
+  onDownload?: () => void // Optional callback
 ) {
   return (
-    <div className="bg-card dark:bg-zinc-800 rounded-lg p-4">
+    <div className="relative bg-card dark:bg-zinc-800 rounded-lg p-4">
       <div className="flex items-center gap-1.5 mb-1">
         {icon}
         <span className="text-xs uppercase font-medium tracking-wide text-zinc-500 dark:text-zinc-400">
@@ -1121,32 +1077,25 @@ function renderSection(
         </span>
       </div>
       <h4 className="text-lg font-semibold mb-3">{title}</h4>
-      {content}
-    </div>
-  )
-}
 
-function getFeasibilityScore(feasibility: string): number {
-  switch (feasibility.toLowerCase()) {
-    case 'high': {
-      return 5
-    }
-    case 'medium-high': {
-      return 4
-    }
-    case 'medium': {
-      return 3
-    }
-    case 'medium-low': {
-      return 2
-    }
-    case 'low': {
-      return 1
-    }
-    default: {
-      return 0
-    }
-  }
+      <div className="relative">
+        {isBlurred && (
+          <div className="absolute inset-0 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md flex items-center justify-center rounded-lg">
+            <button
+              onClick={onDownload}
+              className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+            >
+              Download Full Report
+            </button>
+          </div>
+        )}
+
+        <div className={isBlurred ? "blur-sm select-none pointer-events-none" : ""}>
+          {content}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function getMarketPotentialScore(marketPotential: string): number {
