@@ -16,7 +16,12 @@
         "./pages/*"
       ]
     },
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",

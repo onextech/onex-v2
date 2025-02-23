@@ -30,7 +30,7 @@ import '@/styles/marquee.css'
 const defaultSettings: AppIdeaSettings = {
   appCategory: appCategories[0],
   appType: appTypesByCategory[appCategories[0]][0],
-  industry: appIndustrys[0],
+  industry: '',
   platform: appPlatforms[0],
   targetAudience: appTargetAudiences[0],
 }
@@ -55,8 +55,6 @@ export function AppIdeaExplorer() {
   })
 
   const handleGenerate = () => submit({ appIdea, appSettings: settings })
-
-  console.log('jjj: generatedObject', generatedObject)
 
   const handleSelectIdeaSample = (formValues: {
     appCategory: string
@@ -95,7 +93,10 @@ export function AppIdeaExplorer() {
     try {
       // Fire LLM call
       handleGenerate()
+
+      // TODO@Joel: Save the user's query to db
       await new Promise((resolve) => setTimeout(resolve, 3000))
+
       setShowForm(false)
     } catch {
       setError('Failed to generate analysis. Please try again.')
@@ -104,12 +105,22 @@ export function AppIdeaExplorer() {
     }
   }
 
-  const handleReset = () => {
-    setAppIdea('')
-    setSettings(defaultSettings)
+  const handleClear = () => {
     setShowAdditionalFields(false)
     setShowForm(true)
     setError(null)
+    // Scroll to the top of the page
+    window.scrollTo({ behavior: 'smooth', top: 0 })
+  }
+
+  const handleReset = () => {
+    setAppIdea('')
+    setSettings(defaultSettings)
+    handleClear()
+  }
+
+  const handleRetry = () => {
+    handleClear()
   }
 
   return (
@@ -154,6 +165,7 @@ export function AppIdeaExplorer() {
                   <HeaderExplorer
                     isLoading={isLoading}
                     onReset={handleReset}
+                    onRetry={handleRetry}
                     setIsDialogOpen={setIsDialogOpen}
                     showForm={showForm}
                   />

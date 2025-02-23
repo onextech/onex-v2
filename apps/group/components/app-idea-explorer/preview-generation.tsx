@@ -36,6 +36,173 @@ import {
 
 import { LeadInfoDialog } from './lead-info-dialog'
 
+// Skeleton components for each section shape
+
+const SkeletonRecommendation = () => (
+  <div className="bg-white dark:bg-zinc-800 rounded-lg p-4 animate-pulse">
+    <div className="flex items-center mb-3">
+      <div className="w-6 h-6 bg-gray-200 rounded-full mr-2" />
+      <div className="h-4 bg-gray-200 rounded w-32" />
+    </div>
+    <div className="h-3 bg-gray-200 rounded w-full mb-4" />
+    <div className="md:w-3/4 mx-auto">
+      <div className="h-12 bg-gray-200 rounded mb-2" />
+      <div className="h-3 bg-gray-200 rounded w-20 mx-auto" />
+    </div>
+  </div>
+)
+
+const SkeletonCostEstimates = () => (
+  <table className="w-full text-sm border-collapse animate-pulse">
+    <thead>
+      <tr className="border-b border-zinc-200 dark:border-zinc-700">
+        <th className="px-2 py-2 text-left font-medium">Stage</th>
+        <th className="px-2 py-2 text-right font-medium">Estimated Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[1, 2, 3].map((i) => (
+        <tr className="border-b border-zinc-200 dark:border-zinc-700" key={i}>
+          <td className="px-2 py-2">
+            <div className="h-4 bg-gray-200 rounded w-24" />
+          </td>
+          <td className="px-2 py-2 text-right">
+            <div className="h-4 bg-gray-200 rounded w-16" />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)
+
+const SkeletonCoreFeatures = () => (
+  <ul className="text-sm space-y-2 animate-pulse">
+    {[1, 2, 3].map((i) => (
+      <li className="flex items-center" key={i}>
+        <div className="mr-2 h-4 w-4 bg-gray-200 rounded-full" />
+        <div className="flex-1">
+          <div className="h-4 bg-gray-200 rounded w-32 mb-1" />
+          <div className="h-3 bg-gray-200 rounded w-48" />
+        </div>
+      </li>
+    ))}
+  </ul>
+)
+
+const SkeletonDevelopmentPhases = () => (
+  <div className="space-y-2 animate-pulse">
+    {[1, 2].map((i) => (
+      <div key={i}>
+        <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground mb-1">
+          <div className="h-3 bg-gray-200 rounded w-20" />
+          <div className="h-3 bg-gray-200 rounded w-12" />
+        </div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+          <div
+            className="bg-gray-300 h-2 rounded-full"
+            style={{ width: '50%' }}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+)
+
+const SkeletonDevelopmentTimelineSteps = () => (
+  <ul className="text-sm list-disc pl-5 space-y-1 animate-pulse">
+    {[1, 2].map((i) => (
+      <li key={i}>
+        <div className="h-3 bg-gray-200 rounded w-32" />
+      </li>
+    ))}
+  </ul>
+)
+
+const SkeletonOngoingExpenses = () => (
+  <ul className="text-sm list-disc space-y-2 animate-pulse">
+    {[1, 2, 3].map((i) => (
+      <li className="flex items-center" key={i}>
+        <div className="h-4 w-4 bg-gray-200 rounded mr-2" />
+        <div className="flex-1">
+          <div className="h-3 bg-gray-200 rounded w-24 mb-1" />
+          <div className="h-3 bg-gray-200 rounded w-40" />
+        </div>
+      </li>
+    ))}
+  </ul>
+)
+
+const SkeletonEfficiencyAutomation = () => (
+  <ul className="text-sm space-y-2 animate-pulse">
+    {[1, 2, 3].map((i) => (
+      <li className="flex items-center" key={i}>
+        <div className="h-4 w-4 bg-gray-200 rounded mr-2" />
+        <div className="flex-1">
+          <div className="h-3 bg-gray-200 rounded w-28 mb-1" />
+          <div className="h-3 bg-gray-200 rounded w-40" />
+        </div>
+      </li>
+    ))}
+  </ul>
+)
+
+const SkeletonProjectKickoffSteps = () => (
+  <div className="animate-pulse">
+    {[1, 2, 3].map((i) => (
+      <div
+        className="flex items-center space-x-3 border-b py-2 last:border-b-0"
+        key={i}
+      >
+        <div className="inline-block py-1 px-1.5 bg-gray-200 rounded-full text-xxs font-bold w-6 h-6" />
+        <div>
+          <div className="h-3 bg-gray-200 rounded w-24 mb-1" />
+          <div className="h-3 bg-gray-200 rounded w-40" />
+        </div>
+      </div>
+    ))}
+  </div>
+)
+
+const SkeletonProjectTimeline = () => (
+  <div className="animate-pulse">
+    <div className="flex items-center text-xs font-semibold text-zinc-400 pl-32 mb-2">
+      {Array.from({ length: 6 }, (_, i) => (
+        <div className="flex-1 text-center" key={i}>
+          <div className="h-3 bg-gray-200 rounded w-10 mx-auto" />
+        </div>
+      ))}
+    </div>
+    <div className="space-y-3">
+      {[1, 2, 3].map((i) => (
+        <div className="flex items-center" key={i}>
+          <div className="w-1/4 text-xs font-bold text-muted-foreground">
+            <div className="h-3 bg-gray-200 rounded w-16" />
+          </div>
+          <div className="w-3/4">
+            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
+              <div
+                className="h-2 rounded-full bg-gray-300"
+                style={{ marginLeft: '10%', width: '30%' }}
+              />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <ul className="text-sm list-disc pl-5 space-y-1 mt-4">
+      {[1, 2].map((i) => (
+        <li key={i}>
+          <div className="h-3 bg-gray-200 rounded w-32" />
+        </li>
+      ))}
+    </ul>
+  </div>
+)
+
+const SkeletonText = ({ width = 'w-16' }: { width?: string }) => (
+  <div className={`h-4 bg-gray-200 rounded ${width} animate-pulse`} />
+)
+
 const isGreyMainCard = true
 
 interface PreviewProps {
@@ -62,7 +229,7 @@ export const PreviewGeneration = ({
   const availableTexts = [
     'Analyzing market trends...',
     'Evaluating technical feasibility...',
-    'Assessing user demand...',
+    'Assessing timeline and cost estimates...',
   ]
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [progress, setProgress] = useState(0)
@@ -71,39 +238,29 @@ export const PreviewGeneration = ({
     settings.targetAudience
   )
 
-  // Loading state effect
   useEffect(() => {
     if (!isLoading) {
       setProgress(0)
       return
     }
-
     const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval)
-          return 100
-        }
-        return prev + 1
-      })
+      setProgress((prev) => (prev >= 100 ? 100 : prev + 1))
     }, 30)
-
     return () => clearInterval(interval)
   }, [isLoading])
   useEffect(() => {
     if (!isLoading) return
-
     const interval = setInterval(() => {
       setCurrentTextIndex((prev) => (prev + 1) % availableTexts.length)
     }, 1000)
-
     return () => clearInterval(interval)
   }, [isLoading])
 
-  // Run function with mock data
-  const feasibilityScore = calculateFeasibilityScore(result.feasibilityFactors)
-
   const renderRecommendation = () => {
+    if (!result?.feasibilityFactors) return <SkeletonRecommendation />
+    const feasibilityScore = calculateFeasibilityScore(
+      result.feasibilityFactors
+    )
     return (
       <div className="bg-white dark:bg-zinc-800 rounded-lg">
         <h4 className="text-lg font-semibold mb-3 flex items-center">
@@ -111,13 +268,14 @@ export const PreviewGeneration = ({
           Tech Feasibility Score
         </h4>
         <p className="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
-          Based on our analysis, your app idea shows promise and could be worth
-          pursuing. Consider the following factors:
+          {/** This text is now computed using the schema description */}
+          Based on our analysis, your idea shows promise. Consider the following
+          factors:
         </p>
         <div className="md:w-3/4 mx-auto mb-4">
           <GaugeChart
             content={
-              <div className="">
+              <div>
                 <h6 className="font-bold uppercase leading-none tracking-wide text-5xl md:text-2xl">
                   {feasibilityScore}%
                 </h6>
@@ -150,7 +308,6 @@ export const PreviewGeneration = ({
             </span>
           </div>
           <h4 className="text-lg font-semibold mb-2">{title}</h4>
-
           <div className={cn('relative', isBlurred && 'border rounded-lg')}>
             {isBlurred && (
               <div className="absolute inset-0 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm flex items-center justify-center rounded-lg">
@@ -164,7 +321,6 @@ export const PreviewGeneration = ({
                 </Button>
               </div>
             )}
-
             <div className={isBlurred ? 'select-none pointer-events-none' : ''}>
               <div
                 className={cn(
@@ -177,23 +333,17 @@ export const PreviewGeneration = ({
                 {isBlurred ? (
                   <div>
                     <p className="text-sm">
-                      <strong>Key Point 1:</strong> Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Suspendisse varius enim in
-                      eros elementum tristique. Duis cursus, mi quis viverra
-                      ornare.
+                      <strong>Key Point 1:</strong> Sample description.
                     </p>
                     <ul className="text-sm list-disc pl-5 space-y-1">
                       <li>
-                        <strong>Key Point 2:</strong> Placeholder text
-                        describing an important feature or insight.
+                        <strong>Key Point 2:</strong> Sample text.
                       </li>
                       <li>
-                        <strong>Key Point 3:</strong> Additional details about
-                        the topic with structured formatting.
+                        <strong>Key Point 3:</strong> More sample details.
                       </li>
                       <li>
-                        <strong>Key Point 4:</strong> More supporting
-                        information to illustrate key aspects.
+                        <strong>Key Point 4:</strong> Additional sample info.
                       </li>
                     </ul>
                   </div>
@@ -222,7 +372,7 @@ export const PreviewGeneration = ({
               {availableTexts[currentTextIndex]}
             </p>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
-              Analyzing your app idea...
+              Analyzing your idea...
             </p>
           </div>
           <div className="w-full h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
@@ -250,7 +400,7 @@ export const PreviewGeneration = ({
               App Idea
             </h6>
             <h3 className="leading-tight text-2xl font-semibold mb-1">
-              {result.name}
+              {result?.name || <SkeletonText width="w-40" />}
             </h3>
             <p className="max-w-lg mx-auto italic">"{appIdea}"</p>
           </div>
@@ -261,16 +411,13 @@ export const PreviewGeneration = ({
           {/* Right */}
           <div className="col-span-12 md:order-2 md:col-span-4 p-4 md:border-l">
             {renderRecommendation()}
-
             <Separator className="my-4" />
-
             <div className="space-y-8">
               {/* Analysis */}
               <div className="space-y-1">
                 <h6 className="uppercase font-medium text-xxs tracking-wide">
                   Analysis
                 </h6>
-
                 <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
                   <div className="flex justify-between text-sm">
                     <span className="text-zinc-500">
@@ -279,7 +426,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
                         switch (
-                          result.feasibilityFactors.complianceRequirements
+                          result?.feasibilityFactors?.complianceRequirements
                         ) {
                           case 1: {
                             return 'None'
@@ -310,7 +457,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
                         switch (
-                          result.feasibilityFactors.customFrameworksRequired
+                          result?.feasibilityFactors?.customFrameworksRequired
                         ) {
                           case 1: {
                             return 'Many Pre-built Options'
@@ -338,7 +485,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-500">Development Time</span>
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
-                        switch (result.feasibilityFactors.developmentTime) {
+                        switch (result?.feasibilityFactors?.developmentTime) {
                           case 1: {
                             return '<1 month'
                           }
@@ -365,7 +512,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-500">Expertise Required</span>
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
-                        switch (result.feasibilityFactors.expertiseRequired) {
+                        switch (result?.feasibilityFactors?.expertiseRequired) {
                           case 1: {
                             return 'General Developer'
                           }
@@ -392,7 +539,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-500">Scalability Needs</span>
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
-                        switch (result.feasibilityFactors.scalabilityNeeds) {
+                        switch (result?.feasibilityFactors?.scalabilityNeeds) {
                           case 1: {
                             return 'Low'
                           }
@@ -419,7 +566,7 @@ export const PreviewGeneration = ({
                     <span className="text-zinc-500">Tech Complexity</span>
                     <span className="text-zinc-900 dark:text-zinc-100 text-right">
                       {(() => {
-                        switch (result.feasibilityFactors.techComplexity) {
+                        switch (result?.feasibilityFactors?.techComplexity) {
                           case 1: {
                             return 'Simple'
                           }
@@ -445,53 +592,52 @@ export const PreviewGeneration = ({
                 </div>
               </div>
 
-              {/* Selected options */}
               {renderFactsCard(
                 'Selected Options',
                 settings as unknown as Record<string, string>
               )}
-
-              {/* Tech Stack */}
               {renderFactsCard('Recommended Tech Stack', appTechstack)}
             </div>
           </div>
 
-          {/* Left */}
+          {/* Left: Sections based on the schema */}
           <div className="col-span-12 md:order-1 md:col-span-8">
             {renderSection(
               'How Much Will It Cost to Develop This App?',
               <DollarSign className="size-4 text-red-300" />,
               'COST ESTIMATES',
               <>
-                <p className="text-sm">
-                  CRM development costs vary based on features and integrations.
-                  A <strong>basic MVP</strong> is cost-effective, while a
-                  full-scale solution requires greater investment.
-                </p>
+                <p className="text-sm">{result?.costEstimates?.description}</p>
                 <hr className="border-zinc-200 dark:border-zinc-700" />
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                      <th className="px-2 py-2 text-left font-medium">Stage</th>
-                      <th className="px-2 py-2 text-right font-medium">
-                        Estimated Cost
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {result.costEstimates.map((item, index) => (
-                      <tr
-                        className="border-b border-zinc-200 dark:border-zinc-700"
-                        key={index}
-                      >
-                        <td className="px-2 py-2">{item.stage}</td>
-                        <td className="px-2 py-2 text-right text-primary-600">
-                          {item.cost}
-                        </td>
+                {Array.isArray(result?.costEstimates?.items) ? (
+                  <table className="w-full text-sm border-collapse">
+                    <thead>
+                      <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                        <th className="px-2 py-2 text-left font-medium">
+                          Stage
+                        </th>
+                        <th className="px-2 py-2 text-right font-medium">
+                          Estimated Cost
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {result.costEstimates.items.map((item, index) => (
+                        <tr
+                          className="border-b border-zinc-200 dark:border-zinc-700"
+                          key={index}
+                        >
+                          <td className="px-2 py-2">{item.stage}</td>
+                          <td className="px-2 py-2 text-right text-primary-600">
+                            From {item.fromCost}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                ) : (
+                  <SkeletonCostEstimates />
+                )}
               </>
             )}
 
@@ -500,26 +646,26 @@ export const PreviewGeneration = ({
               <List className="size-4 text-blue-300" />,
               'CORE FEATURES',
               <>
-                <p className="text-sm">
-                  The CRM’s success relies on its core features which drive user
-                  engagement and streamline operations. Focus on functionalities
-                  that deliver immediate value.
-                </p>
+                <p className="text-sm">{result?.coreFeatures?.description}</p>
                 <hr className="border-zinc-200 dark:border-zinc-700 my-4" />
-                <ul className="text-sm space-y-2">
-                  {result.coreFeatures.map((feature, index) => (
-                    <li key={index}>
-                      <span
-                        aria-label={feature.title}
-                        className="mr-2"
-                        role="img"
-                      >
-                        {feature.icon}
-                      </span>
-                      <strong>{feature.title}:</strong> {feature.description}
-                    </li>
-                  ))}
-                </ul>
+                {Array.isArray(result?.coreFeatures?.items) ? (
+                  <ul className="text-sm space-y-4">
+                    {result.coreFeatures.items.map((feature, index) => (
+                      <li key={index}>
+                        <span
+                          aria-label={feature.title}
+                          className="mr-2"
+                          role="img"
+                        >
+                          {feature.icon}
+                        </span>
+                        <strong>{feature.title}:</strong> {feature.description}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <SkeletonCoreFeatures />
+                )}
               </>
             )}
 
@@ -529,34 +675,42 @@ export const PreviewGeneration = ({
               'DEVELOPMENT TIMELINE',
               <>
                 <p className="text-sm">
-                  A basic CRM can be developed in a few months, while custom
-                  automation and AI features may extend the timeline. Below is a
-                  rough breakdown of each phase.
+                  {result?.developmentPhases?.description}
                 </p>
                 <hr className="border-zinc-200 dark:border-zinc-700 my-4" />
-                <div className="space-y-2">
-                  {result.developmentPhases.map((phase, index) => (
-                    <div key={index}>
-                      <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground mb-1">
-                        <span>{phase.label}</span>
-                        <span>{phase.duration}</span>
+                {Array.isArray(result?.developmentPhases?.items) ? (
+                  <div className="space-y-4 py-2">
+                    {result.developmentPhases.items.map((phase, index) => (
+                      <div key={index}>
+                        <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground mb-1">
+                          <span>{phase.label}</span>
+                          <span>{phase.duration}</span>
+                        </div>
+                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                          <div
+                            className="bg-primary h-2 rounded-full"
+                            style={{ width: phase.width }}
+                          />
+                        </div>
                       </div>
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                        <div
-                          className="bg-primary h-2 rounded-full"
-                          style={{ width: phase.width }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <ul className="text-sm list-disc pl-5 space-y-1">
-                  {result.developmentTimelineSteps.map((item, index) => (
-                    <li key={index}>
-                      <strong>{item.title}:</strong> {item.duration}
-                    </li>
-                  ))}
-                </ul>
+                    ))}
+                  </div>
+                ) : (
+                  <SkeletonDevelopmentPhases />
+                )}
+                {Array.isArray(result?.developmentTimelineSteps?.items) ? (
+                  <ul className="text-sm list-disc pl-5 space-y-2">
+                    {result.developmentTimelineSteps.items.map(
+                      (item, index) => (
+                        <li key={index}>
+                          <strong>{item.title}:</strong> {item.duration}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                ) : (
+                  <SkeletonDevelopmentTimelineSteps />
+                )}
               </>
             )}
 
@@ -566,45 +720,55 @@ export const PreviewGeneration = ({
               'PROJECT TIMELINE',
               <>
                 <p className="text-sm">
-                  A well-planned process ensures a smooth rollout from
-                  development to deployment. The timeline below shows each phase
-                  as a waterfall, with each stage starting sequentially.
+                  {result?.projectTimelinePhases?.description}
                 </p>
                 <hr className="border-zinc-200 dark:border-zinc-700 my-4" />
-                <div className="flex items-center text-xs font-semibold text-zinc-400 pl-32">
-                  {Array.from({ length: 6 }, (_, i) => (
-                    <div className="flex-1 text-center" key={i}>
-                      Mth {i + 1}
-                    </div>
-                  ))}
-                </div>
-                <div className="space-y-3">
-                  {result.projectTimelinePhases.map((phase, index) => (
-                    <div className="flex items-center" key={index}>
-                      <div className="w-1/4 text-xs font-bold text-muted-foreground">
-                        {phase.label}
+                {result?.projectTimelinePhases ? (
+                  <div className="flex items-center text-xs font-semibold text-zinc-400 pl-32">
+                    {Array.from({ length: 6 }, (_, i) => (
+                      <div className="flex-1 text-center" key={i}>
+                        Mth {i + 1}
                       </div>
-                      <div className="w-3/4">
-                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
-                          <div
-                            className="h-2 rounded-full bg-primary"
-                            style={{
-                              marginLeft: phase.start,
-                              width: phase.width,
-                            }}
-                          />
+                    ))}
+                  </div>
+                ) : (
+                  <SkeletonText width="w-full" />
+                )}
+                {Array.isArray(result?.projectTimelinePhases?.items) ? (
+                  <div className="space-y-3 py-4">
+                    {result.projectTimelinePhases.items.map((phase, index) => (
+                      <div className="flex items-center" key={index}>
+                        <div className="w-1/4 text-xs font-bold text-muted-foreground">
+                          {phase.label}
+                        </div>
+                        <div className="w-3/4">
+                          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 relative">
+                            <div
+                              className="h-2 rounded-full bg-primary"
+                              style={{
+                                marginLeft: phase.start,
+                                width: phase.width,
+                              }}
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-                <ul className="text-sm list-disc pl-5 space-y-1 mt-4">
-                  {result.projectTimelineSteps.map((item, index) => (
-                    <li key={index}>
-                      <strong>{item.title}:</strong> {item.description}
-                    </li>
-                  ))}
-                </ul>
+                    ))}
+                  </div>
+                ) : (
+                  <SkeletonProjectTimeline />
+                )}
+                {Array.isArray(result?.projectTimelineSteps?.items) ? (
+                  <ul className="text-sm list-disc pl-5 space-y-3 mt-4">
+                    {result.projectTimelineSteps.items.map((item, index) => (
+                      <li key={index}>
+                        <strong>{item.title}:</strong> {item.description}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <SkeletonText width="w-40" />
+                )}
               </>
             )}
 
@@ -614,22 +778,23 @@ export const PreviewGeneration = ({
               'ONGOING EXPENSES',
               <>
                 <p className="text-sm">
-                  Beyond development, long-term costs include{' '}
-                  <strong>cloud hosting</strong>,{' '}
-                  <strong>third-party integrations</strong>, and continuous{' '}
-                  <strong>maintenance</strong> to ensure optimal performance.
+                  {result?.ongoingExpenses?.description}
                 </p>
                 <hr className="border-zinc-200 dark:border-zinc-700" />
-                <ul className="text-sm list-disc space-y-2">
-                  {result.ongoingExpenses.map((item, index) => (
-                    <li className="flex items-center" key={index}>
-                      <Square className="flex-shrink-0 w-4 h-4 mr-2 text-zinc-400" />
-                      <span>
-                        <strong>{item.title}:</strong> {item.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                {Array.isArray(result?.ongoingExpenses?.items) ? (
+                  <ul className="text-sm list-disc space-y-2">
+                    {result.ongoingExpenses.items.map((item, index) => (
+                      <li className="flex items-start" key={index}>
+                        <Square className="flex-shrink-0 size-4 mt-1 mr-2 text-zinc-400" />
+                        <span>
+                          <strong>{item.title}:</strong> {item.description}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <SkeletonOngoingExpenses />
+                )}
               </>
             )}
 
@@ -639,22 +804,23 @@ export const PreviewGeneration = ({
               'EFFICIENCY & AUTOMATION',
               <>
                 <p className="text-sm">
-                  A CRM boosts your operations by{' '}
-                  <strong>centralizing customer data</strong> and{' '}
-                  <strong>automating repetitive tasks</strong>, leading to more
-                  efficient workflows.
+                  {result?.efficiencyAutomation?.description}
                 </p>
                 <hr className="border-zinc-200 dark:border-zinc-700" />
-                <ul className="text-sm space-y-2">
-                  {result.efficiencyAutomation.map((item, index) => (
-                    <li className="flex items-center" key={index}>
-                      <Check className="w-4 h-4 mr-2 text-muted-foreground" />
-                      <span>
-                        <strong>{item.title}:</strong> {item.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                {Array.isArray(result?.efficiencyAutomation?.items) ? (
+                  <ul className="text-sm space-y-2">
+                    {result.efficiencyAutomation.items.map((item, index) => (
+                      <li className="flex items-start" key={index}>
+                        <Check className="flex-shrink-0 size-4 mt-0.5 mr-2 text-muted-foreground" />
+                        <span>
+                          <strong>{item.title}:</strong> {item.description}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <SkeletonEfficiencyAutomation />
+                )}
               </>
             )}
 
@@ -664,35 +830,41 @@ export const PreviewGeneration = ({
               'PROJECT KICKOFF',
               <>
                 <p className="text-sm">
-                  A clear roadmap, defined requirements, and budget expectations
-                  are essential for a successful CRM development kickoff.
+                  {result?.projectKickoffSteps?.description}
                 </p>
                 <hr className="border-zinc-200 dark:border-zinc-700 my-4" />
-                <div>
-                  {result.projectKickoffSteps.map((step) => (
-                    <div
-                      className="flex items-center space-x-3 border-b py-2 last:border-b-0"
-                      key={step.number}
-                    >
-                      <div className="inline-block py-1 px-1.5 bg-gray-200 rounded-full text-xxs font-bold">
-                        {step.number}
-                      </div>
-                      <div>
-                        <span className="text-sm font-semibold">
-                          {step.title}
-                        </span>
+                {Array.isArray(result?.projectKickoffSteps?.items) ? (
+                  <div>
+                    {result.projectKickoffSteps.items
+                      .slice(0, 5)
+                      .map((step, i) => (
                         <div
-                          className="text-xs text-muted-foreground"
-                          dangerouslySetInnerHTML={{ __html: step.description }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                          className="flex items-start space-x-3 border-b py-2 last:border-b-0"
+                          key={step.title}
+                        >
+                          <div className="inline-block mt-1 flex-shrink-0 py-1 px-2 bg-zinc-200 text-zinc-500 rounded-full text-xs font-bold">
+                            {i + 1}
+                          </div>
+                          <div>
+                            <span className="text-sm font-semibold">
+                              {step.title}
+                            </span>
+                            <div
+                              className="text-xs text-muted-foreground"
+                              dangerouslySetInnerHTML={{
+                                __html: step.description,
+                              }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                ) : (
+                  <SkeletonProjectKickoffSteps />
+                )}
               </>
             )}
 
-            {/* Horizontal rule or line */}
             <hr className="border-zinc-200 dark:border-zinc-700 my-4" />
 
             {renderSection(
@@ -701,34 +873,31 @@ export const PreviewGeneration = ({
               'COMPETITOR ANALYSIS',
               <>
                 <p className="text-sm">
-                  Reviewing popular CRMs like HubSpot, Salesforce, and Zoho CRM
-                  reveals the key elements driving their success. Use this
-                  information to identify opportunities for{' '}
-                  <strong>innovation</strong> in your own solution.
+                  Reviewing popular apps reveals key elements driving their
+                  success. Use this information to identify opportunities for
+                  innovation.
                 </p>
-                {/* Horizontal rule or line */}
                 <hr className="border-zinc-200 dark:border-zinc-700" />
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
-                    <span aria-label="HubSpot" className="mr-1" role="img">
+                    <span aria-label="Example1" className="mr-1" role="img">
                       🔥
                     </span>
-                    <strong>HubSpot:</strong> Excels in{' '}
-                    <strong>marketing</strong> and <strong>automation</strong>.
+                    <strong>Example App 1:</strong> Excels in marketing and
+                    automation.
                   </li>
                   <li>
-                    <span aria-label="Salesforce" className="mr-1" role="img">
+                    <span aria-label="Example2" className="mr-1" role="img">
                       ⚡
                     </span>
-                    <strong>Salesforce:</strong> Offers extensive{' '}
-                    <strong>integrations</strong> for enterprise needs.
+                    <strong>Example App 2:</strong> Offers extensive
+                    integrations.
                   </li>
                   <li>
-                    <span aria-label="Zoho" className="mr-1" role="img">
+                    <span aria-label="Example3" className="mr-1" role="img">
                       💼
                     </span>
-                    <strong>Zoho CRM:</strong> Affordable and scalable, ideal
-                    for small businesses.
+                    <strong>Example App 3:</strong> Affordable and scalable.
                   </li>
                 </ul>
               </>,
@@ -740,20 +909,14 @@ export const PreviewGeneration = ({
               <Plug className="size-4 text-zinc-300" />,
               'THIRD-PARTY INTEGRATIONS',
               <>
-                {/* Descriptive paragraph */}
                 <p className="text-sm">
-                  Connecting your CRM with <strong>external APIs</strong> opens
-                  up a world of possibilities—whether it’s integrating
-                  communication channels, streamlining payment processes, or
-                  automating marketing campaigns.
+                  Connecting your app with external APIs opens up many
+                  possibilities – from communication channels to payment
+                  processing.
                 </p>
-
-                {/* Horizontal rule or line */}
                 <hr className="border-zinc-200 dark:border-zinc-700" />
-
                 <div>
-                  {/* Table with categories, examples, and benefits */}
-                  <table className="w-full text-xs border-collapse">
+                  <table className="w-full text-xs border-collapse animate-pulse">
                     <thead>
                       <tr className="border-b border-zinc-200 dark:border-zinc-700">
                         <th className="px-2 py-2 text-left font-semibold text-muted-foreground">
@@ -770,32 +933,26 @@ export const PreviewGeneration = ({
                     <tbody>
                       <tr className="border-b border-zinc-200 dark:border-zinc-700">
                         <td className="px-2 py-2 text-muted-foreground font-bold">
-                          Email &amp; Messaging
+                          Email & Messaging
                         </td>
                         <td className="px-2 py-2">Twilio, Gmail, WhatsApp</td>
-                        <td className="px-2 py-2">
-                          Real-time communication with customers
-                        </td>
+                        <td className="px-2 py-2">Real-time communication</td>
                       </tr>
                       <tr className="border-b border-zinc-200 dark:border-zinc-700">
                         <td className="px-2 py-2 text-muted-foreground font-bold">
-                          Accounting &amp; Payments
+                          Accounting & Payments
                         </td>
                         <td className="px-2 py-2">
                           Stripe, PayPal, QuickBooks
                         </td>
-                        <td className="px-2 py-2">
-                          Seamless billing and secure transactions
-                        </td>
+                        <td className="px-2 py-2">Seamless billing</td>
                       </tr>
                       <tr>
                         <td className="px-2 py-2 text-muted-foreground font-bold">
                           Marketing Automation
                         </td>
                         <td className="px-2 py-2">HubSpot, Mailchimp</td>
-                        <td className="px-2 py-2">
-                          Automated campaigns for higher engagement
-                        </td>
+                        <td className="px-2 py-2">Automated campaigns</td>
                       </tr>
                     </tbody>
                   </table>
@@ -810,14 +967,14 @@ export const PreviewGeneration = ({
               'CHALLENGES',
               <>
                 <p className="text-sm">
-                  Building a robust CRM involves complex integrations, advanced
+                  Building a robust app involves complex integrations, advanced
                   data security, and scalable architecture. These factors
                   contribute to higher development complexity and longer
                   timelines.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
-                    <strong>Complex Integrations:</strong> Linking with multiple
+                    <strong>Complex Integrations:</strong> Linking multiple
                     external systems.
                   </li>
                   <li>
@@ -826,7 +983,7 @@ export const PreviewGeneration = ({
                   </li>
                   <li>
                     <strong>Scalability:</strong> Building an architecture that
-                    grows with your business.
+                    grows with your needs.
                   </li>
                 </ul>
               </>,
@@ -839,7 +996,7 @@ export const PreviewGeneration = ({
               'SCALABILITY',
               <>
                 <p className="text-sm">
-                  A scalable CRM must handle increasing data loads and user
+                  A scalable app must handle increasing data loads and user
                   counts without performance degradation. Leveraging cloud
                   solutions and optimized databases is key.
                 </p>
@@ -850,7 +1007,7 @@ export const PreviewGeneration = ({
                   </li>
                   <li>
                     <strong>Database Optimization:</strong> Ensures fast data
-                    retrieval even with large volumes.
+                    retrieval with large volumes.
                   </li>
                   <li>
                     <strong>Modular Architecture:</strong> Facilitates future
@@ -867,21 +1024,21 @@ export const PreviewGeneration = ({
               'FEATURE PRIORITIZATION',
               <>
                 <p className="text-sm">
-                  Prioritizing <strong>core functionalities</strong> ensures a
-                  rapid launch and delivers essential value to early adopters.
+                  Prioritizing core functionalities ensures a rapid launch and
+                  delivers essential value to early adopters.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
-                    <strong>Contact & Lead Management:</strong> Centralizes
-                    client data and interactions.
+                    <strong>Contact & Lead Management:</strong> Centralizes user
+                    data and interactions.
                   </li>
                   <li>
                     <strong>Sales Pipeline & Follow-ups:</strong> Visualizes
-                    deal progress and automates reminders.
+                    progress and automates reminders.
                   </li>
                   <li>
                     <strong>Task & Workflow Automation:</strong> Streamlines
-                    repetitive processes for increased productivity.
+                    repetitive processes.
                   </li>
                 </ul>
               </>,
@@ -894,10 +1051,9 @@ export const PreviewGeneration = ({
               'APP WORKFLOW',
               <>
                 <p className="text-sm">
-                  The CRM centralizes customer data and automates key business
-                  processes to streamline operations. It provides an intuitive
-                  interface for managing contacts, tracking sales, and
-                  generating actionable insights.
+                  The app centralizes data and automates key business processes
+                  to streamline operations. It provides an intuitive interface
+                  for managing tasks and generating insights.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
@@ -910,7 +1066,7 @@ export const PreviewGeneration = ({
                   </li>
                   <li>
                     <strong>Integrations:</strong> Connects seamlessly with
-                    essential business tools.
+                    essential tools.
                   </li>
                 </ul>
               </>,
@@ -923,9 +1079,9 @@ export const PreviewGeneration = ({
               'SYSTEM INTEGRATION',
               <>
                 <p className="text-sm">
-                  Seamless integration ensures your CRM{' '}
-                  <strong>communicates effectively</strong> with existing tools,
-                  keeping data consistent and workflows smooth.
+                  Seamless integration ensures your app communicates effectively
+                  with existing tools, keeping data consistent and workflows
+                  smooth.
                 </p>
                 <ul className="text-sm list-disc pl-5 space-y-1">
                   <li>
@@ -933,12 +1089,12 @@ export const PreviewGeneration = ({
                     Gmail, and scheduling apps.
                   </li>
                   <li>
-                    <strong>Accounting Software:</strong> Connects to QuickBooks
-                    or Xero for streamlined billing.
+                    <strong>Accounting Software:</strong> Connects to popular
+                    billing systems.
                   </li>
                   <li>
                     <strong>Marketing Platforms:</strong> Integrates with
-                    Mailchimp, HubSpot, and ad networks.
+                    leading campaign tools.
                   </li>
                 </ul>
               </>,
@@ -948,7 +1104,6 @@ export const PreviewGeneration = ({
         </div>
       </div>
 
-      {/* Buttons */}
       <div className="flex items-center justify-between gap-2 p-4 w-full">
         <Button onClick={onReset} size="lg" variant="outline">
           Start Over
@@ -976,16 +1131,14 @@ function renderFactsCard(title: string, settings: Record<string, string>) {
     <div className="space-y-1">
       <h6 className="uppercase font-medium text-xxs tracking-wide">{title}</h6>
       <div className="w-full p-3 space-y-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl mb-4">
-        {Object.entries(settings).map(([key, value]) => {
-          return (
-            <div className="flex justify-between text-sm" key={key}>
-              <span className="text-zinc-500">{startCase(key)}</span>
-              <span className="text-zinc-900 dark:text-zinc-100 text-right">
-                {value}
-              </span>
-            </div>
-          )
-        })}
+        {Object.entries(settings).map(([key, value]) => (
+          <div className="flex justify-between text-sm" key={key}>
+            <span className="text-zinc-500">{startCase(key)}</span>
+            <span className="text-zinc-900 dark:text-zinc-100 text-right">
+              {value}
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   )

@@ -13,7 +13,7 @@ export function calculateFeasibilityScore(factors: FeasibilityFactors): number {
   const maxScore = Object.values(weights).reduce((a, b) => a + b, 0) * 4 // Maximum possible score
 
   // Apply a minimum feasibility boost so scores are never too low
-  const baselineBoost = maxScore * 0.15 // Ensures feasibility isn't too pessimistic
+  const baselineBoost = maxScore * 0.4 // Ensures feasibility isn't too pessimistic
 
   const totalScore =
     (5 - factors.techComplexity) * weights.techComplexity + // Inverted

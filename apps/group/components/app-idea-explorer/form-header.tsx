@@ -3,11 +3,12 @@ import type React from 'react'
 import { ShareButton } from '@/components/app-idea-explorer/share-button'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Sparkles } from 'lucide-react'
+import { RotateCcwIcon, Sparkles } from 'lucide-react'
 
 interface HeaderExplorerProps {
   isLoading: boolean
   onReset: () => void
+  onRetry: () => void
   setIsDialogOpen: React.Dispatch<React.SetStateAction<boolean>>
   showForm: boolean
 }
@@ -15,6 +16,7 @@ interface HeaderExplorerProps {
 export const HeaderExplorer: React.FC<HeaderExplorerProps> = ({
   isLoading,
   onReset,
+  onRetry,
   setIsDialogOpen,
   showForm,
 }) => {
@@ -34,12 +36,16 @@ export const HeaderExplorer: React.FC<HeaderExplorerProps> = ({
       {!isLoading && (
         <div className="flex items-center md:justify-end gap-1">
           <Button
-            className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 bg-transparent transition-colors"
             onClick={onReset}
             size="sm"
             variant="link"
           >
             Reset
+          </Button>
+
+          <Button onClick={onRetry} size="sm" variant="ghost">
+            <RotateCcwIcon className="w-4 h-4" />
           </Button>
 
           {/* Share button with icon */}

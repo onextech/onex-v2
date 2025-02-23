@@ -46,29 +46,6 @@ export const SettingsForm: React.FC<SettingsProps> = ({
 
   return (
     <div className="space-y-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/50">
-      {/* Industry Select */}
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-2">
-          <Briefcase className="w-3.5 h-3.5 text-zinc-500" />
-          <span className="text-sm text-zinc-500">Industry</span>
-        </div>
-        <Select
-          onValueChange={(value) => handleSettingChange('industry', value)}
-          value={settings.industry}
-        >
-          <SelectTrigger className="w-[140px] h-8 bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            {appIndustrys.map((industry) => (
-              <SelectItem key={industry} value={industry}>
-                {industry}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
       {/* App Category Select */}
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-2">
@@ -168,6 +145,29 @@ export const SettingsForm: React.FC<SettingsProps> = ({
             {appPlatforms.map((platform) => (
               <SelectItem key={platform} value={platform}>
                 {platform}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+
+      {/* Industry Select */}
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center gap-2">
+          <Briefcase className="w-3.5 h-3.5 text-zinc-500" />
+          <span className="text-sm text-zinc-500">Industry</span>
+        </div>
+        <Select
+          onValueChange={(value) => handleSettingChange('industry', value)}
+          value={settings.industry}
+        >
+          <SelectTrigger className="w-[140px] h-8 bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {appIndustrys.map((industry) => (
+              <SelectItem key={industry} value={industry}>
+                {industry}
               </SelectItem>
             ))}
           </SelectContent>

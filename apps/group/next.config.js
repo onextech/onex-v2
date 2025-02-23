@@ -6,7 +6,6 @@ const withBundleAnalyzer =
 /** @type {import('next').NextConfig} */
 module.exports = withBundleAnalyzer({
   i18n,
-  experimental: { appDir: true },
   reactStrictMode: true,
   transpilePackages: [
     '@onex/common',

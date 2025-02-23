@@ -34,158 +34,218 @@ export const feasibilityFactorsSchema = z
       ),
   })
   .describe(
-    'Feasibility factors assessing project constraints and requirements.'
+    'Feasibility factors assessing project constraints and requirements. In general, lower scores indicate easier development. SaaS apps may score lower (2 on average), while complex AI/Blockchain apps may score higher (4 on average).'
   )
 
 export const appIdeaResultSchema = z.object({
-  name: z.string().describe('The app name that summarizes the app idea in 2 - 5 words.'),
+  name: z
+    .string()
+    .describe('Provide a concise name summarizing the app idea in 2-5 words.'),
 
-  // ==============================
-  // Score
-  // ==============================
   feasibilityFactors: feasibilityFactorsSchema,
 
-  // ==============================
-  // Main Sections
-  // ==============================
-  costEstimates: z
-    .array(
-      z
-        .object({
+  costEstimates: z.object({
+    description: z
+      .string()
+      .describe(
+        'Describe how much it will cost to develop this app in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
           stage: z
             .string()
             .describe(
-              "Stage of the development process (e.g., 'MVP Development')."
+              'Identify the 3 levels of costs (e.g., "Prototype", "MVP", "Full-scale Development").'
             ),
-          cost: z
+          fromCost: z
             .string()
-            .describe("Estimated cost for the stage (e.g., 'From $5,000')."),
+            .describe(
+              'Provide a clear estimate of the starting cost for this level, keeping costs low. Prototype cost should always be around 5,000. Cost for any stage should never exceed 50,000'
+            ),
         })
-        .describe('Cost estimate item with stage and cost.')
-    )
-    .describe('Array of cost estimates for different development stages.'),
+      )
+      .describe(
+        'A list of cost estimate items for different development stages.'
+      ),
+  }),
 
-  coreFeatures: z
-    .array(
-      z
-        .object({
-          icon: z.string().describe('Icon representation (e.g., emoji).'),
-          title: z.string().describe('Title of the core feature.'),
+  coreFeatures: z.object({
+    description: z
+      .string()
+      .describe(
+        'List the core features that the app should have in 1-3 paragraphs with 1-3 sentences each paraagraph, emphasizing functionalities that deliver in user value.'
+      ),
+    items: z
+      .array(
+        z.object({
+          icon: z
+            .string()
+            .describe('Represent the feature visually (e.g., using an emoji).'),
+          title: z.string().describe('Provide the title of the feature.'),
           description: z
             .string()
-            .describe("Description of the feature's functionality."),
+            .describe(
+              'Explain the functionality and benefits of this feature in detail.'
+            ),
         })
-        .describe('Core feature item with icon, title, and description.')
-    )
-    .describe('Array of core features highlighting key functionalities.'),
+      )
+      .describe(
+        'A list of 5 core feature items that highlight key functionalities.'
+      ),
+  }),
 
-  developmentPhases: z
-    .array(
-      z
-        .object({
-          label: z.string().describe('Label for the development phase.'),
+  developmentPhases: z.object({
+    description: z
+      .string()
+      .describe(
+        'Explain the key phases of development and approximate timelines for each phase in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          label: z.string().describe('Name the development phase.'),
           duration: z
             .string()
-            .describe("Duration of the phase (e.g., '4-6 MONTHS')."),
+            .describe(
+              'Estimate the duration for this phase (e.g., "4-6 months").'
+            ),
           width: z
             .string()
-            .describe("Visual width indicator for the phase (e.g., '70%')."),
+            .describe(
+              'Provide a visual indicator (percentage) representing the phase duration.'
+            ),
         })
-        .describe('Development phase item with label, duration, and width.')
-    )
-    .describe('Array of development phases for timeline visualization.'),
+      )
+      .describe(
+        'A list of development phase items for timeline visualization.'
+      ),
+  }),
 
-  developmentTimelineSteps: z
-    .array(
-      z
-        .object({
-          title: z.string().describe('Title for the timeline step.'),
+  developmentTimelineSteps: z.object({
+    description: z
+      .string()
+      .describe(
+        'Provide step-by-step details of the development timeline, with each step described in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          title: z.string().describe('Name the timeline step.'),
           duration: z
             .string()
-            .describe('Duration detail for the timeline step.'),
+            .describe('Detail the duration or timing for this step.'),
         })
-        .describe('Timeline step item with title and duration.')
-    )
-    .describe('Array of timeline steps providing additional phase details.'),
+      )
+      .describe(
+        'A list of timeline step items offering additional details for development.'
+      ),
+  }),
 
-  projectTimelinePhases: z
-    .array(
-      z
-        .object({
-          label: z.string().describe('Label for the project timeline phase.'),
+  projectTimelinePhases: z.object({
+    description: z
+      .string()
+      .describe(
+        'Outline the major phases of the project timeline and explain how they sequentially lead to the final launch in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          label: z.string().describe('Name the phase of the project timeline.'),
           start: z
             .string()
-            .describe("Start position for the phase indicator (e.g., '0%')."),
+            .describe(
+              'Indicate the starting position of the phase (e.g., "0%").'
+            ),
           width: z
             .string()
-            .describe("Width of the phase indicator (e.g., '11.11%')."),
+            .describe(
+              'Provide the width as a percentage to visually represent the phase.'
+            ),
         })
-        .describe('Project timeline phase item with label, start, and width.')
-    )
-    .describe('Array of project timeline phases for displaying the process.'),
+      )
+      .describe('A list of project timeline phase items for visual display.'),
+  }),
 
-  projectTimelineSteps: z
-    .array(
-      z
-        .object({
-          title: z.string().describe('Title of the timeline step.'),
+  projectTimelineSteps: z.object({
+    description: z
+      .string()
+      .describe(
+        'Detail the steps in the project timeline with specific actions or milestones, each described in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          title: z.string().describe('Name the timeline step.'),
           description: z
             .string()
-            .describe("Description detailing the step's specifics."),
+            .describe('Provide a detailed explanation for this step.'),
         })
-        .describe('Project timeline step item with title and description.')
-    )
-    .describe('Array of project timeline steps with detailed descriptions.'),
+      )
+      .describe(
+        'A list of project timeline step items with detailed descriptions.'
+      ),
+  }),
 
-  ongoingExpenses: z
-    .array(
-      z
-        .object({
-          title: z.string().describe('Title for the expense item.'),
+  ongoingExpenses: z.object({
+    description: z
+      .string()
+      .describe(
+        'Describe the ongoing expenses for maintaining and scaling the app in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          title: z.string().describe('Name the expense item.'),
           description: z
             .string()
-            .describe('Description of the expense details.'),
+            .describe('Explain the expense details and their implications.'),
         })
-        .describe('Ongoing expense item with title and description.')
-    )
-    .describe(
-      'Array of ongoing expenses related to project maintenance and costs.'
-    ),
+      )
+      .describe(
+        'A list of ongoing expense items related to app maintenance and scaling.'
+      ),
+  }),
 
-  efficiencyAutomation: z
-    .array(
-      z
-        .object({
-          title: z
-            .string()
-            .describe('Title for the efficiency improvement area.'),
+  efficiencyAutomation: z.object({
+    description: z
+      .string()
+      .describe(
+        'Explain how the app can improve operational efficiency and automate tasks in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          title: z.string().describe('Name the efficiency improvement.'),
           description: z
             .string()
-            .describe('Description of the automation benefit.'),
+            .describe(
+              'Describe how this improvement benefits the app’s operations.'
+            ),
         })
-        .describe('Efficiency and automation item with title and description.')
-    )
-    .describe(
-      'Array of items detailing efficiency and automation improvements.'
-    ),
+      )
+      .describe('A list of 5 - 7 efficiency and automation improvement items.'),
+  }),
 
-  projectKickoffSteps: z
-    .array(
-      z
-        .object({
-          number: z
-            .number()
-            .describe('Step number in the project kickoff sequence.'),
-          title: z.string().describe('Title of the kickoff step.'),
+  projectKickoffSteps: z.object({
+    description: z
+      .string()
+      .describe(
+        'Outline the key steps to kick off the project, with each step described in 1-3 paragraphs with 1-3 sentences in each paragraph.'
+      ),
+    items: z
+      .array(
+        z.object({
+          title: z.string().describe('Provide the title of the kickoff step.'),
           description: z
             .string()
-            .describe('HTML description outlining the step details.'),
+            .describe(
+              'Offer an HTML description outlining the requirements and instructions for this step.'
+            ),
         })
-        .describe(
-          'Project kickoff step item with number, title, and description.'
-        )
-    )
-    .describe(
-      'Array of project kickoff steps outlining the initiation process.'
-    ),
+      )
+      .describe(
+        'A list of up to 3-5 project kickoff step items outlining the initiation process. Do not exceed more than 5 steps.'
+      ),
+  }),
 })

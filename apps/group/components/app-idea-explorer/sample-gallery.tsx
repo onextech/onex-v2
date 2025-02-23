@@ -42,7 +42,10 @@ export const SampleGallery: React.FC<SampleGalleryProps> = ({
     <div className="py-16">
       <div className="container">
         <div className="mb-4">
-          <PageSectionHeader className="text-3xl tracking-wide" title="From the Community" />
+          <PageSectionHeader
+            className="text-3xl tracking-wide"
+            title="From the Community"
+          />
           <PageSectionDescription description="Explore app ideas" />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
