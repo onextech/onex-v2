@@ -402,7 +402,7 @@ export const PreviewGeneration = ({
             <h3 className="leading-tight text-2xl font-semibold mb-1">
               {result?.name || <SkeletonText width="w-40" />}
             </h3>
-            <p className="max-w-lg mx-auto italic">"{appIdea}"</p>
+            <p className="max-w-lg mx-auto">{appIdea}</p>
           </div>
         )}
 
@@ -775,7 +775,7 @@ export const PreviewGeneration = ({
             {renderSection(
               'Are There Any Other Cost Considerations?',
               <DollarSign className="size-4 text-red-300" />,
-              'ONGOING EXPENSES',
+              'BUDGET EXPLORATION',
               <>
                 <p className="text-sm">
                   {result?.ongoingExpenses?.description}

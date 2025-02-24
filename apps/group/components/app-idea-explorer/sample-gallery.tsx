@@ -44,11 +44,11 @@ export const SampleGallery: React.FC<SampleGalleryProps> = ({
         <div className="mb-4">
           <PageSectionHeader
             className="text-3xl tracking-wide"
-            title="From the Community"
+            title="Try These App Ideas"
           />
-          <PageSectionDescription description="Explore app ideas" />
+          <PageSectionDescription description="Explore app ideas from the community" />
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {appIdeas.slice(0, visibleIdeas).map((idea, index) => (
             <button
               className="group block text-left overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 ease-in-out hover:shadow-md dark:hover:shadow-zinc-800/30"

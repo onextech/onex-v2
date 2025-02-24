@@ -213,7 +213,7 @@ export function LeadInfoDialog({
           <Textarea
             id="additionalMessage"
             onChange={(e) => handleChange('additionalMessage', e.target.value)}
-            placeholder="Any additional requests or information you'd like to share?"
+            placeholder="Is there anything else you'd like to share or know more about?"
             rows={4}
             value={formData.additionalMessage}
           />

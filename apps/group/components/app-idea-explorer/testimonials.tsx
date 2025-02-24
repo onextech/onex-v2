@@ -100,9 +100,9 @@ export const Testimonials: React.FC = () => {
       <div className="mb-4">
         <PageSectionHeader
           className="text-3xl tracking-wide"
-          title="What Business Owners Say"
+          title="From Business Owners"
         />
-        <PageSectionDescription description="Testimonials from business owners" />
+        <PageSectionDescription description="Find out what other business owners and entrepreneurs are saying" />
       </div>
       <div className="overflow-hidden">
         <div
