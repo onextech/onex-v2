@@ -1118,9 +1118,11 @@ export const PreviewGeneration = ({
       </div>
 
       <LeadInfoDialog
+        appIdea={appIdea}
         onDialogClose={onDialogClose}
         onOpenChange={setIsDialogOpen}
         open={isDialogOpen}
+        settings={settings}
       />
     </div>
   )

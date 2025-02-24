@@ -43,6 +43,7 @@ const getTargetSlackChannelByType = (type: EnquiryTypeEnum) => {
 }
 
 export interface PostEnquiryRequestBody {
+  company?: string
   email?: string
   job_department?: string
   job_role?: string
@@ -66,6 +67,7 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
 
   try {
     const {
+      company,
       country,
       email,
       industry,
@@ -91,6 +93,7 @@ const handlePostEnquiry = async (req: HandlePostEnquiryNextRequest) => {
       date,
       email,
       industry,
+      ...(company && { company }),
       job_department,
       job_role,
       message,

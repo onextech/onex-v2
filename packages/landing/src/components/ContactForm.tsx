@@ -33,15 +33,15 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         email: yup
           .mixed()
           .test('isValidEmail', 'Please enter a valid work email.', (value) => {
-            if (typeof value !== 'string') return false; // Ensure the value is a string
+            if (typeof value !== 'string') return false // Ensure the value is a string
 
-            const emailParts = value.split('@');
-            if (emailParts.length !== 2) return false; // Ensure it has one '@'
+            const emailParts = value.split('@')
+            if (emailParts.length !== 2) return false // Ensure it has one '@'
 
-            const domain = emailParts[1];
-            if (!domain.includes('.')) return false; // Ensure the domain contains a '.'
+            const domain = emailParts[1]
+            if (!domain.includes('.')) return false // Ensure the domain contains a '.'
 
-            return true;
+            return true
           }),
         mobile: yup
           .mixed()
