@@ -2,12 +2,16 @@
 
 import Script from 'next/script';
 
+const LINKEDIN_PARTNER_ID = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID || ''
+
 /* eslint-disable @next/next/no-img-element */
 export function LinkedinAdsInsightsTracker() {
+  if (!LINKEDIN_PARTNER_ID) return null;
+
   return (
     <>
       <Script id="linkedin-ads-script-1">    
-        {`_linkedin_partner_id = "5944204";
+        {`_linkedin_partner_id = "${LINKEDIN_PARTNER_ID}";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       </Script>
@@ -35,7 +39,7 @@ s.parentNode.insertBefore(b, s);
           width="1" 
           style={{display: 'none'}} 
           alt="" 
-          src="https://px.ads.linkedin.com/collect/?pid=5944204&fmt=gif" 
+          src={`https://px.ads.linkedin.com/collect/?pid=${LINKEDIN_PARTNER_ID}&fmt=gif`}
         />
       </noscript>
     </>

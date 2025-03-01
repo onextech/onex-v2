@@ -30,10 +30,12 @@ export const FacebookPixel = () => {
   const pathname = usePathname();
 
   React.useEffect(() => {
-    if (!loaded) return;
+    if (!loaded || !fpixel.FB_PIXEL_ID) return;
 
     fpixel.pageview();
   }, [pathname, loaded]);
+
+  if (!fpixel.FB_PIXEL_ID) return null;
 
   return (
     <div>
