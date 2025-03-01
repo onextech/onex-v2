@@ -17,6 +17,7 @@ import { cn } from '@/lib/utils'
 import { experimental_useObject as useObject } from '@ai-sdk/react'
 import { Sparkles } from 'lucide-react'
 import Link from 'next/link'
+import { sendGTMEvent } from '@next/third-parties/google'
 
 import { AppIdeaForm } from './app-idea-form'
 import { ErrorGeneration } from './error-generation'
@@ -95,8 +96,16 @@ export function AppIdeaExplorer() {
       // Fire LLM call
       handleGenerate()
 
-      // TODO@Joel: Save the user's query to db
-      await new Promise((resolve) => setTimeout(resolve, 3000))
+      // Send Google Tag Manager event using Next.js third-party integration
+      sendGTMEvent({
+        event: 'app_idea_explorer_submission',
+        app_idea: appIdea,
+        app_category: settings.appCategory,
+        app_type: settings.appType,
+        industry: settings.industry,
+        platform: settings.platform,
+        target_audience: settings.targetAudience
+      });
 
       setShowForm(false)
     } catch {
