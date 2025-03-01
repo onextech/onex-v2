@@ -26,6 +26,7 @@ import { SampleGallery } from './sample-gallery'
 import { Testimonials } from './testimonials'
 
 import '@/styles/marquee.css'
+import { IdeaMarquee } from '@/components/app-idea-explorer/idea-marquee'
 
 const defaultSettings: AppIdeaSettings = {
   appCategory: appCategories[0],
@@ -126,31 +127,31 @@ export function AppIdeaExplorer() {
   return (
     <div className="min-h-screen bg-muted">
       {/* Hero */}
-      <div className="pt-32 pb-16 w-full dark:bg-black bg-zinc-50 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
-        {/* Card */}
+      <div className={cn(
+        "pt-16 md:pt-20 pb-16 w-full relative flex items-center justify-center before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)] before:bg-[size:4rem_4rem] before:pointer-events-none before:opacity-20",
+        !showAdditionalFields ? "bg-gradient-to-b to-black from-zinc-800" : "bg-zinc-900"
+      )}>
         <div className="container relative">
-          <div className="max-h-[300px] absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_rgba(0,0,0,0)_70%)]" />
-          <div className="relative md:px-8">
-            <div>
+          <div className="md:px-8">
               {/* Title */}
-              <div className="max-w-xl mx-auto mb-8">
-                <div className="text-center mb-6">
+              <div className="dark max-w-xl mx-auto mb-8">
+                <div className="text-center mb-12">
                   <Link href="/">
-                    <Logo className="w-[120px] inline-block" />
+                    <Logo className="w-[120px] inline-block fill-white" />
                   </Link>
                 </div>
-                <h1 className="font-publico-headline text-5xl font-bold mb-4 text-center">
+                <h1 className="font-publico-headline text-foreground text-5xl mb-4 text-center">
                   App Idea Explorer
                 </h1>
                 <p className="text-xl text-muted-foreground text-center">
                   Describe your app idea and find out if it can be built
-                  instantly. Get access to an in-depth breakdown of what’s
+                  instantly. Get access to an in-depth breakdown of what's
                   required and actionable steps to bring your idea to life.
                 </p>
               </div>
 
               {/* Form */}
-              <div
+              <section
                 className={cn(
                   `group relative overflow-hidden w-full mx-auto transition-all duration-300 ease-in-out flex flex-col justify-between ${
                     showAdditionalFields
@@ -170,6 +171,7 @@ export function AppIdeaExplorer() {
                     showForm={showForm}
                   />
                 )}
+
                 <div className="flex-1 overflow-hidden flex flex-col">
                   {error && <ErrorGeneration error={error} />}
 
@@ -189,7 +191,7 @@ export function AppIdeaExplorer() {
                       <div
                         className={cn(
                           'flex gap-2 opacity-0 invisible transition-opacity',
-                          showAdditionalFields && 'pb-4 px-4',
+                          showAdditionalFields ? 'pb-4 px-4' : 'dark',
                           appIdea &&
                             'visible opacity-100 delay-200 duration-1000 ease-in-out'
                         )}
@@ -198,6 +200,7 @@ export function AppIdeaExplorer() {
                           className="h-11 rounded-full w-full flex items-center justify-center gap-2"
                           size="lg"
                           type="submit"
+                          variant={showAdditionalFields ? "default" : "secondary"}
                         >
                           <Sparkles className="w-3.5 h-3.5" />
                           Explore Idea
@@ -220,9 +223,10 @@ export function AppIdeaExplorer() {
                     </div>
                   )}
                 </div>
-              </div>
+              </section>
+
+              <IdeaMarquee className="mt-10 md:mt-14" onSelectIdea={handleSelectIdeaSample} />
             </div>
-          </div>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import svgToDataUri from 'mini-svg-data-uri'
 import tailwindAnimate from 'tailwindcss-animate'
 import { fontFamily } from 'tailwindcss/defaultTheme'
 import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette'
+import scrollbarHide from 'tailwind-scrollbar-hide'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -19,6 +20,7 @@ export default {
   darkMode: 'class',
   important: '#__next',
   plugins: [
+    scrollbarHide,
     tailwindAnimate,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
@@ -46,13 +48,15 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: '1.5rem',
       screens: {
         '2xl': '1400px',
       },
     },
     extend: {
       animation: {
+        'pause': 'none',
+        'marquee': 'marquee 25s linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'caret-blink': 'caret-blink 1s ease-in-out infinite',
@@ -131,6 +135,10 @@ export default {
         ],
       },
       keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
         'accordion-down': {
           from: {
             height: '0',

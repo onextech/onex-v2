@@ -240,7 +240,7 @@ const Image: React.FC<ImageProps> = (props) => {
 
   const getImageProps = () => {
     const commonProps = {
-      onLoadingComplete: () => setLoading(false),
+      onLoad: () => setLoading(false),
     }
 
     const nextRest = omit(rest, [

@@ -54,8 +54,8 @@ export const AppIdeaForm: React.FC<FormProps> = ({
           )}
         >
           <div className="flex items-center gap-1">
-            <MessageCircle className="w-3.5 h-3.5 text-zinc-500" />
-            <span className="text-sm text-zinc-500">Describe Your App</span>
+            <MessageCircle className="w-3.5 h-3.5 text-muted-foreground" />
+            <label className="text-sm text-muted-foreground font-medium">Describe Your App</label>
           </div>
 
           <TooltipProvider>
