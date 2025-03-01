@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { IdeaMarquee } from '@/components/app-idea-explorer/idea-marquee'
 import {
@@ -45,6 +45,11 @@ export function AppIdeaExplorer() {
   const [appIdea, setAppIdea] = useState('')
   const [settings, setSettings] = useState<AppIdeaSettings>(defaultSettings)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [delayedMousePosition, setDelayedMousePosition] = useState({
+    x: 0,
+    y: 0,
+  })
 
   const {
     submit,
@@ -133,17 +138,57 @@ export function AppIdeaExplorer() {
     handleClear()
   }
 
+  useEffect(() => {
+    const updateMousePosition = (ev: MouseEvent) => {
+      setMousePosition({ x: ev.clientX, y: ev.clientY })
+    }
+
+    window.addEventListener('mousemove', updateMousePosition)
+    return () => {
+      window.removeEventListener('mousemove', updateMousePosition)
+    }
+  }, [])
+
+  // Add smooth delay effect to mouse movement
+  useEffect(() => {
+    const smoothFactor = 0.15 // Adjust this value to control the smoothness (lower = more delay)
+
+    const animatePosition = () => {
+      setDelayedMousePosition((prev) => ({
+        x: prev.x + (mousePosition.x - prev.x) * smoothFactor,
+        y: prev.y + (mousePosition.y - prev.y) * smoothFactor,
+      }))
+
+      requestAnimationFrame(animatePosition)
+    }
+
+    const animationId = requestAnimationFrame(animatePosition)
+    return () => cancelAnimationFrame(animationId)
+  }, [mousePosition])
+
   return (
     <div className="min-h-screen bg-muted">
       {/* Hero */}
       <div
         className={cn(
-          'pt-16 md:pt-20 pb-16 w-full relative flex items-center justify-center before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)] before:bg-[size:4rem_4rem] before:pointer-events-none before:opacity-20',
+          'pt-16 md:pt-20 pb-16 w-full relative flex items-center justify-center before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)] before:bg-[size:4rem_4rem] before:pointer-events-none before:opacity-20 overflow-hidden',
           showAdditionalFields
             ? 'bg-zinc-900'
             : 'bg-gradient-to-b to-black from-zinc-800'
         )}
       >
+        {/* Mouse-following gradient overlay */}
+        {showForm && (
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: `radial-gradient(circle 800px at ${delayedMousePosition.x}px ${delayedMousePosition.y}px, rgba(125, 90, 255, 0.8) 0%, rgba(45, 212, 191, 0.5) 25%, transparent 70%)`,
+              opacity: 0.2,
+              filter: 'blur(80px)',
+              zIndex: 0,
+            }}
+          />
+        )}
         <div className="container relative">
           <div className="md:px-8">
             {/* Title */}
