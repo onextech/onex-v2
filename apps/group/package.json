@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "1.1.10",
+    "@bprogress/next": "^3.2.1",
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
@@ -25,6 +26,7 @@
     "@mui/icons-material": "5.11.16",
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "latest",
+    "@next/third-parties": "^15.2.0",
     "@onex/analytics": "*",
     "@onex/common": "*",
     "@onex/config": "*",
