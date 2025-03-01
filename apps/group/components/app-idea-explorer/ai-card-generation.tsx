@@ -104,16 +104,15 @@ export function AppIdeaExplorer() {
       // Send Google Tag Manager event using Next.js third-party integration
       sendGTMEvent({
         event: 'app_idea_explorer_submission',
-        value: {
+        value: JSON.stringify({
           app_idea: appIdea,
           app_category: settings.appCategory,
           app_type: settings.appType,
           industry: settings.industry,
           platform: settings.platform,
           target_audience: settings.targetAudience,
-        },
+        }),
       })
-
       setShowForm(false)
     } catch {
       setError('Failed to generate analysis. Please try again.')
