@@ -1,8 +1,9 @@
 'use client'
 
 import type React from 'react'
-import { cn } from '@/lib/utils'
+
 import { Badge } from '@/components/ui/badge'
+import { cn } from '@/lib/utils'
 
 export interface AppIdeaSample {
   description: string
@@ -18,9 +19,9 @@ export interface AppIdeaSample {
 }
 
 interface AppIdeaCardProps {
+  className?: string
   idea: AppIdeaSample
   onClick: () => void
-  className?: string
 }
 
 export const AppIdeaCard: React.FC<AppIdeaCardProps> = ({
@@ -31,7 +32,7 @@ export const AppIdeaCard: React.FC<AppIdeaCardProps> = ({
   return (
     <button
       className={cn(
-        "group block text-left overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-900 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 ease-in-out hover:shadow-md dark:hover:shadow-zinc-800/30",
+        'group block text-left overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-900 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 ease-in-out hover:shadow-md dark:hover:shadow-zinc-800/30',
         className
       )}
       onClick={onClick}
@@ -54,4 +55,4 @@ export const AppIdeaCard: React.FC<AppIdeaCardProps> = ({
       </div>
     </button>
   )
-} 
+}

@@ -1,23 +1,24 @@
-"use client";
+'use client'
 
-import { usePathname } from "next/navigation";
-import Script from "next/script";
-import * as React from "react";
+import * as React from 'react'
 
-export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+import { usePathname } from 'next/navigation'
+import Script from 'next/script'
+
+export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
 
 export const pageview = () => {
-  if (typeof window !== "undefined") {
-    window.fbq("track", "PageView");
+  if (typeof window !== 'undefined') {
+    window.fbq('track', 'PageView')
   }
-};
+}
 
 // https://developers.facebook.com/docs/facebook-pixel/advanced/
 export const event = (name: string, options = {}) => {
-  if (typeof window !== "undefined") {
-    window.fbq("track", name, options);
+  if (typeof window !== 'undefined') {
+    window.fbq('track', name, options)
   }
-};
+}
 
 export const fpixel = {
   FB_PIXEL_ID,
@@ -26,26 +27,26 @@ export const fpixel = {
 }
 
 export const FacebookPixel = () => {
-  const [loaded, setLoaded] = React.useState(false);
-  const pathname = usePathname();
+  const [loaded, setLoaded] = React.useState(false)
+  const pathname = usePathname()
 
   React.useEffect(() => {
-    if (!loaded || !fpixel.FB_PIXEL_ID) return;
+    if (!loaded || !fpixel.FB_PIXEL_ID) return
 
-    fpixel.pageview();
-  }, [pathname, loaded]);
+    fpixel.pageview()
+  }, [pathname, loaded])
 
-  if (!fpixel.FB_PIXEL_ID) return null;
+  if (!fpixel.FB_PIXEL_ID) return null
 
   return (
     <div>
       <Script
+        data-pixel-id={fpixel.FB_PIXEL_ID}
         id="fb-pixel"
+        onLoad={() => setLoaded(true)}
         src="/scripts/pixel.js"
         strategy="afterInteractive"
-        onLoad={() => setLoaded(true)}
-        data-pixel-id={fpixel.FB_PIXEL_ID}
       />
     </div>
-  );
-};
+  )
+}
