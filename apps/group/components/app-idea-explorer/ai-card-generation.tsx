@@ -113,7 +113,7 @@ export function AppIdeaExplorer() {
           target_audience: settings.targetAudience,
         }),
       })
-      
+
       setShowForm(false)
     } catch {
       setError('Failed to generate analysis. Please try again.')

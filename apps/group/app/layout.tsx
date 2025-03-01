@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { GoogleTagManager } from '@next/third-parties/google'
 
 import '@/styles/globals.css'
-import '@/styles/preflight.css'; // Maintain our own preflight to work with MUI interop @see https://github.com/tailwindlabs/tailwindcss/discussions/11290#discussioncomment-7783598
+import '@/styles/preflight.css' // Maintain our own preflight to work with MUI interop @see https://github.com/tailwindlabs/tailwindcss/discussions/11290#discussioncomment-7783598
 
 import { FacebookPixel } from '@/lib/analytics/facebook-pixel'
 import { LinkedinAdsInsightsTracker } from '@/lib/analytics/linkedin-ads-insights-tracker'
