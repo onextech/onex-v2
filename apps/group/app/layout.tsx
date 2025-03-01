@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import '@/styles/globals.css'
-import '@/styles/preflight.css' // Maintain our own preflight to work with MUI interop @see https://github.com/tailwindlabs/tailwindcss/discussions/11290#discussioncomment-7783598
+import '@/styles/preflight.css'; // Maintain our own preflight to work with MUI interop @see https://github.com/tailwindlabs/tailwindcss/discussions/11290#discussioncomment-7783598
 
 import { FacebookPixel } from '@/lib/analytics/facebook-pixel'
 import { LinkedinAdsInsightsTracker } from '@/lib/analytics/linkedin-ads-insights-tracker'
@@ -58,7 +58,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ''} />
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
 
       <body
         className={`${fonts.roboto.variable} ${fonts.publicoHeadline.variable} ${fonts.publicoText.variable} antialiased`}

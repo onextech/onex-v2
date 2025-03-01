@@ -16,7 +16,7 @@ import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { experimental_useObject as useObject } from '@ai-sdk/react'
-import { sendGAEvent } from '@next/third-parties/google'
+import { sendGTMEvent } from '@next/third-parties/google'
 import { Sparkles } from 'lucide-react'
 import Link from 'next/link'
 
@@ -101,16 +101,19 @@ export function AppIdeaExplorer() {
       // Fire LLM call
       handleGenerate()
 
-      // Send Google Analytics event using Next.js third-party integration
-      sendGAEvent('event', 'app_idea_explorer_submission', {
-        app_idea: appIdea,
-        app_category: settings.appCategory,
-        app_type: settings.appType,
-        industry: settings.industry,
-        platform: settings.platform,
-        target_audience: settings.targetAudience,
+      // Send Google Tag Manager event using Next.js third-party integration
+      sendGTMEvent({
+        event: 'app_idea_explorer_submission',
+        value: JSON.stringify({
+          app_idea: appIdea,
+          app_category: settings.appCategory,
+          app_type: settings.appType,
+          industry: settings.industry,
+          platform: settings.platform,
+          target_audience: settings.targetAudience,
+        }),
       })
-
+      
       setShowForm(false)
     } catch {
       setError('Failed to generate analysis. Please try again.')
