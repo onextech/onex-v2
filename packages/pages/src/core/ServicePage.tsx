@@ -57,18 +57,12 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderHeroBlock({
           item: service,
         }),
-        <FeaturesSection />,
         <GalleryMarqueeSection />,
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
-        // Challenges
-        challenges &&
-          renderThreeColumnGridBlock({
-            ...challenges,
-          }),
         // Solution Offering
         renderThreeColumnGridBlock({
           ...features,
@@ -83,49 +77,26 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             pt: { xs: 5, md: 10 },
             subtitle: showcase.subtitle,
           }),
-        // Callout
-        renderServiceNotFoundCalloutBlock(),
+        // Technologys
+        renderTechnologysBlock({ items: technologys }),
+        // Process
+        renderSoftwareLifecycleBlock(),
+        // Related Posts
+        renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
+        // UniqueSellingPoints
+        renderFourColumnGridBlock(usps),
+        // Form
+        renderLeadFormBlock(),
         renderClientTestimonialSliderBlock({
           title: testimonial.title,
           dark: true,
           items: clientTestimonials,
           subtitle: testimonial.subtitle,
         }),
-        // Technologys
-        renderTechnologysBlock({ items: technologys }),
-        // Process
-        renderSoftwareLifecycleBlock(),
-        // Offerings: From Concept to Completion
-        renderThreeColumnGridBlock({
-          ...offerings,
-          sx: { backgroundColor: 'background.paper' },
-          textAlign: 'left',
-        }),
-        // UniqueSellingPoints
-        renderFourColumnGridBlock(usps),
-        // Related Posts
-        renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
         // Faqs
         renderFaqsAccordionBlock({
           ...faqs,
         }),
-        // Cta
-        renderFadeToBottomBackgroundImageBlock({
-          buttonProps: {
-            title: 'Get in Touch',
-            href: `/${routeConfig.CONTACT}`,
-            overline: 'Contact Us',
-          },
-          subtitleProps: {
-            maxWidth: 'xl',
-            titleProps: { maxWidth: '72%' },
-            type: 'body1',
-          },
-          titleProps: { maxWidth: 'xl', type: 'h3' },
-          ...cta,
-        }),
-        // Form
-        renderLeadFormBlock(),
         // Related Services
         renderRelatedServicesBlock({
           items: relatedServices,
