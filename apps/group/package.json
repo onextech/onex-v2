@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "1.1.10",
+    "@bprogress/next": "^3.2.1",
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
@@ -25,6 +26,7 @@
     "@mui/icons-material": "5.11.16",
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "latest",
+    "@next/third-parties": "^15.2.0",
     "@onex/analytics": "*",
     "@onex/common": "*",
     "@onex/config": "*",
@@ -96,6 +98,7 @@
     "sharp": "^0.31.3",
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.0.1",
+    "tailwind-scrollbar-hide": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
     "yup": "0.32.11",

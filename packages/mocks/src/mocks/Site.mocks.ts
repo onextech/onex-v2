@@ -539,7 +539,6 @@ export const MOCK_AEL_SITE: Site = {
 
   // disable faqs
   disable_faqs_on_home_page: true,
-  // TODO@Joel: Type this in GVS
   // @ts-ignore
   disable_service_categorys: true,
 

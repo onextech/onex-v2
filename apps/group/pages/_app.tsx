@@ -36,4 +36,5 @@ const MyApp = (props: MyAppProps) => {
   )
 }
 
+// @ts-ignore
 export default appWithTranslation(MyApp)

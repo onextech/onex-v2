@@ -2,8 +2,8 @@ import { appIdeaResultSchema } from '@/components/app-idea-explorer/schema'
 import { openai } from '@ai-sdk/openai'
 import { streamObject } from 'ai'
 
-// Allow streaming responses up to 30 seconds
-export const maxDuration = 30
+// Allow streaming responses up to 60 seconds
+export const maxDuration = 60
 
 export async function POST(req: Request) {
   const context = await req.json()
