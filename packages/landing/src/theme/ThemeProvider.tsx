@@ -33,7 +33,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
     >
       <NextThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="dark"
         disableTransitionOnChange
         enableSystem
         forcedTheme={isDarkMode ? 'dark' : 'light'}

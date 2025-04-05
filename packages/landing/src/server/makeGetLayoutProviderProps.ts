@@ -1,4 +1,5 @@
 import { getCrudItemsByCategory, withLocales } from '@onex/utils'
+import { fetchClientTestimonials, fetchSite } from '@onex/server'
 
 import { LayoutConfig } from './types'
 
@@ -8,7 +9,7 @@ const makeGetLayoutProviderProps =
     const {
       clientHighlights = [],
       clientLogos = [],
-      clientTestimonials = [],
+      clientTestimonials: injectedClientTestimonials = [],
       industrys = [],
       pages = [],
       postCategorys = [],
@@ -16,16 +17,19 @@ const makeGetLayoutProviderProps =
       serviceCategorys = [],
       services = [],
       showcases = [],
-      site = {},
+      site: injectedSite = {},
       technologys = [],
       workspaces = [],
     } = layoutConfig
+    const { locale, defaultLocale } = context
+    const site = {
+      ...injectedSite,
+      ...(locale !== defaultLocale && fetchSite({ locale }) ),
+    }
+    const clientTestimonials = locale !== defaultLocale ? fetchClientTestimonials({ locale }) : injectedClientTestimonials
     return {
       clientHighlights,
-
-      // Modules
       clientLogos,
-
       clientTestimonials,
       industrys: industrys
         ?.filter(({ is_hidden_from_header }) => !is_hidden_from_header)
@@ -38,7 +42,6 @@ const makeGetLayoutProviderProps =
         ...postCategory,
         href: `${routeConfig.POSTS}/${postCategory.slug}`,
       })),
-      // Configs
       routeConfig,
       serviceCategorys,
       services: getCrudItemsByCategory(
@@ -55,7 +58,6 @@ const makeGetLayoutProviderProps =
         ),
       })),
       showcases,
-      // Site
       site,
       technologys: technologys
         .filter(({ is_hidden_from_header }) => !is_hidden_from_header)

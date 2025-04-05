@@ -11,7 +11,6 @@ export type LandingLayoutProps = LandingLayoutTemplateProps
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
   const { routeConfig, site } = useLayout()
   const { headerProps, ...rest } = props
-
   return (
     <LandingLayoutTemplate
       useLayout={useLayout}

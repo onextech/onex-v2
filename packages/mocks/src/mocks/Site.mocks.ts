@@ -111,6 +111,28 @@ export const MOCK_GROUP_SITE: Site = {
   social_media_instagram_url: 'https://www.instagram.com/onexgroup.co',
 }
 
+export const MOCK_GROUP_AU_SITE = {
+  ...MOCK_GROUP_SITE,
+  // Address
+  office_address: '152 Elizabeth Street Melbourne, VIC 3000',
+  office_address_url: 'https://maps.app.goo.gl/6VHsbazufnfcS15q8',
+  office_title: 'Australia',
+  general_email: 'info@onexgroup.co',
+  general_phone: '',
+  general_whatsapp: '',
+}
+
+export const MOCK_GROUP_AE_SITE = {
+  ...MOCK_GROUP_SITE,
+  // Address
+  office_address: 'One Central Plaza 8th and 9th Floor - Trade Centre/Trade Centre 2',
+  office_address_url: 'https://maps.app.goo.gl/b1gdVjCYrEqWEzL6A',
+  office_title: 'Dubai (UAE)',
+  general_email: 'info@onexgroup.co',
+  general_phone: '',
+  general_whatsapp: '',
+}
+
 export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
 
@@ -808,6 +830,8 @@ export const MOCK_SITE = {
   FINX: MOCK_FINX_SITE,
   GOVX: MOCK_GOVX_SITE,
   GROUP: MOCK_GROUP_SITE,
+  GROUP_AU: MOCK_GROUP_AU_SITE,
+  GROUP_AE: MOCK_GROUP_AE_SITE,
   GVS: MOCK_GVS_SITE,
   SRI: MOCK_SRI_SITE,
   TECH: MOCK_TECH_SITE,

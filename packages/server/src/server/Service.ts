@@ -44,7 +44,7 @@ export const ServiceDetail = {
     }),
   getStaticProps: (): GetStaticProps => async (context) => {
     const service = fetchServiceBySlug(context.params?.slug)
-    const site = fetchSite()
+    const site = fetchSite({ locale: context.locale })
     const servicePage = getDynamicPage({ context, page: service, site })
     const serviceCategory = getCategoryFromCrudItem(
       service,

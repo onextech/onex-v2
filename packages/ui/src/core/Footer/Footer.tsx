@@ -148,6 +148,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                     titleProps: { targetBlank: true },
                   },
                 ].map(({ title, href, overline, startIcon, titleProps }) => {
+                  if (!title) return null
                   return (
                     <div key={title}>
                       <Link sx={{ color: 'text.secondary' }} href={href} {...titleProps}>

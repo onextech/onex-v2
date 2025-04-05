@@ -25,13 +25,13 @@ const renderContactLinksBlockItems = () => {
         overline: 'Submit a general inquiry',
         startIcon: <EmailOutlinedIcon color="action" />,
       },
-      {
+      general_phone && {
         title: general_phone,
         href: `tel:${general_phone?.replaceAll(' ', '')}`,
         overline: 'General hotline',
         startIcon: <LocalPhoneOutlinedIcon color="action" />,
       },
-      {
+      general_whatsapp && {
         title: general_whatsapp,
         href: `https://wa.me/${general_whatsapp?.replaceAll(' ', '')}?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20One%20X.%20Could%20you%20please%20provide%20me%20with%20some%20additional%20information?%20Thank%20you!`,
         overline: 'WhatsApp',

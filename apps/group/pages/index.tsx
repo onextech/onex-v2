@@ -23,8 +23,7 @@ import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY = '' } = process.env
-
-  const site = fetchSite()
+  const site = fetchSite({ locale: context.locale })
   const page = getDynamicPage({
     context,
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
