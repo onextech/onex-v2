@@ -1672,6 +1672,184 @@ export const MOCK_GROUP_SERVICES = [
       'Helping you create environmentally responsible software solutions for your business.',
   },
   {
+    title: 'AI Software Development',
+    slug: 'ai-software-development',
+    category_id: 2,
+    hero_alt: 'AI software system visualised with futuristic digital interfaces',
+    hero_src: '/unsplash/nYSdjVD2ayo.jpg',
+    // Sections
+    sections: {
+      challenges: {
+        title: 'Solving Key Challenges for Businesses',
+        center: true,
+        items: [
+          {
+            title: 'Lack of In-house AI Expertise',
+            fa_icon: 'fa-brain',
+            subtitle:
+              'Many companies struggle to implement AI due to limited access to experts who can design and deploy scalable machine learning models.',
+          },
+          {
+            title: 'Data Overload and Poor Utilization',
+            fa_icon: 'fa-database',
+            subtitle:
+              'Businesses often have access to vast amounts of data but lack the tools and techniques to convert it into meaningful, actionable insights.',
+          },
+          {
+            title: 'Unclear AI Strategy',
+            fa_icon: 'fa-question-circle',
+            subtitle:
+              'Without a clear understanding of how AI can solve real business problems, teams may invest in the wrong tools or implement solutions that don’t deliver ROI.',
+          },
+          {
+            title: 'Complex AI Model Deployment',
+            fa_icon: 'fa-network-wired',
+            subtitle:
+              'Moving from a prototype to a production-ready AI system is challenging and requires scalable architecture and continuous performance tuning.',
+          },
+          {
+            title: 'Integration with Existing Workflows',
+            fa_icon: 'fa-plug',
+            subtitle:
+              'Integrating AI solutions into current business operations and systems can be difficult and requires careful planning and execution.',
+          },
+          {
+            title: 'Ethical and Regulatory Concerns',
+            fa_icon: 'fa-scale-balanced',
+            subtitle:
+              'Businesses must ensure that AI solutions are fair, transparent, and compliant with data privacy and regulatory standards.',
+          },
+        ],
+        overline: 'How We Help',
+        subtitle:
+          'From lack of expertise to unclear ROI, businesses face real hurdles in implementing AI. Our team helps you navigate these challenges, from strategy to deployment, ensuring your AI initiatives are practical, impactful, and scalable.',
+      },
+      facts: {
+        title: 'Key Information about {title}',
+        items: [
+          {
+            id: 'facts-1',
+            title: 'Benefits of {title}',
+            content: `Intelligent Automation  
+              AI software automates repetitive, time-consuming tasks—freeing up human resources for higher-value work and improving overall efficiency.  
+              
+              Smarter Decision-Making  
+              Our AI solutions use data-driven models to provide predictive insights and support real-time decision-making across various business functions.  
+              
+              Competitive Advantage  
+              Custom AI applications can unlock new revenue streams, improve customer experiences, and provide a distinct edge over competitors still relying on traditional systems.`,
+          },
+          {
+            id: 'facts-2',
+            title: 'Understanding the {title} Process',
+            content:
+              'Our AI software development process starts with a discovery phase to identify key opportunities for automation and intelligence. We then collect and prepare data, build and train machine learning models, and integrate them into your business systems.\n\nUsing agile methodologies, we validate results through rapid iteration and deploy models using MLOps practices, ensuring ongoing performance and scalability.',
+          },
+          {
+            id: 'facts-3',
+            title: 'Who needs {title}?',
+            content:
+              "{title} is ideal for organizations looking to automate processes, unlock insights from data, personalize customer experiences, or make smarter decisions with predictive analytics.\n\nWhether you're a startup experimenting with AI or an enterprise seeking scalable solutions, our team tailors every build to your business needs and data maturity.",
+          },
+        ],
+        overline: 'Facts',
+        subtitle:
+          'We help businesses leverage artificial intelligence to build intelligent systems that optimize operations, enhance customer experiences, and drive innovation.',
+      },
+      faqs: {
+        title: 'FAQs',
+        items: [
+          {
+            id: 'faqs-1',
+            title: 'What types of AI solutions do you build?',
+            content:
+              'We build a wide range of AI solutions including recommendation engines, computer vision systems, natural language processing tools, chatbots, predictive analytics models, and more.',
+          },
+          {
+            id: 'faqs-2',
+            title: 'How long does AI software development typically take?',
+            content:
+              'Timelines vary depending on complexity and data availability. Simple proof-of-concept models can take a few weeks, while full production systems may take several months.',
+          },
+          {
+            id: 'faqs-3',
+            title: 'Can you integrate AI with our existing systems?',
+            content:
+              'Yes, we specialize in seamless integration. We ensure your new AI tools communicate effectively with your current workflows, CRMs, ERPs, or custom platforms.',
+          },
+        ],
+        subtitle:
+          'Learn more about how our AI Software Development services can bring intelligent automation and strategic insights to your business.',
+      },
+      features: {
+        title: 'End-to-end {title} Capabilities',
+        items: [
+          {
+            title: 'AI Strategy & Roadmapping',
+            fa_icon: 'fa-lightbulb',
+            subtitle:
+              'Work with our consultants to define the right AI use cases, build a roadmap, and ensure alignment with your business objectives.',
+          },
+          {
+            title: 'Data Preparation & Engineering',
+            fa_icon: 'fa-server',
+            subtitle:
+              'We clean, structure, and transform raw data to power accurate and reliable machine learning models.',
+          },
+          {
+            title: 'Model Development & Training',
+            fa_icon: 'fa-robot',
+            subtitle:
+              'Our team builds, trains, and fine-tunes models using machine learning, deep learning, and neural networks tailored to your goals.',
+          },
+          {
+            title: 'MLOps & Model Deployment',
+            fa_icon: 'fa-cloud-upload-alt',
+            subtitle:
+              'Deploy scalable models with monitoring and CI/CD pipelines for ongoing updates, retraining, and optimization.',
+          },
+          {
+            title: 'AI-Powered Applications',
+            fa_icon: 'fa-cogs',
+            subtitle:
+              'We build intelligent web and mobile apps powered by real-time AI engines for decision support, automation, or personalization.',
+          },
+          {
+            title: 'Ethical & Responsible AI Design',
+            fa_icon: 'fa-scale-balanced',
+            subtitle:
+              'We ensure AI systems are transparent, fair, explainable, and aligned with legal and ethical standards.',
+          },
+        ],
+        overline: 'Solution Offering',
+        subtitle:
+          'Our team brings together strategy, data engineering, AI modeling, and deployment expertise to deliver production-ready, high-impact AI solutions.',
+      },
+      summary: {
+        title: 'Transforming Businesses with {title} Services',
+        items: [
+          {
+            title:
+              "{appTitle}'s {title} service empowers businesses to unlock the full potential of AI, delivering intelligent automation, improved decision-making, and competitive advantages.",
+          },
+          {
+            title:
+              'From data collection to model deployment, we partner with your team to design AI solutions that integrate smoothly into your operations and deliver measurable results.',
+          },
+        ],
+        overline: 'Summary',
+      },
+    },
+    // Seo
+    seo: {
+      title: 'AI Software Development',
+      description:
+        'Discover how our AI software development services help businesses automate, optimize, and innovate using machine learning, natural language processing, and intelligent systems.',
+    },
+    subtitle:
+      'We help businesses leverage AI to build intelligent software solutions that automate processes, improve decision-making, and fuel growth.',
+  },
+  {
     title: 'Custom Software Development',
     slug: 'custom-software-development',
     category_id: 2,
@@ -7235,6 +7413,7 @@ export const MOCK_DIGITAL_SERVICES = [
       description:
         'Leverage data to drive business growth and stay ahead of the competition.',
     },
+
     subtitle:
       'Leverage data to drive business growth and stay ahead of the competition.',
   },
