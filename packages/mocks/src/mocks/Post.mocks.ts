@@ -828,6 +828,18 @@ export const MOCK_GROUP_POSTS = [
   ...item,
 }))
 
+const MOCK_GROUP_AE_POSTS = [
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'future-proofing-business-strategies-long-term-growth-success'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'guide-implementing-new-technologies-level-up-business'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'achieving-successful-digital-transformation-in-the-enterprise'),
+]
+
+const MOCK_GROUP_AU_POSTS = [
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'future-proofing-business-strategies-long-term-growth-success'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'guide-implementing-new-technologies-level-up-business'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'achieving-successful-digital-transformation-in-the-enterprise'),
+]
+
 export const MOCK_DATA_POSTS = [
   {
     published_at: '2023-05-23T14:00:00+0000',
@@ -2747,6 +2759,9 @@ export const MOCK_COASTAL_POSTS = [
 
 export const MOCK_POSTS = {
   GROUP: MOCK_GROUP_POSTS,
+  GROUP_AE: MOCK_GROUP_AE_POSTS,
+  GROUP_AU: MOCK_GROUP_AU_POSTS,
+
   TECH: MOCK_TECH_POSTS,
   DATA: MOCK_DATA_POSTS,
   DESIGN: MOCK_DESIGN_POSTS,

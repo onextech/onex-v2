@@ -20,7 +20,7 @@ export const MOCK_COMMON_SITE = {
     { title: 'Singapore', iso_alpha_2: 'sg', key: 'sg', alternate_title: 'Singaporean',  },
     { title: 'United States', iso_alpha_2: 'us', key: 'us', alternate_title: 'American' },
     { title: 'London', iso_alpha_2: 'gb', key: 'gb', alternate_title: 'British',  },
-    { title: 'Dubai', iso_alpha_2: 'ae', key: 'ae', alternate_title: 'Middle Eastern',  },
+    { title: 'Dubai', iso_alpha_2: 'ae', key: 'ae', alternate_title: 'UAE',  },
     { title: 'Hong Kong', iso_alpha_2: 'hk', key: 'hk', alternate_title: 'Hong Kong' },
     { title: 'Australia', iso_alpha_2: 'au', key: 'au', alternate_title: 'Australian',  },
   ],

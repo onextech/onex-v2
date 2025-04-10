@@ -3,6 +3,7 @@ import {
   MOCK_SERVICE_CATEGORYS,
   MOCK_SERVICES,
   MOCK_SHOWCASES, MOCK_TECHNOLOGYS,
+  MOCK_GROUP_POSTS,
 } from '@onex/mocks'
 import {
   getCategoryFromCrudItem,
@@ -14,7 +15,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { getStaticPathsWithLayout } from '../nextjs'
 import { getDynamicPage } from '../utils'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
-import { fetchShowcases, fetchSite } from './Site'
+import { fetchPosts, fetchShowcases, fetchSite } from './Site'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -56,14 +57,8 @@ export const ServiceDetail = {
     )
       .filter((item) => item.title !== service?.title)
       .slice(0, 3)
-    const relatedPosts = getRelatedCrudItemsByTagTitle(
-      MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
-        ({ published_at }) =>
-          published_at && dayjs(published_at).isBefore(dayjs())
-      ),
-      service?.title
-    ).slice(0, 3)
     const showcases = fetchShowcases({ locale }).slice(0, 3)
+    const relatedPosts = fetchPosts({ locale }).slice(0, 3)
 
     return getStaticPropsWithLayout({
       props: {
