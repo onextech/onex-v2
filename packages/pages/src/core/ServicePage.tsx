@@ -143,7 +143,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Related Posts
         renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
         // Map
-        {
+        stats && {
           id: 'stats',
           center: true, maxWidth: 'md',
           backgroundImageProps: {
