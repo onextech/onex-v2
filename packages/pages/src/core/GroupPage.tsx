@@ -12,6 +12,7 @@ import {
   renderFeaturedResourcesBlock,
   renderHeroWithVideoSlider,
   renderHomeSummaryBlock,
+  renderShowcasesBlock,
   renderShowcaseSlider,
   renderThreeColumnGridBlock,
   useLayout,
@@ -24,6 +25,7 @@ import {
   Resource,
   Showcase,
 } from '@onex/types'
+import { GalleryMarqueeSection } from '@onex/group/components/sections/gallery-marquee-section'
 
 export interface GroupPageProps {
   featuredPosts: Post[]
@@ -90,47 +92,42 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Summary
         renderHomeSummaryBlock({
           ...summary,
-          pb: { xs: 5, md: 0 },
+          center: true,
+          pt: { xs: 10, md: 16 },
+          pb: { xs: 10, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
         }),
-        // Benefits
-        renderThreeColumnGridBlock({
-          ...benefits,
-          sx: { backgroundColor: 'background.paper' },
-        }),
-        // Showcases
-        renderShowcaseSlider({
-          title:
-            'Elevate Your Business with Our Dedicated Technology Consulting Services',
-          items: showcases,
-          pt: { xs: 5, md: 10 },
-          subtitle:
-            'Enhancing enterprise performance through exceptional technology consulting: Explore our portfolio showcasing our dedication to delivering impactful custom software development that drive business success.',
-        }),
-        // Industry
-        renderFeaturedIndustrysBlock({
-          title: 'Access Industry Expertise & Best Practices',
-          items: industrys,
-          subtitle:
-            'We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective development solutions in their industry.',
-          sx: { backgroundColor: 'background.paper' },
-        }),
+        
+        <GalleryMarqueeSection title="Build Custom Solutions" subtitle="From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives." disableOverline disableServices />,
+      
         // Posts
         renderFeaturedPostsBlock({
           items: featuredPosts,
           py: { xs: 5, md: 10 },
         }),
+
+        // Showcases
+        Boolean(showcases?.length) &&
+          renderShowcasesBlock({
+            overline: 'Driving Business Innovation',
+            title: (
+              <>
+              Custom Software & <br /> AI Solutions for Growth
+              </>
+            ),
+            items: showcases,
+            pt: { xs: 5, md: 10 },
+            subtitle: 'We help ambitious companies build smarter systems, unlock efficiency, and stay ahead in a fast-changing world.',
+          }),
+
         // News
         renderFeaturedNewsBlock({
           items: featuredPressReleases,
-          py: 5,
+          pt: 8,
+          pb: { xs: 10, md: 20 },
         }),
-        // Resources
-        renderFeaturedResourcesBlock({
-          items: resources,
-          py: { xs: 5, md: 10 },
-        }),
+
         // Faqs
         !site.disable_faqs_on_home_page &&
           renderFaqsAccordionBlock({
@@ -138,6 +135,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             ...faqs,
             sx: { backgroundColor: 'background.paper' },
           }),
+          
         // Cta
         renderFadeToBottomBackgroundImageBlock({
           title: cta.title,

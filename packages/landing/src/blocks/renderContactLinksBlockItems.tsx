@@ -23,19 +23,19 @@ const renderContactLinksBlockItems = () => {
         title: general_email,
         href: `mailto:${general_email}`,
         overline: 'Submit a general inquiry',
-        startIcon: <EmailOutlinedIcon color="action" />,
+        startIcon: <EmailOutlinedIcon color="action" style={{ position: 'relative', top: -1 }} />,
       },
       general_phone && {
         title: general_phone,
         href: `tel:${general_phone?.replaceAll(' ', '')}`,
         overline: 'General hotline',
-        startIcon: <LocalPhoneOutlinedIcon color="action" />,
+        startIcon: <LocalPhoneOutlinedIcon color="action" style={{ position: 'relative', top: -1 }} />,
       },
       general_whatsapp && {
         title: general_whatsapp,
         href: `https://wa.me/${general_whatsapp?.replaceAll(' ', '')}?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20One%20X.%20Could%20you%20please%20provide%20me%20with%20some%20additional%20information?%20Thank%20you!`,
         overline: 'WhatsApp',
-        startIcon: <WhatsAppIcon style={{ fill: 'green' }} />,
+        startIcon: <WhatsAppIcon style={{ fill: 'green', position: 'relative', top: -1 }} />,
         titleProps: { targetBlank: true },
       },
     ].flatMap(({ title, href, overline, startIcon, titleProps }) => {

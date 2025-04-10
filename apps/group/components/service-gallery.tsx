@@ -18,6 +18,7 @@ interface ServiceGalleryProps {
     topSlides: ServiceSlide[]
   }
   sliderPriority?: boolean
+  disableServices?: boolean
 }
 
 export const ServiceGallery = ({
@@ -25,6 +26,7 @@ export const ServiceGallery = ({
   services,
   slider,
   sliderPriority = false,
+  disableServices,
 }: ServiceGalleryProps) => {
   const [topSlides, bottomSlides] = [slider.topSlides, slider.bottomSlides]
 
@@ -44,7 +46,7 @@ export const ServiceGallery = ({
         />
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-4 px-5 py-12 text-white sm:px-10 md:grid-cols-3 lg:px-[60px] xl:px-[90px]">
+      {!disableServices && (<div className="grid w-full grid-cols-1 gap-4 px-5 py-12 text-white sm:px-10 md:grid-cols-3 lg:px-[60px] xl:px-[90px]">
         {services.map((service) => (
           <div
             className="mb-[30px] flex flex-col items-center justify-start"
@@ -65,7 +67,7 @@ export const ServiceGallery = ({
             </p>
           </div>
         ))}
-      </div>
+      </div>)}
     </>
   )
 }

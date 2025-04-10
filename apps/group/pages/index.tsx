@@ -14,6 +14,7 @@ import {
 } from '@onex/mocks'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import {
+  fetchPosts,
   fetchShowcases,
   fetchSite,
   getDynamicPage,
@@ -38,14 +39,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     )
     .filter(({ is_hero }) => is_hero)
     .slice(0, 3)
-  const featuredPosts = orderBy(MOCK_POSTS[MOCK_KEY], 'published_at', 'desc')
-    .filter(({ is_active }) => is_active)
-    .filter(
-      ({ published_at }) =>
-        published_at && dayjs(published_at).isBefore(dayjs())
-    )
-    .filter(({ is_featured, is_hero }) => is_featured && !is_hero)
-    .slice(0, 3)
+  const featuredPosts = fetchPosts({ locale }).slice(0, 3)
   const showcases = fetchShowcases({ locale }).slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured

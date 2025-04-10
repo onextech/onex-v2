@@ -466,6 +466,92 @@ export const MOCK_TECH_POSTS = [
 
 export const MOCK_GROUP_POSTS = [
   {
+    published_at: '2025-04-10T14:00:00+0000',
+    is_active: true,
+    is_hero: true,
+    category_id: 1,
+    title: 'Driving Digital Transformation With Custom Solutions And AI',
+    slug: 'digital-transformation-custom-solutions-ai',
+    subtitle: 'Enhancing Efficiency, Personalization, and Growth Through AI-Powered Custom Software',
+    hero_src: '/unsplash/_LIZ36OHGKk.jpg',
+    hero_alt: 'abstract technology and AI concept',
+    html:
+      '<blockquote>\n' +
+      "<p><em>Summary: Digital transformation is essential for businesses looking to remain competitive and adaptable in a rapidly evolving landscape. By leveraging custom software solutions and artificial intelligence (AI), companies can enhance efficiency, improve decision-making, and deliver exceptional user experiences.</em></p>\n" +
+      '</blockquote>\n' +
+      '<h2>The Role of Custom Solutions</h2>\n' +
+      '<p>Off-the-shelf software often falls short for complex, industry-specific challenges. Custom solutions enable businesses to:</p>\n' +
+      '<ul>\n' +
+      '<li>Align functionality with specific goals and workflows.</li>\n' +
+      '<li>Build scalable systems that grow with the business.</li>\n' +
+      '<li>Integrate seamlessly with existing infrastructure for enhanced efficiency.</li>\n' +
+      '</ul>\n' +
+      '<p>Custom software addresses unique pain points and improves accuracy, efficiency, and user satisfaction while enabling future scalability.</p>\n' +
+      '<h2>Leveraging AI for Enhanced Capabilities</h2>\n' +
+      '<p>AI empowers businesses to operate smarter and faster by:</p>\n' +
+      '<ul>\n' +
+      '<li>Generating insights through predictive analytics and data-driven decision-making.</li>\n' +
+      '<li>Automating repetitive tasks to improve productivity and reduce costs.</li>\n' +
+      '<li>Delivering personalized user experiences that increase engagement and satisfaction.</li>\n' +
+      '</ul>\n' +
+      '<p>AI’s ability to process large datasets enables smarter decision-making and optimized resource allocation.</p>\n' +
+      '<h2>Achieving Maximum Impact with AI and Custom Solutions</h2>\n' +
+      '<p>Combining AI with tailored software unlocks innovation and growth through:</p>\n' +
+      '<ul>\n' +
+      '<li>AI-powered systems offering deep customer insights and driving engagement strategies.</li>\n' +
+      '<li>Intelligent platforms with personalized recommendations and dynamic pricing.</li>\n' +
+      '<li>Predictive analytics tools for forecasting trends and optimizing resources.</li>\n' +
+      '</ul>\n' +
+      '<p>The synergy of AI and custom software enables businesses to create adaptable, intelligent systems that deliver measurable results.</p>\n' +
+      '<h2>Conclusion</h2>\n' +
+      '<p>Driving digital transformation with AI and custom solutions requires a strategic approach focused on flexibility and innovation. Businesses that invest in purpose-built systems can enhance operational efficiency, improve customer satisfaction, and achieve long-term growth in a competitive market.</p>\n'
+  },
+  {
+    published_at: '2025-04-10T14:00:00+0000',
+    is_active: true,
+    is_hero: true,
+    category_id: 1,
+    title: 'From Concept to Reality: Building Custom Solutions That Deliver Results',
+    slug: 'building-custom-solutions-that-deliver-results',
+    subtitle: 'Turning Ideas Into Impactful Software Through Strategy, Design, and Iteration',
+    hero_src: '/unsplash/JKUTrJ4vK00.jpg',
+    hero_alt: 'blueprint plan with technology overlay',
+    html:
+      '<blockquote>\n' +
+      "<p><em>Summary: Creating a custom product that achieves real, measurable results requires a strategic approach built on clarity, precision, and adaptability. For Project Directors in MNCs, the stakes are high — delivering a product that meets business objectives, enhances efficiency, and drives growth.</em></p>\n" +
+      '</blockquote>\n' +
+      '<h2>Understanding the Vision</h2>\n' +
+      '<p>The journey from concept to reality begins with a deep understanding of desired outcomes, challenges, and strategic objectives. Effective discovery focuses on:</p>\n' +
+      '<ul>\n' +
+      '<li>Clarifying business goals to drive efficiency and scalability.</li>\n' +
+      '<li>Identifying pain points and building solutions that solve real problems.</li>\n' +
+      '<li>Designing user experiences that engage and build loyalty.</li>\n' +
+      '</ul>\n' +
+      '<h2>Designing Tailored Solutions</h2>\n' +
+      '<p>With a clear vision in place, the next step is to design purpose-built solutions. Key considerations include:</p>\n' +
+      '<ul>\n' +
+      '<li>User-centric design to boost engagement and meet objectives.</li>\n' +
+      '<li>Scalability and flexibility to adapt to future demands.</li>\n' +
+      '<li>Seamless integration with existing systems for efficiency.</li>\n' +
+      '</ul>\n' +
+      '<h2>Prototyping and Iterative Development</h2>\n' +
+      '<p>Prototyping brings ideas to life early and allows for testing and refinement. Best practices include:</p>\n' +
+      '<ul>\n' +
+      '<li>Refining features continuously based on feedback.</li>\n' +
+      '<li>Identifying risks early and optimizing development processes.</li>\n' +
+      '<li>Streamlining delivery to exceed expectations.</li>\n' +
+      '</ul>\n' +
+      '<h2>Delivering Results</h2>\n' +
+      '<p>Success is measured by meeting objectives and delivering real value. Focus areas include:</p>\n' +
+      '<ul>\n' +
+      '<li>Monitoring performance through analytics and key metrics.</li>\n' +
+      '<li>Providing ongoing support and optimization.</li>\n' +
+      '<li>Building solutions that enable future growth and adaptability.</li>\n' +
+      '</ul>\n' +
+      '<h2>Conclusion</h2>\n' +
+      '<p>Turning ideas into impactful solutions requires clarity, strategy, and continuous improvement. By aligning business goals with user needs and embracing iterative development, organisations can create software that delivers measurable results and drives long-term success.</p>\n'
+  },
+  {
     published_at: '2023-05-15T14:00:00+0000',
     is_active: true,
     is_hero: true,
@@ -811,6 +897,89 @@ export const MOCK_GROUP_POSTS = [
       '<p>Heralding a new wave of automation solutions, modern robotic process automation tools enhanced with cognitive capabilities allow automation software robots to mimic human actions to a larger degree. These cognitive-enabled robots are able to process information with in-depth analysis, learn from heuristics, and make business decisions at levels of accuracy. Organisations that are able to harness these capabilities will gain the ability to automate complex tasks with greater ease and efficiency. As the latest addition to automation technology, machine learning and artificial intelligence promises to take business process automation to the next level.</p>\n' +
       '<p>Through its humble beginnings and well-grounded motivations, business process automation will continue to be an essential enabler of business success in the days to come. The application of automation tools such as macros and robotic software will continue to proliferate alongside rising business demand as the influence of machine learning and artificial intelligence takes flight.</p>\n',
   },
+  {
+    published_at: '2025-04-10T14:00:00+0000',
+    is_active: true,
+    is_hero: true,
+    category_id: 1,
+    title: "How Digital Transformation is Shaping Australia's Business Landscape",
+    slug: 'digital-transformation-australia-business-landscape',
+    subtitle: 'Innovation, Technology Adoption, and Industry Impact Across Australian Businesses',
+    hero_src: '/unsplash/JmuyB_LibRo.jpg',
+    hero_alt: 'sydney opera house',
+    html:
+      '<blockquote>\n' +
+      "<p><em>Summary: Technology is transforming industries across Australia, reshaping how businesses operate, engage customers, and maintain competitiveness. As digitalization accelerates, companies are adopting innovative tools and practices to enhance productivity, improve decision-making, and adapt to rapidly changing market conditions.</em></p>\n" +
+      '</blockquote>\n' +
+      '<h2>Embracing Innovation to Stay Competitive</h2>\n' +
+      '<p>Digital transformation goes beyond just adopting new technologies. It requires businesses to rethink processes, streamline operations, and create tailored solutions that deliver value. As expectations rise and competition intensifies, the ability to innovate effectively becomes a critical advantage.</p>\n' +
+      '<p>Businesses are enhancing productivity and optimizing customer experiences by:</p>\n' +
+      '<ul>\n' +
+      '<li>Developing customized solutions to address specific challenges.</li>\n' +
+      '<li>Implementing AI technologies to gain insights and automate tasks.</li>\n' +
+      '<li>Building scalable systems that grow with the business.</li>\n' +
+      '</ul>\n' +
+      '<h2>Transformative Impact Across Industries</h2>\n' +
+      '<p>Digitalization is creating new opportunities across sectors such as:</p>\n' +
+      '<ul>\n' +
+      '<li><strong>Retail:</strong> Enhanced e-commerce, personalized marketing, and seamless customer experiences.</li>\n' +
+      '<li><strong>Healthcare:</strong> AI-powered diagnostics, improved patient management, and digital care tools.</li>\n' +
+      '<li><strong>Financial Services:</strong> Fintech solutions improving compliance, risk management, and investments.</li>\n' +
+      '<li><strong>Logistics:</strong> Automation and analytics optimizing operations and reducing costs.</li>\n' +
+      '</ul>\n' +
+      '<h2>Navigating Challenges in a Rapidly Changing Landscape</h2>\n' +
+      '<p>Despite the benefits, digital transformation presents challenges such as:</p>\n' +
+      '<ul>\n' +
+      '<li>Managing compliance with evolving regulations and data privacy standards.</li>\n' +
+      '<li>Addressing skill gaps with increasing demand for specialized expertise.</li>\n' +
+      '<li>Ensuring seamless adoption of new technologies through effective change management.</li>\n' +
+      '</ul>\n' +
+      '<h2>Shaping the Future of Australian Businesses</h2>\n' +
+      '<p>Businesses that embrace digital transformation are better positioned to thrive. Leveraging expertise in AI, custom software, and user-centric design allows companies to stay agile, responsive, and ready to meet new challenges.</p>\n' +
+      '<h2>Conclusion</h2>\n' +
+      '<p>Australia\'s digital landscape is evolving rapidly. Companies that adopt innovative solutions and build scalable systems will achieve sustainable growth and long-term success.</p>\n'
+  },
+  {
+    published_at: '2025-04-10T14:00:00+0000',
+    is_active: true,
+    is_hero: true,
+    category_id: 1,
+    title: 'How Innovative Software Solutions Are Driving Growth Across the UAE',
+    slug: 'innovative-software-solutions-growth-uae',
+    subtitle: 'Custom Systems, AI Adoption, and Business Innovation Across the UAE Market',
+    hero_src: '/unsplash/qMBcSqRQzuw.jpg',
+    hero_alt: 'dubai skyline with digital overlay',
+    html:
+      '<blockquote>\n' +
+      "<p><em>Summary: The UAE is emerging as a global leader in innovation, with businesses leveraging custom software and advanced technologies to enhance efficiency, meet local challenges, and drive growth. Innovative solutions are shaping industries and building stronger foundations for future success.</em></p>\n" +
+      '</blockquote>\n' +
+      '<h2>Solving Local Challenges Through Custom Solutions</h2>\n' +
+      '<p>Off-the-shelf software often fails to meet the specific needs of UAE-based companies. Custom solutions provide a better fit by:</p>\n' +
+      '<ul>\n' +
+      '<li>Addressing regulatory compliance and local standards.</li>\n' +
+      '<li>Providing bilingual user interfaces for diverse audiences.</li>\n' +
+      '<li>Integrating with region-specific payment systems and workflows.</li>\n' +
+      '</ul>\n' +
+      '<p>Tailored systems help businesses streamline operations, improve productivity, and enhance customer experiences across finance, healthcare, retail, and hospitality sectors.</p>\n' +
+      '<h2>Using AI and Automation to Boost Efficiency</h2>\n' +
+      '<p>AI and automation are playing a critical role in driving growth in the UAE by:</p>\n' +
+      '<ul>\n' +
+      '<li>Providing predictive analytics for inventory, demand forecasting, and marketing optimization.</li>\n' +
+      '<li>Automating repetitive tasks to reduce costs and improve accuracy.</li>\n' +
+      '<li>Enhancing customer experiences through personalization engines and tailored content.</li>\n' +
+      '</ul>\n' +
+      '<p>These technologies enable businesses to stay competitive in a fast-moving market.</p>\n' +
+      '<h2>Creating Competitive Advantage Through Innovation</h2>\n' +
+      '<p>Businesses across industries in the UAE are leveraging custom software to:</p>\n' +
+      '<ul>\n' +
+      '<li>Build scalable systems that adapt to changing demands.</li>\n' +
+      '<li>Utilize data-driven platforms for better strategic planning.</li>\n' +
+      '<li>Deliver seamless user experiences that boost customer loyalty.</li>\n' +
+      '</ul>\n' +
+      '<p>Investing in innovation helps companies build resilience and position themselves for sustainable growth.</p>\n' +
+      '<h2>Conclusion</h2>\n' +
+      '<p>Innovative software solutions are transforming the UAE business landscape. Companies that embrace customization, AI, and automation are building stronger, more adaptable systems that support long-term success and competitiveness in a dynamic market.</p>\n'
+  },
 ].map((item, i) => ({
   id: i + 1,
   // Category
@@ -829,15 +998,15 @@ export const MOCK_GROUP_POSTS = [
 }))
 
 const MOCK_GROUP_AE_POSTS = [
-  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'future-proofing-business-strategies-long-term-growth-success'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'innovative-software-solutions-growth-uae'),
   MOCK_GROUP_POSTS.find(({ slug }) => slug === 'guide-implementing-new-technologies-level-up-business'),
   MOCK_GROUP_POSTS.find(({ slug }) => slug === 'achieving-successful-digital-transformation-in-the-enterprise'),
 ]
 
 const MOCK_GROUP_AU_POSTS = [
-  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'future-proofing-business-strategies-long-term-growth-success'),
-  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'guide-implementing-new-technologies-level-up-business'),
-  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'achieving-successful-digital-transformation-in-the-enterprise'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'digital-transformation-australia-business-landscape'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'building-custom-solutions-that-deliver-results'),
+  MOCK_GROUP_POSTS.find(({ slug }) => slug === 'digital-transformation-custom-solutions-ai'),
 ]
 
 export const MOCK_DATA_POSTS = [

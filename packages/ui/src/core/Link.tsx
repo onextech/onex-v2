@@ -63,7 +63,6 @@ const Link: React.FC<LinkProps> = (props) => {
           <KeyboardArrowRightOutlinedIcon
             sx={{
               height: '0.75em',
-              mb: -0.5,
               width: '0.75em',
             }}
           />
