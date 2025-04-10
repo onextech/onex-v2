@@ -28,7 +28,7 @@ const layoutConfig: LayoutConfig = {
   routeConfig,
   serviceCategorys: MOCK_SERVICE_CATEGORYS[MOCK_KEY],
   services: MOCK_SERVICES[MOCK_KEY],
-  showcases: MOCK_SHOWCASES[MOCK_KEY],
+  showcases: [],
   site: MOCK_SITE[MOCK_KEY],
   technologys: MOCK_TECHNOLOGYS[MOCK_KEY],
   workspaces: MOCK_WORKSPACES[MOCK_KEY],

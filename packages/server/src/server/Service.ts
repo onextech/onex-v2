@@ -14,7 +14,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { getStaticPathsWithLayout } from '../nextjs'
 import { getDynamicPage } from '../utils'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
-import { fetchSite } from './Site'
+import { fetchShowcases, fetchSite } from './Site'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -44,7 +44,8 @@ export const ServiceDetail = {
     }),
   getStaticProps: (): GetStaticProps => async (context) => {
     const service = fetchServiceBySlug(context.params?.slug)
-    const site = fetchSite({ locale: context.locale })
+    const { locale } = context
+    const site = fetchSite({ locale })
     const servicePage = getDynamicPage({ context, page: service, site })
     const serviceCategory = getCategoryFromCrudItem(
       service,
@@ -62,7 +63,7 @@ export const ServiceDetail = {
       ),
       service?.title
     ).slice(0, 3)
-    const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
+    const showcases = fetchShowcases({ locale }).slice(0, 3)
 
     return getStaticPropsWithLayout({
       props: {

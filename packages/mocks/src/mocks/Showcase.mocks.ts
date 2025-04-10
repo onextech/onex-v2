@@ -596,6 +596,110 @@ export const MOCK_COMMON_SHOWCASES: Showcase[] = [
       },
     },
   },
+  // Slouch potato
+  {
+    title: "Elevating Australia's Pyjama Game",
+    slug: 'slouch-potato',
+    subtitle:
+      'Helping an Australian pyjama brand enhance their online presence, boost conversions, and showcase their unique, comfort-driven designs to stand out in a competitive market.',
+    hero_src: '/showcases/slouch-potato/hero.png',
+    hero_alt: 'slouch-potato-website',
+    mode: 'light',
+    backgroundColor: '#c9f0ff',
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'Crafting a Fun and Unique Brand Experience',
+        subtitle:
+          "Capturing Slouch Potato’s playful essence by designing a website that reflects their quirky, fun, and comfort-driven approach.",
+        hero_src: '/showcases/slouch-potato/left.png',
+        hero_alt: 'website showcase',
+      },
+      gallery: {
+        title: 'Enhancing User Engagement',
+        subtitle:
+          'Building an engaging e-commerce experience with intuitive navigation and vibrant visuals that resonate with Australian consumers, promoting brand loyalty and boosting conversions.',
+        items: [
+          {
+            title: '/showcases/slouch-potato/gallery_1.png',
+            titleProps: { alt: 'website showcase' },
+          },
+          {
+            title: '/showcases/slouch-potato/gallery_2.png',
+            titleProps: { alt: 'displayed in a bowl' },
+          },
+          {
+            title: '/showcases/slouch-potato/gallery_3.png',
+            titleProps: { alt: 'website showcase' },
+          },
+          {
+            title: '/showcases/slouch-potato/gallery_4.png',
+            titleProps: { alt: 'model' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: "Building a Loyal Community of Comfort Seekers",
+        subtitle:
+          'Creating an inviting online space that encourages customers to connect, share, and celebrate their love for unique, fun pyjamas. We helped foster a community that embraces Slouch Potato’s playful spirit and dedication to comfort.',
+        hero_src: '/showcases/slouch-potato/right.png',
+        hero_alt: 'website showcase',
+      },
+    },
+  },
+  // Bose
+  {
+    title: "Driving Conversions and Engagement",
+    slug: 'bose',
+    subtitle:
+      'Creating a cohesive and engaging digital experience for Bose that strengthens brand identity, fosters community engagement, and drives higher e-commerce conversions.',
+    hero_src: '/showcases/bose/hero.png',
+    hero_alt: 'bose-website',
+    mode: 'dark',
+    backgroundColor: '#0F0F10',
+
+    // Sections
+    sections: {
+      leftGridSticky: {
+        title: 'Creating a Premium and Engaging Brand Experience',
+        subtitle:
+          "Designing a sleek, modern digital presence that reflects Bose’s innovation and excellence. High-quality visuals, refined typography, and clean layouts were used to highlight cutting-edge products.",
+        hero_src: '/showcases/bose/left.png',
+        hero_alt: 'website showcase',
+      },
+      gallery: {
+        title: 'Optimizing for Conversions',
+        subtitle:
+          'Streamlining user journeys with clear navigation, responsive design, and strategically placed call-to-actions. Improved product presentations, optimized purchase flows, and enhanced mobile responsiveness resulted in a smoother shopping experience and higher conversion rates.',
+        items: [
+          {
+            title: '/showcases/bose/gallery_1.png',
+            titleProps: { alt: 'website showcase' },
+          },
+          {
+            title: '/showcases/bose/gallery_2.png',
+            titleProps: { alt: 'displayed in a bowl' },
+          },
+          {
+            title: '/showcases/bose/gallery_3.png',
+            titleProps: { alt: 'website showcase' },
+          },
+          {
+            title: '/showcases/bose/gallery_4.png',
+            titleProps: { alt: 'model' },
+          },
+        ],
+      },
+      rightGridSticky: {
+        title: "Building Engagement Through Authentic Interaction",
+        subtitle:
+          'Creating a dynamic online environment that showcases real customer experiences and product feedback. By featuring user reviews, testimonials, and social media integration, we strengthened credibility and encouraged authentic connections, enhancing overall brand engagement.',
+        hero_src: '/showcases/bose/right.png',
+        hero_alt: 'website showcase',
+      },
+    },
+  },
 ]
   .map((showcase, i) => ({ id: i + 1, ...showcase }))
   .reduce((acc: Showcase[], next) => {
@@ -762,264 +866,33 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
   }, [])
 
 export const MOCK_GROUP_SHOWCASES: Showcase[] = [
-  {
-    title: 'Preparing the future of payments with SG Pay.',
-    slug: 'sg-pay',
-    subtitle:
-      'Discover SG Pay, a cutting-edge payment solution. Simplify transactions and enhance user experiences with a secure and seamless platform.',
-    hero_src: '/showcases/sg-pay/hero.png',
-    hero_alt: 'Temperature adjustment app',
-    mode: 'dark',
-    backgroundColor: '#9B2727',
-    reverse: true,
-
-    // Sections
-    sections: {
-      leftGridSticky: {
-        title: 'Software + Hardware Integration',
-        subtitle:
-          'Set up your SG Pay Point of Sale system with ease. The intuitive order and payment flow makes POS transactions a snap and let you effortlessly manage customers and your entire business.',
-        hero_src: '/showcases/sg-pay/left.png',
-        hero_alt: 'Cashless payments showcase',
-      },
-      gallery: {
-        title: 'Let your customers take the reign',
-        subtitle:
-          "There's no need to carry a wallet full of credit cards or have numerous banking apps. All you need is your SG Pay app.",
-        items: [
-          {
-            title: '/showcases/sg-pay/gallery_1.png',
-            titleProps: { alt: 'SG Pay merchant guide' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_2.png',
-            titleProps: { alt: 'Security encryption and set up guides' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_3.png',
-            titleProps: { alt: 'Simplified shopping showcase' },
-          },
-          {
-            title: '/showcases/sg-pay/gallery_4.png',
-            titleProps: { alt: 'Mobile payments showcase' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'A new fully integrated cashless system',
-        subtitle:
-          'With many payment apps out there, the key goal was to establish how SG Pay was different and better. We set out to create an all powerful platform that would make paying a seamless journey for users. ',
-        hero_src: '/showcases/sg-pay/right.png',
-        hero_alt: 'Mobile payment system showcase',
-      },
-    },
-  },
-  {
-    title: 'NextGEN Global Decarbonisation Initiative.',
-    slug: 'nextgen',
-    subtitle:
-      'How we created an intuitive platform for the International Maritime Organisation & Maritime Port Authority of Singapore.',
-    hero_src: '/showcases/nextgen/hero.png',
-    hero_alt: 'NextGEN showcase',
-    mode: 'dark',
-    backgroundColor: '#013157',
-    reverse: true,
-
-    sections: {
-      leftGridSticky: {
-        title: 'Designing for the Future',
-        subtitle:
-          'Delivering impactful messages of change through purposeful designs. We align our focus to our client’s vision to ensure what’s important stands out.',
-        hero_src: '/showcases/nextgen/left.png',
-        hero_alt: 'NextGEN Showcase 1',
-      },
-      gallery: {
-        title: 'Building an Immersive Experience',
-        subtitle:
-          'Making users a part of the initiative through interactive and immersive site experiences. We want users to be able to fully understand and more importantly, share the same vision as the brand.',
-        items: [
-          {
-            title: '/showcases/nextgen/gallery_1.png',
-            titleProps: { alt: 'NextGEN Gallery 1' },
-          },
-          {
-            title: '/showcases/nextgen/gallery_2.png',
-            titleProps: { alt: 'NextGEN Gallery 2' },
-          },
-          {
-            title: '/showcases/nextgen/gallery_3.png',
-            titleProps: { alt: 'NextGEN Gallery 3' },
-          },
-          {
-            title: '/showcases/nextgen/gallery_4.png',
-            titleProps: { alt: 'NextGEN Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'Simplifying the Process',
-        subtitle:
-          'We are constantly looking to organize data and information in intuitive and concise ways for simplistic viewing. We use easy-to-follow layouts to provide important information in clearly defined categories. ',
-        hero_src: '/showcases/nextgen/right.png',
-        hero_alt: 'NextGEN Showcase 2',
-      },
-    },
-  },
-  {
-    title: 'Blockchain & Artificial Intelligence.',
-    slug: 'spk',
-    subtitle:
-      'How we curated historical cryptocurrency market data for a Crypto Trading AI platform, ensuring reliable insights for optimal trading strategies.',
-    hero_src: '/showcases/spk/hero.png',
-    hero_alt: 'SPK showcase',
-    mode: 'dark',
-    backgroundColor: '#071323',
-    sections: {
-      leftGridSticky: {
-        title: 'Maximizing the Value of Data',
-        subtitle:
-          'We ensure that relevant market information is not lost in the sea of data and effectively utilize them for the trading platform.',
-        hero_src: '/showcases/spk/left.png',
-        hero_alt: 'SPK Showcase 1',
-      },
-      gallery: {
-        title: 'Providing User-Centric Data ',
-        subtitle:
-          'Building customized views based on what is important to the user, tailoring data presentation to enhance user experience and enable personalized insights.',
-        items: [
-          {
-            title: '/showcases/spk/gallery_1.png',
-            titleProps: { alt: 'TGB Gallery 1' },
-          },
-          {
-            title: '/showcases/spk/gallery_2.png',
-            titleProps: { alt: 'TGB Gallery 2' },
-          },
-          {
-            title: '/showcases/spk/gallery_3.png',
-            titleProps: { alt: 'TGB Gallery 3' },
-          },
-          {
-            title: '/showcases/spk/gallery_4.png',
-            titleProps: { alt: 'TGB Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'Everything At A Glance',
-        subtitle:
-          'Streamlining information flow for a quick and comprehensive understanding of market trends and performance, enabling users to make informed decisions at a glance, saving time and effort.',
-        hero_src: '/showcases/spk/right.png',
-        hero_alt: 'SPK Showcase 2',
-      },
-    },
-  },
-  {
-    title: 'A beautifully crafted self-pick up service app.',
-    slug: 'suntec',
-    subtitle:
-      "Simplifying shoppers' lives through a custom application, bringing digital solutions to a premier retail destination in Singapore.",
-    hero_src: '/showcases/suntec/hero.png',
-    hero_alt: 'Suntec showcase',
-    mode: 'light',
-    backgroundColor: '#ffae81',
-
-    sections: {
-      leftGridSticky: {
-        title: 'A One-Stop F&B Solution Application',
-        subtitle:
-          'Search and filter through a plethora of eatery options to find the perfect one for you, no matter the occasion. We want to power shoppers to find anything they need right at their fingertips.',
-        hero_src: '/showcases/suntec/left.png',
-        hero_alt: 'Suntec Showcase 1',
-      },
-      gallery: {
-        title: 'Enjoy Hassle-free Ordering',
-        subtitle:
-          'Order conveniently on the Suntec+ App anywhere, at anytime. We look to provide the flexibility and accessibility that customers need when it comes to making orders.',
-        items: [
-          {
-            title: '/showcases/suntec/gallery_1.png',
-            titleProps: { alt: 'Suntec Gallery 1' },
-          },
-          {
-            title: '/showcases/suntec/gallery_2.png',
-            titleProps: { alt: 'Suntec Gallery 2' },
-          },
-          {
-            title: '/showcases/suntec/gallery_3.png',
-            titleProps: { alt: 'Suntec Gallery 3' },
-          },
-          {
-            title: '/showcases/suntec/gallery_4.png',
-            titleProps: { alt: 'Suntec Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'A Seamless Experience, From Start to Finish',
-        subtitle:
-          'We are always striving to provide comprehensive solutions for clients and users. Our application is optimized for the entire user journey to ensure a delightful customer experience. ',
-        hero_src: '/showcases/suntec/right.png',
-        hero_alt: 'Suntec Showcase 2',
-      },
-    },
-  },
-  {
-    title: 'Singapore Realtors Inc: SRI',
-    slug: 'sri',
-    subtitle:
-      'Dare to be Different. SRI looks to redefine the real estate industry through digital solutions for clients and realtors.',
-    hero_src: '/showcases/sri/hero.png',
-    hero_alt: 'sri showcase',
-    mode: 'light',
-    reverse: true,
-    backgroundColor: '#DACEE1',
-    sections: {
-      leftGridSticky: {
-        title: 'Meet SRI',
-        subtitle:
-          'As one of the top Real Estate Agency in Singapore, SRI stands out by championing the experience of both its clients and realtors as what matters most.',
-        hero_src: '/showcases/sri/left.png',
-        hero_alt: 'SRI Showcase 1',
-      },
-      gallery: {
-        title: 'Delivering exceptional, customized products',
-        subtitle:
-          'Making the SRI application stand out while honing in on what matters. We want clients and realtors to always be able to easily access properties on their devices based on their personalized application page. ',
-        items: [
-          {
-            title: '/showcases/sri/gallery_1.png',
-            titleProps: { alt: 'SRI Gallery 1' },
-          },
-          {
-            title: '/showcases/sri/gallery_2.png',
-            titleProps: { alt: 'SRI Gallery 2' },
-          },
-          {
-            title: '/showcases/sri/gallery_3.png',
-            titleProps: { alt: 'SRI Gallery 3' },
-          },
-          {
-            title: '/showcases/sri/gallery_4.png',
-            titleProps: { alt: 'SRI Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: "It's all about the experience",
-        subtitle:
-          'A titan in the business with over 10 years under their belt, we use clean and diverse designs to propel the vision of SRI to the forefronts of Real Estate in Singapore.',
-        hero_src: '/showcases/sri/right.png',
-        hero_alt: 'SRI Showcase 2',
-      },
-    },
-  },
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'sg-pay'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'nextgen'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'tgb'),
   ...MOCK_COMMON_SHOWCASES,
 ]
   .map((showcase, i) => ({ id: i + 1, ...showcase }))
   .reduce((acc: Showcase[], next) => {
     return acc.find((a) => a.slug === next.slug) ? acc : [...acc, next]
   }, [])
+
+const MOCK_GROUP_AE_SHOWCASES = [
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'canon'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'bose'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'spk'),
+].map((showcase, i) => ({ id: i + 1, ...showcase }))
+.reduce((acc: Showcase[], next) => {
+  return acc.find((a) => a.slug === next.slug) ? acc : [...acc, next]
+}, [])
+
+const MOCK_GROUP_AU_SHOWCASES = [
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'canon'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'slouch-potato'),
+  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'bose'),
+].map((showcase, i) => ({ id: i + 1, ...showcase }))
+.reduce((acc: Showcase[], next) => {
+  return acc.find((a) => a.slug === next.slug) ? acc : [...acc, next]
+}, [])
 
 export const MOCK_DESIGN_SHOWCASES = [
   {
@@ -1393,6 +1266,9 @@ export const MOCK_COASTAL_SHOWCASES = MOCK_GROUP_SHOWCASES
 
 export const MOCK_SHOWCASES = {
   GROUP: MOCK_GROUP_SHOWCASES,
+  GROUP_AE: MOCK_GROUP_AE_SHOWCASES,
+  GROUP_AU: MOCK_GROUP_AU_SHOWCASES,
+
   TECH: MOCK_TECH_SHOWCASES,
   DATA: MOCK_DATA_SHOWCASES,
   DESIGN: MOCK_DESIGN_SHOWCASES,

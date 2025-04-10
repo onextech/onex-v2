@@ -239,7 +239,7 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
             },
             {
               gridItemProps: { xs: 6, md: 4 },
-              gridItems: clientLogos.slice(0, 18).map((clientLogo) => {
+              gridItems: clientLogos.slice(0, 12).map((clientLogo) => {
                 const {
                   avatar_alt,
                   avatar_height,

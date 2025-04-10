@@ -32,7 +32,7 @@ export interface ServicePageProps {
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { relatedPosts, relatedServices, service, showcases } = props
-  const { site, clientLogos, clientTestimonials, routeConfig, technologys } =
+  const { site, clientLogos, clientTestimonials, technologys } =
   useLayout()
   const { sections } = service || {}
   const { locale } = useRouter()
@@ -78,7 +78,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ...features,
           textAlign: 'left',
         }),
-
         // Logos
         {
           id: 'gallery',
@@ -101,7 +100,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             },
             {
               gridItemProps: { xs: 6, md: 4 },
-              gridItems: clientLogos.slice(0, 9).map((clientLogo) => {
+              gridItems: clientLogos.slice(0, 12).map((clientLogo) => {
                 const {
                   avatar_alt,
                   avatar_height,

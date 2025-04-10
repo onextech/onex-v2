@@ -344,11 +344,153 @@ const MOCK_CLIENT_LOGOS_OBJECT = {
       height: { xs: 40 * 0.8, md: 40 },
     },
   },
+  // AE
+  ifza: {
+    avatar_src: '/logos/logo_ifza.png',
+    avatar_alt: 'logo_ifza',
+    avatar_width: 108,
+    avatar_height: 30,
+    sx: {
+      width: { xs: 108 * 0.8, md: 108 },
+      height: { xs: 30 * 0.8, md: 30 },
+    },
+  },
+  nikai: {
+    avatar_src: '/logos/logo_nikai.png',
+    avatar_alt: 'logo_nikai',
+    avatar_width: 125,
+    avatar_height: 32,
+    sx: {
+      width: { xs: 125 * 0.8, md: 125 },
+      height: { xs: 32 * 0.8, md: 32 },
+    },
+  },
+  bose: {
+    avatar_src: '/logos/logo_bose.png',
+    avatar_alt: 'logo_bose',
+    avatar_width: 149,
+    avatar_height: 18,
+    sx: {
+      width: { xs: 149 * 0.8, md: 149 },
+      height: { xs: 18 * 0.8, md: 18 },
+    },
+  },
+  adalfi: {
+    avatar_src: '/logos/logo_adalfi.png',
+    avatar_alt: 'logo_adalfi',
+    avatar_width: 83,
+    avatar_height: 26,
+    sx: {
+      width: { xs: 83 * 0.8, md: 83 },
+      height: { xs: 26 * 0.8, md: 26 },
+    },
+  },
+  orient: {
+    avatar_src: '/logos/logo_orient.png',
+    avatar_alt: 'logo_orient',
+    avatar_width: 134,
+    avatar_height: 39,
+    sx: {
+      width: { xs: 134 * 0.8, md: 134 },
+      height: { xs: 39 * 0.8, md: 39 },
+    },
+  },
+  // AU
+  hertz: {
+    avatar_src: '/logos/logo_hertz.png',
+    avatar_alt: 'logo_hertz',
+    avatar_width: 92,
+    avatar_height: 27,
+    sx: {
+      width: { xs: 92 * 0.8, md: 92 },
+      height: { xs: 27 * 0.8, md: 27 },
+    },
+  },
+  anz: {
+    avatar_src: '/logos/logo_anz.png',
+    avatar_alt: 'logo_anz',
+    avatar_width: 104,
+    avatar_height: 33,
+    sx: {
+      width: { xs: 104 * 0.8, md: 104 },
+      height: { xs: 33 * 0.8, md: 33 },
+    },
+  },
+  slouch_potato: {
+    avatar_src: '/logos/logo_slouch_potato.png',
+    avatar_alt: 'logo_slouch_potato',
+    avatar_width: 143,
+    avatar_height: 37,
+    sx: {
+      width: { xs: 143 * 0.8, md: 143 },
+      height: { xs: 37 * 0.8, md: 37 },
+    },
+  },
+  yoga_lab: {
+    avatar_src: '/logos/logo_yoga_lab.png',
+    avatar_alt: 'logo_yoga_lab',
+    avatar_width: 170,
+    avatar_height: 22,
+    sx: {
+      width: { xs: 170 * 0.8, md: 170 },
+      height: { xs: 22 * 0.8, md: 22 },
+    },
+  },
+  rmit: {
+    avatar_src: '/logos/logo_rmit.png',
+    avatar_alt: 'logo_rmit',
+    avatar_width: 89,
+    avatar_height: 32,
+    sx: {
+      width: { xs: 89 * 0.8, md: 89 },
+      height: { xs: 32 * 0.8, md: 32 },
+    },
+  },
+  savvysme: {
+    avatar_src: '/logos/logo_savvysme.png',
+    avatar_alt: 'logo_savvysme',
+    avatar_width: 130,
+    avatar_height: 30,
+    sx: {
+      width: { xs: 130 * 0.8, md: 130 },
+      height: { xs: 30 * 0.8, md: 30 },
+    },
+  },
 }
 
 export const MOCK_GROUP_CLIENT_LOGOS = Object.values(
   MOCK_CLIENT_LOGOS_OBJECT
 ).map((item, i) => ({ ...item, id: i }))
+
+const MOCK_GROUP_AE_CLIENT_LOGOS = [
+  MOCK_CLIENT_LOGOS_OBJECT.ifza,
+  MOCK_CLIENT_LOGOS_OBJECT.nikai,
+  MOCK_CLIENT_LOGOS_OBJECT.bose,
+  MOCK_CLIENT_LOGOS_OBJECT.canon,
+  MOCK_CLIENT_LOGOS_OBJECT.adalfi,
+  MOCK_CLIENT_LOGOS_OBJECT.tvs,
+  MOCK_CLIENT_LOGOS_OBJECT.imo,
+  MOCK_CLIENT_LOGOS_OBJECT.orient,
+  MOCK_CLIENT_LOGOS_OBJECT.julius_bar,
+  MOCK_CLIENT_LOGOS_OBJECT.gic,
+  MOCK_CLIENT_LOGOS_OBJECT.tyme,
+  MOCK_CLIENT_LOGOS_OBJECT.uob,
+].map((item, i) => ({ ...item, id: i }))
+
+const MOCK_GROUP_AU_CLIENT_LOGOS = [
+  MOCK_CLIENT_LOGOS_OBJECT.hertz,
+  MOCK_CLIENT_LOGOS_OBJECT.anz,
+  MOCK_CLIENT_LOGOS_OBJECT.canon,
+  MOCK_CLIENT_LOGOS_OBJECT.slouch_potato,
+  MOCK_CLIENT_LOGOS_OBJECT.bose,
+  MOCK_CLIENT_LOGOS_OBJECT.yoga_lab,
+  MOCK_CLIENT_LOGOS_OBJECT.rmit,
+  MOCK_CLIENT_LOGOS_OBJECT.uob,
+  MOCK_CLIENT_LOGOS_OBJECT.savvysme,
+  MOCK_CLIENT_LOGOS_OBJECT.julius_bar,
+  MOCK_CLIENT_LOGOS_OBJECT.gic,
+  MOCK_CLIENT_LOGOS_OBJECT.tyme,
+].map((item, i) => ({ ...item, id: i }))
 
 export const MOCK_TECH_CLIENT_LOGOS = Object.values(
   pick(MOCK_CLIENT_LOGOS_OBJECT, [
@@ -420,6 +562,9 @@ export const MOCK_COASTAL_CLIENT_LOGOS = Object.values(
 
 export const MOCK_CLIENT_LOGOS = {
   GROUP: MOCK_GROUP_CLIENT_LOGOS,
+  GROUP_AU: MOCK_GROUP_AU_CLIENT_LOGOS,
+  GROUP_AE: MOCK_GROUP_AE_CLIENT_LOGOS,
+
   TECH: MOCK_TECH_CLIENT_LOGOS,
   DATA: MOCK_DATA_CLIENT_LOGOS,
   DESIGN: MOCK_DESIGN_CLIENT_LOGOS,

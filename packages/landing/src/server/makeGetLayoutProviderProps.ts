@@ -1,5 +1,5 @@
 import { getCrudItemsByCategory, withLocales } from '@onex/utils'
-import { fetchClientTestimonials, fetchSite } from '@onex/server'
+import { fetchClientTestimonials, fetchClientLogos, fetchSite, fetchShowcases } from '@onex/server'
 
 import { LayoutConfig } from './types'
 
@@ -8,7 +8,7 @@ const makeGetLayoutProviderProps =
   ({ context }) => {
     const {
       clientHighlights = [],
-      clientLogos = [],
+      clientLogos: injectedClientLogos = [],
       clientTestimonials: injectedClientTestimonials = [],
       industrys = [],
       pages = [],
@@ -16,7 +16,7 @@ const makeGetLayoutProviderProps =
       routeConfig = {},
       serviceCategorys = [],
       services = [],
-      showcases = [],
+      showcases: injectedShowcases = [],
       site: injectedSite = {},
       technologys = [],
       workspaces = [],
@@ -27,6 +27,8 @@ const makeGetLayoutProviderProps =
       ...(locale !== defaultLocale && fetchSite({ locale }) ),
     }
     const clientTestimonials = locale !== defaultLocale ? fetchClientTestimonials({ locale }) : injectedClientTestimonials
+    const clientLogos = locale !== defaultLocale ? fetchClientLogos({ locale }) : injectedClientLogos
+    const showcases = locale !== defaultLocale ? fetchShowcases({ locale }) : injectedShowcases
     return {
       clientHighlights,
       clientLogos,

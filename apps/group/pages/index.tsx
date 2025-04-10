@@ -14,6 +14,7 @@ import {
 } from '@onex/mocks'
 import { GroupPage, GroupPageProps } from '@onex/pages'
 import {
+  fetchShowcases,
   fetchSite,
   getDynamicPage,
   getStaticPropsWithLayout,
@@ -23,7 +24,8 @@ import orderBy from 'lodash/orderBy'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { MOCK_KEY = '' } = process.env
-  const site = fetchSite({ locale: context.locale })
+  const { locale } = context
+  const site = fetchSite({ locale })
   const page = getDynamicPage({
     context,
     page: MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === 'home'),
@@ -44,7 +46,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     )
     .filter(({ is_featured, is_hero }) => is_featured && !is_hero)
     .slice(0, 3)
-  const showcases = MOCK_SHOWCASES[MOCK_KEY].slice(0, 3)
+  const showcases = fetchShowcases({ locale }).slice(0, 3)
   const industrys = MOCK_INDUSTRYS[MOCK_KEY].filter(
     ({ is_featured }) => is_featured
   ).slice(0, 3)
