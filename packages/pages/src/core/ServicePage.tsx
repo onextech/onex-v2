@@ -21,7 +21,7 @@ import {
 } from '@onex/landing'
 import { MOCK_PAGES } from '@onex/mocks'
 import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
-
+import { useRouter } from 'next/router'
 export interface ServicePageProps {
   relatedPosts?: Post[]
   relatedServices?: Service[]
@@ -32,9 +32,11 @@ export interface ServicePageProps {
 
 const ServicePage: React.FC<ServicePageProps> = (props) => {
   const { relatedPosts, relatedServices, service, showcases } = props
-  const { clientLogos, clientTestimonials, routeConfig, technologys } =
-    useLayout()
+  const { site, clientLogos, clientTestimonials, routeConfig, technologys } =
+  useLayout()
   const { sections } = service || {}
+  const { locale } = useRouter()
+  const currentLocale = site?.locales?.find((siteLocale) => siteLocale.key === (locale || ''))
 
   const {
     challenges,
@@ -48,19 +50,25 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
     testimonial,
     usps,
     insights,
+    stats,
   } = sections || {}
 
-  const { gallery, stats } = (MOCK_PAGES.GROUP.find((page) => page.slug === 'about') as any).sections
+  const { gallery } = (MOCK_PAGES.GROUP.find((page) => page.slug === 'about') as any).sections
 
   return (
     <Blocks
       items={[
         // Hero
         renderHeroBlock({
-          item: service,
+          item: {
+            ...service,
+            title: `${service.title} ${currentLocale?.title}`,
+            hero_src: locale === 'ae' ? '/images/three_middleastern_persons_pointing_at_screen.png' : '/images/two_men_pointing_at_screen_rtl.png',
+          },
         }),
         // ClientLogosImageMarquee
         renderClientLogosImageMarqueeBlock({
+          title: `Trusted by leading ${currentLocale?.alternate_title} brands`,
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
@@ -134,7 +142,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderSoftwareLifecycleBlock(),
         // Related Posts
         renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
-
         // Map
         {
           id: 'stats',
@@ -149,7 +156,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           items: [
             { title: stats.overline, type: 'overline' },
             {
-              title: stats.title,
+              title: `${stats.title} based in ${currentLocale?.title}`,
               titleProps: { gutterBottom: true },
               type: 'h4',
             },

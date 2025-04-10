@@ -38,33 +38,53 @@ export const servicesContent: {
     [
       {
         alt: 'New Rewards',
-        imgSrc: '/images/services/1.webp',
+        imgSrc: '/images/services/gallery-work-01.png',
       },
       {
         alt: 'SG Pay',
-        imgSrc: '/images/services/2.webp',
+        imgSrc: '/images/services/gallery-work-02.png',
       },
       {
         alt: 'Photo Wall',
-        imgSrc: '/images/services/3.webp',
+        imgSrc: '/images/services/gallery-work-03.png',
+      },
+      {
+        alt: 'New Rewards',
+        imgSrc: '/images/services/gallery-work-04.png',
+      },
+      {
+        alt: 'SG Pay',
+        imgSrc: '/images/services/gallery-work-05.png',
+      },
+      {
+        alt: 'Photo Wall',
+        imgSrc: '/images/services/gallery-work-06.png',
       },
     ],
     [
       {
         alt: 'Digital Rewards Platform Interface',
-        imgSrc: '/images/services/21.webp',
+        imgSrc: '/images/services/gallery-work-09.png',
       },
       {
         alt: 'Mobile Payment System Dashboard',
-        imgSrc: '/images/services/22.webp',
+        imgSrc: '/images/services/gallery-work-10.png',
       },
       {
         alt: 'Interactive Photo Display Technology',
-        imgSrc: '/images/services/23.webp',
+        imgSrc: '/images/services/gallery-work-11.png',
       },
       {
         alt: 'Social Media Integration Wall',
-        imgSrc: '/images/services/24.webp',
+        imgSrc: '/images/services/gallery-work-12.png',
+      },
+      {
+        alt: 'Interactive Photo Display Technology',
+        imgSrc: '/images/services/gallery-work-13.png',
+      },
+      {
+        alt: 'Social Media Integration Wall',
+        imgSrc: '/images/services/gallery-work-14.png',
       },
     ],
   ],

@@ -5,6 +5,7 @@ import { PageProvider } from '@onex/landing'
 import { ServicePage, ServicePageProps } from '@onex/pages'
 import { ServiceDetail } from '@onex/server'
 import { InferGetStaticPropsType } from 'next'
+import { useRouter } from 'next/router'
 
 export const getStaticProps = ServiceDetail.getStaticProps()
 export const getStaticPaths = ServiceDetail.getStaticPaths()
@@ -22,13 +23,18 @@ const NextServicePage: React.FC<NextServicePageProps> = (props) => {
     serviceCategory,
     showcases,
   } = props
+  const { site } = pageProviderProps.layoutProviderProps
+  const { locale } = useRouter()
+  const currentLocale = site?.locales?.find(
+    (siteLocale) => siteLocale.key === (locale || '')
+  )
   return (
     <PageProvider {...pageProviderProps}>
       <LandingLayout
         autoBreadcrumbs
         footerProps={{ disableCallout: true }}
         seo={{
-          title: service.title,
+          title: `${service.title} ${currentLocale?.title}`,
           description: `Leverage our expert ${service.category.title.toLowerCase()} services for ${service.title.toLowerCase()}. ${
             service.category.subtitle
           }`,

@@ -1854,7 +1854,7 @@ export const MOCK_GROUP_SERVICES = [
     slug: 'custom-software-development',
     category_id: 2,
     hero_alt: 'Custom software design on a computer screen',
-    hero_src: '/unsplash/uv5_bsypFUM.jpg',
+    hero_src: '/images/two_men_pointing_at_screen_rtl.png',
     // Sections
     sections: {
       challenges: {
@@ -2019,6 +2019,45 @@ export const MOCK_GROUP_SERVICES = [
           },
         ],
         overline: 'Summary',
+      },
+      stats: {
+        title: 'We are a Software Development Company',
+        buttons: [
+          {
+            title: 'Locate an Office',
+            href: routeConfig.CONTACT,
+            overline: 'Where we are',
+          },
+        ],
+        hero_alt: 'contact_world_map_in_dots',
+        hero_src: '/images/contact_world_map_in_dots.svg',
+        items: [
+          {
+            title: '100+',
+            overline: 'Projects',
+          },
+          {
+            title: '6+',
+            overline: 'Years',
+          },
+          {
+            title: '∞',
+            overline: 'Possibilities',
+            titleProps: {
+              sx: {
+                '&&': { fontSize: 'h2.fontSize' },
+                height: 24,
+                lineHeight: '1',
+                position: 'relative',
+                top: -8,
+                width: '100%',
+              },
+            },
+          },
+        ],
+        overline: 'Our Locations',
+        subtitle:
+          'With a strong focus on building digital capabilities, we provide end-to-end custom software development services that help businesses thrive in a competitive market. From designing innovative digital solutions to building scalable platforms and tailored applications, we leverage our expertise to deliver exceptional results.',
       },
     },
     // Seo

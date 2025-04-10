@@ -13,19 +13,20 @@ export interface RenderClientLogosImageMarqueeBlockProps
   imageSizeMultiplier?: number
   items?: ClientLogo[]
   opacity?: number
+  title?: string
 }
 
 const renderClientLogosImageMarqueeBlock = (
   props: RenderClientLogosImageMarqueeBlockProps
 ) => {
-  const { imageSizeMultiplier = 0.8, items, opacity = 0.3, ...rest } = props
+  const { title, imageSizeMultiplier = 0.8, items, opacity = 0.3, ...rest } = props
 
   return {
     center: true,
     disableContainer: true,
     items: [
       {
-        title: 'Trusted by leading organizations',
+        title: title || 'Trusted by leading organizations',
         titleProps: { sx: { opacity: 0.7 } },
         type: 'overline',
       },

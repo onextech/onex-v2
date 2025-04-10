@@ -176,6 +176,7 @@ export interface ServiceCategory extends CrudItem {
 }
 
 export interface SiteLocale {
+  alternate_title: string
   iso_alpha_2: string
   key: string
   title: string

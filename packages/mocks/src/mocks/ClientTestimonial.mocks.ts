@@ -36,17 +36,21 @@ export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
 
 // Austalian names
 const MOCK_GROUP_AU_AUTHOR_TITLES = ['Christopher Brown', 'Olivia Wilson', 'Daniel Moore']
+const MOCK_GROUP_AU_AUTHOR_COMPANY_TITLES = ['Canon', 'Bose', 'Sunny Coast Collective']
 export const MOCK_GROUP_AU_CLIENT_TESTIMONIALS = MOCK_GROUP_CLIENT_TESTIMONIALS.map((item, i) => ({
   ...item,
   author_title: MOCK_GROUP_AU_AUTHOR_TITLES[i],
+  author_company_title: MOCK_GROUP_AU_AUTHOR_COMPANY_TITLES[i],
 }))
 
 // UAE names
 const MOCK_GROUP_AE_AUTHOR_TITLES = ['Ahmed Al-Khattab', 'Fatima Al-Khattab', 'Mohammed Al-Khattab']
-  export const MOCK_GROUP_AE_CLIENT_TESTIMONIALS = MOCK_GROUP_CLIENT_TESTIMONIALS.map((item, i) => ({
-    ...item,
-    author_title: MOCK_GROUP_AE_AUTHOR_TITLES[i],
-  }))
+const MOCK_GROUP_AE_AUTHOR_COMPANY_TITLES = ['Adalfi', 'TVS Motors', 'Kava & Chai']
+export const MOCK_GROUP_AE_CLIENT_TESTIMONIALS = MOCK_GROUP_CLIENT_TESTIMONIALS.map((item, i) => ({
+  ...item,
+  author_title: MOCK_GROUP_AE_AUTHOR_TITLES[i],
+  author_company_title: MOCK_GROUP_AE_AUTHOR_COMPANY_TITLES[i],
+}))
 
 export const MOCK_TECH_CLIENT_TESTIMONIALS = MOCK_GROUP_CLIENT_TESTIMONIALS
 
