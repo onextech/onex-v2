@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 
 import { getStaticPathsWithLayout } from '../nextjs'
 import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
+import { fetchPosts } from './Site'
 
 const { MOCK_KEY = '' } = process.env
 
@@ -40,8 +41,9 @@ export const PostCategoryDetail = {
       ),
     }),
   getStaticProps: (): GetStaticProps => (context) => {
+    const { locale } = context
     const postCategory = fetchPostCategoryBySlug(context.params?.categorySlug)
-    const posts = MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active)
+    const posts = fetchPosts({ locale }).filter(({ is_active }) => is_active)
       .filter(
         ({ published_at }) =>
           published_at && dayjs(published_at).isBefore(dayjs())

@@ -466,7 +466,7 @@ export const MOCK_TECH_POSTS = [
 
 export const MOCK_GROUP_POSTS = [
   {
-    published_at: '2025-04-10T14:00:00+0000',
+    published_at: '2025-03-10T14:00:00+0000',
     is_active: true,
     is_hero: true,
     category_id: 1,
@@ -507,7 +507,7 @@ export const MOCK_GROUP_POSTS = [
       '<p>Driving digital transformation with AI and custom solutions requires a strategic approach focused on flexibility and innovation. Businesses that invest in purpose-built systems can enhance operational efficiency, improve customer satisfaction, and achieve long-term growth in a competitive market.</p>\n'
   },
   {
-    published_at: '2025-04-10T14:00:00+0000',
+    published_at: '2025-02-10T14:00:00+0000',
     is_active: true,
     is_hero: true,
     category_id: 1,
@@ -898,7 +898,7 @@ export const MOCK_GROUP_POSTS = [
       '<p>Through its humble beginnings and well-grounded motivations, business process automation will continue to be an essential enabler of business success in the days to come. The application of automation tools such as macros and robotic software will continue to proliferate alongside rising business demand as the influence of machine learning and artificial intelligence takes flight.</p>\n',
   },
   {
-    published_at: '2025-04-10T14:00:00+0000',
+    published_at: '2025-01-10T14:00:00+0000',
     is_active: true,
     is_hero: true,
     category_id: 1,
@@ -940,7 +940,7 @@ export const MOCK_GROUP_POSTS = [
       '<p>Australia\'s digital landscape is evolving rapidly. Companies that adopt innovative solutions and build scalable systems will achieve sustainable growth and long-term success.</p>\n'
   },
   {
-    published_at: '2025-04-10T14:00:00+0000',
+    published_at: '2025-02-10T14:00:00+0000',
     is_active: true,
     is_hero: true,
     category_id: 1,
