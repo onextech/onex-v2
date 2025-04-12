@@ -3,6 +3,9 @@
   "include": ["./src/**/*", "typings.d.ts", ".eslintrc.js", "index.ts"],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@onex/components/*": ["../../packages/components/src/*"]
+    }
   }
 }

@@ -19,6 +19,7 @@ import {
 import { Industry, Page, Post, PressRelease, Showcase } from '@onex/types'
 import { routeConfig } from '@onex/common'
 import { useRouter } from 'next/router'
+import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 
 export interface DesignPageProps {
   featuredPosts: Post[]
@@ -58,7 +59,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             { title: hero.overline, type: 'overline' },
             {
               title: hero.title,
-              titleProps: { component: 'h1', gutterBottom: true },
+              titleProps: { component: 'h1', gutterBottom: true, sx: { maxWidth: { md: '60%' } }  },
               type: 'h2',
             },
             {
@@ -71,7 +72,7 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
                 {
                   items: [
                     renderGhostButtonBlockItem({
-                      title: 'Smarter Businesses',
+                      title: 'Future-Ready Design',
                       href: routeConfig.SERVICES,
                       overline: 'What we do',
                       size: 'lg',
@@ -109,7 +110,9 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         // Summary
         renderHomeSummaryBlock({
           ...summary,
-          pb: { xs: 5, md: 0 },
+          center: true,
+          pt: { xs: 10, md: 16 },
+          pb: { xs: 10, md: 10 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
         }),
@@ -118,8 +121,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           ...benefits,
           sx: { backgroundColor: 'background.paper' },
         }),
-        // Marquee
-        renderClientHighlightsImageMarqueeBlock({ items: clientHighlights }),
+        // Design
+        <GalleryMarqueeSection title="Design Systems that Scale" subtitle="One X Design empowers enterprises with unified design systems that deliver consistent, delightful user experiences." disableOverline disableServices />,
         // Showcases
         renderShowcasesBlock({
           title: <>Crafting Engaging User Experiences</>,
@@ -134,14 +137,6 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           items: clientTestimonials,
           subtitle:
             'One X Design is the trusted partner for enterprise-level organisations seeking top-notch UI/UX services, transformative product designs, and immersive UX workshops.',
-        }),
-        // Industry
-        renderFeaturedIndustrysBlock({
-          title: 'Access Industry Expertise & Best Practices',
-          items: industrys,
-          subtitle:
-            'We are dedicated to providing our clients with solutions that are designed to help them stay ahead of the curve in their industry. We are constantly developing new techniques, and methodologies to ensure that our clients always get access to the most effective and transformative design solutions.',
-          sx: { backgroundColor: 'background.paper' },
         }),
         // Posts
         renderFeaturedPostsBlock({

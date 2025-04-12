@@ -21,6 +21,7 @@ module.exports = withBundleAnalyzer({
     '@onex/analytics',
     '@onex/theme',
     '@onex/form',
+    '@onex/components',
   ],
   async headers() {
     return [
@@ -32,21 +33,24 @@ module.exports = withBundleAnalyzer({
           // No sniffing
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           // No permissions
-          { key: 'Permissions-Policy', value: "camera=(); battery=(self); geolocation=(); microphone=()" },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(); battery=(self); geolocation=(); microphone=()',
+          },
           // No referrer
-          { key: 'Referrer-Policy', value: "origin-when-cross-origin" },
-        ]
-      }
+          { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },
+        ],
+      },
     ]
   },
   async redirects() {
     return [
       {
-        source: "/sg/:path*",
-        destination: "/:path*",
+        source: '/sg/:path*',
+        destination: '/:path*',
         permanent: true, // 301 redirect
       },
-    ];
+    ]
   },
   webpack(config) {
     // Svg support

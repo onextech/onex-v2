@@ -25,7 +25,7 @@ import {
   Resource,
   Showcase,
 } from '@onex/types'
-import { GalleryMarqueeSection } from '@onex/group/components/sections/gallery-marquee-section'
+import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 
 export interface GroupPageProps {
   featuredPosts: Post[]

@@ -43,7 +43,7 @@ export interface RestoreUserPreferencesOptions {
 const initialUserPreferences: UserPreferences = {
   direction: 'ltr',
   isDarkSidebar: false,
-  mode: 'light',
+  mode: 'dark',
   responsiveFontSizes: true,
 }
 

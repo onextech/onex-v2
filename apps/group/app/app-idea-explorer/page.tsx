@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { AppIdeaExplorer } from '@/components/app-idea-explorer/ai-card-generation'
+import { AppIdeaExplorer } from '@onex/components/app-idea-explorer/ai-card-generation'
 
 export const metadata: Metadata = {
   title: 'One X App Idea Explorer',

@@ -2755,7 +2755,7 @@ export const MOCK_DESIGN_PAGES = [
     is_hidden_from_header: true,
     sections: {
       benefits: {
-        title: 'Delivering Enterprise-Scale Design Solutions',
+        title: 'Design Solutions for Enterprises',
         center: true,
         items: [
           {
@@ -2914,14 +2914,14 @@ export const MOCK_DESIGN_PAGES = [
           'Our user-centric approach to every project ensures the delivery of superior UI/UX solutions for enterprises seeking to embark on a transformative digital journey.',
       },
       hero: {
-        title: 'Building Leading-Edge Enterprise Designs',
+        title: 'Building Unified Design Systems for Enterprise Teams',
         overline: '{appTitle}',
         subtitle:
-          "{appTitle} sets the standard for top-tier, intuitive design solutions for {localeTitle}'s leading companies.",
+          "{appTitle} partners with enterprises to build future-ready design systems that align teams, accelerate delivery, and delight users at every touchpoint.",
       },
       summary: {
         title:
-          'In a world inundated with disjointed digital experiences, {appTitle} empowers businesses with unified design systems and delightful user experiences.',
+          '{appTitle} empowers businesses with unified design systems and delightful user experiences.',
         items: [
           {
             title:

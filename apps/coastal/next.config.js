@@ -21,6 +21,7 @@ module.exports = withBundleAnalyzer({
     '@onex/analytics',
     '@onex/theme',
     '@onex/form',
+    '@onex/components',
   ],
   async headers() {
     return [

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { GalleryMarqueeSection } from '@onex/group/components/sections/gallery-marquee-section'
+import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 import {
   Blocks,
   renderClientLogoCardBlockItem,
@@ -22,6 +22,7 @@ import {
 import { MOCK_PAGES } from '@onex/mocks'
 import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
 import { useRouter } from 'next/router'
+
 export interface ServicePageProps {
   relatedPosts?: Post[]
   relatedServices?: Service[]
@@ -63,7 +64,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           item: {
             ...service,
             title: `${service.title} ${currentLocale?.title}`,
-            hero_src: locale === 'ae' ? '/images/three_middleastern_persons_pointing_at_screen.png' : '/images/two_men_pointing_at_screen_rtl.png',
+            ...(site.id === 'GROUP' && { hero_src: locale === 'ae' ? '/images/three_middleastern_persons_pointing_at_screen.png' : '/images/two_men_pointing_at_screen_rtl.png' }),
           },
         }),
         // ClientLogosImageMarquee
@@ -136,7 +137,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             subtitle: showcase.subtitle,
           }),
         // Technologys
-        renderTechnologysBlock({ items: technologys }),
+        technologys?.length > 0 && renderTechnologysBlock({ items: technologys }),
         // Process
         renderSoftwareLifecycleBlock(),
         // Related Posts
@@ -199,7 +200,7 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderFourColumnGridBlock(usps),
         // Form
         renderLeadFormBlock(),
-        renderClientTestimonialSliderBlock({
+        testimonial && renderClientTestimonialSliderBlock({
           title: testimonial.title,
           dark: true,
           items: clientTestimonials,

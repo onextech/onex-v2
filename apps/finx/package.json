@@ -37,6 +37,7 @@
     "@onex/analytics": "*",
     "@onex/theme": "*",
     "@onex/form": "*",
+"@onex/components": "*",
     "keen-slider": "^6.8.5",
     "react-hot-toast": ">=2.2.0",
     "react-hook-form": "^7.30.0",

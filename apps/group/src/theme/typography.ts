@@ -48,7 +48,7 @@ const typography = {
   body2: { fontSize: pxToRem(14), fontWeight: 600, lineHeight: 1.6 },
   button: {
     fontFamily: overlineFontFamily,
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: 1,
   },
   caption: {

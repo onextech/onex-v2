@@ -9,7 +9,6 @@ import { AppProps } from 'next/app'
 
 import '@/styles/globals.css' // For using tailwind styles in MUI
 import '@/styles/preflight.css' // Maintain our own preflight to work with MUI interop @see https://github.com/tailwindlabs/tailwindcss/discussions/11290#discussioncomment-7783598
-
 import { fonts } from '@/styles/fonts'
 
 import 'keen-slider/keen-slider.min.css'

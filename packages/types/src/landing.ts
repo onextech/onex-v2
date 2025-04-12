@@ -189,6 +189,7 @@ export interface SiteNavItem {
 }
 
 export interface Site {
+  id?: string
   absolute_url?: string
   company_absolute_url?: string
   // Company

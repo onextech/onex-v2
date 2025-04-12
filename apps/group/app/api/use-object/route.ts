@@ -1,5 +1,5 @@
-import { appIdeaResultSchema } from '@/components/app-idea-explorer/schema'
 import { openai } from '@ai-sdk/openai'
+import { appIdeaResultSchema } from '@onex/components/app-idea-explorer/schema'
 import { streamObject } from 'ai'
 
 // Allow streaming responses up to 60 seconds

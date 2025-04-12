@@ -43,6 +43,7 @@ export const MOCK_GROUP_SITE: Site = {
   ...MOCK_COMMON_SITE,
 
   // App
+  id: 'GROUP',
   title: 'One X Group',
 
   absolute_url: 'https://www.onexgroup.co',
@@ -137,6 +138,7 @@ export const MOCK_TECH_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'TECH',
   title: 'One X Tech',
 
   absolute_url: 'https://www.onextech.com',
@@ -208,6 +210,7 @@ export const MOCK_DESIGN_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'DESIGN',
   title: 'One X Design',
 
   absolute_url: 'https://www.onexdesign.com',
@@ -217,7 +220,6 @@ export const MOCK_DESIGN_SITE = {
   // Cta
   cta_title: 'Transform the Enterprise Experience with One X Design.',
 
-  default_theme_mode: DEFAULT_THEME_MODE_ENUM.LIGHT,
   disable_faqs_on_home_page: false,
 
   disable_testimonials: false,
@@ -272,6 +274,7 @@ export const MOCK_DATA_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'DATA',
   title: 'One X Data',
 
   absolute_url: 'https://www.onexdata.co',
@@ -339,6 +342,7 @@ export const MOCK_DIGITAL_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'DIGITAL',
   title: 'One X Digital',
 
   absolute_url: 'https://www.onexdigital.co',
@@ -410,6 +414,7 @@ export const MOCK_FINX_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'FINX',
   title: 'Fin X',
 
   absolute_url: 'https://www.finx.ai',
@@ -481,6 +486,7 @@ export const MOCK_GOVX_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'GOVX',
   title: 'Gov X',
 
   absolute_url: 'https://www.govx.ai',
@@ -551,9 +557,10 @@ export const MOCK_GOVX_SITE = {
 export const MOCK_AEL_SITE: Site = {
   ...MOCK_GROUP_SITE,
 
+  // App
+  id: "AEL",
   title: 'Aether Labs',
   absolute_url: 'https://www.aetherlabs.ai',
-  // App
   company_title: 'Aether Labs Inc.',
   cta_button_title: 'Get Started',
   // Cta
@@ -614,7 +621,8 @@ export const MOCK_SRI_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
-  title: 'Gov X',
+  id: 'SRI',
+  title: 'SRI',
 
   absolute_url: 'https://www.govx.ai',
 
@@ -684,6 +692,7 @@ export const MOCK_GVS_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
+  id: 'GVS',
   title: 'Gov X',
 
   absolute_url: 'https://www.govx.ai',
@@ -754,7 +763,8 @@ export const MOCK_COASTAL_SITE = {
   ...MOCK_GROUP_SITE,
 
   // App
-  title: 'Gov X',
+  id: 'COASTAL',
+  title: 'Coastal',
 
   absolute_url: 'https://www.govx.ai',
 
