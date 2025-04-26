@@ -1,19 +1,39 @@
 import { createTheme } from '@mui/material/styles'
-import { Blinker, Roboto } from 'next/font/google'
+import { IBM_Plex_Mono, Roboto } from 'next/font/google'
+import localFont from 'next/font/local'
 
-export const headerFont = Blinker({
-  display: 'swap',
-  fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
-  subsets: ['latin'],
-  weight: ['400', '600'],
+export const headerFont = localFont({
+  src: [
+    {
+      path: './fonts/Publico/PublicoHeadline-Light-Web.woff2',
+      style: 'light',
+      weight: '300',
+    },
+    {
+      path: './fonts/Publico/PublicoText-Roman-Web.woff2',
+      style: 'normal',
+      weight: '400',
+    },
+    {
+      path: './fonts/Publico/PublicoText-Semibold-Web.woff2',
+      style: 'semibold',
+      weight: '600',
+    },
+  ],
 })
+
 export const bodyFont = Roboto({
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
   subsets: ['latin'],
   weight: ['300', '400'],
 })
-export const overlineFont = headerFont
+export const overlineFont = IBM_Plex_Mono({
+  display: 'swap',
+  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+})
 
 const headerFontFamily = headerFont.style.fontFamily
 const bodyFontFamily = bodyFont.style.fontFamily
@@ -29,17 +49,6 @@ const typography = {
     fontWeight: 600,
     letterSpacing: 1,
   },
-  button2: {
-    [defaultTheme.breakpoints.up('md')]: {
-      fontSize: pxToRem(18),
-    },
-    fontFamily: headerFontFamily,
-    fontSize: pxToRem(18),
-    fontWeight: 600,
-    letterSpacing: 1,
-    lineHeight: 1,
-    textTransform: 'none',
-  },
   caption: {
     display: 'block',
     lineHeight: 1.5,
@@ -54,24 +63,24 @@ const typography = {
     },
     fontFamily: headerFontFamily,
     fontSize: pxToRem(48),
-    fontWeight: 600,
+    fontWeight: 300,
     letterSpacing: -0.5,
     lineHeight: 1.05,
   },
   h2: {
     fontFamily: headerFontFamily,
-    fontWeight: 400,
+    fontWeight: 300,
     letterSpacing: -1,
     lineHeight: 1.1,
   },
-  h3: { fontFamily: headerFontFamily, fontWeight: 400, lineHeight: 1.09 },
+  h3: { fontFamily: headerFontFamily, fontWeight: 300, lineHeight: 1.09 },
   h4: {
     [defaultTheme.breakpoints.down('md')]: {
       fontSize: pxToRem(28),
     },
     fontFamily: headerFontFamily,
     fontSize: pxToRem(39),
-    fontWeight: 400,
+    fontWeight: 300,
   },
   h5: {
     [defaultTheme.breakpoints.up('md')]: {
@@ -79,7 +88,7 @@ const typography = {
     },
     fontFamily: headerFontFamily,
     fontSize: pxToRem(20),
-    fontWeight: 400,
+    fontWeight: 300,
     letterSpacing: 0,
     lineHeight: 1.3,
   },
@@ -89,14 +98,14 @@ const typography = {
     },
     fontFamily: headerFontFamily,
     fontSize: pxToRem(16),
-    fontWeight: 400,
+    fontWeight: 300,
     letterSpacing: 0,
     lineHeight: 1.4,
   },
   h7: {
     fontFamily: headerFontFamily,
     fontSize: pxToRem(16),
-    fontWeight: 400,
+    fontWeight: 300,
     letterSpacing: 0,
     lineHeight: 1.5,
   },

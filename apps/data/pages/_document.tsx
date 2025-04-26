@@ -25,7 +25,11 @@ export default class MyDocument extends Document {
       this.props.__NEXT_DATA__.query.locale || i18nextConfig.i18n.defaultLocale
     )
     return (
-      <Html className={bodyFont.className} lang={currentLocale}>
+      <Html
+        className={bodyFont.className}
+        lang={currentLocale}
+        suppressHydrationWarning
+      >
         <Head>
           {/* PWA primary color */}
           <meta content={lightTheme.palette.primary.main} name="theme-color" />
