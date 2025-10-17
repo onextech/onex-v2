@@ -279,19 +279,19 @@ export const MOCK_COMMON_SHOWCASES: Showcase[] = [
         items: [
           {
             title: '/showcases/spk/gallery_1.png',
-            titleProps: { alt: 'TGB Gallery 1' },
+            titleProps: { alt: 'SPK Gallery 1' },
           },
           {
             title: '/showcases/spk/gallery_2.png',
-            titleProps: { alt: 'TGB Gallery 2' },
+            titleProps: { alt: 'SPK Gallery 2' },
           },
           {
             title: '/showcases/spk/gallery_3.png',
-            titleProps: { alt: 'TGB Gallery 3' },
+            titleProps: { alt: 'SPK Gallery 3' },
           },
           {
             title: '/showcases/spk/gallery_4.png',
-            titleProps: { alt: 'TGB Gallery 4' },
+            titleProps: { alt: 'SPK Gallery 4' },
           },
         ],
       },
@@ -543,56 +543,6 @@ export const MOCK_COMMON_SHOWCASES: Showcase[] = [
           'Canon wanted to show employees how much the company appreciates and values their hard work. We created a scalable and enticing online rewards program where staff are awarded points they can use to redeem their preferred gift.',
         hero_src: '/showcases/canon/right.png',
         hero_alt: 'Integrated rewards marketplace showcase',
-      },
-    },
-  },
-  {
-    title: "People's Association: Intelligent Chatbot Assistant.",
-    slug: 'tgb',
-    subtitle:
-      "Creating a transformative procurement solution for the People's Association, enhancing simplicity and efficiency in every step",
-    hero_src: '/showcases/tgb/hero.png',
-    hero_alt: 'TGB showcase',
-    mode: 'light',
-    backgroundColor: '#c3e8c1',
-    reverse: true,
-    sections: {
-      leftGridSticky: {
-        title: 'Redefining traditional procurement',
-        subtitle:
-          'By integrating artificial intelligence, we\'ve crafted a new paradigm in procurement, allowing the People\'s Association to meet modern demands with innovative solutions.',
-        hero_src: '/showcases/tgb/left.png',
-        hero_alt: 'TGB Showcase 1',
-      },
-      gallery: {
-        title: 'Leveraging AI for Enhanced Learning',
-        subtitle:
-          'By using artificial intelligence, we\'ve created a chat interface that provides an intuitive learning experience in grant processing and operational procurement for users.',
-        items: [
-          {
-            title: '/showcases/tgb/gallery_1.png',
-            titleProps: { alt: 'TGB Gallery 1' },
-          },
-          {
-            title: '/showcases/tgb/gallery_2.png',
-            titleProps: { alt: 'TGB Gallery 2' },
-          },
-          {
-            title: '/showcases/tgb/gallery_3.png',
-            titleProps: { alt: 'TGB Gallery 3' },
-          },
-          {
-            title: '/showcases/tgb/gallery_4.png',
-            titleProps: { alt: 'TGB Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'Driving Efficiency through Technology',
-        subtitle:
-          'Our transformative solution streamlines the People\'s Association\'s procurement procedures, boosting productivity and simplifying workflow.',
-        hero_src: '/showcases/tgb/right.png',
-        hero_alt: 'TGB Showcase 2',
       },
     },
   },
@@ -868,7 +818,6 @@ export const MOCK_TECH_SHOWCASES: Showcase[] = [
 export const MOCK_GROUP_SHOWCASES: Showcase[] = [
   MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'sg-pay'),
   MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'nextgen'),
-  MOCK_COMMON_SHOWCASES.find(({ slug }) => slug === 'tgb'),
   ...MOCK_COMMON_SHOWCASES,
 ]
   .map((showcase, i) => ({ id: i + 1, ...showcase }))
@@ -1097,56 +1046,6 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
     },
   },
   {
-    title: "People's Association: Intelligent Chatbot Assistant.",
-    slug: 'tgb',
-    subtitle:
-      "Creating a transformative procurement solution for the People's Association, enhancing simplicity and efficiency in every step",
-    hero_src: '/showcases/tgb/hero.png',
-    hero_alt: 'TGB showcase',
-    mode: 'light',
-    backgroundColor: '#c3e8c1',
-    reverse: true,
-    sections: {
-      leftGridSticky: {
-        title: 'Redefining traditional procurement',
-        subtitle:
-          'By integrating artificial intelligence, we\'ve crafted a new paradigm in procurement, allowing the People\'s Association to meet modern demands with innovative solutions.',
-        hero_src: '/showcases/tgb/left.png',
-        hero_alt: 'TGB Showcase 1',
-      },
-      gallery: {
-        title: 'Leveraging AI for Enhanced Learning',
-        subtitle:
-          'By using artificial intelligence, we\'ve created a chat interface that provides an intuitive learning experience in grant processing and operational procurement for users.',
-        items: [
-          {
-            title: '/showcases/tgb/gallery_1.png',
-            titleProps: { alt: 'TGB Gallery 1' },
-          },
-          {
-            title: '/showcases/tgb/gallery_2.png',
-            titleProps: { alt: 'TGB Gallery 2' },
-          },
-          {
-            title: '/showcases/tgb/gallery_3.png',
-            titleProps: { alt: 'TGB Gallery 3' },
-          },
-          {
-            title: '/showcases/tgb/gallery_4.png',
-            titleProps: { alt: 'TGB Gallery 4' },
-          },
-        ],
-      },
-      rightGridSticky: {
-        title: 'Driving Efficiency through Technology',
-        subtitle:
-          'Our transformative solution streamlines the People\'s Association\'s procurement procedures, boosting productivity and simplifying workflow.',
-        hero_src: '/showcases/tgb/right.png',
-        hero_alt: 'TGB Showcase 2',
-      },
-    },
-  },
-  {
     title: 'Blockchain & Artificial Intelligence.',
     slug: 'spk',
     subtitle:
@@ -1170,19 +1069,19 @@ export const MOCK_DATA_SHOWCASES: Showcase[] = [
         items: [
           {
             title: '/showcases/spk/gallery_1.png',
-            titleProps: { alt: 'TGB Gallery 1' },
+            titleProps: { alt: 'SPK Gallery 1' },
           },
           {
             title: '/showcases/spk/gallery_2.png',
-            titleProps: { alt: 'TGB Gallery 2' },
+            titleProps: { alt: 'SPK Gallery 2' },
           },
           {
             title: '/showcases/spk/gallery_3.png',
-            titleProps: { alt: 'TGB Gallery 3' },
+            titleProps: { alt: 'SPK Gallery 3' },
           },
           {
             title: '/showcases/spk/gallery_4.png',
-            titleProps: { alt: 'TGB Gallery 4' },
+            titleProps: { alt: 'SPK Gallery 4' },
           },
         ],
       },
