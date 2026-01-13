@@ -35,8 +35,9 @@ const NextServicePage: React.FC<NextServicePageProps> = (props) => {
         footerProps={{ disableCallout: true }}
         seo={{
           title: `${service.title} ${currentLocale?.title}`,
-          description: `Leverage our expert ${service.category.title.toLowerCase()} services for ${service.title.toLowerCase()}. ${
-            service.category.subtitle
+          description: `${service.title} services in ${currentLocale?.title}. ${
+            service.seo?.description ||
+            `Leverage our expert ${service.category.title.toLowerCase()} team. Get a free consultation today.`
           }`,
         }}
       >

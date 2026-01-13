@@ -1931,6 +1931,12 @@ export const MOCK_GROUP_SERVICES = [
             content:
               "{title} is ideal for businesses with unique operational needs that cannot be met by off-the-shelf software. Companies looking to enhance workflow efficiency, enable seamless integration across departments, or leverage strategic data insights are prime candidates for custom solutions.\n\nWhether you're a startup scaling your operations or an enterprise seeking to refine and optimize existing processes, custom software provides the flexibility and personalization needed to tackle specific challenges. It's designed to fit your business model and drive success in a competitive market.",
           },
+          {
+            id: 'facts-4',
+            title: 'Government Grants & Funding Support',
+            content:
+              "Singapore businesses can access various government grants to offset custom software development costs:\n\nEnterprise Development Grant (EDG)\nThe EDG supports Singapore companies in upgrading business capabilities, including digital transformation projects. Eligible companies can receive up to 50% funding support for qualifying custom software development projects.\n\nProductivity Solutions Grant (PSG)\nThe PSG supports SMEs in adopting pre-approved IT solutions and equipment to enhance business processes. This grant can cover up to 50% of qualifying costs.\n\nNTUC Company Training Committee (CTC) Grant\nFor workforce upskilling related to new software implementations, the CTC grant can support training costs.\n\nContact us to learn how we can help you navigate the grant application process and maximize your funding support for custom software development.",
+          },
         ],
         overline: 'Facts',
         subtitle:
@@ -1958,9 +1964,33 @@ export const MOCK_GROUP_SERVICES = [
             content:
               'We prioritize security at every stage of development. Our team follows industry best practices and standards to safeguard your software against potential threats, ensuring compliance with relevant security regulations.',
           },
+          {
+            id: 'faqs-4',
+            title: 'How much does custom software development cost?',
+            content:
+              'The cost of custom software development varies based on project complexity, features, and timeline. We provide detailed estimates after understanding your requirements during a free consultation. Our pricing is transparent with no hidden fees.',
+          },
+          {
+            id: 'faqs-5',
+            title: 'How long does custom software development take?',
+            content:
+              'Custom software development timelines depend on scope. Simple applications may take 2-3 months, while complex enterprise systems can take 6-12 months. We work in agile sprints and provide realistic timelines during the discovery phase.',
+          },
+          {
+            id: 'faqs-6',
+            title: 'What is custom software development?',
+            content:
+              'Custom software development is the process of designing, building, and deploying software tailored to your specific business needs. Unlike off-the-shelf solutions, custom software addresses your unique workflows, integrates with existing systems, and scales with your growth.',
+          },
+          {
+            id: 'faqs-7',
+            title: 'Are there government grants available for custom software development in Singapore?',
+            content:
+              'Yes, Singapore businesses can access grants like the Enterprise Development Grant (EDG) and Productivity Solutions Grant (PSG) to offset up to 50% of custom software development costs. We can help you navigate the application process and maximize your funding support.',
+          },
         ],
         subtitle:
-          'Learn more about our Custom Software Development service and how it can benefit your business.',
+          'Common questions about our custom software development services and how they can transform your business.',
       },
       features: {
         title: 'End-to-end {title} Capabilities',
@@ -2064,10 +2094,10 @@ export const MOCK_GROUP_SERVICES = [
     seo: {
       title: 'Custom Software Development',
       description:
-        'This page highlights our custom software development services, offering tailored solutions to meet the unique needs of businesses across various industries.',
+        'Custom software development services for enterprises. We design, build, and deploy tailored solutions that drive business growth. Get a free consultation today.',
     },
     subtitle:
-      'Partner with us to build bespoke software solutions that cater specifically to your business needs and drive operational efficiency.',
+      'Custom software development services tailored to your business needs. We build scalable, enterprise-grade solutions that drive operational efficiency and growth.',
   },
   {
     title: 'Web App Development',
