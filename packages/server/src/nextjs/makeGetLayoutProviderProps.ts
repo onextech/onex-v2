@@ -30,10 +30,16 @@ const makeGetLayoutProviderProps =
     const clientTestimonials = locale !== defaultLocale ? fetchClientTestimonials({ locale }) : injectedClientTestimonials
     const clientLogos = locale !== defaultLocale ? fetchClientLogos({ locale }) : injectedClientLogos
     const showcases = locale !== defaultLocale ? fetchShowcases({ locale }) : injectedShowcases
+
+    // Limit arrays to reduce page data size (navigation only needs limited items)
+    const MAX_TESTIMONIALS = 10
+    const MAX_SHOWCASES = 12
+    const MAX_CLIENT_LOGOS = 15
+
     return {
-      clientHighlights,
-      clientLogos,
-      clientTestimonials,
+      clientHighlights: clientHighlights.slice(0, 6),
+      clientLogos: clientLogos.slice(0, MAX_CLIENT_LOGOS),
+      clientTestimonials: clientTestimonials.slice(0, MAX_TESTIMONIALS),
       industrys: industrys
         ?.filter(({ is_hidden_from_header }) => !is_hidden_from_header)
         ?.map((industry) => ({
@@ -61,7 +67,7 @@ const makeGetLayoutProviderProps =
           }))
         ),
       })),
-      showcases,
+      showcases: showcases.slice(0, MAX_SHOWCASES),
       site,
       technologys: technologys
         .filter(({ is_hidden_from_header }) => !is_hidden_from_header)
