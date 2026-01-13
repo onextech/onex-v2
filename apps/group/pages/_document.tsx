@@ -27,6 +27,14 @@ export default class MyDocument extends Document {
             content={process.env.NEXT_PUBLIC_FACEBOOK_DOMAIN_VERIFICATION}
             name="facebook-domain-verification"
           />
+          {/* Preconnect to external domains for faster resource loading */}
+          <link href="https://fonts.googleapis.com" rel="preconnect" />
+          <link crossOrigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
+          <link href="https://www.googletagmanager.com" rel="preconnect" />
+          <link href="https://www.google-analytics.com" rel="preconnect" />
+          {/* DNS prefetch for third-party services */}
+          <link href="https://connect.facebook.net" rel="dns-prefetch" />
+          <link href="https://www.linkedin.com" rel="dns-prefetch" />
           {(this.props as any).emotionStyleTags}
           {/* Preload critical fonts for better LCP */}
           <link

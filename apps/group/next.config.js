@@ -24,9 +24,24 @@ module.exports = withBundleAnalyzer({
       '@onex/ui',
       '@onex/landing',
       '@onex/components',
+      '@onex/pages',
       '@mui/material',
       '@mui/icons-material',
+      '@mui/lab',
+      'keen-slider',
+      'react-hot-toast',
+      'dayjs',
+      'yup',
+      'react-hook-form',
+      '@hookform/resolvers',
+      'lucide-react',
     ],
+  },
+  // Optimize MUI icons imports
+  modularizeImports: {
+    '@mui/icons-material': {
+      transform: '@mui/icons-material/{{member}}',
+    },
   },
   transpilePackages: [
     '@onex/common',

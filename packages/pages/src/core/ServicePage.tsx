@@ -3,6 +3,7 @@ import React from 'react'
 import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 import {
   Blocks,
+  LazyBlock,
   renderClientLogoCardBlockItem,
   renderClientLogosImageMarqueeBlock,
   renderClientTestimonialSliderBlock,
@@ -73,7 +74,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
-        <GalleryMarqueeSection />,
+        <LazyBlock minHeight={600} rootMargin="100px">
+          <GalleryMarqueeSection />
+        </LazyBlock>,
         // Solution Offering
         renderThreeColumnGridBlock({
           ...features,

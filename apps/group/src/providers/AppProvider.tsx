@@ -1,5 +1,4 @@
 import React from 'react'
-import { Toaster } from 'react-hot-toast'
 
 import { darkTheme, lightTheme } from '@app/theme'
 import { EmotionCache } from '@emotion/react'
@@ -10,7 +9,14 @@ import {
   createEmotionCache,
 } from '@onex/landing'
 import { AppProps } from 'next/app'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
+
+// Lazy load Toaster since it's not critical for initial render
+const Toaster = dynamic(
+  () => import('react-hot-toast').then((mod) => mod.Toaster),
+  { ssr: false }
+)
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()

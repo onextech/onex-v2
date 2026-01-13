@@ -12,6 +12,7 @@ import {
   KeenSliderPlugin,
   useKeenSlider,
 } from 'keen-slider/react'
+import 'keen-slider/keen-slider.min.css'
 
 import Box, { BoxProps } from '../../core/Box'
 import IconButton from '../../core/IconButton'
@@ -71,9 +72,6 @@ export interface SliderProps extends BoxProps {
   viewAll?: boolean
 }
 
-/**
- * @note Add `import 'keen-slider/keen-slider.min.css'` in your app
- */
 const Slider: React.FC<SliderProps> = (props) => {
   const {
     arrows,
