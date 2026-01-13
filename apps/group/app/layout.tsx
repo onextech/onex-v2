@@ -50,6 +50,56 @@ export const metadata: Metadata = {
   },
 }
 
+// LocalBusiness Schema for improved local SEO
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://www.onexgroup.co/#organization',
+  name: 'One X Group',
+  alternateName: 'OneX Group',
+  description:
+    'One X Group is a leading provider of custom software development services in Singapore, leveraging cutting-edge solutions to deliver exceptional products.',
+  url: 'https://www.onexgroup.co',
+  logo: 'https://www.onexgroup.co/logo.png',
+  image: 'https://www.onexgroup.co/og-image.jpg',
+  telephone: '+65-6970-5083',
+  email: 'hello@onexgroup.co',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '71 Robinson Road',
+    addressLocality: 'Singapore',
+    postalCode: '068895',
+    addressCountry: 'SG',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 1.2789,
+    longitude: 103.8536,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '18:00',
+  },
+  sameAs: [
+    'https://www.linkedin.com/company/onexgroup',
+    'https://github.com/onextech',
+  ],
+  priceRange: '$$',
+  areaServed: {
+    '@type': 'Country',
+    name: 'Singapore',
+  },
+  serviceType: [
+    'Custom Software Development',
+    'Web Application Development',
+    'Mobile App Development',
+    'Enterprise Software Solutions',
+    'Digital Transformation',
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,6 +107,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+          type="application/ld+json"
+        />
+      </head>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ''} />
 
       <body

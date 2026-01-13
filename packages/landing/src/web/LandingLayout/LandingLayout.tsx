@@ -37,6 +37,8 @@ export interface LandingLayoutProps extends StackProps {
   footerProps?: FooterProps
   gutterSize?: number
   headerProps?: HeaderProps
+  // JSON-LD structured data
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[]
   // Next-seo
   seo?: NextSeoProps
 
@@ -62,6 +64,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     gutterSize = 2,
 
     headerProps: injectedHeaderProps,
+    // JSON-LD
+    jsonLd,
     // seo
     seo,
     sx,
@@ -113,6 +117,20 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
               url: `${site?.absolute_url}${router.asPath}`,
             },
           }}
+        />
+      )}
+
+      {/* JSON-LD Structured Data */}
+      {jsonLd && (
+        <script
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              Array.isArray(jsonLd)
+                ? jsonLd.map((item) => ({ '@context': 'https://schema.org', ...item }))
+                : { '@context': 'https://schema.org', ...jsonLd }
+            ),
+          }}
+          type="application/ld+json"
         />
       )}
 
