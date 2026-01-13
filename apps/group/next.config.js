@@ -56,7 +56,7 @@ module.exports = withBundleAnalyzer({
           // No permissions
           {
             key: 'Permissions-Policy',
-            value: 'camera=(); battery=(self); geolocation=(); microphone=()',
+            value: 'camera=(), battery=(self), geolocation=(), microphone=()',
           },
           // No referrer
           { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },

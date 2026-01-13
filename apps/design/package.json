@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "sideEffects": false,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
