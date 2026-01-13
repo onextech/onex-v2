@@ -9,10 +9,6 @@ import {
   renderGtmScriptTag,
 } from '@onex/analytics'
 import { createEmotionCache, lightTheme } from '@onex/landing'
-import {
-  renderFontAwesomeKitPreconnectLinkTags,
-  renderFontAwesomeKitScriptTag,
-} from '@onex/ui'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import i18nextConfig from '../next-i18next.config'
@@ -31,14 +27,12 @@ export default class MyDocument extends Document {
           <link href="/favicon.ico" rel="shortcut icon" />
           <meta content="" name="emotion-insertion-point" />
           {(this.props as any).emotionStyleTags}
-          {renderFontAwesomeKitPreconnectLinkTags()}
           {renderGtmPreconnectLinkTags()}
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
         <body>
           <Main />
           <NextScript />
-          {renderFontAwesomeKitScriptTag()}
           {renderGtmScriptTag()}
         </body>
       </Html>

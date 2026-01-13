@@ -27,6 +27,7 @@ import {
 import merge from 'lodash/merge'
 import dynamic from 'next/dynamic'
 
+import { getLucideIcon } from '../../utils/iconMap'
 import { BlockItemTypeEnum } from './constants'
 
 const DynamicDialog = dynamic(() =>
@@ -113,9 +114,15 @@ const renderBlockItem = (props) => {
         )
       }
       case BlockItemTypeEnum.FA_ICON: {
+        const LucideIconComponent = getLucideIcon(title)
+        if (!LucideIconComponent) {
+          // Fallback for unmapped icons - render nothing or a placeholder
+          console.warn(`No Lucide icon mapping found for: ${title}`)
+          return null
+        }
         return (
           <Box {...boxProps}>
-            <Box className={title} component="i" {...titleProps} />
+            <LucideIconComponent {...titleProps} />
           </Box>
         )
       }

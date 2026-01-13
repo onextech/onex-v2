@@ -4,16 +4,8 @@ import * as React from 'react'
 
 import { bodyFont } from '@app/theme/typography'
 import createEmotionServer from '@emotion/server/create-instance'
-import {
-  renderGtmNoScriptTag,
-  renderGtmPreconnectLinkTags,
-  renderGtmScriptTag,
-} from '@onex/analytics'
+import { renderGtmNoScriptTag } from '@onex/analytics'
 import { createEmotionCache, lightTheme } from '@onex/landing'
-import {
-  renderFontAwesomeKitPreconnectLinkTags,
-  renderFontAwesomeKitScriptTag,
-} from '@onex/ui'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import i18nextConfig from '../next-i18next.config'
@@ -36,15 +28,26 @@ export default class MyDocument extends Document {
             name="facebook-domain-verification"
           />
           {(this.props as any).emotionStyleTags}
-          {renderFontAwesomeKitPreconnectLinkTags()}
-          {renderGtmPreconnectLinkTags()}
+          {/* Preload critical fonts for better LCP */}
+          <link
+            as="font"
+            crossOrigin="anonymous"
+            href="/styles/fonts/PublicoHeadline-Light.woff2"
+            rel="preload"
+            type="font/woff2"
+          />
+          <link
+            as="font"
+            crossOrigin="anonymous"
+            href="/styles/fonts/PublicoText-Regular.woff2"
+            rel="preload"
+            type="font/woff2"
+          />
         </Head>
         <noscript>{renderGtmNoScriptTag()}</noscript>
         <body>
           <Main />
           <NextScript />
-          {renderFontAwesomeKitScriptTag()}
-          {renderGtmScriptTag()}
         </body>
       </Html>
     )
