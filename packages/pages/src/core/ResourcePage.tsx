@@ -4,7 +4,7 @@ import React from 'react'
 
 import {
   Blocks,
-  ResourceForm,
+  DynamicResourceForm,
   renderClientLogosImageMarqueeBlock,
   renderFourColumnGridBlock,
   renderThreeColumnGridBlock,
@@ -97,7 +97,7 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                       type: 'body1',
                     },
                     {
-                      title: <ResourceForm submitButtonProps={{
+                      title: <DynamicResourceForm submitButtonProps={{
                         title: cta_form_button_title,
                       }} />,
                       boxProps: { sx: { mt: 3 } },

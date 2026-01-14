@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   Blocks,
-  ContactForm,
+  DynamicContactForm,
   renderContactLinksBlockItems,
   useLayout,
 } from '@onex/landing'
@@ -69,7 +69,7 @@ const ContactPage: React.FC<ContactPageProps> = (props) => {
                       type: 'body1',
                     },
                     {
-                      title: <ContactForm />,
+                      title: <DynamicContactForm />,
                       type: 'jsx',
                     },
                   ],

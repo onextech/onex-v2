@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   Blocks,
-  LeadForm,
+  DynamicLeadForm,
   renderContactLinksBlockItems,
   renderTestimonialBlockItem,
   useLayout,
@@ -65,7 +65,7 @@ const GetStartedPage: React.FC<GetStartedPageProps> = (props) => {
                     },
                     {
                       title: (
-                        <LeadForm
+                        <DynamicLeadForm
                           {...(!disableServiceCategorys && {
                             serviceCategorys,
                           })}

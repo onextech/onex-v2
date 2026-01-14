@@ -4,16 +4,16 @@ import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee
 import {
   Blocks,
   LazyBlock,
+  LazyClientTestimonialSlider,
+  LazyFaqsAccordion,
+  LazyRelatedPosts,
+  LazyRelatedServices,
   renderClientLogoCardBlockItem,
   renderClientLogosImageMarqueeBlock,
-  renderClientTestimonialSliderBlock,
-  renderFaqsAccordionBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
   renderHeroBlock,
   renderLeadFormBlock,
-  renderRelatedPostsBlock,
-  renderRelatedServicesBlock,
   renderShowcasesBlock,
   renderSoftwareLifecycleBlock,
   renderTechnologysBlock,
@@ -144,7 +144,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Process
         renderSoftwareLifecycleBlock(),
         // Related Posts
-        renderRelatedPostsBlock({ ...insights, items: relatedPosts }),
+        <LazyBlock minHeight={400} rootMargin="200px">
+          <LazyRelatedPosts {...insights} items={relatedPosts} />
+        </LazyBlock>,
         // Map
         stats && {
           id: 'stats',
@@ -203,20 +205,25 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         renderFourColumnGridBlock(usps),
         // Form
         renderLeadFormBlock(),
-        testimonial && renderClientTestimonialSliderBlock({
-          title: testimonial.title,
-          dark: true,
-          items: clientTestimonials,
-          subtitle: testimonial.subtitle,
-        }),
+        // Testimonials
+        testimonial && (
+          <LazyBlock minHeight={500} rootMargin="200px">
+            <LazyClientTestimonialSlider
+              title={testimonial.title}
+              dark
+              items={clientTestimonials}
+              subtitle={testimonial.subtitle}
+            />
+          </LazyBlock>
+        ),
         // Faqs
-        renderFaqsAccordionBlock({
-          ...faqs,
-        }),
+        <LazyBlock minHeight={400} rootMargin="200px">
+          <LazyFaqsAccordion {...faqs} />
+        </LazyBlock>,
         // Related Services
-        renderRelatedServicesBlock({
-          items: relatedServices,
-        }),
+        <LazyBlock minHeight={300} rootMargin="200px">
+          <LazyRelatedServices items={relatedServices} />
+        </LazyBlock>,
       ]}
     />
   )
