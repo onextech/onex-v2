@@ -1,15 +1,10 @@
 import {
-  MOCK_POSTS,
   MOCK_SERVICE_CATEGORYS,
   MOCK_SERVICES,
-  MOCK_SHOWCASES, MOCK_TECHNOLOGYS,
-  MOCK_GROUP_POSTS,
 } from '@onex/mocks'
 import {
   getCategoryFromCrudItem,
-  getRelatedCrudItemsByTagTitle,
 } from '@onex/utils'
-import dayjs from 'dayjs'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 import { getStaticPathsWithLayout } from '../nextjs'
@@ -18,6 +13,52 @@ import getStaticPropsWithLayout from '../utils/getStaticPropsWithLayout'
 import { fetchPosts, fetchShowcases, fetchSite } from './Site'
 
 const { MOCK_KEY = '' } = process.env
+
+// ==============================
+// Helpers to minimize page data size
+// ==============================
+// Pick only fields needed for post card display
+const pickPostCardFields = (post) => ({
+  id: post.id,
+  title: post.title,
+  slug: post.slug,
+  subtitle: post.subtitle || null,
+  category: post.category ? { title: post.category.title, slug: post.category.slug } : null,
+  hero_src: post.hero_src || null,
+  hero_alt: post.hero_alt || null,
+  published_at: post.published_at || null,
+  author: post.author ? { title: post.author.title, avatar_src: post.author.avatar_src || null } : null,
+})
+
+// Pick only fields needed for service card display
+const pickServiceCardFields = (service) => ({
+  id: service.id,
+  title: service.title,
+  slug: service.slug,
+  subtitle: service.subtitle || null,
+  category: service.category ? { title: service.category.title, slug: service.category.slug } : null,
+  hero_src: service.hero_src || null,
+  hero_alt: service.hero_alt || null,
+})
+
+// Pick only fields needed for showcase card display
+const pickShowcaseCardFields = (showcase) => ({
+  id: showcase.id,
+  title: showcase.title,
+  slug: showcase.slug,
+  subtitle: showcase.subtitle || null,
+  hero_src: showcase.hero_src || null,
+  hero_alt: showcase.hero_alt || null,
+  backgroundColor: showcase.backgroundColor || null,
+  mode: showcase.mode || null,
+  reverse: showcase.reverse || false,
+  // Only include section existence flags (not full content) for button visibility
+  sections: {
+    leftGridSticky: { items: showcase.sections?.leftGridSticky?.items?.length ? [{}] : [] },
+    rightGridSticky: { items: showcase.sections?.rightGridSticky?.items?.length ? [{}] : [] },
+    gallery: { items: showcase.sections?.gallery?.items?.length ? [{}] : [] },
+  },
+})
 
 // ==============================
 // Methods
@@ -52,13 +93,20 @@ export const ServiceDetail = {
       service,
       MOCK_SERVICE_CATEGORYS[MOCK_KEY]
     )
-    const relatedServices = MOCK_SERVICES[MOCK_KEY].filter(
-      ({ category_id }) => category_id === service?.category_id
-    )
+    // Strip related services to card-only fields
+    const relatedServices = MOCK_SERVICES[MOCK_KEY]
+      .filter(({ category_id }) => category_id === service?.category_id)
       .filter((item) => item.title !== service?.title)
       .slice(0, 3)
-    const showcases = fetchShowcases({ locale }).slice(0, 3)
-    const relatedPosts = fetchPosts({ locale }).slice(0, 3)
+      .map(pickServiceCardFields)
+    // Strip showcases to card-only fields
+    const showcases = fetchShowcases({ locale })
+      .slice(0, 3)
+      .map(pickShowcaseCardFields)
+    // Strip related posts to card-only fields
+    const relatedPosts = fetchPosts({ locale })
+      .slice(0, 3)
+      .map(pickPostCardFields)
 
     return getStaticPropsWithLayout({
       props: {

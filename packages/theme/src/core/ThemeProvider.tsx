@@ -5,13 +5,25 @@ import CssBaseline from '@mui/material/CssBaseline'
 import {
   ThemeProvider as MuiThemeProvider,
   PaletteOptions,
+  Theme,
   ThemeOptions,
   createTheme,
 } from '@mui/material/styles'
 
 import getPalette from './getPalette'
 
-const defaultTheme = createTheme()
+// Lazy default theme - only created if actually needed
+let _defaultTheme: Theme | null = null
+const getDefaultTheme = () => {
+  if (!_defaultTheme) {
+    _defaultTheme = createTheme()
+  }
+  return _defaultTheme
+}
+
+// Type guard to check if value is a complete Theme (has spacing function)
+const isTheme = (value: Theme | ThemeOptions): value is Theme =>
+  typeof (value as Theme).spacing === 'function'
 
 export interface ThemeProviderProps {
   // Infra
@@ -33,10 +45,11 @@ export interface ThemeProviderProps {
   primaryColor?: string
   secondaryColor?: string
   /**
-   * ThemeOptions not Theme
-   * as Theme will be constructed from ThemeOptions
+   * Theme or ThemeOptions.
+   * If a complete Theme object is passed (created via createTheme),
+   * it will be used directly without calling createTheme again.
    */
-  theme?: ThemeOptions
+  theme?: Theme | ThemeOptions
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
@@ -53,10 +66,18 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
     primaryColor,
     secondaryColor,
     // Theme
-    theme: themeOptions = defaultTheme,
+    theme: themeInput,
   } = props
 
   const theme = useMemo(() => {
+    // If a complete Theme object is passed, use it directly (skip createTheme)
+    const inputTheme = themeInput ?? getDefaultTheme()
+    if (isTheme(inputTheme) && !lightPalette && !darkPalette && !primaryColor && !secondaryColor) {
+      return inputTheme
+    }
+
+    // Otherwise, create theme from options
+    const themeOptions = isTheme(inputTheme) ? {} : inputTheme
     const themeWithPalette = getPalette({
       paletteOptions:
         // prettier-ignore
@@ -72,7 +93,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
 
     return createTheme(themeWithPalette)
   }, [
-    themeOptions,
+    themeInput,
     mode,
     lightPalette,
     darkPalette,

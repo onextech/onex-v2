@@ -1,4 +1,3 @@
-import { createTheme } from '@mui/material/styles'
 import { IBM_Plex_Mono, Roboto } from 'next/font/google'
 import localFont from 'next/font/local'
 
@@ -40,8 +39,22 @@ const headerFontFamily = headerFont.style.fontFamily
 const bodyFontFamily = bodyFont.style.fontFamily
 const overlineFontFamily = overlineFont.style.fontFamily
 
-const defaultTheme = createTheme()
-const { pxToRem } = defaultTheme.typography
+// Static pxToRem utility (MUI default: 1rem = 16px)
+const pxToRem = (px: number): string => `${px / 16}rem`
+
+// MUI default breakpoints as static media queries
+const breakpoints = {
+  up: {
+    sm: '@media (min-width:600px)',
+    md: '@media (min-width:900px)',
+    lg: '@media (min-width:1200px)',
+  },
+  down: {
+    sm: '@media (max-width:599.95px)',
+    md: '@media (max-width:899.95px)',
+    lg: '@media (max-width:1199.95px)',
+  },
+}
 
 const typography = {
   body1: { fontWeight: 400, letterSpacing: 0.5, lineHeight: 1.56 },
@@ -57,10 +70,10 @@ const typography = {
   },
   fontFamily: bodyFontFamily,
   h1: {
-    [defaultTheme.breakpoints.up('md')]: {
+    [breakpoints.up.md]: {
       fontSize: pxToRem(72),
     },
-    [defaultTheme.breakpoints.up('sm')]: {
+    [breakpoints.up.sm]: {
       fontSize: pxToRem(60),
     },
     fontFamily: headerFontFamily,
@@ -71,7 +84,7 @@ const typography = {
   h2: { fontFamily: headerFontFamily, lineHeight: 1.1 },
   h3: { fontFamily: headerFontFamily, fontWeight: 300, lineHeight: 1.09 },
   h4: {
-    [defaultTheme.breakpoints.down('md')]: {
+    [breakpoints.down.md]: {
       fontSize: pxToRem(28),
     },
     fontFamily: headerFontFamily,
@@ -118,7 +131,7 @@ const typography = {
     lineHeight: 1.35,
   },
   subtitle2: {
-    [defaultTheme.breakpoints.up('md')]: {
+    [breakpoints.up.md]: {
       fontSize: pxToRem(18),
     },
     fontSize: pxToRem(16),
