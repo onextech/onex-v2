@@ -32,6 +32,18 @@ const pickShowcaseLayoutFields = (showcase, routeConfig) => ({
   href: `${routeConfig?.SHOWCASES}/${showcase.slug}`,
 })
 
+// Pick fields needed for technology block (includes avatar for images)
+const pickTechnologyFields = (technology, routeConfig) => ({
+  title: technology.title,
+  slug: technology.slug,
+  subtitle: technology.subtitle || null,
+  avatar_src: technology.avatar_src || null,
+  avatar_alt: technology.avatar_alt || null,
+  avatar_height: technology.avatar_height || 56,
+  avatar_width: technology.avatar_width || 56,
+  href: `${routeConfig?.TECHNOLOGYS}/${technology.slug}`,
+})
+
 const makeGetLayoutProviderProps =
   (layoutConfig: LayoutConfig) =>
   ({ context }) => {
@@ -115,11 +127,11 @@ const makeGetLayoutProviderProps =
         .slice(0, MAX_SHOWCASES)
         .map((showcase) => pickShowcaseLayoutFields(showcase, routeConfig)),
       site,
-      // Strip technologies to navigation-only fields
+      // Strip technologies to fields needed for block rendering (includes avatar)
       technologys: technologys
         .filter(({ is_hidden_from_header }) => !is_hidden_from_header)
         .slice(0, MAX_TECHNOLOGIES)
-        .map((technology) => pickNavFields(technology, `${routeConfig.TECHNOLOGYS}/${technology.slug}`)),
+        .map((technology) => pickTechnologyFields(technology, routeConfig)),
       workspaces,
     }
   }
