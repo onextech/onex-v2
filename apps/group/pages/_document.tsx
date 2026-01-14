@@ -23,10 +23,6 @@ export default class MyDocument extends Document {
           <meta content={lightTheme.palette.primary.main} name="theme-color" />
           <link href="/favicon.ico" rel="shortcut icon" />
           <meta content="" name="emotion-insertion-point" />
-          <meta
-            content={process.env.NEXT_PUBLIC_FACEBOOK_DOMAIN_VERIFICATION}
-            name="facebook-domain-verification"
-          />
           {/* Preconnect to external domains for faster resource loading */}
           <link href="https://fonts.googleapis.com" rel="preconnect" />
           <link
@@ -37,7 +33,6 @@ export default class MyDocument extends Document {
           <link href="https://www.googletagmanager.com" rel="preconnect" />
           <link href="https://www.google-analytics.com" rel="preconnect" />
           {/* DNS prefetch for third-party services */}
-          <link href="https://connect.facebook.net" rel="dns-prefetch" />
           <link href="https://www.linkedin.com" rel="dns-prefetch" />
           {(this.props as any).emotionStyleTags}
           {/* Preload critical fonts for better LCP */}
