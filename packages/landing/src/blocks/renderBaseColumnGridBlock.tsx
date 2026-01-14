@@ -110,7 +110,8 @@ const renderBaseColumnGridBlock = (
                   ...titleProps,
                   sx: {
                     mb: 3,
-                    ...(hasStat && { fontSize: '2.5rem', mb: '0.75rem' }),
+                    justifyContent: { xs: 'center', md: 'flex-start' },
+                    ...(hasStat && { fontSize: '2.75rem', mb: '0.75rem' }),
                     ...titleProps?.sx,
                   },
                 },

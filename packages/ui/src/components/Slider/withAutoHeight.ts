@@ -11,22 +11,37 @@ import { KeenSliderPlugin } from 'keen-slider/react'
  * @param slider
  */
 const withAutoHeight: KeenSliderPlugin = (slider) => {
-  const updateHeight = () => {
-    const currentSlideIndex = slider.track.details.rel
-    const currentSlide = slider.slides[currentSlideIndex]
-    const nextHeight = (currentSlide.firstChild as any)?.offsetHeight
+  let rafId: number | null = null
 
-    // eslint-disable-next-line no-param-reassign
-    slider.container.style.height = `${nextHeight}px`
+  const updateHeight = () => {
+    // Cancel any pending RAF to avoid multiple updates
+    if (rafId) {
+      cancelAnimationFrame(rafId)
+    }
+
+    // Use requestAnimationFrame to batch reads and writes, avoiding forced reflow
+    rafId = requestAnimationFrame(() => {
+      const currentSlideIndex = slider.track.details?.rel ?? 0
+      const currentSlide = slider.slides[currentSlideIndex]
+      if (!currentSlide) return
+
+      const nextHeight = (currentSlide.firstChild as HTMLElement)?.offsetHeight
+      if (nextHeight) {
+        slider.container.style.height = `${nextHeight}px`
+      }
+    })
   }
 
   slider.on('created', () => {
-    // Hack: Set time out to ensure accurate height is captured on the first load
-    setTimeout(() => {
-      updateHeight()
-    }, 100)
+    // Use RAF instead of setTimeout for better performance
+    requestAnimationFrame(updateHeight)
   })
   slider.on('slideChanged', updateHeight)
+  slider.on('destroyed', () => {
+    if (rafId) {
+      cancelAnimationFrame(rafId)
+    }
+  })
 }
 
 export default withAutoHeight

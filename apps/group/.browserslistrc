@@ -1,0 +1,8 @@
+# Modern browsers only - no polyfills needed for ES6+ features
+# These targets support: Array.at, Array.flat, Array.flatMap, Object.fromEntries, Object.hasOwn, String.trimStart/trimEnd
+
+chrome >= 92
+firefox >= 90
+safari >= 15
+edge >= 92
+ios >= 15

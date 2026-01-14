@@ -7,6 +7,8 @@ const withBundleAnalyzer =
 module.exports = withBundleAnalyzer({
   i18n,
   reactStrictMode: true,
+  // Use SWC minification for smaller bundles
+  swcMinify: true,
   // Image optimization
   images: {
     formats: ['image/avif', 'image/webp'],

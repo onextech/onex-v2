@@ -122,9 +122,27 @@ const renderBlockItem = (props) => {
         }
         // Extract size and strokeWidth from FA class string
         const iconProps = getLucideIconProps(title)
+        // Extract sx from titleProps - apply to Box wrapper, convert fontSize to size
+        const { sx: titleSx, ...restTitleProps } = titleProps || {}
+        const { fontSize, justifyContent, ...boxSx } = titleSx || {}
+        // Convert fontSize (e.g., '3rem') to pixel size for Lucide
+        let iconSize = iconProps.size
+        if (fontSize) {
+          const remMatch = String(fontSize).match(/^([\d.]+)rem$/)
+          if (remMatch) {
+            iconSize = parseFloat(remMatch[1]) * 16 * 1.5 // Scale up for visibility
+          }
+        }
         return (
-          <Box {...boxProps}>
-            <LucideIconComponent {...iconProps} {...titleProps} />
+          <Box
+            {...boxProps}
+            sx={{
+              ...boxProps?.sx,
+              ...boxSx,
+              ...(justifyContent && { display: 'flex', justifyContent }),
+            }}
+          >
+            <LucideIconComponent {...iconProps} size={iconSize} {...restTitleProps} />
           </Box>
         )
       }
