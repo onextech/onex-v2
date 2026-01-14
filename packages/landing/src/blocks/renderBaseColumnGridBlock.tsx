@@ -103,15 +103,16 @@ const renderBaseColumnGridBlock = (
                 type: 'image',
               },
               fa_icon && {
-                title: [hasStat ? '' : 'fa-3x', 'fa-thin', `${fa_icon}`].join(
-                  ' '
-                ),
+                title: ['fa-thin', `${fa_icon}`].join(' '),
                 titleProps: {
                   ...titleProps,
                   sx: {
                     mb: 3,
                     justifyContent: { xs: 'center', md: 'flex-start' },
-                    ...(hasStat && { fontSize: '2.75rem', mb: '0.75rem' }),
+                    fontSize: hasStat
+                      ? { xs: '2rem', md: '2.5rem' }
+                      : { xs: '2.5rem', md: '3rem' },
+                    ...(hasStat && { mb: '0.75rem' }),
                     ...titleProps?.sx,
                   },
                 },

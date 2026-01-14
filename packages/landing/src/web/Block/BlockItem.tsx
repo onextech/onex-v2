@@ -125,14 +125,24 @@ const renderBlockItem = (props) => {
         // Extract sx from titleProps - apply to Box wrapper, convert fontSize to size
         const { sx: titleSx, ...restTitleProps } = titleProps || {}
         const { fontSize, justifyContent, ...boxSx } = titleSx || {}
-        // Convert fontSize (e.g., '3rem') to pixel size for Lucide
-        let iconSize = iconProps.size
-        if (fontSize) {
-          const remMatch = String(fontSize).match(/^([\d.]+)rem$/)
+
+        // Handle fontSize - responsive objects use '1em' to inherit from CSS
+        let iconSize: number | string = iconProps.size
+        let responsiveFontSize = null
+
+        if (fontSize && typeof fontSize === 'object') {
+          // Responsive fontSize object (e.g., { xs: '2rem', md: '3rem' })
+          // Use '1em' so icon inherits size from parent's fontSize
+          iconSize = '1em'
+          responsiveFontSize = fontSize
+        } else if (fontSize && typeof fontSize === 'string') {
+          // Static fontSize string (e.g., '3rem')
+          const remMatch = fontSize.match(/^([\d.]+)rem$/)
           if (remMatch) {
             iconSize = parseFloat(remMatch[1]) * 16 * 1.5 // Scale up for visibility
           }
         }
+
         return (
           <Box
             {...boxProps}
@@ -140,6 +150,7 @@ const renderBlockItem = (props) => {
               ...boxProps?.sx,
               ...boxSx,
               ...(justifyContent && { display: 'flex', justifyContent }),
+              ...(responsiveFontSize && { fontSize: responsiveFontSize }),
             }}
           >
             <LucideIconComponent {...iconProps} size={iconSize} {...restTitleProps} />
