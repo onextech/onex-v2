@@ -7,6 +7,9 @@ export * from './ContactCallout'
 export { default as LeadForm } from './LeadForm'
 export * from './LeadForm'
 
+export { default as DynamicLeadForm } from './DynamicLeadForm'
+export * from './DynamicLeadForm'
+
 export { default as NewsletterForm } from './NewsletterForm'
 export * from './NewsletterForm'
 

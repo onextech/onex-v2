@@ -9,13 +9,13 @@ export function LinkedinAdsInsightsTracker() {
 
   return (
     <>
-      <Script id="linkedin-ads-script-1">
+      <Script id="linkedin-ads-script-1" strategy="lazyOnload">
         {`_linkedin_partner_id = "${LINKEDIN_PARTNER_ID}";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       </Script>
 
-      <Script id="linkedin-ads-script-2">
+      <Script id="linkedin-ads-script-2" strategy="lazyOnload">
         {`(function(l) {
 if (!l) {
     window.lintrk = function(a, b) {

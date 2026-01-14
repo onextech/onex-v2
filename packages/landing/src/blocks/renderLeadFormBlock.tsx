@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BlockItemProps, LeadForm } from '@onex/landing'
+import { BlockItemProps, DynamicLeadForm } from '@onex/landing'
 
 import { useLayout } from '../providers/LayoutProvider'
 import { BlockProps } from '../web/Block/Block'
@@ -53,7 +53,7 @@ const renderLeadFormBlock = (props: RenderLeadFormBlockProps = {}) => {
             items: [
               {
                 title: (
-                  <LeadForm
+                  <DynamicLeadForm
                     alignButtonLeft
                     serviceCategorys={serviceCategorys}
                   />

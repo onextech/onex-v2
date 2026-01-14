@@ -35,6 +35,12 @@ module.exports = withBundleAnalyzer({
       'react-hook-form',
       '@hookform/resolvers',
       'lucide-react',
+      'recharts',
+      'embla-carousel-react',
+      '@radix-ui/react-accordion',
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-tabs',
+      'next-seo',
     ],
   },
   // Optimize MUI icons imports
