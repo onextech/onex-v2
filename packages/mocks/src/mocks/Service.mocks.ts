@@ -2054,9 +2054,9 @@ export const MOCK_GROUP_SERVICES = [
         title: 'We are a Software Development Company',
         buttons: [
           {
-            title: 'Locate an Office',
+            title: 'Get Free Consultation',
             href: routeConfig.CONTACT,
-            overline: 'Where we are',
+            overline: 'Start Today',
           },
         ],
         hero_alt: 'contact_world_map_in_dots',
@@ -2064,40 +2064,67 @@ export const MOCK_GROUP_SERVICES = [
         items: [
           {
             title: '100+',
-            overline: 'Projects',
+            overline: 'Projects Delivered',
           },
           {
-            title: '6+',
-            overline: 'Years',
+            title: '40%',
+            overline: 'Avg. Cost Savings',
           },
           {
-            title: '∞',
-            overline: 'Possibilities',
-            titleProps: {
-              sx: {
-                '&&': { fontSize: 'h2.fontSize' },
-                height: 24,
-                lineHeight: '1',
-                position: 'relative',
-                top: -8,
-                width: '100%',
-              },
-            },
+            title: '2x',
+            overline: 'Faster Time-to-Market',
           },
         ],
-        overline: 'Our Locations',
+        overline: 'Proven Results',
         subtitle:
-          'With a strong focus on building digital capabilities, we provide end-to-end custom software development services that help businesses thrive in a competitive market. From designing innovative digital solutions to building scalable platforms and tailored applications, we leverage our expertise to deliver exceptional results.',
+          'Our clients achieve measurable business outcomes. From GIC to UOB, we have delivered enterprise-grade solutions that drive operational efficiency and competitive advantage.',
+      },
+      usps: {
+        title: 'Why Choose Us for Custom Software Development',
+        items: [
+          {
+            title: '100+ Projects Delivered',
+            fa_icon: 'fa-trophy',
+            subtitle:
+              'Enterprise-grade solutions for GIC, UOB, Maritime Port Authority, and leading Singapore businesses.',
+          },
+          {
+            title: 'Up to 50% Government Grants',
+            fa_icon: 'fa-hand-holding-usd',
+            subtitle:
+              'EDG & PSG eligible projects. We help you navigate the application process to maximize funding support.',
+          },
+          {
+            title: 'Agile Delivery with Bi-weekly Demos',
+            fa_icon: 'fa-sync-alt',
+            subtitle:
+              'Iterative development with regular check-ins ensures your software evolves with your feedback.',
+          },
+          {
+            title: 'Enterprise-Grade Security',
+            fa_icon: 'fa-shield-alt',
+            subtitle:
+              'Industry best practices and compliance standards to safeguard your data and operations.',
+          },
+        ],
+        overline: 'Our Differentiators',
+        subtitle:
+          'Partner with a trusted custom software development company that delivers results.',
+      },
+      testimonial: {
+        title: 'What Our Clients Say',
+        subtitle:
+          'Hear from businesses that have transformed their operations with our custom software solutions.',
       },
     },
     // Seo
     seo: {
       title: 'Custom Software Development',
       description:
-        'Custom software development services for enterprises. We design, build, and deploy tailored solutions that drive business growth. Get a free consultation today.',
+        'Leading custom software development company in Singapore. Enterprise solutions with up to 50% government grant support. 100+ projects delivered for GIC, UOB & more. Free consultation.',
     },
     subtitle:
-      'Custom software development services tailored to your business needs. We build scalable, enterprise-grade solutions that drive operational efficiency and growth.',
+      'Leading custom software development company delivering bespoke enterprise solutions. Our tailored software development services help Singapore businesses reduce costs by up to 40% and accelerate time-to-market. Get up to 50% government grant support.',
   },
   {
     title: 'Web App Development',

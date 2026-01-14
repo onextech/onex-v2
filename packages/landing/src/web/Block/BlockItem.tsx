@@ -27,7 +27,7 @@ import {
 import merge from 'lodash/merge'
 import dynamic from 'next/dynamic'
 
-import { getLucideIcon } from '../../utils/iconMap'
+import { getLucideIcon, getLucideIconProps } from '../../utils/iconMap'
 import { BlockItemTypeEnum } from './constants'
 
 const DynamicDialog = dynamic(() =>
@@ -120,9 +120,11 @@ const renderBlockItem = (props) => {
           console.warn(`No Lucide icon mapping found for: ${title}`)
           return null
         }
+        // Extract size and strokeWidth from FA class string
+        const iconProps = getLucideIconProps(title)
         return (
           <Box {...boxProps}>
-            <LucideIconComponent {...titleProps} />
+            <LucideIconComponent {...iconProps} {...titleProps} />
           </Box>
         )
       }

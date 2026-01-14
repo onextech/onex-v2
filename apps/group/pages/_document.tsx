@@ -29,7 +29,11 @@ export default class MyDocument extends Document {
           />
           {/* Preconnect to external domains for faster resource loading */}
           <link href="https://fonts.googleapis.com" rel="preconnect" />
-          <link crossOrigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
+          <link
+            crossOrigin="anonymous"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+          />
           <link href="https://www.googletagmanager.com" rel="preconnect" />
           <link href="https://www.google-analytics.com" rel="preconnect" />
           {/* DNS prefetch for third-party services */}

@@ -1,17 +1,17 @@
 export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   {
     title:
-      "They have a deep understanding of the latest technologies and trends and are always up for a challenge. We're so happy we found them and look forward to continuing to work with them in the future.",
+      "One X Tech delivered our vessel tracking system 2 weeks ahead of schedule. The solution now processes 50,000+ data points daily and reduced our manual reporting time by 70%. Their deep understanding of maritime technologies made them the perfect partner.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'Three circles',
     author_title: 'Mandy Lim',
-    author_job_title: 'Manager',
+    author_job_title: 'Digital Transformation Manager',
     author_company_title: 'Maritime Port Authority',
     rating_count: 5,
   },
   {
     title:
-      "Their team of experts helped us navigate complex technical challenges and provided invaluable guidance throughout the development process. We're so grateful to have them on our side.",
+      "Our loan origination platform was delivered 3 weeks ahead of schedule, processing 10,000+ applications in the first month. We reduced manual processing time by 60% and improved approval accuracy. Their expertise in fintech development is exceptional.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'Three circles',
     author_title: 'Allen Lim',
@@ -21,7 +21,7 @@ export const MOCK_GROUP_CLIENT_TESTIMONIALS = [
   },
   {
     title:
-      "Working with One X Tech was a game-changer for our company. Their engineering skills are top-notch and they helped us deliver our product on time and within budget. We couldn't be happier with the results.",
+      "One X Tech built our internal workflow automation system that now saves our team 200+ hours per month. The project was delivered on time and 15% under budget. Their engineering skills and commitment to quality exceeded our expectations.",
     avatar_src: '/images/about_shape_circle_radial.svg',
     avatar_alt: 'Three circles',
     author_title: 'Sarah Tan',

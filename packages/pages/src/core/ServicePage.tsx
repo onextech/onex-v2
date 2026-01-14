@@ -177,12 +177,12 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
                 items: [
                   {
                     title: stat.title,
-                    titleProps: stat.titleProps,
+                    titleProps: { ...stat.titleProps, sx: { lineHeight: 1, ...stat.titleProps?.sx } },
                     type: 'subtitle1',
                   },
                   {
                     title: stat.overline,
-                    titleProps: { color: 'text.secondary' },
+                    titleProps: { color: 'text.secondary', sx: { lineHeight: 1.2 } },
                     type: 'overline',
                   },
                 ],

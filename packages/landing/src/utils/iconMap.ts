@@ -4,6 +4,7 @@ import {
   ArrowRight,
   ArrowRightCircle,
   Award,
+  BadgeCheck,
   BarChart,
   BarChart2,
   BarChart3,
@@ -142,6 +143,7 @@ import {
 export const faToLucideMap: Record<string, LucideIcon> = {
   'fa-align-center': AlignCenter,
   'fa-analytics': BarChart2,
+  'fa-badge-check': BadgeCheck,
   'fa-arrow-circle-right': ArrowRightCircle,
   'fa-arrow-right': ArrowRight,
   'fa-award': Award,
@@ -346,4 +348,47 @@ export const getLucideIcon = (faClass: string): LucideIcon | null => {
   const iconName = extractFaIconName(faClass)
   if (!iconName) return null
   return faToLucideMap[iconName] || null
+}
+
+// Size multiplier mapping for FA size classes to pixel values
+// Increased by ~25% from standard FA sizes for better visibility with Lucide icons
+const FA_SIZE_TO_PIXELS: Record<string, number> = {
+  'fa-xs': 18,
+  'fa-sm': 21,
+  'fa-lg': 32,
+  'fa-1x': 30,
+  'fa-2x': 60,
+  'fa-3x': 90,
+  'fa-4x': 120,
+  'fa-5x': 150,
+  'fa-6x': 180,
+  'fa-7x': 210,
+  'fa-8x': 240,
+  'fa-9x': 270,
+  'fa-10x': 300,
+}
+
+// Default stroke width for Lucide icons (thinner than default 2)
+const DEFAULT_STROKE_WIDTH = 0.75
+
+export interface LucideIconProps {
+  size: number
+  strokeWidth: number
+}
+
+// Extract icon size from FA class string and return Lucide-compatible props
+export const getLucideIconProps = (faClass: string): LucideIconProps => {
+  // Find size class in the FA class string
+  const sizeMatch = faClass.match(/fa-(\d+x|xs|sm|lg)/i)
+  const sizeClass = sizeMatch ? `fa-${sizeMatch[1].toLowerCase()}` : null
+
+  // Get pixel size from mapping or use default
+  const size = sizeClass && FA_SIZE_TO_PIXELS[sizeClass]
+    ? FA_SIZE_TO_PIXELS[sizeClass]
+    : 30 // Default size
+
+  return {
+    size,
+    strokeWidth: DEFAULT_STROKE_WIDTH,
+  }
 }
