@@ -1,5 +1,3 @@
-'use client'
-
 /* eslint-disable fp/no-let, fp/no-mutation */
 
 import React, {
@@ -7,13 +5,11 @@ import React, {
   SetStateAction,
   createContext,
   useEffect,
+  useMemo,
   useState,
 } from 'react'
 
 import { DEFAULT_THEME_MODE_ENUM } from '@onex/types'
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
-import { IconButton } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export interface UserPreferences {
@@ -49,9 +45,6 @@ const initialUserPreferences: UserPreferences = {
   responsiveFontSizes: true,
 }
 
-// SSR-safe helper to check if we're in browser
-const isBrowser = typeof window !== 'undefined'
-
 const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
   switch (defaultThemeMode) {
     case DEFAULT_THEME_MODE_ENUM.DARK:
@@ -59,10 +52,10 @@ const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
       return { mode: defaultThemeMode }
     }
     case DEFAULT_THEME_MODE_ENUM.SYSTEM: {
-      // SSR-safe: default to dark on server, check preference on client
-      const prefersDark = isBrowser && window.matchMedia?.('(prefers-color-scheme: dark)').matches
       return {
-        mode: prefersDark ? 'dark' : 'dark', // Default dark on SSR for consistency
+        mode: globalThis.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light',
       }
     }
     case DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE: {
@@ -77,9 +70,6 @@ const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
 const restoreUserPreferences = (
   options: RestoreUserPreferencesOptions = {}
 ): UserPreferences | null => {
-  // SSR-safe: return null on server
-  if (!isBrowser) return null
-
   let userPreferences: any = null
   const { defaultThemeMode } = options
   try {
@@ -104,7 +94,6 @@ const restoreUserPreferences = (
 }
 
 const storeUserPreferences = (userPreferences: UserPreferences): void => {
-  if (!isBrowser) return
   globalThis.localStorage.setItem(
     'userPreferences',
     JSON.stringify(userPreferences)
@@ -115,7 +104,7 @@ export const UserPreferencesContext =
   createContext<UserPreferencesContextValue>({
     handleToggleDarkMode: () => null,
     handleToggleDarkSidebar: () => null,
-    isDarkMode: true, // Default to dark for SSR consistency
+    isDarkMode: false,
     saveUserPreferences: () => null,
     setDefaultThemeMode: () => null,
     toggleDarkModeIconButtonJsx: null,
@@ -127,6 +116,13 @@ export const UserPreferencesConsumer = UserPreferencesContext.Consumer
 export const useUserPreferences = () => {
   return React.useContext(UserPreferencesContext)
 }
+
+// Lazy-loaded toggle button component to reduce initial bundle
+const LazyToggleButton = React.lazy(() =>
+  import('./ToggleDarkModeButton').then((mod) => ({
+    default: mod.ToggleDarkModeButton,
+  }))
+)
 
 /**
  * UserPreferencesProvider
@@ -155,30 +151,18 @@ const UserPreferencesProvider: React.FC<UserPreferencesProviderProps> = (
     useState<DEFAULT_THEME_MODE_ENUM>(
       injectedDefaultThemeMode || DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE
     )
-  // Track if component has mounted to prevent hydration mismatch
-  const [hasMounted, setHasMounted] = useState(false)
 
   // @link: https://mui.com/material-ui/customization/dark-mode/#system-preference
-  // Use noSsr option to prevent hydration mismatch
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', {
-    noSsr: true,
-  })
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
-  // Set mounted state after hydration
   useEffect(() => {
-    setHasMounted(true)
-  }, [])
-
-  // Only restore preferences after mount to prevent hydration mismatch
-  useEffect(() => {
-    if (!hasMounted) return
     const restoredUserPreferences = restoreUserPreferences({
       defaultThemeMode,
     })
     if (restoredUserPreferences) {
       setUserPreferences(restoredUserPreferences)
     }
-  }, [hasMounted, prefersDarkMode, defaultThemeMode])
+  }, [prefersDarkMode, defaultThemeMode])
 
   const saveUserPreferences = (
     updatedUserPreferences: UserPreferences
@@ -201,14 +185,18 @@ const UserPreferencesProvider: React.FC<UserPreferencesProviderProps> = (
       isDarkSidebar: !userPreferences.isDarkSidebar,
     })
   }
-  const toggleDarkModeIconButtonJsx = (
-    <IconButton
-      aria-label="toggle color mode"
-      color="inherit"
-      onClick={handleToggleDarkMode}
-    >
-      {isDarkMode ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}
-    </IconButton>
+
+  // Memoize the toggle button to prevent re-renders
+  const toggleDarkModeIconButtonJsx = useMemo(
+    () => (
+      <React.Suspense fallback={null}>
+        <LazyToggleButton
+          isDarkMode={isDarkMode}
+          onClick={handleToggleDarkMode}
+        />
+      </React.Suspense>
+    ),
+    [isDarkMode, handleToggleDarkMode]
   )
 
   return (
