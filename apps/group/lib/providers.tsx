@@ -1,16 +1,11 @@
-'use client'
+import dynamic from 'next/dynamic'
 
-import { AppProgressProvider } from '@bprogress/next'
+// Dynamically import the progress provider to avoid blocking initial SSR
+const ProgressProvider = dynamic(
+  () => import('./progress-provider').then((mod) => mod.ProgressProvider),
+  { ssr: false }
+)
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <AppProgressProvider
-      color="#fff"
-      height="2px"
-      options={{ showSpinner: false }}
-      shallowRouting
-    >
-      {children}
-    </AppProgressProvider>
-  )
+  return <ProgressProvider>{children}</ProgressProvider>
 }

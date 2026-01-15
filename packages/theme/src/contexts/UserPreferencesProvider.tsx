@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable fp/no-let, fp/no-mutation */
 
 import React, {
@@ -47,6 +49,9 @@ const initialUserPreferences: UserPreferences = {
   responsiveFontSizes: true,
 }
 
+// SSR-safe helper to check if we're in browser
+const isBrowser = typeof window !== 'undefined'
+
 const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
   switch (defaultThemeMode) {
     case DEFAULT_THEME_MODE_ENUM.DARK:
@@ -54,10 +59,10 @@ const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
       return { mode: defaultThemeMode }
     }
     case DEFAULT_THEME_MODE_ENUM.SYSTEM: {
+      // SSR-safe: default to dark on server, check preference on client
+      const prefersDark = isBrowser && window.matchMedia?.('(prefers-color-scheme: dark)').matches
       return {
-        mode: globalThis.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light',
+        mode: prefersDark ? 'dark' : 'dark', // Default dark on SSR for consistency
       }
     }
     case DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE: {
@@ -72,6 +77,9 @@ const getComputedThemeSetting = (defaultThemeMode: DEFAULT_THEME_MODE_ENUM) => {
 const restoreUserPreferences = (
   options: RestoreUserPreferencesOptions = {}
 ): UserPreferences | null => {
+  // SSR-safe: return null on server
+  if (!isBrowser) return null
+
   let userPreferences: any = null
   const { defaultThemeMode } = options
   try {
@@ -96,6 +104,7 @@ const restoreUserPreferences = (
 }
 
 const storeUserPreferences = (userPreferences: UserPreferences): void => {
+  if (!isBrowser) return
   globalThis.localStorage.setItem(
     'userPreferences',
     JSON.stringify(userPreferences)
@@ -106,7 +115,7 @@ export const UserPreferencesContext =
   createContext<UserPreferencesContextValue>({
     handleToggleDarkMode: () => null,
     handleToggleDarkSidebar: () => null,
-    isDarkMode: false,
+    isDarkMode: true, // Default to dark for SSR consistency
     saveUserPreferences: () => null,
     setDefaultThemeMode: () => null,
     toggleDarkModeIconButtonJsx: null,
@@ -146,18 +155,30 @@ const UserPreferencesProvider: React.FC<UserPreferencesProviderProps> = (
     useState<DEFAULT_THEME_MODE_ENUM>(
       injectedDefaultThemeMode || DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE
     )
+  // Track if component has mounted to prevent hydration mismatch
+  const [hasMounted, setHasMounted] = useState(false)
 
   // @link: https://mui.com/material-ui/customization/dark-mode/#system-preference
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+  // Use noSsr option to prevent hydration mismatch
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', {
+    noSsr: true,
+  })
 
+  // Set mounted state after hydration
   useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
+  // Only restore preferences after mount to prevent hydration mismatch
+  useEffect(() => {
+    if (!hasMounted) return
     const restoredUserPreferences = restoreUserPreferences({
       defaultThemeMode,
     })
     if (restoredUserPreferences) {
       setUserPreferences(restoredUserPreferences)
     }
-  }, [prefersDarkMode, defaultThemeMode])
+  }, [hasMounted, prefersDarkMode, defaultThemeMode])
 
   const saveUserPreferences = (
     updatedUserPreferences: UserPreferences
