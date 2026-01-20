@@ -59,6 +59,7 @@ const makeGetLayoutProviderProps =
       services = [],
       showcases: injectedShowcases = [],
       site: injectedSite = {},
+      solutions = [],
       technologys = [],
       workspaces = [],
     } = layoutConfig
@@ -127,6 +128,15 @@ const makeGetLayoutProviderProps =
         .slice(0, MAX_SHOWCASES)
         .map((showcase) => pickShowcaseLayoutFields(showcase, routeConfig)),
       site,
+      // Strip solutions to navigation fields with subtitle
+      solutions: solutions
+        ?.slice(0, 10)
+        ?.map((solution) => ({
+          title: solution.title,
+          slug: solution.slug,
+          subtitle: solution.subtitle || null,
+          href: `${routeConfig.SOLUTIONS}/${solution.slug}`,
+        })),
       // Strip technologies to fields needed for block rendering (includes avatar)
       technologys: technologys
         .filter(({ is_hidden_from_header }) => !is_hidden_from_header)

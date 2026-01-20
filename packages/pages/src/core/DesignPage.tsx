@@ -1,13 +1,13 @@
 import React from 'react'
 
+import { routeConfig } from '@onex/common'
 import {
   Blocks,
-  renderClientHighlightsImageMarqueeBlock,
+  GalleryMarqueeSection,
   renderClientLogosImageMarqueeBlock,
   renderClientTestimonialSliderBlock,
   renderCtaBlock,
   renderFaqsAccordionBlock,
-  renderFeaturedIndustrysBlock,
   renderFeaturedNewsBlock,
   renderFeaturedPostsBlock,
   renderGhostButtonBlockItem,
@@ -17,9 +17,7 @@ import {
   useLayout,
 } from '@onex/landing'
 import { Industry, Page, Post, PressRelease, Showcase } from '@onex/types'
-import { routeConfig } from '@onex/common'
 import { useRouter } from 'next/router'
-import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 
 export interface DesignPageProps {
   featuredPosts: Post[]
@@ -59,7 +57,11 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
             { title: hero.overline, type: 'overline' },
             {
               title: hero.title,
-              titleProps: { component: 'h1', gutterBottom: true, sx: { maxWidth: { md: '60%' } }  },
+              titleProps: {
+                component: 'h1',
+                gutterBottom: true,
+                sx: { maxWidth: { md: '60%' } },
+              },
               type: 'h2',
             },
             {
@@ -111,8 +113,8 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
         renderHomeSummaryBlock({
           ...summary,
           center: true,
-          pt: { xs: 10, md: 16 },
           pb: { xs: 10, md: 10 },
+          pt: { xs: 10, md: 16 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
         }),
@@ -122,7 +124,12 @@ const DesignPage: React.FC<DesignPageProps> = (props) => {
           sx: { backgroundColor: 'background.paper' },
         }),
         // Design
-        <GalleryMarqueeSection title="Design Systems that Scale" subtitle="One X Design empowers enterprises with unified design systems that deliver consistent, delightful user experiences." disableOverline disableServices />,
+        <GalleryMarqueeSection
+          disableOverline
+          disableServices
+          subtitle="One X Design empowers enterprises with unified design systems that deliver consistent, delightful user experiences."
+          title="Design Systems that Scale"
+        />,
         // Showcases
         renderShowcasesBlock({
           title: <>Crafting Engaging User Experiences</>,

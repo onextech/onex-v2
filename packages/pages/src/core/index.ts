@@ -40,6 +40,12 @@ export * from './TechnologysPage'
 export { default as TechnologyPage } from './TechnologyPage'
 export * from './TechnologyPage'
 
+export { default as SolutionsPage } from './SolutionsPage'
+export * from './SolutionsPage'
+
+export { default as SolutionPage } from './SolutionPage'
+export * from './SolutionPage'
+
 export { default as PostCategorysPage } from './PostCategorysPage'
 export * from './PostCategorysPage'
 

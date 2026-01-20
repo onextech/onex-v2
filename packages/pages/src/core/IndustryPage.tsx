@@ -7,9 +7,9 @@ import {
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
   renderHeroBlock,
-  renderSummaryBlockItem,
   renderRelatedPostsBlock,
   renderRightChecklistBlock,
+  renderSummaryBlockItem,
   renderThreeColumnGridBlock,
 } from '@onex/landing'
 

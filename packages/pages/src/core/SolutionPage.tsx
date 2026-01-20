@@ -1,3 +1,5 @@
+import type { Post, Solution } from '@onex/types'
+
 import React from 'react'
 
 import {
@@ -7,58 +9,52 @@ import {
   LazyClientTestimonialSlider,
   LazyFaqsAccordion,
   LazyRelatedPosts,
-  LazyRelatedServices,
   renderClientLogoCardBlockItem,
   renderClientLogosImageMarqueeBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
   renderHeroBlock,
   renderLeadFormBlock,
-  renderShowcasesBlock,
   renderSoftwareLifecycleBlock,
   renderTechnologysBlock,
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
 import { MOCK_PAGES } from '@onex/mocks'
-import { Post, Service, ServiceCategory, Showcase } from '@onex/types'
 import { useRouter } from 'next/router'
 
-export interface ServicePageProps {
+export interface SolutionPageProps {
   relatedPosts?: Post[]
-  relatedServices?: Service[]
-  service: Service
-  serviceCategory: ServiceCategory
-  showcases?: Showcase[]
+  relatedSolutions?: Solution[]
+  solution: Solution
 }
 
-const ServicePage: React.FC<ServicePageProps> = (props) => {
-  const { relatedPosts, relatedServices, service, showcases } = props
+const SolutionPage: React.FC<SolutionPageProps> = (props) => {
+  const { relatedPosts, relatedSolutions, solution } = props
   const { clientLogos, clientTestimonials, site, technologys } = useLayout()
-  const { sections } = service || {}
+  const { sections } = solution || {}
   const { locale } = useRouter()
   const currentLocale = site?.locales?.find(
     (siteLocale) => siteLocale.key === (locale || '')
   )
 
   const {
-    challenges,
-    cta,
-    facts,
+    // Generic service page sections
     faqs,
     features,
     insights,
-    offerings,
-    showcase,
+    solutionBenefits,
+    solutionFaqs,
+    // Solution-specific sections
+    solutionFeatures,
     stats,
-    summary,
     testimonial,
     usps,
   } = sections || {}
 
-  const { gallery } = (
-    MOCK_PAGES.GROUP.find((page) => page.slug === 'about') as any
-  ).sections
+  const { gallery } =
+    (MOCK_PAGES.GROUP.find((page) => page.slug === 'about') as any)?.sections ||
+    {}
 
   return (
     <Blocks
@@ -66,14 +62,9 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         // Hero
         renderHeroBlock({
           item: {
-            ...service,
-            title: `${service.title} ${currentLocale?.title}`,
-            ...(site.id === 'GROUP' && {
-              hero_src:
-                locale === 'ae'
-                  ? '/images/three_middleastern_persons_pointing_at_screen.png'
-                  : '/images/two_men_pointing_at_screen_rtl.png',
-            }),
+            ...solution,
+            // Page title includes locale (e.g., "AI Chatbot Singapore")
+            title: `${solution.title} ${currentLocale?.title || ''}`.trim(),
           },
         }),
         // ClientLogosImageMarquee
@@ -82,16 +73,30 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           items: clientLogos.slice(0, 8),
           sx: { backgroundColor: 'background.paper', position: 'relative' },
         }),
+        // Solution Benefits (Your Customer Service, Transformed)
+        solutionBenefits && renderFourColumnGridBlock(solutionBenefits),
+        // Solution Features (AI Chatbot Capabilities)
+        solutionFeatures &&
+          renderThreeColumnGridBlock({
+            ...solutionFeatures,
+            textAlign: 'left',
+          }),
+        // Solution-specific Faqs (AI Chatbot FAQs)
+        solutionFaqs && (
+          <LazyBlock minHeight={400} rootMargin="200px">
+            <LazyFaqsAccordion {...solutionFaqs} />
+          </LazyBlock>
+        ),
         <LazyBlock minHeight={600} rootMargin="100px">
           <GalleryMarqueeSection />
         </LazyBlock>,
-        // Solution Offering
+        // Solution Features
         renderThreeColumnGridBlock({
           ...features,
           textAlign: 'left',
         }),
         // Logos
-        {
+        gallery && {
           id: 'gallery',
           center: true,
           dark: true,
@@ -139,15 +144,6 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
           ],
           maxWidth: 'md',
         },
-        // Showcases
-        Boolean(showcases?.length) &&
-          renderShowcasesBlock({
-            title: showcase.title,
-            items: showcases,
-            overline: showcase.overline,
-            pt: { xs: 5, md: 10 },
-            subtitle: showcase.subtitle,
-          }),
         // Technologys
         technologys?.length > 0 &&
           renderTechnologysBlock({ items: technologys }),
@@ -233,17 +229,19 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             />
           </LazyBlock>
         ),
-        // Faqs
+        // Generic Faqs
         <LazyBlock minHeight={400} rootMargin="200px">
           <LazyFaqsAccordion {...faqs} />
         </LazyBlock>,
-        // Related Services
-        <LazyBlock minHeight={300} rootMargin="200px">
-          <LazyRelatedServices items={relatedServices} />
-        </LazyBlock>,
+        // Related Solutions
+        relatedSolutions?.length > 0 && (
+          <LazyBlock minHeight={300} rootMargin="200px">
+            {/* TODO: Add LazyRelatedSolutions component */}
+          </LazyBlock>
+        ),
       ]}
     />
   )
 }
 
-export default ServicePage
+export default SolutionPage

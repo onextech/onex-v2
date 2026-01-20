@@ -77,6 +77,12 @@ export const MOCK_GROUP_SITE: Site = {
         'Explore our comprehensive services focused on empowering enterprises through custom software development',
     },
     {
+      id: 'solutions',
+      title: 'Our Solutions',
+      subtitle:
+        'Discover our innovative solutions designed to transform your business operations',
+    },
+    {
       id: 'insights',
       title: 'Insights',
       subtitle:

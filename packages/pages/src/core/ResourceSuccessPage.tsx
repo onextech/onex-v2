@@ -2,13 +2,13 @@ import type { Resource } from '@onex/types'
 
 import React from 'react'
 
+import { routeConfig } from '@onex/common'
 import {
   Blocks,
   RenderPostBlockItemProps,
   renderPostBlockItem,
   useLayout,
 } from '@onex/landing'
-import { routeConfig } from '@onex/common'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
 

@@ -16,6 +16,7 @@ const routeConfig = {
   WORKSPACES: '/ecosystem',
   SHOWCASES: '/portfolio',
   SERVICES: '/services',
+  SOLUTIONS: '/solutions',
   TECHNOLOGYS: '/technologies',
   INDUSTRYS: '/industries',
   POSTS: '/insights',

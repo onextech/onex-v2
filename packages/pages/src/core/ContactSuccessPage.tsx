@@ -1,18 +1,18 @@
 import React from 'react'
 
-import { Blocks } from '@onex/landing'
 import { routeConfig } from '@onex/common'
+import { Blocks } from '@onex/landing'
 
 import ContactPage from './ContactPage'
 
 export interface ContactSuccessPageProps {
   email?: string
-  name?: string
   mobile?: string
+  name?: string
 }
 
 const ContactSuccessPage = (props: ContactSuccessPageProps) => {
-  const { email, name, mobile } = props
+  const { email, mobile, name } = props
   if (!name || !email) return <ContactPage />
   return (
     <Blocks
@@ -53,8 +53,7 @@ const ContactSuccessPage = (props: ContactSuccessPageProps) => {
             {
               title: (
                 <>
-                  Mobile{' '}
-                  <span id="contact-success-form--mobile">{mobile}</span>
+                  Mobile <span id="contact-success-form--mobile">{mobile}</span>
                 </>
               ),
               titleProps: { sx: { display: 'none' } },

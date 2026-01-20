@@ -64,6 +64,10 @@ export type PageSectionKey =
   | 'rightGridSticky'
   | 'secondaryHero'
   | 'showcase'
+  | 'solutionBenefits'
+  | 'solutionFaqs'
+  | 'solutionFeatures'
+  | 'solutionSummary'
   | 'stats'
   | 'summary'
   | 'testimonial'
@@ -173,6 +177,12 @@ export interface ServiceCategory extends CrudItem {
   description?: string
   hero_alt?: string
   hero_src?: string
+}
+
+export interface Solution extends Page {
+  hero_alt?: string
+  hero_src?: string
+  tags?: CrudItem[]
 }
 
 export interface SiteLocale {

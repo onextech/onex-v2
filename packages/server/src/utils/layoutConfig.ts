@@ -10,6 +10,7 @@ import {
   MOCK_SERVICES,
   MOCK_SHOWCASES,
   MOCK_SITE,
+  MOCK_SOLUTIONS,
   MOCK_TECHNOLOGYS,
   MOCK_WORKSPACES,
 } from '@onex/mocks'
@@ -30,6 +31,7 @@ const layoutConfig: LayoutConfig = {
   services: MOCK_SERVICES[MOCK_KEY],
   showcases: MOCK_SHOWCASES[MOCK_KEY],
   site: MOCK_SITE[MOCK_KEY],
+  solutions: MOCK_SOLUTIONS[MOCK_KEY],
   technologys: MOCK_TECHNOLOGYS[MOCK_KEY],
   workspaces: MOCK_WORKSPACES[MOCK_KEY],
 }

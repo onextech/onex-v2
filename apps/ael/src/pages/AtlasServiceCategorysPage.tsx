@@ -2,11 +2,7 @@ import type { Service, ServiceCategory } from '@onex/types'
 
 import React from 'react'
 
-import {
-  Blocks,
-  renderHeroWithBackgroundBlock,
-  useLayout,
-} from '@onex/landing'
+import { Blocks, renderHeroWithBackgroundBlock, useLayout } from '@onex/landing'
 import { getCategoryWithItemsAndHref } from '@onex/utils'
 import chunk from 'lodash/chunk'
 

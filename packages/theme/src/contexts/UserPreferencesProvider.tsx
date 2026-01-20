@@ -4,6 +4,7 @@ import React, {
   Dispatch,
   SetStateAction,
   createContext,
+  startTransition,
   useEffect,
   useMemo,
   useState,
@@ -151,18 +152,27 @@ const UserPreferencesProvider: React.FC<UserPreferencesProviderProps> = (
     useState<DEFAULT_THEME_MODE_ENUM>(
       injectedDefaultThemeMode || DEFAULT_THEME_MODE_ENUM.USER_LOCAL_STORAGE
     )
+  const [mounted, setMounted] = useState(false)
 
   // @link: https://mui.com/material-ui/customization/dark-mode/#system-preference
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
+  // Track when component has mounted to avoid hydration mismatch
   useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
     const restoredUserPreferences = restoreUserPreferences({
       defaultThemeMode,
     })
     if (restoredUserPreferences) {
-      setUserPreferences(restoredUserPreferences)
+      startTransition(() => {
+        setUserPreferences(restoredUserPreferences)
+      })
     }
-  }, [prefersDarkMode, defaultThemeMode])
+  }, [mounted, prefersDarkMode, defaultThemeMode])
 
   const saveUserPreferences = (
     updatedUserPreferences: UserPreferences
@@ -187,16 +197,18 @@ const UserPreferencesProvider: React.FC<UserPreferencesProviderProps> = (
   }
 
   // Memoize the toggle button to prevent re-renders
+  // Only render after mounting to avoid Suspense hydration issues
   const toggleDarkModeIconButtonJsx = useMemo(
-    () => (
-      <React.Suspense fallback={null}>
-        <LazyToggleButton
-          isDarkMode={isDarkMode}
-          onClick={handleToggleDarkMode}
-        />
-      </React.Suspense>
-    ),
-    [isDarkMode, handleToggleDarkMode]
+    () =>
+      mounted ? (
+        <React.Suspense fallback={null}>
+          <LazyToggleButton
+            isDarkMode={isDarkMode}
+            onClick={handleToggleDarkMode}
+          />
+        </React.Suspense>
+      ) : null,
+    [mounted, isDarkMode, handleToggleDarkMode]
   )
 
   return (

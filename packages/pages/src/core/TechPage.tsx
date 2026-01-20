@@ -16,6 +16,7 @@ import {
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
+import { GetStartedPage } from '@onex/pages'
 import {
   Industry,
   Page,
@@ -24,7 +25,6 @@ import {
   Showcase,
   Technology,
 } from '@onex/types'
-import { GetStartedPage } from '@onex/pages'
 import { useRouter } from 'next/router'
 
 export interface TechPageProps {

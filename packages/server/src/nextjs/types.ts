@@ -10,6 +10,7 @@ import {
   ServiceCategory,
   Showcase,
   Site,
+  Solution,
   Technology,
   Workspace,
 } from '@onex/types'
@@ -26,6 +27,7 @@ export interface LayoutConfig {
   serviceCategorys?: ServiceCategory[]
   services?: Service[]
   showcases?: Showcase[]
+  solutions?: Solution[]
   site?: Site
   technologys?: Technology[]
   workspaces?: Workspace[]

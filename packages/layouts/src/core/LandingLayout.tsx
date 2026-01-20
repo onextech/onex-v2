@@ -69,6 +69,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
     // Configs
     site,
     socialMediaItems,
+    solutions,
     technologys,
     workspaces,
   } = onUseLayout
@@ -157,6 +158,92 @@ const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
                       },
                     ],
                     gridProps: { ...commonGridProps, spacing: 4 },
+                    type: 'grid',
+                  },
+                ],
+                pb: 6,
+                pt: { xs: 10, md: 5 },
+                reveal: false,
+                sx: { backgroundColor: 'background.paper' },
+              },
+            ]}
+          />
+        )
+      },
+    },
+    solutions?.length && {
+      id: 'solutions',
+      title: 'Solutions',
+      fullWidth: true,
+      href: routeConfig.SOLUTIONS,
+      isOpenOnHover: site.nav_is_open_on_hover,
+      items: solutions.map((solution) => ({
+        id: solution.title,
+        title: (
+          <Block
+            {...renderHeaderMenuMobileBlockItem(
+              solution as RenderHeaderMenuMobileBlockItemProps
+            )}
+          />
+        ),
+      })),
+      renderItems: () => {
+        return (
+          <Blocks
+            items={[
+              {
+                id: 'solutions-grid',
+                items: [
+                  {
+                    gridItems: [
+                      {
+                        ...commonLeftGridItemProps,
+                        items: [
+                          {
+                            title: site.nav_items?.find(
+                              ({ id }) => id === 'solutions'
+                            )?.title,
+                            titleProps: { gutterBottom: true },
+                            type: 'h5',
+                          },
+                          {
+                            title: site.nav_items?.find(
+                              ({ id }) => id === 'solutions'
+                            )?.subtitle,
+                            titleProps: {
+                              color: 'text.secondary',
+                              maxWidth: true,
+                            },
+                            type: 'body1',
+                          },
+                          {
+                            title: 'View Solutions',
+                            titleProps: {
+                              color: 'secondary',
+                              href: routeConfig.SOLUTIONS,
+                              rightCaret: true,
+                              sx: { mt: 2 },
+                              variant: 'body2',
+                            },
+                            type: 'link',
+                          },
+                        ],
+                      },
+                      {
+                        ...commonRightGridItemProps,
+                        items: [
+                          {
+                            gridItemProps: { xs: 6, md: 6, lg: 4 },
+                            gridItems: solutions.map((solution) =>
+                              renderHeaderMenuBlockItem(solution)
+                            ),
+                            gridProps: { spacing: 2 },
+                            type: 'grid',
+                          },
+                        ],
+                      },
+                    ],
+                    gridProps: commonGridProps,
                     type: 'grid',
                   },
                 ],

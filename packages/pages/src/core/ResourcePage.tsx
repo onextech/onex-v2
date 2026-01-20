@@ -18,11 +18,20 @@ export interface ResourcePageProps {
 const ResourcePage: React.FC<ResourcePageProps> = (props) => {
   const { resource } = props
   const { clientLogos } = useLayout()
-  const { title, avatar_alt, avatar_src, hero_src, hero_alt, hero_props, hero_box_props,
-    cta_form_title,
-    cta_form_subtitle,
+  const {
+    title,
+    avatar_alt,
+    avatar_src,
     cta_form_button_title,
-    sections, subtitle } = resource
+    cta_form_subtitle,
+    cta_form_title,
+    hero_alt,
+    hero_box_props,
+    hero_props,
+    hero_src,
+    sections,
+    subtitle,
+  } = resource
   const { benefits, features } = sections || {}
 
   return (
@@ -92,14 +101,20 @@ const ResourcePage: React.FC<ResourcePageProps> = (props) => {
                       type: 'h5',
                     },
                     {
-                      title: cta_form_subtitle || 'Enter your details to unlock this guide.',
+                      title:
+                        cta_form_subtitle ||
+                        'Enter your details to unlock this guide.',
                       titleProps: { color: 'text.secondary', sx: { mt: 1 } },
                       type: 'body1',
                     },
                     {
-                      title: <DynamicResourceForm submitButtonProps={{
-                        title: cta_form_button_title,
-                      }} />,
+                      title: (
+                        <DynamicResourceForm
+                          submitButtonProps={{
+                            title: cta_form_button_title,
+                          }}
+                        />
+                      ),
                       boxProps: { sx: { mt: 3 } },
                       type: 'jsx',
                     },

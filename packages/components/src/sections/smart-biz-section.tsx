@@ -1,8 +1,8 @@
-import { PageSubHeader } from '@onex/components/core/page-headers'
+import { PageSubHeader } from '@onex/components/src/core/page-headers'
 import {
   PageSectionButton,
   PageSectionDescription,
-} from '@onex/components/core/section'
+} from '@onex/components/src/core/section'
 import { smartBizContent } from '@/src/content/what-we-do/smart-biz'
 import Image from 'next/image'
 

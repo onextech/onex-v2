@@ -3,8 +3,8 @@
 import type React from 'react'
 import { useEffect, useRef } from 'react'
 
-import { PageSectionHeader } from '@onex/components/core/page-headers'
-import { PageSectionDescription } from '@onex/components/core/section'
+import { PageSectionHeader } from '@onex/components/src/core/page-headers'
+import { PageSectionDescription } from '@onex/components/src/core/section'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent } from '@/components/ui/card'
 import { Star } from 'lucide-react'

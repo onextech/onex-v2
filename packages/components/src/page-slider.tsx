@@ -52,7 +52,7 @@ export const PageSlider = ({
         {slides.map((slide) => (
           <div
             className={cn('relative mr-6 overflow-hidden', slideClassName)}
-            key={slide.alt}
+            key={slide.imgSrc}
             style={{
               height,
               minHeight: height,

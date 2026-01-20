@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { routeConfig } from '@onex/common'
 import {
   Blocks,
   renderClientLogosGallery,
@@ -10,7 +11,6 @@ import {
   useLayout,
 } from '@onex/landing'
 import { Industry, Page, Post, PressRelease, Showcase } from '@onex/types'
-import { routeConfig } from '@onex/common'
 
 export interface AelPageProps {
   featuredPosts: Post[]
@@ -127,10 +127,10 @@ const AelPage: React.FC<AelPageProps> = (props) => {
         // Industry
         renderFeaturedIndustrysBlock({
           title: 'In-Depth Industry Expertise',
+          disableHref: true,
           items: industrys,
           sx: { backgroundColor: 'background.paper' },
           titleType: 'h2',
-          disableHref: true,
         }),
         // News
         renderFeaturedNewsBlock({ items: featuredPressReleases }),

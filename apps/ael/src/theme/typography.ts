@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles'
-import { Inter, Roboto, Source_Sans_Pro } from 'next/font/google'
+import { Inter, Roboto, Source_Sans_3 } from 'next/font/google'
 
 export const headerFont = Inter({
   display: 'swap',
@@ -8,7 +8,7 @@ export const headerFont = Inter({
   weight: ['400', '500', '600'],
 })
 
-export const bodyFont = Source_Sans_Pro({
+export const bodyFont = Source_Sans_3({
   display: 'swap',
   fallback: ['apple-system', 'Helvetica', 'Arial', 'sans-serif'],
   subsets: ['latin'],

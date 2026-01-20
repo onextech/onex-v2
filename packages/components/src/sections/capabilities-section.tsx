@@ -1,5 +1,5 @@
-import { PageSectionHeader } from '@onex/components/core/page-headers'
-import { Overline, PageSectionDescription } from '@onex/components/core/section'
+import { PageSectionHeader } from '@onex/components/src/core/page-headers'
+import { Overline, PageSectionDescription } from '@onex/components/src/core/section'
 import { capabilitiesContent } from '@/src/content/what-we-do/capabilities'
 import Image from 'next/image'
 

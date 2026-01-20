@@ -21,3 +21,6 @@ export * from './DynamicResourceForm'
 
 // Lazy sections - for wrapping heavy below-fold sections with LazyBlock
 export * from './lazy-sections'
+
+// Re-export from @onex/components
+export { GalleryMarqueeSection } from '@onex/components/src/sections/gallery-marquee-section'

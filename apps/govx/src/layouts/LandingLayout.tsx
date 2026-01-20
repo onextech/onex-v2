@@ -9,7 +9,6 @@ import {
 export type LandingLayoutProps = LandingLayoutTemplateProps
 
 const LandingLayout: React.FC<LandingLayoutProps> = (props) => {
-  
   return (
     <LandingLayoutTemplate
       useLayout={useLayout}

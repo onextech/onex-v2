@@ -9,6 +9,7 @@ import type {
   ServiceCategory,
   Showcase,
   Site,
+  Solution,
   Technology,
   Workspace,
 } from '@onex/types'
@@ -39,6 +40,7 @@ export interface LayoutContextValue {
   // Modules
   services?: Service[]
   showcases?: Showcase[]
+  solutions?: Solution[]
   site?: Site
   socialMediaItems?: FooterProps['socialMediaItems']
   technologys?: Technology[]
@@ -66,6 +68,7 @@ export const layoutContextInitialState = {
   serviceCategorys: [],
   services: [],
   showcases: [],
+  solutions: [],
   site: {},
   socialMediaItems: {},
   technologys: [],

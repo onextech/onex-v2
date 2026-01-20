@@ -1,11 +1,7 @@
 import React from 'react'
 
-import {
-  Blocks,
-  renderGhostButtonBlockItem,
-  useLayout,
-} from '@onex/landing'
 import { routeConfig } from '@onex/common'
+import { Blocks, renderGhostButtonBlockItem, useLayout } from '@onex/landing'
 
 export interface MissionPageProps {}
 

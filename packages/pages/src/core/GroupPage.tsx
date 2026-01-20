@@ -3,18 +3,15 @@ import React from 'react'
 import { routeConfig } from '@onex/common'
 import {
   Blocks,
+  GalleryMarqueeSection,
   renderClientLogosImageMarqueeBlock,
   renderFadeToBottomBackgroundImageBlock,
   renderFaqsAccordionBlock,
-  renderFeaturedIndustrysBlock,
   renderFeaturedNewsBlock,
   renderFeaturedPostsBlock,
-  renderFeaturedResourcesBlock,
   renderHeroWithVideoSlider,
   renderHomeSummaryBlock,
   renderShowcasesBlock,
-  renderShowcaseSlider,
-  renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
 import {
@@ -25,7 +22,6 @@ import {
   Resource,
   Showcase,
 } from '@onex/types'
-import { GalleryMarqueeSection } from '@onex/components/sections/gallery-marquee-section'
 
 export interface GroupPageProps {
   featuredPosts: Post[]
@@ -93,14 +89,19 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         renderHomeSummaryBlock({
           ...summary,
           center: true,
-          pt: { xs: 10, md: 16 },
           pb: { xs: 10, md: 10 },
+          pt: { xs: 10, md: 16 },
           sx: { backgroundColor: 'background.paper' },
           titleProps: { maxWidth: '70%' },
         }),
-        
-        <GalleryMarqueeSection title="Build Custom Solutions" subtitle="From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives." disableOverline disableServices />,
-      
+
+        <GalleryMarqueeSection
+          disableOverline
+          disableServices
+          subtitle="From ideation to implementation, we specialize in crafting customized software solutions that empower businesses to drive innovation, optimize processes, and achieve their strategic objectives."
+          title="Build Custom Solutions"
+        />,
+
         // Posts
         renderFeaturedPostsBlock({
           items: featuredPosts,
@@ -110,22 +111,23 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
         // Showcases
         Boolean(showcases?.length) &&
           renderShowcasesBlock({
-            overline: 'Driving Business Innovation',
             title: (
               <>
-              Custom Software & <br /> AI Solutions for Growth
+                Custom Software & <br /> AI Solutions for Growth
               </>
             ),
             items: showcases,
+            overline: 'Driving Business Innovation',
             pt: { xs: 5, md: 10 },
-            subtitle: 'We help ambitious companies build smarter systems, unlock efficiency, and stay ahead in a fast-changing world.',
+            subtitle:
+              'We help ambitious companies build smarter systems, unlock efficiency, and stay ahead in a fast-changing world.',
           }),
 
         // News
         renderFeaturedNewsBlock({
           items: featuredPressReleases,
-          pt: 8,
           pb: { xs: 10, md: 20 },
+          pt: 8,
         }),
 
         // Faqs
@@ -135,7 +137,7 @@ const GroupPage: React.FC<GroupPageProps> = (props) => {
             ...faqs,
             sx: { backgroundColor: 'background.paper' },
           }),
-          
+
         // Cta
         renderFadeToBottomBackgroundImageBlock({
           title: cta.title,

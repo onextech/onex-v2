@@ -1,5 +1,5 @@
-import { PageHeader } from '@onex/components/core/page-headers'
-import { Overline } from '@onex/components/core/section'
+import { PageHeader } from '@onex/components/src/core/page-headers'
+import { Overline } from '@onex/components/src/core/section'
 import { ServiceGallery } from '@/components/service-gallery'
 import { whatWeDoContent } from '@/src/content/what-we-do/hero'
 

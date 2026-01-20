@@ -1,6 +1,7 @@
 export * from './Showcase.mocks'
 export * from './Job.mocks'
 export * from './Service.mocks'
+export * from './Solution.mocks'
 export * from './ServiceCategory.mocks'
 export * from './Post.mocks'
 export * from './PostCategory.mocks'

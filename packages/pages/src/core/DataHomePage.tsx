@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { routeConfig } from '@onex/common'
 import {
   Blocks,
   renderClientLogosImageMarqueeBlock,
@@ -24,7 +25,6 @@ import {
   Showcase,
   Technology,
 } from '@onex/types'
-import { routeConfig } from '@onex/common'
 import { useRouter } from 'next/router'
 
 export interface DataHomePageProps {

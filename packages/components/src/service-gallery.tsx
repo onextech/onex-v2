@@ -1,5 +1,5 @@
-import { BlockOverlay } from '@onex/components/block-overlays'
-import { PageSlider } from '@onex/components/page-slider'
+import { BlockOverlay } from '@onex/components/src/block-overlays'
+import { PageSlider } from '@onex/components/src/page-slider'
 import { ServiceSlide } from './types/service'
 import Image from 'next/image'
 

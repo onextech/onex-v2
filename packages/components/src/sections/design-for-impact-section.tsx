@@ -1,10 +1,10 @@
 import { BlockOverlay } from '@/components/block-overlays'
-import { PageSectionHeader } from '@onex/components/core/page-headers'
+import { PageSectionHeader } from '@onex/components/src/core/page-headers'
 import {
   Overline,
   PageSectionButton,
   PageSectionDescription,
-} from '@onex/components/core/section'
+} from '@onex/components/src/core/section'
 import { designContent } from '@/src/content/what-we-do/design'
 import Image from 'next/image'
 
