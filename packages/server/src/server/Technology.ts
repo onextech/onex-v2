@@ -13,7 +13,7 @@ const { MOCK_KEY = '' } = process.env
 // Methods
 // ==============================
 export const fetchTechnologyBySlug = (injectedSlug) => {
-  return MOCK_TECHNOLOGYS[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_TECHNOLOGYS[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -21,7 +21,7 @@ export const fetchTechnologyBySlug = (injectedSlug) => {
 // ==============================
 export const TechnologyList = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const technologys = MOCK_TECHNOLOGYS[MOCK_KEY]?.filter(
+    const technologys = (MOCK_TECHNOLOGYS[MOCK_KEY] || [])?.filter(
       ({ is_active }) => is_active
     )
     return getStaticPropsWithLayout({ props: { technologys } })(context)
@@ -59,7 +59,7 @@ export const TechnologyDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_TECHNOLOGYS[MOCK_KEY].map(
+      paths: (MOCK_TECHNOLOGYS[MOCK_KEY] || []).map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },
         })

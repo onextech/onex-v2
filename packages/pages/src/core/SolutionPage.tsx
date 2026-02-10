@@ -20,7 +20,6 @@ import {
   renderThreeColumnGridBlock,
   useLayout,
 } from '@onex/landing'
-import { MOCK_PAGES } from '@onex/mocks'
 import { useRouter } from 'next/router'
 
 export interface SolutionPageProps {
@@ -42,6 +41,7 @@ const SolutionPage: React.FC<SolutionPageProps> = (props) => {
     // Generic service page sections
     faqs,
     features,
+    gallery,
     insights,
     solutionBenefits,
     solutionFaqs,
@@ -51,10 +51,6 @@ const SolutionPage: React.FC<SolutionPageProps> = (props) => {
     testimonial,
     usps,
   } = sections || {}
-
-  const { gallery } =
-    (MOCK_PAGES.GROUP.find((page) => page.slug === 'about') as any)?.sections ||
-    {}
 
   return (
     <Blocks

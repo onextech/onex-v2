@@ -64,7 +64,7 @@ const pickShowcaseCardFields = (showcase) => ({
 // Methods
 // ==============================
 export const fetchServiceBySlug = (injectedSlug) => {
-  return MOCK_SERVICES[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_SERVICES[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -73,7 +73,7 @@ export const fetchServiceBySlug = (injectedSlug) => {
 export const ServiceDetail = {
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_SERVICES[MOCK_KEY].map(
+      paths: (MOCK_SERVICES[MOCK_KEY] || []).map(
         ({ slug, blocked_locales, category, exclusive_locales }) => ({
           params: {
             slug,
@@ -91,10 +91,10 @@ export const ServiceDetail = {
     const servicePage = getDynamicPage({ context, page: service, site })
     const serviceCategory = getCategoryFromCrudItem(
       service,
-      MOCK_SERVICE_CATEGORYS[MOCK_KEY]
+      (MOCK_SERVICE_CATEGORYS[MOCK_KEY] || [])
     )
     // Strip related services to card-only fields
-    const relatedServices = MOCK_SERVICES[MOCK_KEY]
+    const relatedServices = (MOCK_SERVICES[MOCK_KEY] || [])
       .filter(({ category_id }) => category_id === service?.category_id)
       .filter((item) => item.title !== service?.title)
       .slice(0, 3)

@@ -12,7 +12,7 @@ const { MOCK_KEY = '' } = process.env
 // Methods
 // ==============================
 export const fetchIndustryBySlug = (injectedSlug) => {
-  return MOCK_INDUSTRYS[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_INDUSTRYS[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -21,7 +21,7 @@ export const fetchIndustryBySlug = (injectedSlug) => {
 export const IndustryList = {
   getStaticProps: (): GetStaticProps =>
     getStaticPropsWithLayout({
-      props: { industrys: MOCK_INDUSTRYS[MOCK_KEY] },
+      props: { industrys: (MOCK_INDUSTRYS[MOCK_KEY] || []) },
     }),
 }
 
@@ -44,7 +44,7 @@ export const IndustryDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_INDUSTRYS[MOCK_KEY].map(
+      paths: (MOCK_INDUSTRYS[MOCK_KEY] || []).map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },
         })

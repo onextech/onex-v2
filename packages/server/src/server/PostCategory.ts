@@ -22,8 +22,8 @@ export const PostCategoryList = {
   getStaticProps: (): GetStaticProps =>
     getStaticPropsWithLayout({
       props: {
-        postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY],
-        posts: MOCK_POSTS[MOCK_KEY].filter(({ is_active }) => is_active).filter(
+        postCategorys: MOCK_POST_CATEGORYS[MOCK_KEY] || [],
+        posts: (MOCK_POSTS[MOCK_KEY] || []).filter(({ is_active }) => is_active).filter(
           ({ published_at }) =>
             published_at && dayjs(published_at).isBefore(dayjs())
         ),
@@ -34,7 +34,7 @@ export const PostCategoryList = {
 export const PostCategoryDetail = {
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_POST_CATEGORYS[MOCK_KEY].map(
+      paths: (MOCK_POST_CATEGORYS[MOCK_KEY] || []).map(
         ({ slug, blocked_locales, exclusive_locales }) => ({
           params: { blocked_locales, categorySlug: slug, exclusive_locales },
         })

@@ -11,7 +11,7 @@ const { MOCK_KEY = '' } = process.env
 // Methods
 // ==============================
 export const fetchShowcaseBySlug = (injectedSlug) => {
-  return MOCK_SHOWCASES[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_SHOWCASES[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -19,7 +19,7 @@ export const fetchShowcaseBySlug = (injectedSlug) => {
 // ==============================
 export const ShowcaseList = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const showcases = MOCK_SHOWCASES[MOCK_KEY]
+    const showcases = MOCK_SHOWCASES[MOCK_KEY] || []
     return getStaticPropsWithLayout({ props: { showcases } })(context)
   },
 }
@@ -29,7 +29,7 @@ export const ShowcaseDetail = {
     const showcase = fetchShowcaseBySlug(context.params?.slug)
     const site = fetchSite()
     const showcasePage = getDynamicPage({ context, page: showcase, site })
-    const otherShowcases = MOCK_SHOWCASES[MOCK_KEY].filter(
+    const otherShowcases = (MOCK_SHOWCASES[MOCK_KEY] || []).filter(
       ({ slug }) => slug !== context.params?.slug
     ).slice(0, 3)
     return getStaticPropsWithLayout({
@@ -38,7 +38,7 @@ export const ShowcaseDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_SHOWCASES[MOCK_KEY].map(({ slug }) => ({
+      paths: (MOCK_SHOWCASES[MOCK_KEY] || []).map(({ slug }) => ({
         params: { slug },
       })),
     }),

@@ -206,47 +206,53 @@ export const MOCK_GROUP_SOLUTIONS: Solution[] = [
         ],
       },
       // Generic service page sections
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Powering Conversations for Leading Brands',
+        subtitle:
+          'From enterprise support to lead generation, these businesses trust our AI Chatbot to handle millions of customer conversations with speed, accuracy, and personality.',
+      },
       features: {
         overline: 'What we do',
-        title: 'Let Your Customers Take the Reign',
+        title: 'Automate Conversations. Elevate Experiences.',
         subtitle:
-          'To deliver products of the highest quality, we follow the best practices that include code review, pair programming, test-driven development, continuous integration, and automated testing.',
+          'We build AI chatbots that understand context, learn from interactions, and deliver human-like conversations at scale—so your team can focus on what matters most.',
         items: [
           {
-            fa_icon: 'fa-watch',
-            title: 'Scale up development',
+            fa_icon: 'fa-rocket',
+            title: 'Rapid Deployment',
             subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+              'Go live in weeks, not months. Our proven chatbot framework accelerates your time-to-value.',
           },
           {
-            fa_icon: 'fa-hand-holding-seedling',
-            title: 'Improve a current system',
+            fa_icon: 'fa-brain',
+            title: 'Custom AI Training',
             subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+              'We train your chatbot on your business knowledge, FAQs, and brand voice for accurate, on-brand responses.',
           },
           {
-            fa_icon: 'fa-mug-hot',
-            title: 'Accelerate Innovation',
+            fa_icon: 'fa-plug',
+            title: 'Seamless Integrations',
             subtitle:
-              'We create human-centred designs focused on driving conversions and achieving business goals.',
+              'Connect to your CRM, helpdesk, calendar, and messaging platforms out of the box.',
           },
           {
-            fa_icon: 'fa-puzzle-piece',
-            title: 'Launch Your MVP',
+            fa_icon: 'fa-chart-line',
+            title: 'Continuous Optimization',
             subtitle:
-              'Launch your MVP at start-up speed with an expert team of designers and developers.',
+              'We analyze conversation data to improve response accuracy and customer satisfaction over time.',
           },
           {
-            fa_icon: 'fa-guitar',
+            fa_icon: 'fa-headset',
             title: 'Dedicated Support',
             subtitle:
-              'Our team works directly with you to boost your development speed and scale.',
+              'Our team monitors performance and provides ongoing tuning to keep your chatbot performing at its best.',
           },
           {
-            fa_icon: 'fa-table-tennis',
-            title: 'Continuous Delivery',
+            fa_icon: 'fa-expand-arrows-alt',
+            title: 'Scale Without Limits',
             subtitle:
-              "Identify areas for automation and improve efficiency so you can spend more time on what's important.",
+              'Handle thousands of simultaneous conversations without adding headcount or compromising quality.',
           },
         ],
       },
@@ -563,6 +569,12 @@ export const MOCK_GROUP_SOLUTIONS: Solution[] = [
         ],
       },
       // Generic service page sections
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Connecting Buyers and Sellers at Scale',
+        subtitle:
+          'From B2B commerce to multi-vendor retail, these businesses run their marketplace operations on our platform—processing thousands of transactions daily.',
+      },
       features: {
         overline: 'What we do',
         title: 'Build Your Digital Commerce Ecosystem',
@@ -920,6 +932,12 @@ export const MOCK_GROUP_SOLUTIONS: Solution[] = [
         ],
       },
       // Generic service page sections
+      gallery: {
+        overline: 'Our Clients',
+        title: 'Driving Sales Success for Growing Teams',
+        subtitle:
+          'From startups to enterprises, these businesses trust our CRM solutions to manage their customer relationships, close deals faster, and scale their sales operations.',
+      },
       features: {
         overline: 'What we do',
         title: 'Build Relationships That Drive Revenue',

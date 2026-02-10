@@ -9,7 +9,7 @@ const { MOCK_KEY = '' } = process.env
 // Methods
 // ==============================
 export const fetchResourceBySlug = (injectedSlug) => {
-  return MOCK_RESOURCES[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_RESOURCES[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -18,14 +18,14 @@ export const fetchResourceBySlug = (injectedSlug) => {
 export const ResourceList = {
   getStaticProps: (): GetStaticProps =>
     getStaticPropsWithLayout({
-      props: { resources: MOCK_RESOURCES[MOCK_KEY] },
+      props: { resources: (MOCK_RESOURCES[MOCK_KEY] || []) },
     }),
 }
 
 export const ResourceDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const resource = fetchResourceBySlug(context.params?.slug)
-    const relatedResources = MOCK_RESOURCES[MOCK_KEY]?.filter(
+    const relatedResources = (MOCK_RESOURCES[MOCK_KEY] || [])?.filter(
       (resource) => resource.slug !== context.params?.slug
     ).slice(0, 3)
     return getStaticPropsWithLayout({
@@ -37,7 +37,7 @@ export const ResourceDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_RESOURCES[MOCK_KEY].map(
+      paths: (MOCK_RESOURCES[MOCK_KEY] || []).map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },
         })

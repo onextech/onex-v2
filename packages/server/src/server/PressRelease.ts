@@ -20,7 +20,7 @@ export const PressReleaseList = {
   getStaticProps: (): GetStaticProps =>
     getStaticPropsWithLayout({
       props: {
-        pressReleases: MOCK_PRESS_RELEASES[MOCK_KEY].filter(
+        pressReleases: (MOCK_PRESS_RELEASES[MOCK_KEY] || []).filter(
           ({ is_active }) => is_active
         ).filter(
           ({ published_at }) =>
@@ -33,7 +33,7 @@ export const PressReleaseList = {
 export const PressReleaseDetail = {
   getStaticProps: (): GetStaticProps => (context) => {
     const pressRelease = fetchPressReleaseBySlug(context.params?.slug)
-    const otherPressReleases = MOCK_PRESS_RELEASES[MOCK_KEY].filter(
+    const otherPressReleases = (MOCK_PRESS_RELEASES[MOCK_KEY] || []).filter(
       ({ slug }) => slug !== context.params?.slug
     ).slice(0, 3)
 
@@ -46,7 +46,7 @@ export const PressReleaseDetail = {
   },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_PRESS_RELEASES[MOCK_KEY].map(
+      paths: (MOCK_PRESS_RELEASES[MOCK_KEY] || []).map(
         ({ slug, exclusive_locales, blocked_locales }) => ({
           params: { slug, exclusive_locales, blocked_locales },
         })

@@ -12,7 +12,7 @@ const { MOCK_KEY = '' } = process.env
 // Methods
 // ==============================
 export const fetchPageBySlug = (injectedSlug) => {
-  return MOCK_PAGES[MOCK_KEY].find(({ slug }) => slug === injectedSlug)
+  return (MOCK_PAGES[MOCK_KEY] || []).find(({ slug }) => slug === injectedSlug)
 }
 
 // ==============================
@@ -20,7 +20,7 @@ export const fetchPageBySlug = (injectedSlug) => {
 // ==============================
 export const PageList = {
   getStaticProps: (): GetStaticProps => (context) => {
-    const pages = MOCK_PAGES[MOCK_KEY]
+    const pages = (MOCK_PAGES[MOCK_KEY] || [])
     return getStaticPropsWithLayout({ props: { pages } })(context)
   },
 }
@@ -43,7 +43,7 @@ export const PageDetail = {
     },
   getStaticPaths: (): GetStaticPaths =>
     getStaticPathsWithLayout({
-      paths: MOCK_PAGES[MOCK_KEY].map(({ slug }) => ({
+      paths: (MOCK_PAGES[MOCK_KEY] || []).map(({ slug }) => ({
         params: { slug },
       })),
     }),
