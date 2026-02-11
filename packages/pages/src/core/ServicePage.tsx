@@ -10,6 +10,7 @@ import {
   LazyRelatedServices,
   renderClientLogoCardBlockItem,
   renderClientLogosImageMarqueeBlock,
+  renderFactsAccordionBlock,
   renderFourColumnGridBlock,
   renderGhostButtonBlockItem,
   renderHeroBlock,
@@ -85,6 +86,11 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
         <LazyBlock minHeight={600} rootMargin="100px">
           <GalleryMarqueeSection />
         </LazyBlock>,
+        // Challenges
+        challenges &&
+          renderThreeColumnGridBlock({
+            ...challenges,
+          }),
         // Solution Offering
         renderThreeColumnGridBlock({
           ...features,
@@ -147,6 +153,11 @@ const ServicePage: React.FC<ServicePageProps> = (props) => {
             overline: showcase.overline,
             pt: { xs: 5, md: 10 },
             subtitle: showcase.subtitle,
+          }),
+        // Facts
+        facts?.items?.length > 0 &&
+          renderFactsAccordionBlock({
+            ...facts,
           }),
         // Technologys
         technologys?.length > 0 &&
