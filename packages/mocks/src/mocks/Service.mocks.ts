@@ -1900,7 +1900,7 @@ export const MOCK_GROUP_SERVICES = [
         ],
         overline: 'How We Help',
         subtitle:
-          'IT leaders are tasked with navigating a series of difficult challenges, from managing complex software projects and juggling tight budgets to securing experienced developers. These ongoing issues can quickly lead to frustration and burnout as they struggle to balance the demands of growth and innovation.',
+          'IT leaders in {localeTitle} are tasked with navigating a series of difficult challenges, from managing complex software projects and juggling tight budgets to securing experienced developers. These ongoing issues can quickly lead to frustration and burnout as they struggle to balance the demands of growth and innovation.',
       },
       facts: {
         title: 'Key Information about {title}',
@@ -1909,7 +1909,7 @@ export const MOCK_GROUP_SERVICES = [
             id: 'facts-1',
             title: 'Benefits of {title}',
             content: `Workflow Efficiency
-              Custom software development brings you solutions tailored to your specific business needs.
+              Custom software development in {localeTitle} brings you solutions tailored to your specific business needs.
               When you customize the software you use instead of leaning on generic off-the-shelf solutions, you can operate more efficiently by addressing each challenge you face with a solution crafted to your particular purpose.
               
               Strategic Data Use
@@ -1923,7 +1923,7 @@ export const MOCK_GROUP_SERVICES = [
             id: 'facts-2',
             title: 'Understanding the {title} Process',
             content:
-              'Custom software development starts with a deep dive into your business needs. We engage in close collaboration with your team to gather requirements, ensuring we understand your objectives thoroughly. This understanding forms the foundation for creating a solution that aligns perfectly with your business goals.\n\nUsing agile methodologies, we design, develop, and iterate on the solution with regular feedback. This ensures flexibility and timely delivery. Our process is adaptive, allowing us to continuously refine the software until it meets and exceeds your expectations.',
+              'Custom software development in {localeTitle} starts with a deep dive into your business needs. We engage in close collaboration with your team to gather requirements, ensuring we understand your objectives thoroughly. This understanding forms the foundation for creating a solution that aligns perfectly with your business goals.\n\nUsing agile methodologies, we design, develop, and iterate on the solution with regular feedback. This ensures flexibility and timely delivery. Our process is adaptive, allowing us to continuously refine the software until it meets and exceeds your expectations.',
           },
           {
             id: 'facts-3',
@@ -1950,7 +1950,7 @@ export const MOCK_GROUP_SERVICES = [
             title:
               'What types of businesses can benefit from custom software development?',
             content:
-              'Custom software development is ideal for businesses of all sizes across various industries that require specialized solutions to address unique operational challenges and goals.',
+              'Custom software development is ideal for businesses of all sizes across various industries in {localeTitle} that require specialized solutions to address unique operational challenges and goals.',
           },
           {
             id: 'faqs-2',
@@ -1990,7 +1990,7 @@ export const MOCK_GROUP_SERVICES = [
           },
         ],
         subtitle:
-          'Common questions about our custom software development services and how they can transform your business.',
+          'Common questions about our custom software development services in {localeTitle} and how they can transform your business.',
       },
       features: {
         title: 'End-to-end {title} Capabilities',
@@ -2034,24 +2034,24 @@ export const MOCK_GROUP_SERVICES = [
         ],
         overline: 'Solution Offering',
         subtitle:
-          'Leveraging our technical expertise and industry knowledge, we deliver custom solutions to power your unique business processes and drive high return on investment.',
+          'Leveraging our technical expertise and industry knowledge, we deliver custom software development solutions for {localeTitle} businesses to power your unique business processes and drive high return on investment.',
       },
       summary: {
-        title: 'Transforming Businesses with {title} Services',
+        title: 'Transforming {localeTitle} Businesses with {title} Services',
         items: [
           {
             title:
-              "{appTitle}'s {title} service is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.",
+              "{appTitle}'s {title} service in {localeTitle} is designed to create unique, scalable, and high-performance solutions that align with your business objectives. We specialize in building custom software that enhances productivity and supports business growth.",
           },
           {
             title:
-              'From the initial concept to deployment and maintenance, we work closely with you to deliver software that meets your exact requirements, integrates seamlessly with your current systems, and drives operational efficiency.',
+              'From the initial concept to deployment and maintenance, we work closely with {localeTitle} businesses to deliver software that meets your exact requirements, integrates seamlessly with your current systems, and drives operational efficiency.',
           },
         ],
         overline: 'Summary',
       },
       stats: {
-        title: 'We are a Software Development Company',
+        title: 'We are a Software Development Company in {localeTitle}',
         buttons: [
           {
             title: 'Get Free Consultation',
@@ -2077,10 +2077,10 @@ export const MOCK_GROUP_SERVICES = [
         ],
         overline: 'Proven Results',
         subtitle:
-          'Our clients achieve measurable business outcomes. From GIC to UOB, we have delivered enterprise-grade solutions that drive operational efficiency and competitive advantage.',
+          'Our clients in {localeTitle} achieve measurable business outcomes. From GIC to UOB, we have delivered enterprise-grade custom software development solutions that drive operational efficiency and competitive advantage.',
       },
       usps: {
-        title: 'Why Choose Us for Custom Software Development',
+        title: 'Why Choose Us for Custom Software Development in {localeTitle}',
         items: [
           {
             title: '100+ Projects Delivered',
@@ -2109,12 +2109,12 @@ export const MOCK_GROUP_SERVICES = [
         ],
         overline: 'Our Differentiators',
         subtitle:
-          'Partner with a trusted custom software development company that delivers results.',
+          'Partner with a trusted custom software development company in {localeTitle} that delivers results.',
       },
       testimonial: {
         title: 'What Our Clients Say',
         subtitle:
-          'Hear from businesses that have transformed their operations with our custom software solutions.',
+          'Hear from {localeTitle} businesses that have transformed their operations with our custom software development solutions.',
       },
     },
     // Seo
